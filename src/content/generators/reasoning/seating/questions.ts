@@ -117,8 +117,13 @@ function pickDistinct(q: QCtx, answer: number, prefer: number[], pool: number[])
   return out;
 }
 
-function nameChoices(q: QCtx, answer: number, prefer: number[]): { options: string[]; answerIndex: number } | null {
-  const d = pickDistinct(q, answer, prefer, persons(q));
+function nameChoices(q: QCtx, answer: number, prefer: number[], exclude: number[] = []): { options: string[]; answerIndex: number } | null {
+  const d = pickDistinct(
+    q,
+    answer,
+    prefer.filter((e) => !exclude.includes(e)),
+    persons(q).filter((e) => !exclude.includes(e)),
+  );
   if (d.length < 4) return null;
   return shuffleChoices(q.rng, q.b.names[answer], d.map((e) => q.b.names[e]));
 }
@@ -140,8 +145,8 @@ function qNth(q: QCtx): QOut | null {
     const ans = occ(q, tgt);
     if (ans < 0 || ans === occ(q, s0)) continue;
     const mirror = occ(q, T.step(s0, other(side), k));
-    const prefer = [mirror, occ(q, T.step(s0, side, k + 1)), occ(q, T.step(s0, side, k - 1)), occ(q, T.step(s0, other(side), k + 1))].filter((e) => e !== occ(q, s0));
-    const ch = nameChoices(q, ans, prefer);
+    const prefer = [mirror, occ(q, T.step(s0, side, k + 1)), occ(q, T.step(s0, side, k - 1)), occ(q, T.step(s0, other(side), k + 1))];
+    const ch = nameChoices(q, ans, prefer, [occ(q, s0)]);
     if (!ch) continue;
     const who = nm(q, x);
     const holder = occ(q, s0);
@@ -507,7 +512,7 @@ function qSwap(q: QCtx): QOut | null {
     if (ans < 0 || ans === y) continue;
     const before = occ(q, T.step(T.seat(y), side, k));
     const mirror = T2.step(T2.seat(y), other(side), k);
-    const ch = nameChoices(q, ans, [before, mirror >= 0 ? T2.occP[mirror] : -1, x].filter((e) => e !== y));
+    const ch = nameChoices(q, ans, [before, mirror >= 0 ? T2.occP[mirror] : -1, x], [y]);
     if (!ch) continue;
     const path = walkNames(q, y, side, k, T2);
     return {
@@ -557,8 +562,8 @@ function qOpp(q: QCtx): QOut | null {
     const so = T.ev.opposite(sx);
     const ans = occ(q, so);
     if (ans < 0) continue;
-    const prefer = [occ(q, T.step(so, 'left', 1)), occ(q, T.step(so, 'right', 1)), occ(q, T.step(sx, 'left', 1)), occ(q, T.step(sx, 'right', 1))].filter((e) => e !== x);
-    const ch = nameChoices(q, ans, prefer);
+    const prefer = [occ(q, T.step(so, 'left', 1)), occ(q, T.step(so, 'right', 1)), occ(q, T.step(sx, 'left', 1)), occ(q, T.step(sx, 'right', 1))];
+    const ch = nameChoices(q, ans, prefer, [x]);
     if (!ch) continue;
     const X = b.names[x];
     const prompt =
@@ -654,7 +659,7 @@ function qCount(q: QCtx): QOut | null {
       { value: n + 1, why: 'counted a named person twice' },
       { value: n - 2, why: 'left out both end persons' },
       { value: n + 2, why: 'added the gaps without subtracting the overlap' },
-      { value: n - named, why: 'counted only the unnamed persons' },
+      { value: n - 3 > named ? n - 3 : n + 3, why: 'miscounted a gap of unnamed persons' },
     ],
     true,
   );

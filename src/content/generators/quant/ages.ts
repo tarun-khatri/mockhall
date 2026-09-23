@@ -133,6 +133,7 @@ function mixedOffset(ctx: Ctx): Res {
     if (!small([p, q]) || (p === a && q === b)) return null;
     const after = rng.int(3, 10);
     const ans = A + B + 2 * after;
+    if (ans > 120) return null;
     const [P, Q] = pickPeople(rng, 2);
     return emit(ctx, {
       facts: { form: 'mixed-offset', a, b, hence, ago, p, q, after },
@@ -606,18 +607,22 @@ function avgMarriage(ctx: Ctx): Res {
 
 function avgSame(ctx: Ctx): Res {
   const { rng } = ctx;
+  // The baby's age is small, so pick the correct letter first and leave room for smaller options.
+  const rank = rng.int(0, 4);
   return attempt('avg-same', 300, () => {
     const n = rng.int(4, 7);
-    const since = rng.int(2, 6);
-    const child = rng.int(1, since - 1); // born after the earlier date, so younger than the gap
+    const child = rng.int(rank + 1, rank + 3);
+    const since = rng.int(child + 1, child + 4); // born after the earlier date, so younger than the gap
     // (n+1) avg = n (avg + since) + child ⇒ avg = n·since + child
     const avg = n * since + child;
-    if (avg > 45 || child >= since * 3) return null;
+    if (avg > 45 || avg < 18) return null;
     return emit(ctx, {
       facts: { form: 'avg-same', n, avg, since },
       prompt: `${yrs(since)} ago, the average age of a family of ${n} members was ${yrs(avg)}. Since then a baby has been born into the family, and the average age of the family today is still ${yrs(avg)}. How old is the baby now?`,
       answer: child,
       format: yrs,
+      step: 1,
+      rank,
       mistakes: [
         { value: since, why: 'assumed the baby was born right after', trap: `${yrs(since)} is the time elapsed, not the baby's age. Today's total is ${n + 1} × ${avg}; the ${n} older members contribute ${n} × (${avg} + ${since}).` },
         { value: avg - n * since + since, why: 'counted one fewer member ageing' },

@@ -46,7 +46,23 @@ if (existsSync(authoredDir)) {
   }
 }
 
-// 2. Bank index
+// 2. Verified generators: a generator ships only if its property suite exists (CI runs the suites before building).
+const verifiedChapters: string[] = [];
+for (const subject of ['quant', 'reasoning', 'english']) {
+  const genDir = join(ROOT, 'src', 'content', 'generators', subject);
+  if (!existsSync(genDir)) continue;
+  for (const name of readdirSync(genDir).filter((n) => n.endsWith('.ts'))) {
+    const chapter = name.replace(/\.ts$/, '');
+    const suite = join(ROOT, 'tests', 'property', subject, `${chapter}.test.ts`);
+    const verifier = join(ROOT, 'src', 'content', 'verify', subject, `${chapter}.ts`);
+    if (existsSync(suite) && existsSync(verifier)) verifiedChapters.push(chapter);
+    else console.warn(`! generator ${subject}/${chapter} has no verifier/property suite yet — not shipped`);
+  }
+}
+writeFileSync(join(ROOT, 'src', 'content', 'verified-generators.json'), JSON.stringify(verifiedChapters.sort(), null, 2) + '\n');
+console.log(`✓ verified generators: ${verifiedChapters.length}`);
+
+// 3. Bank index
 const banksDir = join(ROOT, 'public', 'banks');
 mkdirSync(banksDir, { recursive: true });
 const files: { chapter: string; subtype: string; label: string; difficulty: string; file: string; count: number; bytes: number }[] = [];
@@ -64,7 +80,7 @@ for (const chapter of ['seating', 'puzzles']) {
   const dir = join(banksDir, chapter);
   if (!existsSync(dir)) continue;
   const labels = await labelsFor(chapter);
-  for (const name of readdirSync(dir).filter((n) => n.endsWith('.json')).sort()) {
+  for (const name of readdirSync(dir).filter((n) => n.endsWith('.json') && !/^(index|manifest)\.json$/.test(n)).sort()) {
     const path = join(dir, name);
     const raw = readFileSync(path);
     const json = JSON.parse(raw.toString('utf8'));

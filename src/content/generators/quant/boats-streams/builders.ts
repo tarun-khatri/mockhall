@@ -18,7 +18,7 @@ function speeds(ctx: BuildContext, minB = 6, maxB = 30): [number, number] {
   const { rng } = ctx;
   for (;;) {
     const B = rng.int(minB, maxB);
-    const S = rng.int(1, Math.min(8, B - 3));
+    const S = rng.int(3, Math.min(8, B - 3));
     if (B - S >= 3) return [B, S];
   }
 }
@@ -32,7 +32,7 @@ export function downUp(ctx: BuildContext, level: Level): D {
       const [B, S] = speeds(ctx);
       const down = level === 'easy';
       const v = down ? B + S : B - S;
-      const t = rng.int(2, 8);
+      const t = rng.int(3, 8);
       const d = v * t;
       const wrong = down ? B - S : B + S;
       return {
@@ -163,7 +163,7 @@ export function stillWater(ctx: BuildContext, level: Level): D {
       const T2 = u2 / Up + dn2 / Dn;
       return {
         facts: { form: 'two-trips', ask: askB ? 'B' : 'S', given: { u1, dn1, T1, u2, dn2, T2 } },
-        prompt: `${bt.who} goes ${u1} km upstream and ${dn1} km downstream in ${hours(T1)}. It goes ${u2} km upstream and ${dn2} km downstream in ${hours(T2)}. Find ${label}.`,
+        prompt: `${bt.who} ${bt.verb} ${u1} km upstream and ${dn1} km downstream on ${on} in ${hours(T1)}, and ${u2} km upstream and ${dn2} km downstream in ${hours(T2)}. Find ${label}.`,
         answer: ans,
         fmt: kmh,
         mistakes: [
@@ -183,7 +183,7 @@ export function stillWater(ctx: BuildContext, level: Level): D {
     if (L > 150) continue;
     const d = L * rng.int(1, Math.max(1, Math.floor(150 / L)));
     const extra = d / (B - S) - d / (B + S);
-    if (!Number.isFinite(cleanFrac(extra, 4)) || extra < 0.5 || extra > 8) continue;
+    if (!Number.isFinite(clean(extra, 2)) || extra < 0.5 || extra > 8) continue;
     return {
       facts: { form: 'extra-time', ask: 'S', given: { B, d, extra } },
       prompt: `The speed of a boat in still water is ${B} km/h. It takes ${hours(extra)} more to go ${d} km upstream on ${on} than to go the same distance downstream. What is the speed of the stream?`,
@@ -223,7 +223,7 @@ export function roundTrip(ctx: BuildContext, level: Level): D {
         if (!Number.isFinite(cleanFrac(avg, 4))) continue;
         return {
           facts: { form: 'round', ask: 'avg', given: { B, S, d } },
-          prompt: `${bt.who} with a still-water speed of ${B} km/h ${bt.verb} ${d} km downstream on ${on} and comes back. If the stream flows at ${S} km/h, what is its average speed for the whole trip?`,
+          prompt: `${bt.who} with a still-water speed of ${B} km/h ${bt.verb} ${d} km downstream on ${on} and comes back. If the stream flows at ${S} km/h, what is the average speed for the whole trip?`,
           answer: avg,
           fmt: kmh,
           mistakes: [
@@ -256,7 +256,7 @@ export function roundTrip(ctx: BuildContext, level: Level): D {
         choice: Number.isInteger(T) ? { step: 1 } : { step: 1, integer: false },
       };
     }
-    if (!Number.isFinite(cleanFrac(T, 4)) || T > 24) continue;
+    if (!Number.isFinite(clean(T, 2)) || T > 24) continue;
     if (level === 'hard') {
       return {
         facts: { form: 'round-find-s', ask: 'S', given: { B, d, T } },
@@ -309,7 +309,7 @@ export function timeRatio(ctx: BuildContext, level: Level): D {
     const unit = rng.int(1, 6);
     const B = bp * unit;
     const S = sp * unit;
-    if (B > 40 || S < 1) continue;
+    if (B > 40 || S < 3) continue;
     if (level === 'easy') {
       return {
         facts: { form: 'time-ratio', ask: 'B', given: { kNum: kn, kDen: kd, S } },
@@ -430,7 +430,7 @@ export function totalDistance(ctx: BuildContext, level: Level): D {
     }
     if (d % 2 !== 0) continue;
     const T = tDown + d / 2 / (B - S);
-    if (!Number.isFinite(cleanFrac(T, 4)) || T > 24) continue;
+    if (!Number.isFinite(clean(T, 2)) || T > 24) continue;
     if (level === 'hard') {
       return {
         facts: { form: 'midpoint', ask: 'd', given: { B, S, T } },

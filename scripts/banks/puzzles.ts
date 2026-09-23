@@ -90,8 +90,28 @@ function writeBank(sub: string, d: Difficulty, items: BankItem[], generatedAt: s
   return out;
 }
 
+/** Rebuild index.json from the bank files on disk (after an interrupted run). */
+function rebuildIndex(): void {
+  const files: { chapter: string; subtype: string; label: string; difficulty: Difficulty; file: string; count: number; bytes: number }[] = [];
+  let generatedAt = '';
+  for (const name of readdirSync(OUT).sort()) {
+    if (name === 'index.json' || !name.endsWith('.json')) continue;
+    const raw = readFileSync(join(OUT, name), 'utf8');
+    const j = JSON.parse(raw);
+    generatedAt = generatedAt > j.generatedAt ? generatedAt : j.generatedAt;
+    const label = SUBTYPES.find((s) => s.id === j.subtype)?.label ?? j.subtype;
+    files.push({ chapter: 'puzzles', subtype: j.subtype, label, difficulty: j.difficulty, file: `puzzles/${name}`, count: j.items.length, bytes: Buffer.byteLength(raw) });
+  }
+  writeFileSync(join(OUT, 'index.json'), JSON.stringify({ generatedAt, files }, null, 1));
+  console.log(`index.json: ${files.length} files, ${files.reduce((s, f) => s + f.count, 0)} sets`);
+}
+
 function main() {
   mkdirSync(OUT, { recursive: true });
+  if (process.argv.includes('--index-only')) {
+    rebuildIndex();
+    return;
+  }
   const generatedAt = new Date().toISOString().slice(0, 10);
   const index: { chapter: string; subtype: string; label: string; difficulty: Difficulty; file: string; count: number; bytes: number }[] = [];
   const t0 = Date.now();
@@ -132,16 +152,8 @@ function main() {
       console.log(`${st.id}/${d}: ${items.length} sets (${rejected} rejected) in ${((Date.now() - t1) / 1000).toFixed(1)} s → ${files.length} file(s), ${(bytes / 1024).toFixed(0)} KB raw`);
     }
   }
-  // merge with entries of subtypes not rebuilt in this run
-  let prev: typeof index = [];
-  try {
-    prev = JSON.parse(readFileSync(join(OUT, 'index.json'), 'utf8')).files ?? [];
-  } catch {
-    prev = [];
-  }
-  const rebuilt = new Set(index.map((e) => `${e.subtype}.${e.difficulty}`));
-  const merged = [...prev.filter((e) => !rebuilt.has(`${e.subtype}.${e.difficulty}`)), ...index].sort((a, b) => a.file.localeCompare(b.file));
-  writeFileSync(join(OUT, 'index.json'), JSON.stringify({ generatedAt, files: merged }, null, 1));
+  // the index always mirrors what is on disk (covers subtypes not rebuilt in this run)
+  rebuildIndex();
   console.log(`done in ${((Date.now() - t0) / 1000).toFixed(0)} s`);
 }
 

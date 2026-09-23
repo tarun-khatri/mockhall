@@ -120,7 +120,9 @@ export default function Exam() {
 
   const qid = loaded ? E.currentQuestionId(attempt!) : '';
   useEffect(() => {
-    questionTop.current?.scrollIntoView({ block: 'start' });
+    // New question: show it from the top, with the shared stimulus (chart/clues/passage) fully in view.
+    const scroller = questionTop.current?.closest('main');
+    if (scroller) scroller.scrollTop = 0;
   }, [qid]);
 
   const onSelect = useCallback((i: number) => useExam.getState().select(i), []);

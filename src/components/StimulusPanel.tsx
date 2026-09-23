@@ -87,8 +87,9 @@ export function StimulusPanel({ set, scope, position, total }: { set: QuestionSe
       <div className="sticky top-0 z-10 flex min-h-11 items-center gap-2 bg-surface px-4">
         <button type="button" onClick={toggle} aria-expanded={state.open} className="flex min-h-11 flex-1 items-center gap-2 text-left text-[14px] font-semibold text-ink">
           {state.open ? <ChevronUp size={20} aria-hidden /> : <ChevronDown size={20} aria-hidden />}
-          <span className="truncate">
-            {set.title ?? label} — question {position} of {total}
+          <span className="min-w-0 truncate">{set.title ?? label}</span>
+          <span className="tnum shrink-0 font-normal text-ink-2">
+            · Q{position}/{total}
           </span>
         </button>
         {isPassage || set.kind === 'di' ? (

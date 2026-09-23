@@ -13,6 +13,7 @@ import { CHAPTERS, chapterMeta } from './chapters';
 import type { AuthoredFile } from './schema';
 import { authoredItems, type QaFile } from './authored';
 import { makeRng } from '../lib/rng';
+import verifiedGenerators from './verified-generators.json';
 
 export interface ChapterProvider {
   chapter: ChapterId;
@@ -37,10 +38,13 @@ const KNOWN = new Set<string>(CHAPTERS.map((c) => c.id));
 /** Chapters served from pre-generated banks even though a runtime generator exists (solver too slow on phones). */
 const BANK_CHAPTERS = new Set<ChapterId>(['seating', 'puzzles']);
 
+/** Generators whose independent verifier + property suite exist (written by scripts/build-banks.ts). */
+const VERIFIED = new Set<string>(verifiedGenerators as string[]);
+
 const genPaths = new Map<ChapterId, string>();
 for (const path of Object.keys(generatorModules)) {
   const id = baseName(path);
-  if (KNOWN.has(id)) genPaths.set(id as ChapterId, path);
+  if (KNOWN.has(id) && (VERIFIED.has(id) || import.meta.env.DEV)) genPaths.set(id as ChapterId, path);
 }
 const authoredPaths = new Map<ChapterId, string>();
 for (const path of Object.keys(authoredModules)) {

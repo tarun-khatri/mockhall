@@ -588,7 +588,11 @@ class Puzzle {
     const usedBy: boolean[][] = Array.from({ length: K + 1 }, () => new Array<boolean>(S).fill(false));
     let placedPersons = 0;
     const out: number[][] = [];
-    const occ = (t: number): boolean | null => (personAt[t] >= 0 ? true : placedPersons === P ? false : vac === 0 ? true : null);
+    // Layouts with vacant slots: the set of occupied slots is enumerated first (C(S, P) patterns), after which
+    // every count clue can be evaluated as soon as its own entities are placed.
+    let pattern = -1;
+    const occ = (t: number): boolean | null =>
+      pattern >= 0 ? ((pattern >> t) & 1) === 1 : personAt[t] >= 0 ? true : placedPersons === P ? false : vac === 0 ? true : null;
     const ents = (c: Clue): number[] => {
       switch (c.k) {
         case 'is':
@@ -642,6 +646,7 @@ class Puzzle {
         const cat = Math.floor(unplaced[j] / P);
         for (let t = 0; t < S; t++) {
           if (usedBy[cat][t]) continue;
+          if (pattern >= 0 && ((pattern >> t) & 1) === 0) continue;
           pos[unplaced[j]] = t;
           const ok = tryAt(j + 1);
           pos[unplaced[j]] = -1;
@@ -672,6 +677,7 @@ class Puzzle {
       for (let t = 0; t < S && out.length < limit; t++) {
         if (usedBy[cat][t]) continue;
         if (cat > 0 && vac > 0 && personAt[t] < 0) continue;
+        if (cat === 0 && pattern >= 0 && ((pattern >> t) & 1) === 0) continue;
         usedBy[cat][t] = true;
         pos[x] = t;
         if (cat === 0) {
@@ -679,7 +685,7 @@ class Puzzle {
           placedPersons++;
         }
         const ids = new Set(byEntity[x]);
-        if (cat === 0 && vac > 0) clues.forEach((c, j) => ['gap', 'gapc', 'eqgap', 'count', 'countc', 'mirror', 'empty'].includes(c.k) && ids.add(j));
+        if (cat === 0 && vac > 0 && pattern < 0) clues.forEach((c, j) => ['gap', 'gapc', 'eqgap', 'count', 'countc', 'mirror', 'empty'].includes(c.k) && ids.add(j));
         let ok = true;
         for (const j of ids)
           if (!feasible(clues[j])) {
@@ -695,8 +701,20 @@ class Puzzle {
         usedBy[cat][t] = false;
       }
     };
-    rec(0);
-    return out;
+    if (vac === 0) rec(0);
+    else {
+      const choose = (from: number, left: number, mask: number): void => {
+        if (out.length >= limit) return;
+        if (left === 0) {
+          pattern = mask;
+          rec(0);
+          return;
+        }
+        for (let t = from; t <= S - left; t++) choose(t + 1, left - 1, mask | (1 << t));
+      };
+      choose(0, P, 0);
+      pattern = -1;
+    }    return out;
   }
 }
 /* ------------------------------------------------------------------ */

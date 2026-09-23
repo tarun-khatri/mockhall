@@ -480,7 +480,6 @@ export interface Selection {
  * and never letting the measured level rise above the target. Returns the measured level; callers keep the set
  * only when it equals the target.
  */
-export const selectFailures = { notUnique: 0, tooMany: 0 };
 
 /** Most clues of one style in a set (before the strong top-up). */
 const KIND_CAP: Record<string, number> = { gap: 3, delta: 3, 'is:slot': 3, 'is:set': 3, link: 12, nlink: 3, 'not:slot': 2, 'not:set': 2, srow: 2, vert: 3, count: 2, order: 2 };
@@ -517,10 +516,7 @@ export function selectClues(setup: Setup, pool: readonly Cand[], rng: Rng, maxCl
       }
     }
   }
-  if (!done) {
-    selectFailures.notUnique++;
-    return null;
-  }
+  if (!done) return null;
   const rank = REMOVE_ORDER[target];
   const removal = rng
     .shuffle(sel.slice())
@@ -536,10 +532,7 @@ export function selectClues(setup: Setup, pool: readonly Cand[], rng: Rng, maxCl
     }
     cur = trial;
   }
-  if (cur.length > maxClues) {
-    selectFailures.tooMany++;
-    return null;
-  }
+  if (cur.length > maxClues) return null;
   const m = measure(input(cur));
   if (m.count !== 1 || !m.tree) return null;
   return { clues: cur.map((c) => c.clue), level: levelOf(setup.sub, m.stats), stats: m.stats, tree: m.tree };

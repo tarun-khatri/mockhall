@@ -435,8 +435,9 @@ function fillerStep(ans: Q, style: AnswerStyle, approx: boolean): number | undef
     return Math.max(1, Math.round(nice * mag));
   }
   if (style === 'frac') {
+    // steps that never enlarge the answer's denominator
     if (a > 4.5) return 1;
-    if (a > 2.2) return 0.5;
+    if (a > 2.2 && (ans.isInt() || ans.d % 2 === 0)) return 0.5;
     return ans.isInt() ? 0.25 : 1 / ans.d;
   }
   return undefined;

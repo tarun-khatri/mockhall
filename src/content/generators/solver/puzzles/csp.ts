@@ -406,6 +406,8 @@ export interface PlaceEvent {
   cause: number;
   /** clue indices (bit mask) that narrowed this entity so far */
   why: number;
+  /** fixed directly by the clues before any reasoning (first-pass anchor) */
+  init?: boolean;
 }
 
 interface Ctx {
@@ -705,15 +707,10 @@ export function solve(input: SolverInput, opts: SolveOpts = {}): SolveOut {
   return { count: solutions.length, solutions, stats, tree: tree ?? undefined };
 }
 
-export const prof = { uniqueMs: 0, uniqueCalls: 0, uniqueNodes: 0, measureMs: 0, measureCalls: 0, measureNodes: 0 };
 
 /** Exactly one arrangement satisfies the clues? */
 export function isUnique(input: SolverInput): boolean {
-  const t = performance.now();
   const r = solve(input, { limit: 2, nodeCap: 30000 });
-  prof.uniqueMs += performance.now() - t;
-  prof.uniqueCalls++;
-  prof.uniqueNodes += r.stats.nodes;
   // an aborted search proves nothing: treat as not unique (safe side)
   return r.count === 1 && !r.stats.aborted;
 }
@@ -829,12 +826,8 @@ export function measure(input: SolverInput, nodeCap = 600): SolveOut {
   const tree: TNode = { events: [] };
   // direct placements (unary clues) are the first events of the first pass
   for (let e = 0; e < C.E; e++) {
-    if (single(C.init[e]) && C.initWhy[e]) tree.events.push({ e, s: lowIndex(C.init[e]), cause: lowIndex(C.initWhy[e]), why: C.initWhy[e] });
+    if (single(C.init[e]) && C.initWhy[e]) tree.events.push({ e, s: lowIndex(C.init[e]), cause: lowIndex(C.initWhy[e]), why: C.initWhy[e], init: true });
   }
-  const t0 = performance.now();
   run(C.init.slice(), C.initWhy.slice(), tree, 0);
-  prof.measureMs += performance.now() - t0;
-  prof.measureCalls++;
-  prof.measureNodes += stats.nodes;
   return { count: solutions.length, solutions, stats, tree };
 }

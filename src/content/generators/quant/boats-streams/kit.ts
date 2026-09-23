@@ -30,9 +30,11 @@ const MAGNITUDE = 3;
 export function finish<F>(ctx: BuildContext, d: Draft<F>): GenResult<F> {
   const a = Math.abs(d.answer);
   const mistakes = d.mistakes.filter((m) => Number.isFinite(m.value) && (a === 0 || (Math.abs(m.value) <= a * MAGNITUDE && Math.abs(m.value) >= a / MAGNITUDE)));
-  const step = d.choice?.step;
-  const integer = d.choice?.integer ?? (isWhole(d.answer) && (step === undefined || isWhole(step)));
-  const choices = numericChoices(ctx.rng, d.answer, { format: d.fmt, mistakes, ...d.choice, integer });
+  // small answers (e.g. a 3 km/h stream) need half-unit fillers so the key can sit at any letter
+  const small = a > 0 && a <= 6;
+  const step = small ? 0.5 : d.choice?.step;
+  const integer = small ? false : (d.choice?.integer ?? (isWhole(d.answer) && (step === undefined || isWhole(step))));
+  const choices = numericChoices(ctx.rng, d.answer, { format: d.fmt, mistakes, ...d.choice, step, integer });
   const tempting = mistakes.find((m) => m.trap && choices.used.includes(m));
   const q = makeQuestion(ctx.meta, ctx.seed, {
     subtype: ctx.subtype.id,

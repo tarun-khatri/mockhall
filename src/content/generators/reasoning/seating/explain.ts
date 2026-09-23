@@ -25,14 +25,22 @@ function relWords(b: Built, hps: HpsResult, c: HpsCase, e: number, a: number): s
   const ctx = ctxOf(b);
   const an = entityName(ctx, a);
   if (isRing(L)) {
-    if (fa < 0) return null;
+    if (fa < 0) {
+      const cw = (se - sa + L.len) % L.len;
+      if (2 * cw === L.len) return `opposite ${an}`;
+      const [dir, k] = 2 * cw < L.len ? ['clockwise', cw] : ['anticlockwise', L.len - cw];
+      return `${k} seat${k > 1 ? 's' : ''} ${dir} from ${an}`;
+    }
     const r = offsetFrom(L, sa, fa, se);
     if (2 * r === L.len) return `opposite ${an}`;
     const [side, k] = 2 * r < L.len ? ['right', r] : ['left', L.len - r];
     return k === 1 ? `to the immediate ${side} of ${an}` : `${ordWord(k)} to the ${side} of ${an}`;
   }
   if (ev.rowOf(se) !== ev.rowOf(sa)) return ev.vcol(se) === ev.vcol(sa) ? (L.facing.kind === 'rows' && L.facing.row1 !== L.facing.row2 ? `facing ${an}` : `in line with ${an}`) : null;
-  if (fa < 0) return null;
+  if (fa < 0) {
+    const dx = ev.vcol(se) - ev.vcol(sa);
+    return `${Math.abs(dx)} seat${Math.abs(dx) > 1 ? 's' : ''} ${dx > 0 ? 'east' : 'west'} of ${an}`;
+  }
   const d = (ev.vcol(se) - ev.vcol(sa)) * (fa === NORTH ? 1 : -1);
   const k = Math.abs(d);
   const side = d > 0 ? 'right' : 'left';
@@ -58,8 +66,10 @@ function describeCase(b: Built, hps: HpsResult, c: HpsCase, placed: number[], cl
       faceNews.push(`${b.names[e]} faces ${f === IN ? 'the centre' : f === OUT ? 'outside' : f === NORTH ? 'north' : 'south'}`);
     }
   }
+  const seated = Array.from({ length: b.names.length }, (_, i) => i).filter((x) => c.seatOf[x] >= 0 && !placed.includes(x));
   for (const e of placed) {
-    const anchors = ents.filter((x) => x !== e && !placed.includes(x));
+    const fromClue = ents.filter((x) => x !== e && !placed.includes(x));
+    const anchors = [...fromClue, ...seated.filter((x) => !fromClue.includes(x)), ...placed.filter((x) => x !== e && x < b.names.length)];
     let w: string | null = null;
     for (const a of anchors) {
       w = relWords(b, hps, c, e, a);

@@ -48,7 +48,7 @@ const weightOf = (segs: Seg[]): number => segs.reduce((s, [a, b, c]) => s + c * 
 function profitFor(rng: Ctx['rng'], weights: number[], lo = 1500, hi = 9000): number | null {
   const parts = reduceParts(weights);
   const total = parts.reduce((s, x) => s + x, 0);
-  const unit = total * (total <= 40 ? 10 : 1);
+  const unit = total * (total * 10 <= hi ? 10 : 1);
   if (unit > hi) return null;
   return multipleIn(rng, Math.max(lo, unit), Math.max(hi, unit), unit);
 }
@@ -323,7 +323,8 @@ function joinWithdraw(ctx: Ctx): Res {
 function capitalChange(ctx: Ctx): Res {
   const { rng, difficulty } = ctx;
   return attempt('capital-change', 400, () => {
-    const names = pickPeople(rng, difficulty === 'extreme' ? 3 : 2).map((p) => p.name);
+    const people = pickPeople(rng, difficulty === 'extreme' ? 3 : 2);
+    const names = people.map((p) => p.name);
     const n = names.length;
     const caps = Array.from({ length: n }, () => cap(rng));
     const schedules: Seg[][] = caps.map((c) => [[0, 12, c]]);
@@ -355,7 +356,7 @@ function capitalChange(ctx: Ctx): Res {
       if (caps[1] % 3 !== 0) return null;
       schedules[0] = [[0, at, caps[0]]];
       change(1, at, -caps[1] / 3);
-      events.push(`After ${MONTHS_TXT(at)}, ${names[0]} left the business and, at the same time, ${names[1]} withdrew one-third of the amount ${names[1]} had invested.`);
+      events.push(`After ${MONTHS_TXT(at)}, ${names[0]} left the business and, at the same time, ${names[1]} withdrew one-third of ${people[1].g === 'm' ? 'his' : 'her'} capital.`);
     } else {
       const a1 = rng.int(2, 5);
       const a2 = rng.int(a1 + 1, 9);

@@ -7,7 +7,7 @@ import { rowOf, colOf } from '../../solver/puzzles/model';
 import { CAUSE_ALLDIFF, CAUSE_HIDDEN, type PlaceEvent, type TNode } from '../../solver/puzzles/csp';
 import type { Renderer } from './render';
 
-const UNARY = new Set<Clue['k']>(['is', 'not', 'val', 'rval']);
+
 
 function bits(m: number): number[] {
   const out: number[] = [];
@@ -32,10 +32,20 @@ export class Explainer {
       case 'flat':
         return `flat ${this.r.setup.labels.flats![colOf(L, s)]} of floor ${rowOf(L, s) + 1}`;
       case 'rank':
-        return this.r.rankPhrase(s).replace(/^the /, '');
+        return this.r.rankPhrase(s);
       default:
         return this.r.posLabel(s);
     }
+  }
+
+  /** Preposition before a position: "on floor 3", "in flat A of floor 2", "in June", "at position 4". */
+  prep(): string {
+    const k = this.r.L.kind;
+    return k === 'flat' || k === 'month' ? 'in' : k === 'box' ? 'at' : 'on';
+  }
+  /** "on floor 3" / "in June" / "the third tallest" */
+  loc(s: number): string {
+    return this.rank() ? this.r.rankPhrase(s) : `${this.prep()} ${this.pos(s)}`;
   }
 
   private who(e: number, start = false): string {
@@ -48,15 +58,27 @@ export class Explainer {
     return `clues ${n.slice(0, -1).join(', ')} and ${n[n.length - 1]}`;
   }
 
+  private rank(): boolean {
+    return this.r.L.kind === 'rank';
+  }
+  /** "P on floor 6" / "P is the third tallest" */
+  at(e: number, s: number, start = false): string {
+    return this.rank() ? `${this.who(e, start)} is ${this.r.rankPhrase(s)}` : `${this.who(e, start)} ${this.loc(s)}`;
+  }
+  /** "on floor 6" / "the third tallest" */
+  private where(s: number): string {
+    return this.loc(s);
+  }
+
   private placeText(ev: PlaceEvent): string {
     const whyIds = bits(ev.why).filter((i) => i < this.clues.length);
     const at = this.pos(ev.s);
-    if (ev.cause === CAUSE_HIDDEN) return `${this.who(ev.e, true)} can only be on ${at} (every other place is ruled out)`;
-    if (ev.cause === CAUSE_ALLDIFF) return `${this.who(ev.e, true)} takes the only place left, ${at}`;
+    if (ev.cause === CAUSE_HIDDEN) return `${this.who(ev.e, true)} can only be ${this.where(ev.s)} (every other place is ruled out)`;
+    if (ev.cause === CAUSE_ALLDIFF) return `${this.who(ev.e, true)} takes the only place left: ${this.rank() ? this.r.rankPhrase(ev.s) : at}`;
     if (ev.cause < 0) return `${this.who(ev.e, true)} → ${at} (counting the vacant places)`;
     const ids = whyIds.length ? whyIds.slice(-3) : [ev.cause];
     if (!ids.includes(ev.cause)) ids.push(ev.cause);
-    return `${this.clueList(ids).replace(/^c/, 'C')} → ${this.who(ev.e)} on ${at}`;
+    return `${this.clueList(ids).replace(/^c/, 'C')} → ${this.at(ev.e, ev.s)}`;
   }
 
   private deadText(node: TNode): string {
@@ -80,12 +102,12 @@ export class Explainer {
 
   /** Steps for one node (the first pass at the root, or one surviving case). */
   private nodeSteps(node: TNode, depth: number, out: string[]): void {
-    const direct = node.events.filter((ev) => ev.cause >= 0 && UNARY.has(this.clues[ev.cause].k) && depth === 0);
+    const direct = node.events.filter((ev) => ev.init && depth === 0);
     const rest = node.events.filter((ev) => !direct.includes(ev));
     if (depth === 0) {
       if (direct.length) {
-        const parts = direct.map((ev) => `${this.who(ev.e)} on ${this.pos(ev.s)} (clue ${ev.cause + 1})`);
-        out.push(`Start with the clue${direct.length > 1 ? 's' : ''} that fix a position outright: ${parts.join('; ')}.`);
+        const parts = direct.map((ev) => `${this.at(ev.e, ev.s)} (${this.clueList(bits(ev.why).filter((i) => i < this.clues.length).slice(-2))})`);
+        out.push(`Start with the clue${direct.length > 1 ? 's that fix' : ' that fixes'} a position outright: ${parts.join('; ')}.`);
       } else out.push('No clue fixes a position outright, so begin with the clues that limit the options most.');
     }
     const shown = rest.slice(0, depth === 0 ? 6 : 4);
@@ -96,18 +118,18 @@ export class Explainer {
     }
     if (node.split) {
       const { e, kids, why } = node.split;
-      const opts = kids.map((k) => this.pos(k.assign!.s));
+      const opts = kids.map((k) => (this.rank() ? this.r.rankPhrase(k.assign!.s) : this.pos(k.assign!.s)));
       const src = bits(why).filter((i) => i < this.clues.length);
       out.push(
-        `Now ${this.who(e)} can be on ${opts.slice(0, -1).join(', ')} or ${opts[opts.length - 1]}${src.length ? ` (${this.clueList(src.slice(-3))})` : ''} — make ${kids.length} cases.`,
+        `Now ${this.who(e)} can be ${this.rank() ? '' : this.prep() + ' '}${opts.slice(0, -1).join(', ')} or ${opts[opts.length - 1]}${src.length ? ` (${this.clueList(src.slice(-3))})` : ''} — make ${kids.length} cases.`,
       );
       const good = kids.find((k) => this.alive(k));
       for (const k of kids) {
         if (k === good) continue;
-        out.push(`Case ${this.who(e)} on ${this.pos(k.assign!.s)}: ${this.deadText(k)} — rejected.`);
+        out.push(`Case ${this.at(e, k.assign!.s)}: ${this.deadText(k)} — rejected.`);
       }
       if (good) {
-        out.push(`Case ${this.who(e)} on ${this.pos(good.assign!.s)} survives.`);
+        out.push(`Case ${this.at(e, good.assign!.s)} survives.`);
         if (depth < 3) this.nodeSteps(good, depth + 1, out);
         else out.push('Continuing the same way, the remaining clues fix everyone.');
       }
@@ -143,6 +165,6 @@ export class Explainer {
 
   /** Clues that fix positions outright (for the shortcut line). */
   directClues(tree: TNode): number[] {
-    return [...new Set(tree.events.filter((ev) => ev.cause >= 0 && UNARY.has(this.clues[ev.cause].k)).map((ev) => ev.cause))];
+    return [...new Set(tree.events.filter((ev) => ev.init).flatMap((ev) => bits(ev.why).filter((i) => i < this.clues.length)))].sort((a, b) => a - b);
   }
 }

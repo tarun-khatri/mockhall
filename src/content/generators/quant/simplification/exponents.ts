@@ -7,7 +7,7 @@ import type { Rng } from '../../../../lib/rng';
 import type { Difficulty } from '../../../types';
 import { q } from './frac';
 import { br, chain, frac, n, pow, prod, sqrt, times, unk, type Node } from './expr';
-import { need, type Draft, type MistakeQ } from './templates';
+import { need, Retry, type Draft, type MistakeQ } from './templates';
 
 export interface ExpDraft extends Draft {
   steps: string[];
@@ -29,9 +29,21 @@ const pp = (b: number, e: number | string) => `${b}^{${e}}`;
  * The key's position is chosen uniformly first, then the answer is built to fit it.
  */
 function baseToValue(rng: Rng, d: Difficulty): ExpDraft {
+  // The key position is fixed first; retry the rest here so no position is rejected more often than another.
   const pos = rng.int(0, 4);
+  for (let t = 0; t < 60; t++) {
+    try {
+      return baseToValueAt(rng, d, pos);
+    } catch (e) {
+      if (!(e instanceof Error) || !/constraint|position/.test(e.message)) throw e;
+    }
+  }
+  throw new Retry('baseToValue: no base fits');
+}
+
+function baseToValueAt(rng: Rng, d: Difficulty, pos: number): ExpDraft {
   const MAX_ANS: Record<number, number> = { 2: 13, 3: 8, 4: 6, 5: 6, 6: 5, 7: 5, 8: 4, 9: 4, 11: 4, 12: 3, 13: 3, 15: 3 };
-  const base = rng.pick(Object.keys(MAX_ANS).map(Number));
+  const base = rng.pick(Object.keys(MAX_ANS).map(Number).filter((b) => MAX_ANS[b] >= pos + 1));
   const lo = pos + 1;
   const hi = Math.min(MAX_ANS[base], pos + 5);
   need(lo <= hi, 'base too large for this option position');

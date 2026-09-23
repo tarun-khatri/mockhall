@@ -284,6 +284,8 @@ export interface NumAsk<F> extends AskBase<F> {
   min?: number;
   /** Round fractional mistakes for whole-number answers (default: on for ₹/count answers, off for %). */
   roundMistakes?: boolean;
+  /** Pre-chosen (uniform) correct rank, for bounded answers such as months 1–12. */
+  rank?: number;
 }
 
 export interface RatioAsk<F> extends AskBase<F> {
@@ -330,6 +332,7 @@ export function emit<F>(ctx: BuildContext, a: NumAsk<F>): GenResult<F> {
     ...(a.allowNegative ? { allowNegative: true } : {}),
     ...(a.allowZero ? { allowZero: true } : {}),
     ...(a.min !== undefined ? { min: a.min } : {}),
+    ...(a.rank !== undefined ? { rank: a.rank } : {}),
   });
   const hit = mistakes.find((m) => m.trap && choices.used.includes(m));
   return finish(ctx, a, choices.options, choices.answerIndex, hit?.trap ?? a.trap);

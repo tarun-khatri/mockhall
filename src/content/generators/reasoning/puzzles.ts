@@ -178,9 +178,10 @@ function pickQuestions(ctx: { r: Renderer; x: Explainer; clues: Clue[]; truth: W
   const kinds = new Set<string>();
   for (const slot of plan) {
     let done = false;
-    for (const kind of slot) {
+    // unused question types first; a repeat only when nothing else works
+    const tryOrder = [...slot.filter((k) => !kinds.has(k)), ...slot.filter((k) => kinds.has(k) && (k === 'who-at' || k === 'count-dir'))];
+    for (const kind of tryOrder) {
       if (done) break;
-      if (kinds.has(kind) && kind !== 'who-at' && kind !== 'count-dir') continue;
       for (let t = 0; t < 12 && !done; t++) {
         const spec = gens[kind]();
         if (trivial(spec, clues, P)) continue;

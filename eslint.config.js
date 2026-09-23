@@ -33,6 +33,9 @@ export default defineConfig(
     rules: {
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       '@typescript-eslint/no-explicit-any': 'warn',
+      // Style-only rules: reported, but they must not block a deploy.
+      'no-useless-assignment': 'warn',
+      'prefer-const': 'warn',
     },
   },
 );

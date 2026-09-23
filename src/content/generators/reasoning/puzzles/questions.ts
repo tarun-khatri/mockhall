@@ -157,9 +157,9 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
       const prompt = L.kind === 'rank' ? `Who is ${r.rankPhrase(spec.s)}?` : L.kind === 'box' ? `Which box is kept ${r.posPhrase({ t: 'slot', s: spec.s })}?` : `Who ${V.s} ${r.posPhrase({ t: 'slot', s: spec.s })}?`;
       const mirror = truth.personAt[truth.S - 1 - spec.s];
       const prefs: { p: number; why: string }[] = [];
-      for (const n of nearAnswers(c, (w) => w.personAt[spec.s], ans)) if (n.ans >= 0) prefs.push({ p: n.ans, why: `**${name(n.ans)}** would be on ${x.pos(spec.s)} only if clue ${n.clue + 1} were ignored — clue ${n.clue + 1} rules that arrangement out.` });
-      if (L.cols === 1) prefs.push({ p: mirror, why: `**${name(mirror)}** is on ${x.pos(truth.S - 1 - spec.s)} — counting from the wrong end gives ${name(mirror)}.` });
-      if (spec.s + 1 < truth.S) prefs.push({ p: truth.personAt[spec.s + 1], why: `**${name(truth.personAt[spec.s + 1])}** is one place off, on ${x.pos(spec.s + 1)}.` });
+      for (const n of nearAnswers(c, (w) => w.personAt[spec.s], ans)) if (n.ans >= 0) prefs.push({ p: n.ans, why: `**${name(n.ans)}** would be ${x.loc(spec.s)} only if clue ${n.clue + 1} were ignored — clue ${n.clue + 1} rules that arrangement out.` });
+      if (L.cols === 1) prefs.push({ p: mirror, why: `**${name(mirror)}** is ${x.loc(truth.S - 1 - spec.s)} — counting from the wrong end gives ${name(mirror)}.` });
+      if (spec.s + 1 < truth.S) prefs.push({ p: truth.personAt[spec.s + 1], why: `**${name(truth.personAt[spec.s + 1])}** is one place off, ${x.loc(spec.s + 1)}.` });
       const ch = nameChoices(c, ans, prefs, []);
       return { spec, prompt, ...ch, steps: [`From the final arrangement, ${x.pos(spec.s)} → **${name(ans)}**.`], tags: [...tags, 'puzzle:position'] };
     }
@@ -183,7 +183,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
         spec,
         prompt,
         ...ch,
-        steps: [`${r.ref(spec.e, true)} is on ${x.pos(truth.slot[spec.e])}, so the place immediately ${dirWord} is ${x.pos(s)} → **${name(ans)}**.`],
+        steps: [`${r.ref(spec.e, true)} is ${x.loc(truth.slot[spec.e])}, so the place immediately ${dirWord} is ${x.pos(s)} → **${name(ans)}**.`],
         tags: [...tags, 'puzzle:neighbour'],
       };
     }
@@ -248,7 +248,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
         spec,
         prompt,
         ...ch,
-        steps: [`From the final arrangement, ${who} is on ${x.pos(s)} → **${labels[s]}**.`],
+        steps: [`From the final arrangement, ${who} is ${x.loc(s)} → **${labels[s]}**.`],
         trap: near ? `**${labels[near.ans]}** is where ${who} would be if clue ${near.clue + 1} were ignored.` : undefined,
         tags: [...tags, 'puzzle:position'],
       };
@@ -263,7 +263,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
       const max = P - 2;
       const ch = ordered(rng, COUNT_OPTION.slice(0, max + 1), n);
       const gapSlots = Math.abs(sa - sb) - 1;
-      const steps = [`${r.ref(spec.a, true)} is on ${x.pos(sa)} and ${r.ref(spec.b)} is on ${x.pos(sb)}.`];
+      const steps = [`${r.ref(spec.a, true)} is ${x.loc(sa)} and ${r.ref(spec.b)} is ${x.loc(sb)}.`];
       if (L.kind === 'month' && gapSlots !== n) steps.push(`${gapSlots} months lie between them, but ${gapSlots - n} of those have no birthday → **${countWord(n)}**.`);
       else steps.push(`Persons strictly between them: ${Math.max(sa, sb) - Math.min(sa, sb)} − 1 = ${n} → **${countWord(n)}**.`);
       return {
@@ -291,7 +291,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
         spec,
         prompt,
         ...ch,
-        steps: [`${r.ref(spec.e, true)} is ${L.kind === 'rank' ? '' : 'on '}${x.pos(s)}.`, `Count the ${V.unit[1]} ${L.kind === 'rank' ? (spec.dir === 1 ? w.more : w.less) : spec.dir === 1 ? V.up : V.down} → **${countWord(n)}**.`],
+        steps: [`${r.ref(spec.e, true)} is ${x.loc(s)}.`, `Count the ${V.unit[1]} ${L.kind === 'rank' ? (spec.dir === 1 ? w.more : w.less) : spec.dir === 1 ? V.up : V.down} → **${countWord(n)}**.`],
         trap: other !== n ? `${countWord(other)} is the count on the other side.` : undefined,
         tags: [...tags, 'puzzle:count'],
       };
@@ -318,7 +318,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
       const s = truth.slot[spec.p];
       for (const d of [1, -1]) {
         const t = s + d;
-        if (t >= 0 && t < truth.S && truth.personAt[t] >= 0) prefs.push({ v: truth.attr(truth.personAt[t], spec.k), why: `**${cat.values[truth.attr(truth.personAt[t], spec.k)]}** belongs to the neighbour on ${x.pos(t)}.` });
+        if (t >= 0 && t < truth.S && truth.personAt[t] >= 0) prefs.push({ v: truth.attr(truth.personAt[t], spec.k), why: `**${cat.values[truth.attr(truth.personAt[t], spec.k)]}** belongs to the neighbour ${x.loc(t)}.` });
       }
       const chosen: number[] = [];
       let trap: string | undefined;
@@ -483,7 +483,7 @@ function statementQuestion(c: QCtx, spec: QSpec, tags: string[]): QOut | null {
     const ents = cl.k === 'is' ? [cl.e] : 'a' in cl && 'b' in cl ? [cl.a, cl.b] : [];
     return ents
       .filter((e) => e < P)
-      .map((e) => `${r.label(e)} is ${L.kind === 'rank' ? '' : 'on '}${x.pos(truth.slot[e])}`)
+      .map((e) => `${r.label(e)} is ${x.loc(truth.slot[e])}`)
       .join(', ');
   };
   return {
@@ -530,7 +530,7 @@ function comboQuestion(c: QCtx, spec: QSpec, tags: string[]): QOut | null {
     spec,
     prompt: 'Which of the following combinations is correct?',
     ...ch,
-    steps: [`${r.label(p0)} is on ${x.pos(truth.slot[p0])} and ${r.attrPred(k * P + truth.attr(p0, k), false)} → **${correct}**.`, 'Each other option gets either the position or the item wrong.'],
+    steps: [`${r.label(p0)} is ${x.loc(truth.slot[p0])} and ${r.attrPred(k * P + truth.attr(p0, k), false)} → **${correct}**.`, 'Each other option gets either the position or the item wrong.'],
     trap: 'Two of the three parts match in the wrong options — check all three.',
     tags: [...tags, 'puzzle:combination'],
   };
