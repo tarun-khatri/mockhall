@@ -106,6 +106,9 @@ export function StimulusPanel({ set, scope, position, total }: { set: QuestionSe
             writeState(scope, set.id, { open: true, scroll });
           }}
           className="max-h-[45dvh] overflow-y-auto overscroll-contain px-4 pb-3"
+          tabIndex={0}
+          role="region"
+          aria-label={`${set.title ?? label} text`}
         >
           <StimulusBody set={set} />
         </div>
@@ -118,7 +121,7 @@ export function StimulusPanel({ set, scope, position, total }: { set: QuestionSe
               <X size={22} aria-hidden />
             </button>
           </div>
-          <div className="flex-1 overflow-y-auto px-4 py-3">
+          <div className="flex-1 overflow-y-auto px-4 py-3" tabIndex={0}>
             <StimulusBody set={set} />
           </div>
         </div>

@@ -17,7 +17,6 @@ import {
   divide,
   fracx,
   frac,
-  mixed,
   n,
   num,
   of,
@@ -1446,7 +1445,7 @@ function missingInside(rng: Rng, d: Difficulty): Draft {
         const b = rng.int(3, 12);
         const c = Math.floor((Tv - 5) / b) - rng.int(0, 3);
         const a = Tv - b * c;
-        need(c >= 2 && a > 0);
+        need(c >= 2 && a > 0 && a !== b && a !== c);
         return {
           lhs: pct(unk(), n(X)),
           rhs: chain(n(a), ['+', times(n(b), n(c))]),

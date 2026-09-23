@@ -111,7 +111,8 @@ function searchN(p: Puzzle, all: Clue[], n: number, limit: number, budget: numbe
   };
   const stop = () => res.solutions.length >= limit || !res.complete;
   let placed = 0;
-  const cand = new Int16Array(S);
+  // candidate (seat, facing) options, packed as seat * 4 + face (face 3 bits; −1 → 7 = keep as is)
+  const cand = new Int32Array(S * 2);
   const rec = (): void => {
     if (stop()) return;
     if (++res.nodes > budget) {
@@ -123,45 +124,48 @@ function searchN(p: Puzzle, all: Clue[], n: number, limit: number, budget: numbe
       res.solutions.push({ seatOf: Array.from(st.seatOf), face: Array.from(st.face.subarray(0, S)), n: L.kind === 'uncertain' ? n : S });
       return;
     }
-    // most constrained entity first (fewest seats that break no clue about it)
+    // most constrained entity first: fewest (seat, facing) options that break no clue about it
     let best = -1;
-    let bestSeats: number[] = [];
+    let bestOpts: number[] = [];
     const maxSeat = ring && placed === 0 ? (L.kind === 'circle' ? 1 : 2) : S;
     for (let e = 0; e < E; e++) {
       if (st.seatOf[e] >= 0) continue;
-      const occ = e < p.persons ? occP : occA;
+      const person = e < p.persons;
+      const occ = person ? occP : occA;
       let k = 0;
       for (let s = 0; s < maxSeat; s++) {
         if (occ[s] >= 0) continue;
         occ[s] = e;
         st.seatOf[e] = s;
-        if (okFor(e)) cand[k++] = s;
+        if (person && mixed && st.face[s] < 0) {
+          for (const f of faces) {
+            st.face[s] = f;
+            if (okFor(e)) cand[k++] = s * 8 + f;
+          }
+          st.face[s] = -1;
+        } else if (okFor(e)) cand[k++] = s * 8 + 7;
         occ[s] = -1;
         st.seatOf[e] = -1;
-        if (best >= 0 && k >= bestSeats.length) break;
+        if (best >= 0 && k >= bestOpts.length) break;
       }
       if (k === 0) return;
-      if (best < 0 || k < bestSeats.length) {
+      if (best < 0 || k < bestOpts.length) {
         best = e;
-        bestSeats = Array.from(cand.subarray(0, k));
+        bestOpts = Array.from(cand.subarray(0, k));
         if (k === 1) break;
       }
     }
     const e = best;
-    const person = e < p.persons;
-    const occ = person ? occP : occA;
+    const occ = e < p.persons ? occP : occA;
     placed++;
-    for (const s of bestSeats) {
+    for (const opt of bestOpts) {
+      const s = opt >> 3;
+      const f = opt & 7;
       occ[s] = e;
       st.seatOf[e] = s;
-      if (person && mixed && st.face[s] < 0) {
-        for (const f of faces) {
-          st.face[s] = f;
-          if (okAll()) rec();
-          if (stop()) break;
-        }
-        st.face[s] = -1;
-      } else if (okAll()) rec();
+      if (f !== 7) st.face[s] = f;
+      if (okAll()) rec();
+      if (f !== 7) st.face[s] = -1;
       occ[s] = -1;
       st.seatOf[e] = -1;
       if (stop()) break;

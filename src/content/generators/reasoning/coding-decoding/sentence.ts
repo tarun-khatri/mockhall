@@ -75,8 +75,10 @@ export function decodeSteps(sys: CodeSystem, w: string): string[] {
   const label = (i: number) => `statement ${i + 1}`;
   const common = sys.sentences[idx[0]].codes.filter((c) => idx.every((i) => sys.sentences[i].codes.includes(c)));
   const lines: string[] = [];
+  const nums = idx.map((i) => String(i + 1));
+  const joined = nums.length === 2 ? nums.join(' and ') : `${nums.slice(0, -1).join(', ')} and ${nums[nums.length - 1]}`;
   if (idx.length === 1) lines.push(`'${w}' appears only in ${label(idx[0])}, whose codes are ${list(common)}.`);
-  else lines.push(`'${w}' appears in ${idx.map(label).join(' and ')}; the codes common to them are ${list(common)}.`);
+  else lines.push(`'${w}' appears in statements ${joined}; the code${common.length === 1 ? '' : 's'} common to them ${common.length === 1 ? 'is' : 'are'} ${list(common)}.`);
   const others = common.filter((c) => c !== sys.codeOf.get(w));
   if (others.length) {
     const reasons = others.map((c) => {

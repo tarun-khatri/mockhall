@@ -282,6 +282,7 @@ const RULES: Record<Family, (w: string) => Cand[]> = {
  */
 export function canonical(w: string): string {
   return w
+    .replace(/tice$/, 'tise')
     .replace(/is(e|ed|es|ing|er|ers|ation|ations|able|ably)$/, 'iz$1')
     .replace(/isation/g, 'ization')
     .replace(/ys(e|ed|es|ing)$/, 'yz$1')
@@ -297,7 +298,6 @@ export function canonical(w: string): string {
     .replace(/mme(s)?$/, 'm$1')
     .replace(/gue(s)?$/, 'g$1')
     .replace(/ence(s)?$/, 'ense$1')
-    .replace(/tice$/, 'tise')
     .replace(/eing$/, 'ing')
     .replace(/ogue/g, 'og')
     .replace(/eable$/, 'able');
@@ -401,4 +401,5 @@ function main() {
   }
 }
 
-main();
+// Run only as a script (tests import `canonical` and `loadWords` from this module).
+if (/spelling-variants\.ts$/.test(process.argv[1] ?? '')) main();

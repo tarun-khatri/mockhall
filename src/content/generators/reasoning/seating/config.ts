@@ -26,7 +26,11 @@ export interface LevelCfg {
   /** persons (row, circle, square), persons per row (parallel) or named persons (uncertain) */
   sizes: readonly number[];
   facings: readonly (readonly [FacingKey, number])[];
+  /** second attribute (profession / colour / city) allowed at this level */
   attrs: boolean;
+  /** with attrs: probability that a set uses the second attribute, and the (smaller) sizes it uses */
+  attrChance?: number;
+  attrSizes?: readonly number[];
   /** accepted range of measured case splits */
   band: readonly [number, number];
   clueRange: readonly [number, number];
@@ -55,13 +59,13 @@ export const LEVELS: Record<SubtypeId, Partial<Record<Difficulty, LevelCfg>>> = 
     easy: { sizes: [5, 6], facings: [['north', 3], ['south', 1]], attrs: false, band: [0, 0], clueRange: [4, 9], weights: W_EASY, maxAbs: 3, minNeg: 0, keepExtra: 1 },
     medium: { sizes: [7, 8, 8], facings: [['north', 4], ['south', 1], ['mixed', 2]], attrs: false, band: [1, 1], clueRange: [6, 11], weights: W_MED, maxAbs: 2, minNeg: 0 },
     hard: { sizes: [9, 10], facings: [['north', 2], ['south', 1], ['mixed', 3]], attrs: false, band: [2, 3], clueRange: [8, 14], weights: W_HARD, maxAbs: 1, minNeg: 1 },
-    extreme: { sizes: [10, 11, 12], facings: [['north', 2], ['south', 1], ['mixed', 2]], attrs: true, band: [4, 14], clueRange: [10, 20], weights: W_EXT, maxAbs: 1, minNeg: 2 },
+    extreme: { sizes: [10, 11, 12], facings: [['north', 2], ['south', 1], ['mixed', 2]], attrs: true, attrChance: 0.5, attrSizes: [8, 9], band: [4, 14], clueRange: [9, 20], weights: W_EXT, maxAbs: 1, minNeg: 2 },
   },
   'linear-parallel': {
     easy: { sizes: [4], facings: [['facing', 1]], attrs: false, band: [0, 0], clueRange: [4, 9], weights: W_EASY, maxAbs: 3, minNeg: 0, membership: 1, keepExtra: 1 },
     medium: { sizes: [5], facings: [['facing', 4], ['north', 1]], attrs: false, band: [1, 1], clueRange: [6, 12], weights: W_MED, maxAbs: 2, minNeg: 0, membership: 1 },
     hard: { sizes: [5], facings: [['facing', 3], ['north', 1]], attrs: false, band: [2, 3], clueRange: [8, 15], weights: W_HARD, maxAbs: 1, minNeg: 1, membership: 0.4 },
-    extreme: { sizes: [5, 6], facings: [['facing', 3], ['north', 1]], attrs: true, band: [4, 14], clueRange: [10, 20], weights: W_EXT, maxAbs: 1, minNeg: 2, membership: 0.3 },
+    extreme: { sizes: [6], facings: [['facing', 3], ['north', 1]], attrs: true, attrChance: 0.5, attrSizes: [4, 5], band: [4, 14], clueRange: [9, 20], weights: W_EXT, maxAbs: 1, minNeg: 2, membership: 0.3 },
   },
   'linear-uncertain': {
     easy: { sizes: [5], facings: [['north', 1]], attrs: false, band: [0, 0], clueRange: [4, 9], weights: W_EASY, maxAbs: 3, minNeg: 0, extra: [3, 7], keepExtra: 1 },
@@ -73,19 +77,19 @@ export const LEVELS: Record<SubtypeId, Partial<Record<Difficulty, LevelCfg>>> = 
     easy: { sizes: [6], facings: [['inside', 1]], attrs: false, band: [0, 0], clueRange: [4, 8], weights: W_EASY, maxAbs: 0, minNeg: 0, keepExtra: 1 },
     medium: { sizes: [8], facings: [['inside', 1]], attrs: false, band: [1, 1], clueRange: [6, 11], weights: W_MED, maxAbs: 0, minNeg: 0 },
     hard: { sizes: [8, 10], facings: [['inside', 1]], attrs: false, band: [2, 3], clueRange: [8, 14], weights: W_HARD, maxAbs: 0, minNeg: 1 },
-    extreme: { sizes: [10, 12], facings: [['inside', 1]], attrs: true, band: [4, 14], clueRange: [10, 20], weights: W_EXT, maxAbs: 0, minNeg: 2 },
+    extreme: { sizes: [10, 12], facings: [['inside', 1]], attrs: true, attrChance: 0.5, attrSizes: [8, 10], band: [4, 14], clueRange: [9, 20], weights: W_EXT, maxAbs: 0, minNeg: 2 },
   },
   'circular-mixed': {
     easy: { sizes: [6], facings: [['mixed', 1]], attrs: false, band: [0, 0], clueRange: [5, 10], weights: W_EASY, maxAbs: 0, minNeg: 0, keepExtra: 1 },
     medium: { sizes: [8], facings: [['mixed', 1]], attrs: false, band: [1, 1], clueRange: [7, 13], weights: W_MED, maxAbs: 0, minNeg: 0 },
     hard: { sizes: [8, 10], facings: [['mixed', 1]], attrs: false, band: [2, 3], clueRange: [9, 15], weights: W_HARD, maxAbs: 0, minNeg: 1 },
-    extreme: { sizes: [10], facings: [['mixed', 1]], attrs: true, band: [4, 14], clueRange: [11, 20], weights: W_EXT, maxAbs: 0, minNeg: 2 },
+    extreme: { sizes: [10, 12], facings: [['mixed', 1]], attrs: true, attrChance: 0.5, attrSizes: [8], band: [4, 14], clueRange: [9, 20], weights: W_EXT, maxAbs: 0, minNeg: 2 },
   },
   square: {
     easy: { sizes: [8], facings: [['cin-mout', 3], ['all-in', 1]], attrs: false, band: [0, 0], clueRange: [5, 9], weights: W_EASY, maxAbs: 3, minNeg: 0, keepExtra: 1 },
     medium: { sizes: [8], facings: [['cin-mout', 3], ['cout-min', 1], ['all-in', 1]], attrs: false, band: [1, 1], clueRange: [6, 11], weights: W_MED, maxAbs: 2, minNeg: 0 },
     hard: { sizes: [8], facings: [['cin-mout', 2], ['cout-min', 1], ['mixed', 2]], attrs: false, band: [2, 3], clueRange: [8, 14], weights: W_HARD, maxAbs: 1, minNeg: 1 },
-    extreme: { sizes: [8], facings: [['mixed', 2], ['cin-mout', 1]], attrs: true, band: [4, 14], clueRange: [10, 20], weights: W_EXT, maxAbs: 1, minNeg: 2 },
+    extreme: { sizes: [8], facings: [['mixed', 2], ['cin-mout', 1]], attrs: true, attrChance: 0.7, attrSizes: [8], band: [4, 14], clueRange: [9, 20], weights: W_EXT, maxAbs: 1, minNeg: 2 },
   },
 };
 

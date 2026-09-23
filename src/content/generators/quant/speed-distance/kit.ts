@@ -30,7 +30,12 @@ const MAGNITUDE = 4;
 
 export function finish<F>(ctx: BuildContext, d: Draft<F>): GenResult<F> {
   const a = Math.abs(d.answer);
-  const mistakes = d.mistakes.filter((m) => Number.isFinite(m.value) && (a === 0 || (Math.abs(m.value) <= a * MAGNITUDE && Math.abs(m.value) >= a / MAGNITUDE)));
+  const mistakes = d.mistakes.filter(
+    (m) =>
+      Number.isFinite(m.value) &&
+      (a === 0 || (Math.abs(m.value) <= a * MAGNITUDE && Math.abs(m.value) >= a / MAGNITUDE)) &&
+      !(d.fmt(m.value).endsWith('km/h') && m.value > 180),
+  );
   const step = d.choice?.step;
   const integer = d.choice?.integer ?? (isWhole(d.answer) && (step === undefined || isWhole(step)));
   const choices = numericChoices(ctx.rng, d.answer, { format: d.fmt, mistakes, ...d.choice, integer });
@@ -69,6 +74,7 @@ export function toFrac(v: number, maxDen = 60): [number, number] {
 
 /** "3", "2.5" → "$2\frac{1}{2}$" etc. */
 export function num(v: number): string {
+  if (!Number.isFinite(cleanFrac(v, 60))) return plain(v);
   const [p, q] = toFrac(v);
   return q === 1 ? String(p) : mixedTex(p, q);
 }

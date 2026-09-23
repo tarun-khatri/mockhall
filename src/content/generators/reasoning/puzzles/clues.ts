@@ -298,7 +298,10 @@ function candidatesOf(x: PoolCtx, kind: ClueKind): Clue[] {
         const n = personsBetween(w, truth[pr[0]], truth[pr[1]]);
         if (rng.chance(0.55)) {
           if (n >= 1) out.push({ k: 'gapc', a: pr[0], b: pr[1], op: 'gt', n: Math.max(0, n - 1 - (rng.chance(0.3) ? 1 : 0)) });
-        } else if (n <= P - 4) out.push({ k: 'gapc', a: pr[0], b: pr[1], op: 'lt', n: n + 1 + (rng.chance(0.3) ? 1 : 0) });
+        } else if (n <= P - 4) {
+          const m = n + 1 + (rng.chance(0.3) ? 1 : 0);
+          if (m >= 2) out.push({ k: 'gapc', a: pr[0], b: pr[1], op: 'lt', n: m });
+        }
         break;
       }
       case 'order': {
@@ -375,7 +378,10 @@ function candidatesOf(x: PoolCtx, kind: ClueKind): Clue[] {
         const n = dir === 1 ? personsAbove(w, truth[e]) : personsBelow(w, truth[e]);
         if (rng.chance(0.5)) {
           if (n >= 2) out.push({ k: 'countc', e, dir, op: 'gt', n: n - 1 - (rng.chance(0.3) && n >= 3 ? 1 : 0) });
-        } else if (n <= P - 3) out.push({ k: 'countc', e, dir, op: 'lt', n: n + 1 + (rng.chance(0.3) && n <= P - 4 ? 1 : 0) });
+        } else if (n <= P - 3) {
+          const m = n + 1 + (rng.chance(0.3) && n <= P - 4 ? 1 : 0);
+          if (m >= 2) out.push({ k: 'countc', e, dir, op: 'lt', n: m });
+        }
         break;
       }
       case 'mirror': {
@@ -476,6 +482,9 @@ export interface Selection {
  */
 export const selectFailures = { notUnique: 0, tooMany: 0 };
 
+/** Most clues of one style in a set (before the strong top-up). */
+const KIND_CAP: Record<string, number> = { gap: 3, delta: 3, 'is:slot': 3, 'is:set': 3, link: 12, nlink: 3, 'not:slot': 2, 'not:set': 2, srow: 2, vert: 3, count: 2, order: 2 };
+
 export function selectClues(setup: Setup, pool: readonly Cand[], rng: Rng, maxClues: number, fixed: Clue[] = []): Selection | null {
   const target = setup.difficulty;
   const order = weightedOrder(rng, pool);
@@ -483,7 +492,13 @@ export function selectClues(setup: Setup, pool: readonly Cand[], rng: Rng, maxCl
   const input = (cs: Cand[]) => solverInput(setup, cs.map((c) => c.clue));
   const ok = (cs: Cand[]) => (target === 'easy' ? chainSolves(input(cs)) : isUnique(input(cs)));
   let done = false;
+  const used = new Map<string, number>();
   for (const c of order) {
+    // variety: real sets mix clue styles
+    const kind = c.clue.k === 'is' || c.clue.k === 'not' ? `${c.clue.k}:${c.clue.p.t === 'slot' ? 'slot' : 'set'}` : c.clue.k;
+    const capN = KIND_CAP[kind] ?? 2;
+    if ((used.get(kind) ?? 0) >= capN) continue;
+    used.set(kind, (used.get(kind) ?? 0) + 1);
     sel.push(c);
     if (sel.length >= 4 && ok(sel)) {
       done = true;

@@ -10,7 +10,7 @@ import type { BuildContext } from '../../types';
 import type { Rng } from '../../../../lib/rng';
 import type { SpeedFacts, CrossEvent } from '../speed-distance';
 import { plain } from '../../../../lib/format';
-import { type Draft, type Mis, clean, kmh, metres, secs, toMsStep, towns } from './kit';
+import { type Draft, clean, kmh, metres, secs, toMsStep, towns } from './kit';
 
 type D = Draft<SpeedFacts>;
 type Level = 'easy' | 'medium' | 'hard' | 'extreme';
@@ -174,7 +174,7 @@ export function trainPole(ctx: BuildContext, level: Level): D {
     const v = (vs * 18) / 5;
     const x = (xs * 18) / 5;
     const ask = rng.pick(['length', 'speed'] as const);
-    const prompt = `${name} crosses ${pole} in ${t1} seconds. If its speed were ${x} km/h more, it would cross the same pole in ${t2} seconds. ${
+    const prompt = `${name} crosses ${pole} in ${t1} seconds. If its speed were ${x} km/h more, it would take only ${t2} seconds to cross it. ${
       ask === 'length' ? 'What is the length of the train?' : 'What is the original speed of the train in km/h?'
     }`;
     const steps = [
@@ -393,7 +393,7 @@ export function trainPlatform(ctx: BuildContext, level: Level): D {
     const t2 = rng.int(10, 30);
     const P1 = vs * t1 - L;
     const P2 = (vs + xs) * t2 - L;
-    if (P1 < 100 || P2 < 100 || P1 > 700 || P2 > 900 || P1 === P2) continue;
+    if (P1 < 100 || P2 < 100 || P1 > 700 || P2 > 900 || P1 === P2 || t1 === t2) continue;
     const v = (vs * 18) / 5;
     const x = (xs * 18) / 5;
     const ask = rng.pick(['length', 'speed'] as const);
@@ -528,7 +528,7 @@ export function trainTrains(ctx: BuildContext, level: Level): D {
     const S = rs * t;
     const L1 = Math.round((S * (0.35 + 0.3 * rng.next())) / 10) * 10;
     const L2 = S - L1;
-    const dirText = opposite ? 'in opposite directions' : 'in the same direction';
+    const dirText = opposite ? 'in the opposite direction' : 'in the same direction';
     if (rng.chance(0.5)) {
       const other = opposite ? v1 - v2 : v1 + v2;
       const wrong = clean((other * 5 * t) / 18 - L1);

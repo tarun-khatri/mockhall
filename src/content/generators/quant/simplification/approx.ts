@@ -29,7 +29,7 @@ import {
   type Equation,
   type Node,
 } from './expr';
-import { makeRhs, need, pctBase, pctNode, Retry, type MistakeQ } from './templates';
+import { makeRhs, need, pctBase, Retry, type MistakeQ } from './templates';
 
 export interface ApproxBuilt {
   shown: Equation;

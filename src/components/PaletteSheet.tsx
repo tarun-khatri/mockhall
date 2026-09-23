@@ -67,7 +67,7 @@ export function PaletteSheet({ open, onClose, attempt, onJump, onSubmit, onEndSe
       }
     >
       {multi ? (
-        <div className="mb-3 flex gap-1.5 overflow-x-auto" role="tablist" aria-label="Sections">
+        <div className="mb-3 flex flex-wrap gap-1.5" role="tablist" aria-label="Sections">
           {attempt.config.sections.map((sec, i) => {
             const active = i === s;
             const done = attempt.sectionEndedAt[i] > 0;

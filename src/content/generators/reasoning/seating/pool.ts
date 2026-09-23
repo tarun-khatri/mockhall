@@ -395,13 +395,14 @@ export function buildPool(ctx: PoolCtx): Cand[] {
         if (r2 && r2.k <= Math.min(maxK, 3)) add('rel', [{ t: 'rel', a: E(b), side: r2.side, k: r2.k, b: E(v) }], 'attr');
         const g = T.gapOf(sv, sb);
         if (g >= 1 && g <= maxGap) add('gap', [{ t: 'gap', a: E(v), b: E(b), n: g }], 'attr');
+        // no negative or same-direction clues between a value and a person: "the Doctor is not next to B"
+        // reads differently when B could be the Doctor, so only positive relations are used
         if (g === 0) add('adj', [{ t: 'adj', a: E(v), b: E(b), neg: false }], 'attr');
-        else if (b < P && rng.chance(0.3)) add('nadj', [{ t: 'adj', a: E(v), b: E(b), neg: true }], 'neg');
         if (ring && L.len % 2 === 0 && (sv - sb + L.len) % L.len === L.len / 2) {
           if (L.kind === 'circle') add('opp', [{ t: 'opp', a: E(v), b: E(b) }], 'attr');
           else add(sv % 2 === 0 ? 'oppCorner' : 'oppMiddle', [{ t: 'opp', a: E(v), b: E(b) }, { t: 'corner', a: E(v), corner: sv % 2 === 0 }], 'attr');
         }
-        if (mixed && b < P) add('sameFace', [{ t: 'sameFace', a: E(v), b: E(b), same: T.face(sv) === T.face(sb) }], 'attr');
+        if (mixed && b >= P) add('sameFace', [{ t: 'sameFace', a: E(v), b: E(b), same: T.face(sv) === T.face(sb) }], 'attr');
       }
       if (mixed) add('face', [{ t: 'face', a: E(v), f: T.face(T.seat(v)) as FaceCode }], 'attr');
       if (L.kind === 'square') add(T.seat(v) % 2 === 0 ? 'corner' : 'side', [{ t: 'corner', a: E(v), corner: T.seat(v) % 2 === 0 }], 'attr');

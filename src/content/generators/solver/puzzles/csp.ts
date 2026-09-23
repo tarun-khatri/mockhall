@@ -314,55 +314,82 @@ function sideMask(S: number, x: number, dir: 1 | -1): number {
 
 /**
  * Vacant-slot layouts: with lb = definitely occupied and ub = possibly occupied slots in a region, a count clue
- * fails when n is outside [lb, ub]; when n = lb every other slot in the region must be vacant, when n = ub every
+ * needs its count inside [lb, ub]. Candidate slots of each entity survive only if some choice of the other
+ * entities keeps every such interval feasible (bounds consistency; in fc mode only once all but one entity is
+ * placed). When every entity is placed and n = lb, the rest of the region must be vacant; when n = ub, every
  * possible slot in it must be occupied. Returns false on contradiction; fills `vacate` / `forced`.
  */
-function boundsPass(C: Compiled, dom: Uint16Array, occLB: number, occUB: number, out: { vacate: number; forced: number; fail: number }): boolean {
-  const fixed = (e: number) => single(dom[e]);
-  const at = (e: number) => lowIndex(dom[e]);
+function boundsPass(
+  x: Ctx,
+  dom: Uint16Array,
+  occLB: number,
+  occUB: number,
+  out: { vacate: number; forced: number; fail: number; changed: boolean },
+): boolean {
+  const C = x.C;
   const range = (region: number): [number, number] => [popcount(occLB & region), popcount(occUB & region)];
+  const fits = (region: number, op: 'gt' | 'lt' | 'eq', n: number): boolean => {
+    const [lb, ub] = range(region);
+    const lo = op === 'gt' ? n + 1 : op === 'eq' ? n : 0;
+    const hi = op === 'lt' ? n - 1 : op === 'eq' ? n : 99;
+    return !(hi < lb || lo > ub);
+  };
+  const overlap = (r1: number, r2: number): boolean => {
+    const [l1, u1] = range(r1);
+    const [l2, u2] = range(r2);
+    return !(u1 < l2 || u2 < l1);
+  };
   for (const b of C.bounds) {
-    if (!b.vars.every(fixed)) continue;
-    const apply = (region: number, op: 'gt' | 'lt' | 'eq', n: number): boolean => {
-      const [lb, ub] = range(region);
-      // required interval for the count
-      const lo = op === 'gt' ? n + 1 : op === 'eq' ? n : 0;
-      const hi = op === 'lt' ? n - 1 : op === 'eq' ? n : 99;
-      if (hi < lb || lo > ub) return false;
-      if (hi === lb) out.vacate |= region & ~occLB;
-      if (lo === ub) out.forced |= region & occUB;
-      return true;
-    };
-    let ok = true;
+    const vars = b.vars;
+    const unfixed = vars.filter((e) => !single(dom[e])).length;
+    if (x.fc ? unfixed > 1 : unfixed > 2) continue;
+    // predicate on concrete slots
+    let ok: (s: number[]) => boolean;
     switch (b.k) {
       case 'gap':
       case 'gapc':
-        ok = at(b.vars[0]) !== at(b.vars[1]) && apply(betweenMask(at(b.vars[0]), at(b.vars[1])), b.op, b.n);
+        ok = (s) => s[0] !== s[1] && fits(betweenMask(s[0], s[1]), b.op, b.n);
         break;
       case 'count':
       case 'countc':
-        ok = apply(sideMask(C.S, at(b.vars[0]), b.dir), b.op, b.n);
+        ok = (s) => fits(sideMask(C.S, s[0], b.dir), b.op, b.n);
         break;
-      case 'mirror': {
-        const [l1, u1] = range(sideMask(C.S, at(b.vars[0]), -1));
-        const [l2, u2] = range(sideMask(C.S, at(b.vars[1]), 1));
-        ok = !(u1 < l2 || u2 < l1);
+      case 'mirror':
+        ok = (s) => overlap(sideMask(C.S, s[0], -1), sideMask(C.S, s[1], 1));
         break;
-      }
-      case 'eqgap': {
-        const [a, bb, c] = b.vars.map(at);
-        if (a === bb || bb === c) ok = false;
-        else {
-          const [l1, u1] = range(betweenMask(a, bb));
-          const [l2, u2] = range(betweenMask(bb, c));
-          ok = !(u1 < l2 || u2 < l1);
-        }
+      case 'eqgap':
+        ok = (s) => s[0] !== s[1] && s[1] !== s[2] && overlap(betweenMask(s[0], s[1]), betweenMask(s[1], s[2]));
         break;
-      }
     }
-    if (!ok) {
-      out.fail = b.clue;
-      return false;
+    // generalised arc consistency over the (≤ 3) entities
+    const supp = vars.map(() => 0);
+    const cur = vars.map(() => 0);
+    const walk = (i: number): void => {
+      if (i === vars.length) {
+        if (ok(cur)) cur.forEach((s, j) => (supp[j] |= bit(s)));
+        return;
+      }
+      for (let m = dom[vars[i]]; m; m &= m - 1) {
+        cur[i] = lowIndex(m);
+        walk(i + 1);
+      }
+    };
+    walk(0);
+    for (let j = 0; j < vars.length; j++) {
+      if (!supp[j]) {
+        out.fail = b.clue;
+        return false;
+      }
+      if (narrow(x, dom, vars[j], dom[vars[j]] & supp[j], b.clue)) out.changed = true;
+    }
+    if (unfixed === 0 && (b.k === 'gap' || b.k === 'gapc' || b.k === 'count' || b.k === 'countc')) {
+      const s = vars.map((e) => lowIndex(dom[e]));
+      const region = b.k === 'gap' || b.k === 'gapc' ? betweenMask(s[0], s[1]) : sideMask(C.S, s[0], b.dir);
+      const [lb, ub] = range(region);
+      const lo = b.op === 'gt' ? b.n + 1 : b.op === 'eq' ? b.n : 0;
+      const hi = b.op === 'lt' ? b.n - 1 : b.op === 'eq' ? b.n : 99;
+      if (hi === lb) out.vacate |= region & ~occLB;
+      if (lo === ub) out.forced |= region & occUB;
     }
   }
   return true;
@@ -493,8 +520,9 @@ function propagate(x: Ctx, dom: Uint16Array): boolean {
       if (popcount(personsUnion) < P) return fail(x, CAUSE_OCC, 0);
       must = popcount(personsUnion) === P ? personsUnion : fixedOcc;
       if (C.bounds.length) {
-        const out = { vacate: 0, forced: 0, fail: -1 };
-        if (!boundsPass(C, dom, fixedOcc, personsUnion, out)) return fail(x, out.fail, 0);
+        const out = { vacate: 0, forced: 0, fail: -1, changed: false };
+        if (!boundsPass(x, dom, fixedOcc, personsUnion, out)) return fail(x, out.fail, 0);
+        if (out.changed) changed = true;
         if (out.vacate) {
           for (let p = 0; p < P; p++) {
             if (single(dom[p])) continue;
@@ -591,10 +619,15 @@ export interface SolveOpts {
   nodeCap?: number;
 }
 
+/** MRV; on layouts with vacant slots every person is placed before any attribute (occupancy first). */
 function pickVar(C: Compiled, dom: Uint16Array): number {
   let best = -1;
   let bestSize = 99;
-  for (let e = 0; e < C.E; e++) {
+  const end = C.full ? C.E : (() => {
+    for (let p = 0; p < C.P; p++) if (!single(dom[p])) return C.P;
+    return C.E;
+  })();
+  for (let e = 0; e < end; e++) {
     const n = popcount(dom[e]);
     if (n > 1 && n < bestSize) {
       best = e;
@@ -677,11 +710,12 @@ export const prof = { uniqueMs: 0, uniqueCalls: 0, uniqueNodes: 0, measureMs: 0,
 /** Exactly one arrangement satisfies the clues? */
 export function isUnique(input: SolverInput): boolean {
   const t = performance.now();
-  const r = solve(input, { limit: 2 });
+  const r = solve(input, { limit: 2, nodeCap: 30000 });
   prof.uniqueMs += performance.now() - t;
   prof.uniqueCalls++;
   prof.uniqueNodes += r.stats.nodes;
-  return r.count === 1;
+  // an aborted search proves nothing: treat as not unique (safe side)
+  return r.count === 1 && !r.stats.aborted;
 }
 
 /** Does forward chaining alone (no case split) place everyone? */
@@ -793,6 +827,10 @@ export function measure(input: SolverInput, nodeCap = 600): SolveOut {
     }
   };
   const tree: TNode = { events: [] };
+  // direct placements (unary clues) are the first events of the first pass
+  for (let e = 0; e < C.E; e++) {
+    if (single(C.init[e]) && C.initWhy[e]) tree.events.push({ e, s: lowIndex(C.init[e]), cause: lowIndex(C.initWhy[e]), why: C.initWhy[e] });
+  }
   const t0 = performance.now();
   run(C.init.slice(), C.initWhy.slice(), tree, 0);
   prof.measureMs += performance.now() - t0;

@@ -368,14 +368,15 @@ function buildNumberQuestion(rng: Rng, d: Difficulty) {
       steps.push(`For '${query}': ${detail(query, rule.f)}.`);
       steps.push(`Written side by side: '${key}'.`);
     } else {
+      const plainSum = rule.m === 1 && rule.c === 0 && rule.d === 0;
       for (const e of examples) {
         const s = [...e.word].reduce((a, ch) => a + val(rule.f, ch), 0);
-        steps.push(`'${e.word}': ${detail(e.word, rule.f)}; sum = ${s}; ${e.code} = ${explainSum(rule, s, e.word.length)}.`);
+        steps.push(`'${e.word}': ${detail(e.word, rule.f)}; sum = ${s}${plainSum ? ', which is the code' : `; code ${e.code} = ${explainSum(rule, s, e.word.length)}`}.`);
       }
       steps.push(`Rule: ${describeNum(rule)}.`);
       const s = [...query].reduce((a, ch) => a + val(rule.f, ch), 0);
       steps.push(`For '${query}': ${detail(query, rule.f)}; sum = ${s}.`);
-      steps.push(`Code = ${explainSum(rule, s, query.length)} = ${key}.`);
+      steps.push(plainSum ? `So '${query}' is written as '${key}'.` : `Code = ${explainSum(rule, s, query.length)} = ${key}.`);
     }
     return {
       prompt,

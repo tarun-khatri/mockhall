@@ -139,12 +139,21 @@ export interface Attempt {
   clueCount?: number;
 }
 
+/** Optional instrumentation (bench scripts wrap the solver and simulator to time them). */
+export interface Hooks {
+  solve?: typeof solve;
+  simulate?: typeof simulate;
+}
+
 /** One construction attempt. */
-export function attempt(rng: Rng, subtype: SubtypeId, difficulty: Difficulty): Attempt {
+export function attempt(rng: Rng, subtype: SubtypeId, difficulty: Difficulty, hooks: Hooks = {}): Attempt {
+  const solveFn = hooks.solve ?? solve;
+  const simulateFn = hooks.simulate ?? simulate;
   const cfg: LevelCfg | undefined = LEVELS[subtype][difficulty];
   if (!cfg) throw new Error(`seating: ${subtype} has no ${difficulty} level`);
   const facingKey = rng.weighted(cfg.facings.map(([k, w]) => [k, w] as const));
-  const size = rng.pick(cfg.sizes);
+  const useAttrs = cfg.attrs && rng.chance(cfg.attrChance ?? 1);
+  const size = rng.pick(useAttrs && cfg.attrSizes ? cfg.attrSizes : cfg.sizes);
   const layout = makeLayout(subtype, facingKey, size);
   const uncertain = layout.kind === 'uncertain';
   const parallel = layout.kind === 'parallel';
@@ -158,7 +167,7 @@ export function attempt(rng: Rng, subtype: SubtypeId, difficulty: Difficulty): A
     membership = rng.chance(cfg.membership ?? 0);
   } else names = pickNames(rng, size);
   const P = names.length;
-  const A = cfg.attrs ? P : 0;
+  const A = useAttrs ? P : 0;
   const attr = A ? pickAttrs(rng, A, names) : undefined;
 
   // hidden arrangement
@@ -193,8 +202,10 @@ export function attempt(rng: Rng, subtype: SubtypeId, difficulty: Difficulty): A
     clues,
     ...(uncertain ? { nRange: [P, hi] as [number, number] } : {}),
   });
-  const budget = cfg.attrs ? 600_000 : 250_000;
+  const budget = useAttrs ? 50_000 : 35_000;
+  let spent = 0;
   const check = (chosen: readonly Cand[]): Check => {
+    if (spent > 12 * budget) return { complete: false, unique: false, unbounded: false, bound: Infinity };
     const clues = chosen.map((c) => c.atoms);
     let bound = Infinity;
     let hi = 0;
@@ -203,7 +214,8 @@ export function attempt(rng: Rng, subtype: SubtypeId, difficulty: Difficulty): A
       hi = Number.isFinite(bound) ? Math.min(bound, N + 25) : N + 8;
       if (Number.isFinite(bound) && bound > N + 25) bound = Infinity; // too loose to search: keep adding clues
     }
-    const res = solve(puzzleFor(clues, hi), 2, budget);
+    const res = solveFn(puzzleFor(clues, hi), 2, budget);
+    spent += res.nodes;
     if (!res.complete) return { complete: false, unique: false, unbounded: false, bound };
     const others = res.solutions.filter((s) => !equivalent(layout, s, truth0, P, A));
     const found = res.solutions.find((s) => equivalent(layout, s, truth0, P, A));
@@ -228,6 +240,13 @@ export function attempt(rng: Rng, subtype: SubtypeId, difficulty: Difficulty): A
   const first = choose(pool);
   if (!first) return { reason: 'empty pool' };
   chosen.push(first);
+  // hard/extreme: seed with negative clues so the case splits get closed by them, exam style
+  const negPool = pool.filter((c) => c !== first && isNegative(c) && c.family === 'neg');
+  for (let k = 0; k < cfg.minNeg && negPool.length; k++) {
+    const c = rng.pick(negPool);
+    negPool.splice(negPool.indexOf(c), 1);
+    chosen.push(c);
+  }
   let chk = check(chosen);
   for (let iter = 0; iter < 90; iter++) {
     if (!chk.complete) return { reason: 'budget' };
@@ -249,6 +268,7 @@ export function attempt(rng: Rng, subtype: SubtypeId, difficulty: Difficulty): A
   const order = rng.shuffle(chosen.slice());
   if (difficulty !== 'easy') order.sort((x, y) => STRENGTH[y.family] - STRENGTH[x.family]);
   for (const c of order) {
+    if (isNegative(c) && chosen.filter((x) => isNegative(x)).length <= cfg.minNeg) continue;
     const without = chosen.filter((x) => x !== c);
     const w = check(without);
     if (w.complete && w.unique && !w.unbounded) {
@@ -281,7 +301,7 @@ export function attempt(rng: Rng, subtype: SubtypeId, difficulty: Difficulty): A
     clues.map((c) => c.atoms),
     hi,
   );
-  const hps = simulate(puzzle);
+  const hps = simulateFn(puzzle);
   if (!hps.ok || !hps.solution) return { reason: 'human path failed' };
   const hSol: Solution = hps.solution;
   if (!equivalent(layout, hSol, fin.sol, P, A)) throw new Error('seating: human path disagrees with the solver');

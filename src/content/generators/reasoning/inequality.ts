@@ -347,14 +347,6 @@ function orient(rng: Rng, c: Conclusion, pFlip: number): Conclusion {
   return rng.chance(pFlip) ? { a: c.b, rel: flipRel(c.rel), b: c.a } : c;
 }
 
-const REL_WORDS: Record<Rel, string> = {
-  '>': 'greater than',
-  '≥': 'greater than or equal to',
-  '=': 'equal to',
-  '≤': 'smaller than or equal to',
-  '<': 'smaller than',
-};
-
 /** Human reason for a conclusion's verdict, based on the path between its two letters. */
 function reasonFor(links: readonly Link[], cl: Closure, c: Conclusion): { line: string; path: Chain | null; truth: boolean } {
   const path = pathChain(links, c.a, c.b);

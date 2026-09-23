@@ -106,7 +106,8 @@ export default function Solutions() {
       let item: Item | null = null;
       for (let t = 0; t < 8 && !item; t++) {
         const candidate = await provider.item(`similar-${randomSeed()}`, q.difficulty, q.subtype);
-        if (!candidate.questions.some((x) => x.id === q.id) && candidate.set?.id !== q.setId) item = candidate;
+        const sameSet = !!q.setId && candidate.set?.id === q.setId;
+        if (!sameSet && !candidate.questions.some((x) => x.id === q.id)) item = candidate;
       }
       if (!item) throw new Error('No other question of this type is available yet.');
       const meta = chapterMeta(q.chapter);

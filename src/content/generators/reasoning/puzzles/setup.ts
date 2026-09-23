@@ -188,12 +188,13 @@ export function makeSetup(sub: SubtypeId, difficulty: Difficulty, rng: Rng): Set
           labels: { letters, dates: rng.pick(DATE_PAIRS) },
         };
       }
+      // 12 months with 4 vacant ones: persons only (the vacancies are the hard part)
       return {
         sub,
         difficulty,
         layout: { kind: 'month', rows: 12, cols: 1, persons: 8, months: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] },
         names,
-        cats,
+        cats: [],
         labels: { letters },
       };
     }

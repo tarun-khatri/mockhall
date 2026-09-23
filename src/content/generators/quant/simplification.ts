@@ -68,7 +68,11 @@ export const PROMPT_APPROX =
 /* Formatting                                                          */
 /* ------------------------------------------------------------------ */
 
-/** Rational reconstruction of an option value (all values here have small denominators). */
+/**
+ * Rational reconstruction of an option value. All option values here have denominators ≤ 144, but filler values
+ * come back from numericChoices rounded to 6 decimals, so accept the first continued-fraction convergent within
+ * 5e-7 (a denominator ≤ 144 is then the unique match).
+ */
 function toQ(v: number): Q {
   let h0 = 0,
     h1 = 1,
@@ -79,7 +83,10 @@ function toQ(v: number): Q {
     const a = Math.floor(x);
     [h0, h1] = [h1, a * h1 + h0];
     [k0, k1] = [k1, a * k1 + k0];
-    if (Math.abs(h1 / k1 - v) < 1e-9) return q(h1, k1);
+    if (Math.abs(h1 / k1 - v) < 5e-7) {
+      if (k1 > 144) break;
+      return q(h1, k1);
+    }
     const frac = x - a;
     if (frac < 1e-12) break;
     x = 1 / frac;
@@ -120,12 +127,13 @@ function leftToRight(node: Node): Q | null {
   const terms = topTerms(node);
   if (terms.length < 2 || !terms.slice(1).some((t) => t.x.t === 'prod' && !t.x.div && t.x.items.length === 2)) return null;
   try {
-    let acc: Q | null = null;
+    let acc = null as Q | null;
     for (const t of terms) {
       if (t.x.t === 'prod' && !t.x.div && acc !== null) {
         const [first, ...rest] = t.x.items;
-        acc = t.neg ? acc.sub(evalQ(first)) : acc.add(evalQ(first));
-        for (const r of rest) acc = acc.mul(evalQ(r));
+        let cur: Q = t.neg ? acc.sub(evalQ(first)) : acc.add(evalQ(first));
+        for (const r of rest) cur = cur.mul(evalQ(r));
+        acc = cur;
       } else {
         const v = evalQ(t.x);
         acc = acc === null ? v : t.neg ? acc.sub(v) : acc.add(v);
@@ -175,7 +183,7 @@ function toMistakes(list: MistakeQ[], ans: Q, style: AnswerStyle, anyMagnitude =
   const a = ans.toNumber();
   return list
     .filter((m) => m.value.sign > 0 && !m.value.eq(ans))
-    .filter((m) => (style === 'int' ? m.value.isInt() : style === 'dec' ? m.value.isDecimal(2) : m.value.d <= 144))
+    .filter((m) => (style === 'int' ? m.value.isInt() : style === 'dec' ? m.value.isDecimal(2) : m.value.d <= 72))
     .filter((m) => {
       const r = m.value.toNumber() / a;
       return anyMagnitude || (r > 0.4 && r < 2.5);

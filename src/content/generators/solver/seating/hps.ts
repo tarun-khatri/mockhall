@@ -1,19 +1,19 @@
 /**
  * Human-path simulation: solves a seating puzzle the way a coached aspirant does, and measures how many
  * cases they must carry. This is the difficulty measurement (SPEC 7.6: "record the solver's branching") and
- * the source of the worked solution ("Clues 3 and 5 fix two seats — start there", "Case 2 is rejected by …").
+ * the source of the worked solution ("Clues 3 and 5 fix two seats â€” start there", "Case 2 is rejected by â€¦").
  *
  * Rules of the simulated solver:
  *  1. Any clue that can be checked in every open case is applied as a filter (it can only remove cases).
  *  2. Otherwise apply the clue that leaves the fewest cases in total (definite placements first, then the
- *     smallest split). A clue that would open more than `cap` possibilities in one case is postponed —
+ *     smallest split). A clue that would open more than `cap` possibilities in one case is postponed â€”
  *     people do not branch on "A is not next to B" while B is unplaced.
  *  3. When no clue helps, fill the most constrained open slot (e.g. "the only seat left goes to H").
  * Rings start by fixing the first person placed (rotation does not matter). Rows use a floating frame: the
  * first person starts a chain whose position in the row is decided only when an end/position clue needs it.
  *
- * Metrics: `splits` = total extra cases opened (a case splitting into m adds m − 1); `peak` = most cases open
- * at once. Level bands (generator): easy 0 splits, medium 1, hard 2–3, extreme ≥ 4.
+ * Metrics: `splits` = total extra cases opened (a case splitting into m adds m âˆ’ 1); `peak` = most cases open
+ * at once. Level bands (generator): easy 0 splits, medium 1, hard 2â€“3, extreme â‰¥ 4.
  */
 import {
   Evaluator,
@@ -45,10 +45,10 @@ export interface HpsCase extends State {
 
 export interface HpsEvent {
   kind: 'clue' | 'filter' | 'fill';
-  /** index into puzzle.clues (−1 for fill) */
+  /** index into puzzle.clues (âˆ’1 for fill) */
   clue: number;
-  /** open case id → resulting case ids (empty: eliminated; same id: unchanged or updated in place) */
-  results: { from: number; to: number[] }[];
+  /** open case id â†’ resulting case ids (empty: eliminated; same id: unchanged or updated in place) */
+  results: { from: number; to: number[]; placed?: number[][] }[];
   /** fill only: what was filled */
   fill?: { kind: 'seat' | 'face' | 'n' | 'off'; id: number };
   alive: number;
@@ -63,7 +63,7 @@ export interface HpsResult {
   final?: HpsCase;
   /** the final case in absolute seats */
   solution?: Solution;
-  /** evaluator configured like the simulation (frame mode on rows) — for explaining the cases */
+  /** evaluator configured like the simulation (frame mode on rows) â€” for explaining the cases */
   evaluator: Evaluator;
 }
 
@@ -312,7 +312,7 @@ export function simulate(p: Puzzle, opts: HpsOptions = {}): HpsResult {
       bestOut = outs;
     }
     if (best >= 0 && bestTotal <= maxAlive) {
-      const results: { from: number; to: number[] }[] = [];
+      const results: { from: number; to: number[]; placed?: number[][] }[] = [];
       const next: HpsCase[] = [];
       alive.forEach((c, i) => {
         const out = bestOut[i];
@@ -322,12 +322,13 @@ export function simulate(p: Puzzle, opts: HpsOptions = {}): HpsResult {
           upd.parent = c.parent;
           cases.set(c.id, upd);
           next.push(upd);
-          results.push({ from: c.id, to: [c.id] });
+          results.push({ from: c.id, to: [c.id], placed: [newlyPlaced(c, upd)] });
         } else {
           if (out.length > 1) splits += out.length - 1;
+          const placed = out.map((o) => newlyPlaced(c, o));
           const ids = out.map((o) => register(o).id);
           next.push(...out);
-          results.push({ from: c.id, to: ids });
+          results.push({ from: c.id, to: ids, placed });
         }
       });
       remaining.splice(remaining.indexOf(best), 1);
@@ -339,7 +340,7 @@ export function simulate(p: Puzzle, opts: HpsOptions = {}): HpsResult {
     }
 
     // 3. fill the most constrained open slot, case by case
-    const results: { from: number; to: number[] }[] = [];
+    const results: { from: number; to: number[]; placed?: number[][] }[] = [];
     const next: HpsCase[] = [];
     let fillInfo: HpsEvent['fill'];
     for (const c of alive) {
@@ -413,12 +414,13 @@ export function simulate(p: Puzzle, opts: HpsOptions = {}): HpsResult {
         upd.parent = c.parent;
         cases.set(c.id, upd);
         next.push(upd);
-        results.push({ from: c.id, to: [c.id] });
+        results.push({ from: c.id, to: [c.id], placed: [newlyPlaced(c, upd)] });
       } else {
         if (chosen.length > 1) splits += chosen.length - 1;
+        const placed = chosen.map((o) => newlyPlaced(c, o));
         const ids = chosen.map((o) => register(o).id);
         next.push(...chosen);
-        results.push({ from: c.id, to: ids });
+        results.push({ from: c.id, to: ids, placed });
       }
     }
     alive = next;
@@ -430,6 +432,12 @@ export function simulate(p: Puzzle, opts: HpsOptions = {}): HpsResult {
   if (alive.length !== 1 || !complete(alive[0])) return fail();
   const fin = alive[0];
   return { ok: true, events, cases, peak, splits, final: fin, solution: toAbsolute(p, fin, frame ? { W, V0 } : null), evaluator: ev };
+}
+
+function newlyPlaced(before: HpsCase, after: HpsCase): number[] {
+  const out: number[] = [];
+  for (let e = 0; e < after.seatOf.length; e++) if (before.seatOf[e] < 0 && after.seatOf[e] >= 0) out.push(e);
+  return out;
 }
 
 /** Convert a complete case to absolute seats. */

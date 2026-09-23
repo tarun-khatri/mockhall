@@ -26,6 +26,10 @@ function sanity(res: GenResult<SimplificationFacts>): string[] {
     if (int.length > 5) out.push(`huge number ${m[0]}`);
     if (frac.length > 2) out.push(`too many decimals in ${m[0]}`);
   }
+  for (const o of q.options) {
+    const den = o.match(/\\frac\{\d+\}\{(\d+)\}/);
+    if (den && Number(den[1]) > 72) out.push(`ugly fraction option ${o}`);
+  }
   const vals = q.options.map(optionValue);
   if (vals.some((v) => !Number.isFinite(v))) out.push(`unreadable option ${JSON.stringify(q.options)}`);
   if (vals.some((v) => v <= 0)) out.push(`non-positive option ${JSON.stringify(q.options)}`);
