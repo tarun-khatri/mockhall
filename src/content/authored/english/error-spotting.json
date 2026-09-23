@@ -1,0 +1,1876 @@
+{
+  "chapter": "error-spotting",
+  "version": 1,
+  "items": [
+    {
+      "key": "es-001",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "One of the boys",
+        "in our colony",
+        "have won",
+        "a gold medal in wrestling.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. The subject is 'one' (of the boys), which is singular, so the verb must be 'has won', not 'have won'.",
+          "Correct: *One of the boys in our colony has won a gold medal in wrestling.*"
+        ],
+        "rule": "Subject–verb agreement: 'one of the + plural noun' takes a singular verb",
+        "trap": "'boys' sits right next to the verb and pulls you towards 'have'; but 'boys' is the object of 'of', not the subject.",
+        "shortcut": "Cover the 'of the …' phrase: 'One … has won'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:one-of-the"
+      ]
+    },
+    {
+      "key": "es-002",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Each of the students were",
+        "asked to submit",
+        "the admission form",
+        "by Friday.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Each' is the subject and it is singular, so 'were' must be 'was'.",
+          "Correct: *Each of the students was asked to submit the admission form by Friday.*"
+        ],
+        "rule": "Subject–verb agreement: 'each of + plural noun' takes a singular verb",
+        "trap": "'students' is plural, but it is only the object of 'of'; the verb agrees with 'each'.",
+        "shortcut": "'Each', 'every', 'either', 'neither' as subjects → singular verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:each-every"
+      ]
+    },
+    {
+      "key": "es-003",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "My uncle has booked",
+        "an one-way ticket",
+        "to Chennai",
+        "for the conference.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'One' is pronounced 'wun', which begins with a consonant sound, so the article must be 'a', not 'an'.",
+          "Correct: *My uncle has booked a one-way ticket to Chennai for the conference.*"
+        ],
+        "rule": "Articles: 'a' before a consonant sound — 'one' begins with a 'w' sound",
+        "trap": "'one' starts with the vowel letter 'o', which tempts you to write 'an'. The article follows the sound, not the letter.",
+        "shortcut": "Say the word aloud: 'a one-way', 'a university', 'a European'; but 'an hour', 'an MBA'."
+      },
+      "tags": [
+        "grammar:article"
+      ]
+    },
+    {
+      "key": "es-004",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The bank officer asked us",
+        "to fill in",
+        "all the informations",
+        "on the form.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Information' is uncountable, so 'informations' is incorrect; say 'all the information'.",
+          "Correct: *The bank officer asked us to fill in all the information on the form.*"
+        ],
+        "rule": "Uncountable nouns: 'information' has no plural form",
+        "trap": "'fill in' may look odd, but 'fill in a form' is correct British/Indian usage.",
+        "shortcut": "Never pluralise: information, advice, furniture, luggage, baggage, equipment, scenery, news."
+      },
+      "tags": [
+        "grammar:uncountable-noun"
+      ]
+    },
+    {
+      "key": "es-005",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Meena has been working",
+        "at the post office",
+        "in Nashik",
+        "since five years.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. 'Five years' is a period of time, so it takes 'for', not 'since'.",
+          "Correct: *Meena has been working at the post office in Nashik for five years.*"
+        ],
+        "rule": "'Since' + point of time; 'for' + period of time",
+        "trap": "'has been working' (present perfect continuous) is correct here — the error is only in the preposition.",
+        "shortcut": "Ask 'from when?' → since (since 2019, since Monday); 'how long?' → for (for five years)."
+      },
+      "tags": [
+        "grammar:preposition",
+        "pattern:since-for"
+      ]
+    },
+    {
+      "key": "es-006",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The cattle",
+        "is grazing",
+        "in the field",
+        "near the canal.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Cattle' is a plural noun (like 'people' and 'police'), so the verb must be 'are grazing'.",
+          "Correct: *The cattle are grazing in the field near the canal.*"
+        ],
+        "rule": "Subject–verb agreement: 'cattle' is always plural",
+        "trap": "'cattle' has no -s, so it looks singular. It is a plural noun without a singular form.",
+        "shortcut": "Cattle, people, police, poultry, clergy → always plural verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:plural-noun"
+      ]
+    },
+    {
+      "key": "es-007",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The furniture are",
+        "arranged neatly",
+        "in the waiting hall",
+        "of the bank.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Furniture' is an uncountable noun and takes a singular verb, so 'are' must be 'is'.",
+          "Correct: *The furniture is arranged neatly in the waiting hall of the bank.*"
+        ],
+        "rule": "Uncountable nouns take a singular verb: 'furniture is'",
+        "trap": "Furniture means many chairs and tables, so it feels plural — but grammatically it is singular.",
+        "shortcut": "Uncountable noun as subject → singular verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "grammar:uncountable-noun"
+      ]
+    },
+    {
+      "key": "es-008",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "We stayed",
+        "at a small hotel",
+        "near the station",
+        "for an week.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. 'Week' begins with a consonant sound, so the article is 'a': 'for a week'.",
+          "Correct: *We stayed at a small hotel near the station for a week.*"
+        ],
+        "rule": "Articles: 'a' before a consonant sound",
+        "trap": "'at a small hotel' is correct: 'hotel' has a sounded 'h', so 'a hotel' is the standard form.",
+        "shortcut": "'an' only before a vowel sound: an hour, an honest man, an MLA."
+      },
+      "tags": [
+        "grammar:article"
+      ]
+    },
+    {
+      "key": "es-009",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The train to Howrah",
+        "left the platform",
+        "exactly on time",
+        "this morning.",
+        "No error"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "There is no error. 'Left' (simple past) suits a completed action at a finished time, and 'on time' is the correct idiom for 'punctually'.",
+          "Correct: *The train to Howrah left the platform exactly on time this morning.*"
+        ],
+        "rule": "No error: simple past with a finished time ('this morning' is over)",
+        "trap": "Some pick C thinking it should be 'in time'. 'On time' = punctually (as per schedule); 'in time' = early enough for something. Here 'on time' is right.",
+        "shortcut": "Check subject, verb, tense and preposition quickly; if all fit, trust 'No error'."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-010",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The children was playing",
+        "cricket in the park",
+        "when it suddenly",
+        "started to rain.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Children' is plural, so the verb must be 'were playing', not 'was playing'.",
+          "Correct: *The children were playing cricket in the park when it suddenly started to rain.*"
+        ],
+        "rule": "Subject–verb agreement: plural subject takes a plural verb",
+        "trap": "'started to rain' is fine — 'started raining' and 'started to rain' are both correct.",
+        "shortcut": "Children, men, women, people → plural verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "es-011",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "My grandfather",
+        "takes a walk",
+        "every morning and read",
+        "the newspaper after breakfast.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Grandfather' is singular, so both verbs take -s: 'takes … and reads'.",
+          "Correct: *My grandfather takes a walk every morning and reads the newspaper after breakfast.*"
+        ],
+        "rule": "Parallel verbs joined by 'and' must agree with the same subject",
+        "trap": "The first verb 'takes' is correct; the second verb is far from the subject, so its agreement is easy to miss.",
+        "shortcut": "Trace every verb after 'and' back to the subject."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "grammar:parallelism"
+      ]
+    },
+    {
+      "key": "es-012",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Of all the players",
+        "in the team,",
+        "Kavya is",
+        "the more talented.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. When one person is compared with all the players (more than two), we need the superlative: 'the most talented'.",
+          "Correct: *Of all the players in the team, Kavya is the most talented.*"
+        ],
+        "rule": "Degrees of comparison: superlative for more than two",
+        "trap": "'the more talented' is correct only when comparing two ('the more talented of the two sisters').",
+        "shortcut": "'Of all …' or 'in the group' → superlative; 'of the two' → comparative."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "es-013",
+      "subtype": "bold-parts",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nThe **news** of the cyclone **were** broadcast **on every** local channel **within** minutes.",
+      "options": [
+        "news",
+        "were",
+        "on every",
+        "within",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Bold part 2 ('were') is wrong. 'News' ends in -s but is an uncountable singular noun, so the verb must be 'was'.",
+          "Correct: *The news of the cyclone was broadcast on every local channel within minutes.*"
+        ],
+        "rule": "Subject–verb agreement: 'news' is singular",
+        "trap": "'news' itself is correct (it is always written with -s); the error is the plural verb that follows it.",
+        "shortcut": "News, mathematics, economics, physics (as subjects of study) → singular verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "grammar:uncountable-noun"
+      ]
+    },
+    {
+      "key": "es-014",
+      "subtype": "bold-parts",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nNeha **usually travels** to work **by** metro, but today she **took** **a auto-rickshaw**.",
+      "options": [
+        "usually travels",
+        "by",
+        "took",
+        "a auto-rickshaw",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Bold part 4 is wrong. 'Auto-rickshaw' begins with a vowel sound, so it needs 'an': 'an auto-rickshaw'.",
+          "Correct: *Neha usually travels to work by metro, but today she took an auto-rickshaw.*"
+        ],
+        "rule": "Articles: 'an' before a vowel sound",
+        "trap": "'took' is correct: 'today' with a completed action takes the simple past.",
+        "shortcut": "Vowel sound → 'an'."
+      },
+      "tags": [
+        "grammar:article"
+      ]
+    },
+    {
+      "key": "es-015",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The number of applicants",
+        "for clerical posts",
+        "have increased",
+        "sharply this year.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. The subject is 'the number', which is singular, so the verb must be 'has increased'.",
+          "Correct: *The number of applicants for clerical posts has increased sharply this year.*"
+        ],
+        "rule": "'The number of + plural noun' takes a singular verb",
+        "trap": "'applicants' and 'posts' are plural and sit close to the verb, but neither is the subject.",
+        "shortcut": "'The number of' → singular; 'A number of' (= many) → plural."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:number-of"
+      ]
+    },
+    {
+      "key": "es-016",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "A number of farmers",
+        "has opted for",
+        "drip irrigation",
+        "to save water.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'A number of farmers' means 'many farmers', so the verb must be plural: 'have opted for'.",
+          "Correct: *A number of farmers have opted for drip irrigation to save water.*"
+        ],
+        "rule": "'A number of + plural noun' means 'many' and takes a plural verb",
+        "trap": "It looks like 'the number of', which is singular; the article decides it — 'a number of' is plural.",
+        "shortcut": "Replace 'a number of' with 'many' and read again."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:number-of"
+      ]
+    },
+    {
+      "key": "es-017",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The committee has",
+        "submitted its report",
+        "to the board",
+        "after two long meetings.",
+        "No error"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "There is no error. The committee acts as one body (it submits one report), so 'has' and 'its' are both correct.",
+          "Correct: *The committee has submitted its report to the board after two long meetings.*"
+        ],
+        "rule": "Collective noun acting as one unit takes a singular verb and pronoun",
+        "trap": "Many choose A or B thinking a committee has many members. A plural verb is used only when the members act separately or disagree ('The committee were divided in their opinions').",
+        "shortcut": "One joint action → singular (has/its); members acting individually → plural (have/their)."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:collective-noun",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-018",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Ramesh, along with his two brothers,",
+        "are running a dairy farm",
+        "on the outskirts",
+        "of Anand.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. The real subject is 'Ramesh' (singular); the phrase 'along with his two brothers' is extra information. So 'are running' must be 'is running'.",
+          "Correct: *Ramesh, along with his two brothers, is running a dairy farm on the outskirts of Anand.*"
+        ],
+        "rule": "Subject–verb agreement: 'along with' does not change the number of the subject",
+        "trap": "Three people are running the farm, so a plural verb feels natural — but 'along with' is not 'and'.",
+        "shortcut": "Find the real subject first — ignore the 'along with / as well as / together with' phrase."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:along-with"
+      ]
+    },
+    {
+      "key": "es-019",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "No sooner the bell rang",
+        "than the students",
+        "rushed out",
+        "of the classroom.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. A sentence beginning with 'No sooner' must invert the auxiliary: 'No sooner had the bell rung'.",
+          "Correct: *No sooner had the bell rung than the students rushed out of the classroom.*"
+        ],
+        "rule": "'No sooner' at the start needs inversion: 'No sooner had + subject + V3 … than'",
+        "trap": "'than' in part B looks odd but is correct — 'no sooner' pairs with 'than', not 'when'.",
+        "shortcut": "No sooner … than; Hardly/Scarcely … when — and invert after the negative word."
+      },
+      "tags": [
+        "grammar:inversion",
+        "pattern:no-sooner-than"
+      ]
+    },
+    {
+      "key": "es-020",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Having lived in Mumbai for years,",
+        "Rahul is now used to",
+        "travel in crowded",
+        "local trains.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. In 'is used to', 'to' is a preposition, so it takes the -ing form: 'used to travelling'.",
+          "Correct: *Having lived in Mumbai for years, Rahul is now used to travelling in crowded local trains.*"
+        ],
+        "rule": "'be used to' (= accustomed to) is followed by a gerund (-ing)",
+        "trap": "'used to travel' (without 'is') is a correct pattern for a past habit, which makes C look fine. With 'is', it means 'accustomed to' and needs -ing.",
+        "shortcut": "'be/get used to', 'look forward to', 'object to', 'with a view to' → + -ing."
+      },
+      "tags": [
+        "grammar:gerund-infinitive",
+        "pattern:used-to"
+      ]
+    },
+    {
+      "key": "es-021",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Before the meeting ends,",
+        "the members",
+        "are expected",
+        "to discuss about the budget.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. We discuss something, not about something: 'to discuss the budget'.",
+          "Correct: *Before the meeting ends, the members are expected to discuss the budget.*"
+        ],
+        "rule": "'Discuss' is a transitive verb and takes a direct object — no 'about'",
+        "trap": "'discussion about' is fine with the noun, which is why 'discuss about' sounds natural. The verb takes no preposition.",
+        "shortcut": "No preposition after: discuss, comprise, emphasise, request, order, resemble, attack, reach."
+      },
+      "tags": [
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "es-022",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The new shopping complex",
+        "comprises of",
+        "forty shops",
+        "and a food court.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Comprise' means 'consist of' and is followed directly by its object: 'comprises forty shops'.",
+          "Correct: *The new shopping complex comprises forty shops and a food court.*"
+        ],
+        "rule": "'Comprise' takes no 'of' ('is composed of' / 'consists of' do)",
+        "trap": "'consists of' and 'is comprised of' are correct, so 'comprises of' sounds right by mixing them.",
+        "shortcut": "Comprises X = consists of X = is made up of X."
+      },
+      "tags": [
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "es-023",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Suresh is senior than",
+        "his cousin",
+        "by nearly",
+        "three years.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Senior' is followed by 'to': 'Suresh is senior to his cousin'.",
+          "Correct: *Suresh is senior to his cousin by nearly three years.*"
+        ],
+        "rule": "Latin comparatives (senior, junior, superior, inferior, prior) take 'to', not 'than'",
+        "trap": "'by nearly three years' is correct — 'by' shows the margin of difference.",
+        "shortcut": "Words ending in -ior (senior, junior, superior, inferior, prior) + 'to'; also prefer … to."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison",
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "es-024",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "It is high time",
+        "the municipality",
+        "repairs the roads",
+        "before the monsoon arrives.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. After 'It is high time + subject', the verb is in the simple past to show the action is already overdue: 'repaired the roads'.",
+          "Correct: *It is high time the municipality repaired the roads before the monsoon arrives.*"
+        ],
+        "rule": "'It is high time / It is time' + subject + past tense (unreal present)",
+        "trap": "'before the monsoon arrives' is fine; a time clause about the future uses the simple present.",
+        "shortcut": "'It is high time' + subject + V2; or 'It is high time' + to + V1 ('high time to repair')."
+      },
+      "tags": [
+        "grammar:subjunctive",
+        "pattern:high-time"
+      ]
+    },
+    {
+      "key": "es-025",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The porter at the station",
+        "helped us",
+        "carry",
+        "our heavy luggages.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. 'Luggage' is uncountable, so 'luggages' is incorrect: 'our heavy luggage'.",
+          "Correct: *The porter at the station helped us carry our heavy luggage.*"
+        ],
+        "rule": "Uncountable nouns: 'luggage' has no plural",
+        "trap": "'helped us carry' (without 'to') is correct; 'help' can take a bare infinitive.",
+        "shortcut": "For a countable sense say 'pieces/items of luggage'."
+      },
+      "tags": [
+        "grammar:uncountable-noun"
+      ]
+    },
+    {
+      "key": "es-026",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The doctor advised",
+        "him to avoid to eat",
+        "fried food",
+        "for a few weeks.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Avoid' takes a gerund: 'to avoid eating'.",
+          "Correct: *The doctor advised him to avoid eating fried food for a few weeks.*"
+        ],
+        "rule": "Gerund after certain verbs: 'avoid' is followed by -ing, not an infinitive",
+        "trap": "'advised him to' is correct — 'advise + object + to-infinitive' is the standard pattern, so the first 'to' is fine; only the second one is wrong.",
+        "shortcut": "Avoid, enjoy, finish, mind, practise, deny, postpone, consider + -ing."
+      },
+      "tags": [
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "es-027",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The coach asked",
+        "the athletes",
+        "to abstain to consume",
+        "sugary drinks before the race.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Abstain' is followed by 'from' and a gerund: 'to abstain from consuming'.",
+          "Correct: *The coach asked the athletes to abstain from consuming sugary drinks before the race.*"
+        ],
+        "rule": "Fixed preposition: 'abstain from + -ing / noun'",
+        "trap": "'asked the athletes to' in parts A–B is the correct 'ask + object + infinitive' pattern.",
+        "shortcut": "abstain from, refrain from, desist from, prevent … from → all + -ing."
+      },
+      "tags": [
+        "grammar:preposition",
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "es-028",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "After the accident,",
+        "the old man",
+        "was unable",
+        "to cope up with the pain.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. The verb is 'cope with'; 'up' is an extra, incorrect particle.",
+          "Correct: *After the accident, the old man was unable to cope with the pain.*"
+        ],
+        "rule": "Fixed preposition: 'cope with' (not 'cope up with')",
+        "trap": "'cope up with' is common in Indian speech, so it sounds natural, but it is not standard English.",
+        "shortcut": "Cope with, deal with, comply with, dispense with — no 'up'."
+      },
+      "tags": [
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "es-029",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The speaker emphasised on",
+        "the need for",
+        "saving water",
+        "in summer.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. We 'emphasise something', so 'emphasised on' should be 'emphasised'.",
+          "Correct: *The speaker emphasised the need for saving water in summer.*"
+        ],
+        "rule": "'Emphasise' is transitive — no 'on' (but 'lay emphasis on')",
+        "trap": "'the need for' is correct; the noun 'need' takes 'for'.",
+        "shortcut": "Verb 'emphasise/stress' → no preposition; noun 'emphasis/stress' → 'on'."
+      },
+      "tags": [
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "es-030",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Radha is",
+        "more cleverer",
+        "than her brother",
+        "at solving puzzles.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Cleverer' is already comparative, so 'more' must go: 'cleverer than' (or 'more clever than').",
+          "Correct: *Radha is cleverer than her brother at solving puzzles.*"
+        ],
+        "rule": "Degrees of comparison: no double comparative",
+        "trap": "'than her brother' is correct: the comparison is between two people, both in the subject form.",
+        "shortcut": "Never put 'more' before an -er word or 'most' before an -est word."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "es-031",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Scarcely had the farmers",
+        "sown the seeds",
+        "when the heavy rains",
+        "washed them away.",
+        "No error"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "There is no error. 'Scarcely' is correctly followed by inversion ('had the farmers sown') and paired with 'when'.",
+          "Correct: *Scarcely had the farmers sown the seeds when the heavy rains washed them away.*"
+        ],
+        "rule": "No error: 'Scarcely had + subject + V3 … when' is correct",
+        "trap": "C tempts those who remember 'no sooner … than' and wrongly apply 'than' to 'scarcely'. 'Scarcely/Hardly' take 'when'.",
+        "shortcut": "No sooner → than; Scarcely / Hardly / Barely → when."
+      },
+      "tags": [
+        "grammar:inversion",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-032",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The climate of Shimla",
+        "is cooler",
+        "than Delhi",
+        "during the summer months.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. The sentence compares the climate of Shimla with the city of Delhi. It must compare climate with climate: 'than that of Delhi'.",
+          "Correct: *The climate of Shimla is cooler than that of Delhi during the summer months.*"
+        ],
+        "rule": "Comparison must be between like things (climate with climate)",
+        "trap": "'is cooler' in part B is correct; the problem is what the comparison is made with.",
+        "shortcut": "After 'than/as', ask: same kind of thing? If not, add 'that of / those of'."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "es-033",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The tailor at the corner",
+        "has stitched",
+        "this shirt",
+        "very good.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. 'Very good' describes how he stitched, so it must be the adverb: 'very well'.",
+          "Correct: *The tailor at the corner has stitched this shirt very well.*"
+        ],
+        "rule": "Adverb, not adjective, modifies a verb",
+        "trap": "'good' is correct after linking verbs ('The shirt looks good'), which is why it sounds acceptable here.",
+        "shortcut": "Describing an action (stitched, sang, played)? Use an adverb: well, carefully, quickly."
+      },
+      "tags": [
+        "grammar:adjective-adverb"
+      ]
+    },
+    {
+      "key": "es-034",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Unless you do not",
+        "submit the form",
+        "today, you will",
+        "lose the seat.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Unless you do not submit' is a double negative. It should be 'Unless you submit'.",
+          "Correct: *Unless you submit the form today, you will lose the seat.*"
+        ],
+        "rule": "'Unless' already means 'if not' — do not add another 'not'",
+        "trap": "'you will lose' in the main clause is correct; the future goes in the main clause, not the 'unless' clause.",
+        "shortcut": "Unless = if not. Never 'unless … not'; never 'until … not' for a condition."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "grammar:conditional"
+      ]
+    },
+    {
+      "key": "es-035",
+      "subtype": "bold-parts",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nMathematics **are** not as difficult **as** most students **think**, **provided** they practise daily.",
+      "options": [
+        "are",
+        "as",
+        "think",
+        "provided",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Bold part 1 is wrong. 'Mathematics' is the name of one subject of study, so it takes a singular verb: 'Mathematics is'.",
+          "Correct: *Mathematics is not as difficult as most students think, provided they practise daily.*"
+        ],
+        "rule": "Subject–verb agreement: subjects ending in -ics (mathematics, economics, physics) take a singular verb",
+        "trap": "'provided' may look odd, but 'provided (that)' correctly means 'on condition that'; and 'practise' is the correct British spelling of the verb.",
+        "shortcut": "Subject of study ending in -ics → singular verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:plural-form-singular-noun"
+      ]
+    },
+    {
+      "key": "es-036",
+      "subtype": "bold-parts",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nThe villagers **were** worried **because** the river **has risen** **alarmingly** after the heavy rain.",
+      "options": [
+        "were",
+        "because",
+        "has risen",
+        "alarmingly",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Bold part 3 is wrong. The main verb is past ('were worried'), and the rising happened earlier, so we need the past perfect: 'had risen'.",
+          "Correct: *The villagers were worried because the river had risen alarmingly after the heavy rain.*"
+        ],
+        "rule": "Sequence of tenses: past main clause → past or past perfect in the dependent clause",
+        "trap": "'alarmingly' is the correct adverb form modifying 'had risen'; it is not the error.",
+        "shortcut": "Past in the main clause pulls a present perfect back to past perfect (unless it states a universal truth)."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:sequence-of-tenses"
+      ]
+    },
+    {
+      "key": "es-037",
+      "subtype": "bold-parts",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nMohan **was** so tired **that** he **could not** stay awake **until** the end of the film.",
+      "options": [
+        "was",
+        "that",
+        "could not",
+        "until",
+        "All are correct"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "All four bold parts are correct. 'so tired that he could not' is the standard result construction, and 'until the end' shows time up to a point.",
+          "Correct: *Mohan was so tired that he could not stay awake until the end of the film.*"
+        ],
+        "rule": "No error: 'so … that' with a past-tense result clause",
+        "trap": "Some pick 'until', thinking it should be 'till' or 'upto'. 'Until' and 'till' are both correct here.",
+        "shortcut": "so + adjective + that + result clause — check only that the tenses match (was … could)."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-038",
+      "subtype": "bold-parts",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\n**My brother and I** **went** to the market to buy vegetables **for** **my mother and I**.",
+      "options": [
+        "My brother and I",
+        "went",
+        "for",
+        "my mother and I",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Bold part 4 is wrong. After the preposition 'for', the pronoun must be in the objective case: 'for my mother and me'.",
+          "Correct: *My brother and I went to the market to buy vegetables for my mother and me.*"
+        ],
+        "rule": "Pronoun case: objective case after a preposition",
+        "trap": "'My brother and I' at the start is correct because it is the subject. The same words after 'for' need 'me'.",
+        "shortcut": "Drop the other person: 'for I' is wrong, 'for me' is right."
+      },
+      "tags": [
+        "grammar:pronoun"
+      ]
+    },
+    {
+      "key": "es-039",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Neither the manager",
+        "nor his assistants",
+        "was aware",
+        "of the change in the timetable.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. With 'neither … nor', the verb agrees with the subject closest to it, 'assistants' (plural), so it should be 'were aware'.",
+          "Correct: *Neither the manager nor his assistants were aware of the change in the timetable.*"
+        ],
+        "rule": "Neither … nor: the verb agrees with the nearer subject",
+        "trap": "Many learn 'neither is singular' and keep 'was'. That applies to 'neither of'; with 'neither … nor' the nearer subject decides.",
+        "shortcut": "Either/neither … or/nor, not only … but also → look at the subject just before the verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:neither-nor"
+      ]
+    },
+    {
+      "key": "es-040",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "If I was in your place,",
+        "I would",
+        "accept the offer",
+        "without any delay.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. The speaker can never be in the listener's place, so the condition is unreal and needs the subjunctive 'were': 'If I were in your place'.",
+          "Correct: *If I were in your place, I would accept the offer without any delay.*"
+        ],
+        "rule": "Subjunctive: 'If I were' in an imaginary (unreal) condition",
+        "trap": "'I would' is the correct main-clause form for a second conditional, so the error must be in the if-clause.",
+        "shortcut": "Imaginary condition (If I were you / as if / I wish) → 'were' for every subject."
+      },
+      "tags": [
+        "grammar:subjunctive",
+        "grammar:conditional"
+      ]
+    },
+    {
+      "key": "es-041",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "My father would rather",
+        "walked to the office",
+        "than take",
+        "an overcrowded bus.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. When the subject of 'would rather' does the action himself, the base form follows: 'would rather walk'.",
+          "Correct: *My father would rather walk to the office than take an overcrowded bus.*"
+        ],
+        "rule": "'would rather + bare infinitive … than + bare infinitive' (same subject)",
+        "trap": "A past form is used after 'would rather' only when a second subject follows ('I would rather you walked'). Here there is no second subject.",
+        "shortcut": "Same subject → would rather + V1 … than V1; different subject → would rather + subject + V2."
+      },
+      "tags": [
+        "grammar:modal",
+        "pattern:would-rather"
+      ]
+    },
+    {
+      "key": "es-042",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The guard asked",
+        "the passengers",
+        "to hold the railing",
+        "lest they may fall.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. 'Lest' means 'for fear that' and takes 'should': 'lest they should fall'.",
+          "Correct: *The guard asked the passengers to hold the railing lest they should fall.*"
+        ],
+        "rule": "'lest' is followed by 'should' (or the base verb), never 'may/might/will'",
+        "trap": "'may' feels right because it expresses possibility, but 'lest' already carries that idea.",
+        "shortcut": "lest + subject + should + V1 (and no 'not')."
+      },
+      "tags": [
+        "grammar:modal",
+        "pattern:lest-should"
+      ]
+    },
+    {
+      "key": "es-043",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Please repeat again",
+        "the last instruction",
+        "so that everyone",
+        "can hear it clearly.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Repeat' contains the idea of 'again', so 'repeat again' is redundant: 'Please repeat the last instruction'.",
+          "Correct: *Please repeat the last instruction so that everyone can hear it clearly.*"
+        ],
+        "rule": "Redundancy: 'repeat' already means 'say again'",
+        "trap": "'so that everyone can hear' is the correct purpose clause, so C and D are fine.",
+        "shortcut": "Watch for built-in 'again/back/together': return back, revert back, repeat again, reply back, merge together."
+      },
+      "tags": [
+        "grammar:redundancy"
+      ]
+    },
+    {
+      "key": "es-044",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The reason for his absence",
+        "was because",
+        "he had missed",
+        "the last bus.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Reason' already expresses cause, so 'the reason … was because' repeats the idea. Use 'was that'.",
+          "Correct: *The reason for his absence was that he had missed the last bus.*"
+        ],
+        "rule": "Redundancy: 'the reason … is that', not 'is because'",
+        "trap": "'had missed' is correct: the missing of the bus happened before his absence (past perfect for the earlier action).",
+        "shortcut": "'The reason … is/was that …' — never 'because' after 'reason'."
+      },
+      "tags": [
+        "grammar:redundancy"
+      ]
+    },
+    {
+      "key": "es-045",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "When the manager left suddenly,",
+        "the whole office",
+        "was at sixes and seven",
+        "for weeks.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. The fixed idiom is 'at sixes and sevens'; both numbers are plural.",
+          "Correct: *When the manager left suddenly, the whole office was at sixes and sevens for weeks.*"
+        ],
+        "rule": "Idiom: 'at sixes and sevens' (= in total confusion)",
+        "trap": "The singular verb 'was' is correct because 'the whole office' is singular.",
+        "shortcut": "Idioms are frozen: do not change their number, article or preposition."
+      },
+      "tags": [
+        "grammar:idiom"
+      ]
+    },
+    {
+      "key": "es-046",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "In her free time,",
+        "my mother enjoys",
+        "cooking, gardening",
+        "and to read novels.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. The list after 'enjoys' uses gerunds ('cooking, gardening'), so the last item must also be a gerund: 'and reading novels'.",
+          "Correct: *In her free time, my mother enjoys cooking, gardening and reading novels.*"
+        ],
+        "rule": "Parallelism: items in a list must share the same form (and enjoy + -ing)",
+        "trap": "'enjoys cooking, gardening' is correct; the break in the pattern comes only at the last item.",
+        "shortcut": "Line up the items in a list — they should all look alike."
+      },
+      "tags": [
+        "grammar:parallelism",
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "es-047",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Being a rainy day,",
+        "the school",
+        "was closed",
+        "early.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. As written, 'Being a rainy day' describes 'the school', which is illogical. The participle needs its own subject: 'It being a rainy day'.",
+          "Correct: *It being a rainy day, the school was closed early.*"
+        ],
+        "rule": "Absolute construction: an introductory participle needs its own subject ('It being …')",
+        "trap": "'was closed' is correct passive voice (someone closed the school); the problem is the opening phrase.",
+        "shortcut": "Ask 'who/what is being a rainy day?' — if the main subject cannot be it, add 'It'."
+      },
+      "tags": [
+        "grammar:modifier",
+        "pattern:absolute-construction"
+      ]
+    },
+    {
+      "key": "es-048",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Ramesh is one of those",
+        "officers who",
+        "always reaches",
+        "the branch on time.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Who' refers to 'officers' (plural), not to 'one', so the verb must be 'reach'.",
+          "Correct: *Ramesh is one of those officers who always reach the branch on time.*"
+        ],
+        "rule": "'one of those + plural noun + who' — the relative clause refers to the plural noun",
+        "trap": "Students overapply 'one of + plural → singular'. Here the verb belongs to the 'who' clause, whose antecedent is 'officers'.",
+        "shortcut": "Turn it round: 'Of those officers who always reach the branch on time, Ramesh is one.'"
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:one-of-those-who"
+      ]
+    },
+    {
+      "key": "es-049",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Not only did",
+        "the farmers lose their crops,",
+        "but they also",
+        "lost their cattle in the flood.",
+        "No error"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "There is no error. 'Not only' at the beginning takes inversion ('did the farmers lose'), and the second clause correctly uses 'but they also lost'.",
+          "Correct: *Not only did the farmers lose their crops, but they also lost their cattle in the flood.*"
+        ],
+        "rule": "No error: inversion after 'Not only' at the start, with 'but … also'",
+        "trap": "'did … lose' followed by 'lost' may look like a tense mismatch, but 'did lose' is simple past too, so both clauses are in the past.",
+        "shortcut": "Opening 'Not only' → auxiliary before subject; 'did' + V1."
+      },
+      "tags": [
+        "grammar:inversion",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-050",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "No sooner had the guests",
+        "arrived at the hall when",
+        "the lights",
+        "went out.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'No sooner' is a comparative expression and pairs with 'than': 'arrived at the hall than'.",
+          "Correct: *No sooner had the guests arrived at the hall than the lights went out.*"
+        ],
+        "rule": "'No sooner' is followed by 'than', not 'when'",
+        "trap": "Part A is correct: 'No sooner had the guests' has the required inversion.",
+        "shortcut": "'sooner' is a comparative → 'than'."
+      },
+      "tags": [
+        "grammar:inversion",
+        "pattern:no-sooner-than"
+      ]
+    },
+    {
+      "key": "es-051",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Seldom we see",
+        "such dedication",
+        "among young",
+        "volunteers these days.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. When 'Seldom' opens the sentence, the auxiliary comes before the subject: 'Seldom do we see'.",
+          "Correct: *Seldom do we see such dedication among young volunteers these days.*"
+        ],
+        "rule": "Inversion after a negative adverb placed at the start (seldom, rarely, never, hardly)",
+        "trap": "'such dedication' (without 'a') is correct because 'dedication' is uncountable.",
+        "shortcut": "Negative adverb first → question word order (auxiliary + subject), but no question mark."
+      },
+      "tags": [
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "es-052",
+      "subtype": "bold-parts",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\n**Along with** his **two** assistants, the **branch** manager **were** transferred to Nagpur.",
+      "options": [
+        "Along with",
+        "two",
+        "branch",
+        "were",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Bold part 4 is wrong. The subject is 'the branch manager' (singular); 'along with his two assistants' is only an added phrase. So 'were' must be 'was'.",
+          "Correct: *Along with his two assistants, the branch manager was transferred to Nagpur.*"
+        ],
+        "rule": "Subject–verb agreement: an 'along with' phrase does not make the subject plural",
+        "trap": "Three people were transferred, so 'were' feels logical, and moving the phrase to the front hides the real subject even more.",
+        "shortcut": "Strike out the 'along with …' phrase and read: 'the branch manager was transferred'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:along-with"
+      ]
+    },
+    {
+      "key": "es-053",
+      "subtype": "bold-parts",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nThe doctor **suggested** that the patient **take** complete rest **and** **avoids** spicy food.",
+      "options": [
+        "suggested",
+        "take",
+        "and",
+        "avoids",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Bold part 4 is wrong. After 'suggested that', the verb is in the base form for every subject ('take … and avoid'). 'Avoids' breaks the pattern that 'take' has set.",
+          "Correct: *The doctor suggested that the patient take complete rest and avoid spicy food.*"
+        ],
+        "rule": "Mandative subjunctive: 'suggest/recommend/insist that + subject + base verb'",
+        "trap": "'take' (not 'takes') looks like an agreement error, but it is the correct subjunctive form. ('should take … and avoid' is also correct.)",
+        "shortcut": "suggest / recommend / insist / demand that + subject + (should) + V1."
+      },
+      "tags": [
+        "grammar:subjunctive",
+        "grammar:parallelism"
+      ]
+    },
+    {
+      "key": "es-054",
+      "subtype": "bold-parts",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nThe two brothers **are poles apart** in temperament, **yet** they **get on** well **with each other**.",
+      "options": [
+        "are poles apart",
+        "yet",
+        "get on",
+        "with each other",
+        "All are correct"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "All four bold parts are correct. 'Poles apart' means completely different, 'get on well with' means have a friendly relationship, 'yet' shows contrast, and 'each other' suits two people.",
+          "Correct: *The two brothers are poles apart in temperament, yet they get on well with each other.*"
+        ],
+        "rule": "No error: idioms 'poles apart' and 'get on well with'; 'each other' for two",
+        "trap": "Some mark 'poles apart' as wrong, expecting 'pole apart' or 'poles away'. The idiom is exactly 'poles apart'.",
+        "shortcut": "Check each bold idiom against its fixed form; if all match, choose 'All are correct'."
+      },
+      "tags": [
+        "grammar:idiom",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-055",
+      "subtype": "bold-parts",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\n**The both** brothers **have** joined **the same** bank **as** clerks.",
+      "options": [
+        "The both",
+        "have",
+        "the same",
+        "as",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Bold part 1 is wrong. 'Both' is placed before 'the': 'Both the brothers' (or simply 'Both brothers').",
+          "Correct: *Both the brothers have joined the same bank as clerks.*"
+        ],
+        "rule": "'Both' comes before the article: 'both the brothers', never 'the both'",
+        "trap": "'as clerks' is correct: 'as' shows the role in which they joined.",
+        "shortcut": "Both / all / half come before 'the': both the …, all the …, half the …."
+      },
+      "tags": [
+        "grammar:article",
+        "grammar:determiner"
+      ]
+    },
+    {
+      "key": "es-056",
+      "subtype": "bold-parts",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nMy grandfather **would rather** you **don't** smoke **in** the house **when** children are present.",
+      "options": [
+        "would rather",
+        "don't",
+        "in",
+        "when",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Bold part 2 is wrong. When 'would rather' is followed by a different subject ('you'), the verb goes into the past: 'would rather you didn't smoke'.",
+          "Correct: *My grandfather would rather you didn't smoke in the house when children are present.*"
+        ],
+        "rule": "'would rather + another subject + past tense' (unreal present)",
+        "trap": "'would rather' itself is correct; the tense after the new subject is the problem.",
+        "shortcut": "would rather + (new subject) + V2 → 'I'd rather you went', 'I'd rather you didn't'."
+      },
+      "tags": [
+        "grammar:modal",
+        "pattern:would-rather"
+      ]
+    },
+    {
+      "key": "es-057",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "More than one application",
+        "were rejected",
+        "because of",
+        "missing signatures.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. Though the meaning is plural, 'more than one' is followed by a singular noun and a singular verb: 'was rejected'.",
+          "Correct: *More than one application was rejected because of missing signatures.*"
+        ],
+        "rule": "'More than one + singular noun' takes a singular verb",
+        "trap": "Logic says at least two were rejected, so 'were' seems right. Grammar follows the singular noun 'application'. (Compare: 'More than two applications were rejected'.)",
+        "shortcut": "The verb follows the noun after 'more than': one application → was; two applications → were."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:more-than-one"
+      ]
+    },
+    {
+      "key": "es-058",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Many a student",
+        "has failed to clear",
+        "the examination",
+        "because of poor time management.",
+        "No error"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "There is no error. 'Many a student' is followed by a singular verb, so 'has failed' is correct.",
+          "Correct: *Many a student has failed to clear the examination because of poor time management.*"
+        ],
+        "rule": "No error: 'many a + singular noun' takes a singular verb",
+        "trap": "B tempts those who read 'many' as plural and want 'have failed'. 'Many a' always takes a singular noun and verb.",
+        "shortcut": "Many a + singular noun + singular verb (many a man has, many a day was)."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:many-a",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-059",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The farmer covered",
+        "the harvested grain",
+        "with plastic sheets",
+        "lest it should not get wet.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. 'Lest' means 'so that … not', so 'lest it should not get wet' says the opposite of what is meant. Drop 'not': 'lest it should get wet'.",
+          "Correct: *The farmer covered the harvested grain with plastic sheets lest it should get wet.*"
+        ],
+        "rule": "'lest' is already negative — never add 'not' after it",
+        "trap": "'should' after 'lest' is correct, which makes D look fine at a glance; the hidden error is the extra 'not'.",
+        "shortcut": "lest = for fear that. 'lest … not' is always wrong."
+      },
+      "tags": [
+        "grammar:modal",
+        "pattern:lest-should"
+      ]
+    },
+    {
+      "key": "es-060",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The clerk whom I thought",
+        "was on leave",
+        "walked in",
+        "just before noon.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. The inner clause is '(I thought) who was on leave' — 'who' is the subject of 'was', so it must be 'who', not 'whom'.",
+          "Correct: *The clerk who I thought was on leave walked in just before noon.*"
+        ],
+        "rule": "Pronoun case: 'who' is the subject of 'was' even when 'I thought' comes between",
+        "trap": "'I thought' looks like the verb that takes 'whom' as its object, but its real object is the clause 'who was on leave'.",
+        "shortcut": "Remove 'I thought': 'the clerk who was on leave' → 'who'."
+      },
+      "tags": [
+        "grammar:pronoun",
+        "pattern:who-whom"
+      ]
+    },
+    {
+      "key": "es-061",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "It is I who",
+        "is responsible",
+        "for the delay",
+        "in sending the report.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Who' refers to 'I', so the verb must agree with 'I': 'It is I who am responsible'.",
+          "Correct: *It is I who am responsible for the delay in sending the report.*"
+        ],
+        "rule": "Relative pronoun agreement: 'who' takes the person and number of its antecedent ('I')",
+        "trap": "'It is' in part A is singular and makes 'is' sound right, but the verb in the 'who' clause agrees with 'I', not with 'it'.",
+        "shortcut": "Put the antecedent in place of 'who': 'I am responsible'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "grammar:pronoun"
+      ]
+    },
+    {
+      "key": "es-062",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Both the cashier as well as",
+        "the manager were",
+        "present when",
+        "the auditors arrived.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Both' pairs with 'and': 'Both the cashier and the manager'.",
+          "Correct: *Both the cashier and the manager were present when the auditors arrived.*"
+        ],
+        "rule": "Correlative pair: 'both … and' (never 'both … as well as')",
+        "trap": "'were' in part B looks like an error because 'as well as' normally keeps the verb singular. Once 'both … and' is restored, the plural 'were' is correct.",
+        "shortcut": "Fixed pairs: both … and, either … or, neither … nor, not only … but also, whether … or."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:correlative"
+      ]
+    },
+    {
+      "key": "es-063",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Had it not been",
+        "for his timely help,",
+        "we will have",
+        "missed the flight.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Had it not been for' is an inverted past unreal condition, so the result clause needs 'would have missed', not 'will have'.",
+          "Correct: *Had it not been for his timely help, we would have missed the flight.*"
+        ],
+        "rule": "Third conditional: 'Had it not been for …, subject + would have + V3'",
+        "trap": "Part A may look incomplete without 'If', but 'Had it not been' is a correct inverted form of 'If it had not been'.",
+        "shortcut": "Had + subject + V3 … → would/could/might have + V3."
+      },
+      "tags": [
+        "grammar:conditional",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "es-064",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "It is five years since",
+        "he has left",
+        "his village",
+        "for Mumbai.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. The clause after 'since' names the point when the period began — a finished past event — so it takes the simple past: 'since he left'.",
+          "Correct: *It is five years since he left his village for Mumbai.*"
+        ],
+        "rule": "'It is/has been + period + since + simple past'",
+        "trap": "'since' normally goes with a perfect tense, so 'has left' looks right. In this pattern the perfect idea is in 'It is five years'; the 'since' clause stays in the simple past.",
+        "shortcut": "It is / It has been … since + V2."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:since-for"
+      ]
+    },
+    {
+      "key": "es-065",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Kavita prefers",
+        "to travel by train",
+        "than to go",
+        "by bus.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. With an infinitive after 'prefer', the comparison uses 'rather than': 'prefers to travel by train rather than go by bus' (or 'prefers travelling by train to going by bus').",
+          "Correct: *Kavita prefers to travel by train rather than go by bus.*"
+        ],
+        "rule": "'prefer … to …' or 'prefer to do … rather than do …' — never 'prefer … than'",
+        "trap": "B looks suspicious because many remember 'prefer + -ing … to + -ing'. 'prefer to travel' is also correct; the error is 'than'.",
+        "shortcut": "prefer never takes 'than'."
+      },
+      "tags": [
+        "grammar:preposition",
+        "pattern:prefer-to"
+      ]
+    },
+    {
+      "key": "es-066",
+      "subtype": "classic-parts",
+      "difficulty": "extreme",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Scarcely a day passes",
+        "without some customer",
+        "complaining about",
+        "the long queues.",
+        "No error"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "There is no error. 'Scarcely' here modifies 'a day' (= hardly any day), not the whole clause, so no inversion is needed. 'without some customer complaining' is a correct gerund phrase.",
+          "Correct: *Scarcely a day passes without some customer complaining about the long queues.*"
+        ],
+        "rule": "No error: 'scarcely' qualifying a noun phrase needs no inversion",
+        "trap": "A tempts those who apply 'Scarcely had … when' mechanically. Inversion is needed only when the negative adverb modifies the verb ('Scarcely had he arrived …').",
+        "shortcut": "Negative word + noun ('scarcely a day', 'not a word') at the start → normal order is fine when that phrase is the subject."
+      },
+      "tags": [
+        "grammar:inversion",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-067",
+      "subtype": "bold-parts",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\n**Laying** on the **old** bench, the tired porter **soon** fell **asleep**.",
+      "options": [
+        "Laying",
+        "old",
+        "soon",
+        "asleep",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Bold part 1 is wrong. The porter is resting, not putting something down, so the verb is 'lie', whose -ing form is 'lying'.",
+          "Correct: *Lying on the old bench, the tired porter soon fell asleep.*"
+        ],
+        "rule": "lie (rest; lying) vs lay (put something down; laying)",
+        "trap": "The opening participle might look like a dangling modifier, but it correctly describes 'the porter'. The only error is the wrong verb.",
+        "shortcut": "lay needs an object (lay the files down); lie does not (lie on the bench)."
+      },
+      "tags": [
+        "grammar:verb-form",
+        "pattern:lie-lay"
+      ]
+    },
+    {
+      "key": "es-068",
+      "subtype": "bold-parts",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nThe portrait of the bank's founder **has been** carefully **hanged** **on** the wall of the **main** hall.",
+      "options": [
+        "has been",
+        "hanged",
+        "on",
+        "main",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Bold part 2 is wrong. For pictures and objects, the past participle of 'hang' is 'hung': 'has been carefully hung'.",
+          "Correct: *The portrait of the bank's founder has been carefully hung on the wall of the main hall.*"
+        ],
+        "rule": "hang → hung (objects); hanged is used only for execution",
+        "trap": "'hanged' is a real English word, so it does not look like a mistake; but it is used only for putting a person to death.",
+        "shortcut": "Objects: hang–hung–hung. Execution: hang–hanged–hanged."
+      },
+      "tags": [
+        "grammar:verb-form"
+      ]
+    },
+    {
+      "key": "es-069",
+      "subtype": "bold-parts",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\n**Not only** the students **but also** the principal **were** surprised **by** the result.",
+      "options": [
+        "Not only",
+        "but also",
+        "were",
+        "by",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Bold part 3 is wrong. With 'not only … but also', the verb agrees with the subject nearest to it, 'the principal' (singular), so it must be 'was'.",
+          "Correct: *Not only the students but also the principal was surprised by the result.*"
+        ],
+        "rule": "Not only … but also: the verb agrees with the nearer subject",
+        "trap": "Two groups are surprised, so 'were' seems logical; but with correlative pairs the nearer subject controls the verb.",
+        "shortcut": "Either–or, neither–nor, not only–but also, or, nor → verb agrees with the second subject."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:not-only-but-also"
+      ]
+    },
+    {
+      "key": "es-070",
+      "subtype": "bold-parts",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four parts are given in bold. Which bold part contains an error? If all are correct, choose 'All are correct'.\n\nOne **should** always keep **one's** promises **and** respect **his** elders.",
+      "options": [
+        "should",
+        "one's",
+        "and",
+        "his",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Bold part 4 is wrong. A sentence that starts with the indefinite 'one' must keep 'one's' throughout: 'respect one's elders'.",
+          "Correct: *One should always keep one's promises and respect one's elders.*"
+        ],
+        "rule": "Pronoun agreement: 'one' is followed by 'one's / oneself'",
+        "trap": "'one's' (bold part 2) may look old-fashioned, but it is the correct form; the switch to 'his' is the error.",
+        "shortcut": "Once 'one' is the subject, stay with one / one's / oneself."
+      },
+      "tags": [
+        "grammar:pronoun"
+      ]
+    }
+  ]
+}

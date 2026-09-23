@@ -1,0 +1,204 @@
+﻿@import 'tailwindcss';
+
+/*
+ * Design tokens (SPEC 12.3). Light --answered and --not-answered are a shade darker than the spec table so that
+ * white text on them and the colours as text on --paper pass WCAG AA (4.5:1). See DECISIONS.md.
+ */
+:root {
+  --paper: #f5f7fa;
+  --surface: #ffffff;
+  --ink: #15213d;
+  --ink-2: #55607a;
+  --line: #e1e5ec;
+  --pen: #2446c7;
+  --answered: #137f51;
+  --not-answered: #c43b31;
+  --marked: #6a3dbf;
+  --not-visited: #cbd1db;
+  --warn: #c77a00;
+  --on-status: #ffffff;
+  --on-warn: #15213d;
+  --q-size: 17px;
+  --s1: #2a78d6;
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --shadow-sheet: 0 -8px 32px rgb(21 33 61 / 0.16);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #10182a;
+    --surface: #172238;
+    --ink: #e7ecf5;
+    --ink-2: #9aa6bd;
+    --line: #26324a;
+    --pen: #8aa4ff;
+    --answered: #3dbb7e;
+    --not-answered: #f0655b;
+    --marked: #a583f0;
+    --not-visited: #3a4660;
+    --warn: #f0a93b;
+    --on-status: #10182a;
+    --on-warn: #10182a;
+    --s1: #3987e5;
+    --s2: #d95926;
+    --s3: #199e70;
+    --shadow-sheet: 0 -8px 32px rgb(0 0 0 / 0.45);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --paper: #10182a;
+  --surface: #172238;
+  --ink: #e7ecf5;
+  --ink-2: #9aa6bd;
+  --line: #26324a;
+  --pen: #8aa4ff;
+  --answered: #3dbb7e;
+  --not-answered: #f0655b;
+  --marked: #a583f0;
+  --not-visited: #3a4660;
+  --warn: #f0a93b;
+  --on-status: #10182a;
+  --on-warn: #10182a;
+  --s1: #3987e5;
+  --s2: #d95926;
+  --s3: #199e70;
+  --shadow-sheet: 0 -8px 32px rgb(0 0 0 / 0.45);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-line: var(--line);
+  --color-pen: var(--pen);
+  --color-answered: var(--answered);
+  --color-not-answered: var(--not-answered);
+  --color-marked: var(--marked);
+  --color-not-visited: var(--not-visited);
+  --color-warn: var(--warn);
+  --color-on-status: var(--on-status);
+  --color-on-warn: var(--on-warn);
+  --font-sans: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --text-xs: 13px;
+  --text-sm: 15px;
+  --text-base: 17px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 30px;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+/* Mobile column: centred 480 px on larger screens (SPEC 2.1). */
+.app-column {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background: var(--paper);
+  position: relative;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+.q-text {
+  font-size: var(--q-size);
+  line-height: 1.5;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+button,
+[role='button'],
+a {
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 2px solid var(--pen);
+  outline-offset: 2px;
+}
+
+/* KaTeX sized to body text (SPEC 12.2). */
+.katex {
+  font-size: 1.05em;
+}
+.katex-display {
+  margin: 0.25em 0;
+}
+
+/* OMR bubble fill (the one signature motion). */
+.bubble {
+  transition:
+    background-color 120ms ease-out,
+    border-color 120ms ease-out,
+    color 120ms ease-out;
+}
+
+.sheet-enter {
+  animation: sheet-in 200ms ease-out;
+}
+@keyframes sheet-in {
+  from {
+    transform: translateY(24px);
+    opacity: 0.4;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.pulse-once {
+  animation: pulse-once 900ms ease-out 1;
+}
+@keyframes pulse-once {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Scroll containers for wide tables/charts (the page itself never scrolls sideways). */
+.x-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}

@@ -1,0 +1,2502 @@
+{
+  "chapter": "reading-comprehension",
+  "version": 1,
+  "sets": [
+    {
+      "key": "rc-01",
+      "subtype": "banking",
+      "difficulty": "easy",
+      "title": "Banking outreach",
+      "stimulus": "For a long time, opening a bank account in rural India meant making a long journey. A farmer or a daily-wage worker often had to travel to the nearest town, lose a day's wages and stand in a queue, only to be told that a document was missing. Many people simply gave up and kept their savings at home, where the money earned nothing and could easily be lost or stolen.\n\nTo solve this problem without building an expensive branch in every village, banks began to appoint local agents known as business correspondents. A business correspondent is usually someone who is already known and trusted in the area, such as a shopkeeper, a retired teacher or a member of a women's self-help group. Equipped with a small hand-held device and a fingerprint scanner, the agent can open basic accounts, accept deposits, pay out small withdrawals, tell customers their balance and help them send money to relatives in other cities.\n\nConsider the case of Kamala, who runs a small grocery shop in a village in Odisha. Three afternoons a week, she also works as a correspondent for a bank whose nearest branch is eighteen kilometres away. Her customers include elderly people who collect their pensions at her counter and families who withdraw the money that their sons and daughters send home from the cities. For many of them, she is the only face of the bank they have ever seen. Because they know her, they are less **hesitant** to ask questions about interest rates or charges.\n\nThe model, however, is not free of problems. Agents are paid a commission on each transaction, and in areas where most transactions are small, their earnings can be modest. Poor mobile connectivity sometimes stops the device from working, and a customer who is turned away once may not come back. Agents also have to carry cash to and from the branch, which exposes them to the risk of theft.\n\nExperts suggest that the system can be strengthened if banks pay agents a fixed monthly amount in addition to their commission, train them regularly and allow them to offer more services, such as small loans and insurance. If these steps are taken, the business correspondent could become a **permanent** bridge between the formal banking system and the people it has long failed to reach.",
+      "questions": [
+        {
+          "key": "rc-01-q01",
+          "subtype": "title",
+          "prompt": "Which of the following is the most suitable title for the passage?",
+          "options": [
+            "Mobile Banking Apps Reach Indian Cities",
+            "Local Agents: The Bank at the Village Door",
+            "Why Village Bank Branches Are Closing Down Across India",
+            "A Day in the Life of a Grocery Shop Owner in Odisha",
+            "How Banks Decide the Interest on Savings"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 1 sets out the problem: the bank was too far away for villagers.",
+              "Paras 2–5 explain how local agents (business correspondents) fill the gap, the problems they face and how the system can improve."
+            ],
+            "trap": "Option D covers only Kamala's example in para 3; a title must cover the whole passage.",
+            "shortcut": "A title must fit every paragraph — only B covers both the agents and the village."
+          },
+          "tags": [
+            "rc:title",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why did many people in rural areas keep their savings at home?",
+          "options": [
+            "Banks in the nearest town refused to accept small deposits from farmers.",
+            "They did not trust the local business correspondent with their money.",
+            "Savings accounts paid so little interest that opening one was not worth the effort.",
+            "A bank visit cost a day's wages and could still end in failure.",
+            "Their village councils had advised them to keep their money away from banks."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 1: villagers had to 'travel to the nearest town, lose a day's wages and stand in a queue, only to be told that a document was missing'.",
+              "So 'many people simply gave up and kept their savings at home'."
+            ],
+            "trap": "Option C: para 1 says money kept at home 'earned nothing', but it never says bank interest was too low."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as something a business correspondent can do?",
+          "options": [
+            "Issue cheque books to customers",
+            "Open basic bank accounts",
+            "Tell customers their account balance",
+            "Help customers send money to relatives in other cities",
+            "Accept deposits and pay out small withdrawals"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 2 lists what the agent can do: open basic accounts, accept deposits, pay out small withdrawals, tell customers their balance and help them send money to relatives.",
+              "Cheque books are never mentioned."
+            ],
+            "trap": "Option D may look too advanced for a village agent, but para 2 lists it.",
+            "shortcut": "Tick each option against the list in para 2; the one left over is the answer."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q04",
+          "subtype": "fact",
+          "prompt": "According to the passage, who is usually appointed as a business correspondent?",
+          "options": [
+            "A bank officer sent from the nearest town branch",
+            "Any villager who holds a savings account with the bank",
+            "A technician who can repair hand-held devices",
+            "An official chosen by the village council",
+            "A person who is already well known and trusted in the area"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2: a business correspondent 'is usually someone who is already known and trusted in the area, such as a shopkeeper, a retired teacher or a member of a women's self-help group'."
+            ],
+            "trap": "Option B: holding an account is never given as the requirement — being known and trusted locally is."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, what do elderly customers do at Kamala's counter?",
+          "options": [
+            "Apply for crop loans",
+            "Buy insurance policies",
+            "Collect their pensions",
+            "Pay their electricity bills",
+            "Open fixed deposits"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: Kamala's customers include 'elderly people who collect their pensions at her counter'."
+            ],
+            "trap": "Option B: insurance appears only in para 5, as a service experts want agents to offer in future.",
+            "shortcut": "Scan para 3 for the word 'elderly'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred from paragraph 3?",
+          "options": [
+            "Customers are more at ease with a bank agent whom they know personally.",
+            "Kamala earns more from her grocery shop than from her work as a correspondent.",
+            "The bank plans to open a branch in Kamala's village soon.",
+            "Kamala works as a correspondent every day of the week.",
+            "Most of Kamala's customers have already visited the bank's branch many times."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 3: 'Because they know her, they are less hesitant to ask questions about interest rates or charges.'",
+              "So a familiar local face makes customers more comfortable with the bank."
+            ],
+            "trap": "Option B sounds likely, but the passage gives no figures for Kamala's income from either job."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q07",
+          "subtype": "purpose",
+          "prompt": "What is the main purpose of the passage?",
+          "options": [
+            "To argue that every village in India needs a full bank branch of its own",
+            "To criticise rural families for keeping their savings at home instead of in banks",
+            "To advertise the services of one particular bank to villagers",
+            "To explain the agent model of village banking and ways to strengthen it",
+            "To describe the daily difficulties faced by owners of small grocery shops in Odisha"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Paras 2–3 explain how the agents work, para 4 lists their problems and para 5 suggests improvements.",
+              "The passage explains and suggests; it does not argue for branches, blame villagers or advertise."
+            ],
+            "trap": "Option A: the passage presents agents as a way to reach villages 'without building an expensive branch in every village'."
+          },
+          "tags": [
+            "rc:purpose",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Business correspondents use a hand-held device and a fingerprint scanner.\nII. Agents never have to handle cash, as all their transactions are digital.\nIII. Experts suggest paying agents a fixed monthly amount in addition to their commission.",
+          "options": [
+            "Only I",
+            "Only III",
+            "Both I and III",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "I is true — para 2: the agent is 'equipped with a small hand-held device and a fingerprint scanner'.",
+              "II is false — para 4: agents 'have to carry cash to and from the branch'.",
+              "III is true — para 5."
+            ],
+            "trap": "Option E: statement II fails because agents do carry cash and face the risk of theft."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **hesitant** as used in the passage.",
+          "options": [
+            "eager",
+            "careless",
+            "grateful",
+            "curious",
+            "reluctant"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "'less hesitant to ask questions' means less unwilling or unsure about asking.",
+              "Reluctant means unwilling, so it is the closest in meaning."
+            ],
+            "trap": "Eager is the opposite of hesitant.",
+            "shortcut": "Put each option into the sentence: 'less reluctant to ask questions' keeps the meaning."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:banking"
+          ]
+        },
+        {
+          "key": "rc-01-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **permanent** as used in the passage.",
+          "options": [
+            "lasting",
+            "temporary",
+            "reliable",
+            "formal",
+            "important"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'a permanent bridge' is one that lasts for good.",
+              "The opposite is temporary."
+            ],
+            "trap": "Lasting is a synonym of permanent, not an antonym."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:banking"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-02",
+      "subtype": "fintech",
+      "difficulty": "medium",
+      "title": "Digital payments",
+      "stimulus": "Not long ago, a vegetable seller in an Indian town had little use for a bank account. Almost everything he sold was paid for in cash, and the notes and coins he collected each evening were counted, tied in a cloth and carried home. Today the same seller is likely to have a printed QR code hanging from his cart. Customers scan it, enter the amount and walk away, while a small speaker announces each payment aloud in the local language.\n\nThis change has been driven largely by the Unified Payments Interface (UPI), a system that lets money move instantly between bank accounts through a mobile phone. Its success rests on a few simple features. The payer does not need to know the receiver's account number; a phone number or a QR code is enough. Payments are completed within seconds, at any hour of the day or night, and ordinary users pay no fee for them. For small merchants, the ability to accept digital payments without buying a card machine has been especially attractive.\n\nThe benefits go beyond convenience. Every digital payment leaves a record, and a seller who receives regular payments through UPI slowly builds a history that a lender can study. A bank that once had no way of judging whether a street vendor could repay a loan can now look at months of his sales. In this sense, a tool designed for payments is **gradually** becoming a doorway to credit.\n\nThe rapid growth has also brought new risks. Fraudsters have learned to exploit users who are new to digital payments. A common trick is to send a payment request and convince the victim that entering the PIN will bring money into the account, when in fact it sends money out. Others pose as bank staff or customer-care agents and ask for one-time passwords. Such frauds succeed not because the technology is weak but because many users do not yet understand how it works.\n\nThere is also the question of who pays for the system. Running a network that handles billions of transactions requires constant spending on servers, security and staff. Since users are not charged, banks and payment apps must recover these costs in other ways, and some observers worry that without a sustainable revenue model, the pace of improvement could slow.\n\nNone of these challenges takes away from what has been achieved. But if digital payments are to remain trusted, the effort that went into spreading them must now be matched by an equal effort to make users informed and **cautious**.",
+      "questions": [
+        {
+          "key": "rc-02-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "UPI has replaced cash so completely that street vendors in Indian towns no longer need to handle notes and coins at all.",
+            "UPI frauds prove that the technology behind digital payments is too weak to be trusted by ordinary users.",
+            "UPI has changed small payments and opened a path to credit, but now needs informed users and a way to meet its costs.",
+            "Small merchants have gained from UPI mainly because digital sales have helped them avoid paying tax on much of their income.",
+            "Banks and payment apps should start charging ordinary users a fee so that UPI can keep improving."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Paras 1–3: UPI has changed small payments and is 'becoming a doorway to credit'.",
+              "Paras 4–6: fraud and the cost of running the system mean users must now be made 'informed and cautious'."
+            ],
+            "trap": "Option E: para 5 only reports that some observers worry about costs; the author never recommends charging users."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what has made UPI especially attractive to small merchants?",
+          "options": [
+            "They need no card machine to accept digital payments.",
+            "The government pays them a reward for every digital sale.",
+            "They can receive payments without having a bank account.",
+            "They are allowed to borrow directly from the payment app.",
+            "Their customers get discounts when they pay through UPI."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 2: 'For small merchants, the ability to accept digital payments without buying a card machine has been especially attractive.'"
+            ],
+            "trap": "Option C: para 2 says UPI moves money 'between bank accounts', so an account is still needed."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a feature of UPI?",
+          "options": [
+            "The payer can use a phone number or a QR code instead of an account number.",
+            "Payments are completed within seconds.",
+            "Payments can be made at any hour of the day or night.",
+            "Ordinary users pay no fee for their payments.",
+            "Payments can be made even without an internet connection."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2 mentions paying with a phone number or QR code, completion within seconds, payments at any hour and no fee for ordinary users.",
+              "Paying without an internet connection is never mentioned."
+            ],
+            "trap": "Option D may sound too generous to be a stated feature, but para 2 says 'ordinary users pay no fee for them'.",
+            "shortcut": "All four true features sit in para 2 — tick them off there."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q04",
+          "subtype": "fact",
+          "prompt": "According to the passage, how can UPI help a street vendor obtain a loan?",
+          "options": [
+            "Payment apps approve loans automatically for every vendor who displays a QR code.",
+            "His record of regular digital payments gives lenders a history they can study.",
+            "The speaker attached to his QR code reports his daily income to the bank.",
+            "Banks accept his QR code as security against the loan.",
+            "The government guarantees every loan taken by vendors who use UPI."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 3: a seller who receives regular UPI payments 'slowly builds a history that a lender can study'.",
+              "A bank 'can now look at months of his sales'."
+            ],
+            "trap": "Option C: the speaker only announces payments aloud (para 1); it is the payment record that helps the lender."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, how does the payment-request trick described in paragraph 4 work?",
+          "options": [
+            "The fraudster steals the victim's phone and then uses the PIN saved on it to pay himself.",
+            "The fraudster breaks into the bank's servers and quietly moves money out of the account.",
+            "The victim is tricked into scanning a fake QR code pasted over a genuine one at a shop.",
+            "The victim enters the PIN believing it will receive money, but it sends money out.",
+            "The victim receives a message about a prize and pays a processing fee."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4: fraudsters 'convince the victim that entering the PIN will bring money into the account, when in fact it sends money out'."
+            ],
+            "trap": "Option B: para 4 says frauds succeed 'not because the technology is weak', so no break-in to bank systems is described."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred from paragraph 4?",
+          "options": [
+            "Frauds on UPI are now more common than thefts of cash.",
+            "UPI's security systems will have to be rebuilt from scratch to stop such frauds.",
+            "Only elderly users are targeted by UPI fraudsters.",
+            "Bank staff are usually involved in UPI frauds.",
+            "Better user awareness could defeat many such frauds."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 4: such frauds succeed 'because many users do not yet understand how it works'.",
+              "So better understanding would defeat many of them — which para 6 also calls for."
+            ],
+            "trap": "Option D: fraudsters only 'pose as bank staff'; real staff are not said to be involved."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q07",
+          "subtype": "tone",
+          "prompt": "The author's attitude towards UPI can best be described as:",
+          "options": [
+            "dismissive of everything it has achieved",
+            "appreciative, but alert to its risks",
+            "uncritically enthusiastic about its growth",
+            "openly hostile",
+            "completely indifferent"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "The author praises what UPI 'has achieved' (paras 1–3 and 6) but spends paras 4–5 on fraud and cost."
+            ],
+            "trap": "Option C: two full paragraphs on problems show that the praise is not uncritical."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are correct according to the passage?\nI. A small speaker attached to the seller's QR code announces each payment aloud.\nII. A payer does not need to know the receiver's account number to make a UPI payment.\nIII. Banks and payment apps recover the cost of UPI by charging users a small fee on each payment.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and II",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "I is true — para 1.",
+              "II is true — para 2.",
+              "III is false — para 5: 'users are not charged', so costs must be recovered 'in other ways'."
+            ],
+            "trap": "Option E: statement III reverses para 5."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **gradually** as used in the passage.",
+          "options": [
+            "progressively",
+            "suddenly",
+            "rarely",
+            "reluctantly",
+            "entirely"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "'gradually becoming a doorway to credit' means changing step by step over time.",
+              "Progressively has the same meaning."
+            ],
+            "trap": "Suddenly is the opposite of gradually."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:fintech"
+          ]
+        },
+        {
+          "key": "rc-02-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **cautious** as used in the passage.",
+          "options": [
+            "careful",
+            "informed",
+            "anxious",
+            "careless",
+            "honest"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'make users informed and cautious' means careful to avoid risk.",
+              "The opposite is careless."
+            ],
+            "trap": "Careful is a synonym of cautious; informed is a separate quality named beside it."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:fintech"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-03",
+      "subtype": "economy",
+      "difficulty": "hard",
+      "title": "Firm size",
+      "stimulus": "Walk through any Indian market and the energy of small enterprise is everywhere: tailors, repair shops, food stalls and workshops, each run by a family and employing a handful of people. Look for firms that employ between fifty and five hundred workers, however, and they are surprisingly hard to find. Economists describe this as the \"missing middle\" — a pattern in which a vast number of very small firms and a small number of very large ones exist side by side, with relatively little in between.\n\nWhy should this matter? In most growing economies, mid-sized firms are the ladder by which small businesses climb. They are large enough to invest in machinery, train workers and sell beyond their own district, yet small enough to remain **nimble**. When this rung of the ladder is weak, productivity across the economy stays low, because most workers are employed in tiny units that use little capital and simple technology. Wages remain low for the same reason.\n\nSeveral explanations have been offered. One is that many rules relating to labour, taxation and inspection begin to apply only once a firm crosses a certain size. An entrepreneur who is doing well may therefore choose to stay just below the threshold, or to split the business into several small units, rather than face a sudden jump in compliance costs. A second explanation is access to finance. Small firms that keep informal accounts find it hard to prove that they are creditworthy, so they borrow from moneylenders at high rates or not at all. Growth is then financed only from the owner's savings, which is necessarily slow.\n\nA third explanation is discussed less often: the **reluctance** of owners to give up control. A family business that wishes to expand must eventually hire professional managers and share information with outsiders. Many owners prefer a smaller firm that they fully control to a larger one that they do not.\n\nNone of these factors alone explains the pattern, and their relative weight differs from one industry to another. Taken together, however, they suggest that the problem is not a shortage of entrepreneurs; India has millions of them. The problem is that the path from small to medium is lined with obstacles that make staying small the rational choice.\n\nPolicies that simply offer more concessions to small firms may, paradoxically, make matters worse, since they increase the reward for remaining small. A more promising approach would be to smooth the thresholds so that obligations rise gradually with size, to build credit systems that can assess firms using their digital payment and tax records, and to encourage the kind of management training that makes delegation less daunting. The aim should be not to preserve small firms as they are but to help them grow into something larger.",
+      "questions": [
+        {
+          "key": "rc-03-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best captures the central idea of the passage?",
+          "options": [
+            "India has too few entrepreneurs, and this shortage is the main reason why most of its firms remain small.",
+            "Large firms in India are driving small and medium businesses out of the market in most industries.",
+            "Size-linked labour and tax rules are the single reason why Indian firms choose to stay small.",
+            "Obstacles make staying small rational, so policy should help firms grow, not reward smallness.",
+            "Small firms deserve more concessions because they employ most of the country's workers at low wages."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Paras 1–2 describe the missing middle and why it matters.",
+              "Paras 3–5 give three obstacles that make 'staying small the rational choice'.",
+              "Para 6: the aim is to 'help them grow', not to reward remaining small."
+            ],
+            "trap": "Option C: para 5 says 'None of these factors alone explains the pattern', so size-linked rules cannot be the single reason."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why are mid-sized firms important in a growing economy?",
+          "options": [
+            "They pay a larger share of the country's taxes than very large companies do.",
+            "They form the ladder by which small businesses climb.",
+            "They escape the labour and tax rules that burden large firms.",
+            "They employ most of the workers in India's economy.",
+            "They borrow cheaply from moneylenders, which helps them expand."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 2: mid-sized firms are 'the ladder by which small businesses climb' — 'large enough to invest in machinery, train workers and sell beyond their own district, yet small enough to remain nimble'."
+            ],
+            "trap": "Option D: para 2 says most workers are in 'tiny units', not in mid-sized firms."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage?",
+          "options": [
+            "Mid-sized firms can sell beyond their own district.",
+            "An entrepreneur may split a business into several small units.",
+            "Cheap imports have forced many small manufacturers to close.",
+            "Small firms may borrow from moneylenders at high rates.",
+            "A growing family business must eventually hire professional managers."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "A is in para 2, B and D are in para 3, and E is in para 4.",
+              "Imports are never discussed."
+            ],
+            "trap": "Option B sounds odd for a successful owner, but para 3 says an entrepreneur may 'split the business into several small units'."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q04",
+          "subtype": "fact",
+          "prompt": "According to the passage, what might a successful entrepreneur do to avoid a sudden jump in compliance costs?",
+          "options": [
+            "Stay just below the threshold or split the firm",
+            "Move the business to a district where inspections are less frequent",
+            "Hire professional managers to handle the extra paperwork",
+            "Borrow from moneylenders instead of banks",
+            "Sell the business to a larger company that can bear the costs"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 3: the entrepreneur 'may therefore choose to stay just below the threshold, or to split the business into several small units, rather than face a sudden jump in compliance costs'."
+            ],
+            "trap": "Option C: hiring professional managers comes up in para 4 as something owners resist, not as a way to escape compliance costs."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q05",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred from the passage?",
+          "options": [
+            "Mid-sized firms in India pay higher wages than large firms do, which attracts workers.",
+            "Most Indian entrepreneurs have no wish to see their firms grow beyond a family size.",
+            "Better access to credit would, by itself, close the missing middle.",
+            "Size-linked rules affect every industry to exactly the same degree across the country.",
+            "Smoothing the thresholds would make it less attractive to stop just below one."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 3: firms stop just below a threshold to avoid 'a sudden jump in compliance costs'.",
+              "Para 6 proposes that obligations 'rise gradually with size'; without the jump, the reason to stop just short weakens."
+            ],
+            "trap": "Option C: para 5 says no single factor explains the pattern, so credit alone cannot close the gap."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q06",
+          "subtype": "inference",
+          "prompt": "The author's remark that \"the problem is not a shortage of entrepreneurs\" implies that:",
+          "options": [
+            "India needs to train many more people to start and run their own businesses",
+            "Indian entrepreneurs are generally too cautious to take on the risks of expansion",
+            "existing entrepreneurs face conditions that discourage growth",
+            "the number of small firms in India should be deliberately reduced",
+            "large firms have absorbed most of the country's entrepreneurs"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 5: India 'has millions of' entrepreneurs; the trouble is that 'the path from small to medium is lined with obstacles that make staying small the rational choice'."
+            ],
+            "trap": "Option B: the author calls staying small 'the rational choice' given the obstacles, not a sign of timid entrepreneurs."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q07",
+          "subtype": "tone",
+          "prompt": "Which of the following best describes the author's approach in the passage?",
+          "options": [
+            "Nostalgic — longing for an older economy built on small family workshops",
+            "Sarcastic — mocking policymakers for their mistakes",
+            "Alarmist — predicting the collapse of small businesses",
+            "Detached — describing the problem but offering no view at all on possible remedies",
+            "Analytical — weighing causes and proposing remedies"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The author defines a problem (paras 1–2), weighs three causes (paras 3–5) and proposes remedies (para 6)."
+            ],
+            "trap": "Option D: para 6 offers 'a more promising approach', so the author does give a view on remedies."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Mid-sized firms are described as too large to remain nimble.\nII. The author recommends credit systems that can assess firms using their digital payment and tax records.\nIII. The relative weight of the explanations for the missing middle differs from one industry to another.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and II",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "I is false — para 2: mid-sized firms are 'small enough to remain nimble'.",
+              "II is true — para 6.",
+              "III is true — para 5."
+            ],
+            "trap": "Option E: statement I reverses para 2."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **nimble** as used in the passage.",
+          "options": [
+            "clumsy",
+            "agile",
+            "cautious",
+            "fragile",
+            "profitable"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'small enough to remain nimble' means able to move and adapt quickly.",
+              "Agile means the same."
+            ],
+            "trap": "Clumsy is the opposite; profitable describes results, not quickness."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:economy"
+          ]
+        },
+        {
+          "key": "rc-03-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **reluctance** as used in the passage.",
+          "options": [
+            "eagerness",
+            "hesitation",
+            "refusal",
+            "anxiety",
+            "indifference"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "'the reluctance of owners to give up control' means their unwillingness to do so.",
+              "The opposite of unwillingness is eagerness."
+            ],
+            "trap": "Hesitation and refusal are close to reluctance in meaning, not opposite to it."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:economy"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-04",
+      "subtype": "agriculture",
+      "difficulty": "medium",
+      "title": "Farm produce",
+      "stimulus": "Every year, a considerable share of the fruits and vegetables grown in India never reaches a consumer's plate. Tomatoes split in the heat of open trucks, bananas ripen too early and leafy greens wilt within hours of being picked. The farmer who grew them bears the loss twice: first in the produce that rots, and then in the low price he accepts for the rest because he cannot afford to wait.\n\nThe missing link is a cold chain — an unbroken series of cooling steps from the farm to the market. It begins with pre-cooling, in which freshly harvested produce is quickly brought down from field temperature. It continues in cold storage and refrigerated trucks, and ends in chilled display cabinets at the shop. If any link breaks, much of the benefit of the others is lost, because produce that has warmed up once does not regain its freshness.\n\nLarge cold storages have existed in India for decades, but many were built mainly for potatoes and stand near towns rather than near the farms where cooling is needed most urgently. Small farmers, who form the vast majority, rarely have access to them. Transport is a second weak point: refrigerated trucks are costly to buy and run, and a truck that returns empty after a delivery makes the whole trip **uneconomic**.\n\nSome farmer groups have begun to find their own solutions. The Tarangini Growers' Collective, a group of about four hundred vegetable farmers, installed three small solar-powered cold rooms at collection points within walking distance of its members' fields. Each room holds a few tonnes of produce and runs without a diesel generator. Members now pick their tomatoes and capsicum early in the morning, store them at the collection point and send them to wholesale markets when prices are **favourable**. According to the collective's own records, the share of produce lost after harvest fell by more than half within its first two seasons.\n\nThe collective's experience also revealed limits. Cold rooms help only if farmers know when to sell, so the group had to set up a system that sends daily market prices to members' phones. Some fruits, such as bananas, need carefully controlled ripening chambers that small rooms cannot provide. And the equipment was paid for partly through a grant, which not every group can obtain.\n\nEven so, the example points to a shift in thinking. Instead of building a few giant storages in towns, it may be wiser to spread many small cooling points across villages, run them through farmer groups and link them to reliable market information. A cold chain is only as strong as its weakest link, and for most small farmers that link has always been the very first one.",
+      "questions": [
+        {
+          "key": "rc-04-q01",
+          "subtype": "title",
+          "prompt": "Which of the following is the most suitable title for the passage?",
+          "options": [
+            "Cold Chains: Keeping the Harvest Fresh",
+            "Why India Should Grow More Potatoes Than Ever Before",
+            "Solar Power Comes to Indian Cities",
+            "The Rise of Supermarkets in Rural India",
+            "How Wholesale Markets Fix the Price of Vegetables"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 2 defines the cold chain, para 3 shows its gaps, paras 4–5 describe a farmer-led fix and its limits, and para 6 draws the lesson."
+            ],
+            "trap": "Option C: solar power is only a detail of the collective's cold rooms, which are in villages, not cities."
+          },
+          "tags": [
+            "rc:title",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, the farmer \"bears the loss twice\" because:",
+          "options": [
+            "he has to pay for both cold storage and transport",
+            "he loses money to traders as well as to moneylenders",
+            "his crop is damaged first on the farm and then again in the market",
+            "he pays a fee to the collective as well as to the wholesale market",
+            "part of his produce rots, and he sells the rest cheaply"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 1: the loss comes 'first in the produce that rots, and then in the low price he accepts for the rest because he cannot afford to wait'."
+            ],
+            "trap": "Option C sounds close, but the second loss is a low price, not further damage to the crop."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q03",
+          "subtype": "fact",
+          "prompt": "According to the passage, why does a break in any one link of the cold chain matter?",
+          "options": [
+            "The refrigerated truck must then return empty after its delivery.",
+            "The farmer loses the grant that paid for his equipment.",
+            "Wholesale prices fall on the same day that the link breaks.",
+            "Produce that has warmed up once does not regain its freshness.",
+            "The cold rooms stop working without a diesel generator."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2: 'If any link breaks, much of the benefit of the others is lost, because produce that has warmed up once does not regain its freshness.'"
+            ],
+            "trap": "Option A: empty return trips are a cost problem of transport (para 3), not the reason a broken link matters."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a weakness of India's existing cold storage and transport?",
+          "options": [
+            "Many large cold storages were built mainly for potatoes.",
+            "Large cold storages stand near towns rather than near farms.",
+            "Cold storages charge small farmers higher rents than traders.",
+            "Refrigerated trucks are costly to buy and run.",
+            "A truck returning empty makes the trip uneconomic."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3 mentions A, B, D and E.",
+              "Rents charged by cold storages are never mentioned."
+            ],
+            "trap": "Option B might sound like an advantage, but para 3 presents it as a weakness because cooling is needed near the farms.",
+            "shortcut": "All four real weaknesses are in para 3 — check them off there."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q05",
+          "subtype": "fact",
+          "prompt": "What did the Tarangini Growers' Collective do to make sure that its cold rooms actually helped its members?",
+          "options": [
+            "It built ripening chambers for bananas.",
+            "It set up a system that sends daily market prices to members' phones.",
+            "It bought a fleet of refrigerated trucks to carry members' produce to cities.",
+            "It signed fixed-price contracts with supermarkets in nearby towns.",
+            "It installed diesel generators as a backup."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 5: 'Cold rooms help only if farmers know when to sell, so the group had to set up a system that sends daily market prices to members' phones.'"
+            ],
+            "trap": "Option A: para 5 says small rooms cannot provide the ripening chambers that bananas need."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred about the collective's cold rooms?",
+          "options": [
+            "They have ended post-harvest losses among its members.",
+            "They can store every kind of fruit, including bananas.",
+            "They were paid for entirely from members' savings.",
+            "They let members wait for better prices instead of selling at once.",
+            "They are located in the nearest town, close to the wholesale market."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 1: farmers accept low prices 'because he cannot afford to wait'.",
+              "Para 4: members now store produce and sell 'when prices are favourable' — the rooms let them wait."
+            ],
+            "trap": "Option A: losses 'fell by more than half', not to zero."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q07",
+          "subtype": "purpose",
+          "prompt": "The author describes the Tarangini Growers' Collective mainly in order to:",
+          "options": [
+            "prove that solar power is cheaper than every other source of energy",
+            "show what small, farmer-run cold rooms can and cannot do",
+            "criticise farmers who have not joined producer groups",
+            "argue that government grants alone can end post-harvest losses",
+            "demand that the large cold storages in towns be shut down"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 4 gives the collective's gains, para 5 its limits, and para 6 the wider lesson about 'many small cooling points'."
+            ],
+            "trap": "Option E: para 6 says it 'may be wiser' to spread small cooling points instead of building giant storages; it never asks for existing ones to be shut."
+          },
+          "tags": [
+            "rc:purpose",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. According to the collective's records, its post-harvest losses fell by more than half within two seasons.\nII. Bananas can be ripened properly in the collective's small cold rooms.\nIII. The collective paid for its equipment entirely from members' contributions.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and III",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "I is true — para 4.",
+              "II is false — para 5: bananas need ripening chambers 'that small rooms cannot provide'.",
+              "III is false — para 5: the equipment was 'paid for partly through a grant'."
+            ],
+            "trap": "Option C: statement III fails because a grant met part of the cost."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **favourable** as used in the passage.",
+          "options": [
+            "declining",
+            "uncertain",
+            "fixed",
+            "unsuitable",
+            "advantageous"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "'send them to wholesale markets when prices are favourable' means when prices work in the farmers' favour.",
+              "Advantageous means the same."
+            ],
+            "trap": "Fixed: the farmers wait for good prices, not for stable ones."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:agriculture"
+          ]
+        },
+        {
+          "key": "rc-04-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **uneconomic** as used in the passage.",
+          "options": [
+            "wasteful",
+            "costly",
+            "profitable",
+            "unusual",
+            "risky"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'makes the whole trip uneconomic' means the trip does not earn enough to be worthwhile.",
+              "The opposite is profitable."
+            ],
+            "trap": "Wasteful and costly are close to uneconomic in meaning, not opposite."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:agriculture"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-05",
+      "subtype": "health",
+      "difficulty": "easy",
+      "title": "Diet and nutrition",
+      "stimulus": "When we think of hunger, we usually picture a person who does not get enough to eat. There is, however, another kind of hunger that is far less visible. A person may eat enough rice or wheat to feel full every day and still lack the vitamins and minerals that the body needs in small but essential amounts. Nutrition experts call this \"hidden hunger\".\n\nIts effects can be serious. A shortage of iron causes anaemia, which leaves people tired, weak and less able to concentrate. Children who lack vitamin A are more likely to suffer from infections and from problems with their eyesight. A lack of iodine can affect the development of a child's brain, and a shortage of zinc slows growth. Because the person does not feel hungry, these problems often go unnoticed for years.\n\nOne major cause is a diet that has become too **narrow**. In many households, meals consist largely of polished rice or refined wheat, with only small amounts of pulses, vegetables and fruit. Such a diet provides energy but little else. Traditional foods such as millets, green leafy vegetables and seasonal fruits, which are rich in minerals, have slowly disappeared from many plates, partly because they take longer to prepare and partly because they are seen as old-fashioned.\n\nSeveral solutions are being tried. The simplest is to encourage people to eat a wider variety of foods. Schools and health workers teach families that a plate with different colours — green vegetables, yellow pulses, orange fruits — usually carries a wider range of nutrients. A second approach is fortification, in which small amounts of vitamins and minerals are added to common foods such as salt, flour, rice and cooking oil. Iodised salt is perhaps the best-known example. A third approach is to grow crop varieties that have been bred to contain more iron or zinc, so that people receive extra nutrients without changing what they eat.\n\nEach approach has its strengths. Fortification reaches large numbers of people quickly, but it depends on factories and supply chains. A varied diet is the most **complete** solution, but it requires money, awareness and access to fresh food. Kitchen gardens, in which families grow vegetables and fruit near their homes, can be especially helpful for poorer households. Experts agree that no single method is enough, and that the best results come when all of them are used together.",
+      "questions": [
+        {
+          "key": "rc-05-q01",
+          "subtype": "main-idea",
+          "prompt": "What is the passage mainly about?",
+          "options": [
+            "Hidden hunger — what causes it, what it does and how it can be tackled",
+            "The shortage of rice and wheat faced by many poor households in India",
+            "Why people should stop eating polished rice and refined wheat altogether",
+            "The history of iodised salt and the way it is made in factories",
+            "How families can plan and look after a kitchen garden near their homes"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 1 defines hidden hunger, para 2 gives its effects, para 3 its main cause, and paras 4–5 the remedies."
+            ],
+            "trap": "Option C: the passage objects to meals made up 'largely' of polished rice or refined wheat, not to eating them at all."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, a shortage of iron leads to:",
+          "options": [
+            "problems with eyesight in children",
+            "slower growth in young children",
+            "anaemia, which causes tiredness",
+            "poor development of a child's brain",
+            "frequent infections in young children"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 2: 'A shortage of iron causes anaemia, which leaves people tired, weak and less able to concentrate.'"
+            ],
+            "trap": "The other options belong to vitamin A (eyesight, infections), iodine (brain) and zinc (growth) — all in the same paragraph, so match carefully."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q03",
+          "subtype": "fact",
+          "prompt": "According to the passage, why have traditional foods such as millets disappeared from many plates?",
+          "options": [
+            "They cost much more than rice and wheat in most markets.",
+            "They take longer to prepare and are seen as old-fashioned.",
+            "They are no longer grown anywhere in India.",
+            "They contain very few vitamins and minerals.",
+            "Doctors have advised people to avoid eating them."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 3: they disappeared 'partly because they take longer to prepare and partly because they are seen as old-fashioned'."
+            ],
+            "trap": "Option D: para 3 says these foods 'are rich in minerals'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a food to which vitamins and minerals are added through fortification?",
+          "options": [
+            "Salt",
+            "Flour",
+            "Rice",
+            "Milk",
+            "Cooking oil"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4 lists 'salt, flour, rice and cooking oil'.",
+              "Milk is not mentioned."
+            ],
+            "trap": "Option C: polished rice is criticised in para 3, but para 4 still lists rice as a food that can be fortified.",
+            "shortcut": "Scan para 4 for the word 'fortification' and read the list that follows it."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, what is a limitation of fortification?",
+          "options": [
+            "It depends on factories and supply chains.",
+            "It works only if families change what they eat.",
+            "It reaches only a small number of people.",
+            "It costs more than eating a varied diet.",
+            "It spoils the taste of common foods like salt."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 5: 'Fortification reaches large numbers of people quickly, but it depends on factories and supply chains.'"
+            ],
+            "trap": "Option C reverses para 5, which says fortification reaches 'large numbers of people quickly'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred from the passage?",
+          "options": [
+            "Everyone who eats rice daily suffers from anaemia.",
+            "A person who never feels hungry can still be poorly nourished.",
+            "Kitchen gardens are of little use to poorer households.",
+            "Fortification alone is enough to end hidden hunger across the country.",
+            "Millets, though traditional, contain hardly any minerals."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 1: a person may 'feel full every day and still lack' vitamins and minerals.",
+              "Para 2: the problems go unnoticed 'because the person does not feel hungry'."
+            ],
+            "trap": "Option D: para 5 says 'no single method is enough'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q07",
+          "subtype": "tone",
+          "prompt": "The tone of the passage is best described as:",
+          "options": [
+            "angry and accusing",
+            "humorous and light-hearted",
+            "gloomy and hopeless",
+            "doubtful and suspicious",
+            "informative and practical"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The author calmly explains a problem and practical remedies, without blaming anyone."
+            ],
+            "trap": "Option C: the passage ends on remedies that work best 'when all of them are used together', so it is not hopeless."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following is/are true in the context of the passage?\nI. A lack of iodine can affect the development of a child's brain.\nII. Kitchen gardens can be especially helpful for poorer households.\nIII. A varied diet requires money, awareness and access to fresh food.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and II",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is true — para 5.",
+              "III is true — para 5."
+            ],
+            "trap": "Option D leaves out I, but para 2 does link iodine to a child's brain development."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **narrow** as used in the passage.",
+          "options": [
+            "broad",
+            "unhealthy",
+            "limited",
+            "expensive",
+            "modern"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'a diet that has become too narrow' is one with too few kinds of food.",
+              "Limited means the same."
+            ],
+            "trap": "Unhealthy describes the result of such a diet, not the meaning of 'narrow'."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-05-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **complete** as used in the passage.",
+          "options": [
+            "thorough",
+            "final",
+            "healthy",
+            "partial",
+            "simple"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'the most complete solution' is one that covers every need.",
+              "The opposite is partial."
+            ],
+            "trap": "Thorough is close in meaning to complete, not opposite."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:health"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-06",
+      "subtype": "environment",
+      "difficulty": "hard",
+      "title": "Heat in cities",
+      "stimulus": "On a summer afternoon, the temperature recorded at an airport on the edge of a city is often several degrees lower than the temperature in a crowded neighbourhood at its centre. The difference is not an error of measurement. It is the result of what scientists call the urban heat island effect: the tendency of built-up areas to absorb heat during the day and release it slowly through the night.\n\nThe causes lie in the materials and shape of the modern city. Concrete, asphalt and dark roofs absorb sunlight instead of reflecting it. Tall buildings packed closely together trap warm air and block the breeze. Trees and lakes, which cool their surroundings by releasing moisture, have given way to roads and parking lots. Vehicles, factories and air conditioners add waste heat of their own.\n\nIt is the night, rather than the day, that reveals the most troubling consequence. In the countryside, the ground cools quickly after sunset, and the body gets a chance to recover from the day's heat. In a dense city neighbourhood, walls and roads keep releasing stored heat long after dark, so the night offers little relief. Doctors point out that it is this lack of recovery, repeated over several days, that makes heatwaves so dangerous for the elderly and for people with heart or kidney disease.\n\nThe burden is not shared equally. Families in cramped homes with tin or asbestos roofs suffer far more than those in well-shaded apartments. Street vendors, construction workers and delivery riders cannot stay indoors during the hottest hours. The **irony** is that the most common private response to heat, the air conditioner, makes the problem worse for everyone else: it pumps hot air into the street and raises the demand for electricity, much of which is still generated by burning coal.\n\nSolutions exist, and many are surprisingly simple. Painting roofs with white or reflective coatings can noticeably lower indoor temperatures. Planting trees along streets and protecting the remaining lakes and wetlands can cool entire neighbourhoods. Some cities have prepared heat action plans that issue early warnings, keep public drinking-water points open and shift outdoor working hours away from the afternoon. Each measure has its limits — trees need space and water that the densest neighbourhoods rarely have — but together they can make a measurable difference.\n\nYet none of these measures will succeed if heat continues to be treated as a seasonal inconvenience rather than as a **chronic** threat to public health. Cities plan carefully for floods because the damage is visible; the damage done by heat is quieter, spread across hospitals and homes, and therefore easier to ignore. Recognising heat as a problem of urban design, and not merely of weather, is the first step towards cooler cities.",
+      "questions": [
+        {
+          "key": "rc-06-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best states the central argument of the passage?",
+          "options": [
+            "Air conditioners are the main cause of urban heat, so their use in cities must be curbed.",
+            "Urban heat is a design problem and a public-health threat that deserves serious planning.",
+            "Night-time heat is harmless compared with afternoon heat, so warnings should focus on the day.",
+            "Painting roofs white is by itself enough to solve the problem of heat in Indian cities.",
+            "Cities should stop planning for floods altogether and put all their effort into fighting heat instead."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Paras 1–2 explain the heat island and its design causes; paras 3–4 its health toll and unequal burden.",
+              "Para 6: heat must be treated as 'a chronic threat to public health' and 'a problem of urban design'."
+            ],
+            "trap": "Option A: air conditioners are one of several causes in para 2; the passage never calls them the main one."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why is the centre of a city often hotter than an airport on its edge?",
+          "options": [
+            "Instruments at airports tend to record temperatures lower than they really are.",
+            "The centre has more vehicles, and their exhaust is the main source of the extra heat.",
+            "Airports are usually surrounded by lakes and wetlands that cool the air.",
+            "The city centre lies in a valley that blocks the breeze.",
+            "Built-up areas absorb heat by day and release it slowly through the night."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 1: the difference 'is not an error of measurement' but the urban heat island effect — built-up areas 'absorb heat during the day and release it slowly through the night'."
+            ],
+            "trap": "Option A: para 1 rules out measurement error in so many words."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a cause of the urban heat island effect?",
+          "options": [
+            "A layer of dust and smoke hanging over the city centre",
+            "Dark surfaces that absorb sunlight instead of reflecting it",
+            "Closely packed tall buildings that block the breeze",
+            "Trees and lakes giving way to roads and parking lots",
+            "Waste heat from vehicles, factories and air conditioners"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 2 lists dark surfaces, closely packed tall buildings, the loss of trees and lakes, and waste heat.",
+              "Dust and smoke are never mentioned."
+            ],
+            "trap": "Option E: air conditioners may seem a cure, but para 2 counts their waste heat as a cause.",
+            "shortcut": "All four real causes sit in para 2."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q04",
+          "subtype": "fact",
+          "prompt": "According to the passage, what makes heatwaves especially dangerous for the elderly?",
+          "options": [
+            "The very high temperature reached on a single afternoon",
+            "The shortage of drinking water in city hospitals",
+            "The lack of relief at night, repeated over several days",
+            "The noise of air conditioners that disturbs their sleep",
+            "Their inability to pay for reflective roof coatings"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: 'it is this lack of recovery, repeated over several days, that makes heatwaves so dangerous for the elderly'."
+            ],
+            "trap": "Option A: para 3 stresses the night, not the afternoon peak."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q05",
+          "subtype": "inference",
+          "prompt": "What can be inferred from paragraph 4 about air conditioners?",
+          "options": [
+            "The author would support a ban on them in crowded neighbourhoods.",
+            "They are the main reason why poorer families suffer more from heat.",
+            "Their extra demand for electricity has no wider environmental cost.",
+            "They cool their users but add to the heat others face.",
+            "They are mostly used by street vendors and delivery riders during work."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4: the air conditioner is 'the most common private response to heat' yet 'makes the problem worse for everyone else' by pumping hot air into the street."
+            ],
+            "trap": "Option A: the author points out an irony but proposes no ban."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q06",
+          "subtype": "inference",
+          "prompt": "Why does the author compare heat with floods in the last paragraph?",
+          "options": [
+            "To show that heat is neglected because its damage is less visible",
+            "To show that floods cause more damage than heatwaves in Indian cities",
+            "To argue that money should be moved from flood planning to heat planning",
+            "To point out that heat and floods are both problems of weather, not design",
+            "To show that the damage done by heat, like flood damage, is easy to see"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 6: cities plan for floods 'because the damage is visible'; heat damage is 'quieter' and 'therefore easier to ignore'."
+            ],
+            "trap": "Option B: the passage never compares the size of the damage; the contrast is about visibility."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q07",
+          "subtype": "tone",
+          "prompt": "The tone of the final paragraph is best described as:",
+          "options": [
+            "detached and indifferent",
+            "celebratory and triumphant",
+            "cautionary and persuasive",
+            "resigned and hopeless",
+            "sarcastic and mocking"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 6 warns that measures will fail 'if heat continues to be treated as a seasonal inconvenience' and urges a new way of thinking as 'the first step'."
+            ],
+            "trap": "Option D: the warning ends with a way forward ('the first step towards cooler cities'), so it is not hopeless."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. The temperature gap between an airport and a city centre is caused by faulty measuring instruments.\nII. Doctors consider a single very hot afternoon the most dangerous part of a heatwave.\nIII. Heat action plans in some cities keep public drinking-water points open.",
+          "options": [
+            "Only I",
+            "Only III",
+            "Both I and II",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "I is false — para 1: 'not an error of measurement'.",
+              "II is false — para 3: the danger lies in the lack of night-time recovery 'repeated over several days'.",
+              "III is true — para 5."
+            ],
+            "trap": "Option D: statement II sounds sensible but reverses the doctors' point in para 3."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **irony** as used in the passage.",
+          "options": [
+            "coincidence",
+            "tragedy",
+            "sarcasm",
+            "solution",
+            "paradox"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The 'irony' is that a device meant to beat the heat makes it worse — a result that contradicts the intention.",
+              "Paradox is the closest word."
+            ],
+            "trap": "Sarcasm is mocking speech; here the irony lies in a situation, not in a remark."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-06-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **chronic** as used in the passage.",
+          "options": [
+            "persistent",
+            "severe",
+            "hidden",
+            "short-lived",
+            "widespread"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'a chronic threat' is a long-lasting, recurring one — the author contrasts it with 'a seasonal inconvenience'.",
+              "The opposite is short-lived."
+            ],
+            "trap": "Persistent is a synonym of chronic."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:environment"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-07",
+      "subtype": "business",
+      "difficulty": "medium",
+      "title": "Business case",
+      "stimulus": "When two microbiology graduates set up Anvaya Biomaterials in a rented shed on the outskirts of Pune, their plan sounded unusual even to their friends. They wanted to grow a leather-like material from mycelium, the network of thread-like roots that fungi produce underground. Fed on paddy straw and other farm waste, the mycelium would spread into a dense mat within a few weeks. After being dried, pressed and treated, the mat could be cut and stitched much like animal hide.\n\nThe idea had obvious appeal. Conventional leather involves raising animals and, in many tanneries, the use of harsh chemicals. Cheap synthetic alternatives, on the other hand, are made from plastics that do not break down. A material grown from farm waste promised to avoid both problems, and the founders were confident that fashion brands would welcome it.\n\nThe first two years proved harder than they had imagined. No two batches of mycelium grew in exactly the same way. A slight change in humidity could leave one sheet thick and firm and the next thin and patchy. Fashion brands that tested early samples praised the look and feel of the material but refused to place large orders. A handbag maker, they explained, cannot sell a product whose strength varies from one piece to the next.\n\nInstead of rushing to build a large factory, the founders chose to slow down. They spent a year improving their growing process, installing sensors to control temperature and moisture, and testing every sheet for strength and flexibility before it left the shed. They also stopped trying to sell to everyone. Anvaya signed a partnership with a small Jaipur-based label that makes handbags and wallets in limited numbers. Because the label sold fewer pieces at higher prices, it could accept a material that cost more than synthetic leather, and its customers were willing to pay for a product with a story behind it.\n\nThe partnership gave Anvaya something more valuable than revenue. Every returned bag and every customer complaint came back to the laboratory as information. Within eighteen months, the company had reduced the variation between batches to a level that larger buyers found acceptable. Some investors had earlier urged the founders to expand quickly and capture the market before competitors arrived. Looking back, the founders believe that such haste would have been **fatal**, since a flood of uneven products could have ruined their reputation before it was built.\n\nAnvaya's story holds a lesson for young bio companies. Breakthroughs in the laboratory attract attention, but customers pay for **reliability**. The patient, unglamorous work of making the same product well, again and again, is often what separates a promising idea from a lasting business.",
+      "questions": [
+        {
+          "key": "rc-07-q01",
+          "subtype": "title",
+          "prompt": "Which of the following is the most appropriate title for the passage?",
+          "options": [
+            "Why Animal Leather Can Never Be Replaced",
+            "The Rise of Jaipur's Handbag Industry",
+            "Growing Slowly: How a Small Bio Company Earned Trust",
+            "How Investors Build India's Fashion Brands",
+            "A Beginner's Guide to Growing Mushrooms"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "The passage follows Anvaya from its idea (paras 1–2) through its early problems (para 3) and its choice to slow down (paras 4–5) to the lesson about reliability (para 6)."
+            ],
+            "trap": "Option B: the Jaipur label is only Anvaya's partner in para 4, not the subject of the passage."
+          },
+          "tags": [
+            "rc:title",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what is mycelium?",
+          "options": [
+            "A plastic used to make cheap synthetic leather",
+            "A chemical used to treat hides in many tanneries",
+            "A variety of paddy straw grown near Pune",
+            "A network of root-like threads made by fungi",
+            "A machine that dries and presses leather sheets"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 1: 'mycelium, the network of thread-like roots that fungi produce underground'."
+            ],
+            "trap": "Option C: paddy straw is what the mycelium is fed on, not the mycelium itself."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q03",
+          "subtype": "fact",
+          "prompt": "Why did fashion brands refuse to place large orders after testing Anvaya's early samples?",
+          "options": [
+            "They disliked the look and feel of the material.",
+            "Its strength varied from one piece to the next.",
+            "It cost more than genuine animal leather.",
+            "They objected to a material grown from farm waste.",
+            "Anvaya could not deliver the samples on time."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 3: 'A handbag maker, they explained, cannot sell a product whose strength varies from one piece to the next.'"
+            ],
+            "trap": "Option A: para 3 says the brands 'praised the look and feel of the material'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as something Anvaya did after deciding to slow down?",
+          "options": [
+            "It installed sensors to control temperature and moisture.",
+            "It tested every sheet for strength and flexibility.",
+            "It spent a year improving its growing process.",
+            "It formed a partnership with a small Jaipur-based label.",
+            "It opened its own shops to sell finished handbags."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 4 mentions A, B, C and D.",
+              "Anvaya never opens shops; it supplies a label that makes the bags."
+            ],
+            "trap": "Option D: the partnership comes in the same paragraph, just after the decision to slow down."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, why could the Jaipur-based label accept a material that cost more than synthetic leather?",
+          "options": [
+            "It sold fewer pieces at higher prices to buyers who valued a story.",
+            "Anvaya's investors paid part of the label's production costs.",
+            "It used the material only for the small inner linings of its bags.",
+            "The material turned out to be cheaper than animal leather.",
+            "It had agreed to buy all of Anvaya's output at a fixed price."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 4: 'Because the label sold fewer pieces at higher prices, it could accept a material that cost more than synthetic leather, and its customers were willing to pay for a product with a story behind it.'"
+            ],
+            "trap": "Option D: the passage compares the material's cost only with synthetic leather, never with animal leather."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred from paragraph 5?",
+          "options": [
+            "Anvaya's investors withdrew their money when the founders refused to expand.",
+            "Larger buyers were placing orders even before the partnership began.",
+            "The founders now regret that they did not expand more quickly.",
+            "Competitors captured most of the market before Anvaya was ready.",
+            "Customer feedback helped Anvaya make its material more consistent."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 5: every returned bag and complaint 'came back to the laboratory as information', and within eighteen months the variation between batches fell to a level that larger buyers accepted."
+            ],
+            "trap": "Option C: the founders believe haste 'would have been fatal', so they do not regret waiting."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q07",
+          "subtype": "purpose",
+          "prompt": "What is the author's main purpose in writing the passage?",
+          "options": [
+            "To draw a lesson about reliability from one company's story",
+            "To persuade readers to stop buying products made from animal leather",
+            "To criticise investors who put money into young start-ups",
+            "To explain the chemistry of how leather is tanned",
+            "To advertise the handbags and wallets of a Jaipur-based label"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 6 states the lesson: 'customers pay for reliability', and patient, repeated work is what 'separates a promising idea from a lasting business'."
+            ],
+            "trap": "Option B: the drawbacks of leather in para 2 only explain why the idea was appealing; the passage does not urge readers to stop buying leather."
+          },
+          "tags": [
+            "rc:purpose",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. A slight change in humidity had no effect on how the mycelium grew.\nII. Every returned bag and customer complaint went back to Anvaya's laboratory as information.\nIII. The founders now believe that expanding quickly would have helped them capture the market.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and III",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "I is false — para 3: a slight change in humidity could leave one sheet 'thick and firm and the next thin and patchy'.",
+              "II is true — para 5.",
+              "III is false — the founders believe such haste 'would have been fatal'."
+            ],
+            "trap": "Option D: statement III repeats what some investors urged, not what the founders believe."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **fatal** as used in the passage.",
+          "options": [
+            "helpful",
+            "unavoidable",
+            "temporary",
+            "disastrous",
+            "profitable"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'such haste would have been fatal' means it would have ruined the business.",
+              "Disastrous is the closest in meaning."
+            ],
+            "trap": "Unavoidable plays on the idea of fate, but the founders say haste would have ruined them, not that it was bound to happen."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-07-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **reliability** as used in the passage.",
+          "options": [
+            "dependability",
+            "strength",
+            "inconsistency",
+            "popularity",
+            "affordability"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'customers pay for reliability' means they pay for a product that performs the same way every time.",
+              "The opposite is inconsistency."
+            ],
+            "trap": "Dependability is a synonym of reliability."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:business"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-08",
+      "subtype": "technology",
+      "difficulty": "hard",
+      "title": "Lending and algorithms",
+      "stimulus": "For most of banking history, the decision to lend rested on a loan officer's judgement, supported by documents such as salary slips, tax returns and a record of past borrowing. People who had none of these — a young woman running a tailoring business from home, a farmer who had never taken a formal loan — were often turned away, not because they were likely to default but because the bank simply knew nothing about them.\n\nMachine-learning models promise to change this. By studying patterns in large volumes of data, including digital payments, utility bills and even the regularity with which a person recharges a mobile phone, such a model can estimate the likelihood of repayment for people who have no credit history at all. Lenders that use these tools report that they can approve small loans within minutes, and that many first-time borrowers turn out to be as dependable as customers with long records.\n\nThe same features that make these models powerful also make them risky. A model learns from past data, and past data reflects past decisions. If a lender has historically lent less to certain neighbourhoods or occupations, a model trained on its records may learn to treat those groups as risky, even though nothing in its instructions mentions them. Variables that appear neutral, such as a postal code or the type of phone a person owns, can act as **proxies** for income, gender or social background, allowing old patterns of exclusion to return in a form that is harder to see.\n\nA second difficulty is that the most accurate models are often the least transparent. A traditional scorecard can tell a rejected applicant that her income was too low or her existing debt too high. A complex model may combine hundreds of variables in ways that even its designers struggle to explain. An applicant who cannot learn why she was refused cannot correct an error in her data, nor can she challenge a decision that may have been unfair.\n\nNone of this is an argument for abandoning the technology. Refusing to use better tools would leave millions outside the formal credit system, which is itself a form of exclusion. What is needed is a set of guardrails. Lenders could be required to test their models regularly for unequal outcomes across groups, to give applicants a plain-language reason for every rejection, and to ensure that a human being reviews any decision that is contested. Borrowers' data should be collected only with their consent and used only for the purpose for which it was given.\n\nThe real question, then, is not whether machines should help decide who gets credit, but whether the people affected by those decisions can understand and question them. An algorithm that is accurate but **opaque** may serve a lender well; only one that is also accountable can earn the trust of borrowers.",
+      "questions": [
+        {
+          "key": "rc-08-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best summarises the passage?",
+          "options": [
+            "Machine-learning models should be kept out of lending because they are always biased.",
+            "Loan officers make fairer lending decisions than any algorithm could ever make.",
+            "The most accurate credit models are also the easiest ones to explain to borrowers.",
+            "First-time borrowers turn out to be more reliable than customers who have long credit records.",
+            "Algorithms can widen access to credit but need guardrails for fairness and accountability."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2 gives the promise: credit for people with no history.",
+              "Paras 3–4 give the risks: hidden bias and decisions no one can explain.",
+              "Paras 5–6 call for guardrails and accountability, not for abandoning the tools."
+            ],
+            "trap": "Option A: para 5 says 'None of this is an argument for abandoning the technology'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why were some people turned away by lenders in the past?",
+          "options": [
+            "The lender simply had no information about them.",
+            "They had failed to repay loans taken earlier.",
+            "Their incomes were too low to support any loan.",
+            "They could not offer land or gold as security.",
+            "The loan officer judged them likely to default."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 1: they were turned away 'not because they were likely to default but because the bank simply knew nothing about them'."
+            ],
+            "trap": "Option E reverses para 1, which says they were not refused for being likely to default."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as information that machine-learning credit models may use?",
+          "options": [
+            "Digital payments",
+            "Utility bills",
+            "How regularly a person recharges a mobile phone",
+            "A person's posts on social media",
+            "The type of phone a person owns"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2 lists digital payments, utility bills and phone recharges; para 3 adds the type of phone a person owns.",
+              "Social media is never mentioned."
+            ],
+            "trap": "Option E is not in the list in para 2 but appears in para 3 — scan the whole passage before answering."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q04",
+          "subtype": "fact",
+          "prompt": "According to the passage, what advantage does a traditional scorecard have over a complex model?",
+          "options": [
+            "It predicts repayment more accurately than complex models do.",
+            "It can tell a rejected applicant why she was refused.",
+            "It is free from the biases hidden in past lending data.",
+            "It can approve small loans within a few minutes.",
+            "It can assess people who have no credit history at all."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 4: 'A traditional scorecard can tell a rejected applicant that her income was too low or her existing debt too high.'"
+            ],
+            "trap": "Option A: para 4 says 'the most accurate models are often the least transparent', which points the other way."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q05",
+          "subtype": "inference",
+          "prompt": "The author suggests that variables such as a postal code are dangerous mainly because they:",
+          "options": [
+            "are often recorded wrongly and so introduce errors into the data",
+            "are usually collected without the borrower's consent",
+            "can act as hidden stand-ins for income, gender or background",
+            "make it impossible for a model to approve loans quickly",
+            "reveal a borrower's exact income to the lender"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: such variables 'can act as proxies for income, gender or social background, allowing old patterns of exclusion to return in a form that is harder to see'."
+            ],
+            "trap": "Option E: a proxy only stands in for income; it does not reveal the exact figure."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q06",
+          "subtype": "inference",
+          "prompt": "With which of the following statements would the author most likely agree?",
+          "options": [
+            "Accuracy is the only test that a credit model needs to pass.",
+            "Keeping people out of formal credit for fear of new tools is itself harmful.",
+            "Every loan decision made by an algorithm should be checked by a human officer.",
+            "Borrowers' data, once collected with consent, may be used for any purpose.",
+            "Traditional scorecards should replace machine-learning models altogether."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 5: 'Refusing to use better tools would leave millions outside the formal credit system, which is itself a form of exclusion.'"
+            ],
+            "trap": "Option C: para 5 asks for human review only of decisions 'that are contested', not of every decision."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q07",
+          "subtype": "tone",
+          "prompt": "The author's attitude towards the use of machine learning in lending is best described as:",
+          "options": [
+            "outright rejection",
+            "unreserved enthusiasm",
+            "complete indifference",
+            "conditional approval",
+            "mild amusement"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "The author welcomes what the technology can do (para 2) and rejects abandoning it (para 5), but only with guardrails and accountability (paras 5–6)."
+            ],
+            "trap": "Option B: paras 3–4 set out serious risks, so the support is not unreserved."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Lenders using machine-learning tools report that they can approve small loans within minutes.\nII. A model will treat a group as risky only if its instructions explicitly mention that group.\nIII. The author suggests that borrowers' data should be used only for the purpose for which it was given.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Only III",
+            "Both I and II",
+            "Both I and III"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is false — para 3: a model may treat groups as risky 'even though nothing in its instructions mentions them'.",
+              "III is true — para 5."
+            ],
+            "trap": "Option D: statement II reverses para 3."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **proxies** as used in the passage.",
+          "options": [
+            "substitutes",
+            "obstacles",
+            "rewards",
+            "records",
+            "remedies"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "A postal code can 'act as proxies for income, gender or social background' — it stands in for them.",
+              "Substitutes is the closest in meaning."
+            ],
+            "trap": "Records: the variables come from records, but a proxy is a stand-in, not a record."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:technology"
+          ]
+        },
+        {
+          "key": "rc-08-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **opaque** as used in the passage.",
+          "options": [
+            "obscure",
+            "complex",
+            "transparent",
+            "accurate",
+            "secretive"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'accurate but opaque' means accurate but impossible to see into or understand.",
+              "The opposite is transparent — the very word para 4 uses."
+            ],
+            "trap": "Obscure and secretive are close to opaque in meaning; complex explains why a model may be opaque but is not its opposite."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:technology"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-09",
+      "subtype": "social",
+      "difficulty": "medium",
+      "title": "Ageing and care",
+      "stimulus": "For generations, growing old in India meant growing old among family. Grandparents lived with their sons and daughters, helped to raise their grandchildren and were cared for in turn when their health failed. This arrangement is changing quietly but steadily. As young people move to distant cities or abroad for work, and as homes become smaller, a growing number of elderly men and women now live alone or with only an ageing spouse for company.\n\nThe change is not only about where people live. Many older people, particularly those who worked in the informal sector, have no pension and little savings. Medical expenses rise sharply with age, and a single stay in hospital can use up years of savings. Loneliness adds a burden of its own. Doctors observe that isolated elderly people are more likely to suffer from depression, to neglect their medicines and to delay seeking help when they fall ill.\n\nIt would be wrong, however, to see old age only as a problem to be managed. Older people bring experience, patience and time — qualities that busy communities often lack. In several towns, retired teachers run free evening classes for schoolchildren, and retired nurses advise young mothers on caring for infants. When given a role, the elderly are not merely receivers of care but contributors to the life of their neighbourhood.\n\nA number of responses have emerged. Day-care centres for senior citizens, where they can spend a few hours with people of their own age, share a meal and have their health checked, have opened in some cities. Residents' associations organise weekly visits to neighbours who live alone. Some programmes pair college students with elderly people: the students help with smartphones and online payments, while the elders share stories, skills and advice. Such exchanges tend to **dispel** the stereotypes that each generation holds about the other.\n\nThese efforts are valuable but scattered, and they reach mainly people who live in cities. In villages from which young people have migrated in large numbers, the elderly often have no such support. Experts argue that a lasting solution will need trained caregivers, affordable health insurance and a steady income in old age, alongside community efforts. They also caution against assuming that families no longer wish to care for their elders; in most cases, the wish remains strong, but distance makes it hard to act on.\n\nHow a society treats its oldest members says a great deal about its values. As India's population ages, the challenge will be to ensure that longer lives are also dignified and **connected** ones.",
+      "questions": [
+        {
+          "key": "rc-09-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best describes the main idea of the passage?",
+          "options": [
+            "Young Indians no longer wish to look after their ageing parents in any form.",
+            "Day-care centres have fully solved the problems of the elderly in Indian cities.",
+            "Elderly people should move to cities, where better care is easily available.",
+            "As families change, the elderly need both community care and wider support.",
+            "Old people are a burden that busy communities can no longer afford to carry."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Paras 1–2 describe how family life is changing and what it costs the elderly.",
+              "Para 3 shows what they contribute; paras 4–5 describe responses and say community efforts need wider support alongside them."
+            ],
+            "trap": "Option A: para 5 warns against assuming families no longer wish to care — 'the wish remains strong'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why are more elderly people living alone today?",
+          "options": [
+            "They prefer to live away from their grandchildren.",
+            "Their pensions have made them financially independent.",
+            "Young people move away for work, and homes are smaller.",
+            "Villages now have better hospitals than cities do.",
+            "Families have stopped respecting their elders."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 1: 'As young people move to distant cities or abroad for work, and as homes become smaller, a growing number of elderly men and women now live alone'."
+            ],
+            "trap": "Option B: para 2 says many older people have 'no pension and little savings'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q03",
+          "subtype": "fact",
+          "prompt": "According to the doctors mentioned in the passage, isolated elderly people are more likely to:",
+          "options": [
+            "move permanently into day-care centres in the city",
+            "spend their savings on travel and leisure",
+            "take up paid work again after retiring",
+            "join residents' associations in their area",
+            "suffer from depression and delay seeking help when ill"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2: isolated elderly people 'are more likely to suffer from depression, to neglect their medicines and to delay seeking help when they fall ill'."
+            ],
+            "trap": "Option D: residents' associations appear in para 4 as visitors, not as something isolated elders join."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage?",
+          "options": [
+            "Retired nurses advising young mothers on caring for infants",
+            "Elderly people learning new languages at community colleges",
+            "Students helping elderly people with online payments",
+            "Residents' associations organising weekly visits",
+            "A single stay in hospital using up years of savings"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "A is in para 3, C and D are in para 4, and E is in para 2.",
+              "Language classes are never mentioned."
+            ],
+            "trap": "Option C may look reversed, since elders usually teach, but para 4 says the students help 'with smartphones and online payments'."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q05",
+          "subtype": "inference",
+          "prompt": "By saying that the elderly are \"not merely receivers of care but contributors\", the author implies that:",
+          "options": [
+            "older people no longer need any kind of care",
+            "older people should be made to work in order to earn their pensions",
+            "older people can enrich community life when given a role",
+            "only retired teachers and nurses are useful to society",
+            "communities should stop spending money on elder care"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: older people bring 'experience, patience and time', and 'when given a role' they contribute to the life of their neighbourhood."
+            ],
+            "trap": "Option A: 'not merely receivers of care' means they receive care and also give; it does not deny their need for care."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred from paragraph 5?",
+          "options": [
+            "Families in villages have stopped caring for their elders.",
+            "Community efforts alone can meet all the needs of the elderly.",
+            "Trained caregivers are already available in most villages.",
+            "Health insurance is no longer needed by the elderly in cities.",
+            "Village elders may be worse off for support than city elders."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 5: current efforts 'reach mainly people who live in cities', while in villages 'the elderly often have no such support'."
+            ],
+            "trap": "Option A: para 5 says the wish to care 'remains strong'; distance is the obstacle."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q07",
+          "subtype": "tone",
+          "prompt": "The tone of the passage is best described as:",
+          "options": [
+            "indifferent and detached",
+            "concerned but constructive",
+            "bitter and accusing",
+            "light-hearted and humorous",
+            "pessimistic and defeatist"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "The author describes real hardships (paras 1–2) but also contributions, responses and ways forward (paras 3–6)."
+            ],
+            "trap": "Option E: the passage points to workable responses and ends with a challenge, not with despair."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Many older people who worked in the informal sector have no pension.\nII. The programmes that pair students with elderly people benefit only the elderly.\nIII. Experts believe that most families no longer wish to care for their elders.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and II",
+            "Both I and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is false — para 4: the elders 'share stories, skills and advice', and the exchange dispels stereotypes 'that each generation holds about the other'.",
+              "III is false — para 5: 'the wish remains strong'."
+            ],
+            "trap": "Option C: statement II ignores what the students gain from the exchange."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **dispel** as used in the passage.",
+          "options": [
+            "strengthen",
+            "explain",
+            "create",
+            "remove",
+            "conceal"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'dispel the stereotypes' means make these fixed ideas disappear.",
+              "Remove is the closest in meaning."
+            ],
+            "trap": "Strengthen is the opposite; conceal only hides the stereotypes, while to dispel them is to make them go away."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:social"
+          ]
+        },
+        {
+          "key": "rc-09-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **connected** as used in the passage.",
+          "options": [
+            "isolated",
+            "linked",
+            "crowded",
+            "healthy",
+            "respected"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "'dignified and connected' lives are lives with close ties to other people.",
+              "The opposite is isolated — the word para 2 uses for lonely elders."
+            ],
+            "trap": "Linked is a synonym of connected."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:social"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-10",
+      "subtype": "monetary-policy",
+      "difficulty": "extreme",
+      "title": "Inflation and policy",
+      "stimulus": "A central bank that targets inflation is, in effect, making a promise about the future while working with instruments that act only slowly on the present. When it changes its policy rate, the rate at which it lends to banks for short periods, the effect travels outward through a chain of intermediaries: banks revise their deposit and lending rates, households and firms reconsider whether to borrow or save, and demand in the economy gradually adjusts. By the time prices respond fully, several quarters may have passed, and the conditions that prompted the decision may themselves have changed.\n\nThis lag creates a peculiar difficulty in an economy like India's, where food carries a large weight in the consumer price basket. A failed monsoon or an unseasonal heatwave can push up the prices of vegetables and pulses within weeks. Raising interest rates will not make it rain, nor will it bring tomatoes to market any faster. A central bank that responded to every such spike would impose the cost of dearer borrowing on the whole economy without touching the cause of the rise. The conventional prescription is therefore to \"look through\" supply shocks that are likely to reverse on their own.\n\nThe prescription is sound but conditional. Supply shocks do not always stay confined to the goods in which they begin. If households, having watched food prices climb for months, come to regard high inflation as normal, workers may press for higher wages and firms facing higher costs may raise prices across the board. At that point a temporary disturbance has become **entrenched**, and a central bank that looked through it may find itself confronting a problem it can no longer ignore. The danger is greatest when shocks arrive in quick succession, leaving expectations no time to settle between them. The crucial question, then, is not whether prices have risen but whether expectations have shifted.\n\nHere credibility becomes the central bank's most valuable asset. If people believe that the bank will act firmly whenever inflation threatens to settle above its target, they have less reason to alter their behaviour in response to a brief spike, and the shock fades without much intervention. A credible central bank can thus afford to be patient precisely because it is believed to be capable of impatience. Conversely, a bank whose commitment is doubted may have to raise rates more sharply, and at greater cost to growth, to achieve the same result.\n\nCredibility, however, is not built by words alone. It rests on a record of decisions that match stated intentions, and on communication clear enough for markets and households to anticipate how the bank will respond to new information. Surprises may occasionally be unavoidable, but a central bank that surprises too often teaches the public to disregard its guidance, weakening the very channel through which it hopes to influence expectations.\n\nThe art of monetary policy, therefore, lies less in reacting to each month's data than in judging which movements are noise and which are signals — and in commanding enough trust that its judgement, when it chooses to wait, is read as **prudence** rather than neglect.",
+      "questions": [
+        {
+          "key": "rc-10-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the central theme of the passage?",
+          "options": [
+            "Central banks should raise interest rates whenever food prices rise sharply, whatever the cause.",
+            "Given long policy lags, success rests on telling passing shocks from lasting ones and on credibility.",
+            "Supply shocks never influence the general level of prices, so central banks may safely ignore them.",
+            "Clear communication is, by itself, enough for a central bank to keep inflation under control.",
+            "Monetary policy cannot work in economies where food carries a large weight in consumer prices."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Paras 1–2: policy acts with long lags, and reacting to every food spike is costly.",
+              "Para 3: what matters is whether expectations shift; paras 4–6: credibility and judgement decide success."
+            ],
+            "trap": "Option D: para 5 says credibility 'is not built by words alone'; it needs a record of decisions that match stated intentions."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why would it be unwise for a central bank to respond to every food-price spike by raising rates?",
+          "options": [
+            "Higher interest rates would push food prices up even further.",
+            "Food prices are left out of the consumer price basket.",
+            "Banks would stop passing rate changes on to their customers.",
+            "It would force the government to cut its own spending.",
+            "It would raise borrowing costs without curing the cause."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2: such a bank 'would impose the cost of dearer borrowing on the whole economy without touching the cause of the rise'."
+            ],
+            "trap": "Option A: the passage says higher rates would not bring food prices down ('will not make it rain'), not that they would push them up."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a result of a change in the policy rate?",
+          "options": [
+            "The government adjusts its own spending to the new rate.",
+            "Banks revise their deposit and lending rates.",
+            "Households and firms reconsider whether to borrow or save.",
+            "Demand in the economy gradually adjusts.",
+            "Prices eventually respond, though this may take several quarters."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 1: banks revise their rates, households and firms rethink borrowing and saving, demand adjusts, and prices respond fully only after 'several quarters'.",
+              "Government spending is never mentioned."
+            ],
+            "trap": "Option E can look like a separate point about timing, but para 1 presents the delayed price response as the end of the same chain."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q04",
+          "subtype": "fact",
+          "prompt": "According to the passage, a credible central bank \"can afford to be patient\" because:",
+          "options": [
+            "its earlier rate increases have already brought inflation below target",
+            "patient policy always costs less growth than firm action",
+            "markets expect it never to raise rates in response to supply shocks",
+            "trust in its resolve stops brief spikes from changing behaviour",
+            "credible central banks face fewer supply shocks than others do"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4: if people believe the bank 'will act firmly', they 'have less reason to alter their behaviour in response to a brief spike, and the shock fades without much intervention'."
+            ],
+            "trap": "Option C reverses the logic: the bank's patience works because people expect it to act firmly when needed."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q05",
+          "subtype": "inference",
+          "prompt": "Going by the reasoning in the passage, in which of the following situations would the case for continuing to \"look through\" a rise in food prices be weakest?",
+          "options": [
+            "Vegetable prices jump for a few weeks after unseasonal rain, and then begin to ease again.",
+            "A normal monsoon is forecast, and pulse prices are expected to fall back soon.",
+            "Repeated food shocks lead households to expect lasting inflation, and wage demands begin to rise.",
+            "Banks cut their deposit rates slightly while food prices stay broadly unchanged.",
+            "A single poor harvest raises the price of one vegetable, but other prices stay steady."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: looking through stops working once households 'come to regard high inflation as normal' and wages and prices rise across the board; the danger is greatest when shocks 'arrive in quick succession'.",
+              "Option C describes exactly this: expectations have shifted."
+            ],
+            "trap": "Options A and E describe brief or narrow supply shocks — the very kind para 2 says a central bank should look through."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q06",
+          "subtype": "inference",
+          "prompt": "The statement that a credible central bank \"can afford to be patient precisely because it is believed to be capable of impatience\" most nearly means that:",
+          "options": [
+            "public faith in its readiness to act is what lets it hold back",
+            "a central bank should switch between patience and impatience to keep markets guessing",
+            "patient central banks are generally regarded as weak and indecisive",
+            "a central bank must react at once to every rise in prices if it wants to be believed",
+            "impatient policy always does more harm to growth than patient policy does"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 4: because people trust the bank to act firmly if needed, a brief spike does not change their behaviour, so the bank can afford to wait."
+            ],
+            "trap": "Option B: para 5 warns that a bank that surprises too often teaches the public to 'disregard its guidance'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q07",
+          "subtype": "tone",
+          "prompt": "Which of the following best describes the tone of the passage?",
+          "options": [
+            "alarmed and urgent",
+            "dismissive and sceptical",
+            "reverent and uncritical",
+            "detached and inconclusive",
+            "measured and analytical"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The author weighs a rule ('sound but conditional'), explains when it fails and reaches a reasoned conclusion in para 6."
+            ],
+            "trap": "Option D: the author reaches a clear conclusion about where 'the art of monetary policy' lies, so the passage is not inconclusive."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. A central bank that surprises the public too often weakens its own ability to influence expectations.\nII. A central bank whose commitment is doubted may have to raise rates more sharply, at greater cost to growth.\nIII. The author holds that the crucial question after a supply shock is whether prices have risen, not whether expectations have shifted.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and II",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "I is true — para 5: frequent surprises weaken 'the very channel through which it hopes to influence expectations'.",
+              "II is true — para 4.",
+              "III is false — para 3: the crucial question is 'not whether prices have risen but whether expectations have shifted'."
+            ],
+            "trap": "Option E: statement III swaps the two halves of the author's sentence in para 3."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **entrenched** as used in the passage.",
+          "options": [
+            "eliminated",
+            "exaggerated",
+            "concealed",
+            "ingrained",
+            "reversed"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "A temporary disturbance that has become 'entrenched' is now firmly fixed in wages and prices.",
+              "Ingrained means firmly established."
+            ],
+            "trap": "Eliminated and reversed describe the opposite of what has happened."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:monetary-policy"
+          ]
+        },
+        {
+          "key": "rc-10-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **prudence** as used in the passage.",
+          "options": [
+            "foresight",
+            "recklessness",
+            "hesitation",
+            "modesty",
+            "firmness"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'read as prudence rather than neglect' — prudence is careful, sensible judgement.",
+              "The opposite is recklessness."
+            ],
+            "trap": "Hesitation is not the opposite, since a prudent bank may well choose to wait; foresight is close to prudence in meaning."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:monetary-policy"
+          ]
+        }
+      ]
+    }
+  ]
+}

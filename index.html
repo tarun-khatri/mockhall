@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F5F7FA" />
+    <meta name="description" content="Free SBI Clerk and IBPS Clerk prelims mock tests with sectional timers, negative marking and worked solutions. No login, works offline." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <title>MockHall — free bank clerk mocks</title>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('mockhall:theme');
+          if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+          var f = localStorage.getItem('mockhall:font');
+          if (f) document.documentElement.style.setProperty('--q-size', f + 'px');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>MockHall needs JavaScript to run the tests.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
