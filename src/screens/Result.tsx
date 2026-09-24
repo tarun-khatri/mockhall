@@ -9,6 +9,7 @@ import { plain, shortDuration } from '../lib/format';
 import { Button, SectionHeading, Spinner } from '../components/ui';
 import { encodeConfig, chapterConfig } from '../exam/configs';
 import { launch } from '../exam/launch';
+import { launchWeakMix } from '../exam/weakMix';
 import { useSettings } from '../app/settings';
 
 /** Good attempts reported by coaching analyses (SPEC 3.3) — not official cut-offs. */
@@ -125,6 +126,17 @@ export default function Result() {
   };
 
   const practiseWeak = async () => {
+    if (isMock) {
+      setBusy(true);
+      try {
+        navigate(`/test/${await launchWeakMix(exam)}`);
+        return;
+      } catch {
+        /* not enough history yet — fall back to this paper's weakest topic */
+      } finally {
+        setBusy(false);
+      }
+    }
     const weakest = topicRows.find((t) => t.lost > 0) ?? topicRows[0];
     if (!weakest) return;
     setBusy(true);

@@ -60,21 +60,21 @@
       "key": "wu-003",
       "subtype": "which-correct",
       "difficulty": "easy",
-      "prompt": "In which of the following sentences is the word **quiet** used correctly?\n\nI. Please keep **quiet** while the exam is going on.\nII. The house was **quiet** after the guests left.\nIII. He decided to **quiet** his job and start a business.",
+      "prompt": "In which of the following sentences is the word **quiet** used correctly?\n\nI. He decided to **quiet** his job and start a business.\nII. Please keep **quiet** while the exam is going on.\nIII. The house was **quiet** after the guests left.",
       "options": [
+        "Only II",
         "Both I and II",
-        "Both I and III",
         "Both II and III",
         "All of these",
         "None of these"
       ],
-      "answerIndex": 0,
+      "answerIndex": 2,
       "solution": {
         "steps": [
-          "I – correct: 'quiet' = silent.",
-          "II – correct: 'quiet' = without noise or activity.",
-          "III – incorrect: Leaving a job is 'quit', not 'quiet'.",
-          "So the answer is 'Both I and II'."
+          "I – incorrect: Leaving a job is 'quit', not 'quiet'.",
+          "II – correct: 'quiet' = silent.",
+          "III – correct: 'quiet' = without noise or activity.",
+          "So the answer is 'Both II and III'."
         ],
         "trap": "'quiet', 'quite' and 'quit' look alike; read the meaning, not the shape."
       },
@@ -89,13 +89,13 @@
       "difficulty": "easy",
       "prompt": "In which of the following sentences is the word **lead** used correctly?\n\nI. She will **lead** the state team at the national meet.\nII. Old water pipes were often made of **lead**.\nIII. The guide **lead** us through the forest yesterday.",
       "options": [
-        "Only III",
         "Both I and II",
         "Both I and III",
         "Both II and III",
-        "All of these"
+        "All of these",
+        "None of these"
       ],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "solution": {
         "steps": [
           "I – correct: 'lead' (verb) = be in charge of.",
@@ -117,12 +117,12 @@
       "prompt": "In which of the following sentences is the word **fair** used correctly?\n\nI. The umpire's decision was **fair** to both teams.\nII. She paid the **fair** and got into the auto.\nIII. The weather stayed **fair** all through the holiday.",
       "options": [
         "Only I",
-        "Only III",
         "Both I and III",
         "Both II and III",
-        "All of these"
+        "All of these",
+        "None of these"
       ],
-      "answerIndex": 2,
+      "answerIndex": 1,
       "solution": {
         "steps": [
           "I – correct: 'fair' = just, impartial.",
@@ -351,11 +351,11 @@
       "key": "wu-014",
       "subtype": "which-correct",
       "difficulty": "medium",
-      "prompt": "In which of the following sentences is the word **draw** used correctly?\n\nI. The match ended in a **draw**.\nII. The exhibition is expected to **draw** large crowds.\nIII. She **draw** a map of the village for us yesterday.",
+      "prompt": "In which of the following sentences is the word **draw** used correctly?\n\nI. The match ended in a **draw**.\nII. She **draw** a map of the village for us yesterday.\nIII. The exhibition is expected to **draw** large crowds.",
       "options": [
         "Only I",
         "Only III",
-        "Both I and II",
+        "Both I and III",
         "All of these",
         "None of these"
       ],
@@ -363,11 +363,11 @@
       "solution": {
         "steps": [
           "I – correct: 'draw' (noun) = a result with no winner.",
-          "II – correct: 'draw' = attract.",
-          "III – incorrect: 'yesterday' needs the past tense 'drew'.",
-          "So the answer is 'Both I and II'."
+          "II – incorrect: 'yesterday' needs the past tense 'drew'.",
+          "III – correct: 'draw' = attract.",
+          "So the answer is 'Both I and III'."
         ],
-        "trap": "III fails on tense, not meaning: the past of 'draw' is 'drew'."
+        "trap": "The sentence with 'draw' after 'yesterday' fails on tense, not meaning: the past of 'draw' is 'drew'."
       },
       "tags": [
         "usage:polysemy",
@@ -622,23 +622,23 @@
       "key": "wu-024",
       "subtype": "which-correct",
       "difficulty": "medium",
-      "prompt": "In which of the following sentences is the word **tender** used correctly?\n\nI. The company won the **tender** for building the flyover.\nII. The mutton was cooked until it was **tender**.\nIII. She spoke in a **tender** to calm the frightened child.",
+      "prompt": "In which of the following sentences is the word **tender** used correctly?\n\nI. She spoke in a **tender** to calm the frightened child.\nII. The company won the **tender** for building the flyover.\nIII. The mutton was cooked until it was **tender**.",
       "options": [
+        "Only I",
+        "Only II",
         "Both I and II",
         "Both I and III",
-        "Both II and III",
-        "All of these",
-        "None of these"
+        "Both II and III"
       ],
-      "answerIndex": 0,
+      "answerIndex": 4,
       "solution": {
         "steps": [
-          "I – correct: 'tender' (noun) = a formal bid for a contract.",
-          "II – correct: 'tender' (adjective) = soft, easy to chew.",
-          "III – incorrect: 'tender' here would need a noun such as 'tone': 'in a tender tone'. 'a tender' alone means a bid.",
-          "So the answer is 'Both I and II'."
+          "I – incorrect: 'tender' here would need a noun such as 'tone': 'in a tender tone'. 'a tender' alone means a bid.",
+          "II – correct: 'tender' (noun) = a formal bid for a contract.",
+          "III – correct: 'tender' (adjective) = soft, easy to chew.",
+          "So the answer is 'Both II and III'."
         ],
-        "trap": "III sounds natural until you notice there is no noun after 'tender'."
+        "trap": "'She spoke in a tender …' sounds natural until you notice there is no noun after 'tender'."
       },
       "tags": [
         "usage:polysemy",
@@ -649,23 +649,23 @@
       "key": "wu-025",
       "subtype": "which-correct",
       "difficulty": "medium",
-      "prompt": "In which of the following sentences is the word **loose** used correctly?\n\nI. The screw on the chair has come **loose**.\nII. He wore a **loose** cotton shirt in the heat.\nIII. Don't **loose** your ticket before the journey.",
+      "prompt": "In which of the following sentences is the word **loose** used correctly?\n\nI. Don't **loose** your ticket before the journey.\nII. We must not **loose** hope even now.\nIII. The screw on the chair has come **loose**.",
       "options": [
+        "Only III",
         "Both I and II",
         "Both I and III",
         "Both II and III",
-        "All of these",
-        "None of these"
+        "All of these"
       ],
       "answerIndex": 0,
       "solution": {
         "steps": [
-          "I – correct: 'loose' = not firmly fixed.",
-          "II – correct: 'loose' = not tight.",
-          "III – incorrect: To misplace is 'lose'.",
-          "So the answer is 'Both I and II'."
+          "I – incorrect: To misplace is 'lose'.",
+          "II – incorrect: 'lose hope' needs the verb 'lose'.",
+          "III – correct: 'loose' = not firmly fixed.",
+          "So the answer is 'Only III'."
         ],
-        "trap": "'loose' (rhymes with 'goose') is an adjective; 'lose' is the verb."
+        "trap": "'loose' (rhymes with 'goose') is an adjective meaning not tight; the verb meaning misplace or fail to keep is 'lose'."
       },
       "tags": [
         "usage:confusable",
@@ -678,16 +678,16 @@
       "difficulty": "medium",
       "prompt": "The words **accept** and **except** are often confused. In which of the following sentences is the word in bold used correctly?",
       "options": [
-        "Everyone came to the party **accept** Rohan.",
         "She was glad to **accept** the job offer from the Pune branch.",
+        "Everyone came to the party **accept** Rohan.",
         "The bank does not **except** damaged notes.",
         "All shops, **accept** chemists, will stay shut on Sunday.",
         "He **excepted** the award on behalf of his father."
       ],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "solution": {
         "steps": [
-          "'accept' = agree to take. A and D need 'except' (leaving out); C and E need 'accept'.",
+          "'accept' = agree to take. B and D need 'except' (leaving out); C and E need 'accept'.",
           "Correct: *She was glad to accept the job offer from the Pune branch.*"
         ],
         "trap": "E mixes the two: receiving an award is 'accepted'.",
@@ -705,18 +705,18 @@
       "prompt": "The words **council** and **counsel** are often confused. In which of the following sentences is the word in bold used correctly?",
       "options": [
         "The city **counsel** approved the new parking rules.",
+        "She sought the **counsel** of her elders before deciding.",
         "The defence **council** asked the court for more time.",
         "The student **counsel** met to plan the annual day.",
-        "The **council** for the accused argued that he was innocent.",
-        "She sought the **counsel** of her elders before deciding."
+        "The **council** for the accused argued that he was innocent."
       ],
-      "answerIndex": 4,
+      "answerIndex": 1,
       "solution": {
         "steps": [
-          "'counsel' = advice (or a lawyer). A and C describe a body of people ('council'); B and D describe a lawyer ('counsel').",
+          "'counsel' = advice (or a lawyer). A and D describe a body of people ('council'); C and E describe a lawyer ('counsel').",
           "Correct: *She sought the counsel of her elders before deciding.*"
         ],
-        "trap": "D sounds official, but a lawyer is 'counsel', not 'council'.",
+        "trap": "E sounds official, but a lawyer is 'counsel', not 'council'.",
         "rule": "council = body of people; counsel = advice, lawyer"
       },
       "tags": [
@@ -858,23 +858,23 @@
       "key": "wu-033",
       "subtype": "which-correct",
       "difficulty": "hard",
-      "prompt": "In which of the following sentences is the word **bear** used correctly?\n\nI. I cannot **bear** the sight of food being wasted.\nII. Mango trees in this orchard **bear** fruit only in alternate years.\nIII. The document must **bare** the signature of the manager.",
+      "prompt": "In which of the following sentences is the word **bear** used correctly?\n\nI. I cannot **bear** the sight of food being wasted.\nII. The document must **bare** the signature of the manager.\nIII. Mango trees in this orchard **bear** fruit only in alternate years.",
       "options": [
         "Only I",
         "Only II",
         "Only III",
         "Both I and II",
-        "All of these"
+        "Both I and III"
       ],
-      "answerIndex": 3,
+      "answerIndex": 4,
       "solution": {
         "steps": [
           "I – correct: 'bear' = tolerate.",
-          "II – correct: 'bear fruit' = produce fruit.",
-          "III – incorrect: To carry a signature is 'bear'; 'bare' means uncovered.",
-          "So the answer is 'Both I and II'."
+          "II – incorrect: To carry a signature is 'bear'; 'bare' means uncovered.",
+          "III – correct: 'bear fruit' = produce fruit.",
+          "So the answer is 'Both I and III'."
         ],
-        "trap": "In III the spelling itself is wrong: 'bare' is not 'bear'. Check the spelling of the given word in every sentence."
+        "trap": "In the signature sentence the spelling itself is wrong: 'bare' is not 'bear'. Check the spelling of the given word in every sentence."
       },
       "tags": [
         "usage:homophone",
@@ -888,12 +888,12 @@
       "prompt": "In which of the following sentences is the word **bolt** used correctly?\n\nI. The horse **bolted** when it heard the firecracker.\nII. Remember to **bolt** the door before you go to sleep.\nIII. The news of the transfer came as a **bolt** from the blue.",
       "options": [
         "Only I",
-        "Only III",
         "Both I and II",
         "Both I and III",
-        "All of these"
+        "All of these",
+        "None of these"
       ],
-      "answerIndex": 4,
+      "answerIndex": 3,
       "solution": {
         "steps": [
           "I – correct: 'bolt' = run away suddenly.",
@@ -1021,21 +1021,21 @@
       "key": "wu-039",
       "subtype": "which-correct",
       "difficulty": "hard",
-      "prompt": "In which of the following sentences is the word **price** used correctly?\n\nI. Onion **prices** have risen sharply this month.\nII. The shopkeeper **priced** the shirts at five hundred rupees each.\nIII. He was **priced** by the villagers for his honesty.",
+      "prompt": "In which of the following sentences is the word **price** used correctly?\n\nI. He was **priced** by the villagers for his honesty.\nII. Onion **prices** have risen sharply this month.\nIII. The shopkeeper **priced** the shirts at five hundred rupees each.",
       "options": [
+        "Only II",
         "Only III",
         "Both I and II",
         "Both I and III",
-        "All of these",
-        "None of these"
+        "Both II and III"
       ],
-      "answerIndex": 1,
+      "answerIndex": 4,
       "solution": {
         "steps": [
-          "I – correct: 'price' = cost.",
-          "II – correct: 'price' (verb) = fix the cost of.",
-          "III – incorrect: Being valued highly is being 'prized'.",
-          "So the answer is 'Both I and II'."
+          "I – incorrect: Being valued highly is being 'prized'.",
+          "II – correct: 'price' = cost.",
+          "III – correct: 'price' (verb) = fix the cost of.",
+          "So the answer is 'Both II and III'."
         ],
         "trap": "'priced' and 'prized' differ by one letter; valuing a person is 'prize'."
       },
@@ -1075,23 +1075,23 @@
       "key": "wu-041",
       "subtype": "which-correct",
       "difficulty": "hard",
-      "prompt": "In which of the following sentences is the word **pore** used correctly?\n\nI. Students **pored** over their notes the night before the exam.\nII. Sweat came out of every **pore** on his face.\nIII. It began to **pore** heavily in the afternoon.",
+      "prompt": "In which of the following sentences is the word **pore** used correctly?\n\nI. It began to **pore** heavily in the afternoon.\nII. Students **pored** over their notes the night before the exam.\nIII. She **pored** hot milk into the glass.",
       "options": [
+        "Only II",
         "Both I and II",
         "Both I and III",
-        "Both II and III",
         "All of these",
         "None of these"
       ],
       "answerIndex": 0,
       "solution": {
         "steps": [
-          "I – correct: 'pore over' = study closely.",
-          "II – correct: 'pore' (noun) = tiny opening in the skin.",
-          "III – incorrect: Heavy rain 'pours'.",
-          "So the answer is 'Both I and II'."
+          "I – incorrect: Heavy rain 'pours'.",
+          "II – correct: 'pore over' = study closely.",
+          "III – incorrect: Tipping a liquid out is 'poured'.",
+          "So the answer is 'Only II'."
         ],
-        "trap": "'pore over' (study) is often wrongly written 'pour over'; here it is right, and III is the misuse."
+        "trap": "'pore over' (study closely) is right; rain and milk 'pour'."
       },
       "tags": [
         "usage:homophone",
@@ -1129,11 +1129,11 @@
       "key": "wu-043",
       "subtype": "which-correct",
       "difficulty": "hard",
-      "prompt": "In which of the following sentences is the word **ferment** used correctly?\n\nI. Grapes are left to **ferment** in large steel tanks.\nII. The campus was in a **ferment** after the fee hike.\nIII. The idea **fermented** a great deal of interest among investors.",
+      "prompt": "In which of the following sentences is the word **ferment** used correctly?\n\nI. Grapes are left to **ferment** in large steel tanks.\nII. Please **ferment** the leftover dal in the fridge so that it stays fresh.\nIII. The campus was in a **ferment** after the fee hike.",
       "options": [
         "Only I",
-        "Both I and II",
         "Both I and III",
+        "Both II and III",
         "All of these",
         "None of these"
       ],
@@ -1141,11 +1141,11 @@
       "solution": {
         "steps": [
           "I – correct: 'ferment' = undergo fermentation.",
-          "II – correct: 'in a ferment' = in a state of agitation.",
-          "III – incorrect: Interest is 'generated' or 'aroused'; figurative 'ferment' is used for trouble or unrest, not interest.",
-          "So the answer is 'Both I and II'."
+          "II – incorrect: Fermenting makes food sour; keeping food fresh in a fridge is 'store' or 'refrigerate', so 'ferment' is the opposite of what is meant.",
+          "III – correct: 'in a ferment' = in a state of agitation.",
+          "So the answer is 'Both I and III'."
         ],
-        "trap": "II looks odd but is a standard figurative noun use; III is the misuse."
+        "trap": "'in a ferment' (agitation) looks odd but is a standard figurative noun use; using 'ferment' to mean 'store' is the misuse."
       },
       "tags": [
         "usage:polysemy",
@@ -1211,19 +1211,19 @@
       "difficulty": "hard",
       "prompt": "The words **discreet** and **discrete** are often confused. In which of the following sentences is the word in bold used correctly?",
       "options": [
-        "The data were grouped into **discrete** categories for analysis.",
         "The manager was **discrete** about the customer's loan details.",
+        "The data were grouped into **discrete** categories for analysis.",
         "Please be **discrete**; nobody else should know about the surprise.",
         "The course is split into five **discreet** modules.",
         "She **discretely** slipped the note into his pocket."
       ],
-      "answerIndex": 0,
+      "answerIndex": 1,
       "solution": {
         "steps": [
-          "'discrete' = separate, distinct: 'discrete categories'. B, C and E need 'discreet' (careful, tactful); D needs 'discrete'.",
+          "'discrete' = separate, distinct: 'discrete categories'. A, C and E need 'discreet' (careful, tactful); D needs 'discrete'.",
           "Correct: *The data were grouped into discrete categories for analysis.*"
         ],
-        "trap": "B and C describe tact, which is 'discreet'.",
+        "trap": "A and C describe tact, which is 'discreet'.",
         "rule": "discreet = tactful; discrete = separate"
       },
       "tags": [
@@ -1237,16 +1237,16 @@
       "difficulty": "hard",
       "prompt": "The words **eminent** and **imminent** are often confused. In which of the following sentences is the word in bold used correctly?",
       "options": [
-        "Forecasters warned that a cyclone was **eminent**.",
         "The **imminent** closure of the mill worried the workers.",
+        "Forecasters warned that a cyclone was **eminent**.",
         "The seminar was addressed by an **imminent** economist.",
         "Danger was **eminent**, so the villagers were moved out.",
         "She is an **imminent** scientist in the field of rice genetics."
       ],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "solution": {
         "steps": [
-          "'imminent' = about to happen: the mill's closure. A and D need 'imminent'; C and E need 'eminent' (distinguished).",
+          "'imminent' = about to happen: the mill's closure. B and D need 'imminent'; C and E need 'eminent' (distinguished).",
           "Correct: *The imminent closure of the mill worried the workers.*"
         ],
         "trap": "C and E describe famous people, which is 'eminent'.",
@@ -1266,13 +1266,13 @@
         "A short welcome speech **proceeded** the ceremony.",
         "After the break, please **precede** to Hall B.",
         "The inquiry will **precede** despite objections.",
-        "Let's **precede** with the next item on the agenda.",
-        "The lightning **preceded** the thunder by a few seconds."
+        "The lightning **preceded** the thunder by a few seconds.",
+        "Let's **precede** with the next item on the agenda."
       ],
-      "answerIndex": 4,
+      "answerIndex": 3,
       "solution": {
         "steps": [
-          "'precede' = come before: lightning comes before thunder. A needs 'preceded'; B, C and D need 'proceed' (go on).",
+          "'precede' = come before: lightning comes before thunder. A needs 'preceded'; B, C and E need 'proceed' (go on).",
           "Correct: *The lightning preceded the thunder by a few seconds.*"
         ],
         "trap": "A: something that comes before a ceremony 'precedes' it.",
@@ -1289,13 +1289,13 @@
       "difficulty": "extreme",
       "prompt": "In which of the following sentences is the word **discount** used correctly?\n\nI. Do not **discount** the possibility of rain during the trek.\nII. The shop is offering a **discount** on winter clothes.\nIII. The firm **discounted** its staff for poor attendance.",
       "options": [
-        "Only I",
         "Only II",
         "Both I and II",
+        "Both I and III",
         "Both II and III",
         "All of these"
       ],
-      "answerIndex": 2,
+      "answerIndex": 1,
       "solution": {
         "steps": [
           "I – correct: 'discount' = dismiss as unlikely.",
@@ -1317,12 +1317,12 @@
       "prompt": "In which of the following sentences is the word **temper** used correctly?\n\nI. She **tempered** her criticism with generous praise.\nII. The clerk was suspended for **tempering** with the records.\nIII. The steel is **tempered** to make it tough.",
       "options": [
         "Only I",
-        "Only II",
         "Both I and II",
         "Both I and III",
-        "Both II and III"
+        "Both II and III",
+        "None of these"
       ],
-      "answerIndex": 3,
+      "answerIndex": 2,
       "solution": {
         "steps": [
           "I – correct: 'temper' = soften or moderate.",
@@ -1422,21 +1422,21 @@
       "key": "wu-054",
       "subtype": "which-correct",
       "difficulty": "extreme",
-      "prompt": "In which of the following sentences is the word **wean** used correctly?\n\nI. The baby was **weaned** at eight months.\nII. The scheme aims to **wean** farmers off chemical fertilisers.\nIII. The rains **weaned** after a week, and the river fell.",
+      "prompt": "In which of the following sentences is the word **wean** used correctly?\n\nI. The rains **weaned** after a week, and the river fell.\nII. The baby was **weaned** at eight months.\nIII. The scheme aims to **wean** farmers off chemical fertilisers.",
       "options": [
+        "Only II",
         "Only III",
-        "Both I and II",
-        "Both I and III",
+        "Both II and III",
         "All of these",
         "None of these"
       ],
-      "answerIndex": 1,
+      "answerIndex": 2,
       "solution": {
         "steps": [
-          "I – correct: 'wean' = accustom a baby to food other than milk.",
-          "II – correct: 'wean off' = make someone gradually stop depending on something.",
-          "III – incorrect: To decrease gradually is to 'wane'.",
-          "So the answer is 'Both I and II'."
+          "I – incorrect: To decrease gradually is to 'wane'.",
+          "II – correct: 'wean' = accustom a baby to food other than milk.",
+          "III – correct: 'wean off' = make someone gradually stop depending on something.",
+          "So the answer is 'Both II and III'."
         ],
         "trap": "'wean' and 'wane' are near-homophones; only 'wane' means decline."
       },
@@ -1478,13 +1478,13 @@
       "difficulty": "extreme",
       "prompt": "In which of the following sentences is the word **bound** used correctly?\n\nI. The train is **bound** for Kolkata.\nII. You are **bound** to succeed if you keep working hard.\nIII. She **bounded** the old book in leather.",
       "options": [
-        "Only I",
         "Only III",
         "Both I and II",
+        "Both I and III",
         "Both II and III",
         "All of these"
       ],
-      "answerIndex": 2,
+      "answerIndex": 1,
       "solution": {
         "steps": [
           "I – correct: 'bound for' = going towards.",

@@ -65,8 +65,8 @@ export function sentenceText(s: CodedSentence): string {
 export function buildCoding(rng: Rng, d: Difficulty, target: Category): DsDraft<DsCodingFacts> | null {
   const V = { easy: 5, medium: 6, hard: 7, extreme: 8 }[d];
   const vocab = rng.sample(WORDS, V);
-  const code = new Map(vocab.map((w, i) => [w, rng.sample(CODES, V)[i]] as const));
-  if (new Set(code.values()).size !== V) return null;
+  const cs = rng.sample(CODES, V);
+  const code = new Map(vocab.map((w, i) => [w, cs[i]] as const));
   const sentences: CodedSentence[] = [];
   const seen = new Set<string>();
   for (let t = 0; t < 60 && sentences.length < 14; t++) {

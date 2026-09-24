@@ -9,6 +9,7 @@ import { plain, shortDuration } from '../lib/format';
 import { Button, SectionHeading, Spinner } from '../components/ui';
 import { chapterConfig } from '../exam/configs';
 import { launch } from '../exam/launch';
+import { launchWeakMix } from '../exam/weakMix';
 import { useSettings } from '../app/settings';
 
 export default function Progress() {
@@ -67,6 +68,9 @@ export default function Progress() {
       {weak.length ? (
         <>
           <SectionHeading>Weakest 5 by marks at stake</SectionHeading>
+          <Button variant="primary" className="mb-2 w-full" disabled={!!busy} onClick={async () => { setBusy('mix'); try { navigate(`/test/${await launchWeakMix(exam)}`); } finally { setBusy(null); } }}>
+            {busy === 'mix' ? 'Preparing…' : 'Practise a weak-area mix'}
+          </Button>
           <ul className="divide-y divide-line">
             {weak.map((w) => (
               <li key={`${w.chapter}|${w.subtype}`} className="flex min-h-14 items-center gap-3 py-2">

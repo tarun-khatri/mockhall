@@ -2497,6 +2497,2492 @@
           ]
         }
       ]
+    },
+    {
+      "key": "rc-11",
+      "subtype": "business",
+      "difficulty": "easy",
+      "title": "Business case: a pickle brand",
+      "stimulus": "When Lakshmi Reddy's husband lost his job at a textile mill in Guntur eight years ago, the family needed a new source of income quickly. Lakshmi had one skill that everyone in her neighbourhood admired: her mango and gongura pickles. Friends often asked her to make an extra jar for them, and she began to charge a small amount for it.\n\nAt first she worked alone in her kitchen, making about twenty jars a week and selling them to neighbours and to two shops in the local market. The pickles sold out every week, but Lakshmi soon realised that she could not grow much further this way. Her kitchen was small, she had no money to buy raw mangoes in bulk during the season, and shopkeepers in other towns would not stock a product without a proper label and a food-safety licence.\n\nThe turning point came when she joined a women's self-help group. Through the group, she took a small loan to buy a second-hand grinder and large storage jars, and she attended a two-week training programme on hygiene, packaging and bookkeeping. With help from the trainers, she obtained a food-safety licence and designed a simple label showing her name, the ingredients and the date of packing.\n\nNext, Lakshmi hired three women from her street and moved production to a rented room. She also listed her pickles on an online marketplace. The first orders were slow, but a few customers left warm reviews, and orders began arriving from Hyderabad, Bengaluru and even from Indian families living abroad. Today her business sells nearly two thousand jars a month and employs eleven women.\n\nGrowth has brought new problems. The price of raw mangoes swings **sharply** from year to year, and a poor harvest can **squeeze** her profits. Large companies with big advertising budgets sell similar pickles at lower prices. Delivery charges for online orders are high, and a few jars break on the way, which leads to complaints and refunds.\n\nLakshmi has responded by buying mangoes directly from farmers at the start of the season, by switching to stronger packaging and by adding new products, such as spice powders, that sell throughout the year. She says her biggest advantage is that customers trust the taste. 'Big brands can beat my price,' she says, 'but not my grandmother's recipe.'\n\nHer story is not unusual. Across India, thousands of women are turning household skills into small enterprises. What they need most, experts say, is not charity but access to credit, training and markets.",
+      "questions": [
+        {
+          "key": "rc-11-q01",
+          "subtype": "title",
+          "prompt": "Which of the following is the most suitable title for the passage?",
+          "options": [
+            "Why Mango Prices Rise Every Summer",
+            "The Decline of Textile Mills in Andhra Pradesh",
+            "From a Home Kitchen to Distant Buyers: A Pickle Business Grows",
+            "How Online Marketplaces Charge Their Sellers",
+            "Large Companies Take Over the Pickle Market"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "The passage follows Lakshmi from a few jars in her kitchen to a business selling two thousand jars a month to buyers across India and abroad.",
+              "Every paragraph is part of this growth story, including the problems it brings."
+            ],
+            "trap": "Option A picks up one detail from para 5; a title must cover the whole passage.",
+            "shortcut": "A title must fit every paragraph — only one option covers the whole journey."
+          },
+          "tags": [
+            "rc:title",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why did Lakshmi begin selling her pickles?",
+          "options": [
+            "She had won a cooking competition in Guntur.",
+            "A large company offered to buy her recipe.",
+            "Her self-help group asked her to start a business.",
+            "Her family needed a new income after her husband lost his job.",
+            "She wanted to make use of a grinder she had bought."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 1: when her husband lost his job, 'the family needed a new source of income quickly'."
+            ],
+            "trap": "Option C: she joined the self-help group later (para 3), after she had already started selling."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as something Lakshmi gained through the self-help group?",
+          "options": [
+            "A loan to buy equipment",
+            "Training in hygiene and packaging",
+            "A shop of her own in the local market",
+            "Lessons in bookkeeping",
+            "Help in obtaining a food-safety licence"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3 lists the loan (for a grinder and jars), training in hygiene, packaging and bookkeeping, and help from the trainers with the licence.",
+              "She never opened a shop of her own; she sold to two shops in the market (para 2)."
+            ],
+            "trap": "Option C may look familiar because para 2 mentions 'two shops in the local market', but those shops were other people's.",
+            "shortcut": "Tick each option against para 3; the one left over is the answer."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is true of Lakshmi's business today?",
+          "options": [
+            "It employs only three women from her street.",
+            "It still runs from her own kitchen.",
+            "It sells only in the local market.",
+            "It sells nearly two thousand jars a month.",
+            "It has stopped selling online."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4: 'Today her business sells nearly two thousand jars a month and employs eleven women.'"
+            ],
+            "trap": "Option A: three women were her first hires; she now employs eleven."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, how did Lakshmi deal with jars breaking on the way to customers?",
+          "options": [
+            "She stopped selling online.",
+            "She raised her prices.",
+            "She bought a delivery van.",
+            "She sold only to nearby cities.",
+            "She switched to stronger packaging."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 5 names the problem (jars breaking) and para 6 gives her response: switching to stronger packaging."
+            ],
+            "trap": "Option A would solve the problem but is never mentioned; she still sells online."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q06",
+          "subtype": "inference",
+          "prompt": "What can be inferred from Lakshmi's remark about her grandmother's recipe?",
+          "options": [
+            "She plans to sell her grandmother's recipe to a big brand.",
+            "She believes the taste of her pickles keeps customers loyal even when others are cheaper.",
+            "Her pickles are cheaper than those sold by large companies.",
+            "She has never faced any competition.",
+            "She intends to stop making spice powders."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Big brands 'can beat my price … but not my grandmother's recipe' — she accepts they are cheaper but trusts taste to win.",
+              "Para 6 also says her biggest advantage is that 'customers trust the taste'."
+            ],
+            "trap": "Option C reverses the facts: para 5 says large companies sell 'at lower prices'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q07",
+          "subtype": "purpose",
+          "prompt": "What is the author's main purpose in writing the passage?",
+          "options": [
+            "To show, through one woman's story, how a household skill can grow into a business with the right support",
+            "To warn women against taking loans from self-help groups",
+            "To compare the prices of pickles sold online and in shops",
+            "To argue that large companies should not be allowed to sell pickles",
+            "To teach readers how to make mango pickle at home"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "The passage tells Lakshmi's story and ends by saying such women need 'credit, training and markets' — exactly what helped her."
+            ],
+            "trap": "Option B is the opposite: the loan through the group was the turning point."
+          },
+          "tags": [
+            "rc:purpose",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. The first orders from the online marketplace came in quickly.\nII. Lakshmi now buys mangoes directly from farmers at the start of the season.\nIII. Some of her online orders come from Indian families living abroad.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both II and III",
+            "Both I and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "I is false — para 4: 'The first orders were slow'.",
+              "II is true — para 6.",
+              "III is true — para 4."
+            ],
+            "trap": "Option E: statement I fails because the first orders were slow."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **squeeze** as used in the passage.",
+          "options": [
+            "raise",
+            "protect",
+            "share",
+            "reduce",
+            "reveal"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'a poor harvest can squeeze her profits' — costly mangoes leave her with less profit.",
+              "To squeeze profits is to reduce them."
+            ],
+            "trap": "'Raise' is the opposite: a poor harvest makes mangoes dearer, so profits shrink."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-11-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **sharply** as used in the passage.",
+          "options": [
+            "suddenly",
+            "slightly",
+            "steeply",
+            "greatly",
+            "quickly"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'swings sharply' means changes by a large amount.",
+              "The opposite is slightly (by a small amount)."
+            ],
+            "trap": "'Steeply' and 'greatly' are synonyms of sharply here, not antonyms."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:business"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-12",
+      "subtype": "nutrition",
+      "difficulty": "medium",
+      "title": "The return of millets",
+      "stimulus": "For much of the twentieth century, millets such as jowar, bajra and ragi were dismissed as the food of the poor. As rice and wheat became cheaper and more widely available through the public distribution system, many families that had eaten millets for generations switched to the more **prestigious** grains. The area under millets shrank steadily, and in many towns they disappeared from the kitchen altogether.\n\nIn recent years, however, millets have staged a remarkable comeback. Nutritionists point out that they are rich in dietary fibre, iron, calcium and other minerals. Ragi, for example, contains several times as much calcium as rice. Because millets are digested more slowly than polished rice, they release sugar into the blood gradually, which can help people manage diabetes. For a country where anaemia and diabetes are both widespread, these are significant advantages.\n\nMillets also make sense for the farmer. They grow well on poor soils, need far less water than rice and can survive long dry spells. Many varieties are ready for harvest in under three months. As rainfall becomes more erratic, crops that can **withstand** drought offer farmers a measure of security.\n\nGovernments have tried to encourage both production and consumption. Several states now include millets in school meals and in the grain distributed through ration shops, and procurement at a minimum support price has been extended to some varieties. Food companies, sensing a new market, have launched millet biscuits, noodles and breakfast cereals, and urban restaurants now feature millet dishes on their menus.\n\nYet the revival faces obstacles. Millets are harder to process than rice or wheat; the grains are small, and removing the husk requires machinery that is not available in many villages. Once processed, millet flour spoils faster than wheat flour, which makes storage and transport difficult. Many young people, used to the taste and texture of rice and wheat, find millet dishes unfamiliar.\n\nNutritionists also caution against treating millets as a miracle food. A packet of millet noodles fried in oil and loaded with salt is hardly a health food simply because of its main ingredient. The benefits come from eating whole millets as part of a balanced diet, not from adding a small amount of millet flour to processed snacks.\n\nThe future of millets, then, depends on more than enthusiasm. Better processing facilities near farms, assured markets for growers and recipes that suit modern tastes will decide whether the comeback lasts or proves to be a passing fashion.",
+      "questions": [
+        {
+          "key": "rc-12-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Millets should completely replace rice and wheat in the Indian diet.",
+            "Millets disappeared from Indian kitchens because they are unhealthy.",
+            "Millets are returning to favour for their nutritional and farming benefits, but their revival faces real obstacles.",
+            "Food companies are to blame for the decline of millets.",
+            "Millet noodles and biscuits are the healthiest way to eat millets."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Paras 2–4 explain the comeback (nutrition, farming, government and company support); paras 5–7 describe the obstacles and cautions.",
+              "Only the correct option holds both halves."
+            ],
+            "trap": "Option A goes further than the author, who never argues for replacing rice and wheat."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why did many families stop eating millets?",
+          "options": [
+            "Millets became too expensive to buy.",
+            "Rice and wheat became cheaper and easier to obtain.",
+            "Doctors advised people not to eat millets.",
+            "Millet crops failed because of repeated droughts.",
+            "Ration shops stopped selling rice."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 1: 'As rice and wheat became cheaper and more widely available through the public distribution system', families switched."
+            ],
+            "trap": "Option D reverses para 3, which says millets survive dry spells well."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q03",
+          "subtype": "fact",
+          "prompt": "According to the passage, how can millets help people manage diabetes?",
+          "options": [
+            "They contain no sugar at all.",
+            "They are rich in calcium.",
+            "They are cooked without oil.",
+            "They are eaten mainly in school meals.",
+            "Being digested slowly, they release sugar into the blood gradually."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2: 'Because millets are digested more slowly than polished rice, they release sugar into the blood gradually, which can help people manage diabetes.'"
+            ],
+            "trap": "Option B is true of ragi, but the passage links calcium to nutrition generally, not to diabetes."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as an advantage of millets for farmers?",
+          "options": [
+            "They grow well on poor soils.",
+            "They always fetch higher prices than rice.",
+            "They need far less water than rice.",
+            "They can survive long dry spells.",
+            "Many varieties are ready for harvest in under three months."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 3 lists poor soils, less water, surviving dry spells and harvest in under three months.",
+              "Prices are never compared with rice."
+            ],
+            "trap": "Minimum support price for some varieties (para 4) is not the same as always fetching more than rice."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q05",
+          "subtype": "fact",
+          "prompt": "Which of the following is mentioned in the passage as an obstacle to the revival of millets?",
+          "options": [
+            "Millets need more water than rice.",
+            "Millets cannot be grown on poor soil.",
+            "Millets contain less calcium than rice.",
+            "Millet flour spoils faster than wheat flour.",
+            "Restaurants refuse to serve millet dishes."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 5: 'Once processed, millet flour spoils faster than wheat flour, which makes storage and transport difficult.'"
+            ],
+            "trap": "Option E is contradicted by para 4: urban restaurants now feature millet dishes."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred from paragraph 6?",
+          "options": [
+            "Processed millet snacks have been banned.",
+            "Millets lose all their nutrients when cooked.",
+            "Nutritionists advise people to stop eating millets.",
+            "Millet noodles are healthier than whole millets.",
+            "A food is not necessarily healthy just because it contains millets."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Fried, salty millet noodles are 'hardly a health food simply because of its main ingredient'.",
+              "The benefit depends on how millets are eaten, not on the label."
+            ],
+            "trap": "Option C over-reads the caution: nutritionists recommend whole millets in a balanced diet."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q07",
+          "subtype": "tone",
+          "prompt": "Which of the following best describes the tone of the passage?",
+          "options": [
+            "Balanced and cautious",
+            "Openly hostile",
+            "Blindly enthusiastic",
+            "Completely indifferent",
+            "Deeply pessimistic"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "The author praises the 'remarkable comeback' but lists obstacles and warns against treating millets as a 'miracle food'."
+            ],
+            "trap": "Option C ignores paras 5–7; Option E ignores the benefits in paras 2–4."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Ragi contains several times as much calcium as rice.\nII. Some states include millets in school meals.\nIII. Millet flour can be stored for longer than wheat flour.",
+          "options": [
+            "Only I",
+            "Both I and II",
+            "Only II",
+            "Both I and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is true — para 4.",
+              "III is false — para 5: millet flour spoils faster than wheat flour."
+            ],
+            "trap": "Option E: statement III reverses para 5."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **prestigious** as used in the passage.",
+          "options": [
+            "esteemed",
+            "nutritious",
+            "affordable",
+            "ordinary",
+            "ancient"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Millets were 'the food of the poor', so rice and wheat were the grains with higher status.",
+              "Prestigious = having high status; esteemed = highly regarded."
+            ],
+            "trap": "'Nutritious' is tempting in a food passage, but the contrast is about status, not nutrition — millets are the more nutritious grains."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:nutrition"
+          ]
+        },
+        {
+          "key": "rc-12-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **withstand** as used in the passage.",
+          "options": [
+            "resist",
+            "endure",
+            "succumb",
+            "survive",
+            "tolerate"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Crops that 'withstand drought' hold out against it.",
+              "To succumb is to give way — the opposite."
+            ],
+            "trap": "Resist, endure, survive and tolerate are all near-synonyms of withstand."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:nutrition"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-13",
+      "subtype": "consumer",
+      "difficulty": "medium",
+      "title": "Second-hand clothes",
+      "stimulus": "A decade ago, buying second-hand clothes in an Indian city was something most young people would have been embarrassed to admit. Today, online platforms where users sell and buy used clothing are growing rapidly, and 'thrifting' has become a word that college students use with pride. What changed?\n\nPart of the answer lies in the rise of fast fashion. Large brands now launch new designs every few weeks, and prices are low enough for shoppers to buy clothes they may wear only a handful of times. The result is a mountain of garments that are discarded long before they are worn out. Producing a single cotton shirt can require thousands of litres of water, and synthetic fabrics made from petroleum take centuries to break down. A growing number of young consumers are uneasy about this waste.\n\nResale platforms offer them a way to enjoy variety without adding to the problem. A seller photographs an outfit, sets a price and ships it to a buyer when it is sold; the platform takes a commission. For sellers, many of them students and young professionals, the extra income is welcome. For buyers, the appeal lies in paying a fraction of the original price for branded or unusual pieces that are no longer available in shops.\n\nThe trend has also revived older habits. Small tailors report more customers asking them to alter or repair garments instead of throwing them away, and some designers have begun making new clothes from old saris and fabric scraps. In a sense, these practices are not new to India: handing down clothes to younger siblings and turning old saris into quilts have long been common in many households.\n\nStill, sceptics question how much difference the trend makes. Some buyers, they point out, simply use resale to buy even more clothes than before, so that total consumption does not fall. Shipping individual parcels across the country has its own environmental cost. And the market is still tiny compared with the volume of new clothes sold every year.\n\nThere are practical concerns as well. Buyers cannot touch or try on a garment before paying, and descriptions of its condition are not always **accurate**. Platforms have responded with return policies and seller ratings, but disputes are common.\n\nDespite these doubts, the shift in attitude is significant. When a generation that once saw used clothes as a sign of poverty begins to see them as a **sensible** choice, the fashion industry has reason to take notice. Whether this becomes a lasting change in buying habits, or merely another passing trend, will depend on whether shoppers begin to buy less, and not just differently.",
+      "questions": [
+        {
+          "key": "rc-13-q01",
+          "subtype": "title",
+          "prompt": "Which of the following is the most appropriate title for the passage?",
+          "options": [
+            "How to Start a Fashion Brand in India",
+            "Second-Hand, First Choice? The Rise of Clothing Resale",
+            "A Short History of the Sari",
+            "Why Cotton Prices Are Rising",
+            "Tailors Struggle as Customers Disappear"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "The passage explains why young buyers have turned to second-hand clothes, what the trend offers and whether it will last."
+            ],
+            "trap": "Option E reverses para 4: tailors report *more* customers."
+          },
+          "tags": [
+            "rc:title",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, which of the following is a feature of fast fashion?",
+          "options": [
+            "Clothes are made only from natural fabrics.",
+            "Garments are designed to last for many years.",
+            "Brands launch new designs every few weeks at low prices.",
+            "Clothes are sold only through resale platforms.",
+            "Prices are too high for most young shoppers."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 2: 'Large brands now launch new designs every few weeks, and prices are low enough for shoppers to buy clothes they may wear only a handful of times.'"
+            ],
+            "trap": "Option B is the opposite: garments are discarded long before they are worn out."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q03",
+          "subtype": "fact",
+          "prompt": "According to the passage, how does a resale platform earn money?",
+          "options": [
+            "It charges buyers a yearly membership fee.",
+            "It buys and resells the clothes itself.",
+            "It repairs and alters used clothes.",
+            "It takes a commission on each sale.",
+            "It sells advertising space to tailors."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 3: the seller ships the item when it is sold, and 'the platform takes a commission'."
+            ],
+            "trap": "Option B: the seller, not the platform, sets the price and ships the outfit."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a doubt or concern about clothing resale?",
+          "options": [
+            "Resale platforms pay sellers too little.",
+            "Some buyers end up buying more clothes than before.",
+            "Shipping individual parcels has an environmental cost.",
+            "The resale market is tiny compared with sales of new clothes.",
+            "Descriptions of a garment's condition are not always accurate."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 5 gives the first three doubts and para 6 the doubt about descriptions.",
+              "Nothing is said about sellers being underpaid; para 3 says the extra income is welcome."
+            ],
+            "trap": "Option E might look like a platform problem you are expected to reject, but para 6 states it directly."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q05",
+          "subtype": "fact",
+          "prompt": "What have small tailors reported, according to the passage?",
+          "options": [
+            "They are losing customers to resale platforms.",
+            "They have started their own resale websites.",
+            "They now make clothes from synthetic fabrics.",
+            "More customers are asking them to alter or repair clothes.",
+            "Fewer people want old saris turned into quilts."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4: 'Small tailors report more customers asking them to alter or repair garments instead of throwing them away.'"
+            ],
+            "trap": "Option A sounds like a likely effect of online selling, but the passage says the opposite."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred from paragraph 4?",
+          "options": [
+            "Indian households have always preferred fast fashion.",
+            "Quilts made from saris are mostly sold on resale platforms.",
+            "Reusing clothes was part of many Indian households' habits long before resale platforms.",
+            "Designers refuse to work with old fabric.",
+            "Younger siblings dislike wearing handed-down clothes."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'these practices are not new to India: handing down clothes … and turning old saris into quilts have long been common'."
+            ],
+            "trap": "Option D contradicts para 4: some designers make new clothes from old saris and scraps."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q07",
+          "subtype": "inference",
+          "prompt": "By saying that the change will depend on whether shoppers \"buy less, and not just differently\", the author implies that:",
+          "options": [
+            "shoppers should stop buying second-hand clothes",
+            "resale helps the environment only if it reduces the total quantity of clothes bought",
+            "buying differently is more harmful than buying less",
+            "resale platforms should limit the number of sellers",
+            "fast-fashion brands must lower their prices further"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 5 warns that some buyers use resale 'to buy even more clothes', so 'total consumption does not fall'.",
+              "Swapping new for used helps only if people also buy fewer clothes overall."
+            ],
+            "trap": "Option A misreads the author, who calls the shift in attitude significant."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Producing a single cotton shirt can require thousands of litres of water.\nII. Synthetic fabrics break down within a few years.\nIII. Platforms have introduced return policies and seller ratings.",
+          "options": [
+            "Only I",
+            "Only III",
+            "Both I and II",
+            "Both I and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is false — para 2: synthetic fabrics 'take centuries to break down'.",
+              "III is true — para 6."
+            ],
+            "trap": "Option E: statement II reverses para 2."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **accurate** as used in the passage.",
+          "options": [
+            "detailed",
+            "lengthy",
+            "attractive",
+            "recent",
+            "correct"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Descriptions that are 'not always accurate' do not match the garment's real condition.",
+              "Accurate = correct, true to fact."
+            ],
+            "trap": "'Detailed' fits the sentence, but a description can be detailed and still wrong; the word means correct, not full."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:consumer"
+          ]
+        },
+        {
+          "key": "rc-13-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **sensible** as used in the passage.",
+          "options": [
+            "practical",
+            "wise",
+            "foolish",
+            "reasonable",
+            "fashionable"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "A 'sensible choice' is a wise, practical one.",
+              "The opposite is foolish."
+            ],
+            "trap": "Practical, wise and reasonable are all synonyms of sensible."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:consumer"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-14",
+      "subtype": "tourism",
+      "difficulty": "easy",
+      "title": "Homestays in the hills",
+      "stimulus": "In the small village of Sarmoli in Uttarakhand, tourists do not stay in hotels. Instead, they live with local families in rooms set aside for guests, eat the same food as their hosts and spend their days walking to nearby meadows, visiting weavers or learning to cook local dishes. This kind of stay, known as a homestay, has become popular in many hill states over the last two decades.\n\nFor the villagers, homestays bring income without the need to leave home. A family with one or two spare rooms can earn more in a good tourist season than it would from months of farming. The money is spread widely: guides, cooks, drivers and craftspeople in the village all gain from the visitors. In some villages, a part of each guest's payment goes into a common fund used for repairing paths or supporting the local school.\n\nTourists, too, are drawn by the experience. Many travellers are tired of crowded hill stations, where traffic jams and concrete buildings have replaced the quiet they came for. In a homestay, they find clean air, home-cooked meals and a chance to understand how people in the mountains actually live. Some guests return year after year and remain in touch with their hosts.\n\nHomestays also put less pressure on the fragile mountain environment than large hotels. Because they use existing houses, they do not require new construction on steep slopes, and the number of guests at any time is small. Several villages have set rules that ban plastic bottles and ask visitors to carry their waste back with them.\n\nRunning a homestay is not always easy, however. Families have to learn to handle online bookings, keep rooms clean to the standard guests expect and deal with visitors whose habits may be very different from their own. Tourist numbers can fall sharply after a landslide or a bad monsoon, and income in the winter months is often low. Some villagers also worry that too many visitors could change the very character of the village that attracts them in the first place.\n\nState governments have supported the model by registering homestays, offering loans for improving rooms and providing training in hospitality. With care, homestays can offer a **model** of tourism that benefits both hosts and guests, while keeping the mountains as **peaceful** as the visitors hope to find them.",
+      "questions": [
+        {
+          "key": "rc-14-q01",
+          "subtype": "main-idea",
+          "prompt": "What is the passage mainly about?",
+          "options": [
+            "Why hill stations should be closed to tourists",
+            "Why hotels in the hills are cheaper than homestays",
+            "How villagers in Uttarakhand have given up farming",
+            "How homestays harm the mountain environment",
+            "The benefits homestays bring to villagers, tourists and the environment, and the difficulties of running them"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Paras 2–4 give the benefits for villagers, tourists and the environment; para 5 gives the difficulties; para 6 the support and the hope for the future."
+            ],
+            "trap": "Option D reverses para 4, which says homestays put less pressure on the environment."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what do tourists in Sarmoli do?",
+          "options": [
+            "They stay with local families and eat the same food as their hosts.",
+            "They stay in a large hotel near the village.",
+            "They cook meals for the villagers.",
+            "They build new houses on the slopes.",
+            "They work on farms to pay for their rooms."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 1: tourists 'live with local families in rooms set aside for guests, eat the same food as their hosts'."
+            ],
+            "trap": "Option C: they learn to cook local dishes, but nothing says they cook for the villagers."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q03",
+          "subtype": "fact",
+          "prompt": "According to the passage, how is a part of each guest's payment used in some villages?",
+          "options": [
+            "It is paid to the state government as tax.",
+            "It is used to build new hotels.",
+            "It is returned to guests who stay for a week.",
+            "It goes into a common fund for repairing paths or supporting the local school.",
+            "It is spent on plastic bottles for visitors."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2: 'a part of each guest's payment goes into a common fund used for repairing paths or supporting the local school'."
+            ],
+            "trap": "Option E contradicts para 4: several villages ban plastic bottles."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a difficulty of running a homestay?",
+          "options": [
+            "Guests often refuse to pay for their rooms.",
+            "Families must learn to handle online bookings.",
+            "Income in the winter months is often low.",
+            "Tourist numbers can fall after a landslide.",
+            "Visitors may have very different habits."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 5 lists online bookings, clean rooms, different habits, falls after landslides or a bad monsoon, and low winter income.",
+              "Non-payment by guests is never mentioned."
+            ],
+            "trap": "Option C is easy to miss because it comes in the middle of a long sentence, but para 5 does mention it.",
+            "shortcut": "Tick each option against para 5; the one left over is the answer."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, why do homestays put less pressure on the mountain environment than large hotels?",
+          "options": [
+            "They are built only on flat land.",
+            "They use existing houses and have only a few guests at a time.",
+            "They are open only in winter.",
+            "They run entirely on solar power.",
+            "They do not allow tourists to walk in the meadows."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 4: 'Because they use existing houses, they do not require new construction on steep slopes, and the number of guests at any time is small.'"
+            ],
+            "trap": "Option D sounds eco-friendly, but solar power is never mentioned."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q06",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred about the guests who \"return year after year\"?",
+          "options": [
+            "They receive large discounts for returning.",
+            "They are required to return by the state government.",
+            "They own the rooms in which they stay.",
+            "They cannot find rooms in hotels nearby.",
+            "They value the personal bond with their hosts and the experience of village life."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 3: guests come for clean air, home food and a chance to see mountain life, and they 'remain in touch with their hosts'.",
+              "So they return because they value the experience and the relationship."
+            ],
+            "trap": "Option A is a common reason in business, but no discount is mentioned."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q07",
+          "subtype": "purpose",
+          "prompt": "What is the author's main purpose in writing the passage?",
+          "options": [
+            "To persuade villagers to leave farming and move to cities",
+            "To advertise one particular homestay in Uttarakhand",
+            "To criticise the state government's tourism policy",
+            "To describe how homestays work and weigh their benefits against their difficulties",
+            "To explain how to build a hotel on a steep slope"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "The passage explains the homestay model, its benefits (paras 2–4) and its difficulties (para 5), ending with a hopeful note."
+            ],
+            "trap": "Option C: the government is described as supporting homestays, not criticised."
+          },
+          "tags": [
+            "rc:purpose",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. A family with spare rooms can earn more in a good tourist season than from months of farming.\nII. Several villages have banned plastic bottles.\nIII. State governments offer loans for improving rooms.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and III",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is true — para 4.",
+              "III is true — para 6."
+            ],
+            "trap": "Option C: statement II is also true; para 4 says several villages ban plastic bottles."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **model** as used in the passage.",
+          "options": [
+            "example",
+            "toy",
+            "failure",
+            "puzzle",
+            "rumour"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "'a model of tourism that benefits both hosts and guests' is an example worth following.",
+              "Here model means example or pattern."
+            ],
+            "trap": "'Toy' is another meaning of model (a small copy), but it does not fit 'a model of tourism'."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:tourism"
+          ]
+        },
+        {
+          "key": "rc-14-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **peaceful** as used in the passage.",
+          "options": [
+            "calm",
+            "noisy",
+            "quiet",
+            "restful",
+            "silent"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Visitors hope to find the mountains peaceful — quiet and calm, unlike crowded hill stations.",
+              "The opposite is noisy."
+            ],
+            "trap": "Calm, quiet, restful and silent are all close to peaceful."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:tourism"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-15",
+      "subtype": "water",
+      "difficulty": "medium",
+      "title": "Water lost on the way",
+      "stimulus": "Many Indian cities receive piped water for only a few hours a day, and residents have grown used to storing it in tanks and buckets. It is tempting to blame this on a shortage of water at the source. Yet in many cities, a large part of the problem lies not in how much water is supplied but in how much is lost before it reaches a tap.\n\nEngineers use the term 'non-revenue water' for water that a utility treats and pumps into its network but for which it receives no payment. In several Indian cities, this is estimated at between thirty and fifty per cent of all the water supplied. Some of it leaks from old, cracked pipes laid decades ago. Some is drawn through illegal connections. And some is consumed by households whose meters are faulty or who are charged a flat monthly fee regardless of how much they use.\n\nThe losses are costly in more ways than one. Treating and pumping water requires electricity and chemicals, so every litre that leaks away is money wasted. Because supply is **intermittent**, pipes are empty for much of the day; when pressure drops, dirty water from the surrounding soil can be sucked in through cracks, contaminating the supply. Utilities that cannot collect enough revenue have little money to repair their networks, and so the cycle continues.\n\nA few cities have shown that the cycle can be broken. By dividing the network into small zones, installing meters at the entry to each zone and comparing the water supplied with the water billed, engineers can locate where losses are highest. Leaks can then be repaired, illegal connections regularised and faulty meters replaced. In some areas where such work has been completed, residents who once received water for two hours a day now have a continuous supply.\n\nContinuous supply brings benefits that go beyond convenience. Households no longer need to buy storage tanks or electric pumps, and women and children spend less time collecting water. Since pipes are always full, contamination falls and water-borne diseases become less common.\n\nThe reforms are not painless. Replacing flat fees with metered billing can raise bills for some households, and regularising illegal connections requires tact. Utilities must also convince citizens that paying for water is fair when the service has long been unreliable.\n\nThe lesson, experts argue, is that building new dams or pipelines to bring water from distant rivers should not be the first response to a shortage. Fixing the network a city already has is often cheaper, quicker and less damaging to the environment, though far less **glamorous** than inaugurating a new project.",
+      "questions": [
+        {
+          "key": "rc-15-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best states the central argument of the passage?",
+          "options": [
+            "Indian cities have run out of water at the source.",
+            "Residents should store more water in tanks and buckets.",
+            "Metered billing always lowers water bills.",
+            "New dams are the quickest answer to water shortages.",
+            "Cities can often improve water supply more by cutting losses in their existing networks than by seeking new sources first."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 1 locates the problem in losses, paras 2–6 explain the losses and how to cut them, and para 7 draws the lesson: fix the existing network before building new dams or pipelines."
+            ],
+            "trap": "Option D is the view the last paragraph argues against."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what does 'non-revenue water' refer to?",
+          "options": [
+            "Water sold to factories at a discount",
+            "Water that a utility puts into its network but is not paid for",
+            "Rainwater collected on rooftops",
+            "Water that is unfit for drinking",
+            "Water given free to schools and hospitals"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 2: water 'that a utility treats and pumps into its network but for which it receives no payment'."
+            ],
+            "trap": "Option D: contamination is discussed in para 3, but it is not what the term means."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a source of non-revenue water?",
+          "options": [
+            "Leaks from old, cracked pipes",
+            "Illegal connections",
+            "Faulty meters",
+            "Water supplied to farms for irrigation",
+            "Flat monthly fees charged regardless of use"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2 lists leaks, illegal connections, faulty meters and flat fees.",
+              "Irrigation is never mentioned."
+            ],
+            "trap": "Option E may not look like a loss, but water used beyond a flat fee is water the utility is not paid for.",
+            "shortcut": "Every source in para 2 begins with \"Some\"; match the options to those sentences."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q04",
+          "subtype": "fact",
+          "prompt": "According to the passage, how can intermittent supply contaminate water?",
+          "options": [
+            "Water stored in tanks is always contaminated.",
+            "The chemicals used for treatment are harmful.",
+            "When pressure drops, dirty water from the soil can be sucked into empty pipes through cracks.",
+            "Illegal connections pour sewage directly into the pipes.",
+            "Meters release rust into the water."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: 'when pressure drops, dirty water from the surrounding soil can be sucked in through cracks, contaminating the supply'."
+            ],
+            "trap": "Option B: chemicals appear in para 3 only as a cost of treatment, not as a cause of contamination."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, how do engineers find out where losses are highest?",
+          "options": [
+            "By asking residents to report every leak",
+            "By cutting supply to two hours a day",
+            "By raising flat monthly fees",
+            "By building new pipelines",
+            "By comparing the water supplied to each zone with the water billed there"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 4: 'installing meters at the entry to each zone and comparing the water supplied with the water billed, engineers can locate where losses are highest'."
+            ],
+            "trap": "Option B describes the old problem, not the method."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q06",
+          "subtype": "inference",
+          "prompt": "The \"cycle\" mentioned at the end of paragraph 3 most likely refers to the fact that:",
+          "options": [
+            "losses cut revenue, and low revenue leaves too little money to repair the losses",
+            "utilities deliberately allow leaks so that they can raise prices",
+            "residents refuse to use piped water and buy tanks instead",
+            "engineers repair pipes that break again every year because of the rains",
+            "water at the source is always too dirty to treat"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Leaks and non-payment mean lost money; utilities that cannot collect enough revenue cannot repair the network; so the losses go on.",
+              "That self-repeating chain is the cycle."
+            ],
+            "trap": "Option D describes a cycle too, but the passage never mentions rain damage; its cycle is about revenue."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q07",
+          "subtype": "inference",
+          "prompt": "By calling network repair \"far less glamorous than inaugurating a new project\", the author implies that:",
+          "options": [
+            "repairing pipes costs more than building dams",
+            "new projects always damage the environment",
+            "engineers dislike repair work",
+            "citizens do not want a continuous supply",
+            "repair work draws less public attention than new projects, even though it is often the wiser choice"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The same sentence calls fixing the network 'cheaper, quicker and less damaging'; 'though far less glamorous' admits it wins less attention and praise."
+            ],
+            "trap": "Option A contradicts 'cheaper' in the same sentence."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. In several cities, non-revenue water is estimated at thirty to fifty per cent of the water supplied.\nII. With a continuous supply, households no longer need to buy storage tanks or electric pumps.\nIII. Metered billing reduces the water bill of every household.",
+          "options": [
+            "Both I and II",
+            "Only I",
+            "Only II",
+            "Both I and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is true — para 5.",
+              "III is false — para 6: metered billing 'can raise bills for some households'."
+            ],
+            "trap": "Option E: statement III contradicts para 6."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **intermittent** as used in the passage.",
+          "options": [
+            "continuous",
+            "plentiful",
+            "expensive",
+            "irregular",
+            "clean"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Supply for a few hours a day, with pipes 'empty for much of the day', stops and starts — it is intermittent.",
+              "Irregular (not steady) is the closest."
+            ],
+            "trap": "'Continuous' is the opposite — it is the goal described in para 4."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:water"
+          ]
+        },
+        {
+          "key": "rc-15-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **glamorous** as used in the passage.",
+          "options": [
+            "exciting",
+            "dull",
+            "attractive",
+            "dazzling",
+            "impressive"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "A glamorous project is exciting and draws attention; repair work lacks that appeal.",
+              "The opposite is dull."
+            ],
+            "trap": "Exciting, attractive, dazzling and impressive are all close to glamorous."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:water"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-16",
+      "subtype": "education",
+      "difficulty": "medium",
+      "title": "Reading by class three",
+      "stimulus": "Every year, surveys of Indian schools reveal a troubling pattern. Large numbers of children in the fifth standard cannot read a simple story meant for the second standard, and many cannot do a basic subtraction. These children are enrolled in school and attend classes, yet they have not acquired the skills on which all later learning depends.\n\nEducationists call these skills 'foundational literacy and numeracy': the ability to read a short text with understanding and to work with numbers in everyday situations. They are usually learnt in the first three or four years of school. A child who does not master them by then finds it harder and harder to keep up, because from the fourth standard onwards textbooks assume that pupils can read to learn. Such children often fall further behind each year, lose interest and eventually drop out.\n\nWhy do so many children fall behind so early? One reason is that classroom teaching often follows the textbook rather than the child. Teachers under pressure to complete the syllabus move on to new chapters even when half the class has not understood the previous ones. Another is that many first-generation learners come from homes where no adult can help with schoolwork, and some are taught in a language they do not speak at home.\n\nSeveral states have tried a different approach. Instead of grouping children only by age, teachers assess what each child can actually do and group them by level for part of the day. A child in the fourth standard who cannot yet read words may join a group practising letters and sounds, while classmates who read **fluently** work on longer stories. Activities, games and short daily practice replace rote learning, and children move up as soon as they are ready.\n\nThe results of such programmes have been **encouraging**. Within a few months, the share of children able to read simple paragraphs has risen substantially in many schools. Teachers report that pupils who had sat silent at the back of the class begin to take part once they can follow what is being taught.\n\nNational policy now treats foundational learning as an urgent priority, with the goal that every child should be able to read and do basic arithmetic by the end of the third standard. Achieving this will require more than a policy document. Teachers need training and time to teach at the right level, schools need simple reading material in local languages, and progress must be measured regularly without turning assessment into another source of pressure.\n\nThe stakes are high. A child who learns to read early gains a key that opens every other subject. One who does not may spend years in school without receiving the education that attendance alone seems to promise.",
+      "questions": [
+        {
+          "key": "rc-16-q01",
+          "subtype": "title",
+          "prompt": "Which of the following is the most suitable title for the passage?",
+          "options": [
+            "First Things First: Why Early Reading and Arithmetic Matter",
+            "The History of Indian Textbooks",
+            "Why Children Should Start School Later",
+            "Board Examination Results in Class Ten",
+            "Teachers Who Refuse to Teach"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "The passage is about foundational literacy and numeracy — why children miss these early skills, how some states are fixing it and why it matters."
+            ],
+            "trap": "Option E exaggerates para 3, which says teachers are under pressure to finish the syllabus, not that they refuse to teach."
+          },
+          "tags": [
+            "rc:title",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what do surveys of Indian schools reveal?",
+          "options": [
+            "Most children of school age are not enrolled in school.",
+            "Many fifth-standard children cannot read a simple story meant for the second standard.",
+            "Children in the fifth standard read better than older pupils.",
+            "Most children miss classes because schools are far away.",
+            "Many schools have stopped teaching arithmetic."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 1: 'Large numbers of children in the fifth standard cannot read a simple story meant for the second standard'."
+            ],
+            "trap": "Option A contradicts para 1: 'These children are enrolled in school and attend classes'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q03",
+          "subtype": "fact",
+          "prompt": "According to the passage, why does a child who has not mastered foundational skills fall further behind?",
+          "options": [
+            "Such children are made to repeat the same class every year.",
+            "Teachers do not allow them to attend class.",
+            "Their parents take them out of school at once.",
+            "They are taught only arithmetic from then on.",
+            "From the fourth standard onwards, textbooks assume that pupils can read to learn."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2: 'from the fourth standard onwards textbooks assume that pupils can read to learn', so a weak reader cannot keep up."
+            ],
+            "trap": "Option C: dropping out happens eventually, as a result of falling behind — it is not the cause."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT given in the passage as a reason why children fall behind early?",
+          "options": [
+            "Teachers move on to finish the syllabus.",
+            "No adult at home can help with schoolwork.",
+            "Their schools are too far from their homes.",
+            "Some are taught in a language they do not speak at home.",
+            "Teaching follows the textbook rather than the child."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3 gives: teaching that follows the textbook, pressure to finish the syllabus, no help at home and an unfamiliar language of teaching.",
+              "Distance from school is never mentioned."
+            ],
+            "trap": "Option D is easy to miss because it comes at the very end of para 3, but it is a stated reason."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q05",
+          "subtype": "fact",
+          "prompt": "In the approach tried by several states, how are children grouped for part of the day?",
+          "options": [
+            "By age alone",
+            "By their marks in the previous year's examination",
+            "By the language spoken at home",
+            "By the level of what each child can actually do",
+            "By their parents' income"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4: 'teachers assess what each child can actually do and group them by level for part of the day'."
+            ],
+            "trap": "Option A is exactly what the new approach moves away from: 'Instead of grouping children only by age'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q06",
+          "subtype": "inference",
+          "prompt": "What can be inferred about the pupils who \"had sat silent at the back of the class\"?",
+          "options": [
+            "Their silence was partly caused by not being able to follow the lessons.",
+            "They were too shy by nature ever to take part.",
+            "They had been punished for speaking in class.",
+            "They had already learnt to read fluently.",
+            "They were older than the rest of their class."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "They begin to take part once they can follow what is being taught — so not understanding the lessons had kept them quiet."
+            ],
+            "trap": "Option B is contradicted by the fact that they *do* begin to take part."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q07",
+          "subtype": "tone",
+          "prompt": "Which of the following best describes the tone of the passage?",
+          "options": [
+            "Indifferent",
+            "Sarcastic",
+            "Despairing",
+            "Concerned but hopeful",
+            "Celebratory"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "The author opens with a 'troubling pattern' and ends with 'The stakes are high' (concern), but reports 'encouraging' results and a clear path forward (hope)."
+            ],
+            "trap": "Option E ignores the problems; Option C ignores the encouraging results in para 5."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Foundational skills are usually learnt in the first three or four years of school.\nII. In the new approach, a child stays in the same level group for the whole year.\nIII. National policy aims for every child to read and do basic arithmetic by the end of the third standard.",
+          "options": [
+            "Only I",
+            "Only III",
+            "Both I and III",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is false — para 4: 'children move up as soon as they are ready'.",
+              "III is true — para 6."
+            ],
+            "trap": "Option E: statement II contradicts para 4."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **encouraging** as used in the passage.",
+          "options": [
+            "disappointing",
+            "confusing",
+            "expected",
+            "uncertain",
+            "promising"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The results are encouraging because reading levels rose substantially within months — they give reason for hope.",
+              "Promising is closest."
+            ],
+            "trap": "'Disappointing' is the opposite."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:education"
+          ]
+        },
+        {
+          "key": "rc-16-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **fluently** as used in the passage.",
+          "options": [
+            "haltingly",
+            "smoothly",
+            "easily",
+            "confidently",
+            "effortlessly"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Children who read fluently read smoothly without stopping.",
+              "The opposite is haltingly — with frequent pauses and stumbles."
+            ],
+            "trap": "Smoothly, easily and effortlessly are synonyms, not antonyms."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:education"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-17",
+      "subtype": "msme",
+      "difficulty": "hard",
+      "title": "Small firms and late payments",
+      "stimulus": "Small and medium enterprises are often described as the backbone of the Indian economy. They employ tens of millions of people, account for a large share of manufacturing output and contribute substantially to exports. Yet a **persistent** complaint among their owners is not a lack of orders but a lack of cash. A small firm that supplies components to a large manufacturer may wait three or four months, sometimes longer, to be paid, even as it must pay its own workers and suppliers every month.\n\nDelayed payments tie up capital that small firms can ill afford to lose. To bridge the gap, owners borrow at high interest rates, often from informal lenders, or simply turn down new orders because they lack the working capital to fulfil them. The irony is **striking**: the firms with the least access to cheap credit end up financing their far larger and richer customers.\n\nBanks have historically been reluctant to lend to such firms. Many small enterprises lack audited accounts, and their owners may have little property to offer as collateral. Assessing a large number of small loans is also expensive relative to the interest they earn. As a result, a sizeable 'credit gap' persists between what these firms need and what the formal financial system provides.\n\nSeveral measures have sought to narrow this gap. The law requires buyers to pay small suppliers within a specified period, and recent tax rules deny large firms a deduction for payments to small suppliers that are delayed beyond this period. Electronic platforms now allow small firms to upload invoices accepted by large buyers and sell them to banks at a discount, receiving cash almost immediately. Because the bank ultimately collects the money from the large buyer, whose creditworthiness is well established, the interest charged is far lower than what a small firm could obtain on its own. Meanwhile, the spread of digital payments and the goods and services tax has created records of sales that lenders can use to judge a firm's health without relying on collateral.\n\nThe results so far have been uneven. Invoice platforms have grown quickly, but many small firms remain unaware of them, and some large buyers are slow to register because the platforms make their delays visible. Some suppliers fear that insisting on prompt payment will cost them future orders, a concern that no law can easily remove. Data-based lending, while promising, depends on the quality of the records, and firms that still deal largely in cash remain invisible to it.\n\nEconomists argue that the underlying issue is one of bargaining power. As long as a small supplier depends on a handful of large customers, it will hesitate to enforce its rights. Widening its customer base, joining associations of similar firms and building digital records can strengthen its position. The remedies, in other words, lie as much in changing relationships within supply chains as in creating new financial products.",
+      "questions": [
+        {
+          "key": "rc-17-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best captures the central idea of the passage?",
+          "options": [
+            "Small firms fail mainly because they cannot find enough orders.",
+            "Banks should be required by law to lend to every small firm.",
+            "Invoice platforms have fully solved the credit problems of small firms.",
+            "Late payments and scarce formal credit strain small firms, and the remedies will work only if the weak bargaining position of these firms is also addressed.",
+            "Large manufacturers, not small firms, are the backbone of the Indian economy."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Paras 1–3 set out the cash and credit problem; para 4 the remedies; para 5 their uneven results; para 6 the root cause — bargaining power.",
+              "Only the correct option joins the problem, the remedies and the final point."
+            ],
+            "trap": "Option C contradicts para 5: 'The results so far have been uneven'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what is the persistent complaint of small-firm owners?",
+          "options": [
+            "They are short of cash even when they have orders.",
+            "They cannot find enough orders.",
+            "Taxes on small firms are too high.",
+            "They cannot find enough skilled workers.",
+            "Large buyers reject their components as poor in quality."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 1: the complaint 'is not a lack of orders but a lack of cash', because large buyers pay months late."
+            ],
+            "trap": "Option B is exactly what para 1 rules out: 'not a lack of orders'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q03",
+          "subtype": "fact",
+          "prompt": "According to the passage, why does a small firm pay a lower interest rate when it sells an accepted invoice on an electronic platform?",
+          "options": [
+            "The government pays part of the interest.",
+            "The small firm pledges its property as collateral.",
+            "The bank collects the money from the large buyer, whose creditworthiness is well established.",
+            "The platform guarantees repayment from its own funds.",
+            "The large buyer pays the invoice before it is uploaded."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 4: 'Because the bank ultimately collects the money from the large buyer, whose creditworthiness is well established, the interest charged is far lower'."
+            ],
+            "trap": "Option B is the very thing small firms often lack (para 3); the platform works without it."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a measure to narrow the credit gap?",
+          "options": [
+            "A legal time limit for paying small suppliers",
+            "Denying large firms a tax deduction for delayed payments to small suppliers",
+            "Platforms on which accepted invoices can be sold to banks",
+            "Lenders using digital payment and tax records to judge a firm",
+            "A government fund that pays small firms' invoices directly"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 4 lists the legal time limit, the tax rule, invoice platforms and data-based lending.",
+              "No government fund that pays invoices is mentioned; on the platforms, banks pay."
+            ],
+            "trap": "Option B may sound unusual, but para 4 states it: tax rules deny large firms a deduction for delayed payments."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q05",
+          "subtype": "fact",
+          "prompt": "What does the author describe as ironic?",
+          "options": [
+            "Small firms have more orders than they can fulfil.",
+            "Banks lend more readily to small firms than to large ones.",
+            "Informal lenders charge less than banks.",
+            "Small firms with the least access to cheap credit end up financing far larger customers.",
+            "Large firms pay their suppliers in advance."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2: 'The irony is striking: the firms with the least access to cheap credit end up financing their far larger and richer customers.'"
+            ],
+            "trap": "Option A twists para 2: firms turn down orders for lack of capital, but that is not what the author calls ironic."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q06",
+          "subtype": "inference",
+          "prompt": "It can be inferred from the passage that a small supplier which sells to many different buyers would be:",
+          "options": [
+            "sure never to face delayed payments",
+            "less afraid of losing a single customer by demanding prompt payment",
+            "free of any need for working capital",
+            "less likely to be given bank loans",
+            "unable to use invoice platforms"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 6: a supplier that depends on a handful of customers hesitates to enforce its rights; widening its customer base strengthens its position.",
+              "With many buyers, losing one matters less, so it can insist on being paid on time."
+            ],
+            "trap": "Option A is too strong: a stronger position does not guarantee that no buyer ever pays late."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q07",
+          "subtype": "tone",
+          "prompt": "Which of the following best describes the author's approach in the passage?",
+          "options": [
+            "Dismissive",
+            "Alarmist",
+            "Analytical",
+            "Sentimental",
+            "Promotional"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "The author sets out a problem, explains its causes, weighs remedies and their limits, and identifies an underlying issue — an analytical approach."
+            ],
+            "trap": "Option E fails because the author does not sell any product; the limits of each remedy are spelt out in para 5."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Recent tax rules deny large firms a deduction for payments to small suppliers delayed beyond the specified period.\nII. Invoice platforms have grown slowly because banks refuse to buy invoices.\nIII. Some suppliers fear that insisting on prompt payment will cost them future orders.",
+          "options": [
+            "Only I",
+            "Only III",
+            "Both I and II",
+            "Both I and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "I is true — para 4.",
+              "II is false — para 5: 'Invoice platforms have grown quickly', and banks do buy the invoices (para 4).",
+              "III is true — para 5."
+            ],
+            "trap": "Option E: statement II contradicts para 5."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **striking** as used in the passage.",
+          "options": [
+            "violent",
+            "remarkable",
+            "ordinary",
+            "hidden",
+            "attacking"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'The irony is striking' — it is very noticeable.",
+              "Remarkable is closest."
+            ],
+            "trap": "'Violent' and 'attacking' come from the literal sense of strike (hit), which does not apply to an irony."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:msme"
+          ]
+        },
+        {
+          "key": "rc-17-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **persistent** as used in the passage.",
+          "options": [
+            "occasional",
+            "constant",
+            "repeated",
+            "lasting",
+            "stubborn"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "A persistent complaint is one that keeps coming back over a long time.",
+              "The opposite is occasional — happening only now and then."
+            ],
+            "trap": "Constant, repeated, lasting and stubborn are all close in meaning to persistent."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:msme"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-18",
+      "subtype": "insurance",
+      "difficulty": "hard",
+      "title": "The protection gap",
+      "stimulus": "Insurance is one of those products that almost everyone agrees is useful and few people are eager to buy. In India, the share of national income spent on insurance premiums remains well below the global average, and a large majority of households have little or no cover against the financial shocks of illness, death or disaster. Economists call the difference between the cover people need and the cover they have the 'protection gap'.\n\nThe gap is widest in health. A single hospital stay can wipe out a family's savings, and millions of households are pushed into poverty every year by medical bills. Government-funded schemes now cover hospital treatment for poorer families, and many salaried workers receive group cover through their employers. Between these two groups, however, lies a large 'missing middle': self-employed workers, small traders and informal-sector employees who are too well-off to qualify for free schemes but cannot easily afford private policies.\n\nPart of the reluctance to buy insurance is financial, but much of it is psychological. Paying a premium means spending money today for a benefit that may never come; if nothing goes wrong, many buyers feel that the money has been wasted. People also tend to underestimate risks that seem remote, assuming that serious illness or accident will happen to others. Distrust plays a role as well. Stories of rejected claims, often caused by fine print that buyers did not read, **deter** many from buying at all.\n\nLife insurance presents a different problem. Here the market is large, but much of what is sold is not pure protection. Many policies combine a small amount of life cover with a savings component, offering modest returns and high charges. A family that buys such a policy may believe it is well protected when, in fact, the payout on the death of the earning member would sustain it for only a year or two. A simple term policy, which pays only on death but offers far higher cover for a much lower premium, is often more **appropriate**, yet it is less aggressively sold because it earns agents smaller commissions.\n\nRegulators and insurers have tried several remedies. Standardised policies with simple wording make it easier to compare products. Micro-insurance products with small premiums, sold through self-help groups, post offices and business correspondents, aim to reach low-income buyers. Digital sales and claim processing reduce costs and make it harder for claims to be delayed without reason.\n\nClosing the protection gap, however, will depend less on new products than on trust. Insurance is a promise to pay in the future, and buyers will make that bargain only when they believe the promise will be honoured. Quick, fair settlement of claims may do more to persuade the hesitant than any advertising campaign.",
+      "questions": [
+        {
+          "key": "rc-18-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best summarises the passage?",
+          "options": [
+            "Government schemes have fully closed the protection gap in India.",
+            "Savings-linked life insurance should be banned because of its high charges.",
+            "Indians spend more on insurance than the global average.",
+            "Micro-insurance is the only solution for the missing middle.",
+            "Many Indians remain under-insured for financial and psychological reasons, and closing the gap depends largely on building trust."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Paras 1–4 describe the gap and its financial and psychological causes; para 5 the remedies; para 6 concludes that trust matters most."
+            ],
+            "trap": "Option A contradicts para 2, which describes a large 'missing middle' still without cover."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, who make up the 'missing middle'?",
+          "options": [
+            "Poor families covered by government schemes",
+            "Self-employed and informal workers who neither qualify for free schemes nor easily afford private policies",
+            "Salaried workers with group cover from employers",
+            "Insurance agents who earn small commissions",
+            "Wealthy families who pay their own medical bills"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 2: 'self-employed workers, small traders and informal-sector employees who are too well-off to qualify for free schemes but cannot easily afford private policies'."
+            ],
+            "trap": "Option A and Option C are the two groups on either side of the missing middle, not the middle itself."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a reason why people hesitate to buy insurance?",
+          "options": [
+            "Some cannot easily afford the premiums.",
+            "Premiums feel wasted if nothing goes wrong.",
+            "People underestimate risks that seem remote.",
+            "Stories of rejected claims create distrust.",
+            "Premiums are taxed at a very high rate."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Paras 2–3 mention affordability ('part of the reluctance … is financial'), the feeling of wasted premiums, underestimated risks and distrust from rejected claims.",
+              "Tax on premiums is never mentioned."
+            ],
+            "trap": "Option A is stated in para 3 (the reluctance is partly financial) and para 2 (cannot easily afford private policies)."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q04",
+          "subtype": "fact",
+          "prompt": "According to the passage, why is a term policy less aggressively sold?",
+          "options": [
+            "It offers lower cover than savings-linked policies.",
+            "It earns agents smaller commissions.",
+            "It pays out only if the buyer survives the term.",
+            "Regulators have restricted its sale.",
+            "Its premiums are higher than those of other policies."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 4: a term policy 'is less aggressively sold because it earns agents smaller commissions'."
+            ],
+            "trap": "Option A reverses para 4: term policies offer far higher cover for a much lower premium."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, what do digital sales and claim processing achieve?",
+          "options": [
+            "They remove the need to pay premiums.",
+            "They replace every insurance agent.",
+            "They cut costs and make it harder to delay claims without reason.",
+            "They guarantee that every claim is accepted.",
+            "They raise the commissions earned by agents."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 5: 'Digital sales and claim processing reduce costs and make it harder for claims to be delayed without reason.'"
+            ],
+            "trap": "Option D overstates it: fewer unjustified delays is not the same as every claim being accepted."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q06",
+          "subtype": "inference",
+          "prompt": "What can be inferred about a family that relies only on a savings-linked life policy?",
+          "options": [
+            "It will earn high returns on its savings.",
+            "It may be seriously under-protected while believing it is well covered.",
+            "It has chosen the cheapest form of life cover.",
+            "It needs no health insurance.",
+            "It has bought a pure protection product."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 4: such a family 'may believe it is well protected when, in fact, the payout … would sustain it for only a year or two'."
+            ],
+            "trap": "Option A contradicts para 4: these policies offer 'modest returns and high charges'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q07",
+          "subtype": "inference",
+          "prompt": "The author suggests that quick, fair settlement of claims would persuade the hesitant mainly because it would:",
+          "options": [
+            "lower premiums for every buyer",
+            "increase the commissions paid to agents",
+            "make advertising by insurers illegal",
+            "reduce the cost of hospital treatment",
+            "address the distrust that stops many people from buying insurance"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 3 names distrust caused by rejected claims as a reason for reluctance; para 6 says buyers act 'only when they believe the promise will be honoured'.",
+              "Fair, quick settlement proves the promise is kept, which answers that distrust."
+            ],
+            "trap": "Option A is a possible side-effect of lower costs, but para 6 links settlement to trust, not to premiums."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Government-funded schemes cover hospital treatment for poorer families.\nII. Many salaried workers receive group cover through their employers.\nIII. Micro-insurance products are sold only online.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and II",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is true — para 2.",
+              "III is false — para 5: they are sold through self-help groups, post offices and business correspondents."
+            ],
+            "trap": "Option E: statement III contradicts para 5."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **deter** as used in the passage.",
+          "options": [
+            "discourage",
+            "persuade",
+            "encourage",
+            "attract",
+            "deceive"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Stories of rejected claims 'deter many from buying at all' — they put people off.",
+              "Discourage is closest."
+            ],
+            "trap": "'Deceive' matches the idea of fine print, but deter means to put off, not to trick."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:insurance"
+          ]
+        },
+        {
+          "key": "rc-18-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **appropriate** as used in the passage.",
+          "options": [
+            "fitting",
+            "proper",
+            "unsuitable",
+            "expensive",
+            "popular"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "A term policy is often more appropriate — better suited to the family's needs.",
+              "The opposite is unsuitable."
+            ],
+            "trap": "Fitting and proper are synonyms; expensive and popular are unrelated in meaning."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:insurance"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-19",
+      "subtype": "space-tech",
+      "difficulty": "hard",
+      "title": "Private firms in space",
+      "stimulus": "For most of its history, India's space programme was a government enterprise from start to finish. A single national agency designed the satellites, built the rockets and launched them from its own spaceport, and private companies took part only as suppliers of parts. That model delivered remarkable achievements on modest budgets, from weather and communication satellites to missions to the Moon and Mars. In recent years, however, the country has begun to open the sector to private firms, and the results are already visible.\n\nThe change reflects a shift in the global space industry. Satellites were once large, expensive machines built to last fifteen years or more. Today, many are no bigger than a microwave oven, cost a fraction as much and can be built in months. Launched in groups, such small satellites can form 'constellations' that photograph the whole earth every day or provide internet connections to remote areas. Demand for launches has soared, and a country that can offer reliable, affordable access to space stands to win a sizeable share of a growing market.\n\nIndian start-ups have moved quickly. Some are developing small rockets designed specifically to carry these satellites, promising launches at short notice rather than waiting for space on a larger mission. Others build satellites or the cameras and sensors they carry. A third group does not build hardware at all; it buys satellite images and turns them into information that farmers, insurers, city planners and banks can use. An insurer, for instance, can check crop damage across thousands of fields after a flood without sending a single inspector.\n\nThe government has chosen to act as an enabler rather than a competitor. A new body authorises private missions and allows start-ups to use the national agency's testing facilities, and a space policy spells out what private companies may do. Investors, sensing opportunity, have poured money into the sector.\n\nThe path ahead is not free of **hazards**. Building rockets is capital-intensive, and a single failed launch can destroy years of work and investor confidence. Global competition is fierce, with established foreign firms offering low prices. Regulatory questions, such as who is liable if debris from a private satellite damages another, remain partly unresolved. And the growing crowd of objects in orbit raises concerns about collisions, a problem that no single country can solve alone.\n\nStill, the potential is considerable. The applications of space technology reach far beyond prestige missions: they improve weather forecasts, guide fishing boats, map groundwater and track the progress of infrastructure projects. If the sector continues to grow, the benefits of space will increasingly be felt on the ground, in ways that most citizens may never **associate** with rockets at all.",
+      "questions": [
+        {
+          "key": "rc-19-q01",
+          "subtype": "title",
+          "prompt": "Which of the following is the most appropriate title for the passage?",
+          "options": [
+            "Why India Stopped Its Moon Missions",
+            "The Dangers of Space Debris for Astronauts",
+            "How Satellites Are Built in a Month",
+            "Opening the Skies: India's Private Space Sector Takes Off",
+            "Government Agency Shuts Out Private Firms"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "The passage describes how India opened its space sector to private firms, what they are doing, the risks and the potential."
+            ],
+            "trap": "Option E reverses para 4: the government acts as an 'enabler rather than a competitor'."
+          },
+          "tags": [
+            "rc:title",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, how have satellites changed?",
+          "options": [
+            "They are now built to last fifty years.",
+            "They can be launched only one at a time.",
+            "Many are now small and cheap, and can be built in months.",
+            "They have become larger and more expensive.",
+            "They no longer carry cameras."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 2: 'many are no bigger than a microwave oven, cost a fraction as much and can be built in months'."
+            ],
+            "trap": "Option D describes satellites as they *once* were — 'large, expensive machines'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q03",
+          "subtype": "fact",
+          "prompt": "According to the passage, what does the \"third group\" of start-ups do?",
+          "options": [
+            "It turns satellite images into information for users such as farmers and insurers.",
+            "It builds small rockets for quick launches.",
+            "It makes cameras and sensors for satellites.",
+            "It runs the national spaceport.",
+            "It removes debris from orbit."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 3: the third group 'does not build hardware at all; it buys satellite images and turns them into information'."
+            ],
+            "trap": "Option B and Option C describe the first and second groups."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q04",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a challenge for the private space sector?",
+          "options": [
+            "The high capital cost of building rockets",
+            "Fierce competition from established foreign firms",
+            "Unresolved questions of liability for debris damage",
+            "A shortage of trained engineers",
+            "The risk of collisions in crowded orbits"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 5 lists capital costs, failed launches, foreign competition, liability for debris and collisions.",
+              "A shortage of engineers is never mentioned."
+            ],
+            "trap": "Option C can look too technical to be in the passage, but para 5 names it as a regulatory question."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, which of the following has the government done?",
+          "options": [
+            "Banned foreign firms from launching Indian satellites",
+            "Stopped its own space missions",
+            "Allowed start-ups to use the national agency's testing facilities",
+            "Bought every satellite built by start-ups",
+            "Given every start-up a free launch"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 4: a new body 'allows start-ups to use the national agency's testing facilities'."
+            ],
+            "trap": "Option B: nothing says the national agency has stopped its own missions."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q06",
+          "subtype": "inference",
+          "prompt": "What does the example of the insurer in paragraph 3 suggest?",
+          "options": [
+            "Insurers no longer need to pay crop claims.",
+            "Floods cannot be seen from space.",
+            "Farmers must buy satellite images to get insurance.",
+            "Field inspectors are more accurate than satellite images.",
+            "Satellite data can cut the time and cost of assessing losses over a wide area."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The insurer 'can check crop damage across thousands of fields … without sending a single inspector' — faster and cheaper assessment."
+            ],
+            "trap": "Option A confuses assessing damage with refusing to pay for it."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q07",
+          "subtype": "tone",
+          "prompt": "The attitude of the author towards the private space sector is best described as:",
+          "options": [
+            "entirely dismissive",
+            "fearful and alarmist",
+            "bitterly critical",
+            "optimistic but aware of the risks",
+            "indifferent"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 5 lists real 'hazards', but para 6 begins 'Still, the potential is considerable' and ends on the benefits."
+            ],
+            "trap": "Option B takes para 5 alone and ignores the hopeful conclusion."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Small satellites launched in groups can form constellations.\nII. Private companies in India have always been free to build and launch their own rockets.\nIII. Some start-ups promise launches at short notice.",
+          "options": [
+            "Both I and III",
+            "Only I",
+            "Only III",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "I is true — para 2.",
+              "II is false — para 1: private companies were once only suppliers of parts.",
+              "III is true — para 3."
+            ],
+            "trap": "Option E: statement II contradicts para 1."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **hazards** as used in the passage.",
+          "options": [
+            "rewards",
+            "rules",
+            "delays",
+            "profits",
+            "dangers"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The paragraph lists risks — failed launches, competition, liability, collisions.",
+              "Hazards = dangers or risks."
+            ],
+            "trap": "'Delays' is one kind of problem, but the paragraph describes risks of loss, not delay."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:space-tech"
+          ]
+        },
+        {
+          "key": "rc-19-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **associate** as used in the passage.",
+          "options": [
+            "dissociate",
+            "connect",
+            "link",
+            "relate",
+            "combine"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Citizens may never 'associate' everyday benefits with rockets — never connect the two in their minds.",
+              "The opposite is dissociate (to separate in the mind)."
+            ],
+            "trap": "Connect, link, relate and combine all mean the same as associate here."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:space-tech"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-20",
+      "subtype": "sports-science",
+      "difficulty": "extreme",
+      "title": "Measuring training load",
+      "stimulus": "When a fast bowler breaks down with a stress fracture of the lower back in the middle of a series, the injury is usually treated as misfortune. Sports scientists increasingly see it differently: as the predictable consequence of a mismatch between the load placed on the body and the body's capacity to absorb it. Their attempt to measure that mismatch, and to manage it, has changed how elite teams prepare their players, though not without controversy.\n\nThe underlying principle is deceptively simple. Tissue such as bone, muscle and tendon adapts to stress: loaded appropriately, it grows stronger; loaded too heavily or too abruptly, it fails. The difficulty lies in the word 'appropriately'. Early research suggested that what mattered was not the absolute amount of work an athlete did but how sharply it rose. A bowler accustomed to delivering a hundred and fifty balls a week in training could tolerate that load indefinitely, the argument ran, but a sudden jump to three hundred, as when a player returns from a break straight into a five-day Test, would sharply increase the risk of injury. Teams began tracking the ratio of recent to longer-term workload and treating spikes as warning signs.\n\nThe approach had intuitive appeal and some supporting evidence. It also fitted neatly into the growing use of wearable devices that record every sprint, jump and delivery. Yet critics have questioned the statistical foundations of the popular ratios, arguing that some apparent relationships between workload spikes and injury were artefacts of the way the figures were calculated. Injury, they point out, has many causes, among them technique, previous injuries, sleep, psychological stress and simple chance, and no single number can capture them all. Treating a ratio as a precise threshold risks lending a **spurious** exactness to what remains a matter of judgement.\n\nThere is a further irony. Excessive caution can itself be harmful. A bowler who is repeatedly rested to keep his workload low may never build the robustness that only sustained, progressively increasing bowling can develop, leaving him more vulnerable when a demanding series arrives. Practitioners thus speak of a 'sweet spot': enough load to build capacity, but not so much, or so suddenly, that it overwhelms it.\n\nWorkload management has also provoked friction beyond the laboratory. Spectators and selectors, frustrated when a fit-looking star sits out a match, have accused teams of being overprotective, while players themselves sometimes resist being withdrawn. The data, meanwhile, are often **ambiguous** enough that coaches and scientists can draw different conclusions from the same figures.\n\nWhat emerges is not a verdict against measurement but a caution about its limits. The most sophisticated teams treat workload data as one input among several, weighed alongside a physiotherapist's assessment, the athlete's own account of how the body feels and the demands of the schedule ahead. Used this way, the numbers sharpen judgement rather than replace it, which is perhaps the most that any metric in a field as complex as human performance can reasonably offer.",
+      "questions": [
+        {
+          "key": "rc-20-q01",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best states the central argument of the passage?",
+          "options": [
+            "Wearable devices can now predict every sports injury accurately.",
+            "Fast bowlers should be rested as often as possible to avoid injury.",
+            "Workload ratios have been shown to be meaningless and should be abandoned.",
+            "Injuries in cricket are caused almost entirely by poor technique.",
+            "Measuring training load has improved injury management, but its figures are imprecise and should inform rather than replace expert judgement."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The last paragraph states the conclusion: 'not a verdict against measurement but a caution about its limits'; the numbers 'sharpen judgement rather than replace it'."
+            ],
+            "trap": "Option C goes too far: the author rejects treating ratios as precise thresholds, not measurement itself."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q02",
+          "subtype": "fact",
+          "prompt": "According to the early research described in the passage, what mattered most in causing injury?",
+          "options": [
+            "The total amount of work done in a season",
+            "How sharply an athlete's workload rose",
+            "The number of matches played abroad",
+            "The athlete's age",
+            "The type of wearable device used"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 2: 'what mattered was not the absolute amount of work an athlete did but how sharply it rose'."
+            ],
+            "trap": "Option A is the very factor the early research played down."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q03",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT listed in the passage as a possible cause of injury?",
+          "options": [
+            "Technique",
+            "Previous injuries",
+            "The weight of the ball",
+            "Sleep",
+            "Psychological stress"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3 lists technique, previous injuries, sleep, psychological stress and simple chance.",
+              "The weight of the ball is never mentioned."
+            ],
+            "trap": "Option D may not look like a cause of injury, but para 3 lists it.",
+            "shortcut": "All four distractors appear together in one sentence of para 3."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q04",
+          "subtype": "inference",
+          "prompt": "The \"further irony\" described in paragraph 4 is that:",
+          "options": [
+            "caution meant to prevent injury may leave an athlete less able to cope with heavy workloads",
+            "bowlers themselves collect the data that is used against them",
+            "wearable devices are a cause of back injuries",
+            "bowlers who rest more are picked more often",
+            "spectators prefer watching injured players"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Resting a bowler to protect him 'may never build the robustness' he needs, 'leaving him more vulnerable' — the protection produces the risk it was meant to avoid."
+            ],
+            "trap": "Option D mixes in para 5; selectors there are frustrated by rest, not rewarding it."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q05",
+          "subtype": "inference",
+          "prompt": "Going by the early research described in paragraph 2, which of the following bowlers would be at the greatest risk of injury?",
+          "options": [
+            "One who bowls a steady one hundred and fifty balls a week all season",
+            "One who raises his training load gradually over several weeks",
+            "One who bowls exactly the same number of balls every week",
+            "One returning from a month-long break straight into a five-day Test",
+            "One who has bowled heavily for months and continues at that level"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "The early view: risk comes from a sudden rise in load, not its absolute size.",
+              "Coming back from a break straight into a Test is the example given of a sharp spike."
+            ],
+            "trap": "Option E has the heaviest absolute load, but on the early view a steady heavy load is tolerable; what matters is a sharp rise."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q06",
+          "subtype": "fact",
+          "prompt": "What is the critics' main objection to the popular workload ratios?",
+          "options": [
+            "Some apparent links between workload spikes and injury may be products of how the figures were calculated.",
+            "The ratios ignore data from wearable devices.",
+            "Elite teams have never used the ratios.",
+            "The ratios make bowlers train too little.",
+            "The ratios are too hard for coaches to calculate."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 3: critics argue 'that some apparent relationships between workload spikes and injury were artefacts of the way the figures were calculated'."
+            ],
+            "trap": "Option D echoes the separate point in para 4 about over-caution, which the passage does not attribute to the statistical critics."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q07",
+          "subtype": "tone",
+          "prompt": "The author's attitude towards workload measurement is best described as:",
+          "options": [
+            "wholeheartedly enthusiastic",
+            "totally dismissive",
+            "completely indifferent",
+            "nostalgic",
+            "appreciative, but sceptical of claims to precision"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The author credits the approach with changing preparation and 'intuitive appeal', but warns against 'spurious exactness' and ends with 'a caution about its limits'."
+            ],
+            "trap": "Option B ignores the final paragraph: 'not a verdict against measurement'."
+          },
+          "tags": [
+            "rc:tone",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q08",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Critics argue that no single number can capture all the causes of injury.\nII. Spectators and selectors have sometimes accused teams of being overprotective.\nIII. The author concludes that workload data should be discarded in favour of a physiotherapist's assessment.",
+          "options": [
+            "Only I",
+            "Both I and II",
+            "Only II",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "I is true — para 3.",
+              "II is true — para 5.",
+              "III is false — para 6: data are 'one input among several, weighed alongside a physiotherapist's assessment', not discarded."
+            ],
+            "trap": "Option E: statement III misreads 'alongside' as 'instead of'."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **spurious** as used in the passage.",
+          "options": [
+            "genuine",
+            "precise",
+            "false",
+            "sudden",
+            "valuable"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'lending a spurious exactness to what remains a matter of judgement' — the exactness only seems real.",
+              "Spurious = false, not genuine."
+            ],
+            "trap": "'Precise' repeats the idea of exactness, but spurious describes the exactness as fake."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:sports-science"
+          ]
+        },
+        {
+          "key": "rc-20-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **ambiguous** as used in the passage.",
+          "options": [
+            "unclear",
+            "unequivocal",
+            "vague",
+            "doubtful",
+            "uncertain"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Ambiguous data can be read in more than one way — which is why experts draw different conclusions.",
+              "Unequivocal (leaving no doubt) is the opposite."
+            ],
+            "trap": "Unclear, vague, doubtful and uncertain are all synonyms of ambiguous."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:sports-science"
+          ]
+        }
+      ]
     }
   ]
 }
