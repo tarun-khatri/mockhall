@@ -1,0 +1,1626 @@
+{
+  "chapter": "connectors",
+  "version": 1,
+  "items": [
+    {
+      "key": "cn-001",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Ramesh was tired.\n**2.** He completed his shift.\n\n(i) Although\n(ii) Despite\n(iii) Because",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Although: works – *Although Ramesh was tired, he completed his shift.*",
+          "(ii) Despite: works – *Despite being tired, Ramesh completed his shift.*",
+          "(iii) Because: does not work – 'Because' would make his tiredness the reason he completed the shift; the two facts are in contrast.",
+          "So the answer is 'Both (i) and (ii)'."
+        ],
+        "trap": "'Despite' cannot be followed by a full clause ('despite he was tired'), but it works with a gerund: 'despite being tired'."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-002",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** It rained heavily.\n**2.** The match was called off.\n\n(i) Although\n(ii) Because\n(iii) Since",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Although: does not work – 'Although' signals a contrast, but the rain is the reason for calling off the match.",
+          "(ii) Because: works – *Because it rained heavily, the match was called off.*",
+          "(iii) Since: works – *Since it rained heavily, the match was called off.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "Decide the relation first (cause, contrast, time, condition), then test each starter against it."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-003",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Sneha studied hard.\n**2.** She passed with distinction.\n\n(i) Unless\n(ii) As\n(iii) Having",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (ii) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Unless: does not work – 'Unless' means 'if not' and would turn a fact into a condition; 'Unless Sneha studied hard, she passed…' is meaningless.",
+          "(ii) As: works – *As Sneha studied hard, she passed with distinction.*",
+          "(iii) Having: works – *Having studied hard, Sneha passed with distinction.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'Having + past participle' works only when both sentences have the same subject; here both are about Sneha."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-004",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The shop was closed.\n**2.** We bought the medicine online.\n\n(i) Since\n(ii) Despite\n(iii) As",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Since: works – *Since the shop was closed, we bought the medicine online.*",
+          "(ii) Despite: does not work – 'Despite the shop being closed' suggests a contrast, but the closure is the reason for buying online.",
+          "(iii) As: works – *As the shop was closed, we bought the medicine online.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'As' and 'Since' can both mean 'because' at the start of a sentence."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-005",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Anil is a good singer.\n**2.** He is also a talented painter.\n\n(i) Not only\n(ii) Although\n(iii) Besides",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is addition.",
+          "(i) Not only: works – *Not only is Anil a good singer, but he is also a talented painter.*",
+          "(ii) Although: does not work – 'Although' would suggest that being a singer is somehow opposed to being a painter; the sentences simply add two talents.",
+          "(iii) Besides: works – *Besides being a good singer, Anil is a talented painter.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Not only' at the start needs inversion ('Not only is Anil…') and a 'but also' part."
+      },
+      "tags": [
+        "connector:addition"
+      ]
+    },
+    {
+      "key": "cn-006",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The bus was late.\n**2.** We missed the first show.\n\n(i) Unless\n(ii) Because of\n(iii) Owing to",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Unless: does not work – 'Unless' introduces a condition, not a reason; it changes the meaning.",
+          "(ii) Because of: works – *Because of the late bus, we missed the first show.*",
+          "(iii) Owing to: works – *Owing to the late arrival of the bus, we missed the first show.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'Because of' and 'Owing to' take a noun phrase ('the late bus'), not a full clause."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-007",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Meena finished her homework.\n**2.** Then she went out to play.\n\n(i) After\n(ii) Although\n(iii) Having",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) After: works – *After Meena finished her homework, she went out to play.*",
+          "(ii) Although: does not work – 'Although' signals a contrast; there is only a sequence of two actions here.",
+          "(iii) Having: works – *Having finished her homework, Meena went out to play.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Having finished …' shows that the first action was completed before the second, which matches 'Then'."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-008",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** You must leave now.\n**2.** Otherwise you will miss the train.\n\n(i) Unless\n(ii) Although\n(iii) Despite",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is a condition.",
+          "(i) Unless: works – *Unless you leave now, you will miss the train.*",
+          "(ii) Although: does not work – 'Although' signals a contrast; the sentences state a condition and its result.",
+          "(iii) Despite: does not work – 'Despite' signals a contrast; it cannot express 'otherwise'.",
+          "So the answer is 'Only (i)'."
+        ],
+        "trap": "'Otherwise' = 'if not', and 'unless' also means 'if not'."
+      },
+      "tags": [
+        "connector:condition"
+      ]
+    },
+    {
+      "key": "cn-009",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The road was slippery.\n**2.** The driver drove slowly.\n\n(i) As\n(ii) Since\n(iii) Because",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) As: works – *As the road was slippery, the driver drove slowly.*",
+          "(ii) Since: works – *Since the road was slippery, the driver drove slowly.*",
+          "(iii) Because: works – *Because the road was slippery, the driver drove slowly.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "All three starters can express a reason; don't assume at least one option must be wrong."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-010",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Priya was unwell.\n**2.** She attended the interview.\n\n(i) In spite of\n(ii) Though\n(iii) Since",
+      "options": [
+        "Only (i)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) In spite of: works – *In spite of being unwell, Priya attended the interview.*",
+          "(ii) Though: works – *Though Priya was unwell, she attended the interview.*",
+          "(iii) Since: does not work – 'Since' would make her illness the reason for attending, which is illogical.",
+          "So the answer is 'Both (i) and (ii)'."
+        ],
+        "trap": "'In spite of' needs a noun or gerund ('being unwell'), not a clause."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-011",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The teacher entered the class.\n**2.** The students stood up at once.\n\n(i) Unless\n(ii) As soon as\n(iii) When",
+      "options": [
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Unless: does not work – 'Unless' introduces a negative condition; the sentences describe two events in sequence.",
+          "(ii) As soon as: works – *As soon as the teacher entered the class, the students stood up.*",
+          "(iii) When: works – *When the teacher entered the class, the students stood up at once.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'at once' supports 'As soon as', and 'When' also keeps the time link."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-012",
+      "subtype": "starters",
+      "difficulty": "easy",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The price of tomatoes fell sharply.\n**2.** Farmers suffered heavy losses.\n\n(i) Although\n(ii) Due to\n(iii) Unless",
+      "options": [
+        "Only (ii)",
+        "Only (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Although: does not work – 'Although' signals a contrast; the price fall caused the losses.",
+          "(ii) Due to: works – *Due to the sharp fall in the price of tomatoes, farmers suffered heavy losses.*",
+          "(iii) Unless: does not work – 'Unless' introduces a condition and makes the sentence meaningless.",
+          "So the answer is 'Only (ii)'."
+        ],
+        "trap": "'Due to' needs a noun phrase: 'the sharp fall in the price', not 'the price fell'."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-013",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The film was long.\n**2.** The audience enjoyed every minute of it.\n\n(i) Though\n(ii) Despite\n(iii) Even though",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "All of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Though: works – *Though the film was long, the audience enjoyed every minute of it.*",
+          "(ii) Despite: works – *Despite the film's length, the audience enjoyed every minute of it.*",
+          "(iii) Even though: works – *Even though the film was long, the audience enjoyed every minute of it.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "'Despite' needs a noun ('the film's length'), but it still works; don't reject it just because it cannot take a clause."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-014",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The company launched a new product.\n**2.** It also opened three new offices.\n\n(i) Not only\n(ii) Instead of\n(iii) Apart from",
+      "options": [
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is addition.",
+          "(i) Not only: works – *Not only did the company launch a new product, but it also opened three new offices.*",
+          "(ii) Instead of: does not work – 'Instead of launching a new product, the company opened three new offices' says the product was NOT launched.",
+          "(iii) Apart from: works – *Apart from launching a new product, the company opened three new offices.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Instead of' replaces one action with another; 'Apart from' adds to it."
+      },
+      "tags": [
+        "connector:addition"
+      ]
+    },
+    {
+      "key": "cn-015",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** He reached the station.\n**2.** The train left immediately.\n\n(i) No sooner\n(ii) Hardly\n(iii) As soon as",
+      "options": [
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (ii) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) No sooner: works – *No sooner had he reached the station than the train left.*",
+          "(ii) Hardly: works – *Hardly had he reached the station when the train left.*",
+          "(iii) As soon as: works – *As soon as he reached the station, the train left.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "Remember the pairs: 'No sooner … than' and 'Hardly … when'; both need inversion ('had he reached')."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-016",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** You must practise daily.\n**2.** Only then will your typing speed improve.\n\n(i) Although\n(ii) Unless\n(iii) Only if",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is a condition.",
+          "(i) Although: does not work – 'Although' signals a contrast; the sentences state a necessary condition.",
+          "(ii) Unless: works – *Unless you practise daily, your typing speed will not improve.*",
+          "(iii) Only if: works – *Only if you practise daily will your typing speed improve.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'Only if' at the start needs inversion in the main clause ('will your typing speed improve')."
+      },
+      "tags": [
+        "connector:condition"
+      ]
+    },
+    {
+      "key": "cn-017",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The bridge was repaired.\n**2.** Traffic on it resumed.\n\n(i) Once\n(ii) Despite\n(iii) After",
+      "options": [
+        "Only (i)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Once: works – *Once the bridge was repaired, traffic on it resumed.*",
+          "(ii) Despite: does not work – 'Despite the repair of the bridge, traffic resumed' wrongly suggests the repair was an obstacle.",
+          "(iii) After: works – *After the bridge was repaired, traffic on it resumed.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Once' can mean 'as soon as / after'; it is not only a word for 'one time'."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-018",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Kiran is honest.\n**2.** Everyone trusts him.\n\n(i) Being\n(ii) Despite\n(iii) Since",
+      "options": [
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Being: works – *Being honest, Kiran is trusted by everyone.*",
+          "(ii) Despite: does not work – 'Despite being honest, Kiran is trusted' suggests honesty should stop people trusting him, which reverses the logic.",
+          "(iii) Since: works – *Since Kiran is honest, everyone trusts him.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Being honest, …' must be followed by 'Kiran' as the subject; turning the second sentence into the passive keeps the meaning."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-019",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The traffic was heavy.\n**2.** We reached the airport on time.\n\n(i) Because of\n(ii) Notwithstanding\n(iii) Although",
+      "options": [
+        "Only (i)",
+        "Both (i) and (ii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Because of: does not work – 'Because of the heavy traffic, we reached on time' makes the traffic the reason for being on time, which is illogical.",
+          "(ii) Notwithstanding: works – *Notwithstanding the heavy traffic, we reached the airport on time.*",
+          "(iii) Although: works – *Although the traffic was heavy, we reached the airport on time.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'Notwithstanding' means 'in spite of'; it is a formal contrast word, not a cause word."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-020",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Suresh saved money for years.\n**2.** He then bought a small flat.\n\n(i) Having\n(ii) After\n(iii) Unless",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Having: works – *Having saved money for years, Suresh bought a small flat.*",
+          "(ii) After: works – *After saving money for years, Suresh bought a small flat.*",
+          "(iii) Unless: does not work – 'Unless' introduces a negative condition; the sentences describe two completed events.",
+          "So the answer is 'Both (i) and (ii)'."
+        ],
+        "trap": "Both 'Having saved' and 'After saving' keep Suresh as the subject of both actions."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-021",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The monsoon failed.\n**2.** Vegetable prices rose sharply.\n\n(i) Despite\n(ii) As a result of\n(iii) Following",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Despite: does not work – 'Despite the failure of the monsoon, prices rose' suggests the failure should have kept prices down, which reverses the logic.",
+          "(ii) As a result of: works – *As a result of the failure of the monsoon, vegetable prices rose sharply.*",
+          "(iii) Following: works – *Following the failure of the monsoon, vegetable prices rose sharply.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'Following' means 'after (and as a result of)'; it is not a mistake for 'follows'."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-022",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The factory stopped dumping waste into the river.\n**2.** Only then did the fish return to it.\n\n(i) Despite\n(ii) Until\n(iii) Only after",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Despite: does not work – 'Despite' signals a contrast; the fish returned because the dumping stopped.",
+          "(ii) Until: works – *Until the factory stopped dumping waste into the river, the fish did not return to it.*",
+          "(iii) Only after: works – *Only after the factory stopped dumping waste into the river did the fish return to it.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'Until' works with a negative main clause ('did not return'); 'Only then' in the second sentence means exactly that."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-023",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Rohit had not studied.\n**2.** He failed the test.\n\n(i) Although\n(ii) Not having\n(iii) Because",
+      "options": [
+        "Only (ii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Although: does not work – 'Although' signals a contrast; not studying is the reason for failing.",
+          "(ii) Not having: works – *Not having studied, Rohit failed the test.*",
+          "(iii) Because: works – *Because Rohit had not studied, he failed the test.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "The negative participle is 'Not having studied', which is correct and keeps the same subject."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-024",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The manager was very busy.\n**2.** He could not meet the visitors.\n\n(i) So\n(ii) Unless\n(iii) Since",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and result.",
+          "(i) So: works – *So busy was the manager that he could not meet the visitors.*",
+          "(ii) Unless: does not work – 'Unless' introduces a condition; the sentences state a cause and its result.",
+          "(iii) Since: works – *Since the manager was very busy, he could not meet the visitors.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'So' at the start of a sentence can be used as 'So + adjective + verb + subject + that …' (inversion)."
+      },
+      "tags": [
+        "connector:result"
+      ]
+    },
+    {
+      "key": "cn-025",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Swati is intelligent.\n**2.** She is hardworking too.\n\n(i) Not only\n(ii) As well as\n(iii) Besides",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is addition.",
+          "(i) Not only: works – *Not only is Swati intelligent, but she is also hardworking.*",
+          "(ii) As well as: works – *As well as being intelligent, Swati is hardworking.*",
+          "(iii) Besides: works – *Besides being intelligent, Swati is hardworking.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "All three are addition starters; 'As well as' and 'Besides' take a gerund ('being')."
+      },
+      "tags": [
+        "connector:addition"
+      ]
+    },
+    {
+      "key": "cn-026",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** He apologised.\n**2.** She did not forgive him.\n\n(i) Even though\n(ii) Because\n(iii) Despite",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Even though: works – *Even though he apologised, she did not forgive him.*",
+          "(ii) Because: does not work – 'Because he apologised, she did not forgive him' makes the apology the reason for not forgiving, which is illogical.",
+          "(iii) Despite: works – *Despite his apology, she did not forgive him.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "An apology is normally a reason to forgive, so its failure is a contrast, not a cause."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-027",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Anita missed the bus.\n**2.** She reached office late.\n\n(i) Although\n(ii) Unless\n(iii) Despite",
+      "options": [
+        "Only (ii)",
+        "Only (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Although: does not work – 'Although' signals a contrast, but missing the bus is the reason she was late.",
+          "(ii) Unless: does not work – 'Unless' introduces a condition; it cannot state a reason for something that has happened.",
+          "(iii) Despite: does not work – 'Despite missing the bus, she reached late' suggests missing the bus should have made her early.",
+          "So the answer is 'None of these'."
+        ],
+        "trap": "All three are contrast or condition words; the sentences need a cause word ('Because', 'As', 'Since')."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-028",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** It may rain tomorrow.\n**2.** In that case, the picnic will be postponed.\n\n(i) If\n(ii) Unless\n(iii) In the event of",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is a condition.",
+          "(i) If: works – *If it rains tomorrow, the picnic will be postponed.*",
+          "(ii) Unless: does not work – 'Unless it rains tomorrow, the picnic will be postponed' reverses the condition.",
+          "(iii) In the event of: works – *In the event of rain tomorrow, the picnic will be postponed.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'In the event of' takes a noun ('rain'), not a clause."
+      },
+      "tags": [
+        "connector:condition"
+      ]
+    },
+    {
+      "key": "cn-029",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The shopkeeper was polite.\n**2.** He was also very helpful.\n\n(i) Apart from\n(ii) Instead of\n(iii) Although",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is addition.",
+          "(i) Apart from: works – *Apart from being polite, the shopkeeper was very helpful.*",
+          "(ii) Instead of: does not work – 'Instead of being polite, he was helpful' says he was not polite.",
+          "(iii) Although: does not work – 'Although' would set politeness against helpfulness; the sentences add one quality to another.",
+          "So the answer is 'Only (i)'."
+        ],
+        "trap": "'Instead of' removes the first idea; 'Apart from' keeps it."
+      },
+      "tags": [
+        "connector:addition"
+      ]
+    },
+    {
+      "key": "cn-030",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The auditors found errors in the accounts.\n**2.** The report was sent back for correction.\n\n(i) Unless\n(ii) Since\n(iii) Despite",
+      "options": [
+        "Only (ii)",
+        "Only (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Unless: does not work – 'Unless' introduces a condition; the errors were actually found.",
+          "(ii) Since: works – *Since the auditors found errors in the accounts, the report was sent back for correction.*",
+          "(iii) Despite: does not work – 'Despite' signals a contrast; the errors are the reason the report was sent back.",
+          "So the answer is 'Only (ii)'."
+        ],
+        "trap": "Only a cause word fits: the errors caused the report to be sent back."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-031",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The lecture ended.\n**2.** The students rushed to the canteen at once.\n\n(i) No sooner\n(ii) The moment\n(iii) Despite",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) No sooner: works – *No sooner had the lecture ended than the students rushed to the canteen.*",
+          "(ii) The moment: works – *The moment the lecture ended, the students rushed to the canteen.*",
+          "(iii) Despite: does not work – 'Despite' signals a contrast; the sentences describe one event quickly following another.",
+          "So the answer is 'Both (i) and (ii)'."
+        ],
+        "trap": "'The moment' works like 'as soon as'."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-032",
+      "subtype": "starters",
+      "difficulty": "medium",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Nikhil ran fast.\n**2.** He could not catch the bus.\n\n(i) Because\n(ii) Though\n(iii) In spite of",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Because: does not work – 'Because Nikhil ran fast, he could not catch the bus' is illogical; running fast should help.",
+          "(ii) Though: works – *Though Nikhil ran fast, he could not catch the bus.*",
+          "(iii) In spite of: works – *In spite of running fast, Nikhil could not catch the bus.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "Running fast should have helped, so the failure is a contrast."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-033",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The meeting ended.\n**2.** The staff went home.\n\n(i) Having\n(ii) After\n(iii) Once",
+      "options": [
+        "Only (i)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Having: does not work – 'Having ended the meeting, the staff went home' says the staff ended the meeting, and 'Having ended, the staff…' is a dangling participle; the subjects differ.",
+          "(ii) After: works – *After the meeting ended, the staff went home.*",
+          "(iii) Once: works – *Once the meeting ended, the staff went home.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "A participle starter ('Having …') must share the subject of the main clause; 'the meeting' and 'the staff' are different."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-034",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Arun finished the report.\n**2.** His manager approved it.\n\n(i) Having\n(ii) Unless\n(iii) Once",
+      "options": [
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Having: does not work – 'Having finished the report, his manager approved it' makes the manager the one who finished it (dangling participle).",
+          "(ii) Unless: does not work – 'Unless' introduces a negative condition, which changes the meaning.",
+          "(iii) Once: works – *Once Arun finished the report, his manager approved it.*",
+          "So the answer is 'Only (iii)'."
+        ],
+        "trap": "'Having finished' looks natural, but the subject of the main clause would have to be Arun, not his manager."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-035",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The company is making losses.\n**2.** It has decided to hire more staff.\n\n(i) Even as\n(ii) Because\n(iii) Notwithstanding",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Even as: works – *Even as the company is making losses, it has decided to hire more staff.*",
+          "(ii) Because: does not work – 'Because it is making losses, the company is hiring' is illogical; losses would be a reason to cut staff.",
+          "(iii) Notwithstanding: works – *Notwithstanding its losses, the company has decided to hire more staff.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Even as' can express contrast ('even while'), not only time."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-036",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The drought destroyed the crops.\n**2.** It also dried up the village wells.\n\n(i) Unlike\n(ii) Not only\n(iii) Besides",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is addition.",
+          "(i) Unlike: does not work – 'Unlike' compares two different things; the sentences add two effects of the same drought.",
+          "(ii) Not only: works – *Not only did the drought destroy the crops, but it also dried up the village wells.*",
+          "(iii) Besides: works – *Besides destroying the crops, the drought dried up the village wells.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'Unlike' needs two things being contrasted, which the sentences do not have."
+      },
+      "tags": [
+        "connector:addition"
+      ]
+    },
+    {
+      "key": "cn-037",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The engineer inspected the site.\n**2.** He found cracks in the foundation.\n\n(i) On\n(ii) While\n(iii) Having",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) On: works – *On inspecting the site, the engineer found cracks in the foundation.*",
+          "(ii) While: works – *While inspecting the site, the engineer found cracks in the foundation.*",
+          "(iii) Having: works – *Having inspected the site, the engineer found cracks in the foundation.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "The subject is the same (the engineer), so all participle-type starters are allowed."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-038",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The village had no electricity.\n**2.** The children studied by lantern light.\n\n(i) With no\n(ii) Although\n(iii) Since",
+      "options": [
+        "Only (i)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) With no: works – *With no electricity in the village, the children studied by lantern light.*",
+          "(ii) Although: does not work – 'Although' signals a contrast, but the lack of electricity is the reason for using lanterns.",
+          "(iii) Since: works – *Since the village had no electricity, the children studied by lantern light.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'With no + noun' can give a reason, just as 'Since' does."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-039",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The patient reached the hospital.\n**2.** The doctor had already left by then.\n\n(i) By the time\n(ii) Before\n(iii) When",
+      "options": [
+        "Only (i)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) By the time: works – *By the time the patient reached the hospital, the doctor had already left.*",
+          "(ii) Before: works – *Before the patient reached the hospital, the doctor had already left.*",
+          "(iii) When: works – *When the patient reached the hospital, the doctor had already left.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "'Before' is tempting to reject, but 'the doctor had left before the patient reached' is exactly what the two sentences say."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-040",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Sales rose sharply in March.\n**2.** Profits fell in the same month.\n\n(i) While\n(ii) Whereas\n(iii) Since",
+      "options": [
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (ii) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) While: works – *While sales rose sharply in March, profits fell in the same month.*",
+          "(ii) Whereas: works – *Whereas sales rose sharply in March, profits fell in the same month.*",
+          "(iii) Since: does not work – 'Since sales rose, profits fell' makes rising sales the cause of falling profits, which the sentences do not say.",
+          "So the answer is 'Both (i) and (ii)'."
+        ],
+        "trap": "'While' and 'Whereas' both mark a contrast between two facts."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-041",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** He is rich.\n**2.** He is not happy.\n\n(i) Being\n(ii) For all\n(iii) Rich though",
+      "options": [
+        "Only (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Being: does not work – 'Being rich, he is not happy' makes wealth the reason for his unhappiness, which changes the meaning.",
+          "(ii) For all: works – *For all his riches, he is not happy.*",
+          "(iii) Rich though: works – *Rich though he is, he is not happy.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'For all' means 'in spite of' and 'Rich though he is' is a concessive inversion; 'Being' gives a reason."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-042",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** You should carry an umbrella.\n**2.** It may rain in the evening.\n\n(i) In case\n(ii) So that\n(iii) Unless",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (ii) and (iii)",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is a precaution.",
+          "(i) In case: works – *In case it rains in the evening, you should carry an umbrella.*",
+          "(ii) So that: does not work – 'So that' expresses purpose; you do not carry an umbrella so that it may rain.",
+          "(iii) Unless: does not work – 'Unless it rains, you should carry an umbrella' reverses the sense.",
+          "So the answer is 'Only (i)'."
+        ],
+        "trap": "'In case' means 'as a precaution against the possibility that'."
+      },
+      "tags": [
+        "connector:precaution"
+      ]
+    },
+    {
+      "key": "cn-043",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The storm was very severe.\n**2.** Several trees were uprooted.\n\n(i) So severe\n(ii) Too\n(iii) Such",
+      "options": [
+        "Only (i)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and result.",
+          "(i) So severe: works – *So severe was the storm that several trees were uprooted.*",
+          "(ii) Too: does not work – 'Too severe' means 'more than enough to prevent something' ('too severe to …'); it cannot introduce the result 'trees were uprooted'.",
+          "(iii) Such: works – *Such was the severity of the storm that several trees were uprooted.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'So + adjective' and 'Such + be + noun' both lead to a 'that' result clause; 'too' leads to a negative 'to' clause."
+      },
+      "tags": [
+        "connector:result"
+      ]
+    },
+    {
+      "key": "cn-044",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The committee met twice.\n**2.** It failed to reach a decision.\n\n(i) Though\n(ii) Despite\n(iii) In spite of",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (ii) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Though: works – *Though the committee met twice, it failed to reach a decision.*",
+          "(ii) Despite: works – *Despite meeting twice, the committee failed to reach a decision.*",
+          "(iii) In spite of: works – *In spite of meeting twice, the committee failed to reach a decision.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "All three are contrast starters; the gerund 'meeting' fixes the grammar for the last two."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-045",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Some employees support the new policy.\n**2.** Others strongly oppose it.\n\n(i) While\n(ii) Although\n(iii) Not only",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) While: works – *While some employees support the new policy, others strongly oppose it.*",
+          "(ii) Although: works – *Although some employees support the new policy, others strongly oppose it.*",
+          "(iii) Not only: does not work – 'Not only' adds a similar idea; support and opposition are opposites.",
+          "So the answer is 'Both (i) and (ii)'."
+        ],
+        "trap": "'Not only … but also' needs two ideas in the same direction."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-046",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The rain stopped.\n**2.** The ground staff immediately removed the covers.\n\n(i) Having\n(ii) The moment\n(iii) As soon as",
+      "options": [
+        "Only (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Having: does not work – 'Having stopped, the ground staff removed the covers' says the ground staff stopped (dangling participle); the subjects differ.",
+          "(ii) The moment: works – *The moment the rain stopped, the ground staff removed the covers.*",
+          "(iii) As soon as: works – *As soon as the rain stopped, the ground staff removed the covers.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "'Having' needs the same subject in both parts; the rain and the ground staff are different."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-047",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** He was not invited.\n**2.** He came to the wedding.\n\n(i) Though\n(ii) Uninvited\n(iii) Despite",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Though: works – *Though he was not invited, he came to the wedding.*",
+          "(ii) Uninvited: works – *Uninvited, he came to the wedding.*",
+          "(iii) Despite: works – *Despite not being invited, he came to the wedding.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "'Uninvited' works as a one-word participle phrase describing the subject."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-048",
+      "subtype": "starters",
+      "difficulty": "hard",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** She is a gifted dancer.\n**2.** She has never performed on stage.\n\n(i) Though\n(ii) Not only\n(iii) In spite of",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Though: works – *Though she is a gifted dancer, she has never performed on stage.*",
+          "(ii) Not only: does not work – 'Not only … but also' adds similar ideas; never performing is a contrast with being gifted.",
+          "(iii) In spite of: works – *In spite of being a gifted dancer, she has never performed on stage.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "Being gifted would normally lead to performing, so the second sentence is a contrast."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-049",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The team trained hard.\n**2.** It lost in the first round.\n\n(i) As\n(ii) Since\n(iii) Owing to",
+      "options": [
+        "Only (i)",
+        "Both (i) and (ii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) As: does not work – 'As the team trained hard, it lost' makes hard training the reason for losing.",
+          "(ii) Since: does not work – 'Since' gives a reason; hard training cannot be the cause of losing.",
+          "(iii) Owing to: does not work – 'Owing to its hard training, the team lost' makes training the cause of defeat.",
+          "So the answer is 'None of these'."
+        ],
+        "trap": "All three are cause words; the sentences need a contrast word ('Though', 'Despite')."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-050",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The guests arrived.\n**2.** Immediately, the power went off.\n\n(i) Hardly\n(ii) Scarcely\n(iii) No sooner",
+      "options": [
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Hardly: works – *Hardly had the guests arrived when the power went off.*",
+          "(ii) Scarcely: works – *Scarcely had the guests arrived when the power went off.*",
+          "(iii) No sooner: works – *No sooner had the guests arrived than the power went off.*",
+          "So the answer is 'All of these'."
+        ],
+        "trap": "'Hardly' and 'Scarcely' pair with 'when'; 'No sooner' pairs with 'than'. All three express 'immediately after'."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-051",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The river was in spate.\n**2.** The ferry service was suspended.\n\n(i) Being\n(ii) With\n(iii) The river being",
+      "options": [
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Being: does not work – 'Being in spate, the ferry service was suspended' says the ferry service was in spate (dangling participle).",
+          "(ii) With: works – *With the river in spate, the ferry service was suspended.*",
+          "(iii) The river being: works – *The river being in spate, the ferry service was suspended.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "An absolute phrase ('The river being in spate') carries its own subject; a bare participle ('Being …') borrows the main subject."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-052",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Demand for a product rises.\n**2.** Its price goes up accordingly.\n\n(i) The more\n(ii) Unless\n(iii) As",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is proportion.",
+          "(i) The more: works – *The more a product is in demand, the higher its price goes.*",
+          "(ii) Unless: does not work – 'Unless demand rises, the price goes up' reverses the relationship.",
+          "(iii) As: works – *As demand for a product rises, its price goes up.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'The more …, the higher …' is a comparative correlative that expresses 'accordingly'."
+      },
+      "tags": [
+        "connector:proportion"
+      ]
+    },
+    {
+      "key": "cn-053",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Ravi did not know the answer.\n**2.** He kept quiet.\n\n(i) Not knowing\n(ii) Since\n(iii) Unless",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is cause and effect.",
+          "(i) Not knowing: works – *Not knowing the answer, Ravi kept quiet.*",
+          "(ii) Since: works – *Since Ravi did not know the answer, he kept quiet.*",
+          "(iii) Unless: does not work – 'Unless Ravi knew the answer, he kept quiet' turns a fact into a condition and is awkward in meaning.",
+          "So the answer is 'Both (i) and (ii)'."
+        ],
+        "trap": "'Not knowing' is the negative participle and keeps the same subject (Ravi)."
+      },
+      "tags": [
+        "connector:cause"
+      ]
+    },
+    {
+      "key": "cn-054",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The loan was sanctioned.\n**2.** The documents had been verified first.\n\n(i) Unless\n(ii) Only after\n(iii) Before",
+      "options": [
+        "Only (i)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Unless: does not work – 'Unless the documents had been verified, the loan was sanctioned' is meaningless.",
+          "(ii) Only after: works – *Only after the documents had been verified was the loan sanctioned.*",
+          "(iii) Before: works – *Before the loan was sanctioned, the documents had been verified.*",
+          "So the answer is 'Both (ii) and (iii)'."
+        ],
+        "trap": "The events are in reverse order in the two sentences; 'Before' works if the loan clause follows it."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-055",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Kavita apologised in time.\n**2.** Otherwise her manager would have issued a warning.\n\n(i) Had\n(ii) Although\n(iii) But for",
+      "options": [
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is a condition.",
+          "(i) Had: works – *Had Kavita not apologised in time, her manager would have issued a warning.*",
+          "(ii) Although: does not work – 'Although Kavita apologised in time, her manager would have issued a warning' is illogical; the apology prevented the warning.",
+          "(iii) But for: works – *But for Kavita's timely apology, her manager would have issued a warning.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Had … not' (inverted third conditional) and 'But for' (= if it were not for) both express 'otherwise'."
+      },
+      "tags": [
+        "connector:condition"
+      ]
+    },
+    {
+      "key": "cn-056",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Prices were cut.\n**2.** Sales did not improve.\n\n(i) Even after\n(ii) Consequent on\n(iii) Notwithstanding",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Even after: works – *Even after prices were cut, sales did not improve.*",
+          "(ii) Consequent on: does not work – 'Consequent on the price cut, sales did not improve' makes the cut the cause of poor sales.",
+          "(iii) Notwithstanding: works – *Notwithstanding the price cut, sales did not improve.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Consequent on' means 'as a result of'; the sentences show an unexpected result, i.e. a contrast."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-057",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The officer retired.\n**2.** He continued to advise the department.\n\n(i) Even after\n(ii) Until\n(iii) After",
+      "options": [
+        "Only (iii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The link between the sentences is time/sequence.",
+          "(i) Even after: works – *Even after he retired, the officer continued to advise the department.*",
+          "(ii) Until: does not work – 'Until he retired, the officer continued to advise' says he stopped advising at retirement, the opposite of the meaning.",
+          "(iii) After: works – *After he retired, the officer continued to advise the department.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Until' marks the end point of an action; here the advice continued beyond retirement."
+      },
+      "tags": [
+        "connector:time"
+      ]
+    },
+    {
+      "key": "cn-058",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The bus overturned.\n**2.** Not a single passenger was hurt.\n\n(i) Although\n(ii) Since\n(iii) Despite",
+      "options": [
+        "Only (i)",
+        "Only (ii)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Although: works – *Although the bus overturned, not a single passenger was hurt.*",
+          "(ii) Since: does not work – 'Since the bus overturned, no passenger was hurt' makes the accident the reason for safety.",
+          "(iii) Despite: works – *Despite the bus overturning, not a single passenger was hurt.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "An accident would be expected to cause injuries, so 'no one was hurt' is a contrast."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-059",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The shop was crowded.\n**2.** The staff attended to every customer patiently.\n\n(i) Crowded as\n(ii) So crowded\n(iii) Crowded though",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "All of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) Crowded as: works – *Crowded as the shop was, the staff attended to every customer patiently.*",
+          "(ii) So crowded: does not work – 'So crowded was the shop that the staff attended patiently' makes patience a result of the crowd, which changes the meaning.",
+          "(iii) Crowded though: works – *Crowded though the shop was, the staff attended to every customer patiently.*",
+          "So the answer is 'Both (i) and (iii)'."
+        ],
+        "trap": "'Adjective + as/though + subject + verb' is a concessive inversion meaning 'although'."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    },
+    {
+      "key": "cn-060",
+      "subtype": "starters",
+      "difficulty": "extreme",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The firm posted record profits.\n**2.** It cut jobs in the same year.\n\n(i) While\n(ii) Even as\n(iii) As a result of",
+      "options": [
+        "Both (i) and (ii)",
+        "Both (i) and (iii)",
+        "Both (ii) and (iii)",
+        "All of these",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The link between the sentences is contrast.",
+          "(i) While: works – *While the firm posted record profits, it cut jobs in the same year.*",
+          "(ii) Even as: works – *Even as the firm posted record profits, it cut jobs.*",
+          "(iii) As a result of: does not work – 'As a result of record profits, the firm cut jobs' makes profits the cause of job cuts.",
+          "So the answer is 'Both (i) and (ii)'."
+        ],
+        "trap": "Record profits would not normally lead to job cuts, so the link is a contrast."
+      },
+      "tags": [
+        "connector:contrast"
+      ]
+    }
+  ]
+}

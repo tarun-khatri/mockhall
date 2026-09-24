@@ -5,7 +5,7 @@
 import type { Rng } from '../../../../lib/rng';
 import type { Difficulty } from '../../../types';
 import { ordinal } from '../../../../lib/format';
-import { CAP_NUM_WORD, findPair, listAnd, listOr, perms, sizesFor, type Category, type DsDraft, type Scenario } from './common';
+import { CAP_NUM_WORD, findPair, listAnd, listOr, perms, sizesFor, worldScenario, type Category, type DsDraft } from './common';
 
 export type RankAttr = 'height' | 'weight' | 'marks';
 export type RankClue =
@@ -119,15 +119,7 @@ export function buildRanking(rng: Rng, d: Difficulty, target: Category): DsDraft
     for (let i = 1; i < n; i++) if (rng.chance(0.4)) atoms.push({ t: 'not', a: truth[i], end: 'top' });
     for (let i = 0; i < n - 1; i++) if (rng.chance(0.3)) atoms.push({ t: 'not', a: truth[i], end: 'bottom' });
   }
-  const sc: Scenario<RankClue> = {
-    atoms,
-    key: (c) => JSON.stringify(c),
-    answers(cl) {
-      const out = new Set<string>();
-      for (const o of orders) if (cl.every((c) => holds(o, c))) out.add(answerOf(o, ask));
-      return out;
-    },
-  };
+  const sc = worldScenario<RankClue>(orders.length, atoms, (c) => JSON.stringify(c), (c, w) => holds(orders[w], c), (w) => answerOf(orders[w], ask));
   const sizes = sizesFor(d, [1, 2], [1, 2], [2, 3], [2, 3]);
   const res = findPair(rng, sc, target, sizes, 45);
   if (!res) return null;

@@ -82,6 +82,7 @@ export function buildCoding(rng: Rng, d: Difficulty, target: Category): DsDraft<
     atoms: sentences,
     key: (s) => [...s.words].sort().join(' '),
     answers: (cl) => worldsAnswer(cl, ask),
+    openBase: true,
   };
   const sizes = sizesFor(d, [1, 1], [1, 2], [2, 2], [2, 2]);
   const res = findPair(rng, sc, target, sizes, 40);

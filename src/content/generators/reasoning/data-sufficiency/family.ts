@@ -7,7 +7,7 @@
  */
 import type { Rng } from '../../../../lib/rng';
 import type { Difficulty, FamilyLink, FamilyMember, VisualSpec } from '../../../types';
-import { NUM_WORD, findPair, listAnd, listOr, sizesFor, type Category, type DsDraft, type Scenario } from './common';
+import { NUM_WORD, findPair, listAnd, listOr, sizesFor, worldScenario, type Category, type DsDraft } from './common';
 
 export const KIN = [
   'other',
@@ -265,17 +265,15 @@ export function buildFamily(rng: Rng, d: Difficulty, target: Category): DsDraft<
     if (rng.chance(0.25)) atoms.push({ t: 'married', a: people[a], yes: truth.sp[a] >= 0 });
     if (d !== 'easy' && !truth.fa.includes(a) && !truth.mo.includes(a) && rng.chance(0.25)) atoms.push({ t: 'childless', a: people[a] });
   }
-  const sc: Scenario<FamClue> = {
+  const sc = worldScenario<FamClue>(
+    worlds.length,
     atoms,
-    key: (c) => JSON.stringify(c),
-    answers(cl) {
-      const out = new Set<string>();
-      for (const w of worlds) if (cl.every((c) => holds(w, n, idx, c))) out.add(KIN[w.rel[qa * n + qb]]);
-      return out;
-    },
+    (c) => JSON.stringify(c),
+    (c, w) => holds(worlds[w], n, idx, c),
+    (w) => KIN[worlds[w].rel[qa * n + qb]],
     // real DS statements chain towards the asked persons: each statement must mention one of them
-    accept: (cl) => cl.some((c) => c.a === ask.a || c.a === ask.b || (c.t === 'rel' && (c.b === ask.a || c.b === ask.b))),
-  };
+    { accept: (cl) => cl.some((c) => c.a === ask.a || c.a === ask.b || (c.t === 'rel' && (c.b === ask.a || c.b === ask.b))) },
+  );
   const sizes = sizesFor(d, [1, 2], [2, 2], [2, 3], [2, 3]);
   const res = findPair(rng, sc, target, sizes, 40);
   if (!res) return null;

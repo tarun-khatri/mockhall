@@ -38,6 +38,53 @@ export interface Scenario<C> {
   key(c: C): string;
   /** Optional filter for a candidate statement (e.g. must mention a question person). */
   accept?(stmt: readonly C[]): boolean;
+  /** The stem alone leaves the answer completely open (sentinel base set): skip the "informative" filter. */
+  openBase?: boolean;
+}
+
+/**
+ * Scenario over a fixed list of worlds (orders, seatings, families): each atom's truth over all worlds is
+ * computed once, so a statement set is filtered with array lookups.
+ */
+export function worldScenario<C>(
+  count: number,
+  atoms: C[],
+  key: (c: C) => string,
+  holds: (c: C, w: number) => boolean,
+  answer: (w: number) => string,
+  extra: Pick<Scenario<C>, 'ok' | 'accept'> = {},
+): Scenario<C> {
+  const bits = new Map<string, Uint8Array>();
+  const answersArr: string[] = [];
+  for (let w = 0; w < count; w++) answersArr.push(answer(w));
+  const bitsOf = (c: C) => {
+    const k = key(c);
+    let b = bits.get(k);
+    if (!b) {
+      b = new Uint8Array(count);
+      for (let w = 0; w < count; w++) b[w] = holds(c, w) ? 1 : 0;
+      bits.set(k, b);
+    }
+    return b;
+  };
+  return {
+    atoms,
+    key,
+    ...extra,
+    answers(cl) {
+      const bs = cl.map(bitsOf);
+      const out = new Set<string>();
+      for (let w = 0; w < count; w++) {
+        let ok = true;
+        for (const b of bs) if (!b[w]) {
+          ok = false;
+          break;
+        }
+        if (ok) out.add(answersArr[w]);
+      }
+      return out;
+    },
+  };
 }
 
 export interface PairResult<C> {
@@ -66,7 +113,7 @@ export function findPair<C>(rng: Rng, sc: Scenario<C>, target: Category, sizes: 
     // no clue may be implied by the others inside one statement (keeps statements tight)
     const ans = sc.answers(cl);
     if (!ok(ans)) continue;
-    if (ans.size > 1 && ans.size >= base.size) continue; // statement says nothing about the question
+    if (!sc.openBase && ans.size > 1 && ans.size >= base.size) continue; // statement says nothing about the question
     cands.push({ cl, keys: new Set(keys), ans });
   }
   const pairs: [number, number][] = [];

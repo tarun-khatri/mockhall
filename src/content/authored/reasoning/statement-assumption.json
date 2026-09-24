@@ -187,7 +187,7 @@
       "key": "sa-008",
       "subtype": "two-assumptions",
       "difficulty": "easy",
-      "prompt": "**Statement:** Notice at a railway station: 'Passengers are advised to keep their luggage with them at all times.'\n\n**Assumptions:**\nI. Passengers read the notices put up at the station.\nII. Luggage left unattended at the station can be at risk.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "prompt": "**Statement:** Notice at a railway station: 'Passengers are advised to keep their luggage with them at all times.'\n\n**Assumptions:**\nI. Luggage that passengers keep with them can never be stolen.\nII. Luggage left unattended at the station can be at risk of theft or loss.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
       "options": [
         "Only assumption I is implicit",
         "Only assumption II is implicit",
@@ -195,18 +195,18 @@
         "Neither I nor II is implicit",
         "Both I and II are implicit"
       ],
-      "answerIndex": 4,
+      "answerIndex": 1,
       "solution": {
         "steps": [
-          "I is implicit: a notice is put up only if the authority expects passengers to read it.",
-          "II is implicit: the advice would be pointless if unattended luggage faced no risk (of theft, loss or security checks).",
-          "Answer: Both I and II are implicit."
+          "I is not implicit: the notice only needs keeping luggage close to be safer; \"can never be stolen\" is an extreme claim the railway need not believe.",
+          "II is implicit: advising passengers never to leave luggage unattended makes sense only if unattended luggage faces some risk.",
+          "Answer: Only assumption II is implicit."
         ],
-        "trap": "Every notice assumes it will be read; every warning assumes a risk exists."
+        "trap": "\"Safer\" is not \"never stolen\" — the extreme word makes I fail."
       },
       "tags": [
-        "cr:implicit-notice-read",
-        "cr:implicit-reason"
+        "cr:implicit-reason",
+        "cr:extreme-word"
       ]
     },
     {
@@ -784,7 +784,7 @@
       "key": "sa-031",
       "subtype": "two-assumptions",
       "difficulty": "hard",
-      "prompt": "**Statement:** A newspaper editorial says: 'The city must build more public toilets in its markets, especially for women, before it spends money on beautifying its roundabouts.'\n\n**Assumptions:**\nI. The public toilets in the city's markets are at present not adequate, especially for women.\nII. Public toilets in markets are more important than beautifying roundabouts.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "prompt": "**Statement:** A newspaper editorial says: 'The city must build more public toilets in its markets, especially for women, before it spends money on beautifying its roundabouts.'\n\n**Assumptions:**\nI. The public toilets in the city's markets are at present not adequate, especially for women.\nII. The city's roundabouts do not need any beautification.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
       "options": [
         "Only assumption I is implicit",
         "Only assumption II is implicit",
@@ -792,18 +792,18 @@
         "Neither I nor II is implicit",
         "Both I and II are implicit"
       ],
-      "answerIndex": 4,
+      "answerIndex": 0,
       "solution": {
         "steps": [
-          "I is implicit: the demand for \"more\" toilets, \"especially for women\", assumes the present number is not enough.",
-          "II is implicit: saying toilets must come \"before\" beautification assumes they are the higher priority.",
-          "Answer: Both I and II are implicit."
+          "I is implicit: demanding \"more\" toilets, \"especially for women\", assumes the present provision is not enough.",
+          "II is not implicit: the editorial only says toilets should come first; \"before\" beautification implies the roundabouts may be beautified later, not that they need none.",
+          "Answer: Only assumption I is implicit."
         ],
-        "trap": "II is not a restatement: the editorial states an order of action; the priority it rests on is unstated."
+        "trap": "Putting something second is not rejecting it."
       },
       "tags": [
         "cr:implicit-problem",
-        "cr:implicit-priority"
+        "cr:priority-vs-rejection"
       ]
     },
     {

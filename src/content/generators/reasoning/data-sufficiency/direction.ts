@@ -137,6 +137,7 @@ export function buildDirection(rng: Rng, d: Difficulty, target: Category): DsDra
     atoms,
     key: (c) => JSON.stringify(c),
     answers: answersOf,
+    openBase: true,
     ok: (ans) => !ans.has('same'),
     accept: (cl) => cl.filter((c) => c.t === 'line').length <= 1 && cl.some((c) => [c.a, c.b].some((x) => x === qa || x === qb)),
   };

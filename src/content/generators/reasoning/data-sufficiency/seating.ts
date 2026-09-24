@@ -8,7 +8,7 @@
 import type { Rng } from '../../../../lib/rng';
 import type { Difficulty, VisualSpec } from '../../../types';
 import { ordinal } from '../../../../lib/format';
-import { CAP_NUM_WORD, NUM_WORD, findPair, listAnd, listOr, perms, sizesFor, type Category, type DsDraft, type Scenario } from './common';
+import { CAP_NUM_WORD, NUM_WORD, findPair, listAnd, listOr, perms, sizesFor, worldScenario, type Category, type DsDraft } from './common';
 
 export type SeatLayout = 'linear' | 'circular';
 export type SeatClue =
@@ -174,16 +174,14 @@ export function buildSeating(rng: Rng, d: Difficulty, target: Category): DsDraft
       if (p(a) === 0 || p(a) === n - 1) atoms.push({ t: 'end', a });
       else if (d !== 'easy' && rng.chance(0.4)) atoms.push({ t: 'nend', a });
     }
-  const sc: Scenario<SeatClue> = {
+  const sc = worldScenario<SeatClue>(
+    worlds.length,
     atoms,
-    key: (c) => JSON.stringify(c),
-    answers(cl) {
-      const out = new Set<string>();
-      for (const s of worlds) if (cl.every((c) => holds(layout, s, c))) out.add(answerOf(layout, s, ask));
-      return out;
-    },
-    ok: (ans) => !ans.has('(nobody)'),
-  };
+    (c) => JSON.stringify(c),
+    (c, w) => holds(layout, worlds[w], c),
+    (w) => answerOf(layout, worlds[w], ask),
+    { ok: (ans) => !ans.has('(nobody)') },
+  );
   const sizes = sizesFor(d, [1, 2], [2, 2], [2, 3], [2, 3]);
   const res = findPair(rng, sc, target, sizes, 45);
   if (!res) return null;
