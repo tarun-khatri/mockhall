@@ -122,7 +122,10 @@ const eqLine = (a: readonly string[], b: readonly string[]) => a.length === b.le
  * The shown steps determine the machine iff every returned sequence is identical.
  */
 export function consistentRuns(input: readonly string[], shown: readonly (readonly string[])[]): string[][][] {
-  const fam = stepFamily();
+  // moves on a kind absent from the input never act, so rules differing only there behave identically
+  const hasW = input.some((t) => !isNum(t));
+  const hasN = input.some(isNum);
+  const fam = stepFamily().filter((x) => x.every((m) => (m.kind === 'word' ? hasW : hasN)));
   const fits = (rule: IoRule) => {
     const sim = simulate(input, rule, shown.length);
     return sim.lines.length > shown.length && shown.every((l, i) => eqLine(sim.lines[i + 1], l));

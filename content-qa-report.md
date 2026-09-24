@@ -10,15 +10,35 @@ Passing items are recorded with a content hash; editing an item afterwards un-ve
 
 | Chapter | Written | Passed | Rewritten | Dropped | Final (E/M/H/X) | Questions served |
 |---|---|---|---|---|---|---|
+| cloze | 15 passages | 15 | 0 | 0 | 15 (3/5/4/3) | 90 |
+| connectors | 60 items | 60 | 3 | 0 | 60 (12/20/16/12) | 60 |
 | error-spotting | 70 items | 70 | 0 | 0 | 70 (14/24/18/14) | 70 |
 | fillers | 70 items | 70 | 0 | 0 | 70 (14/24/18/14) | 70 |
-| para-jumbles | 10 sets | 10 | 0 | 0 | 10 (2/4/3/1) | 50 |
+| grammar | 60 items | 60 | 1 | 0 | 60 (12/20/16/12) | 60 |
+| match-column | 60 items | 60 | 1 | 0 | 60 (12/20/16/12) | 60 |
+| para-filler | 60 items | 59 | 1 | 0 | 59 (12/19/16/12) | 60 |
+| para-jumbles | 15 sets | 15 | 0 | 0 | 15 (3/6/4/2) | 75 |
+| para-summary | 60 items | 60 | 0 | 0 | 60 (12/20/16/12) | 60 |
 | phrase-replacement | 60 items | 60 | 0 | 0 | 60 (12/20/16/12) | 60 |
-| reading-comprehension | 10 passages | 10 | 0 | 0 | 10 (2/4/3/1) | 100 |
+| reading-comprehension | 20 passages | 20 | 0 | 0 | 20 (4/8/6/2) | 200 |
+| word-swap | 60 items | 60 | 0 | 0 | 60 (12/20/16/12) | 60 |
+| word-usage | 60 items | 60 | 1 | 0 | 60 (12/20/16/12) | 60 |
+| cause-effect | 50 items | 50 | 0 | 0 | 50 (10/17/13/10) | 50 |
+| course-of-action | 50 items | 50 | 0 | 0 | 50 (10/17/13/10) | 50 |
+| statement-argument | 50 items | 50 | 0 | 0 | 50 (10/17/13/10) | 50 |
+| statement-assumption | 50 items | 50 | 2 | 0 | 50 (10/17/13/10) | 50 |
+| statement-conclusion | 50 items | 50 | 0 | 0 | 50 (10/17/13/10) | 50 |
 
-Total authored questions served: **350**.
+Total authored questions served: **1235**.
 
-No item failed a blind solve.
+## Items that failed a blind solve at least once
+
+- **connectors**: cn-056, cn-057, cn-058
+- **grammar**: gr-060
+- **match-column**: mc-050
+- **para-filler**: pf-032
+- **word-usage**: wu-053
+- **statement-assumption**: sa-008, sa-031
 
 ## Generated English (hybrid)
 

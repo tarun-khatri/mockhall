@@ -92,7 +92,9 @@ function family(): IoMove[][] {
 
 export function inferRun(f: InputOutputFacts): string[][] {
   const same = (a: readonly string[], b: readonly string[]) => a.join('\u0001') === b.join('\u0001');
-  const fam = family();
+  const kinds = new Set(f.input.map((t) => (numeric(t) ? 'num' : 'word')));
+  // a move on a kind the input does not contain never acts: such rules duplicate simpler ones
+  const fam = family().filter((x) => x.every((m) => kinds.has(m.kind)));
   const first = fam.filter((x) => {
     const r = run(f.input, [x], 1);
     return r.length > 1 && same(r[1], f.shown[0]);

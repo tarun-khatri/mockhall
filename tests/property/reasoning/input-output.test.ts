@@ -27,17 +27,18 @@ describeGenerator(generator, { verify, sanity });
 describe('input-output machine — hand-checked', () => {
   it('words to the left alphabetically, last step skips the element already in place', () => {
     const f: InputOutputFacts = {
-      input: ['mango', 'apple', 'tiger', 'delta'],
+      input: ['tiger', 'mango', 'apple', 'delta'],
       shown: [
-        ['apple', 'mango', 'tiger', 'delta'],
-        ['apple', 'delta', 'mango', 'tiger'],
+        ['apple', 'tiger', 'mango', 'delta'],
+        ['apple', 'delta', 'tiger', 'mango'],
       ],
       rule: { cycle: [[{ kind: 'word', order: 'asc', end: 'left', op: { t: 'none' } }]] },
       questions: [],
     };
     const lines = inferRun(f);
-    // Step II already sorted: mango and tiger are in place, so Step II is the last step
-    expect(lines.length - 1).toBe(2);
+    // Step III: apple delta mango tiger — tiger is then already in place, so Step III is the last step
+    expect(lines[3]).toEqual(['apple', 'delta', 'mango', 'tiger']);
+    expect(lines.length - 1).toBe(3);
   });
   it('numbers: largest to the right with +3', () => {
     const f: InputOutputFacts = {
@@ -51,6 +52,6 @@ describe('input-output machine — hand-checked', () => {
     };
     const lines = inferRun(f);
     expect(lines[5]).toEqual(['15', '36', '48', '64', '81']);
-    expect(verify({ facts: f, item: { questions: [] } })).toEqual(['Step V', '15']);
+    expect(verify({ facts: f, item: { questions: [] } })).toEqual(['Step V', '12']);
   });
 });

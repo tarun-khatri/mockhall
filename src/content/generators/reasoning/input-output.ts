@@ -320,6 +320,7 @@ function makeQuestions(rng: Rng, b: Built, rule: IoRule, d: Difficulty): Q[] {
     middle: () => {
       const k = kStep();
       const line = lines[k];
+      if (line.length < 7) return null; // too few other elements for four distractors
       const pairs: [number, number][] = [];
       for (let i = 0; i < line.length; i++) for (let j = i + 4; j < line.length; j += 2) pairs.push([i, j]);
       if (!pairs.length) return null;
