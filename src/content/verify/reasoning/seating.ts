@@ -952,7 +952,7 @@ function boundN(pz: Puzzle): number {
     if (c.c === 'sideCount' && c.side === 'left' && pl(c.a) >= 0) hi[pl(c.a)] = Math.min(hi[pl(c.a)], c.n);
   }
   // pairwise distance bounds |p_i − p_j| ≤ dist[i][j], relaxed to a fixpoint (triangle rule + "as many" equalities)
-  const dist = Array.from({ length: P }, (_, i) => Array.from({ length: P }, (_, j) => (i === j ? 0 : INF)));
+  const dist: number[][] = Array.from({ length: P }, (_, i) => Array.from({ length: P }, (_, j): number => (i === j ? 0 : INF)));
   const setD = (i: number, j: number, v: number) => {
     if (i < 0 || j < 0 || v >= dist[i][j]) return false;
     dist[i][j] = dist[j][i] = v;
