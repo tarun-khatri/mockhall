@@ -83,6 +83,19 @@ test.describe('full mock', () => {
     expect(before - after).toBeLessThanOrEqual(182);
   });
 
+  test('last question of a section offers to end it; last of the test offers submit @smoke', async ({ page }) => {
+    await startFullMock(page);
+    await page.getByRole('button', { name: 'Question palette', exact: true }).click();
+    const sheet = page.getByRole('dialog', { name: 'Question palette' });
+    const cells = sheet.getByRole('button', { name: /^Question \d+,/ });
+    await cells.nth((await cells.count()) - 1).click();
+    await page.getByRole('button', { name: 'Save & end section' }).click();
+    const end = page.getByRole('dialog', { name: 'End this section now?' });
+    await expect(end).toContainText(/Answered \d+ of \d+/);
+    await end.getByRole('button', { name: 'Keep going' }).click();
+    await expect(page.getByRole('button', { name: /English Language/ })).toBeVisible();
+  });
+
   test('back button during a mock asks before leaving', async ({ page }) => {
     await page.goto('./');
     await startFullMock(page);

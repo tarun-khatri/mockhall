@@ -157,6 +157,8 @@ export default function Exam() {
   const lastInSection = a.currentIndex === sectionIds.length - 1;
   // Last question of the last (or only) section: the primary action saves and opens the submit summary.
   const lastQuestionOfTest = lastInSection && a.currentSection === a.config.sections.length - 1;
+  // Last question of an earlier section in a sectionally timed mock: offer to end the section (no going back).
+  const lastQuestionOfSection = lastInSection && !lastQuestionOfTest && a.config.sectionalTiming;
   const multi = a.config.sections.length > 1;
   const canPause = !a.config.strictTimer;
 
@@ -268,11 +270,14 @@ export default function Exam() {
                 if (lastQuestionOfTest) {
                   actions.saveOnly();
                   setSubmitOpen(true);
+                } else if (lastQuestionOfSection) {
+                  actions.saveOnly();
+                  setEndSectionOpen(true);
                 } else actions.saveNext();
               }}
               className="min-h-12 rounded-[12px] bg-pen px-1.5 text-[15px] leading-tight font-semibold text-on-status"
             >
-              {lastQuestionOfTest ? 'Save & submit' : 'Save & next'}
+              {lastQuestionOfTest ? 'Save & submit' : lastQuestionOfSection ? 'Save & end section' : 'Save & next'}
             </button>
           </div>
         )}
@@ -348,7 +353,12 @@ export default function Exam() {
           </div>
         }
       >
-        <p className="text-ink-2">You can't come back to {sectionCfg.title} after this. In the real exam you would wait for the section timer; ending early just saves you the wait.</p>
+        <p className="tnum mb-2 font-semibold">
+          Answered {counts[a.currentSection].answered + counts[a.currentSection]['answered-marked']} of {sectionIds.length}
+          {counts[a.currentSection].marked ? ` · ${counts[a.currentSection].marked} marked without an answer` : ''}
+          {remaining !== null ? ` · ${clock(remaining / 1000)} left` : ''}
+        </p>
+        <p className="text-ink-2">You can't come back to {sectionCfg.title} after this. In the real exam you would wait for the section timer; ending early just saves you the wait. Tap Keep going to review until the timer ends.</p>
       </BottomSheet>
 
       <BottomSheet open={menuOpen} onClose={() => setMenuOpen(false)} title="Test menu">
