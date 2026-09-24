@@ -57,13 +57,16 @@ describe('data sufficiency — hand-checked cases', () => {
         { t: 'exact', a: 'P', b: 'R', d: 5, dir: 'N' },
         { t: 'exact', a: 'R', b: 'Q', d: 3, dir: 'E' },
       ],
-      II: [{ t: 'line', a: 'P', b: 'Q', dir: 'N' }],
+      II: [{ t: 'line', a: 'P', b: 'R', dir: 'N' }],
       ask: { t: 'dist', a: 'P', b: 'Q' },
     };
     // I gives √34; II gives the direction only
     expect(verifyDs(f)).toBe(0);
-    const g: DataSufficiencyFacts = { ...f, II: [{ t: 'line', a: 'P', b: 'R', dir: 'N' }], ask: { t: 'dir', a: 'P', b: 'Q' } };
-    expect(verifyDs(g)).toBe(0); // II alone does not reach Q
+    const g: DataSufficiencyFacts = { ...f, II: [{ t: 'line', a: 'R', b: 'Q', dir: 'E' }], ask: { t: 'dir', a: 'P', b: 'Q' } };
+    expect(verifyDs(g)).toBe(0); // II alone does not reach P
+    const k: DataSufficiencyFacts = { ...f, I: [{ t: 'line', a: 'P', b: 'R', dir: 'N' }], II: [{ t: 'line', a: 'R', b: 'Q', dir: 'E' }], ask: { t: 'dir', a: 'P', b: 'Q' } };
+    expect(verifyDs(k)).toBe(3); // north-east only when combined
+    expect(verifyDs({ ...k, ask: { t: 'dist', a: 'P', b: 'Q' } })).toBe(4); // lengths unknown
     const h: DataSufficiencyFacts = {
       ...f,
       I: [{ t: 'exact', a: 'P', b: 'Q', d: 4, dir: 'W' }],

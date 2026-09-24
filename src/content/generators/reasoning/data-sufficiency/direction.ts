@@ -123,7 +123,7 @@ export function buildDirection(rng: Rng, d: Difficulty, target: Category): DsDra
     const [p, q] = rng.chance(0.5) ? [a, b] : [b, a];
     const [dx, dy] = [C(p)[0] - C(q)[0], C(p)[1] - C(q)[1]];
     const dir: Dir4 = dx > 0 ? 'E' : dx < 0 ? 'W' : dy > 0 ? 'N' : 'S';
-    atoms.push({ t: 'exact', a: p, b: q, d: Math.abs(dx + dy), dir });
+    if (Math.abs(dx + dy) <= 25) atoms.push({ t: 'exact', a: p, b: q, d: Math.abs(dx + dy), dir });
     if (rng.chance(d === 'easy' ? 0.4 : 0.5)) atoms.push({ t: 'line', a: p, b: q, dir });
   }
   const cache = new Map<string, Set<string>>();

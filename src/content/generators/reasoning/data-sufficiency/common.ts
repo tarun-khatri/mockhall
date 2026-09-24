@@ -182,6 +182,7 @@ export function listOr(xs: readonly string[]): string {
 }
 
 export const NUM_WORD = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+export const ORD_WORD = ['zeroth', 'first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh'];
 export const CAP_NUM_WORD = NUM_WORD.map((w) => w[0].toUpperCase() + w.slice(1));
 
 export function perms(n: number): number[][] {

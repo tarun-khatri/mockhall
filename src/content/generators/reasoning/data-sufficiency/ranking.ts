@@ -4,8 +4,7 @@
  */
 import type { Rng } from '../../../../lib/rng';
 import type { Difficulty } from '../../../types';
-import { ordinal } from '../../../../lib/format';
-import { CAP_NUM_WORD, findPair, listAnd, listOr, perms, sizesFor, worldScenario, type Category, type DsDraft } from './common';
+import { CAP_NUM_WORD, ORD_WORD, findPair, listAnd, listOr, perms, sizesFor, worldScenario, type Category, type DsDraft } from './common';
 
 export type RankAttr = 'height' | 'weight' | 'marks';
 export type RankClue =
@@ -71,7 +70,7 @@ export function rankClueText(c: RankClue, attr: RankAttr, n: number): string {
       }
       const below = c.k - 1;
       if (below * 2 === n - 1 && n % 2 === 1) return `${c.a} is exactly in the middle when arranged by ${attr === 'marks' ? 'marks' : attr}.`;
-      return `${c.a} is the ${ordinal(c.k)} ${w.least}.`;
+      return `${c.a} is the ${ORD_WORD[c.k]} ${w.least}.`;
     }
     case 'between':
       return attr === 'marks' ? `${c.a} scored more marks than ${c.lo} but fewer than ${c.hi}.` : `${c.a} is ${w.more} ${c.lo} but ${w.less} ${c.hi}.`;
@@ -85,7 +84,7 @@ function askText(ask: RankAsk, attr: RankAttr, people: string[]): string {
   const among = `among ${listAnd(people)}`;
   if (ask.t === 'who') {
     const word = ask.from === 'top' ? w.most : w.least;
-    return `Who is the ${ask.k > 1 ? ordinal(ask.k) + ' ' : ''}${word} ${among}?`;
+    return `Who is the ${ask.k > 1 ? ORD_WORD[ask.k] + ' ' : ''}${word} ${among}?`;
   }
   if (ask.t === 'count') return attr === 'marks' ? `How many persons scored more marks than ${ask.a}?` : `How many persons are ${w.more} ${ask.a}?`;
   return `Is ${ask.a} the ${w.most} ${among}?`;
@@ -127,10 +126,13 @@ export function buildRanking(rng: Rng, d: Difficulty, target: Category): DsDraft
   const say = (ans: Set<string>): string => {
     const xs = [...ans].sort();
     if (ask.t === 'who') {
-      const word = `the ${ask.k > 1 ? ordinal(ask.k) + ' ' : ''}${ask.from === 'top' ? w.most : w.least}`;
+      const word = `the ${ask.k > 1 ? ORD_WORD[ask.k] + ' ' : ''}${ask.from === 'top' ? w.most : w.least}`;
       return xs.length === 1 ? `${xs[0]} is ${word}` : `${word} could be ${listOr(xs)}`;
     }
-    if (ask.t === 'count') return xs.length === 1 ? `exactly ${xs[0]} ${xs[0] === '1' ? 'person is' : 'persons are'} above ${ask.a}` : `the number above ${ask.a} could be ${listOr(xs)}`;
+    if (ask.t === 'count') {
+      const more = attr === 'marks' ? 'scored more marks than' : w.more;
+      return xs.length === 1 ? `exactly ${xs[0]} ${xs[0] === '1' ? 'person' : 'persons'} ${attr === 'marks' ? '' : xs[0] === '1' ? 'is ' : 'are '}${more} ${ask.a}` : `the number of persons ${more.replace(/^scored /, 'scoring ')} ${ask.a} could be ${listOr(xs)}`;
+    }
     return xs.length === 1 ? `the answer is definitely “${xs[0]}”` : `${ask.a} may or may not be the ${w.most}`;
   };
   const unique = orders.filter((o) => [...res.I, ...res.II].every((c) => holds(o, c)));

@@ -7,8 +7,7 @@
  */
 import type { Rng } from '../../../../lib/rng';
 import type { Difficulty, VisualSpec } from '../../../types';
-import { ordinal } from '../../../../lib/format';
-import { CAP_NUM_WORD, NUM_WORD, findPair, listAnd, listOr, perms, sizesFor, worldScenario, type Category, type DsDraft } from './common';
+import { CAP_NUM_WORD, NUM_WORD, ORD_WORD, findPair, listAnd, listOr, perms, sizesFor, worldScenario, type Category, type DsDraft } from './common';
 
 export type SeatLayout = 'linear' | 'circular';
 export type SeatClue =
@@ -87,7 +86,7 @@ function answerOf(layout: SeatLayout, seats: readonly string[], ask: SeatAsk): s
 }
 
 function relWord(k: number, side: 'left' | 'right'): string {
-  return k === 1 ? `to the immediate ${side} of` : `${ordinal(k)} to the ${side} of`;
+  return k === 1 ? `to the immediate ${side} of` : `${ORD_WORD[k]} to the ${side} of`;
 }
 
 export function seatClueText(c: SeatClue, layout: SeatLayout): string {
