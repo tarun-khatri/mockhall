@@ -77,7 +77,7 @@ async function labelsFor(chapter: string): Promise<Record<string, string>> {
 }
 
 // Bank subtypes whose sets failed CI re-verification are never served until fixed (a wrong key is a P0 bug).
-const QUARANTINE = new Set<string>(process.env.BANK_QUARANTINE?.split(',').filter(Boolean) ?? ['puzzles/box']);
+const QUARANTINE = new Set<string>(process.env.BANK_QUARANTINE?.split(',').filter(Boolean) ?? []);
 
 for (const chapter of ['seating', 'puzzles']) {
   const dir = join(banksDir, chapter);

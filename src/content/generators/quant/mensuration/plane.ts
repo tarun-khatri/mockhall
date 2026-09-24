@@ -555,7 +555,7 @@ export function areaChange(ctx: BuildContext, level: Level): D {
     };
   }
   if (level === 'hard') {
-    const x = rng.pick([25, 50, 100, 60, 150]);
+    const x = rng.pick([25, 100, 60, 150, 300]);
     const ans = -(100 * x) / (100 + x);
     return {
       facts: { form: 'keep-area', ask: 'pct', given: { x } },

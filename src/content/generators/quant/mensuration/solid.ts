@@ -4,7 +4,7 @@
  */
 import type { BuildContext } from '../../types';
 import type { MensFacts } from '../mensuration';
-import { fracTex, inr, plain } from '../../../../lib/format';
+import { fracTex, indian, inr, plain } from '../../../../lib/format';
 import { type Draft, clean, rupees, unitFmt } from './kit';
 
 type D = Draft<MensFacts>;
@@ -375,7 +375,7 @@ export function sphere(ctx: BuildContext, level: Level): D {
   const V = (4 / 3) * PI * r ** 3;
   return {
     facts: { form: 'sphere-from-s', ask: 'volume', given: { S } },
-    prompt: `The surface area of a sphere is ${plain(S)} cm². Find its volume. (Take π = 22/7.)`,
+    prompt: `The surface area of a sphere is ${indian(S)} cm². Find its volume. (Take π = 22/7.)`,
     answer: V,
     fmt: cm3,
     mistakes: [
@@ -493,12 +493,13 @@ export function waterLevel(ctx: BuildContext, level: Level): D {
   const cm = unitFmt('cm');
   for (let tries = 0; tries < 600; tries++) {
     if (level === 'easy') {
-      const [L, B] = [rng.int(2, 10), rng.int(2, 8)];
+      const L = rng.int(3, 10);
+      const B = rng.int(2, L);
       const riseCm = rng.int(2, 20);
       const litres = (L * B * riseCm * 1000) / 100;
       return {
         facts: { form: 'tank-rise', ask: 'riseCm', given: { L, B, litres } },
-        prompt: `${rng.pick(['A rectangular water tank', 'A cuboidal sump', 'A rectangular cistern'])} has a base ${L} m long and ${B} m wide. How much will the water level rise if ${plain(litres)} litres of water is poured into it?`,
+        prompt: `${rng.pick(['A rectangular water tank', 'A cuboidal sump', 'A rectangular cistern'])} has a base ${L} m long and ${B} m wide. How much will the water level rise if ${indian(litres)} litres of water is poured into it?`,
         answer: riseCm,
         fmt: cm,
         mistakes: [
@@ -588,7 +589,9 @@ export function waterLevel(ctx: BuildContext, level: Level): D {
 
 export function painting(ctx: BuildContext, level: Level): D {
   const { rng } = ctx;
-  const [l, b, h] = [rng.int(4, 12), rng.int(3, 10), rng.int(3, 5)];
+  const l = rng.int(5, 14);
+  const b = rng.int(3, l - 1);
+  const h = rng.int(3, 5);
   const rate = rng.pick([10, 12, 15, 20, 25, 30, 40]);
   const walls = 2 * h * (l + b);
   if (level === 'easy') {

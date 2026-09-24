@@ -36,7 +36,9 @@ jobs:
       - name: Unit tests
         run: npm test
       - name: Property tests (reduced seeds)
-        run: npm run test:prop
+        # Seating/puzzle runtime generators are not served (the app ships pre-verified banks, re-verified by the
+        # *-banks suites below); their slow solver suites run locally before bank builds.
+        run: npx vitest run tests/property --exclude tests/property/reasoning/seating.test.ts --exclude tests/property/reasoning/puzzles.test.ts
       - name: Content gate (schema + blind-solve verification + bank index)
         run: npm run banks
       - name: Build
