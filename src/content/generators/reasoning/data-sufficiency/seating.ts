@@ -128,7 +128,7 @@ export function buildSeating(rng: Rng, d: Difficulty, target: Category): DsDraft
   const n =
     layout === 'linear'
       ? { easy: 5, medium: rng.int(5, 6), hard: 6, extreme: 7 }[d]
-      : { easy: 5, medium: 6, hard: rng.int(6, 7), extreme: 8 }[d];
+      : { easy: 5, medium: 6, hard: rng.int(6, 7), extreme: rng.pick([7, 8]) }[d];
   const pool = rng.pick(['ABCDEFGH', 'PQRSTUVW', 'JKLMNOPQ', 'EFGHJKLM']);
   const people = pool.slice(0, n).split('');
   const truth = rng.shuffle(people);

@@ -21,6 +21,11 @@ export const DS_SHORT = ['I alone is sufficient', 'II alone is sufficient', 'eit
 
 export type Category = 0 | 1 | 2 | 3 | 4;
 
+/** Answers standing for "the statement does not reach the asked item at all" (always come in pairs). */
+export function isSentinel(a: string): boolean {
+  return a.startsWith('unlinked:') || a.startsWith('unknown:');
+}
+
 export function categoryOf(suffI: boolean, suffII: boolean, suffBoth: boolean): Category {
   if (suffI && suffII) return 2;
   if (suffI) return 0;
@@ -129,13 +134,15 @@ export function findPair<C>(rng: Rng, sc: Scenario<C>, target: Category, sizes: 
     if (target >= 3 && (sI || sII)) continue;
     if ([...A.keys].some((k) => B.keys.has(k))) continue;
     const both = sc.answers([...A.cl, ...B.cl]);
+    // (a subset of an acceptable set is acceptable, so this only bites for targets D and E)
     if (!ok(both)) continue;
     const sB = both.size === 1;
     if (target === 3 && !sB) continue;
     if (target === 4) {
       if (sB) continue;
       // together they should still narrow things down, as in real questions
-      if (both.size >= Math.min(A.ans.size, B.ans.size)) continue;
+      if ([...both].some(isSentinel)) continue;
+      if (!sc.openBase && both.size >= Math.min(A.ans.size, B.ans.size)) continue;
     }
     if (categoryOf(sI, sII, sB) !== target) continue;
     return { I: A.cl, II: B.cl, ansI: A.ans, ansII: B.ans, ansBoth: both, base };

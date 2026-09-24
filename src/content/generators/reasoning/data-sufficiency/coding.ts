@@ -84,7 +84,7 @@ export function buildCoding(rng: Rng, d: Difficulty, target: Category): DsDraft<
     answers: (cl) => worldsAnswer(cl, ask),
     openBase: true,
   };
-  const sizes = sizesFor(d, [1, 1], [1, 2], [2, 2], [2, 2]);
+  const sizes = sizesFor(d, [1, 2], [1, 2], [2, 2], [2, 3]);
   const res = findPair(rng, sc, target, sizes, 40);
   if (!res) return null;
   const text = (cl: CodedSentence[]) => `In the code language, ${cl.map(sentenceText).join(' and ')}.`;

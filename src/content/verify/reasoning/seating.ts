@@ -951,6 +951,29 @@ function boundN(pz: Puzzle): number {
     if (c.c === 'endSide' && c.side === 'left' && pl(c.a) >= 0) hi[pl(c.a)] = Math.min(hi[pl(c.a)], c.k - 1);
     if (c.c === 'sideCount' && c.side === 'left' && pl(c.a) >= 0) hi[pl(c.a)] = Math.min(hi[pl(c.a)], c.n);
   }
+  // pairwise distance bounds |p_i − p_j| ≤ dist[i][j], relaxed to a fixpoint (triangle rule + "as many" equalities)
+  const dist = Array.from({ length: P }, (_, i) => Array.from({ length: P }, (_, j) => (i === j ? 0 : INF)));
+  const setD = (i: number, j: number, v: number) => {
+    if (i < 0 || j < 0 || v >= dist[i][j]) return false;
+    dist[i][j] = dist[j][i] = v;
+    return true;
+  };
+  for (const c of atoms) {
+    if (c.c === 'rel') setD(pl(c.a), pl(c.b), c.k);
+    else if (c.c === 'gap') setD(pl(c.a), pl(c.b), c.n + 1);
+    else if (c.c === 'adj' && !c.neg) setD(pl(c.a), pl(c.b), 1);
+  }
+  for (let changed = true, guard = 0; changed && guard < 50; guard++) {
+    changed = false;
+    for (let i = 0; i < P; i++) for (let j = 0; j < P; j++) for (let k = 0; k < P; k++) if (setD(i, j, dist[i][k] + dist[k][j])) changed = true;
+    for (const c of atoms)
+      if (c.c === 'asMany') {
+        const [x, m, z] = [pl(c.a), pl(c.b), pl(c.c2)];
+        if (x < 0 || m < 0 || z < 0) continue;
+        if (setD(m, z, dist[x][m]) || setD(x, m, dist[m][z])) changed = true;
+      }
+  }
+  for (let x = 0; x < P; x++) for (let a = 0; a < P; a++) if (hi[a] < INF && dist[a][x] < INF) hi[x] = Math.min(hi[x], hi[a] + dist[a][x]);
   for (let round = 0; round < 3 * P + 3; round++) {
     let changed = false;
     const relax = (x: number, v: number) => {

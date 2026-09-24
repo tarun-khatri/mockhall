@@ -69,8 +69,8 @@ function displacements(cl: readonly DirClue[], a: string, b: string): [number, n
     return ux !== 0 ? dy === 0 && dx * ux > 0 : dx === 0 && dy * uy > 0;
   };
   const rec = (i: number) => {
+    for (const c of checks) if (pos.has(c.a) && pos.has(c.b) && !ok(c)) return;
     if (i === order.length) {
-      if (!checks.every(ok)) return;
       const [x, y] = pos.get(a)!;
       out.push([x, y]);
       return;
@@ -100,7 +100,7 @@ export function buildDirection(rng: Rng, d: Difficulty, target: Category): DsDra
     for (let t = 0; t < 50 && !placed; t++) {
       const from = coord.get(points[rng.int(0, i - 1)])!;
       const dir = rng.pick(['N', 'S', 'E', 'W'] as const);
-      const L = rng.int(2, d === 'easy' ? 9 : 12);
+      const L = rng.int(2, d === 'easy' || d === 'medium' ? 9 : 12);
       const p: [number, number] = [from[0] + VEC[dir][0] * L, from[1] + VEC[dir][1] * L];
       if ([...coord.values()].some(([x, y]) => x === p[0] && y === p[1])) continue;
       coord.set(points[i], p);
@@ -124,9 +124,18 @@ export function buildDirection(rng: Rng, d: Difficulty, target: Category): DsDra
     const [dx, dy] = [C(p)[0] - C(q)[0], C(p)[1] - C(q)[1]];
     const dir: Dir4 = dx > 0 ? 'E' : dx < 0 ? 'W' : dy > 0 ? 'N' : 'S';
     atoms.push({ t: 'exact', a: p, b: q, d: Math.abs(dx + dy), dir });
-    if (d !== 'easy' && rng.chance(0.5)) atoms.push({ t: 'line', a: p, b: q, dir });
+    if (rng.chance(d === 'easy' ? 0.4 : 0.5)) atoms.push({ t: 'line', a: p, b: q, dir });
   }
+  const cache = new Map<string, Set<string>>();
   const answersOf = (cl: readonly DirClue[]): Set<string> => {
+    const key = cl.map((c) => JSON.stringify(c)).sort().join('|');
+    const hit = cache.get(key);
+    if (hit) return hit;
+    const res = answersUncached(cl);
+    cache.set(key, res);
+    return res;
+  };
+  const answersUncached = (cl: readonly DirClue[]): Set<string> => {
     const disp = displacements(cl, qa, qb);
     if (!disp) return new Set(['unlinked:1', 'unlinked:2']);
     const out = new Set<string>();
