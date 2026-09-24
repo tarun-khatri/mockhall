@@ -145,9 +145,13 @@ test.describe('chapter tests', () => {
     await expect(page.getByRole('region', { name: 'Solution' }).or(page.getByLabel('Solution'))).toBeVisible();
     await expect(page.getByText(/Your time \d+:\d\d · Target \d+:\d\d/)).toBeVisible();
     await options.nth(0).click({ force: true }); // a locked question must ignore further taps
-    const locked = await storedAttempt(page);
-    const qid = locked.sectionQuestionIds[0][0];
-    expect(locked.responses[qid].selected).toBe(2);
+    // Saves are debounced (~300 ms): poll IndexedDB until the locked answer lands, and check it stays 2.
+    await expect
+      .poll(async () => {
+        const a = await storedAttempt(page);
+        return a.responses[a.sectionQuestionIds[0][0]].selected;
+      })
+      .toBe(2);
   });
 });
 

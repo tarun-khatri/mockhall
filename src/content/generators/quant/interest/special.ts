@@ -493,10 +493,10 @@ export function split(ctx: BuildContext, form: SplitForm): D {
     };
   }
   if (form === 'equal-interest') {
-    let r1 = 0;
-    let r2 = 0;
-    let t1 = 0;
-    let t2 = 0;
+    let r1: number;
+    let r2: number;
+    let t1: number;
+    let t2: number;
     do {
       [r1, r2] = rng.sample([4, 5, 6, 8, 10, 12, 15], 2);
       t1 = rng.int(2, 5);
