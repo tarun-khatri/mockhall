@@ -3,29 +3,32 @@
 Live: https://tarun-khatri.github.io/mockhall/ (GitHub Pages via CI) · Vercel: import `tarun-khatri/mockhall` (vercel.json included)
 
 ## Phase 1 — done
-- Exam engine: deadline timers, strict/non-strict, sectional flow + interstitial, save rule, palette, scoring, resume
-  (IndexedDB + synchronous live mirror), wake lock, back-button guard. Unit tests: 40.
-- Screens: Home, Practice + chapter sheet, Mocks (30 fixed + fresh, SBI/IBPS order, presets), Instructions, Exam, Result,
-  Solutions (filters, bookmark, try-similar, report), Progress, Mistakes, Settings (export/import/reset, offline download).
-- PWA offline; icons; GitHub Actions CI (typecheck → lint → unit → property → content gate → build → e2e → deploy).
-- **English** (blind-solved, 0 mismatches — content-qa-report.md): RC 10 passages/100 Q (2/4/3/1), error spotting 70
-  (14/24/18/14), phrase replacement 60 (12/20/16/12), fillers 70 (14/24/18/14), para jumbles 10 sets/50 Q (2/4/3/1),
-  misspelt-words generator (476 words, 215 frames, 1,042 dictionary-vetted variants).
-- **Numerical** (all 17 chapters, 500 seeds × subtype × difficulty, independent verifiers): simplification, number series,
-  DI (9 chart/table types incl. caselet), percentage, P&L, ratio, ages, averages, partnership, mixtures, interest,
-  speed-distance, time & work, boats, pipes, mensuration, quadratic.
-- **Reasoning**: inequality, syllogism (+73 classic cases), coding–decoding (incl. 5-Q set), classification, series,
-  direction, blood relation, order & ranking — 500 seeds each. Puzzles: 7 types × 4 levels × 150 solver-unique sets
-  (3,900). Seating: 6 types × 4 levels × 60 sets (1,440). Every shipped set re-verified by an independent solver in CI.
-- E2E (Playwright): 11 scenarios at 360 px + smoke on Pixel 7 / iPhone 13 geometry, incl. axe and no-horizontal-scroll.
+- Exam engine (deadline timers, strict/non-strict, sectional flow + interstitial, save rule, palette, scoring, resume via
+  IndexedDB + live mirror, wake lock, back guard); full mock (SBI/IBPS order), 30 fixed + fresh mocks, 3 sectional mocks,
+  chapter practice/test at 4 difficulties; result (good attempts, negative-marking insight, time map, time sinks, topics);
+  solutions (filters, bookmark, try-similar, report); PWA offline; CI → GitHub Pages; Vercel config.
+- Lighthouse (live, mobile): performance 98, accessibility 100, best practices 100.
 
-## Known issues
-- Runtime seating/puzzle generator suites fail a few extreme/edge seeds locally (9 of 790 property tests). These
-  generators are NOT served — the app uses the pre-verified banks. Fix before Phase 2 on-device generation.
-- Seating banks are 60 per type × level (target 150): `npx tsx scripts/banks/seating.ts --count=150`.
-- Lighthouse not yet measured on the deployed build.
-- Research findings not yet in SPEC: "problems on numbers" chapter, new English formats → Phase 2.
+## Phase 2 — done
+- Every section-8 chapter meets SPEC 7.7 volumes:
+  - Generators (30, independent verifiers, 500 seeds × subtype × difficulty) + frozen 60-question reference sets
+    with a drift test.
+  - Puzzles 7 types × 4 levels × 150 and seating 6 types × 4 levels × 150 solver-unique sets (7,500), re-verified in CI.
+  - Authored, all blind-verified (content-qa-report.md): RC 20 passages, para jumbles 15, cloze 15, error spotting 70,
+    phrase replacement 60, fillers 70, word swap 60, word usage 60, connectors 60, match the column 60, grammar 60,
+    misspelt-words generator.
+- IBPS order + all blueprint variants (English A/B, Quant A/B/C, Reasoning A/B); mock presets (exam/tough/extreme).
+- Progress analytics, mistakes book, try a similar one, speed drills, rough pad, share links, download-all-offline,
+  weak-area mix, on-device fresh puzzles/seating in a Web Worker (bank fallback).
 
-## Next (Phase 2, before IBPS Clerk 10 Oct)
-Word swap, match the column, word usage, cloze, connectors, data sufficiency; seating top-up to 150; rough pad;
-runtime puzzle generation in a Worker; Lighthouse ≥ 95.
+## Phase 3 — done
+- research/mains.md (official 2026 patterns). Mains mock mode: IBPS Clerk mains (40/40/40, 35 min each, marks 1/1.5/1.25)
+  and SBI Clerk mains (40/50/50), 10 fixed + fresh each, per-section marks with quarter-mark penalty.
+- Mains chapters: input–output, data sufficiency (generators); statement & conclusion / assumption / argument, course of
+  action, cause & effect (50 each), para filler (60), para summary (60) — all blind-verified; quadratic; harder DI tiers.
+
+## Known limitations
+- General/Financial Awareness and Computer Aptitude (mains) are not covered — they need current-affairs content.
+- The quant "data sufficiency" and "quantity comparison" mains topics are filled with arithmetic/quadratic.
+- Earliest 60 seating sets per cell keep older (longer) worked-solution wording; keys are verified.
+- iPhone e2e runs on Chromium with iPhone 13 geometry (WebKit not installed locally).
