@@ -359,5 +359,5 @@ export const MIXED_SHARES: Record<Difficulty, number> = { easy: 0.2, medium: 0.3
 export function fixedMockVariants(n: number): Record<Subject, string> {
   const quant = ['A', 'B', 'A', 'C', 'A', 'B'][(n - 1) % 6];
   const reasoning = n % 3 === 0 ? 'B' : 'A';
-  return { english: 'A', quant, reasoning };
+  return { english: n % 2 === 0 ? 'B' : 'A', quant, reasoning };
 }

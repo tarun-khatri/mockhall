@@ -1491,7 +1491,7 @@
       "key": "cn-056",
       "subtype": "starters",
       "difficulty": "extreme",
-      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Prices were cut.\n**2.** Sales did not improve.\n\n(i) Even after\n(ii) Consequent on\n(iii) Notwithstanding",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Prices were cut.\n**2.** Sales did not improve.\n\n(i) Even after\n(ii) Because\n(iii) In spite of",
       "options": [
         "Only (i)",
         "Only (ii)",
@@ -1502,13 +1502,13 @@
       "answerIndex": 3,
       "solution": {
         "steps": [
-          "The link between the sentences is contrast.",
+          "The link between the sentences is contrast: a price cut should have lifted sales, but it did not.",
           "(i) Even after: works – *Even after prices were cut, sales did not improve.*",
-          "(ii) Consequent on: does not work – 'Consequent on the price cut, sales did not improve' makes the cut the cause of poor sales.",
-          "(iii) Notwithstanding: works – *Notwithstanding the price cut, sales did not improve.*",
+          "(ii) Because: does not work – 'Because prices were cut, sales did not improve' makes the price cut the reason for poor sales.",
+          "(iii) In spite of: works – *In spite of the price cut, sales did not improve.*",
           "So the answer is 'Both (i) and (iii)'."
         ],
-        "trap": "'Consequent on' means 'as a result of'; the sentences show an unexpected result, i.e. a contrast."
+        "trap": "'In spite of' cannot take a clause ('in spite of prices were cut'), but it works with a noun phrase: 'in spite of the price cut'."
       },
       "tags": [
         "connector:contrast"
@@ -1518,7 +1518,7 @@
       "key": "cn-057",
       "subtype": "starters",
       "difficulty": "extreme",
-      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The officer retired.\n**2.** He continued to advise the department.\n\n(i) Even after\n(ii) Until\n(iii) After",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The officer retired.\n**2.** He continued to advise the department.\n\n(i) Even after\n(ii) Unless\n(iii) After",
       "options": [
         "Only (iii)",
         "Both (i) and (iii)",
@@ -1529,13 +1529,13 @@
       "answerIndex": 1,
       "solution": {
         "steps": [
-          "The link between the sentences is time/sequence.",
+          "The link between the sentences is time/sequence: the advising went on after retirement.",
           "(i) Even after: works – *Even after he retired, the officer continued to advise the department.*",
-          "(ii) Until: does not work – 'Until he retired, the officer continued to advise' says he stopped advising at retirement, the opposite of the meaning.",
-          "(iii) After: works – *After he retired, the officer continued to advise the department.*",
+          "(ii) Unless: does not work – 'unless' means 'if not' and turns a fact into a condition; 'Unless he retired, the officer continued to advise the department' is meaningless.",
+          "(iii) After: works – *After he retired, the officer continued to advise the department.* (It is less emphatic than \"Even after\", but the meaning is the same.)",
           "So the answer is 'Both (i) and (iii)'."
         ],
-        "trap": "'Until' marks the end point of an action; here the advice continued beyond retirement."
+        "trap": "Don't reject 'After' for being plainer than 'Even after'; both keep the same meaning."
       },
       "tags": [
         "connector:time"
@@ -1545,7 +1545,7 @@
       "key": "cn-058",
       "subtype": "starters",
       "difficulty": "extreme",
-      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The bus overturned.\n**2.** Not a single passenger was hurt.\n\n(i) Although\n(ii) Since\n(iii) Despite",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The bus overturned.\n**2.** Not a single passenger was hurt.\n\n(i) Though\n(ii) Owing to\n(iii) Even though",
       "options": [
         "Only (i)",
         "Only (ii)",
@@ -1556,13 +1556,13 @@
       "answerIndex": 4,
       "solution": {
         "steps": [
-          "The link between the sentences is contrast.",
-          "(i) Although: works – *Although the bus overturned, not a single passenger was hurt.*",
-          "(ii) Since: does not work – 'Since the bus overturned, no passenger was hurt' makes the accident the reason for safety.",
-          "(iii) Despite: works – *Despite the bus overturning, not a single passenger was hurt.*",
+          "The link between the sentences is contrast: an overturned bus would be expected to injure people.",
+          "(i) Though: works – *Though the bus overturned, not a single passenger was hurt.*",
+          "(ii) Owing to: does not work – 'Owing to the bus overturning, not a single passenger was hurt' makes the accident the cause of everyone's safety.",
+          "(iii) Even though: works – *Even though the bus overturned, not a single passenger was hurt.*",
           "So the answer is 'Both (i) and (iii)'."
         ],
-        "trap": "An accident would be expected to cause injuries, so 'no one was hurt' is a contrast."
+        "trap": "'Owing to' gives a reason; the accident cannot be the reason no one was hurt."
       },
       "tags": [
         "connector:contrast"
