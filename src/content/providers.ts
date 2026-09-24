@@ -57,7 +57,8 @@ for (const path of Object.keys(qaModules)) qaPaths.set(baseName(path), path);
 /** Bank chapters are listed as available; the bank index decides at load time ("coming soon" if empty). */
 export function isAvailable(chapter: ChapterId): boolean {
   if (BANK_CHAPTERS.has(chapter)) return true;
-  return genPaths.has(chapter) || authoredPaths.has(chapter);
+  // Authored chapters ship only once blind-solve QA records exist (drafts are visible in dev).
+  return genPaths.has(chapter) || (authoredPaths.has(chapter) && (qaPaths.has(chapter) || import.meta.env.DEV));
 }
 
 export function availableChapters(): ChapterId[] {

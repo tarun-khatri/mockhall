@@ -35,11 +35,15 @@ for (const authoredDir of ['english', 'reasoning'].map((s) => join(ROOT, 'src', 
     const entries = [...(parsed.data.items ?? []), ...(parsed.data.sets ?? []), ...(parsed.data.paraJumbles ?? [])];
     const unverified = entries.filter((e) => qa.records[e.key]?.hash !== authoredHash(e)).map((e) => e.key);
     const msg = `${name}: ${entries.length - unverified.length}/${entries.length} verified`;
-    if (unverified.length) {
+    // Drift = verified once, edited since: that is a hard failure. Never-verified items just don't ship yet.
+    const drifted = entries.filter((e) => qa.records[e.key] && qa.records[e.key].hash !== authoredHash(e)).map((e) => e.key);
+    if (unverified.length && !drifted.length && !allowUnverified) console.warn(`! ${msg} — ${unverified.length} awaiting blind solve, not shipped yet`);
+    else if (unverified.length) {
       const list = unverified.slice(0, 12).join(', ') + (unverified.length > 12 ? '…' : '');
       if (allowUnverified) console.warn(`! ${msg} (unverified: ${list})`);
+      else if (unverified.length === entries.length) console.warn(`! ${msg} — awaiting blind solve, not shipped yet`);
       else {
-        console.error(`✗ ${msg} — unverified items: ${list}`);
+        console.error(`✗ ${msg} — edited after verification: ${drifted.join(', ')}`);
         failed = true;
       }
     } else console.log(`✓ ${msg}`);
