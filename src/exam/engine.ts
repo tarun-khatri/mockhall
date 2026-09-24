@@ -301,6 +301,8 @@ export interface SectionScore {
   score: number;
   maxScore: number;
   timeUsedMs: number;
+  /** Marks per correct answer in this section (mains: 1.2, 1.25, 1.5). */
+  marks: number;
 }
 
 export interface ScoreSummary {
@@ -337,6 +339,7 @@ export function scoreAttempt(a: Attempt): ScoreSummary {
     const started = a.sectionStartedAt[index];
     const ended = a.sectionEndedAt[index] || a.submittedAt || 0;
     const cfg = a.config.sections[index];
+    const m = cfg.marks ?? 1;
     return {
       index,
       subject: cfg.subject,
@@ -346,8 +349,9 @@ export function scoreAttempt(a: Attempt): ScoreSummary {
       correct,
       wrong,
       skipped: ids.length - correct - wrong,
-      score: correct * MARK_CORRECT + wrong * MARK_WRONG,
-      maxScore: ids.length * MARK_CORRECT,
+      score: m * (correct * MARK_CORRECT + wrong * MARK_WRONG),
+      maxScore: m * ids.length * MARK_CORRECT,
+      marks: m,
       timeUsedMs: started && ended ? Math.max(0, ended - started) : 0,
     };
   });
@@ -362,10 +366,10 @@ export function scoreAttempt(a: Attempt): ScoreSummary {
     correct,
     wrong,
     skipped: sum('skipped'),
-    score: correct * MARK_CORRECT + wrong * MARK_WRONG,
+    score: sum('score'),
     maxScore: sum('maxScore'),
     accuracy: attempted ? correct / attempted : 0,
-    negativeMarks: -wrong * MARK_WRONG,
+    negativeMarks: sections.reduce((s, x) => s - x.wrong * MARK_WRONG * x.marks, 0),
   };
 }
 

@@ -1,0 +1,1246 @@
+{
+  "chapter": "course-of-action",
+  "version": 1,
+  "items": [
+    {
+      "key": "ca-001",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Several passengers fell ill after eating meals served on a long-distance train by a private caterer working under contract with the railways.\n\n**Courses of action:**\nI. The railways should get samples of the food tested and act against the caterer if the food is found to be contaminated.\nII. The railways should stop serving meals on all long-distance trains.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: testing the food and acting against the caterer if it is at fault deals directly with the cause of the illness.",
+          "II does not follow: one caterer's lapse does not justify stopping meals on every long-distance train; that is an extreme step that punishes all passengers."
+        ],
+        "trap": "II sounds protective, but a blanket ban for one caterer's fault is the classic extreme course."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-002",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The main road near the bus depot in Nashik gets water-logged after every heavy shower this monsoon, causing long traffic jams.\n\n**Courses of action:**\nI. The bus depot should be shifted out of the city.\nII. The municipal corporation should clean and widen the storm-water drains along that stretch of road.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: water-logging is a drainage problem, and clearing and widening the drains removes its cause.",
+          "I does not follow: shifting the depot does nothing about water collecting on the road; it is also an impractically large step."
+        ],
+        "trap": "I links the depot to the jams, but the problem stated is the water-logging, not the depot."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-003",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Thousands of candidates could not download their admit cards because the recruitment board's website crashed two days before the examination.\n\n**Courses of action:**\nI. The board should increase its server capacity and restore the website at once.\nII. The board should provide an alternative download link and extend the period for downloading admit cards.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: restoring the website with more capacity fixes the immediate failure.",
+          "II also follows: an alternative link and a longer download window make sure no candidate misses the examination. The two steps support each other."
+        ],
+        "trap": "Do not mark \"Either\": the two steps are not alternatives; the board can and should do both."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-004",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Some shopkeepers in a busy market have been found selling firecrackers without a licence.\n\n**Courses of action:**\nI. All shops in the market should be sealed permanently.\nII. The sale of firecrackers should be banned throughout the state.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: sealing every shop, including those not at fault, permanently is far too harsh.",
+          "II does not follow: a state-wide ban on a legal trade goes far beyond the problem of a few unlicensed sellers. The sensible step (acting against the unlicensed sellers) is not offered."
+        ],
+        "trap": "Both steps would stop illegal sales, but both are extreme; \"stops the problem\" is not the same as \"practical\"."
+      },
+      "tags": [
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-005",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Attendance at a government school in a village has fallen sharply since floods washed away the only road leading to it.\n\n**Courses of action:**\nI. The district administration should repair the road or build a temporary approach on priority.\nII. The school should be closed and its students asked to join a school in the town 30 km away.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: the fall in attendance is caused by the lost road, and restoring access removes that cause.",
+          "II does not follow: sending young children 30 km away makes attendance worse, not better; closing the school is an extreme step."
+        ],
+        "trap": "II mentions an alternative school, but it creates a bigger problem than the one it claims to solve."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-006",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Many elderly customers of a bank branch in Kanpur complain that they have to stand in long queues for hours to withdraw their pensions.\n\n**Courses of action:**\nI. The branch should open a separate counter for senior citizens on the days pensions are credited.\nII. The bank should help elderly customers learn to use ATMs and its doorstep banking service.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: a separate counter cuts the waiting time for pensioners directly.",
+          "II follows: using ATMs or doorstep banking lets many pensioners avoid the queue altogether. Both are practical and they can be done together."
+        ],
+        "trap": "II may look like shifting the burden to customers, but it is a reasonable, voluntary way of reducing the crowd."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-007",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A private bus overturned on a hill road, injuring twenty passengers. The preliminary report says the driver was driving far above the speed limit.\n\n**Courses of action:**\nI. All private buses should be banned from plying on hill roads.\nII. The authorities should take legal action against the driver and carry out regular speed checks on the route.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: the report identifies over-speeding by the driver, so acting against him and checking speeds on the route address both this case and future ones.",
+          "I does not follow: banning every private bus for one driver's fault is extreme and would hurt thousands of travellers."
+        ],
+        "trap": "Punishing a person whose fault has been established is not \"extreme\"; banning a whole service is."
+      },
+      "tags": [
+        "cr:punitive-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-008",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A popular city library reports that its reading hall is overcrowded on weekends during the examination season.\n\n**Courses of action:**\nI. The library should stop issuing new memberships permanently.\nII. The library should remain closed on weekends so that its staff can rest.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: the crowding is seasonal, so a permanent stop on memberships is extreme.",
+          "II does not follow: closing on weekends does not help the readers; it simply denies them the hall. Practical steps such as longer hours or extra seating are not offered."
+        ],
+        "trap": "II technically ends the overcrowding, but by removing the service instead of improving it."
+      },
+      "tags": [
+        "cr:extreme-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-009",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A week before a school's annual day function, the only auditorium booked for it has been declared structurally unsafe.\n\n**Courses of action:**\nI. The school should hold the function at another suitable venue on the same date.\nII. The school should postpone the function until the auditorium has been repaired and certified safe.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each course solves the problem on its own: either the function moves to a safe venue on the same date, or it waits for the auditorium to become safe.",
+          "The two cannot both be carried out, since the function cannot be held on the same date and also be postponed. So either I or II follows."
+        ],
+        "trap": "\"Both\" is wrong because the courses are mutually exclusive alternatives, not steps that can be taken together."
+      },
+      "tags": [
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "ca-010",
+      "subtype": "two-actions",
+      "difficulty": "easy",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Cases of dengue have risen sharply in a residential colony, and stagnant water has been found in many uncovered overhead tanks and at construction sites.\n\n**Courses of action:**\nI. The municipal body should carry out fogging and anti-larval spraying in the colony.\nII. Residents should be made aware of the need to keep tanks covered and to prevent water from collecting.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: fogging and spraying kill mosquitoes and larvae, giving immediate relief.",
+          "II follows: awareness removes the breeding sites that the statement identifies. The two work together."
+        ],
+        "trap": "Both are routine public-health steps; nothing in either is extreme."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-011",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** An audit has found that nearly 30 per cent of the medicines in a district hospital's store had crossed their expiry dates.\n\n**Courses of action:**\nI. The hospital should remove the expired stock at once and put an inventory-tracking system in place.\nII. The government should stop supplying medicines to the district hospital.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: removing expired stock protects patients, and tracking inventory prevents a repeat.",
+          "II does not follow: cutting off supplies would leave patients without medicines; it punishes the public, not the lapse."
+        ],
+        "trap": "II looks like \"accountability\", but it makes the problem far worse."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-012",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Tomato growers in a district say that every year at harvest time, prices crash below their cost because the whole crop reaches the market at once.\n\n**Courses of action:**\nI. Farmers in the district should be told to stop growing tomatoes.\nII. The government should encourage cold-storage and tomato-processing units in the district.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: storage and processing let farmers hold or convert the crop instead of dumping it on a glutted market, which addresses the price crash.",
+          "I does not follow: abandoning the crop removes the farmers' livelihood rather than solving the glut."
+        ],
+        "trap": "I \"solves\" the glut only by destroying the activity it is meant to protect."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-013",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Many first-time borrowers of a small finance bank in rural areas are defaulting on their loans because they do not understand their repayment schedules.\n\n**Courses of action:**\nI. The bank should explain the repayment terms to each borrower in the local language at the time the loan is given.\nII. The bank should send each borrower a reminder by SMS or voice call a few days before every instalment is due.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: it removes the confusion about the schedule at the start.",
+          "II follows: reminders help borrowers keep to a schedule they may otherwise lose track of. Both address the stated cause and can run together."
+        ],
+        "trap": "These are complementary, not alternatives, so \"Either\" is wrong."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-014",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A few students of a college were caught copying in the semester examination.\n\n**Courses of action:**\nI. The college should cancel the semester examination for all its students.\nII. The college should do away with written examinations and assess students only on the basis of attendance.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: cancelling the examination for everyone punishes the honest majority for the misconduct of a few.",
+          "II does not follow: scrapping written examinations is an extreme change that does not address copying in any sensible way. The proper step (action against those caught) is not offered."
+        ],
+        "trap": "Both options remove the chance to copy, but only by extreme means."
+      },
+      "tags": [
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-015",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The principal of a school has resigned in the middle of the academic session, and the post is now vacant.\n\n**Courses of action:**\nI. The management should appoint the senior-most teacher of the school as principal.\nII. The management should select a new principal from outside through an open selection process.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Either step fills the single vacant post, so each is an adequate response on its own.",
+          "They cannot both be done, as the one post can go to only one person. Hence either I or II follows."
+        ],
+        "trap": "Do not choose \"Both\": two different people cannot be appointed to the one post."
+      },
+      "tags": [
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "ca-016",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Complaints of short weighing at ration shops in a block have risen, and inspectors have found tampered scales at several shops.\n\n**Courses of action:**\nI. The authorities should cancel the licences of the shops found using tampered scales and install electronic weighing machines at all ration shops in the block.\nII. Ration distribution in the block should be suspended until every complaint has been investigated.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: it punishes shops whose cheating has been proved and prevents tampering in future.",
+          "II does not follow: stopping rations would hurt the very families who are being cheated."
+        ],
+        "trap": "Suspending a service that poor families depend on is a harsher problem than the one being fixed."
+      },
+      "tags": [
+        "cr:punitive-action",
+        "cr:practical-action"
+      ]
+    },
+    {
+      "key": "ca-017",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Road accidents involving two-wheelers on a highway stretch near Pune have doubled in a year, and most of the victims were not wearing helmets.\n\n**Courses of action:**\nI. The traffic police should strictly enforce the helmet rule on that stretch.\nII. The authorities should run road-safety awareness campaigns for two-wheeler riders in the area.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: enforcement directly reduces riding without helmets, the factor the statement links to the deaths.",
+          "II follows: awareness supports enforcement and changes riders' behaviour. Both are practical and compatible."
+        ],
+        "trap": "Enforcing an existing law is not an extreme step."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-018",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A mobile app launched by a municipal corporation for filing civic complaints has very few users because most residents do not know that it exists.\n\n**Courses of action:**\nI. The corporation should withdraw the app and accept complaints only on paper.\nII. The corporation should publicise the app through local newspapers, radio and ward offices.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: the stated cause is lack of awareness, and publicity removes it.",
+          "I does not follow: the app is not failing because it is bad; withdrawing it throws away a useful service instead of fixing the real problem."
+        ],
+        "trap": "Low usage tempts you towards scrapping the app, but the statement pins the cause on awareness."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-019",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Cracks have appeared in a newly built flyover within six months of its opening.\n\n**Courses of action:**\nI. Construction of all flyovers in the state should be stopped.\nII. The government should stop building flyovers and widen existing roads instead.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: one defective flyover does not justify halting every project in the state.",
+          "II does not follow: it is a sweeping policy change, not a response to this defect. The practical steps (inspection, repair, action against the builder) are missing."
+        ],
+        "trap": "Both options are about flyovers in general; neither deals with the cracked flyover itself."
+      },
+      "tags": [
+        "cr:extreme-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-020",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Many small traders in a town say they cannot accept digital payments because mobile network coverage in the market area is poor.\n\n**Courses of action:**\nI. The telecom authorities should examine the coverage problem and ask operators to improve their network in the area.\nII. Traders who do not accept digital payments should be penalised.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: poor coverage is the stated obstacle, and improving the network removes it.",
+          "II does not follow: the traders are willing but unable; penalising them does nothing about the network."
+        ],
+        "trap": "II punishes people who are not at fault."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-021",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A health survey shows that a large number of children in a tribal block are anaemic.\n\n**Courses of action:**\nI. The health department should provide iron and folic acid supplements to the children through schools and anganwadis.\nII. The midday meals in the block's schools should include iron-rich food such as green leafy vegetables and jaggery.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: supplements treat anaemia quickly.",
+          "II follows: a better diet corrects the deficiency over the longer term. The two steps work together."
+        ],
+        "trap": "One is a short-term treatment and the other a long-term fix; they are not alternatives."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-022",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The number of tourists visiting a hill station has fallen after reports that hotels there overcharge visitors.\n\n**Courses of action:**\nI. All the hotels in the hill station should be closed for one season.\nII. The tourism department should publish fixed room tariffs and set up a helpline for tourists' complaints.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: fixed tariffs and a complaint helpline curb overcharging and restore tourists' confidence.",
+          "I does not follow: closing every hotel would make tourism collapse, not recover."
+        ],
+        "trap": "I punishes everyone, including honest hotels, and deepens the problem."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-023",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Some customers of a bank have been cheated by callers who pretend to be bank officials and ask for their OTPs.\n\n**Courses of action:**\nI. The bank should stop sending OTPs for all transactions.\nII. The bank should close the accounts of customers who shared their OTPs.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: OTPs are a safety feature; removing them would make every account less secure.",
+          "II does not follow: the customers are victims, and closing their accounts punishes them. The practical step, warning customers not to share OTPs, is not offered."
+        ],
+        "trap": "I seems to remove the thing being stolen, but it removes the protection too."
+      },
+      "tags": [
+        "cr:extreme-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-024",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** On the morning of a recruitment test, heavy rain has flooded the ground floor of one examination centre, where the test was to be held.\n\n**Courses of action:**\nI. The test at that centre should be cancelled and held on a fresh date.\nII. The candidates should be moved to a nearby alternative centre and the test held there on the same day after a short delay.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each course ensures that the candidates at that centre get a fair test: I by holding it later, II by holding it the same day elsewhere.",
+          "The test cannot both be held on the same day and be put off to a fresh date, so the courses are alternatives: either I or II follows."
+        ],
+        "trap": "\"Both\" is tempting because each is sensible, but they exclude each other."
+      },
+      "tags": [
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "ca-025",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Long queues form at a city's passport office because many applicants arrive without the correct documents and have to come back later.\n\n**Courses of action:**\nI. The office should display the checklist of required documents on its website and at the entrance.\nII. The office should set up a help desk that checks documents before applicants join the queue.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: a clear checklist lets applicants bring the right papers the first time.",
+          "II follows: a help desk catches incomplete files before they clog the queue. Both reduce repeat visits."
+        ],
+        "trap": "Neither step is costly or extreme; both attack the stated cause."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-026",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A fire destroyed dozens of shops in a crowded wholesale cloth market. Officials found that most shops had no fire extinguishers and that the lanes were blocked by stacked goods.\n\n**Courses of action:**\nI. The fire department should carry out a safety audit of the market and order traders to keep the lanes clear and install fire-fighting equipment.\nII. The wholesale cloth market should be shifted permanently out of the city.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: it fixes exactly the lapses the officials found.",
+          "II does not follow: relocating an entire market is drastic and impractical when the specific hazards can be corrected."
+        ],
+        "trap": "II removes the risk from the city, but at a cost out of proportion to the problem."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-027",
+      "subtype": "two-actions",
+      "difficulty": "medium",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Most of the saplings planted along a new highway last year have dried up because nobody watered them after they were planted.\n\n**Courses of action:**\nI. Tree plantation along highways should be discontinued.\nII. The upkeep of the saplings, including regular watering, should be made the responsibility of a specific agency, with periodic checks.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: the saplings died for lack of care, and assigning responsibility for care fixes that.",
+          "I does not follow: the plantation idea did not fail; the upkeep did. Giving up planting altogether is extreme."
+        ],
+        "trap": "I blames the programme rather than the stated cause (no watering)."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-028",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** An inquiry has found that a school's boundary wall, which collapsed and injured two children, was built by a contractor who used substandard material.\n\n**Courses of action:**\nI. The contractor should be blacklisted, and legal action should be taken against him.\nII. The education department should check the structural safety of the other school buildings built by the same contractor.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: the inquiry has established the contractor's fault, so punishing him is justified and deters others.",
+          "II follows: if he used poor material here, his other buildings may be unsafe too, so checking them is a sensible follow-up."
+        ],
+        "trap": "Action against a person whose fault is proved by an inquiry is not \"extreme\". Blacklisting is proportionate here."
+      },
+      "tags": [
+        "cr:punitive-action",
+        "cr:follow-up-action"
+      ]
+    },
+    {
+      "key": "ca-029",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The number of cyber-fraud complaints registered at a city police station has gone up five-fold in a year, but none of the station's officers is trained in cyber investigation.\n\n**Courses of action:**\nI. The police department should train some officers of the station in cyber investigation or attach a cyber-cell team to it.\nII. The station should stop registering cyber-fraud complaints until trained staff are available.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: it builds the capacity the station lacks.",
+          "II does not follow: refusing complaints leaves victims without remedy and is against the duty of the police; it hides the problem instead of solving it."
+        ],
+        "trap": "II looks like a realistic interim step, but it denies citizens a basic service."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-030",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A study shows that students in a state score poorly in mathematics in the Class 10 board examination.\n\n**Courses of action:**\nI. Mathematics should be made an optional subject in Class 10.\nII. The pass marks in mathematics should be lowered.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: making the subject optional avoids the problem of poor learning instead of improving it.",
+          "II does not follow: lowering pass marks only improves the result sheet, not students' mathematics. Neither step raises learning."
+        ],
+        "trap": "Both options improve the numbers on paper; the problem is the learning behind the numbers."
+      },
+      "tags": [
+        "cr:irrelevant-action",
+        "cr:symptom-vs-problem"
+      ]
+    },
+    {
+      "key": "ca-031",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** An inspection has found that many rice mills in a district are still releasing thick smoke without the mandatory filters, although they were warned twice.\n\n**Courses of action:**\nI. All the rice mills in the district, including those that have installed filters, should be shut down.\nII. The pollution control board should fine the defaulting mills and seal those that do not install filters within a fixed deadline.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: the mills ignored two warnings, so penalties with a firm deadline, and sealing for continued default, are proportionate.",
+          "I does not follow: closing mills that already comply is unjust and would hurt farmers and workers for no reason."
+        ],
+        "trap": "Sealing in II may look harsh, but it applies only to repeat defaulters after a deadline."
+      },
+      "tags": [
+        "cr:punitive-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-032",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The question paper of a state-level scholarship examination was found circulating on social media the night before the examination.\n\n**Courses of action:**\nI. The examination should be cancelled and held again later with a fresh question paper.\nII. The examination should be held as scheduled using the sealed reserve set of question papers kept for such emergencies.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each course prevents the leaked paper from being used: I by postponing with a new paper, II by switching to the unused reserve set.",
+          "The examination cannot be held as scheduled and also be cancelled, so the two are alternatives: either I or II follows."
+        ],
+        "trap": "II is fully adequate if a reserve set exists, and the statement allows for that; the two cannot be done together, so \"Both\" is wrong."
+      },
+      "tags": [
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "ca-033",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A large number of zero-balance savings accounts opened in a district under a financial-inclusion drive have had no transactions for over a year.\n\n**Courses of action:**\nI. The bank should find out why the accounts are dormant and tell the account holders about the benefits linked to them, such as direct benefit transfers.\nII. All such dormant accounts should be closed, and their holders should be barred from opening new accounts.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: finding the reason and informing the holders is the practical way to make the accounts useful.",
+          "II does not follow: closing the accounts and barring their holders defeats the very aim of financial inclusion."
+        ],
+        "trap": "II treats the account holders as offenders, although the statement shows no wrongdoing."
+      },
+      "tags": [
+        "cr:follow-up-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-034",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Many patients of a district hospital have to travel to the state capital for dialysis because the hospital has only two dialysis machines.\n\n**Courses of action:**\nI. The state health department should install more dialysis machines at the district hospital.\nII. Until the new machines arrive, the hospital should run its existing machines in additional shifts with trained technicians.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: more machines remove the shortage for good.",
+          "II follows: extra shifts give immediate relief while I is being carried out. One is short-term and the other long-term."
+        ],
+        "trap": "II is not an alternative to I; it explicitly bridges the gap until I is done."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-035",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** One batch of a newly launched brand of packaged drinking water has been found to contain bacteria above permissible limits.\n\n**Courses of action:**\nI. The sale of all brands of packaged drinking water should be banned in the state.\nII. The government should advise all citizens to stop buying bottled water altogether.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: one contaminated batch of one brand does not justify banning every brand.",
+          "II does not follow: it condemns the whole product category on the strength of one batch. The practical step, recalling that batch and testing the brand's other batches, is not given."
+        ],
+        "trap": "Both steps are sweeping; the problem is limited to a single batch of a single brand."
+      },
+      "tags": [
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-036",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Ridership on a new metro line is far below projections because its stations are far from residential areas and there is no connecting transport.\n\n**Courses of action:**\nI. The operator should shut down the new line since it is running at a loss.\nII. The operator should arrange feeder buses and e-rickshaws linking the stations with nearby residential areas.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: the stated cause is the missing last-mile link, and feeder services supply it.",
+          "I does not follow: shutting a newly built line wastes the whole investment when the cause of low ridership can be fixed."
+        ],
+        "trap": "Losses make I sound businesslike, but the statement gives a fixable cause."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-037",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The contractor building a new primary school in a village has abandoned the work halfway, and the building remains incomplete.\n\n**Courses of action:**\nI. The department should get the remaining work done by awarding a fresh tender.\nII. The department should complete the building through its own engineering wing.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each course gets the building finished, so each is adequate by itself.",
+          "The same remaining work cannot be given to a new contractor and also be done by the department's own wing, so the courses are alternatives: either I or II follows."
+        ],
+        "trap": "\"Both\" ignores that the two are rival ways of doing the same single job."
+      },
+      "tags": [
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "ca-038",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A private coaching centre running classes in a building's basement has been found to have no emergency exit.\n\n**Courses of action:**\nI. All coaching centres in the city should be closed permanently.\nII. Students should be advised to study at home instead of attending coaching classes.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: one centre's violation does not justify permanently closing every centre.",
+          "II does not follow: advising students to avoid coaching altogether does not make this centre safe. The practical step (sealing the basement until an exit is provided) is not offered."
+        ],
+        "trap": "Both options dodge the specific fire-safety problem at this centre."
+      },
+      "tags": [
+        "cr:extreme-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-039",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Sales of a company's newly launched motorcycle have been poor, and customer feedback says its mileage is far lower than its advertisements claimed.\n\n**Courses of action:**\nI. The company should stop advertising altogether.\nII. The company should get the motorcycle's fuel efficiency tested and either improve the engine or correct its advertised claims.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: the gap between claimed and actual mileage is the stated problem, and II closes that gap one way or the other.",
+          "I does not follow: stopping advertising neither fixes the mileage nor restores trust; it would only hurt sales further."
+        ],
+        "trap": "I reacts to the word \"advertisements\" but does not address the mileage."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-040",
+      "subtype": "two-actions",
+      "difficulty": "hard",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** An inspection has found that several private hospitals in a city charged patients far more than the rates fixed under a government health insurance scheme.\n\n**Courses of action:**\nI. The authorities should recover the excess amounts from the hospitals and refund them to the patients.\nII. The authorities should remove from the scheme those hospitals that continue to overcharge after being warned.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: it undoes the wrong already done to patients.",
+          "II follows: removing repeat offenders from the scheme deters future overcharging. It is graded, applying only after a warning."
+        ],
+        "trap": "II is not extreme: it targets only hospitals that keep overcharging after a warning."
+      },
+      "tags": [
+        "cr:punitive-action",
+        "cr:complementary-actions"
+      ]
+    },
+    {
+      "key": "ca-041",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Data from a state's agriculture department show that in 40 of its blocks, groundwater is being extracted faster than it is recharged, mainly to grow water-intensive paddy in the dry season.\n\n**Courses of action:**\nI. The state should encourage farmers in these blocks to switch to less water-intensive crops through assured procurement and incentives.\nII. Farmers in these blocks should be prohibited from drawing groundwater for any purpose.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: it targets the stated cause (dry-season paddy) with a practical incentive rather than force.",
+          "II does not follow: a total ban on groundwater, even for drinking and livestock, is extreme and would make farming impossible."
+        ],
+        "trap": "II would certainly stop over-extraction, but \"for any purpose\" makes it drastic and impractical."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-042",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A bank's internal review has found that at one branch, several large loans were sanctioned without proper verification of collateral, and many of them have since turned bad.\n\n**Courses of action:**\nI. The bank should fix responsibility for the officials involved and start disciplinary proceedings wherever lapses are proved.\nII. The bank should re-examine the collateral of all loans sanctioned at that branch during the period.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: accountability, with proceedings only where lapses are proved, is fair and prevents repetition.",
+          "II follows: if verification failed for some loans, others from the same period may be weak too, so a review limits further loss."
+        ],
+        "trap": "I is hedged (\"wherever lapses are proved\"), so it is not a blanket punishment."
+      },
+      "tags": [
+        "cr:punitive-action",
+        "cr:follow-up-action"
+      ]
+    },
+    {
+      "key": "ca-043",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Pedestrian deaths on a busy arterial road in Hyderabad have risen even though a foot overbridge exists at the spot. People avoid the overbridge because it is poorly lit and has steep stairs.\n\n**Courses of action:**\nI. The foot overbridge should be demolished since hardly anyone uses it.\nII. The authorities should light the overbridge, add ramps or escalators, and put up railings on the median to discourage crossing at road level.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: it removes the exact reasons people avoid the overbridge and discourages the dangerous crossing.",
+          "I does not follow: demolishing the overbridge removes the only safe crossing and would raise deaths further."
+        ],
+        "trap": "Low use of the overbridge is a symptom; the causes (lighting and stairs) are fixable."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:symptom-vs-problem"
+      ]
+    },
+    {
+      "key": "ca-044",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A report shows that a large part of the funds allotted to a district under a rural employment scheme remained unspent at the end of the year.\n\n**Courses of action:**\nI. The district's allocation under the scheme should be cut to zero next year.\nII. The unspent money should be distributed in cash equally among all households in the district.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: the report does not say why the money was unspent; ending the allocation punishes workers who need the scheme.",
+          "II does not follow: handing out the scheme's funds as cash defeats its purpose of providing work. The sensible first step (finding the reasons for under-use) is missing."
+        ],
+        "trap": "I sounds like a fiscal correction, but the statement gives no basis for assuming the funds are not needed."
+      },
+      "tags": [
+        "cr:extreme-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-045",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The state board's practical examinations are scheduled in the afternoons of the coming week, when a severe heatwave is forecast to push temperatures above 46 °C.\n\n**Courses of action:**\nI. The examinations should be shifted to the morning hours on the same dates.\nII. The examinations should be rescheduled to later dates after the heatwave has passed.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each course keeps students away from the worst heat: I by moving the timing, II by moving the dates.",
+          "The examinations cannot be held on the same dates and also be moved to later dates, so the courses are alternatives: either I or II follows."
+        ],
+        "trap": "Both are reasonable, but they exclude each other, so \"Both\" is wrong."
+      },
+      "tags": [
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "ca-046",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A survey of government schools in a state has found that one-third of the computers supplied under a digital-literacy programme are unused because no teacher in those schools has been trained to operate them.\n\n**Courses of action:**\nI. The teachers of those schools should be penalised for not using the computers.\nII. The education department should train at least one teacher in each such school or appoint computer instructors.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II follows: the stated reason is lack of training, and II supplies it.",
+          "I does not follow: the teachers were never trained, so they are not at fault; penalising them does not make the computers usable."
+        ],
+        "trap": "I looks like accountability, but action against people who are not to blame is not a valid course."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:punitive-action"
+      ]
+    },
+    {
+      "key": "ca-047",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** After a food-poisoning outbreak in a college hostel, tests showed that the drinking water delivered by a private tanker supplier was contaminated.\n\n**Courses of action:**\nI. The hostel should stop taking water from that supplier and arrange tested water from another source.\nII. The civic authorities should test the water that this supplier delivers to other buildings and take action against him.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: it protects the hostel residents at once.",
+          "II follows: the same supplier may be endangering others, so testing his other deliveries and acting against him is a necessary follow-up."
+        ],
+        "trap": "II goes beyond the hostel, but the contaminated source is proved, so the wider check is justified."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:follow-up-action"
+      ]
+    },
+    {
+      "key": "ca-048",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Many small units in an industrial cluster say that large buyers delay paying their bills by months, forcing the units to borrow at high interest to meet running costs.\n\n**Courses of action:**\nI. The government should strictly enforce the existing rules that require buyers to pay small units within a fixed period, and promote platforms where such bills can be discounted quickly.\nII. Small units should be barred from selling to any large buyer that has ever paid late.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: enforcement shortens the delay, and bill discounting gives the units cash meanwhile.",
+          "II does not follow: it would cut the small units off from their main customers, hurting them more than the delays do."
+        ],
+        "trap": "II punishes the buyers only by harming the very units it wants to protect."
+      },
+      "tags": [
+        "cr:practical-action",
+        "cr:extreme-action"
+      ]
+    },
+    {
+      "key": "ca-049",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The number of women taking up jobs in a city's IT parks has fallen, and many of them cite the lack of safe transport late in the evening.\n\n**Courses of action:**\nI. IT companies in the city should be told to employ only men in late shifts.\nII. All IT parks in the city should close by 6 p.m. every day.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: it shuts women out of late shifts instead of making travel safe, worsening the fall in women's employment.",
+          "II does not follow: it disrupts the whole industry. The sensible step (safe, company-arranged transport) is not offered."
+        ],
+        "trap": "Both options remove the late-evening commute, but neither makes the commute safe."
+      },
+      "tags": [
+        "cr:extreme-action",
+        "cr:irrelevant-action"
+      ]
+    },
+    {
+      "key": "ca-050",
+      "subtype": "two-actions",
+      "difficulty": "extreme",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A steep rise in diesel prices has pushed a state's city bus corporation into heavy losses.\n\n**Courses of action:**\nI. The state should allow the corporation to raise fares moderately to cover the extra fuel cost.\nII. The state should give the corporation a subsidy covering the extra fuel cost, keeping fares unchanged.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each course makes good the extra fuel cost, so each solves the problem by itself: I through fares, II through a subsidy.",
+          "II explicitly keeps fares unchanged, so it cannot be done together with I. Hence either I or II follows."
+        ],
+        "trap": "Without the words \"keeping fares unchanged\", a mix would be possible; with them, the courses are rival ways of covering the same cost."
+      },
+      "tags": [
+        "cr:either-or"
+      ]
+    }
+  ]
+}

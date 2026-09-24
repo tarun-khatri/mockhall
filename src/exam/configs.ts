@@ -1,6 +1,6 @@
 import type { ChapterId, Difficulty, ExamId, Pace, Subject, TestConfig } from '../content/types';
 import { PACE_FACTOR } from '../content/types';
-import { EXAM_LABEL, EXAM_ORDER, MOCK_PRESETS, MIXED_SHARES, SECTION_DEFAULTS, fixedMockVariants, type BlueprintSlot } from '../content/blueprints';
+import { EXAM_LABEL, EXAM_ORDER, MAINS, MOCK_PRESETS, MIXED_SHARES, SECTION_DEFAULTS, fixedMockVariants, type BlueprintSlot } from '../content/blueprints';
 import { chapterMeta } from '../content/chapters';
 import type { MockPreset } from '../app/settings';
 import { randomSeed } from '../lib/rng';
@@ -44,6 +44,27 @@ export function fixedMock(n: number, exam: ExamId, preset: MockPreset, strict: b
 
 export function freshMock(exam: ExamId, preset: MockPreset, strict: boolean): TestConfig {
   return fullMockConfig({ exam, seed: `fresh-${randomSeed()}`, title: `Fresh mock · ${EXAM_LABEL[exam]}`, preset, strict });
+}
+
+/** Mains mock (Phase 3): research/mains.md pattern, tough difficulty mix, strict sectional timing. */
+export function mainsMockConfig(exam: ExamId, n: number | 'fresh', strict: boolean): TestConfig {
+  const m = MAINS[exam];
+  const variant = exam === 'sbi-clerk' ? 'SBI-M' : 'IBPS-M';
+  const nn = n === 'fresh' ? null : String(n).padStart(2, '0');
+  return {
+    kind: 'full-mock',
+    exam,
+    title: nn ? `${m.label} · Mock ${nn}` : `${m.label} · fresh mock`,
+    sections: m.order.map((subject) => ({ subject, ...m.sections[subject] })),
+    sectionOrder: m.order,
+    sectionalTiming: true,
+    strictTimer: strict,
+    instantFeedback: false,
+    difficultyMix: MOCK_PRESETS.tough.mix,
+    seed: nn ? `mains-${exam}-${nn}` : `fresh-${randomSeed()}`,
+    pace: 'exam',
+    variants: { english: variant, quant: variant, reasoning: variant },
+  };
 }
 
 export function sectionalConfig(subject: Subject, exam: ExamId, preset: MockPreset, strict: boolean, seed = `sec-${randomSeed()}`): TestConfig {

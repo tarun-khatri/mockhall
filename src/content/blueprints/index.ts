@@ -187,6 +187,144 @@ export const BLUEPRINTS: SectionBlueprint[] = [
   },
 ];
 
+/* ------------------------------------------------------------------ */
+/* Mains (research/mains.md). Unavailable chapters top up from fallback */
+/* ------------------------------------------------------------------ */
+
+const CR: SlotSource[] = (['statement-conclusion', 'statement-assumption', 'statement-argument', 'course-of-action', 'cause-effect'] as ChapterId[]).map((chapter) => ({ chapter }));
+const BIG_ANY = [BIG_PUZZLES, BIG_SEATING];
+const DI_CHARTS: SlotSource = { chapter: 'data-interpretation', subtypes: ['table', 'bar', 'grouped-bar', 'line', 'multi-line', 'pie', 'missing-table', 'arithmetic-di'] };
+const puzzleSets = (n: number): BlueprintSlot[] => Array.from({ length: n }, () => ({ label: 'Puzzle / seating', count: 5, set: true, sources: BIG_ANY, group: 'big' }));
+const diSets = (n: number): BlueprintSlot[] => Array.from({ length: n }, () => ({ label: 'Data interpretation', count: 5, set: true, sources: [DI_CHARTS], group: 'di' }));
+
+BLUEPRINTS.push(
+  {
+    id: 'reasoning-ibps-mains',
+    subject: 'reasoning',
+    variant: 'IBPS-M',
+    label: 'IBPS Clerk mains',
+    total: 40,
+    slots: [
+      ...puzzleSets(4),
+      { label: 'Input–output', count: 3, set: true, sources: [{ chapter: 'input-output' }] },
+      { label: 'Coded blood relation', count: 3, sources: [{ chapter: 'blood-relation', subtypes: ['coded', 'pointing'] }] },
+      { label: 'Data sufficiency', count: 3, sources: [{ chapter: 'data-sufficiency' }] },
+      { label: 'Coding–decoding', count: 3, sources: [{ chapter: 'coding-decoding', subtypes: ['letter-shift', 'reverse', 'opposite-letter', 'positional', 'letters-in-place'] }] },
+      { label: 'Critical reasoning', count: 6, rotate: true, sources: CR },
+      { label: 'Miscellaneous', count: 2, rotate: true, sources: [{ chapter: 'syllogism' }, { chapter: 'inequality' }] },
+    ],
+    fallback: [{ chapter: 'syllogism' }, { chapter: 'inequality' }],
+  },
+  {
+    id: 'reasoning-sbi-mains',
+    subject: 'reasoning',
+    variant: 'SBI-M',
+    label: 'SBI Clerk mains',
+    total: 50,
+    slots: [
+      ...puzzleSets(4),
+      { label: 'Input–output', count: 5, set: true, sources: [{ chapter: 'input-output' }] },
+      { label: 'Coding–decoding', count: 5, set: true, sources: [{ chapter: 'coding-decoding', subtypes: ['sentence-coding'] }] },
+      { label: 'Coded blood relation', count: 4, sources: [{ chapter: 'blood-relation', subtypes: ['coded', 'pointing'] }] },
+      { label: 'Syllogism / inequality', count: 3, rotate: true, sources: [{ chapter: 'syllogism' }, { chapter: 'inequality', subtypes: ['coded', 'combined'] }] },
+      { label: 'Data sufficiency', count: 4, sources: [{ chapter: 'data-sufficiency' }] },
+      { label: 'Critical reasoning', count: 7, rotate: true, sources: CR },
+      { label: 'Miscellaneous', count: 2, rotate: true, sources: [{ chapter: 'direction' }, { chapter: 'order-ranking' }] },
+    ],
+    fallback: [{ chapter: 'syllogism' }, { chapter: 'inequality' }],
+  },
+  {
+    id: 'quant-ibps-mains',
+    subject: 'quant',
+    variant: 'IBPS-M',
+    label: 'IBPS Clerk mains',
+    total: 40,
+    slots: [
+      ...diSets(2),
+      { label: 'Caselet', count: 5, set: true, sources: [{ chapter: 'data-interpretation', subtypes: ['caselet', 'arithmetic-di'] }] },
+      { label: 'Arithmetic', count: 15, rotate: true, sources: ARITHMETIC },
+      { label: 'Quadratic equations', count: 4, sources: [{ chapter: 'quadratic' }] },
+      { label: 'Number series', count: 4, sources: [{ chapter: 'number-series' }] },
+      { label: 'Approximation', count: 2, sources: [{ chapter: 'simplification', subtypes: ['approximation'] }] },
+    ],
+    fallback: [{ chapter: 'simplification' }],
+  },
+  {
+    id: 'quant-sbi-mains',
+    subject: 'quant',
+    variant: 'SBI-M',
+    label: 'SBI Clerk mains',
+    total: 50,
+    slots: [
+      ...diSets(3),
+      { label: 'Caselet', count: 5, set: true, sources: [{ chapter: 'data-interpretation', subtypes: ['caselet', 'arithmetic-di'] }] },
+      { label: 'Arithmetic', count: 17, rotate: true, sources: ARITHMETIC },
+      { label: 'Quadratic equations', count: 4, sources: [{ chapter: 'quadratic' }] },
+      { label: 'Number series', count: 5, sources: [{ chapter: 'number-series' }] },
+      { label: 'Approximation', count: 4, sources: [{ chapter: 'simplification', subtypes: ['approximation'] }] },
+    ],
+    fallback: [{ chapter: 'simplification' }],
+  },
+  {
+    id: 'english-ibps-mains',
+    subject: 'english',
+    variant: 'IBPS-M',
+    label: 'IBPS Clerk mains',
+    total: 40,
+    slots: [
+      { label: 'Reading comprehension', count: 7, set: true, sources: [{ chapter: 'reading-comprehension' }], group: 'rc' },
+      { label: 'Reading comprehension', count: 7, set: true, sources: [{ chapter: 'reading-comprehension' }], group: 'rc' },
+      { label: 'Cloze test', count: 6, set: true, sources: [{ chapter: 'cloze' }] },
+      { label: 'Para jumbles', count: 5, set: true, sources: [{ chapter: 'para-jumbles' }] },
+      { label: 'Error spotting', count: 5, sources: [{ chapter: 'error-spotting' }] },
+      { label: 'Word swap', count: 4, sources: [{ chapter: 'word-swap' }] },
+      { label: 'Connectors', count: 3, sources: [{ chapter: 'connectors' }] },
+      { label: 'Match the column', count: 3, sources: [{ chapter: 'match-column' }] },
+    ],
+    fallback: [{ chapter: 'fillers' }, { chapter: 'error-spotting' }, { chapter: 'phrase-replacement' }],
+  },
+  {
+    id: 'english-sbi-mains',
+    subject: 'english',
+    variant: 'SBI-M',
+    label: 'SBI Clerk mains',
+    total: 40,
+    slots: [
+      { label: 'Reading comprehension', count: 8, set: true, sources: [{ chapter: 'reading-comprehension' }], group: 'rc' },
+      { label: 'Reading comprehension', count: 7, set: true, sources: [{ chapter: 'reading-comprehension' }], group: 'rc' },
+      { label: 'Para jumbles', count: 5, set: true, sources: [{ chapter: 'para-jumbles' }] },
+      { label: 'Word swap / replacement', count: 5, rotate: true, sources: [{ chapter: 'word-swap' }, { chapter: 'phrase-replacement' }] },
+      { label: 'Fillers', count: 4, sources: [{ chapter: 'fillers' }] },
+      { label: 'Connectors', count: 3, sources: [{ chapter: 'connectors' }] },
+      { label: 'Error spotting', count: 3, sources: [{ chapter: 'error-spotting' }] },
+      { label: 'Word usage', count: 5, sources: [{ chapter: 'word-usage' }] },
+    ],
+    fallback: [{ chapter: 'fillers' }, { chapter: 'error-spotting' }, { chapter: 'phrase-replacement' }],
+  },
+);
+
+/** Mains section settings (research/mains.md): questions, minutes, marks per question. GA is out of scope. */
+export const MAINS: Record<ExamId, { label: string; order: Subject[]; sections: Record<Subject, { count: number; seconds: number; marks: number; title: string }> }> = {
+  'sbi-clerk': {
+    label: 'SBI Clerk mains',
+    order: ['english', 'quant', 'reasoning'],
+    sections: {
+      english: { count: 40, seconds: 35 * 60, marks: 1, title: 'General English' },
+      quant: { count: 50, seconds: 45 * 60, marks: 1, title: 'Quantitative Aptitude' },
+      reasoning: { count: 50, seconds: 45 * 60, marks: 1.2, title: 'Reasoning Ability' },
+    },
+  },
+  'ibps-clerk': {
+    label: 'IBPS Clerk mains',
+    order: ['english', 'reasoning', 'quant'],
+    sections: {
+      english: { count: 40, seconds: 35 * 60, marks: 1, title: 'English Language' },
+      reasoning: { count: 40, seconds: 35 * 60, marks: 1.5, title: 'Reasoning Ability' },
+      quant: { count: 40, seconds: 35 * 60, marks: 1.25, title: 'Quantitative Aptitude' },
+    },
+  },
+};
+
 export function blueprint(subject: Subject, variant = 'A'): SectionBlueprint {
   return BLUEPRINTS.find((b) => b.subject === subject && b.variant === variant) ?? BLUEPRINTS.find((b) => b.subject === subject && b.variant === 'A')!;
 }

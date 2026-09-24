@@ -221,6 +221,17 @@ async function bankProvider(chapter: ChapterId): Promise<ChapterProvider> {
       let pool = entries.filter((e) => e.difficulty === d && (!subtype || e.subtype === subtype));
       if (!pool.length) pool = entries.filter((e) => e.difficulty === d);
       const st = rng.pick([...new Set(pool.map((e) => e.subtype))]);
+      // Fresh papers and "Try a similar one" get a newly generated set when the Worker can build it quickly.
+      if (/^(fresh|similar)-/.test(seed) || seed.includes(':fresh-')) {
+        const { canGenerateFresh, generateFresh } = await import('./freshPuzzles');
+        if (canGenerateFresh(chapter, d, st)) {
+          try {
+            return await generateFresh(chapter, seed, d, st);
+          } catch {
+            /* fall back to the verified bank */
+          }
+        }
+      }
       const files = pool.filter((e) => e.subtype === st);
       const total = files.reduce((s, f) => s + f.count, 0);
       let k = rng.int(0, total - 1);

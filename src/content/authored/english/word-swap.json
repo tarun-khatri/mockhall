@@ -1,0 +1,1566 @@
+{
+  "chapter": "word-swap",
+  "version": 1,
+  "items": [
+    {
+      "key": "ws-001",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **harvest (A)** sold his **farmer (B)** at the weekly **market (C)** before the **monsoon (D)** began.",
+      "options": [
+        "C–D",
+        "A–C",
+        "A–B",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'harvest' (A) and 'farmer' (B). A person (the farmer) does the selling and the crop (the harvest) is what gets sold; 'The harvest sold his farmer' reverses doer and object.",
+          "Correct: *The farmer sold his harvest at the weekly market before the monsoon began.*"
+        ],
+        "trap": "C–D does not fix it: it gives *The harvest sold his farmer at the weekly monsoon before the market began*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-002",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nPriya **read (A)** the letter carefully and **letterbox (B)** it in the **posted (C)** near the **station (D)**.",
+      "options": [
+        "A–B",
+        "C–D",
+        "A–D",
+        "B–C",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'letterbox' (B) and 'posted' (C). After 'and … it' we need a verb ('posted'), and after 'in the' we need a noun ('letterbox'). The given sentence has these two the wrong way round.",
+          "Correct: *Priya read the letter carefully and posted it in the letterbox near the station.*"
+        ],
+        "trap": "A–B does not fix it: it gives *Priya letterbox the letter carefully and read it in the posted near the station*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-003",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **bell (A)** asked the **students (B)** to open their **books (C)** to page forty before the **teacher (D)** rang.",
+      "options": [
+        "A–B",
+        "A–D",
+        "B–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'bell' (A) and 'teacher' (D). A bell cannot ask anyone anything, and it is the bell that rings, so 'teacher' and 'bell' must change places.",
+          "Correct: *The teacher asked the students to open their books to page forty before the bell rang.*"
+        ],
+        "trap": "A–B does not fix it: it gives *The students asked the bell to open their books to page forty before the teacher rang*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-004",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nMy **mother (A)** bought fresh **vendor (B)** from the **vegetables (C)** on her way back from the **office (D)**.",
+      "options": [
+        "B–C",
+        "A–D",
+        "A–C",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'vendor' (B) and 'vegetables' (C). One buys fresh vegetables from a vendor, not a fresh vendor from vegetables.",
+          "Correct: *My mother bought fresh vegetables from the vendor on her way back from the office.*"
+        ],
+        "trap": "A–D does not fix it: it gives *My office bought fresh vendor from the vegetables on her way back from the mother*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-005",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **postman (A)** **barked (B)** loudly when the **dog (C)** knocked on the **gate (D)**.",
+      "options": [
+        "A–C",
+        "B–D",
+        "A–D",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'postman' (A) and 'dog' (C). Dogs bark and postmen knock; the given sentence gives each action to the wrong subject.",
+          "Correct: *The dog barked loudly when the postman knocked on the gate.*"
+        ],
+        "trap": "B–D does not fix it: it gives *The postman gate loudly when the dog knocked on the barked*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-006",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **volunteers (A)** carried the injured **cyclist (B)** to the nearest **hospital (C)** in an **ambulance (D)**.",
+      "options": [
+        "A–C",
+        "B–D",
+        "C–D",
+        "B–C",
+        "No interchange required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Volunteers carry an injured cyclist to a hospital in an ambulance; every bold word already fits its slot and 'an' correctly precedes 'ambulance'.",
+          "Correct as given: *The volunteers carried the injured cyclist to the nearest hospital in an ambulance.*"
+        ],
+        "trap": "Don't swap just because an option is offered: A–C would give *The hospital carried the injured cyclist to the nearest volunteers in an ambulance*, which is wrong.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:none",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-007",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **owner (A)** of the shop gave a **cash (B)** to every **customer (C)** who paid in **discount (D)**.",
+      "options": [
+        "A–C",
+        "B–D",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'cash' (B) and 'discount' (D). Customers 'pay in cash' and are given 'a discount'; 'a cash' and 'paid in discount' are both wrong.",
+          "Correct: *The owner of the shop gave a discount to every customer who paid in cash.*"
+        ],
+        "trap": "A–C does not fix it: it gives *The customer of the shop gave a cash to every owner who paid in discount*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-008",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **rain (A)** of the building was **damaged (B)** by the heavy **roof (C)** last **night (D)**.",
+      "options": [
+        "B–D",
+        "A–D",
+        "A–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'rain' (A) and 'roof' (C). It is the roof of a building that gets damaged, and 'heavy rain' is the cause; 'the rain of the building' and 'the heavy roof' make no sense.",
+          "Correct: *The roof of the building was damaged by the heavy rain last night.*"
+        ],
+        "trap": "B–D does not fix it: it gives *The rain of the building was night by the heavy roof last damaged*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-009",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nShe **poured (A)** the milk into a **stove (B)** and **placed (C)** it on the **pan (D)**.",
+      "options": [
+        "A–C",
+        "A–B",
+        "C–D",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'stove' (B) and 'pan' (D). Milk is poured into a pan and the pan is placed on the stove, not the other way round.",
+          "Correct: *She poured the milk into a pan and placed it on the stove.*"
+        ],
+        "trap": "A–C does not fix it: it gives *She placed the milk into a stove and poured it on the pan*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-010",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **thief (A)** caught the **police (B)** after a long **chase (C)** through the crowded **bazaar (D)**.",
+      "options": [
+        "A–B",
+        "C–D",
+        "B–C",
+        "A–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'thief' (A) and 'police' (B). The police catch a thief; 'the thief caught the police' reverses the roles.",
+          "Correct: *The police caught the thief after a long chase through the crowded bazaar.*"
+        ],
+        "trap": "C–D does not fix it: it gives *The thief caught the police after a long bazaar through the crowded chase*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-011",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **school (A)** planted fifty **saplings (B)** along the **shade (C)** to give **road (D)** to walkers.",
+      "options": [
+        "A–B",
+        "B–D",
+        "A–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'shade' (C) and 'road' (D). Saplings are planted along a road so that they give shade; 'along the shade' and 'give road' are meaningless.",
+          "Correct: *The school planted fifty saplings along the road to give shade to walkers.*"
+        ],
+        "trap": "A–B does not fix it: it gives *The saplings planted fifty school along the shade to give road to walkers*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-012",
+      "subtype": "bold-pairs",
+      "difficulty": "easy",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nEvery **walk (A)**, my grandfather **takes (B)** a short **morning (C)** in the **park (D)** near our house.",
+      "options": [
+        "B–D",
+        "A–D",
+        "A–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'walk' (A) and 'morning' (C). The habit happens 'every morning' and the thing taken is 'a short walk'; 'every walk … a short morning' is nonsense.",
+          "Correct: *Every morning, my grandfather takes a short walk in the park near our house.*"
+        ],
+        "trap": "B–D does not fix it: it gives *Every walk, my grandfather park a short morning in the takes near our house*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-013",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe committee **rejected (A)** the proposal because it lacked a clear **funds (B)** for raising the **plan (C)** needed to **complete (D)** the project.",
+      "options": [
+        "A–D",
+        "B–C",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'funds' (B) and 'plan' (C). A proposal can lack 'a clear plan' for raising 'the funds'; 'a clear funds' breaks the article–noun agreement and 'raising the plan' makes no sense.",
+          "Correct: *The committee rejected the proposal because it lacked a clear plan for raising the funds needed to complete the project.*"
+        ],
+        "trap": "A–D does not fix it: it gives *The committee complete the proposal because it lacked a clear funds for raising the plan needed to rejected the project*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-014",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nDespite the **clear (A)** forecast, the **organisers (B)** decided to go ahead with the outdoor **concert (C)**, hoping the sky would stay **gloomy (D)**.",
+      "options": [
+        "B–C",
+        "A–C",
+        "A–D",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'clear' (A) and 'gloomy' (D). 'Despite' needs a discouraging forecast (gloomy), and organisers of an outdoor concert would hope the sky stays clear, not gloomy.",
+          "Correct: *Despite the gloomy forecast, the organisers decided to go ahead with the outdoor concert, hoping the sky would stay clear.*"
+        ],
+        "trap": "B–C does not fix it: it gives *Despite the clear forecast, the concert decided to go ahead with the outdoor organisers, hoping the sky would stay gloomy*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-015",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nSince the bank **raised (A)** its interest rates, many **returns (B)** have **renewed (C)** their fixed deposits to earn better **customers (D)**.",
+      "options": [
+        "A–C",
+        "B–D",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'returns' (B) and 'customers' (D). People (customers) renew deposits to earn better returns; 'many returns have renewed' and 'better customers' are illogical.",
+          "Correct: *Since the bank raised its interest rates, many customers have renewed their fixed deposits to earn better returns.*"
+        ],
+        "trap": "A–C does not fix it: it gives *Since the bank renewed its interest rates, many returns have raised their fixed deposits to earn better customers*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-016",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nAlthough the **customers (A)** was small, its **café (B)** were so loyal that it **outsold (C)** larger rivals in **December (D)**.",
+      "options": [
+        "C–D",
+        "B–D",
+        "A–C",
+        "A–B",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'customers' (A) and 'café' (B). The singular verb 'was' needs 'café', the plural 'were … loyal' needs 'customers'; it is the café that was small and its customers that were loyal.",
+          "Correct: *Although the café was small, its customers were so loyal that it outsold larger rivals in December.*"
+        ],
+        "trap": "C–D does not fix it: it gives *Although the customers was small, its café were so loyal that it December larger rivals in outsold*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-017",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe doctor **advised (A)** the patient to **take (B)** sugar and to **avoid (C)** a brisk walk **daily (D)**.",
+      "options": [
+        "B–C",
+        "A–D",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'take' (B) and 'avoid' (C). The given sentence is grammatical, but a doctor would advise a patient to avoid sugar and take a daily walk, not the reverse.",
+          "Correct: *The doctor advised the patient to avoid sugar and to take a brisk walk daily.*"
+        ],
+        "trap": "A–D does not fix it: it gives *The doctor daily the patient to take sugar and to avoid a brisk walk advised*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-018",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nBecause the **umpires (A)** was **waterlogged (B)**, the **ground (C)** postponed the **match (D)** by a week.",
+      "options": [
+        "B–D",
+        "A–C",
+        "A–D",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'umpires' (A) and 'ground' (C). A ground becomes waterlogged and umpires postpone a match; 'the umpires was waterlogged' is wrong in both agreement and sense.",
+          "Correct: *Because the ground was waterlogged, the umpires postponed the match by a week.*"
+        ],
+        "trap": "B–D does not fix it: it gives *Because the umpires was match, the ground postponed the waterlogged by a week*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-019",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nMeera's **tutor (A)** for mathematics **grew (B)** when a patient **love (C)** showed her how **fascinating (D)** numbers could be.",
+      "options": [
+        "B–D",
+        "A–B",
+        "C–D",
+        "A–C",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'tutor' (A) and 'love' (C). A love for a subject grows, and a patient tutor shows a student something; 'Meera's tutor for mathematics grew' and 'a patient love showed her' are illogical.",
+          "Correct: *Meera's love for mathematics grew when a patient tutor showed her how fascinating numbers could be.*"
+        ],
+        "trap": "B–D does not fix it: it gives *Meera's tutor for mathematics fascinating when a patient love showed her how grew numbers could be*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-020",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **candidates (A)** were asked to **surrender (B)** their mobile phones before entering the **examination (C)** hall, where silence was **mandatory (D)**.",
+      "options": [
+        "A–C",
+        "B–D",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Candidates surrender phones before entering the examination hall, where silence is mandatory; every word is already in its right slot.",
+          "Correct as given: *The candidates were asked to surrender their mobile phones before entering the examination hall, where silence was mandatory.*"
+        ],
+        "trap": "Don't swap just because an option is offered: A–C would give *The examination were asked to surrender their mobile phones before entering the candidates hall, where silence was mandatory*, which is wrong.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:none",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-021",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **commuters (A)** of the new metro line has **cut (B)** travel time for thousands of **opening (C)**, who earlier spent hours **stuck (D)** in traffic.",
+      "options": [
+        "B–D",
+        "A–B",
+        "A–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'commuters' (A) and 'opening' (C). It is the opening of the line that has cut travel time for commuters; 'the commuters … has cut' and 'thousands of opening' make no sense.",
+          "Correct: *The opening of the new metro line has cut travel time for thousands of commuters, who earlier spent hours stuck in traffic.*"
+        ],
+        "trap": "B–D does not fix it: it gives *The commuters of the new metro line has stuck travel time for thousands of opening, who earlier spent hours cut in traffic*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-022",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **large (A)** clerk **carefully (B)** checked the signature before **clearing (C)** the cheque, since the amount was **cautious (D)**.",
+      "options": [
+        "A–D",
+        "B–C",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'large' (A) and 'cautious' (D). A clerk is cautious and an amount is large; 'the large clerk' and 'the amount was cautious' are both illogical.",
+          "Correct: *The cautious clerk carefully checked the signature before clearing the cheque, since the amount was large.*"
+        ],
+        "trap": "B–C does not fix it: it gives *The large clerk clearing checked the signature before carefully the cheque, since the amount was cautious*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-023",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nA **balanced (A)** diet and regular **resist (B)** help the body **exercise (C)** common infections more **effectively (D)**.",
+      "options": [
+        "A–D",
+        "B–C",
+        "A–C",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'resist' (B) and 'exercise' (C). 'Regular' must describe a noun ('exercise'), and 'help the body' must be followed by a bare verb ('resist').",
+          "Correct: *A balanced diet and regular exercise help the body resist common infections more effectively.*"
+        ],
+        "trap": "A–D does not fix it: it gives *A effectively diet and regular resist help the body exercise common infections more balanced*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-024",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nFarmers in the **water (A)** region prefer **hardy (B)** crops such as millets, which need little **arid (C)** and survive long **dry (D)** spells.",
+      "options": [
+        "B–D",
+        "A–D",
+        "C–D",
+        "A–C",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'water' (A) and 'arid' (C). 'The arid region' describes the place and 'need little water' describes the crop; 'the water region' and 'need little arid' are meaningless.",
+          "Correct: *Farmers in the arid region prefer hardy crops such as millets, which need little water and survive long dry spells.*"
+        ],
+        "trap": "B–D does not fix it: it gives *Farmers in the water region prefer dry crops such as millets, which need little arid and survive long hardy spells*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-025",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe manager **bonus (A)** the team for meeting the **target (B)** and promised them a **praised (C)** at the end of the **quarter (D)**.",
+      "options": [
+        "A–C",
+        "B–D",
+        "B–C",
+        "A–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'bonus' (A) and 'praised' (C). The verb slot after 'The manager' needs 'praised', and 'promised them a …' needs the noun 'bonus'.",
+          "Correct: *The manager praised the team for meeting the target and promised them a bonus at the end of the quarter.*"
+        ],
+        "trap": "B–D does not fix it: it gives *The manager bonus the team for meeting the quarter and promised them a praised at the end of the target*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-026",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nRather than **focus (A)** over the lost **match (B)**, the coach urged his players to **brooding (C)** on the next **game (D)**.",
+      "options": [
+        "B–C",
+        "A–D",
+        "A–C",
+        "A–B",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'focus' (A) and 'brooding' (C). 'Rather than brooding over' pairs with 'urged … to focus on'; the given 'to brooding on' breaks the infinitive and reverses the coach's advice.",
+          "Correct: *Rather than brooding over the lost match, the coach urged his players to focus on the next game.*"
+        ],
+        "trap": "B–C does not fix it: it gives *Rather than focus over the lost brooding, the coach urged his players to match on the next game*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-027",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **weary (A)** tourists were **warm (B)** by the **touched (C)** hospitality of the **villagers (D)**.",
+      "options": [
+        "A–D",
+        "A–C",
+        "B–C",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'warm' (B) and 'touched' (C). Tourists are 'touched' by 'warm hospitality'; 'were warm by the touched hospitality' is meaningless.",
+          "Correct: *The weary tourists were touched by the warm hospitality of the villagers.*"
+        ],
+        "trap": "A–D does not fix it: it gives *The villagers tourists were warm by the touched hospitality of the weary*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-028",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nOnline **artisans (A)** has made it **easier (B)** for small **marketing (C)** to reach buyers in distant **cities (D)**.",
+      "options": [
+        "B–D",
+        "A–C",
+        "A–D",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'artisans' (A) and 'marketing' (C). 'Online marketing' is what has made things easier for 'small artisans'; 'Online artisans has made it easier for small marketing' is illogical.",
+          "Correct: *Online marketing has made it easier for small artisans to reach buyers in distant cities.*"
+        ],
+        "trap": "B–D does not fix it: it gives *Online artisans has made it cities for small marketing to reach buyers in distant easier*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-029",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **level (A)** of the river rose so **rapidly (B)** after the cloudburst that the **administration (C)** ordered the **evacuation (D)** of nearby villages.",
+      "options": [
+        "A–C",
+        "B–D",
+        "A–D",
+        "B–C",
+        "No interchange required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The river's level rose rapidly and the administration ordered the evacuation of villages; the sentence is correct as given.",
+          "Correct as given: *The level of the river rose so rapidly after the cloudburst that the administration ordered the evacuation of nearby villages.*"
+        ],
+        "trap": "Don't swap just because an option is offered: A–C would give *The administration of the river rose so rapidly after the cloudburst that the level ordered the evacuation of nearby villages*, which is wrong.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:none",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-030",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nHis **moved (A)** speech **stirring (B)** the audience, who rose to give him a standing **ovation (C)** that lasted several **minutes (D)**.",
+      "options": [
+        "C–D",
+        "A–C",
+        "B–D",
+        "A–B",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'moved' (A) and 'stirring' (B). The adjective 'stirring' describes the speech and the verb 'moved' is the main verb; as given, the clause has no finite verb.",
+          "Correct: *His stirring speech moved the audience, who rose to give him a standing ovation that lasted several minutes.*"
+        ],
+        "trap": "C–D does not fix it: it gives *His moved speech stirring the audience, who rose to give him a standing minutes that lasted several ovation*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-031",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **stubborn (A)** shopkeeper refused to **complaint (B)** the damaged goods, so the angry **buyer (C)** filed a **replace (D)** with the consumer forum.",
+      "options": [
+        "B–D",
+        "A–C",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'complaint' (B) and 'replace' (D). 'Refused to' needs a verb (replace) and 'filed a' needs a noun (complaint).",
+          "Correct: *The stubborn shopkeeper refused to replace the damaged goods, so the angry buyer filed a complaint with the consumer forum.*"
+        ],
+        "trap": "A–C does not fix it: it gives *The buyer shopkeeper refused to complaint the damaged goods, so the angry stubborn filed a replace with the consumer forum*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-032",
+      "subtype": "bold-pairs",
+      "difficulty": "medium",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nWith the festival season **anticipation (A)**, jewellers have **increased (B)** their stocks in **approaching (C)** of **higher (D)** demand.",
+      "options": [
+        "B–D",
+        "A–B",
+        "C–D",
+        "A–C",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'anticipation' (A) and 'approaching' (C). The idiom is 'in anticipation of', and the absolute phrase is 'with the festival season approaching'.",
+          "Correct: *With the festival season approaching, jewellers have increased their stocks in anticipation of higher demand.*"
+        ],
+        "trap": "B–D does not fix it: it gives *With the festival season anticipation, jewellers have higher their stocks in approaching of increased demand*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-033",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **template (A)** of the study, though **modest (B)** in scope, offer a useful **findings (C)** for **cautious (D)** policymakers.",
+      "options": [
+        "A–C",
+        "B–D",
+        "A–D",
+        "B–C",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'template' (A) and 'findings' (C). The plural verb 'offer' needs the plural subject 'findings', and 'a useful …' needs the singular noun 'template'.",
+          "Correct: *The findings of the study, though modest in scope, offer a useful template for cautious policymakers.*"
+        ],
+        "trap": "B–D does not fix it: it gives *The template of the study, though cautious in scope, offer a useful findings for modest policymakers*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-034",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **delay (A)** warned that **fuel (B)** rainfall could **department (C)** the kharif sowing and **deficient (D)** food inflation.",
+      "options": [
+        "A–C",
+        "A–C and B–D",
+        "B–D",
+        "A–B and C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'delay' (A) and 'department' (C), and also 'fuel' (B) and 'deficient' (D). Two swaps are needed: 'department' ↔ 'delay' (the department warns; rainfall could delay sowing) and 'deficient' ↔ 'fuel' (deficient rainfall could fuel inflation).",
+          "Correct: *The department warned that deficient rainfall could delay the kharif sowing and fuel food inflation.*"
+        ],
+        "trap": "A–C does not fix it: it gives *The department warned that fuel rainfall could delay the kharif sowing and deficient food inflation*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-035",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe interview panel was **impressed (A)** by the candidate's **thoughtful (B)** answers, which showed a **limited (C)** grasp of the subject despite his **firm (D)** experience.",
+      "options": [
+        "A–B",
+        "B–C",
+        "C–D",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'limited' (C) and 'firm' (D). An impressed panel implies a firm grasp of the subject, and 'despite' needs a drawback: limited experience. 'A limited grasp' would not impress anyone, and 'firm experience' is not idiomatic.",
+          "Correct: *The interview panel was impressed by the candidate's thoughtful answers, which showed a firm grasp of the subject despite his limited experience.*"
+        ],
+        "trap": "A–B does not fix it: it gives *The interview panel was thoughtful by the candidate's impressed answers, which showed a limited grasp of the subject despite his firm experience*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-036",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **approval (A)** of the loan depends on the **credit (B)** history of the borrower, the **collateral (C)** offered and the **length (D)** of the repayment period.",
+      "options": [
+        "A–C",
+        "B–D",
+        "C–D",
+        "B–C",
+        "No interchange required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Loan approval depends on credit history, the collateral offered and the length of the repayment period; the sentence is correct.",
+          "Correct as given: *The approval of the loan depends on the credit history of the borrower, the collateral offered and the length of the repayment period.*"
+        ],
+        "trap": "Don't swap just because an option is offered: A–C would give *The collateral of the loan depends on the credit history of the borrower, the approval offered and the length of the repayment period*, which is wrong.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:none",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-037",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nWhat began as a **neighbouring (A)** hobby soon **grew (B)** into a thriving **enterprise (C)**, employing twenty women from the **weekend (D)** villages.",
+      "options": [
+        "A–D",
+        "B–C",
+        "A–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'neighbouring' (A) and 'weekend' (D). A hobby is a 'weekend hobby' and the villages are 'neighbouring villages'; 'a neighbouring hobby' and 'weekend villages' are meaningless.",
+          "Correct: *What began as a weekend hobby soon grew into a thriving enterprise, employing twenty women from the neighbouring villages.*"
+        ],
+        "trap": "B–C does not fix it: it gives *What began as a neighbouring hobby soon enterprise into a thriving grew, employing twenty women from the weekend villages*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-038",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **accounts (A)** insisted that the **auditor (B)** be **payment (C)** before any **reconciled (D)** was released.",
+      "options": [
+        "A–B",
+        "C–D",
+        "A–C and B–D",
+        "A–B and C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'accounts' (A) and 'auditor' (B), and also 'payment' (C) and 'reconciled' (D). Two swaps: 'auditor' ↔ 'accounts' (a person insists; accounts get reconciled) and 'reconciled' ↔ 'payment' (a payment is released).",
+          "Correct: *The auditor insisted that the accounts be reconciled before any payment was released.*"
+        ],
+        "trap": "A–B does not fix it: it gives *The auditor insisted that the accounts be payment before any reconciled was released*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-039",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nCritics **panned (A)** the film for its **nuanced (B)** plot but **praised (C)** the lead actor's **predictable (D)** performance.",
+      "options": [
+        "A–B",
+        "C–D",
+        "B–D",
+        "A–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'nuanced' (B) and 'predictable' (D). One pans a film for a predictable plot and praises a nuanced performance; as given, the adjectives contradict the verbs.",
+          "Correct: *Critics panned the film for its predictable plot but praised the lead actor's nuanced performance.*"
+        ],
+        "trap": "A–B does not fix it: it gives *Critics nuanced the film for its panned plot but praised the lead actor's predictable performance*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-040",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe new policy aims to **burdened (A)** exports by **exporters (B)** procedures that have long **boost (C)** small **simplifying (D)**.",
+      "options": [
+        "A–C",
+        "A–C and B–D",
+        "B–D",
+        "A–B and C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'burdened' (A) and 'boost' (C), and also 'exporters' (B) and 'simplifying' (D). Two swaps: 'boost' ↔ 'burdened' (aims to boost; procedures have burdened) and 'simplifying' ↔ 'exporters' (by simplifying procedures; small exporters).",
+          "Correct: *The new policy aims to boost exports by simplifying procedures that have long burdened small exporters.*"
+        ],
+        "trap": "A–C does not fix it: it gives *The new policy aims to boost exports by exporters procedures that have long burdened small simplifying*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-041",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **witness (A)** was **adjourned (B)** to a later date because the chief **hearing (C)** was **travelling (D)** abroad.",
+      "options": [
+        "B–D",
+        "A–B",
+        "C–D",
+        "A–C",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'witness' (A) and 'hearing' (C). A hearing is adjourned; a witness travels. 'The witness was adjourned' and 'the chief hearing was travelling' are illogical.",
+          "Correct: *The hearing was adjourned to a later date because the chief witness was travelling abroad.*"
+        ],
+        "trap": "B–D does not fix it: it gives *The witness was travelling to a later date because the chief hearing was adjourned abroad*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-042",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nHaving **read (A)** the fine print, Arjun **realised (B)** that the policy did not **cover (C)** damage caused by **floods (D)**.",
+      "options": [
+        "A–C",
+        "B–D",
+        "B–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Having read the fine print, Arjun realised the policy did not cover flood damage; every word fits its slot.",
+          "Correct as given: *Having read the fine print, Arjun realised that the policy did not cover damage caused by floods.*"
+        ],
+        "trap": "Don't swap just because an option is offered: A–C would give *Having cover the fine print, Arjun realised that the policy did not read damage caused by floods*, which is wrong.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:none",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-043",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nInstead of **shutting (A)** the factory, the manager **revived (B)** it, turning a **profitable (C)** unit into a **loss-making (D)** one.",
+      "options": [
+        "A–B",
+        "C–D",
+        "A–C",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'profitable' (C) and 'loss-making' (D). Reviving a factory instead of shutting it turns a loss-making unit into a profitable one; as given, the revival makes it loss-making.",
+          "Correct: *Instead of shutting the factory, the manager revived it, turning a loss-making unit into a profitable one.*"
+        ],
+        "trap": "A–B does not fix it: it gives *Instead of revived the factory, the manager shutting it, turning a profitable unit into a loss-making one*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-044",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **forecasters (A)** of the rally was **severe (B)** after **route (C)** warned of **changed (D)** weather.",
+      "options": [
+        "A–C",
+        "B–D",
+        "A–C and B–D",
+        "A–D and B–C",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'forecasters' (A) and 'route' (C), and also 'severe' (B) and 'changed' (D). Two swaps: 'route' ↔ 'forecasters' (the route was changed; forecasters warned) and 'changed' ↔ 'severe' (severe weather).",
+          "Correct: *The route of the rally was changed after forecasters warned of severe weather.*"
+        ],
+        "trap": "A–C does not fix it: it gives *The route of the rally was severe after forecasters warned of changed weather*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-045",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **purpose (A)** of the audit was not to **plug (B)** individuals but to **blame (C)** gaps in the **system (D)**.",
+      "options": [
+        "B–C",
+        "A–D",
+        "A–C",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'plug' (B) and 'blame' (C). One blames individuals and plugs gaps; 'to plug individuals' is meaningless, so 'plug' and 'blame' must change places.",
+          "Correct: *The purpose of the audit was not to blame individuals but to plug gaps in the system.*"
+        ],
+        "trap": "A–D does not fix it: it gives *The system of the audit was not to plug individuals but to blame gaps in the purpose*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-046",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nSmall savers, **understanding (A)** by falling deposit rates, are **increasingly (B)** turning to mutual funds, often without **disappointed (C)** the **risks (D)** involved.",
+      "options": [
+        "B–D",
+        "A–C",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'understanding' (A) and 'disappointed' (C). Savers are 'disappointed by' falling rates and act 'without understanding the risks'; the given words are in each other's slots.",
+          "Correct: *Small savers, disappointed by falling deposit rates, are increasingly turning to mutual funds, often without understanding the risks involved.*"
+        ],
+        "trap": "B–D does not fix it: it gives *Small savers, understanding by falling deposit rates, are risks turning to mutual funds, often without disappointed the increasingly involved*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-047",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **herders (A)** of the drought forced **severity (B)** to **prices (C)** their cattle at throwaway **sell (D)**.",
+      "options": [
+        "A–B",
+        "C–D",
+        "A–B and C–D",
+        "A–C and B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'herders' (A) and 'severity' (B), and also 'prices' (C) and 'sell' (D). Two swaps: 'severity' ↔ 'herders' (the severity of the drought forced herders) and 'sell' ↔ 'prices' (to sell at throwaway prices).",
+          "Correct: *The severity of the drought forced herders to sell their cattle at throwaway prices.*"
+        ],
+        "trap": "A–B does not fix it: it gives *The severity of the drought forced herders to prices their cattle at throwaway sell*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-048",
+      "subtype": "bold-pairs",
+      "difficulty": "hard",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **ageing (A)** bridge, built over a century ago, is now too **heavy (B)** to carry the **fragile (C)** traffic that **crosses (D)** it every day.",
+      "options": [
+        "B–C",
+        "A–D",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'heavy' (B) and 'fragile' (C). An ageing bridge is too fragile to carry heavy traffic; 'too heavy to carry the fragile traffic' reverses the logic.",
+          "Correct: *The ageing bridge, built over a century ago, is now too fragile to carry the heavy traffic that crosses it every day.*"
+        ],
+        "trap": "A–D does not fix it: it gives *The crosses bridge, built over a century ago, is now too heavy to carry the fragile traffic that ageing it every day*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-049",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThough the **quarterly (A)** results were **robust (B)**, analysts remained **optimistic (C)**, pointing to the firm's **disappointing (D)** order book.",
+      "options": [
+        "B–C",
+        "A–C",
+        "C–D",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'robust' (B) and 'disappointing' (D). 'Though' needs results that clash with optimism (disappointing), and optimism is justified by a robust order book, not a disappointing one.",
+          "Correct: *Though the quarterly results were disappointing, analysts remained optimistic, pointing to the firm's robust order book.*"
+        ],
+        "trap": "B–C does not fix it: it gives *Though the quarterly results were optimistic, analysts remained robust, pointing to the firm's disappointing order book*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-050",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe regulator's **cautious (A)** stance, once **credited (B)** as timid, is now **derided (C)** for having **shielded (D)** the sector from the crisis.",
+      "options": [
+        "A–D",
+        "A–B",
+        "B–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'credited' (B) and 'derided' (C). 'Once … timid' is criticism (derided), and shielding the sector earns praise (credited); as given, the stance is 'credited as timid' and 'derided' for a success.",
+          "Correct: *The regulator's cautious stance, once derided as timid, is now credited for having shielded the sector from the crisis.*"
+        ],
+        "trap": "A–D does not fix it: it gives *The regulator's shielded stance, once credited as timid, is now derided for having cautious the sector from the crisis*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-051",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **irrigation (A)** of the dam, **completed (B)** for decades by funding gaps, was finally **stalled (C)** last year, bringing **construction (D)** to thousands of farms.",
+      "options": [
+        "A–D and B–C",
+        "A–D",
+        "B–C",
+        "A–B and C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'irrigation' (A) and 'construction' (D), and also 'completed' (B) and 'stalled' (C). Two swaps: 'construction' ↔ 'irrigation' (construction of the dam; bringing irrigation to farms) and 'stalled' ↔ 'completed' (stalled by funding gaps, finally completed).",
+          "Correct: *The construction of the dam, stalled for decades by funding gaps, was finally completed last year, bringing irrigation to thousands of farms.*"
+        ],
+        "trap": "A–D does not fix it: it gives *The construction of the dam, completed for decades by funding gaps, was finally stalled last year, bringing irrigation to thousands of farms*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-052",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **speed (A)** with which the startup **narrowed (B)** its losses was so **striking (C)** that even **seasoned (D)** investors were caught off guard.",
+      "options": [
+        "A–C",
+        "B–D",
+        "C–D",
+        "A–D",
+        "No interchange required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The speed with which the startup narrowed its losses was so striking that even seasoned investors were surprised; the sentence is correct.",
+          "Correct as given: *The speed with which the startup narrowed its losses was so striking that even seasoned investors were caught off guard.*"
+        ],
+        "trap": "Don't swap just because an option is offered: A–C would give *The striking with which the startup narrowed its losses was so speed that even seasoned investors were caught off guard*, which is wrong.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:none",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-053",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nFar from being a **boon (A)**, the reform proved a **burden (B)** for exporters, whose **compliance (C)** costs fell while their **margins (D)** rose.",
+      "options": [
+        "C–D",
+        "A–C",
+        "B–D",
+        "A–B",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'boon' (A) and 'burden' (B). Falling costs and rising margins show the reform helped, so it 'proved a boon', far from being 'a burden'; the given order says the opposite.",
+          "Correct: *Far from being a burden, the reform proved a boon for exporters, whose compliance costs fell while their margins rose.*"
+        ],
+        "trap": "C–D does not fix it: it gives *Far from being a boon, the reform proved a burden for exporters, whose margins costs fell while their compliance rose*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-054",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nRising rural **farms (A)** has pushed **season (B)** to seek jobs in cities, leaving **distress (C)** short of hands during the sowing **youths (D)**.",
+      "options": [
+        "A–C",
+        "A–C and B–D",
+        "B–D",
+        "A–B and C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'farms' (A) and 'distress' (C), and also 'season' (B) and 'youths' (D). Two swaps: 'distress' ↔ 'farms' (rural distress; farms short of hands) and 'youths' ↔ 'season' (pushed youths; the sowing season).",
+          "Correct: *Rising rural distress has pushed youths to seek jobs in cities, leaving farms short of hands during the sowing season.*"
+        ],
+        "trap": "A–C does not fix it: it gives *Rising rural distress has pushed season to seek jobs in cities, leaving farms short of hands during the sowing youths*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-055",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nUnlike his **cautious (A)** predecessor, the new coach **rewarding (B)** young players, **trusted (C)** them with more game time than **veterans (D)** had ever had.",
+      "options": [
+        "A–D",
+        "A–B",
+        "B–C",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'rewarding' (B) and 'trusted' (C). The main clause needs the finite verb 'trusted'; 'rewarding them with more game time' is the participle phrase. As given, 'the new coach rewarding young players' has no main verb.",
+          "Correct: *Unlike his cautious predecessor, the new coach trusted young players, rewarding them with more game time than veterans had ever had.*"
+        ],
+        "trap": "A–D does not fix it: it gives *Unlike his veterans predecessor, the new coach rewarding young players, trusted them with more game time than cautious had ever had*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-056",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **haste (A)** in the report was **caused (B)** not by malice but by **error (C)**, as the clerk had copied figures from an **outdated (D)** file.",
+      "options": [
+        "B–D",
+        "A–C",
+        "A–D",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interchange 'haste' (A) and 'error' (C). A report contains an error, and the error was caused by haste (copying from an outdated file), not malice; 'the haste in the report' is meaningless.",
+          "Correct: *The error in the report was caused not by malice but by haste, as the clerk had copied figures from an outdated file.*"
+        ],
+        "trap": "B–D does not fix it: it gives *The haste in the report was outdated not by malice but by error, as the clerk had copied figures from an caused file*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-057",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **poor (A)** of monsoon rains in July **celebrate (B)** fears of a **revival (C)** harvest, though officials said it was too early to **eased (D)**.",
+      "options": [
+        "A–C",
+        "B–D",
+        "A–D and B–C",
+        "A–C and B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interchange 'poor' (A) and 'revival' (C), and also 'celebrate' (B) and 'eased' (D). Two swaps: 'revival' ↔ 'poor' (the revival of rains; a poor harvest) and 'eased' ↔ 'celebrate' (eased fears; too early to celebrate).",
+          "Correct: *The revival of monsoon rains in July eased fears of a poor harvest, though officials said it was too early to celebrate.*"
+        ],
+        "trap": "A–C does not fix it: it gives *The revival of monsoon rains in July celebrate fears of a poor harvest, though officials said it was too early to eased*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-058",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **flood (A)** of cheap imports has hurt local **jobs (B)**, many of whom now **struggle (C)** to stay afloat by cutting **manufacturers (D)**.",
+      "options": [
+        "B–D",
+        "A–C",
+        "A–B",
+        "C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'jobs' (B) and 'manufacturers' (D). 'Many of whom' refers to people or firms (manufacturers), and what they cut to stay afloat is jobs; 'hurt local jobs, many of whom … by cutting manufacturers' is illogical.",
+          "Correct: *The flood of cheap imports has hurt local manufacturers, many of whom now struggle to stay afloat by cutting jobs.*"
+        ],
+        "trap": "A–C does not fix it: it gives *The struggle of cheap imports has hurt local jobs, many of whom now flood to stay afloat by cutting manufacturers*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-059",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nIt was the **complexity (A)** of the dispute, not its **duration (B)**, that **exhausted (C)** the arbitrator, who had settled far **thornier (D)** cases before.",
+      "options": [
+        "C–D",
+        "A–C",
+        "A–B",
+        "B–D",
+        "No interchange required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interchange 'complexity' (A) and 'duration' (B). The clause 'who had settled far thornier cases before' shows complexity was not the problem, so it must be the duration that exhausted him; the given order blames complexity.",
+          "Correct: *It was the duration of the dispute, not its complexity, that exhausted the arbitrator, who had settled far thornier cases before.*"
+        ],
+        "trap": "C–D does not fix it: it gives *It was the complexity of the dispute, not its duration, that thornier the arbitrator, who had settled far exhausted cases before*.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:single",
+        "vocab:context"
+      ]
+    },
+    {
+      "key": "ws-060",
+      "subtype": "bold-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the sentence below, four words are given in bold and labelled (A), (B), (C) and (D). Which pair of words should be interchanged to make the sentence grammatically and contextually correct? If no interchange is required, choose 'No interchange required'.\n\nThe **profits (A)** imposed on the firm was **fraudulent (B)** compared with the **penalty (C)** it had made from the **trivial (D)** scheme.",
+      "options": [
+        "A–C and B–D",
+        "A–C",
+        "B–D",
+        "A–B and C–D",
+        "No interchange required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interchange 'profits' (A) and 'penalty' (C), and also 'fraudulent' (B) and 'trivial' (D). Two swaps: 'penalty' ↔ 'profits' (a penalty is imposed; profits are made) and 'trivial' ↔ 'fraudulent' (the penalty was trivial; the scheme was fraudulent).",
+          "Correct: *The penalty imposed on the firm was trivial compared with the profits it had made from the fraudulent scheme.*"
+        ],
+        "trap": "A–C does not fix it: it gives *The penalty imposed on the firm was fraudulent compared with the profits it had made from the trivial scheme*, which still has a word out of place.",
+        "shortcut": "Read each bold word against its slot: does it fit the grammar (noun, verb, adjective) and does it fit the meaning of the whole sentence?"
+      },
+      "tags": [
+        "swap:double",
+        "vocab:context"
+      ]
+    }
+  ]
+}

@@ -301,6 +301,8 @@ export interface SectionConfig {
   /** 0 = untimed. */
   seconds: number;
   blueprint?: string;
+  /** Marks per correct answer (default 1); a wrong answer costs a quarter of it. */
+  marks?: number;
   /** Display name, e.g. "Reasoning Ability". */
   title?: string;
 }

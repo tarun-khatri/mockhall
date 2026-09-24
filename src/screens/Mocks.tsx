@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import { useSettings, type MockPreset } from '../app/settings';
 import { useAsync } from '../app/useAsync';
 import { listAttempts } from '../lib/storage';
-import { encodeConfig, fixedMock, freshMock, sectionalConfig } from '../exam/configs';
+import { encodeConfig, fixedMock, freshMock, mainsMockConfig, sectionalConfig } from '../exam/configs';
 import { EXAM_LABEL, MOCK_PRESETS } from '../content/blueprints';
 import { SUBJECT_TITLE } from '../content/chapters';
 import type { ExamId, Subject } from '../content/types';
@@ -65,6 +65,21 @@ export default function Mocks() {
             />
           );
         })}
+      </Divided>
+
+      <SectionHeading>Mains mocks</SectionHeading>
+      <p className="text-[13px] text-ink-2">
+        English, Quant and Reasoning at the current mains pattern (IBPS Clerk: 40 + 40 + 40 in 35 min each; SBI Clerk: 40 + 50 + 50). General/Financial Awareness is not included.
+      </p>
+      <Divided>
+        {(['ibps-clerk', 'sbi-clerk'] as ExamId[]).flatMap((ex) => [
+          <ListRow key={`${ex}-fresh`} to={`/start?c=${encodeConfig(mainsMockConfig(ex, 'fresh', settings.strictMocks))}`} title={`${EXAM_LABEL[ex]} mains · fresh`} detail="A new mains paper every time" />,
+          ...Array.from({ length: 10 }, (_, i) => i + 1).map((n) => {
+            const cfg = mainsMockConfig(ex, n, settings.strictMocks);
+            const b = best.get(cfg.title);
+            return <ListRow key={`${ex}-${n}`} to={`/start?c=${encodeConfig(cfg)}`} title={cfg.title} detail={b ? `best ${b.score} / ${b.max}` : `${cfg.sections.reduce((s, x) => s + x.count, 0)} questions · ${cfg.sections.reduce((s, x) => s + x.seconds, 0) / 60} minutes`} />;
+          }),
+        ])}
       </Divided>
 
       <SectionHeading>Sectional mocks</SectionHeading>

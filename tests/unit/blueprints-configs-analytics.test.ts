@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { BLUEPRINTS, fixedMockVariants, MOCK_PRESETS } from '../../src/content/blueprints';
+import { BLUEPRINTS, MAINS, fixedMockVariants, MOCK_PRESETS } from '../../src/content/blueprints';
 import { decodeConfig, encodeConfig, fixedMock, chapterConfig, chapterSeconds } from '../../src/exam/configs';
 import { median, stat, weakAreas, mastery } from '../../src/analytics';
 import type { LogEntry } from '../../src/lib/storage';
@@ -9,7 +9,8 @@ describe('blueprints', () => {
   it('every blueprint sums to its section total', () => {
     for (const bp of BLUEPRINTS) {
       expect(bp.slots.reduce((s, x) => s + x.count, 0), bp.id).toBe(bp.total);
-      expect(bp.total).toBe(bp.subject === 'english' ? 30 : 35);
+      if (!bp.variant.endsWith('-M')) expect(bp.total).toBe(bp.subject === 'english' ? 30 : 35);
+      else expect(bp.total).toBe(MAINS[bp.variant === 'SBI-M' ? 'sbi-clerk' : 'ibps-clerk'].sections[bp.subject].count);
     }
   });
   it('mock presets are probability mixes', () => {

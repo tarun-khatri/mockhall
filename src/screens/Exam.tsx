@@ -202,7 +202,7 @@ export default function Exam() {
         <span className="tnum font-semibold">
           Q {a.currentIndex + 1} of {sectionIds.length}
         </span>
-        <span className="tnum text-ink-2">+1 / −0.25</span>
+        <span className="tnum text-ink-2">+{sectionCfg.marks ?? 1} / −{(sectionCfg.marks ?? 1) / 4}</span>
         <span className="flex-1" />
         {settings.stopwatch ? (
           <span className="tnum text-ink-2" aria-label="Time on this question">

@@ -180,7 +180,7 @@ export default function Result() {
         </div>
       ) : null}
 
-      {isMock ? (
+      {isMock && !Object.values(attempt.config.variants ?? {}).some((v) => v?.endsWith('-M')) ? (
         <>
           <SectionHeading>Attempts vs good attempts</SectionHeading>
           <div className="rounded-[12px] border border-line bg-surface p-3 text-[14px]">
