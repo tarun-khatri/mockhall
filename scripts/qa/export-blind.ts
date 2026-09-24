@@ -6,7 +6,7 @@
  *
  * Writes <outDir>/<chapter>.questions.md (for the solver) and <outDir>/<chapter>.map.json (label maps; keep private).
  */
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { authoredFileSchema } from '../../src/content/schema';
 import { makeRng } from '../../src/lib/rng';
@@ -17,7 +17,9 @@ if (!chapter || !outDir) {
   process.exit(2);
 }
 const keys = only ? new Set(only.split(',')) : null;
-const file = authoredFileSchema.parse(JSON.parse(readFileSync(join(import.meta.dirname, '..', '..', 'src', 'content', 'authored', 'english', `${chapter}.json`), 'utf8')));
+const authoredRoot = join(import.meta.dirname, '..', '..', 'src', 'content', 'authored');
+const subjectDir = ['english', 'reasoning', 'quant'].find((s) => existsSync(join(authoredRoot, s, `${chapter}.json`))) ?? 'english';
+const file = authoredFileSchema.parse(JSON.parse(readFileSync(join(authoredRoot, subjectDir, `${chapter}.json`), 'utf8')));
 const L = 'ABCDE';
 const lines: string[] = [
   `# Blind solve — ${chapter}`,

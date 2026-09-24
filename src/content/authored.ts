@@ -8,6 +8,9 @@ import { DIFFICULTY_LETTER } from './types';
 import type { AuthoredFile, AuthoredQuestion, AuthoredSet, ParaJumbleSet } from './schema';
 import { setTargetSeconds, targetSeconds, TARGETS } from './targets';
 import { shortHash } from '../lib/hash';
+import { chapterMeta } from './chapters';
+
+const subj = (c: ChapterId) => chapterMeta(c).subject;
 
 export interface QaRecord {
   hash: string;
@@ -49,8 +52,8 @@ function authoredQuestion(
   extra: { setId?: string; targetSeconds: number },
 ): Question {
   return {
-    id: `english.${chapter}.${q.subtype}.${DIFFICULTY_LETTER[difficulty]}.${q.key}`,
-    subject: 'english',
+    id: `${subj(chapter)}.${chapter}.${q.subtype}.${DIFFICULTY_LETTER[difficulty]}.${q.key}`,
+    subject: subj(chapter),
     chapter,
     subtype: q.subtype,
     difficulty,
@@ -71,7 +74,7 @@ export function singleItems(chapter: ChapterId, file: AuthoredFile, passed: (key
   for (const q of file.items ?? []) {
     const at = passed(q.key);
     if (!at) continue;
-    out.push({ questions: [authoredQuestion(chapter, q, q.difficulty, at, { targetSeconds: targetSeconds('english-single', q.difficulty) })] });
+    out.push({ questions: [authoredQuestion(chapter, q, q.difficulty, at, { targetSeconds: targetSeconds(subj(chapter) === 'reasoning' ? 'critical-reasoning' : 'english-single', q.difficulty) })] });
   }
   return out;
 }
@@ -81,14 +84,14 @@ export function rcItems(chapter: ChapterId, file: AuthoredFile, passed: (key: st
   for (const s of file.sets ?? []) {
     const at = passed(s.key);
     if (!at) continue;
-    const setId = `english.${chapter}.set.${s.subtype}.${DIFFICULTY_LETTER[s.difficulty]}.${s.key}`;
-    const total = TARGETS['rc-set'][s.difficulty];
+    const setId = `${subj(chapter)}.${chapter}.set.${s.subtype}.${DIFFICULTY_LETTER[s.difficulty]}.${s.key}`;
+    const total = chapter === 'cloze' ? setTargetSeconds('cloze-set', s.difficulty, s.questions.length) : TARGETS['rc-set'][s.difficulty];
     const questions = s.questions.map((q) =>
       authoredQuestion(chapter, { ...q, subtype: s.subtype }, q.difficulty ?? s.difficulty, at, { setId, targetSeconds: total / s.questions.length }),
     );
     const set: QuestionSet = {
       id: setId,
-      subject: 'english',
+      subject: subj(chapter),
       chapter,
       kind: chapter === 'cloze' ? 'cloze' : 'rc',
       subtype: s.subtype,
@@ -117,7 +120,7 @@ export function paraJumbleItems(chapter: ChapterId, file: AuthoredFile, passed: 
 export function paraJumbleItem(chapter: ChapterId, pj: ParaJumbleSet, passedAt: string): Item {
   const labels = pj.sentences.map((s) => s.label).sort();
   const n = labels.length;
-  const setId = `english.${chapter}.set.${pj.subtype}.${DIFFICULTY_LETTER[pj.difficulty]}.${pj.key}`;
+  const setId = `${subj(chapter)}.${chapter}.set.${pj.subtype}.${DIFFICULTY_LETTER[pj.difficulty]}.${pj.key}`;
   const labelList = labels.map((l) => `(${l})`);
   const intro = `Rearrange the following ${n} sentences ${labelList.slice(0, -1).join(', ')} and ${labelList[n - 1]} in the proper sequence to form a meaningful paragraph, then answer the questions that follow.`;
   const fixedNote = pj.fixed ? `\n\nSentence **(${pj.fixed.label})** is fixed as the **${ORD[pj.fixed.position - 1]}** sentence.` : '';
@@ -146,8 +149,8 @@ export function paraJumbleItem(chapter: ChapterId, pj: ParaJumbleSet, passedAt: 
     }
     const which = pos === n - 1 ? `${ORD[pos].toUpperCase()} (LAST)` : ORD[pos].toUpperCase();
     return {
-      id: `english.${chapter}.${pj.subtype}.${DIFFICULTY_LETTER[pj.difficulty]}.${pj.key}-p${pos + 1}`,
-      subject: 'english',
+      id: `${subj(chapter)}.${chapter}.${pj.subtype}.${DIFFICULTY_LETTER[pj.difficulty]}.${pj.key}-p${pos + 1}`,
+      subject: subj(chapter),
       chapter,
       subtype: pj.subtype,
       difficulty: pj.difficulty,
@@ -167,7 +170,7 @@ export function paraJumbleItem(chapter: ChapterId, pj: ParaJumbleSet, passedAt: 
   });
   const set: QuestionSet = {
     id: setId,
-    subject: 'english',
+    subject: subj(chapter),
     chapter,
     kind: 'parajumble',
     subtype: pj.subtype,

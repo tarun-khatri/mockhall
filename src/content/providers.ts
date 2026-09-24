@@ -29,8 +29,8 @@ export interface ChapterProvider {
 
 type GenModule = { generator?: ChapterGenerator };
 const generatorModules = import.meta.glob<GenModule>(['./generators/quant/*.ts', './generators/reasoning/*.ts', './generators/english/*.ts']);
-const authoredModules = import.meta.glob<AuthoredFile>('./authored/english/*.json', { import: 'default' });
-const qaModules = import.meta.glob<QaFile>(['./authored/english/_qa/*.json', '!./authored/english/_qa/*.log.json'], { import: 'default' });
+const authoredModules = import.meta.glob<AuthoredFile>('./authored/*/*.json', { import: 'default' });
+const qaModules = import.meta.glob<QaFile>(['./authored/*/_qa/*.json', '!./authored/*/_qa/*.log.json'], { import: 'default' });
 
 const baseName = (path: string) => path.split('/').pop()!.replace(/\.(ts|json)$/, '');
 const KNOWN = new Set<string>(CHAPTERS.map((c) => c.id));

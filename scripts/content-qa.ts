@@ -8,10 +8,12 @@ import { authoredFileSchema } from '../src/content/schema';
 import { authoredHash, type QaFile } from '../src/content/authored';
 
 const ROOT = join(import.meta.dirname, '..');
-const dir = join(ROOT, 'src', 'content', 'authored', 'english');
 const rows: string[] = [];
 const details: string[] = [];
 let totalFinal = 0;
+for (const subjectDir of ['english', 'reasoning']) {
+const dir = join(ROOT, 'src', 'content', 'authored', subjectDir);
+if (!existsSync(dir)) continue;
 
 for (const name of readdirSync(dir).filter((n) => n.endsWith('.json')).sort()) {
   const chapter = name.replace(/\.json$/, '');
@@ -34,6 +36,7 @@ for (const name of readdirSync(dir).filter((n) => n.endsWith('.json')).sort()) {
     `| ${chapter} | ${entries.length} ${unit} | ${verified.length} | ${rewritten} | ${dropped} | ${verified.length} (${byDiff.easy}/${byDiff.medium}/${byDiff.hard}/${byDiff.extreme}) | ${questions} |`,
   );
   if (everFailed.size) details.push(`- **${chapter}**: ${[...everFailed].join(', ')}`);
+}
 }
 
 const md = `# Content QA report

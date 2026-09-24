@@ -162,8 +162,24 @@ export function derivation(b: Built): string[] {
     for (const r of ev.results) if (r.to.length === 1 && label.has(r.from)) label.set(r.to[0], label.get(r.from)!);
   }
   flushFix();
-  lines.push(arrangementLine(b, b.truth));
-  return lines;
+  return condense(lines, b, 13).concat(arrangementLine(b, b.truth));
+}
+
+/** Keep long (extreme) derivations readable: merge runs of case lines, then summarise the middle. */
+function condense(lines: string[], b: Built, max: number): string[] {
+  if (lines.length <= max) return lines;
+  const merged: string[] = [];
+  const isCase = (l: string) => / cases — /.test(l) || / rules out | is rejected| are rejected/.test(l);
+  for (const l of lines) {
+    const prev = merged[merged.length - 1];
+    if (prev !== undefined && isCase(prev) && isCase(l) && prev.length + l.length < 600) merged[merged.length - 1] = `${prev} ${l}`;
+    else merged.push(l);
+  }
+  if (merged.length <= max) return merged;
+  const head = merged.slice(0, 3);
+  const tail = merged.slice(merged.length - (max - 4));
+  const skipped = merged.length - head.length - tail.length;
+  return [...head, `Work through the remaining case splits the same way (${skipped} more step${skipped > 1 ? 's' : ''}; ${b.hps.splits} extra cases in all): each case is closed as soon as one clue fails in it.`, ...tail];
 }
 
 const cap1 = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);

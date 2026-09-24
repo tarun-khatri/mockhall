@@ -1,6 +1,6 @@
 # Content QA report
 
-Generated 2026-09-23 by `npm run qa`.
+Generated 2026-09-24 by `npm run qa`.
 
 Pipeline (SPEC 7.6): authored as JSON in batches → zod schema + near-duplicate (trigram > 0.85) + British-spelling checks
 (`scripts/validate-authored.ts`) → **blind solve** by a separate agent that sees no keys (`scripts/qa/export-blind.ts`),

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useBlocker, useNavigate, useParams } from 'react-router';
-import { Bookmark, BookmarkCheck, ChevronLeft, Grid3x3, MoreVertical, Pause, Play } from 'lucide-react';
+import { Bookmark, BookmarkCheck, ChevronLeft, Grid3x3, MoreVertical, Pause, PencilLine, Play } from 'lucide-react';
+import { RoughPad } from '../components/RoughPad';
 import { useExam } from '../exam/store';
 import * as E from '../exam/engine';
 import { OptionRow, type OptionState } from '../components/OptionRow';
@@ -62,6 +63,7 @@ export default function Exam() {
   const [endSectionOpen, setEndSectionOpen] = useState(false);
   const [reportText, setReportText] = useState('');
   const [reportOpen, setReportOpen] = useState(false);
+  const [padOpen, setPadOpen] = useState(false);
   const questionTop = useRef<HTMLDivElement>(null);
   const loaded = attempt?.id === id;
   const inProgress = loaded && attempt!.status === 'in-progress';
@@ -207,6 +209,9 @@ export default function Exam() {
             {clock(qTime / 1000)}
           </span>
         ) : null}
+        <button type="button" onClick={() => setPadOpen(true)} className="flex min-h-10 min-w-10 items-center justify-center" aria-label="Open rough pad">
+          <PencilLine size={21} aria-hidden />
+        </button>
         <button type="button" onClick={() => actions.toggleBookmark()} className="flex min-h-10 min-w-10 items-center justify-center" aria-pressed={bookmarked} aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark this question'}>
           {bookmarked ? <BookmarkCheck size={21} className="text-pen" aria-hidden /> : <Bookmark size={21} aria-hidden />}
         </button>
@@ -443,6 +448,8 @@ export default function Exam() {
       >
         <p className="text-ink-2">Your progress is saved. {a.config.strictTimer ? 'The timer keeps running while you are away, like the real exam.' : 'The timer pauses until you come back.'}</p>
       </BottomSheet>
+
+      {padOpen ? <RoughPad padKey={`${a.id}:${qid}`} prompt={q.prompt} onClose={() => setPadOpen(false)} /> : null}
 
       {toast ? <Toast key={toast.id} id={toast.id} text={toast.text} tone={toast.tone} onDone={() => useExam.setState({ toast: null })} /> : null}
     </div>

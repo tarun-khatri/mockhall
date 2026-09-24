@@ -16,7 +16,8 @@ import { authoredFileSchema } from '../../src/content/schema';
 import { authoredHash, type QaFile } from '../../src/content/authored';
 
 const [chapter, outDir] = process.argv.slice(2);
-const root = join(import.meta.dirname, '..', '..', 'src', 'content', 'authored', 'english');
+const authoredRoot = join(import.meta.dirname, '..', '..', 'src', 'content', 'authored');
+const root = join(authoredRoot, ['english', 'reasoning', 'quant'].find((s) => existsSync(join(authoredRoot, s, `${chapter}.json`))) ?? 'english');
 const file = authoredFileSchema.parse(JSON.parse(readFileSync(join(root, `${chapter}.json`), 'utf8')));
 const answers = JSON.parse(readFileSync(join(outDir, `${chapter}.answers.json`), 'utf8')) as Record<string, { answer?: string; order?: string; ambiguity?: number; note?: string }>;
 const map = existsSync(join(outDir, `${chapter}.map.json`)) ? (JSON.parse(readFileSync(join(outDir, `${chapter}.map.json`), 'utf8')) as Record<string, Record<string, string>>) : {};

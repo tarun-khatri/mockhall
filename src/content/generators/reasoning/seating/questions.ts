@@ -193,7 +193,8 @@ function qBetween(q: QCtx): QOut | null {
       count = Math.abs(T.col(sx) - T.col(sy)) - 1;
       if (count < 0) continue;
     }
-    if (count > (q.L.kind === 'uncertain' ? 15 : 8)) continue;
+    // tiny counts pin the key to option A (options run upwards from None), so ask about wider gaps
+    if (count < 2 || count > (q.L.kind === 'uncertain' ? 15 : 8)) continue;
     const mistakes = [
       { value: count + 1, why: 'counted one of the two named persons as well' },
       ...(otherArc >= 0 ? [{ value: otherArc, why: 'counted round the other side of the table' }] : []),
@@ -682,6 +683,7 @@ function qSideCount(q: QCtx): QOut | null {
   const side: Side = rng.chance(0.5) ? 'left' : 'right';
   const s = T.seat(x);
   const n = sideSignOf(T, s, side) > 0 ? T.rowLen() - 1 - T.col(s) : T.col(s);
+  if (n < 2) return null;
   const ch = countChoices(
     q,
     n,

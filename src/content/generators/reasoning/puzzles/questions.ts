@@ -96,10 +96,13 @@ export interface QCtx {
 
 const PROMPT_ODD = 'Four of the following five are alike in a certain way based on the given arrangement and so form a group. Which one does not belong to that group?';
 
-function ordered(rng: Rng, labels: string[], correct: number): { options: string[]; answerIndex: number } {
-  // window of 5 consecutive labels containing the answer at a uniformly chosen feasible rank
+function ordered(rng: Rng, labels: string[], correct: number): { options: string[]; answerIndex: number } | null {
+  // window of 5 consecutive labels containing the answer at a uniformly chosen feasible rank. An answer near
+  // either end has fewer feasible ranks; accepting it only with probability |ranks| / 5 keeps the correct letter
+  // exactly uniform over A–E (the caller then picks another question).
   const n = labels.length;
   const ranks = [0, 1, 2, 3, 4].filter((rk) => correct - rk >= 0 && correct - rk + 4 <= n - 1);
+  if (!ranks.length || !rng.chance(ranks.length / 5)) return null;
   const rk = rng.pick(ranks);
   const start = correct - rk;
   return fixedChoices(labels.slice(start, start + 5), rk);
@@ -243,6 +246,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
                       : `On which date was ${who} born?`;
       const labels = [...Array(truth.S).keys()].map((t) => r.posLabel(t));
       const ch = ordered(rng, labels, s);
+      if (!ch) return null;
       const near = nearAnswers(c, (w) => w.slot[spec.e], s).find((n) => ch.options.includes(labels[n.ans]));
       return {
         spec,
@@ -262,6 +266,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
       const prompt = `How many ${V.unit[1]} ${V.p} between ${r.ref(spec.a)} and ${r.ref(spec.b)}?`;
       const max = P - 2;
       const ch = ordered(rng, COUNT_OPTION.slice(0, max + 1), n);
+      if (!ch) return null;
       const gapSlots = Math.abs(sa - sb) - 1;
       const steps = [`${r.ref(spec.a, true)} is ${x.loc(sa)} and ${r.ref(spec.b)} is ${x.loc(sb)}.`];
       if (L.kind === 'month' && gapSlots !== n) steps.push(`${gapSlots} months lie between them, but ${gapSlots - n} of those have no birthday → **${countWord(n)}**.`);
@@ -286,6 +291,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
           ? `How many persons are ${spec.dir === 1 ? w.more : w.less} than ${r.ref(spec.e)}?`
           : `How many ${V.unit[1]} ${V.p} ${spec.dir === 1 ? V.up : V.down} ${r.ref(spec.e)}?`;
       const ch = ordered(rng, COUNT_OPTION.slice(0, P), n);
+      if (!ch) return null;
       const other = spec.dir === 1 ? truth.before(s) : truth.after(s);
       return {
         spec,
@@ -362,6 +368,7 @@ export function buildQuestion(c: QCtx, spec: QSpec): QOut | null {
               ? `If all the persons are arranged in alphabetical order from the ${w.top} to the ${w.bottom}, how many of them will keep the same position?`
               : `If all the persons are rescheduled in alphabetical order from Monday to Sunday, how many of them will keep the same day?`;
       const ch = ordered(rng, COUNT_OPTION.slice(0, P + 1), same);
+      if (!ch) return null;
       return {
         spec,
         prompt,
