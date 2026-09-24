@@ -6,27 +6,37 @@
  * The generator picks the answer category first (uniform over A–E), then searches pairs of statements
  * (each a conjunction of true atomic clues) whose sufficiency pattern produces that category.
  */
-import type { Rng } from '../../../../lib/rng';
-import type { Difficulty, Rich, VisualSpec } from '../../../types';
+import type { Rng } from "../../../../lib/rng";
+import type { Difficulty, Rich, VisualSpec } from "../../../types";
 
 export const DS_OPTIONS = [
-  'The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient',
-  'The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient',
-  'The data either in statement I alone or in statement II alone are sufficient to answer the question',
-  'The data in both the statements I and II together are necessary to answer the question',
-  'The data in both the statements I and II together are not sufficient to answer the question',
+  "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+  "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+  "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+  "The data in both the statements I and II together are necessary to answer the question",
+  "The data in both the statements I and II together are not sufficient to answer the question",
 ] as const;
 
-export const DS_SHORT = ['I alone is sufficient', 'II alone is sufficient', 'either I or II alone is sufficient', 'both I and II together are needed', 'even I and II together are not sufficient'];
+export const DS_SHORT = [
+  "I alone is sufficient",
+  "II alone is sufficient",
+  "either I or II alone is sufficient",
+  "both I and II together are needed",
+  "even I and II together are not sufficient",
+];
 
 export type Category = 0 | 1 | 2 | 3 | 4;
 
 /** Answers standing for "the statement does not reach the asked item at all" (always come in pairs). */
 export function isSentinel(a: string): boolean {
-  return a.startsWith('unlinked:') || a.startsWith('unknown:');
+  return a.startsWith("unlinked:") || a.startsWith("unknown:");
 }
 
-export function categoryOf(suffI: boolean, suffII: boolean, suffBoth: boolean): Category {
+export function categoryOf(
+  suffI: boolean,
+  suffII: boolean,
+  suffBoth: boolean,
+): Category {
   if (suffI && suffII) return 2;
   if (suffI) return 0;
   if (suffII) return 1;
@@ -57,7 +67,7 @@ export function worldScenario<C>(
   key: (c: C) => string,
   holds: (c: C, w: number) => boolean,
   answer: (w: number) => string,
-  extra: Pick<Scenario<C>, 'ok' | 'accept'> = {},
+  extra: Pick<Scenario<C>, "ok" | "accept"> = {},
 ): Scenario<C> {
   const bits = new Map<string, Uint8Array>();
   const answersArr: string[] = [];
@@ -81,10 +91,11 @@ export function worldScenario<C>(
       const out = new Set<string>();
       for (let w = 0; w < count; w++) {
         let ok = true;
-        for (const b of bs) if (!b[w]) {
-          ok = false;
-          break;
-        }
+        for (const b of bs)
+          if (!b[w]) {
+            ok = false;
+            break;
+          }
         if (ok) out.add(answersArr[w]);
       }
       return out;
@@ -101,7 +112,13 @@ export interface PairResult<C> {
   base: Set<string>;
 }
 
-export function findPair<C>(rng: Rng, sc: Scenario<C>, target: Category, sizes: readonly [number, number], nCand = 40): PairResult<C> | null {
+export function findPair<C>(
+  rng: Rng,
+  sc: Scenario<C>,
+  target: Category,
+  sizes: readonly [number, number],
+  nCand = 40,
+): PairResult<C> | null {
   const base = sc.answers([]);
   if (base.size < 2) return null;
   const ok = (a: Set<string>) => a.size >= 1 && (!sc.ok || sc.ok(a));
@@ -111,7 +128,7 @@ export function findPair<C>(rng: Rng, sc: Scenario<C>, target: Category, sizes: 
     const size = rng.int(sizes[0], Math.min(sizes[1], sc.atoms.length));
     const cl = rng.sample(sc.atoms, size);
     const keys = cl.map((c) => sc.key(c));
-    const k = [...keys].sort().join('|');
+    const k = [...keys].sort().join("|");
     if (seen.has(k)) continue;
     seen.add(k);
     if (sc.accept && !sc.accept(cl)) continue;
@@ -122,7 +139,8 @@ export function findPair<C>(rng: Rng, sc: Scenario<C>, target: Category, sizes: 
     cands.push({ cl, keys: new Set(keys), ans });
   }
   const pairs: [number, number][] = [];
-  for (let i = 0; i < cands.length; i++) for (let j = 0; j < cands.length; j++) if (i !== j) pairs.push([i, j]);
+  for (let i = 0; i < cands.length; i++)
+    for (let j = 0; j < cands.length; j++) if (i !== j) pairs.push([i, j]);
   for (const [i, j] of rng.shuffle(pairs)) {
     const A = cands[i];
     const B = cands[j];
@@ -142,10 +160,18 @@ export function findPair<C>(rng: Rng, sc: Scenario<C>, target: Category, sizes: 
       if (sB) continue;
       // together they should still narrow things down, as in real questions
       if ([...both].some(isSentinel)) continue;
-      if (!sc.openBase && both.size >= Math.min(A.ans.size, B.ans.size)) continue;
+      if (!sc.openBase && both.size >= Math.min(A.ans.size, B.ans.size))
+        continue;
     }
     if (categoryOf(sI, sII, sB) !== target) continue;
-    return { I: A.cl, II: B.cl, ansI: A.ans, ansII: B.ans, ansBoth: both, base };
+    return {
+      I: A.cl,
+      II: B.cl,
+      ansI: A.ans,
+      ansII: B.ans,
+      ansBoth: both,
+      base,
+    };
   }
   return null;
 }
@@ -165,25 +191,60 @@ export interface DsDraft<F> {
   res: PairResult<unknown>;
 }
 
-export function sizesFor(d: Difficulty, easy: [number, number], medium: [number, number], hard: [number, number], extreme: [number, number]): [number, number] {
-  return d === 'easy' ? easy : d === 'medium' ? medium : d === 'hard' ? hard : extreme;
+export function sizesFor(
+  d: Difficulty,
+  easy: [number, number],
+  medium: [number, number],
+  hard: [number, number],
+  extreme: [number, number],
+): [number, number] {
+  return d === "easy"
+    ? easy
+    : d === "medium"
+      ? medium
+      : d === "hard"
+        ? hard
+        : extreme;
 }
 
 /** "P, Q and R" */
 export function listAnd(xs: readonly string[]): string {
-  if (xs.length <= 1) return xs.join('');
-  return `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`;
+  if (xs.length <= 1) return xs.join("");
+  return `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`;
 }
 
 /** "P, Q or R" */
 export function listOr(xs: readonly string[]): string {
-  if (xs.length <= 1) return xs.join('');
-  return `${xs.slice(0, -1).join(', ')} or ${xs[xs.length - 1]}`;
+  if (xs.length <= 1) return xs.join("");
+  return `${xs.slice(0, -1).join(", ")} or ${xs[xs.length - 1]}`;
 }
 
-export const NUM_WORD = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
-export const ORD_WORD = ['zeroth', 'first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh'];
-export const CAP_NUM_WORD = NUM_WORD.map((w) => w[0].toUpperCase() + w.slice(1));
+export const NUM_WORD = [
+  "zero",
+  "one",
+  "two",
+  "three",
+  "four",
+  "five",
+  "six",
+  "seven",
+  "eight",
+  "nine",
+  "ten",
+];
+export const ORD_WORD = [
+  "zeroth",
+  "first",
+  "second",
+  "third",
+  "fourth",
+  "fifth",
+  "sixth",
+  "seventh",
+];
+export const CAP_NUM_WORD = NUM_WORD.map(
+  (w) => w[0].toUpperCase() + w.slice(1),
+);
 
 export function perms(n: number): number[][] {
   const out: number[][] = [];

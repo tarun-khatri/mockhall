@@ -146,6 +146,11 @@ function nextIndex(a: Attempt): number {
   return (a.currentIndex + 1) % len;
 }
 
+/** Save the current selection and stay on the question (used before submitting from the last question). */
+export function saveCurrent(a: Attempt): Attempt {
+  return commit(a, false);
+}
+
 export function saveAndNext(a: Attempt): Attempt {
   const saved = commit(a, false);
   return enterQuestion(saved, a.currentSection, nextIndex(saved));

@@ -155,6 +155,8 @@ export default function Exam() {
   const qTime = (response?.activeMs ?? 0) + (activeFrom !== null ? Math.max(0, now - activeFrom) : 0);
   const bookmarked = (a.bookmarks ?? []).includes(qid);
   const lastInSection = a.currentIndex === sectionIds.length - 1;
+  // Last question of the last (or only) section: the primary action saves and opens the submit summary.
+  const lastQuestionOfTest = lastInSection && a.currentSection === a.config.sections.length - 1;
   const multi = a.config.sections.length > 1;
   const canPause = !a.config.strictTimer;
 
@@ -260,8 +262,17 @@ export default function Exam() {
             <button type="button" onClick={() => actions.clear()} className="min-h-12 rounded-[12px] border border-line px-1.5 text-[14px] leading-tight font-semibold text-ink">
               Clear response
             </button>
-            <button type="button" onClick={() => actions.saveNext()} className="min-h-12 rounded-[12px] bg-pen px-1.5 text-[15px] leading-tight font-semibold text-on-status">
-              Save &amp; next
+            <button
+              type="button"
+              onClick={() => {
+                if (lastQuestionOfTest) {
+                  actions.saveOnly();
+                  setSubmitOpen(true);
+                } else actions.saveNext();
+              }}
+              className="min-h-12 rounded-[12px] bg-pen px-1.5 text-[15px] leading-tight font-semibold text-on-status"
+            >
+              {lastQuestionOfTest ? 'Save & submit' : 'Save & next'}
             </button>
           </div>
         )}

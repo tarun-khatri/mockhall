@@ -48,6 +48,8 @@ interface ExamState {
   tick(now?: number): void;
   select(option: number): void;
   saveNext(): void;
+  /** Save the current answer without moving (last question → submit sheet). */
+  saveOnly(): void;
   markNext(): void;
   clear(): void;
   goTo(section: number, index: number): void;
@@ -215,6 +217,12 @@ export const useExam = create<ExamState>((set, get) => {
       if (!a || a.status !== 'in-progress') return;
       if (a.config.instantFeedback) commit(E.answerAndLock(a, option));
       else commit(E.toggleOption(a, option));
+    },
+
+    saveOnly() {
+      const a = get().attempt;
+      if (!a || a.status !== 'in-progress') return;
+      commit(E.saveCurrent(a));
     },
 
     saveNext() {

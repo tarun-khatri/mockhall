@@ -16,6 +16,7 @@ import {
   remainingMs,
   resume,
   saveAndNext,
+  saveCurrent,
   scoreAttempt,
   submit,
   toggleOption,
@@ -123,6 +124,16 @@ describe('palette status and the save rule', () => {
     a = saveAndNext(a);
     expect(a.currentSection).toBe(0);
     expect(a.currentIndex).toBe(0);
+  });
+
+  it('saving on the last question stays there (used by Save & submit)', () => {
+    let a = threeSections();
+    a = navigate(a, 0, 2).attempt;
+    a = toggleOption(a, 1);
+    a = saveCurrent(a);
+    expect(a.responses['s0q2'].selected).toBe(1);
+    expect(a.currentIndex).toBe(2);
+    expect(paletteStatus(a.responses['s0q2'])).toBe('answered');
   });
 
   it('practice instant feedback locks the answer', () => {

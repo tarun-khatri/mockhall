@@ -9,12 +9,16 @@
  * that changes nothing is not counted.
  */
 
-export type IoKind = 'word' | 'num';
-export type IoOp = { t: 'none' } | { t: 'add'; k: number } | { t: 'sub'; k: number } | { t: 'rev' };
+export type IoKind = "word" | "num";
+export type IoOp =
+  | { t: "none" }
+  | { t: "add"; k: number }
+  | { t: "sub"; k: number }
+  | { t: "rev" };
 export interface IoMove {
   kind: IoKind;
-  order: 'asc' | 'desc';
-  end: 'left' | 'right';
+  order: "asc" | "desc";
+  end: "left" | "right";
   op: IoOp;
 }
 export interface IoRule {
@@ -26,14 +30,14 @@ export const isNum = (t: string) => /^\d+$/.test(t);
 export function applyOp(tok: string, op: IoOp): string {
   const v = Number(tok);
   switch (op.t) {
-    case 'none':
+    case "none":
       return tok;
-    case 'add':
+    case "add":
       return String(v + op.k);
-    case 'sub':
+    case "sub":
       return String(v - op.k);
-    case 'rev':
-      return String(Number(tok.split('').reverse().join('')));
+    case "rev":
+      return String(Number(tok.split("").reverse().join("")));
   }
 }
 
@@ -47,14 +51,14 @@ function pick(mid: readonly string[], m: IoMove): number {
   let best = -1;
   for (let i = 0; i < mid.length; i++) {
     const t = mid[i];
-    if ((m.kind === 'num') !== isNum(t)) continue;
+    if ((m.kind === "num") !== isNum(t)) continue;
     if (best < 0) {
       best = i;
       continue;
     }
     const b = mid[best];
-    const less = m.kind === 'num' ? Number(t) < Number(b) : t < b;
-    if (m.order === 'asc' ? less : !less) best = i;
+    const less = m.kind === "num" ? Number(t) < Number(b) : t < b;
+    if (m.order === "asc" ? less : !less) best = i;
   }
   return best;
 }
@@ -68,7 +72,11 @@ export interface SimResult {
   midNoOp: boolean;
 }
 
-export function simulate(input: readonly string[], rule: IoRule, maxSteps = 30): SimResult {
+export function simulate(
+  input: readonly string[],
+  rule: IoRule,
+  maxSteps = 30,
+): SimResult {
   const st: State = { left: [], mid: input.slice(), right: [] };
   const lines: string[][] = [input.slice()];
   let midNoOp = false;
@@ -81,17 +89,18 @@ export function simulate(input: readonly string[], rule: IoRule, maxSteps = 30):
       if (i < 0) continue;
       acted++;
       const tok = st.mid[i];
-      const placedAt = m.end === 'left' ? 0 : st.mid.length - 1;
-      const out = m.kind === 'num' ? applyOp(tok, m.op) : tok;
+      const placedAt = m.end === "left" ? 0 : st.mid.length - 1;
+      const out = m.kind === "num" ? applyOp(tok, m.op) : tok;
       if (i === placedAt && out === tok) noOps++;
       st.mid.splice(i, 1);
-      if (m.end === 'left') st.left.push(out);
+      if (m.end === "left") st.left.push(out);
       else st.right.unshift(out);
     }
     if (!acted) break; // nothing of the required kinds left
     const line = [...st.left, ...st.mid, ...st.right];
     const prev = lines[lines.length - 1];
-    const same = line.length === prev.length && line.every((t, j) => t === prev[j]);
+    const same =
+      line.length === prev.length && line.every((t, j) => t === prev[j]);
     if (st.mid.length === 0 && same) break; // final step changed nothing: not counted
     if (noOps > 0 && st.mid.length > 0) midNoOp = true;
     lines.push(line);
@@ -99,49 +108,77 @@ export function simulate(input: readonly string[], rule: IoRule, maxSteps = 30):
   return { lines, last: lines.length - 1, midNoOp };
 }
 
-const OPS: IoOp[] = [{ t: 'none' }, { t: 'rev' }, ...[1, 2, 3, 4, 5, 6, 7, 8, 9].flatMap((k) => [{ t: 'add', k } as IoOp, { t: 'sub', k } as IoOp])];
+const OPS: IoOp[] = [
+  { t: "none" },
+  { t: "rev" },
+  ...[1, 2, 3, 4, 5, 6, 7, 8, 9].flatMap((k) => [
+    { t: "add", k } as IoOp,
+    { t: "sub", k } as IoOp,
+  ]),
+];
 
 /** Every single move and every word+number pair of moves (both orders): the family a solver could infer. */
 export function stepFamily(): IoMove[][] {
   const words: IoMove[] = [];
   const nums: IoMove[] = [];
-  for (const order of ['asc', 'desc'] as const)
-    for (const end of ['left', 'right'] as const) {
-      words.push({ kind: 'word', order, end, op: { t: 'none' } });
-      for (const op of OPS) nums.push({ kind: 'num', order, end, op });
+  for (const order of ["asc", "desc"] as const)
+    for (const end of ["left", "right"] as const) {
+      words.push({ kind: "word", order, end, op: { t: "none" } });
+      for (const op of OPS) nums.push({ kind: "num", order, end, op });
     }
   const out: IoMove[][] = [...words.map((m) => [m]), ...nums.map((m) => [m])];
   for (const w of words) for (const n of nums) out.push([w, n], [n, w]);
   return out;
 }
 
-const eqLine = (a: readonly string[], b: readonly string[]) => a.length === b.length && a.every((t, i) => t === b[i]);
+const eqLine = (a: readonly string[], b: readonly string[]) =>
+  a.length === b.length && a.every((t, i) => t === b[i]);
 
 /**
  * All complete step sequences of family rules (cycle length 1 or 2) that reproduce the shown steps.
  * The shown steps determine the machine iff every returned sequence is identical.
  */
-export function consistentRuns(input: readonly string[], shown: readonly (readonly string[])[]): string[][][] {
+export function consistentRuns(
+  input: readonly string[],
+  shown: readonly (readonly string[])[],
+): string[][][] {
   // moves on a kind absent from the input never act, so rules differing only there behave identically
   const hasW = input.some((t) => !isNum(t));
   const hasN = input.some(isNum);
-  const fam = stepFamily().filter((x) => x.every((m) => (m.kind === 'word' ? hasW : hasN)));
+  const fam = stepFamily().filter((x) =>
+    x.every((m) => (m.kind === "word" ? hasW : hasN)),
+  );
+  // A solver only infers moves it can see: rules with a move that changes nothing in the shown steps are out.
   const fits = (rule: IoRule) => {
     const sim = simulate(input, rule, shown.length);
-    return sim.lines.length > shown.length && shown.every((l, i) => eqLine(sim.lines[i + 1], l));
+    return (
+      !sim.midNoOp &&
+      sim.lines.length > shown.length &&
+      shown.every((l, i) => eqLine(sim.lines[i + 1], l))
+    );
   };
   const s1 = fam.filter((x) => {
     const sim = simulate(input, { cycle: [x] }, 1);
-    return sim.lines.length > 1 && eqLine(sim.lines[1], shown[0]);
+    return (
+      !sim.midNoOp && sim.lines.length > 1 && eqLine(sim.lines[1], shown[0])
+    );
   });
   const runs: string[][][] = [];
   for (const x of s1) {
     if (fits({ cycle: [x] })) runs.push(simulate(input, { cycle: [x] }).lines);
-    for (const y of fam) if (fits({ cycle: [x, y] })) runs.push(simulate(input, { cycle: [x, y] }).lines);
+    for (const y of fam)
+      if (fits({ cycle: [x, y] }))
+        runs.push(simulate(input, { cycle: [x, y] }).lines);
   }
   return runs;
 }
 
 export function sameRuns(runs: readonly string[][][]): boolean {
-  return runs.length > 0 && runs.every((r) => r.length === runs[0].length && r.every((l, i) => eqLine(l, runs[0][i])));
+  return (
+    runs.length > 0 &&
+    runs.every(
+      (r) =>
+        r.length === runs[0].length && r.every((l, i) => eqLine(l, runs[0][i])),
+    )
+  );
 }
