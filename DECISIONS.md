@@ -21,3 +21,12 @@ One line each: assumption or default → reason.
 - Authored items are verified per content hash → editing an item after blind solve un-verifies it and fails the build.
 - Misspelt-words dictionary is dev-only → runtime ships only vetted variants (bundle budget).
 - Phase 1 English mock slot "word usage or match the column (1)" is filled by a filler until those chapters ship in Phase 2.
+- Light-theme --answered/--not-answered darkened (#137F51, #C43B31) → spec values fall just under WCAG AA 4.5:1 with white text / on paper.
+- DI chart series use the validated dataviz reference slots (blue/orange/aqua); every value is printed on the chart (exam fidelity), which also covers aqua's sub-3:1 contrast.
+- A generator ships only if its independent verifier and property suite exist (scripts/build-banks.ts writes src/content/verified-generators.json); unfinished chapters show as "coming soon".
+- Lint: style-only rules (no-useless-assignment, prefer-const) are warnings; correctness rules (hooks, Math.random/Date bans in content, unused vars) block CI.
+- Sections may be ended early from the palette ("End section") with a warning that the real exam makes you wait — saves practice time; no going back either way.
+- The 3-second section interstitial is added before the next section's clock starts, so every section keeps its full 20:00.
+- Simplification: approximation weight lowered to ~9% and squares raised to 45² per research (all 2024–26 items were exact).
+- "All correct"/"No error"-type keys kept rare (~8–15%) per research.
+- Playwright uses the system Chrome locally (bundled Chromium download is blocked on this machine); CI installs Chromium.

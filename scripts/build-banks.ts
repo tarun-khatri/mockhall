@@ -76,11 +76,18 @@ async function labelsFor(chapter: string): Promise<Record<string, string>> {
   }
 }
 
+// Bank subtypes whose sets failed CI re-verification are never served until fixed (a wrong key is a P0 bug).
+const QUARANTINE = new Set<string>(process.env.BANK_QUARANTINE?.split(',').filter(Boolean) ?? ['puzzles/box']);
+
 for (const chapter of ['seating', 'puzzles']) {
   const dir = join(banksDir, chapter);
   if (!existsSync(dir)) continue;
   const labels = await labelsFor(chapter);
   for (const name of readdirSync(dir).filter((n) => n.endsWith('.json') && !/^(index|manifest)\.json$/.test(n)).sort()) {
+    if (QUARANTINE.has(`${chapter}/${name.split('.')[0]}`)) {
+      console.warn(`! banks/${chapter}/${name}: quarantined (awaiting re-verification) — not served`);
+      continue;
+    }
     const path = join(dir, name);
     const raw = readFileSync(path);
     const json = JSON.parse(raw.toString('utf8'));
