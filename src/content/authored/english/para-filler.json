@@ -768,10 +768,10 @@
       "key": "pf-032",
       "subtype": "missing-sentence",
       "difficulty": "medium",
-      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nNeighbourhood *kirana* stores were expected to lose out when large online grocery platforms arrived. ______ They deliver to regular customers within minutes, give informal credit and know what each family usually buys. Many have also started accepting orders on messaging apps, combining old relationships with new technology.",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nNeighbourhood *kirana* stores were expected to lose out when large online grocery platforms arrived. ______ The shopkeeper knows what each family usually buys, sends goods round to regular customers within minutes and gives credit on trust until the end of the month. Many such stores have also started taking orders on messaging apps, combining old relationships with new technology.",
       "options": [
         "Most of them have since closed down in every city.",
-        "Online platforms offer large discounts during festivals.",
+        "Online platforms have since taken over almost all grocery sales.",
         "Customers are happy to wait several days for deliveries.",
         "*Kirana* stores usually sell only fresh vegetables.",
         "Many of them, however, have held their ground by offering what big platforms cannot easily match."
@@ -779,10 +779,10 @@
       "answerIndex": 4,
       "solution": {
         "steps": [
-          "The sentences after the blank list the stores' strengths, so the blank must turn from \"expected to lose out\" to \"held their ground\"; the \"however\" sentence makes that turn.",
-          "\"Closed down\" contradicts the stores' continuing business."
+          "The sentences after the blank describe what the local shopkeeper offers and how such stores are adapting, so the blank must turn from \"expected to lose out\" to \"held their ground\"; the \"however\" sentence makes that turn and sets up the list of strengths.",
+          "\"Closed down\" and \"taken over almost all grocery sales\" both contradict \"Many such stores have also started taking orders\"."
         ],
-        "trap": "After the discounts sentence, \"They deliver … give informal credit\" would wrongly describe the online platforms."
+        "trap": "The \"platforms have taken over\" option follows naturally from the first sentence, but it leaves no surviving stores for the rest of the paragraph to describe."
       },
       "tags": [
         "para:contrast",

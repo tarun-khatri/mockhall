@@ -100,7 +100,7 @@ function pickRule(rng: Rng, sub: string, d: Difficulty): { rule: IoRule; words: 
   }
   // mixed
   const half = { easy: 3, medium: 4, hard: 4, extreme: 5 }[d];
-  if (d === 'hard' && rng.chance(0.5)) {
+  if (d === 'easy' || (d === 'hard' && rng.chance(0.5))) {
     const e = end();
     const cycle = [[mv('word', order(), e)], [mv('num', order(), e === 'left' ? 'right' : 'left')]];
     return { rule: { cycle: rng.chance(0.5) ? cycle : [cycle[1], cycle[0]] }, words: half, nums: half };
