@@ -1,10 +1,11 @@
 /// <reference lib="webworker" />
 /** Fresh puzzle sets generated off the main thread (SPEC 7.2). Same pure generators the property suites verify. */
 import { generator as puzzles } from './generators/reasoning/puzzles';
+import { generator as seating } from './generators/reasoning/seating';
 import type { ChapterGenerator } from './generators/types';
 import type { Difficulty } from './types';
 
-const GENERATORS: Record<string, ChapterGenerator> = { puzzles };
+const GENERATORS: Record<string, ChapterGenerator> = { puzzles, seating };
 
 interface Req {
   id: number;

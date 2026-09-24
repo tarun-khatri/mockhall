@@ -5,7 +5,7 @@
 import type { Difficulty, Item } from './types';
 
 /** Chapters with a runtime generator available in the Worker. */
-export const WORKER_CHAPTERS = new Set(['puzzles']);
+export const WORKER_CHAPTERS = new Set(['puzzles', 'seating']);
 
 /** Cells whose worst-case build time is too slow for phones — always served from the bank. */
 const SLOW = new Set(['puzzles:month:hard', 'puzzles:month:extreme', 'puzzles:comparison:extreme']);
@@ -39,6 +39,7 @@ function getWorker(): Worker | null {
 export function canGenerateFresh(chapter: string, difficulty: Difficulty, subtype?: string): boolean {
   if (!WORKER_CHAPTERS.has(chapter)) return false;
   if (subtype && SLOW.has(`${chapter}:${subtype}:${difficulty}`)) return false;
+  if (chapter === 'seating' && (difficulty === 'extreme' || subtype === 'linear-uncertain')) return false;
   return typeof Worker !== 'undefined';
 }
 
