@@ -11,7 +11,7 @@ const ROOT = join(import.meta.dirname, '..');
 const rows: string[] = [];
 const details: string[] = [];
 let totalFinal = 0;
-for (const subjectDir of ['english', 'reasoning']) {
+for (const subjectDir of ['english', 'reasoning', 'quant']) {
 const dir = join(ROOT, 'src', 'content', 'authored', subjectDir);
 if (!existsSync(dir)) continue;
 

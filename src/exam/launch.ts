@@ -3,6 +3,7 @@ import { assemble, targetTotalSeconds } from './assemble';
 import { chapterSeconds } from './configs';
 import type { SectionInput } from './engine';
 import { useExam } from './store';
+import { readLog } from '../lib/storage';
 
 /** Fill in counts (and chapter-test timing) from the assembled sections. */
 export function finaliseConfig(config: TestConfig, sections: SectionInput[]): TestConfig {
@@ -18,13 +19,26 @@ export function finaliseConfig(config: TestConfig, sections: SectionInput[]): Te
   };
 }
 
-export async function prepare(config: TestConfig): Promise<{ config: TestConfig; sections: SectionInput[] }> {
-  const sections = await assemble(config);
+/**
+ * `avoidSeen`: for a new chapter practice/test started on this device, skip questions already attempted here.
+ * Shared links and mocks leave it off so the same config always yields the same paper.
+ */
+export async function prepare(config: TestConfig, avoidSeen = false): Promise<{ config: TestConfig; sections: SectionInput[] }> {
+  const sections = await assemble(config, avoidSeen ? await attemptedIds() : undefined);
   return { config: finaliseConfig(config, sections), sections };
 }
 
+async function attemptedIds(): Promise<Set<string> | undefined> {
+  try {
+    return new Set((await readLog()).filter((e) => e.outcome !== 'skipped').map((e) => e.qid));
+  } catch {
+    return undefined;
+  }
+}
+
 export async function launch(config: TestConfig, sections?: SectionInput[]): Promise<string> {
-  const ready = sections ? { config: finaliseConfig(config, sections), sections } : await prepare(config);
+  const fresh = config.kind === 'practice' || config.kind === 'chapter-test';
+  const ready = sections ? { config: finaliseConfig(config, sections), sections } : await prepare(config, fresh);
   return useExam.getState().begin(ready.config, ready.sections);
 }
 

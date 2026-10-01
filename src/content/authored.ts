@@ -42,6 +42,8 @@ export function authoredHash(entry: AuthoredQuestion | AuthoredSet | ParaJumbleS
   return shortHash(stable({ p: entry.prompt, o: entry.options, a: entry.answerIndex }), 12);
 }
 
+const SINGLE_TARGET = { english: 'english-single', reasoning: 'critical-reasoning', quant: 'arithmetic' } as const;
+
 const ORD = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'];
 
 function authoredQuestion(
@@ -74,7 +76,7 @@ export function singleItems(chapter: ChapterId, file: AuthoredFile, passed: (key
   for (const q of file.items ?? []) {
     const at = passed(q.key);
     if (!at) continue;
-    out.push({ questions: [authoredQuestion(chapter, q, q.difficulty, at, { targetSeconds: targetSeconds(subj(chapter) === 'reasoning' ? 'critical-reasoning' : 'english-single', q.difficulty) })] });
+    out.push({ questions: [authoredQuestion(chapter, q, q.difficulty, at, { targetSeconds: targetSeconds(SINGLE_TARGET[subj(chapter)], q.difficulty) })] });
   }
   return out;
 }

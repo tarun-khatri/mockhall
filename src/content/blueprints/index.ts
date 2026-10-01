@@ -55,6 +55,7 @@ export const ARITHMETIC: SlotSource[] = (
     'mixtures',
     'mensuration',
     'pipes-cisterns',
+    'number-problems',
   ] as ChapterId[]
 ).map((chapter) => ({ chapter }));
 

@@ -35,7 +35,8 @@ export type QuantChapter =
   | 'mensuration'
   | 'data-interpretation'
   | 'ages'
-  | 'mixtures';
+  | 'mixtures'
+  | 'number-problems';
 
 export type ReasoningChapter =
   | 'coding-decoding'

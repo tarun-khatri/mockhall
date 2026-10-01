@@ -19,7 +19,7 @@ const allowUnverified = process.argv.includes('--allow-unverified') || process.e
 let failed = false;
 
 // 1. Authored content
-for (const authoredDir of ['english', 'reasoning'].map((s) => join(ROOT, 'src', 'content', 'authored', s))) {
+for (const authoredDir of ['english', 'reasoning', 'quant'].map((s) => join(ROOT, 'src', 'content', 'authored', s))) {
   if (!existsSync(authoredDir)) continue;
   for (const name of readdirSync(authoredDir).filter((n) => n.endsWith('.json'))) {
     const chapter = name.replace(/\.json$/, '');

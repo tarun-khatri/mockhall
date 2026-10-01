@@ -157,18 +157,25 @@ export async function assembleBlueprint(bp: SectionBlueprint, seed: string, mix:
   return { questions: out.questions, sets: out.sets };
 }
 
+/**
+ * `avoid`: question ids the user has already attempted. They are skipped while the draw budget lasts, so practice
+ * serves unseen questions first and only repeats once a bank runs dry.
+ */
 export async function assembleChapter(
   chapter: ChapterId,
   count: number,
   difficulty: Difficulty | 'mixed',
   subtypes: string[] | undefined,
   seed: string,
+  avoid?: ReadonlySet<string>,
 ): Promise<SectionInput> {
   const provider = await getProvider(chapter);
   const out = new Collector();
   let tries = 0;
   let k = 0;
-  while (out.questions.length < count && tries < count * 6 + 20) {
+  const budget = count * 6 + 20;
+  const avoidBudget = avoid?.size ? count * 12 + 40 : 0;
+  while (out.questions.length < count && tries < budget + avoidBudget) {
     tries++;
     const itemSeed = `${seed}:${chapter}:${k++}`;
     const rng = makeRng(itemSeed);
@@ -183,6 +190,7 @@ export async function assembleChapter(
       continue;
     }
     if (out.has(item)) continue;
+    if (avoid && tries <= avoidBudget && item.questions.some((q) => avoid.has(q.id))) continue;
     out.add(takeFromItem(item, count - out.questions.length));
   }
   if (!out.questions.length) throw new Error('No questions available for this selection yet.');
@@ -190,7 +198,7 @@ export async function assembleChapter(
 }
 
 /** Assemble every section of a config. */
-export async function assemble(config: TestConfig): Promise<SectionInput[]> {
+export async function assemble(config: TestConfig, avoid?: ReadonlySet<string>): Promise<SectionInput[]> {
   const sections: SectionInput[] = [];
   for (let i = 0; i < config.sections.length; i++) {
     const sec = config.sections[i];
@@ -199,7 +207,7 @@ export async function assemble(config: TestConfig): Promise<SectionInput[]> {
       sections.push(await assembleBlueprint(bp, `${config.seed}:${sec.subject}`, config.difficultyMix));
     } else {
       if (!config.chapter) throw new Error('Chapter test without a chapter');
-      sections.push(await assembleChapter(config.chapter, sec.count, config.difficulty ?? 'mixed', config.subtypes, config.seed));
+      sections.push(await assembleChapter(config.chapter, sec.count, config.difficulty ?? 'mixed', config.subtypes, config.seed, avoid));
     }
   }
   return sections;

@@ -44,6 +44,7 @@ export const CHAPTERS: readonly ChapterMeta[] = [
   { id: 'averages', subject: 'quant', title: 'Averages', priority: 'P1', method: 'GEN', itemKind: 'single', examWeight: 1, phase: 1 },
   { id: 'partnership', subject: 'quant', title: 'Partnership', priority: 'P1', method: 'GEN', itemKind: 'single', examWeight: 1, phase: 1 },
   { id: 'mixtures', subject: 'quant', title: 'Mixture & alligation', priority: 'P1', method: 'GEN', itemKind: 'single', examWeight: 1, phase: 1 },
+  { id: 'number-problems', subject: 'quant', title: 'Problems on numbers & equations', priority: 'P1', method: 'AUTH', itemKind: 'single', examWeight: 1.5, phase: 2 },
   { id: 'number-series', subject: 'quant', title: 'Number series', priority: 'P2', method: 'GEN', itemKind: 'single', examWeight: 2.5, phase: 1 },
   { id: 'pipes-cisterns', subject: 'quant', title: 'Pipes & cisterns', priority: 'P2', method: 'GEN', itemKind: 'single', examWeight: 0.5, phase: 1 },
   { id: 'mensuration', subject: 'quant', title: 'Mensuration', priority: 'P2', method: 'GEN', itemKind: 'single', examWeight: 0.5, phase: 1 },

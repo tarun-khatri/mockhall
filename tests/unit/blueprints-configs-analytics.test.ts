@@ -4,6 +4,8 @@ import { decodeConfig, encodeConfig, fixedMock, chapterConfig, chapterSeconds } 
 import { median, stat, weakAreas, mastery } from '../../src/analytics';
 import type { LogEntry } from '../../src/lib/storage';
 import { assembleChapter } from '../../src/exam/assemble';
+import { mixedProvider, type ChapterProvider } from '../../src/content/providers';
+import type { Difficulty, Item } from '../../src/content/types';
 
 describe('blueprints', () => {
   it('every blueprint sums to its section total', () => {
@@ -74,5 +76,55 @@ describe('assembly', () => {
     const a = await assembleChapter('interest', 10, 'medium', undefined, 'same-seed');
     const b = await assembleChapter('interest', 10, 'medium', undefined, 'same-seed');
     expect(a.questions.map((q) => q.id)).toEqual(b.questions.map((q) => q.id));
+  });
+});
+
+describe('unseen-first practice', () => {
+  it('skips already attempted questions while unseen ones remain', async () => {
+    const first = await assembleChapter('error-spotting', 10, 'medium', undefined, 'unseen');
+    const avoid = new Set(first.questions.map((q) => q.id));
+    const second = await assembleChapter('error-spotting', 10, 'medium', undefined, 'unseen', avoid);
+    expect(second.questions).toHaveLength(10);
+    expect(second.questions.filter((q) => avoid.has(q.id))).toHaveLength(0);
+  });
+  it('still fills the test once the bank has run dry', async () => {
+    const all = await assembleChapter('error-spotting', 200, 'extreme', undefined, 'dry');
+    const again = await assembleChapter('error-spotting', 5, 'extreme', undefined, 'dry-2', new Set(all.questions.map((q) => q.id)));
+    expect(again.questions).toHaveLength(5);
+  });
+});
+
+describe('mixed generator + authored provider', () => {
+  const fake = (name: string, subtypes: string[], difficulties: Difficulty[]): ChapterProvider => ({
+    chapter: 'percentage',
+    subtypes: subtypes.map((id) => ({ id, label: id })),
+    difficulties,
+    async item(seed, difficulty, subtype) {
+      return { questions: [{ id: `${name}:${subtype ?? '-'}:${difficulty}:${seed}` }] } as unknown as Item;
+    },
+  });
+  const gen = fake('gen', ['base-change', 'election'], ['easy', 'medium', 'hard', 'extreme']);
+  const auth = fake('auth', ['exam-style'], ['medium', 'hard']);
+  const mixed = mixedProvider(gen, auth);
+  const from = async (seed: string, d: Difficulty, st?: string) => (await mixed.item(seed, d, st)).questions[0].id.split(':')[0];
+
+  it('routes explicit subtypes to their owner', async () => {
+    expect(await from('s', 'medium', 'exam-style')).toBe('auth');
+    expect(await from('s', 'medium', 'election')).toBe('gen');
+    expect(mixed.subtypes.map((s) => s.id)).toEqual(['base-change', 'election', 'exam-style']);
+  });
+  it('mixes both sides only where the authored bank has the difficulty', async () => {
+    const draws = await Promise.all(Array.from({ length: 400 }, (_, i) => from(`k${i}`, 'hard')));
+    const share = draws.filter((d) => d === 'auth').length / draws.length;
+    expect(share).toBeGreaterThan(0.3);
+    expect(share).toBeLessThan(0.5);
+    const easy = await Promise.all(Array.from({ length: 50 }, (_, i) => from(`k${i}`, 'easy')));
+    expect(easy.every((d) => d === 'gen')).toBe(true);
+  });
+  it('is deterministic in the seed', async () => {
+    expect(await mixed.item('same', 'medium')).toEqual(await mixed.item('same', 'medium'));
+  });
+  it('falls back to the generator when the bank is empty', () => {
+    expect(mixedProvider(gen, fake('auth', [], []))).toBe(gen);
   });
 });

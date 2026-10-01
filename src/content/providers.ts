@@ -84,12 +84,15 @@ export function getProvider(chapter: ChapterId): Promise<ChapterProvider> {
 async function load(chapter: ChapterId): Promise<ChapterProvider> {
   if (BANK_CHAPTERS.has(chapter)) return bankProvider(chapter);
   const gen = genPaths.get(chapter);
+  const authored = authoredPaths.get(chapter);
   if (gen) {
     const mod = await generatorModules[gen]();
     if (!mod.generator) throw new Error(`No generator exported for ${chapter}`);
-    return generatorProvider(mod.generator);
+    const generated = generatorProvider(mod.generator);
+    // Generator chapters may also carry a hand-written, blind-verified exam-style bank (authored/quant/*.json).
+    if (authored && (qaPaths.has(chapter) || import.meta.env.DEV)) return mixedProvider(generated, await authoredProvider(chapter, authored));
+    return generated;
   }
-  const authored = authoredPaths.get(chapter);
   if (authored) return authoredProvider(chapter, authored);
   throw new Error(`${chapterMeta(chapter).title} is coming soon.`);
 }
@@ -149,7 +152,39 @@ async function authoredProvider(chapter: ChapterId, path: string): Promise<Chapt
   };
 }
 
+/** Share of unspecified draws that come from the authored bank when a chapter has both. */
+export const AUTHORED_SHARE = 0.4;
+
+/**
+ * Generator + authored bank. An explicit subtype goes to whichever side owns it; otherwise a seeded coin decides,
+ * and the authored side is used only when it has questions at exactly the requested difficulty.
+ */
+export function mixedProvider(generated: ChapterProvider, authored: ChapterProvider): ChapterProvider {
+  if (!authored.difficulties.length) return generated;
+  const own = new Set(authored.subtypes.map((s) => s.id));
+  const subtypes: SubtypeDef[] = [
+    ...generated.subtypes,
+    ...authored.subtypes.filter((s) => !generated.subtypes.some((g) => g.id === s.id)).map((s) => ({ ...s, difficulties: authored.difficulties })),
+  ];
+  return {
+    chapter: generated.chapter,
+    subtypes,
+    difficulties: ORDER.filter((d) => generated.difficulties.includes(d) || authored.difficulties.includes(d)),
+    async item(seed, difficulty, subtype) {
+      if (subtype) return own.has(subtype) ? authored.item(seed, difficulty, subtype) : generated.item(seed, difficulty, subtype);
+      const useAuthored = authored.difficulties.includes(difficulty) && makeRng(`mix:${seed}`).next() < AUTHORED_SHARE;
+      return useAuthored ? authored.item(seed, difficulty) : generated.item(seed, difficulty);
+    },
+  };
+}
+
+const LABELS: Record<string, string> = {
+  'exam-style': 'Exam-style word problems',
+  'three-word-rearrangement': '3-word rearrangement',
+};
+
 function labelFor(id: string): string {
+  if (LABELS[id]) return LABELS[id];
   const s = id.replace(/-/g, ' ');
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
