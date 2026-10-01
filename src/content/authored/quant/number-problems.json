@@ -2494,6 +2494,624 @@
         "template:hcf-lcm-bells",
         "num:hcf-lcm"
       ]
+    },
+    {
+      "key": "np-097",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The sum of two numbers is 225, and 45% of the first number is equal to 30% of the second. What is the difference between the two numbers?",
+      "options": [
+        "45",
+        "60",
+        "75",
+        "90",
+        "135"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "45% of A = 30% of B → A : B = 30 : 45 = 2 : 3.",
+          "A = 225 × 2/5 = 90 and B = 135, so the difference is **45**."
+        ],
+        "trap": "90 and 135 are the two numbers themselves; the question asks for their difference.",
+        "shortcut": "Difference = 1 part out of 5: 225 ÷ 5 = 45."
+      },
+      "tags": [
+        "template:percent-equal",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-098",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two numbers differ by 54. If 15% of the larger number is taken away from it and added to the smaller number, the two numbers become equal. What is the smaller number?",
+      "options": [
+        "108",
+        "126",
+        "153",
+        "180",
+        "306"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After the transfer: L − 0.15L = S + 0.15L → S = 0.7L.",
+          "L − S = 0.3L = 54 → L = 180, so S = **126**.",
+          "Check: 15% of 180 = 27; 180 − 27 = 153 = 126 + 27."
+        ],
+        "trap": "306 comes from setting 15% of the larger number equal to 54; the transfer closes the gap from both sides, so 30% of L = 54. 153 is the common value after the transfer."
+      },
+      "tags": [
+        "template:percent-equal",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-099",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A zoo charges ₹120 for an adult and ₹70 for a child. A school group of 90 got a 10% discount on its total bill and paid ₹6,525. How many children were in the group?",
+      "options": [
+        "19",
+        "61",
+        "66",
+        "71",
+        "76"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Bill before discount = 6,525 ÷ 0.9 = ₹7,250.",
+          "Let a be the adults: 120a + 70(90 − a) = 7,250 → 50a = 950 → a = 19.",
+          "Children = 90 − 19 = **71**."
+        ],
+        "trap": "19 is the number of adults. Using ₹6,525 as the full bill gives 50a = 225, which is not a whole number of people."
+      },
+      "tags": [
+        "template:adults-children",
+        "num:linear-equation",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-100",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A teacher shared 300 chocolates equally among the students present, and 12 chocolates were left over. Had 4 more students been present, each student would have got 2 chocolates fewer and 20 chocolates would have been left over. How many students were present?",
+      "options": [
+        "12",
+        "16",
+        "18",
+        "20",
+        "24"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let n students get q each: nq = 300 − 12 = 288 and (n + 4)(q − 2) = 300 − 20 = 280.",
+          "Expanding: 288 − 2n + 4q − 8 = 280 → n = 2q.",
+          "2q × q = 288 → q = 12, n = **24** (check: 28 × 10 = 280)."
+        ],
+        "trap": "12 is the number of chocolates each student got, not the number of students."
+      },
+      "tags": [
+        "template:sharing-absentees",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-101",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A zoo enclosure has only deer and peacocks, with 260 legs in all. If the numbers of deer and peacocks were interchanged, there would be 40 fewer legs. How many peacocks are there?",
+      "options": [
+        "20",
+        "30",
+        "40",
+        "50",
+        "80"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "4d + 2p = 260 and 4p + 2d = 220.",
+          "Adding: 6(d + p) = 480 → d + p = 80. Subtracting: 2(d − p) = 40 → d − p = 20.",
+          "Deer = 50, peacocks = **30**."
+        ],
+        "trap": "50 is the number of deer and 80 the total number of animals (heads)."
+      },
+      "tags": [
+        "template:wheels-count",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-102",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "At a concert, front-row tickets cost ₹800 and general tickets ₹300. Front-row tickets made up 25% of all the tickets sold, and the total collection was ₹2,55,000. How many general tickets were sold?",
+      "options": [
+        "150",
+        "300",
+        "360",
+        "400",
+        "450"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let T tickets be sold: 0.25T × 800 + 0.75T × 300 = 200T + 225T = 425T.",
+          "425T = 2,55,000 → T = 600.",
+          "General tickets = 75% of 600 = **450**."
+        ],
+        "trap": "150 is the number of front-row tickets (25% of 600)."
+      },
+      "tags": [
+        "template:tickets-two-prices",
+        "num:linear-equation",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-103",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The digits of a three-digit number add up to 17, and its hundreds digit is 1 less than the sum of its tens and units digits. When the hundreds and units digits are interchanged, the number decreases by 495. What is the number?",
+      "options": [
+        "368",
+        "683",
+        "764",
+        "836",
+        "863"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "h = t + u − 1 and h + t + u = 17 → 2h + 1 = 17 → h = 8, t + u = 9.",
+          "Interchanging hundreds and units: 99(h − u) = 495 → u = 3, so t = 6.",
+          "The number is **863** (863 − 368 = 495)."
+        ],
+        "trap": "368 is the number after the interchange. 836 also has digit sum 17 and 8 = 3 + 6 − 1, but interchanging gives 638, only 198 less."
+      },
+      "tags": [
+        "template:three-digit-number",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-104",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A test has 120 questions: 1 mark for each correct answer, 0.25 mark deducted for each wrong answer and nothing for an unattempted question. Anu attempted 100 questions and scored 75. Neha attempted 15 fewer questions than Anu but scored 5 marks more. How many wrong answers did Neha give?",
+      "options": [
+        "4",
+        "5",
+        "15",
+        "16",
+        "20"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Neha attempted 100 − 15 = 85 questions and scored 75 + 5 = 80.",
+          "c − 0.25(85 − c) = 80 → 1.25c = 101.25 → c = 81.",
+          "Wrong answers = 85 − 81 = **4**."
+        ],
+        "trap": "20 is Anu's number of wrong answers (80 right, 20 wrong); the question is about Neha."
+      },
+      "tags": [
+        "template:negative-marking",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-105",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The sum of two numbers is 22 and the sum of their reciprocals is $\\frac{11}{60}$. What is the sum of the squares of the two numbers?",
+      "options": [
+        "244",
+        "264",
+        "304",
+        "364",
+        "484"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "1/a + 1/b = (a + b)/ab → 22/ab = 11/60 → ab = 120.",
+          "a² + b² = (a + b)² − 2ab = 484 − 240 = **244** (the numbers are 10 and 12)."
+        ],
+        "trap": "364 subtracts ab (120) instead of 2ab from 484; 484 is just (a + b)²."
+      },
+      "tags": [
+        "template:sum-of-squares",
+        "num:squares",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-106",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A shopkeeper bought 90 items for ₹544: pens at 3 for ₹40 and pencils at 5 for ₹12. He sold all the pens at 2 for ₹30 and all the pencils at 4 for ₹12. What was his total profit?",
+      "options": [
+        "₹50",
+        "₹66",
+        "₹86",
+        "₹96",
+        "₹106"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let p pens: (40/3)p + (12/5)(90 − p) = 544 → 200p + 36(90 − p) = 8,160 → p = 30, pencils = 60.",
+          "Selling: 30 pens × ₹15 = ₹450; 60 pencils × ₹3 = ₹180; total ₹630.",
+          "Profit = 630 − 544 = **₹86**."
+        ],
+        "trap": "₹50 counts only the profit on the pens (450 − 400) and leaves out the ₹36 earned on the pencils (180 − 144)."
+      },
+      "tags": [
+        "template:purchase-two-items",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-107",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Three joggers start together from the same point on a circular track and run in the same direction, taking 252 seconds, 308 seconds and 198 seconds respectively to complete one round. When they are next together at the starting point, how many rounds will the three of them have completed in all?",
+      "options": [
+        "14",
+        "20",
+        "25",
+        "34",
+        "46"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "They are next together at the start after LCM(252, 308, 198) = 2,772 seconds (46 min 12 s).",
+          "Rounds: 2,772 ÷ 252 = 11, 2,772 ÷ 308 = 9, 2,772 ÷ 198 = 14.",
+          "Total = 11 + 9 + 14 = **34**."
+        ],
+        "trap": "14 is the fastest jogger's rounds alone; 46 is the time in minutes, not a count of rounds."
+      },
+      "tags": [
+        "template:hcf-lcm-track",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-108",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "$\\frac{3}{5}$ of $\\frac{2}{3}$ of a number exceeds $\\frac{1}{4}$ of $\\frac{4}{7}$ of the same number by 54. What is the number?",
+      "options": [
+        "175",
+        "210",
+        "245",
+        "280",
+        "360"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$\\frac{3}{5}$ × $\\frac{2}{3}$ = $\\frac{2}{5}$ and $\\frac{1}{4}$ × $\\frac{4}{7}$ = $\\frac{1}{7}$.",
+          "$\\frac{2}{5}$x − $\\frac{1}{7}$x = $\\frac{9}{35}$x = 54 → x = **210**."
+        ],
+        "trap": "360 ignores the 'of $\\frac{4}{7}$' and uses $\\frac{2}{5}$ − $\\frac{1}{4}$ = $\\frac{3}{20}$."
+      },
+      "tags": [
+        "template:fraction-of-number",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-109",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If 5 is added to the first of two numbers, the result is twice the second number. If 10 is subtracted from the second number, the result is one-fifth of the first number. What is the sum of the two numbers?",
+      "options": [
+        "15",
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "a + 5 = 2b and b − 10 = a/5 → a = 5b − 50.",
+          "5b − 50 + 5 = 2b → b = 15, a = 25.",
+          "Sum = **40** (check: 30 = 2 × 15; 5 = 25 ÷ 5)."
+        ],
+        "trap": "25 and 15 are the two numbers; the question asks for their sum."
+      },
+      "tags": [
+        "template:linear-two-numbers",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-110",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "An ATM dispensed ₹4,000 in 14 notes of ₹100, ₹200 and ₹500, giving as many ₹100 notes as ₹500 notes. How many ₹500 notes did it dispense?",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let there be x notes each of ₹100 and ₹500, and (14 − 2x) of ₹200.",
+          "100x + 500x + 200(14 − 2x) = 4,000 → 200x = 1,200 → x = **6**.",
+          "Check: 6 × 100 + 2 × 200 + 6 × 500 = 600 + 400 + 3,000 = ₹4,000."
+        ],
+        "trap": "2 is the number of ₹200 notes."
+      },
+      "tags": [
+        "template:notes-coins",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-111",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If the numerator of a fraction is doubled and its denominator is increased by 3, the fraction becomes 1. If instead the numerator is increased by 3 and the denominator is doubled, the fraction becomes $\\frac{4}{7}$. What is the fraction?",
+      "options": [
+        "$\\frac{4}{7}$",
+        "$\\frac{5}{8}$",
+        "$\\frac{7}{10}$",
+        "$\\frac{5}{7}$",
+        "$\\frac{8}{11}$"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the fraction be x/y: 2x = y + 3 → y = 2x − 3.",
+          "7(x + 3) = 4 × 2y = 8(2x − 3) → 7x + 21 = 16x − 24 → x = 5, y = 7.",
+          "The fraction is $\\frac{5}{7}$ (check: $\\frac{10}{10}$ = 1 and $\\frac{8}{14}$ = $\\frac{4}{7}$)."
+        ],
+        "trap": "$\\frac{4}{7}$ is the fraction after the second change, not the original."
+      },
+      "tags": [
+        "template:fraction-change",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-112",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A student was asked to find $\\frac{5}{16}$ of a number but found $\\frac{5}{6}$ of it instead, and his answer was 250 more than the correct answer. What was the correct answer?",
+      "options": [
+        "120",
+        "150",
+        "240",
+        "400",
+        "480"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$\\frac{5}{6}$x − $\\frac{5}{16}$x = (40 − 15)x/48 = $\\frac{25}{48}$x = 250 → x = 480.",
+          "Correct answer = $\\frac{5}{16}$ × 480 = **150**."
+        ],
+        "trap": "480 is the number itself and 400 the student's wrong answer; the question asks for the correct answer."
+      },
+      "tags": [
+        "template:wrong-operation",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-113",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The digits of a three-digit number add up to 12. Its hundreds digit is the average of its tens and units digits, and its tens digit is 4 more than its units digit. What is the number?",
+      "options": [
+        "246",
+        "264",
+        "462",
+        "624",
+        "642"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The hundreds digit is the average of the other two, so h + t + u = 3h = 12 → h = 4 and t + u = 8.",
+          "t − u = 4 → t = 6, u = 2. The number is **462**."
+        ],
+        "trap": "264 is the reversed number, and 642 and 624 put the 4 in the wrong place; only 462 has 4 in the hundreds place and tens = units + 4."
+      },
+      "tags": [
+        "template:three-digit-number",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-114",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "When some soldiers are arranged in a solid square, 32 soldiers are left over. To form a square with one more row and one more soldier in each row, 49 more soldiers would be needed. How many soldiers are there?",
+      "options": [
+        "1,551",
+        "1,568",
+        "1,600",
+        "1,617",
+        "1,632"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the side be n: n² + 32 = (n + 1)² − 49 → 2n + 1 = 81 → n = 40.",
+          "Soldiers = 40² + 32 = **1,632** (= 41² − 49)."
+        ],
+        "trap": "1,600 is the 40 × 40 square alone and leaves out the 32 extra soldiers."
+      },
+      "tags": [
+        "template:rows-arrangement",
+        "num:squares",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-115",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "₹1,000 is divided between Asha and Bina such that three-fifths of Asha's share and one-fourth of Bina's share together make ₹488. What is Bina's share?",
+      "options": [
+        "₹280",
+        "₹300",
+        "₹320",
+        "₹360",
+        "₹680"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let Asha get ₹A: 0.6A + 0.25(1,000 − A) = 488 → 0.35A = 238 → A = 680.",
+          "Bina's share = 1,000 − 680 = **₹320**."
+        ],
+        "trap": "₹680 is Asha's share."
+      },
+      "tags": [
+        "template:split-into-parts",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-116",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The LCM of two numbers is 12 times their HCF, and the sum of the HCF and the LCM is 403. If one of the numbers is 93, what is the other number?",
+      "options": [
+        "31",
+        "62",
+        "93",
+        "112",
+        "124"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "HCF + 12 × HCF = 403 → HCF = 31, LCM = 372.",
+          "Product of the numbers = HCF × LCM: other = 31 × 372 ÷ 93 = **124**."
+        ],
+        "trap": "31 is the HCF, not the other number; check 124: HCF(93, 124) = 31 and LCM = 372."
+      },
+      "tags": [
+        "template:hcf-lcm-numbers",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-117",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two numbers are in the ratio 3 : 4. If 6 is subtracted from each of them, the ratio becomes 2 : 3. What is the sum of the two numbers?",
+      "options": [
+        "18",
+        "24",
+        "35",
+        "40",
+        "42"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the numbers be 3k and 4k: 3(3k − 6) = 2(4k − 6) → 9k − 18 = 8k − 12 → k = 6.",
+          "The numbers are 18 and 24, so the sum is **42**."
+        ],
+        "trap": "18 and 24 are the two numbers themselves; 35 is the sum of 15 and 20 (k = 5), which gives 9 : 14 after subtracting 6, not 2 : 3."
+      },
+      "tags": [
+        "template:ratio-shift",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-118",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Three ropes of lengths 84 m, 120 m and 156 m are to be cut into pieces of equal length, each piece as long as possible, with nothing left over. How many pieces will there be in all?",
+      "options": [
+        "20",
+        "30",
+        "45",
+        "60",
+        "90"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The piece length is HCF(84, 120, 156) = 12 m.",
+          "Pieces = 84/12 + 120/12 + 156/12 = 7 + 10 + 13 = **30**."
+        ],
+        "trap": "60 uses 6 m pieces: 6 is a common factor of the lengths but not the highest one."
+      },
+      "tags": [
+        "template:hcf-lcm-containers",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-119",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "When 18 is added to a number, the result is 125% of the number. What is the number?",
+      "options": [
+        "72",
+        "80",
+        "90",
+        "96",
+        "108"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "x + 18 = 1.25x → 0.25x = 18 → x = **72**."
+        ],
+        "trap": "90 is the result after adding 18 (72 + 18), not the number itself."
+      },
+      "tags": [
+        "template:number-percent",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-120",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A taxi stand has only three-wheelers and four-wheelers: 36 vehicles with 124 wheels in all. How many three-wheelers are there?",
+      "options": [
+        "12",
+        "16",
+        "20",
+        "24",
+        "28"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let there be t three-wheelers: 3t + 4(36 − t) = 124.",
+          "144 − t = 124 → t = **20** (16 four-wheelers)."
+        ],
+        "trap": "16 is the number of four-wheelers; it comes from giving 3 wheels to the four-wheelers.",
+        "shortcut": "If all 36 had 4 wheels there would be 144; each three-wheeler removes one: 144 − 124 = 20."
+      },
+      "tags": [
+        "template:wheels-count",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
     }
   ]
 }
