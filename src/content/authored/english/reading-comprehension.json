@@ -6472,6 +6472,751 @@
           ]
         }
       ]
+    },
+    {
+      "key": "rc-27",
+      "subtype": "narrative",
+      "difficulty": "medium",
+      "title": "A nose in the rubble",
+      "stimulus": "The landslide came a little after four in the morning, when most of the hill town was asleep. Days of heavy rain had loosened the slope above a row of houses, and in a few seconds three of them were buried under mud, rock and broken concrete. By the time the disaster response team arrived from the district headquarters, local people had already pulled out several survivors with their bare hands. Five people were still missing.\n\nAmong the team's members were a four-year-old Labrador named Rani and her handler, Sub-Inspector Harpreet Kaur. A trained search dog can **cover** a collapsed building far faster than a line of rescuers, because she does not need to see a person to find one. Every living body gives off a steady stream of scent, from skin cells, breath and sweat, which rises through gaps in the rubble and drifts in the air. A dog's nose can detect it in amounts far too small for any human to notice.\n\nRani was chosen as a puppy for her strong play **drive**: she would chase a rubber toy for as long as anyone would throw it. Her training turned that game into work. At first the toy was hidden under a blanket, then behind a door, then with a volunteer lying under a pile of planks. Each time she found the hidden person and barked, the toy appeared. She does not know that she is saving lives; she knows that finding a buried person is the surest way to win her game.\n\nOn the slope, Rani worked in short spells of about twenty minutes, because a dog in heat and dust tires quickly and a tired dog makes mistakes. During her third search of the morning she ______ **(blank)** a faint scent near a broken wall, circled, and began to bark and scratch at one spot. Harpreet called the rescuers over. Two hours later they reached an elderly man trapped in a gap beneath a fallen beam, dehydrated but alive.\n\nDogs are not infallible. Wind can carry scent away from its source, and scent can collect in hollows several metres from the person who produced it, so a handler must learn when to trust her dog and when to send her round again. Teams therefore combine dogs with listening devices and thermal cameras, which can confirm what a dog has found. But in the first hours after a collapse, when every minute counts, few tools can search as quickly.\n\nRani will retire in four or five years, when her joints begin to slow her down. Harpreet has already decided where she will spend her retirement: at home, with a rubber toy she will no longer have to work for.",
+      "questions": [
+        {
+          "key": "rc-27-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, why can a trained search dog search a collapsed building faster than a line of rescuers?",
+          "options": [
+            "It can dig through concrete and rock more quickly than people can.",
+            "It can hear faint voices that rescuers cannot hear.",
+            "It uses a thermal camera fitted to its harness.",
+            "It is small enough to crawl into every gap in the rubble.",
+            "It does not need to see a person, because it can detect the scent that rises from a living body through the rubble."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2: the dog 'does not need to see a person to find one', because body scent 'rises through gaps in the rubble' and the dog can detect it."
+            ],
+            "trap": "Thermal cameras and listening devices appear in para 5 as separate tools used *with* dogs, not as part of the dog's search."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, how was Rani trained?",
+          "options": [
+            "She was rewarded with food each time she obeyed a command to sit or stay.",
+            "She was taught to recognise the faces of missing people from photographs.",
+            "Her love of chasing a toy was turned into a search game, and every find was rewarded with the toy.",
+            "She practised only on real disaster sites from the time she was a puppy.",
+            "She was trained to dig people out of the rubble on her own."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: the toy was hidden in harder places, and 'Each time she found the hidden person and barked, the toy appeared.'"
+            ],
+            "trap": "Food is never mentioned; the reward throughout is the rubber toy."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "gave off",
+            "picked up",
+            "put up",
+            "made up",
+            "turned down"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "A dog that detects a smell *picks up* the scent; she then circled and began to bark at the spot.",
+              "'Gave off' means produced a smell, which is what the buried man did, not the dog. 'Put up', 'made up' and 'turned down' do not mean detected."
+            ],
+            "trap": "'Gave off' is linked to scent in para 2, but there it is the living body that gives off scent; Rani detects it."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Local people rescued several survivors before the response team arrived.\nII. Rani searched the slope all morning without a break.\nIII. Thermal cameras found the elderly man before Rani did.",
+          "options": [
+            "Only II",
+            "Only III",
+            "Both I and III",
+            "Only I",
+            "All I, II and III"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "I is true: para 1.",
+              "II is false: she 'worked in short spells of about twenty minutes'.",
+              "III is false: Rani found the scent and Harpreet called the rescuers over; thermal cameras are described only in general in para 5."
+            ],
+            "trap": "Statement III borrows the thermal cameras of para 5, which confirm what a dog has found; they did not find this man first."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, why did Rani work in short spells?",
+          "options": [
+            "Her handler had to keep stopping to call the rescuers over.",
+            "The slope was too unstable for anyone to stay on it longer.",
+            "She lost interest in the search whenever her toy was out of sight.",
+            "Her joints had already begun to slow her down.",
+            "A dog in heat and dust tires quickly, and a tired dog makes mistakes."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 4: 'because a dog in heat and dust tires quickly and a tired dog makes mistakes'."
+            ],
+            "trap": "The option about her joints refers to her future retirement in para 6, 'in four or five years'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Five people were still missing when the response team arrived.",
+            "Rani was four years old at the time of the landslide.",
+            "A search dog always leads rescuers to the exact spot where a person is buried.",
+            "Scent can collect in hollows several metres away from the person who produced it.",
+            "Rescue teams use listening devices along with dogs."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 5: 'Dogs are not infallible.' Wind and hollows can mislead them, so a handler must sometimes send the dog round again. The first statement is false.",
+              "The other four are stated in paras 1, 2 and 5."
+            ],
+            "trap": "Rani did lead rescuers to the right spot this time, which can make 'always' seem acceptable; para 5 says otherwise."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q07",
+          "subtype": "inference",
+          "prompt": "What does the author suggest by saying that Rani \"does not know that she is saving lives\"?",
+          "options": [
+            "Rani is driven by the reward of her game, which her training has linked to finding buried people.",
+            "Rani has not been trained properly for rescue work.",
+            "Harpreet hides the results of each search from her dog.",
+            "Rani searches only when she can see her toy.",
+            "Rani would work harder if she understood the purpose of the search."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "The sentence continues: 'she knows that finding a buried person is the surest way to win her game'. Training has made the life-saving task and the game the same thing for her."
+            ],
+            "trap": "The option about seeing the toy is contradicted by para 3: the toy appears only *after* she finds the person."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q08",
+          "subtype": "title",
+          "prompt": "Which of the following is the most suitable title for the passage?",
+          "options": [
+            "A Nose in the Rubble: How a Search Dog Works",
+            "Why Landslides Strike Hill Towns at Night",
+            "Machines That Have Replaced Rescue Dogs",
+            "The Retirement of Police Dogs",
+            "Training a Puppy to Play Fetch"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "The passage follows Rani through one rescue and explains how scent, training and short spells of work make a search dog useful, with its limits."
+            ],
+            "trap": "The title about machines replacing dogs reverses para 5, which says few tools search as quickly in the first hours."
+          },
+          "tags": [
+            "rc:title",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **cover** as used in the passage.",
+          "options": [
+            "hide",
+            "search",
+            "protect",
+            "wrap",
+            "report"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'can cover a collapsed building far faster than a line of rescuers' means can go over the whole area looking for people.",
+              "Cover here = search (an area)."
+            ],
+            "trap": "'Hide', 'protect' and 'wrap' are the everyday meanings of cover; 'report' fits a journalist covering a story. None describes a dog checking rubble."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-27-q10",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **drive** as used in the passage.",
+          "options": [
+            "journey",
+            "road",
+            "vehicle",
+            "urge",
+            "campaign"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'strong play drive: she would chase a rubber toy for as long as anyone would throw it' describes a powerful inner urge to play.",
+              "Drive here = urge, motivation."
+            ],
+            "trap": "'Journey' and 'road' are the motoring meanings of drive; 'campaign' fits a fund-raising drive. None describes a dog's desire to play."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-28",
+      "subtype": "environment",
+      "difficulty": "hard",
+      "title": "The vanishing dark",
+      "stimulus": "For most of human history, a clear night sky was something everyone shared. Today more than a third of humanity lives under skies so washed out by artificial light that the Milky Way cannot be seen, and in many cities only a handful of stars remain visible. Astronomers were the first to complain, as the glow of cities forced them to move their telescopes to ever more remote mountaintops. But the effects of light at night, scientists now believe, reach far beyond astronomy.\n\nMany animals use natural light to find their way. Sea turtle hatchlings, emerging from their nests on a beach at night, normally head towards the brighter horizon over the sea; where hotels and roads are lit, many crawl inland instead and die of exhaustion or are taken by predators. Migrating birds, which often travel at night, can be disoriented by brightly lit buildings and circle them until they collide with glass or collapse. Insects swarm around street lamps in numbers that ecologists suspect may contribute to the decline of some species, though this link is still being studied. The effects are most **marked** along coasts and near large cities.\n\nHuman bodies keep time by light as well. Exposure to bright light late in the evening, especially light rich in blue wavelengths, suppresses melatonin, a hormone that helps regulate sleep. Researchers are still debating how much outdoor lighting, as distinct from phones and indoor lamps, contributes to disturbed sleep, but few doubt that the human body evolved to expect darkness at night.\n\nThe switch to light-emitting diodes was expected to help. LEDs use far less electricity than older lamps and can be aimed precisely. Yet in many places the change has, paradoxically, ______ **(blank)** the problem. Because light has become so cheap, towns have installed more of it, and many early LED street lamps gave off a harsh white light containing more blue, which scatters more widely in the atmosphere.\n\nNone of the solutions requires new technology. Lamps can be shielded so that they **throw** light down onto the road rather than up into the sky; their colour can be made warmer; they can be dimmed after midnight or switched on only when sensors detect movement. A few places have gone further. In Ladakh, the area around the astronomical observatory at Hanle has been declared a dark-sky reserve, where outdoor lighting is controlled and the night sky itself has become an attraction for visitors.\n\nLight pollution is unusual among environmental problems in one respect. Plastic in the ocean and carbon dioxide in the atmosphere persist for centuries, but artificial light disappears the instant it is switched off, and the harm it does to one night is not carried into the next dark one. This makes it, in principle, the easiest form of pollution to reverse. What it requires is not invention but the will to stop lighting what does not need to be lit.",
+      "questions": [
+        {
+          "key": "rc-28-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, why do many sea turtle hatchlings on lit beaches crawl inland?",
+          "options": [
+            "They are drawn by the warmth given off by hotels and roads.",
+            "Predators waiting at the water's edge drive them back towards the land.",
+            "They follow migrating birds that circle brightly lit buildings.",
+            "They normally head towards the brighter horizon, and artificial lights make the land side brighter than the sea.",
+            "Bright light suppresses the melatonin they need in order to find the sea."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2: hatchlings 'normally head towards the brighter horizon over the sea; where hotels and roads are lit, many crawl inland instead'. The lights reverse which horizon is brighter."
+            ],
+            "trap": "The melatonin option transfers the human effect of para 3 to turtles; the passage never links the two."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q02",
+          "subtype": "fact",
+          "prompt": "What does the passage say about the link between street lamps and the decline of insects?",
+          "options": [
+            "It has been proved to be the main cause of insect decline worldwide.",
+            "Scientists have shown that street lamps have no effect on insect numbers.",
+            "Ecologists suspect that it may contribute to the decline of some species, but the link is still being studied.",
+            "Insects avoid street lamps, so the lamps protect them from predators.",
+            "The switch to LEDs has reversed the decline of insects in many towns."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 2: insects swarm 'in numbers that ecologists suspect may contribute to the decline of some species, though this link is still being studied'."
+            ],
+            "trap": "The option about proof turns a suspicion about 'some species' into a proven, worldwide main cause."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "eased",
+            "worsened",
+            "solved",
+            "removed",
+            "concealed"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'Paradoxically' signals that the result went against expectations: LEDs were expected to help, but because light became cheap, towns installed more of it and much of it was blue-rich. The change *worsened* the problem.",
+              "'Eased', 'solved' and 'removed' describe what was expected, not the paradox; 'concealed' does not fit the explanation that follows."
+            ],
+            "trap": "'Eased' reads naturally after 'expected to help', but the next sentence explains how LEDs added light, so only a word meaning 'made worse' fits."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. LEDs use far less electricity than older lamps.\nII. Light rich in blue scatters more widely in the atmosphere.\nIII. Researchers agree that outdoor lighting is the main cause of disturbed sleep.",
+          "options": [
+            "Only I",
+            "Only III",
+            "Both II and III",
+            "Both I and II",
+            "All I, II and III"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "I is true: para 4.",
+              "II is true: para 4 says the blue-rich LED light 'scatters more widely in the atmosphere'.",
+              "III is false: para 3 says researchers 'are still debating how much outdoor lighting, as distinct from phones and indoor lamps, contributes'."
+            ],
+            "trap": "Statement III ignores the debate in para 3; 'few doubt' refers to the body expecting darkness, not to outdoor lighting being the main cause."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q05",
+          "subtype": "inference",
+          "prompt": "Why does the author describe light pollution as, in principle, the easiest form of pollution to reverse?",
+          "options": [
+            "The switch to LEDs has already solved most of the problem.",
+            "Very few animals are affected by artificial light at night.",
+            "New technology for protecting dark skies has become cheap.",
+            "It does far less harm than plastic in the ocean.",
+            "Unlike pollutants that persist for centuries, artificial light vanishes once it is switched off, so ending it requires only the decision to do so."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 6: plastic and carbon dioxide persist, but light 'disappears the instant it is switched off'; what is needed 'is not invention but the will'.",
+              "'In principle' admits that, in practice, the will may be lacking."
+            ],
+            "trap": "The option about new technology contradicts para 5: 'None of the solutions requires new technology.' The comparison with plastic is about persistence, not the amount of harm."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a way of reducing light pollution?",
+          "options": [
+            "Shielding lamps so that they direct light down onto the road",
+            "Making the colour of lamps warmer",
+            "Banning all outdoor lighting in cities after midnight",
+            "Switching lamps on only when sensors detect movement",
+            "Dimming lamps after midnight"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 5 lists shielding, warmer colour, dimming after midnight and motion sensors.",
+              "It never proposes a ban; lamps are *dimmed* after midnight, not switched off by law."
+            ],
+            "trap": "'After midnight' appears in the passage, which makes the ban look familiar; dimming is not banning."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q07",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred about the dark-sky reserve at Hanle?",
+          "options": [
+            "People living there are forbidden from using any light at night.",
+            "It was set up mainly to protect migrating birds.",
+            "It was the first place in India to use LED street lamps.",
+            "Astronomers have had to move their telescopes away from Hanle.",
+            "Its dark sky now draws visitors as well as serving the observatory."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 5: outdoor lighting is controlled around an observatory, and 'the night sky itself has become an attraction for visitors'. So the dark sky serves the observatory and also draws visitors."
+            ],
+            "trap": "The option about forbidding all light overstates 'outdoor lighting is controlled'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Artificial light at night harms wildlife and may affect human health, but the problem can be reversed with simple measures that already exist.",
+            "LEDs are the chief cause of light pollution and should be banned.",
+            "Light pollution matters mainly because it hampers astronomers.",
+            "Like carbon dioxide, artificial light will go on harming the environment for centuries.",
+            "Only remote mountain regions can still be protected from light pollution."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Paras 2–3 describe harm to animals and possibly to sleep; paras 4–5 show that simple fixes exist; para 6 calls it the easiest pollution to reverse."
+            ],
+            "trap": "The option about astronomers repeats para 1's starting point, which the author says the effects 'reach far beyond'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **throw** as used in the passage.",
+          "options": [
+            "cast",
+            "hurl",
+            "toss",
+            "fling",
+            "discard"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Lamps that 'throw light down onto the road' send or project their light there.",
+              "Throw here = cast (as in 'cast light' or 'cast a shadow')."
+            ],
+            "trap": "Hurl, toss and fling are synonyms of throw for objects; only 'cast' is used for light."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-28-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **marked** as used in the passage.",
+          "options": [
+            "pronounced",
+            "slight",
+            "noticeable",
+            "striking",
+            "labelled"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'The effects are most marked along coasts and near large cities' means most noticeable there.",
+              "The opposite is slight."
+            ],
+            "trap": "Pronounced, noticeable and striking are synonyms; 'labelled' is the dictionary-first meaning of marked and does not fit the passage at all."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:environment"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-29",
+      "subtype": "health",
+      "difficulty": "hard",
+      "title": "The teenage body clock",
+      "stimulus": "Every morning in thousands of Indian homes, the same scene is repeated: a parent calling a teenager for the third time, a half-eaten breakfast, a rush for a school bus that leaves before seven. Parents often ______ **(blank)** a teenager's late nights and sleepy mornings to laziness or to the mobile phone. Sleep researchers suggest that the explanation is, at least in part, biological.\n\nDuring puberty, the body's internal clock shifts. The hormone melatonin, which makes us feel sleepy, begins to be released later in the evening than it was in childhood, often by an hour or two. A fifteen-year-old who lies awake at eleven is frequently not choosing to stay up; his body is simply not yet ready for sleep. Yet teenagers still need roughly eight to ten hours of sleep a night, more than most adults. When a late body clock meets an early school bell, the result is a steady shortfall that weekend lie-ins only partly repay.\n\nThe consequences of that shortfall are well documented. Students who sleep too little find it harder to concentrate, and because the brain consolidates much of the day's learning during **sound** sleep, they may remember less of what they studied. Lack of sleep also affects mood and has been linked to irritability and anxiety among adolescents. Older teenagers who ride two-wheelers face a further danger: drowsiness slows reaction time in much the same way as alcohol does.\n\nScreens do make matters worse. Light from a phone late at night delays melatonin further, and an endless stream of messages and videos keeps the mind alert. But taking the phone away does not reset the biological clock. This is why some researchers argue that the most **pressing** change lies not in teenagers' bedrooms but in school timetables. Where schools in several countries have moved their start times later, by even half an hour to an hour, studies have generally found that students slept longer, rather than simply staying up later, and that attendance and alertness in morning classes improved.\n\nSuch changes are not easy. Bus routes, parents' working hours, sports practice and, in India, early-morning coaching classes are all built around the existing schedule, and a later start often means a later finish. Some schools have experimented with placing less demanding activities in the first period, or with starting senior classes later than junior ones.\n\nFamilies can help too: by keeping bedtimes and waking times roughly the same through the week, by encouraging exposure to daylight in the morning, which helps the body clock shift earlier, and by moving screens out of the bedroom an hour before sleep. None of these measures turns a teenager into an early riser. But they can narrow the gap between the hours a growing body needs and the hours a school day allows.",
+      "questions": [
+        {
+          "key": "rc-29-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, why might a fifteen-year-old lie awake at eleven at night?",
+          "options": [
+            "Teenagers need less sleep than adults, so he does not feel tired.",
+            "He has usually chosen to stay up late to study.",
+            "Daylight in the morning has shifted his body clock later.",
+            "His body releases melatonin later than it did in childhood, so he is not yet biologically ready to sleep.",
+            "Weekend lie-ins have permanently reset his body clock."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2: melatonin 'begins to be released later in the evening than it was in childhood'; such a teenager 'is frequently not choosing to stay up; his body is simply not yet ready for sleep'."
+            ],
+            "trap": "The option about morning daylight reverses para 6: morning light 'helps the body clock shift earlier'. The 'less sleep' option reverses para 2."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what have studies of later school start times generally found?",
+          "options": [
+            "Students slept longer rather than simply going to bed later, and attendance and morning alertness improved.",
+            "Students stayed up later, which cancelled out any benefit of the later start.",
+            "The start time made no measurable difference to how long students slept.",
+            "Students' examination results doubled within a year.",
+            "Schools had to cancel early-morning coaching classes."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 4: studies 'generally found that students slept longer, rather than simply staying up later, and that attendance and alertness in morning classes improved'."
+            ],
+            "trap": "The option about staying up later states the worry the studies *ruled out*. Examination results are never mentioned."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 1?",
+          "options": [
+            "contribute",
+            "distribute",
+            "blame",
+            "attribute",
+            "accuse"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "The structure is '___ X to Y', meaning 'regard X as caused by Y'. Only *attribute* takes this pattern: parents attribute late nights to laziness.",
+              "'Blame' needs 'on' (blame late nights on laziness) and 'accuse' needs 'of'; 'contribute' and 'distribute' give no sense."
+            ],
+            "trap": "'Blame' has the right meaning but the wrong preposition: one blames something *on* a cause, not *to* it."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following is/are true according to the passage?\n(A) Teenagers need more sleep each night than most adults.\n(B) Drowsiness slows reaction time in much the same way as alcohol.\n(C) Some schools have tried starting senior classes later than junior ones.",
+          "options": [
+            "Only (A)",
+            "Both (A) and (B)",
+            "Both (B) and (C)",
+            "Only (C)",
+            "All of these"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "(A) is true: para 2, 'eight to ten hours… more than most adults'.",
+              "(B) is true: para 3.",
+              "(C) is true: para 5."
+            ],
+            "trap": "Statement (A) may feel wrong because teenagers stay up late, but late sleeping is about timing, not need; the passage says they need more."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q05",
+          "subtype": "inference",
+          "prompt": "Why do some researchers think the most important change lies in school timetables rather than in teenagers' bedrooms?",
+          "options": [
+            "Screens have no real effect on how well teenagers sleep.",
+            "Taking screens away cannot undo the biological shift in a teenager's body clock, which only a later start can allow for.",
+            "Parents, not teenagers, are responsible for poor sleep.",
+            "Teachers prefer to hold classes later in the day.",
+            "Coaching classes in India have already moved to later timings."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 4: screens make matters worse, 'But taking the phone away does not reset the biological clock. This is why…' the change must come in timetables."
+            ],
+            "trap": "The option about screens having no effect contradicts the first sentence of para 4: 'Screens do make matters worse.'"
+          },
+          "tags": [
+            "rc:inference",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Light from a phone late at night delays the release of melatonin further.",
+            "Lack of sleep has been linked to irritability and anxiety among adolescents.",
+            "Taking a phone away from a teenager resets his or her biological clock.",
+            "The brain consolidates much of the day's learning during sleep.",
+            "A later school start often means a later finish to the school day."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 4: 'taking the phone away does not reset the biological clock'. The first statement reverses this.",
+              "The other four are stated in paras 3, 4 and 5."
+            ],
+            "trap": "The statement about phone light is true and sits next to the false one; read on to the 'But' sentence."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q07",
+          "subtype": "inference",
+          "prompt": "What can be inferred about the measures suggested for families in the last paragraph?",
+          "options": [
+            "They will turn most teenagers into early risers.",
+            "They make changes to school timetables unnecessary.",
+            "They are meant only for teenagers who ride two-wheelers.",
+            "They are addressed to teachers rather than to families.",
+            "They are meant to reduce, not remove, the mismatch between teenagers' sleep needs and school hours."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 6: 'None of these measures turns a teenager into an early riser. But they can narrow the gap.' Narrowing is reducing, not closing."
+            ],
+            "trap": "The option about early risers is denied in so many words; the one about timetables ignores para 4's argument that the main change lies there."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Mobile phones are the sole cause of teenagers' lack of sleep.",
+            "Teenagers' sleepiness is partly biological, so reducing their sleep loss needs changes from both schools and families.",
+            "Schools should abolish all classes before noon.",
+            "Teenagers are lazy and need stricter discipline at bedtime.",
+            "Early-morning coaching classes improve teenagers' sleep."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Paras 1–2 give the biological cause; para 3 the harm; paras 4–5 the case for later school starts; para 6 what families can do."
+            ],
+            "trap": "The option about phones overstates para 4: screens 'make matters worse', but the cause is 'at least in part, biological'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **sound** as used in the passage.",
+          "options": [
+            "deep",
+            "noisy",
+            "audible",
+            "valid",
+            "sensible"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "'the brain consolidates much of the day's learning during sound sleep' means deep, undisturbed sleep.",
+              "Sound here = deep."
+            ],
+            "trap": "'Noisy' and 'audible' come from the noun sound; 'valid' and 'sensible' fit a sound argument or sound advice. Only 'deep' describes sleep."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:health"
+          ]
+        },
+        {
+          "key": "rc-29-q10",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **pressing** as used in the passage.",
+          "options": [
+            "squeezing",
+            "ironing",
+            "urgent",
+            "crowding",
+            "flattening"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'the most pressing change' is the one that most needs to be made soon.",
+              "Pressing here = urgent."
+            ],
+            "trap": "Squeezing, ironing and flattening are the physical meanings of pressing; they make no sense with 'change'."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:health"
+          ]
+        }
+      ]
     }
   ]
 }

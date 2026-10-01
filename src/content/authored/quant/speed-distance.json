@@ -724,6 +724,723 @@
         "arith:trains",
         "template:man-platform-overtake"
       ]
+    },
+    {
+      "key": "sd-029",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Two trains 150 m and 210 m long are running on parallel tracks in opposite directions at 54 km/h and 90 km/h. In how many seconds will they completely clear each other?",
+      "options": [
+        "9 seconds",
+        "10 seconds",
+        "12 seconds",
+        "15 seconds",
+        "36 seconds"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Opposite directions, so relative speed = 54 + 90 = 144 km/h = 40 m/s.",
+          "Distance = 150 + 210 = 360 m; time = 360 ÷ 40 = 9 seconds."
+        ],
+        "trap": "36 seconds subtracts the speeds (90 − 54 = 36 km/h = 10 m/s), which is the same-direction case."
+      },
+      "tags": [
+        "arith:trains",
+        "template:two-trains"
+      ]
+    },
+    {
+      "key": "sd-030",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 250 m long express running at 90 km/h overtakes a 200 m long goods train running at 54 km/h on a parallel track in the same direction. How long does the overtaking take from start to finish?",
+      "options": [
+        "11.25 seconds",
+        "18 seconds",
+        "36 seconds",
+        "40 seconds",
+        "45 seconds"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Same direction, so relative speed = 90 − 54 = 36 km/h = 10 m/s.",
+          "Distance = 250 + 200 = 450 m; time = 450 ÷ 10 = 45 seconds."
+        ],
+        "trap": "11.25 seconds adds the speeds (opposite-direction case); 18 seconds treats the goods train as standing still (450 ÷ 25)."
+      },
+      "tags": [
+        "arith:trains",
+        "template:two-trains"
+      ]
+    },
+    {
+      "key": "sd-031",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two trains of equal length, running in opposite directions on parallel tracks at 72 km/h and 54 km/h, cross each other completely in 12 seconds. What is the length of each train?",
+      "options": [
+        "180 m",
+        "210 m",
+        "240 m",
+        "280 m",
+        "420 m"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Relative speed = 72 + 54 = 126 km/h = 35 m/s.",
+          "Combined length = 35 × 12 = 420 m, so each train is 420 ÷ 2 = 210 m."
+        ],
+        "trap": "420 m is the combined length of both trains, not the length of each."
+      },
+      "tags": [
+        "arith:trains",
+        "template:two-trains"
+      ]
+    },
+    {
+      "key": "sd-032",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two trains 240 m and 300 m long cross each other in 12 seconds when moving in opposite directions, and the faster one passes the slower one in 36 seconds when they move in the same direction. What is the speed of the slower train?",
+      "options": [
+        "45 km/h",
+        "54 km/h",
+        "63 km/h",
+        "72 km/h",
+        "108 km/h"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sum of speeds = 540 ÷ 12 = 45 m/s; difference = 540 ÷ 36 = 15 m/s.",
+          "Slower speed = (45 − 15) ÷ 2 = 15 m/s = 54 km/h."
+        ],
+        "trap": "108 km/h is the faster train's speed (30 m/s); the question asks for the slower one."
+      },
+      "tags": [
+        "arith:trains",
+        "template:two-trains"
+      ]
+    },
+    {
+      "key": "sd-033",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 300 m long train running at 72 km/h crosses another train coming from the opposite direction at 54 km/h in 18 seconds. What is the length of the other train?",
+      "options": [
+        "330 m",
+        "360 m",
+        "420 m",
+        "480 m",
+        "630 m"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Relative speed = 72 + 54 = 126 km/h = 35 m/s.",
+          "Distance covered = 35 × 18 = 630 m = both lengths together.",
+          "Other train = 630 − 300 = 330 m."
+        ],
+        "trap": "630 m is the sum of both lengths; subtract the first train's 300 m."
+      },
+      "tags": [
+        "arith:trains",
+        "template:two-trains"
+      ]
+    },
+    {
+      "key": "sd-034",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Two trains run on parallel tracks in the same direction at 90 km/h and 54 km/h. A passenger sitting in the slower train finds that the faster train takes 30 seconds to pass him. If the slower train is 250 m long, how long would the two trains take to cross each other completely if they ran in opposite directions at the same speeds?",
+      "options": [
+        "7.5 seconds",
+        "11 seconds",
+        "13.75 seconds",
+        "15 seconds",
+        "55 seconds"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Passing a seated passenger: length of the faster train = (25 − 15) × 30 = 10 × 30 = 300 m.",
+          "Opposite directions: relative speed = 25 + 15 = 40 m/s; distance = 300 + 250 = 550 m.",
+          "Time = 550 ÷ 40 = 13.75 seconds."
+        ],
+        "trap": "55 seconds keeps the same-direction relative speed (550 ÷ 10); 7.5 seconds leaves out the slower train's 250 m."
+      },
+      "tags": [
+        "arith:trains",
+        "template:two-trains"
+      ]
+    },
+    {
+      "key": "sd-035",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A man sitting in a train travelling at 45 km/h observes that a goods train travelling in the opposite direction takes 8 seconds to pass him. If the goods train is 280 m long, what is its speed?",
+      "options": [
+        "63 km/h",
+        "72 km/h",
+        "75 km/h",
+        "81 km/h",
+        "126 km/h"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Relative speed = 280 ÷ 8 = 35 m/s = 35 × $\\frac{18}{5}$ = 126 km/h.",
+          "Opposite directions add, so goods train = 126 − 45 = 81 km/h."
+        ],
+        "trap": "126 km/h is the relative speed; the man's own train contributes 45 km/h of it."
+      },
+      "tags": [
+        "arith:trains",
+        "template:two-trains"
+      ]
+    },
+    {
+      "key": "sd-036",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A 225 m long train running at 63 km/h passes a man walking at 9 km/h in the same direction. In how many seconds does the train pass him?",
+      "options": [
+        "11.25 seconds",
+        "12.5 seconds",
+        "15 seconds",
+        "16 seconds",
+        "18 seconds"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Same direction: relative speed = 63 − 9 = 54 km/h = 15 m/s.",
+          "Time = 225 ÷ 15 = 15 seconds."
+        ],
+        "trap": "11.25 seconds adds the speeds (72 km/h = 20 m/s), which applies only when the man walks towards the train."
+      },
+      "tags": [
+        "arith:trains",
+        "template:train-moving-person"
+      ]
+    },
+    {
+      "key": "sd-037",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 350 m long train running at 75 km/h passes a cyclist who is riding at 15 km/h towards the train. How long does the train take to pass the cyclist?",
+      "options": [
+        "14 seconds",
+        "18 seconds",
+        "21 seconds",
+        "24 seconds",
+        "28 seconds"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Opposite directions: relative speed = 75 + 15 = 90 km/h = 25 m/s.",
+          "Time = 350 ÷ 25 = 14 seconds."
+        ],
+        "trap": "21 seconds subtracts the speeds (60 km/h), as if the cyclist were moving the same way as the train."
+      },
+      "tags": [
+        "arith:trains",
+        "template:train-moving-person"
+      ]
+    },
+    {
+      "key": "sd-038",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A train passes a man walking at 3 km/h in the same direction as the train in 20 seconds, and a man walking at 6 km/h towards the train in 16 seconds. What is the length of the train?",
+      "options": [
+        "180 m",
+        "200 m",
+        "216 m",
+        "240 m",
+        "720 m"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The length is the same both times: (v − 3) × 20 = (v + 6) × 16, with v in km/h.",
+          "20v − 60 = 16v + 96 → 4v = 156 → v = 39 km/h.",
+          "Length = (39 − 3) × $\\frac{5}{18}$ × 20 = 10 × 20 = 200 m."
+        ],
+        "trap": "720 m multiplies 36 km/h by 20 seconds without converting the relative speed to m/s."
+      },
+      "tags": [
+        "arith:trains",
+        "template:train-moving-person"
+      ]
+    },
+    {
+      "key": "sd-039",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 270 m long train passes a cyclist going in the same direction at 18 km/h in 27 seconds. What is the speed of the train?",
+      "options": [
+        "36 km/h",
+        "45 km/h",
+        "54 km/h",
+        "63 km/h",
+        "72 km/h"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Relative speed = 270 ÷ 27 = 10 m/s = 36 km/h.",
+          "Same direction, so train speed = 36 + 18 = 54 km/h."
+        ],
+        "trap": "36 km/h is only the relative speed; in the same direction the cyclist's 18 km/h must be added back."
+      },
+      "tags": [
+        "arith:trains",
+        "template:train-moving-person"
+      ]
+    },
+    {
+      "key": "sd-040",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A train overtakes two people walking beside the track in the same direction as the train, at 3 km/h and 6 km/h, in 12 seconds and 13 seconds respectively. What is the length of the train?",
+      "options": [
+        "104 m",
+        "117 m",
+        "126 m",
+        "130 m",
+        "140 m"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Equal lengths: (v − 3) × 12 = (v − 6) × 13 → 12v − 36 = 13v − 78 → v = 42 km/h.",
+          "Relative speed past the first walker = 39 km/h = 39 × $\\frac{5}{18}$ = $\\frac{65}{6}$ m/s.",
+          "Length = $\\frac{65}{6}$ × 12 = 130 m."
+        ],
+        "trap": "140 m uses the train's own speed of 42 km/h over 12 seconds; the walker's 3 km/h must be subtracted first."
+      },
+      "tags": [
+        "arith:trains",
+        "template:train-moving-person"
+      ]
+    },
+    {
+      "key": "sd-041",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 160 m long train passes a man running at 8 km/h in the opposite direction in 8 seconds. What is the speed of the train?",
+      "options": [
+        "56 km/h",
+        "64 km/h",
+        "72 km/h",
+        "80 km/h",
+        "88 km/h"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Relative speed = 160 ÷ 8 = 20 m/s = 72 km/h.",
+          "Opposite directions, so train speed = 72 − 8 = 64 km/h."
+        ],
+        "trap": "72 km/h is the relative speed, and 80 km/h wrongly adds the man's speed; in opposite directions it must be subtracted from the relative speed."
+      },
+      "tags": [
+        "arith:trains",
+        "template:train-moving-person"
+      ]
+    },
+    {
+      "key": "sd-042",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A train running at 81 km/h passes a cyclist riding at 27 km/h in the same direction in 24 seconds. How long will it take to pass another cyclist riding at 27 km/h in the opposite direction?",
+      "options": [
+        "12 seconds",
+        "16 seconds",
+        "18 seconds",
+        "20 seconds",
+        "24 seconds"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Same direction: relative speed = 54 km/h = 15 m/s, so length = 15 × 24 = 360 m.",
+          "Opposite direction: relative speed = 108 km/h = 30 m/s.",
+          "Time = 360 ÷ 30 = 12 seconds."
+        ],
+        "trap": "16 seconds divides 360 m by the train's own speed (22.5 m/s), ignoring the cyclist."
+      },
+      "tags": [
+        "arith:trains",
+        "template:train-moving-person"
+      ]
+    },
+    {
+      "key": "sd-043",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Towns P and Q are 340 km apart. A bus leaves P for Q at 7:00 a.m. at 40 km/h, and a car leaves Q for P at 8:00 a.m. at 60 km/h on the same road. At what time will they meet?",
+      "options": [
+        "10:24 a.m.",
+        "10:30 a.m.",
+        "10:45 a.m.",
+        "11:00 a.m.",
+        "11:24 a.m."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "By 8:00 a.m. the bus has covered 40 km, leaving 300 km.",
+          "They close at 40 + 60 = 100 km/h → 300 ÷ 100 = 3 hours after 8:00 a.m.",
+          "They meet at 11:00 a.m."
+        ],
+        "trap": "10:24 a.m. treats both as starting at 7:00 a.m. (340 ÷ 100 = 3.4 hours); 11:24 a.m. adds that 3.4 hours to the car's start."
+      },
+      "tags": [
+        "arith:meeting-point",
+        "template:meeting-staggered"
+      ]
+    },
+    {
+      "key": "sd-044",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ravi leaves village P at 9:00 a.m. for village Q, 90 km away, cycling at 15 km/h. At 10:00 a.m. Sameer leaves Q for P on a scooter at 30 km/h along the same road. How far from P will they meet?",
+      "options": [
+        "25 km",
+        "30 km",
+        "32 km",
+        "36 km",
+        "40 km"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "By 10:00 a.m. Ravi has covered 15 km, leaving 75 km.",
+          "They close at 45 km/h → 75 ÷ 45 = $1\\frac{2}{3}$ hours.",
+          "Ravi's distance from P = 15 + 15 × $\\frac{5}{3}$ = 15 + 25 = 40 km."
+        ],
+        "trap": "30 km divides 90 km in the ratio 15 : 30 as if both had started together, ignoring Ravi's one-hour lead."
+      },
+      "tags": [
+        "arith:meeting-point",
+        "template:meeting-staggered"
+      ]
+    },
+    {
+      "key": "sd-045",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A train leaves Rampur at 5:30 a.m. for Kotagiri, 465 km away, at 60 km/h. Another train leaves Kotagiri for Rampur at 7:00 a.m. at 90 km/h on a parallel track. How far from Kotagiri will they meet?",
+      "options": [
+        "200 km",
+        "225 km",
+        "240 km",
+        "250 km",
+        "279 km"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "By 7:00 a.m. the first train has run 60 × 1.5 = 90 km, leaving 375 km.",
+          "They close at 150 km/h → 375 ÷ 150 = 2.5 hours.",
+          "Second train's distance from Kotagiri = 90 × 2.5 = 225 km."
+        ],
+        "trap": "240 km is the meeting point measured from Rampur (90 + 150); 279 km ignores the first train's 90-minute head start."
+      },
+      "tags": [
+        "arith:meeting-point",
+        "template:meeting-staggered"
+      ]
+    },
+    {
+      "key": "sd-046",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Two cars start at the same time from towns X and Y and drive towards each other. After they meet, the car from X takes 4 hours to reach Y and the car from Y takes 9 hours to reach X. If the car from X runs at 45 km/h, what is the distance between X and Y?",
+      "options": [
+        "450 km",
+        "480 km",
+        "500 km",
+        "540 km",
+        "585 km"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Speed ratio X : Y = √9 : √4 = 3 : 2, so the car from Y runs at 30 km/h.",
+          "After meeting, X covers Y's pre-meeting stretch: 45 × 4 = 180 km = 30 × t → t = 6 hours.",
+          "Distance = (45 + 30) × 6 = 450 km."
+        ],
+        "trap": "585 km takes the speed ratio as 9 : 4 (the times themselves) instead of √9 : √4 = 3 : 2.",
+        "shortcut": "Time to meet = √(4 × 9) = 6 hours."
+      },
+      "tags": [
+        "arith:meeting-point",
+        "template:meeting-after-times"
+      ]
+    },
+    {
+      "key": "sd-047",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Aman and Kiran walk towards each other from the two ends of a 48 km road at 6 km/h and 9 km/h respectively. Aman starts 30 minutes before Kiran. How far from Aman's starting point will they meet?",
+      "options": [
+        "18 km",
+        "19.2 km",
+        "21 km",
+        "24 km",
+        "27 km"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "In the first 30 minutes Aman walks 3 km, leaving 45 km.",
+          "They close at 15 km/h → 45 ÷ 15 = 3 hours.",
+          "Aman's distance = 3 + 6 × 3 = 21 km."
+        ],
+        "trap": "27 km is measured from Kiran's end; 19.2 km splits 48 km in the ratio 6 : 9 as if they had started together."
+      },
+      "tags": [
+        "arith:meeting-point",
+        "template:meeting-staggered"
+      ]
+    },
+    {
+      "key": "sd-048",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A bus leaves P for Q at 8:00 a.m. and a car leaves Q for P at 9:00 a.m. on the same road. They meet at 11:00 a.m. exactly halfway between P and Q. If the car is 20 km/h faster than the bus, what is the distance between P and Q?",
+      "options": [
+        "200 km",
+        "220 km",
+        "240 km",
+        "270 km",
+        "300 km"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The bus runs 3 hours and the car 2 hours to cover equal halves, so 3b = 2c, i.e. b : c = 2 : 3.",
+          "The 1-part difference is 20 km/h, so b = 40 km/h and c = 60 km/h.",
+          "Half the distance = 40 × 3 = 120 km; P to Q = 240 km."
+        ],
+        "trap": "120 km is only the halfway distance; double it for the whole road."
+      },
+      "tags": [
+        "arith:meeting-point",
+        "template:meeting-staggered"
+      ]
+    },
+    {
+      "key": "sd-049",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Train A leaves station M at 6:00 a.m. and reaches station N at 12:00 noon. Train B leaves N at 8:00 a.m. and reaches M at 12:00 noon. Both run at uniform speeds on parallel tracks. At what time do they pass each other?",
+      "options": [
+        "8:24 a.m.",
+        "9:00 a.m.",
+        "9:24 a.m.",
+        "9:30 a.m.",
+        "9:36 a.m."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take M–N as 12 units: A runs 2 units/hour (6 hours), B runs 3 units/hour (4 hours).",
+          "By 8:00 a.m. A has covered 4 units, leaving 8; they close at 5 units/hour → 1.6 hours = 1 hour 36 minutes.",
+          "They pass at 8:00 + 1:36 = 9:36 a.m."
+        ],
+        "trap": "8:24 a.m. ignores B's 2-hour later start (12 ÷ 5 = 2.4 hours after 6:00 a.m.)."
+      },
+      "tags": [
+        "arith:meeting-point",
+        "template:meeting-staggered"
+      ]
+    },
+    {
+      "key": "sd-050",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Driving at 40 km/h, Rakesh reaches his office 12 minutes late; driving at 48 km/h, he reaches exactly on time. How far is his office from his home?",
+      "options": [
+        "28.8 km",
+        "36 km",
+        "40 km",
+        "45 km",
+        "48 km"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Time difference = 12 minutes = $\\frac{1}{5}$ hour.",
+          "d/40 − d/48 = d/240 = 1/5 → d = 48 km."
+        ],
+        "trap": "28.8 km takes 12 minutes as 0.12 hour; 12 minutes is 0.2 hour."
+      },
+      "tags": [
+        "arith:late-early",
+        "template:late-early"
+      ]
+    },
+    {
+      "key": "sd-051",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Travelling at 30 km/h, a van reaches the depot 10 minutes late; at 36 km/h it arrives 5 minutes early. What is the distance to the depot?",
+      "options": [
+        "15 km",
+        "45 km",
+        "50 km",
+        "54 km",
+        "60 km"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The two timings differ by 10 + 5 = 15 minutes = $\\frac{1}{4}$ hour.",
+          "d/30 − d/36 = d/180 = 1/4 → d = 45 km."
+        ],
+        "trap": "15 km uses 10 − 5 = 5 minutes as the gap; being late by 10 and early by 5 is a 15-minute gap."
+      },
+      "tags": [
+        "arith:late-early",
+        "template:late-early"
+      ]
+    },
+    {
+      "key": "sd-052",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If a delivery van runs at 36 km/h, it reaches the warehouse 8 minutes late; if it runs at 45 km/h, it reaches 4 minutes early. What is the scheduled travel time for the trip?",
+      "options": [
+        "52 minutes",
+        "54 minutes",
+        "56 minutes",
+        "60 minutes",
+        "64 minutes"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "d/36 − d/45 = 12 minutes = $\\frac{1}{5}$ hour → d/180 = 1/5 → d = 36 km.",
+          "At 36 km/h the trip takes 60 minutes, which is 8 minutes late.",
+          "Scheduled time = 60 − 8 = 52 minutes."
+        ],
+        "trap": "60 minutes is the time taken at 36 km/h, which already includes the 8-minute delay."
+      },
+      "tags": [
+        "arith:late-early",
+        "template:late-early"
+      ]
+    },
+    {
+      "key": "sd-053",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Walking at 5 km/h, Deepa reaches the school gate 6 minutes late. Walking at 6 km/h, she reaches 4 minutes early. How far is the school from her home?",
+      "options": [
+        "1 km",
+        "3 km",
+        "4 km",
+        "4.5 km",
+        "5 km"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The timings differ by 6 + 4 = 10 minutes = $\\frac{1}{6}$ hour.",
+          "d/5 − d/6 = d/30 = 1/6 → d = 5 km."
+        ],
+        "trap": "1 km uses only the 2-minute difference (6 − 4); late and early times add up."
+      },
+      "tags": [
+        "arith:late-early",
+        "template:late-early"
+      ]
+    },
+    {
+      "key": "sd-054",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Leaving at the same time each day, a train on a fixed route reaches its destination 20 minutes late when it runs at 60 km/h and 10 minutes early when it runs at 80 km/h. At what speed should it run to arrive exactly on time?",
+      "options": [
+        "66 km/h",
+        "68 km/h",
+        "70 km/h",
+        "72 km/h",
+        "75 km/h"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "d/60 − d/80 = 30 minutes = $\\frac{1}{2}$ hour → d/240 = 1/2 → d = 120 km.",
+          "Time at 60 km/h = 2 hours, so the scheduled time = 2 hours − 20 minutes = $1\\frac{2}{3}$ hours.",
+          "Required speed = 120 ÷ $\\frac{5}{3}$ = 72 km/h."
+        ],
+        "trap": "70 km/h is the mean of 60 and 80; the on-time speed comes from distance ÷ scheduled time."
+      },
+      "tags": [
+        "arith:late-early",
+        "template:late-early"
+      ]
+    },
+    {
+      "key": "sd-055",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Mohan leaves home at 9:00 a.m. every day. Cycling at 15 km/h he reaches his office 16 minutes late, and at 20 km/h he reaches 4 minutes early. One day he leaves at 9:00 a.m., cycles the first 40% of the distance at 15 km/h and the rest at 20 km/h. At what time does he reach the office that day?",
+      "options": [
+        "10:00 a.m.",
+        "10:04 a.m.",
+        "10:06 a.m.",
+        "10:08 a.m.",
+        "10:12 a.m."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "d/15 − d/20 = 20 minutes = $\\frac{1}{3}$ hour → d/60 = 1/3 → d = 20 km.",
+          "8 km at 15 km/h takes 32 minutes; the remaining 12 km at 20 km/h takes 36 minutes.",
+          "Total 68 minutes after 9:00 a.m. → he arrives at 10:08 a.m."
+        ],
+        "trap": "10:04 a.m. is the time he is due (80 minutes at 15 km/h minus 16); the mixed-speed ride takes 68 minutes, so he is 4 minutes late."
+      },
+      "tags": [
+        "arith:late-early",
+        "template:late-early"
+      ]
+    },
+    {
+      "key": "sd-056",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A car that travels the whole of a journey at $\\frac{4}{5}$ of its usual speed arrives 15 minutes late. Had it covered the first 60 km at its usual speed and only the rest at $\\frac{4}{5}$ of it, it would have been just 5 minutes late. What is the length of the journey?",
+      "options": [
+        "60 km",
+        "72 km",
+        "75 km",
+        "80 km",
+        "90 km"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "At $\\frac{4}{5}$ speed a stretch takes $\\frac{5}{4}$ of its usual time, so the delay is $\\frac{1}{4}$ of the usual time: whole journey usual time = 4 × 15 = 60 minutes.",
+          "The slow stretch in the second case has usual time 4 × 5 = 20 minutes, so the first 60 km take 40 minutes at usual speed → 90 km/h.",
+          "Journey = 90 km/h × 1 hour = 90 km."
+        ],
+        "trap": "60 km is only the stretch covered at the usual speed; the journey is 90 km."
+      },
+      "tags": [
+        "arith:late-early",
+        "template:late-early"
+      ]
     }
   ]
 }

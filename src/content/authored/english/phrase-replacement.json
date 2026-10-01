@@ -2528,6 +2528,946 @@
         "grammar:modifier",
         "pattern:dangling-modifier"
       ]
+    },
+    {
+      "key": "pr-092",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe quality of the mangoes sold in these markets **have improved** since the new cold-storage unit opened.",
+      "options": [
+        "have been improving",
+        "has improved",
+        "is improving",
+        "were improved",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The subject is 'the quality', which is singular, and 'since' needs a perfect tense, so the verb is 'has improved'.",
+          "Correct: *The quality of the mangoes sold in these markets has improved since the new cold-storage unit opened.*",
+          "A keeps a plural auxiliary; C uses the present continuous with 'since'; D is plural and passive."
+        ],
+        "rule": "The verb agrees with the head noun ('quality'), not with the noun inside the 'of' phrase; 'since' needs a perfect tense",
+        "trap": "C 'is improving' fixes the number but ignores the tense signal 'since'.",
+        "shortcut": "Strip the 'of …' and 'sold in …' phrases: 'The quality … has improved'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "grammar:tense"
+      ]
+    },
+    {
+      "key": "pr-093",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nTwo-thirds of the village land **are owned** by just four families.",
+      "options": [
+        "is owned",
+        "are owning",
+        "were owned",
+        "own",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "With fractions, the verb agrees with the noun after 'of'. 'Land' is uncountable, so the verb is singular: 'is owned'.",
+          "Correct: *Two-thirds of the village land is owned by just four families.*",
+          "B is active and plural; C is plural; D is active and plural and leaves 'by just four families' without a passive verb."
+        ],
+        "rule": "Fractions and percentages (two-thirds of, 40% of) agree with the noun that follows 'of'",
+        "trap": "'Two-thirds' sounds plural, but the verb follows 'land', not the fraction.",
+        "shortcut": "two-thirds of the land is; two-thirds of the farmers are."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:fraction-of"
+      ]
+    },
+    {
+      "key": "pr-094",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nTen kilometres **are too long distance** for the children to walk every day.",
+      "options": [
+        "are too long a distance",
+        "is a too long distance",
+        "is too long a distance",
+        "is too long distance",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A distance given as one amount ('ten kilometres') takes a singular verb. After 'too + adjective', the article comes after the adjective: 'too long a distance'.",
+          "Correct: *Ten kilometres is too long a distance for the children to walk every day.*",
+          "A fixes the word order but keeps 'are'; B puts 'a' before 'too'; D drops the article before a singular countable noun."
+        ],
+        "rule": "A plural amount treated as one quantity takes a singular verb; word order 'too/so/as + adjective + a + noun'",
+        "trap": "A has the elegant 'too long a distance', but the verb is still plural.",
+        "shortcut": "Distance, money or time as one amount → is; 'too long a', never 'a too long'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "grammar:article"
+      ]
+    },
+    {
+      "key": "pr-095",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nShalini **was waiting** for over an hour when the bank finally opened its doors.",
+      "options": [
+        "has been waiting",
+        "had been waiting",
+        "waited",
+        "is waiting",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "An action that went on for a period ('for over an hour') up to a moment in the past ('when the bank opened') takes the past perfect continuous: 'had been waiting'.",
+          "Correct: *Shalini had been waiting for over an hour when the bank finally opened its doors.*",
+          "A and D are present forms; C, the simple past, does not show that the waiting continued up to the moment the bank opened."
+        ],
+        "rule": "Past perfect continuous: an action lasting up to a past moment",
+        "trap": "The original 'was waiting' shows an action in progress but cannot carry a duration that runs up to that moment.",
+        "shortcut": "for + period … when + past event → had been + -ing."
+      },
+      "tags": [
+        "grammar:tense"
+      ]
+    },
+    {
+      "key": "pr-096",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nBy March next year, Ankit **will work** with the firm for five years.",
+      "options": [
+        "will be working",
+        "would have worked",
+        "is working",
+        "will have been working",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "'By + a future time' together with a duration ('for five years') needs the future perfect (continuous): 'will have been working'.",
+          "Correct: *By March next year, Ankit will have been working with the firm for five years.*",
+          "A (future continuous) does not show five years completed by March; B is a conditional form; C is present."
+        ],
+        "rule": "Future perfect (continuous) for a period completed by a future point",
+        "trap": "A 'will be working' sounds natural, but it cannot measure five years up to March.",
+        "shortcut": "By + future time → will have + V3 / will have been + -ing."
+      },
+      "tags": [
+        "grammar:tense"
+      ]
+    },
+    {
+      "key": "pr-097",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nIf Vikram had accepted the offer from the Pune firm last year, he **will be living** there now.",
+      "options": [
+        "would be living",
+        "would have lived",
+        "had been living",
+        "is living",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The condition is unreal and in the past ('had accepted … last year'), but the result is about the present ('now'). This is a mixed conditional, so the result takes 'would' + V1: 'would be living'.",
+          "Correct: *If Vikram had accepted the offer from the Pune firm last year, he would be living there now.*",
+          "B and C refer to the past and clash with 'now'; D states a real fact, which contradicts the unreal condition."
+        ],
+        "rule": "Mixed conditional: If + had + V3 (past condition), would + V1 / would be + -ing (present result)",
+        "trap": "B 'would have lived' matches the usual third-conditional pattern, but 'now' shows a present result.",
+        "shortcut": "Check the time word in the result clause: 'now' → would + V1."
+      },
+      "tags": [
+        "grammar:conditional"
+      ]
+    },
+    {
+      "key": "pr-098",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nShould you **will need** any help with the form, please call this number.",
+      "options": [
+        "needed",
+        "to need",
+        "need",
+        "needing",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "'Should you need' is the inverted form of 'If you need'. 'Should' is a modal, so it is followed by the bare verb: 'need'.",
+          "Correct: *Should you need any help with the form, please call this number.*",
+          "A, B and D are not bare infinitives."
+        ],
+        "rule": "Inverted first conditional: Should + subject + V1",
+        "trap": "A 'needed' seems to suit a formal past style, but after a modal the verb must be in the base form.",
+        "shortcut": "Should / Can / Will + V1, always."
+      },
+      "tags": [
+        "grammar:conditional",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "pr-099",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nNot until the results were declared **did the students realise** how tough the paper had been.",
+      "options": [
+        "the students realised",
+        "did the students realised",
+        "had the students realise",
+        "the students did realise",
+        "No replacement required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The phrase in bold is already correct: when 'Not until …' begins the sentence, the main clause is inverted ('did the students realise'), with the base verb after 'did'.",
+          "Correct: *Not until the results were declared did the students realise how tough the paper had been.*",
+          "A and D have no inversion; B puts a past form after 'did'; C puts the base form after 'had'."
+        ],
+        "rule": "Inversion in the main clause after an opening 'Not until …'",
+        "trap": "A reads naturally, but an opening 'Not until' clause always triggers inversion in the main clause.",
+        "shortcut": "Not until X + did/had + subject …"
+      },
+      "tags": [
+        "grammar:inversion",
+        "pattern:not-until",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "pr-100",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nOnly after the auditor checked the ledgers **the error was detected**.",
+      "options": [
+        "was the error detected",
+        "the error had been detected",
+        "was detected the error",
+        "did the error detect",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Only after …' at the start of a sentence needs inversion in the main clause: 'was the error detected'.",
+          "Correct: *Only after the auditor checked the ledgers was the error detected.*",
+          "B has no inversion; C moves the subject to the end; D makes the error the doer (active)."
+        ],
+        "rule": "Inversion after an opening 'Only after / Only when / Only then'",
+        "trap": "B changes the tense, which looks like a fix, but the word order is still not inverted.",
+        "shortcut": "Only + time phrase first → auxiliary + subject."
+      },
+      "tags": [
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "pr-101",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nLittle **he knew** that the stranger at the counter was his childhood friend.",
+      "options": [
+        "he did know",
+        "knew he",
+        "did he knew",
+        "did he know",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "'Little' at the start (meaning 'not at all') triggers inversion with 'did': 'Little did he know'.",
+          "Correct: *Little did he know that the stranger at the counter was his childhood friend.*",
+          "A has no inversion; B inverts a main verb, which modern English does not allow; C puts a past form after 'did'."
+        ],
+        "rule": "Inversion after an opening 'Little' (negative meaning)",
+        "trap": "C has the right word order but keeps 'knew' after 'did'.",
+        "shortcut": "Little did + subject + V1."
+      },
+      "tags": [
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "pr-102",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nOn the drive to Shimla, we stopped **taking photographs** of the snow-capped peaks at every bend, so the journey took twice as long.",
+      "options": [
+        "for take photographs",
+        "to take photographs",
+        "to taking photographs",
+        "take photographs",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Stop + -ing' means to give up an activity; 'stop + to-infinitive' means to halt in order to do something. Halting at every bend to photograph the peaks is why the journey took longer, so 'stopped to take photographs' is meant.",
+          "Correct: *On the drive to Shimla, we stopped to take photographs of the snow-capped peaks at every bend, so the journey took twice as long.*",
+          "A, C and D are ungrammatical after 'stopped'."
+        ],
+        "rule": "stop + -ing = give up an activity; stop + to + V1 = halt in order to do it",
+        "trap": "The original is grammatical, so it can look fine, but if they had given up taking photographs the journey would not have taken longer.",
+        "shortcut": "Purpose of stopping → stop to; ending an activity → stop -ing."
+      },
+      "tags": [
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "pr-103",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nPlease remember **locking** the main gate before you leave for the night.",
+      "options": [
+        "to lock",
+        "to locking",
+        "lock",
+        "for locking",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Remember + to-infinitive' is used for a task still to be done; 'remember + -ing' is for recalling something already done. The gate is to be locked later, so 'remember to lock'.",
+          "Correct: *Please remember to lock the main gate before you leave for the night.*",
+          "B, C and D are not standard after 'remember'."
+        ],
+        "rule": "remember/forget + to-infinitive = a future task; remember/forget + -ing = a past memory",
+        "trap": "The original is grammatical elsewhere ('I remember locking it'), but 'before you leave' shows a task in the future.",
+        "shortcut": "Before you leave → remember to."
+      },
+      "tags": [
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "pr-104",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe senior staff objected **to be transferred** without prior notice.",
+      "options": [
+        "for being transferred",
+        "to have transferred",
+        "on being transferred",
+        "to being transferred",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "In 'object to', 'to' is a preposition, so it takes a gerund. The staff were the ones transferred, so the passive gerund is needed: 'to being transferred'.",
+          "Correct: *The senior staff objected to being transferred without prior notice.*",
+          "A and C use the wrong preposition; B is an active infinitive (the staff would have transferred someone)."
+        ],
+        "rule": "'object to' + gerund (passive: being + V3)",
+        "trap": "B keeps 'to' and looks like a tense fix, but it is active and treats 'to' as part of an infinitive.",
+        "shortcut": "object to / be used to / look forward to + -ing."
+      },
+      "tags": [
+        "grammar:gerund-infinitive",
+        "grammar:voice"
+      ]
+    },
+    {
+      "key": "pr-105",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nNeha suggested **us to take** the earlier train to avoid the evening rush.",
+      "options": [
+        "us for taking",
+        "that we take",
+        "to us to take",
+        "us that we take",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Suggest' does not take 'object + to-infinitive'. The standard patterns are 'suggest that + subject + (should) + V1' or 'suggest + -ing': here 'suggested that we take'.",
+          "Correct: *Neha suggested that we take the earlier train to avoid the evening rush.*",
+          "A adds 'for'; C and D put 'us' after 'suggest' as if it were 'tell' or 'advise'."
+        ],
+        "rule": "'suggest that + subject + (should) + V1' or 'suggest + -ing' — never 'suggest someone to'",
+        "trap": "C copies the pattern of 'advise us to take', which 'suggest' does not follow.",
+        "shortcut": "suggest that we go / suggest going — never 'suggest us to go'."
+      },
+      "tags": [
+        "grammar:gerund-infinitive",
+        "grammar:subjunctive"
+      ]
+    },
+    {
+      "key": "pr-106",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe ancient stepwell **is said to be built** by a local queen in the eleventh century.",
+      "options": [
+        "was said to be built",
+        "is said to have built",
+        "is said to had been built",
+        "is said to have been built",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The building happened long before the present belief ('is said'), so a perfect infinitive is needed; it must be passive because the stepwell was built: 'is said to have been built'.",
+          "Correct: *The ancient stepwell is said to have been built by a local queen in the eleventh century.*",
+          "A moves the saying into the past but keeps the simple infinitive; B is active (the stepwell built something); C puts 'had' after 'to'."
+        ],
+        "rule": "Passive reporting verb + perfect infinitive for an earlier event: 'is said / believed to have been + V3'",
+        "trap": "B has the perfect infinitive but is active, which makes the stepwell the builder.",
+        "shortcut": "Earlier event → to have (been) + V3."
+      },
+      "tags": [
+        "grammar:voice"
+      ]
+    },
+    {
+      "key": "pr-107",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nHari got his scooter **service** at the authorised centre last week.",
+      "options": [
+        "servicing",
+        "to service",
+        "being service",
+        "serviced",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The causative 'get + object + past participle' shows that someone else did the job: 'got his scooter serviced'.",
+          "Correct: *Hari got his scooter serviced at the authorised centre last week.*",
+          "A, B and C are not past participles."
+        ],
+        "rule": "Causative: get/have + object + V3",
+        "trap": "B 'to service' fits 'get someone to do something', but here the object is the scooter, which is serviced, not the one doing the servicing.",
+        "shortcut": "got the car washed, had the house painted."
+      },
+      "tags": [
+        "grammar:voice"
+      ]
+    },
+    {
+      "key": "pr-108",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nSo severe **was the drought that** the farmers of the district had to sell their cattle.",
+      "options": [
+        "the drought was that",
+        "was the drought as",
+        "did the drought be that",
+        "the drought was so that",
+        "No replacement required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The phrase in bold is already correct: when 'So + adjective' begins the sentence, the verb comes before the subject ('was the drought'), and the result clause begins with 'that'.",
+          "Correct: *So severe was the drought that the farmers of the district had to sell their cattle.*",
+          "A has no inversion; B uses 'as' instead of 'that'; C uses 'did' with 'be'; D repeats 'so'."
+        ],
+        "rule": "Inversion after an opening 'So + adjective … that'",
+        "trap": "A reads like normal word order, but once 'So severe' is moved to the front, the verb must come before the subject.",
+        "shortcut": "So + adjective + be + subject + that."
+      },
+      "tags": [
+        "grammar:inversion",
+        "pattern:so-such-that",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "pr-109",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe more you practise mock tests, **more confident you will become** in the exam hall.",
+      "options": [
+        "the more confident would you become",
+        "the more confident you will become",
+        "more confidently you will become",
+        "the most confident you will become",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The double comparative needs 'the' before both comparatives: 'The more …, the more confident …'.",
+          "Correct: *The more you practise mock tests, the more confident you will become in the exam hall.*",
+          "A turns the second clause into a question with 'would'; C uses an adverb after 'become'; D uses a superlative."
+        ],
+        "rule": "Correlative comparative: 'The + comparative …, the + comparative …'",
+        "trap": "A has both 'the's but inverts the subject and modal as if asking a question.",
+        "shortcut": "The more …, the more …"
+      },
+      "tags": [
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "pr-110",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nOur new office is **as spacious, if not more spacious than,** the old one.",
+      "options": [
+        "as spacious as, if not more spacious than,",
+        "so spacious, if not more spacious as,",
+        "as spacious as, if not more spacious as,",
+        "more spacious, if not as spacious as,",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Each comparison must be complete on its own: 'as spacious as' and 'more spacious than'.",
+          "Correct: *Our new office is as spacious as, if not more spacious than, the old one.*",
+          "B and C pair 'more' with 'as'; D reverses the meaning and drops 'than'."
+        ],
+        "rule": "Incomplete double comparison: 'as … as, if not more … than'",
+        "trap": "C adds the missing 'as' but then wrongly changes 'than' to 'as'.",
+        "shortcut": "Remove the middle part: 'as spacious as the old one' must still read correctly."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "pr-111",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nRents in Bengaluru are now **twice more than** those in Mysuru.",
+      "options": [
+        "two times higher to",
+        "double higher than",
+        "twice as high as",
+        "as twice high as",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Multiples are expressed with 'twice / three times + as … as': 'twice as high as'.",
+          "Correct: *Rents in Bengaluru are now twice as high as those in Mysuru.*",
+          "A uses 'to'; B mixes 'double' with a comparative; D puts 'twice' inside the 'as … as'."
+        ],
+        "rule": "Multiplicative comparison: twice / thrice / three times + as + adjective + as",
+        "trap": "D has all the right words in the wrong order.",
+        "shortcut": "twice as … as, three times as … as."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "pr-112",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nYou can either pay the fee online **or by visiting** the nearest branch.",
+      "options": [
+        "or you visit",
+        "or visit",
+        "or visiting",
+        "and visit",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Either' is placed before the verb 'pay', so 'or' must also be followed by a verb in the same form: 'either pay … or visit'.",
+          "Correct: *You can either pay the fee online or visit the nearest branch.*",
+          "A adds a new subject; C uses an -ing form; D pairs 'either' with 'and'."
+        ],
+        "rule": "Parallelism with 'either … or': the same grammatical form after each part",
+        "trap": "C sounds close to the original, but 'pay' and 'visiting' are still not parallel.",
+        "shortcut": "either + V1 … or + V1."
+      },
+      "tags": [
+        "grammar:parallelism",
+        "pattern:either-or"
+      ]
+    },
+    {
+      "key": "pr-113",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nTo qualify for the scholarship, **an aptitude test must be cleared by the students**.",
+      "options": [
+        "the students must clear an aptitude test",
+        "an aptitude test has to be cleared by the students",
+        "clearing an aptitude test is necessary for the students",
+        "the aptitude test must be cleared by students",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The opening phrase 'To qualify for the scholarship' must refer to the subject of the main clause. Only the students can qualify, so they must be the subject: 'the students must clear an aptitude test'.",
+          "Correct: *To qualify for the scholarship, the students must clear an aptitude test.*",
+          "B and D keep 'test' as the subject; C makes 'clearing' the subject, so the infinitive still dangles."
+        ],
+        "rule": "Dangling infinitive: an opening infinitive of purpose must refer to the subject of the main clause",
+        "trap": "B only changes 'must' to 'has to'; the test is still the subject that seems to 'qualify'.",
+        "shortcut": "Who wants to qualify? Put that noun right after the comma."
+      },
+      "tags": [
+        "grammar:modifier",
+        "pattern:dangling-modifier"
+      ]
+    },
+    {
+      "key": "pr-114",
+      "subtype": "bold-phrase",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Both the manager as well as** the cashier were questioned about the missing cash.",
+      "options": [
+        "Both the manager along with",
+        "Both the manager or",
+        "Both the manager and",
+        "The manager as well as both",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "'Both' pairs only with 'and'. Following 'both' with 'as well as' mixes two structures and repeats the idea.",
+          "Correct: *Both the manager and the cashier were questioned about the missing cash.*",
+          "A and B pair 'both' with the wrong word; D puts 'both' in an impossible position."
+        ],
+        "rule": "Correlative conjunctions: both … and (never both … as well as)",
+        "trap": "A swaps 'as well as' for 'along with', which has the same problem: 'both' needs 'and'.",
+        "shortcut": "both … and; either … or; neither … nor; not only … but also."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "grammar:redundancy"
+      ]
+    },
+    {
+      "key": "pr-115",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nSanjay is the only one of the trainees who **have cleared** all three modules at the first attempt.",
+      "options": [
+        "have been cleared",
+        "had been clearing",
+        "has cleared",
+        "were clearing",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "In 'the only one of the trainees who …', 'who' refers to 'the only one' (Sanjay), not to 'the trainees', because only one person cleared all three modules. So the verb is singular: 'has cleared'.",
+          "Correct: *Sanjay is the only one of the trainees who has cleared all three modules at the first attempt.*",
+          "A, B and D are plural (A is also passive)."
+        ],
+        "rule": "'the only one of + plural noun + who' takes a singular verb (contrast: 'one of those who' takes a plural verb)",
+        "trap": "Those who know that 'one of those who' takes a plural verb apply it here too, but 'the only one' changes what 'who' refers to.",
+        "shortcut": "'the only one … who' → singular; 'one of those … who' → plural."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:only-one-of"
+      ]
+    },
+    {
+      "key": "pr-116",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nI shall send you the documents as soon as the bank **will have approved** the loan.",
+      "options": [
+        "would approve",
+        "had approved",
+        "has approved",
+        "will approve",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A time clause (as soon as, when, after, until) about the future does not take 'will'. It uses the present or the present perfect; the present perfect stresses that the approval will be complete first: 'as soon as the bank has approved'.",
+          "Correct: *I shall send you the documents as soon as the bank has approved the loan.*",
+          "A and B are past forms that do not fit 'I shall send'; D drops 'have' but keeps 'will'."
+        ],
+        "rule": "No 'will' in future time clauses; present perfect to show the earlier action is complete",
+        "trap": "D looks simpler and more natural, but 'will' is still not allowed after 'as soon as'.",
+        "shortcut": "as soon as / when / after / until + present (perfect) for the future."
+      },
+      "tags": [
+        "grammar:tense"
+      ]
+    },
+    {
+      "key": "pr-117",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nRamesh is the candidate **whom the panel believed was** the most suitable for the post.",
+      "options": [
+        "who the panel believed was",
+        "whom the panel believed to be was",
+        "which the panel believed was",
+        "whom the panel believed is",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The pronoun is the subject of 'was' (the panel believed [he] was the most suitable), so it must be 'who'; 'the panel believed' is only an inserted clause.",
+          "Correct: *Ramesh is the candidate who the panel believed was the most suitable for the post.*",
+          "B adds a second verb after 'to be'; C uses 'which' for a person; D keeps 'whom' and shifts to 'is'."
+        ],
+        "rule": "who (subject) vs whom (object): test the pronoun inside its own clause, ignoring inserted 'he thought / they believed'",
+        "trap": "'Whom' seems right because it comes before 'the panel believed', which looks like a verb needing an object.",
+        "shortcut": "Replace with he/him: 'the panel believed he was' → who."
+      },
+      "tags": [
+        "grammar:pronoun",
+        "pattern:who-whom"
+      ]
+    },
+    {
+      "key": "pr-118",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nIt was not until the auditors arrived **that the manager realised** the extent of the fraud.",
+      "options": [
+        "when the manager realised",
+        "did the manager realise",
+        "that the manager had not realised",
+        "then the manager realised",
+        "No replacement required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The phrase in bold is already correct: the cleft pattern 'It was not until X that Y' uses 'that' and normal word order.",
+          "Correct: *It was not until the auditors arrived that the manager realised the extent of the fraud.*",
+          "A and D replace 'that' with 'when' or 'then'; B uses inversion, which is used only when 'Not until' begins the sentence; C adds a second negative that reverses the meaning."
+        ],
+        "rule": "Cleft sentence: 'It was not until … that + subject + verb' (no inversion)",
+        "trap": "B copies the inversion of 'Not until X did Y', but the 'It was …' pattern takes no inversion.",
+        "shortcut": "It was not until … that …; Not until … did …"
+      },
+      "tags": [
+        "grammar:inversion",
+        "pattern:not-until",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "pr-119",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nWe regret **informing** you that your application for the post has not been accepted.",
+      "options": [
+        "for informing",
+        "to informing",
+        "having informed",
+        "to inform",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "'Regret + to-infinitive' is used when giving unwelcome news now; 'regret + -ing' means being sorry about something done earlier. The letter is giving the news now, so 'regret to inform'.",
+          "Correct: *We regret to inform you that your application for the post has not been accepted.*",
+          "A and B are not standard after 'regret'; C would mean the writer is sorry for having told you earlier."
+        ],
+        "rule": "regret + to-infinitive (sorry to say now) vs regret + -ing (sorry about the past)",
+        "trap": "The original and C are grammatical, but they mean the writer is sorry about having told you, not that the news is being given now.",
+        "shortcut": "Formal bad news → 'We regret to inform you'."
+      },
+      "tags": [
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "pr-120",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe proposal to shift the branch **was objected** by several senior customers.",
+      "options": [
+        "was objected for",
+        "was objected to",
+        "has objected to",
+        "objected to",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Object' needs 'to' before its object (they objected to the proposal), and the preposition stays in the passive: 'was objected to by …'.",
+          "Correct: *The proposal to shift the branch was objected to by several senior customers.*",
+          "A uses 'for'; C is active (the proposal objected); D leaves 'the proposal' without a finite verb."
+        ],
+        "rule": "Prepositional verbs keep their preposition in the passive (object to → was objected to by)",
+        "trap": "'was objected to by' looks clumsy with two prepositions together, so many drop 'to'.",
+        "shortcut": "laugh at → was laughed at; object to → was objected to."
+      },
+      "tags": [
+        "grammar:voice",
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "pr-121",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe climate of Shimla is much cooler **than Delhi** in May.",
+      "options": [
+        "than those of Delhi",
+        "than the Delhi",
+        "than of Delhi",
+        "than that of Delhi",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "As written, the climate of Shimla is compared with Delhi itself (a city), which is illogical. It must be compared with Delhi's climate: 'than that of Delhi', where 'that' stands for 'the climate'.",
+          "Correct: *The climate of Shimla is much cooler than that of Delhi in May.*",
+          "A uses the plural 'those' for the singular 'climate'; B and C do not supply the missing noun."
+        ],
+        "rule": "Faulty comparison: compare like with like; use 'that of / those of' to repeat the noun",
+        "trap": "A has the right idea, but 'those' cannot stand for a singular noun.",
+        "shortcut": "Singular noun → that of; plural noun → those of."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison",
+        "pattern:faulty-comparison"
+      ]
+    },
+    {
+      "key": "pr-122",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nNot only the players but also the coach **were fined** for the misconduct on the field.",
+      "options": [
+        "was fined",
+        "have been fined",
+        "were being fined",
+        "are fined",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "With 'not only … but also', the verb agrees with the nearer subject, 'the coach', which is singular: 'was fined'.",
+          "Correct: *Not only the players but also the coach was fined for the misconduct on the field.*",
+          "B, C and D all keep a plural verb."
+        ],
+        "rule": "Not only X but also Y: the verb agrees with Y",
+        "trap": "Several people were fined, so a plural verb feels logical, but grammar follows the nearer subject.",
+        "shortcut": "Treat 'not only … but also' like 'either … or' for agreement."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:not-only-but-also"
+      ]
+    },
+    {
+      "key": "pr-123",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe clerk admitted **having taken** the files home without permission.",
+      "options": [
+        "to have taken",
+        "of having taken",
+        "having took",
+        "to take",
+        "No replacement required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The phrase in bold is already correct: 'admit' is followed by a gerund, and the perfect gerund 'having taken' shows that the taking happened before the admission. ('Admitted to having taken' is also correct, but it is not offered.)",
+          "Correct: *The clerk admitted having taken the files home without permission.*",
+          "A and D use an infinitive, which 'admit' does not take; B uses 'of', which does not go with 'admit'; C puts 'took' after 'having'."
+        ],
+        "rule": "'admit (to)' + gerund; perfect gerund (having + V3) for an earlier action",
+        "trap": "A 'to have taken' looks formal, but 'admit' is never followed by a to-infinitive.",
+        "shortcut": "admit / deny / regret (the past) + -ing."
+      },
+      "tags": [
+        "grammar:gerund-infinitive",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "pr-124",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nYou **need not to have brought** so much food; we had already eaten at the hotel.",
+      "options": [
+        "did not need have brought",
+        "need not have brought",
+        "needed not to bring",
+        "must not have brought",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Need not have + V3' says that something was done but was unnecessary, which fits: the food was brought, but they had already eaten. Used as a modal, 'need' takes no 'to'.",
+          "Correct: *You need not have brought so much food; we had already eaten at the hotel.*",
+          "A mixes 'did not need' with 'have brought'; C is not a standard form; D expresses a deduction ('surely you did not bring'), which does not fit."
+        ],
+        "rule": "need not have + V3 = an action was done but was unnecessary",
+        "trap": "D looks like a similar modal perfect, but 'must not have' is a guess about the past, not a comment on necessity.",
+        "shortcut": "Did it, but it was not needed → needn't have + V3."
+      },
+      "tags": [
+        "grammar:modal"
+      ]
+    },
+    {
+      "key": "pr-125",
+      "subtype": "bold-phrase",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nEvery boy and every girl in the colony **have been given** a sapling to plant.",
+      "options": [
+        "has been given",
+        "have given",
+        "were given",
+        "are being given",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "When nouns joined by 'and' are each preceded by 'every' (or 'each'), the subject is treated as singular: 'has been given'.",
+          "Correct: *Every boy and every girl in the colony has been given a sapling to plant.*",
+          "B is plural and active (the children would be giving); C and D are plural."
+        ],
+        "rule": "'Every/each X and every/each Y' takes a singular verb",
+        "trap": "'And' usually makes a subject plural, but 'every' before each noun keeps it singular.",
+        "shortcut": "every … and every … → singular verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:each-every"
+      ]
     }
   ]
 }
