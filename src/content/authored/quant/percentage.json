@@ -1,0 +1,653 @@
+{
+  "chapter": "percentage",
+  "version": 1,
+  "items": [
+    {
+      "key": "pc-001",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "In a survey of the residents of a housing society, 35% preferred morning walks, 40% preferred yoga and the remaining 400 residents preferred cycling. Each resident chose exactly one activity. How many more residents preferred yoga than morning walks?",
+      "options": [
+        "20",
+        "64",
+        "80",
+        "96",
+        "100"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Cycling = 100% − 35% − 40% = 25% of the residents = 400, so there are 400 × 4 = 1,600 residents.",
+          "Yoga − morning walks = 40% − 35% = 5% of 1,600 = **80**."
+        ],
+        "trap": "20 takes 5% of the 400 cyclists. The percentages are shares of all the residents, so first find the total (1,600).",
+        "shortcut": "5% is one-fifth of 25%, so the answer is 400 ÷ 5 = 80 directly."
+      },
+      "tags": [
+        "percent:participation",
+        "template:participation-split",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "At a bank's induction programme, 26% of the trainees opted for the Credit module, 44% opted for the Forex module and the rest opted for the Treasury module; each trainee opted for exactly one module. If 162 more trainees opted for Forex than for Credit, how many trainees opted for Treasury?",
+      "options": [
+        "216",
+        "234",
+        "243",
+        "252",
+        "270"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Forex − Credit = 44% − 26% = 18% of the trainees = 162, so 1% = 9 and there are 900 trainees.",
+          "Treasury = 100% − 26% − 44% = 30% of 900 = **270**."
+        ],
+        "trap": "234 is 26% of 900, the Credit count. The question asks for Treasury, the 'rest': 100% − 70% = 30%.",
+        "shortcut": "Treasury : (Forex − Credit) = 30 : 18 = 5 : 3, so Treasury = 162 × 5/3 = 270."
+      },
+      "tags": [
+        "percent:participation",
+        "template:participation-split"
+      ]
+    },
+    {
+      "key": "pc-003",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In an office, 40% of the employees come to work by bus, the number who come by metro is 25% less than the number who come by bus, and the remaining 900 employees come by car. How many more employees come by bus than by metro?",
+      "options": [
+        "270",
+        "300",
+        "360",
+        "450",
+        "500"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Metro = 75% of 40% = 30% of the employees, so car = 100% − 40% − 30% = 30% = 900 → 3,000 employees.",
+          "Bus − metro = 40% − 30% = 10% of 3,000 = **300**."
+        ],
+        "trap": "500 treats '25% less' as 25 percentage points (metro = 15%, car = 45%, total 2,000, gap 25% = 500). The 25% is taken on the bus share: 40% × 0.75 = 30%."
+      },
+      "tags": [
+        "percent:participation",
+        "template:participation-split",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-004",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Each student of a college chose exactly one elective: 38% chose Economics, 36% chose Psychology and the rest chose Sociology. If 140 more students chose Psychology than Sociology, how many students chose Economics?",
+      "options": [
+        "476",
+        "490",
+        "504",
+        "518",
+        "532"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Sociology = 100% − 38% − 36% = 26%. Psychology − Sociology = 36% − 26% = 10% = 140, so there are 1,400 students.",
+          "Economics = 38% of 1,400 = **532**."
+        ],
+        "trap": "504 is 36% of 1,400, the Psychology count. The question asks for Economics (38%)."
+      },
+      "tags": [
+        "percent:participation",
+        "template:participation-split"
+      ]
+    },
+    {
+      "key": "pc-005",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a factory, 45% of the workers are on the day shift, 35% on the evening shift and the rest on the night shift. Next month, 20% of the day-shift workers are moved to the night shift, which increases the night shift by 162 workers. After the move, how many more workers are on the day shift than on the evening shift?",
+      "options": [
+        "18",
+        "27",
+        "36",
+        "45",
+        "180"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Workers moved = 20% of 45% = 9% of all workers = 162, so there are 1,800 workers.",
+          "Day shift now = 45% − 9% = 36%; evening = 35%. Difference = 1% of 1,800 = **18**."
+        ],
+        "trap": "180 is the gap before the move (45% − 35% = 10% of 1,800). The 9% moved out of the day shift must be removed first."
+      },
+      "tags": [
+        "percent:participation",
+        "template:participation-split",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-006",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Of the members of a public library, 40% read only newspapers, 25% read only magazines and the rest read both. Of the members who read both, 60% are women. If 168 men read both, how many more members read only newspapers than read only magazines?",
+      "options": [
+        "120",
+        "150",
+        "168",
+        "180",
+        "210"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Both = 100% − 40% − 25% = 35% of the members. Men among them = 40% of 35% = 14% of all members = 168, so there are 1,200 members.",
+          "Only newspapers − only magazines = 40% − 25% = 15% of 1,200 = **180**."
+        ],
+        "trap": "120 uses the women's 60% for the 168 men (60% of 35% = 21% → 800 members). The men are 100% − 60% = 40% of the 'both' group."
+      },
+      "tags": [
+        "percent:participation",
+        "percent:nested",
+        "template:participation-split"
+      ]
+    },
+    {
+      "key": "pc-007",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Ravi deposited ₹20,000 in a scheme that increased the amount by 10% every year, compounded annually. After 2 years he withdrew the whole amount and spent 25% of it on a laptop. How much money was left with him?",
+      "options": [
+        "₹16,500",
+        "₹17,600",
+        "₹18,000",
+        "₹18,150",
+        "₹19,360"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "After 2 years: ₹20,000 × 1.1 × 1.1 = ₹24,200.",
+          "Left after spending 25%: ₹24,200 × 0.75 = **₹18,150**."
+        ],
+        "trap": "₹18,000 grows the amount by a flat 20% (₹24,000). With compounding, the second 10% is on ₹22,000, not on ₹20,000."
+      },
+      "tags": [
+        "percent:growth-then-spend",
+        "template:growth-balance"
+      ]
+    },
+    {
+      "key": "pc-008",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Swati's savings grew by 20% in the first year and by 25% in the second year. She then spent 40% of the amount on a scooter and 25% of the remaining amount on its insurance, and was left with ₹11,340. What were her savings at the start?",
+      "options": [
+        "₹16,800",
+        "₹18,000",
+        "₹19,200",
+        "₹21,000",
+        "₹21,600"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Start = 100 → 120 → 150 after two years. After the scooter: 60% of 150 = 90; after insurance: 75% of 90 = 67.5.",
+          "67.5% of the start = ₹11,340, so the start = ₹11,340 × 100/67.5 = **₹16,800**."
+        ],
+        "trap": "₹21,600 takes the insurance as 25% of the whole amount (150 − 60 − 37.5 = 52.5). The insurance is 25% of what remained after the scooter."
+      },
+      "tags": [
+        "percent:growth-then-spend",
+        "template:growth-balance",
+        "percent:reverse"
+      ]
+    },
+    {
+      "key": "pc-009",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The number of members of a cooperative society was 16,000 at the start of 2023. It rose by 25% in 2023 and by 20% in 2024. At the start of 2025, 35% of the members left to join a new society. How many members remained?",
+      "options": [
+        "14,400",
+        "15,600",
+        "16,000",
+        "16,640",
+        "17,600"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After two years: 16,000 × 1.25 × 1.2 = 24,000.",
+          "Remaining after 35% leave: 24,000 × 0.65 = **15,600**."
+        ],
+        "trap": "17,600 adds the changes (25 + 20 − 35 = +10%). Each change acts on the new number, so the factors multiply: 1.25 × 1.2 × 0.65 = 0.975.",
+        "shortcut": "Overall factor 1.25 × 1.2 × 0.65 = 0.975, i.e. 2.5% fewer than 16,000 → 15,600."
+      },
+      "tags": [
+        "percent:growth-then-spend",
+        "template:growth-balance",
+        "percent:successive-change"
+      ]
+    },
+    {
+      "key": "pc-010",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A company's revenue grew by 20% in 2024 and by 15% in 2025. In 2025 it spent 60% of its revenue on costs and paid 25% of the remaining amount as tax. If its profit after tax in 2025 was ₹4,14,000, what was its revenue in 2023?",
+      "options": [
+        "₹9,00,000",
+        "₹10,00,000",
+        "₹11,00,000",
+        "₹12,00,000",
+        "₹13,80,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "2025 revenue = R × 1.2 × 1.15 = 1.38R. After costs: 40% of 1.38R = 0.552R; after tax: 75% of that = 0.414R.",
+          "0.414R = ₹4,14,000, so the 2023 revenue R = **₹10,00,000**."
+        ],
+        "trap": "₹12,00,000 is the 2024 revenue (1.2R): it stops one year short. The question asks for 2023, before both growth years."
+      },
+      "tags": [
+        "percent:growth-then-spend",
+        "template:growth-balance",
+        "percent:reverse"
+      ]
+    },
+    {
+      "key": "pc-011",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Mohit invested a sum that grew by 25% in the first year. At the end of the first year he withdrew ₹5,000, and the balance grew by 20% in the second year to ₹42,000. What sum did he invest?",
+      "options": [
+        "₹28,000",
+        "₹30,000",
+        "₹32,000",
+        "₹33,000",
+        "₹35,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Balance at the start of year 2 = ₹42,000 ÷ 1.2 = ₹35,000.",
+          "Before the withdrawal it was ₹35,000 + ₹5,000 = ₹40,000 = 1.25 × sum, so the sum = **₹32,000**."
+        ],
+        "trap": "₹33,000 takes the ₹5,000 out before the first year's growth: (S − 5,000) × 1.25 × 1.2 = 42,000. The withdrawal came after the 25% growth.",
+        "shortcut": "Work backwards: ÷ 1.2, + 5,000, ÷ 1.25."
+      },
+      "tags": [
+        "percent:growth-then-spend",
+        "template:growth-balance",
+        "percent:reverse"
+      ]
+    },
+    {
+      "key": "pc-012",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ajay and Vijay had savings in the ratio 4 : 5. Ajay's savings grew by 25% in the first year and by 20% in the second year. Vijay's savings grew by 20% in the first year, after which he spent 10% of the amount. At the end of the second year, Ajay had ₹3,000 more than Vijay. How much did Vijay have at the end of the second year?",
+      "options": [
+        "₹25,000",
+        "₹27,000",
+        "₹30,000",
+        "₹32,400",
+        "₹33,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Take the savings as 4k and 5k. Ajay: 4k × 1.25 × 1.2 = 6k. Vijay: 5k × 1.2 × 0.9 = 5.4k.",
+          "6k − 5.4k = 0.6k = ₹3,000, so k = ₹5,000 and Vijay has 5.4 × 5,000 = **₹27,000**."
+        ],
+        "trap": "₹30,000 is Ajay's final amount (6k). The question asks for Vijay's."
+      },
+      "tags": [
+        "percent:growth-then-spend",
+        "template:growth-balance",
+        "percent:feeds-ratio"
+      ]
+    },
+    {
+      "key": "pc-013",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a bank's regional office, 40% of the employees are women. 35% of the men are officers and the remaining 1,560 men are clerks. How many women work in the office?",
+      "options": [
+        "960",
+        "1,440",
+        "1,500",
+        "1,600",
+        "2,400"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Men who are clerks = 65% of the men = 1,560, so there are 2,400 men.",
+          "Men are 60% of the staff, so the total is 4,000 and women = 40% = **1,600**."
+        ],
+        "trap": "960 treats 1,560 as 65% of all employees (total 2,400) and takes 40% of that. The 65% is a share of the men only."
+      },
+      "tags": [
+        "percent:nested",
+        "template:nested-gender",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-014",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a college, 60% of the students are boys. 25% of the boys and 40% of the girls stay in the hostel. If 504 girls do not stay in the hostel, how many boys stay in the hostel?",
+      "options": [
+        "315",
+        "336",
+        "360",
+        "378",
+        "420"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Girls not in the hostel = 60% of the girls = 504, so there are 840 girls = 40% of the students → 2,100 students.",
+          "Boys = 1,260; boys in the hostel = 25% of 1,260 = **315**."
+        ],
+        "trap": "336 is 40% of 840, the girls who stay in the hostel. The question asks for boys in the hostel."
+      },
+      "tags": [
+        "percent:nested",
+        "template:nested-gender"
+      ]
+    },
+    {
+      "key": "pc-015",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a district, 60% of the adults are men. 70% of the men and 60% of the women are literate, and 40% of the literate men are graduates. If there are 3,600 more literate men than literate women, how many men are graduates?",
+      "options": [
+        "2,880",
+        "3,360",
+        "3,600",
+        "4,200",
+        "4,800"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Literate men = 70% of 60% = 42% of adults; literate women = 60% of 40% = 24%. Difference = 18% = 3,600 → 20,000 adults.",
+          "Literate men = 8,400; graduates = 40% of 8,400 = **3,360**."
+        ],
+        "trap": "4,800 takes 40% of all 12,000 men. Only literate men can be graduates here: the 40% is a share of the 8,400 literate men."
+      },
+      "tags": [
+        "percent:nested",
+        "template:nested-gender",
+        "trap:wrong-base",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-016",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a company, 25% of the employees are women. 20% of the women and 40% of the men opted for a new pension scheme. If 1,260 employees opted for the scheme, how many men did not opt for it?",
+      "options": [
+        "1,080",
+        "1,350",
+        "1,440",
+        "1,512",
+        "1,620"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Opted = 20% of 25% + 40% of 75% = 5% + 30% = 35% of employees = 1,260 → 3,600 employees.",
+          "Men = 2,700; men who did not opt = 60% of 2,700 = **1,620**."
+        ],
+        "trap": "1,080 is 40% of 2,700, the men who did opt. The question asks for the 60% who did not."
+      },
+      "tags": [
+        "percent:nested",
+        "template:nested-gender"
+      ]
+    },
+    {
+      "key": "pc-017",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a village, 40% of the registered voters are women. In an election, 25% of the women and 15% of the men on the voters' list did not vote. If 8,100 votes were cast, how many men did not vote?",
+      "options": [
+        "900",
+        "1,000",
+        "1,080",
+        "1,200",
+        "1,215"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Votes cast = 75% of 40% + 85% of 60% = 30% + 51% = 81% of the list = 8,100 → 10,000 voters.",
+          "Men = 6,000; men who did not vote = 15% of 6,000 = **900**."
+        ],
+        "trap": "1,215 is 15% of the 8,100 votes cast. The 15% is a share of the men on the list (6,000), not of the votes."
+      },
+      "tags": [
+        "percent:nested",
+        "template:nested-gender",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-018",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In a company, 60% of the employees are men. 30% of the men and 45% of the women are post-graduates. 25% of the post-graduates work in the IT department, and there are 324 post-graduates in the IT department. How many women in the company are not post-graduates?",
+      "options": [
+        "648",
+        "720",
+        "792",
+        "864",
+        "1,008"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Post-graduates = 30% of 60% + 45% of 40% = 18% + 18% = 36% of employees. IT post-graduates = 25% of 36% = 9% = 324 → 3,600 employees.",
+          "Women = 1,440; women who are not post-graduates = 55% of 1,440 = **792**."
+        ],
+        "trap": "648 is 45% of 1,440, the women who are post-graduates. The question asks for the other 55%."
+      },
+      "tags": [
+        "percent:nested",
+        "template:nested-gender",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-019",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "20% of a number A is equal to 30% of a number B. If A + B = 1,500, what is the value of A?",
+      "options": [
+        "600",
+        "750",
+        "800",
+        "900",
+        "1,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "0.2A = 0.3B gives A : B = 30 : 20 = 3 : 2.",
+          "A = $\\frac{3}{5}$ × 1,500 = **900**."
+        ],
+        "trap": "600 uses the reversed ratio 2 : 3. The number multiplied by the smaller percentage is the larger number."
+      },
+      "tags": [
+        "percent:equal-parts",
+        "template:p-of-a-equals-q-of-b"
+      ]
+    },
+    {
+      "key": "pc-020",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "60% of a number A is equal to 75% of a number B. If A is 54 more than B, what is the value of B?",
+      "options": [
+        "216",
+        "240",
+        "252",
+        "270",
+        "324"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "0.6A = 0.75B gives A : B = 75 : 60 = 5 : 4.",
+          "A − B = 1 part = 54, so B = 4 × 54 = **216**."
+        ],
+        "trap": "270 is A (5 parts). The question asks for B."
+      },
+      "tags": [
+        "percent:equal-parts",
+        "template:p-of-a-equals-q-of-b"
+      ]
+    },
+    {
+      "key": "pc-021",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "40% of Ramesh's monthly salary is equal to 56% of Suresh's monthly salary. Together they earn ₹43,200 a month. What is Suresh's monthly salary?",
+      "options": [
+        "₹15,000",
+        "₹16,800",
+        "₹17,500",
+        "₹18,000",
+        "₹25,200"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "0.40R = 0.56S gives R : S = 56 : 40 = 7 : 5.",
+          "Suresh = $\\frac{5}{12}$ × ₹43,200 = **₹18,000**."
+        ],
+        "trap": "₹25,200 is Ramesh's salary ($\\frac{7}{12}$ of the total), the result of reading the ratio the wrong way round."
+      },
+      "tags": [
+        "percent:equal-parts",
+        "template:p-of-a-equals-q-of-b"
+      ]
+    },
+    {
+      "key": "pc-022",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "25% of A, 40% of B and 50% of C are all equal. If A is 1,200 more than C, what is the value of B?",
+      "options": [
+        "1,200",
+        "1,350",
+        "1,500",
+        "1,600",
+        "1,920"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let each part = k. A = 4k, B = 2.5k, C = 2k, so A : B : C = 8 : 5 : 4.",
+          "A − C = 4 units = 1,200, so 1 unit = 300 and B = 5 × 300 = **1,500**."
+        ],
+        "trap": "1,920 uses A : B : C = 25 : 40 : 50 = 5 : 8 : 10, as if the numbers were in the ratio of their percentages. Equal parts mean the numbers are inversely proportional to the percentages."
+      },
+      "tags": [
+        "percent:equal-parts",
+        "template:p-of-a-equals-q-of-b",
+        "trap:reversed-ratio"
+      ]
+    },
+    {
+      "key": "pc-023",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "30% of a number P is equal to 45% of a number Q. By what percent is Q less than P?",
+      "options": [
+        "25%",
+        "30%",
+        "$33\\frac{1}{3}$%",
+        "40%",
+        "50%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "0.3P = 0.45Q gives P : Q = 3 : 2.",
+          "Q is less than P by 1 part out of 3 = **$33\\frac{1}{3}$%**."
+        ],
+        "trap": "50% is how much P exceeds Q (1 part out of 2). 'Q less than P' is measured on P."
+      },
+      "tags": [
+        "percent:equal-parts",
+        "percent:base-change",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-024",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "45% of a number P is equal to 60% of a number Q. If 30 is added to each number, P + 30 becomes 25% more than Q + 30. What is P + Q?",
+      "options": [
+        "120",
+        "180",
+        "196",
+        "200",
+        "210"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "0.45P = 0.6Q gives P = $\\frac{4}{3}$Q. Then $\\frac{4}{3}$Q + 30 = 1.25(Q + 30) → $\\frac{4}{3}$Q − $\\frac{5}{4}$Q = 37.5 − 30 → $\\frac{1}{12}$Q = 7.5.",
+          "Q = 90, P = 120, so P + Q = **210**."
+        ],
+        "trap": "120 is P alone. The question asks for the sum P + Q."
+      },
+      "tags": [
+        "percent:equal-parts",
+        "template:p-of-a-equals-q-of-b",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-025",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "40% of A's monthly income is equal to 50% of B's monthly income, which is equal to 80% of C's monthly income. If A earns ₹6,000 a month more than C, what is the total monthly income of the three?",
+      "options": [
+        "₹24,000",
+        "₹25,500",
+        "₹26,400",
+        "₹27,000",
+        "₹27,600"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Equal parts k: A = 2.5k, B = 2k, C = 1.25k, so A : B : C = 10 : 8 : 5.",
+          "A − C = 5 units = ₹6,000 → 1 unit = ₹1,200. Total = 23 units = **₹27,600**."
+        ],
+        "trap": "₹25,500 uses the ratio 4 : 5 : 8 of the percentages themselves (C − A = 4 units = ₹6,000, total 17 units). Incomes are inversely proportional to the percentages."
+      },
+      "tags": [
+        "percent:equal-parts",
+        "template:p-of-a-equals-q-of-b",
+        "trap:reversed-ratio"
+      ]
+    }
+  ]
+}

@@ -5728,6 +5728,750 @@
           ]
         }
       ]
+    },
+    {
+      "key": "rc-24",
+      "subtype": "narrative",
+      "difficulty": "medium",
+      "title": "Two oars",
+      "stimulus": "Rajan had been fishing off the coast near Kollam since he was fourteen, first in his father's wooden canoe and later in a fibreglass boat with an outboard motor that he shared with three other men. In thirty-eight years at sea he had learnt to **read** the sky and the water the way other men read a newspaper: the colour of the clouds at dawn, the direction of the swell, the behaviour of the seabirds.\n\nOn the morning of the storm, none of these signs worried him at first. The weather bulletin on his phone predicted a moderate wind and a chance of rain later in the day, and the boats that left the harbour before sunrise were expecting a good catch of sardines. By eleven o'clock, however, Rajan noticed that the swell was coming from the south-west, against the wind, and that the gulls which usually followed the boats had all turned towards land. He did not wait for the bulletin to change. The crew ______ **(blank)** the nets, and the boat turned for the shore.\n\nThe youngest of his crew, a twenty-year-old named Nikhil, protested. The nets were only half full, and he had heard older fishermen talk about such signs as if they were superstitions. Rajan did not argue. He simply said that the sea did not care what they believed.\n\nWithin an hour the wind had risen sharply and the sea turned **rough**, with waves tall enough to hide the coastline. Rajan's boat reached the harbour mouth just as the rain began. Another boat from the same village, which had stayed out to finish its catch, was not so lucky: a wave struck it side-on and overturned it about two kilometres from the shore. Its four crew members clung to the upturned hull. Rajan, after making sure his own men were safe, went back out with two volunteers and pulled them from the water. All four survived.\n\nThe weather office later explained that a small, intense system had formed faster than its models had anticipated, and that its warning had been issued only after many boats were already at sea. Forecasts along the coast have improved greatly in recent years, and Rajan is the first to say that they have saved many lives. But he believes that no forecast can describe the sea at every spot along the coast at every moment.\n\nSince that day, Nikhil has become his most attentive student. Rajan has changed too. He now insists that every man on his boat wear a life jacket, which he once considered unnecessary for an experienced fisherman, and he carries a radio set that can call the harbour from far out at sea. The old knowledge and the new, he says, are like two oars. A boat rowed with only one goes round in circles.",
+      "questions": [
+        {
+          "key": "rc-24-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, what did the weather bulletin predict on the morning of the storm?",
+          "options": [
+            "A severe storm that would strike the coast before noon",
+            "A moderate wind and a chance of rain later in the day",
+            "Calm seas and clear skies for the whole day",
+            "Strong winds from the south-west by eleven o'clock",
+            "A poor catch of sardines because of rough water"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 2: 'The weather bulletin on his phone predicted a moderate wind and a chance of rain later in the day.'"
+            ],
+            "trap": "The south-west swell is what Rajan *noticed* at eleven, not what the bulletin predicted."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, which signs made Rajan decide to turn back?",
+          "options": [
+            "Dark clouds at dawn and a sudden drop in the temperature",
+            "A revised weather bulletin warning of a storm",
+            "A radio call from the harbour asking all boats to return",
+            "A swell coming from the south-west against the wind, and gulls that had turned towards land",
+            "Nets that were only half full by eleven o'clock"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2: Rajan noticed 'that the swell was coming from the south-west, against the wind, and that the gulls … had all turned towards land'. He 'did not wait for the bulletin to change'."
+            ],
+            "trap": "The colour of clouds at dawn is one of the signs he can read in general (para 1), but on that morning 'none of these signs worried him at first'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 2?",
+          "options": [
+            "called off",
+            "ran out of",
+            "looked after",
+            "gave away",
+            "hauled in"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Before turning for the shore, the crew pulled the nets back into the boat: they *hauled in* the nets.",
+              "'Called off' (cancelled), 'ran out of' (used up), 'looked after' (cared for) and 'gave away' (donated) do not describe getting nets out of the water."
+            ],
+            "trap": "'Looked after the nets' is grammatical but says nothing about bringing them aboard, which the boat had to do before it could turn back."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following is/are true according to the passage?\n(A) The boat that overturned had stayed out to finish its catch.\n(B) One member of the overturned boat's crew was lost at sea.\n(C) Rajan went back out to sea with two volunteers.",
+          "options": [
+            "Only (A)",
+            "Only (B)",
+            "Both (A) and (C)",
+            "All of these",
+            "None of these"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "(A) is true: para 4, the other boat 'had stayed out to finish its catch'.",
+              "(B) is false: 'All four survived.'",
+              "(C) is true: para 4."
+            ],
+            "trap": "Choosing 'All of these' means missing the last two words of para 4: all four survived."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q05",
+          "subtype": "fact",
+          "prompt": "According to the weather office, why was the warning issued late?",
+          "options": [
+            "A small, intense system had formed faster than its models had anticipated.",
+            "The fishermen had switched off their phones before leaving the harbour.",
+            "The radio sets on the boats could not receive the warning.",
+            "Forecasts along that coast have become less accurate in recent years.",
+            "The storm had been wrongly reported as moving away from the coast."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 5: 'a small, intense system had formed faster than its models had anticipated'."
+            ],
+            "trap": "The option about forecasts becoming less accurate reverses para 5: they 'have improved greatly in recent years'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Rajan began fishing when he was fourteen.",
+            "Rajan shared his fibreglass boat with three other men.",
+            "The other boat overturned about two kilometres from the shore.",
+            "Rajan has always made every man on his boat wear a life jacket.",
+            "Rajan now carries a radio set that can call the harbour."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 6: he now insists on life jackets, 'which he once considered unnecessary for an experienced fisherman'. So 'always' is false.",
+              "The other statements are in paras 1, 4 and 6."
+            ],
+            "trap": "The life-jacket rule is real, which makes the statement tempting; the word 'always' is what makes it false."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q07",
+          "subtype": "inference",
+          "prompt": "What does Rajan mean when he compares the old knowledge and the new to two oars?",
+          "options": [
+            "Traditional knowledge is more important than modern forecasts.",
+            "Weather forecasts are useless and can be ignored by experienced fishermen.",
+            "Each kind of knowledge is incomplete on its own, and a fisherman needs both to stay safe.",
+            "Fishermen should go back to rowing instead of using outboard motors.",
+            "Young fishermen should learn to row before they learn to read forecasts."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "A boat rowed with one oar 'goes round in circles': neither kind of knowledge gets you anywhere alone. The story shows both: his reading of the signs saved his boat, but he has also adopted life jackets and a radio and praises forecasts."
+            ],
+            "trap": "The option about traditional knowledge being more important ignores para 5, where Rajan says forecasts 'have saved many lives', and para 6, where he takes up a radio."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Weather forecasts along India's coast are unreliable and should not be trusted.",
+            "Traditional signs read by fishermen are nothing more than superstitions.",
+            "Fibreglass boats are less safe at sea than wooden canoes.",
+            "Young fishermen are too careless to be allowed to work at sea.",
+            "A fisherman's experience during a storm shows that local knowledge of the sea and modern forecasts work best together."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The storm story shows the value of Rajan's local signs; paras 5–6 show him valuing forecasts, life jackets and a radio; the two-oars image sums it up."
+            ],
+            "trap": "Nikhil's protest in para 3 is not the point; the passage ends with him as Rajan's 'most attentive student'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **read** as used in the passage.",
+          "options": [
+            "recite",
+            "interpret",
+            "publish",
+            "spell",
+            "record"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "To 'read the sky and the water' is to understand what their signs mean.",
+              "Read here = interpret."
+            ],
+            "trap": "'Recite' and 'spell' belong to reading words on a page; the sky has no words to recite."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-24-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **rough** as used in the passage.",
+          "options": [
+            "calm",
+            "stormy",
+            "choppy",
+            "violent",
+            "wild"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "'the sea turned rough, with waves tall enough to hide the coastline': rough = stormy, turbulent.",
+              "The opposite is calm."
+            ],
+            "trap": "Stormy, choppy, violent and wild all describe a rough sea; they are synonyms, not opposites."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-25",
+      "subtype": "narrative",
+      "difficulty": "medium",
+      "title": "The potter goes online",
+      "stimulus": "For three generations, the Verma family of Khurja, a town in western Uttar Pradesh known for its ceramics, sold its pottery in only one way. Wholesale traders came to the workshop, chose cups, plates and planters by the hundred, bargained hard and carried them away in trucks to shops across north India. The family never met the people who used their work, and rarely knew where it ended up.\n\nAnjali Verma took over her father's wheel in 2019, when he could no longer work long hours. Within a year the trucks had stopped coming. With shops shut and traders unwilling to buy, she had hundreds of pieces stacked in the courtyard and no buyers. A cousin suggested that she try selling online. She was doubtful, since she had never photographed her own work, but she had little to lose.\n\nThe first months were discouraging. Her photographs, taken on a phone under the yellow light of the workshop, made the pots look dull. Nearly one parcel in five arrived broken, and **returns** ate into whatever profit she made. Some buyers complained that the mug they received was a slightly different shade from the one in the picture. In the wholesale trade nobody had minded such variations; online, each one became a one-star review.\n\nAnjali learnt quickly. She began photographing her work outdoors in the morning, against a plain wall. A packaging supplier showed her how to wrap each piece in corrugated sheets and pack it in a box inside a box, and breakages fell to fewer than one in fifty. For the problem of colour she ______ **(blank)** a simple solution. Rather than trying to make every glaze identical, she added a printed card to each parcel explaining that every piece was thrown by hand and fired in a kiln, so no two would be exactly alike. Complaints fell, and several buyers wrote that the card was what had made them order again.\n\nToday about three-fifths of her sales are online, and she employs two women from the neighbourhood to pack orders. The prices she receives are higher than traders ever paid, because no middleman takes a share, though she now pays for packaging, courier charges and the platform's commission. Buyers also ask for things traders never did: a set of plates with a family name, a planter in a particular colour, a matte rather than a glossy **finish**.\n\nShe has not given up on the traders, who still buy in bulk and pay in advance. \"The internet pays better per piece,\" she says, \"but the traders buy in a week what the website sells in a month.\" For now, she has decided that her workshop needs both.",
+      "questions": [
+        {
+          "key": "rc-25-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, how did the Verma family sell its pottery before Anjali took over?",
+          "options": [
+            "The family ran its own shops in several towns of north India.",
+            "Wholesale traders came to the workshop, bought in large numbers and carried the pottery away to shops.",
+            "The family sold its pottery directly to households at village fairs.",
+            "The family sent its pottery by courier to buyers who ordered by phone.",
+            "The family sold only to a single large shop in Khurja."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 1: 'Wholesale traders came to the workshop, chose cups, plates and planters by the hundred, bargained hard and carried them away in trucks to shops across north India.'"
+            ],
+            "trap": "The family's pottery did reach shops across north India, but through traders; the family 'never met the people who used their work'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what reduced the number of pieces that arrived broken?",
+          "options": [
+            "Photographing each piece outdoors before it was packed",
+            "Adding a printed card to each parcel",
+            "Wrapping each piece in corrugated sheets and packing it in a box inside a box",
+            "Hiring two women from the neighbourhood to pack orders",
+            "Sending parcels only to buyers in nearby towns"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 4: a packaging supplier showed her this method, 'and breakages fell to fewer than one in fifty'."
+            ],
+            "trap": "The two packers in para 5 were hired later and are not linked to breakages; the printed card dealt with complaints about colour."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "set aside",
+            "broke down",
+            "took over",
+            "hit upon",
+            "held back"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "She found a solution by thinking of it: she *hit upon* a simple solution.",
+              "'Set aside' (kept for later), 'broke down' (failed or analysed), 'took over' (took control of) and 'held back' (restrained) do not mean 'thought of'."
+            ],
+            "trap": "'Broke down a solution' might suggest analysis, but the sentence needs the idea of discovering one."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Online buyers ask Anjali for customised items that traders never asked for.\nII. Anjali's online prices are higher partly because no middleman takes a share.\nIII. Anjali pays no commission on the pieces she sells online.",
+          "options": [
+            "Only I",
+            "Only III",
+            "Both I and III",
+            "All I, II and III",
+            "Both I and II"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "I is true: para 5 gives family names on plates, particular colours and a matte finish.",
+              "II is true: prices are higher 'because no middleman takes a share'.",
+              "III is false: she pays 'the platform's commission'."
+            ],
+            "trap": "Statement III confuses the middleman, who has gone, with the platform, which still takes a commission."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, what did the printed card in each parcel explain?",
+          "options": [
+            "How the buyer could return a piece that arrived broken",
+            "How the piece had been packed in a box inside a box",
+            "That each piece was thrown by hand and fired in a kiln, so no two pieces would be exactly alike",
+            "That every glaze had been tested to make sure it matched the photograph",
+            "That the buyer could order plates with a family name on them"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 4: the card explained 'that every piece was thrown by hand and fired in a kiln, so no two would be exactly alike'."
+            ],
+            "trap": "The option about tested glazes reverses para 4: she gave up 'trying to make every glaze identical'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned as a difficulty Anjali faced in her first months of selling online?",
+          "options": [
+            "Her photographs made the pots look dull.",
+            "Nearly one parcel in five arrived broken.",
+            "Some buyers complained about slight differences in colour.",
+            "The platform refused to list handmade pottery.",
+            "Returns ate into her profit."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 3 mentions dull photographs, broken parcels, returns and complaints about shades.",
+              "Nothing is said about the platform refusing to list her work; she sold through it from the start."
+            ],
+            "trap": "Every other option is taken from para 3; the answer is the one difficulty the passage never names."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q07",
+          "subtype": "inference",
+          "prompt": "Why has Anjali continued to sell to traders even though online buyers pay more?",
+          "options": [
+            "Traders pay a higher price per piece than online buyers do.",
+            "Her online sales have been falling since she started.",
+            "The online platform is about to close down.",
+            "Traders insisted that she sell to them and no one else.",
+            "Traders buy far larger quantities far faster and pay in advance, which online sales alone do not match."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 6: traders 'buy in bulk and pay in advance', and they 'buy in a week what the website sells in a month'. Volume and advance payment balance the higher online price."
+            ],
+            "trap": "The option about traders paying more per piece reverses her own words: 'The internet pays better per piece.'"
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "A potter built an online business by solving its practical problems one by one, while keeping her traditional wholesale buyers.",
+            "Online selling has made wholesale traders unnecessary for potters.",
+            "Handmade pottery cannot be sold online because too many pieces break.",
+            "Khurja's pottery industry collapsed in 2019 and has not recovered.",
+            "Online customers prefer identical, machine-made pottery to handmade pieces."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Paras 3–5 show her fixing photographs, breakages and colour complaints; para 6 shows she still sells to traders and needs both."
+            ],
+            "trap": "The option about traders being unnecessary contradicts para 6, where she decides her workshop 'needs both'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q09",
+          "subtype": "synonym",
+          "prompt": "Which of the following is closest in meaning to **returns** as used in the passage?",
+          "options": [
+            "goods sent back by buyers",
+            "earnings from sales",
+            "journeys home",
+            "replies to messages",
+            "repeated visits"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Broken parcels and unhappy buyers led to items being sent back, which 'ate into whatever profit she made'.",
+              "Returns here = goods sent back by buyers."
+            ],
+            "trap": "'Earnings' is the business meaning of returns (as in 'returns on an investment'), but earnings would add to profit, not eat into it."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-25-q10",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **finish** as used in the passage.",
+          "options": [
+            "ending",
+            "surface",
+            "completion",
+            "victory",
+            "deadline"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'a matte rather than a glossy finish' describes the look and feel of the pot's outer coating.",
+              "Finish here = surface (texture or coating)."
+            ],
+            "trap": "'Ending' and 'completion' are the everyday meanings of finish; a buyer asking for a matte finish wants a dull surface, not a different ending."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-26",
+      "subtype": "narrative",
+      "difficulty": "hard",
+      "title": "The guide who turns back",
+      "stimulus": "Prem Negi was sixteen when he first carried loads for a trekking party crossing the high passes above his village in Lahaul. He was paid by the day and told to walk behind the group. Twenty-five years later he leads groups himself, and the first thing he tells every client is that his job is not to get them to the top. \"My job,\" he says, \"is to bring you back.\"\n\nClients do not always like hearing this. Many have paid large sums, taken leave from work and trained for months, and they arrive with a summit photograph already in mind. When the weather turns, or a member of the group begins to show signs of altitude sickness such as headache, breathlessness or confusion, they have often **pushed** him to continue for \"just one more hour\". Prem has turned groups back within sight of a pass more than once. On two such occasions, he says, the clients were furious; on both, the storm that followed would have trapped them on the far side.\n\nThe mountains themselves have changed in his working life. Glaciers that his father crossed have shrunk back, leaving slopes of loose rock that shift underfoot. Snow now falls later in the season and melts earlier, and sudden heavy rain, once rare at these heights, can turn a stream into a torrent within hours. Several routes that were safe a decade ago are dangerous in late summer, and Prem has had to ______ **(blank)** new ones, often by walking them alone first.\n\nThe economics of guiding have changed too. Most trekkers now book through agencies in Delhi or Bengaluru, which keep the larger part of the fee and pay local guides a fixed daily rate. A single bad online review, even one written by a client who was turned back for his own safety, can cost a guide future bookings. During the **lean** winter months, when the passes are closed, many guides leave for construction work in the plains.\n\nFive years ago Prem and eleven other guides formed a cooperative so that trekkers could book with them directly. It has not replaced the agencies, but its members now earn more per trip, and part of its income pays for training younger guides, including the first four women from the valley to lead groups, in first aid, rescue and reading weather forecasts. Prem insists that every new guide learn to say no to a client. It is, he says, the hardest skill to teach.\n\nHe does not blame clients for wanting the summit; he wanted it once himself. But he has learnt that the mountain does not reward determination the way an office does. \"In the city, if you push harder, you usually get further,\" he says. \"Here, sometimes the person who pushes hardest is the one who does not come home.\"",
+      "questions": [
+        {
+          "key": "rc-26-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, what happened on the two occasions Prem describes in paragraph 2?",
+          "options": [
+            "The clients were angry at being turned back, but the storm that followed would have trapped them beyond the pass.",
+            "The clients reached the pass but were caught in a storm on the way down.",
+            "Prem agreed to continue for one more hour, and the group was trapped by a storm.",
+            "A client developed altitude sickness and had to be carried back to the village.",
+            "The clients wrote bad reviews that cost Prem his next bookings."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 2: 'On two such occasions… the clients were furious; on both, the storm that followed would have trapped them on the far side.'"
+            ],
+            "trap": "Bad reviews appear in para 4 as a general risk for guides; the passage does not say these clients wrote any."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q02",
+          "subtype": "fact",
+          "prompt": "Which of the following changes in the mountains is described in the passage?",
+          "options": [
+            "Glaciers have grown and now cover the routes his father used.",
+            "The high passes now stay open through the winter months.",
+            "Heavy rain has always been common at these heights.",
+            "Snow now falls later and melts earlier, and sudden heavy rain can swell a stream within hours.",
+            "Loose rock has made every route impassable throughout the year."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 3: 'Snow now falls later in the season and melts earlier, and sudden heavy rain, once rare at these heights, can turn a stream into a torrent within hours.'"
+            ],
+            "trap": "The option about every route being impassable overgeneralises: several routes are dangerous 'in late summer', and Prem finds new ones."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 3?",
+          "options": [
+            "work up",
+            "work out",
+            "carry off",
+            "fall through",
+            "bring about"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Prem had to find and plan new routes, 'often by walking them alone first': he had to *work out* new ones.",
+              "'Work up' (develop gradually, as in work up an appetite), 'carry off' (win or manage), 'fall through' (fail) and 'bring about' (cause) do not mean 'find a way'."
+            ],
+            "trap": "'Bring about new routes' sounds possible, but bring about means to cause an event or change; a route is planned and tested, i.e. worked out."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Agencies in large cities keep the larger part of the trekking fee.\nII. The cooperative has replaced the agencies as the main way trekkers book.\nIII. The first women guides from the valley were trained by agencies in Delhi.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and II",
+            "Both I and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "I is true: para 4.",
+              "II is false: para 5 says the cooperative 'has not replaced the agencies'.",
+              "III is false: the cooperative's income pays for their training; agencies are not mentioned in connection with it."
+            ],
+            "trap": "Statement III mixes the agencies of para 4 into the training described in para 5."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q05",
+          "subtype": "inference",
+          "prompt": "Why does Prem consider saying no to a client the hardest skill to teach?",
+          "options": [
+            "New guides do not yet know enough first aid to judge when to turn back.",
+            "Refusing a determined, paying client risks anger and lost bookings, even when it is the safe decision.",
+            "Clients rarely ask guides to continue once the weather turns.",
+            "The cooperative does not allow its guides to turn groups back.",
+            "Weather forecasts are too unreliable to justify turning a group back."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 2 shows clients who paid large sums pushing to continue and becoming 'furious' when turned back; para 4 shows that one bad review 'can cost a guide future bookings'. Saying no therefore costs something, which is why it is hard."
+            ],
+            "trap": "The option about clients rarely asking reverses para 2: they 'have often pushed him to continue'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Prem and eleven other guides formed a cooperative five years ago.",
+            "Many guides leave for construction work in the plains during winter.",
+            "Prem often walks a new route alone before taking a group on it.",
+            "Members of the cooperative now earn more per trip.",
+            "When he first carried loads, Prem was paid a share of the trekking fee."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 1: 'He was paid by the day.' A share of the fee is never mentioned, so the first statement is false.",
+              "The others are stated in paras 3, 4 and 5."
+            ],
+            "trap": "Para 4's complaint that agencies keep 'the larger part of the fee' is about guides today, not about young Prem's daily wage."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q07",
+          "subtype": "inference",
+          "prompt": "What contrast does Prem draw in the last paragraph?",
+          "options": [
+            "City people are less fit than people who live in the mountains.",
+            "Offices value safety more than mountain guides do.",
+            "Determination is useless in every part of life.",
+            "Clients should not train before going on a trek.",
+            "In the city, more effort usually brings more progress, but in the mountains pushing on beyond a point can be fatal."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "'In the city, if you push harder, you usually get further… Here, sometimes the person who pushes hardest is the one who does not come home.'"
+            ],
+            "trap": "The option about determination being useless everywhere ignores 'In the city… you usually get further'; the contrast is between settings."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Climate change has brought trekking in Lahaul to an end.",
+            "Online agencies are the main cause of accidents on trekking routes.",
+            "A guide's experience shows that, as the mountains and the trekking business change, safety depends on the judgement to turn back.",
+            "Clients who train for months seldom suffer from altitude sickness.",
+            "Local guides now earn more than the agencies that employ them."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 1 sets out his creed ('bring you back'); para 2 shows him turning groups back; paras 3–4 describe changing mountains and commercial pressure; para 5 shows him teaching guides to say no; para 6 sums up."
+            ],
+            "trap": "The option about trekking ending overstates para 3; routes have changed but Prem still leads groups."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **pushed** as used in the passage.",
+          "options": [
+            "shoved",
+            "carried",
+            "pressed",
+            "promoted",
+            "lifted"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Clients 'pushed him to continue for just one more hour': they kept urging him.",
+              "Pushed here = pressed, urged."
+            ],
+            "trap": "'Shoved' is the physical meaning of push; the clients are urging with words, not moving him by force. 'Pressed' also has a physical sense, but 'pressed him to continue' is the standard way to say urged."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-26-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **lean** as used in the passage.",
+          "options": [
+            "slim",
+            "thin",
+            "meagre",
+            "prosperous",
+            "slack"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'the lean winter months, when the passes are closed' are months with little work and little income.",
+              "The opposite is prosperous (bringing plenty of work and money)."
+            ],
+            "trap": "'Slim' and 'thin' are the body meanings of lean, so they are synonyms; 'meagre' and 'slack' are synonyms of lean as used here."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        }
+      ]
     }
   ]
 }
