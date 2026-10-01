@@ -1940,6 +1940,655 @@
         "template:three-set",
         "level:multi-step"
       ]
+    },
+    {
+      "key": "pc-076",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a sports club, 70% of the members like cricket, and 40% of these cricket lovers also like hockey. 38% of all the members like hockey. If 180 members like neither game, how many members like only hockey?",
+      "options": [
+        "90",
+        "108",
+        "126",
+        "252",
+        "342"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Both = 40% of 70% = 28% of members. At least one = 70% + 38% − 28% = 80%, so neither = 20% = 180 → 900 members.",
+          "Only hockey = 38% − 28% = 10% of 900 = **90**."
+        ],
+        "trap": "342 is 38% of 900, everyone who likes hockey, including the 28% who also like cricket."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:both-neither"
+      ]
+    },
+    {
+      "key": "pc-077",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a firm, 60% of the employees know Excel, 45% know Python and 25% know both. Of the employees who know neither, 40% are trainees. If 48 trainees know neither, how many employees know only Python?",
+      "options": [
+        "120",
+        "135",
+        "150",
+        "180",
+        "270"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Neither = 100% − (60% + 45% − 25%) = 20%. Trainees among them = 40% of 20% = 8% of employees = 48 → 600 employees.",
+          "Only Python = 45% − 25% = 20% of 600 = **120**."
+        ],
+        "trap": "270 is 45% of 600, all who know Python, including the 25% who also know Excel."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:both-neither",
+        "percent:nested"
+      ]
+    },
+    {
+      "key": "pc-078",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In an examination, 30% of the candidates failed in Mathematics, 26% failed in English and 12% failed in both. If 1,232 candidates passed in both subjects, how many candidates failed in exactly one subject?",
+      "options": [
+        "704",
+        "726",
+        "748",
+        "792",
+        "968"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Failed in at least one = 30% + 26% − 12% = 44%, so passed both = 56% = 1,232 → 2,200 candidates.",
+          "Exactly one = 44% − 12% = 32% of 2,200 = **704**."
+        ],
+        "trap": "968 is 44% of 2,200, those who failed in at least one subject, which still includes the 12% who failed in both."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:two-subject-pass-fail"
+      ]
+    },
+    {
+      "key": "pc-079",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In an examination, 72% of the students passed in English, 65% passed in Mathematics and 48% passed in both. If 220 students failed in both subjects, how many students passed in only one subject?",
+      "options": [
+        "740",
+        "820",
+        "880",
+        "960",
+        "1,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Passed at least one = 72% + 65% − 48% = 89%, so failed both = 11% = 220 → 2,000 students.",
+          "Only one = (72% − 48%) + (65% − 48%) = 24% + 17% = 41% of 2,000 = **820**."
+        ],
+        "trap": "960 is 48% of 2,000, those who passed in both subjects, not in only one."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:two-subject-pass-fail"
+      ]
+    },
+    {
+      "key": "pc-080",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In an examination, 60% of the candidates passed in Hindi and 70% passed in Science, while 18% failed in both subjects. If 2,592 candidates passed in both subjects, how many candidates appeared?",
+      "options": [
+        "5,400",
+        "5,600",
+        "6,000",
+        "6,480",
+        "8,640"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Passed at least one = 100% − 18% = 82%. Passed both = 60% + 70% − 82% = 48%.",
+          "48% = 2,592 → candidates = **5,400**."
+        ],
+        "trap": "8,640 takes passed-both as 60% + 70% − 100% = 30%, ignoring the 18% who failed in both."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:two-subject-pass-fail"
+      ]
+    },
+    {
+      "key": "pc-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In an examination with two papers, 15% of the candidates failed in Paper I only, 20% failed in Paper II only and 10% failed in both papers. If 1,980 candidates passed in both papers, how many candidates passed in Paper I?",
+      "options": [
+        "2,700",
+        "2,790",
+        "2,880",
+        "2,970",
+        "3,060"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Failed at least one = 15% + 20% + 10% = 45%, so passed both = 55% = 1,980 → 3,600 candidates.",
+          "Failed Paper I = 15% (only I) + 10% (both) = 25%, so passed Paper I = 75% of 3,600 = **2,700**."
+        ],
+        "trap": "3,060 subtracts only the 15% who failed in Paper I only. Those who failed both papers also failed Paper I."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:two-subject-pass-fail"
+      ]
+    },
+    {
+      "key": "pc-082",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In an examination of 2,400 students, the number of students who failed in Mathematics was 25% more than the number who failed in Science. 9% of the students failed in both subjects and 55% passed in both. How many students failed in Science only?",
+      "options": [
+        "216",
+        "300",
+        "360",
+        "432",
+        "576"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Failed in at least one = 100% − 55% = 45% = M + S − 9%, so M + S = 54%. With M = 1.25S: 2.25S = 54% → S = 24%, M = 30%.",
+          "Failed in Science only = 24% − 9% = 15% of 2,400 = **360**."
+        ],
+        "trap": "576 is 24% of 2,400, all who failed in Science, including the 9% who also failed in Mathematics."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:two-subject-pass-fail",
+        "percent:feeds-ratio",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-083",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a class, 80% of the students passed in English, 70% passed in Mathematics and 10% failed in both. If 144 students passed in both subjects, how many students are there in the class?",
+      "options": [
+        "200",
+        "225",
+        "240",
+        "270",
+        "288"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Passed at least one = 90%, so passed both = 80% + 70% − 90% = 60%.",
+          "60% = 144 → **240** students."
+        ],
+        "trap": "288 takes passed-both as 80% + 70% − 100% = 50%, forgetting the 10% who failed in both."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:two-subject-pass-fail"
+      ]
+    },
+    {
+      "key": "pc-084",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Deepa's monthly salary is 60% more than Rohit's. By what percent is Rohit's salary less than Deepa's?",
+      "options": [
+        "30%",
+        "37.5%",
+        "40%",
+        "60%",
+        "62.5%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Rohit = 100 → Deepa = 160. The gap of 60 is measured on Deepa's 160.",
+          "$\\frac{60}{160}$ × 100 = **37.5%**."
+        ],
+        "trap": "60% measures the gap on Rohit's salary. 'Less than Deepa's' uses Deepa's salary as the base.",
+        "shortcut": "x% more ⇒ the other is $\\frac{x}{100 + x}$ × 100% less: $\\frac{60}{160}$ = $\\frac{3}{8}$."
+      },
+      "tags": [
+        "percent:base-change",
+        "template:more-less-reversal",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-085",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Asha's height is 20% more than Bina's, and Bina's height is 25% less than Chhaya's. By what percent is Chhaya's height more than Asha's?",
+      "options": [
+        "5%",
+        "8%",
+        "9%",
+        "10%",
+        "$11\\frac{1}{9}$%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Chhaya = 100 → Bina = 75 → Asha = 75 × 1.2 = 90.",
+          "Chhaya exceeds Asha by 10 on a base of 90 = **$11\\frac{1}{9}$%**."
+        ],
+        "trap": "10% measures the gap of 10 on Chhaya's 100. 'More than Asha's' uses Asha's 90 as the base."
+      },
+      "tags": [
+        "percent:base-change",
+        "template:more-less-reversal",
+        "percent:chain"
+      ]
+    },
+    {
+      "key": "pc-086",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Xavier's weight is 20% less than Yusuf's, and Zubin's weight is 20% more than Xavier's. If Yusuf weighs 3 kg more than Zubin, what is Xavier's weight?",
+      "options": [
+        "56 kg",
+        "60 kg",
+        "64 kg",
+        "72 kg",
+        "75 kg"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Yusuf = 100 units → Xavier = 80 → Zubin = 96. Yusuf − Zubin = 4 units = 3 kg → 1 unit = 0.75 kg.",
+          "Xavier = 80 × 0.75 = **60 kg** (Yusuf 75 kg, Zubin 72 kg)."
+        ],
+        "trap": "72 kg is Zubin's weight. A 20% fall followed by a 20% rise does not return to 100, which is why Zubin and Xavier differ."
+      },
+      "tags": [
+        "percent:base-change",
+        "template:more-less-reversal",
+        "percent:chain"
+      ]
+    },
+    {
+      "key": "pc-087",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A is x% more than B, and B is x% less than C. If A is 4% less than C, what is the value of x?",
+      "options": [
+        "2",
+        "4",
+        "16",
+        "20",
+        "25"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "A = B(1 + x/100) and B = C(1 − x/100), so A = C(1 − x²/10,000).",
+          "x²/100 = 4 → x² = 400 → x = **20**."
+        ],
+        "trap": "4 assumes the net fall equals x%. A rise and a fall of the same x% leave a net fall of only x²/100 %.",
+        "shortcut": "Equal rise and fall of x% ⇒ net fall of x²/100 %. Here x²/100 = 4 ⇒ x = 20."
+      },
+      "tags": [
+        "percent:base-change",
+        "template:more-less-reversal",
+        "trick:x-squared-by-100"
+      ]
+    },
+    {
+      "key": "pc-088",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A packet of Brand P tea is 25% cheaper than a packet of Brand Q, and a packet of Brand R costs 20% more than a packet of Brand P. By what percent is Brand R cheaper than Brand Q?",
+      "options": [
+        "2.5%",
+        "4%",
+        "5%",
+        "7.5%",
+        "10%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Q = 100 → P = 75 → R = 75 × 1.2 = 90.",
+          "R is cheaper than Q by 10 on 100 = **10%**."
+        ],
+        "trap": "5% subtracts 20 from 25. The 20% is taken on P's lower price (75), so it adds only 15."
+      },
+      "tags": [
+        "percent:base-change",
+        "template:more-less-reversal",
+        "percent:chain",
+        "trap:adding-percentages"
+      ]
+    },
+    {
+      "key": "pc-089",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Anjali's monthly salary is 25% more than Bhuvan's. Anjali's salary is then cut by 20% and Bhuvan's is raised by 20%, after which both get a further 10% raise. Now Bhuvan earns ₹5,280 a month more than Anjali. What was the sum of their original monthly salaries?",
+      "options": [
+        "₹48,000",
+        "₹52,800",
+        "₹54,000",
+        "₹58,080",
+        "₹60,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Bhuvan = 100 → Anjali = 125. After the changes: Anjali = 125 × 0.8 × 1.1 = 110; Bhuvan = 100 × 1.2 × 1.1 = 132.",
+          "132 − 110 = 22 units = ₹5,280 → 1 unit = ₹240.",
+          "Original sum = 225 units = **₹54,000** (Anjali ₹30,000, Bhuvan ₹24,000)."
+        ],
+        "trap": "₹58,080 is the sum of the new salaries (242 units). The question asks for the original salaries."
+      },
+      "tags": [
+        "percent:base-change",
+        "template:more-less-reversal",
+        "percent:successive-change",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-090",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a school, the ratio of boys to girls is 3 : 2. 20% of the boys and 30% of the girls hold scholarships. What percentage of the students do not hold a scholarship?",
+      "options": [
+        "70%",
+        "72%",
+        "74%",
+        "75%",
+        "76%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take 50 students: 30 boys and 20 girls. Scholarship holders = 6 + 6 = 12 = 24%.",
+          "Without a scholarship = 100% − 24% = **76%**."
+        ],
+        "trap": "75% averages 20% and 30% equally (25% holders). There are more boys, so the average leans towards 20%."
+      },
+      "tags": [
+        "percent:feeds-ratio",
+        "template:percent-weighted",
+        "trap:simple-average"
+      ]
+    },
+    {
+      "key": "pc-091",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The monthly salaries of Kunal and Lalit are in the ratio 4 : 5. Kunal gets a 25% raise and Lalit gets a 20% raise. What is the ratio of their new salaries (Kunal : Lalit)?",
+      "options": [
+        "4 : 5",
+        "5 : 6",
+        "25 : 24",
+        "6 : 5",
+        "5 : 4"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Kunal: 4 × 1.25 = 5; Lalit: 5 × 1.2 = 6.",
+          "New ratio = **5 : 6**."
+        ],
+        "trap": "6 : 5 is the same ratio written Lalit : Kunal. Keep the order asked: Kunal first."
+      },
+      "tags": [
+        "percent:feeds-ratio",
+        "template:percent-to-ratio"
+      ]
+    },
+    {
+      "key": "pc-092",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average score of a class of 40 students is 60. The top 25% of the students have an average score of 80. If the score of each of these top students is increased by 20%, what is the new average score of the class?",
+      "options": [
+        "62",
+        "63",
+        "64",
+        "65",
+        "72"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Top 25% = 10 students with total 800. A 20% rise adds 160 marks.",
+          "New average = (2,400 + 160) ÷ 40 = **64**."
+        ],
+        "trap": "72 raises the whole class average by 20%. Only the top 10 students' scores went up."
+      },
+      "tags": [
+        "percent:feeds-average",
+        "template:percent-to-average"
+      ]
+    },
+    {
+      "key": "pc-093",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 60-litre mixture of milk and water contains 80% milk. How many litres of water must be added so that milk makes up 60% of the mixture?",
+      "options": [
+        "12 litres",
+        "15 litres",
+        "18 litres",
+        "20 litres",
+        "24 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Milk = 80% of 60 = 48 litres; it does not change.",
+          "48 litres must be 60% of the new mixture → new mixture = 80 litres, so add **20 litres** of water."
+        ],
+        "trap": "12 litres is 20% of 60 (the fall from 80% to 60%). The milk share falls because the total grows, so work with the fixed 48 litres."
+      },
+      "tags": [
+        "percent:mixture",
+        "template:constant-component"
+      ]
+    },
+    {
+      "key": "pc-094",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The average monthly salary of 20 employees of an office is ₹25,000. The 5 senior employees have an average salary of ₹40,000 and each gets a 10% raise; every other employee gets a 20% raise. What is the new average monthly salary?",
+      "options": [
+        "₹28,000",
+        "₹28,750",
+        "₹29,000",
+        "₹29,375",
+        "₹30,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = ₹5,00,000; seniors ₹2,00,000; others ₹3,00,000.",
+          "Raises: 10% of ₹2,00,000 = ₹20,000 and 20% of ₹3,00,000 = ₹60,000, total ₹80,000.",
+          "New average = ₹5,80,000 ÷ 20 = **₹29,000**."
+        ],
+        "trap": "₹29,375 weights the raises by head-count (25% at 10%, 75% at 20% → 17.5%). The raises must be weighted by salary, and the seniors earn more."
+      },
+      "tags": [
+        "percent:feeds-average",
+        "template:percent-to-average",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-095",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Amar saves 20% of his monthly income and Balu saves 25% of his. Amar's monthly expenditure is 20% more than Balu's. If together they save ₹19,000 a month, what is Amar's monthly income?",
+      "options": [
+        "₹36,000",
+        "₹38,000",
+        "₹40,000",
+        "₹42,750",
+        "₹45,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "0.8A = 1.2 × 0.75B = 0.9B → A : B = 9 : 8.",
+          "Savings: 20% of 9k + 25% of 8k = 1.8k + 2k = 3.8k = ₹19,000 → k = ₹5,000.",
+          "Amar's income = 9k = **₹45,000**."
+        ],
+        "trap": "₹40,000 is Balu's income (8k). The question asks for Amar's."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "percent:feeds-ratio",
+        "template:percent-to-ratio",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-096",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a class, 40% of the students are girls. The average marks of the girls are 72 and the average marks of the whole class are 66. What are the average marks of the boys?",
+      "options": [
+        "58",
+        "59",
+        "60",
+        "61",
+        "62"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Class average = 0.4 × 72 + 0.6 × B = 66 → 0.6B = 66 − 28.8 = 37.2.",
+          "B = **62**."
+        ],
+        "trap": "60 treats the class average as the simple mean of 72 and the boys' average (2 × 66 − 72). The boys are 60% of the class, so they get more weight.",
+        "shortcut": "Deviations: girls are 6 above 66, with weight 40; boys must be 6 × 40/60 = 4 below → 62."
+      },
+      "tags": [
+        "percent:feeds-average",
+        "template:percent-weighted",
+        "trap:simple-average"
+      ]
+    },
+    {
+      "key": "pc-097",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rakesh spends 22% of his monthly salary on rent. His rent goes up by 25% and his salary goes up by 10%. What percentage of his new salary does he now spend on rent?",
+      "options": [
+        "20%",
+        "22%",
+        "24%",
+        "25%",
+        "27.5%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Salary 100 → 110; rent 22 → 27.5.",
+          "Rent share = 27.5 ÷ 110 = **25%**."
+        ],
+        "trap": "27.5% applies the rent rise but forgets that the salary also rose by 10%."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "template:share-after-change"
+      ]
+    },
+    {
+      "key": "pc-098",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "When 15% of a number A is added to a number B, B increases by 25%. What is the ratio A : B?",
+      "options": [
+        "3 : 5",
+        "3 : 4",
+        "4 : 3",
+        "5 : 3",
+        "5 : 2"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "0.15A = 0.25B, so A : B = 0.25 : 0.15 = **5 : 3**."
+        ],
+        "trap": "3 : 5 is the ratio of the percentages (15 : 25). The number multiplied by the smaller percentage is the larger one."
+      },
+      "tags": [
+        "percent:feeds-ratio",
+        "template:percent-to-ratio",
+        "trap:reversed-ratio"
+      ]
+    },
+    {
+      "key": "pc-099",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In a class of 50 students, 40% are girls. The average score of the girls is 25% more than the average score of the boys, and the class average is 66. If 5 boys whose average score is 48 leave the class, what is the new average score of the boys?",
+      "options": [
+        "58.8",
+        "60",
+        "61.2",
+        "62.4",
+        "64"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Girls = 20, boys = 30. With boys' average b: 20 × 1.25b + 30b = 50 × 66 → 55b = 3,300 → b = 60.",
+          "Boys' total = 1,800; after the 5 leave: 1,800 − 240 = 1,560 over 25 boys = **62.4**."
+        ],
+        "trap": "60 is the boys' average before the five low scorers leave. Their leaving raises it."
+      },
+      "tags": [
+        "percent:feeds-average",
+        "template:percent-to-average",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-100",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A firm has two plants, X and Y, with the same number of workers. At X, 30% of the workers are women; at Y, 45% are women. When 48 women workers are transferred from Y to X, women make up 37.5% of the workers at X. How many women work in the firm?",
+      "options": [
+        "280",
+        "300",
+        "360",
+        "400",
+        "480"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let each plant have x workers. After the transfer: 0.3x + 48 = 0.375(x + 48) → 0.075x = 30 → x = 400.",
+          "Women = 30% of 400 + 45% of 400 = 120 + 180 = **300** (the transfer does not change the firm's total)."
+        ],
+        "trap": "480 forgets that X's workforce also grows by 48: 0.3x + 48 = 0.375x gives x = 640. The transferred women join X's total too."
+      },
+      "tags": [
+        "percent:nested",
+        "template:transfer-between-groups",
+        "level:multi-step"
+      ]
     }
   ]
 }

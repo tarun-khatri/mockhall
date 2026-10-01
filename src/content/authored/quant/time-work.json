@@ -1,0 +1,2542 @@
+{
+  "chapter": "time-work",
+  "version": 1,
+  "items": [
+    {
+      "key": "tw-001",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Raghav, Simran and Tushar together can finish the binding of a batch of bank ledgers in 12 days. Simran and Tushar together can finish it in 20 days. In how many days can Raghav alone finish it?",
+      "options": [
+        "8 days",
+        "15 days",
+        "20 days",
+        "24 days",
+        "30 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take total work = LCM(12, 20) = 60 units. All three: 60/12 = 5 units/day; Simran + Tushar: 60/20 = 3 units/day.",
+          "Raghav = 5 − 3 = 2 units/day → 60/2 = **30 days**."
+        ],
+        "trap": "8 days comes from subtracting the days (20 − 12); days cannot be subtracted, only one-day work (rates) can.",
+        "shortcut": "Raghav's time = (12 × 20)/(20 − 12) = 240/8 = 30 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:abc-minus-pair"
+      ]
+    },
+    {
+      "key": "tw-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Anil, Bhavna and Charu together can digitise a set of branch records in 10 days, while Bhavna and Charu together take 15 days. In how many days can Anil alone digitise 60% of the records?",
+      "options": [
+        "18 days",
+        "20 days",
+        "24 days",
+        "27 days",
+        "30 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total work = LCM(10, 15) = 30 units. All three: 3 units/day; Bhavna + Charu: 2 units/day → Anil: 1 unit/day.",
+          "Anil alone needs 30 days for the whole job, so 60% of it takes 0.6 × 30 = **18 days**."
+        ],
+        "trap": "30 days is Anil's time for the whole work; the question asks only for 60% of it.",
+        "shortcut": "Anil's time = (10 × 15)/(15 − 10) = 30 days; 60% of 30 = 18."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:abc-minus-pair"
+      ]
+    },
+    {
+      "key": "tw-003",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Hemant, Yusuf and Arvind together can whitewash a hostel in 8 days; Yusuf and Arvind together can do it in 12 days. Hemant works alone for the first 6 days and then leaves, after which Yusuf and Arvind together finish the rest. In how many days in all is the whitewashing finished?",
+      "options": [
+        "9 days",
+        "15 days",
+        "16 days",
+        "18 days",
+        "21 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total work = LCM(8, 12) = 24 units. All three: 3 units/day; Yusuf + Arvind: 2 units/day → Hemant: 1 unit/day.",
+          "Hemant's 6 days = 6 units; remaining 18 units at 2 units/day = 9 days.",
+          "Total = 6 + 9 = **15 days**."
+        ],
+        "trap": "9 days is only the time Yusuf and Arvind take after Hemant leaves; the question asks for the total time."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:abc-minus-pair"
+      ]
+    },
+    {
+      "key": "tw-004",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Prakash, Qadir and Rohini together can complete a survey of village households in 12 days. Qadir and Rohini together can complete it in 20 days, and Rohini alone can complete it in 60 days. In how many days can Prakash and Rohini together complete 75% of the survey?",
+      "options": [
+        "9 days",
+        "11.25 days",
+        "12 days",
+        "15 days",
+        "20 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = 60 units. All three: 5/day; Qadir + Rohini: 3/day → Prakash = 2/day. Rohini = 60/60 = 1/day.",
+          "Prakash + Rohini = 3 units/day → whole survey in 20 days; 75% (45 units) takes 45/3 = **15 days**."
+        ],
+        "trap": "11.25 days pairs the wrong people: Prakash + Qadir = 5 − 1 = 4 units/day, giving 45/4. 20 days is the whole survey, not 75%."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:abc-minus-pair"
+      ]
+    },
+    {
+      "key": "tw-005",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Lata, Mohan and Nikhil together can paint a compound wall in 8 days; Mohan and Nikhil together can paint it in 14 days. In how many days can Lata alone paint 75% of the wall?",
+      "options": [
+        "10.5 days",
+        "14 days",
+        "15.5 days",
+        "16 days",
+        "$18\\frac{2}{3}$ days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = LCM(8, 14) = 56 units. All three: 7/day; Mohan + Nikhil: 4/day → Lata: 3 units/day.",
+          "75% of 56 = 42 units → 42/3 = **14 days**."
+        ],
+        "trap": "$18\\frac{2}{3}$ days (56/3) is Lata's time for the whole wall; 10.5 days is 75% of the 14 days taken by Mohan and Nikhil."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:abc-minus-pair"
+      ]
+    },
+    {
+      "key": "tw-006",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Deepa, Ekta and Fatima together can pack a consignment of relief kits in 9 days, and Ekta and Fatima together can pack it in 15 days. Deepa starts the work alone and, after 5 days, Ekta and Fatima join her. In how many days from the start is the consignment packed?",
+      "options": [
+        "7 days",
+        "9.5 days",
+        "10.5 days",
+        "11 days",
+        "12 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total = LCM(9, 15) = 45 units. All three: 5/day; Ekta + Fatima: 3/day → Deepa: 2/day.",
+          "Deepa alone for 5 days = 10 units; remaining 35 units with all three at 5/day = 7 days.",
+          "Total = 5 + 7 = **12 days**."
+        ],
+        "trap": "7 days is only the time after Ekta and Fatima join; add Deepa's first 5 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:abc-minus-pair"
+      ]
+    },
+    {
+      "key": "tw-007",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Gauri, Harish and Ishaan together can complete a job in 6 days. Harish and Ishaan together can complete it in 10 days, and Gauri and Harish together in 9 days. Harish alone does 40% of the job, and then Ishaan alone finishes the rest. How many days does the job take in all?",
+      "options": [
+        "19.8 days",
+        "20.7 days",
+        "21 days",
+        "22.5 days",
+        "24 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = 90 units. All three: 15/day; Harish + Ishaan: 9/day → Gauri = 6/day. Gauri + Harish: 10/day → Ishaan = 15 − 10 = 5/day, Harish = 9 − 5 = 4/day.",
+          "Harish does 40% = 36 units in 36/4 = 9 days; Ishaan does 60% = 54 units in 54/5 = 10.8 days.",
+          "Total = 9 + 10.8 = **19.8 days**."
+        ],
+        "trap": "20.7 days swaps the shares (Harish 60%: 13.5 days + Ishaan 40%: 7.2 days); 22.5 days is Harish's time for the whole job."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:abc-minus-pair"
+      ]
+    },
+    {
+      "key": "tw-008",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Kiran can type a project report in 15 days and Farida can type it in 10 days. They work together for 3 days, and then Kiran leaves. In how many more days will Farida finish the typing?",
+      "options": [
+        "5 days",
+        "6 days",
+        "7 days",
+        "7.5 days",
+        "8 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = LCM(15, 10) = 30 pages-units. Kiran: 2/day, Farida: 3/day → together 5/day.",
+          "3 days together = 15 units; remaining 15 units by Farida = 15/3 = **5 days**."
+        ],
+        "trap": "8 days is the total time (3 + 5); the question asks how many MORE days Farida needs."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:together-then-leaves"
+      ]
+    },
+    {
+      "key": "tw-009",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Sapna and Imtiaz can fence a farm in 20 days and 30 days respectively. They work together for 6 days, and then Sapna leaves. In how many days in all is the fencing finished?",
+      "options": [
+        "15 days",
+        "18 days",
+        "21 days",
+        "24 days",
+        "27 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 60 units. Sapna: 3/day, Imtiaz: 2/day → together 5/day.",
+          "6 days together = 30 units; remaining 30 units by Imtiaz alone = 15 days.",
+          "Total = 6 + 15 = **21 days**."
+        ],
+        "trap": "15 days is only the time Imtiaz works alone after Sapna leaves; the question asks for the total."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:together-then-leaves"
+      ]
+    },
+    {
+      "key": "tw-010",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Jatin can lay the paver blocks of a parking lot in 24 days and Kunal can do it in 36 days. They work together for 8 days, after which Jatin leaves and Kunal completes the job. In how many days in all is the job completed?",
+      "options": [
+        "16 days",
+        "20 days",
+        "22 days",
+        "24 days",
+        "26 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = LCM(24, 36) = 72 units. Jatin: 3/day, Kunal: 2/day → together 5/day.",
+          "8 days together = 40 units; remaining 32 units by Kunal = 16 days.",
+          "Total = 8 + 16 = **24 days**."
+        ],
+        "trap": "16 days is only Kunal's solo part; add the 8 days of joint work."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:together-then-leaves"
+      ]
+    },
+    {
+      "key": "tw-011",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Leela can embroider a set of sarees in 16 days and Manoj can do it in 24 days. They work together for 4 days, and then Manoj leaves. In how many more days will Leela finish the work?",
+      "options": [
+        "$8\\frac{2}{3}$ days",
+        "$9\\frac{1}{3}$ days",
+        "10 days",
+        "$10\\frac{2}{3}$ days",
+        "14 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = LCM(16, 24) = 48 units. Leela: 3/day, Manoj: 2/day → together 5/day.",
+          "4 days together = 20 units; remaining 28 units by Leela = 28/3 = **$9\\frac{1}{3}$ days**."
+        ],
+        "trap": "14 days lets Manoj (2 units/day) finish the 28 units; it is Manoj who leaves, so Leela's rate must be used."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:together-then-leaves"
+      ]
+    },
+    {
+      "key": "tw-012",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Naveen and Om together can repaint the railings of a park in 12 days; Naveen alone can do it in 20 days. They work together for 5 days, and then Naveen leaves. In how many days will Om finish the remaining work?",
+      "options": [
+        "$11\\frac{2}{3}$ days",
+        "14 days",
+        "15.5 days",
+        "16 days",
+        "17.5 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total = LCM(12, 20) = 60 units. Together: 5/day; Naveen: 3/day → Om: 2/day.",
+          "5 days together = 25 units; remaining 35 units by Om = 35/2 = **17.5 days**."
+        ],
+        "trap": "$11\\frac{2}{3}$ days uses Naveen's rate (35/3) for the remaining work, but Naveen is the one who leaves."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:together-then-leaves"
+      ]
+    },
+    {
+      "key": "tw-013",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pallavi, Rekha and Sohail can complete an audit of stock registers in 18, 24 and 36 days respectively. All three start together; Pallavi leaves after 4 days, and Rekha leaves 3 days after that. Sohail completes the rest alone. In how many days in all is the audit completed?",
+      "options": [
+        "10.5 days",
+        "15.5 days",
+        "17.5 days",
+        "18 days",
+        "19.5 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = LCM(18, 24, 36) = 72 units. Pallavi 4/day, Rekha 3/day, Sohail 2/day.",
+          "First 4 days: 9 × 4 = 36 units; next 3 days (Rekha + Sohail): 5 × 3 = 15 units → 51 done, 21 left.",
+          "Sohail alone: 21/2 = 10.5 days. Total = 4 + 3 + 10.5 = **17.5 days**."
+        ],
+        "trap": "10.5 days is only Sohail's final solo stretch; the 4 + 3 days before it must be added."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:together-then-leaves"
+      ]
+    },
+    {
+      "key": "tw-014",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Tarun and Uday together can tile a corridor in 15 days. They work together for 6 days, then Uday leaves and Tarun finishes the remaining work in 15 days. In how many days can Uday alone tile the corridor?",
+      "options": [
+        "25 days",
+        "30 days",
+        "32.5 days",
+        "35 days",
+        "37.5 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "In 6 days together they finish 6/15 = 2/5 of the work, so Tarun does the remaining 3/5 in 15 days → Tarun alone takes 25 days.",
+          "Uday's one-day work = 1/15 − 1/25 = (5 − 3)/75 = 2/75 → Uday alone takes 75/2 = **37.5 days**."
+        ],
+        "trap": "25 days is Tarun's time; 30 days comes from wrongly assuming Tarun did 1/2 of the work in 15 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:together-then-leaves"
+      ]
+    },
+    {
+      "key": "tw-015",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Vikram can prepare the annual accounts of a cooperative society in 30 days and Wasim can prepare them in 20 days. Vikram works alone for 5 days, after which Wasim joins him. In how many days from the start are the accounts ready?",
+      "options": [
+        "10 days",
+        "12.5 days",
+        "15 days",
+        "17 days",
+        "20 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 60 units. Vikram 2/day, Wasim 3/day.",
+          "Vikram alone for 5 days = 10 units; remaining 50 units at 5/day = 10 days.",
+          "Total = 5 + 10 = **15 days**."
+        ],
+        "trap": "10 days is the time after Wasim joins; the question counts from the start."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:joins-later"
+      ]
+    },
+    {
+      "key": "tw-016",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Yamini can catalogue the books of a school library in 24 days and Zoya can do it in 16 days. Yamini starts alone and Zoya joins her after 4 days. In how many days from the start is the cataloguing finished?",
+      "options": [
+        "12 days",
+        "13 days",
+        "14 days",
+        "16 days",
+        "$17\\frac{1}{3}$ days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = LCM(24, 16) = 48 units. Yamini 2/day, Zoya 3/day.",
+          "Yamini's 4 days = 8 units; remaining 40 units at 5/day = 8 days.",
+          "Total = 4 + 8 = **12 days**."
+        ],
+        "trap": "$17\\frac{1}{3}$ days assumes Zoya replaces Yamini (4 + 40/3); in fact Yamini keeps working after Zoya joins."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:joins-later"
+      ]
+    },
+    {
+      "key": "tw-017",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Abhay can repair a stretch of village road in 25 days and Babita can repair it in 15 days. Abhay works alone for 5 days and then Babita joins him. How many days does the repair take in all?",
+      "options": [
+        "7.5 days",
+        "10 days",
+        "11.5 days",
+        "12.5 days",
+        "13 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = LCM(25, 15) = 75 units. Abhay 3/day, Babita 5/day.",
+          "Abhay's 5 days = 15 units; remaining 60 units at 8/day = 7.5 days.",
+          "Total = 5 + 7.5 = **12.5 days**."
+        ],
+        "trap": "7.5 days is only the joint phase; the 5 days Abhay worked alone must be added."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:joins-later"
+      ]
+    },
+    {
+      "key": "tw-018",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Chetan works alone on a job for 6 days and completes 25% of it. Dinesh, who is twice as efficient as Chetan, then joins him. In how many more days will the job be finished?",
+      "options": [
+        "4.5 days",
+        "6 days",
+        "8 days",
+        "9 days",
+        "12 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Chetan does 25% in 6 days → whole job alone in 24 days. Dinesh is twice as efficient → 12 days.",
+          "Together: 1/24 + 1/12 = 3/24 = 1/8 of the job per day. Remaining 3/4 takes (3/4) × 8 = **6 days**."
+        ],
+        "trap": "9 days is the time Dinesh alone would need for the remaining 3/4 (3/4 × 12); Chetan keeps working too."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:joins-later",
+        "template:partial-work-rate"
+      ]
+    },
+    {
+      "key": "tw-019",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Esha can wire a new office floor in 20 days and Farhan can do it in 30 days. Farhan starts the work alone; Esha joins him after some days, and the work is finished 15 days after Farhan started. After how many days did Esha join?",
+      "options": [
+        "3 days",
+        "4 days",
+        "4.5 days",
+        "5 days",
+        "10 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = 60 units. Farhan 2/day, Esha 3/day.",
+          "Farhan works all 15 days = 30 units, so Esha does the other 30 units in 30/3 = 10 days.",
+          "Esha worked the last 10 days → she joined after 15 − 10 = **5 days**."
+        ],
+        "trap": "10 days is how long Esha worked, not when she joined."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:joins-later"
+      ]
+    },
+    {
+      "key": "tw-020",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Gopal, Hari and Irfan can lay a water pipeline in 12, 15 and 20 days respectively. Irfan starts alone; Hari joins him after 4 days, and Gopal joins 3 days after that. In how many days from the start is the pipeline laid?",
+      "options": [
+        "2.25 days",
+        "8.75 days",
+        "9 days",
+        "9.25 days",
+        "10.25 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = 60 units. Gopal 5/day, Hari 4/day, Irfan 3/day.",
+          "Irfan 4 days = 12 units; Hari + Irfan 3 days = 21 units → 33 done, 27 left.",
+          "All three at 12/day: 27/12 = 2.25 days. Total = 4 + 3 + 2.25 = **9.25 days**."
+        ],
+        "trap": "10.25 days forgets the 12 units Irfan did alone in the first 4 days; 2.25 days is only the last phase."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:joins-later"
+      ]
+    },
+    {
+      "key": "tw-021",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Jaya alone can complete a stitching order in 40 days. She works alone for 8 days, after which Kamal joins her and the two of them finish the remaining order in 12 days. In how many days could Kamal alone complete the whole order?",
+      "options": [
+        "15 days",
+        "24 days",
+        "27 days",
+        "30 days",
+        "36 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Jaya's 8 days = 8/40 = 1/5 of the order; remaining 4/5 is done by both in 12 days → together they do 1/15 per day.",
+          "Kamal = 1/15 − 1/40 = (8 − 3)/120 = 1/24 → **24 days**."
+        ],
+        "trap": "15 days treats the 12 days as Kamal's solo time for 4/5 of the order, ignoring that Jaya kept working."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:joins-later"
+      ]
+    },
+    {
+      "key": "tw-022",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Leena is 50% more efficient than Madhav. Madhav alone can prepare a set of loan files in 30 days. In how many days can Leena and Madhav together prepare them?",
+      "options": [
+        "12 days",
+        "15 days",
+        "18 days",
+        "20 days",
+        "24 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Efficiency Leena : Madhav = 3 : 2. Madhav takes 30 days → work = 30 × 2 = 60 units.",
+          "Together 3 + 2 = 5 units/day → 60/5 = **12 days**."
+        ],
+        "trap": "20 days is Leena alone (60/3); 15 days halves Madhav's time as if both were equally efficient."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-percent"
+      ]
+    },
+    {
+      "key": "tw-023",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ritesh is 50% more efficient than Nandan. Ritesh works alone on a job for 6 days and then leaves; Nandan finishes the remaining job in 9 days. In how many days could the two of them finish the job working together?",
+      "options": [
+        "7.2 days",
+        "7.5 days",
+        "8 days",
+        "9 days",
+        "9.6 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let Nandan do 2 units/day and Ritesh 3 units/day. Work = 6 × 3 + 9 × 2 = 18 + 18 = 36 units.",
+          "Together 5 units/day → 36/5 = **7.2 days**."
+        ],
+        "trap": "7.5 days is the plain average of 6 and 9 days; working time cannot be averaged when efficiencies differ."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-percent"
+      ]
+    },
+    {
+      "key": "tw-024",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Omkar is 40% less efficient than Pooja. Pooja alone can complete the audit of a branch in 12 days. In how many days can Omkar and Pooja together complete it?",
+      "options": [
+        "6 days",
+        "6.5 days",
+        "6.8 days",
+        "7 days",
+        "7.5 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Omkar's efficiency = 60% of Pooja's, so his time = 12 × 100/60 = 20 days.",
+          "Total = LCM(12, 20) = 60 units: Pooja 5/day, Omkar 3/day → 60/8 = **7.5 days**."
+        ],
+        "trap": "7 days comes from taking Omkar's time as 40% more than Pooja's (16.8 days); 40% less efficiency means 1/0.6 times the time, not 1.4 times."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-percent"
+      ]
+    },
+    {
+      "key": "tw-025",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The efficiencies of Qasim, Ravi and Shalini are in the ratio 2 : 3 : 5. Working together, they can sort a pile of returned cheques in 9 days. In how many days can Ravi alone sort them?",
+      "options": [
+        "18 days",
+        "22.5 days",
+        "27 days",
+        "30 days",
+        "45 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the rates be 2, 3, 5 units/day; together 10 units/day for 9 days → work = 90 units.",
+          "Ravi alone: 90/3 = **30 days**."
+        ],
+        "trap": "45 days is Qasim's time (90/2) and 18 days is Shalini's; match Ravi with the middle share 3."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-percent"
+      ]
+    },
+    {
+      "key": "tw-026",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The times taken by Tanya and Umesh to complete a piece of work are in the ratio 2 : 3, and together they can complete it in 12 days. Vivek is twice as efficient as Tanya. In how many days can Umesh and Vivek together complete the work?",
+      "options": [
+        "6 days",
+        "$6\\frac{2}{3}$ days",
+        "7.5 days",
+        "$8\\frac{4}{7}$ days",
+        "10 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Time ratio 2 : 3 → efficiency ratio Tanya : Umesh = 3 : 2. Work = (3 + 2) × 12 = 60 units.",
+          "Vivek = 2 × 3 = 6 units/day. Umesh + Vivek = 2 + 6 = 8 units/day → 60/8 = **7.5 days**."
+        ],
+        "trap": "$8\\frac{4}{7}$ days takes the time ratio 2 : 3 as the efficiency ratio (Umesh 3, Vivek 4 → 60/7); $6\\frac{2}{3}$ days is Tanya + Vivek."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-percent"
+      ]
+    },
+    {
+      "key": "tw-027",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Waman is 50% more efficient than Xavier, and Yash is 25% less efficient than Xavier. Waman and Yash together can complete a job in 18 days. In how many days can Xavier alone complete it?",
+      "options": [
+        "36 days",
+        "40.5 days",
+        "42 days",
+        "45 days",
+        "54 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let Xavier = 4 units/day → Waman = 6, Yash = 3.",
+          "Waman + Yash = 9 units/day × 18 days = 162 units → Xavier alone: 162/4 = **40.5 days**."
+        ],
+        "trap": "54 days is Yash's time (162/3) and 27 days would be Waman's; the question asks for Xavier."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-percent"
+      ]
+    },
+    {
+      "key": "tw-028",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Zubin is twice as efficient as Aarti, and Aarti is 50% more efficient than Bhola. Working together, the three of them can finish a job in 12 days. Zubin works alone for the first 4 days and then leaves, after which Aarti and Bhola together finish the rest. How many days does the job take in all?",
+      "options": [
+        "21.6 days",
+        "22.4 days",
+        "24 days",
+        "24.8 days",
+        "25.6 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let Bhola = 2 units/day → Aarti = 3, Zubin = 6. Together 11 units/day → work = 132 units.",
+          "Zubin's 4 days = 24 units; remaining 108 units at 3 + 2 = 5 units/day = 21.6 days.",
+          "Total = 4 + 21.6 = **25.6 days**."
+        ],
+        "trap": "21.6 days is only the time taken by Aarti and Bhola; Zubin's 4 days come first."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-percent"
+      ]
+    },
+    {
+      "key": "tw-029",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Dev, Elina and Firoz can clean a stretch of beach in 12, 15 and 20 days respectively. They work one at a time in rotation — Dev on the first day, Elina on the second, Firoz on the third, Dev again on the fourth, and so on. In how many days is the beach cleaned?",
+      "options": [
+        "5 days",
+        "12 days",
+        "13 days",
+        "14 days",
+        "15 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total = 60 units: Dev 5, Elina 4, Firoz 3 units/day → one 3-day round = 12 units.",
+          "60/12 = 5 complete rounds exactly → 5 × 3 = **15 days**."
+        ],
+        "trap": "5 days is the time if all three worked together every day; in rotation only one works each day."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:alternate-days"
+      ]
+    },
+    {
+      "key": "tw-030",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Gita can complete a data-entry job in 12 days and Harsh in 18 days. They work on alternate days, Harsh working on the first day. In how many days is the job completed?",
+      "options": [
+        "14 days",
+        "$14\\frac{1}{3}$ days",
+        "14.5 days",
+        "15 days",
+        "16 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 36 units: Gita 3/day, Harsh 2/day → every 2 days = 5 units.",
+          "After 14 days (7 rounds) 35 units are done; day 15 is Harsh's day and he needs 1 unit at 2/day = 1/2 day.",
+          "Total = 14 + 1/2 = **14.5 days**."
+        ],
+        "trap": "$14\\frac{1}{3}$ days is the answer if Gita started; here Harsh works on the 15th day, so the last unit takes half a day."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:alternate-days"
+      ]
+    },
+    {
+      "key": "tw-031",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Indu, Jagdish and Kabir can complete a piece of work in 16, 24 and 48 days respectively. Indu works every day; Jagdish assists her on the 1st, 3rd, 5th, … days and Kabir assists her on the 2nd, 4th, 6th, … days. In how many days is the work completed?",
+      "options": [
+        "10.6 days",
+        "10.75 days",
+        "11 days",
+        "11.4 days",
+        "12 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = 48 units: Indu 3, Jagdish 2, Kabir 1 unit/day. Odd days 3 + 2 = 5, even days 3 + 1 = 4 → 9 units per 2 days.",
+          "After 10 days: 5 × 9 = 45 units; 3 left on day 11 (an odd day, 5 units/day) → 3/5 = 0.6 day.",
+          "Total = **10.6 days**."
+        ],
+        "trap": "10.75 days finishes the last 3 units at Indu + Kabir's 4 units/day, but day 11 is an odd day with Jagdish."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:alternate-days"
+      ]
+    },
+    {
+      "key": "tw-032",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Lakshman can complete a job in 15 days, Mira in 30 days and Nisha in 60 days. Lakshman works alone on the 1st, 3rd, 5th, … days and Mira and Nisha work together on the 2nd, 4th, 6th, … days. In how many days is the job completed?",
+      "options": [
+        "16.5 days",
+        "17 days",
+        "17.5 days",
+        "18 days",
+        "18.5 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = 60 units: Lakshman 4/day; Mira 2 + Nisha 1 = 3/day. Every 2 days = 7 units.",
+          "After 16 days: 8 × 7 = 56 units; day 17 is Lakshman's day and he does exactly the last 4 units.",
+          "Total = **17 days**."
+        ],
+        "trap": "18 days comes from rounding 60/7 × 2 ≈ 17.1 up to a whole pair of days; the last stretch must be checked day by day."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:alternate-days"
+      ]
+    },
+    {
+      "key": "tw-033",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Om alone can make a set of wooden benches in 9 days. Om and Prem work on alternate days, Om working on the first day, and the set is completed exactly at the end of the 11th day. In how many days can Prem alone make the set?",
+      "options": [
+        "12 days",
+        "13.5 days",
+        "15 days",
+        "16.5 days",
+        "18 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "In 11 days Om works on days 1, 3, …, 11 = 6 days and Prem on 5 days.",
+          "Om's work = 6/9 = 2/3, so Prem's 5 days = 1/3 → Prem alone = 5 × 3 = **15 days**."
+        ],
+        "trap": "13.5 days assumes Om worked 5 days and Prem 6 (5/9 + 6/P = 1); with Om starting and 11 days in all, Om gets the extra day."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:alternate-days"
+      ]
+    },
+    {
+      "key": "tw-034",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Raju, Sunil and Tara can paint a set of classroom benches in 8, 10 and 20 days respectively. They work one at a time in the order Raju, Sunil, Tara, Raju, Sunil, Tara, … each for one full day. In how many days is the painting finished?",
+      "options": [
+        "10 days",
+        "10.5 days",
+        "11 days",
+        "11.5 days",
+        "12 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = 40 units: Raju 5, Sunil 4, Tara 2 → 11 units per 3-day round.",
+          "3 rounds (9 days) = 33 units; day 10 (Raju) → 38 units; day 11 (Sunil) needs 2 units at 4/day = 0.5 day.",
+          "Total = 10 + 0.5 = **10.5 days**."
+        ],
+        "trap": "11 days counts Sunil's last day as a full day; he needs only half of it."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:alternate-days"
+      ]
+    },
+    {
+      "key": "tw-035",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Uma is twice as efficient as Varun. Working on alternate days with Uma on the first day, they complete a job exactly at the end of the 15th day. In how many days could they complete it working together every day?",
+      "options": [
+        "$7\\frac{1}{3}$ days",
+        "7.5 days",
+        "$7\\frac{2}{3}$ days",
+        "8 days",
+        "$8\\frac{1}{3}$ days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let Varun = 1 unit/day, Uma = 2. In 15 days Uma works 8 days and Varun 7 days → work = 16 + 7 = 23 units.",
+          "(Check: after 14 days 7 × 3 = 21 units, so the job is not finished early.)",
+          "Together 3 units/day → 23/3 = **$7\\frac{2}{3}$ days**."
+        ],
+        "trap": "7.5 days simply halves 15 days; Uma gets one more working day than Varun, so the work is 23 units, not 22.5."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:alternate-days"
+      ]
+    },
+    {
+      "key": "tw-036",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Wahid can complete a job in 12 days and Yasmin in 18 days. They complete it together and are paid ₹9,000. What is Wahid's share?",
+      "options": [
+        "₹3,600",
+        "₹4,500",
+        "₹5,000",
+        "₹5,400",
+        "₹6,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Working together for the same number of days, wages are shared in the ratio of efficiencies = 1/12 : 1/18 = 3 : 2.",
+          "Wahid's share = 9,000 × 3/5 = **₹5,400**."
+        ],
+        "trap": "₹3,600 shares in the ratio of days 12 : 18; the faster worker should get more, so the time ratio must be inverted."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:wages-share"
+      ]
+    },
+    {
+      "key": "tw-037",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Zara and Anand can complete a job in 20 days and 30 days respectively. They start together; after 6 days Bindu joins them and the job is finished in 3 more days. The total payment of ₹18,000 is shared in proportion to the work done. What is Bindu's share?",
+      "options": [
+        "₹4,500",
+        "₹5,400",
+        "₹6,000",
+        "₹7,200",
+        "₹9,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Zara and Anand work all 9 days: 9/20 + 9/30 = 0.45 + 0.30 = 0.75 of the job.",
+          "Bindu did the remaining 0.25 → 18,000 × 0.25 = **₹4,500**."
+        ],
+        "trap": "₹9,000 counts Zara and Anand for only 6 days (0.5 of the job); they kept working during the last 3 days too."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:wages-share"
+      ]
+    },
+    {
+      "key": "tw-038",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Chirag, Dolly and Eshan worked on a project for 6, 9 and 8 days respectively, and their daily wages are in the ratio 3 : 2 : 4. If they received ₹13,600 in all, what is Eshan's share?",
+      "options": [
+        "₹3,600",
+        "₹4,800",
+        "₹5,600",
+        "₹6,000",
+        "₹6,400"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Share ∝ days × daily wage: Chirag 6 × 3 = 18, Dolly 9 × 2 = 18, Eshan 8 × 4 = 32 → total 68 parts.",
+          "One part = 13,600/68 = 200 → Eshan = 32 × 200 = **₹6,400**."
+        ],
+        "trap": "₹3,600 is Chirag's (or Dolly's) share, 18 parts; using the wage ratio alone (4/9 of ₹13,600) ignores the different numbers of days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:wages-share"
+      ]
+    },
+    {
+      "key": "tw-039",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Farah can do a job in 15 days and Ganesh in 20 days. With the help of Hitesh, the three of them finish it in 6 days and receive ₹12,000. How much more does Farah get than Hitesh?",
+      "options": [
+        "₹800",
+        "₹1,200",
+        "₹1,500",
+        "₹1,800",
+        "₹2,400"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "In 6 days Farah does 6/15 = 2/5 and Ganesh 6/20 = 3/10 → Hitesh does 1 − 2/5 − 3/10 = 3/10.",
+          "Farah = 12,000 × 2/5 = ₹4,800; Hitesh = 12,000 × 3/10 = ₹3,600 → difference **₹1,200**."
+        ],
+        "trap": "₹800 assumes Hitesh gets an equal one-third (₹4,000); shares go by work done, not head count."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:wages-share"
+      ]
+    },
+    {
+      "key": "tw-040",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ishita can complete a job in 9 days and Jai in 18 days. They start together, but Ishita leaves 3 days before the job is completed. The total payment of ₹9,000 is divided in proportion to the work done. What is Ishita's share?",
+      "options": [
+        "₹4,000",
+        "₹4,500",
+        "₹5,000",
+        "₹5,400",
+        "₹6,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 18 units: Ishita 2/day, Jai 1/day. If the job takes T days: 1 × T + 2 × (T − 3) = 18 → T = 8.",
+          "Ishita works 5 days = 10 units out of 18 → 9,000 × 10/18 = **₹5,000**."
+        ],
+        "trap": "₹6,000 splits in the efficiency ratio 2 : 1, which is right only if both work for the same number of days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:wages-share"
+      ]
+    },
+    {
+      "key": "tw-041",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Kavya and Lalit together can complete a job in 12 days, Lalit and Mohit in 15 days, and Mohit and Kavya in 20 days. All three work together, complete the job and receive ₹9,600. What is Lalit's share?",
+      "options": [
+        "₹1,600",
+        "₹3,200",
+        "₹4,000",
+        "₹4,800",
+        "₹5,600"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = 60 units: K + L = 5, L + M = 4, M + K = 3 → 2(K + L + M) = 12 → K + L + M = 6.",
+          "Lalit = 6 − 3 = 3, Kavya = 6 − 4 = 2, Mohit = 6 − 5 = 1 → ratio 2 : 3 : 1.",
+          "Lalit's share = 9,600 × 3/6 = **₹4,800**."
+        ],
+        "trap": "₹3,200 is Kavya's share; Lalit is found by subtracting the Mohit–Kavya pair, not the Lalit–Mohit pair."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:wages-share"
+      ]
+    },
+    {
+      "key": "tw-042",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Neha and Onkar can complete a job in 20 days and 30 days respectively. They start together; after 5 days Neha leaves and Parth joins Onkar, and the two of them finish the remaining job in 9 days. The total payment of ₹30,000 is shared in proportion to the work done. What is Parth's share?",
+      "options": [
+        "₹7,500",
+        "₹8,000",
+        "₹8,500",
+        "₹10,000",
+        "₹17,500"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neha: 5 days → 5/20 = 1/4. Onkar: 5 + 9 = 14 days → 14/30 = 7/15.",
+          "Parth = 1 − 1/4 − 7/15 = (60 − 15 − 28)/60 = 17/60 → 30,000 × 17/60 = **₹8,500**."
+        ],
+        "trap": "₹17,500 gives Parth the whole remaining 7/12 after 5 days, forgetting that Onkar worked alongside him for those 9 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:wages-share"
+      ]
+    },
+    {
+      "key": "tw-043",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "24 masons can build a boundary wall in 20 days. After they have worked for 5 days, 6 more masons join them. In how many more days will the wall be finished?",
+      "options": [
+        "12 days",
+        "13 days",
+        "14 days",
+        "15 days",
+        "16 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Work = 24 × 20 = 480 mason-days. Done in 5 days: 24 × 5 = 120 → 360 left.",
+          "Now 30 masons: 360/30 = **12 days**."
+        ],
+        "trap": "15 days is the time left without the extra masons (20 − 5)."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:mdh-extra-workers"
+      ]
+    },
+    {
+      "key": "tw-044",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A contractor employs 40 workers to lay a road in 30 days. After 12 days, 10 workers leave. By how many days will the work be delayed beyond the planned 30 days?",
+      "options": [
+        "3 days",
+        "4 days",
+        "4.5 days",
+        "5 days",
+        "6 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Work = 40 × 30 = 1,200 worker-days; done in 12 days = 480 → 720 left.",
+          "30 workers take 720/30 = 24 days → total 12 + 24 = 36 days → delay = **6 days**."
+        ],
+        "trap": "4.5 days scales only by the leavers (18 × 10/40); the remaining 18 days' work must be redone by 30 workers: 18 × 40/30 = 24 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:mdh-extra-workers"
+      ]
+    },
+    {
+      "key": "tw-045",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "30 men working 8 hours a day were to finish a project in 30 days. After 10 days, only one-fourth of the project is done. From now on all workers will work 10 hours a day. How many additional men must be employed to finish the project on time?",
+      "options": [
+        "6 men",
+        "9 men",
+        "12 men",
+        "15 men",
+        "18 men"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Man-hours for 1/4 = 30 × 8 × 10 = 2,400 → remaining 3/4 needs 7,200 man-hours.",
+          "In the remaining 20 days at 10 hours/day: 7,200/(20 × 10) = 36 men → additional = 36 − 30 = **6 men**."
+        ],
+        "trap": "15 men keeps the old 8-hour day (7,200/160 = 45 men); the question raises the hours to 10."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:mdh-extra-workers"
+      ]
+    },
+    {
+      "key": "tw-046",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "45 workers can complete the construction of a community hall in 16 days. They work for 6 days, then 15 of them leave; after 4 more days, 30 new workers of the same efficiency join. In how many days in all is the hall completed?",
+      "options": [
+        "14 days",
+        "14.5 days",
+        "15 days",
+        "15.5 days",
+        "16 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Work = 45 × 16 = 720 worker-days. First 6 days: 270; next 4 days with 30 workers: 120 → 390 done, 330 left.",
+          "Now 30 + 30 = 60 workers: 330/60 = 5.5 days. Total = 6 + 4 + 5.5 = **15.5 days**."
+        ],
+        "trap": "16 days assumes the arrivals simply cancel the departures; the workforce changes at different times, so the man-days must be counted phase by phase."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:mdh-extra-workers"
+      ]
+    },
+    {
+      "key": "tw-047",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "8 men working 6 hours a day complete 2/5 of a job in 12 days. How many hours a day must 12 men work to finish the remaining job in 9 days?",
+      "options": [
+        "$5\\frac{1}{3}$ hours",
+        "6 hours",
+        "7.5 hours",
+        "8 hours",
+        "9 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "2/5 of the job = 8 × 6 × 12 = 576 man-hours → whole job = 1,440; remaining 3/5 = 864 man-hours.",
+          "12 men × 9 days × h = 864 → h = **8 hours**."
+        ],
+        "trap": "$5\\frac{1}{3}$ hours re-uses 576 man-hours (the 2/5 already done) instead of the remaining 3/5."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:mdh-extra-workers"
+      ]
+    },
+    {
+      "key": "tw-048",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A team of 40 workers was to lay a 12 km pipeline in 60 days, working 8 hours a day. After 20 days only 3 km had been laid. The workers will now work 10 hours a day. How many additional workers are needed to finish the pipeline on time?",
+      "options": [
+        "6 workers",
+        "8 workers",
+        "10 workers",
+        "12 workers",
+        "20 workers"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "3 km took 40 × 20 × 8 = 6,400 man-hours → remaining 9 km need 19,200 man-hours.",
+          "40 days × 10 hours = 400 hours per worker → 19,200/400 = 48 workers → additional **8 workers**."
+        ],
+        "trap": "20 workers keeps the 8-hour day (19,200/320 = 60); the switch to 10 hours a day cuts the requirement."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:mdh-extra-workers"
+      ]
+    },
+    {
+      "key": "tw-049",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "60 workers can complete a project in 40 days. After 10 days, 20 workers leave. After 10 more days, 30 new workers join, but each new worker is only two-thirds as efficient as an original worker. In how many days in all is the project completed?",
+      "options": [
+        "40 days",
+        "42 days",
+        "$43\\frac{1}{3}$ days",
+        "44 days",
+        "$46\\frac{2}{3}$ days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Work = 60 × 40 = 2,400 units (one original worker = 1 unit/day). First 10 days: 600; next 10 days: 40 × 10 = 400 → 1,400 left.",
+          "Now 40 + 30 × 2/3 = 60 units/day → 1,400/60 = $23\\frac{1}{3}$ days.",
+          "Total = 20 + $23\\frac{1}{3}$ = **$43\\frac{1}{3}$ days**."
+        ],
+        "trap": "40 days counts the new workers at full efficiency (1,400/70 = 20 days); they do only 2/3 of an original worker's daily work."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:mdh-extra-workers"
+      ]
+    },
+    {
+      "key": "tw-050",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The work of 2 men equals the work of 3 women. 4 men and 6 women can complete a job in 10 days. In how many days can 3 men and 3 women complete it?",
+      "options": [
+        "12 days",
+        "13.5 days",
+        "15 days",
+        "16 days",
+        "$17\\frac{1}{3}$ days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "1 man = 1.5 women → 4 men + 6 women = 12 women → work = 120 woman-days.",
+          "3 men + 3 women = 4.5 + 3 = 7.5 women → 120/7.5 = **16 days**."
+        ],
+        "trap": "$17\\frac{1}{3}$ days inverts the equivalence (1 man = 2/3 woman); 2 men = 3 women means a man does MORE than a woman."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:men-women-children"
+      ]
+    },
+    {
+      "key": "tw-051",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "3 men or 6 women or 9 children can complete a job in 16 days. In how many days can 2 men, 4 women and 6 children together complete it?",
+      "options": [
+        "8 days",
+        "9 days",
+        "10 days",
+        "12 days",
+        "16 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "1 man = 2 women = 3 children. Work = 3 × 16 = 48 man-days.",
+          "2 men + 4 women + 6 children = 2 + 2 + 2 = 6 men → 48/6 = **8 days**."
+        ],
+        "trap": "16 days assumes the mixed group equals just one of the given groups; it is in fact two such groups' worth (6 men), so the time halves."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:men-women-children"
+      ]
+    },
+    {
+      "key": "tw-052",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "5 men and 6 women can complete a job in 12 days, while 9 men and 18 women can complete it in 5 days. In how many days can 10 men and 8 women complete it?",
+      "options": [
+        "6.4 days",
+        "7.2 days",
+        "$7\\frac{1}{3}$ days",
+        "8 days",
+        "9 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "12(5m + 6w) = 5(9m + 18w) → 60m + 72w = 45m + 90w → 15m = 18w → 1 man = 1.2 women.",
+          "Work = 12 × (6 + 6) = 144 woman-days. 10 men + 8 women = 12 + 8 = 20 women → 144/20 = **7.2 days**."
+        ],
+        "trap": "$7\\frac{1}{3}$ days treats a man and a woman as equal (11 × 12 = 132 person-days ÷ 18); since 15 men match 18 women, a man is worth 1.2 women."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:men-women-children"
+      ]
+    },
+    {
+      "key": "tw-053",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "3 men and 4 boys can complete a job in 12 days, while 5 men and 2 boys can complete it in 10 days. In how many days can 2 men and 4 boys complete it?",
+      "options": [
+        "10 days",
+        "12 days",
+        "13.5 days",
+        "14 days",
+        "15 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "12(3m + 4b) = 10(5m + 2b) → 36m + 48b = 50m + 20b → 28b = 14m → 1 man = 2 boys.",
+          "Work = 12 × (6 + 4) = 120 boy-days. 2 men + 4 boys = 8 boys → 120/8 = **15 days**."
+        ],
+        "trap": "12 days uses the first group's time; 2 men + 4 boys (8 boy-units) is weaker than 3 men + 4 boys (10 units)."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:men-women-children"
+      ]
+    },
+    {
+      "key": "tw-054",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A man can complete a job in 6 days, a woman in 12 days and a child in 18 days. How many children must help 2 men so that the job is completed in 2 days?",
+      "options": [
+        "3 children",
+        "4 children",
+        "5 children",
+        "6 children",
+        "9 children"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "2 men in 2 days do 2 × 2/6 = 2/3 of the job → 1/3 is left for the children.",
+          "One child in 2 days does 2/18 = 1/9 → children needed = (1/3)/(1/9) = **3**."
+        ],
+        "trap": "6 children uses one day of a child's work (1/18) instead of two days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:men-women-children"
+      ]
+    },
+    {
+      "key": "tw-055",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "9 men and 12 boys can complete a job in 8 days, while 10 men and 20 boys can complete it in 6 days. 6 men and 8 boys start the job; after 4 days, 2 men leave and 8 more boys join. In how many days in all is the job completed?",
+      "options": [
+        "9 days",
+        "10 days",
+        "$10\\frac{2}{3}$ days",
+        "11 days",
+        "14 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "8(9m + 12b) = 6(10m + 20b) → 72m + 96b = 60m + 120b → 1 man = 2 boys. Work = 8 × 30 = 240 boy-days.",
+          "First 4 days: 6m + 8b = 20 boys → 80; left 160. New team 4m + 16b = 24 boys → 160/24 = $6\\frac{2}{3}$ days.",
+          "Total = 4 + $6\\frac{2}{3}$ = **$10\\frac{2}{3}$ days**."
+        ],
+        "trap": "14 days forgets the 8 boys who join (4m + 8b = 16 boy-units → 4 + 10); 9 days adds the 2 men instead of removing them."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:men-women-children"
+      ]
+    },
+    {
+      "key": "tw-056",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "4 men can do as much work as 6 women. 10 men can complete a job in 12 days. How many women are needed to complete the same job in 15 days?",
+      "options": [
+        "8 women",
+        "9 women",
+        "10 women",
+        "12 women",
+        "15 women"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "1 man = 1.5 women → 10 men = 15 women → work = 15 × 12 = 180 woman-days.",
+          "In 15 days: 180/15 = **12 women**."
+        ],
+        "trap": "15 women is the strength needed to finish in 12 days; finishing in 15 days needs fewer."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:men-women-children"
+      ]
+    },
+    {
+      "key": "tw-057",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Aditi completes 40% of a job in 8 days and Bharat completes 25% of it in 5 days. In how many days can they complete the job working together?",
+      "options": [
+        "6 days",
+        "7.5 days",
+        "8 days",
+        "9 days",
+        "10 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Aditi alone: 8/0.40 = 20 days; Bharat alone: 5/0.25 = 20 days.",
+          "Together: 1/20 + 1/20 = 1/10 → **10 days**."
+        ],
+        "trap": "8 days is only Aditi's time for 40% of the job; convert each part-time to a whole-job time first (both turn out to be 20 days)."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:partial-work-rate"
+      ]
+    },
+    {
+      "key": "tw-058",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Chanda can complete 60% of a job in 12 days and Devraj can complete 2/3 of it in 20 days. Chanda works alone for 5 days, after which Devraj joins her. In how many more days is the job completed?",
+      "options": [
+        "7.5 days",
+        "8 days",
+        "9 days",
+        "10 days",
+        "12 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Chanda alone: 12/0.6 = 20 days; Devraj: 20 ÷ 2/3 = 30 days. Total = 60 units: Chanda 3/day, Devraj 2/day.",
+          "Chanda's 5 days = 15 units; remaining 45 at 5/day = **9 days**."
+        ],
+        "trap": "12 days is the time for the whole job together; Chanda has already done a quarter of it."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:partial-work-rate"
+      ]
+    },
+    {
+      "key": "tw-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Elango completes 30% of a job in 9 days. Farooq then joins him and the two finish the rest of the job in 14 days. In how many days can Farooq alone complete the job?",
+      "options": [
+        "40 days",
+        "45 days",
+        "50 days",
+        "60 days",
+        "70 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Elango alone: 9/0.3 = 30 days. Together they do 70% in 14 days → 5% per day = 1/20.",
+          "Farooq = 1/20 − 1/30 = 1/60 → **60 days**."
+        ],
+        "trap": "20 days is the joint time for the whole job; Farooq's rate is found by subtracting Elango's rate from it."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:partial-work-rate"
+      ]
+    },
+    {
+      "key": "tw-060",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Gunjan completes 25% of a job in 5 days. Harpal then joins her and together they complete another 50% of the job in 6 days, after which Gunjan leaves. In how many days will Harpal alone finish the rest of the job?",
+      "options": [
+        "7.5 days",
+        "9 days",
+        "10 days",
+        "12 days",
+        "15 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Gunjan alone: 5/0.25 = 20 days. Together they do 50% in 6 days → whole job in 12 days.",
+          "Harpal = 1/12 − 1/20 = 1/30 → 30 days for the job; the remaining 25% takes **7.5 days**."
+        ],
+        "trap": "15 days takes 50% of Harpal's time, but only 25% of the job (100 − 25 − 50) is left."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:partial-work-rate"
+      ]
+    },
+    {
+      "key": "tw-061",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Inder can complete 2/5 of a job in 6 days and Jasmine 1/3 of it in 8 days. With the help of Kusum, the three of them complete the whole job in 6 days. In how many days can Kusum alone complete 70% of the job?",
+      "options": [
+        "10.5 days",
+        "12 days",
+        "14 days",
+        "15 days",
+        "$17\\frac{1}{7}$ days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Inder: 15 days, Jasmine: 24 days. In 6 days they do 6/15 + 6/24 = 0.40 + 0.25 = 0.65 of the job.",
+          "Kusum does 0.35 in 6 days → 70% = 2 × 0.35 takes **12 days**."
+        ],
+        "trap": "$17\\frac{1}{7}$ days is Kusum's time for the whole job (6/0.35); only 70% is asked."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:partial-work-rate"
+      ]
+    },
+    {
+      "key": "tw-062",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Rupesh completes 1/4 of a job in 6 days and Suraj completes 1/3 of it in 10 days. In how many days can they complete the job together?",
+      "options": [
+        "12 days",
+        "12.5 days",
+        "13 days",
+        "$13\\frac{1}{3}$ days",
+        "13.5 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Rupesh alone: 6 × 4 = 24 days; Suraj alone: 10 × 3 = 30 days.",
+          "Together: 1/24 + 1/30 = (5 + 4)/120 = 9/120 → 120/9 = **$13\\frac{1}{3}$ days**."
+        ],
+        "trap": "13.5 days halves the average of 24 and 30 days; for two workers the joint time is the product over the sum, 720/54."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:partial-work-rate"
+      ]
+    },
+    {
+      "key": "tw-063",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Tina and Uttam can complete a job in 20 days and 30 days respectively. They start together, but Tina leaves 5 days before the job is completed. In how many days in all is the job completed?",
+      "options": [
+        "15 days",
+        "16 days",
+        "17 days",
+        "18 days",
+        "20 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = 60 units: Tina 3/day, Uttam 2/day. Let the job take T days: 2T + 3(T − 5) = 60 → 5T = 75 → **T = 15**.",
+          "Check: Uttam 15 days = 30 units, Tina 10 days = 30 units."
+        ],
+        "trap": "17 days simply adds the 5 days to the joint time of 12 days; Tina is absent only for the last 5 days, so the delay is less than 5 days.",
+        "shortcut": "Pretend Tina also worked the last 5 days: extra work 5 × 3 = 15 units → 75 units at 5/day = 15 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:leaves-before-completion"
+      ]
+    },
+    {
+      "key": "tw-064",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vani and Wasim can complete a job in 12 days and 18 days respectively. They start together, but Wasim leaves 3 days before the job is completed. In how many days in all is the job completed?",
+      "options": [
+        "6 days",
+        "8.4 days",
+        "9 days",
+        "9.6 days",
+        "10.2 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = 36 units: Vani 3/day, Wasim 2/day. 3T + 2(T − 3) = 36 → 5T = 42 → **T = 8.4 days**.",
+          "Check: Vani 8.4 × 3 = 25.2, Wasim 5.4 × 2 = 10.8 → 36."
+        ],
+        "trap": "6 days adds the missing work instead of subtracting it (5T + 6 = 36); Wasim's absence makes the job take longer than the joint time 7.2 days.",
+        "shortcut": "If Wasim had stayed, extra work = 3 × 2 = 6 units → (36 + 6)/5 = 8.4 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:leaves-before-completion"
+      ]
+    },
+    {
+      "key": "tw-065",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Yogesh, Zeenat and Amar can complete a job in 15, 20 and 30 days respectively. All three start together; Yogesh leaves 3 days before the job is completed and Zeenat leaves 6 days before it is completed. In how many days in all is the job completed?",
+      "options": [
+        "8 days",
+        "9 days",
+        "10 days",
+        "11 days",
+        "12 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 60 units: Yogesh 4, Zeenat 3, Amar 2 per day. Pretend both stayed: extra work = 3 × 4 + 6 × 3 = 30 units.",
+          "(60 + 30)/(4 + 3 + 2) = 90/9 = **10 days**.",
+          "Check: Amar 20 + Yogesh 7 × 4 = 28 + Zeenat 4 × 3 = 12 → 60."
+        ],
+        "trap": "Days-before-completion are counted back from the END; 8 days uses the two leaving days as if they were the first days of the job."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:leaves-before-completion"
+      ]
+    },
+    {
+      "key": "tw-066",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Bala and Chandni can complete a job in 30 days and 45 days respectively. They start together, but Bala leaves some days before the job is completed, and the job takes 21 days in all. How many days before completion did Bala leave?",
+      "options": [
+        "4 days",
+        "5 days",
+        "6 days",
+        "7 days",
+        "8 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = 90 units: Bala 3/day, Chandni 2/day. Chandni works 21 days = 42 units → Bala did 48 units = 16 days.",
+          "Bala left 21 − 16 = **5 days** before completion."
+        ],
+        "trap": "7 days gives Bala the same 42 units that Chandni did (14 days); Bala's share is 90 − 42 = 48 units."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:leaves-before-completion"
+      ]
+    },
+    {
+      "key": "tw-067",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Daya, Ekansh and Fiza can complete a job in 18, 27 and 54 days respectively. All three start together; Daya leaves after 4 days, and Ekansh leaves 3 days before the job is completed. In how many days in all is the job completed?",
+      "options": [
+        "16 days",
+        "17 days",
+        "18 days",
+        "19 days",
+        "20 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = 54 units: Daya 3, Ekansh 2, Fiza 1 per day. Daya's 4 days = 12 units.",
+          "Let the job take T days: Fiza T + Ekansh 2(T − 3) + 12 = 54 → 3T = 48 → **T = 16**."
+        ],
+        "trap": "18 days treats Ekansh as leaving 3 days after the start; 'before completion' means he is absent in the LAST 3 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:leaves-before-completion"
+      ]
+    },
+    {
+      "key": "tw-068",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Gagan, Heena and Ira can complete a job in 20, 30 and 60 days respectively. All three start together; Gagan leaves after 2 days and Heena leaves 6 days before the job is completed. The total payment of ₹15,000 is shared in proportion to the work done. What is Heena's share?",
+      "options": [
+        "₹5,000",
+        "₹6,000",
+        "₹6,500",
+        "₹7,500",
+        "₹8,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total = 60 units: Gagan 3, Heena 2, Ira 1 per day. Gagan's 2 days = 6 units.",
+          "T + 2(T − 6) + 6 = 60 → 3T = 66 → T = 22. Heena works 16 days = 32 units.",
+          "Heena's share = 15,000 × 32/60 = **₹8,000**."
+        ],
+        "trap": "₹5,000 splits in the efficiency ratio 3 : 2 : 1, ignoring that each person worked a different number of days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:leaves-before-completion"
+      ]
+    },
+    {
+      "key": "tw-069",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Jeevan and Kamini can complete a job in 16 days and 24 days respectively. They start together, Jeevan leaves k days before the job is completed, and the job takes 12 days in all. Had Kamini instead left k days before completion (with Jeevan working throughout), how many days would the job have taken?",
+      "options": [
+        "10.4 days",
+        "10.8 days",
+        "11 days",
+        "11.2 days",
+        "12 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = 48 units: Jeevan 3, Kamini 2 per day. Kamini 12 days = 24 units → Jeevan did 24 units = 8 days → k = 4.",
+          "New case: 3T + 2(T − 4) = 48 → 5T = 56 → **T = 11.2 days**."
+        ],
+        "trap": "12 days assumes the swap changes nothing; the faster worker staying to the end shortens the job."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:leaves-before-completion"
+      ]
+    },
+    {
+      "key": "tw-070",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "10 skilled workers can complete a job in 12 days, and 15 unskilled workers can complete it in 16 days. In how many days can 5 skilled and 10 unskilled workers together complete it?",
+      "options": [
+        "10 days",
+        "11 days",
+        "12 days",
+        "14 days",
+        "15 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Work = 120 skilled-days = 240 unskilled-days → 1 skilled = 2 unskilled.",
+          "5 skilled + 10 unskilled = 10 + 10 = 20 unskilled → 240/20 = **12 days**."
+        ],
+        "trap": "14 days averages the two given times; convert both groups to one kind of worker first."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-groups"
+      ]
+    },
+    {
+      "key": "tw-071",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A group of 12 workers can lay a stretch of road in 18 days, while another group of 9 workers can lay the same stretch in 16 days. What is the ratio of the efficiency of a worker of the first group to that of a worker of the second group?",
+      "options": [
+        "2 : 3",
+        "3 : 2",
+        "3 : 4",
+        "4 : 3",
+        "8 : 9"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Work = 12 × 18 = 216 first-group worker-days = 9 × 16 = 144 second-group worker-days.",
+          "Efficiency ∝ 1/(worker-days): 1/216 : 1/144 = 144 : 216 = **2 : 3**."
+        ],
+        "trap": "3 : 2 is the ratio of worker-days (216 : 144); efficiency is the reverse — more worker-days means a less efficient worker."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-groups"
+      ]
+    },
+    {
+      "key": "tw-072",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "12 men can complete a job in 20 days and 15 women can complete it in 32 days. In how many days can 10 men and 10 women together complete it?",
+      "options": [
+        "8 days",
+        "12 days",
+        "16 days",
+        "18 days",
+        "20 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Work = 240 man-days = 480 woman-days → 1 man = 2 women.",
+          "10 men + 10 women = 20 + 10 = 30 women → 480/30 = **16 days**."
+        ],
+        "trap": "8 days reverses the equivalence (1 woman = 2 men); the men need fewer days for the same job, so a man is worth 2 women."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-groups"
+      ]
+    },
+    {
+      "key": "tw-073",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "20 workers of Team A can complete a job in 15 days, while 25 workers of Team B can complete it in 16 days. In how many days can 12 workers of Team A and 8 workers of Team B together complete it?",
+      "options": [
+        "15 days",
+        "$16\\frac{2}{3}$ days",
+        "17.5 days",
+        "$18\\frac{1}{3}$ days",
+        "20 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Work = 300 A-days = 400 B-days. One-day work: 12/300 + 8/400 = 1/25 + 1/50 = 3/50.",
+          "Time = 50/3 = **$16\\frac{2}{3}$ days**."
+        ],
+        "trap": "20 days treats every worker as equal (400/20); an A-worker does 4/3 of a B-worker's work."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-groups"
+      ]
+    },
+    {
+      "key": "tw-074",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "4 senior and 6 junior technicians can complete an installation in 12 days, while 5 senior and 12 junior technicians can complete it in 8 days. In how many days can 3 senior and 6 junior technicians complete it?",
+      "options": [
+        "12 days",
+        "12.6 days",
+        "13.5 days",
+        "14 days",
+        "14.4 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "12(4s + 6j) = 8(5s + 12j) → 48s + 72j = 40s + 96j → 8s = 24j → 1 senior = 3 juniors.",
+          "Work = 12 × (12 + 6) = 216 junior-days. 3s + 6j = 15 juniors → 216/15 = **14.4 days**."
+        ],
+        "trap": "12 days assumes 3s + 6j is as strong as 4s + 6j; one senior fewer means 3 junior-units less per day."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-groups"
+      ]
+    },
+    {
+      "key": "tw-075",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "4 old and 3 new machines together can print an order in 12 hours; a new machine works twice as fast as an old one. After 4 hours, 2 old machines break down, and after 2 more hours one more new machine is brought in. In how many hours in all is the order printed?",
+      "options": [
+        "11.6 hours",
+        "12 hours",
+        "12.4 hours",
+        "12.8 hours",
+        "14 hours"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Old = 1 unit/h, new = 2 → 4 + 6 = 10 units/h → order = 120 units.",
+          "First 4 h: 40. Next 2 h with 2 old + 3 new = 8/h: 16 → 56 done, 64 left.",
+          "Now 2 old + 4 new = 10/h → 6.4 h. Total = 4 + 2 + 6.4 = **12.4 hours**."
+        ],
+        "trap": "14 hours ignores the extra machine (4 + 80/8); count every change in the line-up."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-groups"
+      ]
+    },
+    {
+      "key": "tw-076",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Lohit and Mansi together can paint a godown in 10 days, Mansi and Nitin together in 15 days, and Nitin and Lohit together in 12 days. In how many days can all three together paint it?",
+      "options": [
+        "4 days",
+        "6 days",
+        "7.5 days",
+        "8 days",
+        "$12\\frac{1}{3}$ days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = 60 units: L + M = 6, M + N = 4, N + L = 5 per day.",
+          "Adding: 2(L + M + N) = 15 → L + M + N = 7.5 units/day → 60/7.5 = **8 days**."
+        ],
+        "trap": "4 days forgets to halve the sum of the pairs (each person is counted twice); $12\\frac{1}{3}$ days averages the three pair times."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:pairwise-pairs"
+      ]
+    },
+    {
+      "key": "tw-077",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ojas and Pihu together can complete a job in 12 days, Pihu and Rahim together in 20 days, and Rahim and Ojas together in 15 days. In how many days can Rahim alone complete 40% of the job?",
+      "options": [
+        "18 days",
+        "24 days",
+        "30 days",
+        "36 days",
+        "60 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = 60 units: O + P = 5, P + R = 3, R + O = 4 → O + P + R = 12/2 = 6 units/day.",
+          "Rahim = 6 − (O + P) = 6 − 5 = 1 unit/day → whole job 60 days; 40% = **24 days**."
+        ],
+        "trap": "60 days is Rahim's time for the whole job; 30 days is Pihu's time (6 − 4 = 2 units/day)."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:pairwise-pairs"
+      ]
+    },
+    {
+      "key": "tw-078",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Sneh and Tejas together can complete a job in 18 days, Tejas and Urmi together in 24 days, and Sneh and Urmi together in 36 days. All three work together for 4 days, after which Sneh leaves and Tejas and Urmi finish the job. How many days does the job take in all?",
+      "options": [
+        "18 days",
+        "19 days",
+        "20 days",
+        "21 days",
+        "22 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total = 144 units: S + T = 8, T + U = 6, S + U = 4 → S + T + U = 9 units/day.",
+          "4 days together = 36 units; remaining 108 units at T + U = 6/day = 18 days.",
+          "Total = 4 + 18 = **22 days**."
+        ],
+        "trap": "18 days is only the time Tejas and Urmi take after Sneh leaves; add the first 4 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:pairwise-pairs"
+      ]
+    },
+    {
+      "key": "tw-079",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vasu and Wamiq together can complete a job in 6 days, Wamiq and Yati together in 10 days, and all three together in 5 days. In how many days can Vasu and Yati together complete it?",
+      "options": [
+        "7.5 days",
+        "8 days",
+        "8.5 days",
+        "9 days",
+        "10 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = 30 units: all three 6/day, V + W = 5 → Yati = 1/day; W + Y = 3 → Vasu = 3/day.",
+          "Vasu + Yati = 4 units/day → 30/4 = **7.5 days**."
+        ],
+        "trap": "10 days is Vasu alone (30/3); the question pairs him with Yati."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:pairwise-pairs"
+      ]
+    },
+    {
+      "key": "tw-080",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Zakir and Asha together can complete a job in 24 days, Asha and Bhim together in 30 days, and Bhim and Zakir together in 40 days. Asha and Bhim work together for 10 days and then leave, and Zakir alone finishes the rest. How many days does the job take in all?",
+      "options": [
+        "50 days",
+        "55 days",
+        "60 days",
+        "65 days",
+        "70 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = 120 units: Z + A = 5, A + B = 4, B + Z = 3 → Z + A + B = 6 → Zakir = 6 − 4 = 2 units/day.",
+          "Asha + Bhim, 10 days = 40 units; remaining 80 units by Zakir = 40 days.",
+          "Total = 10 + 40 = **50 days**."
+        ],
+        "trap": "60 days is Zakir's time for the whole job; Asha and Bhim have already done a third of it."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:pairwise-pairs"
+      ]
+    },
+    {
+      "key": "tw-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Dhruv and Ekta together can complete a job in 16 days, and Chinu, Dhruv and Ekta together can complete it in 9.6 days. Chinu works alone for the first 6 days, after which Dhruv and Ekta together finish the rest. How many days does the job take in all?",
+      "options": [
+        "12 days",
+        "16 days",
+        "18 days",
+        "20 days",
+        "24 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 48 units: all three 48/9.6 = 5/day, Dhruv + Ekta = 3/day → Chinu = 2/day.",
+          "Chinu's 6 days = 12 units; remaining 36 units at 3/day = 12 days.",
+          "Total = 6 + 12 = **18 days**."
+        ],
+        "trap": "12 days is only the Dhruv–Ekta part; 24 days is Chinu's time for the whole job."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:pairwise-pairs"
+      ]
+    },
+    {
+      "key": "tw-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Arun and Bela can clear the debris from a landslide-hit hill road in 12 days and 18 days respectively. Continuous rain keeps bringing down fresh debris at a rate that would equal the whole original heap in 36 days. Working together in the rain, in how many days will they clear the road?",
+      "options": [
+        "7.2 days",
+        "9 days",
+        "10 days",
+        "10.5 days",
+        "12 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = 36 units: Arun 3/day, Bela 2/day, rain −1/day.",
+          "Net clearing = 3 + 2 − 1 = 4 units/day → 36/4 = **9 days**."
+        ],
+        "trap": "7.2 days ignores the fresh debris (36/5); the rain undoes 1 unit every day."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:negative-work"
+      ]
+    },
+    {
+      "key": "tw-083",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A data-entry operator can clear a backlog of forms in 15 days if no new forms arrive. New forms keep arriving at a rate that would build up a backlog of the same size in 30 days. A second operator, twice as fast as the first, works alongside from the first day. In how many days will the backlog be cleared?",
+      "options": [
+        "4.5 days",
+        "5 days",
+        "5.25 days",
+        "5.5 days",
+        "6 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total = 30 units: first operator 2/day, second 4/day, arrivals −1/day.",
+          "Net = 2 + 4 − 1 = 5 units/day → 30/5 = **6 days**."
+        ],
+        "trap": "5 days ignores the new forms (30/6); the arrivals cut the net rate to 5 units/day."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:negative-work"
+      ]
+    },
+    {
+      "key": "tw-084",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Crews X and Y can resurface a stretch of highway in 20 days and 30 days respectively. While traffic is allowed on the stretch, it damages the new surface at a rate that would undo the entire job in 60 days. Both crews start together with traffic running; after 8 days the stretch is closed to traffic, and crew Y leaves 6 days before the work is finished. In how many days in all is the work finished?",
+      "options": [
+        "14 days",
+        "14.4 days",
+        "15 days",
+        "16 days",
+        "17 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = 60 units: X 3/day, Y 2/day, traffic −1/day. First 8 days: net 4 × 8 = 32 units → 28 left.",
+          "Let the job take T days: X works T − 8 more days, Y works T − 14 more days → 3(T − 8) + 2(T − 14) = 28 → 5T = 80 → **T = 16**.",
+          "Check: days 9–10 both crews 10 units, days 11–16 X alone 18 units → 32 + 10 + 18 = 60."
+        ],
+        "trap": "14.4 days ignores the traffic damage in the first 8 days (40 units instead of 32)."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:negative-work"
+      ]
+    },
+    {
+      "key": "tw-085",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Kaveri and Lokesh can fit the panels of an exhibition stall in 20 days and 30 days respectively. When trainee Mukul also works with them, his faulty fittings have to be pulled out, and the three together take 15 days. Treating Mukul's effect as negative work, in how many days would he alone undo a completely fitted stall?",
+      "options": [
+        "30 days",
+        "40 days",
+        "45 days",
+        "60 days",
+        "75 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Kaveri + Lokesh = 1/20 + 1/30 = 1/12 per day; with Mukul the net is 1/15 per day.",
+          "Mukul = 1/12 − 1/15 = (5 − 4)/60 = 1/60 undone per day → **60 days**."
+        ],
+        "trap": "30 days compares the trio with Lokesh alone (1/15 − 1/30); Mukul's effect is the gap between the two genuine workers together (1/12) and the trio (1/15)."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:negative-work"
+      ]
+    },
+    {
+      "key": "tw-086",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A bank's help desk has a backlog of 1,200 complaints. Agent Asif resolves 80 complaints a day and agent Bina 60 a day, while 40 new complaints arrive every day. Asif works from day 1 and Bina joins from day 6. In how many days is the backlog cleared?",
+      "options": [
+        "12 days",
+        "13 days",
+        "13.5 days",
+        "14 days",
+        "15 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Days 1–5: net 80 − 40 = 40 a day → 200 cleared, 1,000 left.",
+          "From day 6: net 80 + 60 − 40 = 100 a day → 10 days. Total = 5 + 10 = **15 days**."
+        ],
+        "trap": "12 days uses the net 100 a day from the very start; Bina is absent for the first 5 days."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:negative-work"
+      ]
+    },
+    {
+      "key": "tw-087",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Bhavesh takes 10 days more than Chitra to complete a job. Working together they complete it in 12 days. In how many days can Chitra alone complete it?",
+      "options": [
+        "20 days",
+        "22 days",
+        "24 days",
+        "25 days",
+        "30 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let Chitra take x days: 1/x + 1/(x + 10) = 1/12.",
+          "Test x = 20: 1/20 + 1/30 = 5/60 = 1/12 ✓ → **20 days**."
+        ],
+        "trap": "30 days is Bhavesh's time; the faster worker is Chitra."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:time-difference"
+      ]
+    },
+    {
+      "key": "tw-088",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Eknath can complete a job in 20 days. He works at full efficiency for the first 5 days and then at only 50% of his efficiency for the rest of the job. How many days does the job take in all?",
+      "options": [
+        "25 days",
+        "27.5 days",
+        "30 days",
+        "32.5 days",
+        "35 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "In 5 days he does 5/20 = 1/4 of the job; 3/4 is left.",
+          "At half efficiency he needs 40 days for a whole job, so 3/4 takes 30 days. Total = 5 + 30 = **35 days**."
+        ],
+        "trap": "30 days is the time for the remaining part alone (or 20 × 1.5); add the first 5 days at full speed."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-change"
+      ]
+    },
+    {
+      "key": "tw-089",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Farzana and Girish can complete a job in 12 days and 18 days respectively. They work together for 3 days; after that Farzana's efficiency falls by one-third and Girish's rises by 25%. In how many days in all is the job completed?",
+      "options": [
+        "7.2 days",
+        "7.5 days",
+        "$7\\frac{2}{3}$ days",
+        "8 days",
+        "$8\\frac{1}{3}$ days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 36 units: Farzana 3/day, Girish 2/day. 3 days together = 15 units → 21 left.",
+          "New rates: Farzana 3 × 2/3 = 2, Girish 2 × 1.25 = 2.5 → 4.5/day → 21/4.5 = $4\\frac{2}{3}$ days.",
+          "Total = 3 + $4\\frac{2}{3}$ = **$7\\frac{2}{3}$ days**."
+        ],
+        "trap": "7.2 days keeps the original rates throughout (36/5); the drop in Farzana's rate is larger than Girish's gain."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:efficiency-change"
+      ]
+    },
+    {
+      "key": "tw-090",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A job can be completed by 21 workers in 18 days. A contractor starts it with 50 workers and withdraws 2 workers at the end of every day. In how many days is the job completed?",
+      "options": [
+        "8 days",
+        "9 days",
+        "10 days",
+        "10.5 days",
+        "12 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Work = 21 × 18 = 378 worker-days. Daily strength: 50, 48, 46, … — sum of n days = n(50 + 52 − 2n)/2 = n(51 − n).",
+          "n(51 − n) = 378 → n² − 51n + 378 = 0 → (n − 9)(n − 42) = 0 → n = 9 (42 is impossible: the workforce would run out).",
+          "Check: 50 + 48 + … + 34 = 9 × 84/2 = 378 → **9 days**."
+        ],
+        "trap": "8 days assumes all 50 workers stay (378/50 ≈ 7.6, rounded up); the shrinking team needs an extra day."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:variable-workforce"
+      ]
+    },
+    {
+      "key": "tw-091",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A job can be completed by 16 workers in 12 days. A contractor starts it with 5 workers on the first day and adds 2 more workers at the start of each following day (5, 7, 9, …). In how many days is the job completed?",
+      "options": [
+        "8 days",
+        "9 days",
+        "10 days",
+        "11 days",
+        "12 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Work = 16 × 12 = 192 worker-days. Sum for n days = 5n + n(n − 1) = n² + 4n.",
+          "n² + 4n = 192 → (n + 16)(n − 12) = 0 → **n = 12 days**.",
+          "(The average strength over 12 days is (5 + 27)/2 = 16, the same as the original team.)"
+        ],
+        "trap": "11 days starts the additions on day 1 (7, 9, 11, …), giving n² + 6n = 192 → about 11."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:variable-workforce"
+      ]
+    },
+    {
+      "key": "tw-092",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Harsha and Isha together can complete a job in 8 days. If Harsha works for 6 days and Isha for 9 days, the job is also completed. In how many days can Harsha alone complete it?",
+      "options": [
+        "12 days",
+        "16 days",
+        "20 days",
+        "24 days",
+        "32 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "6 days of both together = 6/8 = 3/4 of the job; Isha's extra 3 days do the remaining 1/4 → Isha alone = 12 days.",
+          "Harsha = 1/8 − 1/12 = 1/24 → **24 days**."
+        ],
+        "trap": "12 days is Isha's time; Harsha is the slower one here."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-scenarios"
+      ]
+    },
+    {
+      "key": "tw-093",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A job is completed if Jatin works for 6 days and Kriti for 15 days, or if Jatin works for 9 days and Kriti for 10 days. Leher is 25% more efficient than Kriti. In how many days can Jatin and Leher together complete the job?",
+      "options": [
+        "7.5 days",
+        "8 days",
+        "$8\\frac{4}{7}$ days",
+        "$9\\frac{3}{8}$ days",
+        "10 days"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "6j + 15k = 9j + 10k → 5k = 3j → j = 5k/3. Then 6(5k/3) + 15k = 25k = 1 → Kriti = 25 days, Jatin = 15 days.",
+          "Leher = 1.25/25 = 1/20 → Jatin + Leher = 1/15 + 1/20 = 7/60 → 60/7 = **$8\\frac{4}{7}$ days**."
+        ],
+        "trap": "$9\\frac{3}{8}$ days is Jatin + Kriti (75/8); Leher works 25% faster than Kriti."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-scenarios"
+      ]
+    },
+    {
+      "key": "tw-094",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Lalita can complete a job in 15 days and Mahesh in 24 days. Lalita does one-third of the job and Mahesh then completes the rest. How many days does the job take in all?",
+      "options": [
+        "18 days",
+        "21 days",
+        "22.5 days",
+        "24 days",
+        "26 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Lalita: 1/3 of 15 days = 5 days. Mahesh: 2/3 of 24 days = 16 days.",
+          "Total = 5 + 16 = **21 days**."
+        ],
+        "trap": "18 days swaps the shares (Mahesh 1/3 = 8 days, Lalita 2/3 = 10 days)."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:sequential-share"
+      ]
+    },
+    {
+      "key": "tw-095",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Narayan takes 8 days less than Omana to complete a job. Working together, they complete it in 3 days. In how many days can Omana alone complete it?",
+      "options": [
+        "4 days",
+        "6 days",
+        "8 days",
+        "12 days",
+        "16 days"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let Narayan take x days: 1/x + 1/(x + 8) = 1/3.",
+          "Test x = 4: 1/4 + 1/12 = 4/12 = 1/3 ✓ → Omana = 4 + 8 = **12 days**."
+        ],
+        "trap": "4 days is Narayan's time; Omana is the slower worker."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:time-difference"
+      ]
+    },
+    {
+      "key": "tw-096",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Working alone, Priya takes 5 days more than Priya, Qamar and Reshma take working together; Qamar alone takes 10 days more, and Reshma alone takes 25 days more, than the three together. In how many days do the three together complete the job?",
+      "options": [
+        "4 days",
+        "5 days",
+        "6 days",
+        "7.5 days",
+        "8 days"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "If the three together take T days: 1/(T + 5) + 1/(T + 10) + 1/(T + 25) = 1/T.",
+          "Test T = 5: 1/10 + 1/15 + 1/30 = (3 + 2 + 1)/30 = 1/5 ✓.",
+          "Multiplying by T, each term T/(T + a) rises with T, so only one T fits → **5 days**."
+        ],
+        "trap": "7.5 days is the time for Priya and Reshma together (1/10 + 1/30 = 2/15); the question asks for all three."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:time-difference"
+      ]
+    },
+    {
+      "key": "tw-097",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A job is completed if Sagar works for 10 days and Tanvir for 15 days, or if both work for 12 days each. In how many days can Tanvir alone complete it?",
+      "options": [
+        "20 days",
+        "24 days",
+        "25 days",
+        "27 days",
+        "30 days"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "12 days of both = whole job → together 1/12 per day.",
+          "First case = 10 days of both + 5 extra days of Tanvir → 10/12 + 5t = 1 → 5t = 1/6 → t = 1/30 → **30 days**."
+        ],
+        "trap": "20 days is Sagar's time (1/12 − 1/30 = 1/20); the question asks for Tanvir."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:two-scenarios"
+      ]
+    },
+    {
+      "key": "tw-098",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ujjwal, Vinita and Waheeda can complete a job in 12, 18 and 24 days respectively. Ujjwal does one-fourth of the job, Vinita then does one-third of the job, and Waheeda completes the rest. How many days does the job take in all?",
+      "options": [
+        "19 days",
+        "20 days",
+        "21 days",
+        "22 days",
+        "24 days"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Ujjwal: 1/4 × 12 = 3 days. Vinita: 1/3 × 18 = 6 days.",
+          "Waheeda's share = 1 − 1/4 − 1/3 = 5/12 → 5/12 × 24 = 10 days. Total = 3 + 6 + 10 = **19 days**."
+        ],
+        "trap": "21 days takes Waheeda's share as 1/2 (12 days) instead of 5/12."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:sequential-share"
+      ]
+    },
+    {
+      "key": "tw-099",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Yusra and Zaheer can complete a job in 12 days and 18 days respectively. They start together, but Yusra leaves after 3 days and Zaheer completes the rest. The total payment of ₹7,200 is shared in proportion to the work done. What is Zaheer's share?",
+      "options": [
+        "₹2,880",
+        "₹3,600",
+        "₹4,320",
+        "₹4,800",
+        "₹5,400"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Yusra works 3 days = 3/12 = 1/4 of the job; Zaheer does the remaining 3/4.",
+          "Zaheer's share = 7,200 × 3/4 = **₹5,400**."
+        ],
+        "trap": "₹2,880 shares in the efficiency ratio 3 : 2, which assumes both worked until the end."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:wages-share"
+      ]
+    },
+    {
+      "key": "tw-100",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "15 men working 9 hours a day make 450 toys in 12 days. How many toys can 10 men working 8 hours a day make in 18 days if they are 25% more efficient than the first group?",
+      "options": [
+        "400 toys",
+        "450 toys",
+        "500 toys",
+        "540 toys",
+        "600 toys"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "First group: 15 × 9 × 12 = 1,620 man-hours for 450 toys → 5/18 toy per man-hour.",
+          "Second group: 10 × 8 × 18 = 1,440 man-hours × 1.25 = 1,800 effective man-hours → 1,800 × 5/18 = **500 toys**."
+        ],
+        "trap": "400 toys ignores the 25% higher efficiency (1,440 × 5/18)."
+      },
+      "tags": [
+        "arith:time-work",
+        "template:mdh-efficiency"
+      ]
+    }
+  ]
+}

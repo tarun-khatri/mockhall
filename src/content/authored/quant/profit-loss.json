@@ -1267,6 +1267,635 @@
         "arith:dishonest-dealer",
         "template:false-weight"
       ]
+    },
+    {
+      "key": "pl-051",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A dishonest trader takes 20% more goods than he pays for when buying, and gives 20% less than he charges for when selling. He also marks his goods 25% above cost price and allows a discount of 10%. What is his overall profit percentage?",
+      "options": [
+        "50%",
+        "55%",
+        "62.5%",
+        "68.75%",
+        "75%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the true cost be ₹1 per kg. Buying: he pays ₹1 and takes 1.2 kg, so his real cost is ₹1/1.2 per kg.",
+          "Selling: he charges 1.25 × 0.9 = ₹1.125 for a \"kg\" but hands over 0.8 kg, i.e. ₹1.125/0.8 = ₹1.40625 per real kg.",
+          "Profit factor = 1.40625 × 1.2 = 1.6875 → profit = 68.75%."
+        ],
+        "trap": "55% simply adds 20 + 20 + 25 − 10; the effects multiply: 1.2 × 1.25 × 1.125 = 1.6875."
+      },
+      "tags": [
+        "arith:dishonest-dealer",
+        "template:false-weight"
+      ]
+    },
+    {
+      "key": "pl-052",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A vegetable vendor sells potatoes at 5% below cost price, but his scale gives only 750 g when it shows 1 kg. What is his gain percentage?",
+      "options": [
+        "20%",
+        "$26\\frac{2}{3}$%",
+        "28%",
+        "30%",
+        "$33\\frac{1}{3}$%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "He charges 0.95 of the cost of 1 kg and hands over 750 g, which cost him 0.75 of it.",
+          "Gain % = (0.95 − 0.75) ÷ 0.75 × 100 = 20/75 × 100 = $26\\frac{2}{3}$%."
+        ],
+        "trap": "$33\\frac{1}{3}$% is the gain from the short weight alone; 20% subtracts 5 from 25."
+      },
+      "tags": [
+        "arith:dishonest-dealer",
+        "template:false-weight"
+      ]
+    },
+    {
+      "key": "pl-053",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A milkman mixes water with pure milk so that water makes up one-sixth of the mixture. He sells the mixture at 10% above the cost price of pure milk. If the water costs him nothing, what is his profit percentage?",
+      "options": [
+        "$26\\frac{2}{3}$%",
+        "30%",
+        "32%",
+        "35%",
+        "40%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "One litre of mixture contains 5/6 litre of milk, costing 5/6 of the price of a litre of milk.",
+          "He receives 1.1 for it: profit % = (1.1 ÷ 5/6 − 1) × 100 = (1.32 − 1) × 100 = 32%."
+        ],
+        "trap": "$26\\frac{2}{3}$% adds one-sixth to the 10%; water is one-sixth of the mixture but one-fifth of the milk, and the two gains multiply (1.1 × 1.2 = 1.32)."
+      },
+      "tags": [
+        "arith:dishonest-dealer",
+        "template:false-weight"
+      ]
+    },
+    {
+      "key": "pl-054",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A bookseller's profit on a dictionary is 20% of its selling price. What is his profit as a percentage of the cost price?",
+      "options": [
+        "$16\\frac{2}{3}$%",
+        "20%",
+        "22.5%",
+        "24%",
+        "25%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take SP = 100; profit = 20, so CP = 80.",
+          "Profit % on CP = 20/80 × 100 = 25%."
+        ],
+        "trap": "20% repeats the given figure, which is on the selling price; $16\\frac{2}{3}$% divides 20 by 120 instead of by 80."
+      },
+      "tags": [
+        "arith:profit-on-sp",
+        "template:profit-on-sp"
+      ]
+    },
+    {
+      "key": "pl-055",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A shopkeeper earns a profit equal to 20% of the selling price on a dinner set. If his profit is ₹540, what is the cost price of the dinner set?",
+      "options": [
+        "₹2,160",
+        "₹2,250",
+        "₹2,400",
+        "₹2,520",
+        "₹2,700"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Profit = 20% of SP = ₹540 → SP = ₹2,700.",
+          "CP = 2,700 − 540 = ₹2,160."
+        ],
+        "trap": "₹2,700 is the selling price; it is also what you get if you wrongly take the 20% on cost price."
+      },
+      "tags": [
+        "arith:profit-on-sp",
+        "template:profit-on-sp"
+      ]
+    },
+    {
+      "key": "pl-056",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A shopkeeper prices a rug so that his profit is 25% of the selling price. A customer bargains and gets 10% off this price. What is the shopkeeper's profit percentage on the cost price now?",
+      "options": [
+        "20%",
+        "22.5%",
+        "25%",
+        "30%",
+        "$33\\frac{1}{3}$%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take the listed price = 100; profit = 25, so CP = 75.",
+          "After 10% off, SP = 90; profit = 15 on 75 = 20%."
+        ],
+        "trap": "$33\\frac{1}{3}$% is the profit on cost before the bargain; 25% repeats the figure that was on the selling price."
+      },
+      "tags": [
+        "arith:profit-on-sp",
+        "template:profit-on-sp"
+      ]
+    },
+    {
+      "key": "pl-057",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A trader sells a stock of umbrellas and finds that his loss equals one-eighth of the selling price. What is his loss percentage?",
+      "options": [
+        "8%",
+        "10%",
+        "$11\\frac{1}{9}$%",
+        "12.5%",
+        "$14\\frac{2}{7}$%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take SP = 8; loss = 1, so CP = 8 + 1 = 9.",
+          "Loss % = 1/9 × 100 = $11\\frac{1}{9}$%."
+        ],
+        "trap": "12.5% divides the loss by the selling price; loss % is always on cost price."
+      },
+      "tags": [
+        "arith:profit-on-sp",
+        "template:profit-on-sp"
+      ]
+    },
+    {
+      "key": "pl-058",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A dealer sells two mobile phones for ₹12,000 each. On the first he earns a profit equal to 20% of its selling price; on the second he suffers a loss equal to 20% of its selling price. What is his overall profit or loss?",
+      "options": [
+        "Loss of ₹1,000",
+        "Loss of ₹480",
+        "No profit, no loss",
+        "Profit of ₹480",
+        "Profit of ₹1,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "First phone: profit = 20% of 12,000 = ₹2,400, so CP = ₹9,600. Second phone: loss = ₹2,400, so CP = ₹14,400.",
+          "Total CP = 9,600 + 14,400 = ₹24,000 = total SP, so there is no profit and no loss."
+        ],
+        "trap": "\"Loss of ₹1,000\" takes both 20%s on cost price (CPs ₹10,000 and ₹15,000); here both are on the selling price, so the profit and the loss are the same ₹2,400."
+      },
+      "tags": [
+        "arith:profit-on-sp",
+        "template:profit-on-sp"
+      ]
+    },
+    {
+      "key": "pl-059",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A shopkeeper's profit on a geyser is 25% of its selling price. The cost price then rises by ₹1,500, which is a 20% increase, and he raises the selling price by 8%. What is his profit on the geyser now?",
+      "options": [
+        "₹1,125",
+        "₹1,500",
+        "₹1,700",
+        "₹1,800",
+        "₹2,500"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "₹1,500 is 20% of the old CP → old CP = ₹7,500. Profit = 25% of SP → CP = 75% of SP → old SP = ₹10,000.",
+          "New CP = ₹9,000; new SP = 1.08 × 10,000 = ₹10,800.",
+          "New profit = 10,800 − 9,000 = ₹1,800."
+        ],
+        "trap": "₹1,125 takes the 25% profit on cost price (old SP ₹9,375); ₹2,500 is the old profit."
+      },
+      "tags": [
+        "arith:profit-on-sp",
+        "template:profit-on-sp"
+      ]
+    },
+    {
+      "key": "pl-060",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The cost price of 15 pens is equal to the selling price of 12 pens. What is the profit percentage?",
+      "options": [
+        "20%",
+        "25%",
+        "27.5%",
+        "30%",
+        "35%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let each pen cost ₹1. Then 12 pens cost ₹12 and sell for ₹15.",
+          "Profit % = 3/12 × 100 = 25%."
+        ],
+        "trap": "20% divides the 3 extra pens by 15 instead of by 12."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:sp-n-cp-m"
+      ]
+    },
+    {
+      "key": "pl-061",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "By selling 33 metres of cloth, a draper gains the selling price of 11 metres. What is his gain percentage?",
+      "options": [
+        "$33\\frac{1}{3}$%",
+        "40%",
+        "45%",
+        "50%",
+        "60%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Gain = SP of 33 m − CP of 33 m = SP of 11 m, so CP of 33 m = SP of 22 m.",
+          "Gain % = (33 − 22)/22 × 100 = 50%."
+        ],
+        "trap": "$33\\frac{1}{3}$% divides 11 by 33; the gain equals the selling price (not the cost price) of 11 m."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:sp-n-cp-m"
+      ]
+    },
+    {
+      "key": "pl-062",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A fruit seller sells 45 lemons for ₹40 and suffers a loss of 20%. How many lemons should he sell for ₹24 to make a profit of 20%?",
+      "options": [
+        "18",
+        "20",
+        "21",
+        "24",
+        "27"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "CP of 45 lemons = 40 ÷ 0.8 = ₹50, i.e. ₹10/9 each.",
+          "For a 20% profit, SP of one lemon = 1.2 × 10/9 = ₹4/3. Lemons for ₹24 = 24 ÷ 4/3 = 18."
+        ],
+        "trap": "27 keeps the old rate (45 lemons for ₹40); the price per lemon must rise from ₹8/9 to ₹4/3.",
+        "shortcut": "At the old rate ₹24 buys 27 lemons; the price must rise by a factor of 1.2/0.8 = 1.5, so 27 ÷ 1.5 = 18."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:sp-n-cp-m"
+      ]
+    },
+    {
+      "key": "pl-063",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "On selling 18 identical lamps, a shopkeeper's loss equals the selling price of 3 lamps. What is his loss percentage?",
+      "options": [
+        "12.5%",
+        "$14\\frac{2}{7}$%",
+        "15%",
+        "$16\\frac{2}{3}$%",
+        "20%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Loss = CP of 18 − SP of 18 = SP of 3, so CP of 18 = SP of 21.",
+          "Loss % = (21 − 18)/21 × 100 = $14\\frac{2}{7}$%."
+        ],
+        "trap": "$16\\frac{2}{3}$% divides 3 by 18; with a loss, the cost of 18 lamps equals the selling price of 21, so divide by 21."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:sp-n-cp-m"
+      ]
+    },
+    {
+      "key": "pl-064",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A trader marks his goods 40% above cost price and allows a discount of 10%. The selling price of 50 articles equals the cost price of how many articles?",
+      "options": [
+        "63",
+        "65",
+        "68",
+        "70",
+        "72"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "SP of one article = 1.4 × 0.9 = 1.26 × CP.",
+          "SP of 50 articles = 50 × 1.26 = 63 × CP, i.e. the CP of 63 articles."
+        ],
+        "trap": "65 uses a 30% profit (40 − 10); 70 ignores the discount."
+      },
+      "tags": [
+        "arith:markup-discount",
+        "template:sp-n-cp-m"
+      ]
+    },
+    {
+      "key": "pl-065",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "By selling 40 metres of fabric, a trader loses an amount equal to the selling price of 8 metres. The fabric costs him ₹120 per metre. By how much should he raise the selling price per metre to make a profit of 20%?",
+      "options": [
+        "₹20",
+        "₹24",
+        "₹40",
+        "₹44",
+        "₹48"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "CP of 40 m − SP of 40 m = SP of 8 m → CP of 40 m = SP of 48 m → SP = 40/48 × 120 = ₹100 per metre.",
+          "Required SP = 1.2 × 120 = ₹144, so the increase is 144 − 100 = ₹44 per metre."
+        ],
+        "trap": "₹48 takes the loss as 8/40 = 20% of cost (SP ₹96); the loss equals the selling price, not the cost, of 8 m."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:sp-n-cp-m"
+      ]
+    },
+    {
+      "key": "pl-066",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two shops sell the same gas stove, which costs each of them ₹2,000. Shop A marks it 30% above cost and gives a 10% discount; Shop B marks it 20% above cost and gives a 5% discount. What is the difference between their selling prices?",
+      "options": [
+        "₹60",
+        "₹70",
+        "₹80",
+        "₹90",
+        "₹100"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Shop A: 2,000 × 1.3 × 0.9 = ₹2,340. Shop B: 2,000 × 1.2 × 0.95 = ₹2,280.",
+          "Difference = ₹60."
+        ],
+        "trap": "₹100 uses 30 − 10 = 20% and 20 − 5 = 15% (additive), a 5% gap on ₹2,000."
+      },
+      "tags": [
+        "arith:markup-discount",
+        "template:two-shopkeepers"
+      ]
+    },
+    {
+      "key": "pl-067",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Rohit and Farah buy the same model of fan at the same cost price. Rohit sells it at a profit of 15%. Farah marks it 40% above cost and gives a discount of 15%, earning ₹60 more than Rohit. At what price does Farah sell the fan?",
+      "options": [
+        "₹1,725",
+        "₹1,785",
+        "₹1,800",
+        "₹1,860",
+        "₹2,100"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Farah's SP = 1.4 × 0.85 = 1.19 × CP; Rohit's SP = 1.15 × CP.",
+          "Difference 0.04 × CP = ₹60 → CP = ₹1,500. Farah sells at 1.19 × 1,500 = ₹1,785."
+        ],
+        "trap": "₹1,725 is Rohit's price; ₹2,100 is Farah's marked price before the discount."
+      },
+      "tags": [
+        "arith:markup-discount",
+        "template:two-shopkeepers"
+      ]
+    },
+    {
+      "key": "pl-068",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two shopkeepers sell the same model of refrigerator for ₹32,400 each. The first bought it for 10% less than the second did, and his profit percentage is 15 percentage points higher than the second's. What is the first shopkeeper's profit percentage?",
+      "options": [
+        "35%",
+        "40%",
+        "45%",
+        "48%",
+        "50%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the second pay ₹b; the first paid ₹0.9b.",
+          "Gap in profit fractions: 32,400/(0.9b) − 32,400/b = 3,600/b = 0.15 → b = ₹24,000.",
+          "The first paid ₹21,600, so his profit % = 10,800/21,600 × 100 = 50% (the second earns 35%)."
+        ],
+        "trap": "35% is the second shopkeeper's profit percentage."
+      },
+      "tags": [
+        "arith:two-sellers",
+        "template:two-shopkeepers"
+      ]
+    },
+    {
+      "key": "pl-069",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Raju buys a bicycle for ₹2,500, marks it 50% above cost and sells it at a 20% discount. Sonu buys the same bicycle for 10% less than Raju, marks it 40% above his own cost and sells it at a 10% discount. By how much is Sonu's selling price lower than Raju's?",
+      "options": [
+        "₹165",
+        "₹175",
+        "₹190",
+        "₹225",
+        "₹325"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Raju: 2,500 × 1.5 × 0.8 = ₹3,000.",
+          "Sonu: CP = 0.9 × 2,500 = ₹2,250; SP = 2,250 × 1.4 × 0.9 = ₹2,835. Difference = ₹165."
+        ],
+        "trap": "₹325 treats mark-up minus discount as a flat 30% for both (₹3,250 and ₹2,925)."
+      },
+      "tags": [
+        "arith:markup-discount",
+        "template:two-shopkeepers"
+      ]
+    },
+    {
+      "key": "pl-070",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Two shopkeepers, X and Y, sell identical sets of cookware at the same price. Y bought his set for ₹200 less than X. X marks his set 50% above his cost and gives a 20% discount; Y marks his 40% above his cost and gives a 10% discount. What did X pay for his set?",
+      "options": [
+        "₹3,600",
+        "₹3,800",
+        "₹4,000",
+        "₹4,100",
+        "₹4,200"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "X's SP = 1.5 × 0.8 × x = 1.2x; Y's SP = 1.4 × 0.9 × (x − 200) = 1.26(x − 200).",
+          "1.2x = 1.26x − 252 → 0.06x = 252 → x = ₹4,200 (both sell for ₹5,040)."
+        ],
+        "trap": "₹4,000 is Y's cost price, not X's."
+      },
+      "tags": [
+        "arith:two-sellers",
+        "template:two-shopkeepers"
+      ]
+    },
+    {
+      "key": "pl-071",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ravi sells a cricket bat for ₹1,500 at a profit of 25%. His friend Sohan bought an identical bat for ₹200 less than Ravi did and sold it for the same ₹1,500. What is Sohan's profit percentage?",
+      "options": [
+        "$33\\frac{1}{3}$%",
+        "40%",
+        "50%",
+        "55%",
+        "60%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Ravi's CP = 1,500 ÷ 1.25 = ₹1,200, so Sohan's CP = ₹1,000.",
+          "Sohan's profit = ₹500 on ₹1,000 = 50%."
+        ],
+        "trap": "$33\\frac{1}{3}$% divides Sohan's ₹500 profit by the selling price ₹1,500."
+      },
+      "tags": [
+        "arith:two-sellers",
+        "template:two-shopkeepers"
+      ]
+    },
+    {
+      "key": "pl-072",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A cycle is sold at a loss of 5%. If it had been sold for ₹120 more, there would have been a gain of 5%. What is the cost price of the cycle?",
+      "options": [
+        "₹1,000",
+        "₹1,080",
+        "₹1,140",
+        "₹1,160",
+        "₹1,200"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Going from a 5% loss to a 5% gain is a swing of 10% of CP.",
+          "10% of CP = ₹120 → CP = ₹1,200."
+        ],
+        "trap": "₹1,140 is the actual selling price (0.95 × 1,200)."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:loss-to-profit"
+      ]
+    },
+    {
+      "key": "pl-073",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ajay sells a tablet at a loss of 12%. Had he sold it for ₹2,100 more, he would have gained 9%. At what price should he sell it to gain 15%?",
+      "options": [
+        "₹10,900",
+        "₹11,200",
+        "₹11,500",
+        "₹11,800",
+        "₹12,075"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The extra ₹2,100 turns a 12% loss into a 9% gain: 21% of CP = 2,100 → CP = ₹10,000.",
+          "For a 15% gain: 1.15 × 10,000 = ₹11,500."
+        ],
+        "trap": "₹10,900 is the price that gives only the 9% gain."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:loss-to-profit"
+      ]
+    },
+    {
+      "key": "pl-074",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Kavita sold a microwave oven at a loss of 10%. If she had bought it for 10% less and sold it for ₹540 more, she would have made a profit of 20%. What is the cost price of the oven?",
+      "options": [
+        "₹1,800",
+        "₹2,400",
+        "₹2,500",
+        "₹2,700",
+        "₹3,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "New CP = 0.9C and new SP = 0.9C + 540, which must equal 1.2 × 0.9C = 1.08C.",
+          "0.18C = 540 → C = ₹3,000."
+        ],
+        "trap": "₹1,800 forgets that the cost price also falls (0.9C + 540 = 1.2C); ₹2,700 is the actual selling price."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:loss-to-profit"
+      ]
+    },
+    {
+      "key": "pl-075",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A retailer sells school uniforms at a loss of 8%. He then finds a supplier who charges 20% less, and he keeps his selling price unchanged. What is his profit percentage now?",
+      "options": [
+        "8%",
+        "10%",
+        "12%",
+        "12.5%",
+        "15%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Old SP = 0.92 × old CP. New CP = 0.8 × old CP.",
+          "Profit % = (0.92 − 0.8) ÷ 0.8 × 100 = 15%."
+        ],
+        "trap": "12% subtracts 8 from 20; the new profit is measured on the lower cost price."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:loss-to-profit"
+      ]
     }
   ]
 }
