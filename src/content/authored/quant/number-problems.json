@@ -1256,6 +1256,626 @@
         "template:consecutive-integers",
         "num:consecutive"
       ]
+    },
+    {
+      "key": "np-049",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "When a two-digit number is divided by the sum of its digits, the quotient is 4 and the remainder is 3. When the same number is divided by the product of its digits, the quotient is 3 and the remainder is 5. What is the number?",
+      "options": [
+        "23",
+        "32",
+        "35",
+        "47",
+        "59"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the number be 10a + b: 10a + b = 4(a + b) + 3 → 2a − b = 1 → b = 2a − 1.",
+          "10a + b = 3ab + 5 → 12a − 1 = 3a(2a − 1) + 5 → 2a² − 5a + 2 = 0 → a = 2 (a = ½ is not a digit).",
+          "b = 3, so the number is **23** (23 = 4 × 5 + 3 = 3 × 6 + 5)."
+        ],
+        "trap": "35, 47 and 59 also give quotient 4 and remainder 3 on division by their digit sums, but fail the second condition (35 ÷ 15 leaves remainder 5 with quotient 2, not 3)."
+      },
+      "tags": [
+        "template:digit-quotient",
+        "num:digits",
+        "num:remainders"
+      ]
+    },
+    {
+      "key": "np-050",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A prize of ₹7,200 was to be shared equally among some winners. Later 4 more winners were declared, and each winner then received ₹150 less. How many winners were there in the end?",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let there be n winners at first: 7,200/n − 7,200/(n + 4) = 150.",
+          "7,200 × 4 = 150 n(n + 4) → n(n + 4) = 192 → n = 12.",
+          "Final number of winners = 12 + 4 = **16** (₹600 each became ₹450)."
+        ],
+        "trap": "12 is the number of winners before the extra 4 were declared."
+      },
+      "tags": [
+        "template:sharing-absentees",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-051",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Priya has 70 notes, all of ₹10 or ₹20, worth ₹1,000 in all. What is the total value of her ₹20 notes?",
+      "options": [
+        "₹300",
+        "₹400",
+        "₹500",
+        "₹600",
+        "₹800"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let x be the ₹10 notes: 10x + 20(70 − x) = 1,000 → 10x = 400 → x = 40.",
+          "₹20 notes = 30, worth 30 × 20 = **₹600**."
+        ],
+        "trap": "₹800 multiplies the 40 (the count of ₹10 notes) by ₹20; ₹400 is the value of the ₹10 notes."
+      },
+      "tags": [
+        "template:notes-coins",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-052",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The difference between two numbers is 1,660. If 7.5% of the larger number is equal to 12.5% of the smaller number, what is the sum of the two numbers?",
+      "options": [
+        "4,150",
+        "6,640",
+        "7,470",
+        "8,300",
+        "9,130"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "7.5% of L = 12.5% of S → L : S = 12.5 : 7.5 = 5 : 3.",
+          "Difference = 2 parts = 1,660 → 1 part = 830.",
+          "Sum = 8 parts = **6,640** (4,150 + 2,490)."
+        ],
+        "trap": "4,150 is the larger number alone; 8,300 doubles it."
+      },
+      "tags": [
+        "template:percent-equal",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-053",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A three-digit number is 26 times the sum of its digits. If 198 is added to the number, its digits are reversed. What is the number?",
+      "options": [
+        "216",
+        "234",
+        "312",
+        "432",
+        "468"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Adding 198 reverses the digits: 99(u − h) = 198 → u = h + 2.",
+          "Among multiples of 26 that equal 26 × digit sum (234 and 468), only 234 has u = h + 2.",
+          "So the number is **234** (2 + 3 + 4 = 9, 26 × 9 = 234; 234 + 198 = 432)."
+        ],
+        "trap": "468 is also 26 times its digit sum (18), but 468 + 198 = 666; 432 is the reversed number."
+      },
+      "tags": [
+        "template:three-digit-number",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-054",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A group of 64 visitors went to a water park, 6 of whom were children under 5 who entered free. The others paid ₹150 per adult and ₹80 per child, ₹7,440 in all. How many children were in the group?",
+      "options": [
+        "18",
+        "22",
+        "24",
+        "30",
+        "40"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "58 visitors paid. Let a be the adults: 150a + 80(58 − a) = 7,440 → 70a = 2,800 → a = 40.",
+          "Paying children = 58 − 40 = 18; adding the 6 free children gives **24** children."
+        ],
+        "trap": "18 counts only the children who paid and leaves out the 6 under-5s; 40 is the number of adults."
+      },
+      "tags": [
+        "template:adults-children",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-055",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The product of three consecutive odd numbers is 3,315. What is the sum of their squares?",
+      "options": [
+        "515",
+        "643",
+        "659",
+        "675",
+        "683"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "3,315 ≈ 15³ and ends in 5, so try 13 × 15 × 17 = 195 × 17 = 3,315.",
+          "Sum of squares = 169 + 225 + 289 = **683**."
+        ],
+        "trap": "675 is 3 × 15², the middle square taken three times; it misses the extra (−2)² + 2² = 8.",
+        "shortcut": "For m − 2, m, m + 2 the sum of squares is 3m² + 8 = 3 × 225 + 8 = 683."
+      },
+      "tags": [
+        "template:consecutive-integers",
+        "num:consecutive",
+        "num:squares"
+      ]
+    },
+    {
+      "key": "np-056",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Three bells ring at intervals of 18, 24 and 32 minutes respectively. They ring together at 8:00 a.m. At what time will they ring together for the third time after that?",
+      "options": [
+        "12:48 p.m.",
+        "3:12 p.m.",
+        "5:36 p.m.",
+        "10:24 p.m.",
+        "11:36 p.m."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "They ring together every LCM(18, 24, 32) = 288 minutes = 4 h 48 min.",
+          "The third time after 8:00 a.m. is 3 × 288 = 864 minutes = 14 h 24 min later: **10:24 p.m.**"
+        ],
+        "trap": "5:36 p.m. counts the 8:00 a.m. ring as the first of the three; 12:48 p.m. is only the next ring."
+      },
+      "tags": [
+        "template:hcf-lcm-bells",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-057",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A basket of 80 mangoes is shared among some boys and girls: if every boy gets 3 and every girl 2, the mangoes are used up exactly. If instead every boy gets 2 and every girl 3, 5 more mangoes are needed. How many girls are there?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "17",
+        "19"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "3b + 2g = 80 and 2b + 3g = 85.",
+          "Adding: 5(b + g) = 165 → b + g = 33. Subtracting: g − b = 5.",
+          "Girls = (33 + 5) ÷ 2 = **19** (boys = 14)."
+        ],
+        "trap": "14 is the number of boys; mixing up which group gets 3 in the second plan swaps the two counts."
+      },
+      "tags": [
+        "template:distribution-shortfall",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-058",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A theatre sells balcony tickets at ₹250 and stall tickets at ₹150. On Monday it sold 320 tickets for ₹60,000. On Tuesday the balcony price was cut by 10% and the stall price was raised by 20%, and it sold 20 more balcony tickets and 20 fewer stall tickets than on Monday. How much did it collect on Tuesday?",
+      "options": [
+        "₹60,000",
+        "₹61,200",
+        "₹62,100",
+        "₹63,000",
+        "₹63,900"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Monday: 250b + 150(320 − b) = 60,000 → 100b = 12,000 → b = 120 balcony, 200 stall.",
+          "Tuesday prices: ₹225 and ₹180; tickets: 140 balcony and 180 stall.",
+          "Collection = 140 × 225 + 180 × 180 = 31,500 + 32,400 = **₹63,900**."
+        ],
+        "trap": "₹63,000 applies the new prices to Monday's ticket counts (120 × 225 + 200 × 180) and forgets the shift of 20 tickets."
+      },
+      "tags": [
+        "template:tickets-two-prices",
+        "num:linear-equation",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-059",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A test has two sections. Section A has 40 questions (2 marks for a correct answer, 0.5 mark deducted for a wrong one) and Section B has 30 questions (3 marks for a correct answer, 1 mark deducted for a wrong one). Ravi attempted every question, got 60 answers right in all and scored 136. How many wrong answers did he give in Section A?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let a and b be the correct answers in A and B (a + b = 60).",
+          "Score = 2a − 0.5(40 − a) + 3b − (30 − b) = 2.5a + 4b − 50 = 136 → 2.5a + 4b = 186.",
+          "With a = 60 − b: 150 + 1.5b = 186 → b = 24, a = 36. Wrong in A = 40 − 36 = **4**."
+        ],
+        "trap": "6 is the number of wrong answers in Section B (30 − 24), and 10 is the total number of wrong answers."
+      },
+      "tags": [
+        "template:negative-marking",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-060",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The digits of a three-digit number add up to 14. Interchanging its tens and units digits gives a number 27 more than the original, and interchanging its hundreds and tens digits gives a number 180 less than the original. What is the number?",
+      "options": [
+        "356",
+        "536",
+        "563",
+        "635",
+        "653"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Swapping tens and units changes the number by 9(u − t) = 27 → u = t + 3.",
+          "Swapping hundreds and tens changes it by 90(t − h) = −180 → h = t + 2.",
+          "h + t + u = 3t + 5 = 14 → t = 3, h = 5, u = 6: the number is **536** (563 − 536 = 27; 536 − 356 = 180)."
+        ],
+        "trap": "563 is the number after the first swap and 356 after the second; neither is the original."
+      },
+      "tags": [
+        "template:three-digit-number",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-061",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The denominator of a proper fraction is 5 more than its numerator. When 3 is added to both the numerator and the denominator, the fraction increases by $\\frac{3}{14}$. What is the original fraction?",
+      "options": [
+        "$\\frac{1}{6}$",
+        "$\\frac{3}{14}$",
+        "$\\frac{2}{7}$",
+        "$\\frac{3}{8}$",
+        "$\\frac{1}{2}$"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the fraction be x/(x + 5). Increase = (x + 3)/(x + 8) − x/(x + 5) = 15/[(x + 5)(x + 8)].",
+          "15/[(x + 5)(x + 8)] = 3/14 → (x + 5)(x + 8) = 70 → x² + 13x − 30 = 0 → x = 2.",
+          "The fraction is $\\frac{2}{7}$ (it becomes $\\frac{5}{10}$ = $\\frac{1}{2}$, an increase of $\\frac{3}{14}$)."
+        ],
+        "trap": "$\\frac{1}{2}$ is the fraction after 3 is added; $\\frac{3}{14}$ is only the increase."
+      },
+      "tags": [
+        "template:fraction-change",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-062",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The sum of two numbers is 50 and one of them is 4 times the other. What is the difference between the two numbers?",
+      "options": [
+        "25",
+        "28",
+        "30",
+        "32",
+        "40"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the numbers be x and 4x: 5x = 50 → x = 10, so they are 10 and 40.",
+          "Difference = 40 − 10 = **30**."
+        ],
+        "trap": "40 is the larger number, not the difference."
+      },
+      "tags": [
+        "template:sum-difference",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-063",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The sum of five consecutive natural numbers is 105. What is the largest of them?",
+      "options": [
+        "19",
+        "21",
+        "22",
+        "23",
+        "25"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The middle number = 105 ÷ 5 = 21, so the numbers are 19, 20, 21, 22, 23.",
+          "The largest is **23**."
+        ],
+        "trap": "21 is the middle number (the average); the largest is 2 more."
+      },
+      "tags": [
+        "template:consecutive-integers",
+        "num:consecutive"
+      ]
+    },
+    {
+      "key": "np-064",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "While adding up a list of numbers, a clerk entered one two-digit number with its digits reversed, and the total came out 45 more than the correct total. If the digits of that number add up to 9, what is the correct number?",
+      "options": [
+        "16",
+        "18",
+        "27",
+        "36",
+        "72"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The reversed entry exceeds the true number by 45: 9(b − a) = 45 → b − a = 5.",
+          "With a + b = 9: a = 2, b = 7, so the correct number is **27** (entered as 72)."
+        ],
+        "trap": "72 is the number the clerk entered by mistake, not the correct one."
+      },
+      "tags": [
+        "template:wrong-operation",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-065",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "What is the smallest number which, when increased by 7, becomes exactly divisible by 12, 18, 21 and 28?",
+      "options": [
+        "245",
+        "252",
+        "259",
+        "497",
+        "511"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "LCM(12, 18, 21, 28) = 252.",
+          "Number + 7 = 252 → number = **245**."
+        ],
+        "trap": "259 adds 7 to the LCM; the question says the number is increased by 7 to reach the multiple, so subtract."
+      },
+      "tags": [
+        "template:divisibility-remainder",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-066",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If the numerator of a fraction is increased by 20% and its denominator is decreased by 10%, the fraction becomes $\\frac{16}{21}$. What is the original fraction?",
+      "options": [
+        "$\\frac{4}{7}$",
+        "$\\frac{3}{5}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{5}{7}$",
+        "$\\frac{64}{63}$"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "New fraction = original × 1.2/0.9 = original × $\\frac{4}{3}$.",
+          "Original = $\\frac{16}{21}$ × $\\frac{3}{4}$ = $\\frac{4}{7}$."
+        ],
+        "trap": "$\\frac{64}{63}$ multiplies $\\frac{16}{21}$ by $\\frac{4}{3}$ instead of dividing by it; it is not even a proper fraction."
+      },
+      "tags": [
+        "template:fraction-change",
+        "num:fractions",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-067",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The sum of a two-digit number and the number formed by reversing its digits is 143, and the difference between them is 27. What is the product of the digits of the number?",
+      "options": [
+        "13",
+        "27",
+        "36",
+        "40",
+        "42"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sum: 11(a + b) = 143 → a + b = 13. Difference: 9(a − b) = 27 → a − b = 3 (taking a > b).",
+          "So the digits are 8 and 5 (the number is 85 or 58); product = **40**."
+        ],
+        "trap": "42 (6 × 7) and 36 (9 × 4) also come from digits adding up to 13, but those pairs give differences of 9 and 45, not 27."
+      },
+      "tags": [
+        "template:digit-reversal",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-068",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A school sold 400 tickets for its annual play: student tickets at ₹50 and guest tickets at ₹120, collecting ₹27,000. How many guest tickets were sold?",
+      "options": [
+        "80",
+        "100",
+        "120",
+        "150",
+        "300"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let g be the guest tickets: 120g + 50(400 − g) = 27,000.",
+          "70g + 20,000 = 27,000 → g = **100** (300 student tickets)."
+        ],
+        "trap": "300 is the number of student tickets; it comes from attaching ₹120 to the students.",
+        "shortcut": "All 400 at ₹50 = ₹20,000; each guest ticket adds ₹70: 7,000 ÷ 70 = 100."
+      },
+      "tags": [
+        "template:tickets-two-prices",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-069",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The sum of two positive numbers is 3 times their difference, and the sum of their squares is 1,280. What is the product of the two numbers?",
+      "options": [
+        "256",
+        "480",
+        "512",
+        "640",
+        "1,024"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "a + b = 3(a − b) → a = 2b.",
+          "a² + b² = 5b² = 1,280 → b² = 256 → b = 16, a = 32.",
+          "Product = 32 × 16 = **512**."
+        ],
+        "trap": "640 is half of 1,280: taking the product as (a² + b²)/2 is true only when the two numbers are equal."
+      },
+      "tags": [
+        "template:sum-of-squares",
+        "num:squares",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-070",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A rectangular courtyard is 24.96 m long and 19.68 m wide. It is to be paved with identical square tiles, using no broken tiles. What is the least number of tiles required?",
+      "options": [
+        "2,132",
+        "3,198",
+        "8,528",
+        "19,188",
+        "34,112"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "In cm the courtyard is 2,496 × 1,968; the largest tile side is HCF(2,496, 1,968) = 48 cm.",
+          "Tiles = (2,496 ÷ 48) × (1,968 ÷ 48) = 52 × 41 = **2,132**."
+        ],
+        "trap": "8,528 uses a 24 cm tile: 24 is a common factor of the sides, but not the highest one."
+      },
+      "tags": [
+        "template:hcf-lcm-tiles",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-071",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A number leaves a remainder of 3 when divided by 5 and a remainder of 4 when divided by 7. What is the remainder when the same number is divided by 35?",
+      "options": [
+        "4",
+        "7",
+        "11",
+        "12",
+        "18"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Numbers leaving remainder 4 on division by 7: 4, 11, 18, 25, 32.",
+          "Of these, only 18 leaves remainder 3 on division by 5, so N = 35k + 18 and the remainder is **18**."
+        ],
+        "trap": "7 just adds the two remainders. 11 leaves remainder 4 on division by 7 but remainder 1 (not 3) on division by 5."
+      },
+      "tags": [
+        "template:divisibility-remainder",
+        "num:remainders"
+      ]
+    },
+    {
+      "key": "np-072",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "5 chairs and 3 tables together cost ₹11,700, and one table costs ₹300 less than three chairs. What is the total cost of 2 chairs and 1 table?",
+      "options": [
+        "₹3,900",
+        "₹4,200",
+        "₹4,500",
+        "₹4,800",
+        "₹5,100"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let a chair cost ₹c: a table costs ₹(3c − 300).",
+          "5c + 3(3c − 300) = 11,700 → 14c = 12,600 → c = 900; table = ₹2,400.",
+          "2 chairs + 1 table = 1,800 + 2,400 = **₹4,200**."
+        ],
+        "trap": "₹4,500 is the cost of the 5 chairs alone and ₹4,800 that of two tables; the question asks for 2 chairs and 1 table."
+      },
+      "tags": [
+        "template:purchase-two-items",
+        "num:linear-equation"
+      ]
     }
   ]
 }

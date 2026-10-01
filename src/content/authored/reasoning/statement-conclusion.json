@@ -1297,6 +1297,655 @@
         "cr:correlation-causation",
         "cr:direct-inference"
       ]
+    },
+    {
+      "key": "sc-051",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** The Andheri branch of a bank will remain closed on Saturday, 14 November, as its office is being shifted to a new building on the same road.\n\n**Conclusions:**\nI. The Andheri branch of the bank will not be open for business on 14 November.\nII. The new building has more space than the branch's present office.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: a branch that will \"remain closed\" on 14 November will not be open for business that day.",
+          "II does not follow: the statement gives no comparison of the two buildings; a move may be made for many reasons.",
+          "Answer: Only I follows."
+        ],
+        "trap": "A shift of premises tells you nothing about the size of the new premises."
+      },
+      "tags": [
+        "cr:direct-inference",
+        "cr:unsupported-comparison"
+      ]
+    },
+    {
+      "key": "sc-052",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** A mobile recharge plan costs ₹299 and gives 2 GB of data a day for 28 days.\n\n**Conclusions:**\nI. The ₹299 plan is the cheapest plan offered by the company.\nII. The ₹299 plan gives 56 GB of data in all over its 28 days.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: no other plan of the company is mentioned, so \"cheapest\" cannot be judged.",
+          "II follows: 2 GB a day for 28 days is 2 × 28 = 56 GB.",
+          "Answer: Only II follows."
+        ],
+        "trap": "A single price can never establish \"cheapest\" without the other prices."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:unsupported-comparison"
+      ]
+    },
+    {
+      "key": "sc-053",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** The district education office will put the result of last month's scholarship test on its website next week. Gaurav took the test.\n\n**Conclusions:**\nI. Gaurav's name will appear in the list of candidates who qualified in the scholarship test.\nII. Gaurav's name will not appear in the list of candidates who qualified in the scholarship test.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither I nor II follows on its own: the result has not been published, so we do not know how Gaurav did.",
+          "But Gaurav took the test and the result will be published, so his name will either be in the qualified list or not. I and II are exact opposites about the same person: either I or II follows.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "\"Result not yet known\" tempts you to pick \"Neither\", but the two conclusions together cover every case."
+      },
+      "tags": [
+        "cr:complementary-pair"
+      ]
+    },
+    {
+      "key": "sc-054",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** The new shopping mall on Kanpur Road in Lucknow drew 50,000 visitors on its opening day.\n\n**Conclusions:**\nI. The mall will draw about 50,000 visitors every day.\nII. The mall has more shops than any other mall in Lucknow.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: opening-day crowds are a one-day figure and say nothing about daily visitors later.",
+          "II does not follow: the number of shops is not mentioned, and no other mall is compared.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "An opening-day figure is not a daily average."
+      },
+      "tags": [
+        "cr:future-speculation",
+        "cr:unsupported-comparison"
+      ]
+    },
+    {
+      "key": "sc-055",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** All the trains on the Chennai–Bengaluru route have been fitted with bio-toilets. The Lalbagh Express runs on the Chennai–Bengaluru route.\n\n**Conclusions:**\nI. The Lalbagh Express has been fitted with bio-toilets.\nII. No train without bio-toilets runs on the Chennai–Bengaluru route.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: the Lalbagh Express is one of the trains on the route, and all of them have bio-toilets.",
+          "II follows: if every train on the route has bio-toilets, a train without them cannot be one of the trains on the route.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "II is just the first sentence turned round correctly (contrapositive); it is not the converse error."
+      },
+      "tags": [
+        "cr:syllogism",
+        "cr:contrapositive"
+      ]
+    },
+    {
+      "key": "sc-056",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** The canteen of Sardar Patel Vidyalaya has stopped selling packaged soft drinks from this week.\n\n**Conclusions:**\nI. Packaged soft drinks cannot be bought at the school's canteen this week.\nII. Students of the school no longer drink packaged soft drinks.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: the canteen has stopped selling them from this week.",
+          "II does not follow: students may still buy soft drinks elsewhere; the statement is only about the canteen.",
+          "Answer: Only I follows."
+        ],
+        "trap": "A rule about one shop says nothing about what students do outside it."
+      },
+      "tags": [
+        "cr:direct-inference",
+        "cr:scope-shift"
+      ]
+    },
+    {
+      "key": "sc-057",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** Kavya reached the examination centre at 9:40 a.m., twenty minutes before its gate closed.\n\n**Conclusions:**\nI. Kavya always reaches places well before time.\nII. The gate of the examination centre closed at 10:00 a.m.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: one early arrival does not show what Kavya \"always\" does.",
+          "II follows: twenty minutes after 9:40 a.m. is 10:00 a.m.",
+          "Answer: Only II follows."
+        ],
+        "trap": "\"Always\" needs evidence about many occasions, not one."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:overgeneralisation"
+      ]
+    },
+    {
+      "key": "sc-058",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** The final of the inter-school cricket tournament between Green Valley School and Sunrise School will be played on Saturday. The tournament rules say the final must produce a winner.\n\n**Conclusions:**\nI. Green Valley School will win the final.\nII. Sunrise School will win the final.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither I nor II follows on its own: the match has not been played yet.",
+          "But only these two schools play the final, and the rules say it must produce a winner, so exactly one of I and II will be true: either I or II follows.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "\"Must produce a winner\" rules out a draw, which is what makes the pair complementary."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "sc-059",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** Doctors at the district hospital have advised people to drink only boiled water during the monsoon.\n\n**Conclusions:**\nI. Drinking water that has not been boiled during the monsoon will make people ill.\nII. Everyone in the district drinks boiled water during the monsoon.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: advice points to a risk, but \"will make people ill\" is a certainty the statement does not give.",
+          "II does not follow: the doctors have given advice; whether everyone follows it is not stated.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "Advice about what people should do is not a report of what they do, and a risk is not a certainty."
+      },
+      "tags": [
+        "cr:risk-vs-certainty",
+        "cr:extreme-word"
+      ]
+    },
+    {
+      "key": "sc-060",
+      "subtype": "two-conclusions",
+      "difficulty": "easy",
+      "prompt": "**Statement:** Water supply to Sectors 4 and 5 will be suspended from 10 a.m. to 4 p.m. on Tuesday for repair work on the main pipeline.\n\n**Conclusions:**\nI. Residents of Sector 5 will not get piped water supply at noon on Tuesday.\nII. Water supply to Sector 4 will be suspended for six hours on Tuesday.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: noon falls between 10 a.m. and 4 p.m., when supply to Sector 5 is suspended.",
+          "II follows: 10 a.m. to 4 p.m. is six hours.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "Both are read straight off the notice; there is no hidden catch."
+      },
+      "tags": [
+        "cr:direct-inference",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-061",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** A bank has announced that, from April, savings accounts with an average monthly balance below ₹5,000 will be charged ₹50 for that month.\n\n**Conclusions:**\nI. A savings account of the bank with an average balance of ₹4,000 in May will be charged ₹50 for May.\nII. Most of the bank's customers keep an average balance below ₹5,000.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: May is after the rule starts and ₹4,000 is below ₹5,000, so the ₹50 charge applies.",
+          "II does not follow: the statement gives the rule, not how many customers fall below the limit.",
+          "Answer: Only I follows."
+        ],
+        "trap": "A charge aimed at low balances does not mean most customers have low balances."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:overgeneralisation"
+      ]
+    },
+    {
+      "key": "sc-062",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** Ankit, a clerk at a cooperative bank, has been promoted to assistant manager after clearing the internal promotion test in his first attempt.\n\n**Conclusions:**\nI. Ankit was the best clerk in his branch.\nII. Ankit cleared the internal promotion test without needing a second attempt.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: no other clerk is compared with Ankit; clearing a test does not make him the best.",
+          "II follows: he cleared the test in his first attempt, so no second attempt was needed.",
+          "Answer: Only II follows."
+        ],
+        "trap": "Promotion is not a ranking against colleagues."
+      },
+      "tags": [
+        "cr:direct-inference",
+        "cr:unsupported-comparison"
+      ]
+    },
+    {
+      "key": "sc-063",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** The selection committee will meet on Friday to name the captain of the state under-19 cricket team. It has said the captain will be either Rohan or Vikram.\n\n**Conclusions:**\nI. Rohan will be named captain of the state under-19 team.\nII. Vikram will be named captain of the state under-19 team.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither I nor II follows on its own: the committee has not yet decided between them.",
+          "But the captain will be one of exactly these two, and a team has one captain, so one of I and II must be true: either I or II follows.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "Choosing \"Neither\" ignores that the choice is limited to these two players."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "sc-064",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** A bank has reduced the interest rate on its one-year fixed deposits from 7 per cent to 6.5 per cent.\n\n**Conclusions:**\nI. Customers will stop opening one-year fixed deposits with the bank.\nII. The bank has reduced the interest rates on all its deposits.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: a lower rate may reduce interest, but \"stop opening\" is an extreme prediction.",
+          "II does not follow: only the one-year fixed deposit rate is mentioned; other deposits may be unchanged.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "A cut on one product is not a cut on all products."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:scope-shift"
+      ]
+    },
+    {
+      "key": "sc-065",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** A bank charges a fee of ₹20 for every cash withdrawal from other banks' ATMs beyond the first five in a month. In July, Nidhi, a customer of the bank, made seven cash withdrawals from other banks' ATMs.\n\n**Conclusions:**\nI. Nidhi will be charged ₹40 under this rule for her July withdrawals.\nII. Five of Nidhi's July withdrawals from other banks' ATMs will not attract this fee.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: seven withdrawals is two beyond five, and 2 × ₹20 = ₹40.",
+          "II follows: the first five withdrawals in the month are outside the fee.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "Count only the withdrawals beyond five: 7 − 5 = 2, not 7."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-066",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** Under a new rule, a student must have at least 75 per cent attendance in Class 11 to be allowed to sit the Class 11 final examination. Sheetal's attendance in Class 11 is 70 per cent.\n\n**Conclusions:**\nI. Sheetal will not be allowed to sit the Class 11 final examination.\nII. Every student with at least 75 per cent attendance will pass the Class 11 final examination.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: 75 per cent attendance is required to sit the examination, and Sheetal has only 70 per cent.",
+          "II does not follow: attendance only decides who may sit the examination, not who passes it.",
+          "Answer: Only I follows."
+        ],
+        "trap": "A condition for sitting an examination is not a guarantee of passing it."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:converse-error"
+      ]
+    },
+    {
+      "key": "sc-067",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** The pollution control board has ordered all stone-crushing units within 5 km of the city limits to shut down for 15 days because of severe air pollution.\n\n**Conclusions:**\nI. Stone-crushing units are the main cause of air pollution in the city.\nII. A stone-crushing unit located 3 km from the city limits must shut down for 15 days.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: the units have been shut because of pollution, but nothing says they are the main source of it.",
+          "II follows: 3 km is within 5 km, so the order covers this unit.",
+          "Answer: Only II follows."
+        ],
+        "trap": "Being one target of an order does not make something the main cause."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:causal-leap"
+      ]
+    },
+    {
+      "key": "sc-068",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** The Kolkata branch of a bank opened at least as many new savings accounts in September as its Howrah branch did.\n\n**Conclusions:**\nI. The Kolkata branch opened more new savings accounts in September than the Howrah branch.\nII. The Kolkata and Howrah branches opened the same number of new savings accounts in September.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "\"At least as many\" means Kolkata ≥ Howrah. Neither I (Kolkata > Howrah) nor II (Kolkata = Howrah) is certain on its own.",
+          "But ≥ is made up of exactly these two cases, so one of them must be true: either I or II follows.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "\"At least as many\" splits into \"more than\" or \"equal to\" — a classic complementary pair."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:quantifier"
+      ]
+    },
+    {
+      "key": "sc-069",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** The state government has launched a scheme to give free LED bulbs to households in rural areas.\n\n**Conclusions:**\nI. All rural households in the state now use LED bulbs.\nII. The scheme will reduce the electricity bills of rural households.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: a scheme being launched does not mean every household has received or uses the bulbs; \"all\" is extreme.",
+          "II does not follow: the effect on bills is not stated; it would need outside knowledge and assumptions about use.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "The launch of a scheme is not proof of its reach or its results."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:outside-knowledge"
+      ]
+    },
+    {
+      "key": "sc-070",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** Every member of the Green Lake Residents' Association paid this year's annual fee of ₹1,200. The association has 150 members.\n\n**Conclusions:**\nI. The association received ₹1,80,000 from its members as this year's annual fee.\nII. No member of the association failed to pay this year's annual fee.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: 150 members × ₹1,200 = ₹1,80,000.",
+          "II follows: every member paid, so none failed to pay.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "II is a double negative of \"every member paid\"; read it slowly."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:direct-inference"
+      ]
+    },
+    {
+      "key": "sc-071",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** The forest department's census counted 120 leopards in the Bhadra sanctuary this year, against 96 four years ago.\n\n**Conclusions:**\nI. The number of leopards counted in the sanctuary has risen by 25 per cent in four years.\nII. The Bhadra sanctuary has more leopards than any other sanctuary in the state.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: the rise is 24 on a base of 96, and 24 ÷ 96 = 25 per cent.",
+          "II does not follow: no other sanctuary is mentioned.",
+          "Answer: Only I follows."
+        ],
+        "trap": "Take the old figure (96) as the base, not the new one; 24 on 120 would give 20 per cent."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:unsupported-comparison"
+      ]
+    },
+    {
+      "key": "sc-072",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** A survey by the telecom regulator found that the average 4G download speed in the state rose from 12 Mbps to 18 Mbps during the year.\n\n**Conclusions:**\nI. Every 4G user in the state got faster download speeds by the end of the year.\nII. The average 4G download speed in the state rose by 50 per cent during the year.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: a higher average can hide some users whose speed stayed the same or fell.",
+          "II follows: the rise is 6 Mbps on 12 Mbps, i.e. 50 per cent.",
+          "Answer: Only II follows."
+        ],
+        "trap": "A rise in the average is not a rise for every user."
+      },
+      "tags": [
+        "cr:average-vs-all",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-073",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** The answer key for a class test says the correct answer to Question 17 is either (b) or (d); a correction notice will state which. Meena marked (b) for Question 17.\n\n**Conclusions:**\nI. Meena's answer to Question 17 is correct.\nII. Meena's answer to Question 17 is wrong.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither I nor II follows on its own: we do not yet know whether the correct answer is (b) or (d).",
+          "But Meena's answer is either right or wrong — if the key is (b) she is right, if (d) she is wrong. I and II are exact opposites: either I or II follows.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "Not knowing which outcome has happened is not the same as neither outcome happening."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "sc-074",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** Twelve students of a government higher secondary school in Erode have qualified for the state-level science olympiad this year, the highest number from any school in Erode district.\n\n**Conclusions:**\nI. The school has the best science teachers in Erode district.\nII. No school in the state had more students qualify for the olympiad this year.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: the result may have many causes; the quality of teachers is not mentioned.",
+          "II does not follow: the school leads only within Erode district, not the whole state.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "\"Highest in the district\" is not \"highest in the state\"."
+      },
+      "tags": [
+        "cr:scope-shift",
+        "cr:causal-leap"
+      ]
+    },
+    {
+      "key": "sc-075",
+      "subtype": "two-conclusions",
+      "difficulty": "medium",
+      "prompt": "**Statement:** From 1 January, shops and commercial establishments in the state's cities will be allowed to stay open 24 hours a day, provided they give every worker one weekly holiday.\n\n**Conclusions:**\nI. After 1 January, a city shop that does not give every worker a weekly holiday will not get this permission to stay open 24 hours a day.\nII. After 1 January, a city shop that gives every worker a weekly holiday may stay open through the night.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: the permission is given \"provided\" every worker gets a weekly holiday, so a shop that does not meet this condition does not get it.",
+          "II follows: a shop meeting the condition is allowed to stay open 24 hours, which includes the night.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "\"Allowed … provided\" makes the weekly holiday a condition of the permission."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:conditional"
+      ]
     }
   ]
 }
