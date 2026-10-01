@@ -4255,6 +4255,695 @@
       "tags": [
         "vocab:phrasal-verb"
       ]
+    },
+    {
+      "key": "pr-156",
+      "subtype": "connector-fix",
+      "difficulty": "easy",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Because** the shop was crowded, Ramesh managed to buy everything on his list within ten minutes.",
+      "options": [
+        "Although",
+        "Since",
+        "Unless",
+        "So",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Finishing quickly is unexpected in a crowded shop, so the clauses are in contrast and need 'Although'.",
+          "Correct: *Although the shop was crowded, Ramesh managed to buy everything on his list within ten minutes.*",
+          "B 'Since' is another cause word; C 'Unless' makes a condition that does not fit; D 'So' cannot introduce the first clause of a cause–result pair."
+        ],
+        "rule": "Contrast (although, though) vs cause (because, since, as)",
+        "trap": "B swaps one cause connector for another; the problem is the relation between the clauses, not the word.",
+        "shortcut": "Unexpected result → although."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:contrast"
+      ]
+    },
+    {
+      "key": "pr-157",
+      "subtype": "connector-fix",
+      "difficulty": "easy",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nLeave home early **because** you will miss the last bus.",
+      "options": [
+        "and",
+        "so that",
+        "or",
+        "unless",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The second clause tells what will happen if the advice is not followed, so 'or' (= otherwise) is needed.",
+          "Correct: *Leave home early or you will miss the last bus.*",
+          "A 'and' would mean leaving early makes you miss the bus; B 'so that' would make missing the bus the aim; D 'unless' gives a condition that makes no sense with 'will miss'."
+        ],
+        "rule": "Imperative + 'or' = a warning (otherwise)",
+        "trap": "B 'so that' is a purpose connector and turns missing the bus into the goal.",
+        "shortcut": "Do X, or Y will happen."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:condition"
+      ]
+    },
+    {
+      "key": "pr-158",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Despite** the train was running late, we reached the wedding hall on time.",
+      "options": [
+        "In spite of",
+        "Although",
+        "Because of",
+        "Due to",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The meaning is contrast, but 'despite' is a preposition and needs a noun or an -ing form, not a full clause. The conjunction 'Although' can introduce the clause 'the train was running late'.",
+          "Correct: *Although the train was running late, we reached the wedding hall on time.*",
+          "A has the same meaning and the same grammar problem as 'despite'; C and D show cause, which is wrong, and also need a noun phrase."
+        ],
+        "rule": "despite / in spite of + noun or -ing; although / though + clause",
+        "trap": "A 'In spite of' has the right meaning but, like 'despite', cannot be followed by a full clause.",
+        "shortcut": "Subject + verb after it? → although."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:despite-although"
+      ]
+    },
+    {
+      "key": "pr-159",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe roads were waterlogged after the storm; **therefore**, the city buses kept running on schedule.",
+      "options": [
+        "moreover",
+        "consequently",
+        "nevertheless",
+        "hence",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Waterlogged roads would normally disrupt buses, so buses running on schedule is a contrast: 'nevertheless'.",
+          "Correct: *The roads were waterlogged after the storm; nevertheless, the city buses kept running on schedule.*",
+          "B and D are result words, just like 'therefore'; A adds information without any contrast."
+        ],
+        "rule": "Contrast adverbs (nevertheless, however) vs result adverbs (therefore, hence, consequently)",
+        "trap": "B 'consequently' looks like a fresh option, but it means the same as 'therefore'.",
+        "shortcut": "Expected result fails → nevertheless / however."
+      },
+      "tags": [
+        "grammar:connector",
+        "pattern:contrast"
+      ]
+    },
+    {
+      "key": "pr-160",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nYou will not get a refund **if** you produce the original bill at the counter.",
+      "options": [
+        "unless",
+        "provided",
+        "as long as",
+        "in case",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The refund depends on the bill: no bill, no refund. That is 'You will not get a refund unless you produce the original bill' (= if you do not produce it).",
+          "Correct: *You will not get a refund unless you produce the original bill at the counter.*",
+          "B and C mean 'only if', which keeps the illogical idea that producing the bill blocks the refund; D 'in case' means 'as a precaution'."
+        ],
+        "rule": "unless = if not",
+        "trap": "B 'provided' sounds formal and conditional, but it keeps the same illogical meaning as 'if'.",
+        "shortcut": "Negative result + required action → unless."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:condition"
+      ]
+    },
+    {
+      "key": "pr-161",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nPlease speak slowly **lest** the old man can follow you.",
+      "options": [
+        "in order that not",
+        "so that",
+        "unless",
+        "in case",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The speaker wants the old man to follow, so a purpose connector is needed: 'so that the old man can follow you'. 'Lest' means 'for fear that' and says the opposite.",
+          "Correct: *Please speak slowly so that the old man can follow you.*",
+          "A is not a grammatical form; C gives a condition; D means 'as a precaution against', which does not fit 'can follow'."
+        ],
+        "rule": "so that + can/could/may (purpose); lest + should (purpose of preventing something)",
+        "trap": "C 'unless' carries a negative sense like 'lest', but it makes a condition, not a purpose.",
+        "shortcut": "Want it to happen → so that; want to prevent it → lest."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:purpose"
+      ]
+    },
+    {
+      "key": "pr-162",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe hall was booked for the farewell function; **besides**, it had to be cancelled at the last minute.",
+      "options": [
+        "furthermore",
+        "accordingly",
+        "thus",
+        "however",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Booking the hall and then having to cancel are in contrast, so 'however' is needed.",
+          "Correct: *The hall was booked for the farewell function; however, it had to be cancelled at the last minute.*",
+          "A adds information, just like 'besides'; B and C show result, which would mean the booking caused the cancellation."
+        ],
+        "rule": "Contrast (however) vs addition (besides, furthermore) vs result (thus, accordingly)",
+        "trap": "B 'accordingly' sounds formal, but it means 'as a result'."
+      },
+      "tags": [
+        "grammar:connector",
+        "pattern:contrast"
+      ]
+    },
+    {
+      "key": "pr-163",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Unless** you are carrying heavy luggage, take a taxi from the station; otherwise, the walk is only five minutes.",
+      "options": [
+        "If",
+        "Lest",
+        "Until",
+        "Though",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "A taxi makes sense when the luggage is heavy, and 'otherwise, the walk is only five minutes' covers the case without heavy luggage, so the condition must be positive: 'If you are carrying heavy luggage'.",
+          "Correct: *If you are carrying heavy luggage, take a taxi from the station; otherwise, the walk is only five minutes.*",
+          "B, C and D are purpose, time and contrast connectors."
+        ],
+        "rule": "if (positive condition) vs unless (negative condition = if not)",
+        "trap": "D 'Though' would mean taking a taxi in spite of the luggage, which reverses the logic."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:condition"
+      ]
+    },
+    {
+      "key": "pr-164",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nPlease remain seated **unless** the aircraft comes to a complete halt.",
+      "options": [
+        "although",
+        "since",
+        "until",
+        "if",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Passengers must stay seated up to the moment the aircraft stops, which is expressed by 'until'.",
+          "Correct: *Please remain seated until the aircraft comes to a complete halt.*",
+          "A shows contrast; B 'since' gives a reason; D 'if' makes staying seated depend on the aircraft stopping."
+        ],
+        "rule": "until = up to the time when",
+        "trap": "D 'if' looks like a simple fix for the wrong 'unless', but the relation is about time, not condition."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:time"
+      ]
+    },
+    {
+      "key": "pr-165",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Because of** his poor health, the old farmer walks five kilometres to the market every day.",
+      "options": [
+        "Due to",
+        "Although",
+        "In spite of",
+        "Owing to",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Walking five kilometres daily is surprising for someone in poor health, so a contrast is needed. 'His poor health' is a noun phrase, so the preposition 'In spite of' fits.",
+          "Correct: *In spite of his poor health, the old farmer walks five kilometres to the market every day.*",
+          "A and D are cause words like 'because of'; B 'Although' has the right meaning but needs a clause, not a noun phrase."
+        ],
+        "rule": "despite / in spite of + noun phrase; although + clause",
+        "trap": "B has the right meaning, but 'Although his poor health' has no verb.",
+        "shortcut": "Noun phrase after it? → in spite of / despite."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:despite-although"
+      ]
+    },
+    {
+      "key": "pr-166",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe bank cut its home-loan rates sharply, **so** the demand for loans fell further.",
+      "options": [
+        "and so",
+        "yet",
+        "so that",
+        "therefore",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Lower interest rates normally raise the demand for loans, so a further fall in demand is unexpected: 'yet'.",
+          "Correct: *The bank cut its home-loan rates sharply, yet the demand for loans fell further.*",
+          "A and D are result words like 'so'; C 'so that' would make falling demand the bank's aim."
+        ],
+        "rule": "Contrast (yet, but) vs result (so, therefore)",
+        "trap": "C 'so that' looks like a fuller form of 'so', but it expresses purpose, which makes even less sense."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:contrast"
+      ]
+    },
+    {
+      "key": "pr-167",
+      "subtype": "connector-fix",
+      "difficulty": "medium",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**While** you finish your homework, you cannot go out to play.",
+      "options": [
+        "Because",
+        "Although",
+        "Whereas",
+        "Until",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Going out to play is allowed only after the homework is finished, so 'Until' (= up to the time when) is needed.",
+          "Correct: *Until you finish your homework, you cannot go out to play.*",
+          "A gives a reason that makes no sense; B and C show contrast."
+        ],
+        "rule": "until = up to the time when; while = during the time that",
+        "trap": "The original 'While' is also a time word, but it means 'during', not 'up to the time when'."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:time"
+      ]
+    },
+    {
+      "key": "pr-168",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Though** the river had swollen dangerously after the cloudburst, the district administration ordered the evacuation of nearby villages.",
+      "options": [
+        "Even though",
+        "Since",
+        "In spite of",
+        "Unless",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The swollen river is the reason for the evacuation, so a cause connector is needed: 'Since'.",
+          "Correct: *Since the river had swollen dangerously after the cloudburst, the district administration ordered the evacuation of nearby villages.*",
+          "A is a stronger form of 'though' (contrast); C shows contrast and needs a noun phrase; D gives a condition that reverses the logic."
+        ],
+        "rule": "Cause (since, as, because) vs contrast (though, even though)",
+        "trap": "A looks like a correction, but it is only a more emphatic 'though'."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:cause"
+      ]
+    },
+    {
+      "key": "pr-169",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**In spite of** the old bridge had collapsed, traffic was diverted through the market road.",
+      "options": [
+        "Because of",
+        "As",
+        "Despite",
+        "Although",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The collapse caused the diversion, so a cause connector is needed. A full clause follows ('the old bridge had collapsed'), so it must be a conjunction: 'As'.",
+          "Correct: *As the old bridge had collapsed, traffic was diverted through the market road.*",
+          "A has the right meaning but needs a noun phrase ('because of the collapse'); C and D show contrast."
+        ],
+        "rule": "Cause: as / because / since + clause; because of / due to + noun phrase",
+        "trap": "A fixes the meaning but not the grammar: 'because of' cannot take a full clause.",
+        "shortcut": "Check two things: the meaning (cause or contrast) and what follows (clause or noun phrase)."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:cause"
+      ]
+    },
+    {
+      "key": "pr-170",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe tickets were sold out within minutes, **so** many fans had to watch the final on television.",
+      "options": [
+        "although",
+        "because",
+        "unless",
+        "so that",
+        "No replacement required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The phrase in bold is already correct: the sell-out is the cause and watching on television is the result, so the result connector 'so' fits.",
+          "Correct: *The tickets were sold out within minutes, so many fans had to watch the final on television.*",
+          "A shows contrast; B reverses cause and effect; C gives a condition; D shows purpose, as if the tickets sold out in order to make fans watch on television."
+        ],
+        "rule": "so (result) vs so that (purpose)",
+        "trap": "D 'so that' looks like a fuller, more formal 'so', but it expresses purpose, not result."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:result",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "pr-171",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nCarry some cash on the trip **so that** the ATMs in the village are not working.",
+      "options": [
+        "lest",
+        "until",
+        "in case",
+        "so as",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The cash is a precaution against a possible problem, which is expressed by 'in case': 'in case the ATMs in the village are not working'.",
+          "Correct: *Carry some cash on the trip in case the ATMs in the village are not working.*",
+          "A 'lest' already means 'for fear that', so 'lest … not' reverses the sense; B is a time word; D 'so as' must be followed by 'to' + verb, not a clause."
+        ],
+        "rule": "in case = as a precaution against the possibility that",
+        "trap": "A 'lest' also expresses a precaution, but combined with 'not' it would mean you fear the ATMs will work."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:purpose"
+      ]
+    },
+    {
+      "key": "pr-172",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe surgeon will operate on Monday **unless** the patient's blood pressure comes down, as surgery with high blood pressure is risky.",
+      "options": [
+        "only if",
+        "until",
+        "even if",
+        "lest",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Since surgery with high blood pressure is risky, the operation can happen only after the pressure falls: 'only if the patient's blood pressure comes down'.",
+          "Correct: *The surgeon will operate on Monday only if the patient's blood pressure comes down, as surgery with high blood pressure is risky.*",
+          "B 'until' would mean operating up to the time the pressure falls; C 'even if' says the pressure does not matter; D 'lest' expresses fear and does not fit 'comes down'."
+        ],
+        "rule": "only if (a necessary condition) vs unless (= if not)",
+        "trap": "C 'even if' is a conditional connector too, but it removes the condition entirely."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:condition"
+      ]
+    },
+    {
+      "key": "pr-173",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nCall me **as long as** you reach Pune, so that I know you are safe.",
+      "options": [
+        "as far as",
+        "so long as",
+        "as well as",
+        "as soon as",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The call should come immediately after reaching Pune, which is a time relation: 'as soon as'.",
+          "Correct: *Call me as soon as you reach Pune, so that I know you are safe.*",
+          "B is a synonym of 'as long as' (on condition that); A and C are not time connectors."
+        ],
+        "rule": "as soon as = immediately when; as long as / so long as = provided that, or for the whole time that",
+        "trap": "B looks different, but it means exactly the same as the wrong 'as long as'."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:time"
+      ]
+    },
+    {
+      "key": "pr-174",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Even if** it was raining heavily, the farmers continued harvesting the paddy.",
+      "options": [
+        "Even though",
+        "Even so",
+        "Only if",
+        "So that",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "It really was raining, and the farmers worked in spite of it. A real fact in contrast takes 'even though'; 'even if' is for a possible or imagined situation.",
+          "Correct: *Even though it was raining heavily, the farmers continued harvesting the paddy.*",
+          "B 'Even so' is an adverb and cannot introduce a clause; C is a condition and D shows purpose."
+        ],
+        "rule": "even though (a fact) vs even if (a possibility)",
+        "trap": "B also expresses contrast, but it links two separate statements ('It was raining. Even so, they …').",
+        "shortcut": "Did it actually happen? → even though."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:contrast"
+      ]
+    },
+    {
+      "key": "pr-175",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe new metro line will cut travel time; **on the contrary**, it will reduce air pollution in the city.",
+      "options": [
+        "nevertheless",
+        "instead",
+        "in addition",
+        "otherwise",
+        "No replacement required"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Both clauses describe benefits of the metro line, so the second simply adds to the first: 'in addition'.",
+          "Correct: *The new metro line will cut travel time; in addition, it will reduce air pollution in the city.*",
+          "A shows contrast; B shows replacement; D introduces what happens if something is not done."
+        ],
+        "rule": "Addition (in addition, moreover, besides) vs contrast (on the contrary, nevertheless)",
+        "trap": "A 'nevertheless' is a milder contrast word, but the two ideas do not oppose each other at all.",
+        "shortcut": "Two benefits of the same thing → an addition connector."
+      },
+      "tags": [
+        "grammar:connector",
+        "pattern:addition"
+      ]
+    },
+    {
+      "key": "pr-176",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Even though** the exams are over, the children can finally visit their grandparents in Coorg.",
+      "options": [
+        "So that",
+        "Now that",
+        "Even then",
+        "Unless",
+        "No replacement required"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The end of the exams is the reason the children can now travel; 'Now that' (= because now) expresses a cause that has just come about, and 'finally' supports it.",
+          "Correct: *Now that the exams are over, the children can finally visit their grandparents in Coorg.*",
+          "A shows purpose; C is an adverb and cannot introduce a clause; D gives a negative condition."
+        ],
+        "rule": "now that = since / because (a new situation)",
+        "trap": "C 'Even then' sounds close to 'even though', but it is an adverb, not a conjunction, and still shows contrast."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:cause"
+      ]
+    },
+    {
+      "key": "pr-177",
+      "subtype": "connector-fix",
+      "difficulty": "hard",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nFill in all the fields of the form carefully; **therefore**, it will be rejected.",
+      "options": [
+        "consequently",
+        "thereafter",
+        "moreover",
+        "otherwise",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Rejection is what happens if the fields are not filled in carefully, and 'otherwise' (= if not) expresses this.",
+          "Correct: *Fill in all the fields of the form carefully; otherwise, it will be rejected.*",
+          "A is a result word like 'therefore'; B is a time word; C adds information."
+        ],
+        "rule": "otherwise = if not / or else",
+        "trap": "A 'consequently' simply replaces 'therefore' with a synonym."
+      },
+      "tags": [
+        "grammar:connector",
+        "pattern:condition"
+      ]
+    },
+    {
+      "key": "pr-178",
+      "subtype": "connector-fix",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe guard kept the school gate locked **so that** stray cattle should wander into the playground.",
+      "options": [
+        "lest",
+        "so as",
+        "unless",
+        "provided",
+        "No replacement required"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The gate is locked to prevent the cattle from wandering in, which is a negative purpose: 'lest stray cattle should wander' (= so that they would not wander).",
+          "Correct: *The guard kept the school gate locked lest stray cattle should wander into the playground.*",
+          "B 'so as' must be followed by 'to' + verb, not a clause; C 'unless' and D 'provided' are conditions."
+        ],
+        "rule": "lest + subject + should + V1 = so that … not",
+        "trap": "B 'so as' looks like a purpose fix, but it needs 'to' + verb ('so as to keep cattle out').",
+        "shortcut": "'should' after the gap + something to prevent → lest."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:purpose"
+      ]
+    },
+    {
+      "key": "pr-179",
+      "subtype": "connector-fix",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\nThe forecast predicted clear skies; **even so**, the fishermen stayed ashore because the sea looked rough.",
+      "options": [
+        "even if",
+        "as a result",
+        "for instance",
+        "in order that",
+        "No replacement required"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The phrase in bold is already correct: clear skies would normally send the fishermen out, so staying ashore is a contrast, and 'even so' (= in spite of that) links the two clauses.",
+          "Correct: *The forecast predicted clear skies; even so, the fishermen stayed ashore because the sea looked rough.*",
+          "A 'even if' is a conjunction that must introduce a clause of its own; B shows result; C introduces an example; D shows purpose."
+        ],
+        "rule": "even so = nevertheless (an adverb linking two clauses, usually after a semicolon)",
+        "trap": "A 'even if' looks like the formal version, but it cannot stand alone after a semicolon."
+      },
+      "tags": [
+        "grammar:connector",
+        "pattern:contrast",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "pr-180",
+      "subtype": "connector-fix",
+      "difficulty": "extreme",
+      "prompt": "Which of the following phrases should replace the phrase in bold to make the sentence grammatically and contextually correct? If no replacement is required, choose 'No replacement required'.\n\n**Whatever** hard he tries, Raghav cannot solve the last puzzle in the book.",
+      "options": [
+        "Whenever",
+        "Although",
+        "No matter",
+        "However",
+        "No replacement required"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Before an adjective or adverb ('hard'), the concessive connector is 'however' (= no matter how): 'However hard he tries'.",
+          "Correct: *However hard he tries, Raghav cannot solve the last puzzle in the book.*",
+          "A is a time word; B needs a clause directly ('Although he tries hard'); C needs 'how' ('No matter how hard')."
+        ],
+        "rule": "however + adjective/adverb (= no matter how); whatever + noun (= no matter what)",
+        "trap": "C has the right idea but drops 'how'.",
+        "shortcut": "however hard / however much; whatever + noun."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:concession"
+      ]
     }
   ]
 }
