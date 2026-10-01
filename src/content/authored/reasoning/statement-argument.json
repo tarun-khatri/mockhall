@@ -3234,6 +3234,652 @@
         "cr:strong-cost",
         "cr:true-but-irrelevant"
       ]
+    },
+    {
+      "key": "sg-126",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should the libraries of government colleges stay open until 10 p.m.?\n\n**Arguments:**\nI. Yes. Reading is a good habit.\nII. Yes. Many students live in crowded homes or hostels with no quiet place to study, and need the library in the evenings.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is weak: true, but reading can happen during the present hours too; it says nothing about why the library should stay open later.",
+          "II is strong: it names a real group of students whose need is met directly by longer hours.",
+          "Answer: Only argument II is strong."
+        ],
+        "trap": "A true general statement is weak unless it bears on the specific change proposed."
+      },
+      "tags": [
+        "cr:true-but-irrelevant",
+        "cr:strong-benefit"
+      ]
+    },
+    {
+      "key": "sg-127",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should the district open a new primary school in the village of Kherwa?\n\n**Arguments:**\nI. Yes. The nearest primary school is more than 5 km away across a highway, so most of the village's young children do not go to school at all.\nII. No. Kherwa already has a primary school within walking distance, with enough room for all its children.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each argument, if true, is decisive, since a new school is needed only if children have no school they can reach.",
+          "But I says the nearest school is over 5 km away and II says there is one within walking distance; both cannot be true. Hence either I or II is strong.",
+          "Answer: Either I or II is strong."
+        ],
+        "trap": "The contradiction is not worded as a mirror image; spot that the two facts about the nearest school clash."
+      },
+      "tags": [
+        "cr:complementary-pair"
+      ]
+    },
+    {
+      "key": "sg-128",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should an annual health check-up be made compulsory for all citizens above 40?\n\n**Arguments:**\nI. Yes. Health is wealth.\nII. No. Many diseases cannot be cured even if they are detected early.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is weak: it is a slogan, not a reason why check-ups should be compulsory.",
+          "II is weak: that some diseases cannot be cured does not show that check-ups are useless; many conditions can be controlled or cured when caught early.",
+          "Answer: Neither I nor II is strong."
+        ],
+        "trap": "The strong \"No\" (compulsion, cost and the capacity of hospitals) is not what II says."
+      },
+      "tags": [
+        "cr:opinion",
+        "cr:misses-point"
+      ]
+    },
+    {
+      "key": "sg-129",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should the government fix a maximum fee that private hospitals may charge for common surgeries?\n\n**Arguments:**\nI. Yes. Patients, who cannot bargain in an emergency, are often charged widely different and very high amounts for the same surgery, pushing many families into debt.\nII. No. The cost of the same surgery differs with the hospital's equipment and the patient's condition, and a single cap would push better-equipped hospitals to cut quality or stop offering the surgery.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is strong: protecting patients from unfair charges and debt is important and directly served by a cap.",
+          "II is strong: lower quality or reduced availability of surgery is a serious, direct risk of a one-size cap.",
+          "Answer: Both I and II are strong."
+        ],
+        "trap": "Both arguments concern patients' welfare; both are strong."
+      },
+      "tags": [
+        "cr:strong-benefit",
+        "cr:strong-cost"
+      ]
+    },
+    {
+      "key": "sg-130",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should rainwater harvesting be made compulsory for all new buildings with a plot area above 300 square metres in the city?\n\n**Arguments:**\nI. Yes. It will recharge the city's fast-falling groundwater and reduce flooding of streets during heavy rain.\nII. No. It rains for only about three months in a year.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is strong: groundwater recharge and less flooding are important, direct benefits.",
+          "II is weak: true, but that is exactly why rain must be stored and recharged while it falls; the short season does not make harvesting useless.",
+          "Answer: Only argument I is strong."
+        ],
+        "trap": "A true fact that does not weaken the proposal is a weak argument."
+      },
+      "tags": [
+        "cr:strong-benefit",
+        "cr:true-but-irrelevant"
+      ]
+    },
+    {
+      "key": "sg-131",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should private schools be barred from raising their fees by more than 10 per cent a year?\n\n**Arguments:**\nI. No. Good private schools are always expensive.\nII. Yes. Parents cannot easily move their children to another school in the middle of their studies, so they have to accept steep yearly increases, which put a heavy burden on them.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is weak: a sweeping claim about cost does not address the size of yearly increases, which is what the cap limits.",
+          "II is strong: it explains why parents are at the mercy of yearly increases and how the cap protects them directly.",
+          "Answer: Only argument II is strong."
+        ],
+        "trap": "I talks about the level of fees; the question is about the rate of increase."
+      },
+      "tags": [
+        "cr:sweeping-claim",
+        "cr:strong-benefit"
+      ]
+    },
+    {
+      "key": "sg-132",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should every district in the country have its own airport?\n\n**Arguments:**\nI. Yes. Air travel is the fastest way to travel long distances.\nII. No. Air tickets cost more than train tickets.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is weak: true in general, but it does not show that every district has enough air travellers to justify an airport.",
+          "II is weak: also true, but higher fares alone do not show that an airport is unwise; a strong \"No\" would point to low traffic and the cost of building and running so many airports.",
+          "Answer: Neither I nor II is strong."
+        ],
+        "trap": "Two true facts can both be weak arguments when neither bears on the decision."
+      },
+      "tags": [
+        "cr:true-but-irrelevant",
+        "cr:comparison-only"
+      ]
+    },
+    {
+      "key": "sg-133",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should banks be allowed to approve loans entirely through computer programs, with no human review?\n\n**Arguments:**\nI. Yes. Loans can be approved within minutes, and every applicant will be judged by the same rules.\nII. No. Errors or hidden biases in a program can wrongly reject large numbers of deserving applicants, and with no human review there is nobody to correct the mistakes.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is strong: speed and uniform treatment are important, direct benefits of automated approval.",
+          "II is strong: large-scale wrong rejections with no correction are a serious, direct risk of removing human review.",
+          "Answer: Both I and II are strong."
+        ],
+        "trap": "Both sides are specific to the proposal; neither is a generalisation."
+      },
+      "tags": [
+        "cr:strong-benefit",
+        "cr:strong-cost"
+      ]
+    },
+    {
+      "key": "sg-134",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should the hill town build a ropeway up to the old fort?\n\n**Arguments:**\nI. Yes. The ropeway will draw many more tourists to the fort and raise the income of local people.\nII. No. The ropeway will not draw any more tourists to the fort, since the fort already receives the maximum number of visitors allowed each day.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each argument, if true, is decisive, since the ropeway is meant to bring more visitors.",
+          "But I says it will bring more tourists and II says it cannot; both cannot be true. Hence either I or II is strong.",
+          "Answer: Either I or II is strong."
+        ],
+        "trap": "II's reason directly denies I's claim, so the two arguments exclude each other."
+      },
+      "tags": [
+        "cr:complementary-pair"
+      ]
+    },
+    {
+      "key": "sg-135",
+      "subtype": "two-arguments",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Should the state merge its three loss-making road transport corporations into one?\n\n**Arguments:**\nI. Yes. Large organisations always run more efficiently than small ones.\nII. No. Each corporation has its own logo and colour scheme for its buses.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is weak: \"always\" makes it a false generalisation; large organisations can also be inefficient.",
+          "II is weak: logos and colours are trivial and can easily be changed.",
+          "Answer: Neither I nor II is strong."
+        ],
+        "trap": "The strong \"Yes\" (savings from shared depots and staff) is not what I says."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:trivial"
+      ]
+    },
+    {
+      "key": "sg-136",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** Over the last three years, 70 per cent of the complaints received by a bank were about unauthorised debits through its cards used abroad, although only 2 per cent of its customers ever travel abroad. Should the bank switch off international use on all its cards by default, letting customers turn it on through its app whenever they need it?\n\n**Arguments:**\nI. Yes. It will block most of the frauds behind the bank's complaints, while the few customers who travel abroad can turn the facility on in seconds.\nII. No. Some customers may forget to switch it on before going abroad.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is strong: it uses the facts given — most complaints come from foreign use, while few customers need it — to show a large, direct benefit at little cost.",
+          "II is weak: it concerns a small group and a minor lapse that the customer can correct at any time through the app.",
+          "Answer: Only argument I is strong."
+        ],
+        "trap": "Use the figures in the statement to weigh each argument's importance."
+      },
+      "tags": [
+        "cr:strong-benefit",
+        "cr:context-based"
+      ]
+    },
+    {
+      "key": "sg-137",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** In a city, 85 per cent of the people killed in road accidents last year were riders of two-wheelers, and nine out of ten of them were not wearing helmets. Helmets are already compulsory, but the rule is rarely enforced. Should the traffic police install cameras that automatically fine riders without helmets?\n\n**Arguments:**\nI. No. Helmets are already compulsory by law.\nII. Yes. The deaths are mostly among riders without helmets, and the rule is not being enforced; automatic fines will make riders actually wear helmets and save lives.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is weak: the statement itself says the law is not enforced; a law on paper is no reason against a means of enforcing it, so I misses the point.",
+          "II is strong: it uses the facts given to show that enforcement is the gap and that the cameras close it directly.",
+          "Answer: Only argument II is strong."
+        ],
+        "trap": "I sounds like \"the problem is already solved\", but the statement shows it is not."
+      },
+      "tags": [
+        "cr:misses-point",
+        "cr:context-based"
+      ]
+    },
+    {
+      "key": "sg-138",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** The reservoir that supplies a town is now 40 per cent full, three months before the monsoon is due. Should the municipality cut the water supply to alternate days from now?\n\n**Arguments:**\nI. Yes. At the present rate of use, the stored water will run out before the monsoon arrives, leaving the town with no water at all for weeks.\nII. No. Even at the present rate of use, the stored water will last until the monsoon arrives, so cutting the supply will only cause needless hardship.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each argument, if true, decides the question, since a cut is needed only if the water will not last.",
+          "The figure of 40 per cent does not settle which is right; the two make opposite claims about whether the water will last, so only one can be true. Hence either I or II is strong.",
+          "Answer: Either I or II is strong."
+        ],
+        "trap": "Do not use the 40 per cent figure to pick a side; the statement does not give the rate of use."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:context-based"
+      ]
+    },
+    {
+      "key": "sg-139",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A survey found that 30 per cent of the villages in a state have no bank branch or banking outlet within 5 km. Should the state ask banks to open a branch in every such village?\n\n**Arguments:**\nI. Yes. A bank branch in every village will end poverty in the state.\nII. No. Most villagers already use mobile phones.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is weak: it wildly overstates the benefit; access to a bank cannot by itself end poverty.",
+          "II is weak: owning a phone is not the same as having access to banking, and the survey shows these villages lack it; II misses the point.",
+          "Answer: Neither I nor II is strong."
+        ],
+        "trap": "The real strong arguments (access to credit and savings; the cost of branches compared with cheaper outlets) appear in neither."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:misses-point"
+      ]
+    },
+    {
+      "key": "sg-140",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A state's power distribution company loses about 25 per cent of the electricity it supplies to theft and billing errors. Should it replace all household meters with prepaid smart meters?\n\n**Arguments:**\nI. Yes. Smart meters record use accurately and make tampering easier to detect, which will cut the losses from theft and billing errors.\nII. No. Poor households with irregular incomes will have their power cut off automatically whenever their balance runs out, causing serious hardship.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is strong: given the large losses stated, accurate metering and detection of theft are an important, direct benefit.",
+          "II is strong: automatic disconnection of poor households is a serious, direct consequence of the prepaid model.",
+          "Answer: Both I and II are strong."
+        ],
+        "trap": "Both arguments are tied to how prepaid smart meters actually work."
+      },
+      "tags": [
+        "cr:strong-benefit",
+        "cr:strong-cost"
+      ]
+    },
+    {
+      "key": "sg-141",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A city's metro carries 4 lakh passengers a day but runs at a loss. A survey shows that 60 per cent of its riders would stop using it if fares rose by more than 20 per cent. Should the metro raise its fares by 50 per cent to reduce its losses?\n\n**Arguments:**\nI. No. Going by the survey, such a rise could drive away most of the riders, so the metro may lose more fare income than it gains, while those riders go back to crowded roads.\nII. Yes. The metro must not run at a loss.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is strong: it uses the survey to show that the rise may defeat its own purpose and add to road traffic.",
+          "II is weak: it repeats the aim without showing that a 50 per cent rise would actually reduce the losses; given the survey, it may not.",
+          "Answer: Only argument I is strong."
+        ],
+        "trap": "Stating the goal is not the same as showing that the proposed step achieves it."
+      },
+      "tags": [
+        "cr:context-based",
+        "cr:superfluous"
+      ]
+    },
+    {
+      "key": "sg-142",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A bank finds that its mobile app is used by 80 per cent of its customers under 40 but by only 10 per cent of those above 60, most of whom still come to the branch. Should the bank close half its branches to save costs and ask customers to use the app instead?\n\n**Arguments:**\nI. Yes. Eighty per cent of the bank's customers under 40 already use the app.\nII. No. Most older customers do not use the app and still depend on the branches, so closing half of them would cut these customers off from banking services.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is weak: true, but the people who depend on branches are the older customers, so I does not address those who would be affected.",
+          "II is strong: it uses the facts given to show a serious, direct harm to a large group of customers.",
+          "Answer: Only argument II is strong."
+        ],
+        "trap": "I quotes a figure from the statement, but the wrong one for the decision."
+      },
+      "tags": [
+        "cr:true-but-irrelevant",
+        "cr:context-based"
+      ]
+    },
+    {
+      "key": "sg-143",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** Sales of a company's best-selling air cooler fell by 30 per cent this summer. Should the company cut the price of the cooler by 15 per cent next season?\n\n**Arguments:**\nI. Yes. The fall in sales was caused by a cheaper rival model, and a price cut will win the buyers back.\nII. No. The fall in sales was caused by an unusually mild summer, not by the price, so a price cut will only reduce the company's earnings.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each argument, if true, is decisive, since a price cut helps only if price was the cause of the fall.",
+          "But they give opposite causes for the same fall, and II expressly rules out price, so only one can be true. Hence either I or II is strong.",
+          "Answer: Either I or II is strong."
+        ],
+        "trap": "Opposite explanations of the same event lead to \"Either\"."
+      },
+      "tags": [
+        "cr:complementary-pair"
+      ]
+    },
+    {
+      "key": "sg-144",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A city's air quality reaches the 'severe' level on about 20 days every winter, mainly because of vehicle exhaust and construction dust. Should the city close all schools on such days?\n\n**Arguments:**\nI. Yes. Children will then get more holidays to enjoy.\nII. No. Closing schools will not reduce vehicle exhaust or construction dust.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is weak: enjoyment of holidays is a trivial benefit and not the purpose of the closure.",
+          "II is weak: closure is meant to protect children from the bad air, not to clean it, so II misses the point.",
+          "Answer: Neither I nor II is strong."
+        ],
+        "trap": "II is true but answers a question that was not asked."
+      },
+      "tags": [
+        "cr:trivial",
+        "cr:misses-point"
+      ]
+    },
+    {
+      "key": "sg-145",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A state's government schools have 18,000 teacher vacancies. The state proposes to fill them quickly by hiring teachers on one-year contracts at half the regular salary. Should it do so?\n\n**Arguments:**\nI. Yes. Many children now sit in classes with no teacher for some subjects, and contract hiring can fill the posts within months instead of the years that regular recruitment takes.\nII. No. Teachers on short, low-paid contracts tend to leave at the first better offer, and frequent changes of teachers will harm the continuity of teaching.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is strong: given the large number of vacancies, filling them quickly is important and directly achieved by contract hiring.",
+          "II is strong: high turnover and broken continuity are a serious, direct consequence of short, low-paid contracts.",
+          "Answer: Both I and II are strong."
+        ],
+        "trap": "Both arguments concern children's learning, from opposite sides."
+      },
+      "tags": [
+        "cr:strong-benefit",
+        "cr:strong-cost"
+      ]
+    },
+    {
+      "key": "sg-146",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** In a district, 40 per cent of farmers' crop-loan applications are rejected because their land records have not been updated after inheritance. Should the district administration hold special camps in every village to update land records?\n\n**Arguments:**\nI. Yes. Updating the records on the spot will remove the main reason for loan rejections and let these farmers get bank credit instead of borrowing from moneylenders.\nII. No. Land records are kept by the revenue department, not by banks.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is strong: it uses the facts given to show that the camps directly remove the main cause of rejection, an important benefit.",
+          "II is weak: true, but the camps are to be held by the district administration, which oversees the revenue department; who keeps the records does not argue against updating them.",
+          "Answer: Only argument I is strong."
+        ],
+        "trap": "A true fact about who is responsible is not a reason against the action."
+      },
+      "tags": [
+        "cr:context-based",
+        "cr:true-but-irrelevant"
+      ]
+    },
+    {
+      "key": "sg-147",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A state examination board found that the marks on 5 per cent of the answer sheets were wrongly totalled last year. Should the board let every student see a scanned copy of their evaluated answer sheet online?\n\n**Arguments:**\nI. No. The marks on 95 per cent of the answer sheets were totalled correctly.\nII. Yes. Students will be able to spot totalling and evaluation errors themselves and seek correction, which matters greatly when admissions depend on marks.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is weak: true, but 5 per cent of a state's answer sheets is a large number of students, each of whom suffers from the error; the high accuracy rate does not show the step is unnecessary.",
+          "II is strong: it shows a direct and important benefit to affected students.",
+          "Answer: Only argument II is strong."
+        ],
+        "trap": "A small percentage of a large total can still be a serious problem."
+      },
+      "tags": [
+        "cr:true-but-irrelevant",
+        "cr:strong-benefit"
+      ]
+    },
+    {
+      "key": "sg-148",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A city plans to widen a 3-km stretch of its main entry road, which will require cutting 400 old trees. Should it go ahead with the widening?\n\n**Arguments:**\nI. Yes. Widening the stretch will clear the daily jams on the city's main entry road, which now delay thousands of commuters.\nII. No. Widening the stretch will not clear the jams, because they are caused by a narrow railway underpass at its end, which will remain as it is.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Each argument, if true, decides the question: the trees are worth cutting only if widening actually clears the jams.",
+          "But they make opposite claims about whether widening will clear the jams, so only one can be true. Hence either I or II is strong.",
+          "Answer: Either I or II is strong."
+        ],
+        "trap": "The loss of trees is given in the statement, but neither argument relies on it; the clash is about the effect of widening."
+      },
+      "tags": [
+        "cr:complementary-pair"
+      ]
+    },
+    {
+      "key": "sg-149",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** A bank's survey shows that most customers who stopped using its credit cards did so because of the high annual fee. Should the bank stop charging an annual fee on its credit cards?\n\n**Arguments:**\nI. Yes. A rival bank that dropped its annual fee last year now has more card customers than any other bank.\nII. No. The bank has charged an annual fee ever since it launched its cards.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is weak: one rival's success is a single example, and it does not show that dropping the fee caused it.",
+          "II is weak: long practice is an appeal to tradition, not a reason to keep the fee.",
+          "Answer: Neither I nor II is strong."
+        ],
+        "trap": "The survey in the statement could support a strong \"Yes\", but I does not use it."
+      },
+      "tags": [
+        "cr:example-only",
+        "cr:tradition"
+      ]
+    },
+    {
+      "key": "sg-150",
+      "subtype": "two-arguments",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** Online fraud complaints rose sharply last year, and most of the stolen money passed through bank accounts that their owners had rented out to fraudsters. Should banks be required to freeze any account that receives money flagged in a fraud complaint until the complaint is investigated?\n\n**Arguments:**\nI. Yes. Freezing the account at once stops the stolen money from being moved on quickly, which improves the chance of returning it to the victim.\nII. No. Investigations can take months, and innocent account holders who received flagged money unknowingly, such as shopkeepers paid through a fraud chain, will be unable to use their own savings all that time.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "options": [
+        "Only argument I is strong",
+        "Only argument II is strong",
+        "Either I or II is strong",
+        "Neither I nor II is strong",
+        "Both I and II are strong"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is strong: stopping stolen money from moving is an important, direct benefit for fraud victims.",
+          "II is strong: freezing innocent people's savings for months is a serious, direct harm of a blanket rule.",
+          "Answer: Both I and II are strong."
+        ],
+        "trap": "Both arguments are specific and weighty; they call for safeguards in the rule."
+      },
+      "tags": [
+        "cr:strong-benefit",
+        "cr:strong-cost"
+      ]
     }
   ]
 }

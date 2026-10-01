@@ -1271,7 +1271,7 @@
       "key": "ca-052",
       "subtype": "two-actions",
       "difficulty": "easy",
-      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A few vendors at a weekly market in Indore were found using plastic carry bags that the city has banned.\n\n**Courses of action:**\nI. The weekly market should be shut down permanently.\nII. Every vendor at the market should be fined, whether or not he was found using plastic bags.",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A few vendors at a weekly market in Indore were found using plastic carry bags that the city has banned.\n\n**Courses of action:**\nI. The weekly market should be shut down permanently.\nII. Every vendor at the market should be fined, whether or not they were found using plastic bags.",
       "options": [
         "Only I follows",
         "Only II follows",
@@ -1892,7 +1892,7 @@
       "key": "ca-077",
       "subtype": "two-actions",
       "difficulty": "medium",
-      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Students of a college in Patna complain that the college library closes at 5 p.m., before many of them have finished their classes.\n\n**Courses of action:**\nI. The library should remain open until later in the evening.\nII. The college should give its students online access to e-books and journals.",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** Students of a college in Patna complain that they cannot use the books and journals they need because the college library closes at 5 p.m., before many of them have finished their classes.\n\n**Courses of action:**\nI. The library should remain open until later in the evening.\nII. The college should give its students online access to e-books and journals.",
       "options": [
         "Only I follows",
         "Only II follows",
@@ -1903,7 +1903,7 @@
       "answerIndex": 4,
       "solution": {
         "steps": [
-          "I follows: longer hours let students use the library after classes.",
+          "I follows: longer hours let students use the library's books and journals after classes.",
           "II follows: online access lets them read whenever they are free, even after the library closes. Both widen access and can be done together."
         ],
         "trap": "II is not a substitute for I: not every book is available online, so both steps help."

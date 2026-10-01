@@ -1912,6 +1912,637 @@
         "template:staggered-start",
         "pipes:staggered"
       ]
+    },
+    {
+      "key": "pp-076",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Pipes A and B can fill a tank in 16 hours and 48 hours respectively. Both are opened together on the empty tank. When the tank is half full, a leak develops that alone could empty the full tank in 24 hours. In how many hours, from the start, will the tank be full?",
+      "options": [
+        "12 hours",
+        "15 hours",
+        "16 hours",
+        "18 hours",
+        "24 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "A + B = 1/16 + 1/48 = 4/48 = 1/12 per hour → the first half takes 6 hours.",
+          "With the leak: 1/12 − 1/24 = 1/24 per hour → the second half takes 12 hours.",
+          "Total = 6 + 12 = 18 hours."
+        ],
+        "trap": "24 hours assumes the leak was there from the start; it began only at the halfway mark."
+      },
+      "tags": [
+        "template:leak-midway",
+        "pipes:leak"
+      ]
+    },
+    {
+      "key": "pp-077",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Pipe A can fill a tank in 20 minutes. Pipe B is only half as efficient as A. If both are opened together on the empty tank, how long will they take to fill it?",
+      "options": [
+        "10 minutes",
+        "$13\\frac{1}{3}$ minutes",
+        "15 minutes",
+        "30 minutes",
+        "60 minutes"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Half as efficient → B takes 40 minutes.",
+          "Together = 1/20 + 1/40 = 3/40 per minute → 40/3 = $13\\frac{1}{3}$ minutes."
+        ],
+        "trap": "10 minutes treats B as being as fast as A; 30 minutes averages 20 and 40 minutes."
+      },
+      "tags": [
+        "template:efficiency-ratio",
+        "pipes:efficiency"
+      ]
+    },
+    {
+      "key": "pp-078",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pipe A takes 2 hours less than pipe B to fill a tank on its own. Working together, the two pipes fill the tank in 2 hours 24 minutes. How long would B alone take to fill the tank?",
+      "options": [
+        "4 hours",
+        "5 hours",
+        "6 hours",
+        "8 hours",
+        "10 hours"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "2 hours 24 minutes = 2.4 = 12/5 hours. Let B take x hours, A (x − 2): 1/(x − 2) + 1/x = 5/12.",
+          "Testing the options: x = 6 → 1/4 + 1/6 = 5/12 ✓. So B takes 6 hours (A takes 4)."
+        ],
+        "shortcut": "Check the options directly: only x = 6 makes 1/(x − 2) + 1/x equal 5/12.",
+        "trap": "4 hours is A's time; B is the slower pipe, so its time is the larger root."
+      },
+      "tags": [
+        "template:efficiency-ratio",
+        "pipes:efficiency"
+      ]
+    },
+    {
+      "key": "pp-079",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The efficiencies of inlet pipes A and B are in the ratio 5 : 3, and A alone can fill a tank in 12 hours. When an outlet pipe C is opened along with A and B, the empty tank fills in 20 hours. How long would C alone take to empty the full tank?",
+      "options": [
+        "12 hours",
+        "15 hours",
+        "20 hours",
+        "24 hours",
+        "30 hours"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let A fill 5 and B 3 units per hour → tank = 5 × 12 = 60 units.",
+          "With C open the net rate is 60 ÷ 20 = 3 units per hour → C removes 8 − 3 = 5 units per hour.",
+          "C alone empties 60 units in 12 hours."
+        ],
+        "trap": "20 hours takes the net rate (3 units per hour) as C's rate; C's rate is what A and B lose to it, 8 − 3 = 5 units per hour."
+      },
+      "tags": [
+        "template:efficiency-ratio",
+        "pipes:efficiency"
+      ]
+    },
+    {
+      "key": "pp-080",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 3,000-litre tank is one-quarter full. An inlet pipe pours in 25 litres per minute, but an outlet pipe at the bottom drains 10 litres per minute. If both are open, how long will it take for the tank to be full?",
+      "options": [
+        "2 hours 30 minutes",
+        "2 hours 50 minutes",
+        "3 hours 20 minutes",
+        "3 hours 40 minutes",
+        "4 hours 10 minutes"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Water still needed = 3/4 × 3,000 = 2,250 litres. Net inflow = 25 − 10 = 15 litres per minute.",
+          "Time = 2,250 ÷ 15 = 150 minutes = 2 hours 30 minutes."
+        ],
+        "trap": "3 hours 20 minutes (200 minutes) fills all 3,000 litres; a quarter of the tank is already full."
+      },
+      "tags": [
+        "template:partly-full",
+        "pipes:capacity"
+      ]
+    },
+    {
+      "key": "pp-081",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Pipe A pours 4 litres per minute more water than pipe B, and A alone fills a 480-litre tank 10 minutes faster than B alone. How long does B alone take to fill the tank?",
+      "options": [
+        "24 minutes",
+        "30 minutes",
+        "32 minutes",
+        "36 minutes",
+        "40 minutes"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let B pour b litres per minute: 480/b − 480/(b + 4) = 10 → b(b + 4) = 192 → b = 12.",
+          "B alone = 480 ÷ 12 = 40 minutes (A pours 16 litres per minute and takes 30 minutes)."
+        ],
+        "shortcut": "Test the options: 40 minutes → 12 L/min for B, 16 L/min for A → 30 minutes, exactly 10 less ✓.",
+        "trap": "30 minutes is A's time; B is the slower pipe, 10 minutes behind A."
+      },
+      "tags": [
+        "template:capacity-litres",
+        "pipes:capacity"
+      ]
+    },
+    {
+      "key": "pp-082",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two inlet pipes pour 150 litres and 120 litres of water per hour into a 3,600-litre tank. With an outlet pipe also open, the empty tank fills in 20 hours. How long would the outlet alone take to empty the full tank?",
+      "options": [
+        "20 hours",
+        "40 hours",
+        "45 hours",
+        "48 hours",
+        "60 hours"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Net inflow = 3,600 ÷ 20 = 180 litres per hour → outlet drains 270 − 180 = 90 litres per hour.",
+          "Outlet alone empties 3,600 litres in 3,600 ÷ 90 = 40 hours."
+        ],
+        "trap": "20 hours is the filling time with all three pipes; the outlet's own rate is 90 litres per hour, not 180."
+      },
+      "tags": [
+        "template:capacity-litres",
+        "pipes:capacity"
+      ]
+    },
+    {
+      "key": "pp-083",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Inlet pipe A pours 50 litres per minute into a tank and outlet pipe C drains 20 litres per minute. With A and C open, the empty tank fills in 2 hours; with A and inlet pipe B open (C shut), it fills in 40 minutes. How long would B and C together take to fill the empty tank?",
+      "options": [
+        "$1\\frac{1}{2}$ hours",
+        "$2\\frac{1}{4}$ hours",
+        "$2\\frac{1}{2}$ hours",
+        "3 hours",
+        "4 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Capacity = (50 − 20) × 120 = 3,600 litres. A + B = 3,600 ÷ 40 = 90 litres per minute → B = 40 litres per minute.",
+          "B and C together: 40 − 20 = 20 litres per minute → 3,600 ÷ 20 = 180 minutes = 3 hours."
+        ],
+        "trap": "$1\\frac{1}{2}$ hours is B alone (3,600 ÷ 40 = 90 minutes); with C open the net inflow halves to 20 litres per minute."
+      },
+      "tags": [
+        "template:capacity-litres",
+        "pipes:capacity"
+      ]
+    },
+    {
+      "key": "pp-084",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Two taps pour 25 litres and 35 litres of water per minute into an empty 2,700-litre tank, while a drain pipe lets out 15 litres per minute. How long will it take to fill the tank?",
+      "options": [
+        "36 minutes",
+        "40 minutes",
+        "45 minutes",
+        "54 minutes",
+        "60 minutes"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Net inflow = 25 + 35 − 15 = 45 litres per minute.",
+          "Time = 2,700 ÷ 45 = 60 minutes."
+        ],
+        "trap": "45 minutes ignores the drain (2,700 ÷ 60); the drain's 15 litres per minute must be taken off."
+      },
+      "tags": [
+        "template:capacity-litres",
+        "pipes:capacity"
+      ]
+    },
+    {
+      "key": "pp-085",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pipe A alone fills a tank in 16 hours; with pipe B also open, the tank fills in 4 hours less. If pipe C, which alone can fill the tank in 24 hours, is opened along with A and B, how much time is saved compared with A working alone?",
+      "options": [
+        "4 hours",
+        "5 hours",
+        "6 hours",
+        "7 hours",
+        "8 hours"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "A + B take 16 − 4 = 12 hours → 1/12 per hour. Adding C: 1/12 + 1/24 = 3/24 = 1/8 per hour → 8 hours.",
+          "Saved compared with A alone = 16 − 8 = 8 hours."
+        ],
+        "trap": "4 hours is the saving over A and B together (12 − 8); the question compares with A alone."
+      },
+      "tags": [
+        "template:third-pipe-saving",
+        "pipes:third-pipe"
+      ]
+    },
+    {
+      "key": "pp-086",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pipes A and B can fill a tank in 16 hours and 24 hours respectively. B is opened first on the empty tank and A is opened later; both then run until the tank is full. If the tank is full exactly 12 hours after B was opened, how many hours after B was A opened?",
+      "options": [
+        "4 hours",
+        "5 hours",
+        "6 hours",
+        "8 hours",
+        "9 hours"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "B runs all 12 hours → 12/24 = 1/2 of the tank.",
+          "A must fill the other half → 8 hours of running, so A is opened 12 − 8 = 4 hours after B."
+        ],
+        "trap": "8 hours is how long A runs, not when it is opened."
+      },
+      "tags": [
+        "template:turn-off-deadline",
+        "pipes:deadline"
+      ]
+    },
+    {
+      "key": "pp-087",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A tank is five-eighths full. An outlet pipe can empty the full tank in 16 hours, and an inlet pipe can fill the empty tank in 24 hours. If both are opened together, in how many hours will the tank be empty?",
+      "options": [
+        "10 hours",
+        "18 hours",
+        "24 hours",
+        "30 hours",
+        "48 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Net emptying rate = 1/16 − 1/24 = 1/48 per hour (a full tank would take 48 hours).",
+          "Five-eighths of the tank → 5/8 × 48 = 30 hours."
+        ],
+        "trap": "48 hours empties a full tank; 10 hours ignores the inlet (5/8 × 16)."
+      },
+      "tags": [
+        "template:partly-full",
+        "pipes:partly-full"
+      ]
+    },
+    {
+      "key": "pp-088",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "If pipe A runs for 4 hours and pipe B for 3 hours, half of a tank is filled. If A runs for 2 hours and B for 9 hours, two-thirds of the tank is filled. In how many hours can A and B together fill the tank?",
+      "options": [
+        "6 hours",
+        "$7\\frac{1}{5}$ hours",
+        "8 hours",
+        "9 hours",
+        "12 hours"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "4a + 3b = 1/2 and 2a + 9b = 2/3. Doubling the second: 4a + 18b = 4/3 → 15b = 5/6 → b = 1/18.",
+          "4a = 1/2 − 1/6 = 1/3 → a = 1/12. Together = 1/12 + 1/18 = 5/36 per hour → 36/5 = 7.2 hours."
+        ],
+        "trap": "12 hours is A's time alone; the question asks for both pipes together."
+      },
+      "tags": [
+        "template:two-scenarios",
+        "pipes:simultaneous"
+      ]
+    },
+    {
+      "key": "pp-089",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Pipes A and B can fill a tank in 12 hours and 18 hours respectively. B is opened on the empty tank at 9:00 a.m. and A is opened at 11:00 a.m. At what time will the tank be full?",
+      "options": [
+        "5:24 p.m.",
+        "5:36 p.m.",
+        "6:00 p.m.",
+        "6:12 p.m.",
+        "6:24 p.m."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Tank = 36 units: A 3, B 2 units per hour. From 9 to 11 a.m. B alone fills 4 units.",
+          "Remaining 32 units at 5 units per hour = 6.4 hours = 6 hours 24 minutes → 11:00 a.m. + 6 h 24 min = 5:24 p.m."
+        ],
+        "trap": "6:12 p.m. adds the full joint time (7.2 hours) to 11:00 a.m., ignoring the 4 units B poured in alone before 11:00 a.m."
+      },
+      "tags": [
+        "template:staggered-start",
+        "pipes:staggered"
+      ]
+    },
+    {
+      "key": "pp-090",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Pipes A and B can fill a tank in 10 hours and 15 hours respectively, and pipe C can empty the full tank in 12 hours. A and B are opened together on the empty tank, and C is opened when the tank is half full. In how many hours, from the start, will the tank be full?",
+      "options": [
+        "6 hours",
+        "$7\\frac{1}{2}$ hours",
+        "8 hours",
+        "9 hours",
+        "12 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Tank = 60 units: A +6, B +4, C −5. First half (30 units) at 10 per hour = 3 hours.",
+          "Second half at 6 + 4 − 5 = 5 units per hour = 6 hours. Total = 3 + 6 = 9 hours."
+        ],
+        "trap": "12 hours keeps C open from the start (60 ÷ 5); C is opened only at the halfway mark."
+      },
+      "tags": [
+        "template:staggered-start",
+        "pipes:staggered"
+      ]
+    },
+    {
+      "key": "pp-091",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Pipes A and B can fill a tank in 20 minutes and 30 minutes respectively. Both are opened together until the tank is full. In what ratio is the water poured in by A and by B?",
+      "options": [
+        "3 : 2",
+        "2 : 3",
+        "3 : 5",
+        "5 : 3",
+        "1 : 1"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Both run for the same time, so the water poured is in the ratio of the rates: 1/20 : 1/30 = 3 : 2."
+        ],
+        "trap": "2 : 3 is the ratio of the times; the faster pipe A pours more water, so the ratio is reversed."
+      },
+      "tags": [
+        "template:share-of-water",
+        "pipes:share"
+      ]
+    },
+    {
+      "key": "pp-092",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Pipes A, B and C can fill a tank in 10 hours, 15 hours and 30 hours respectively. If all three are opened together on the empty tank, what fraction of the tank will have been filled by B when the tank is full?",
+      "options": [
+        "$\\frac{1}{6}$",
+        "$\\frac{1}{5}$",
+        "$\\frac{1}{4}$",
+        "$\\frac{2}{7}$",
+        "$\\frac{1}{3}$"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Tank = 30 units: A 3, B 2, C 1 unit per hour → full in 30 ÷ 6 = 5 hours.",
+          "B pours 2 × 5 = 10 units = 10/30 = 1/3 of the tank."
+        ],
+        "trap": "$\\frac{1}{6}$ is C's share; B, the middle pipe, gives 2 of every 6 units."
+      },
+      "tags": [
+        "template:share-of-water",
+        "pipes:share"
+      ]
+    },
+    {
+      "key": "pp-093",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pipes A and B can fill a 1,260-litre tank in 6 hours and 8 hours respectively, and pipe C can empty the full tank in 12 hours. All three are opened together on the empty tank and left open until it is full. How many litres of water flow out through C during this time?",
+      "options": [
+        "280 litres",
+        "360 litres",
+        "420 litres",
+        "504 litres",
+        "630 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Tank = 24 units: A +4, B +3, C −2 → net 5 units per hour → full in 24/5 = 4.8 hours.",
+          "C drains 1,260 ÷ 12 = 105 litres per hour → 105 × 4.8 = 504 litres."
+        ],
+        "trap": "280 litres takes C's share as 2/9 of the tank, as if C were a third inlet; C drains for the full 4.8 hours, and A and B pour in 1,260 + 504 litres in all."
+      },
+      "tags": [
+        "template:share-of-water",
+        "pipes:share"
+      ]
+    },
+    {
+      "key": "pp-094",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pipes A and B can fill a tank in 12 hours and 16 hours respectively. Both are opened together on the empty tank; after 3 hours A is closed and B fills the rest. What is the ratio of the water poured in by A to that poured in by B?",
+      "options": [
+        "1 : 3",
+        "3 : 1",
+        "1 : 2",
+        "4 : 3",
+        "3 : 4"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Tank = 48 units: A 4, B 3 units per hour. In 3 hours A pours 12 units and B 9 units.",
+          "B fills the remaining 48 − 21 = 27 units as well → B's total = 36 units. A : B = 12 : 36 = 1 : 3."
+        ],
+        "trap": "4 : 3 is the ratio of the rates, which holds only while both run; 3 : 1 is the answer reversed."
+      },
+      "tags": [
+        "template:share-of-water",
+        "pipes:share"
+      ]
+    },
+    {
+      "key": "pp-095",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A pipe normally fills a tank in 9 hours, but because of a leak it now takes 12 hours. If the tank is full and the pipe is closed, how long will the leak take to bring the water down to one-quarter of the tank?",
+      "options": [
+        "18 hours",
+        "27 hours",
+        "30 hours",
+        "32 hours",
+        "36 hours"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Leak = 1/9 − 1/12 = 1/36 per hour → it empties the full tank in 36 hours.",
+          "Going down to one-quarter means draining 3/4 of the tank → 3/4 × 36 = 27 hours."
+        ],
+        "trap": "36 hours empties the whole tank; 9 hours drains only one-quarter. The leak must remove three-quarters."
+      },
+      "tags": [
+        "template:leak-rate",
+        "pipes:leak"
+      ]
+    },
+    {
+      "key": "pp-096",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A pipe can fill a tank in 8 hours. By mistake, an outlet that can empty the full tank in 24 hours was left open when filling began. The mistake was noticed after 6 hours and the outlet was shut. In how many hours, in all, was the tank filled?",
+      "options": [
+        "10 hours",
+        "$10\\frac{1}{2}$ hours",
+        "11 hours",
+        "$11\\frac{1}{2}$ hours",
+        "12 hours"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "With the outlet open: 1/8 − 1/24 = 1/12 per hour → in 6 hours, 1/2 of the tank.",
+          "The other half with the pipe alone = 1/2 × 8 = 4 hours. Total = 6 + 4 = 10 hours."
+        ],
+        "trap": "12 hours keeps the outlet open throughout; it was shut after 6 hours."
+      },
+      "tags": [
+        "template:outlet-left-open",
+        "pipes:outlet-open"
+      ]
+    },
+    {
+      "key": "pp-097",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pipes A and B can fill a tank in 10 hours and 15 hours respectively. One day, the tank's outlet pipe was left open for the first 4 hours of filling and then shut, and the tank took 7 hours in all to fill. How long would the outlet alone take to empty the full tank?",
+      "options": [
+        "18 hours",
+        "20 hours",
+        "24 hours",
+        "36 hours",
+        "42 hours"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A + B fill 1/10 + 1/15 = 1/6 per hour, so in 7 hours they pour in 7/6 of the tank.",
+          "The outlet drained the extra 1/6 of the tank in 4 hours → it empties the full tank in 24 hours."
+        ],
+        "trap": "42 hours treats the outlet as open for all 7 hours (7 × 6); it was open only for the first 4."
+      },
+      "tags": [
+        "template:outlet-left-open",
+        "pipes:outlet-open"
+      ]
+    },
+    {
+      "key": "pp-098",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Pipes A and B, which can fill a tank in 12 hours and 18 hours respectively, are normally opened together to fill it. One day an outlet pipe that can empty the full tank in 12 hours was left open for the first 3 hours and then shut. How much later than usual was the tank full that day?",
+      "options": [
+        "1 hour 12 minutes",
+        "1 hour 20 minutes",
+        "1 hour 30 minutes",
+        "1 hour 36 minutes",
+        "1 hour 48 minutes"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Usual time: 1/12 + 1/18 = 5/36 per hour → 36/5 = 7.2 hours.",
+          "In 3 hours the outlet drains 3/12 = 1/4 of the tank; refilling that quarter at 5/36 per hour takes 1/4 × 36/5 = 1.8 hours.",
+          "So the tank was full 1.8 hours = 1 hour 48 minutes late (9 hours instead of 7.2)."
+        ],
+        "shortcut": "Delay = water lost ÷ normal filling rate = (3/12) ÷ (5/36).",
+        "trap": "1 hour 12 minutes compares the 6 hours after the outlet was shut with the usual 7.2 hours and forgets the first 3 hours."
+      },
+      "tags": [
+        "template:outlet-left-open",
+        "pipes:outlet-open"
+      ]
+    },
+    {
+      "key": "pp-099",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pipe A can fill a tank in 4 hours. Filling began with an outlet pipe accidentally left open; when the tank was half full the outlet was noticed and shut, and the tank was full 6 hours after the start. How long would the outlet alone take to empty the full tank?",
+      "options": [
+        "5 hours",
+        "6 hours",
+        "$6\\frac{2}{3}$ hours",
+        "$7\\frac{1}{2}$ hours",
+        "8 hours"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The second half, with A alone, took 1/2 × 4 = 2 hours, so the first half took 6 − 2 = 4 hours → net rate = 1/8 per hour.",
+          "Outlet = 1/4 − 1/8 = 1/8 per hour → it empties the full tank in 8 hours."
+        ],
+        "trap": "6 hours is the total filling time that day, not the outlet's time; the outlet rate comes from the first half alone."
+      },
+      "tags": [
+        "template:outlet-left-open",
+        "pipes:outlet-open"
+      ]
+    },
+    {
+      "key": "pp-100",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "An outlet pipe can empty a full tank in 12 hours and an inlet pipe can fill the empty tank in 18 hours. The outlet is opened on the full tank, and 3 hours later the inlet is also opened by mistake. In how many hours, from the start, will the tank be empty?",
+      "options": [
+        "18 hours",
+        "21 hours",
+        "24 hours",
+        "27 hours",
+        "30 hours"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "In the first 3 hours the outlet drains 3/12 = 1/4 → 3/4 of the tank is left.",
+          "Then the net rate is 1/12 − 1/18 = 1/36 per hour → 3/4 × 36 = 27 hours.",
+          "Total = 3 + 27 = 30 hours."
+        ],
+        "trap": "27 hours is only the time after the inlet was opened; the first 3 hours must be added."
+      },
+      "tags": [
+        "template:empty-full-tank",
+        "pipes:net-emptying"
+      ]
     }
   ]
 }

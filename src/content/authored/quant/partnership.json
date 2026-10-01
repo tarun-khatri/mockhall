@@ -1,0 +1,2522 @@
+{
+  "chapter": "partnership",
+  "version": 1,
+  "items": [
+    {
+      "key": "pt-001",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Ankit started a printing shop with ₹18,000. After 4 months, Pooja joined him with some capital. At the end of the year, the profit was shared between Ankit and Pooja in the ratio 9 : 4. How much did Pooja invest?",
+      "options": [
+        "₹8,000",
+        "₹10,000",
+        "₹12,000",
+        "₹13,500",
+        "₹24,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Ankit: 18,000 × 12 = 2,16,000. Pooja was in for 12 − 4 = 8 months.",
+          "Pooja × 8 = 2,16,000 × 4/9 = 96,000 → Pooja = 96,000 ÷ 8 = ₹12,000."
+        ],
+        "trap": "₹8,000 divides 96,000 by 12 months and ₹24,000 divides by 4; Pooja's money worked for 8 months."
+      },
+      "tags": [
+        "template:join-late-capital",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Farhan, Gauri and Hemant started a cloud kitchen with ₹20,000, ₹30,000 and ₹25,000 respectively. Gauri took out her entire capital after some months, while the other two stayed for the whole year. Out of the annual profit of ₹39,000, Gauri received ₹12,000. After how many months did Gauri leave?",
+      "options": [
+        "4 months",
+        "6 months",
+        "7 months",
+        "8 months",
+        "9 months"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Farhan + Hemant = 20,000 × 12 + 25,000 × 12 = 5,40,000, and they got 39,000 − 12,000 = ₹27,000.",
+          "Gauri's capital × time = 5,40,000 × 12,000/27,000 = 2,40,000 → months = 2,40,000 ÷ 30,000 = 8."
+        ],
+        "trap": "4 months is 12 − 8, the part of the year after she left; her share measures the months she stayed."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-003",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Isha and Jatin opened a stationery store with ₹25,000 and ₹35,000 respectively. Isha manages the store and first takes 10% of the annual profit as a management fee; the rest is divided in the ratio of their capitals. If the annual profit is ₹48,000, what is Isha's total income from the store?",
+      "options": [
+        "₹18,000",
+        "₹20,000",
+        "₹22,800",
+        "₹24,000",
+        "₹24,800"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Fee = 10% of 48,000 = ₹4,800; the remaining ₹43,200 is split 25 : 35 = 5 : 7.",
+          "Isha's capital share = 43,200 × 5/12 = ₹18,000 → total = 18,000 + 4,800 = ₹22,800."
+        ],
+        "trap": "₹24,800 splits the whole ₹48,000 in 5 : 7 and then adds the fee; the fee comes out before the split. ₹18,000 forgets to add the fee back."
+      },
+      "tags": [
+        "template:working-partner-pct",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-004",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Kavya and Lokesh started a business with ₹20,000 and ₹30,000 respectively. After 6 months, Kavya put in another ₹10,000. Out of the year's profit of ₹22,000, what is Kavya's share?",
+      "options": [
+        "₹8,800",
+        "₹10,000",
+        "₹11,000",
+        "₹12,000",
+        "₹13,200"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Kavya: 20,000 × 6 + 30,000 × 6 = 3,00,000; Lokesh: 30,000 × 12 = 3,60,000 → 5 : 6.",
+          "Kavya's share = 22,000 × 5/11 = ₹10,000."
+        ],
+        "trap": "₹8,800 ignores the extra ₹10,000 and splits 2 : 3; ₹11,000 is simply half."
+      },
+      "tags": [
+        "template:mid-year-change",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-005",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Manoj started a tiffin service with ₹18,000. Nandini joined him after 3 months with ₹24,000, and Omkar joined after 6 months with ₹30,000. At the end of the year, Manoj's share of the profit was ₹1,800 more than Omkar's. What was the total profit?",
+      "options": [
+        "₹10,800",
+        "₹25,500",
+        "₹27,200",
+        "₹28,800",
+        "₹30,600"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Manoj 18,000 × 12 = 2,16,000; Nandini 24,000 × 9 = 2,16,000; Omkar 30,000 × 6 = 1,80,000 → 6 : 6 : 5.",
+          "Manoj − Omkar = 1 part = ₹1,800 → total = 17 × 1,800 = ₹30,600."
+        ],
+        "trap": "₹10,800 uses the capitals alone (3 : 4 : 5, in which Omkar would even get more); the joining months change the ratio."
+      },
+      "tags": [
+        "template:share-difference-total",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-006",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Pallavi and Qasim started a business together. Pallavi took out her whole capital after 8 months, while Qasim stayed for the full year. If the year's profit was divided between them in the ratio 4 : 9, what was the ratio of their capitals (Pallavi : Qasim)?",
+      "options": [
+        "2 : 3",
+        "4 : 9",
+        "8 : 27",
+        "3 : 2",
+        "1 : 2"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Capital ∝ profit ÷ time: Pallavi = 4/8 = 1/2, Qasim = 9/12 = 3/4.",
+          "Ratio = 1/2 : 3/4 = 2 : 3."
+        ],
+        "trap": "4 : 9 takes the profit ratio as the capital ratio and 3 : 2 is the reverse; Pallavi's shorter stay means her capital is larger relative to her profit."
+      },
+      "tags": [
+        "template:capital-ratio-from-leave",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-007",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rahul and Sameer ran a courier franchise with capitals of ₹30,000 and ₹20,000. The first year's profit of ₹15,000 was shared in the ratio of their capitals; Rahul added his entire share to his capital, while Sameer took his share home. In the second year the profit was ₹29,500. What was Rahul's share of it?",
+      "options": [
+        "₹10,000",
+        "₹17,700",
+        "₹18,500",
+        "₹19,500",
+        "₹20,500"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Year 1 split 3 : 2 → Rahul gets ₹9,000, so his capital becomes ₹39,000; Sameer stays at ₹20,000.",
+          "Year 2 ratio = 39 : 20 → Rahul = 29,500 × 39/59 = ₹19,500."
+        ],
+        "trap": "₹17,700 keeps the old 3 : 2 ratio for year 2; Rahul's reinvested ₹9,000 changes the capitals."
+      },
+      "tags": [
+        "template:reinvestment-split",
+        "partnership:reinvestment"
+      ]
+    },
+    {
+      "key": "pt-008",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Tara, Uday and Varun started a business with ₹24,000, ₹30,000 and ₹36,000 respectively. After 4 months Tara added ₹6,000, and after 8 months Varun withdrew ₹12,000. Out of the annual profit of ₹67,500, what is Varun's share?",
+      "options": [
+        "₹21,000",
+        "₹22,500",
+        "₹24,000",
+        "₹25,500",
+        "₹27,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Tara: 24,000 × 4 + 30,000 × 8 = 3,36,000; Uday: 30,000 × 12 = 3,60,000; Varun: 36,000 × 8 + 24,000 × 4 = 3,84,000.",
+          "Ratio 336 : 360 : 384 = 14 : 15 : 16 (45 parts) → Varun = 67,500 × 16/45 = ₹24,000."
+        ],
+        "trap": "₹27,000 ignores both changes (24 : 30 : 36); ₹22,500 is Uday's share."
+      },
+      "tags": [
+        "template:two-changes",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-009",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Waseem, Yamini and Zubin started a business with ₹30,000, ₹30,000 and ₹40,000 respectively. After 6 months, Waseem left the business and, at the same time, Yamini withdrew one-third of her capital. Zubin stayed for the whole year. Out of the annual profit of ₹40,800, what is Yamini's share?",
+      "options": [
+        "₹7,650",
+        "₹10,200",
+        "₹12,750",
+        "₹13,600",
+        "₹14,400"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Waseem: 30,000 × 6 = 1,80,000; Yamini: 30,000 × 6 + 20,000 × 6 = 3,00,000; Zubin: 40,000 × 12 = 4,80,000.",
+          "Ratio 18 : 30 : 48 = 3 : 5 : 8 (16 parts) → Yamini = 40,800 × 5/16 = ₹12,750."
+        ],
+        "trap": "₹14,400 keeps Yamini's full ₹30,000 for 12 months (ratio 3 : 6 : 8); after the withdrawal she has only ₹20,000 for the last 6 months."
+      },
+      "tags": [
+        "template:leave-withdraw-third",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-010",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Aarti and Bhuvan started a dairy unit with ₹20,000 and ₹30,000. Chirag joined them 4 months later. At the end of the year, Chirag's share was one-third of the total profit. Chirag's capital is what percent of Aarti's and Bhuvan's capitals combined?",
+      "options": [
+        "50%",
+        "60%",
+        "65%",
+        "70%",
+        "75%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Aarti + Bhuvan = 50,000 × 12 = 6,00,000 = two-thirds of the total, so Chirag's capital × 8 = 3,00,000.",
+          "Chirag = ₹37,500 → 37,500/50,000 × 100 = 75%."
+        ],
+        "trap": "50% treats Chirag as if he invested for all 12 months; he was in for only 8, so he needed more capital."
+      },
+      "tags": [
+        "template:c-capital-percent",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-011",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Deepak started a business with ₹30,000. Some months later, Esha joined him with ₹40,000. If they shared the year's profit equally, after how many months did Esha join?",
+      "options": [
+        "3 months",
+        "4 months",
+        "6 months",
+        "8 months",
+        "9 months"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Equal profits → 30,000 × 12 = 40,000 × t → t = 9 months in the business.",
+          "She joined after 12 − 9 = 3 months."
+        ],
+        "trap": "9 months is how long Esha's money was in the business, not when she joined."
+      },
+      "tags": [
+        "template:join-month",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-012",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Faisal and Geeta are partners in a garment unit with capitals of ₹60,000 and ₹90,000. Faisal, who runs the unit, draws a salary of ₹2,500 a month out of the profit, and the rest is shared in the ratio of their capitals. If the annual profit is ₹80,000, what is Faisal's total income for the year?",
+      "options": [
+        "₹20,000",
+        "₹32,000",
+        "₹33,500",
+        "₹50,000",
+        "₹62,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Salary = 2,500 × 12 = ₹30,000; remaining 50,000 is split 60 : 90 = 2 : 3.",
+          "Faisal = 30,000 + 50,000 × 2/5 = 30,000 + 20,000 = ₹50,000."
+        ],
+        "trap": "₹62,000 adds the salary to 2/5 of the whole ₹80,000; the salary must come out first. ₹33,500 deducts only one month's salary."
+      },
+      "tags": [
+        "template:monthly-salary",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-013",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Harish and Indu started a business with ₹24,000 and ₹32,000. After 6 months, Harish increased his capital by 50%. Out of the annual profit of ₹31,000, what is Harish's share?",
+      "options": [
+        "₹15,000",
+        "₹15,500",
+        "₹16,000",
+        "₹16,500",
+        "₹18,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Harish: 24,000 × 6 + 36,000 × 6 = 3,60,000; Indu: 32,000 × 12 = 3,84,000 → 15 : 16.",
+          "Harish = 31,000 × 15/31 = ₹15,000."
+        ],
+        "trap": "₹16,000 is Indu's share; ₹15,500 is half the profit, which assumes the increase made the products equal."
+      },
+      "tags": [
+        "template:capital-increase-percent",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-014",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Jaya, Kiran and Lata invested capitals in the ratio 3 : 4 : 6 and received profits in the ratio 1 : 2 : 3. If Lata's money was in the business for 12 months, for how many months was Jaya's money invested?",
+      "options": [
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months",
+        "8 months"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Time ∝ profit ÷ capital: Jaya = 1/3, Kiran = 2/4 = 1/2, Lata = 3/6 = 1/2.",
+          "Jaya : Lata = 1/3 : 1/2 = 2 : 3 → Jaya = 12 × 2/3 = 8 months."
+        ],
+        "trap": "4 months reads Jaya's profit as one-third of Lata's time; the capitals differ, so divide profit by capital first."
+      },
+      "tags": [
+        "template:period-from-ratios",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-015",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Mohan and Nikhil invested ₹16,000 and ₹24,000 in a bakery for the whole year. Their third partner, Ojas, put in ₹32,000 but took all of it out some months before the year ended. Out of the year's profit of ₹24,000, Ojas got ₹9,000. How many months before the end of the year did Ojas leave?",
+      "options": [
+        "3 months",
+        "4 months",
+        "5 months",
+        "8 months",
+        "9 months"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Mohan + Nikhil = 40,000 × 12 = 4,80,000 for ₹15,000 → Ojas's capital × time = 4,80,000 × 9,000/15,000 = 2,88,000.",
+          "Ojas stayed 2,88,000 ÷ 32,000 = 9 months, so he left 12 − 9 = 3 months before the year ended."
+        ],
+        "trap": "9 months is how long Ojas stayed; the question asks how many months before the year ended he left."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-016",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pranav and Rhea invested ₹30,000 and ₹45,000 in a business. Pranav, the working partner, first gets 20% of the profit for running the business, and the remainder is shared in the ratio of their investments. If Pranav received ₹26,000 in all, what was the total profit?",
+      "options": [
+        "₹40,000",
+        "₹45,000",
+        "₹50,000",
+        "₹52,000",
+        "₹65,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pranav gets 20% + (80% × 2/5) = 20% + 32% = 52% of the profit.",
+          "Profit = 26,000 ÷ 0.52 = ₹50,000."
+        ],
+        "shortcut": "Write Pranav's total as one fraction of P (0.52P) before dividing.",
+        "trap": "₹65,000 treats ₹26,000 as Pranav's 2/5 capital share alone and forgets the 20% fee."
+      },
+      "tags": [
+        "template:working-partner-pct",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-017",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Meera opened a boutique with ₹36,000. Three months later Kabir joined her with some capital, and 3 months after that Meera withdrew ₹12,000. At the end of the year the profit was divided equally between them. How much did Kabir invest?",
+      "options": [
+        "₹30,000",
+        "₹36,000",
+        "₹40,000",
+        "₹44,000",
+        "₹48,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Meera: 36,000 × 6 + 24,000 × 6 = 3,60,000 (she withdrew at the end of month 6).",
+          "Kabir was in for 9 months: Kabir × 9 = 3,60,000 → ₹40,000."
+        ],
+        "trap": "₹48,000 keeps Meera's ₹36,000 for all 12 months (4,32,000 ÷ 9); the withdrawal cuts her product."
+      },
+      "tags": [
+        "template:join-late-capital",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-018",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Sanjay and Tanuja started a business with ₹36,000 and ₹32,000. Sanjay took his money out after 8 months, while Tanuja stayed all year. If Tanuja's share of the year's profit was ₹2,250 more than Sanjay's, what was the total profit?",
+      "options": [
+        "₹13,500",
+        "₹15,750",
+        "₹18,000",
+        "₹20,250",
+        "₹38,250"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sanjay: 36,000 × 8 = 2,88,000; Tanuja: 32,000 × 12 = 3,84,000 → 3 : 4.",
+          "Difference = 1 part = ₹2,250 → total = 7 × 2,250 = ₹15,750."
+        ],
+        "trap": "₹38,250 uses capitals only (9 : 8, 17 parts); Sanjay's 8 months reverse who gets more."
+      },
+      "tags": [
+        "template:share-difference-total",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-019",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Uma and Vikram started a business with ₹45,000 and ₹30,000. After 4 months, Uma withdrew ₹15,000 and Vikram added ₹15,000. Out of the annual profit of ₹33,000, what is Vikram's share?",
+      "options": [
+        "₹13,200",
+        "₹15,400",
+        "₹16,500",
+        "₹17,000",
+        "₹17,600"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Uma: 45,000 × 4 + 30,000 × 8 = 4,20,000; Vikram: 30,000 × 4 + 45,000 × 8 = 4,80,000 → 7 : 8.",
+          "Vikram = 33,000 × 8/15 = ₹17,600."
+        ],
+        "trap": "₹13,200 ignores the changes (3 : 2); ₹15,400 is Uma's share."
+      },
+      "tags": [
+        "template:mid-year-change",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-020",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Abhay, Bina and Charu started a business with ₹30,000, ₹45,000 and ₹40,000 respectively. After some months, Abhay left the business and, at the same moment, Bina withdrew one-third of her capital. Charu stayed for the whole year. Out of the annual profit of ₹60,000, Abhay received ₹12,000. After how many months did Abhay leave?",
+      "options": [
+        "4 months",
+        "6 months",
+        "7 months",
+        "8 months",
+        "9 months"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let it be x months: Abhay 30,000x; Bina 45,000x + 30,000(12 − x) = 3,60,000 + 15,000x; Charu 4,80,000.",
+          "Abhay gets 1/5: 5 × 30,000x = 8,40,000 + 45,000x → 1,05,000x = 8,40,000 → x = 8.",
+          "Check: 2,40,000 : 4,80,000 : 4,80,000 = 1 : 2 : 2 → Abhay = 60,000/5 = ₹12,000."
+        ],
+        "trap": "4 months is 12 − 8; Bina's withdrawal also depends on x, so test the options in the full ratio."
+      },
+      "tags": [
+        "template:leave-withdraw-third",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-021",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Dev and Esha invested ₹24,000 and ₹36,000 in a start-up. Four months later Farah joined with a capital equal to 50% of Dev's and Esha's capitals combined. Out of the annual profit of ₹30,000, what is Farah's share?",
+      "options": [
+        "₹6,000",
+        "₹7,500",
+        "₹8,000",
+        "₹9,000",
+        "₹10,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Farah's capital = 50% of 60,000 = ₹30,000 for 8 months = 2,40,000; Dev 2,88,000; Esha 4,32,000.",
+          "Ratio 288 : 432 : 240 = 6 : 9 : 5 (20 parts) → Farah = 30,000 × 5/20 = ₹7,500."
+        ],
+        "trap": "₹10,000 gives Farah all 12 months; ₹9,000 is Dev's share."
+      },
+      "tags": [
+        "template:c-capital-percent",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-022",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Gopal and Hina began a business with ₹20,000 and ₹30,000. The first year's profit of ₹10,000 was split in the ratio of their capitals, and both added their shares to their capitals. At the start of the second year Ishaan joined them with ₹15,000. If the second year's profit was ₹25,000, what was Ishaan's share?",
+      "options": [
+        "₹4,500",
+        "₹5,000",
+        "₹6,000",
+        "₹6,500",
+        "₹7,500"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Year 1 split 2 : 3 → Gopal ₹4,000, Hina ₹6,000 → capitals become ₹24,000 and ₹36,000.",
+          "Year 2: 24 : 36 : 15 = 8 : 12 : 5 (25 parts) → Ishaan = 25,000 × 5/25 = ₹5,000."
+        ],
+        "trap": "₹7,500 compares Ishaan's 15,000 with the old 50,000 (15/50) as if it were his fraction of the profit; his fraction is 15/75 of the total capital."
+      },
+      "tags": [
+        "template:reinvestment-split",
+        "partnership:reinvestment"
+      ]
+    },
+    {
+      "key": "pt-023",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Jagdish started a business with ₹40,000 and Kamala joined him at the start with ₹50,000. After 3 months Jagdish added ₹20,000, and after 9 months he withdrew ₹30,000. Lakshya joined after 6 months with ₹60,000. Kamala's capital did not change. Out of the annual profit of ₹1,02,000, what is Jagdish's share?",
+      "options": [
+        "₹34,000",
+        "₹36,000",
+        "₹38,000",
+        "₹40,000",
+        "₹42,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Jagdish: 40,000 × 3 + 60,000 × 6 + 30,000 × 3 = 1,20,000 + 3,60,000 + 90,000 = 5,70,000.",
+          "Kamala: 50,000 × 12 = 6,00,000; Lakshya: 60,000 × 6 = 3,60,000 → 57 : 60 : 36 = 19 : 20 : 12 (51 parts).",
+          "Jagdish = 1,02,000 × 19/51 = ₹38,000."
+        ],
+        "trap": "₹34,000 ignores Jagdish's two changes (4 : 5 : 3); ₹40,000 is Kamala's share."
+      },
+      "tags": [
+        "template:two-changes",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-024",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Mitali and Naresh started a business. After 4 months Mitali took out her entire capital and, at the same time, Naresh doubled his capital. If the year's profit was shared between them in the ratio 2 : 9, what was the ratio of their initial capitals (Mitali : Naresh)?",
+      "options": [
+        "10 : 9",
+        "9 : 10",
+        "2 : 3",
+        "5 : 6",
+        "2 : 9"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Mitali: M × 4; Naresh: N × 4 + 2N × 8 = 20N.",
+          "4M : 20N = 2 : 9 → 36M = 40N → M : N = 10 : 9."
+        ],
+        "trap": "2 : 3 ignores Naresh's doubling (4M : 12N = 2 : 9); 9 : 10 is the reverse."
+      },
+      "tags": [
+        "template:capital-ratio-from-leave",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-025",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Omkar, Prerna and Qadir invested ₹20,000, ₹25,000 and ₹15,000 respectively. Qadir, the managing partner, draws ₹18,000 a year as salary before the profit is shared, and the rest is divided in the ratio of their capitals. If the year's profit is ₹66,000, what is Qadir's total income?",
+      "options": [
+        "₹12,000",
+        "₹16,500",
+        "₹28,500",
+        "₹30,000",
+        "₹34,500"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Remaining profit = 66,000 − 18,000 = ₹48,000, shared 20 : 25 : 15 = 4 : 5 : 3.",
+          "Qadir = 18,000 + 48,000 × 3/12 = 18,000 + 12,000 = ₹30,000."
+        ],
+        "trap": "₹34,500 adds the salary to 3/12 of the whole ₹66,000; ₹12,000 forgets the salary."
+      },
+      "tags": [
+        "template:monthly-salary",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-026",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Rohit and Sakshi started a business with ₹45,000 and ₹30,000. Rohit withdrew his entire capital after some months, while Sakshi continued till the end of the year. Out of the annual profit of ₹20,800, Rohit's share was ₹8,000. After how many months did Rohit withdraw?",
+      "options": [
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months",
+        "8 months"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Rohit : Sakshi = 8,000 : 12,800 = 5 : 8.",
+          "Sakshi = 30,000 × 12 = 3,60,000 → Rohit's product = 3,60,000 × 5/8 = 2,25,000 → 2,25,000 ÷ 45,000 = 5 months."
+        ],
+        "trap": "7 months is 12 − 5, the time after Rohit left."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-027",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Tarun and Usha started a business with ₹40,000 and ₹50,000. After 5 months, Tarun increased his capital by 25% while Usha reduced hers by 20%. Out of the annual profit of ₹54,000, what is Tarun's share?",
+      "options": [
+        "₹24,000",
+        "₹26,500",
+        "₹27,000",
+        "₹27,500",
+        "₹30,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Tarun: 40,000 × 5 + 50,000 × 7 = 5,50,000; Usha: 50,000 × 5 + 40,000 × 7 = 5,30,000 → 55 : 53.",
+          "Tarun = 54,000 × 55/108 = ₹27,500."
+        ],
+        "trap": "₹24,000 ignores the changes (4 : 5); ₹27,000 assumes that swapping the amounts makes the shares equal, but the swap happens after 5 months, not 6."
+      },
+      "tags": [
+        "template:capital-increase-percent",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-028",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Rakesh started a juice bar with ₹42,000. After 5 months, Suman joined him with some capital. At the end of the year, Suman's share was 40% of the total profit. How much did Suman invest?",
+      "options": [
+        "₹28,000",
+        "₹40,000",
+        "₹45,000",
+        "₹48,000",
+        "₹67,200"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Rakesh : Suman = 60 : 40 = 3 : 2; Rakesh = 42,000 × 12 = 5,04,000.",
+          "Suman × 7 = 5,04,000 × 2/3 = 3,36,000 → Suman = ₹48,000."
+        ],
+        "trap": "₹28,000 divides 3,36,000 by 12 months and ₹67,200 divides by 5; Suman was in for 12 − 5 = 7 months."
+      },
+      "tags": [
+        "template:join-late-capital",
+        "partnership:capital-from-share"
+      ]
+    },
+    {
+      "key": "pt-029",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Varsha and Yogesh invested ₹50,000 and ₹30,000 in a business. After 6 months, Varsha withdrew ₹20,000 and Yogesh added ₹10,000. At the end of the year, Varsha's share was ₹2,500 more than Yogesh's. Find the total profit.",
+      "options": [
+        "₹10,000",
+        "₹30,000",
+        "₹32,500",
+        "₹35,000",
+        "₹37,500"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Varsha: 50,000 × 6 + 30,000 × 6 = 4,80,000; Yogesh: 30,000 × 6 + 40,000 × 6 = 4,20,000 → 8 : 7.",
+          "Difference = 1 part = ₹2,500 → total = 15 × 2,500 = ₹37,500."
+        ],
+        "trap": "₹10,000 uses the opening capitals (5 : 3, difference 2 parts); the changes after 6 months narrow the gap to 8 : 7."
+      },
+      "tags": [
+        "template:share-difference-total",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-030",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Zaid started a business with ₹32,000. Some months later, Anjali joined him with ₹48,000. If the year's profit was shared between Zaid and Anjali in the ratio 2 : 1, after how many months did Anjali join?",
+      "options": [
+        "3 months",
+        "4 months",
+        "6 months",
+        "8 months",
+        "9 months"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Zaid = 32,000 × 12 = 3,84,000 → Anjali's product = 3,84,000 ÷ 2 = 1,92,000.",
+          "Anjali's months = 1,92,000 ÷ 48,000 = 4 → she joined after 12 − 4 = 8 months."
+        ],
+        "trap": "4 months is how long Anjali's money was in the business, not when she joined."
+      },
+      "tags": [
+        "template:join-month",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-031",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Bharat, Chitra and Dinesh started a business with capitals in the ratio 4 : 5 : 6. After 9 months Dinesh left the business and, at the same time, Bharat withdrew one-third of his capital. Chitra stayed for the whole year. Out of the annual profit of ₹31,600, what is Chitra's share?",
+      "options": [
+        "₹8,800",
+        "₹10,800",
+        "₹11,600",
+        "₹12,000",
+        "₹12,400"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Bharat: 4 × 9 + (8/3) × 3 = 44; Chitra: 5 × 12 = 60; Dinesh: 6 × 9 = 54.",
+          "Ratio 44 : 60 : 54 = 22 : 30 : 27 (79 parts) → Chitra = 31,600 × 30/79 = ₹12,000."
+        ],
+        "trap": "₹10,800 is Dinesh's share and ₹8,800 is Bharat's; Bharat's product is 4 × 9 + (8/3) × 3, not 4 × 12."
+      },
+      "tags": [
+        "template:leave-withdraw-third",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-032",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ekta invested a certain sum for 8 months. Firoz invested 25% more than Ekta for 6 months, and Gulshan invested 20% less than Ekta for 10 months. Out of a total profit of ₹23,500, what is Gulshan's share?",
+      "options": [
+        "₹6,500",
+        "₹7,000",
+        "₹7,500",
+        "₹7,800",
+        "₹8,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take Ekta's capital as 1: Ekta 1 × 8 = 8, Firoz 1.25 × 6 = 7.5, Gulshan 0.8 × 10 = 8 → 16 : 15 : 16.",
+          "Gulshan = 23,500 × 16/47 = ₹8,000."
+        ],
+        "trap": "₹7,500 is Firoz's share; Gulshan's smaller capital is offset by his longer period."
+      },
+      "tags": [
+        "template:period-from-ratios",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-033",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Harsh started a travel agency with ₹40,000. After 4 months, Ira joined with ₹60,000 and took charge of operations, for which she gets 12.5% of the annual profit; the rest is shared in the ratio of capital × time. If the annual profit is ₹64,000, what is Ira's total income?",
+      "options": [
+        "₹28,000",
+        "₹32,000",
+        "₹36,000",
+        "₹38,000",
+        "₹41,600"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Ira's fee = 12.5% of 64,000 = ₹8,000; remaining ₹56,000.",
+          "Harsh 40,000 × 12 = 4,80,000; Ira 60,000 × 8 = 4,80,000 → 1 : 1 → Ira = 8,000 + 28,000 = ₹36,000."
+        ],
+        "trap": "₹41,600 shares by capitals alone (2 : 3), ignoring that Ira joined after 4 months."
+      },
+      "tags": [
+        "template:working-partner-pct",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-034",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Jaideep, Komal and Lalita started a business with ₹12,000, ₹18,000 and ₹15,000. After 3 months Komal withdrew ₹6,000, and after 6 months Lalita added ₹9,000. Out of the annual profit of ₹45,000, by how much does Lalita's share exceed Jaideep's?",
+      "options": [
+        "₹4,500",
+        "₹6,000",
+        "₹7,500",
+        "₹9,000",
+        "₹10,500"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Jaideep 1,44,000; Komal 18,000 × 3 + 12,000 × 9 = 1,62,000; Lalita 15,000 × 6 + 24,000 × 6 = 2,34,000.",
+          "Ratio 144 : 162 : 234 = 8 : 9 : 13 (30 parts, ₹1,500 each) → Lalita − Jaideep = 5 × 1,500 = ₹7,500."
+        ],
+        "trap": "₹10,500 gives Lalita ₹24,000 for the whole year; her ₹9,000 came in only for the last 6 months."
+      },
+      "tags": [
+        "template:two-changes",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-035",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Mukesh and Nirmala invested in a business. Mukesh withdrew his capital after 6 months, while Nirmala stayed for the whole year. If they shared the profit equally, what was the ratio of their capitals (Mukesh : Nirmala)?",
+      "options": [
+        "2 : 1",
+        "1 : 2",
+        "1 : 1",
+        "3 : 2",
+        "2 : 3"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Equal profits → Mukesh × 6 = Nirmala × 12.",
+          "Mukesh : Nirmala = 12 : 6 = 2 : 1."
+        ],
+        "trap": "1 : 2 is the ratio of their periods; capitals are in the inverse ratio."
+      },
+      "tags": [
+        "template:capital-ratio-from-leave",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-036",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Om started a business with ₹40,000, and Parul joined him after 4 months with ₹60,000. The first year's profit of ₹20,000 was shared in the ratio of capital × time, and each of them added half of his or her share to the capital. In the second year both stayed all 12 months and earned a profit of ₹44,000. What was Parul's share in the second year?",
+      "options": [
+        "₹22,000",
+        "₹26,000",
+        "₹26,400",
+        "₹27,500",
+        "₹28,600"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Year 1: Om 40,000 × 12 = 4,80,000, Parul 60,000 × 8 = 4,80,000 → ₹10,000 each.",
+          "Each adds ₹5,000 → capitals ₹45,000 and ₹65,000 → year 2 ratio 9 : 13.",
+          "Parul = 44,000 × 13/22 = ₹26,000."
+        ],
+        "trap": "₹26,400 uses the original 2 : 3 capitals for year 2; ₹22,000 carries the year-1 1 : 1 split into year 2."
+      },
+      "tags": [
+        "template:reinvestment-split",
+        "partnership:reinvestment"
+      ]
+    },
+    {
+      "key": "pt-037",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Rajni started a bakery with ₹36,000, and Sohail joined her after 4 months with ₹54,000. Rajni runs the bakery and draws ₹1,500 a month from the profit as salary; the rest is shared in the ratio of capital × time. If the year's profit is ₹50,000, what is Rajni's total income?",
+      "options": [
+        "₹25,000",
+        "₹30,800",
+        "₹32,000",
+        "₹34,000",
+        "₹36,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Salary = 1,500 × 12 = ₹18,000; remaining ₹32,000.",
+          "Rajni 36,000 × 12 = 4,32,000; Sohail 54,000 × 8 = 4,32,000 → equal → Rajni = 18,000 + 16,000 = ₹34,000."
+        ],
+        "trap": "₹30,800 splits the rest 2 : 3 by capitals alone, ignoring that Sohail joined after 4 months."
+      },
+      "tags": [
+        "template:monthly-salary",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-038",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Tejas, Urmila and Vinod started a business with ₹16,000, ₹24,000 and ₹20,000. After 8 months, Vinod doubled his capital. Out of the annual profit of ₹50,000, what is Vinod's share?",
+      "options": [
+        "₹20,000",
+        "₹21,000",
+        "₹22,500",
+        "₹24,000",
+        "₹25,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Tejas 1,92,000; Urmila 2,88,000; Vinod 20,000 × 8 + 40,000 × 4 = 3,20,000 → 6 : 9 : 10.",
+          "Vinod = 50,000 × 10/25 = ₹20,000."
+        ],
+        "trap": "₹25,000 counts Vinod's doubled ₹40,000 for the whole year; it was doubled only for the last 4 months."
+      },
+      "tags": [
+        "template:mid-year-change",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-039",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Wamiq started a business. Yashika joined him after 3 months and Zeenat after 6 months. At the end of the year their profits were in the ratio 4 : 5 : 6. Zeenat's capital is what percent of Wamiq's and Yashika's capitals combined?",
+      "options": [
+        "66$\\frac{2}{3}$%",
+        "90%",
+        "100%",
+        "112.5%",
+        "125%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Capital ∝ profit ÷ months: Wamiq 4/12 = 1/3, Yashika 5/9, Zeenat 6/6 = 1 → 3 : 5 : 9.",
+          "Zeenat as % of (Wamiq + Yashika) = 9/8 × 100 = 112.5%."
+        ],
+        "trap": "66$\\frac{2}{3}$% compares the profit shares directly (6 with 4 + 5); each profit must first be divided by its months (12, 9 and 6)."
+      },
+      "tags": [
+        "template:c-capital-percent",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-040",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Aman and Bela started a business with ₹40,000 and ₹50,000. After some months Aman left, and Charu joined with ₹60,000 on the same day. Bela stayed for the whole year. Out of the year's profit of ₹62,000, Charu's share was ₹24,000. After how many months did Aman leave?",
+      "options": [
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months",
+        "8 months"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Charu's fraction = 24,000/62,000 = 12/31. Total product = 40,000x + 6,00,000 + 60,000(12 − x) = 13,20,000 − 20,000x.",
+          "31 × 60,000(12 − x) = 12(13,20,000 − 20,000x) → 2,23,20,000 − 18,60,000x = 1,58,40,000 − 2,40,000x → x = 4.",
+          "Check: 1,60,000 : 6,00,000 : 4,80,000 = 4 : 15 : 12 → Charu = 62,000 × 12/31 = ₹24,000."
+        ],
+        "trap": "8 months is the time Charu was in (12 − 4), not the time Aman stayed."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-041",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Chetan and Divya invested ₹36,000 and ₹48,000 in a business. After 4 months, Divya reduced her capital by 25%. Out of the annual profit of ₹38,000, what is Divya's share?",
+      "options": [
+        "₹16,000",
+        "₹18,000",
+        "₹19,000",
+        "₹20,000",
+        "₹22,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Chetan 36,000 × 12 = 4,32,000; Divya 48,000 × 4 + 36,000 × 8 = 4,80,000 → 9 : 10.",
+          "Divya = 38,000 × 10/19 = ₹20,000."
+        ],
+        "trap": "₹18,000 is Chetan's share; ₹19,000 is half, as if the cut made both capitals ₹36,000 for the whole year."
+      },
+      "tags": [
+        "template:capital-increase-percent",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-042",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ekansh and Fiza started a business with ₹15,000 and ₹20,000. Six months later Gagan joined them. Out of the annual profit of ₹26,000, Gagan received ₹6,000. How much did Gagan invest?",
+      "options": [
+        "₹10,500",
+        "₹15,000",
+        "₹18,000",
+        "₹20,000",
+        "₹21,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Ekansh + Fiza = 35,000 × 12 = 4,20,000 for ₹20,000.",
+          "Gagan × 6 = 4,20,000 × 6,000/20,000 = 1,26,000 → Gagan = ₹21,000."
+        ],
+        "trap": "₹10,500 divides 1,26,000 by 12 months; Gagan's money worked for only 6."
+      },
+      "tags": [
+        "template:join-late-capital",
+        "partnership:capital-from-share"
+      ]
+    },
+    {
+      "key": "pt-043",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Harpreet, Imran and Juhi started a business with ₹50,000, ₹40,000 and ₹60,000. After 6 months Harpreet left the business and, at the same time, Juhi withdrew one-third of her capital. If Imran's share of the year's profit was ₹12,800, what was the total profit?",
+      "options": [
+        "₹34,500",
+        "₹36,800",
+        "₹38,400",
+        "₹40,000",
+        "₹41,600"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Harpreet 3,00,000; Imran 4,80,000; Juhi 60,000 × 6 + 40,000 × 6 = 6,00,000 → 5 : 8 : 10.",
+          "Imran's 8 parts = 12,800 → 1 part = 1,600 → total = 23 × 1,600 = ₹36,800."
+        ],
+        "trap": "₹40,000 forgets Juhi's withdrawal (5 : 8 : 12, 25 parts)."
+      },
+      "tags": [
+        "template:leave-withdraw-third",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-044",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Kunal, Leela and Mohit started a business with ₹10,000, ₹20,000 and ₹30,000. After 4 months Kunal doubled his capital and Leela withdrew half of hers. After 8 months Mohit withdrew ₹10,000 and Kunal withdrew ₹5,000. Out of the annual profit of ₹49,500, what is Leela's share?",
+      "options": [
+        "₹10,500",
+        "₹12,000",
+        "₹13,500",
+        "₹15,000",
+        "₹16,500"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Kunal: 10,000 × 4 + 20,000 × 4 + 15,000 × 4 = 1,80,000; Leela: 20,000 × 4 + 10,000 × 8 = 1,60,000; Mohit: 30,000 × 8 + 20,000 × 4 = 3,20,000.",
+          "Ratio 180 : 160 : 320 = 9 : 8 : 16 (33 parts, ₹1,500 each) → Leela = 8 × 1,500 = ₹12,000."
+        ],
+        "trap": "₹16,500 ignores all the changes (1 : 2 : 3); ₹13,500 is Kunal's share."
+      },
+      "tags": [
+        "template:two-changes",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-045",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Naveen invested ₹15,000 for 12 months and Pallavi invested ₹20,000 for 6 months in a business. If Naveen's share of the profit was ₹2,400 more than Pallavi's, what was the total profit?",
+      "options": [
+        "₹4,800",
+        "₹6,000",
+        "₹9,600",
+        "₹12,000",
+        "₹14,400"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Naveen 1,80,000 : Pallavi 1,20,000 = 3 : 2.",
+          "Difference = 1 part = ₹2,400 → total = 5 × 2,400 = ₹12,000."
+        ],
+        "trap": "₹9,600 counts only 4 parts; the total is 3 + 2 = 5 parts of ₹2,400."
+      },
+      "tags": [
+        "template:share-difference-total",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-046",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Rina and Satish ran a business for a year. Rina's money stayed in for all 12 months, while Satish withdrew his after 9 months. Out of a profit of ₹22,500, Satish got ₹9,000. What was the ratio of Rina's capital to Satish's?",
+      "options": [
+        "9 : 8",
+        "8 : 9",
+        "3 : 2",
+        "2 : 3",
+        "4 : 3"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Profits: Rina 13,500, Satish 9,000 → 3 : 2.",
+          "Capitals ∝ profit ÷ months: 3/12 : 2/9 = 1/4 : 2/9 = 9 : 8."
+        ],
+        "trap": "3 : 2 is the profit ratio; 8 : 9 is the reverse of the answer."
+      },
+      "tags": [
+        "template:capital-ratio-from-leave",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-047",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Tushar and Vandana invested ₹30,000 and ₹45,000. Tushar manages the business and draws a fixed monthly salary from the profit; the remainder is shared in the ratio of their capitals. Out of an annual profit of ₹75,000, Tushar received ₹39,000 in all. What is his monthly salary?",
+      "options": [
+        "₹750",
+        "₹1,000",
+        "₹1,250",
+        "₹1,500",
+        "₹1,800"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the salary be s a month: Tushar = 12s + (75,000 − 12s) × 2/5 = 30,000 + 7.2s.",
+          "30,000 + 7.2s = 39,000 → s = ₹1,250."
+        ],
+        "trap": "₹750 takes 39,000 − 30,000 = 9,000 as the full year's salary, forgetting that the salary also shrinks the amount shared."
+      },
+      "tags": [
+        "template:monthly-salary",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-048",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Waman and Yamuna started a business with ₹24,000 and ₹30,000. The first year's profit of ₹18,000 was shared in the ratio of their capitals; Waman took his share out, while Yamuna added hers to her capital. Six months into the second year, Waman added ₹12,000. If the second year's profit was ₹35,000, what was Waman's share?",
+      "options": [
+        "₹14,000",
+        "₹15,000",
+        "₹16,500",
+        "₹17,500",
+        "₹20,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Year 1 split 4 : 5 → Yamuna gets ₹10,000 → her capital becomes ₹40,000.",
+          "Year 2: Waman 24,000 × 6 + 36,000 × 6 = 3,60,000; Yamuna 40,000 × 12 = 4,80,000 → 3 : 4.",
+          "Waman = 35,000 × 3/7 = ₹15,000."
+        ],
+        "trap": "₹17,500 leaves Yamuna at ₹30,000 (3,60,000 each, 1 : 1); she reinvested her ₹10,000."
+      },
+      "tags": [
+        "template:reinvestment-split",
+        "partnership:reinvestment"
+      ]
+    },
+    {
+      "key": "pt-049",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Hari started a sweet shop with ₹27,000. Some months later Vijay joined him with ₹36,000, and on the same day Hari withdrew ₹9,000. At the end of the year the profit was shared between Hari and Vijay in the ratio 5 : 4. After how many months did Vijay join?",
+      "options": [
+        "6 months",
+        "7 months",
+        "8 months",
+        "9 months",
+        "10 months"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let it be x: Hari = 27,000x + 18,000(12 − x) = 2,16,000 + 9,000x; Vijay = 36,000(12 − x).",
+          "4(2,16,000 + 9,000x) = 5 × 36,000(12 − x) → 8,64,000 + 36,000x = 21,60,000 − 1,80,000x → x = 6.",
+          "Check: 2,70,000 : 2,16,000 = 5 : 4 ✓."
+        ],
+        "trap": "Ignoring Hari's ₹9,000 withdrawal gives x = 4.8, which matches no option; the withdrawal must be counted from the day Vijay joined."
+      },
+      "tags": [
+        "template:join-month",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-050",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Arjun, Bhavesh and Chandni started a business with ₹60,000, ₹40,000 and ₹45,000. Arjun manages it and first receives 10% of the profit as a management fee; the rest is shared in the ratio of capital × time. After 6 months Bhavesh left and, at the same time, Chandni withdrew one-third of her capital. If the year's profit is ₹47,000, what is Arjun's total income?",
+      "options": [
+        "₹21,600",
+        "₹24,000",
+        "₹25,500",
+        "₹26,300",
+        "₹28,100"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Arjun 7,20,000; Bhavesh 2,40,000; Chandni 45,000 × 6 + 30,000 × 6 = 4,50,000 → 24 : 8 : 15 (47 parts).",
+          "Fee = ₹4,700; remaining ₹42,300 → 1 part = ₹900 → Arjun's share = 24 × 900 = ₹21,600.",
+          "Arjun's total = 21,600 + 4,700 = ₹26,300."
+        ],
+        "trap": "₹24,000 splits the whole ₹47,000 in 24 : 47 and forgets the fee; ₹21,600 forgets to add the fee back."
+      },
+      "tags": [
+        "template:leave-withdraw-third",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-051",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Daksh started a business. Six months later, Eshwar joined him with a different amount. At the end of the year, their profits were in the ratio 5 : 4 (Daksh : Eshwar). Eshwar's capital is what percent of Daksh's?",
+      "options": [
+        "60%",
+        "80%",
+        "120%",
+        "125%",
+        "160%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Capital ∝ profit ÷ months: Daksh 5/12, Eshwar 4/6 = 2/3.",
+          "Eshwar/Daksh = (2/3) ÷ (5/12) = 8/5 → 160%."
+        ],
+        "trap": "80% takes the profit ratio 4/5 as the capital ratio; Eshwar's half-year stay means he needed more capital."
+      },
+      "tags": [
+        "template:join-late-capital",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-052",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Gaurav and Hemlata started a business with ₹30,000 and ₹40,000. After 4 months, Gaurav brought in some more money. If the year's profit was shared equally, how much did Gaurav add?",
+      "options": [
+        "₹7,500",
+        "₹10,000",
+        "₹12,000",
+        "₹15,000",
+        "₹30,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Hemlata = 40,000 × 12 = 4,80,000; Gaurav's first ₹30,000 gives 3,60,000.",
+          "Extra money × 8 = 4,80,000 − 3,60,000 = 1,20,000 → ₹15,000."
+        ],
+        "trap": "₹10,000 spreads the gap over 12 months and ₹30,000 over 4; the added money worked for 12 − 4 = 8 months."
+      },
+      "tags": [
+        "template:mid-year-change",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-053",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ishita and Javed started a business with ₹30,000 and ₹40,000. After some months, Ishita withdrew half of her capital and, at the same time, Javed added ₹10,000. Out of the year's profit of ₹36,000, Ishita got ₹12,000. After how many months were these changes made?",
+      "options": [
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months",
+        "8 months"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Ishita : Javed = 12,000 : 24,000 = 1 : 2. Ishita = 30,000x + 15,000(12 − x) = 1,80,000 + 15,000x; Javed = 40,000x + 50,000(12 − x) = 6,00,000 − 10,000x.",
+          "2(1,80,000 + 15,000x) = 6,00,000 − 10,000x → 40,000x = 2,40,000 → x = 6."
+        ],
+        "trap": "Using only Ishita's change and leaving Javed at ₹40,000 gives 2(1,80,000 + 15,000x) = 4,80,000, i.e. x = 4; Javed's ₹10,000 also starts at month x."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-054",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Kishore and Lavanya invested ₹50,000 and ₹40,000. Kishore, the working partner, first receives 15% of the profit as commission. After 6 months, Kishore withdrew ₹20,000 and Lavanya added ₹20,000. The rest of the profit is shared in the ratio of capital × time. If the year's profit is ₹90,000, what is Kishore's total income?",
+      "options": [
+        "₹34,000",
+        "₹40,000",
+        "₹47,500",
+        "₹50,000",
+        "₹56,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Kishore: 50,000 × 6 + 30,000 × 6 = 4,80,000; Lavanya: 40,000 × 6 + 60,000 × 6 = 6,00,000 → 4 : 5.",
+          "Commission = 15% of 90,000 = ₹13,500; rest ₹76,500 → Kishore = 76,500 × 4/9 = ₹34,000.",
+          "Total = 34,000 + 13,500 = ₹47,500."
+        ],
+        "trap": "₹56,000 ignores the changes and splits the ₹76,500 in 5 : 4; ₹34,000 forgets the commission."
+      },
+      "tags": [
+        "template:working-partner-pct",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-055",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Mahima contributed one-fourth of the capital of a business for 3 months, Nitin contributed one-third of the capital for 6 months, and Ojasvi contributed the rest for the whole year. If Nitin's share of the profit exceeds Mahima's by ₹5,000, what is the total profit?",
+      "options": [
+        "₹25,000",
+        "₹28,000",
+        "₹31,000",
+        "₹36,000",
+        "₹60,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take capital = 12: Mahima 3 × 3 = 9, Nitin 4 × 6 = 24, Ojasvi 5 × 12 = 60 → 3 : 8 : 20.",
+          "Nitin − Mahima = 5 parts = ₹5,000 → 1 part = ₹1,000 → total = 31 × 1,000 = ₹31,000."
+        ],
+        "trap": "₹60,000 uses capitals alone (3 : 4 : 5, difference 1 part); the months change the ratio to 3 : 8 : 20."
+      },
+      "tags": [
+        "template:share-difference-total",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-056",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pankaj and Qamar started a business with ₹36,000 and ₹54,000. Radha joined them after 4 months, and Qamar withdrew his entire capital after 8 months. At the end of the year Radha's share was 40% of the total profit. Radha's capital is what percent of Pankaj's and Qamar's capitals combined?",
+      "options": [
+        "53$\\frac{1}{3}$%",
+        "75%",
+        "80%",
+        "90%",
+        "100%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pankaj 36,000 × 12 = 4,32,000; Qamar 54,000 × 8 = 4,32,000 → together 8,64,000 = 60% of the total.",
+          "Radha × 8 = 8,64,000 × 40/60 = 5,76,000 → Radha = ₹72,000 → 72,000/90,000 = 80%."
+        ],
+        "trap": "100% counts Qamar for all 12 months and 53$\\frac{1}{3}$% gives Radha all 12 months; both were in for only 8."
+      },
+      "tags": [
+        "template:c-capital-percent",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-057",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Sachin, Trisha and Udit invested ₹28,000, ₹21,000 and ₹35,000 in a business. After 5 months Sachin withdrew ₹7,000, and after 9 months Trisha added ₹14,000. If Udit's share of the year's profit was ₹18,000, what was the total profit?",
+      "options": [
+        "₹36,000",
+        "₹41,700",
+        "₹42,900",
+        "₹43,200",
+        "₹44,100"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sachin: 28,000 × 5 + 21,000 × 7 = 2,87,000; Trisha: 21,000 × 9 + 35,000 × 3 = 2,94,000; Udit: 4,20,000.",
+          "Ratio 287 : 294 : 420 = 41 : 42 : 60 (143 parts). Udit's 60 parts = 18,000 → 1 part = 300 → total = 143 × 300 = ₹42,900."
+        ],
+        "trap": "₹43,200 ignores both changes (28 : 21 : 35 = 4 : 3 : 5, so 18,000 × 12/5)."
+      },
+      "tags": [
+        "template:two-changes",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-058",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vaishali, Wasim and Yuvraj kept their money in a business for 8, 9 and 12 months respectively and shared the profit in the ratio 2 : 3 : 4. If their total capital was ₹55,000, how much did Vaishali invest?",
+      "options": [
+        "₹12,500",
+        "₹15,000",
+        "₹16,500",
+        "₹18,000",
+        "₹20,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Capital ∝ profit ÷ months: 2/8 : 3/9 : 4/12 = 1/4 : 1/3 : 1/3 = 3 : 4 : 4.",
+          "Vaishali = 55,000 × 3/11 = ₹15,000."
+        ],
+        "trap": "₹20,000 is Wasim's (and Yuvraj's) capital; reading 2 : 3 : 4 as the capital ratio ignores the different months."
+      },
+      "tags": [
+        "template:capital-ratio-from-leave",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-059",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Zubin and Anita have invested capitals in the ratio 5 : 3 for the whole year. Anita runs the business and draws ₹2,000 a month as salary from the profit; the rest is shared in the ratio of their capitals. If their total incomes for the year turn out to be equal, what was the year's profit?",
+      "options": [
+        "₹72,000",
+        "₹96,000",
+        "₹1,08,000",
+        "₹1,20,000",
+        "₹1,44,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Salary = 2,000 × 12 = ₹24,000. Let the rest be R: Zubin = 5R/8, Anita = 24,000 + 3R/8.",
+          "Equal → 2R/8 = 24,000 → R = ₹96,000 → profit = 96,000 + 24,000 = ₹1,20,000."
+        ],
+        "trap": "₹96,000 is only the part shared by capital; the salary also comes out of the profit."
+      },
+      "tags": [
+        "template:monthly-salary",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-060",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Bhanu started a pottery unit. Four months later, Chaitanya joined with ₹9,000 more than Bhanu's capital. At the end of the year, the profit was shared Bhanu : Chaitanya = 6 : 7. How much did Chaitanya invest?",
+      "options": [
+        "₹12,000",
+        "₹15,000",
+        "₹18,000",
+        "₹19,500",
+        "₹21,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let Bhanu = b: 12b : 8(b + 9,000) = 6 : 7 → 84b = 48b + 4,32,000 → b = ₹12,000.",
+          "Chaitanya = 12,000 + 9,000 = ₹21,000. Check: 1,44,000 : 1,68,000 = 6 : 7."
+        ],
+        "trap": "₹12,000 is Bhanu's capital, the value you solve for first; the question asks for Chaitanya's."
+      },
+      "tags": [
+        "template:join-late-capital",
+        "partnership:capital-from-share"
+      ]
+    },
+    {
+      "key": "pt-061",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Dhruv, Esha and Faiz invested ₹40,000, ₹50,000 and ₹30,000 in a business. Some months later, Esha left and, at the same time, Faiz withdrew one-third of his capital. Dhruv stayed all year. If Esha and Faiz received equal shares of the year's profit, after how many months did Esha leave?",
+      "options": [
+        "3 months",
+        "4 months",
+        "5 months",
+        "6 months",
+        "8 months"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Esha = 50,000x; Faiz = 30,000x + 20,000(12 − x) = 2,40,000 + 10,000x.",
+          "50,000x = 2,40,000 + 10,000x → x = 6."
+        ],
+        "trap": "Leaving Faiz at ₹30,000 for the year gives 50,000x = 3,60,000, x = 7.2, which is no option; his withdrawal starts at the same month x."
+      },
+      "tags": [
+        "template:leave-withdraw-third",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-062",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Gopi and Hamsa invested ₹50,000 and ₹40,000. After 4 months, Gopi increased his capital by x% and Hamsa increased hers by 2x%. If they shared the year's profit equally, what is the value of x?",
+      "options": [
+        "20%",
+        "25%",
+        "40%",
+        "50%",
+        "60%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Gopi: 50,000 × 4 + 50,000(1 + x/100) × 8 = 6,00,000 + 4,000x; Hamsa: 40,000 × 4 + 40,000(1 + 2x/100) × 8 = 4,80,000 + 6,400x.",
+          "Equal → 1,20,000 = 2,400x → x = 50. Check: 8,00,000 each."
+        ],
+        "trap": "At 25% Gopi has 7,00,000 and Hamsa 6,40,000, so the shares are not equal; the first 4 months at the old capitals must be counted too."
+      },
+      "tags": [
+        "template:capital-increase-percent",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-063",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Indrajit and Jasleen started a business with ₹54,000 and ₹36,000. After 4 months, Indrajit withdrew ₹18,000. Out of the annual profit of ₹39,000, what is Indrajit's share?",
+      "options": [
+        "₹21,000",
+        "₹22,000",
+        "₹23,400",
+        "₹24,000",
+        "₹25,200"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Indrajit: 54,000 × 4 + 36,000 × 8 = 5,04,000; Jasleen: 36,000 × 12 = 4,32,000 → 7 : 6.",
+          "Indrajit = 39,000 × 7/13 = ₹21,000."
+        ],
+        "trap": "₹23,400 ignores the withdrawal (3 : 2); Indrajit's ₹54,000 stayed in for only 4 months."
+      },
+      "tags": [
+        "template:mid-year-change",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-064",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Kamal started a business with ₹48,000. After 4 months Lata joined with ₹36,000. After another 4 months Kamal withdrew half of his capital and Manav joined with ₹54,000. Out of the year's profit of ₹61,500, how much more did Kamal get than Lata?",
+      "options": [
+        "₹9,000",
+        "₹12,000",
+        "₹13,500",
+        "₹16,400",
+        "₹16,500"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Kamal: 48,000 × 8 + 24,000 × 4 = 4,80,000; Lata: 36,000 × 8 = 2,88,000; Manav: 54,000 × 4 = 2,16,000.",
+          "Ratio 480 : 288 : 216 = 20 : 12 : 9 (41 parts, ₹1,500 each) → Kamal − Lata = 8 × 1,500 = ₹12,000."
+        ],
+        "trap": "₹16,400 keeps Kamal at ₹48,000 all year (8 : 4 : 3); ₹13,500 is Manav's share."
+      },
+      "tags": [
+        "template:two-changes",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-065",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Naina and Omar invested ₹27,000 and ₹45,000 and shared the first year's profit in the ratio of their capitals. Naina added her whole share to her capital, while Omar withdrew his share. In the second year the profit was shared Naina : Omar = 3 : 4. What was the first year's profit?",
+      "options": [
+        "₹6,750",
+        "₹16,000",
+        "₹18,000",
+        "₹20,000",
+        "₹24,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Year 2: Naina's capital = 45,000 × 3/4 = ₹33,750, so her year-1 share = 33,750 − 27,000 = ₹6,750.",
+          "Year 1 split 27 : 45 = 3 : 5 → Naina's 3/8 of P = 6,750 → P = ₹18,000."
+        ],
+        "trap": "₹6,750 is only Naina's share of the first year's profit."
+      },
+      "tags": [
+        "template:reinvestment-split",
+        "partnership:reinvestment"
+      ]
+    },
+    {
+      "key": "pt-066",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Parth started a business with ₹15,000. Ruchi joined after a few months with ₹21,000, and Sahil joined with ₹12,000 after twice as many months as Ruchi. Out of the year's profit of ₹33,000, Ruchi's share was ₹14,000. After how many months did Ruchi join?",
+      "options": [
+        "2 months",
+        "3 months",
+        "4 months",
+        "5 months",
+        "6 months"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Try x = 4: Parth 1,80,000; Ruchi 21,000 × 8 = 1,68,000; Sahil 12,000 × 4 = 48,000 → 15 : 14 : 4.",
+          "Ruchi = 33,000 × 14/33 = ₹14,000 ✓. x = 3 gives 1,89,000 : 72,000 with Parth's 1,80,000, i.e. Ruchi ≈ ₹14,143, and x = 5 gives ≈ ₹13,821."
+        ],
+        "trap": "8 months is how long Ruchi stayed; joining dates are counted from the start."
+      },
+      "tags": [
+        "template:join-month",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-067",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Tanvi left a business after 6 months, Ujjwal left after 9 months, and Vidya stayed for the whole year. If their profits were in the ratio 1 : 2 : 3, what was the ratio of their capitals?",
+      "options": [
+        "6 : 8 : 9",
+        "9 : 8 : 6",
+        "1 : 2 : 3",
+        "3 : 4 : 6",
+        "2 : 3 : 4"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Capital ∝ profit ÷ months: 1/6 : 2/9 : 3/12.",
+          "Multiply by 36: 6 : 8 : 9."
+        ],
+        "trap": "9 : 8 : 6 is the reversed answer; 1 : 2 : 3 is the profit ratio itself."
+      },
+      "tags": [
+        "template:capital-ratio-from-leave",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-068",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Waqar and Yashoda invested ₹60,000 and ₹40,000. Waqar, the working partner, first receives 10% of the profit as salary, and the rest is shared in the ratio of their capitals. If Waqar's total income exceeds Yashoda's by ₹14,000, what is the total profit?",
+      "options": [
+        "₹40,000",
+        "₹50,000",
+        "₹56,000",
+        "₹62,500",
+        "₹70,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Waqar = 10% + 90% × 3/5 = 64% of P; Yashoda = 90% × 2/5 = 36% of P.",
+          "Difference = 28% of P = 14,000 → P = ₹50,000."
+        ],
+        "trap": "₹70,000 ignores the salary (3 : 2, difference 1/5 of P)."
+      },
+      "tags": [
+        "template:working-partner-pct",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-069",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Zoya started a business with ₹45,000, and Akash joined after 5 months with ₹60,000. At the end of the year, Zoya's share was ₹3,000 more than Akash's. What was the total profit?",
+      "options": [
+        "₹15,000",
+        "₹18,000",
+        "₹21,000",
+        "₹22,500",
+        "₹24,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Zoya 45,000 × 12 = 5,40,000; Akash 60,000 × 7 = 4,20,000 → 9 : 7.",
+          "Difference = 2 parts = ₹3,000 → 1 part = 1,500 → total = 16 × 1,500 = ₹24,000."
+        ],
+        "trap": "₹21,000 uses capitals alone (3 : 4, 7 parts of ₹3,000); Akash's 7 months make Zoya the larger earner."
+      },
+      "tags": [
+        "template:share-difference-total",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-070",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ranjana, Sudhir and Tulika invested a total of ₹1,20,000 in a business. Ranjana invested ₹15,000 more than Sudhir, and Sudhir invested ₹15,000 more than Tulika. Tulika joined 4 months after the start and Ranjana withdrew her money after 8 months; Sudhir stayed all year. Out of the year's profit of ₹56,000, what is Sudhir's share?",
+      "options": [
+        "₹18,000",
+        "₹20,000",
+        "₹22,000",
+        "₹23,000",
+        "₹24,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Sudhir = 1,20,000 ÷ 3 = ₹40,000, Ranjana ₹55,000, Tulika ₹25,000.",
+          "Ranjana 55,000 × 8 = 4,40,000; Sudhir 4,80,000; Tulika 25,000 × 8 = 2,00,000 → 11 : 12 : 5 (28 parts).",
+          "Sudhir = 56,000 × 12/28 = ₹24,000."
+        ],
+        "trap": "₹22,000 is Ranjana's share; ignoring the months would give Sudhir only 56,000 × 40/120 ≈ ₹18,667."
+      },
+      "tags": [
+        "template:capital-sum-differences",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-071",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ishan, Jyoti and Kartik started a business with capitals in the ratio $\\frac{1}{2}$ : $\\frac{1}{3}$ : $\\frac{1}{4}$. After 4 months Ishan doubled his capital, and after 8 months Jyoti withdrew half of hers. Out of the year's profit of ₹24,500, what is Ishan's share?",
+      "options": [
+        "₹12,500",
+        "₹14,000",
+        "₹15,000",
+        "₹16,000",
+        "₹18,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Capitals ½ : ⅓ : ¼ = 6 : 4 : 3. Ishan: 6 × 4 + 12 × 8 = 120; Jyoti: 4 × 8 + 2 × 4 = 40; Kartik: 3 × 12 = 36.",
+          "Ratio 120 : 40 : 36 = 30 : 10 : 9 (49 parts) → Ishan = 24,500 × 30/49 = ₹15,000."
+        ],
+        "trap": "Counting Ishan's doubled capital for all 12 months gives about ₹16,036, close to ₹16,000; the doubling applies only to the last 8 months."
+      },
+      "tags": [
+        "template:period-from-ratios",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-072",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Lalit and Madhu invested ₹27,000 and ₹45,000 in a business, and Nupur also invested some money; all three stayed for the whole year. Out of a profit of ₹40,000, Nupur got ₹15,000. Nupur's capital is what percent of Lalit's and Madhu's capitals combined?",
+      "options": [
+        "37.5%",
+        "40%",
+        "60%",
+        "75%",
+        "150%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Lalit + Madhu got 40,000 − 15,000 = ₹25,000 for ₹72,000, so Nupur's capital = 72,000 × 15/25 = ₹43,200.",
+          "Nupur as % of 72,000 = 15/25 × 100 = 60%."
+        ],
+        "trap": "37.5% is Nupur's share of the total profit (15/40), not her capital compared with the other two."
+      },
+      "tags": [
+        "template:c-capital-percent",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-073",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Prakash and Rukmini started a business with ₹8,000 and ₹12,000. After 4 months Tanmay joined with ₹16,000, and after another 4 months Prakash took out his entire capital. Out of the year's profit of ₹31,500, what is Tanmay's share?",
+      "options": [
+        "₹12,000",
+        "₹13,000",
+        "₹13,500",
+        "₹14,000",
+        "₹15,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Prakash 8,000 × 8 = 64,000; Rukmini 12,000 × 12 = 1,44,000; Tanmay 16,000 × 8 = 1,28,000 → 4 : 9 : 8.",
+          "Tanmay = 31,500 × 8/21 = ₹12,000."
+        ],
+        "trap": "₹14,000 uses capitals only (16/36 of the profit); ₹13,500 is Rukmini's share."
+      },
+      "tags": [
+        "template:two-changes",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-074",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Four times Anup's capital equals six times Bhavna's capital, which equals eight times Charvi's capital. Anup stayed in the business all year, Charvi joined after 4 months and Bhavna left after 9 months. Out of the year's profit of ₹49,500, what is Bhavna's share?",
+      "options": [
+        "₹9,000",
+        "₹12,000",
+        "₹13,500",
+        "₹15,000",
+        "₹27,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "4A = 6B = 8C = 24 → A : B : C = 6 : 4 : 3.",
+          "Anup 6 × 12 = 72; Bhavna 4 × 9 = 36; Charvi 3 × 8 = 24 → 6 : 3 : 2 (11 parts) → Bhavna = 49,500 × 3/11 = ₹13,500."
+        ],
+        "trap": "Reading the multipliers 4 : 6 : 8 as the capital ratio is the classic slip; the capitals are 1/4 : 1/6 : 1/8 = 6 : 4 : 3. ₹27,000 is Anup's share and ₹9,000 Charvi's."
+      },
+      "tags": [
+        "template:equal-multiples",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-075",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Deepa invested ₹28,000 in a business for the whole year. Eklavya invested ₹36,000 but took it out after some months. If Eklavya's share was 30% of the year's profit, after how many months did he withdraw?",
+      "options": [
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months",
+        "8 months"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Deepa : Eklavya = 70 : 30 = 7 : 3. Deepa = 28,000 × 12 = 3,36,000.",
+          "Eklavya = 3,36,000 × 3/7 = 1,44,000 → 1,44,000 ÷ 36,000 = 4 months."
+        ],
+        "trap": "8 months is 12 − 4, the part of the year after he left."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-076",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Faraz took his capital out of a business after 5 months, while Gita kept hers in for the whole year. The year's profit was shared Faraz : Gita = 5 : 8. If Faraz's capital was ₹9,600 more than Gita's, what was Faraz's capital?",
+      "options": [
+        "₹19,200",
+        "₹28,800",
+        "₹32,000",
+        "₹38,400",
+        "₹48,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Faraz × 5 : Gita × 12 = 5 : 8 → 40 × Faraz = 60 × Gita → Faraz : Gita = 3 : 2.",
+          "Difference = 1 part = ₹9,600 → Faraz = 3 × 9,600 = ₹28,800."
+        ],
+        "trap": "₹19,200 is Gita's capital (2 parts)."
+      },
+      "tags": [
+        "template:capital-ratio-from-leave",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-077",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Harini started a business, and Imtiaz joined her on the same day with ₹8,000 more than her capital. After 6 months, Harini added ₹4,000 while Imtiaz withdrew ₹4,000. If the year's profit was shared Harini : Imtiaz = 7 : 8, what was Imtiaz's initial capital?",
+      "options": [
+        "₹26,000",
+        "₹28,000",
+        "₹30,000",
+        "₹32,000",
+        "₹34,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let Harini = h: Harini = 6h + 6(h + 4,000) = 12h + 24,000; Imtiaz = 6(h + 8,000) + 6(h + 4,000) = 12h + 72,000.",
+          "8(12h + 24,000) = 7(12h + 72,000) → 12h = 3,12,000 → h = ₹26,000 → Imtiaz = ₹34,000.",
+          "Check: 3,36,000 : 3,84,000 = 7 : 8."
+        ],
+        "trap": "₹26,000 is Harini's capital, the value you solve for first."
+      },
+      "tags": [
+        "template:mid-year-change",
+        "partnership:capital-from-share"
+      ]
+    },
+    {
+      "key": "pt-078",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Jayant and Komal invested ₹40,000 each in a business. The first year's profit of ₹16,000 was shared equally; Jayant added all of his share to his capital, while Komal added only half of hers. If the second year's profit was ₹34,500, what was Jayant's share?",
+      "options": [
+        "₹17,250",
+        "₹18,000",
+        "₹18,400",
+        "₹19,500",
+        "₹20,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Year 1: ₹8,000 each → Jayant's capital 48,000, Komal's 40,000 + 4,000 = 44,000 → 12 : 11.",
+          "Jayant = 34,500 × 12/23 = ₹18,000."
+        ],
+        "trap": "₹17,250 is half the profit, as if the capitals were still equal."
+      },
+      "tags": [
+        "template:reinvestment-split",
+        "partnership:reinvestment"
+      ]
+    },
+    {
+      "key": "pt-079",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Lakshman started a business with ₹24,000. After 4 months Mansi joined with ₹30,000, and after 6 months Neeraj joined with some capital. Out of the year's profit of ₹21,000, Neeraj's share was ₹5,600. How much did Neeraj invest?",
+      "options": [
+        "₹16,000",
+        "₹24,000",
+        "₹28,000",
+        "₹30,000",
+        "₹32,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Lakshman 24,000 × 12 = 2,88,000; Mansi 30,000 × 8 = 2,40,000 → together 5,28,000 for 21,000 − 5,600 = ₹15,400.",
+          "Neeraj × 6 = 5,28,000 × 5,600/15,400 = 1,92,000 → Neeraj = ₹32,000."
+        ],
+        "trap": "₹16,000 divides 1,92,000 by 12 months; Neeraj was in for only 6."
+      },
+      "tags": [
+        "template:join-late-capital",
+        "partnership:capital-from-share"
+      ]
+    },
+    {
+      "key": "pt-080",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Omprakash and Priti started a business with ₹60,000 and ₹40,000. After some months, Omprakash withdrew ₹20,000 and Priti added ₹20,000. Out of the annual profit of ₹60,000, Omprakash got ₹34,000. After how many months were the changes made?",
+      "options": [
+        "2 months",
+        "7 months",
+        "8 months",
+        "9 months",
+        "10 months"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Omprakash = 60,000x + 40,000(12 − x) = 4,80,000 + 20,000x; Priti = 7,20,000 − 20,000x; total = 12,00,000.",
+          "Omprakash's share 34,000/60,000 = 17/30 → 4,80,000 + 20,000x = 12,00,000 × 17/30 = 6,80,000 → x = 10."
+        ],
+        "trap": "2 months is 12 − 10, the period after the swap."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Raghav started a business with ₹40,000. Sneha joined after 4 months with ₹50,000, and Tarun joined after 6 months. At the end of the year, Raghav's and Sneha's shares together came to ₹22,000 and Tarun's share was ₹10,800. Tarun's capital is what percent of Raghav's and Sneha's capitals combined?",
+      "options": [
+        "40%",
+        "60%",
+        "75%",
+        "80%",
+        "90%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Raghav 40,000 × 12 = 4,80,000; Sneha 50,000 × 8 = 4,00,000 → together 8,80,000 for ₹22,000.",
+          "Tarun × 6 = 8,80,000 × 10,800/22,000 = 4,32,000 → Tarun = ₹72,000 → 72,000/90,000 = 80%."
+        ],
+        "trap": "40% gives Tarun all 12 months (4,32,000 ÷ 12 = ₹36,000); his money was in for only 6."
+      },
+      "tags": [
+        "template:c-capital-percent",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-082",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Uttam and Vimala started a business with ₹40,000 and ₹60,000. Uttam runs it and draws ₹1,000 a month from the profit as salary; the rest is shared in the ratio of capital × time. After 6 months Uttam added ₹20,000 and Vimala withdrew ₹20,000. If the year's profit is ₹72,000, what is Uttam's total income?",
+      "options": [
+        "₹30,000",
+        "₹36,000",
+        "₹38,000",
+        "₹40,000",
+        "₹42,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Uttam: 40,000 × 6 + 60,000 × 6 = 6,00,000; Vimala: 60,000 × 6 + 40,000 × 6 = 6,00,000 → 1 : 1.",
+          "Salary = ₹12,000; rest ₹60,000 → ₹30,000 each → Uttam = 30,000 + 12,000 = ₹42,000."
+        ],
+        "trap": "₹36,000 ignores the changes (2 : 3 gives 24,000 + 12,000); ₹30,000 forgets the salary."
+      },
+      "tags": [
+        "template:monthly-salary",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-083",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Yatin and Zara started a business with ₹42,000 and ₹36,000. After 6 months Yatin left, Zara withdrew one-third of her capital, and Aditi joined with ₹30,000, all on the same day. If Zara's share of the year's profit was ₹15,000, what was the total profit?",
+      "options": [
+        "₹30,000",
+        "₹33,000",
+        "₹34,500",
+        "₹36,000",
+        "₹39,600"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Yatin 42,000 × 6 = 2,52,000; Zara 36,000 × 6 + 24,000 × 6 = 3,60,000; Aditi 30,000 × 6 = 1,80,000 → 7 : 10 : 5.",
+          "Zara's 10 parts = 15,000 → total = 22 × 1,500 = ₹33,000."
+        ],
+        "trap": "₹30,000 forgets Zara's withdrawal (7 : 12 : 5, 24 parts of ₹1,250)."
+      },
+      "tags": [
+        "template:leave-withdraw-third",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-084",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Bhushan started a business with ₹50,000. After 3 months he raised his capital by 20%, and after 9 months he raised the new amount by a further 25%. Charulata invested ₹60,000 for the whole year. Out of the annual profit of ₹48,500, what is Bhushan's share?",
+      "options": [
+        "₹24,000",
+        "₹24,500",
+        "₹25,000",
+        "₹25,500",
+        "₹26,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Bhushan: 50,000 × 3 + 60,000 × 6 + 75,000 × 3 = 1,50,000 + 3,60,000 + 2,25,000 = 7,35,000; Charulata 7,20,000 → 49 : 48.",
+          "Bhushan = 48,500 × 49/97 = ₹24,500."
+        ],
+        "trap": "₹24,000 is Charulata's share; the second rise is 25% of ₹60,000 (to ₹75,000), not of ₹50,000."
+      },
+      "tags": [
+        "template:capital-increase-percent",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-085",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Dinesh and Farida started a business with ₹50,000 and ₹40,000. Some months later Gautam joined them with ₹45,000. Out of the year's profit of ₹36,000, Gautam got ₹9,000. After how many months did Gautam join?",
+      "options": [
+        "4 months",
+        "6 months",
+        "8 months",
+        "9 months",
+        "10 months"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Dinesh + Farida = 90,000 × 12 = 10,80,000 for ₹27,000.",
+          "Gautam's product = 10,80,000 × 9,000/27,000 = 3,60,000 → 3,60,000 ÷ 45,000 = 8 months in → joined after 12 − 8 = 4 months."
+        ],
+        "trap": "8 months is how long Gautam stayed, not when he joined."
+      },
+      "tags": [
+        "template:join-month",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-086",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Hitesh started a business with some capital, and Jharna joined him at the start with ₹30,000. After 4 months Hitesh added ₹6,000, and after another 4 months he withdrew ₹9,000. Jharna's capital did not change. If the year's profit was shared Hitesh : Jharna = 7 : 10, what was Hitesh's initial capital?",
+      "options": [
+        "₹20,000",
+        "₹21,000",
+        "₹22,000",
+        "₹24,000",
+        "₹26,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Hitesh = 4h + 4(h + 6,000) + 4(h − 3,000) = 12h + 12,000; Jharna = 30,000 × 12 = 3,60,000.",
+          "12h + 12,000 = 3,60,000 × 7/10 = 2,52,000 → h = ₹20,000."
+        ],
+        "trap": "₹21,000 ignores the two changes (2,52,000 ÷ 12); after +6,000 and −9,000 the last 4 months are at h − 3,000."
+      },
+      "tags": [
+        "template:two-changes",
+        "partnership:capital-from-share"
+      ]
+    },
+    {
+      "key": "pt-087",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Kalpana took her money out of a business after 4 months and Laxman after 9 months, while Mridula stayed for the whole year. Their profits were in the ratio 2 : 3 : 4. If their total capital was ₹1,05,000, what was Laxman's capital?",
+      "options": [
+        "₹30,000",
+        "₹35,000",
+        "₹37,500",
+        "₹40,000",
+        "₹45,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Capital ∝ profit ÷ months: 2/4 : 3/9 : 4/12 = 1/2 : 1/3 : 1/3 = 3 : 2 : 2.",
+          "Laxman = 1,05,000 × 2/7 = ₹30,000."
+        ],
+        "trap": "₹35,000 uses the profit ratio as the capital ratio (3/9 of the total); ₹45,000 is Kalpana's capital."
+      },
+      "tags": [
+        "template:capital-ratio-from-leave",
+        "partnership:capital-ratio"
+      ]
+    },
+    {
+      "key": "pt-088",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Nalini and Paresh started a business with ₹24,000 and ₹36,000. After 4 months Rehana joined with ₹48,000. After 8 months Nalini left and, at the same time, Paresh withdrew one-third of his capital. If Rehana's share of the year's profit exceeded Nalini's by ₹7,200, what was the total profit?",
+      "options": [
+        "₹36,000",
+        "₹37,800",
+        "₹38,400",
+        "₹40,000",
+        "₹43,200"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Nalini 24,000 × 8 = 1,92,000; Paresh 36,000 × 8 + 24,000 × 4 = 3,84,000; Rehana 48,000 × 8 = 3,84,000 → 1 : 2 : 2.",
+          "Rehana − Nalini = 1 part = ₹7,200 → total = 5 × 7,200 = ₹36,000."
+        ],
+        "trap": "₹37,800 keeps Paresh at ₹36,000 all year (4 : 9 : 8, difference 4 parts of ₹1,800)."
+      },
+      "tags": [
+        "template:leave-withdraw-third",
+        "partnership:share-difference"
+      ]
+    },
+    {
+      "key": "pt-089",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Sushant and Tanya started a business with ₹32,000 and ₹48,000, and Vedant joined them after 3 months with ₹40,000. Sushant manages the business and first takes 20% of the profit as commission; the rest is shared in the ratio of capital × time. If the year's profit is ₹55,000, by how much does Sushant's total income exceed Tanya's?",
+      "options": [
+        "₹3,000",
+        "₹4,600",
+        "₹5,200",
+        "₹5,400",
+        "₹6,400"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sushant 3,84,000; Tanya 5,76,000; Vedant 40,000 × 9 = 3,60,000 → 16 : 24 : 15 (55 parts).",
+          "Commission = ₹11,000; rest ₹44,000 → 1 part = 800 → Sushant = 11,000 + 12,800 = ₹23,800, Tanya = 19,200.",
+          "Difference = 23,800 − 19,200 = ₹4,600."
+        ],
+        "trap": "₹3,000 splits the whole ₹55,000 in 16 : 24 : 15 before adding the commission (11,000 + 16,000 − 24,000); the commission comes out first."
+      },
+      "tags": [
+        "template:working-partner-pct",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-090",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Akhil and Darshan started a business with ₹40,000 and ₹30,000, and Bhoomi joined them after 4 months with ₹50,000. Out of the profit, Akhil first gets 10% for managing the business and Bhoomi gets 5% as sales commission; the rest is shared in the ratio of capital × time. If the year's profit is ₹62,000, what is Bhoomi's total income?",
+      "options": [
+        "₹17,000",
+        "₹18,600",
+        "₹20,000",
+        "₹20,100",
+        "₹23,100"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Akhil 4,80,000; Bhoomi 50,000 × 8 = 4,00,000; Darshan 3,60,000 → 12 : 10 : 9 (31 parts).",
+          "Allowances = 10% + 5% = 15% → rest = 85% of 62,000 = ₹52,700 → 1 part = 1,700 → Bhoomi's share = ₹17,000.",
+          "Bhoomi's total = 17,000 + 3,100 commission = ₹20,100."
+        ],
+        "trap": "₹20,000 divides the whole ₹62,000 in 12 : 10 : 9 and forgets the commission; ₹23,100 adds the commission to that."
+      },
+      "tags": [
+        "template:working-partner-pct",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-091",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Hamid and Ishani started a business with ₹55,000 and ₹45,000. After 4 months Ishani withdrew one-third of her capital, and after 6 months Jeevan joined them. At the end of the year, Jeevan's share was equal to Ishani's. Jeevan's capital is what percent of Hamid's and Ishani's initial capitals combined?",
+      "options": [
+        "35%",
+        "70%",
+        "75%",
+        "80%",
+        "90%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Ishani: 45,000 × 4 + 30,000 × 8 = 1,80,000 + 2,40,000 = 4,20,000.",
+          "Jeevan × 6 = 4,20,000 → Jeevan = ₹70,000 → 70,000/1,00,000 = 70%."
+        ],
+        "trap": "90% ignores Ishani's withdrawal (5,40,000 ÷ 6); 35% gives Jeevan 12 months instead of 6."
+      },
+      "tags": [
+        "template:c-capital-percent",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-092",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Kunal, Leena and Murali invested ₹24,000, ₹18,000 and ₹30,000 in a business. Kunal left after some months, and Leena left 2 months after Kunal; Murali stayed for the whole year. Out of the year's profit of ₹27,000, Murali's share was ₹15,000. After how many months did Leena leave?",
+      "options": [
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months",
+        "8 months"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Murali 30,000 × 12 = 3,60,000 = 15/27 = 5/9 of the total → total = 6,48,000 → Kunal + Leena = 2,88,000.",
+          "If Kunal stayed k months: 24,000k + 18,000(k + 2) = 2,88,000 → 42,000k = 2,52,000 → k = 6.",
+          "Leena left after 6 + 2 = 8 months."
+        ],
+        "trap": "6 months is when Kunal left; the question asks about Leena, who left 2 months later."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-093",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Navin started a business with ₹45,000, and Ojaswini joined him after 3 months with ₹30,000. Navin runs the business and draws ₹1,200 a month from the profit as salary; the rest is shared in the ratio of capital × time. If Navin's total income for the year exceeds Ojaswini's by ₹24,400, what is the year's profit?",
+      "options": [
+        "₹30,000",
+        "₹44,400",
+        "₹48,800",
+        "₹58,800",
+        "₹73,200"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Navin 45,000 × 12 = 5,40,000; Ojaswini 30,000 × 9 = 2,70,000 → 2 : 1. Salary = 1,200 × 12 = ₹14,400.",
+          "Let the rest be R: Navin = 14,400 + 2R/3, Ojaswini = R/3 → difference = 14,400 + R/3 = 24,400 → R = ₹30,000.",
+          "Profit = 30,000 + 14,400 = ₹44,400."
+        ],
+        "trap": "₹73,200 ignores the salary (24,400 as one part of three); ₹30,000 is only the amount shared by capital."
+      },
+      "tags": [
+        "template:monthly-salary",
+        "partnership:share-difference"
+      ]
+    },
+    {
+      "key": "pt-094",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rajat and Sharmila invested ₹60,000 and ₹40,000. The first year's profit of ₹25,000 was shared in the ratio of their capitals; Rajat took his share out, while Sharmila added hers to her capital. In the second year, Trilok joined them after 4 months with ₹45,000. If the second year's profit was ₹42,000, what was Sharmila's share of it?",
+      "options": [
+        "₹15,000",
+        "₹16,000",
+        "₹16,800",
+        "₹18,000",
+        "₹21,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Year 1 split 3 : 2 → Sharmila gets ₹10,000 → her capital becomes ₹50,000.",
+          "Year 2: Rajat 7,20,000; Sharmila 6,00,000; Trilok 45,000 × 8 = 3,60,000 → 6 : 5 : 3 (14 parts).",
+          "Sharmila = 42,000 × 5/14 = ₹15,000."
+        ],
+        "trap": "₹16,800 gives Sharmila her old 2/5 share and ignores both the reinvestment and Trilok."
+      },
+      "tags": [
+        "template:reinvestment-split",
+        "partnership:reinvestment"
+      ]
+    },
+    {
+      "key": "pt-095",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ujala and Vasant invested ₹30,000 and ₹40,000 in a business. After 4 months, Ujala increased her capital by 50%. What percent of the year's profit does Ujala receive?",
+      "options": [
+        "37.5%",
+        "40%",
+        "42.5%",
+        "45%",
+        "50%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Ujala: 30,000 × 4 + 45,000 × 8 = 1,20,000 + 3,60,000 = 4,80,000; Vasant: 40,000 × 12 = 4,80,000.",
+          "Equal products → Ujala gets 50% of the profit."
+        ],
+        "trap": "Ignoring the increase gives 3 : 4, about 42.9%, which tempts 42.5%; the extra ₹15,000 for 8 months makes the two products equal."
+      },
+      "tags": [
+        "template:capital-increase-percent",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-096",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Waman and Yogita invested capitals in the ratio 5 : 4 in a business. Waman's money was invested for 8 months and Yogita's for 12 months. In what ratio should they share the profit (Waman : Yogita)?",
+      "options": [
+        "6 : 5",
+        "5 : 4",
+        "10 : 9",
+        "2 : 3",
+        "5 : 6"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Profit ∝ capital × time: 5 × 8 : 4 × 12 = 40 : 48.",
+          "40 : 48 = 5 : 6."
+        ],
+        "trap": "5 : 4 ignores the months; 6 : 5 is the reverse."
+      },
+      "tags": [
+        "template:period-from-ratios",
+        "partnership:time-weighted"
+      ]
+    },
+    {
+      "key": "pt-097",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Asha and Bimal invested equal amounts in a shop. Asha manages the shop and first receives 20% of the profit; the rest is split equally between them. If the profit for the year is ₹30,000, how much does Asha get in all?",
+      "options": [
+        "₹15,000",
+        "₹18,000",
+        "₹21,000",
+        "₹24,000",
+        "₹27,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Asha's 20% = ₹6,000; the remaining ₹24,000 is split equally → ₹12,000 each.",
+          "Asha = 6,000 + 12,000 = ₹18,000."
+        ],
+        "trap": "₹21,000 adds the ₹6,000 to half of the whole ₹30,000; the 20% comes out before the split."
+      },
+      "tags": [
+        "template:working-partner-pct",
+        "partnership:working-partner"
+      ]
+    },
+    {
+      "key": "pt-098",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Chhaya and Dhaval started a business with ₹40,000 each. After 3 months Dhaval withdrew ₹10,000. In what ratio should the year's profit be shared (Chhaya : Dhaval)?",
+      "options": [
+        "16 : 13",
+        "13 : 16",
+        "4 : 3",
+        "3 : 4",
+        "8 : 7"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Chhaya: 40,000 × 12 = 4,80,000; Dhaval: 40,000 × 3 + 30,000 × 9 = 3,90,000.",
+          "4,80,000 : 3,90,000 = 16 : 13."
+        ],
+        "trap": "4 : 3 uses Dhaval's reduced ₹30,000 for the whole year; 13 : 16 is the reverse."
+      },
+      "tags": [
+        "template:mid-year-change",
+        "partnership:capital-change"
+      ]
+    },
+    {
+      "key": "pt-099",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Mehul and Nisha invested ₹30,000 and ₹40,000 in a business. Mehul took his money out after some months, while Nisha stayed for the whole year. If the profit was shared Mehul : Nisha = 1 : 2, after how many months did Mehul leave?",
+      "options": [
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months",
+        "8 months"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Nisha = 40,000 × 12 = 4,80,000 → Mehul's product = 2,40,000.",
+          "Mehul's months = 2,40,000 ÷ 30,000 = 8."
+        ],
+        "trap": "4 months is 12 − 8, the time after he left."
+      },
+      "tags": [
+        "template:leave-find-months",
+        "partnership:join-withdraw"
+      ]
+    },
+    {
+      "key": "pt-100",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Pritam started a business with ₹25,000. Some months later Rashmi joined him with ₹30,000. Out of the year's profit of ₹21,000, Rashmi's share was ₹6,000. After how many months did Rashmi join?",
+      "options": [
+        "3 months",
+        "4 months",
+        "6 months",
+        "7 months",
+        "8 months"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pritam : Rashmi = 15,000 : 6,000 = 5 : 2; Pritam = 25,000 × 12 = 3,00,000.",
+          "Rashmi's product = 3,00,000 × 2/5 = 1,20,000 → 4 months in → joined after 12 − 4 = 8 months."
+        ],
+        "trap": "4 months is how long Rashmi's money was in the business, not when she joined."
+      },
+      "tags": [
+        "template:join-month",
+        "partnership:join-withdraw"
+      ]
+    }
+  ]
+}
