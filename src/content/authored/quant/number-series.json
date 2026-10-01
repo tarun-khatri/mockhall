@@ -2443,34 +2443,6 @@
       ]
     },
     {
-      "key": "ns-078",
-      "subtype": "wrong-number",
-      "difficulty": "hard",
-      "prompt": "Find the wrong number in the following number series.\n\n3, 80, 6, 75, 12, 66, 24, 59",
-      "options": [
-        "80",
-        "6",
-        "75",
-        "12",
-        "66"
-      ],
-      "answerIndex": 2,
-      "solution": {
-        "steps": [
-          "Pattern: Two alternating series: odd places × 2, even places − 7.",
-          "Odd places: 3, 6, 12, 24 (× 2).",
-          "Even places: 80, 73, 66, 59 (−7).",
-          "The series should have 73 where 75 is printed, so 75 is the wrong number."
-        ],
-        "shortcut": "Two alternating series: odd places × 2, even places − 7. The first step that breaks the rule points to the wrong term.",
-        "trap": "Do not compare neighbours (6 → 75 → 12); they belong to different series. The even places 80, ?, 66, 59 fall by 7, so the term must be 73."
-      },
-      "tags": [
-        "series:twin-ap-gp",
-        "series:wrong-number"
-      ]
-    },
-    {
       "key": "ns-079",
       "subtype": "wrong-number",
       "difficulty": "hard",
@@ -2499,38 +2471,6 @@
       },
       "tags": [
         "series:cube-square-alt",
-        "series:wrong-number"
-      ]
-    },
-    {
-      "key": "ns-080",
-      "subtype": "wrong-number",
-      "difficulty": "hard",
-      "prompt": "Find the wrong number in the following number series.\n\n47, 58, 71, 81, 95, 109, 119",
-      "options": [
-        "58",
-        "71",
-        "81",
-        "95",
-        "109"
-      ],
-      "answerIndex": 2,
-      "solution": {
-        "steps": [
-          "Pattern: Add the sum of the digits of the term each time.",
-          "47 + 11 (digit sum) = 58",
-          "58 + 13 (digit sum) = 71",
-          "71 + 8 (digit sum) = 79",
-          "79 + 16 (digit sum) = 95",
-          "95 + 14 (digit sum) = 109",
-          "109 + 10 (digit sum) = 119",
-          "The series should have 79 where 81 is printed, so 81 is the wrong number."
-        ],
-        "shortcut": "Add the sum of the digits of the term each time. The first step that breaks the rule points to the wrong term.",
-        "trap": "The step after 81 also looks broken, but 95 follows correctly from the true value 79, so only 81 is wrong."
-      },
-      "tags": [
-        "series:digit-sum",
         "series:wrong-number"
       ]
     },

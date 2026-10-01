@@ -1,0 +1,17 @@
+[
+  {
+    "at": "2026-10-01T21:08:07.912Z",
+    "passed": 98,
+    "failed": [
+      {
+        "key": "ns-078",
+        "reason": "ambiguity 4 — Odd terms 3,6,12,24 (x2) are fine. Even terms 80,75,66,59: correcting 75 to 73 gives a constant -7 AP (C), and correcting 66 to 68 gives diffs -5,-7,-9 (E). Both corrections are clean. Picked C as the simpler AP, but E is equally defensible."
+      },
+      {
+        "key": "ns-080",
+        "reason": "ambiguity 3 — Digit-sum rule (n + digit sum): 71+8=79, not 81, so C. Rival: change 109 to 104 and diffs become 11,13,10,14,9,15 (alternate diffs 11,10,9 / 13,14,15, i.e. second diffs +2,-3,+4,-5,+6), a clean pattern that points to E."
+      }
+    ],
+    "unanswered": []
+  }
+]
