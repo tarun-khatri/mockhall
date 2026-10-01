@@ -604,6 +604,612 @@
         "ds:ranking",
         "ranking:marks"
       ]
+    },
+    {
+      "key": "ds-021",
+      "subtype": "blood-relation",
+      "difficulty": "easy",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nD, E, F, G and H are the only five members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is G related to E?**\n\n**I.** G is the husband of H. F is a child of D.\n**II.** D is the daughter of G. E is married to D.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "II: E is married to G’s daughter D, so G is E’s parent-in-law — but II does not give G’s gender. I gives G’s gender (husband of H) but does not link G to E.",
+          "Together: G is male and E’s spouse is G’s daughter, so G is E’s father-in-law.",
+          "Statement I alone: G could be the father or the father-in-law of E (e.g. the family D(m) + E(f) → F(m); G(m) + H(f) → E(f) gives “father”, while the family D(m) + E(f) → F(m); G(m) + H(f) → D(m) gives “father-in-law”) → **not sufficient**.",
+          "Statement II alone: G could be the father-in-law or the mother-in-law of E (e.g. the family E(m) + D(f) → H(m); G(m) + F(f) → D(f) gives “father-in-law”, while the family E(m) + D(f) → H(m); F(m) + G(f) → D(f) gives “mother-in-law”) → **not sufficient**.",
+          "I and II together: G is the father-in-law of E → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-022",
+      "subtype": "blood-relation",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nL, M, N, P, Q and R are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is R related to N?**\n\n**I.** R is P’s sister, and P’s wife Q has a son, N.\n**II.** N’s grandfather is L, and R’s mother is M.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: N is Q’s son and Q’s husband is P; a child’s two parents are a married couple, so P is N’s father. R is P’s sister, so R is N’s aunt.",
+          "II: L is a grandparent of N and M is R’s mother, but R’s own link to N is not fixed.",
+          "Statement I alone: R is the aunt of N → **sufficient**.",
+          "Statement II alone: R’s relation to N is open — 6 different relations fit (e.g. the family L(m) + M(f) → Q(f), R(f); P(m) + Q(f) → N(m) gives “aunt”, while the family L(m) + P(f) → Q(m); Q(m) + M(f) → N(m), R(m) gives “brother”) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-023",
+      "subtype": "blood-relation",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nT, U, V, W, X and Y are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is W related to Y?**\n\n**I.** Y’s mother is V, and W is a son of U.\n**II.** W is V’s brother. V is married to X, and Y is X’s daughter.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: Y is X’s daughter and X’s wife is V, so V is Y’s mother; W is V’s brother, so W is Y’s uncle.",
+          "I: V is Y’s mother and W is a son of U, but W need not be V’s sibling — W could even be Y’s father.",
+          "Statement I alone: W’s relation to Y is open — 5 different relations fit (e.g. the family W(m) + T(f) → X(m); U(m) + V(f) → W(m), Y(m) gives “brother”, while the family T(m) + U(f) → W(m), X(m); W(m) + V(f) → Y(m) gives “father”) → **not sufficient**.",
+          "Statement II alone: W is the uncle of Y → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-024",
+      "subtype": "blood-relation",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nJ, K, L, M, N and P are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is K related to N?**\n\n**I.** K is the mother of L. L is the husband of N.\n**II.** N is the daughter-in-law of J. K is the wife of J.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: N’s husband L is K’s son, so K is N’s mother-in-law.",
+          "II: N is married to a child of J; that child’s mother is J’s wife K, so K is again N’s mother-in-law.",
+          "Statement I alone: K is the mother-in-law of N → **sufficient**.",
+          "Statement II alone: K is the mother-in-law of N → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-025",
+      "subtype": "blood-relation",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nP, Q, R, S, T and U are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is T related to U?**\n\n**I.** T is the daughter of Q. U is the grandson of P.\n**II.** R is the father of U. T is unmarried.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: T is Q’s daughter and is unmarried, so T is not U’s parent. If Q is U’s grandmother, T is U’s aunt; but Q may be R’s wife (U’s mother, with P a parent of R), and then T is U’s sister.",
+          "Statement I alone: T could be the aunt, the mother or the sister of U (e.g. the family P(m) + Q(f) → S(f), T(f); R(m) + S(f) → U(m) gives “aunt”, while the family P(m) + Q(f) → S(m), T(f); R(m) + T(f) → U(m) gives “mother”) → **not sufficient**.",
+          "Statement II alone: T’s relation to U is open — 8 different relations fit (e.g. the family P(m) + Q(f) → S(f), T(f); R(m) + S(f) → U(m) gives “aunt”, while the family P(m) + Q(f) → S(f); R(m) + S(f) → T(m), U(m) gives “brother”) → **not sufficient**.",
+          "I and II together: T could be the aunt or the sister of U (e.g. the family P(m) + Q(f) → S(f), T(f); R(m) + S(f) → U(m) gives “aunt”, while the family P(m) + S(f) → R(m); R(m) + Q(f) → T(f), U(m) gives “sister”) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-026",
+      "subtype": "blood-relation",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nA, B, C, D, E and F are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is E related to B?**\n\n**I.** E is the wife of C. C is the son of A. B is the wife of A.\n**II.** F is a grandchild of B. E is the mother of F.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: E’s husband C is A’s son, and B is A’s wife, so B is C’s mother — E is B’s daughter-in-law.",
+          "II: E is F’s mother and B is F’s grandparent, so E may be B’s daughter or daughter-in-law.",
+          "Statement I alone: E is the daughter-in-law of B → **sufficient**.",
+          "Statement II alone: E could be the daughter or the daughter-in-law of B (e.g. the family A(m) + B(f) → D(m), E(f); C(m) + E(f) → F(m) gives “daughter”, while the family A(m) + B(f) → C(m), D(m); C(m) + E(f) → F(m) gives “daughter-in-law”) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-027",
+      "subtype": "blood-relation",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nE, F, G, H, J and K are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is G related to K?**\n\n**I.** K is a grandchild of E. G is the son of F.\n**II.** G is the husband of H. K is the brother of J. J is the daughter of H.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: J is H’s daughter and H’s husband is G, so G is J’s father; K is J’s brother, so G is K’s father.",
+          "I: K is E’s grandchild and G is F’s son — G may be K’s father, uncle or even brother.",
+          "Statement I alone: G could be the brother, the father or the uncle of K (e.g. the family E(m) + H(f) → J(f); F(m) + J(f) → G(m), K(m) gives “brother”, while the family E(m) + F(f) → G(m), J(m); G(m) + H(f) → K(m) gives “father”) → **not sufficient**.",
+          "Statement II alone: G is the father of K → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-028",
+      "subtype": "blood-relation",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nP, Q, R, S, T, U and V are the only seven members of a family of three generations. There are three married couples in the family, and every child in the family has both parents in the family.\n**How is U related to V?**\n\n**I.** S is the sister of R. V is the son of R. U is married to S.\n**II.** U is the son-in-law of P. U has no children. V is the grandson of Q. T is the daughter-in-law of P.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: V’s father R has a sister S, and U is married to S, so U is male and is V’s uncle.",
+          "II: U and T are married to two different children of P, and U has no children. Q must be P’s wife (seven persons and three couples leave no other place for Q), so V’s parent is a child of P; U is childless, so that parent is T’s husband, whose sister is U’s wife — U is again V’s uncle.",
+          "Statement I alone: U is the uncle of V → **sufficient**.",
+          "Statement II alone: U is the uncle of V → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-029",
+      "subtype": "blood-relation",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nU, V, W, X, Y and Z are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is Z related to X?**\n\n**I.** Z is the grandson of U. X is unmarried.\n**II.** W is the father of Z. X is the daughter of V. V is the husband of U.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: X is a daughter of U and V (II). Z is U’s grandson (I) and W’s son (II). X is unmarried, so she is not Z’s parent; Z’s parent who is a child of U and V (W or W’s wife) is X’s sibling — Z is X’s nephew.",
+          "I alone: X may be a child of Z’s parents (then Z is her brother). II alone: Z’s gender is unknown and U’s grandchild is not mentioned.",
+          "Statement I alone: Z could be the brother or the nephew of X (e.g. the family U(m) + V(f) → Y(f); W(m) + Y(f) → X(m), Z(m) gives “brother”, while the family U(m) + V(f) → X(m), Y(f); W(m) + Y(f) → Z(m) gives “nephew”) → **not sufficient**.",
+          "Statement II alone: Z’s relation to X is open — 6 different relations fit (e.g. the family V(m) + U(f) → X(f); W(m) + Y(f) → V(m), Z(f) gives “aunt”, while the family V(m) + U(f) → X(f), Y(m); W(m) + X(f) → Z(f) gives “daughter”) → **not sufficient**.",
+          "I and II together: Z is the nephew of X → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-030",
+      "subtype": "blood-relation",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nK, L, M, N, P, Q and R are the only seven members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is P related to Q?**\n\n**I.** P is a son of L, while R is a grandson of K.\n**II.** R’s mother is Q, and M has a sister named N.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: K and L must be the older couple, P is their son and R their grandchild; Q is R’s mother.",
+          "If R’s father is M (N’s brother), P is Q’s brother-in-law; but P himself can be R’s father, i.e. Q’s husband.",
+          "Statement I alone: P’s relation to Q is open — 8 different relations fit (e.g. the family K(m) + L(f) → N(f), P(m), Q(m); M(m) + N(f) → R(m) gives “brother”, while the family K(m) + L(f) → M(m), N(m), P(m); M(m) + Q(f) → R(m) gives “brother-in-law”) → **not sufficient**.",
+          "Statement II alone: P’s relation to Q is open — 13 different relations fit (e.g. the family K(m) + L(f) → M(m), N(f), P(m); M(m) + Q(f) → R(m) gives “brother-in-law”, while the family K(m) + L(f) → M(m), N(f); M(m) + Q(f) → P(f), R(m) gives “daughter”) → **not sufficient**.",
+          "I and II together: P could be the brother-in-law or the husband of Q (e.g. the family K(m) + L(f) → M(m), N(f), P(m); M(m) + Q(f) → R(m) gives “brother-in-law”, while the family K(m) + L(f) → M(m), N(f), P(m); P(m) + Q(f) → R(m) gives “husband”) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-031",
+      "subtype": "blood-relation",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nM, N, P, Q, R and S are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is S related to M?**\n\n**I.** S is the daughter of R. P is the son of M. P is the husband of R.\n**II.** N is the grandfather of S. Q is the aunt of S. N is married to M.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: S’s mother R is married to P, so P is S’s father; P is M’s son, so S (a daughter) is M’s granddaughter.",
+          "II: M is the wife of S’s grandfather N, so M is S’s grandmother — but II never gives S’s gender.",
+          "Statement I alone: S is the granddaughter of M → **sufficient**.",
+          "Statement II alone: S could be the granddaughter or the grandson of M (e.g. the family N(m) + M(f) → Q(f), R(f); P(m) + R(f) → S(f) gives “granddaughter”, while the family N(m) + M(f) → Q(f), R(f); P(m) + R(f) → S(m) gives “grandson”) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-032",
+      "subtype": "blood-relation",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nG, H, J, K, L and M are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is K related to M?**\n\n**I.** K is the brother of J. M is a grandchild of H.\n**II.** J is the mother of M. H is the grandmother of M. K is the son of H. K is unmarried.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: H is M’s grandmother and K is H’s son. K is unmarried, so he is not M’s father; he is a brother of M’s mother J or of M’s father — K is M’s uncle.",
+          "I: K is J’s brother and M is H’s grandchild, but M may be K’s own child.",
+          "Statement I alone: K could be the father or the uncle of M (e.g. the family G(m) + H(f) → J(m), K(m); K(m) + L(f) → M(m) gives “father”, while the family G(m) + H(f) → J(m), K(m); J(m) + L(f) → M(m) gives “uncle”) → **not sufficient**.",
+          "Statement II alone: K is the uncle of M → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-033",
+      "subtype": "blood-relation",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nC, D, E, F, G and H are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is C related to G?**\n\n**I.** G is the sister of H. H is the grandson of D. C is the husband of D.\n**II.** E and F are the parents of G. C is the father-in-law of F.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: H is D’s grandson and C is D’s husband, so C is H’s grandfather; G is H’s sister, so C is G’s grandfather.",
+          "II: E and F, G’s parents, are a married couple; C is the father-in-law of F, so C is E’s father — G’s grandfather.",
+          "Statement I alone: C is the grandfather of G → **sufficient**.",
+          "Statement II alone: C is the grandfather of G → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-034",
+      "subtype": "blood-relation",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nD, E, F, G, H, J and K are the only seven members of a family of three generations. There are three married couples in the family, and every child in the family has both parents in the family.\n**How is K related to J?**\n\n**I.** K is the son-in-law of E. E is the wife of D. J is a grandchild of D.\n**II.** H is the mother of J. K has no children.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I: K is married to a child of D and E, and J is their grandchild — K may be J’s father or J’s uncle.",
+          "Together: K has no children, so K is not J’s parent; J’s parent is another child of D and E, a sibling of K’s wife — K is J’s uncle.",
+          "Statement I alone: K could be the father or the uncle of J (e.g. the family D(m) + E(f) → H(f); F(m) + G(f) → K(m); K(m) + H(f) → J(m) gives “father”, while the family D(m) + E(f) → G(f), H(f); F(m) + G(f) → J(m); K(m) + H(f) gives “uncle”) → **not sufficient**.",
+          "Statement II alone: K’s relation to J is open — 15 different relations fit (e.g. the family D(m) + E(f) → H(f), K(f); F(m) + H(f) → J(f); G(m) + J(f) gives “aunt”, while the family D(m) + E(f) → H(f); F(m) + H(f) → J(f), K(m); G(m) + J(f) gives “brother”) → **not sufficient**.",
+          "I and II together: K is the uncle of J → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-035",
+      "subtype": "blood-relation",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nS, T, U, V, W and X are the only six members of a family of three generations. There are two married couples in the family, and every child in the family has both parents in the family.\n**How is U related to W?**\n\n**I.** U is a daughter of T, and X is a grandchild of S.\n**II.** W is the mother of X, and U has never married.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: U is T’s unmarried daughter. If T and S are W’s parents, U is W’s sister; if their son V is W’s husband, U is W’s sister-in-law; and if T is W’s husband, U is W’s daughter.",
+          "Statement I alone: U’s relation to W is open — 6 different relations fit (e.g. the family S(m) + V(f) → W(f); T(m) + W(f) → U(f), X(m) gives “daughter”, while the family S(m) + W(f) → V(f); T(m) + V(f) → U(f), X(m) gives “granddaughter”) → **not sufficient**.",
+          "Statement II alone: U’s relation to W is open — 8 different relations fit (e.g. the family S(m) + T(f) → U(m), W(f); V(m) + W(f) → X(m) gives “brother”, while the family S(m) + T(f) → U(m), V(m); V(m) + W(f) → X(m) gives “brother-in-law”) → **not sufficient**.",
+          "I and II together: U could be the daughter, the sister or the sister-in-law of W (e.g. the family S(m) + V(f) → W(f); T(m) + W(f) → U(f), X(m) gives “daughter”, while the family S(m) + T(f) → U(f), W(f); V(m) + W(f) → X(m) gives “sister”) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-036",
+      "subtype": "blood-relation",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nA, B, C, D, E, F and G are the only seven members of a family of three generations. There are three married couples in the family, and every child in the family has both parents in the family.\n**How is F related to G?**\n\n**I.** G is the grandson of A. F is the son-in-law of A. F has no children.\n**II.** E is the mother of G. D is the sister of C. F is married.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: F (male) is married to a child of A and has no children. G is A’s grandson through some child of A; that child cannot be F’s wife (G would then be F’s child), so it is her sibling — F is G’s uncle.",
+          "II: E is G’s mother and C, D are siblings, but F’s place in the family is open.",
+          "Statement I alone: F is the uncle of G → **sufficient**.",
+          "Statement II alone: F’s relation to G is open — 8 different relations fit (e.g. the family A(m) + E(f) → G(f); B(m) + G(f) → C(m), D(f); C(m) + F(f) gives “daughter-in-law”, while the family A(m) + C(f); B(m) + G(f) → C(f), D(f); F(m) + E(f) → G(f) gives “father”) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-037",
+      "subtype": "blood-relation",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nJ, K, L, M, N, P and Q are the only seven members of a family of three generations. There are three married couples in the family, and every child in the family has both parents in the family.\n**How is Q related to M?**\n\n**I.** Q is married to N. N is the granddaughter of K. P is the grandson of J.\n**II.** N is the daughter of L. L is the husband of M. Q is the husband of N.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: N’s parent is a child of K. Seven persons and three couples (Q–N, K and K’s spouse, N’s parents) leave P as the only other member; P cannot be N’s child (that would make four generations), so P is N’s brother and J, his grandparent, is K’s spouse. Hence L and M are N’s parents and Q, N’s husband, is M’s son-in-law.",
+          "II: N’s father L is married to M, so M is N’s mother and N’s husband Q is M’s son-in-law.",
+          "Statement I alone: Q is the son-in-law of M → **sufficient**.",
+          "Statement II alone: Q is the son-in-law of M → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-038",
+      "subtype": "blood-relation",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nR, S, T, U, V, W and X are the only seven members of a family of three generations. There are three married couples in the family, and every child in the family has both parents in the family.\n**How is X related to W?**\n\n**I.** X is the daughter-in-law of R. W is the grandson of S. X has no children.\n**II.** W is the son of T. U is the brother of T. X is the wife of U.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: W’s mother T has a brother U whose wife is X — X is W’s aunt.",
+          "I: X is married to a child of R and W is S’s grandson, but R and S need not be a couple: X can be W’s aunt, sister-in-law or even wife.",
+          "Statement I alone: X could be the aunt, the sister-in-law or the wife of W (e.g. the family R(m) + S(f) → U(f), V(m); T(m) + U(f) → W(m); V(m) + X(f) gives “aunt”, while the family R(m) + T(f) → V(m), W(m); S(m) + U(f) → T(f); V(m) + X(f) gives “sister-in-law”) → **not sufficient**.",
+          "Statement II alone: X is the aunt of W → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-039",
+      "subtype": "blood-relation",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nL, M, N, P, Q, R and S are the only seven members of a family of three generations. There are three married couples in the family, and every child in the family has both parents in the family.\n**How is Q related to P?**\n\n**I.** Q is the son-in-law of M. R is the grandson of L. L is the husband of M.\n**II.** N is the mother of R. P is the brother of N. N has only one sibling.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: N is R’s mother and her only sibling is her brother P. R is a grandson of L and M. If N’s husband were their child, N’s own parents would have to be Q and his wife (the only couple left), giving four generations; so N is the child of L and M, their children are exactly N and P, and their son-in-law Q is N’s husband — P’s brother-in-law.",
+          "I alone does not mention P; II alone does not mention Q.",
+          "Statement I alone: Q’s relation to P is open — 6 different relations fit (e.g. the family L(m) + M(f) → P(f), S(f); N(m) + P(f) → R(m); Q(m) + S(f) gives “brother-in-law”, while the family L(m) + M(f) → S(f); N(m) + P(f); Q(m) + S(f) → P(f), R(m) gives “father”) → **not sufficient**.",
+          "Statement II alone: Q’s relation to P is open — 5 different relations fit (e.g. the family L(m) + M(f) → N(f), P(m); Q(m) + N(f) → R(m); P(m) + S(f) gives “brother-in-law”, while the family L(m) + N(f) → R(m); P(m) + M(f); Q(m) + S(f) → N(f), P(m) gives “father”) → **not sufficient**.",
+          "I and II together: Q is the brother-in-law of P → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
+    },
+    {
+      "key": "ds-040",
+      "subtype": "blood-relation",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nT, U, V, W, X, Y and Z are the only seven members of a family of three generations. There are three married couples in the family, and every child in the family has both parents in the family.\n**How is U related to Z?**\n\n**I.** U is the son of T. Z is a grandchild of V.\n**II.** X is the mother of Z. U is married, but not to X.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: U is T’s son and is married, but not to Z’s mother X, so U is not Z’s father.",
+          "If T is also Z’s parent, U is Z’s brother; if Z’s parent is U’s sibling, U is Z’s uncle — both fit.",
+          "Statement I alone: U could be the brother, the father or the uncle of Z (e.g. the family T(m) + W(f) → U(m), Z(m); U(m) + X(f); V(m) + Y(f) → W(f) gives “brother”, while the family T(m) + V(f) → U(m), Y(f); U(m) + W(f) → Z(m); X(m) + Y(f) gives “father”) → **not sufficient**.",
+          "Statement II alone: U’s relation to Z is open — 19 different relations fit (e.g. the family T(m) + U(f); V(m) + W(f) → U(f), Y(m); Y(m) + X(f) → Z(m) gives “aunt”, while the family U(m) + T(f); V(m) + W(f) → Y(m); Y(m) + X(f) → U(m), Z(m) gives “brother”) → **not sufficient**.",
+          "I and II together: U could be the brother or the uncle of Z (e.g. the family T(m) + X(f) → U(m), Z(m); U(m) + W(f); V(m) + Y(f) → X(f) gives “brother”, while the family T(m) + V(f) → U(m), Y(m); U(m) + W(f); Y(m) + X(f) → Z(m) gives “uncle”) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:blood-relation",
+        "blood-relation:closed-family"
+      ]
     }
   ]
 }
