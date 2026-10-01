@@ -1,0 +1,13 @@
+[
+  {
+    "at": "2026-10-01T19:21:32.961Z",
+    "passed": 99,
+    "failed": [
+      {
+        "key": "av-062",
+        "reason": "ambiguity 5 — Data inconsistent: total 160 minus last three (126) gives first = 34, contradicting the stated 30. Using total with first three gives fourth = 160-108 = 52 (not an option); using last three with b+c = 108-30 = 78 gives 48 (E). Two valid routes give different answers; fix e.g. first number = 34 (then fourth = 52 via both) or change overall average to 39."
+      }
+    ],
+    "unanswered": []
+  }
+]

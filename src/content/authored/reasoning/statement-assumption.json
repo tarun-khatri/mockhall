@@ -2598,6 +2598,656 @@
         "cr:implicit-purpose",
         "cr:implicit-feasibility"
       ]
+    },
+    {
+      "key": "sa-101",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A private bank has decided to waive the minimum-balance charge on savings accounts of customers who keep a fixed deposit of ₹25,000 or more with it, in order to attract more fixed deposits.\n\n**Assumptions:**\nI. Some customers would open or keep a fixed deposit with the bank to avoid the minimum-balance charge.\nII. Most of the bank's savings-account customers at present fail to keep the minimum balance.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is implicit: the waiver can attract deposits only if avoiding the charge matters to at least some customers.",
+          "II is not implicit: the scheme needs only some customers to face or fear the charge; \"most\" is far more than it requires.",
+          "Answer: Only assumption I is implicit."
+        ],
+        "trap": "II looks reasonable because the waiver concerns the charge, but the quantifier \"most\" sinks it."
+      },
+      "tags": [
+        "cr:implicit-purpose",
+        "cr:quantifier"
+      ]
+    },
+    {
+      "key": "sa-102",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A city hospital now sends an SMS to patients the evening before their appointment, asking them to reply 'NO' if they cannot come, so that the slot can be given to someone on the waiting list.\n\n**Assumptions:**\nI. Some patients with appointments are unable to keep them.\nII. Some patients who cannot come will reply 'NO' to the message.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is implicit: the scheme is built around freeing slots of patients who cannot come; if every patient always came, there would be nothing to free.",
+          "II is implicit: the slot can be passed on only if such patients actually reply.",
+          "Answer: Both I and II are implicit."
+        ],
+        "trap": "II may look like a hope rather than an assumption, but the plan fails without some replies."
+      },
+      "tags": [
+        "cr:implicit-problem",
+        "cr:implicit-compliance"
+      ]
+    },
+    {
+      "key": "sa-103",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The government has made it compulsory for packaged-food companies to print the sugar content in bold letters on the front of every pack.\n\n**Assumptions:**\nI. Buyers who see the sugar content will stop buying sugary packaged food altogether.\nII. At present, packaged-food companies do not print the sugar content anywhere on the pack.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is not implicit: the rule assumes some buyers will notice and weigh the information, not that they will give up such food \"altogether\".",
+          "II is not implicit: the rule is about making the figure prominent on the front; it may already be printed in small type at the back.",
+          "Answer: Neither I nor II is implicit."
+        ],
+        "trap": "II is tempting, but a rule about where and how a figure appears does not assume the figure is missing."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:scope-shift"
+      ]
+    },
+    {
+      "key": "sa-104",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Project head of a construction firm: 'The new river bridge can be opened on 15 August only if the steel girders from the Jamshedpur plant arrive by 1 August or the girders lying at the old site can be reused. I am confident that the bridge will be opened on 15 August.'\n\n**Assumptions:**\nI. The girders from the Jamshedpur plant will arrive by 1 August.\nII. The girders lying at the old site can be reused.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The project head need not assume I (reusing the old girders would do) or II (the new girders would do), so neither is implicit on its own.",
+          "But the opening needs at least one of these, and he is confident of it, so he must assume at least one: either I or II is implicit.",
+          "Answer: Either I or II is implicit."
+        ],
+        "trap": "\"Both\" turns two alternatives into two requirements."
+      },
+      "tags": [
+        "cr:either-disjunction",
+        "cr:only-if"
+      ]
+    },
+    {
+      "key": "sa-105",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A company has announced that an employee who refers a candidate who is hired and stays for six months will get a reward of ₹20,000.\n\n**Assumptions:**\nI. Employees can judge candidates better than the company's recruiters can.\nII. Some employees know people who could be suitable for jobs in the company.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is not implicit: referrals add to the pool of candidates; the company still does the hiring, so no ranking of employees over recruiters is needed.",
+          "II is implicit: a referral scheme is pointless unless some employees know suitable people.",
+          "Answer: Only assumption II is implicit."
+        ],
+        "trap": "I sounds like the logic of referrals, but it adds a comparison the scheme does not need."
+      },
+      "tags": [
+        "cr:unsupported-comparison",
+        "cr:implicit-existence"
+      ]
+    },
+    {
+      "key": "sa-106",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The municipal corporation will charge a parking fee in the main market area on weekends, to reduce traffic congestion there.\n\n**Assumptions:**\nI. The fee will lead at least some motorists to use parking in the market area less than they do now.\nII. Congestion in the market area on weekends is caused only by the vehicles of shoppers.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is implicit: a parking fee can ease congestion only if it changes how some motorists use parking there (coming less often or staying for less time).",
+          "II is not implicit: the corporation needs parked vehicles to be one part of the problem; \"only\" shoppers' vehicles is extreme.",
+          "Answer: Only assumption I is implicit."
+        ],
+        "trap": "A measure aimed at one cause does not assume it is the sole cause."
+      },
+      "tags": [
+        "cr:implicit-purpose",
+        "cr:extreme-word"
+      ]
+    },
+    {
+      "key": "sa-107",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** An IT company will hire 2,000 engineering graduates this year and give them six months of paid training before placing them on client projects.\n\n**Assumptions:**\nI. The graduates the company hires will need some training before they can work on client projects.\nII. There will be client projects on which the company can place these graduates after their training.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is implicit: the company would not pay for six months of training unless it thought the graduates needed it for client work.",
+          "II is implicit: hiring and training people to place them on projects assumes such projects will be available.",
+          "Answer: Both I and II are implicit."
+        ],
+        "trap": "II is easy to miss: a hiring plan quietly assumes the work will be there."
+      },
+      "tags": [
+        "cr:implicit-reason",
+        "cr:hidden-premise"
+      ]
+    },
+    {
+      "key": "sa-108",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A bank has reduced the interest rate on its home loans by 0.25 percentage points.\n\n**Assumptions:**\nI. Competing banks will not reduce their home-loan rates.\nII. Borrowers choose a home loan only on the basis of its interest rate.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is not implicit: the bank may cut rates even if it expects rivals to follow; it predicts nothing about them.",
+          "II is not implicit: the cut assumes the rate matters to some borrowers, not that it is the \"only\" factor.",
+          "Answer: Neither I nor II is implicit."
+        ],
+        "trap": "\"Rate matters\" is assumed; \"only rate matters\" is not."
+      },
+      "tags": [
+        "cr:future-speculation",
+        "cr:extreme-word"
+      ]
+    },
+    {
+      "key": "sa-109",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The district judiciary has set up mobile courts that travel to villages to settle small disputes on the spot.\n\n**Assumptions:**\nI. Cases settled by the mobile courts will never be challenged in a higher court.\nII. The mobile courts will be able to settle at least some small disputes on the spot.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is not implicit: an appeal may still be possible; \"never\" is not needed for the courts to be useful.",
+          "II is implicit: courts are sent to the villages to settle disputes there, so this is assumed to be possible.",
+          "Answer: Only assumption II is implicit."
+        ],
+        "trap": "Settling a dispute is not the same as ending every chance of appeal."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:implicit-feasibility"
+      ]
+    },
+    {
+      "key": "sa-110",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Station manager: 'The evening express can leave on time only if its coaches reach the platform by 9 p.m. and either the signal fault in the outer yard is repaired or trains are allowed to run on manual signalling. I assure passengers that it will leave on time.'\n\n**Assumptions:**\nI. The signal fault in the outer yard will be repaired in time.\nII. Trains will be allowed to run on manual signalling.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The coaches reaching by 9 p.m. is a separate condition he must assume, but it is not offered.",
+          "For the signals, he needs only one of the two: he need not assume I or II on its own, but since he assures an on-time departure, he must assume at least one of them. So either I or II is implicit.",
+          "Answer: Either I or II is implicit."
+        ],
+        "trap": "The \"and\" part pulls you towards \"Both\", but I and II sit inside the \"either… or\" part."
+      },
+      "tags": [
+        "cr:either-disjunction",
+        "cr:only-if"
+      ]
+    },
+    {
+      "key": "sa-111",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A dairy cooperative has raised the price it pays farmers for milk by ₹2 a litre, as the milk it collects has fallen for three months in a row.\n\n**Assumptions:**\nI. A higher price will lead some farmers to sell more of their milk to the cooperative.\nII. Farmers have been selling more of their milk to private dairies.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is implicit: the price rise is the cooperative's answer to falling collection, so it assumes some farmers will respond.",
+          "II is not implicit: collection could have fallen because of heat, disease or fewer cattle; a better price can still draw more milk.",
+          "Answer: Only assumption I is implicit."
+        ],
+        "trap": "The statement gives the problem, not its cause; II supplies a cause the decision does not need."
+      },
+      "tags": [
+        "cr:implicit-purpose",
+        "cr:beyond-scope"
+      ]
+    },
+    {
+      "key": "sa-112",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A government hospital has put up QR codes in its wards so that patients can rate the cleanliness of the wards, and the ratings will decide the bonus paid to the cleaning contractors.\n\n**Assumptions:**\nI. Some patients will scan the codes and rate the cleanliness of the wards.\nII. The chance of earning a bonus can lead the contractors to keep the wards cleaner.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is implicit: a rating system needs some patients to give ratings.",
+          "II is implicit: tying the bonus to ratings is meant to motivate the contractors, which assumes the bonus matters to them.",
+          "Answer: Both I and II are implicit."
+        ],
+        "trap": "Both links of the chain — patients rate, contractors respond — are needed."
+      },
+      "tags": [
+        "cr:implicit-compliance",
+        "cr:implicit-purpose"
+      ]
+    },
+    {
+      "key": "sa-113",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A company will replace its paper-based expense claims with an app, and claims made on the app will be settled within seven days instead of the present thirty.\n\n**Assumptions:**\nI. Employees will stop making false claims once the app is introduced.\nII. The finance team has been deliberately delaying the settlement of claims.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is not implicit: the change is about speed of settlement, not about honesty, and \"stop\" is extreme.",
+          "II is not implicit: paper claims can be slow because of handling and checking; blaming the team is not needed.",
+          "Answer: Neither I nor II is implicit."
+        ],
+        "trap": "The real assumptions (the app is faster; employees can use it) are not offered."
+      },
+      "tags": [
+        "cr:beyond-scope",
+        "cr:extreme-word"
+      ]
+    },
+    {
+      "key": "sa-114",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A city's water board will charge a higher rate per litre to households that use more than 20,000 litres of water a month.\n\n**Assumptions:**\nI. Households that use more than 20,000 litres a month are wasting water.\nII. A higher rate for heavy use can lead some households to use less water.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is not implicit: a large family may use that much without waste; the board only needs heavy use to be worth discouraging.",
+          "II is implicit: a higher rate for heavy use is meant to curb it, so the board assumes some households will respond.",
+          "Answer: Only assumption II is implicit."
+        ],
+        "trap": "Heavy use is not the same as waste."
+      },
+      "tags": [
+        "cr:unsupported-judgement",
+        "cr:implicit-purpose"
+      ]
+    },
+    {
+      "key": "sa-115",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Transport in-charge of a school: 'The students can go to the science fair in Nagpur on Friday only in the school's own bus, which is due back from servicing on Thursday, or in a bus hired from the state transport depot. They will certainly go on Friday.'\n\n**Assumptions:**\nI. The school's own bus will be back from servicing in time for Friday.\nII. The state transport depot will hire out a bus to the school for Friday.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The in-charge need not assume I (a hired bus would do) or II (the school bus would do), so neither is implicit on its own.",
+          "But these are the only two ways, and he is certain the students will go, so he must assume at least one will be available: either I or II is implicit.",
+          "Answer: Either I or II is implicit."
+        ],
+        "trap": "\"Due back on Thursday\" makes I look certain, but he does not have to rely on it."
+      },
+      "tags": [
+        "cr:either-disjunction"
+      ]
+    },
+    {
+      "key": "sa-116",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A builder told flat buyers: 'Possession can be given in March only if the occupancy certificate is issued by February and the permanent water connection is in place. I assure you that possession will be given in March.'\n\n**Assumptions:**\nI. The occupancy certificate will be issued by February.\nII. The permanent water connection will be in place before possession in March.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is implicit: possession in March needs the certificate, and the builder assures possession.",
+          "II is implicit: possession also needs the water connection; with an \"and\" condition, each part must be assumed.",
+          "Answer: Both I and II are implicit."
+        ],
+        "shortcut": "\"Only if A and B\" + promised outcome = both A and B are assumed; \"only if A or B\" = either.",
+        "trap": "The two-condition shape looks like an \"either\" item, but \"and\" makes both conditions necessary."
+      },
+      "tags": [
+        "cr:only-if",
+        "cr:conjunction-trap"
+      ]
+    },
+    {
+      "key": "sa-117",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A travel agent told a customer: 'You can reach Guwahati by Saturday by the overnight train, by the morning flight or by the state bus, and I am sure you will reach by Saturday.'\n\n**Assumptions:**\nI. The overnight train will get the customer to Guwahati by Saturday.\nII. The morning flight will get the customer to Guwahati by Saturday.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Neither I nor II on its own is needed: the agent could be counting on any one of the three routes.",
+          "Even \"either I or II\" is not needed, because the bus is a third route that could get the customer there by Saturday.",
+          "Answer: Neither I nor II is implicit."
+        ],
+        "trap": "\"Either\" needs the two options to be the only routes; with a third route available, the answer is \"Neither\"."
+      },
+      "tags": [
+        "cr:either-disjunction",
+        "cr:third-option"
+      ]
+    },
+    {
+      "key": "sa-118",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The district administration has started a weekly farmers' market at every block headquarters, where farmers can sell vegetables directly to consumers, so that farmers get a better price.\n\n**Assumptions:**\nI. Some farmers will get a better price by selling directly to consumers at these markets.\nII. Farmers who do not come to these markets will get lower prices than before.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is implicit: it is the purpose of the markets, and a scheme assumes it serves its purpose.",
+          "II is not implicit: the scheme adds an outlet; it does not assume those who stay away will lose.",
+          "Answer: Only assumption I is implicit."
+        ],
+        "trap": "A plan does not assume harm to those outside it."
+      },
+      "tags": [
+        "cr:implicit-purpose",
+        "cr:negative-consequence"
+      ]
+    },
+    {
+      "key": "sa-119",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Notice at a bank branch: 'Cheques deposited after 2 p.m. will be sent for clearing on the next working day.'\n\n**Assumptions:**\nI. Most customers deposit their cheques after 2 p.m.\nII. Some customers deposit cheques after 2 p.m.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is not implicit: the notice applies whether many or few customers come late; \"most\" is not needed.",
+          "II is implicit: the notice would be pointless if no one ever deposited a cheque after 2 p.m.",
+          "Answer: Only assumption II is implicit."
+        ],
+        "trap": "The two options differ by one word: \"some\" is needed, \"most\" is not."
+      },
+      "tags": [
+        "cr:quantifier",
+        "cr:implicit-existence"
+      ]
+    },
+    {
+      "key": "sa-120",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A state's technical education board will bring out engineering textbooks in the state's regional language, so that students who studied in that language at school find engineering easier.\n\n**Assumptions:**\nI. Some engineering students would find it easier to study in the regional language than in English.\nII. The engineering textbooks can be translated well into the regional language.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I is implicit: the books are meant to help such students, which assumes some of them find the regional language easier.",
+          "II is implicit: the plan depends on good textbooks being possible in that language.",
+          "Answer: Both I and II are implicit."
+        ],
+        "trap": "I contains a comparison, but the stated aim depends on it; II is the hidden feasibility premise."
+      },
+      "tags": [
+        "cr:implicit-purpose",
+        "cr:implicit-feasibility"
+      ]
+    },
+    {
+      "key": "sa-121",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A food-delivery company will pay its riders an extra ₹10 for every delivery made during heavy rain.\n\n**Assumptions:**\nI. Riders are unwilling to make any deliveries at all in heavy rain without extra pay.\nII. Customers place more orders on rainy days than on other days.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I is not implicit: the company may only want more riders on the road in the rain; \"any deliveries at all\" is extreme.",
+          "II is not implicit: extra pay may be meant to make up for fewer riders or harder work in the rain, whether or not orders rise.",
+          "Answer: Neither I nor II is implicit."
+        ],
+        "trap": "II looks like the obvious reason, but the bonus needs no rise in orders to make sense."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:beyond-scope"
+      ]
+    },
+    {
+      "key": "sa-122",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Hospital superintendent: 'The new MRI machine can start working next month only if the radiologist we have selected joins by then or the district hospital lends us its radiologist. I can assure you it will start working next month.'\n\n**Assumptions:**\nI. The selected radiologist will join by next month.\nII. The district hospital will lend its radiologist.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The superintendent need not assume I (the district hospital's radiologist would do) or II (the new radiologist would do), so neither is implicit on its own.",
+          "But the machine needs at least one radiologist from these two sources, and he assures it will start, so he must assume at least one: either I or II is implicit.",
+          "Answer: Either I or II is implicit."
+        ],
+        "trap": "One radiologist is enough to start the machine; \"Both\" asks for two."
+      },
+      "tags": [
+        "cr:either-disjunction",
+        "cr:only-if"
+      ]
+    },
+    {
+      "key": "sa-123",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A bank has sent a message to all its customers saying that its staff will never ask for their OTP over a phone call or a message.\n\n**Assumptions:**\nI. Some customers may get calls or messages from people pretending to be bank staff and asking for their OTP.\nII. Customers who share their OTP will lose all the money in their accounts.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I is implicit: the warning makes sense only if fraudsters may pose as bank staff to get OTPs.",
+          "II is not implicit: sharing an OTP is risky, but \"lose all the money\" is far more than the bank needs to believe.",
+          "Answer: Only assumption I is implicit."
+        ],
+        "trap": "A warning assumes a risk, not the worst possible outcome."
+      },
+      "tags": [
+        "cr:implicit-reason",
+        "cr:extreme-word"
+      ]
+    },
+    {
+      "key": "sa-124",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** A municipal school has started serving breakfast to its students before classes begin.\n\n**Assumptions:**\nI. Students who eat breakfast at school will score higher marks than those who do not.\nII. Some students come to school without having eaten breakfast.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is not implicit: the school may want healthier or more alert students; a specific claim about marks is not needed.",
+          "II is implicit: breakfast is served because some students are expected to come hungry.",
+          "Answer: Only assumption II is implicit."
+        ],
+        "trap": "A benefit may be hoped for without a precise prediction about marks."
+      },
+      "tags": [
+        "cr:unsupported-comparison",
+        "cr:implicit-problem"
+      ]
+    },
+    {
+      "key": "sa-125",
+      "subtype": "two-assumptions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The pollution control board has ordered brick kilns near the city to shut down from November to January, the months when the city's air pollution is at its worst.\n\n**Assumptions:**\nI. Brick kilns are the main source of the city's air pollution.\nII. Shutting the kilns in these months can help reduce the city's air pollution when it is at its worst.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "options": [
+        "Only assumption I is implicit",
+        "Only assumption II is implicit",
+        "Either I or II is implicit",
+        "Neither I nor II is implicit",
+        "Both I and II are implicit"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I is not implicit: the board needs the kilns to be one source of pollution; \"main source\" is a stronger claim.",
+          "II is implicit: the timing of the order shows it is meant to cut pollution in the worst months.",
+          "Answer: Only assumption II is implicit."
+        ],
+        "trap": "Targeting a source does not mean it is the biggest source."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:implicit-purpose"
+      ]
     }
   ]
 }
