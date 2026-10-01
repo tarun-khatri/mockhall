@@ -2751,6 +2751,631 @@
         "summary:core-idea",
         "summary:distortion"
       ]
+    },
+    {
+      "key": "ps-111",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nMicrofinance loans, given to groups of poor women without collateral, have helped millions start small businesses or cope with emergencies, and repayment rates have usually been high. That record has drawn many lenders into the same districts. Problems begin when a borrower can take loans from four or five lenders at once, none of whom knows what the others have lent. She may repay one loan by taking another, until a poor harvest or an illness brings the whole structure down. Recent rules cap the number of lenders per borrower and link repayments to household income. Those rules protect borrowers, however, only if lenders report every loan to credit bureaus promptly.",
+      "options": [
+        "Microfinance has served the poor well, but competition lets borrowers pile up unseen loans from several lenders; new caps on lenders and repayments can prevent this only if every loan is promptly reported.",
+        "Microfinance has served the poor well, but competition among lenders led to over-borrowing, which the new rules capping lenders per borrower and linking repayments to income have now brought fully under control.",
+        "High repayment rates in microfinance conceal the fact that most borrowers repay old loans with new ones, so lenders should stop lending to women who already hold a loan.",
+        "Because microfinance loans need no collateral, lenders cannot recover their money when a harvest fails or a borrower falls ill, which is why repayment rates are falling.",
+        "Borrowers who take loans from several lenders may repay one loan by taking another."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph credits microfinance, explains how loans from many lenders pile up unseen, and says the new caps protect borrowers \"only if\" every loan is reported; the correct option keeps that condition.",
+          "The \"have now brought under control\" option is the strongest rival, but it drops the final condition and turns a conditional safeguard into a settled success."
+        ],
+        "trap": "The \"most borrowers\" option turns a risk faced by some borrowers into the norm and adds a lending ban the paragraph never proposes."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:qualification"
+      ]
+    },
+    {
+      "key": "ps-112",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nMillions of homes in Indian cities stand vacant even as migrants crowd into overpriced rooms. Many owners would rather keep a flat empty than let it out. Old rent-control laws in some cities, which froze rents and made eviction nearly impossible, taught a generation of landlords that a tenant could become a permanent occupant. Even where such laws no longer apply to new tenancies, slow courts mean that removing a defaulting tenant can take years. A model tenancy law proposes quick rent tribunals and written agreements that protect both sides. Its success, however, depends on states adopting it and on the tribunals actually deciding cases quickly.",
+      "options": [
+        "Urban owners keep homes vacant because they fear tenants, and the model tenancy law, by providing written agreements and quick rent tribunals, has already removed that fear and brought empty homes back onto the market.",
+        "Rent-control laws still freeze rents on all new tenancies, which is why millions of urban homes stand empty while migrants crowd into overpriced rooms.",
+        "Old rent laws and slow courts make owners fear losing their property, so many keep homes empty; a model law with written leases and fast tribunals could help, if states adopt it and the tribunals work quickly.",
+        "Millions of vacant homes show that Indian cities have built more housing than migrants need, so the real problem is high rents rather than a shortage of homes.",
+        "Removing a defaulting tenant through the courts can take years."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph explains why owners keep homes empty and offers a remedy whose success \"depends on\" adoption and speedy tribunals; the correct option has the cause, the remedy and the condition.",
+          "The \"has removed that fear\" option treats a proposal as an accomplished fact and drops the condition."
+        ],
+        "trap": "The rent-control option contradicts \"such laws no longer apply to new tenancies\"; the fear now comes from history and slow courts."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:qualification"
+      ]
+    },
+    {
+      "key": "ps-113",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nAs Himalayan glaciers retreat, meltwater collects in lakes held back by loose heaps of rock and ice left behind by the glacier. These natural dams can give way suddenly, after a landslide into the lake or a burst of heavy rain, sending a wall of water down the valley. Such floods have destroyed roads, bridges and hydropower projects in recent years. The number and size of these lakes are growing, but most are in remote areas and have never been surveyed. Experts call for mapping the riskiest lakes, installing early-warning sensors and, in some cases, lowering water levels by controlled draining, rather than relying on rescue after the event.",
+      "options": [
+        "As glaciers retreat, Himalayan lakes are growing behind unstable dams, and because most lie in remote, unsurveyed areas, experts want rescue teams stationed in every valley so that they can respond quickly whenever one bursts.",
+        "Glacial retreat is creating more Himalayan lakes behind unstable natural dams that can burst suddenly, and since most are unsurveyed, experts favour mapping, early warning and controlled draining over relying on rescue.",
+        "Floods from Himalayan glacial lakes are caused mainly by heavy rain, so experts see better weather forecasting as the main way to protect roads, bridges and hydropower projects.",
+        "Floods from glacial lakes have destroyed hydropower projects, so no new projects should be built in Himalayan valleys.",
+        "Retreating glaciers leave lakes held back by loose heaps of rock and ice."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The paragraph explains how glacial lakes form and burst, notes that most are unsurveyed, and gives experts' preventive measures; the correct option has all three.",
+          "The \"rescue teams\" option reverses the experts' position, which favours prevention \"rather than relying on rescue after the event\"."
+        ],
+        "trap": "The rain option picks one of two triggers (the other is a landslide) and invents a forecasting remedy."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:contradiction"
+      ]
+    },
+    {
+      "key": "ps-114",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nMost people reuse a handful of passwords across dozens of websites. The habit is understandable, since remembering a different strong password for every account is nearly impossible, but it is dangerous. When one poorly protected site is breached, criminals try the stolen email and password combinations on banks, email services and shopping sites, and the reused password unlocks them all. Password managers, which generate and store unique passwords, solve much of the problem, though they place great weight on a single master password. Adding a second check, such as a code sent to the phone, means that a stolen password alone is no longer enough to break in.",
+      "options": [
+        "Since remembering a different strong password for every account is nearly impossible, the safest course is to use one very strong password everywhere and add a phone code to the most important accounts.",
+        "Reused passwords let one breach unlock many accounts, but password managers remove this risk completely, so a second check such as a code sent to the phone is no longer necessary.",
+        "Reused passwords are dangerous, but the blame for breaches lies with poorly protected websites, which should be fined when stolen passwords are misused.",
+        "Criminals try stolen email and password combinations on banks and shopping sites.",
+        "Reused passwords let one breach unlock many accounts; password managers largely solve this despite resting on one master password, and a second check means a stolen password alone is not enough."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph explains why reuse is dangerous and offers two defences, one with a stated weakness; the correct option has the danger, both defences and the caveat.",
+          "The \"one very strong password everywhere\" option recommends the very reuse the paragraph calls dangerous: a breach elsewhere still exposes that password."
+        ],
+        "trap": "\"Remove this risk completely\" ignores the weight placed on a single master password and wrongly dismisses the second check."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:outside-claim"
+      ]
+    },
+    {
+      "key": "ps-115",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nPainkillers such as ibuprofen and diclofenac are sold over the counter in most Indian pharmacies, and many people take them for weeks to manage back pain, headaches or joint aches without seeing a doctor. Taken occasionally and in the right dose, they are safe for most adults. Regular use over long periods, however, can damage the kidneys and the lining of the stomach, and the risk is higher in older people and those with diabetes or high blood pressure. Because the damage builds up silently, it is often detected only at an advanced stage. Doctors advise that anyone needing pain relief for more than a few days should be examined to find the cause.",
+      "options": [
+        "Common painkillers are safe for most adults even when taken over several weeks, and only older people and those with diabetes or high blood pressure need to worry about the kidney damage they can cause.",
+        "Because painkillers damage the kidneys and stomach silently, they should no longer be sold over the counter and should be available only on a doctor's prescription.",
+        "Common painkillers are safe taken occasionally, but regular unsupervised use can silently harm the kidneys and stomach, especially in vulnerable groups, so lasting pain should be examined by a doctor.",
+        "Many people take painkillers for weeks to manage back pain, headaches or joint aches without seeing a doctor.",
+        "Taking painkillers for several weeks cures back pain and joint aches without risk for most adults."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph separates safe occasional use from risky long-term use, notes who is most at risk and gives doctors' advice; the correct option keeps all of these.",
+          "The \"only older people\" option turns \"the risk is higher\" in these groups into a risk confined to them, and it moves \"safe for most adults\" from occasional use to use over weeks."
+        ],
+        "trap": "The prescription-only option is a policy the paragraph never proposes; its advice is to see a doctor for lasting pain."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:distortion"
+      ]
+    },
+    {
+      "key": "ps-116",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nDuring the past decade, schools and governments spent heavily on tablets, smart boards and learning apps, expecting them to transform learning. The results have been mixed. Devices handed out without training often sat unused or became tools for games, and smart boards were frequently used simply to project the textbook. Yet where software adjusted to each child's level and teachers were trained to use the data it produced, learning in mathematics and reading improved markedly. The lesson drawn by researchers is that technology amplifies the teaching it is placed in: it helps good instruction go further but cannot substitute for it.",
+      "options": [
+        "Educational technology has had mixed results, lifting learning where adaptive software met trained teachers, which shows that technology magnifies good teaching rather than replacing it.",
+        "Spending on tablets, smart boards and learning apps has largely been wasted, since devices handed out without training sat unused, became tools for games or were used only to project the textbook.",
+        "Software that adjusts to each child's level improves mathematics and reading wherever it is introduced, so schools should buy it in place of tablets and smart boards.",
+        "Since technology helps good instruction go further, schools with too few teachers can use learning apps to stand in for the teachers they lack.",
+        "Smart boards were often used simply to project the textbook."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph reports failures and successes and draws the lesson that technology amplifies teaching; the correct option keeps both halves and the lesson.",
+          "The \"largely been wasted\" option keeps only the failures and ignores the marked gains where software and trained teachers came together."
+        ],
+        "trap": "The \"stand in for the teachers\" option contradicts \"cannot substitute for it\"."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:balanced-view"
+      ]
+    },
+    {
+      "key": "ps-117",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nNatural farming, which replaces chemical fertilisers and pesticides with cow-dung preparations, mulching and mixed cropping, has won support in several states. Farmers who have adopted it report lower costs and healthier soil, and some fetch premium prices for chemical-free produce. Evidence on yields is less settled. Some field trials show yields close to those of conventional farming after a transition period; others show significant losses, particularly for rice and wheat. Agricultural scientists caution against scaling it up rapidly across whole states before long-term trials show how yields hold up in different soils and climates, since a large fall in output could threaten food supplies.",
+      "options": [
+        "Natural farming cuts costs, improves soil and keeps yields close to those of conventional farming, so states should extend it as quickly as possible to raise farmers' incomes.",
+        "Field trials show that natural farming reduces yields, particularly of rice and wheat, so agricultural scientists advise states to abandon it before a fall in output threatens food supplies.",
+        "Natural farming cuts costs and improves soil, but its effect on yields is unsettled, so scientists warn against rapid statewide expansion before long-term trials in varied conditions.",
+        "Natural farming suits fruits and vegetables but not cereals, so states should promote it only for crops that fetch premium prices.",
+        "Some farmers who practise natural farming get premium prices for chemical-free produce."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph reports clear benefits, mixed evidence on yields and scientists' caution about rapid scaling; the correct option keeps the benefit, the uncertainty and the caution.",
+          "The \"abandon it\" option treats the trials showing losses as the whole evidence and turns \"caution against scaling it up rapidly\" into rejection."
+        ],
+        "trap": "The \"keeps yields close\" option cites only the favourable trials and reverses the scientists' advice."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:distortion"
+      ]
+    },
+    {
+      "key": "ps-118",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nTo ease congestion, cities often build flyovers and widen roads. For a few months, traffic moves faster. Then the jams return, sometimes worse than before. Transport researchers call this induced demand: when driving becomes quicker, people who earlier took the bus, travelled at other times or did not make the trip at all begin to drive, until the road fills up again. This does not mean that no road should ever be widened, but it does mean that road building alone cannot cure congestion. Lasting relief, researchers argue, requires making alternatives such as buses, the metro and walking attractive, and pricing road space where demand is highest.",
+      "options": [
+        "Flyovers and wider roads make congestion worse by drawing in new traffic, so cities should stop widening roads altogether and spend the money on buses and the metro instead.",
+        "Wider roads and flyovers give only brief relief because faster driving draws new traffic, so while widening is not always wrong, lasting relief needs attractive alternatives and pricing of busy road space.",
+        "Road widening fails because people who earlier took the bus prefer to keep doing so, so cities should improve bus services rather than build new flyovers.",
+        "Roads fill up again after widening mainly because flyovers are badly designed, so better engineering would end congestion in Indian cities.",
+        "Traffic moves faster for a few months after a flyover opens."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The paragraph explains induced demand, concedes that widening is not always wrong, and says lasting relief needs alternatives and road pricing; the correct option keeps the concession and both remedies.",
+          "The \"stop widening roads altogether\" option ignores the concession \"This does not mean that no road should ever be widened\" and drops road pricing."
+        ],
+        "trap": "The bus option reverses the mechanism: induced demand happens because bus users switch to driving."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:concession"
+      ]
+    },
+    {
+      "key": "ps-119",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nBuying health insurance is often treated as a one-time decision, but the fine print decides how useful a policy will be. Many policies exclude pre-existing illnesses for the first few years, cap the room rent the insurer will pay, or require the patient to bear a share of every bill. A policyholder who chooses a room costlier than the cap may find that the insurer cuts not only the room charge but the whole bill in proportion. These conditions are disclosed in the policy documents, yet few buyers read them, and many discover them only when a claim is partly rejected. Comparing such terms, not just premiums, can spare families an unpleasant surprise.",
+      "options": [
+        "Policy conditions such as exclusions, room-rent caps and co-payments can sharply cut health insurance payouts, so buyers should compare these disclosed terms, not just premiums.",
+        "Insurers hide unfair conditions such as room-rent caps deep in their policies in order to reject claims, so families are better off saving for medical bills than buying health insurance at all.",
+        "Health insurance policies often exclude pre-existing illnesses, so they are of little use to families in which someone is already ill.",
+        "A policyholder who chooses a room costlier than the cap may see the whole bill cut in proportion.",
+        "Since policy conditions are disclosed in the documents, buyers who read them carefully can be sure that every claim will be paid in full."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph warns that policy conditions decide how much is paid and advises comparing them as well as premiums; the correct option has the warning and the advice.",
+          "The \"hide unfair conditions\" option contradicts \"These conditions are disclosed\" and adds advice against insurance that the paragraph never gives."
+        ],
+        "trap": "The \"paid in full\" option misreads the point: reading the terms tells a buyer what will not be paid; it does not guarantee full payment."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:outside-claim"
+      ]
+    },
+    {
+      "key": "ps-120",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nGovernments under budget pressure often ask what practical use a research project will have, and favour work that promises results within a few years. The question is reasonable but can mislead. Many technologies that now seem indispensable grew out of research pursued for curiosity, with no application in view: studies of how atoms absorb light led eventually to lasers, which are now used in surgery and telecommunications. Such payoffs are real but impossible to predict, and they may take decades to appear. A research budget made up only of projects with foreseeable uses would therefore be likely to miss the discoveries that matter most.",
+      "options": [
+        "Because curiosity-driven research produced lasers and other vital technologies, governments should stop funding applied projects and spend their research budgets on curiosity alone.",
+        "Judging research only by foreseeable uses is risky, since many vital technologies came unpredictably and slowly from curiosity-driven work, so budgets limited to applied projects would likely miss the most important discoveries.",
+        "Governments are wrong even to ask what practical use a research project will have, because the payoffs of research cannot be predicted.",
+        "Curiosity-driven research reliably yields useful technologies within a few years, which is why it deserves more funding than applied work.",
+        "Studies of how atoms absorb light eventually led to the laser."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The paragraph accepts that asking about practical use is reasonable but warns that a budget limited to foreseeable uses misses the biggest discoveries; the correct option keeps that balance.",
+          "The \"stop funding applied projects\" option swings to the opposite extreme; the paragraph objects only to a budget made up \"only\" of applied work."
+        ],
+        "trap": "The \"wrong even to ask\" option contradicts the concession \"The question is reasonable\"."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:concession"
+      ]
+    },
+    {
+      "key": "ps-121",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nWhen a batch of a popular baby food was found to be contaminated, its manufacturer faced a choice. It could quietly fix the production line and hope few customers noticed, or it could announce a recall that would cost crores and invite bad publicity. It chose the recall, pulled products from every shop within days, offered full refunds and published the results of its investigation. Sales fell sharply for two quarters. Within a year, however, they had recovered, and surveys showed that customers trusted the brand more than before. Analysts note that the outcome depended on the speed and openness of the response; recalls that are delayed or grudging tend to deepen the damage.",
+      "options": [
+        "A baby-food maker that recalled a contaminated batch saw its sales fall and then recover within a year, showing that a recall strengthens customer trust whatever the manner in which it is carried out.",
+        "A baby-food maker recovered its sales within a year of a recall mainly because it offered full refunds to every customer who returned the product.",
+        "Recalls cost crores and cause sales to fall sharply, so companies are usually better off quietly fixing the production line.",
+        "The manufacturer published the results of its investigation into the contamination.",
+        "A baby-food maker's swift, open recall cost it sales briefly but raised customer trust, and analysts say such gains depend on speed and openness, since slow or grudging recalls deepen the damage."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph tells how a prompt, open recall paid off and adds analysts' condition that speed and openness made the difference; the correct option keeps the outcome and the condition.",
+          "The \"whatever the manner\" option generalises from one case and directly contradicts the analysts' warning about delayed or grudging recalls."
+        ],
+        "trap": "The refunds option picks one of several actions and makes it the cause; analysts credit speed and openness."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:qualification"
+      ]
+    },
+    {
+      "key": "ps-122",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nBrands increasingly pay social media personalities to promote their products, because followers often trust a familiar face more than an advertisement. That trust is the very thing at risk. When followers discover that a glowing review was paid for and not disclosed, they tend to discount not only that post but the influencer's future recommendations. Rules now require paid promotions to be clearly labelled. Some marketers feared labelling would kill the appeal of such posts, but studies suggest that clearly disclosed promotions by influencers who genuinely use the product retain much of their persuasive power, while undisclosed ones that are later exposed can backfire badly.",
+      "options": [
+        "Rules requiring paid promotions to be labelled have, as marketers feared, destroyed the appeal of influencer posts, since followers discount any recommendation they know was paid for.",
+        "Because followers trust familiar faces more than advertisements, brands should move most of their spending from advertisements to influencers.",
+        "Influencer promotion rests on followers' trust, and since hidden paid posts destroy that trust while clearly labelled, genuine endorsements keep much of their pull, disclosure need not ruin such marketing.",
+        "Influencer promotions persuade followers only when the payment behind them is kept hidden.",
+        "Paid promotions on social media must now be clearly labelled."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph explains that influencer marketing depends on trust, that hidden payments destroy it, and that disclosure does less harm than feared; the correct option carries all three.",
+          "The \"as marketers feared\" option repeats the fear the studies answered: disclosed, genuine promotions \"retain much of their persuasive power\"."
+        ],
+        "trap": "The \"only when … hidden\" option reverses the finding that undisclosed promotions, once exposed, backfire."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:contradiction"
+      ]
+    },
+    {
+      "key": "ps-123",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nMost of India's discarded phones, computers and appliances are processed not in licensed plants but in small informal workshops, where workers dismantle devices by hand and burn cables or soak circuit boards in acid to recover copper and gold. The work supports many families and recovers valuable material, but the fumes and waste water damage workers' health and contaminate soil. Closing the workshops would simply push the trade elsewhere. A more promising approach, experts suggest, is to let informal collectors continue gathering and dismantling devices, which they do efficiently, while routing the hazardous extraction of metals to licensed facilities that have proper controls.",
+      "options": [
+        "Informal e-waste workshops harm workers' health and contaminate soil, so experts want them closed and all collection, dismantling and metal recovery moved to licensed plants.",
+        "Informal workshops recycle e-waste more efficiently than licensed plants, so they should be allowed to continue all their work, including the extraction of metals.",
+        "The harm done by informal recycling outweighs the income it provides, so the families who depend on it should be trained for other work.",
+        "Informal e-waste workshops support families and recover materials but harm health and soil, so instead of closing them, experts suggest leaving collection and dismantling to them and moving hazardous extraction to licensed plants.",
+        "Workers in informal workshops burn cables and soak circuit boards in acid."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph weighs the livelihoods and recovery that informal workshops provide against their harm and proposes splitting the work; the correct option has both sides and the split.",
+          "The \"want them closed\" option contradicts \"Closing the workshops would simply push the trade elsewhere\"."
+        ],
+        "trap": "The \"continue all their work\" option keeps the informal sector's efficiency but hands back the hazardous step experts want moved."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:balanced-view"
+      ]
+    },
+    {
+      "key": "ps-124",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nThousands of Indians die each year waiting for a kidney, liver or heart, while organs that could save them are cremated or buried with people declared brain-dead in hospitals. Even when a person has pledged to donate, doctors in India usually seek the family's consent, and grieving relatives often refuse, sometimes because they never discussed the matter or misunderstand what brain death means. States with trained transplant coordinators, who counsel families gently and explain the process, have far higher donation rates than others. The gap between pledges and actual donations suggests that the decisive conversation happens not when a card is signed but at the hospital bedside.",
+      "options": [
+        "Many usable organs are lost because families refuse consent, so pledges to donate should be made legally binding and families should no longer be asked for permission.",
+        "Families refuse to donate organs mainly because doctors declare brain death too quickly, which makes relatives distrust hospitals.",
+        "Many usable organs are lost because grieving families, often misunderstanding brain death, refuse consent; since trained coordinators raise donation rates, the decisive moment is counselling at the bedside, not signing a pledge.",
+        "Signing a donor card ensures that a person's organs will be donated after death.",
+        "States with trained transplant coordinators have far higher donation rates than others."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph traces lost organs to family refusals, shows that counselling by coordinators helps, and concludes that the bedside conversation is decisive; the correct option has all three.",
+          "The \"legally binding\" option shares the diagnosis but adds a remedy the paragraph never proposes; its remedy is counselling families, not overriding them."
+        ],
+        "trap": "The \"too quickly\" option invents a cause; the paragraph says relatives \"misunderstand what brain death means\"."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:outside-claim"
+      ]
+    },
+    {
+      "key": "ps-125",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nSmall farmers often sell their crop immediately after harvest, when prices are at their lowest, because they need cash to repay loans and buy inputs for the next season. Warehouse receipt financing offers a way out. A farmer stores grain in a registered warehouse and uses the receipt as security for a bank loan, then sells later when prices recover. The system works well for traders and larger farmers, but small growers use it far less. Warehouses are often distant, transport and storage charges eat into the gains on small lots, and many farmers are unfamiliar with the paperwork. Pooling produce through farmer groups could make the scheme worthwhile for them.",
+      "options": [
+        "Warehouse receipt financing has allowed small farmers to stop selling at harvest-time prices, since they can now borrow against stored grain and sell when prices recover.",
+        "Warehouse receipts let farmers borrow against stored grain instead of selling at harvest-time lows, but distance, costs and paperwork limit their use by small growers, for whom pooling through farmer groups could help.",
+        "Small farmers sell their crop right after harvest because they do not expect prices to rise, so they need to be told about seasonal price patterns.",
+        "Warehouse receipt financing mainly benefits traders and large farmers, who use it to buy grain cheaply from small farmers at harvest time.",
+        "Transport and storage charges eat into the gains from storing small lots."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The paragraph explains how warehouse receipts can end distress sales, why small growers seldom use them, and what could help; the correct option covers all three.",
+          "The \"has allowed small farmers to stop\" option contradicts \"small growers use it far less\"."
+        ],
+        "trap": "The traders option starts from a true contrast but adds a claim that traders use the scheme against small farmers, which the paragraph never makes."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:contradiction"
+      ]
+    },
+    {
+      "key": "ps-126",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nThousands of Indian firms, from banks to food-delivery apps, now run their systems on a small number of large cloud providers. The shift has cut costs and let small companies use computing power once available only to giants. It has also created a new kind of risk. When one provider suffers an outage, services that seem unrelated fail together: payments stop, apps freeze and offices lose access to email, all at the same moment. Regulators have begun asking banks to plan for such events, for example by being able to switch critical systems to another provider or to a backup of their own.",
+      "options": [
+        "Relying on a few big cloud providers has cut costs, but outages have made firms' systems less reliable than when they ran their own servers, so banks are being told to return to in-house systems.",
+        "Cloud computing has let small companies use computing power once available only to giants, and regulators now require every firm to spread its systems across several providers.",
+        "Because cloud outages make unrelated services fail together, firms gain little from moving their systems to the cloud.",
+        "Relying on a few big cloud providers has cut costs and widened access, but one outage can now disrupt many services at once, so regulators want banks able to move critical systems elsewhere.",
+        "When one cloud provider fails, payments stop and apps freeze at the same moment."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph weighs the gains from shared cloud providers against the risk of simultaneous failure and notes regulators' response for banks; the correct option has all three.",
+          "The \"require every firm\" option widens a request to banks into a rule for all firms and turns planning into a requirement to use several providers."
+        ],
+        "trap": "The \"return to in-house systems\" option invents a comparison and misreads the backup as a move away from the cloud."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:distortion"
+      ]
+    },
+    {
+      "key": "ps-127",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nFor decades, the emigration of Indian doctors, engineers and scientists was lamented as a 'brain drain', a loss of talent the country had paid to educate. The picture has grown more complicated. Emigrants send home large remittances, invest in Indian firms and act as bridges for trade and technology, and some return with experience and networks they could not have built at home. Economists now speak of 'brain circulation'. The gains are not automatic, though: they depend on whether the home country offers emigrants reasons to stay connected or to return, such as a good research environment and ease of doing business.",
+      "options": [
+        "Skilled emigration is no longer seen simply as a loss, as emigrants send money, investment and know-how home and some return, but these gains depend on India giving them reasons to stay connected or return.",
+        "Skilled emigration has turned out to benefit India more than if the emigrants had stayed at home, because their remittances and investments exceed what they would ever have contributed by working in India instead.",
+        "Emigrants now benefit India through remittances, investment and returning talent, so the old worry about a brain drain has proved unfounded.",
+        "The emigration of doctors and engineers whom India paid to educate is a loss that should be stopped by requiring graduates to work at home for some years.",
+        "Some emigrants return with experience and networks they could not have built in India."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph replaces the simple \"brain drain\" view with a more mixed picture and adds that the gains are conditional; the correct option keeps the condition.",
+          "The \"proved unfounded\" option drops \"The gains are not automatic\" and treats the benefits as assured."
+        ],
+        "trap": "The \"benefit India more\" option makes a net comparison the paragraph never makes."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:qualification"
+      ]
+    },
+    {
+      "key": "ps-128",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nWhen cities clear informal settlements, residents are often moved to housing colonies on the outskirts. The new flats may be sturdier, but families lose the work, schools and social ties that bound them to the old location, and many quietly sell or rent out their allotted homes and drift back to the city. Projects that rebuild homes on or near the original site have generally fared better, since residents keep their livelihoods. Such projects are slower and more complex, as they require temporary housing during construction and agreement among many residents, but planners increasingly regard them as the more lasting solution.",
+      "options": [
+        "Moving slum residents to sturdier flats on the outskirts gives them better homes, which is why planners now regard relocation as the most lasting solution.",
+        "Rebuilding settlements on their original sites is quicker and simpler than relocation, which is why residents and planners increasingly prefer it.",
+        "Relocated families sell their flats and return to the city because the new buildings are of poor quality.",
+        "Moving slum residents to the outskirts often fails because they lose work and social ties, so rebuilding on or near the original site, though slower and more complex, is increasingly seen as the more lasting answer.",
+        "Rebuilding on the original site requires temporary housing during construction."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph explains why relocation often fails and why on-site rebuilding works better despite its difficulties; the correct option keeps the reason and the concession.",
+          "The \"quicker and simpler\" option reverses the concession that such projects \"are slower and more complex\"."
+        ],
+        "trap": "The \"poor quality\" option contradicts \"The new flats may be sturdier\"; families leave because of lost work and ties."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:concession"
+      ]
+    },
+    {
+      "key": "ps-129",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nInfections caught in hospitals kill many patients who were admitted for something else, and a large share are spread on the hands of staff moving from one patient to the next. Cleaning hands with soap or an alcohol rub between patients is the simplest defence, yet observers routinely find that staff skip it more often than not, especially in crowded wards where they are overworked. Posters and lectures make little lasting difference. Hospitals that have cut infection rates have combined dispensers placed at every bed with regular, visible checks of compliance and feedback to each ward, so that hand cleaning becomes a habit rather than an effort.",
+      "options": [
+        "Many hospital infections travel on staff hands, and as reminders alone change little, hospitals have cut infections by making hand cleaning easy and regularly checked until it becomes habit.",
+        "Placing hand-rub dispensers at every bed is enough by itself to stop staff from spreading infections in crowded wards, since staff skip hand cleaning mainly when a dispenser is not close at hand.",
+        "Hospital staff skip hand cleaning because they do not know it prevents infection, so regular lectures and posters are the best way to cut infection rates.",
+        "Hospital infections will fall only when hospitals hire enough staff, since overworked staff in crowded wards cannot be expected to clean their hands.",
+        "Most patients admitted to hospitals die of infections they catch there."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph identifies staff hands as a main route of infection, rejects reminders alone and describes the combination that works; the correct option has all three.",
+          "The dispensers option keeps only half of the successful combination and drops the regular checks and feedback."
+        ],
+        "trap": "The lectures option contradicts \"Posters and lectures make little lasting difference\"."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:distortion"
+      ]
+    },
+    {
+      "key": "ps-130",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nIn many school-leaving examinations, the share of students scoring above 90 per cent has risen sharply over the past two decades. Supporters say students are better prepared and marking is more generous to genuine effort. Critics point to a side effect. When large numbers crowd the top of the scale, marks stop distinguishing between students, so colleges raise cut-offs to near-perfect levels and a single mark can decide admission. Different boards also inflate at different rates, so students from stricter boards are disadvantaged. This, critics argue, is one reason why universities increasingly rely on separate entrance tests rather than board results.",
+      "options": [
+        "The rise in board scores above 90 per cent shows that students are better prepared and marking rewards genuine effort, so colleges can safely rely on board results for admission.",
+        "Boards have deliberately lowered their standards to raise their pass rates, forcing colleges to set near-perfect cut-offs.",
+        "Because different boards inflate marks at different rates, school-leaving examinations should be replaced by a single national entrance test.",
+        "Students from stricter boards are disadvantaged when boards inflate marks at different rates.",
+        "The sharp rise in top board scores, though defended as reflecting better preparation, has made marks poor at telling students apart and unequal across boards, which critics link to universities' growing use of entrance tests."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph notes the supporters' defence and develops the critics' case about side effects; the correct option has both and the critics' conclusion.",
+          "The \"colleges can safely rely\" option takes only the supporters' view and contradicts the near-perfect cut-offs and the shift to entrance tests."
+        ],
+        "trap": "The \"replaced by a single national entrance test\" option goes beyond the critics, who only explain why universities use separate tests."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:balanced-view"
+      ]
+    },
+    {
+      "key": "ps-131",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nA bank that has lent to a struggling company faces a temptation when repayment falls due. Instead of recording the loan as bad, it can lend the company fresh money, which is used to pay the interest on the old loan. The account then appears healthy, the bank avoids setting aside provisions, and its profits look better. The practice, known as evergreening, only postpones the reckoning while the eventual loss grows. It also starves sound businesses of credit, since the bank's money is tied up in keeping weak firms alive. Regulators have tightened rules on how lenders must recognise stressed loans, and auditors are expected to look for such patterns.",
+      "options": [
+        "Evergreening lets banks avoid losses on loans to struggling companies by giving those companies time to recover, though regulators now want such loans recorded more strictly.",
+        "Banks should never lend fresh money to a company that is having difficulty repaying, since such loans are always used to hide bad debts.",
+        "Fresh lending to struggling companies keeps credit flowing in the economy, which is why regulators allow it as long as auditors approve.",
+        "Regulators have tightened rules on how lenders must recognise stressed loans.",
+        "Evergreening, in which banks lend afresh so weak borrowers can pay interest on old loans, hides stress and flatters profits but enlarges eventual losses and starves sound firms of credit, prompting stricter rules and audits."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph defines evergreening, explains why it looks attractive, sets out its two harms and notes the regulatory response; the correct option has all of these.",
+          "The \"avoid losses\" option contradicts the core claim that evergreening \"only postpones the reckoning while the eventual loss grows\"."
+        ],
+        "trap": "\"Never lend\" and \"always used to hide\" are absolute claims; the paragraph criticises lending made to pay interest on bad loans, not all fresh lending."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:contradiction"
+      ]
+    },
+    {
+      "key": "ps-132",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nCoral reefs around Lakshadweep and the Andaman Islands have suffered repeated bleaching in recent years as sea temperatures rise. Bleached coral is not dead: if the water cools within a few weeks, the tiny algae that give it colour and food can return. Repeated or prolonged heat, however, kills it, and the reef gradually turns into rubble that shelters far fewer fish and protects the shore less well from waves. Local action cannot cool the ocean, but reducing other stresses, such as overfishing, pollution and damage from anchors, helps reefs recover faster between heat events and so improves their chances of survival.",
+      "options": [
+        "Reducing overfishing, pollution and anchor damage around Lakshadweep and the Andamans can fully protect the coral reefs there from bleaching and let them survive even as sea temperatures continue to rise.",
+        "Warming seas bleach Indian reefs, which survive brief heat but die from repeated or long episodes; local action cannot stop warming but, by easing other stresses, helps reefs recover between events.",
+        "Bleached coral is dead coral, so once a reef has bleached, local efforts to protect it come too late to make any difference.",
+        "Overfishing and pollution are the main causes of coral bleaching around India's islands, and rising sea temperatures play only a minor part.",
+        "Dead reefs shelter fewer fish and protect the shore less well from waves."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The paragraph explains that bleaching is caused by heat, that reefs can recover from short episodes, and that local action helps recovery though it cannot stop warming; the correct option keeps each point.",
+          "The \"protect … from bleaching\" option misstates what local action does: it helps reefs \"recover faster between heat events\"; it cannot prevent heat-driven bleaching."
+        ],
+        "trap": "The \"dead coral\" option contradicts \"Bleached coral is not dead\"."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:distortion"
+      ]
+    },
+    {
+      "key": "ps-133",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nDrones that spray pesticides and fertilisers are being promoted as a boon for Indian agriculture. They cover an acre in minutes, use less water and chemical than manual spraying, and spare workers direct exposure to toxic sprays. Their cost puts them beyond the reach of individual small farmers, so most are expected to be operated as a hiring service by entrepreneurs or farmer groups. Experts caution that the benefits depend on correct use: drifting spray can harm neighbouring crops, beehives and water bodies, and doses suited to manual spraying cannot simply be transferred to drones. Clear rules on approved chemicals and operator training are therefore essential.",
+      "options": [
+        "Spraying drones cover fields quickly and use less chemical, so small farmers will soon buy their own and spray their fields without depending on anyone else.",
+        "Spraying drones are faster, more economical and safer for workers and will reach small farmers mainly as a hired service, but their benefits depend on correct use, making rules on chemicals and operator training essential.",
+        "Spray from drones drifts onto neighbouring crops, beehives and water bodies, so drones do more harm than good and should not be used for pesticides.",
+        "Drones work best when they apply the same doses of pesticide that farmers already use by hand, since these doses have been tested over many years.",
+        "Drones use less water and chemical than manual spraying."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The paragraph lists the advantages of drones, how small farmers will access them, and the conditions for safe use; the correct option has all three.",
+          "The \"do more harm than good\" option keeps only the cautions and drops the benefits the paragraph lists."
+        ],
+        "trap": "The \"buy their own\" option contradicts \"beyond the reach of individual small farmers\"."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:balanced-view"
+      ]
+    },
+    {
+      "key": "ps-134",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nRide-hailing apps raise fares when demand outstrips the supply of drivers, during rain or rush hour for instance. The companies argue that higher prices draw more drivers onto the road and ration rides to those who need them most, so that a ride is available at some price rather than none at all. Passengers often see it differently, as exploitation at moments when they have little choice. Some state rules now cap surge fares at a multiple of the base fare. A cap can protect riders from extreme charges, but if it is set too low, it may weaken the incentive for drivers to come out when they are most needed.",
+      "options": [
+        "Surge pricing exploits passengers when they have little choice, so state rules capping surge fares protect riders without any cost to the availability of rides.",
+        "Higher fares in rain and rush hour draw more drivers onto the road and ensure that rides go to those who need them most, so surge fares should not be capped.",
+        "Ride-hailing companies raise fares at busy times mainly to increase their profits, not to draw more drivers onto the road.",
+        "Some state rules now cap surge fares at a multiple of the base fare.",
+        "Surge pricing is defended as drawing drivers out and keeping rides available at busy times but resented by passengers; caps can limit extreme fares, though a cap set too low may keep drivers away when most needed."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph gives the companies' case, the passengers' view and the trade-off involved in capping fares; the correct option keeps all three.",
+          "The \"should not be capped\" option states the companies' argument as fact and ignores that a cap \"can protect riders from extreme charges\"."
+        ],
+        "trap": "The \"without any cost\" option drops the warning that a low cap may weaken drivers' incentive."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:balanced-view"
+      ]
+    },
+    {
+      "key": "ps-135",
+      "subtype": "best-summary",
+      "difficulty": "hard",
+      "prompt": "Read the paragraph and choose the option that best summarises it.\n\nThousands of defunct satellites and fragments of rockets now orbit the Earth at speeds high enough for even a small fragment to wreck a working satellite. Each collision creates more fragments, raising the odds of further collisions, and scientists warn that some orbits could become too crowded to use. The problem is growing as companies launch large constellations of small satellites for internet services. Removing debris is technically possible but expensive, and no country wants to pay to clean up fragments left by others. Many experts therefore see prevention as more practical: requiring operators to steer satellites out of orbit at the end of their working lives.",
+      "options": [
+        "Orbital debris threatens satellites and can multiply through collisions; since removal is costly and no country wants to pay for others' fragments, experts favour requiring operators to de-orbit satellites when their working lives end.",
+        "Debris in orbit threatens working satellites, and because removing it is technically impossible, some orbits will inevitably become unusable.",
+        "Orbital debris is growing fast because companies keep launching large constellations of small internet satellites, so experts want such constellations banned to keep the most useful orbits clear.",
+        "Countries have agreed to share the cost of removing debris from orbit, so the threat to satellites is expected to fall.",
+        "Each collision in orbit creates more fragments and raises the odds of further collisions."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph explains the debris threat and why removal is unattractive, and concludes that experts prefer prevention through de-orbiting; the correct option has the threat, the obstacle and the remedy.",
+          "The \"constellations banned\" option replaces the experts' actual remedy with a ban the paragraph never mentions."
+        ],
+        "trap": "The \"technically impossible\" option contradicts \"Removing debris is technically possible but expensive\"."
+      },
+      "tags": [
+        "summary:core-idea",
+        "summary:outside-claim"
+      ]
     }
   ]
 }
