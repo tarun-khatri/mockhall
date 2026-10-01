@@ -1,0 +1,3055 @@
+{
+  "chapter": "input-output",
+  "version": 1,
+  "sets": [
+    {
+      "key": "io-01",
+      "subtype": "word-arrangement",
+      "difficulty": "easy",
+      "title": "Input–output",
+      "stimulus": "A word arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** ribbon  orange  basket  garden  number  pencil\n**Step I:** basket  ribbon  orange  garden  number  pencil\n**Step II:** basket  garden  ribbon  orange  number  pencil\n**Step III:** basket  garden  number  ribbon  orange  pencil\n**Step IV:** basket  garden  number  orange  ribbon  pencil\n**Step V:** basket  garden  number  orange  pencil  ribbon\n\nStep V is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** violet  market  tablet  candle  hollow  anchor  summer\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-01-q1",
+          "subtype": "word-arrangement",
+          "prompt": "Which step is the last step of the rearrangement?",
+          "options": [
+            "Step IV",
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there).",
+              "Step I: anchor  violet  market  tablet  candle  hollow  summer",
+              "Step II: anchor  candle  violet  market  tablet  hollow  summer",
+              "Step III: anchor  candle  hollow  violet  market  tablet  summer",
+              "Step IV: anchor  candle  hollow  market  violet  tablet  summer",
+              "Step V: anchor  candle  hollow  market  summer  violet  tablet",
+              "Step VI: anchor  candle  hollow  market  summer  tablet  violet",
+              "After Step VI the arrangement is complete, so the answer is **Step VI**."
+            ],
+            "trap": "Step VII gives 'violet' a step of its own, but it is already in place once Step VI is done — a step that changes nothing is not counted.",
+            "shortcut": "Count the steps in the illustration per element moved and apply the same count to the new input; the last element may already be in place."
+          },
+          "tags": [
+            "io:last-step",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-01-q2",
+          "subtype": "word-arrangement",
+          "prompt": "In Step III, at which position from the left end does 'violet' stand?",
+          "options": [
+            "3rd from the left end",
+            "4th from the left end",
+            "5th from the left end",
+            "6th from the left end",
+            "7th from the left end"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there).",
+              "Step I: anchor  violet  market  tablet  candle  hollow  summer",
+              "Step II: anchor  candle  violet  market  tablet  hollow  summer",
+              "Step III: anchor  candle  hollow  violet  market  tablet  summer",
+              "In Step III, 'violet' is **4th from the left end**."
+            ],
+            "trap": "3rd from the left end is where 'violet' stands in Step II, one step too early.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 7)."
+          },
+          "tags": [
+            "io:position",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-01-q3",
+          "subtype": "word-arrangement",
+          "prompt": "Which element is 3rd from the right end in Step IV?",
+          "options": [
+            "hollow",
+            "market",
+            "summer",
+            "tablet",
+            "violet"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there).",
+              "Step I: anchor  violet  market  tablet  candle  hollow  summer",
+              "Step II: anchor  candle  violet  market  tablet  hollow  summer",
+              "Step III: anchor  candle  hollow  violet  market  tablet  summer",
+              "Step IV: anchor  candle  hollow  market  violet  tablet  summer",
+              "3rd from the right end of Step IV: **violet**."
+            ],
+            "trap": "'hollow' is 3rd from the left end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-01-q4",
+          "subtype": "word-arrangement",
+          "prompt": "Which step number is the following output?\n\nanchor  candle  hollow  market  summer  violet  tablet",
+          "options": [
+            "Step IV",
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there).",
+              "Step I: anchor  violet  market  tablet  candle  hollow  summer",
+              "Step II: anchor  candle  violet  market  tablet  hollow  summer",
+              "Step III: anchor  candle  hollow  violet  market  tablet  summer",
+              "Step IV: anchor  candle  hollow  market  violet  tablet  summer",
+              "Step V: anchor  candle  hollow  market  summer  violet  tablet",
+              "The given line is **Step V**."
+            ],
+            "trap": "Step VI is one step too late: in it 'tablet' would also have been moved, but the given line does not show that yet."
+          },
+          "tags": [
+            "io:which-step",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-01-q5",
+          "subtype": "word-arrangement",
+          "prompt": "How many elements are there between 'anchor' and 'tablet' in Step II?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there).",
+              "Step I: anchor  violet  market  tablet  candle  hollow  summer",
+              "Step II: anchor  candle  violet  market  tablet  hollow  summer",
+              "'anchor' is 1st and 'tablet' is 5th from the left: 5 − 1 − 1 = **3**."
+            ],
+            "trap": "4 counts one of the two named elements as well.",
+            "shortcut": "Elements between = difference of positions − 1."
+          },
+          "tags": [
+            "io:count-between",
+            "io:word-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-02",
+      "subtype": "word-arrangement",
+      "difficulty": "medium",
+      "title": "Input–output",
+      "stimulus": "A word arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** sky  audio  plant  idea  strength  cup  rhythm\n**Step I:** strength  sky  audio  plant  idea  cup  rhythm\n**Step II:** strength  rhythm  sky  audio  plant  idea  cup\n**Step III:** strength  rhythm  audio  sky  plant  idea  cup\n**Step IV:** strength  rhythm  audio  plant  sky  idea  cup\n**Step V:** strength  rhythm  audio  plant  idea  sky  cup\n**Step VI:** strength  rhythm  audio  plant  idea  cup  sky\n\nStep VI is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** tea  blanket  lamp  window  curtain  sofa  notebook  pillow\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-02-q1",
+          "subtype": "word-arrangement",
+          "prompt": "Which element is 2nd from the right end in Step III?",
+          "options": [
+            "blanket",
+            "window",
+            "pillow",
+            "sofa",
+            "notebook"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of letters, the one that comes first in alphabetical order goes first.",
+              "Step I: notebook  tea  blanket  lamp  window  curtain  sofa  pillow",
+              "Step II: notebook  blanket  tea  lamp  window  curtain  sofa  pillow",
+              "Step III: notebook  blanket  curtain  tea  lamp  window  sofa  pillow",
+              "2nd from the right end of Step III: **sofa**."
+            ],
+            "trap": "'blanket' is 2nd from the left end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-02-q2",
+          "subtype": "word-arrangement",
+          "prompt": "What is the position of 'tea' from the right end in Step V?",
+          "options": [
+            "3rd from the right end",
+            "4th from the right end",
+            "5th from the right end",
+            "6th from the right end",
+            "7th from the right end"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of letters, the one that comes first in alphabetical order goes first.",
+              "Step I: notebook  tea  blanket  lamp  window  curtain  sofa  pillow",
+              "Step II: notebook  blanket  tea  lamp  window  curtain  sofa  pillow",
+              "Step III: notebook  blanket  curtain  tea  lamp  window  sofa  pillow",
+              "Step IV: notebook  blanket  curtain  pillow  tea  lamp  window  sofa",
+              "Step V: notebook  blanket  curtain  pillow  window  tea  lamp  sofa",
+              "In Step V, 'tea' is **3rd from the right end**."
+            ],
+            "trap": "4th from the right end is where 'tea' stands in Step IV, one step too early.",
+            "shortcut": "Position from the right = total − position from the left + 1 (total 8)."
+          },
+          "tags": [
+            "io:position",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-02-q3",
+          "subtype": "word-arrangement",
+          "prompt": "Which step is the last step of the rearrangement, and which element is 3rd from the right end in that step?",
+          "options": [
+            "Step VII; lamp",
+            "Step VI; lamp",
+            "Step VII; curtain",
+            "Step VIII; lamp",
+            "Step VIII; curtain"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of letters, the one that comes first in alphabetical order goes first.",
+              "Step I: notebook  tea  blanket  lamp  window  curtain  sofa  pillow",
+              "Step II: notebook  blanket  tea  lamp  window  curtain  sofa  pillow",
+              "Step III: notebook  blanket  curtain  tea  lamp  window  sofa  pillow",
+              "Step IV: notebook  blanket  curtain  pillow  tea  lamp  window  sofa",
+              "Step V: notebook  blanket  curtain  pillow  window  tea  lamp  sofa",
+              "Step VI: notebook  blanket  curtain  pillow  window  lamp  tea  sofa",
+              "Step VII: notebook  blanket  curtain  pillow  window  lamp  sofa  tea",
+              "The arrangement is complete in **Step VII**, and its 3rd element from the right end is **lamp**."
+            ],
+            "trap": "\"Step VI; lamp\" stops one step early — Step VI is not yet fully arranged."
+          },
+          "tags": [
+            "io:last-step",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-02-q4",
+          "subtype": "word-arrangement",
+          "prompt": "Which step number is the following output?\n\nnotebook  blanket  curtain  pillow  tea  lamp  window  sofa",
+          "options": [
+            "Step I",
+            "Step II",
+            "Step III",
+            "Step IV",
+            "Step V"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of letters, the one that comes first in alphabetical order goes first.",
+              "Step I: notebook  tea  blanket  lamp  window  curtain  sofa  pillow",
+              "Step II: notebook  blanket  tea  lamp  window  curtain  sofa  pillow",
+              "Step III: notebook  blanket  curtain  tea  lamp  window  sofa  pillow",
+              "Step IV: notebook  blanket  curtain  pillow  tea  lamp  window  sofa",
+              "The given line is **Step IV**."
+            ],
+            "trap": "Step V is one step too late: in it 'window' would also have been moved, but the given line does not show that yet."
+          },
+          "tags": [
+            "io:which-step",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-02-q5",
+          "subtype": "word-arrangement",
+          "prompt": "In Step VI, which element is 2nd to the right of 'pillow'?",
+          "options": [
+            "blanket",
+            "tea",
+            "lamp",
+            "window",
+            "notebook"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of letters, the one that comes first in alphabetical order goes first.",
+              "Step I: notebook  tea  blanket  lamp  window  curtain  sofa  pillow",
+              "Step II: notebook  blanket  tea  lamp  window  curtain  sofa  pillow",
+              "Step III: notebook  blanket  curtain  tea  lamp  window  sofa  pillow",
+              "Step IV: notebook  blanket  curtain  pillow  tea  lamp  window  sofa",
+              "Step V: notebook  blanket  curtain  pillow  window  tea  lamp  sofa",
+              "Step VI: notebook  blanket  curtain  pillow  window  lamp  tea  sofa",
+              "In Step VI, 'pillow' is 4th from the left, so 2nd to its right is 6th from the left: **lamp**."
+            ],
+            "trap": "'blanket' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:relative-position",
+            "io:word-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-03",
+      "subtype": "word-arrangement",
+      "difficulty": "medium",
+      "title": "Input–output",
+      "stimulus": "A word arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** orbit  vessel  cabin  meadow  kettle  harbour  lantern\n**Step I:** cabin  orbit  meadow  kettle  harbour  lantern  vessel\n**Step II:** cabin  harbour  meadow  kettle  lantern  orbit  vessel\n**Step III:** cabin  harbour  kettle  lantern  meadow  orbit  vessel\n\nStep III is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** temple  anthem  river  saffron  pepper  walnut  garland  drum  jungle\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-03-q1",
+          "subtype": "word-arrangement",
+          "prompt": "Which of the following is Step II?",
+          "options": [
+            "drum  anthem  river  saffron  pepper  garland  jungle  walnut  temple",
+            "anthem  temple  river  saffron  pepper  garland  drum  jungle  walnut",
+            "anthem  drum  garland  river  pepper  jungle  saffron  temple  walnut",
+            "anthem  drum  river  pepper  saffron  garland  jungle  temple  walnut",
+            "anthem  drum  river  saffron  pepper  garland  jungle  temple  walnut"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there), and the word that comes last in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: anthem  temple  river  saffron  pepper  garland  drum  jungle  walnut",
+              "Step II: anthem  drum  river  saffron  pepper  garland  jungle  temple  walnut",
+              "Step II is **anthem  drum  river  saffron  pepper  garland  jungle  temple  walnut**."
+            ],
+            "trap": "The option \"drum  anthem  river  saffron  pepper  garland  jungle  walnut  temple\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-03-q2",
+          "subtype": "word-arrangement",
+          "prompt": "Which element is 4th from the right end in Step III?",
+          "options": [
+            "river",
+            "jungle",
+            "garland",
+            "pepper",
+            "saffron"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there), and the word that comes last in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: anthem  temple  river  saffron  pepper  garland  drum  jungle  walnut",
+              "Step II: anthem  drum  river  saffron  pepper  garland  jungle  temple  walnut",
+              "Step III: anthem  drum  garland  river  pepper  jungle  saffron  temple  walnut",
+              "4th from the right end of Step III: **jungle**."
+            ],
+            "trap": "'river' is 4th from the left end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-03-q3",
+          "subtype": "word-arrangement",
+          "prompt": "In Step IV, at which position from the left end does 'pepper' stand?",
+          "options": [
+            "2nd from the left end",
+            "3rd from the left end",
+            "4th from the left end",
+            "5th from the left end",
+            "6th from the left end"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there), and the word that comes last in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: anthem  temple  river  saffron  pepper  garland  drum  jungle  walnut",
+              "Step II: anthem  drum  river  saffron  pepper  garland  jungle  temple  walnut",
+              "Step III: anthem  drum  garland  river  pepper  jungle  saffron  temple  walnut",
+              "Step IV: anthem  drum  garland  jungle  pepper  river  saffron  temple  walnut",
+              "In Step IV, 'pepper' is **5th from the left end**."
+            ],
+            "trap": "Write Step IV in full before counting — 'pepper' shifts as other elements are moved.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 9)."
+          },
+          "tags": [
+            "io:position",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-03-q4",
+          "subtype": "word-arrangement",
+          "prompt": "How many elements are there between 'temple' and 'walnut' in Step I?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there), and the word that comes last in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: anthem  temple  river  saffron  pepper  garland  drum  jungle  walnut",
+              "'temple' is 2nd and 'walnut' is 9th from the left: 9 − 2 − 1 = **6**."
+            ],
+            "trap": "7 counts one of the two named elements as well.",
+            "shortcut": "Elements between = difference of positions − 1."
+          },
+          "tags": [
+            "io:count-between",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-03-q5",
+          "subtype": "word-arrangement",
+          "prompt": "How many steps does the machine need to complete the rearrangement of this input?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the words already arranged there), and the word that comes last in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: anthem  temple  river  saffron  pepper  garland  drum  jungle  walnut",
+              "Step II: anthem  drum  river  saffron  pepper  garland  jungle  temple  walnut",
+              "Step III: anthem  drum  garland  river  pepper  jungle  saffron  temple  walnut",
+              "Step IV: anthem  drum  garland  jungle  pepper  river  saffron  temple  walnut",
+              "After Step IV the arrangement is complete, so the answer is **4**."
+            ],
+            "trap": "5 gives 'pepper' a step of its own, but it is already in place once Step IV is done — a step that changes nothing is not counted.",
+            "shortcut": "Count the steps in the illustration per element moved and apply the same count to the new input; the last element may already be in place."
+          },
+          "tags": [
+            "io:last-step",
+            "io:word-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-04",
+      "subtype": "word-arrangement",
+      "difficulty": "hard",
+      "title": "Input–output",
+      "stimulus": "A word arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** lead  copper  bronze  gold  tin  silver  magnesium  zinc\n**Step I:** magnesium  lead  copper  gold  tin  silver  zinc  bronze\n**Step II:** magnesium  copper  lead  tin  silver  zinc  gold  bronze\n**Step III:** magnesium  copper  silver  tin  zinc  lead  gold  bronze\n**Step IV:** magnesium  copper  silver  zinc  tin  lead  gold  bronze\n\nStep IV is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** date  prune  peanut  cashew  cherry  hazelnut  apricot  raisin  walnut\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-04-q1",
+          "subtype": "word-arrangement",
+          "prompt": "Which of the following is Step III?",
+          "options": [
+            "hazelnut  cashew  peanut  prune  raisin  walnut  date  cherry  apricot",
+            "peanut  cashew  hazelnut  prune  raisin  walnut  apricot  cherry  date",
+            "hazelnut  walnut  raisin  date  prune  peanut  cherry  cashew  apricot",
+            "hazelnut  cherry  peanut  prune  raisin  walnut  date  cashew  apricot",
+            "hazelnut  cashew  date  prune  peanut  raisin  walnut  cherry  apricot"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there; between two words of equal length, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one that comes first in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: hazelnut  date  prune  peanut  cashew  cherry  raisin  walnut  apricot",
+              "Step II: hazelnut  cashew  date  prune  peanut  raisin  walnut  cherry  apricot",
+              "Step III: hazelnut  cashew  peanut  prune  raisin  walnut  date  cherry  apricot",
+              "Step III is **hazelnut  cashew  peanut  prune  raisin  walnut  date  cherry  apricot**."
+            ],
+            "trap": "The option \"peanut  cashew  hazelnut  prune  raisin  walnut  apricot  cherry  date\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-04-q2",
+          "subtype": "word-arrangement",
+          "prompt": "Which element is 3rd from the right end in Step II?",
+          "options": [
+            "raisin",
+            "date",
+            "walnut",
+            "cherry",
+            "hazelnut"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there; between two words of equal length, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one that comes first in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: hazelnut  date  prune  peanut  cashew  cherry  raisin  walnut  apricot",
+              "Step II: hazelnut  cashew  date  prune  peanut  raisin  walnut  cherry  apricot",
+              "3rd from the right end of Step II: **walnut**."
+            ],
+            "trap": "'raisin' is what you get by breaking ties the other way."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-04-q3",
+          "subtype": "word-arrangement",
+          "prompt": "What is the position of 'prune' from the left end in Step IV?",
+          "options": [
+            "2nd from the left end",
+            "3rd from the left end",
+            "4th from the left end",
+            "5th from the left end",
+            "6th from the left end"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there; between two words of equal length, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one that comes first in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: hazelnut  date  prune  peanut  cashew  cherry  raisin  walnut  apricot",
+              "Step II: hazelnut  cashew  date  prune  peanut  raisin  walnut  cherry  apricot",
+              "Step III: hazelnut  cashew  peanut  prune  raisin  walnut  date  cherry  apricot",
+              "Step IV: hazelnut  cashew  peanut  raisin  walnut  prune  date  cherry  apricot",
+              "In Step IV, 'prune' is **6th from the left end**."
+            ],
+            "trap": "4th from the left end is where 'prune' stands in Step III, one step too early.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 9)."
+          },
+          "tags": [
+            "io:position",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-04-q4",
+          "subtype": "word-arrangement",
+          "prompt": "How many elements are there between 'date' and 'cherry' in Step I?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there; between two words of equal length, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one that comes first in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: hazelnut  date  prune  peanut  cashew  cherry  raisin  walnut  apricot",
+              "'date' is 2nd and 'cherry' is 6th from the left: 6 − 2 − 1 = **3**."
+            ],
+            "trap": "4 counts one of the two named elements as well.",
+            "shortcut": "Elements between = difference of positions − 1."
+          },
+          "tags": [
+            "io:count-between",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-04-q5",
+          "subtype": "word-arrangement",
+          "prompt": "In Step III, which element is exactly midway between 'hazelnut' and 'date'?",
+          "options": [
+            "walnut",
+            "cashew",
+            "peanut",
+            "raisin",
+            "prune"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word with the most letters among those not yet arranged goes to the left end (just after the words already arranged there; between two words of equal length, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one that comes first in alphabetical order goes to the right end (just before the words already arranged there).",
+              "Step I: hazelnut  date  prune  peanut  cashew  cherry  raisin  walnut  apricot",
+              "Step II: hazelnut  cashew  date  prune  peanut  raisin  walnut  cherry  apricot",
+              "Step III: hazelnut  cashew  peanut  prune  raisin  walnut  date  cherry  apricot",
+              "'hazelnut' is 1st and 'date' is 7th from the left; midway is 4th from the left: **prune**."
+            ],
+            "trap": "'walnut' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged.",
+            "shortcut": "Midway position = (position of one + position of the other) ÷ 2, counted from the same end."
+          },
+          "tags": [
+            "io:midway",
+            "io:word-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-05",
+      "subtype": "word-arrangement",
+      "difficulty": "hard",
+      "title": "Input–output",
+      "stimulus": "A word arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** tiger  rhythm  strength  umbrella  river  onion  idea  education\n**Step I:** education  tiger  rhythm  strength  umbrella  river  onion  idea\n**Step II:** education  tiger  rhythm  strength  river  onion  idea  umbrella\n**Step III:** education  idea  tiger  rhythm  strength  river  onion  umbrella\n**Step IV:** education  idea  rhythm  strength  river  onion  tiger  umbrella\n**Step V:** education  idea  onion  rhythm  strength  river  tiger  umbrella\n**Step VI:** education  idea  onion  rhythm  river  strength  tiger  umbrella\n**Step VII:** education  idea  onion  river  rhythm  strength  tiger  umbrella\n\nStep VII is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** village  orchard  monsoon  airport  temple  tunnel  cottage  lagoon  meadow\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-05-q1",
+          "subtype": "word-arrangement",
+          "prompt": "Which step number is the following output?\n\nairport  cottage  lagoon  orchard  monsoon  meadow  temple  tunnel  village",
+          "options": [
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII",
+            "Step IX"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word with the most vowels (a, e, i, o, u) among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of vowels, the one coming first in alphabetical order is taken. In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the words already arranged there).",
+              "Step I: airport  village  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow",
+              "Step II: airport  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow  village",
+              "Step III: airport  cottage  orchard  monsoon  temple  tunnel  lagoon  meadow  village",
+              "Step IV: airport  cottage  orchard  monsoon  temple  lagoon  meadow  tunnel  village",
+              "Step V: airport  cottage  lagoon  orchard  monsoon  temple  meadow  tunnel  village",
+              "Step VI: airport  cottage  lagoon  orchard  monsoon  meadow  temple  tunnel  village",
+              "The given line is **Step VI**."
+            ],
+            "trap": "Step VII is one step too late: in it 'meadow' would also have been moved, but the given line does not show that yet."
+          },
+          "tags": [
+            "io:which-step",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-05-q2",
+          "subtype": "word-arrangement",
+          "prompt": "Which element is 4th from the right end in Step VII?",
+          "options": [
+            "cottage",
+            "orchard",
+            "meadow",
+            "monsoon",
+            "temple"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word with the most vowels (a, e, i, o, u) among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of vowels, the one coming first in alphabetical order is taken. In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the words already arranged there).",
+              "Step I: airport  village  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow",
+              "Step II: airport  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow  village",
+              "Step III: airport  cottage  orchard  monsoon  temple  tunnel  lagoon  meadow  village",
+              "Step IV: airport  cottage  orchard  monsoon  temple  lagoon  meadow  tunnel  village",
+              "Step V: airport  cottage  lagoon  orchard  monsoon  temple  meadow  tunnel  village",
+              "Step VI: airport  cottage  lagoon  orchard  monsoon  meadow  temple  tunnel  village",
+              "Step VII: airport  cottage  lagoon  meadow  orchard  monsoon  temple  tunnel  village",
+              "4th from the right end of Step VII: **monsoon**."
+            ],
+            "trap": "'cottage' is what you get by breaking ties the other way."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-05-q3",
+          "subtype": "word-arrangement",
+          "prompt": "In Step V, what is the position of 'orchard' counted from the left end?",
+          "options": [
+            "4th from the left end",
+            "5th from the left end",
+            "6th from the left end",
+            "7th from the left end",
+            "8th from the left end"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word with the most vowels (a, e, i, o, u) among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of vowels, the one coming first in alphabetical order is taken. In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the words already arranged there).",
+              "Step I: airport  village  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow",
+              "Step II: airport  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow  village",
+              "Step III: airport  cottage  orchard  monsoon  temple  tunnel  lagoon  meadow  village",
+              "Step IV: airport  cottage  orchard  monsoon  temple  lagoon  meadow  tunnel  village",
+              "Step V: airport  cottage  lagoon  orchard  monsoon  temple  meadow  tunnel  village",
+              "In Step V, 'orchard' is **4th from the left end**."
+            ],
+            "trap": "6th is its position from the right end, not the left end.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 9)."
+          },
+          "tags": [
+            "io:position",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-05-q4",
+          "subtype": "word-arrangement",
+          "prompt": "Which step is the last step of the rearrangement, and which element is 4th from the left end in that step?",
+          "options": [
+            "Step VIII; meadow",
+            "Step VII; meadow",
+            "Step VIII; orchard",
+            "Step IX; meadow",
+            "Step IX; orchard"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word with the most vowels (a, e, i, o, u) among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of vowels, the one coming first in alphabetical order is taken. In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the words already arranged there).",
+              "Step I: airport  village  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow",
+              "Step II: airport  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow  village",
+              "Step III: airport  cottage  orchard  monsoon  temple  tunnel  lagoon  meadow  village",
+              "Step IV: airport  cottage  orchard  monsoon  temple  lagoon  meadow  tunnel  village",
+              "Step V: airport  cottage  lagoon  orchard  monsoon  temple  meadow  tunnel  village",
+              "Step VI: airport  cottage  lagoon  orchard  monsoon  meadow  temple  tunnel  village",
+              "Step VII: airport  cottage  lagoon  meadow  orchard  monsoon  temple  tunnel  village",
+              "Step VIII: airport  cottage  lagoon  meadow  monsoon  orchard  temple  tunnel  village",
+              "The arrangement is complete in **Step VIII**, and its 4th element from the left end is **meadow**."
+            ],
+            "trap": "\"Step VII; meadow\" stops one step early — Step VII is not yet fully arranged."
+          },
+          "tags": [
+            "io:last-step",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-05-q5",
+          "subtype": "word-arrangement",
+          "prompt": "In Step IV, which element is exactly midway between 'cottage' and 'tunnel'?",
+          "options": [
+            "meadow",
+            "monsoon",
+            "temple",
+            "lagoon",
+            "airport"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word with the most vowels (a, e, i, o, u) among those not yet arranged goes to the left end (just after the words already arranged there); if two such words have the same number of vowels, the one coming first in alphabetical order is taken. In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the words already arranged there).",
+              "Step I: airport  village  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow",
+              "Step II: airport  orchard  monsoon  temple  tunnel  cottage  lagoon  meadow  village",
+              "Step III: airport  cottage  orchard  monsoon  temple  tunnel  lagoon  meadow  village",
+              "Step IV: airport  cottage  orchard  monsoon  temple  lagoon  meadow  tunnel  village",
+              "'cottage' is 2nd and 'tunnel' is 8th from the left; midway is 5th from the left: **temple**."
+            ],
+            "trap": "'meadow' is what you get by breaking ties the other way.",
+            "shortcut": "Midway position = (position of one + position of the other) ÷ 2, counted from the same end."
+          },
+          "tags": [
+            "io:midway",
+            "io:word-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-06",
+      "subtype": "word-arrangement",
+      "difficulty": "extreme",
+      "title": "Input–output",
+      "stimulus": "A word arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** tray  ladle  knife  grater  cup  spoon  bowl  plate\n**Step I:** yart  ladle  knife  grater  cup  spoon  bowl  plate\n**Step II:** yart  ladle  knife  grater  spoon  bowl  plate  cup\n**Step III:** yart  noops  ladle  knife  grater  bowl  plate  cup\n**Step IV:** yart  noops  ladle  knife  grater  plate  bowl  cup\n**Step V:** yart  noops  etalp  ladle  knife  grater  bowl  cup\n**Step VI:** yart  noops  etalp  ladle  grater  knife  bowl  cup\n**Step VII:** yart  noops  etalp  eldal  grater  knife  bowl  cup\n\nStep VII is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** veena  flute  tabla  bugle  harp  oboe  violin  banjo  cello\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-06-q1",
+          "subtype": "word-arrangement",
+          "prompt": "Which of the following is Step IV?",
+          "options": [
+            "aneev  niloiv  flute  tabla  bugle  banjo  cello  harp  oboe",
+            "violin  veena  flute  tabla  bugle  banjo  cello  oboe  harp",
+            "niloiv  aneev  flute  tabla  bugle  banjo  cello  harp  oboe",
+            "niloiv  aneev  flute  tabla  bugle  oboe  banjo  cello  harp",
+            "niloiv  aneev  flute  tabla  bugle  banjo  cello  oboe  harp"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there) and is written in reverse. In even-numbered steps, the word with the fewest letters among those not yet arranged goes to the right end (just before the elements already arranged there); between two words of equal length, the one coming first in alphabetical order is taken.",
+              "Step I: niloiv  veena  flute  tabla  bugle  harp  oboe  banjo  cello",
+              "Step II: niloiv  veena  flute  tabla  bugle  oboe  banjo  cello  harp",
+              "Step III: niloiv  aneev  flute  tabla  bugle  oboe  banjo  cello  harp",
+              "Step IV: niloiv  aneev  flute  tabla  bugle  banjo  cello  oboe  harp",
+              "Step IV is **niloiv  aneev  flute  tabla  bugle  banjo  cello  oboe  harp**."
+            ],
+            "trap": "The option \"aneev  niloiv  flute  tabla  bugle  banjo  cello  harp  oboe\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-06-q2",
+          "subtype": "word-arrangement",
+          "prompt": "Which element is 3rd from the left end in Step VI?",
+          "options": [
+            "niloiv",
+            "albat",
+            "tabla",
+            "banjo",
+            "aneev"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there) and is written in reverse. In even-numbered steps, the word with the fewest letters among those not yet arranged goes to the right end (just before the elements already arranged there); between two words of equal length, the one coming first in alphabetical order is taken.",
+              "Step I: niloiv  veena  flute  tabla  bugle  harp  oboe  banjo  cello",
+              "Step II: niloiv  veena  flute  tabla  bugle  oboe  banjo  cello  harp",
+              "Step III: niloiv  aneev  flute  tabla  bugle  oboe  banjo  cello  harp",
+              "Step IV: niloiv  aneev  flute  tabla  bugle  banjo  cello  oboe  harp",
+              "Step V: niloiv  aneev  albat  flute  bugle  banjo  cello  oboe  harp",
+              "Step VI: niloiv  aneev  albat  flute  bugle  cello  banjo  oboe  harp",
+              "3rd from the left end of Step VI: **albat**."
+            ],
+            "trap": "'niloiv' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-06-q3",
+          "subtype": "word-arrangement",
+          "prompt": "In Step VIII, which element is 3rd to the right of 'etulf'?",
+          "options": [
+            "niloiv",
+            "bugle",
+            "oboe",
+            "banjo",
+            "aneev"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there) and is written in reverse. In even-numbered steps, the word with the fewest letters among those not yet arranged goes to the right end (just before the elements already arranged there); between two words of equal length, the one coming first in alphabetical order is taken.",
+              "Step I: niloiv  veena  flute  tabla  bugle  harp  oboe  banjo  cello",
+              "Step II: niloiv  veena  flute  tabla  bugle  oboe  banjo  cello  harp",
+              "Step III: niloiv  aneev  flute  tabla  bugle  oboe  banjo  cello  harp",
+              "Step IV: niloiv  aneev  flute  tabla  bugle  banjo  cello  oboe  harp",
+              "Step V: niloiv  aneev  albat  flute  bugle  banjo  cello  oboe  harp",
+              "Step VI: niloiv  aneev  albat  flute  bugle  cello  banjo  oboe  harp",
+              "Step VII: niloiv  aneev  albat  etulf  bugle  cello  banjo  oboe  harp",
+              "Step VIII: niloiv  aneev  albat  etulf  cello  bugle  banjo  oboe  harp",
+              "In Step VIII, 'etulf' is 4th from the left, so 3rd to its right is 7th from the left: **banjo**."
+            ],
+            "trap": "'niloiv' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:relative-position",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-06-q4",
+          "subtype": "word-arrangement",
+          "prompt": "Which step is the last step of the rearrangement, and which element is 2nd from the right end in that step?",
+          "options": [
+            "Step IX; oboe",
+            "Step VIII; oboe",
+            "Step IX; aneev",
+            "Step X; oboe",
+            "Step X; aneev"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there) and is written in reverse. In even-numbered steps, the word with the fewest letters among those not yet arranged goes to the right end (just before the elements already arranged there); between two words of equal length, the one coming first in alphabetical order is taken.",
+              "Step I: niloiv  veena  flute  tabla  bugle  harp  oboe  banjo  cello",
+              "Step II: niloiv  veena  flute  tabla  bugle  oboe  banjo  cello  harp",
+              "Step III: niloiv  aneev  flute  tabla  bugle  oboe  banjo  cello  harp",
+              "Step IV: niloiv  aneev  flute  tabla  bugle  banjo  cello  oboe  harp",
+              "Step V: niloiv  aneev  albat  flute  bugle  banjo  cello  oboe  harp",
+              "Step VI: niloiv  aneev  albat  flute  bugle  cello  banjo  oboe  harp",
+              "Step VII: niloiv  aneev  albat  etulf  bugle  cello  banjo  oboe  harp",
+              "Step VIII: niloiv  aneev  albat  etulf  cello  bugle  banjo  oboe  harp",
+              "Step IX: niloiv  aneev  albat  etulf  ollec  bugle  banjo  oboe  harp",
+              "The arrangement is complete in **Step IX**, and its 2nd element from the right end is **oboe**."
+            ],
+            "trap": "\"Step VIII; oboe\" stops one step early — Step VIII is not yet fully arranged."
+          },
+          "tags": [
+            "io:last-step",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-06-q5",
+          "subtype": "word-arrangement",
+          "prompt": "If 'oboe' were removed from the input, which step would be the last step of the rearrangement?",
+          "options": [
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII",
+            "Step IX"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there) and is written in reverse. In even-numbered steps, the word with the fewest letters among those not yet arranged goes to the right end (just before the elements already arranged there); between two words of equal length, the one coming first in alphabetical order is taken.",
+              "Without 'oboe' the input is: veena  flute  tabla  bugle  harp  violin  banjo  cello",
+              "Step I: niloiv  veena  flute  tabla  bugle  harp  banjo  cello",
+              "Step II: niloiv  veena  flute  tabla  bugle  banjo  cello  harp",
+              "Step III: niloiv  aneev  flute  tabla  bugle  banjo  cello  harp",
+              "Step IV: niloiv  aneev  flute  tabla  bugle  cello  banjo  harp",
+              "Step V: niloiv  aneev  albat  flute  bugle  cello  banjo  harp",
+              "Step VI: niloiv  aneev  albat  flute  cello  bugle  banjo  harp",
+              "Step VII: niloiv  aneev  albat  etulf  cello  bugle  banjo  harp",
+              "So the last step would be **Step VII**."
+            ],
+            "trap": "Step VIII would change nothing: after Step VII, 'cello' is already in place."
+          },
+          "tags": [
+            "io:what-if",
+            "io:word-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-07",
+      "subtype": "word-arrangement",
+      "difficulty": "extreme",
+      "title": "Input–output",
+      "stimulus": "A word arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** velvet  khadi  rayon  linen  tweed  gold  nylon  silk\n**Step I:** gold  khadi  rayon  linen  tweed  nylon  silk  velvet\n**Step II:** gold  tweed  rayon  linen  nylon  silk  khadi  velvet\n**Step III:** gold  tweed  silk  rayon  nylon  linen  khadi  velvet\n**Step IV:** gold  tweed  silk  nylon  rayon  linen  khadi  velvet\n\nStep IV is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** stool  shelf  frame  sofa  mirror  cushion  basket  drawer  clock  candle\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-07-q1",
+          "subtype": "word-arrangement",
+          "prompt": "Which of the following is Step III?",
+          "options": [
+            "frame  candle  sofa  stool  shelf  mirror  clock  cushion  basket  drawer",
+            "sofa  frame  candle  stool  shelf  basket  clock  drawer  mirror  cushion",
+            "sofa  candle  stool  shelf  frame  mirror  drawer  clock  basket  cushion",
+            "sofa  candle  frame  shelf  stool  clock  mirror  drawer  basket  cushion",
+            "sofa  candle  frame  stool  shelf  mirror  clock  drawer  basket  cushion"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word whose last letter comes earliest in the alphabet among those not yet arranged goes to the left end (just after the words already arranged there; if two words end in the same letter, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one with the most letters goes to the right end (just before the words already arranged there; between equal lengths, the one coming first in alphabetical order is taken).",
+              "Step I: sofa  stool  shelf  frame  mirror  basket  drawer  clock  candle  cushion",
+              "Step II: sofa  candle  stool  shelf  frame  mirror  drawer  clock  basket  cushion",
+              "Step III: sofa  candle  frame  stool  shelf  mirror  clock  drawer  basket  cushion",
+              "Step III is **sofa  candle  frame  stool  shelf  mirror  clock  drawer  basket  cushion**."
+            ],
+            "trap": "The option \"frame  candle  sofa  stool  shelf  mirror  clock  cushion  basket  drawer\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-07-q2",
+          "subtype": "word-arrangement",
+          "prompt": "Which element is 4th from the right end in Step II?",
+          "options": [
+            "clock",
+            "drawer",
+            "shelf",
+            "mirror",
+            "sofa"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word whose last letter comes earliest in the alphabet among those not yet arranged goes to the left end (just after the words already arranged there; if two words end in the same letter, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one with the most letters goes to the right end (just before the words already arranged there; between equal lengths, the one coming first in alphabetical order is taken).",
+              "Step I: sofa  stool  shelf  frame  mirror  basket  drawer  clock  candle  cushion",
+              "Step II: sofa  candle  stool  shelf  frame  mirror  drawer  clock  basket  cushion",
+              "4th from the right end of Step II: **drawer**."
+            ],
+            "trap": "'clock' is what you get by breaking ties the other way."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-07-q3",
+          "subtype": "word-arrangement",
+          "prompt": "In Step IV, which element is 3rd to the left of 'mirror'?",
+          "options": [
+            "cushion",
+            "clock",
+            "frame",
+            "shelf",
+            "stool"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word whose last letter comes earliest in the alphabet among those not yet arranged goes to the left end (just after the words already arranged there; if two words end in the same letter, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one with the most letters goes to the right end (just before the words already arranged there; between equal lengths, the one coming first in alphabetical order is taken).",
+              "Step I: sofa  stool  shelf  frame  mirror  basket  drawer  clock  candle  cushion",
+              "Step II: sofa  candle  stool  shelf  frame  mirror  drawer  clock  basket  cushion",
+              "Step III: sofa  candle  frame  stool  shelf  mirror  clock  drawer  basket  cushion",
+              "Step IV: sofa  candle  frame  shelf  stool  clock  mirror  drawer  basket  cushion",
+              "In Step IV, 'mirror' is 7th from the left, so 3rd to its left is 4th from the left: **shelf**."
+            ],
+            "trap": "'cushion' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:relative-position",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-07-q4",
+          "subtype": "word-arrangement",
+          "prompt": "Which step is the final step for the new input?",
+          "options": [
+            "Step IV",
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word whose last letter comes earliest in the alphabet among those not yet arranged goes to the left end (just after the words already arranged there; if two words end in the same letter, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one with the most letters goes to the right end (just before the words already arranged there; between equal lengths, the one coming first in alphabetical order is taken).",
+              "Step I: sofa  stool  shelf  frame  mirror  basket  drawer  clock  candle  cushion",
+              "Step II: sofa  candle  stool  shelf  frame  mirror  drawer  clock  basket  cushion",
+              "Step III: sofa  candle  frame  stool  shelf  mirror  clock  drawer  basket  cushion",
+              "Step IV: sofa  candle  frame  shelf  stool  clock  mirror  drawer  basket  cushion",
+              "Step V: sofa  candle  frame  shelf  clock  stool  mirror  drawer  basket  cushion",
+              "After Step V the arrangement is complete, so the answer is **Step V**."
+            ],
+            "trap": "Step VI gives 'stool' a step of its own, but it is already in place once Step V is done — a step that changes nothing is not counted.",
+            "shortcut": "Count the steps in the illustration per element moved and apply the same count to the new input; the last element may already be in place."
+          },
+          "tags": [
+            "io:last-step",
+            "io:word-arrangement"
+          ]
+        },
+        {
+          "key": "io-07-q5",
+          "subtype": "word-arrangement",
+          "prompt": "How many elements are there between 'candle' and 'mirror' in Step V?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two words are arranged: first, the word whose last letter comes earliest in the alphabet among those not yet arranged goes to the left end (just after the words already arranged there; if two words end in the same letter, the one coming first in alphabetical order is taken); then, among the words still not arranged, the one with the most letters goes to the right end (just before the words already arranged there; between equal lengths, the one coming first in alphabetical order is taken).",
+              "Step I: sofa  stool  shelf  frame  mirror  basket  drawer  clock  candle  cushion",
+              "Step II: sofa  candle  stool  shelf  frame  mirror  drawer  clock  basket  cushion",
+              "Step III: sofa  candle  frame  stool  shelf  mirror  clock  drawer  basket  cushion",
+              "Step IV: sofa  candle  frame  shelf  stool  clock  mirror  drawer  basket  cushion",
+              "Step V: sofa  candle  frame  shelf  clock  stool  mirror  drawer  basket  cushion",
+              "'candle' is 2nd and 'mirror' is 7th from the left: 7 − 2 − 1 = **4**."
+            ],
+            "trap": "5 counts one of the two named elements as well.",
+            "shortcut": "Elements between = difference of positions − 1."
+          },
+          "tags": [
+            "io:count-between",
+            "io:word-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-08",
+      "subtype": "number-arrangement",
+      "difficulty": "medium",
+      "title": "Input–output",
+      "stimulus": "A number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 47  23  85  61  39  72  14\n**Step I:** 41  47  23  85  61  39  72\n**Step II:** 41  32  47  85  61  39  72\n**Step III:** 41  32  93  47  85  61  72\n**Step IV:** 41  32  93  74  85  61  72\n**Step V:** 41  32  93  74  16  85  72\n**Step VI:** 41  32  93  74  16  27  85\n**Step VII:** 41  32  93  74  16  27  58\n\nStep VII is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 58  27  82  49  36  64  91  13\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-08-q1",
+          "subtype": "number-arrangement",
+          "prompt": "In Step IV, what is the sum of the element 2nd from the left end and the element 3rd from the right end?",
+          "options": [
+            "127",
+            "145",
+            "154",
+            "158",
+            "162"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the smallest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 31  58  27  82  49  36  64  91",
+              "Step II: 31  72  58  82  49  36  64  91",
+              "Step III: 31  72  63  58  82  49  64  91",
+              "Step IV: 31  72  63  94  58  82  64  91",
+              "2nd from the left end = 72, 3rd from the right end = 82; 72 + 82 = **154**."
+            ],
+            "trap": "145 is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:sum",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-08-q2",
+          "subtype": "number-arrangement",
+          "prompt": "Which element is 2nd from the right end in Step VI?",
+          "options": [
+            "72",
+            "64",
+            "28",
+            "46",
+            "82"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the smallest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 31  58  27  82  49  36  64  91",
+              "Step II: 31  72  58  82  49  36  64  91",
+              "Step III: 31  72  63  58  82  49  64  91",
+              "Step IV: 31  72  63  94  58  82  64  91",
+              "Step V: 31  72  63  94  85  82  64  91",
+              "Step VI: 31  72  63  94  85  46  82  91",
+              "2nd from the right end of Step VI: **82**."
+            ],
+            "trap": "'72' is 2nd from the left end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-08-q3",
+          "subtype": "number-arrangement",
+          "prompt": "Which step number is the following output?\n\n31  72  63  94  85  82  64  91",
+          "options": [
+            "Step IV",
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the smallest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 31  58  27  82  49  36  64  91",
+              "Step II: 31  72  58  82  49  36  64  91",
+              "Step III: 31  72  63  58  82  49  64  91",
+              "Step IV: 31  72  63  94  58  82  64  91",
+              "Step V: 31  72  63  94  85  82  64  91",
+              "The given line is **Step V**."
+            ],
+            "trap": "Step VI is one step too late: in it '46' would also have been moved, but the given line does not show that yet."
+          },
+          "tags": [
+            "io:which-step",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-08-q4",
+          "subtype": "number-arrangement",
+          "prompt": "In Step III, at which position from the right end does '58' stand?",
+          "options": [
+            "1st from the right end",
+            "2nd from the right end",
+            "3rd from the right end",
+            "4th from the right end",
+            "5th from the right end"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the smallest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 31  58  27  82  49  36  64  91",
+              "Step II: 31  72  58  82  49  36  64  91",
+              "Step III: 31  72  63  58  82  49  64  91",
+              "In Step III, '58' is **5th from the right end**."
+            ],
+            "trap": "4th is its position from the left end, not the right end.",
+            "shortcut": "Position from the right = total − position from the left + 1 (total 8)."
+          },
+          "tags": [
+            "io:position",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-08-q5",
+          "subtype": "number-arrangement",
+          "prompt": "In which step is the arrangement of this input completed?",
+          "options": [
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII",
+            "Step IX"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the smallest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 31  58  27  82  49  36  64  91",
+              "Step II: 31  72  58  82  49  36  64  91",
+              "Step III: 31  72  63  58  82  49  64  91",
+              "Step IV: 31  72  63  94  58  82  64  91",
+              "Step V: 31  72  63  94  85  82  64  91",
+              "Step VI: 31  72  63  94  85  46  82  91",
+              "Step VII: 31  72  63  94  85  46  28  91",
+              "Step VIII: 31  72  63  94  85  46  28  19",
+              "After Step VIII the arrangement is complete, so the answer is **Step VIII**."
+            ],
+            "trap": "Step VII stops one step early: in Step VIII, '91' (which becomes '19') still has to be moved.",
+            "shortcut": "Count the steps in the illustration per element moved and apply the same count to the new input; the last element may already be in place."
+          },
+          "tags": [
+            "io:last-step",
+            "io:number-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-09",
+      "subtype": "number-arrangement",
+      "difficulty": "medium",
+      "title": "Input–output",
+      "stimulus": "A number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 48  41  19  85  49  82  57  63\n**Step I:** 85  48  41  49  82  57  63  19\n**Step II:** 85  82  48  49  57  63  41  19\n**Step III:** 85  82  63  49  57  48  41  19\n**Step IV:** 85  82  63  57  49  48  41  19\n\nStep IV is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 25  16  28  51  68  78  54  72  87\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-09-q1",
+          "subtype": "number-arrangement",
+          "prompt": "In Step II, what is the sum of the element 3rd from the left end and the element 2nd from the right end?",
+          "options": [
+            "53",
+            "56",
+            "59",
+            "62",
+            "65"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 87  25  28  51  68  78  54  72  16",
+              "Step II: 87  78  28  51  68  54  72  25  16",
+              "3rd from the left end = 28, 2nd from the right end = 25; 28 + 25 = **53**."
+            ],
+            "trap": "The same two positions in Step I give 100 — use Step II itself."
+          },
+          "tags": [
+            "io:sum",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-09-q2",
+          "subtype": "number-arrangement",
+          "prompt": "Which element is 5th from the right end in Step III?",
+          "options": [
+            "54",
+            "51",
+            "68",
+            "87",
+            "78"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 87  25  28  51  68  78  54  72  16",
+              "Step II: 87  78  28  51  68  54  72  25  16",
+              "Step III: 87  78  72  51  68  54  28  25  16",
+              "5th from the right end of Step III: **68**."
+            ],
+            "trap": "'54' is 5th from the right end in Step IV."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-09-q3",
+          "subtype": "number-arrangement",
+          "prompt": "Which step number is the following output?\n\n87  78  28  51  68  54  72  25  16",
+          "options": [
+            "Step II",
+            "Step III",
+            "Step IV",
+            "Step V",
+            "Step VI"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 87  25  28  51  68  78  54  72  16",
+              "Step II: 87  78  28  51  68  54  72  25  16",
+              "The given line is **Step II**."
+            ],
+            "trap": "Step III is one step too late: in it '72' and '28' would also have been moved, but the given line does not show that yet."
+          },
+          "tags": [
+            "io:which-step",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-09-q4",
+          "subtype": "number-arrangement",
+          "prompt": "What is the position of '51' from the right end in Step IV?",
+          "options": [
+            "4th from the right end",
+            "5th from the right end",
+            "6th from the right end",
+            "7th from the right end",
+            "8th from the right end"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 87  25  28  51  68  78  54  72  16",
+              "Step II: 87  78  28  51  68  54  72  25  16",
+              "Step III: 87  78  72  51  68  54  28  25  16",
+              "Step IV: 87  78  72  68  54  51  28  25  16",
+              "In Step IV, '51' is **4th from the right end**."
+            ],
+            "trap": "6th from the right end is where '51' stands in Step III, one step too early.",
+            "shortcut": "Position from the right = total − position from the left + 1 (total 9)."
+          },
+          "tags": [
+            "io:position",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-09-q5",
+          "subtype": "number-arrangement",
+          "prompt": "How many elements are there between '25' and '78' in Step I?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 87  25  28  51  68  78  54  72  16",
+              "'25' is 2nd and '78' is 6th from the left: 6 − 2 − 1 = **3**."
+            ],
+            "trap": "4 counts one of the two named elements as well.",
+            "shortcut": "Elements between = difference of positions − 1."
+          },
+          "tags": [
+            "io:count-between",
+            "io:number-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-10",
+      "subtype": "number-arrangement",
+      "difficulty": "hard",
+      "title": "Input–output",
+      "stimulus": "A number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 78  45  67  18  76  82  83  81\n**Step I:** 45  78  67  18  76  83  81  82\n**Step II:** 45  67  18  76  83  81  78  82\n**Step III:** 45  67  81  18  83  76  78  82\n**Step IV:** 45  67  81  83  18  76  78  82\n\nStep IV is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 87  71  85  94  46  72  38  24  75  69\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-10-q1",
+          "subtype": "number-arrangement",
+          "prompt": "After how many steps does the machine stop for this input?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the smallest odd number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the largest even number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 69  87  71  85  46  72  38  24  75  94",
+              "Step II: 69  71  87  85  46  38  24  75  72  94",
+              "Step III: 69  71  75  87  85  38  24  46  72  94",
+              "Step IV: 69  71  75  85  87  24  38  46  72  94",
+              "After Step IV the arrangement is complete, so the answer is **4**."
+            ],
+            "trap": "5 gives '87' and '24' a step of their own, but they are already in place once Step IV is done — a step that changes nothing is not counted.",
+            "shortcut": "Count the steps in the illustration per element moved and apply the same count to the new input; the last element may already be in place."
+          },
+          "tags": [
+            "io:last-step",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-10-q2",
+          "subtype": "number-arrangement",
+          "prompt": "Which element is 4th from the left end in Step III?",
+          "options": [
+            "24",
+            "85",
+            "75",
+            "69",
+            "87"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the smallest odd number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the largest even number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 69  87  71  85  46  72  38  24  75  94",
+              "Step II: 69  71  87  85  46  38  24  75  72  94",
+              "Step III: 69  71  75  87  85  38  24  46  72  94",
+              "4th from the left end of Step III: **87**."
+            ],
+            "trap": "'24' is 4th from the right end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-10-q3",
+          "subtype": "number-arrangement",
+          "prompt": "What is the position of '24' from the left end in Step III?",
+          "options": [
+            "3rd from the left end",
+            "4th from the left end",
+            "5th from the left end",
+            "6th from the left end",
+            "7th from the left end"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the smallest odd number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the largest even number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 69  87  71  85  46  72  38  24  75  94",
+              "Step II: 69  71  87  85  46  38  24  75  72  94",
+              "Step III: 69  71  75  87  85  38  24  46  72  94",
+              "In Step III, '24' is **7th from the left end**."
+            ],
+            "trap": "4th is its position from the right end, not the left end.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 10)."
+          },
+          "tags": [
+            "io:position",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-10-q4",
+          "subtype": "number-arrangement",
+          "prompt": "In Step IV, what is the difference between the element 4th from the left end and the element 3rd from the right end?",
+          "options": [
+            "37",
+            "39",
+            "41",
+            "42",
+            "45"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the smallest odd number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the largest even number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 69  87  71  85  46  72  38  24  75  94",
+              "Step II: 69  71  87  85  46  38  24  75  72  94",
+              "Step III: 69  71  75  87  85  38  24  46  72  94",
+              "Step IV: 69  71  75  85  87  24  38  46  72  94",
+              "4th from the left end = 85, 3rd from the right end = 46; 85 − 46 = **39**."
+            ],
+            "trap": "41 is the value in Step III."
+          },
+          "tags": [
+            "io:difference",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-10-q5",
+          "subtype": "number-arrangement",
+          "prompt": "Which of the following is Step II?",
+          "options": [
+            "71  69  87  85  46  38  24  75  94  72",
+            "69  87  71  85  46  72  38  24  75  94",
+            "69  71  75  87  85  38  24  46  72  94",
+            "69  71  87  85  46  38  24  75  72  94",
+            "69  71  87  85  38  46  24  75  72  94"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: the smallest odd number among those not yet arranged goes to the left end (just after the numbers already arranged there), and the largest even number among those not yet arranged goes to the right end (just before the numbers already arranged there).",
+              "Step I: 69  87  71  85  46  72  38  24  75  94",
+              "Step II: 69  71  87  85  46  38  24  75  72  94",
+              "Step II is **69  71  87  85  46  38  24  75  72  94**."
+            ],
+            "trap": "The option \"71  69  87  85  46  38  24  75  94  72\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:number-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-11",
+      "subtype": "number-arrangement",
+      "difficulty": "hard",
+      "title": "Input–output",
+      "stimulus": "A number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 16  71  97  39  43  84  52  25\n**Step I:** 97  16  71  39  43  84  52  25\n**Step II:** 97  84  16  71  39  43  52  25\n**Step III:** 97  84  39  16  71  43  52  25\n**Step IV:** 97  84  39  71  16  43  52  25\n**Step V:** 97  84  39  71  52  16  43  25\n**Step VI:** 97  84  39  71  52  43  16  25\n**Step VII:** 97  84  39  71  52  43  25  16\n\nStep VII is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 34  28  63  57  82  91  46  19  75\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-11-q1",
+          "subtype": "number-arrangement",
+          "prompt": "Which element is 3rd from the right end in Step V?",
+          "options": [
+            "28",
+            "63",
+            "91",
+            "34",
+            "75"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there); if two such numbers have the same digit sum, the larger number is taken first.",
+              "Step I: 75  34  28  63  57  82  91  46  19",
+              "Step II: 75  57  34  28  63  82  91  46  19",
+              "Step III: 75  57  91  34  28  63  82  46  19",
+              "Step IV: 75  57  91  82  34  28  63  46  19",
+              "Step V: 75  57  91  82  46  34  28  63  19",
+              "3rd from the right end of Step V: **28**."
+            ],
+            "trap": "'63' is what you get by breaking ties the other way."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-11-q2",
+          "subtype": "number-arrangement",
+          "prompt": "What is the position of '34' from the left end in Step VI?",
+          "options": [
+            "3rd from the left end",
+            "4th from the left end",
+            "5th from the left end",
+            "6th from the left end",
+            "7th from the left end"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there); if two such numbers have the same digit sum, the larger number is taken first.",
+              "Step I: 75  34  28  63  57  82  91  46  19",
+              "Step II: 75  57  34  28  63  82  91  46  19",
+              "Step III: 75  57  91  34  28  63  82  46  19",
+              "Step IV: 75  57  91  82  34  28  63  46  19",
+              "Step V: 75  57  91  82  46  34  28  63  19",
+              "Step VI: 75  57  91  82  46  28  34  63  19",
+              "In Step VI, '34' is **7th from the left end**."
+            ],
+            "trap": "6th from the left end is where '34' stands in Step V, one step too early.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 9)."
+          },
+          "tags": [
+            "io:position",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-11-q3",
+          "subtype": "number-arrangement",
+          "prompt": "Which of the following is Step III?",
+          "options": [
+            "91  57  75  34  28  63  82  46  19",
+            "57  75  19  34  28  63  82  91  46",
+            "75  57  91  34  28  63  82  46  19",
+            "75  57  34  28  63  82  91  46  19",
+            "75  57  91  82  34  28  63  46  19"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there); if two such numbers have the same digit sum, the larger number is taken first.",
+              "Step I: 75  34  28  63  57  82  91  46  19",
+              "Step II: 75  57  34  28  63  82  91  46  19",
+              "Step III: 75  57  91  34  28  63  82  46  19",
+              "Step III is **75  57  91  34  28  63  82  46  19**."
+            ],
+            "trap": "The option \"91  57  75  34  28  63  82  46  19\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-11-q4",
+          "subtype": "number-arrangement",
+          "prompt": "Which step is the last step of the rearrangement, and which element is 4th from the left end in that step?",
+          "options": [
+            "Step VII; 82",
+            "Step VIII; 28",
+            "Step IX; 82",
+            "Step IX; 28",
+            "Step VIII; 82"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there); if two such numbers have the same digit sum, the larger number is taken first.",
+              "Step I: 75  34  28  63  57  82  91  46  19",
+              "Step II: 75  57  34  28  63  82  91  46  19",
+              "Step III: 75  57  91  34  28  63  82  46  19",
+              "Step IV: 75  57  91  82  34  28  63  46  19",
+              "Step V: 75  57  91  82  46  34  28  63  19",
+              "Step VI: 75  57  91  82  46  28  34  63  19",
+              "Step VII: 75  57  91  82  46  28  19  34  63",
+              "Step VIII: 75  57  91  82  46  28  19  63  34",
+              "The arrangement is complete in **Step VIII**, and its 4th element from the left end is **82**."
+            ],
+            "trap": "\"Step VII; 82\" stops one step early — Step VII is not yet fully arranged."
+          },
+          "tags": [
+            "io:last-step",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-11-q5",
+          "subtype": "number-arrangement",
+          "prompt": "In Step IV, what is the difference between the element 3rd from the left end and the element 2nd from the right end?",
+          "options": [
+            "28",
+            "45",
+            "48",
+            "51",
+            "54"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there); if two such numbers have the same digit sum, the larger number is taken first.",
+              "Step I: 75  34  28  63  57  82  91  46  19",
+              "Step II: 75  57  34  28  63  82  91  46  19",
+              "Step III: 75  57  91  34  28  63  82  46  19",
+              "Step IV: 75  57  91  82  34  28  63  46  19",
+              "3rd from the left end = 91, 2nd from the right end = 46; 91 − 46 = **45**."
+            ],
+            "trap": "28 is the value in Step V."
+          },
+          "tags": [
+            "io:difference",
+            "io:number-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-12",
+      "subtype": "number-arrangement",
+      "difficulty": "hard",
+      "title": "Input–output",
+      "stimulus": "A number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 92  41  78  23  35  28  67  56\n**Step I:** 92  41  78  35  28  67  56  27\n**Step II:** 29  41  78  35  28  67  56  27\n**Step III:** 29  41  78  35  67  56  32  27\n**Step IV:** 29  87  41  35  67  56  32  27\n**Step V:** 29  87  41  67  56  39  32  27\n**Step VI:** 29  87  76  41  56  39  32  27\n**Step VII:** 29  87  76  56  45  39  32  27\n**Step VIII:** 29  87  76  65  45  39  32  27\n\nStep VIII is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 49  61  79  14  48  32  98  82  51\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-12-q1",
+          "subtype": "number-arrangement",
+          "prompt": "In Step VI, what is the sum of the element 3rd from the left end and the element 2nd from the right end?",
+          "options": [
+            "111",
+            "125",
+            "129",
+            "133",
+            "137"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and 4 is added to it. In even-numbered steps, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 49  61  79  48  32  98  82  51  18",
+              "Step II: 89  49  61  79  48  32  82  51  18",
+              "Step III: 89  49  61  79  48  82  51  36  18",
+              "Step IV: 89  28  49  61  79  48  51  36  18",
+              "Step V: 89  28  49  61  79  51  52  36  18",
+              "Step VI: 89  28  97  49  61  51  52  36  18",
+              "3rd from the left end = 97, 2nd from the right end = 36; 97 + 36 = **133**."
+            ],
+            "trap": "125 is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:sum",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-12-q2",
+          "subtype": "number-arrangement",
+          "prompt": "Which element is 4th from the right end in Step V?",
+          "options": [
+            "51",
+            "48",
+            "61",
+            "79",
+            "52"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and 4 is added to it. In even-numbered steps, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 49  61  79  48  32  98  82  51  18",
+              "Step II: 89  49  61  79  48  32  82  51  18",
+              "Step III: 89  49  61  79  48  82  51  36  18",
+              "Step IV: 89  28  49  61  79  48  51  36  18",
+              "Step V: 89  28  49  61  79  51  52  36  18",
+              "4th from the right end of Step V: **51**."
+            ],
+            "trap": "'48' is what you get by starting with the even-step rule."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-12-q3",
+          "subtype": "number-arrangement",
+          "prompt": "Which of the following is Step IV?",
+          "options": [
+            "28  89  49  61  79  48  51  18  36",
+            "98  82  49  61  79  48  51  32  14",
+            "89  28  49  61  79  48  51  36  18",
+            "89  49  61  79  48  82  51  36  18",
+            "89  28  49  61  79  51  52  36  18"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and 4 is added to it. In even-numbered steps, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 49  61  79  48  32  98  82  51  18",
+              "Step II: 89  49  61  79  48  32  82  51  18",
+              "Step III: 89  49  61  79  48  82  51  36  18",
+              "Step IV: 89  28  49  61  79  48  51  36  18",
+              "Step IV is **89  28  49  61  79  48  51  36  18**."
+            ],
+            "trap": "The option \"28  89  49  61  79  48  51  18  36\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-12-q4",
+          "subtype": "number-arrangement",
+          "prompt": "What is the position of '53' from the right end in Step VIII?",
+          "options": [
+            "3rd from the right end",
+            "4th from the right end",
+            "5th from the right end",
+            "6th from the right end",
+            "7th from the right end"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and 4 is added to it. In even-numbered steps, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 49  61  79  48  32  98  82  51  18",
+              "Step II: 89  49  61  79  48  32  82  51  18",
+              "Step III: 89  49  61  79  48  82  51  36  18",
+              "Step IV: 89  28  49  61  79  48  51  36  18",
+              "Step V: 89  28  49  61  79  51  52  36  18",
+              "Step VI: 89  28  97  49  61  51  52  36  18",
+              "Step VII: 89  28  97  61  51  53  52  36  18",
+              "Step VIII: 89  28  97  16  51  53  52  36  18",
+              "In Step VIII, '53' is **4th from the right end**."
+            ],
+            "trap": "6th is its position from the left end, not the right end.",
+            "shortcut": "Position from the right = total − position from the left + 1 (total 9)."
+          },
+          "tags": [
+            "io:position",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-12-q5",
+          "subtype": "number-arrangement",
+          "prompt": "Which step number is the following output?\n\n89  28  97  61  51  53  52  36  18",
+          "options": [
+            "Step III",
+            "Step IV",
+            "Step V",
+            "Step VI",
+            "Step VII"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and 4 is added to it. In even-numbered steps, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and its digits are reversed.",
+              "Step I: 49  61  79  48  32  98  82  51  18",
+              "Step II: 89  49  61  79  48  32  82  51  18",
+              "Step III: 89  49  61  79  48  82  51  36  18",
+              "Step IV: 89  28  49  61  79  48  51  36  18",
+              "Step V: 89  28  49  61  79  51  52  36  18",
+              "Step VI: 89  28  97  49  61  51  52  36  18",
+              "Step VII: 89  28  97  61  51  53  52  36  18",
+              "The given line is **Step VII**."
+            ],
+            "trap": "Step VI is one step too early: '53' is already in place in the given line, which happens only in Step VII."
+          },
+          "tags": [
+            "io:which-step",
+            "io:number-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-13",
+      "subtype": "number-arrangement",
+      "difficulty": "extreme",
+      "title": "Input–output",
+      "stimulus": "A number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 56  26  64  57  97  82  58  67\n**Step I:** 113  56  64  57  82  58  67  62\n**Step II:** 113  92  64  57  58  67  65  62\n**Step III:** 113  92  80  64  58  75  65  62\n**Step IV:** 113  92  80  74  85  75  65  62\n\nStep IV is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 69  89  46  79  18  87  41  51  53  28\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-13-q1",
+          "subtype": "number-arrangement",
+          "prompt": "In Step III, what is the sum of the element 3rd from the left end and the element 3rd from the right end?",
+          "options": [
+            "105",
+            "109",
+            "113",
+            "120",
+            "122"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: first, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and the sum of its own digits is added to it; then the smallest number among those still not arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Step I: 106  69  46  79  87  41  51  53  28  81",
+              "Step II: 106  102  69  46  79  41  51  53  82  81",
+              "Step III: 106  102  95  69  46  51  53  14  82  81",
+              "3rd from the left end = 95, 3rd from the right end = 14; 95 + 14 = **109**."
+            ],
+            "trap": "120 is what you get if the moved element is not changed."
+          },
+          "tags": [
+            "io:sum",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-13-q2",
+          "subtype": "number-arrangement",
+          "prompt": "Which of the following is Step IV?",
+          "options": [
+            "84  95  102  106  51  53  81  82  14  64",
+            "89  87  79  69  51  53  46  41  28  18",
+            "106  102  95  69  46  51  53  14  82  81",
+            "106  102  95  84  51  53  64  14  82  81",
+            "106  102  95  84  61  15  64  14  82  81"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: first, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and the sum of its own digits is added to it; then the smallest number among those still not arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Step I: 106  69  46  79  87  41  51  53  28  81",
+              "Step II: 106  102  69  46  79  41  51  53  82  81",
+              "Step III: 106  102  95  69  46  51  53  14  82  81",
+              "Step IV: 106  102  95  84  51  53  64  14  82  81",
+              "Step IV is **106  102  95  84  51  53  64  14  82  81**."
+            ],
+            "trap": "The option \"84  95  102  106  51  53  81  82  14  64\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-13-q3",
+          "subtype": "number-arrangement",
+          "prompt": "Which element is 4th from the right end in Step II?",
+          "options": [
+            "51",
+            "46",
+            "53",
+            "41",
+            "106"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: first, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and the sum of its own digits is added to it; then the smallest number among those still not arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Step I: 106  69  46  79  87  41  51  53  28  81",
+              "Step II: 106  102  69  46  79  41  51  53  82  81",
+              "4th from the right end of Step II: **51**."
+            ],
+            "trap": "'46' is 4th from the left end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-13-q4",
+          "subtype": "number-arrangement",
+          "prompt": "Suppose '41' is left out of the input and the rest is fed to the machine in the same order. Which step would then be the last step?",
+          "options": [
+            "Step II",
+            "Step III",
+            "Step IV",
+            "Step V",
+            "Step VI"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: first, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and the sum of its own digits is added to it; then the smallest number among those still not arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Without '41' the input is: 69  89  46  79  18  87  51  53  28",
+              "Step I: 106  69  46  79  87  51  53  28  81",
+              "Step II: 106  102  69  46  79  51  53  82  81",
+              "Step III: 106  102  95  69  51  53  64  82  81",
+              "Step IV: 106  102  95  84  53  15  64  82  81",
+              "Step V: 106  102  95  84  61  15  64  82  81",
+              "So the last step would be **Step V**."
+            ],
+            "trap": "Step IV assumes one step fewer, but with '41' gone Step V still has to move '53' (which becomes '61')."
+          },
+          "tags": [
+            "io:what-if",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-13-q5",
+          "subtype": "number-arrangement",
+          "prompt": "In Step V, at which position from the left end does '64' stand?",
+          "options": [
+            "6th from the left end",
+            "7th from the left end",
+            "8th from the left end",
+            "9th from the left end",
+            "10th from the left end"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, two numbers are arranged: first, the largest number among those not yet arranged goes to the left end (just after the numbers already arranged there) and the sum of its own digits is added to it; then the smallest number among those still not arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Step I: 106  69  46  79  87  41  51  53  28  81",
+              "Step II: 106  102  69  46  79  41  51  53  82  81",
+              "Step III: 106  102  95  69  46  51  53  14  82  81",
+              "Step IV: 106  102  95  84  51  53  64  14  82  81",
+              "Step V: 106  102  95  84  61  15  64  14  82  81",
+              "In Step V, '64' is **7th from the left end**."
+            ],
+            "trap": "Write Step V in full before counting — '64' shifts as other elements are moved.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 10)."
+          },
+          "tags": [
+            "io:position",
+            "io:number-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-14",
+      "subtype": "number-arrangement",
+      "difficulty": "extreme",
+      "title": "Input–output",
+      "stimulus": "A number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 62  43  85  41  81  82  58  36\n**Step I:** 53  62  43  85  41  81  82  36\n**Step II:** 53  62  43  85  41  81  82  63\n**Step III:** 53  80  62  43  41  81  82  63\n**Step IV:** 53  80  62  43  81  82  14  63\n**Step V:** 53  80  77  62  43  81  14  63\n**Step VI:** 53  80  77  62  81  34  14  63\n**Step VII:** 53  80  77  76  62  34  14  63\n**Step VIII:** 53  80  77  76  26  34  14  63\n\nStep VIII is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 52  45  16  69  51  82  81  13  63\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-14-q1",
+          "subtype": "number-arrangement",
+          "prompt": "Which of the following is Step V?",
+          "options": [
+            "40  77  64  52  51  81  63  31  61",
+            "69  82  45  52  51  81  63  16  13",
+            "64  77  40  52  51  81  63  61  31",
+            "64  77  76  52  45  51  63  61  31",
+            "64  77  52  51  81  63  54  61  31"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there) and 5 is subtracted from it; if two such numbers have the same digit sum, the smaller number is taken. In even-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Step I: 64  52  45  16  51  82  81  13  63",
+              "Step II: 64  52  45  16  51  82  81  63  31",
+              "Step III: 64  77  52  45  16  51  81  63  31",
+              "Step IV: 64  77  52  45  51  81  63  61  31",
+              "Step V: 64  77  40  52  51  81  63  61  31",
+              "Step V is **64  77  40  52  51  81  63  61  31**."
+            ],
+            "trap": "The option \"40  77  64  52  51  81  63  31  61\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-14-q2",
+          "subtype": "number-arrangement",
+          "prompt": "In Step VII, what is the sum of the element 4th from the left end and the element 3rd from the right end?",
+          "options": [
+            "61",
+            "65",
+            "67",
+            "69",
+            "73"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there) and 5 is subtracted from it; if two such numbers have the same digit sum, the smaller number is taken. In even-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Step I: 64  52  45  16  51  82  81  13  63",
+              "Step II: 64  52  45  16  51  82  81  63  31",
+              "Step III: 64  77  52  45  16  51  81  63  31",
+              "Step IV: 64  77  52  45  51  81  63  61  31",
+              "Step V: 64  77  40  52  51  81  63  61  31",
+              "Step VI: 64  77  40  52  81  63  15  61  31",
+              "Step VII: 64  77  40  58  52  81  15  61  31",
+              "4th from the left end = 58, 3rd from the right end = 15; 58 + 15 = **73**."
+            ],
+            "trap": "67 is the value in Step VI."
+          },
+          "tags": [
+            "io:sum",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-14-q3",
+          "subtype": "number-arrangement",
+          "prompt": "Which element is 4th from the right end in Step VI?",
+          "options": [
+            "81",
+            "63",
+            "52",
+            "15",
+            "64"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there) and 5 is subtracted from it; if two such numbers have the same digit sum, the smaller number is taken. In even-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Step I: 64  52  45  16  51  82  81  13  63",
+              "Step II: 64  52  45  16  51  82  81  63  31",
+              "Step III: 64  77  52  45  16  51  81  63  31",
+              "Step IV: 64  77  52  45  51  81  63  61  31",
+              "Step V: 64  77  40  52  51  81  63  61  31",
+              "Step VI: 64  77  40  52  81  63  15  61  31",
+              "4th from the right end of Step VI: **63**."
+            ],
+            "trap": "'81' is what you get by starting with the even-step rule."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-14-q4",
+          "subtype": "number-arrangement",
+          "prompt": "If the input did not contain '45', in which step would the rearrangement be complete?",
+          "options": [
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII",
+            "Step IX"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there) and 5 is subtracted from it; if two such numbers have the same digit sum, the smaller number is taken. In even-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Without '45' the input is: 52  16  69  51  82  81  13  63",
+              "Step I: 64  52  16  51  82  81  13  63",
+              "Step II: 64  52  16  51  82  81  63  31",
+              "Step III: 64  77  52  16  51  81  63  31",
+              "Step IV: 64  77  52  51  81  63  61  31",
+              "Step V: 64  77  58  52  51  81  61  31",
+              "Step VI: 64  77  58  52  81  15  61  31",
+              "Step VII: 64  77  58  76  52  15  61  31",
+              "Step VIII: 64  77  58  76  25  15  61  31",
+              "So the last step would be **Step VIII**."
+            ],
+            "trap": "Step IX is the last step with '45' still in the input."
+          },
+          "tags": [
+            "io:what-if",
+            "io:number-arrangement"
+          ]
+        },
+        {
+          "key": "io-14-q5",
+          "subtype": "number-arrangement",
+          "prompt": "What is the position of '81' from the left end in Step VII?",
+          "options": [
+            "4th from the left end",
+            "5th from the left end",
+            "6th from the left end",
+            "7th from the left end",
+            "8th from the left end"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the number with the greatest sum of digits among those not yet arranged goes to the left end (just after the numbers already arranged there) and 5 is subtracted from it; if two such numbers have the same digit sum, the smaller number is taken. In even-numbered steps, the smallest number among those not yet arranged goes to the right end (just before the numbers already arranged there) and its digits are reversed.",
+              "Step I: 64  52  45  16  51  82  81  13  63",
+              "Step II: 64  52  45  16  51  82  81  63  31",
+              "Step III: 64  77  52  45  16  51  81  63  31",
+              "Step IV: 64  77  52  45  51  81  63  61  31",
+              "Step V: 64  77  40  52  51  81  63  61  31",
+              "Step VI: 64  77  40  52  81  63  15  61  31",
+              "Step VII: 64  77  40  58  52  81  15  61  31",
+              "In Step VII, '81' is **6th from the left end**."
+            ],
+            "trap": "5th from the left end is where '81' stands in Step VI, one step too early.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 9)."
+          },
+          "tags": [
+            "io:position",
+            "io:number-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-15",
+      "subtype": "mixed-arrangement",
+      "difficulty": "medium",
+      "title": "Input–output",
+      "stimulus": "A word and number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 44  cherry  54  melon  64  apple  61  guava\n**Step I:** apple  44  cherry  54  melon  61  guava  64\n**Step II:** apple  cherry  44  54  melon  guava  61  64\n**Step III:** apple  cherry  guava  44  melon  54  61  64\n**Step IV:** apple  cherry  guava  melon  44  54  61  64\n\nStep IV is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 35  37  28  brook  stone  89  79  cloud  field  river\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-15-q1",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which element is 3rd from the left end in Step II?",
+          "options": [
+            "35",
+            "river",
+            "37",
+            "field",
+            "cloud"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: brook  35  37  28  stone  79  cloud  field  river  89",
+              "Step II: brook  cloud  35  37  28  stone  field  river  79  89",
+              "3rd from the left end of Step II: **35**."
+            ],
+            "trap": "'river' is 3rd from the right end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-15-q2",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step III, what is the position of 'stone' counted from the right end?",
+          "options": [
+            "3rd from the right end",
+            "4th from the right end",
+            "5th from the right end",
+            "6th from the right end",
+            "7th from the right end"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: brook  35  37  28  stone  79  cloud  field  river  89",
+              "Step II: brook  cloud  35  37  28  stone  field  river  79  89",
+              "Step III: brook  cloud  field  35  28  stone  river  37  79  89",
+              "In Step III, 'stone' is **5th from the right end**."
+            ],
+            "trap": "6th is its position from the left end, not the right end.",
+            "shortcut": "Position from the right = total − position from the left + 1 (total 10)."
+          },
+          "tags": [
+            "io:position",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-15-q3",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which step number is the following output?\n\nbrook  cloud  field  river  28  stone  35  37  79  89",
+          "options": [
+            "Step IV",
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: brook  35  37  28  stone  79  cloud  field  river  89",
+              "Step II: brook  cloud  35  37  28  stone  field  river  79  89",
+              "Step III: brook  cloud  field  35  28  stone  river  37  79  89",
+              "Step IV: brook  cloud  field  river  28  stone  35  37  79  89",
+              "The given line is **Step IV**."
+            ],
+            "trap": "Step V is one step too late: in it 'stone' would also have been moved, but the given line does not show that yet."
+          },
+          "tags": [
+            "io:which-step",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-15-q4",
+          "subtype": "mixed-arrangement",
+          "prompt": "How many elements are there between '35' and '79' in Step III?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: brook  35  37  28  stone  79  cloud  field  river  89",
+              "Step II: brook  cloud  35  37  28  stone  field  river  79  89",
+              "Step III: brook  cloud  field  35  28  stone  river  37  79  89",
+              "'35' is 4th and '79' is 9th from the left: 9 − 4 − 1 = **4**."
+            ],
+            "trap": "3 leaves out one of the elements between them.",
+            "shortcut": "Elements between = difference of positions − 1."
+          },
+          "tags": [
+            "io:count-between",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-15-q5",
+          "subtype": "mixed-arrangement",
+          "prompt": "How many steps are required to arrange this input completely?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word that comes first in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: brook  35  37  28  stone  79  cloud  field  river  89",
+              "Step II: brook  cloud  35  37  28  stone  field  river  79  89",
+              "Step III: brook  cloud  field  35  28  stone  river  37  79  89",
+              "Step IV: brook  cloud  field  river  28  stone  35  37  79  89",
+              "Step V: brook  cloud  field  river  stone  28  35  37  79  89",
+              "After Step V the arrangement is complete, so the answer is **5**."
+            ],
+            "trap": "6 gives '28' a step of its own, but it is already in place once Step V is done — a step that changes nothing is not counted.",
+            "shortcut": "Count the steps in the illustration per element moved and apply the same count to the new input; the last element may already be in place."
+          },
+          "tags": [
+            "io:last-step",
+            "io:mixed-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-16",
+      "subtype": "mixed-arrangement",
+      "difficulty": "hard",
+      "title": "Input–output",
+      "stimulus": "A word and number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** chair  34  desk  lamp  table  74  57  15\n**Step I:** 74  chair  34  desk  lamp  table  57  15\n**Step II:** 74  table  chair  34  desk  lamp  57  15\n**Step III:** 74  table  57  chair  34  desk  lamp  15\n**Step IV:** 74  table  57  lamp  chair  34  desk  15\n**Step V:** 74  table  57  lamp  34  chair  desk  15\n**Step VI:** 74  table  57  lamp  34  desk  chair  15\n**Step VII:** 74  table  57  lamp  34  desk  15  chair\n\nStep VII is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** amber  jade  45  topaz  coral  87  74  26  pearl  64\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-16-q1",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which step number is the following output?\n\n87  topaz  74  pearl  64  jade  amber  45  coral  26",
+          "options": [
+            "Step V",
+            "Step VI",
+            "Step VII",
+            "Step VIII",
+            "Step IX"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest number among those not yet arranged goes to the left end (just after the elements already arranged there). In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there).",
+              "Step I: 87  amber  jade  45  topaz  coral  74  26  pearl  64",
+              "Step II: 87  topaz  amber  jade  45  coral  74  26  pearl  64",
+              "Step III: 87  topaz  74  amber  jade  45  coral  26  pearl  64",
+              "Step IV: 87  topaz  74  pearl  amber  jade  45  coral  26  64",
+              "Step V: 87  topaz  74  pearl  64  amber  jade  45  coral  26",
+              "Step VI: 87  topaz  74  pearl  64  jade  amber  45  coral  26",
+              "The given line is **Step VI**."
+            ],
+            "trap": "Step VII is one step too late: in it '45' would also have been moved, but the given line does not show that yet."
+          },
+          "tags": [
+            "io:which-step",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-16-q2",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which element is 3rd from the right end in Step IV?",
+          "options": [
+            "74",
+            "26",
+            "45",
+            "coral",
+            "87"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest number among those not yet arranged goes to the left end (just after the elements already arranged there). In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there).",
+              "Step I: 87  amber  jade  45  topaz  coral  74  26  pearl  64",
+              "Step II: 87  topaz  amber  jade  45  coral  74  26  pearl  64",
+              "Step III: 87  topaz  74  amber  jade  45  coral  26  pearl  64",
+              "Step IV: 87  topaz  74  pearl  amber  jade  45  coral  26  64",
+              "3rd from the right end of Step IV: **coral**."
+            ],
+            "trap": "'74' is 3rd from the left end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-16-q3",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step V, which element is 2nd to the right of 'pearl'?",
+          "options": [
+            "amber",
+            "topaz",
+            "jade",
+            "64",
+            "87"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest number among those not yet arranged goes to the left end (just after the elements already arranged there). In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there).",
+              "Step I: 87  amber  jade  45  topaz  coral  74  26  pearl  64",
+              "Step II: 87  topaz  amber  jade  45  coral  74  26  pearl  64",
+              "Step III: 87  topaz  74  amber  jade  45  coral  26  pearl  64",
+              "Step IV: 87  topaz  74  pearl  amber  jade  45  coral  26  64",
+              "Step V: 87  topaz  74  pearl  64  amber  jade  45  coral  26",
+              "In Step V, 'pearl' is 4th from the left, so 2nd to its right is 6th from the left: **amber**."
+            ],
+            "trap": "'topaz' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:relative-position",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-16-q4",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which step is the last step of the rearrangement, and which element is 2nd from the right end in that step?",
+          "options": [
+            "Step VIII; amber",
+            "Step IX; topaz",
+            "Step IX; 26",
+            "Step X; 26",
+            "Step VIII; 26"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest number among those not yet arranged goes to the left end (just after the elements already arranged there). In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there).",
+              "Step I: 87  amber  jade  45  topaz  coral  74  26  pearl  64",
+              "Step II: 87  topaz  amber  jade  45  coral  74  26  pearl  64",
+              "Step III: 87  topaz  74  amber  jade  45  coral  26  pearl  64",
+              "Step IV: 87  topaz  74  pearl  amber  jade  45  coral  26  64",
+              "Step V: 87  topaz  74  pearl  64  amber  jade  45  coral  26",
+              "Step VI: 87  topaz  74  pearl  64  jade  amber  45  coral  26",
+              "Step VII: 87  topaz  74  pearl  64  jade  45  amber  coral  26",
+              "Step VIII: 87  topaz  74  pearl  64  jade  45  coral  amber  26",
+              "Step IX: 87  topaz  74  pearl  64  jade  45  coral  26  amber",
+              "The arrangement is complete in **Step IX**, and its 2nd element from the right end is **26**."
+            ],
+            "trap": "\"Step VIII; amber\" stops one step early — Step VIII is not yet fully arranged."
+          },
+          "tags": [
+            "io:last-step",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-16-q5",
+          "subtype": "mixed-arrangement",
+          "prompt": "How many elements are there between 'topaz' and 'amber' in Step VII?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest number among those not yet arranged goes to the left end (just after the elements already arranged there). In even-numbered steps, the word that comes last in alphabetical order among those not yet arranged goes to the left end (just after the elements already arranged there).",
+              "Step I: 87  amber  jade  45  topaz  coral  74  26  pearl  64",
+              "Step II: 87  topaz  amber  jade  45  coral  74  26  pearl  64",
+              "Step III: 87  topaz  74  amber  jade  45  coral  26  pearl  64",
+              "Step IV: 87  topaz  74  pearl  amber  jade  45  coral  26  64",
+              "Step V: 87  topaz  74  pearl  64  amber  jade  45  coral  26",
+              "Step VI: 87  topaz  74  pearl  64  jade  amber  45  coral  26",
+              "Step VII: 87  topaz  74  pearl  64  jade  45  amber  coral  26",
+              "'topaz' is 2nd and 'amber' is 8th from the left: 8 − 2 − 1 = **5**."
+            ],
+            "trap": "4 is the count in Step VI.",
+            "shortcut": "Elements between = difference of positions − 1."
+          },
+          "tags": [
+            "io:count-between",
+            "io:mixed-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-17",
+      "subtype": "mixed-arrangement",
+      "difficulty": "hard",
+      "title": "Input–output",
+      "stimulus": "A word and number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** 29  ox  58  chipmunk  bison  36  83  eagle\n**Step I:** chipmunk  29  ox  58  bison  36  eagle  38\n**Step II:** chipmunk  bison  29  ox  36  eagle  85  38\n**Step III:** chipmunk  bison  eagle  29  ox  63  85  38\n**Step IV:** chipmunk  bison  eagle  ox  92  63  85  38\n\nStep IV is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** 76  25  arch  13  61  56  fountain  gate  bridge  tower\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-17-q1",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which of the following is Step III?",
+          "options": [
+            "tower  bridge  fountain  25  arch  13  gate  67  16  65",
+            "fountain  bridge  tower  25  arch  13  gate  56  61  76",
+            "fountain  bridge  25  arch  13  56  gate  tower  16  67",
+            "fountain  bridge  tower  arch  13  gate  52  65  16  67",
+            "fountain  bridge  tower  25  arch  13  gate  65  16  67"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the elements already arranged there; between two words of equal length, the one coming first in alphabetical order is taken), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there) with its digits reversed.",
+              "Step I: fountain  25  arch  13  61  56  gate  bridge  tower  67",
+              "Step II: fountain  bridge  25  arch  13  56  gate  tower  16  67",
+              "Step III: fountain  bridge  tower  25  arch  13  gate  65  16  67",
+              "Step III is **fountain  bridge  tower  25  arch  13  gate  65  16  67**."
+            ],
+            "trap": "The option \"tower  bridge  fountain  25  arch  13  gate  67  16  65\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-17-q2",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which element is 4th from the right end in Step IV?",
+          "options": [
+            "67",
+            "52",
+            "25",
+            "arch",
+            "gate"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the elements already arranged there; between two words of equal length, the one coming first in alphabetical order is taken), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there) with its digits reversed.",
+              "Step I: fountain  25  arch  13  61  56  gate  bridge  tower  67",
+              "Step II: fountain  bridge  25  arch  13  56  gate  tower  16  67",
+              "Step III: fountain  bridge  tower  25  arch  13  gate  65  16  67",
+              "Step IV: fountain  bridge  tower  arch  13  gate  52  65  16  67",
+              "4th from the right end of Step IV: **52**."
+            ],
+            "trap": "'67' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-17-q3",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step II, which element is 3rd to the left of '16'?",
+          "options": [
+            "gate",
+            "13",
+            "fountain",
+            "56",
+            "bridge"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the elements already arranged there; between two words of equal length, the one coming first in alphabetical order is taken), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there) with its digits reversed.",
+              "Step I: fountain  25  arch  13  61  56  gate  bridge  tower  67",
+              "Step II: fountain  bridge  25  arch  13  56  gate  tower  16  67",
+              "In Step II, '16' is 9th from the left, so 3rd to its left is 6th from the left: **56**."
+            ],
+            "trap": "'gate' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:relative-position",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-17-q4",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which step is the last step of the rearrangement, and which element is 5th from the left end in that step?",
+          "options": [
+            "Step V; gate",
+            "Step IV; 13",
+            "Step V; 31",
+            "Step VI; gate",
+            "Step X; gate"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the elements already arranged there; between two words of equal length, the one coming first in alphabetical order is taken), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there) with its digits reversed.",
+              "Step I: fountain  25  arch  13  61  56  gate  bridge  tower  67",
+              "Step II: fountain  bridge  25  arch  13  56  gate  tower  16  67",
+              "Step III: fountain  bridge  tower  25  arch  13  gate  65  16  67",
+              "Step IV: fountain  bridge  tower  arch  13  gate  52  65  16  67",
+              "Step V: fountain  bridge  tower  arch  gate  31  52  65  16  67",
+              "The arrangement is complete in **Step V**, and its 5th element from the left end is **gate**."
+            ],
+            "trap": "\"Step IV; 13\" stops one step early — Step IV is not yet fully arranged."
+          },
+          "tags": [
+            "io:last-step",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-17-q5",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step V, what is the sum of the element 6th from the left end and the element 2nd from the right end?",
+          "options": [
+            "41",
+            "44",
+            "47",
+            "50",
+            "53"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the word with the most letters among those not yet arranged goes to the left end (just after the elements already arranged there; between two words of equal length, the one coming first in alphabetical order is taken), and the largest number among those not yet arranged goes to the right end (just before the elements already arranged there) with its digits reversed.",
+              "Step I: fountain  25  arch  13  61  56  gate  bridge  tower  67",
+              "Step II: fountain  bridge  25  arch  13  56  gate  tower  16  67",
+              "Step III: fountain  bridge  tower  25  arch  13  gate  65  16  67",
+              "Step IV: fountain  bridge  tower  arch  13  gate  52  65  16  67",
+              "Step V: fountain  bridge  tower  arch  gate  31  52  65  16  67",
+              "6th from the left end = 31, 2nd from the right end = 16; 31 + 16 = **47**."
+            ],
+            "trap": "Work out only the asked step."
+          },
+          "tags": [
+            "io:sum",
+            "io:mixed-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-18",
+      "subtype": "mixed-arrangement",
+      "difficulty": "hard",
+      "title": "Input–output",
+      "stimulus": "A word and number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** wheat  25  maize  oats  71  18  43  barley\n**Step I:** 25  maize  oats  71  18  43  barley  wheat\n**Step II:** 25  43  maize  71  18  barley  oats  wheat\n**Step III:** 25  43  71  18  barley  maize  oats  wheat\n\nStep III is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** clove  52  fennel  34  pepper  61  ginger  cumin  27  80\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-18-q1",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which of the following is Step III?",
+          "options": [
+            "61  52  34  clove  cumin  27  80  pepper  ginger  fennel",
+            "61  52  34  clove  cumin  27  80  fennel  ginger  pepper",
+            "34  52  clove  fennel  61  cumin  27  80  ginger  pepper",
+            "34  52  61  80  clove  27  cumin  fennel  ginger  pepper",
+            "34  52  61  clove  cumin  27  80  fennel  ginger  pepper"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the smallest sum of digits among those not yet arranged goes to the left end (just after the elements already arranged there; between two numbers with the same digit sum, the smaller number is taken), and the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: 34  clove  52  fennel  61  ginger  cumin  27  80  pepper",
+              "Step II: 34  52  clove  fennel  61  cumin  27  80  ginger  pepper",
+              "Step III: 34  52  61  clove  cumin  27  80  fennel  ginger  pepper",
+              "Step III is **34  52  61  clove  cumin  27  80  fennel  ginger  pepper**."
+            ],
+            "trap": "The option \"61  52  34  clove  cumin  27  80  pepper  ginger  fennel\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-18-q2",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which element is 4th from the right end in Step II?",
+          "options": [
+            "fennel",
+            "27",
+            "cumin",
+            "80",
+            "34"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the smallest sum of digits among those not yet arranged goes to the left end (just after the elements already arranged there; between two numbers with the same digit sum, the smaller number is taken), and the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: 34  clove  52  fennel  61  ginger  cumin  27  80  pepper",
+              "Step II: 34  52  clove  fennel  61  cumin  27  80  ginger  pepper",
+              "4th from the right end of Step II: **27**."
+            ],
+            "trap": "'fennel' is 4th from the left end."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-18-q3",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step IV, at which position from the left end does 'fennel' stand?",
+          "options": [
+            "5th from the left end",
+            "6th from the left end",
+            "7th from the left end",
+            "8th from the left end",
+            "9th from the left end"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the smallest sum of digits among those not yet arranged goes to the left end (just after the elements already arranged there; between two numbers with the same digit sum, the smaller number is taken), and the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: 34  clove  52  fennel  61  ginger  cumin  27  80  pepper",
+              "Step II: 34  52  clove  fennel  61  cumin  27  80  ginger  pepper",
+              "Step III: 34  52  61  clove  cumin  27  80  fennel  ginger  pepper",
+              "Step IV: 34  52  61  80  clove  27  cumin  fennel  ginger  pepper",
+              "In Step IV, 'fennel' is **8th from the left end**."
+            ],
+            "trap": "Write Step IV in full before counting — 'fennel' shifts as other elements are moved.",
+            "shortcut": "Position from the left = total − position from the right + 1 (total 10)."
+          },
+          "tags": [
+            "io:position",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-18-q4",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which step is the last step of the rearrangement, and which element is 4th from the right end in that step?",
+          "options": [
+            "Step IV; cumin",
+            "Step V; 80",
+            "Step VI; cumin",
+            "Step V; cumin",
+            "Step X; cumin"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the smallest sum of digits among those not yet arranged goes to the left end (just after the elements already arranged there; between two numbers with the same digit sum, the smaller number is taken), and the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: 34  clove  52  fennel  61  ginger  cumin  27  80  pepper",
+              "Step II: 34  52  clove  fennel  61  cumin  27  80  ginger  pepper",
+              "Step III: 34  52  61  clove  cumin  27  80  fennel  ginger  pepper",
+              "Step IV: 34  52  61  80  clove  27  cumin  fennel  ginger  pepper",
+              "Step V: 34  52  61  80  27  clove  cumin  fennel  ginger  pepper",
+              "The arrangement is complete in **Step V**, and its 4th element from the right end is **cumin**."
+            ],
+            "trap": "\"Step IV; cumin\" stops one step early — Step IV is not yet fully arranged."
+          },
+          "tags": [
+            "io:last-step",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-18-q5",
+          "subtype": "mixed-arrangement",
+          "prompt": "How many elements are there between '80' and 'fennel' in Step V?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In every step, the number with the smallest sum of digits among those not yet arranged goes to the left end (just after the elements already arranged there; between two numbers with the same digit sum, the smaller number is taken), and the word that comes last in alphabetical order among those not yet arranged goes to the right end (just before the elements already arranged there).",
+              "Step I: 34  clove  52  fennel  61  ginger  cumin  27  80  pepper",
+              "Step II: 34  52  clove  fennel  61  cumin  27  80  ginger  pepper",
+              "Step III: 34  52  61  clove  cumin  27  80  fennel  ginger  pepper",
+              "Step IV: 34  52  61  80  clove  27  cumin  fennel  ginger  pepper",
+              "Step V: 34  52  61  80  27  clove  cumin  fennel  ginger  pepper",
+              "'80' is 4th and 'fennel' is 8th from the left: 8 − 4 − 1 = **3**."
+            ],
+            "trap": "4 counts one of the two named elements as well.",
+            "shortcut": "Elements between = difference of positions − 1."
+          },
+          "tags": [
+            "io:count-between",
+            "io:mixed-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-19",
+      "subtype": "mixed-arrangement",
+      "difficulty": "extreme",
+      "title": "Input–output",
+      "stimulus": "A word and number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** olive  91  red  26  magenta  59  brown  94  indigo  29\n**Step I:** brown  26  olive  91  red  magenta  59  94  indigo  29\n**Step II:** brown  26  olive  91  red  59  indigo  29  89  magenta\n**Step III:** brown  26  indigo  29  olive  91  red  59  89  magenta\n**Step IV:** brown  26  indigo  29  red  59  86  olive  89  magenta\n\nStep IV is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** saturn  46  mars  83  venus  21  jupiter  67  earth  54\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-19-q1",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which step is the last step of the rearrangement, and which element is 3rd from the right end in that step?",
+          "options": [
+            "Step IV; saturn",
+            "Step III; 54",
+            "Step IV; mars",
+            "Step V; saturn",
+            "Step X; saturn"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes first in alphabetical order goes to the left end (just after the elements already arranged there), followed immediately by the smallest number. In even-numbered steps, the word with the most letters goes to the right end (just before the elements already arranged there; between equal lengths, the one coming first in alphabetical order is taken), and then the largest number goes to the right end (just before that word), with 5 subtracted from it. Only elements not yet arranged are considered.",
+              "Step I: earth  21  saturn  46  mars  83  venus  jupiter  67  54",
+              "Step II: earth  21  saturn  46  mars  venus  67  54  78  jupiter",
+              "Step III: earth  21  mars  46  saturn  venus  67  54  78  jupiter",
+              "Step IV: earth  21  mars  46  venus  54  62  saturn  78  jupiter",
+              "The arrangement is complete in **Step IV**, and its 3rd element from the right end is **saturn**."
+            ],
+            "trap": "\"Step III; 54\" stops one step early — Step III is not yet fully arranged."
+          },
+          "tags": [
+            "io:last-step",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-19-q2",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which of the following is Step II?",
+          "options": [
+            "21  earth  saturn  46  mars  venus  67  54  jupiter  78",
+            "earth  21  saturn  46  mars  venus  67  54  83  jupiter",
+            "earth  21  saturn  46  mars  venus  67  54  78  jupiter",
+            "earth  21  saturn  46  mars  83  venus  jupiter  67  54",
+            "earth  21  mars  46  saturn  venus  67  54  78  jupiter"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes first in alphabetical order goes to the left end (just after the elements already arranged there), followed immediately by the smallest number. In even-numbered steps, the word with the most letters goes to the right end (just before the elements already arranged there; between equal lengths, the one coming first in alphabetical order is taken), and then the largest number goes to the right end (just before that word), with 5 subtracted from it. Only elements not yet arranged are considered.",
+              "Step I: earth  21  saturn  46  mars  83  venus  jupiter  67  54",
+              "Step II: earth  21  saturn  46  mars  venus  67  54  78  jupiter",
+              "Step II is **earth  21  saturn  46  mars  venus  67  54  78  jupiter**."
+            ],
+            "trap": "The option \"21  earth  saturn  46  mars  venus  67  54  jupiter  78\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-19-q3",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which element is 5th from the right end in Step III?",
+          "options": [
+            "54",
+            "saturn",
+            "67",
+            "earth",
+            "venus"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes first in alphabetical order goes to the left end (just after the elements already arranged there), followed immediately by the smallest number. In even-numbered steps, the word with the most letters goes to the right end (just before the elements already arranged there; between equal lengths, the one coming first in alphabetical order is taken), and then the largest number goes to the right end (just before that word), with 5 subtracted from it. Only elements not yet arranged are considered.",
+              "Step I: earth  21  saturn  46  mars  83  venus  jupiter  67  54",
+              "Step II: earth  21  saturn  46  mars  venus  67  54  78  jupiter",
+              "Step III: earth  21  mars  46  saturn  venus  67  54  78  jupiter",
+              "5th from the right end of Step III: **venus**."
+            ],
+            "trap": "'54' is what you get by starting with the even-step rule."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-19-q4",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step I, which element is 2nd to the right of '46'?",
+          "options": [
+            "venus",
+            "83",
+            "21",
+            "mars",
+            "earth"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes first in alphabetical order goes to the left end (just after the elements already arranged there), followed immediately by the smallest number. In even-numbered steps, the word with the most letters goes to the right end (just before the elements already arranged there; between equal lengths, the one coming first in alphabetical order is taken), and then the largest number goes to the right end (just before that word), with 5 subtracted from it. Only elements not yet arranged are considered.",
+              "Step I: earth  21  saturn  46  mars  83  venus  jupiter  67  54",
+              "In Step I, '46' is 4th from the left, so 2nd to its right is 6th from the left: **83**."
+            ],
+            "trap": "'venus' is what you get by starting with the even-step rule."
+          },
+          "tags": [
+            "io:relative-position",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-19-q5",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step III, what is the sum of the element 4th from the left end and the element 3rd from the right end?",
+          "options": [
+            "88",
+            "92",
+            "96",
+            "100",
+            "104"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the word that comes first in alphabetical order goes to the left end (just after the elements already arranged there), followed immediately by the smallest number. In even-numbered steps, the word with the most letters goes to the right end (just before the elements already arranged there; between equal lengths, the one coming first in alphabetical order is taken), and then the largest number goes to the right end (just before that word), with 5 subtracted from it. Only elements not yet arranged are considered.",
+              "Step I: earth  21  saturn  46  mars  83  venus  jupiter  67  54",
+              "Step II: earth  21  saturn  46  mars  venus  67  54  78  jupiter",
+              "Step III: earth  21  mars  46  saturn  venus  67  54  78  jupiter",
+              "4th from the left end = 46, 3rd from the right end = 54; 46 + 54 = **100**."
+            ],
+            "trap": "The same two positions in Step II give 100 — use Step III itself."
+          },
+          "tags": [
+            "io:sum",
+            "io:mixed-arrangement"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "io-20",
+      "subtype": "mixed-arrangement",
+      "difficulty": "extreme",
+      "title": "Input–output",
+      "stimulus": "A word and number arrangement machine, when given an input line, rearranges it following a particular rule in each step. An illustration of an input and its rearrangement is given below. The machine keeps applying the same rule until the arrangement is complete (the last step).\n\n**Input:** maroon  58  cyan  31  amber  64  olive  25  yellow  39  12\n**Step I:** 32  maroon  58  cyan  31  olive  25  yellow  39  12  amber\n**Step II:** 32  52  58  cyan  31  olive  yellow  39  12  maroon  amber\n**Step III:** 32  52  29  31  olive  yellow  39  12  cyan  maroon  amber\n**Step IV:** 32  52  29  13  olive  39  12  yellow  cyan  maroon  amber\n**Step V:** 32  52  29  13  6  39  olive  yellow  cyan  maroon  amber\n**Step VI:** 32  52  29  13  6  93  olive  yellow  cyan  maroon  amber\n\nStep VI is the last step of the above illustration. The same machine is now given the following input.\n\n**Input:** papaya  52  kiwi  27  banana  96  guava  63  cherry  38\n\nAnswer the questions based on the rule followed above.",
+      "questions": [
+        {
+          "key": "io-20-q1",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which of the following is Step III?",
+          "options": [
+            "48  72  26  papaya  kiwi  63  38  guava  cherry  banana",
+            "26  72  48  papaya  kiwi  63  38  banana  cherry  guava",
+            "96  27  52  papaya  kiwi  63  38  guava  cherry  banana",
+            "48  72  26  kiwi  guava  63  38  cherry  papaya  banana",
+            "72  48  36  52  kiwi  guava  38  papaya  cherry  banana"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest even number goes to the left end (just after the elements already arranged there) and is halved, and the word that comes first in alphabetical order goes to the right end (just before the elements already arranged there). In even-numbered steps, the smallest odd number goes to the left end with its digits reversed, and the word with the most letters goes to the right end (between equal lengths, the one coming first in alphabetical order is taken). Only elements not yet arranged are considered.",
+              "Step I: 48  papaya  52  kiwi  27  guava  63  cherry  38  banana",
+              "Step II: 48  72  papaya  52  kiwi  guava  63  38  cherry  banana",
+              "Step III: 48  72  26  papaya  kiwi  63  38  guava  cherry  banana",
+              "Step III is **48  72  26  papaya  kiwi  63  38  guava  cherry  banana**."
+            ],
+            "trap": "The option \"26  72  48  papaya  kiwi  63  38  banana  cherry  guava\" is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:which-line",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-20-q2",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step IV, what is the sum of the element 2nd from the left end and the element 5th from the right end?",
+          "options": [
+            "86",
+            "106",
+            "110",
+            "114",
+            "135"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest even number goes to the left end (just after the elements already arranged there) and is halved, and the word that comes first in alphabetical order goes to the right end (just before the elements already arranged there). In even-numbered steps, the smallest odd number goes to the left end with its digits reversed, and the word with the most letters goes to the right end (between equal lengths, the one coming first in alphabetical order is taken). Only elements not yet arranged are considered.",
+              "Step I: 48  papaya  52  kiwi  27  guava  63  cherry  38  banana",
+              "Step II: 48  72  papaya  52  kiwi  guava  63  38  cherry  banana",
+              "Step III: 48  72  26  papaya  kiwi  63  38  guava  cherry  banana",
+              "Step IV: 48  72  26  36  kiwi  38  papaya  guava  cherry  banana",
+              "2nd from the left end = 72, 5th from the right end = 38; 72 + 38 = **110**."
+            ],
+            "trap": "86 is what you get by starting with the even-step rule."
+          },
+          "tags": [
+            "io:sum",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-20-q3",
+          "subtype": "mixed-arrangement",
+          "prompt": "Which element is 4th from the right end in Step II?",
+          "options": [
+            "cherry",
+            "52",
+            "38",
+            "guava",
+            "63"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest even number goes to the left end (just after the elements already arranged there) and is halved, and the word that comes first in alphabetical order goes to the right end (just before the elements already arranged there). In even-numbered steps, the smallest odd number goes to the left end with its digits reversed, and the word with the most letters goes to the right end (between equal lengths, the one coming first in alphabetical order is taken). Only elements not yet arranged are considered.",
+              "Step I: 48  papaya  52  kiwi  27  guava  63  cherry  38  banana",
+              "Step II: 48  72  papaya  52  kiwi  guava  63  38  cherry  banana",
+              "4th from the right end of Step II: **63**."
+            ],
+            "trap": "'cherry' is what you get by breaking ties the other way."
+          },
+          "tags": [
+            "io:nth-from-end",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-20-q4",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step V, which element is 4th to the left of 'guava'?",
+          "options": [
+            "72",
+            "36",
+            "63",
+            "26",
+            "19"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest even number goes to the left end (just after the elements already arranged there) and is halved, and the word that comes first in alphabetical order goes to the right end (just before the elements already arranged there). In even-numbered steps, the smallest odd number goes to the left end with its digits reversed, and the word with the most letters goes to the right end (between equal lengths, the one coming first in alphabetical order is taken). Only elements not yet arranged are considered.",
+              "Step I: 48  papaya  52  kiwi  27  guava  63  cherry  38  banana",
+              "Step II: 48  72  papaya  52  kiwi  guava  63  38  cherry  banana",
+              "Step III: 48  72  26  papaya  kiwi  63  38  guava  cherry  banana",
+              "Step IV: 48  72  26  36  kiwi  38  papaya  guava  cherry  banana",
+              "Step V: 48  72  26  36  19  kiwi  papaya  guava  cherry  banana",
+              "In Step V, 'guava' is 8th from the left, so 4th to its left is 4th from the left: **36**."
+            ],
+            "trap": "'72' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged."
+          },
+          "tags": [
+            "io:relative-position",
+            "io:mixed-arrangement"
+          ]
+        },
+        {
+          "key": "io-20-q5",
+          "subtype": "mixed-arrangement",
+          "prompt": "In Step V, which element is exactly midway between '72' and 'guava'?",
+          "options": [
+            "banana",
+            "26",
+            "kiwi",
+            "19",
+            "36"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Rule: In odd-numbered steps, the largest even number goes to the left end (just after the elements already arranged there) and is halved, and the word that comes first in alphabetical order goes to the right end (just before the elements already arranged there). In even-numbered steps, the smallest odd number goes to the left end with its digits reversed, and the word with the most letters goes to the right end (between equal lengths, the one coming first in alphabetical order is taken). Only elements not yet arranged are considered.",
+              "Step I: 48  papaya  52  kiwi  27  guava  63  cherry  38  banana",
+              "Step II: 48  72  papaya  52  kiwi  guava  63  38  cherry  banana",
+              "Step III: 48  72  26  papaya  kiwi  63  38  guava  cherry  banana",
+              "Step IV: 48  72  26  36  kiwi  38  papaya  guava  cherry  banana",
+              "Step V: 48  72  26  36  19  kiwi  papaya  guava  cherry  banana",
+              "'72' is 2nd and 'guava' is 8th from the left; midway is 5th from the left: **19**."
+            ],
+            "trap": "'banana' is what you get by putting each moved element at the extreme end instead of next to the elements already arranged.",
+            "shortcut": "Midway position = (position of one + position of the other) ÷ 2, counted from the same end."
+          },
+          "tags": [
+            "io:midway",
+            "io:mixed-arrangement"
+          ]
+        }
+      ]
+    }
+  ]
+}
