@@ -1871,6 +1871,806 @@
       "tags": [
         "grammar:pronoun"
       ]
+    },
+    {
+      "key": "es-071",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The bank's new manager speak",
+        "three languages fluently,",
+        "including Marathi",
+        "and Kannada.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. The subject 'the bank's new manager' is singular (third person), so the verb must be 'speaks', not 'speak'.",
+          "Correct: *The bank's new manager speaks three languages fluently, including Marathi and Kannada.*"
+        ],
+        "rule": "Subject–verb agreement: a singular third-person subject takes a verb with -s in the simple present",
+        "trap": "'bank's' ends in -s and can make the subject feel plural; it is only a possessive, and the head noun 'manager' is singular.",
+        "shortcut": "Find the head noun (manager) → he/she → speaks."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "es-072",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "All the candidates",
+        "were told that",
+        "they must",
+        "to reach the centre by 8 a.m.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. A modal verb such as 'must' is followed by the bare infinitive, so 'must to reach' should be 'must reach'.",
+          "Correct: *All the candidates were told that they must reach the centre by 8 a.m.*"
+        ],
+        "rule": "Verb form: modal (must, can, should, may, will) + base verb, without 'to'",
+        "trap": "'must' may look out of place after the past tense 'were told', but 'must' is normal in reported speech; the error is the 'to' in Part D.",
+        "shortcut": "Modal + V1: never 'must to', 'can to', 'should to'. (Only 'ought to', 'have to' take 'to'.)"
+      },
+      "tags": [
+        "grammar:verb-form",
+        "pattern:modal-base-verb"
+      ]
+    },
+    {
+      "key": "es-073",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The district hospital",
+        "has recently bought",
+        "several new equipments",
+        "for its dialysis unit.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Equipment' is an uncountable noun: it has no plural form and cannot follow 'several'. Use 'several new pieces of equipment' or 'some new equipment'.",
+          "Correct: *The district hospital has recently bought several new pieces of equipment for its dialysis unit.*"
+        ],
+        "rule": "Countability: 'equipment' is uncountable — no -s, no 'several/many'",
+        "trap": "'several' looks fine with a plural, so the -s seems natural; the problem is that 'equipment' never takes -s.",
+        "shortcut": "Equipment, furniture, luggage, baggage, advice, information, machinery, stationery → no plural."
+      },
+      "tags": [
+        "grammar:uncountable-noun"
+      ]
+    },
+    {
+      "key": "es-074",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "My cousin",
+        "is living in Pune",
+        "since 2019",
+        "and works in a private bank.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. An action that began in the past (2019) and continues now takes the present perfect continuous: 'has been living', not 'is living'.",
+          "Correct: *My cousin has been living in Pune since 2019 and works in a private bank.*"
+        ],
+        "rule": "Tense: 'since' + point of time → present perfect (continuous) in the main clause",
+        "trap": "Part C 'since 2019' is correct ('since' with a point of time); the error is the tense that goes with it.",
+        "shortcut": "See 'since' or 'for' + a period that runs up to now → have/has (been)."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:since-for"
+      ]
+    },
+    {
+      "key": "es-075",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Between you and I,",
+        "the new cashier",
+        "seems to be",
+        "very honest.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Between' is a preposition, so the pronouns after it must be in the object form: 'between you and me'.",
+          "Correct: *Between you and me, the new cashier seems to be very honest.*"
+        ],
+        "rule": "Pronoun case: object form (me, him, her, us, them) after a preposition",
+        "trap": "'you and I' sounds polite and formal, which makes it feel right; drop 'you and' and test it: 'between … I' is clearly wrong.",
+        "shortcut": "Remove the other person: preposition + me/him/her."
+      },
+      "tags": [
+        "grammar:pronoun"
+      ]
+    },
+    {
+      "key": "es-076",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The new trainee",
+        "handled the angry customer",
+        "politely and",
+        "very calm.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. The words joined by 'and' both describe how he handled the customer, so both must be adverbs: 'politely and very calmly'.",
+          "Correct: *The new trainee handled the angry customer politely and very calmly.*"
+        ],
+        "rule": "Adjective vs adverb: an adverb modifies an action verb; items joined by 'and' must be parallel",
+        "trap": "'calm' feels as if it describes the trainee, but here it tells us how he handled the customer, which needs the adverb 'calmly'.",
+        "shortcut": "Ask 'how did he handle?' → an -ly adverb."
+      },
+      "tags": [
+        "grammar:adjective-adverb",
+        "grammar:parallelism"
+      ]
+    },
+    {
+      "key": "es-077",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Yesterday was",
+        "the most hottest day",
+        "of the year",
+        "in Nagpur.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Hottest' is already the superlative of 'hot'; adding 'most' makes a double superlative. Write 'the hottest day'.",
+          "Correct: *Yesterday was the hottest day of the year in Nagpur.*"
+        ],
+        "rule": "Degrees of comparison: never use 'most' with an -est superlative",
+        "trap": "'the most' is right before long adjectives (the most comfortable), which makes 'the most hottest' look normal.",
+        "shortcut": "-est already means 'most'. One marker only."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "es-078",
+      "subtype": "classic-parts",
+      "difficulty": "easy",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "My younger brother",
+        "is very afraid",
+        "from dogs and",
+        "never goes near them.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. The adjective 'afraid' takes the preposition 'of': 'afraid of dogs', not 'afraid from'.",
+          "Correct: *My younger brother is very afraid of dogs and never goes near them.*"
+        ],
+        "rule": "Prepositions: afraid of, scared of, fond of",
+        "trap": "'from' is natural with 'run away from' or 'keep away from', which is why 'afraid from' sounds possible."
+      },
+      "tags": [
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "es-079",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The branch manager, as well as",
+        "the two cashiers,",
+        "were praised",
+        "for the quick service.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. With 'as well as', the verb agrees with the first subject ('the branch manager', singular). The phrase between the commas does not change the number, so 'was praised' is needed.",
+          "Correct: *The branch manager, as well as the two cashiers, was praised for the quick service.*"
+        ],
+        "rule": "Subject–verb agreement: 'X, as well as Y,' — the verb agrees with X",
+        "trap": "'two cashiers' stands right before the verb and suggests 'were'; 'as well as' is not 'and', so it does not make a plural subject.",
+        "shortcut": "Bracket the 'as well as / along with / together with' phrase and read 'The branch manager … was'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:as-well-as"
+      ]
+    },
+    {
+      "key": "es-080",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The quality of",
+        "the mangoes sold",
+        "in this market",
+        "have improved this year.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. The subject is 'the quality', which is singular; 'of the mangoes sold in this market' only describes it. The verb must be 'has improved'.",
+          "Correct: *The quality of the mangoes sold in this market has improved this year.*"
+        ],
+        "rule": "Subject–verb agreement: the verb agrees with the head noun, not with the noun in an 'of' phrase",
+        "trap": "'mangoes' and 'market' come between the subject and the verb; the plural 'mangoes' tempts you to accept 'have'.",
+        "shortcut": "Strip the 'of …' phrase: 'The quality … has improved'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:intervening-phrase"
+      ]
+    },
+    {
+      "key": "es-081",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Neither the principal nor the teachers",
+        "was informed",
+        "about the inspection",
+        "in advance.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. With 'neither … nor', the verb agrees with the subject nearer to it. The nearer subject is 'the teachers' (plural), so it should be 'were informed'.",
+          "Correct: *Neither the principal nor the teachers were informed about the inspection in advance.*"
+        ],
+        "rule": "Subject–verb agreement: neither … nor / either … or → the verb agrees with the nearer subject",
+        "trap": "Many learners think 'neither' always takes a singular verb. That is true of 'neither of', not of 'neither … nor'.",
+        "shortcut": "Look only at the noun after 'nor': teachers → were."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:neither-nor"
+      ]
+    },
+    {
+      "key": "es-082",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Each of these cheque books have",
+        "to be returned",
+        "to the branch",
+        "for cancellation.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Each' is the subject and is singular, so the verb must be 'has', not 'have'.",
+          "Correct: *Each of these cheque books has to be returned to the branch for cancellation.*"
+        ],
+        "rule": "Subject–verb agreement: 'each of + plural noun' takes a singular verb",
+        "trap": "'cheque books' is plural and sits next to the verb, but it is the object of 'of'; the subject is 'each'.",
+        "shortcut": "Each / every / either / neither (of) as subject → singular verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:each-every"
+      ]
+    },
+    {
+      "key": "es-083",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "On the counter",
+        "there is",
+        "several forms",
+        "for opening new accounts.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. In a 'there is/are' sentence the verb agrees with the noun that follows it. 'Several forms' is plural, so it must be 'there are'.",
+          "Correct: *On the counter there are several forms for opening new accounts.*"
+        ],
+        "rule": "Subject–verb agreement: after 'there', the verb agrees with the real subject that follows",
+        "trap": "'there' looks like the subject and feels singular; it is only a placeholder, and the real subject is 'several forms'.",
+        "shortcut": "Flip it: 'Several forms are on the counter' → 'there are'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:there-is-are"
+      ]
+    },
+    {
+      "key": "es-084",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "By the time the ambulance arrived,",
+        "the patient's family",
+        "had already",
+        "took him to the city hospital.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. The past perfect is 'had + past participle', so 'had already took' must be 'had already taken'.",
+          "Correct: *By the time the ambulance arrived, the patient's family had already taken him to the city hospital.*"
+        ],
+        "rule": "Verb form: had / has / have + past participle (V3)",
+        "trap": "Part C 'had already' is correct (the earlier action needs the past perfect); the mistake is the verb form after it.",
+        "shortcut": "take – took – taken: after 'had', use the third form."
+      },
+      "tags": [
+        "grammar:verb-form",
+        "grammar:tense"
+      ]
+    },
+    {
+      "key": "es-085",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Last Monday, the clerk told me",
+        "that my new passbook",
+        "will be ready",
+        "the next day.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. The clerk's words are reported in the past ('told me … the next day'), so 'will' shifts back to 'would': 'would be ready'.",
+          "Correct: *Last Monday, the clerk told me that my new passbook would be ready the next day.*"
+        ],
+        "rule": "Reported speech: a past reporting verb shifts 'will' to 'would'",
+        "trap": "'the next day' is already the reported form of 'tomorrow' and is correct; it confirms that the verb must also be shifted.",
+        "shortcut": "Past reporting verb + 'the next day' → would."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:reported-speech"
+      ]
+    },
+    {
+      "key": "es-086",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Ramesh use to",
+        "cycle to the office",
+        "before he bought",
+        "a second-hand scooter.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. A past habit is expressed by 'used to + base verb' in affirmative sentences: 'Ramesh used to cycle'.",
+          "Correct: *Ramesh used to cycle to the office before he bought a second-hand scooter.*"
+        ],
+        "rule": "Verb form: past habit = 'used to + V1' ('use to' only after 'did/didn't')",
+        "trap": "In speech 'used to' and 'use to' sound the same, so the missing -d is easy to overlook.",
+        "shortcut": "Affirmative → used to; after did / didn't → use to."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:used-to"
+      ]
+    },
+    {
+      "key": "es-087",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "We look forward",
+        "to meet you",
+        "at the annual",
+        "customers' meet in Indore.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. In 'look forward to', 'to' is a preposition, so it is followed by a gerund: 'to meeting you'.",
+          "Correct: *We look forward to meeting you at the annual customers' meet in Indore.*"
+        ],
+        "rule": "Verb form: look forward to / be used to / object to / with a view to + -ing",
+        "trap": "'to meet' looks like an ordinary infinitive; test it by putting a noun after 'to': 'look forward to the meeting' works, so 'to' is a preposition.",
+        "shortcut": "If a noun can follow the 'to', use -ing after it."
+      },
+      "tags": [
+        "grammar:gerund-infinitive",
+        "pattern:look-forward-to"
+      ]
+    },
+    {
+      "key": "es-088",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Please call me",
+        "as soon as",
+        "the parcel",
+        "will arrive at the office.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. In a time clause beginning with 'as soon as', 'when', 'until' or 'before', English uses the simple present for a future event: 'as soon as the parcel arrives'.",
+          "Correct: *Please call me as soon as the parcel arrives at the office.*"
+        ],
+        "rule": "Tense: no 'will' in a time clause referring to the future",
+        "trap": "The parcel will arrive in the future, so 'will arrive' feels logical; English marks the future only in the main clause.",
+        "shortcut": "when / as soon as / until / before / after + simple present for the future."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:future-time-clause"
+      ]
+    },
+    {
+      "key": "es-089",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Sunita has joined",
+        "the cooperative bank",
+        "as a clerk",
+        "last year.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Last year' is a finished past time, and the present perfect cannot be used with it. It should be 'Sunita joined'.",
+          "Correct: *Sunita joined the cooperative bank as a clerk last year.*"
+        ],
+        "rule": "Tense: simple past (not present perfect) with a definite past time such as yesterday, last year, in 2020, ago",
+        "trap": "'last year' in Part D looks like the odd part, but the time phrase is fine; it is the verb in Part A that must change.",
+        "shortcut": "Definite past time word in the sentence → simple past."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:present-perfect-past-time"
+      ]
+    },
+    {
+      "key": "es-090",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The tourist guide gave us",
+        "many useful advices",
+        "about visiting",
+        "the caves at Ajanta.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Advice' is uncountable: it has no plural and cannot follow 'many'. Use 'a lot of useful advice' or 'many useful tips'.",
+          "Correct: *The tourist guide gave us a lot of useful advice about visiting the caves at Ajanta.*"
+        ],
+        "rule": "Countability: 'advice' is uncountable (a piece of advice, some advice)",
+        "trap": "The verb 'advise' and the noun 'advice' look alike; neither form takes -s as a noun.",
+        "shortcut": "Uncountable nouns: no -s, no 'many', no 'a'."
+      },
+      "tags": [
+        "grammar:uncountable-noun"
+      ]
+    },
+    {
+      "key": "es-091",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Since it was a holiday,",
+        "there were",
+        "very little customers",
+        "at the branch.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Little' is used with uncountable nouns; 'customers' is a countable plural, so it must be 'very few customers'.",
+          "Correct: *Since it was a holiday, there were very few customers at the branch.*"
+        ],
+        "rule": "Countability: few / a few + countable plural; little / a little + uncountable",
+        "trap": "'there were' in Part B is correct because 'customers' is plural; the error is the quantifier.",
+        "shortcut": "Can you count it? Yes → few; no → little."
+      },
+      "tags": [
+        "grammar:countability",
+        "pattern:few-little"
+      ]
+    },
+    {
+      "key": "es-092",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "This year,",
+        "our branch has received",
+        "far less complaints",
+        "than it did last year.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Complaints' is a countable plural noun, so the comparative of 'few' is needed: 'far fewer complaints'.",
+          "Correct: *This year, our branch has received far fewer complaints than it did last year.*"
+        ],
+        "rule": "Countability: fewer + countable plural; less + uncountable",
+        "trap": "'less' is so common in everyday speech that 'less complaints' sounds normal; in exam English it is an error.",
+        "shortcut": "fewer people / complaints / cars; less water / time / money."
+      },
+      "tags": [
+        "grammar:countability",
+        "pattern:less-fewer"
+      ]
+    },
+    {
+      "key": "es-093",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Myself and my wife",
+        "will attend",
+        "the wedding",
+        "in Jaipur next week.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. A reflexive pronoun cannot be the subject of a sentence. The subject form is needed, and courtesy puts the first person last: 'My wife and I'.",
+          "Correct: *My wife and I will attend the wedding in Jaipur next week.*"
+        ],
+        "rule": "Pronouns: a reflexive (myself) needs an antecedent in the same clause; it is never the subject",
+        "trap": "'myself' sounds more polite than 'I' to many speakers, which is why it is often misused.",
+        "shortcut": "Drop 'and my wife': 'Myself will attend' is clearly wrong."
+      },
+      "tags": [
+        "grammar:pronoun",
+        "pattern:reflexive"
+      ]
+    },
+    {
+      "key": "es-094",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The manager asked",
+        "Ravi and I",
+        "to stay back",
+        "after office hours.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'Ravi and I' is the object of 'asked', so the object pronoun is needed: 'Ravi and me'.",
+          "Correct: *The manager asked Ravi and me to stay back after office hours.*"
+        ],
+        "rule": "Pronoun case: object form after a verb (asked me, told him)",
+        "trap": "'Ravi and I' is drilled as the polite form, but it is right only when the pair is the subject.",
+        "shortcut": "Remove 'Ravi and': 'asked I to stay' is wrong → me."
+      },
+      "tags": [
+        "grammar:pronoun",
+        "pattern:case"
+      ]
+    },
+    {
+      "key": "es-095",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "This new model",
+        "is superior",
+        "than the older one",
+        "in every way.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. Latin comparatives such as superior, inferior, senior, junior and prior take 'to', not 'than': 'superior to the older one'.",
+          "Correct: *This new model is superior to the older one in every way.*"
+        ],
+        "rule": "Comparison: superior / inferior / senior / junior / prior / preferable + to",
+        "trap": "'superior' has a comparative meaning, which makes 'than' feel right; these words are followed by 'to'.",
+        "shortcut": "-ior adjectives → to."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison",
+        "pattern:than-to"
+      ]
+    },
+    {
+      "key": "es-096",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Although Anil looks young,",
+        "he is actually",
+        "two years",
+        "elder than his wife.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. 'Elder' is used before a noun (my elder sister) and is not followed by 'than'. A comparison with 'than' needs 'older': 'older than his wife'.",
+          "Correct: *Although Anil looks young, he is actually two years older than his wife.*"
+        ],
+        "rule": "Comparison: older … than; elder only before a noun for family members",
+        "trap": "'elder' is the usual word for family members in Indian English, so 'elder than' sounds natural; 'than' never follows 'elder'.",
+        "shortcut": "'… than' after it? → older."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison",
+        "pattern:elder-older"
+      ]
+    },
+    {
+      "key": "es-097",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Despite of the heavy rain,",
+        "the farmers",
+        "went to the mandi",
+        "to sell their onions.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Despite' is itself a preposition and does not take 'of'. Write 'Despite the heavy rain' or 'In spite of the heavy rain'.",
+          "Correct: *Despite the heavy rain, the farmers went to the mandi to sell their onions.*"
+        ],
+        "rule": "Prepositions: despite (no 'of') = in spite of",
+        "trap": "'in spite of' has 'of', and the two forms get blended into 'despite of'.",
+        "shortcut": "despite X / in spite of X — never 'despite of'."
+      },
+      "tags": [
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "es-098",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Mohan has been",
+        "married with",
+        "a doctor",
+        "for ten years.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. The verb 'married' takes 'to' for the spouse: 'married to a doctor'.",
+          "Correct: *Mohan has been married to a doctor for ten years.*"
+        ],
+        "rule": "Prepositions: married to (a person), engaged to",
+        "trap": "'with' feels natural because two people live together; 'married with' is used only for 'married with children'."
+      },
+      "tags": [
+        "grammar:preposition"
+      ]
+    },
+    {
+      "key": "es-099",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Although Seema",
+        "prepared well,",
+        "but she could not",
+        "clear the interview.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Although' already links the two clauses, so adding 'but' doubles the conjunction. Remove 'but': 'Although Seema prepared well, she could not clear the interview.'",
+          "Correct: *Although Seema prepared well, she could not clear the interview.*"
+        ],
+        "rule": "Conjunctions: although / though … (no 'but')",
+        "trap": "In Hindi and many Indian languages a contrast is marked twice ('although … but'); English uses only one linker.",
+        "shortcut": "One clause-joiner per pair of clauses: either 'Although …,' or '…, but …'."
+      },
+      "tags": [
+        "grammar:conjunction"
+      ]
+    },
+    {
+      "key": "es-100",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Hardly had the cashier",
+        "opened the counter",
+        "than a long queue",
+        "formed outside.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Hardly' (like 'scarcely') pairs with 'when' or 'before', not 'than': 'Hardly had the cashier opened the counter when a long queue formed outside.'",
+          "Correct: *Hardly had the cashier opened the counter when a long queue formed outside.*"
+        ],
+        "rule": "Conjunction pairs: hardly / scarcely … when; no sooner … than",
+        "trap": "'than' belongs to 'no sooner', which has the same meaning; the two patterns are easy to mix up.",
+        "shortcut": "'No sooner' is a comparative → 'than'; hardly / scarcely → 'when'."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "grammar:inversion",
+        "pattern:hardly-when"
+      ]
     }
   ]
 }
