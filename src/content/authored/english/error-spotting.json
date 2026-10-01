@@ -4845,6 +4845,582 @@
         "pattern:number-of",
         "format:incorrect-sentence"
       ]
+    },
+    {
+      "key": "es-181",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "By the time the auditors arrived, the clerk had already prepared all the registers.",
+        "She has been teaching at this college ever since she moved to Dehradun in 2015.",
+        "If it rains heavily tonight, the match will be shifted to the indoor stadium.",
+        "I wish I have more time to prepare for the mains examination this year.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. A wish about the present is expressed with the past simple: 'I wish I had more time'. The present tense 'have' cannot follow 'wish'.",
+          "Correct: *I wish I had more time to prepare for the mains examination this year.*",
+          "The other three are correct: A uses the past perfect for the action finished before 'arrived'; B uses the present perfect continuous in the main clause and the simple past after 'since'; C is a first conditional with the simple present in the if-clause."
+        ],
+        "rule": "Wish: wish + past simple for a present situation; wish + past perfect for a past one",
+        "trap": "'this year' points to the present, which makes 'have' feel right; 'wish' always moves the verb one step back.",
+        "shortcut": "wish + had (now); wish + had had / had done (past)."
+      },
+      "tags": [
+        "grammar:subjunctive",
+        "pattern:wish",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-182",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The bank has rewarded the clerk whom, according to the customers, deserved the award most.",
+        "The candidate whom the panel selected has more than five years of banking experience.",
+        "The clerk who everyone believed would retire soon has applied for an extension.",
+        "Whom shall I contact if the cheque is not credited to my account by Monday?",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. The pronoun is the subject of 'deserved' (he deserved the award), so it must be 'who'. The phrase 'according to the customers' between the commas does not change its role.",
+          "Correct: *The bank has rewarded the clerk who, according to the customers, deserved the award most.*",
+          "The other three are correct: B 'whom' is the object of 'selected' (the panel selected him); C 'who' is the subject of 'would retire'; 'everyone believed' is only inserted; D 'whom' is the object of 'contact' (I shall contact whom?)."
+        ],
+        "rule": "Pronoun case: who (subject of its own verb) vs whom (object)",
+        "trap": "Sentence C has an inserted phrase too ('everyone believed') and correctly keeps 'who'. Remove the inserted words and test each case with he/him.",
+        "shortcut": "Answer with he → who; with him → whom."
+      },
+      "tags": [
+        "grammar:pronoun",
+        "pattern:who-whom",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-183",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Fewer people visited the fair this year because of the heavy rain.",
+        "The amount of paperwork needed for a home loan has come down considerably this year.",
+        "There have been less withdrawals from the ATM since the branch began opening its cash counter on Saturdays.",
+        "A little care can prevent most of the accidents that happen on the factory floor.",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sentence C is incorrect. 'Withdrawals' is a countable plural, so it needs 'fewer', not 'less': 'There have been fewer withdrawals'.",
+          "Correct: *There have been fewer withdrawals from the ATM since the branch began opening its cash counter on Saturdays.*",
+          "The other three are correct: A uses 'fewer' with the countable 'people'; B uses 'amount of' with the uncountable 'paperwork' and a singular verb; D uses 'a little' with the uncountable 'care'."
+        ],
+        "rule": "Countability: fewer + countable plural; less + uncountable",
+        "trap": "The long tail of the sentence draws attention to tense ('have been … since'), which is correct; the quantifier is the error.",
+        "shortcut": "Can you put a number before it (three withdrawals)? → fewer."
+      },
+      "tags": [
+        "grammar:countability",
+        "pattern:less-fewer",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-184",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Not only did the bank waive the penalty, but it also extended the repayment period.",
+        "Rarely do we see such long queues at the branch on a weekday.",
+        "Hardly had the guests sat down for dinner when the power went off.",
+        "Only after the documents were verified the loan was sanctioned by the manager.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. A sentence that opens with 'Only after …' needs inversion in the main clause: 'Only after the documents were verified was the loan sanctioned by the manager.'",
+          "Correct: *Only after the documents were verified was the loan sanctioned by the manager.*",
+          "The other three are correct: A inverts after an opening 'Not only' and keeps normal order after 'but'; B inverts after the negative adverb 'rarely'; C inverts after 'hardly' and pairs it with 'when'."
+        ],
+        "rule": "Inversion: Only after / Only when / Only if + clause → auxiliary + subject in the main clause",
+        "trap": "The inversion goes in the main clause, not in the 'after' clause, so the sentence looks complete without it.",
+        "shortcut": "Opening 'Only + time phrase' → was / did / had + subject."
+      },
+      "tags": [
+        "grammar:inversion",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-185",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The principal, together with three teachers, has gone to Delhi for a workshop.",
+        "The cost of the repairs carried out on the three old ATMs were higher than expected.",
+        "The list of passengers who missed the flight was sent to the airline office.",
+        "Each of the employees has been asked to update the nominee details in the records.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. The head noun of the subject is 'cost', which is singular; 'of the repairs carried out on the three old ATMs' only describes it. The verb must be 'was'.",
+          "Correct: *The cost of the repairs carried out on the three old ATMs was higher than expected.*",
+          "The other three are correct: A 'together with three teachers' does not change the singular subject → 'has'; C the head noun 'list' is singular → 'was'; D 'each of' takes a singular verb."
+        ],
+        "rule": "Subject–verb agreement: the verb agrees with the head noun, not with a noun inside an 'of' phrase",
+        "trap": "Two plural nouns ('repairs', 'ATMs') stand between the subject and the verb and pull you towards 'were'.",
+        "shortcut": "Strip the phrase: 'The cost … was'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:intervening-phrase",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-186",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The new clerk is capable to handle the cash counter without any supervision.",
+        "The manager made the trainee rewrite the report because it had several errors.",
+        "Instead of waiting for the bus, we decided to walk to the station.",
+        "Having worked in audit for years, she is used to working late at the end of the financial year.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. 'Capable' takes 'of' + gerund, not a to-infinitive: 'capable of handling the cash counter'. (Its synonym 'able' is the one that takes 'to'.)",
+          "Correct: *The new clerk is capable of handling the cash counter without any supervision.*",
+          "The other three are correct: B 'make' + object + bare infinitive in the active voice; C a gerund after 'instead of', a to-infinitive after 'decided'; D 'be used to' + gerund, with a correctly attached participle phrase."
+        ],
+        "rule": "Verb form: capable of + -ing; able to + base verb",
+        "trap": "'able to handle' is correct, and the meanings are the same, so 'capable to handle' sounds right.",
+        "shortcut": "capable of doing / able to do."
+      },
+      "tags": [
+        "grammar:gerund-infinitive",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-187",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The new branch is twice as large as the old one but has the same number of staff.",
+        "Of all the other branches in the region, ours has recorded the highest growth in deposits this year.",
+        "Of the two proposals, the second is more practical and less expensive.",
+        "This year's results are far better than those of the previous year.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. With a superlative, the group must include the thing being compared. 'Our' branch cannot be one of 'all the other branches', so 'other' must go: 'Of all the branches in the region, ours …'.",
+          "Correct: *Of all the branches in the region, ours has recorded the highest growth in deposits this year.*",
+          "The other three are correct: A 'twice as … as' is the correct pattern for multiples; C uses comparatives for a choice between two; D compares results with results ('those of'), like with like."
+        ],
+        "rule": "Comparison: comparative + 'any other'; superlative + 'of all' (without 'other')",
+        "trap": "'any other' is correct with a comparative ('higher than any other branch'), and that pattern is wrongly carried over to the superlative.",
+        "shortcut": "-er than any other; -est of all."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison",
+        "pattern:any-other",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-188",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "No sooner had the results been announced than the bank's website crashed under the load.",
+        "Unless the bill is paid today, the connection will be cut off tomorrow.",
+        "Leave early lest you should miss the last bus to the village.",
+        "She neither called the bank nor she visited the branch to report the lost card.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. Correlatives must join matching parts. 'neither' stands before the verb 'called', so 'nor' must also be followed by a verb: 'She neither called the bank nor visited the branch'. The repeated 'she' breaks the parallel.",
+          "Correct: *She neither called the bank nor visited the branch to report the lost card.*",
+          "The other three are correct: A pairs 'no sooner' with 'than' and inverts after it; B uses 'unless' without an extra 'not'; C uses 'lest … should' + base verb."
+        ],
+        "rule": "Correlative conjunctions: neither … nor / either … or / not only … but also join parallel elements",
+        "trap": "'neither … nor' is the right pair here, so the sentence looks correct; check what comes after each word.",
+        "shortcut": "Same type of word after both halves: verb … verb."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "grammar:parallelism",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-189",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Everyone in the office except she had submitted the leave form before the deadline.",
+        "The two sisters helped each other with the household chores during the festival.",
+        "Each of the girls has brought her own lunch box to the picnic.",
+        "We availed ourselves of the special discount offered to senior citizens at the pharmacy.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. 'Except' is a preposition, so the pronoun after it takes the object form: 'except her'.",
+          "Correct: *Everyone in the office except her had submitted the leave form before the deadline.*",
+          "The other three are correct: B uses 'each other' for two people; C 'each' takes a singular verb and the singular pronoun 'her'; D 'avail' takes a reflexive object + 'of'."
+        ],
+        "rule": "Pronoun case: object form after prepositions (except, between, for, with)",
+        "trap": "'she' seems to belong with 'had submitted', but the subject of that verb is 'everyone'; 'except her' is only a prepositional phrase.",
+        "shortcut": "Drop 'Everyone in the office': 'except she' alone is clearly wrong."
+      },
+      "tags": [
+        "grammar:pronoun",
+        "pattern:case",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-190",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "My uncle retired from the railways in 2019 and now runs a small grocery shop.",
+        "The guests have been waiting in the lobby for over an hour.",
+        "Sushma has completed her graduation in commerce from Delhi University in 2021.",
+        "We have never seen such a large crowd at the village fair before.",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sentence C is incorrect. 'in 2021' is a definite past time, and the present perfect cannot be used with it. It should be 'Sushma completed her graduation …'.",
+          "Correct: *Sushma completed her graduation in commerce from Delhi University in 2021.*",
+          "The other three are correct: A the simple past with '2019' and the simple present with 'now'; B the present perfect continuous with 'for' + a period up to now; D the present perfect with 'never … before', which has no fixed time."
+        ],
+        "rule": "Tense: simple past with a stated past time (in 2021, last year, ago)",
+        "trap": "The result still matters today (she is a graduate), which makes the present perfect tempting; the dated time phrase rules it out.",
+        "shortcut": "Year / date / ago in the sentence → simple past."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:present-perfect-past-time",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-191",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "There are many reasons why young people prefer digital payments to cash.",
+        "On the notice board was pasted the names of the candidates selected for the interview.",
+        "Here comes the bus that goes directly to the airport without stopping anywhere.",
+        "Behind the old bank building stand two huge banyan trees planted by its founder.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. The sentence is inverted; the real subject 'the names' comes after the verb and is plural, so the verb must be 'were pasted'.",
+          "Correct: *On the notice board were pasted the names of the candidates selected for the interview.*",
+          "The other three are correct: A 'there are' agrees with the plural 'reasons'; 'prefer … to'; C in the inverted sentence the singular subject 'the bus' takes 'comes'; D in the inverted sentence the plural subject 'trees' takes 'stand'."
+        ],
+        "rule": "Subject–verb agreement in inverted sentences: the verb agrees with the subject that follows",
+        "trap": "The singular 'notice board' stands before the verb and looks like the subject.",
+        "shortcut": "Rewrite in normal order: 'The names … were pasted on the notice board'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "grammar:inversion",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-192",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The bank has decided to dispense with the old system of manual registers.",
+        "The court acquitted the driver of all the charges brought against him.",
+        "The scheme is meant to provide relief to farmers affected by the drought.",
+        "The manager was angry on the clerk for coming late to the branch again.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. 'Angry' takes 'with' before a person (and 'at' or 'about' before a thing): 'angry with the clerk'.",
+          "Correct: *The manager was angry with the clerk for coming late to the branch again.*",
+          "The other three are correct: A 'dispense with' = do without; B 'acquit someone of' a charge; C 'provide relief to' someone."
+        ],
+        "rule": "Prepositions: angry with (a person), angry at / about (a thing)",
+        "trap": "'angry on' is a direct translation from Hindi ('us par gussa'), so it feels natural to many readers."
+      },
+      "tags": [
+        "grammar:preposition",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-193",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "While waiting for the bus, a stray dog started barking at the children.",
+        "The new manager is known for his honesty, his patience and his punctuality.",
+        "Walking along the platform, I saw an old friend I had not met in years.",
+        "Having finished the audit, the officers left the branch late in the evening.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. The opening phrase 'While waiting for the bus' has no subject of its own, so it attaches to the subject of the main clause, 'a stray dog'. It was the children who were waiting, so the modifier dangles.",
+          "Correct: *While the children were waiting for the bus, a stray dog started barking at them.*",
+          "The other three are correct: B the three items in the list are parallel nouns; C the subject 'I' is the one walking, so the phrase is attached correctly; D the subject 'the officers' finished the audit."
+        ],
+        "rule": "Modifiers: an opening participle phrase must refer to the subject of the main clause",
+        "trap": "Sentences B and C have the same structure but are correct, because their subjects ('I', 'the officers') really do the action in the opening phrase.",
+        "shortcut": "Ask 'who was waiting?' — the answer must be the subject after the comma."
+      },
+      "tags": [
+        "grammar:modifier",
+        "pattern:dangling-modifier",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-194",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The furniture in the new office was bought from a shop in Jodhpur.",
+        "The restaurant owner replaced all the broken crockeries in the kitchen after the festival rush.",
+        "Mathematics is the subject that most students in our class find difficult.",
+        "The people of this village depend mainly on fishing for their livelihood.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. 'Crockery' (cups, plates and dishes as a group) is uncountable and has no plural: 'all the broken crockery'.",
+          "Correct: *The restaurant owner replaced all the broken crockery in the kitchen after the festival rush.*",
+          "The other three are correct: A 'furniture' is uncountable and takes 'was'; C 'mathematics' is singular despite the -s; D 'people' is plural and takes 'depend'."
+        ],
+        "rule": "Countability: 'crockery' is uncountable",
+        "trap": "Sentences A and C test countability too, and they look suspicious ('furniture … was', 'Mathematics is') but are correct.",
+        "shortcut": "crockery, cutlery, furniture, jewellery → no -s."
+      },
+      "tags": [
+        "grammar:uncountable-noun",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-195",
+      "subtype": "incorrect-sentence",
+      "difficulty": "extreme",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Sunita is one of those employees who never take a day off without informing the manager.",
+        "Arun is the only one of the clerks who knows how to operate the new cash machine.",
+        "Each of the branch heads, along with two officers, were invited to the annual meeting at the head office.",
+        "A number of complaints regarding the new app have reached the head office.",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sentence C is incorrect. The subject is 'each' (singular). Neither 'of the branch heads' nor 'along with two officers' changes that, so the verb must be 'was invited'.",
+          "Correct: *Each of the branch heads, along with two officers, was invited to the annual meeting at the head office.*",
+          "The other three are correct: A 'who' refers to 'those employees' (plural) → 'take'; B 'who' refers to 'the only one' (singular) → 'knows'; D 'a number of' (= many) takes a plural verb."
+        ],
+        "rule": "Subject–verb agreement: 'each of' + an 'along with' phrase → still singular",
+        "trap": "Two plural nouns ('heads', 'officers') sit before the verb. Sentences A and B look like a mismatched pair ('take' vs 'knows'), but both are correct.",
+        "shortcut": "Find the true subject: each → was."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:each-every",
+        "pattern:along-with",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-196",
+      "subtype": "incorrect-sentence",
+      "difficulty": "extreme",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Had the bank checked the signature carefully, the fraud would not have happened.",
+        "If I had taken the job in Chennai last year, I would be living near the sea now.",
+        "Were the bank to reduce its interest rate, more people would apply for home loans.",
+        "Should the customer will need any help, the clerk at the enquiry counter will assist him.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. In an inverted first conditional, 'Should' replaces 'if' and is followed by the base verb: 'Should the customer need any help'. 'will' cannot follow 'should'.",
+          "Correct: *Should the customer need any help, the clerk at the enquiry counter will assist him.*",
+          "The other three are correct: A inverted third conditional: Had + subject + V3, would have + V3; B mixed conditional: past condition, present result; C inverted second conditional: Were + subject + to-infinitive."
+        ],
+        "rule": "Conditionals: Should + subject + base verb (= If + subject + present)",
+        "trap": "All four sentences are conditionals and three are inverted, so they all look unusual. Only one has two modals in a row.",
+        "shortcut": "Should / Had / Were at the start = 'if'; check the verb form after each."
+      },
+      "tags": [
+        "grammar:conditional",
+        "grammar:inversion",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-197",
+      "subtype": "incorrect-sentence",
+      "difficulty": "extreme",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "This is the first time I am visiting the branch at Panaji, so I need directions.",
+        "It was the first time that the bank had held its annual meeting outside Mumbai.",
+        "It is the second time this month that the ATM has run out of cash.",
+        "Since he joined the bank in 2018, Prakash has been promoted twice.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. After 'This / It is the first (second …) time', the present perfect is used: 'This is the first time I have visited the branch at Panaji'.",
+          "Correct: *This is the first time I have visited the branch at Panaji, so I need directions.*",
+          "The other three are correct: B 'It was the first time' + past perfect; C 'It is the second time' + present perfect; D the simple past in the 'since' clause and the present perfect in the main clause."
+        ],
+        "rule": "Tense: It is the first time + present perfect; It was the first time + past perfect",
+        "trap": "The visit is happening now, so the present continuous feels natural; this fixed pattern needs the perfect tense.",
+        "shortcut": "is the first time → have + V3; was the first time → had + V3."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:first-time",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-198",
+      "subtype": "incorrect-sentence",
+      "difficulty": "extreme",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The secretary and the treasurer of the cooperative society have both resigned this week.",
+        "None of the money that was collected for the flood victims were deposited in the bank.",
+        "Each of the four branches in the district has its own locker facility.",
+        "Physics, as well as chemistry, is taught by the same teacher in our school.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. 'None of' + an uncountable noun ('the money') takes a singular verb: 'was deposited'. The relative clause correctly uses 'was collected', and the main verb must match.",
+          "Correct: *None of the money that was collected for the flood victims was deposited in the bank.*",
+          "The other three are correct: A two people ('the' repeated) → plural verb; C 'each of' → singular verb and singular 'its'; D the verb agrees with 'Physics' (singular); the 'as well as' phrase is ignored."
+        ],
+        "rule": "Subject–verb agreement: none / all / some / any of + uncountable noun → singular verb",
+        "trap": "'flood victims' (plural) stands right before the verb. With a plural noun ('none of the victims'), either verb form can be accepted, but with 'money' only the singular is possible.",
+        "shortcut": "none of the money → was; none of the files → was / were."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:intervening-phrase",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-199",
+      "subtype": "incorrect-sentence",
+      "difficulty": "extreme",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The farmers have been demanding that the canal be cleaned before the sowing season.",
+        "The old bridge, which had been closed for repairs, was finally reopened last week.",
+        "The bank has risen its interest rates on fixed deposits twice this year.",
+        "The thief was caught red-handed while trying to break open the locker.",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sentence C is incorrect. 'Rise – rose – risen' is intransitive and cannot take an object. To increase something, use the transitive 'raise – raised – raised': 'The bank has raised its interest rates'.",
+          "Correct: *The bank has raised its interest rates on fixed deposits twice this year.*",
+          "The other three are correct: A subjunctive 'be cleaned' after 'demanding that'; B past perfect passive for the earlier state, simple past for 'last week'; D the idiom 'caught red-handed' and 'break open' are used correctly."
+        ],
+        "rule": "Verb form: rise (intransitive: rates rise) vs raise (transitive: the bank raises rates)",
+        "trap": "'has risen' is a correct form of 'rise' ('Rates have risen'), so it looks fine; it cannot take the object 'its interest rates'. Sentence A's 'be cleaned' is also correct, not an agreement error.",
+        "shortcut": "Object after it? → raise / raised."
+      },
+      "tags": [
+        "grammar:verb-form",
+        "pattern:transitive-intransitive",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-200",
+      "subtype": "incorrect-sentence",
+      "difficulty": "extreme",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Scarcely had the auditors left when the manager called an emergency meeting.",
+        "Not until the payment was confirmed did the shop release the goods.",
+        "The number of women opening savings accounts in villages has risen steadily.",
+        "Hardly any of the money that was raised has been spent so far.",
+        "All are correct"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "All four sentences are correct. Each one has a pattern that looks wrong but follows the rule.",
+          "A: 'scarcely' + inversion + 'when'; B: 'Not until …' + inversion in the main clause (did + subject + base verb); C: 'the number of' → singular verb; intransitive 'risen' with no object; D: 'any of' + uncountable 'money' → singular 'has'; transitive 'raised' for money collected."
+        ],
+        "rule": "No error: inversion after scarcely / not until; 'the number of'; 'any of + uncountable'; rise vs raise",
+        "trap": "Every sentence has something that looks suspicious (inversions, 'has risen' next to 'raised'). Mark a sentence only if you can name the rule it breaks.",
+        "shortcut": "Check each sentence against one rule; four passes → 'All are correct'."
+      },
+      "tags": [
+        "grammar:inversion",
+        "grammar:subject-verb-agreement",
+        "pattern:no-error",
+        "format:incorrect-sentence"
+      ]
     }
   ]
 }
