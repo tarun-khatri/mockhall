@@ -1,0 +1,2686 @@
+{
+  "chapter": "mensuration",
+  "version": 1,
+  "items": [
+    {
+      "key": "mn-001",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The area of a right-angled triangle is 150 cm² and its height is 12 cm. The side of a square is 5 cm less than the base of the triangle. What is the area of the square?",
+      "options": [
+        "324 cm²",
+        "361 cm²",
+        "400 cm²",
+        "441 cm²",
+        "625 cm²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Base = 2 × 150 ÷ 12 = 25 cm",
+          "Side of the square = 25 − 5 = 20 cm → area = 20² = **400 cm²**"
+        ],
+        "trap": "625 cm² squares the base itself and ignores the \"5 cm less\"."
+      },
+      "tags": [
+        "template:triangle-to-square",
+        "mensuration:triangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A right-angled triangular flower bed has an area of 135 m² and a height of 18 m. A square lawn next to it has a side 2 m longer than the base of the bed. What is the area of the lawn?",
+      "options": [
+        "169 m²",
+        "196 m²",
+        "225 m²",
+        "256 m²",
+        "289 m²"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Base of the bed = 2 × 135 ÷ 18 = 15 m",
+          "Side of the lawn = 15 + 2 = 17 m → area = 17² = **289 m²**"
+        ],
+        "trap": "225 m² is the square on the base (15²); the lawn's side is 2 m longer than the base."
+      },
+      "tags": [
+        "template:triangle-to-square",
+        "mensuration:triangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-003",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The two sides forming the right angle of a right-angled triangle are in the ratio 4 : 3 and its area is 216 cm². A square has the same perimeter as the triangle. What is the area of the square?",
+      "options": [
+        "256 cm²",
+        "289 cm²",
+        "324 cm²",
+        "441 cm²",
+        "576 cm²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "½ × 4x × 3x = 6x² = 216 → x = 6 → base 24 cm, height 18 cm, hypotenuse √(24² + 18²) = 30 cm",
+          "Perimeter = 24 + 18 + 30 = 72 cm → side of the square = 18 cm → area = **324 cm²**"
+        ],
+        "trap": "576 cm² is the square on the base; leaving out the hypotenuse gives a perimeter of only 42 cm.",
+        "shortcut": "Sides 3 : 4 : 5 scaled by 6 → 18, 24, 30."
+      },
+      "tags": [
+        "template:triangle-to-square",
+        "mensuration:triangle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-004",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The area of a right-angled triangle is 270 cm² and one of the sides forming its right angle is 15 cm. A square is drawn whose side is 14 cm shorter than the hypotenuse of the triangle. What is the area of the square?",
+      "options": [
+        "484 cm²",
+        "576 cm²",
+        "625 cm²",
+        "676 cm²",
+        "729 cm²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Other side = 2 × 270 ÷ 15 = 36 cm → hypotenuse = √(36² + 15²) = √1,521 = 39 cm",
+          "Side of the square = 39 − 14 = 25 cm → area = **625 cm²**"
+        ],
+        "trap": "484 cm² takes 14 cm off the other short side (36 − 14 = 22) instead of off the hypotenuse."
+      },
+      "tags": [
+        "template:triangle-to-square",
+        "mensuration:triangle",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-005",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The area of a right-angled triangle is 96 cm² and its height is 12 cm. Find the area of a square whose side is equal to the base of the triangle.",
+      "options": [
+        "144 cm²",
+        "192 cm²",
+        "256 cm²",
+        "289 cm²",
+        "324 cm²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Base = 2 × 96 ÷ 12 = 16 cm",
+          "Area of the square = 16² = **256 cm²**"
+        ],
+        "trap": "144 cm² squares the height instead of the base; 192 cm² is just twice the triangle's area."
+      },
+      "tags": [
+        "template:triangle-to-square",
+        "mensuration:triangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-006",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The two sides forming the right angle of a right-angled triangle differ by 7 cm, and its area is 60 cm². A wire as long as the perimeter of the triangle is bent into a square. Find the area of the square.",
+      "options": [
+        "64 cm²",
+        "100 cm²",
+        "120 cm²",
+        "225 cm²",
+        "289 cm²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "h(h + 7) = 120 → h = 8 cm, other side = 15 cm → hypotenuse = √(64 + 225) = 17 cm",
+          "Perimeter = 8 + 15 + 17 = 40 cm → side of the square = 10 cm → area = **100 cm²**"
+        ],
+        "trap": "225 cm² squares the longer side; forgetting the hypotenuse gives a perimeter of only 23 cm.",
+        "shortcut": "8-15-17 is a Pythagorean triple."
+      },
+      "tags": [
+        "template:triangle-to-square",
+        "mensuration:triangle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-007",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The two sides forming the right angle of a right-angled triangle are in the ratio 3 : 4 and its area is 294 cm². A square is drawn on its hypotenuse. By how much does the area of the square exceed the area of the triangle?",
+      "options": [
+        "931 cm²",
+        "1,029 cm²",
+        "1,078 cm²",
+        "1,225 cm²",
+        "1,519 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "½ × 3x × 4x = 6x² = 294 → x = 7 → height 21 cm, base 28 cm, hypotenuse 35 cm",
+          "Square on the hypotenuse = 35² = 1,225 cm² → excess = 1,225 − 294 = **931 cm²**"
+        ],
+        "trap": "1,519 cm² adds the triangle's area instead of subtracting it; 1,225 cm² is the square alone."
+      },
+      "tags": [
+        "template:triangle-to-square",
+        "mensuration:triangle",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-008",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A right-angled triangular plot has an area of 162 m² and a height of 9 m. The side of a square plot is half the base of the triangular plot. Find the area of the square plot.",
+      "options": [
+        "289 m²",
+        "324 m²",
+        "361 m²",
+        "400 m²",
+        "1,296 m²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Base = 2 × 162 ÷ 9 = 36 m",
+          "Side of the square plot = 36 ÷ 2 = 18 m → area = **324 m²**"
+        ],
+        "trap": "1,296 m² squares the full base (36 m) instead of half of it."
+      },
+      "tags": [
+        "template:triangle-to-square",
+        "mensuration:triangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-009",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The length and breadth of a rectangle are in the ratio 5 : 3 and its perimeter is 64 cm. Find its area.",
+      "options": [
+        "240 cm²",
+        "256 cm²",
+        "288 cm²",
+        "300 cm²",
+        "480 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "2(5x + 3x) = 64 → x = 4 → length 20 cm, breadth 12 cm",
+          "Area = 20 × 12 = **240 cm²**"
+        ],
+        "trap": "256 cm² is the area of a square with the same perimeter (side 16 cm)."
+      },
+      "tags": [
+        "template:rect-ratio-perimeter",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-010",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Twice the perimeter of a rectangular plot is 168 m, and its length and breadth are in the ratio 4 : 3. What is the area of the plot?",
+      "options": [
+        "384 m²",
+        "400 m²",
+        "432 m²",
+        "864 m²",
+        "1,728 m²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Perimeter = 168 ÷ 2 = 84 m → 2(4x + 3x) = 84 → x = 6",
+          "Length 24 m, breadth 18 m → area = **432 m²**"
+        ],
+        "trap": "1,728 m² treats 168 m as the perimeter itself instead of twice the perimeter."
+      },
+      "tags": [
+        "template:rect-ratio-perimeter",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-011",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The perimeter of a rectangle is equal to the perimeter of a square of side 22 cm. If the length and breadth of the rectangle are in the ratio 7 : 4, find the area of the rectangle.",
+      "options": [
+        "384 cm²",
+        "392 cm²",
+        "420 cm²",
+        "448 cm²",
+        "484 cm²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Perimeter = 4 × 22 = 88 cm → 2(7x + 4x) = 88 → x = 4",
+          "Length 28 cm, breadth 16 cm → area = **448 cm²**"
+        ],
+        "trap": "484 cm² is the area of the square, not the rectangle."
+      },
+      "tags": [
+        "template:rect-ratio-perimeter",
+        "mensuration:rectangle",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-012",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The perimeter of a rectangular hall is 25% more than the perimeter of a square room of side 16 m. The length and breadth of the hall are in the ratio 3 : 2. Find the area of the hall.",
+      "options": [
+        "256 m²",
+        "320 m²",
+        "336 m²",
+        "360 m²",
+        "384 m²"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Square's perimeter = 64 m → hall's perimeter = 1.25 × 64 = 80 m",
+          "2(3x + 2x) = 80 → x = 8 → 24 m × 16 m = **384 m²**"
+        ],
+        "trap": "320 m² raises the square's area (256 m²) by 25%; the 25% applies to the perimeter."
+      },
+      "tags": [
+        "template:rect-ratio-perimeter",
+        "mensuration:rectangle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-013",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Half the perimeter of a rectangular field exceeds its length by 12 m. If the length and breadth of the field are in the ratio 7 : 4, what is its area?",
+      "options": [
+        "224 m²",
+        "240 m²",
+        "252 m²",
+        "336 m²",
+        "448 m²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Half the perimeter = length + breadth, so the excess over the length is the breadth: 4x = 12 → x = 3",
+          "Length = 21 m, breadth = 12 m → area = **252 m²**"
+        ],
+        "trap": "448 m² reads 12 m as the gap between length and breadth (3x = 12); half the perimeter minus the length is the breadth itself."
+      },
+      "tags": [
+        "template:rect-ratio-perimeter",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-014",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A rectangular sheet of cardboard has a perimeter of 112 cm, and its length and breadth are in the ratio 9 : 5. Find its area.",
+      "options": [
+        "720 cm²",
+        "784 cm²",
+        "1,440 cm²",
+        "2,160 cm²",
+        "2,880 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "2(9x + 5x) = 28x = 112 → x = 4",
+          "Length 36 cm, breadth 20 cm → area = **720 cm²**"
+        ],
+        "trap": "2,880 cm² divides 112 by 14 (one set of ratio terms) instead of 28; 784 cm² is a square of the same perimeter."
+      },
+      "tags": [
+        "template:rect-ratio-perimeter",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-015",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The perimeter of a rectangular garden is twice the perimeter of a square plot of area 196 m². The length and breadth of the garden are in the ratio 5 : 3. By how much does the area of the garden exceed the area of the plot?",
+      "options": [
+        "343 m²",
+        "441 m²",
+        "490 m²",
+        "539 m²",
+        "735 m²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Side of the plot = 14 m → its perimeter = 56 m → garden's perimeter = 112 m",
+          "2(5x + 3x) = 112 → x = 7 → garden = 35 × 21 = 735 m²",
+          "Excess = 735 − 196 = **539 m²**"
+        ],
+        "trap": "735 m² is the garden's area, not the difference asked for."
+      },
+      "tags": [
+        "template:rect-ratio-perimeter",
+        "mensuration:rectangle",
+        "mensuration:square",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-016",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The length and breadth of a rectangular courtyard are in the ratio 3 : 2 and its area is 1,350 m². Find its perimeter.",
+      "options": [
+        "75 m",
+        "150 m",
+        "165 m",
+        "180 m",
+        "225 m"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "3x × 2x = 6x² = 1,350 → x = 15 → 45 m by 30 m",
+          "Perimeter = 2(45 + 30) = **150 m**"
+        ],
+        "trap": "75 m stops at length + breadth; the perimeter is twice that."
+      },
+      "tags": [
+        "template:rect-ratio-area",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-017",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The length and breadth of a rectangle are in the ratio 3 : 2 and its area is 600 cm². If its length is increased by 10% and its breadth is decreased by 20%, what is the perimeter of the new rectangle?",
+      "options": [
+        "92 cm",
+        "94 cm",
+        "96 cm",
+        "98 cm",
+        "100 cm"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "6x² = 600 → x = 10 → 30 cm by 20 cm",
+          "New sides: 30 × 1.1 = 33 cm and 20 × 0.8 = 16 cm → perimeter = 2(33 + 16) = **98 cm**"
+        ],
+        "trap": "92 cm cuts the length by 20% and raises the breadth by 10% (24 + 22); 100 cm is the original perimeter."
+      },
+      "tags": [
+        "template:rect-pct-change",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-018",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The length of a rectangular hall is 2.5 times its breadth and its area is 1,000 m². If the length is reduced by 10% and the breadth is increased by 25%, what is the new area of the hall?",
+      "options": [
+        "1,050 m²",
+        "1,100 m²",
+        "1,125 m²",
+        "1,150 m²",
+        "1,200 m²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "2.5b² = 1,000 → b = 20 m, length = 50 m",
+          "New sides: 45 m and 25 m → new area = 45 × 25 = **1,125 m²**"
+        ],
+        "trap": "1,150 m² adds the percentages (−10 + 25 = +15%); the area factor is 0.9 × 1.25 = 1.125.",
+        "shortcut": "New area = 1,000 × 0.9 × 1.25 — the ratio is not even needed."
+      },
+      "tags": [
+        "template:rect-pct-change",
+        "mensuration:rectangle",
+        "arith:successive-percent",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-019",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The length and breadth of a rectangle are in the ratio 7 : 5 and its area is 140 cm². Its length is increased by 50% and its breadth is decreased by 30%. By how many centimetres does its perimeter increase?",
+      "options": [
+        "2 cm",
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "8 cm"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "35x² = 140 → x = 2 → 14 cm by 10 cm, perimeter 48 cm",
+          "New sides 21 cm and 7 cm → perimeter 56 cm → increase = **8 cm**"
+        ],
+        "trap": "4 cm is the change in length + breadth only (+7 − 3); the perimeter counts each side twice."
+      },
+      "tags": [
+        "template:rect-pct-change",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-020",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A rectangular plot has its length and breadth in the ratio 4 : 3 and an area of 432 m². Its length is increased by 25% and its breadth is reduced by one-sixth. What is the ratio of the new area to the original area?",
+      "options": [
+        "5 : 4",
+        "24 : 25",
+        "26 : 25",
+        "25 : 26",
+        "25 : 24"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "12x² = 432 → x = 6 → 24 m by 18 m, area 432 m²",
+          "New sides 30 m and 15 m → area 450 m² → 450 : 432 = **25 : 24**"
+        ],
+        "trap": "24 : 25 is the reverse ratio; 5 : 4 compares only the lengths.",
+        "shortcut": "Area factor = 1.25 × 5/6 = 25/24, whatever the dimensions."
+      },
+      "tags": [
+        "template:rect-pct-change",
+        "mensuration:rectangle",
+        "arith:ratio",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-021",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The length and breadth of a rectangle are in the ratio 5 : 4. If its length is increased by 6 cm and its breadth is decreased by 4 cm, its area does not change. Find the perimeter of the original rectangle.",
+      "options": [
+        "108 cm",
+        "112 cm",
+        "116 cm",
+        "120 cm",
+        "124 cm"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "20x² = (5x + 6)(4x − 4) = 20x² + 4x − 24 → 4x = 24 → x = 6",
+          "Original sides 30 cm and 24 cm → perimeter = **108 cm**"
+        ],
+        "trap": "112 cm is the perimeter of the new 36 cm × 20 cm rectangle, not the original."
+      },
+      "tags": [
+        "template:rect-side-change",
+        "mensuration:rectangle",
+        "arith:linear-equation",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-022",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The length and breadth of a rectangular tile are in the ratio 8 : 5 and its area is 360 cm². Its length is decreased by 25% and its breadth is increased by 20%. What is the area of the new tile?",
+      "options": [
+        "288 cm²",
+        "306 cm²",
+        "324 cm²",
+        "342 cm²",
+        "360 cm²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "40x² = 360 → x = 3 → 24 cm by 15 cm",
+          "New sides 18 cm and 18 cm (a square) → area = **324 cm²**"
+        ],
+        "trap": "342 cm² takes 5% off (−25 + 20); the area factor is 0.75 × 1.2 = 0.9."
+      },
+      "tags": [
+        "template:rect-pct-change",
+        "mensuration:rectangle",
+        "arith:successive-percent",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-023",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The length of a rectangle is twice its breadth. When its length is increased by 10% and its breadth by 20%, its area increases by 64 cm². Find the perimeter of the new rectangle.",
+      "options": [
+        "60 cm",
+        "64 cm",
+        "68 cm",
+        "72 cm",
+        "76 cm"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Area factor = 1.1 × 1.2 = 1.32 → 0.32 × area = 64 → area = 200 cm²",
+          "2b² = 200 → b = 10, l = 20 → new sides 22 cm and 12 cm",
+          "New perimeter = 2(22 + 12) = **68 cm**"
+        ],
+        "trap": "60 cm is the original perimeter; taking the area rise as 30% (10 + 20) instead of 32% does not give whole-number sides."
+      },
+      "tags": [
+        "template:rect-pct-change",
+        "mensuration:rectangle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-024",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The length and breadth of a rectangular park are in the ratio 3 : 2 and its area is 1,176 m². If its length is increased by 50% and its breadth is decreased by 25%, by what percentage does its perimeter increase?",
+      "options": [
+        "10%",
+        "12.5%",
+        "15%",
+        "20%",
+        "25%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "6x² = 1,176 → x = 14 → 42 m by 28 m, perimeter 140 m",
+          "New sides 63 m and 21 m → perimeter 168 m → increase = 28 ÷ 140 = **20%**"
+        ],
+        "trap": "25% just nets the two percentages (50 − 25); 12.5% is the change in area (1.5 × 0.75 = 1.125).",
+        "shortcut": "Perimeter change = (3 × 50 − 2 × 25) ÷ 5 = 20% (weights 3 and 2)."
+      },
+      "tags": [
+        "template:rect-pct-change",
+        "mensuration:rectangle",
+        "arith:weighted-percent",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-025",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The ratio of the length of a rectangular notice board to its perimeter is 5 : 16. What is the ratio of its breadth to its length?",
+      "options": [
+        "3 : 5",
+        "5 : 3",
+        "3 : 8",
+        "5 : 8",
+        "2 : 5"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take length = 5k, perimeter = 16k → length + breadth = 8k → breadth = 3k",
+          "Breadth : length = **3 : 5**"
+        ],
+        "trap": "5 : 3 is the reverse (length : breadth); 3 : 8 compares the breadth with half the perimeter."
+      },
+      "tags": [
+        "template:length-perimeter-ratio",
+        "mensuration:rectangle",
+        "arith:ratio",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-026",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The length of a rectangular window is two-sevenths of its perimeter. Find the ratio of the breadth of the window to its length.",
+      "options": [
+        "4 : 3",
+        "3 : 7",
+        "3 : 4",
+        "2 : 5",
+        "5 : 7"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Length = 2k, perimeter = 7k → length + breadth = 3.5k → breadth = 1.5k",
+          "Breadth : length = 1.5 : 2 = **3 : 4**"
+        ],
+        "trap": "4 : 3 is length : breadth, the reverse of what is asked."
+      },
+      "tags": [
+        "template:length-perimeter-ratio",
+        "mensuration:rectangle",
+        "arith:ratio",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-027",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "For a rectangular field, the ratio of its length to its perimeter is 3 : 10, and its area is 384 m². Find its perimeter.",
+      "options": [
+        "80 m",
+        "84 m",
+        "88 m",
+        "96 m",
+        "100 m"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Length = 3k, perimeter = 10k → length + breadth = 5k → breadth = 2k, so L : B = 3 : 2",
+          "6x² = 384 → x = 8 → 24 m by 16 m → perimeter = **80 m**"
+        ],
+        "trap": "Taking the breadth as 10 − 3 = 7 parts forgets that the perimeter counts length and breadth twice; L + B is half of 10, so the breadth is 2 parts."
+      },
+      "tags": [
+        "template:length-perimeter-ratio",
+        "mensuration:rectangle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-028",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The breadth of a rectangular photo frame is one-fifth of its perimeter. What is the ratio of its length to its breadth?",
+      "options": [
+        "2 : 3",
+        "4 : 1",
+        "5 : 2",
+        "5 : 3",
+        "3 : 2"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Breadth = k, perimeter = 5k → length + breadth = 2.5k → length = 1.5k",
+          "Length : breadth = 1.5 : 1 = **3 : 2**"
+        ],
+        "trap": "4 : 1 treats the perimeter as length + breadth (5k − k = 4k); 2 : 3 is the reverse."
+      },
+      "tags": [
+        "template:length-perimeter-ratio",
+        "mensuration:rectangle",
+        "arith:ratio",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-029",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The length of a rectangular plot is to its perimeter as 7 : 18, and its length exceeds its breadth by 15 m. Find the area of the plot.",
+      "options": [
+        "126 m²",
+        "135 m²",
+        "147 m²",
+        "162 m²",
+        "189 m²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Length = 7k, perimeter = 18k → length + breadth = 9k → breadth = 2k, so L : B = 7 : 2",
+          "L − B = 5k = 15 → k = 3 → 21 m by 6 m → area = **126 m²**"
+        ],
+        "trap": "147 m² takes the breadth as 7 m (21 ÷ 3); the breadth is 2 parts of 3 m."
+      },
+      "tags": [
+        "template:length-perimeter-ratio",
+        "mensuration:rectangle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-030",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The perimeter of a rectangular table top is three times its length. What is the ratio of its breadth to its length?",
+      "options": [
+        "2 : 1",
+        "1 : 3",
+        "2 : 3",
+        "1 : 2",
+        "3 : 2"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "2(L + B) = 3L → 2B = L",
+          "Breadth : length = **1 : 2**"
+        ],
+        "trap": "2 : 1 is length : breadth, the reverse."
+      },
+      "tags": [
+        "template:length-perimeter-ratio",
+        "mensuration:rectangle",
+        "arith:ratio",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-031",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A rectangular park is 26 m long and 18 m wide. A square park has the same perimeter. What is the area of the square park?",
+      "options": [
+        "400 m²",
+        "441 m²",
+        "456 m²",
+        "468 m²",
+        "484 m²"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Perimeter = 2(26 + 18) = 88 m → side of the square = 22 m",
+          "Area = 22² = **484 m²**"
+        ],
+        "trap": "468 m² is the rectangle's own area (26 × 18)."
+      },
+      "tags": [
+        "template:square-rect-equal-perimeter",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-032",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A rectangle with length and breadth in the ratio 5 : 3 has an area of 960 cm². A square has the same perimeter as the rectangle. By how much does the area of the square exceed that of the rectangle?",
+      "options": [
+        "64 cm²",
+        "96 cm²",
+        "128 cm²",
+        "192 cm²",
+        "256 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "15x² = 960 → x = 8 → 40 cm by 24 cm, perimeter 128 cm",
+          "Side of square = 32 cm → area 1,024 cm² → excess = **64 cm²**"
+        ],
+        "trap": "256 cm² uses (L − B)² = 16²; the excess is ((L − B) ÷ 2)² = 8².",
+        "shortcut": "Square − rectangle (same perimeter) = ((L − B) ÷ 2)² = 8² = 64."
+      },
+      "tags": [
+        "template:square-rect-equal-perimeter",
+        "mensuration:square",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-033",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The area of a square field is 1,296 m². A rectangular field with the same perimeter is 42 m long. Find the area of the rectangular field.",
+      "options": [
+        "1,176 m²",
+        "1,224 m²",
+        "1,240 m²",
+        "1,260 m²",
+        "1,512 m²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Side = 36 m → perimeter 144 m → length + breadth = 72 m → breadth = 30 m",
+          "Area = 42 × 30 = **1,260 m²**"
+        ],
+        "trap": "1,512 m² multiplies 42 by the square's side (36 m) instead of the rectangle's breadth."
+      },
+      "tags": [
+        "template:square-rect-equal-perimeter",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-034",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A square and a rectangle have equal perimeters. The area of the square is 576 cm² and the length of the rectangle is 8 cm more than its breadth. Find the area of the rectangle.",
+      "options": [
+        "512 cm²",
+        "540 cm²",
+        "560 cm²",
+        "572 cm²",
+        "576 cm²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Side = 24 cm → L + B = 48 and L − B = 8 → L = 28 cm, B = 20 cm",
+          "Area = 28 × 20 = **560 cm²**"
+        ],
+        "trap": "512 cm² subtracts 8² from 576; the gap is (8 ÷ 2)² = 16.",
+        "shortcut": "576 − (8 ÷ 2)² = 560."
+      },
+      "tags": [
+        "template:square-rect-equal-perimeter",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-035",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A wire bent into a rectangle with sides in the ratio 3 : 2 encloses an area of 2,400 cm². The same wire is straightened and bent into a square. By how much does the enclosed area increase?",
+      "options": [
+        "50 cm²",
+        "100 cm²",
+        "200 cm²",
+        "400 cm²",
+        "2,500 cm²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "6x² = 2,400 → x = 20 → 60 cm by 40 cm, wire = 200 cm",
+          "Square side = 50 cm → area 2,500 cm² → increase = **100 cm²**"
+        ],
+        "trap": "2,500 cm² is the square's area, not the increase.",
+        "shortcut": "Increase = ((60 − 40) ÷ 2)² = 100."
+      },
+      "tags": [
+        "template:wire-reshape",
+        "mensuration:rectangle",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-036",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A square has a side of 18 cm. A rectangle with the same perimeter has its length and breadth in the ratio 7 : 5. Find the area of the rectangle.",
+      "options": [
+        "315 cm²",
+        "324 cm²",
+        "360 cm²",
+        "630 cm²",
+        "1,260 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Perimeter = 72 cm → length + breadth = 36 cm → 12x = 36 → x = 3",
+          "Length 21 cm, breadth 15 cm → area = **315 cm²**"
+        ],
+        "trap": "1,260 cm² sets 12x equal to the whole perimeter (72) instead of half of it; 324 cm² is the square's area."
+      },
+      "tags": [
+        "template:square-rect-equal-perimeter",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-037",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The perimeter of a square is equal to the perimeter of a rectangle measuring 30 cm by 20 cm. Find the area of the square.",
+      "options": [
+        "500 cm²",
+        "576 cm²",
+        "600 cm²",
+        "625 cm²",
+        "2,500 cm²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Perimeter = 2(30 + 20) = 100 cm → side = 25 cm",
+          "Area = 25² = **625 cm²**"
+        ],
+        "trap": "600 cm² is the rectangle's area; 2,500 cm² takes the side as 50 cm (half the perimeter)."
+      },
+      "tags": [
+        "template:square-rect-equal-perimeter",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-038",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A wire is bent into a square of area 484 cm². The same wire is reshaped into a circle. Find the area of the circle. (Take π = 22/7.)",
+      "options": [
+        "484 cm²",
+        "528 cm²",
+        "572 cm²",
+        "616 cm²",
+        "1,232 cm²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Side = 22 cm → wire = 88 cm = 2πr → r = 14 cm",
+          "Area = 22/7 × 14 × 14 = **616 cm²**"
+        ],
+        "trap": "484 cm² keeps the square's area; for the same length of wire a circle encloses more."
+      },
+      "tags": [
+        "template:circle-square",
+        "template:wire-reshape",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-039",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The circumference of a circular pond is equal to the perimeter of a square plot of side 33 m. Find the area of the pond. (Take π = 22/7.)",
+      "options": [
+        "1,089 m²",
+        "1,155 m²",
+        "1,188 m²",
+        "1,232 m²",
+        "1,386 m²"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Circumference = 4 × 33 = 132 m → r = 132 × 7 ÷ 44 = 21 m",
+          "Area = 22/7 × 21 × 21 = **1,386 m²**"
+        ],
+        "trap": "1,089 m² is the square plot's area, not the pond's."
+      },
+      "tags": [
+        "template:circle-square",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-040",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The area of a circular lawn is 1,386 m². A square lawn has the same perimeter as the circular one. How much larger is the circular lawn than the square lawn? (Take π = 22/7.)",
+      "options": [
+        "297 m²",
+        "330 m²",
+        "363 m²",
+        "396 m²",
+        "1,089 m²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "πr² = 1,386 → r² = 441 → r = 21 m → circumference = 132 m",
+          "Square side = 33 m → area 1,089 m² → difference = 1,386 − 1,089 = **297 m²**"
+        ],
+        "trap": "1,089 m² is the square lawn's own area; the question asks how much larger the circular lawn is."
+      },
+      "tags": [
+        "template:circle-square",
+        "mensuration:circle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-041",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A circle and a square have equal perimeters. What is the ratio of the area of the circle to the area of the square? (Take π = 22/7.)",
+      "options": [
+        "11 : 14",
+        "14 : 11",
+        "22 : 7",
+        "4 : 3",
+        "7 : 11"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Take r = 7: circumference = 44 → square side = 11",
+          "Areas: circle 154, square 121 → 154 : 121 = **14 : 11**"
+        ],
+        "trap": "11 : 14 is the reverse — with equal perimeters the circle always has the larger area.",
+        "shortcut": "Circle : square = 4 : π = 4 : 22/7 = 14 : 11."
+      },
+      "tags": [
+        "template:circle-square",
+        "mensuration:circle",
+        "arith:ratio",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-042",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A circle is drawn inside a square of area 196 cm² so that it touches all four sides. Find the area of the part of the square outside the circle. (Take π = 22/7.)",
+      "options": [
+        "36 cm²",
+        "42 cm²",
+        "48 cm²",
+        "56 cm²",
+        "154 cm²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Side = 14 cm → radius of the circle = 7 cm → circle = 154 cm²",
+          "Area outside the circle = 196 − 154 = **42 cm²**"
+        ],
+        "trap": "154 cm² is the circle itself, not the region left over."
+      },
+      "tags": [
+        "template:circle-in-square",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-043",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A wire bent into a circle of radius 35 cm is straightened and bent into a rectangle whose length and breadth are in the ratio 6 : 5. By how much does the enclosed area decrease? (Take π = 22/7.)",
+      "options": [
+        "750 cm²",
+        "775 cm²",
+        "800 cm²",
+        "825 cm²",
+        "850 cm²"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Wire = 2 × 22/7 × 35 = 220 cm; circle's area = 3,850 cm²",
+          "2(6x + 5x) = 220 → x = 10 → 60 cm by 50 cm = 3,000 cm²",
+          "Decrease = 3,850 − 3,000 = **850 cm²**"
+        ],
+        "trap": "825 cm² bends the wire into a square (side 55 cm) instead of a 6 : 5 rectangle."
+      },
+      "tags": [
+        "template:wire-reshape",
+        "mensuration:circle",
+        "mensuration:rectangle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-044",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A square has the same perimeter as a circle of radius 28 cm. What is the area of the square? (Take π = 22/7.)",
+      "options": [
+        "1,681 cm²",
+        "1,764 cm²",
+        "1,849 cm²",
+        "1,936 cm²",
+        "2,464 cm²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Circumference = 2 × 22/7 × 28 = 176 cm → side = 44 cm",
+          "Area = 44² = **1,936 cm²**"
+        ],
+        "trap": "2,464 cm² is the circle's area."
+      },
+      "tags": [
+        "template:circle-square",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-045",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Find the perimeter of a semicircular plot of diameter 28 m. (Take π = 22/7.)",
+      "options": [
+        "44 m",
+        "50 m",
+        "58 m",
+        "66 m",
+        "72 m"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Curved edge = ½ × 2πr = 22/7 × 14 = 44 m",
+          "Perimeter = 44 + 28 (the diameter) = **72 m**"
+        ],
+        "trap": "44 m is the curved edge alone; the straight diameter is part of the boundary."
+      },
+      "tags": [
+        "template:semicircle-quadrant",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-046",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The perimeter of a semicircular rangoli is 108 cm. Find its area. (Take π = 22/7.)",
+      "options": [
+        "693 cm²",
+        "726 cm²",
+        "770 cm²",
+        "1,386 cm²",
+        "2,772 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Perimeter = πr + 2r = (22/7 + 2)r = 36r/7 = 108 → r = 21 cm",
+          "Area = ½ × 22/7 × 21 × 21 = **693 cm²**"
+        ],
+        "trap": "1,386 cm² is the full circle of radius 21 cm."
+      },
+      "tags": [
+        "template:semicircle-quadrant",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-047",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A flower bed is in the shape of a quadrant (a quarter of a circle) of radius 14 m. Find its perimeter. (Take π = 22/7.)",
+      "options": [
+        "22 m",
+        "36 m",
+        "44 m",
+        "50 m",
+        "64 m"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Arc = ¼ × 2 × 22/7 × 14 = 22 m",
+          "Perimeter = 22 + 14 + 14 = **50 m**"
+        ],
+        "trap": "36 m adds only one radius to the arc; a quadrant is bounded by two radii."
+      },
+      "tags": [
+        "template:semicircle-quadrant",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-048",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The perimeter of a corner plot shaped like a quadrant (a quarter of a circle) is 75 m. Find its area. (Take π = 22/7.)",
+      "options": [
+        "308 m²",
+        "346.5 m²",
+        "385 m²",
+        "441 m²",
+        "693 m²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Perimeter = πr/2 + 2r = (11/7 + 2)r = 25r/7 = 75 → r = 21 m",
+          "Area = ¼ × 22/7 × 21 × 21 = **346.5 m²**"
+        ],
+        "trap": "693 m² is a semicircle of radius 21 m, not a quadrant."
+      },
+      "tags": [
+        "template:semicircle-quadrant",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-049",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A semicircular piece of cardboard has the same perimeter as a square of side 18 cm. Find the area of the cardboard. (Take π = 22/7.)",
+      "options": [
+        "264 cm²",
+        "308 cm²",
+        "324 cm²",
+        "352 cm²",
+        "616 cm²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Square's perimeter = 72 cm = 36r/7 → r = 14 cm",
+          "Area = ½ × 22/7 × 14 × 14 = **308 cm²**"
+        ],
+        "trap": "616 cm² is the full circle; 324 cm² is the square."
+      },
+      "tags": [
+        "template:semicircle-quadrant",
+        "mensuration:circle",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-050",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A window is a rectangle 140 cm wide with a semicircle on top, the diameter of the semicircle being the top side of the rectangle. The window is 160 cm high from its bottom edge to the highest point of the arc. Find the length of its outer boundary. (Take π = 22/7.)",
+      "options": [
+        "500 cm",
+        "540 cm",
+        "600 cm",
+        "680 cm",
+        "760 cm"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Radius = 70 cm → height of the rectangular part = 160 − 70 = 90 cm",
+          "Boundary = 90 + 90 + 140 (bottom) + 22/7 × 70 (arc = 220) = **540 cm**"
+        ],
+        "trap": "680 cm uses the full 160 cm for both vertical sides (or adds the hidden diameter); the top side is inside the window, not on its boundary."
+      },
+      "tags": [
+        "template:composite-figure",
+        "mensuration:circle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-051",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A rectangular garden 40 m long and 25 m wide has a path 2.5 m wide all round it on the outside. Find the cost of paving the path at ₹12 per m².",
+      "options": [
+        "₹3,600",
+        "₹3,750",
+        "₹3,900",
+        "₹4,050",
+        "₹4,200"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Outer rectangle = 45 m × 30 m = 1,350 m² → path = 1,350 − 1,000 = 350 m²",
+          "Cost = 350 × 12 = **₹4,200**"
+        ],
+        "trap": "₹3,600 lays the path inside the garden (1,000 − 35 × 20 = 300 m²)."
+      },
+      "tags": [
+        "template:path-cost",
+        "mensuration:path",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-052",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A rectangular plot measures 50 m by 36 m. A path 3 m wide runs along the inside of its boundary. Find the area of the path.",
+      "options": [
+        "444 m²",
+        "480 m²",
+        "516 m²",
+        "552 m²",
+        "1,320 m²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Inner rectangle = 44 m × 30 m = 1,320 m²",
+          "Path = 1,800 − 1,320 = **480 m²**"
+        ],
+        "trap": "552 m² puts the path outside the plot (56 × 42 − 1,800); 1,320 m² is the area left inside the path."
+      },
+      "tags": [
+        "template:path-area",
+        "mensuration:path",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-053",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A path of uniform width runs around the outside of a rectangular lawn 30 m long and 20 m wide. If the area of the path is 216 m², what is its width?",
+      "options": [
+        "1.5 m",
+        "2 m",
+        "2.5 m",
+        "3 m",
+        "4 m"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "(30 + 2w)(20 + 2w) − 600 = 216 → 4w² + 100w − 216 = 0 → w² + 25w − 54 = 0",
+          "(w + 27)(w − 2) = 0 → w = **2 m** (check: 34 × 24 − 600 = 216)"
+        ],
+        "trap": "4 m adds the width only once to each dimension ((30 + w)(20 + w) − 600 = 216); the path is on both sides, so each dimension grows by 2w.",
+        "shortcut": "Test options: w = 2 → 34 × 24 = 816 = 600 + 216."
+      },
+      "tags": [
+        "template:path-area",
+        "mensuration:path",
+        "arith:quadratic",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-054",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A circular park of radius 21 m has a jogging track 7 m wide along the inside of its boundary. Find the cost of surfacing the track at ₹15 per m². (Take π = 22/7.)",
+      "options": [
+        "₹9,240",
+        "₹11,550",
+        "₹13,860",
+        "₹16,170",
+        "₹18,480"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Track = π(21² − 14²) = 22/7 × 245 = 770 m²",
+          "Cost = 770 × 15 = **₹11,550**"
+        ],
+        "trap": "₹16,170 puts the track outside the park (radius 28 m); ₹9,240 prices the inner lawn of radius 14 m."
+      },
+      "tags": [
+        "template:path-cost",
+        "mensuration:path",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-055",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A rectangular field 60 m long and 40 m wide has two roads, each 4 m wide, running through its middle, one parallel to the length and the other parallel to the breadth. The roads are gravelled at ₹25 per m² and the rest of the field is turfed at ₹15 per m². Find the total cost.",
+      "options": [
+        "₹38,400",
+        "₹39,600",
+        "₹39,840",
+        "₹40,000",
+        "₹40,240"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Roads = 60 × 4 + 40 × 4 − 4 × 4 (crossing counted once) = 384 m² → ₹9,600",
+          "Rest = 2,400 − 384 = 2,016 m² → ₹30,240",
+          "Total = **₹39,840**"
+        ],
+        "trap": "₹40,240 counts the 4 m × 4 m crossing twice in the roads (400 m²) but still turfs 2,016 m²; ₹40,000 drops it from the turf as well."
+      },
+      "tags": [
+        "template:cross-roads",
+        "mensuration:path",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-056",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A path 2 m wide runs around the outside of a square lawn. If the area of the path is 136 m², find the area of the lawn.",
+      "options": [
+        "225 m²",
+        "256 m²",
+        "289 m²",
+        "324 m²",
+        "361 m²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "(s + 4)² − s² = 8s + 16 = 136 → s = 15 m",
+          "Area of the lawn = 15² = **225 m²**"
+        ],
+        "trap": "361 m² is the lawn together with the path (19 × 19)."
+      },
+      "tags": [
+        "template:path-area",
+        "mensuration:path",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-057",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The diagonal of a square tile is 18 cm. Find its area.",
+      "options": [
+        "128 cm²",
+        "144 cm²",
+        "162 cm²",
+        "216 cm²",
+        "324 cm²"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Area of a square = diagonal² ÷ 2",
+          "18² ÷ 2 = 324 ÷ 2 = **162 cm²**"
+        ],
+        "trap": "324 cm² squares the diagonal as if it were the side."
+      },
+      "tags": [
+        "template:diagonal",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-058",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The perimeter of a rectangle is 46 cm and its diagonal is 17 cm. Find its area.",
+      "options": [
+        "120 cm²",
+        "136 cm²",
+        "144 cm²",
+        "160 cm²",
+        "240 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "L + B = 23 and L² + B² = 17² = 289",
+          "2LB = 23² − 289 = 240 → area = LB = **120 cm²** (sides 15 cm and 8 cm)"
+        ],
+        "trap": "240 cm² is 2LB; it must be halved.",
+        "shortcut": "Area = ((L + B)² − d²) ÷ 2."
+      },
+      "tags": [
+        "template:diagonal",
+        "mensuration:rectangle",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The length and breadth of a rectangular board are in the ratio 4 : 3 and its diagonal is 35 cm. Find its perimeter.",
+      "options": [
+        "49 cm",
+        "84 cm",
+        "98 cm",
+        "105 cm",
+        "112 cm"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Diagonal = 5x (a 3-4-5 triangle) = 35 → x = 7 → 28 cm by 21 cm",
+          "Perimeter = 2(28 + 21) = **98 cm**"
+        ],
+        "trap": "49 cm is only length + breadth."
+      },
+      "tags": [
+        "template:diagonal",
+        "mensuration:rectangle",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-060",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A square is drawn with its side equal to the diagonal of a rectangular field 40 m long and 9 m wide. Find the area of the square.",
+      "options": [
+        "1,681 m²",
+        "1,764 m²",
+        "1,849 m²",
+        "2,401 m²",
+        "3,362 m²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Diagonal = √(40² + 9²) = √1,681 = 41 m",
+          "Area of the square = 41² = **1,681 m²**"
+        ],
+        "trap": "2,401 m² takes the side as 40 + 9 = 49 m; the diagonal is found by Pythagoras, not by adding.",
+        "shortcut": "The square on the diagonal = 40² + 9² directly."
+      },
+      "tags": [
+        "template:diagonal",
+        "mensuration:pythagoras",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-061",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The diagonal of one square is 1.5 times the diagonal of another square, and their areas differ by 180 cm². Find the perimeter of the larger square.",
+      "options": [
+        "48 cm",
+        "54 cm",
+        "60 cm",
+        "66 cm",
+        "72 cm"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Diagonals 3 : 2 → areas 9 : 4 → difference 5 parts = 180 → 1 part = 36",
+          "Larger area = 324 cm² → side 18 cm → perimeter = **72 cm**"
+        ],
+        "trap": "48 cm is the smaller square's perimeter; taking the areas in the ratio 3 : 2 (like the diagonals) gives no whole-number side."
+      },
+      "tags": [
+        "template:diagonal",
+        "mensuration:square",
+        "arith:ratio",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-062",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The diagonals of a rhombus are 24 cm and 18 cm. Find its area.",
+      "options": [
+        "108 cm²",
+        "192 cm²",
+        "200 cm²",
+        "216 cm²",
+        "432 cm²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Area of a rhombus = ½ × d₁ × d₂",
+          "½ × 24 × 18 = **216 cm²**"
+        ],
+        "trap": "432 cm² multiplies the diagonals without halving."
+      },
+      "tags": [
+        "template:rhombus",
+        "mensuration:rhombus",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-063",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The diagonals of a rhombus-shaped tile are 30 cm and 16 cm. Find its perimeter.",
+      "options": [
+        "68 cm",
+        "76 cm",
+        "84 cm",
+        "92 cm",
+        "100 cm"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Diagonals bisect at right angles: half-diagonals 15 cm and 8 cm",
+          "Side = √(15² + 8²) = 17 cm → perimeter = **68 cm**"
+        ],
+        "trap": "92 cm doubles the sum of the diagonals; the side comes from the half-diagonals by Pythagoras."
+      },
+      "tags": [
+        "template:rhombus",
+        "mensuration:rhombus",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-064",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The perimeter of a rhombus is 100 cm and one of its diagonals is 14 cm. Find its area.",
+      "options": [
+        "168 cm²",
+        "300 cm²",
+        "320 cm²",
+        "336 cm²",
+        "672 cm²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Side = 25 cm; half of the known diagonal = 7 cm → other half = √(625 − 49) = 24 cm",
+          "Other diagonal = 48 cm → area = ½ × 14 × 48 = **336 cm²**"
+        ],
+        "trap": "672 cm² forgets the ½ in ½ × d₁ × d₂."
+      },
+      "tags": [
+        "template:rhombus",
+        "mensuration:rhombus",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-065",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The area of a rhombus is 600 m² and one of its diagonals is 40 m. Find its perimeter.",
+      "options": [
+        "70 m",
+        "90 m",
+        "100 m",
+        "120 m",
+        "140 m"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Other diagonal = 2 × 600 ÷ 40 = 30 m → half-diagonals 20 m and 15 m",
+          "Side = √(400 + 225) = 25 m → perimeter = **100 m**"
+        ],
+        "trap": "140 m doubles the sum of the diagonals (40 + 30)."
+      },
+      "tags": [
+        "template:rhombus",
+        "mensuration:rhombus",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-066",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The diagonals of a rhombus are in the ratio 3 : 4 and its perimeter is 80 cm. Find its area.",
+      "options": [
+        "384 cm²",
+        "400 cm²",
+        "420 cm²",
+        "480 cm²",
+        "768 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Side = 20 cm; half-diagonals 3x and 4x → side = 5x = 20 → x = 4",
+          "Diagonals 24 cm and 32 cm → area = ½ × 24 × 32 = **384 cm²**"
+        ],
+        "trap": "400 cm² is a square of the same perimeter; 768 cm² forgets the ½."
+      },
+      "tags": [
+        "template:rhombus",
+        "mensuration:rhombus",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-067",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The parallel sides of a trapezium are 18 cm and 12 cm, and the distance between them is 8 cm. Find its area.",
+      "options": [
+        "120 cm²",
+        "144 cm²",
+        "180 cm²",
+        "216 cm²",
+        "240 cm²"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Area = ½ × (sum of parallel sides) × height",
+          "½ × 30 × 8 = **120 cm²**"
+        ],
+        "trap": "240 cm² forgets the ½."
+      },
+      "tags": [
+        "template:trapezium",
+        "mensuration:trapezium",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-068",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The area of a trapezium is 360 cm² and the distance between its parallel sides is 12 cm. If one parallel side is 8 cm longer than the other, find the longer parallel side.",
+      "options": [
+        "26 cm",
+        "30 cm",
+        "34 cm",
+        "38 cm",
+        "42 cm"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sum of parallel sides = 2 × 360 ÷ 12 = 60 cm",
+          "Sides 34 cm and 26 cm → longer side = **34 cm**"
+        ],
+        "trap": "26 cm is the shorter side."
+      },
+      "tags": [
+        "template:trapezium",
+        "mensuration:trapezium",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-069",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The parallel sides of a trapezium-shaped field are in the ratio 5 : 3, the distance between them is 14 m and the area of the field is 448 m². Find the length of the longer parallel side.",
+      "options": [
+        "20 m",
+        "24 m",
+        "32 m",
+        "40 m",
+        "48 m"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sum of parallel sides = 2 × 448 ÷ 14 = 64 m = 8x → x = 8",
+          "Longer side = 5 × 8 = **40 m**"
+        ],
+        "trap": "20 m forgets the ½ (sum taken as 32 m); 24 m is the shorter side."
+      },
+      "tags": [
+        "template:trapezium",
+        "mensuration:trapezium",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-070",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The parallel sides of an isosceles trapezium are 30 cm and 18 cm, and each of its non-parallel sides is 10 cm. Find its area.",
+      "options": [
+        "144 cm²",
+        "160 cm²",
+        "168 cm²",
+        "192 cm²",
+        "240 cm²"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each overhang = (30 − 18) ÷ 2 = 6 cm → height = √(10² − 6²) = 8 cm",
+          "Area = ½ × 48 × 8 = **192 cm²**"
+        ],
+        "trap": "240 cm² uses the slanting side (10 cm) as the height."
+      },
+      "tags": [
+        "template:trapezium",
+        "mensuration:trapezium",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-071",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A field is in the shape of a right trapezium: its parallel sides are 45 m and 25 m, and the side perpendicular to them is 15 m. Find the cost of fencing the field at ₹30 per metre.",
+      "options": [
+        "₹2,850",
+        "₹3,000",
+        "₹3,150",
+        "₹3,200",
+        "₹3,300"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Slanting side = √((45 − 25)² + 15²) = √625 = 25 m",
+          "Perimeter = 45 + 25 + 15 + 25 = 110 m → cost = **₹3,300**"
+        ],
+        "trap": "₹3,000 takes the slanting side as 15 m, the same as the perpendicular side."
+      },
+      "tags": [
+        "template:fencing-cost",
+        "mensuration:trapezium",
+        "mensuration:pythagoras",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-072",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The floor of a room 12 m long and 9 m wide has a border 1 m wide along all its walls. The border is laid with granite at ₹150 per m² and the rest of the floor with tiles at ₹80 per m². Find the total cost.",
+      "options": [
+        "₹10,940",
+        "₹11,300",
+        "₹11,580",
+        "₹11,900",
+        "₹12,200"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Inner floor = 10 m × 7 m = 70 m² → border = 108 − 70 = 38 m²",
+          "Cost = 38 × 150 + 70 × 80 = 5,700 + 5,600 = **₹11,300**"
+        ],
+        "trap": "₹11,580 takes the border as perimeter × width = 42 m², counting the four corner squares twice."
+      },
+      "tags": [
+        "template:flooring-cost",
+        "mensuration:path",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-073",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A square field has an area of 2,025 m². It is to be fenced all round except for a gate 4 m wide. Find the cost of fencing at ₹20 per metre.",
+      "options": [
+        "₹3,440",
+        "₹3,460",
+        "₹3,480",
+        "₹3,520",
+        "₹3,600"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Side = √2,025 = 45 m → perimeter = 180 m",
+          "Fence = 180 − 4 = 176 m → cost = 176 × 20 = **₹3,520**"
+        ],
+        "trap": "₹3,600 forgets to leave out the gate."
+      },
+      "tags": [
+        "template:fencing-cost",
+        "mensuration:square",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-074",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The cost of fencing a rectangular plot at ₹20 per metre is ₹2,600 and the area of the plot is 1,000 m². By how many metres does its length exceed its breadth?",
+      "options": [
+        "15 m",
+        "18 m",
+        "20 m",
+        "25 m",
+        "40 m"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Perimeter = 2,600 ÷ 20 = 130 m → L + B = 65, LB = 1,000",
+          "(L − B)² = 65² − 4 × 1,000 = 225 → L − B = **15 m** (40 m and 25 m)"
+        ],
+        "trap": "25 m is the breadth itself, not the difference.",
+        "shortcut": "Find two numbers with sum 65 and product 1,000: 40 and 25."
+      },
+      "tags": [
+        "template:fencing-cost",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-075",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The cost of fencing a circular field at ₹12 per metre is ₹2,640. Find the cost of ploughing the field at ₹2 per m². (Take π = 22/7.)",
+      "options": [
+        "₹3,850",
+        "₹5,390",
+        "₹6,160",
+        "₹6,930",
+        "₹7,700"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Circumference = 2,640 ÷ 12 = 220 m → r = 220 × 7 ÷ 44 = 35 m",
+          "Area = 22/7 × 35 × 35 = 3,850 m² → cost = **₹7,700**"
+        ],
+        "trap": "₹3,850 stops at the area (3,850 m²) and forgets the rate of ₹2 per m²."
+      },
+      "tags": [
+        "template:fencing-cost",
+        "mensuration:circle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-076",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The length and breadth of a rectangular field are in the ratio 3 : 2. The cost of levelling it at ₹4 per m² is ₹15,000. Find the cost of fencing it at ₹12 per metre.",
+      "options": [
+        "₹1,500",
+        "₹2,000",
+        "₹2,400",
+        "₹2,700",
+        "₹3,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Area = 15,000 ÷ 4 = 3,750 m² = 6x² → x = 25 → 75 m by 50 m",
+          "Perimeter = 250 m → cost = 250 × 12 = **₹3,000**"
+        ],
+        "trap": "₹1,500 prices only length + breadth (125 m), not the full perimeter."
+      },
+      "tags": [
+        "template:fencing-cost",
+        "mensuration:rectangle",
+        "level:multi-step",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-077",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A room 15 m long and 12 m wide is to be carpeted with a carpet 75 cm wide. Find the cost of the carpet at ₹60 per metre of its length.",
+      "options": [
+        "₹10,800",
+        "₹12,000",
+        "₹13,500",
+        "₹14,400",
+        "₹16,200"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Length of carpet = area ÷ width = 180 ÷ 0.75 = 240 m",
+          "Cost = 240 × 60 = **₹14,400**"
+        ],
+        "trap": "₹10,800 prices 180 m (the floor area in m²) instead of 240 m of carpet."
+      },
+      "tags": [
+        "template:flooring-cost",
+        "mensuration:rectangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-078",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A triangular park has sides of 13 m, 14 m and 15 m. Find the cost of turfing it at ₹25 per m².",
+      "options": [
+        "₹1,950",
+        "₹2,100",
+        "₹2,250",
+        "₹2,625",
+        "₹4,200"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "s = (13 + 14 + 15) ÷ 2 = 21 → area = √(21 × 8 × 7 × 6) = √7,056 = 84 m²",
+          "Cost = 84 × 25 = **₹2,100**"
+        ],
+        "trap": "₹2,625 treats the triangle as right-angled (½ × 14 × 15 = 105 m²); 13-14-15 is not a right triangle."
+      },
+      "tags": [
+        "template:heron",
+        "mensuration:triangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-079",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The sides of a triangular plot are in the ratio 13 : 14 : 15 and its perimeter is 84 m. Find the area of the plot.",
+      "options": [
+        "294 m²",
+        "336 m²",
+        "364 m²",
+        "390 m²",
+        "420 m²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "42x = 84 → x = 2 → sides 26 m, 28 m, 30 m; s = 42",
+          "Area = √(42 × 16 × 14 × 12) = √1,12,896 = **336 m²**"
+        ],
+        "trap": "420 m² takes ½ × 28 × 30 as if the plot were right-angled.",
+        "shortcut": "A 13 : 14 : 15 triangle has area 84k²; with k = 2 that is 336."
+      },
+      "tags": [
+        "template:heron",
+        "mensuration:triangle",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-080",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The length of a rectangle is increased by 25%. By what percentage must its breadth be decreased so that its area stays the same?",
+      "options": [
+        "15%",
+        "20%",
+        "22.5%",
+        "25%",
+        "30%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "New breadth = 1 ÷ 1.25 = 0.8 of the old breadth",
+          "Decrease = **20%**"
+        ],
+        "trap": "25% simply reverses the increase; 1.25 × 0.75 = 0.9375, so the area would fall.",
+        "shortcut": "Decrease = 25 ÷ 125 × 100 = 20%."
+      },
+      "tags": [
+        "template:area-unchanged",
+        "mensuration:rectangle",
+        "arith:successive-percent",
+        "mensuration:2d"
+      ]
+    },
+    {
+      "key": "mn-081",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The total surface area of a cube is 1,350 cm². Find its volume.",
+      "options": [
+        "2,744 cm³",
+        "3,375 cm³",
+        "3,600 cm³",
+        "4,096 cm³",
+        "5,400 cm³"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Each face = 1,350 ÷ 6 = 225 cm² → edge = 15 cm",
+          "Volume = 15³ = **3,375 cm³**"
+        ],
+        "trap": "2,744 cm³ and 4,096 cm³ are cubes of edge 14 cm and 16 cm; the edge is √(1,350 ÷ 6) = 15 cm."
+      },
+      "tags": [
+        "template:cube-cuboid",
+        "mensuration:cube",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The length, breadth and height of a cuboid are in the ratio 4 : 3 : 2 and its total surface area is 1,300 cm². Find its volume.",
+      "options": [
+        "2,400 cm³",
+        "2,520 cm³",
+        "2,700 cm³",
+        "2,880 cm³",
+        "3,000 cm³"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "TSA = 2(12 + 6 + 8)x² = 52x² = 1,300 → x = 5",
+          "Sides 20, 15, 10 cm → volume = **3,000 cm³**"
+        ],
+        "trap": "Dropping the 2 in the TSA formula gives 26x² = 1,300, x² = 50 — no whole-number edges."
+      },
+      "tags": [
+        "template:cube-cuboid",
+        "mensuration:cuboid",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-083",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two cubes, each of volume 512 cm³, are joined end to end. Find the total surface area of the resulting cuboid.",
+      "options": [
+        "576 cm²",
+        "640 cm²",
+        "704 cm²",
+        "768 cm²",
+        "1,024 cm²"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Edge = ∛512 = 8 cm → cuboid 16 cm × 8 cm × 8 cm",
+          "TSA = 2(16 × 8 + 8 × 8 + 16 × 8) = 2 × 320 = **640 cm²**"
+        ],
+        "trap": "768 cm² adds the two cubes' surfaces (2 × 384) and keeps the two faces that are now hidden.",
+        "shortcut": "TSA = 2 × 6a² − 2a² = 10a² = 640."
+      },
+      "tags": [
+        "template:cube-cuboid",
+        "mensuration:cuboid",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-084",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The areas of three adjacent faces of a solid metal cuboid are 48 cm², 60 cm² and 80 cm². It is melted and recast into cubes of edge 2 cm. How many cubes are made?",
+      "options": [
+        "45",
+        "60",
+        "72",
+        "120",
+        "240"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Volume = √(48 × 60 × 80) = √2,30,400 = 480 cm³ (edges 8, 6, 10 cm)",
+          "Number of cubes = 480 ÷ 2³ = **60**"
+        ],
+        "trap": "120 divides by 2² instead of 2³; 240 divides by the edge (2) instead of the cube's volume (8 cm³).",
+        "shortcut": "Volume = √(product of three face areas)."
+      },
+      "tags": [
+        "template:melt-recast",
+        "mensuration:cuboid",
+        "level:multi-step",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-085",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Find the total surface area of a closed cylinder with base radius 7 cm and height 20 cm. (Take π = 22/7.)",
+      "options": [
+        "880 cm²",
+        "958 cm²",
+        "1,034 cm²",
+        "1,100 cm²",
+        "1,188 cm²"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "TSA = 2πr(r + h) = 2 × 22/7 × 7 × 27",
+          "= 44 × 27 = **1,188 cm²**"
+        ],
+        "trap": "880 cm² is only the curved surface; 1,034 cm² adds just one end."
+      },
+      "tags": [
+        "template:cylinder",
+        "mensuration:cylinder",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-086",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The curved surface area of a cylindrical drum is 1,320 cm² and its height is 15 cm. Find its volume. (Take π = 22/7.)",
+      "options": [
+        "9,240 cm³",
+        "13,860 cm³",
+        "18,480 cm³",
+        "27,720 cm³",
+        "36,960 cm³"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "2πr × 15 = 1,320 → 2πr = 88 → r = 14 cm",
+          "Volume = 22/7 × 14 × 14 × 15 = **9,240 cm³**"
+        ],
+        "trap": "36,960 cm³ uses 28 cm (the diameter) as the radius."
+      },
+      "tags": [
+        "template:cylinder",
+        "mensuration:cylinder",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-087",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The radii of two cylinders are in the ratio 2 : 3 and their heights are in the ratio 5 : 3. Find the ratio of their volumes.",
+      "options": [
+        "10 : 9",
+        "27 : 20",
+        "4 : 9",
+        "20 : 27",
+        "9 : 10"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Volume ∝ r²h",
+          "(2² × 5) : (3² × 3) = 20 : 27 → **20 : 27**"
+        ],
+        "trap": "10 : 9 uses the radii without squaring them; 27 : 20 is the reverse."
+      },
+      "tags": [
+        "template:cylinder",
+        "mensuration:cylinder",
+        "arith:ratio",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-088",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A building has 20 cylindrical pillars, each 70 cm in diameter and 4 m high. Find the cost of painting their curved surfaces at ₹12.50 per m². (Take π = 22/7.)",
+      "options": [
+        "₹2,200",
+        "₹2,640",
+        "₹3,080",
+        "₹3,520",
+        "₹4,400"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Curved surface of one pillar = 2πrh = 2 × 22/7 × 0.35 × 4 = 8.8 m²",
+          "20 pillars = 176 m² → cost = 176 × 12.50 = **₹2,200**"
+        ],
+        "trap": "₹4,400 uses 70 cm as the radius instead of the diameter."
+      },
+      "tags": [
+        "template:cylinder",
+        "mensuration:cylinder",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-089",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The base radius of a cone is 7 cm and its slant height is 25 cm. Find its volume. (Take π = 22/7.)",
+      "options": [
+        "1,078 cm³",
+        "1,155 cm³",
+        "1,188 cm³",
+        "1,232 cm³",
+        "3,696 cm³"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Height = √(25² − 7²) = 24 cm",
+          "Volume = ⅓ × 22/7 × 7 × 7 × 24 = **1,232 cm³**"
+        ],
+        "trap": "3,696 cm³ forgets the ⅓; using the slant height as the height gives about 1,283 cm³."
+      },
+      "tags": [
+        "template:cone-sphere",
+        "mensuration:cone",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-090",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The surface area of a sphere is 5,544 cm². Find its volume. (Take π = 22/7.)",
+      "options": [
+        "19,404 cm³",
+        "29,106 cm³",
+        "33,264 cm³",
+        "38,808 cm³",
+        "1,55,232 cm³"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "4πr² = 5,544 → r² = 441 → r = 21 cm",
+          "Volume = 4/3 × 22/7 × 21³ = **38,808 cm³**"
+        ],
+        "trap": "19,404 cm³ is the volume of a hemisphere of radius 21 cm."
+      },
+      "tags": [
+        "template:cone-sphere",
+        "mensuration:sphere",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-091",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Find the total surface area of a solid hemisphere of radius 21 cm. (Take π = 22/7.)",
+      "options": [
+        "1,386 cm²",
+        "2,772 cm²",
+        "3,465 cm²",
+        "3,696 cm²",
+        "4,158 cm²"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Curved surface = 2πr² = 2,772 cm²; flat face = πr² = 1,386 cm²",
+          "TSA = 3πr² = **4,158 cm²**"
+        ],
+        "trap": "2,772 cm² is only the curved surface; a solid hemisphere also has its flat circular face."
+      },
+      "tags": [
+        "template:cone-sphere",
+        "mensuration:hemisphere",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-092",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A conical tent has a base radius of 7 m and a height of 24 m. How many metres of canvas 1.1 m wide are needed to make it? (Take π = 22/7 and ignore wastage.)",
+      "options": [
+        "440 m",
+        "462 m",
+        "480 m",
+        "495 m",
+        "500 m"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Slant height = √(7² + 24²) = 25 m → canvas area = πrl = 22/7 × 7 × 25 = 550 m²",
+          "Length = 550 ÷ 1.1 = **500 m**"
+        ],
+        "trap": "480 m uses the height (24 m) in place of the slant height (22/7 × 7 × 24 = 528 m²)."
+      },
+      "tags": [
+        "template:cone-sphere",
+        "mensuration:cone",
+        "level:multi-step",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-093",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A solid metal sphere of radius 9 cm is melted and recast into a solid cylinder of base radius 6 cm. Find the height of the cylinder.",
+      "options": [
+        "18 cm",
+        "24 cm",
+        "27 cm",
+        "36 cm",
+        "81 cm"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "4/3 π × 9³ = π × 6² × h",
+          "h = (4/3 × 729) ÷ 36 = 972 ÷ 36 = **27 cm**"
+        ],
+        "trap": "81 cm drops the 3 in 4/3 (4 × 729 ÷ 36).",
+        "shortcut": "π cancels on both sides; no need to use 22/7."
+      },
+      "tags": [
+        "template:melt-recast",
+        "mensuration:sphere",
+        "mensuration:cylinder",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-094",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A copper sphere of radius 3 cm is melted and drawn into a uniform wire of diameter 2 mm. Find the length of the wire.",
+      "options": [
+        "4.5 m",
+        "9 m",
+        "18 m",
+        "24 m",
+        "36 m"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Wire radius = 1 mm = 0.1 cm; 4/3 π × 3³ = π × 0.1² × L",
+          "L = 36 ÷ 0.01 = 3,600 cm = **36 m**"
+        ],
+        "trap": "9 m takes 2 mm as the radius (0.2 cm) instead of the diameter."
+      },
+      "tags": [
+        "template:melt-recast",
+        "mensuration:sphere",
+        "mensuration:cylinder",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-095",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A solid metal cone of base radius 6 cm and height 24 cm is melted and recast into solid spheres of radius 2 cm each. How many spheres are made?",
+      "options": [
+        "9",
+        "18",
+        "27",
+        "54",
+        "81"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Cone = ⅓ π × 36 × 24 = 288π cm³; one sphere = 4/3 π × 8 = 32π/3 cm³",
+          "Number = 288 × 3 ÷ 32 = **27**"
+        ],
+        "trap": "81 forgets the ⅓ in the cone's volume."
+      },
+      "tags": [
+        "template:melt-recast",
+        "mensuration:cone",
+        "mensuration:sphere",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-096",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A cylindrical bucket of base radius 12 cm and height 18 cm is full of sand. The sand is emptied on level ground and forms a conical heap 24 cm high. Find the slant height of the heap.",
+      "options": [
+        "18 cm",
+        "24 cm",
+        "27 cm",
+        "30 cm",
+        "36 cm"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "π × 12² × 18 = ⅓ π r² × 24 → 2,592 = 8r² → r = 18 cm",
+          "Slant height = √(18² + 24²) = **30 cm**"
+        ],
+        "trap": "18 cm is the radius of the heap; the question asks for its slant height."
+      },
+      "tags": [
+        "template:melt-recast",
+        "mensuration:cylinder",
+        "mensuration:cone",
+        "level:multi-step",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-097",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A rectangular tank 50 cm long and 40 cm wide contains water. A solid cube of edge 20 cm is completely immersed in it without any water overflowing. By how much does the water level rise?",
+      "options": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "8 cm"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Rise × base area = volume of the cube",
+          "Rise = 8,000 ÷ (50 × 40) = **4 cm**"
+        ],
+        "trap": "5 cm divides by the free water surface (2,000 − 400 = 1,600 cm²); once the cube is fully under water, the rise is its volume ÷ the whole base, 2,000 cm²."
+      },
+      "tags": [
+        "template:water-level",
+        "mensuration:cuboid",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-098",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A cylindrical jar of radius 12 cm contains water. A solid iron ball of radius 9 cm is dropped into it and is fully submerged without any water overflowing. By how much does the water level rise?",
+      "options": [
+        "4.5 cm",
+        "6 cm",
+        "6.75 cm",
+        "8 cm",
+        "9 cm"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "π × 12² × h = 4/3 π × 9³",
+          "h = 972 ÷ 144 = **6.75 cm**"
+        ],
+        "trap": "9 cm assumes the level rises by the ball's radius; equate volumes instead.",
+        "shortcut": "π cancels: h = 4r³ ÷ (3R²)."
+      },
+      "tags": [
+        "template:water-level",
+        "mensuration:sphere",
+        "mensuration:cylinder",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-099",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Water flows at 15 km/h through a pipe of internal diameter 14 cm into a rectangular tank 50 m long and 44 m wide. By how many centimetres will the water level in the tank rise in 40 minutes? (Take π = 22/7.)",
+      "options": [
+        "3.5 cm",
+        "7 cm",
+        "10.5 cm",
+        "14 cm",
+        "28 cm"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Flow per hour = 22/7 × 0.07² × 15,000 = 231 m³ → in 40 minutes = 154 m³",
+          "Rise = 154 ÷ (50 × 44) = 0.07 m = **7 cm**"
+        ],
+        "trap": "28 cm uses 14 cm as the radius, which makes the flow four times too big."
+      },
+      "tags": [
+        "template:water-level",
+        "mensuration:cylinder",
+        "level:multi-step",
+        "mensuration:3d"
+      ]
+    },
+    {
+      "key": "mn-100",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A solid cuboid measuring 22 cm × 14 cm × 6 cm lies fully submerged in a cylindrical vessel of base radius 14 cm containing water. When the cuboid is taken out, by how much does the water level fall? (Take π = 22/7.)",
+      "options": [
+        "1 cm",
+        "1.5 cm",
+        "2 cm",
+        "2.5 cm",
+        "3 cm"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Volume of the cuboid = 22 × 14 × 6 = 1,848 cm³; base of the vessel = 22/7 × 14² = 616 cm²",
+          "Fall = 1,848 ÷ 616 = **3 cm**"
+        ],
+        "trap": "1.5 cm divides by 1,232 (using 2πr² as the base area); the base is a single circle, πr²."
+      },
+      "tags": [
+        "template:water-level",
+        "mensuration:cuboid",
+        "mensuration:cylinder",
+        "mensuration:3d"
+      ]
+    }
+  ]
+}
