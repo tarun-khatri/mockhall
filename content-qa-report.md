@@ -1,6 +1,6 @@
 # Content QA report
 
-Generated 2026-09-24 by `npm run qa`.
+Generated 2026-10-01 by `npm run qa`.
 
 Pipeline (SPEC 7.6): authored as JSON in batches → zod schema + near-duplicate (trigram > 0.85) + British-spelling checks
 (`scripts/validate-authored.ts`) → **blind solve** by a separate agent that sees no keys (`scripts/qa/export-blind.ts`),
@@ -10,35 +10,56 @@ Passing items are recorded with a content hash; editing an item afterwards un-ve
 
 | Chapter | Written | Passed | Rewritten | Dropped | Final (E/M/H/X) | Questions served |
 |---|---|---|---|---|---|---|
-| cloze | 15 passages | 15 | 0 | 0 | 15 (3/5/4/3) | 90 |
-| connectors | 60 items | 60 | 3 | 0 | 60 (12/20/16/12) | 60 |
-| error-spotting | 70 items | 70 | 0 | 0 | 70 (14/24/18/14) | 70 |
-| fillers | 70 items | 70 | 0 | 0 | 70 (14/24/18/14) | 70 |
-| grammar | 60 items | 60 | 1 | 0 | 60 (12/20/16/12) | 60 |
-| match-column | 60 items | 60 | 1 | 0 | 60 (12/20/16/12) | 60 |
-| para-filler | 60 items | 60 | 1 | 0 | 60 (12/20/16/12) | 60 |
-| para-jumbles | 15 sets | 15 | 0 | 0 | 15 (3/6/4/2) | 75 |
-| para-summary | 60 items | 60 | 0 | 0 | 60 (12/20/16/12) | 60 |
-| phrase-replacement | 60 items | 60 | 0 | 0 | 60 (12/20/16/12) | 60 |
-| reading-comprehension | 20 passages | 20 | 0 | 0 | 20 (4/8/6/2) | 200 |
-| word-swap | 60 items | 60 | 0 | 0 | 60 (12/20/16/12) | 60 |
-| word-usage | 60 items | 60 | 1 | 0 | 60 (12/20/16/12) | 60 |
-| cause-effect | 50 items | 50 | 0 | 0 | 50 (10/17/13/10) | 50 |
-| course-of-action | 50 items | 50 | 0 | 0 | 50 (10/17/13/10) | 50 |
-| statement-argument | 50 items | 50 | 0 | 0 | 50 (10/17/13/10) | 50 |
-| statement-assumption | 50 items | 50 | 2 | 0 | 50 (10/17/13/10) | 50 |
-| statement-conclusion | 50 items | 50 | 0 | 0 | 50 (10/17/13/10) | 50 |
+| cloze | 35 passages | 35 | 0 | 0 | 35 (5/13/11/6) | 210 |
+| connectors | 160 items | 160 | 7 | 0 | 160 (22/60/51/27) | 160 |
+| error-spotting | 200 items | 200 | 0 | 0 | 200 (27/76/63/34) | 200 |
+| fillers | 200 items | 200 | 1 | 0 | 200 (27/76/63/34) | 200 |
+| grammar | 160 items | 160 | 3 | 0 | 160 (22/60/51/27) | 160 |
+| match-column | 160 items | 160 | 2 | 0 | 160 (22/60/51/27) | 160 |
+| para-filler | 160 items | 160 | 1 | 0 | 160 (22/60/51/27) | 160 |
+| para-jumbles | 40 sets | 40 | 0 | 0 | 40 (5/16/13/6) | 200 |
+| para-summary | 160 items | 160 | 0 | 0 | 160 (22/60/51/27) | 160 |
+| phrase-replacement | 180 items | 180 | 0 | 0 | 180 (24/68/58/30) | 180 |
+| reading-comprehension | 34 passages | 34 | 1 | 0 | 34 (5/13/12/4) | 340 |
+| word-swap | 190 items | 190 | 0 | 0 | 190 (25/72/61/32) | 190 |
+| word-usage | 160 items | 160 | 1 | 0 | 160 (22/60/51/27) | 160 |
+| cause-effect | 143 items | 143 | 0 | 7 | 143 (18/54/46/25) | 143 |
+| course-of-action | 150 items | 150 | 2 | 0 | 150 (20/57/48/25) | 150 |
+| statement-argument | 150 items | 150 | 1 | 0 | 150 (20/57/48/25) | 150 |
+| statement-assumption | 150 items | 150 | 5 | 0 | 150 (20/57/48/25) | 150 |
+| statement-conclusion | 150 items | 150 | 0 | 0 | 150 (20/57/48/25) | 150 |
+| ages | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| averages | 100 items | 100 | 1 | 0 | 100 (10/40/35/15) | 100 |
+| boats-streams | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| interest | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| mensuration | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| mixtures | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| number-problems | 120 items | 120 | 1 | 0 | 120 (12/48/42/18) | 120 |
+| partnership | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| percentage | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| pipes-cisterns | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| profit-loss | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| ratio-proportion | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| speed-distance | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
+| time-work | 100 items | 100 | 0 | 0 | 100 (10/40/35/15) | 100 |
 
-Total authored questions served: **1235**.
+Total authored questions served: **4643**.
 
 ## Items that failed a blind solve at least once
 
-- **connectors**: cn-056, cn-057, cn-058
-- **grammar**: gr-060
-- **match-column**: mc-050
+- **connectors**: cn-056, cn-057, cn-058, cn-065, cn-070, cn-085, cn-091
+- **fillers**: fi-196
+- **grammar**: gr-060, gr-062, gr-157
+- **match-column**: mc-050, mc-124
 - **para-filler**: pf-032
+- **reading-comprehension**: rc-32
 - **word-usage**: wu-053
-- **statement-assumption**: sa-008, sa-031
+- **cause-effect**: ce-051, ce-053, ce-083, ce-086, ce-099, ce-102, ce-112
+- **course-of-action**: ca-060, ca-112
+- **statement-argument**: sg-149
+- **statement-assumption**: sa-008, sa-031, sa-117, sa-136, sa-144
+- **averages**: av-062
+- **number-problems**: np-054
 
 ## Generated English (hybrid)
 

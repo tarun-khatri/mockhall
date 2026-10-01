@@ -27,6 +27,20 @@ Live: https://tarun-khatri.github.io/mockhall/ (GitHub Pages via CI) · Vercel: 
 - Mains chapters: input–output, data sufficiency (generators); statement & conclusion / assumption / argument, course of
   action, cause & effect (50 each), para filler (60), para summary (60) — all blind-verified; quadratic; harder DI tiers.
 
+## Bank expansion — Oct 2026 (before IBPS Clerk prelims 10–11 Oct)
+- Authored questions served: 1,235 → **4,643**, every one blind-verified (content-qa-report.md). New items lean harder
+  (~10/40/35/15 E/M/H/X) and follow the 2024–26 papers (research/archetypes.md).
+- English: error spotting 200, fillers 200, word swap 190, phrase replacement 180, grammar/word usage/connectors/match
+  the column/para filler/para summary 160 each, RC 34 passages (340 Q), cloze 35 passages (210 Q), para jumbles 40 sets
+  (200 Q). New formats: incorrect-sentence, 3-word and fragment rearrangement, idiom meaning, connector fix, combine
+  sentences, RC in-passage blank.
+- Quant: hand-written exam-style banks (100 each, key computed by script and blind-solved) mixed into the 13 arithmetic
+  generator chapters (~40% of draws; subtype chip "Exam-style word problems"); new chapter **Problems on numbers &
+  equations** (120) in the arithmetic rotation.
+- Critical reasoning (mains): conclusion/assumption/argument/course of action 150 each, cause & effect 143.
+- Chapter practice and tests serve questions not yet attempted on the device first.
+- Tooling: scripts/authoring/{append,sample}.ts; docs/expansion-brief.md, docs/blind-solve-brief.md.
+
 ## Known limitations
 - General/Financial Awareness and Computer Aptitude (mains) are not covered — they need current-affairs content.
 - The quant "data sufficiency" and "quantity comparison" mains topics are filled with arithmetic/quadratic.
