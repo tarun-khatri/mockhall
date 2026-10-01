@@ -1,0 +1,5141 @@
+{
+  "chapter": "direction",
+  "version": 1,
+  "sets": [
+    {
+      "key": "dr-01",
+      "subtype": "point-set",
+      "difficulty": "easy",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint B is 6 m to the north of point A.\nPoint C is 8 m to the east of point B.\nPoint D is 4 m to the south of point C.\nPoint E is 5 m to the east of point D.\nPoint F is 12 m to the south of point E.\nPoint G is 3 m to the west of point A.",
+      "questions": [
+        {
+          "key": "dr-01-q1",
+          "subtype": "point-set",
+          "prompt": "In which direction is point F with respect to point G?",
+          "options": [
+            "North-west",
+            "East",
+            "South-east",
+            "South",
+            "South-west"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point G as (0, 0), east = +x, north = +y.",
+              "A = (3, 0), B = (3, 6), C = (11, 6), D = (11, 2), E = (16, 2), F = (16, -10)",
+              "F is 10 m south and 16 m east of G → **South-east**."
+            ],
+            "shortcut": "Only the signs matter for direction: net north/south and net east/west of the reference point.",
+            "trap": "Both offsets are non-zero, so it is South-east — not East.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "G"
+                },
+                {
+                  "x": 3,
+                  "y": 0,
+                  "label": "A"
+                },
+                {
+                  "x": 3,
+                  "y": 6,
+                  "label": "B"
+                },
+                {
+                  "x": 11,
+                  "y": 6,
+                  "label": "C"
+                },
+                {
+                  "x": 11,
+                  "y": 2,
+                  "label": "D"
+                },
+                {
+                  "x": 16,
+                  "y": 2,
+                  "label": "E"
+                },
+                {
+                  "x": 16,
+                  "y": -10,
+                  "label": "F"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "G",
+                "to": "F",
+                "label": "2√89 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-01-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point D and point F?",
+          "options": [
+            "13 m",
+            "$6\\sqrt{5}$ m",
+            "$\\sqrt{194}$ m",
+            "14 m",
+            "17 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point F as (0, 0), east = +x, north = +y.",
+              "E = (0, 12), D = (-5, 12)",
+              "Horizontal gap = 5 m, vertical gap = 12 m.",
+              "Shortest distance = $\\sqrt{5^2 + 12^2} = \\sqrt{169}$ = 13 m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (17 m) or walking the route (17 m) gives a longer distance — the shortest is the straight line.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "F"
+                },
+                {
+                  "x": 0,
+                  "y": 12,
+                  "label": "E"
+                },
+                {
+                  "x": -5,
+                  "y": 12,
+                  "label": "D"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "F",
+                "to": "D",
+                "label": "13 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-01-q3",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point C from point A?",
+          "options": [
+            "10 m, South-west",
+            "14 m, North-east",
+            "10 m, North-east",
+            "10 m, East",
+            "14 m, South-west"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point A as (0, 0), east = +x, north = +y.",
+              "B = (0, 6), C = (8, 6)",
+              "C is 6 m north and 8 m east of A → direction **North-east**.",
+              "Shortest distance = $\\sqrt{8^2 + 6^2} = \\sqrt{100}$ = 10 m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "South-west is the direction of A from C (the reverse); 14 m adds the gaps and 14 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-01-q4",
+          "subtype": "point-set",
+          "prompt": "A person starts from point G and walks to point D along the given lines, passing through points A, B, C. What is the total distance walked?",
+          "options": [
+            "13 m",
+            "15 m",
+            "17 m",
+            "18 m",
+            "21 m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "G → A: 3 m",
+              "A → B: 6 m",
+              "B → C: 8 m",
+              "C → D: 4 m",
+              "Total = 3 + 6 + 8 + 4 = **21 m**."
+            ],
+            "shortcut": "Read each leg straight from its clue and add — no coordinates needed.",
+            "trap": "The net gaps between G and D add to only 13 m; the walk follows every leg."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:route-length"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-02",
+      "subtype": "point-set",
+      "difficulty": "medium",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint Q is 9 m to the east of point P.\nPoint R is 12 m to the north of point Q.\nPoint S is 5 m to the west of point R.\nPoint T is 7 m to the north of point S.\nPoint U is 15 m to the west of point T.\nPoint V is 4 m to the south of point U.\nPoint W is 6 m to the west of point P.",
+      "questions": [
+        {
+          "key": "dr-02-q1",
+          "subtype": "point-set",
+          "prompt": "In which direction is point P with respect to point U?",
+          "options": [
+            "North-west",
+            "South",
+            "East",
+            "South-east",
+            "South-west"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point U as (0, 0), east = +x, north = +y.",
+              "T = (15, 0), S = (15, -7), R = (20, -7), Q = (20, -19), P = (11, -19)",
+              "P is 19 m south and 11 m east of U → **South-east**."
+            ],
+            "shortcut": "Only the signs matter for direction: net north/south and net east/west of the reference point.",
+            "trap": "Both offsets are non-zero, so it is South-east — not South.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "U"
+                },
+                {
+                  "x": 15,
+                  "y": 0,
+                  "label": "T"
+                },
+                {
+                  "x": 15,
+                  "y": -7,
+                  "label": "S"
+                },
+                {
+                  "x": 20,
+                  "y": -7,
+                  "label": "R"
+                },
+                {
+                  "x": 20,
+                  "y": -19,
+                  "label": "Q"
+                },
+                {
+                  "x": 11,
+                  "y": -19,
+                  "label": "P"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "U",
+                "to": "P",
+                "label": "√482 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-02-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point Q and point V?",
+          "options": [
+            "23 m",
+            "24 m",
+            "$\\sqrt{586}$ m",
+            "$2\\sqrt{149}$ m",
+            "25 m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point V as (0, 0), east = +x, north = +y.",
+              "U = (0, 4), T = (15, 4), S = (15, -3), R = (20, -3), Q = (20, -15)",
+              "Horizontal gap = 20 m, vertical gap = 15 m.",
+              "Shortest distance = $\\sqrt{20^2 + 15^2} = \\sqrt{625}$ = 25 m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (35 m) or walking the route (43 m) gives a longer distance — the shortest is the straight line.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "V"
+                },
+                {
+                  "x": 0,
+                  "y": 4,
+                  "label": "U"
+                },
+                {
+                  "x": 15,
+                  "y": 4,
+                  "label": "T"
+                },
+                {
+                  "x": 15,
+                  "y": -3,
+                  "label": "S"
+                },
+                {
+                  "x": 20,
+                  "y": -3,
+                  "label": "R"
+                },
+                {
+                  "x": 20,
+                  "y": -15,
+                  "label": "Q"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "V",
+                "to": "Q",
+                "label": "25 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-02-q3",
+          "subtype": "point-set",
+          "prompt": "Four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
+          "options": [
+            "W, Q",
+            "U, R",
+            "V, Q",
+            "V, S",
+            "V, W"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Coordinates (taking Q as (0, 0)): R = (0, 12), S = (-5, 12), U = (-20, 19), V = (-20, 15), W = (-15, 0).",
+              "W w.r.t. Q: 15 m west → West",
+              "U w.r.t. R: 7 m north and 20 m west → North-west",
+              "V w.r.t. Q: 15 m north and 20 m west → North-west",
+              "V w.r.t. S: 3 m north and 15 m west → North-west",
+              "V w.r.t. W: 15 m north and 5 m west → North-west",
+              "Four pairs are North-west; **W, Q** is West."
+            ],
+            "shortcut": "Fix coordinates once; then each pair needs only the signs of Δx and Δy.",
+            "trap": "W, Q looks like the others, but W is exactly on the east–west line of Q — it is West, not North-west."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:odd-pair"
+          ]
+        },
+        {
+          "key": "dr-02-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 12 m to the east of point V, what is the shortest distance between point Z and point Q?",
+          "options": [
+            "14 m",
+            "15 m",
+            "16 m",
+            "$\\sqrt{274}$ m",
+            "17 m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point Q as (0, 0), east = +x, north = +y.",
+              "R = (0, 12), S = (-5, 12), T = (-5, 19), U = (-20, 19), V = (-20, 15)",
+              "Z = V + 12 m east = (-8, 15)",
+              "Shortest distance = $\\sqrt{8^2 + 15^2} = \\sqrt{289}$ = 17 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from V — the extra 12 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-03",
+      "subtype": "point-set",
+      "difficulty": "medium",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint H is 8 m to the south of point D.\nPoint K is 6 m to the east of point H and 8 m to the north of point M.\nPoint R is 10 m to the west of point M.\nPoint T is 5 m to the north of point R.\nPoint V is 15 m to the east of point K.",
+      "questions": [
+        {
+          "key": "dr-03-q1",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the south-east of point T?",
+          "options": [
+            "M",
+            "D",
+            "H",
+            "R",
+            "V"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point T as (0, 0), east = +x, north = +y.",
+              "D = (4, 11), H = (4, 3), M = (10, -5), R = (0, -5), V = (25, 3)",
+              "M: 5 m south and 10 m east of T → South-east",
+              "D: 11 m north and 4 m east of T → North-east",
+              "H: 3 m north and 4 m east of T → North-east",
+              "R: 5 m south of T → South",
+              "V: 3 m north and 25 m east of T → North-east",
+              "Only **M** is South-east of T."
+            ],
+            "shortcut": "South-east needs both signs right: south (−y) and east (+x) of T.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-03-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point H and point T?",
+          "options": [
+            "5 m",
+            "$4\\sqrt{2}$ m",
+            "$\\sqrt{34}$ m",
+            "7 m",
+            "29 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point T as (0, 0), east = +x, north = +y.",
+              "R = (0, -5), M = (10, -5), K = (10, 3), H = (4, 3)",
+              "Horizontal gap = 4 m, vertical gap = 3 m.",
+              "Shortest distance = $\\sqrt{4^2 + 3^2} = \\sqrt{25}$ = 5 m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (7 m) or walking the route (29 m) gives a longer distance — the shortest is the straight line.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "T"
+                },
+                {
+                  "x": 0,
+                  "y": -5,
+                  "label": "R"
+                },
+                {
+                  "x": 10,
+                  "y": -5,
+                  "label": "M"
+                },
+                {
+                  "x": 10,
+                  "y": 3,
+                  "label": "K"
+                },
+                {
+                  "x": 4,
+                  "y": 3,
+                  "label": "H"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "T",
+                "to": "H",
+                "label": "5 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-03-q3",
+          "subtype": "point-set",
+          "prompt": "A person starts from point T and walks to point V along the given lines, passing through points R, M, K. What is the total distance walked?",
+          "options": [
+            "38 m",
+            "40 m",
+            "41 m",
+            "42 m",
+            "48 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "T → R: 5 m",
+              "R → M: 10 m",
+              "M → K: 8 m",
+              "K → V: 15 m",
+              "Total = 5 + 10 + 8 + 15 = **38 m**."
+            ],
+            "shortcut": "Read each leg straight from its clue and add — no coordinates needed.",
+            "trap": "The net gaps between T and V add to only 28 m; the walk follows every leg."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:route-length"
+          ]
+        },
+        {
+          "key": "dr-03-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 6 m to the west of point D, what is the shortest distance between point Z and point M?",
+          "options": [
+            "$2\\sqrt{73}$ m",
+            "$\\sqrt{377}$ m",
+            "20 m",
+            "$5\\sqrt{17}$ m",
+            "28 m"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point M as (0, 0), east = +x, north = +y.",
+              "K = (0, 8), H = (-6, 8), D = (-6, 16)",
+              "Z = D + 6 m west = (-12, 16)",
+              "Shortest distance = $\\sqrt{12^2 + 16^2} = \\sqrt{400}$ = 20 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from D — the extra 6 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-04",
+      "subtype": "point-set",
+      "difficulty": "medium",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint C is 7 m to the north of point B.\nPoint F is 24 m to the east of point C.\nPoint G is 10 m to the south of point F.\nPoint J is 8 m to the west of point G.\nPoint L is 6 m to the south of point J.\nPoint N is 12 m to the west of point L.\nPoint S is 3 m to the north of point N.",
+      "questions": [
+        {
+          "key": "dr-04-q1",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point G from point C?",
+          "options": [
+            "26 m, North-west",
+            "34 m, South-east",
+            "26 m, East",
+            "26 m, South-east",
+            "34 m, North-west"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point C as (0, 0), east = +x, north = +y.",
+              "F = (24, 0), G = (24, -10)",
+              "G is 10 m south and 24 m east of C → direction **South-east**.",
+              "Shortest distance = $\\sqrt{24^2 + 10^2} = \\sqrt{676}$ = 26 m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "North-west is the direction of C from G (the reverse); 34 m adds the gaps and 34 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-04-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point L and point C?",
+          "options": [
+            "$16\\sqrt{2}$ m",
+            "$\\sqrt{545}$ m",
+            "$17\\sqrt{2}$ m",
+            "32 m",
+            "48 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point C as (0, 0), east = +x, north = +y.",
+              "F = (24, 0), G = (24, -10), J = (16, -10), L = (16, -16)",
+              "Horizontal gap = 16 m, vertical gap = 16 m.",
+              "Shortest distance = $\\sqrt{16^2 + 16^2} = \\sqrt{512}$ = $16\\sqrt{2}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (32 m) or walking the route (48 m) gives a longer distance — the shortest is the straight line.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "C"
+                },
+                {
+                  "x": 24,
+                  "y": 0,
+                  "label": "F"
+                },
+                {
+                  "x": 24,
+                  "y": -10,
+                  "label": "G"
+                },
+                {
+                  "x": 16,
+                  "y": -10,
+                  "label": "J"
+                },
+                {
+                  "x": 16,
+                  "y": -16,
+                  "label": "L"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "C",
+                "to": "L",
+                "label": "16√2 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-04-q3",
+          "subtype": "point-set",
+          "prompt": "A person starts from point C and walks to point S along the given lines, passing through points F, G, J, L, N. What is the total distance walked?",
+          "options": [
+            "39 m",
+            "60 m",
+            "63 m",
+            "65 m",
+            "73 m"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "C → F: 24 m",
+              "F → G: 10 m",
+              "G → J: 8 m",
+              "J → L: 6 m",
+              "L → N: 12 m",
+              "N → S: 3 m",
+              "Total = 24 + 10 + 8 + 6 + 12 + 3 = **63 m**."
+            ],
+            "shortcut": "Read each leg straight from its clue and add — no coordinates needed.",
+            "trap": "The net gaps between C and S add to only 17 m; the walk follows every leg."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:route-length"
+          ]
+        },
+        {
+          "key": "dr-04-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 5 m to the south of point N, what is the shortest distance between point Z and point F?",
+          "options": [
+            "$4\\sqrt{41}$ m",
+            "$\\sqrt{802}$ m",
+            "29 m",
+            "$21\\sqrt{2}$ m",
+            "41 m"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point F as (0, 0), east = +x, north = +y.",
+              "G = (0, -10), J = (-8, -10), L = (-8, -16), N = (-20, -16)",
+              "Z = N + 5 m south = (-20, -21)",
+              "Shortest distance = $\\sqrt{20^2 + 21^2} = \\sqrt{841}$ = 29 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from N — the extra 5 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-05",
+      "subtype": "point-set",
+      "difficulty": "medium",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint F is 5 m to the west of point E.\nPoint I is 12 m to the south of point F.\nPoint L is 9 m to the east of point I.\nPoint P is 4 m to the south of point L and 10 m to the west of point U.\nPoint W is 6 m to the north of point U.\nPoint G is 8 m to the south of point E.",
+      "questions": [
+        {
+          "key": "dr-05-q1",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point I from point E?",
+          "options": [
+            "13 m, North-east",
+            "13 m, South-west",
+            "17 m, South-west",
+            "13 m, South",
+            "17 m, North-east"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point E as (0, 0), east = +x, north = +y.",
+              "F = (-5, 0), I = (-5, -12)",
+              "I is 12 m south and 5 m west of E → direction **South-west**.",
+              "Shortest distance = $\\sqrt{5^2 + 12^2} = \\sqrt{169}$ = 13 m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "North-east is the direction of E from I (the reverse); 17 m adds the gaps and 17 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-05-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point F and point L?",
+          "options": [
+            "13 m",
+            "14 m",
+            "$\\sqrt{202}$ m",
+            "$4\\sqrt{13}$ m",
+            "15 m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point L as (0, 0), east = +x, north = +y.",
+              "I = (-9, 0), F = (-9, 12)",
+              "Horizontal gap = 9 m, vertical gap = 12 m.",
+              "Shortest distance = $\\sqrt{9^2 + 12^2} = \\sqrt{225}$ = 15 m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (21 m) or walking the route (21 m) gives a longer distance — the shortest is the straight line.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "L"
+                },
+                {
+                  "x": -9,
+                  "y": 0,
+                  "label": "I"
+                },
+                {
+                  "x": -9,
+                  "y": 12,
+                  "label": "F"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "L",
+                "to": "F",
+                "label": "15 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-05-q3",
+          "subtype": "point-set",
+          "prompt": "Four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
+          "options": [
+            "P, I",
+            "P, G",
+            "W, E",
+            "W, F",
+            "W, L"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Coordinates (taking E as (0, 0)): F = (-5, 0), G = (0, -8), I = (-5, -12), L = (4, -12), P = (4, -16), W = (14, -10).",
+              "P w.r.t. I: 4 m south and 9 m east → South-east",
+              "P w.r.t. G: 8 m south and 4 m east → South-east",
+              "W w.r.t. E: 10 m south and 14 m east → South-east",
+              "W w.r.t. F: 10 m south and 19 m east → South-east",
+              "W w.r.t. L: 2 m north and 10 m east → North-east",
+              "Four pairs are South-east; **W, L** is North-east."
+            ],
+            "shortcut": "Fix coordinates once; then each pair needs only the signs of Δx and Δy.",
+            "trap": "W, L is the near miss: one offset is small (2 m) and goes the other way, so it is North-east, not South-east."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:odd-pair"
+          ]
+        },
+        {
+          "key": "dr-05-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 11 m to the east of point E, what is the shortest distance between point Z and point I?",
+          "options": [
+            "20 m",
+            "$5\\sqrt{17}$ m",
+            "$\\sqrt{433}$ m",
+            "21 m",
+            "28 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point I as (0, 0), east = +x, north = +y.",
+              "F = (0, 12), E = (5, 12)",
+              "Z = E + 11 m east = (16, 12)",
+              "Shortest distance = $\\sqrt{16^2 + 12^2} = \\sqrt{400}$ = 20 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from E — the extra 11 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-06",
+      "subtype": "point-set",
+      "difficulty": "medium",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint J is 10 m to the north of point H.\nPoint M is 6 m to the west of point J.\nPoint Q is 8 m to the north of point M.\nPoint R is 15 m to the east of point Q.\nPoint T is 20 m to the south of point R.\nPoint V is 7 m to the west of point T.\nPoint K is 4 m to the south of point H.",
+      "questions": [
+        {
+          "key": "dr-06-q1",
+          "subtype": "point-set",
+          "prompt": "If point Z is 15 m to the north of point V, in which direction is point Z with respect to point J?",
+          "options": [
+            "South-west",
+            "North",
+            "East",
+            "North-west",
+            "North-east"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point J as (0, 0), east = +x, north = +y.",
+              "M = (-6, 0), Q = (-6, 8), R = (9, 8), T = (9, -12), V = (2, -12)",
+              "Z = V + 15 m north = (2, 3)",
+              "Z is 3 m north and 2 m east of J → **North-east**."
+            ],
+            "shortcut": "Shift the known point by the new clue, then read only the signs of the two offsets.",
+            "trap": "Both offsets are non-zero, so it is North-east, not North."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-06-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point J and point T?",
+          "options": [
+            "14 m",
+            "$\\sqrt{202}$ m",
+            "$4\\sqrt{13}$ m",
+            "15 m",
+            "21 m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point T as (0, 0), east = +x, north = +y.",
+              "R = (0, 20), Q = (-15, 20), M = (-15, 12), J = (-9, 12)",
+              "Horizontal gap = 9 m, vertical gap = 12 m.",
+              "Shortest distance = $\\sqrt{9^2 + 12^2} = \\sqrt{225}$ = 15 m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (21 m) or walking the route (49 m) gives a longer distance — the shortest is the straight line.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "T"
+                },
+                {
+                  "x": 0,
+                  "y": 20,
+                  "label": "R"
+                },
+                {
+                  "x": -15,
+                  "y": 20,
+                  "label": "Q"
+                },
+                {
+                  "x": -15,
+                  "y": 12,
+                  "label": "M"
+                },
+                {
+                  "x": -9,
+                  "y": 12,
+                  "label": "J"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "T",
+                "to": "J",
+                "label": "15 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-06-q3",
+          "subtype": "point-set",
+          "prompt": "A person starts from point K and walks to point R along the given lines, passing through points H, J, M, Q. What is the total distance walked?",
+          "options": [
+            "28 m",
+            "43 m",
+            "45 m",
+            "46 m",
+            "53 m"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "K → H: 4 m",
+              "H → J: 10 m",
+              "J → M: 6 m",
+              "M → Q: 8 m",
+              "Q → R: 15 m",
+              "Total = 4 + 10 + 6 + 8 + 15 = **43 m**."
+            ],
+            "shortcut": "Read each leg straight from its clue and add — no coordinates needed.",
+            "trap": "The net gaps between K and R add to only 31 m; the walk follows every leg."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:route-length"
+          ]
+        },
+        {
+          "key": "dr-06-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 6 m to the east of point T, what is the shortest distance between point Z and point Q?",
+          "options": [
+            "25 m",
+            "28 m",
+            "$20\\sqrt{2}$ m",
+            "29 m",
+            "41 m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point Q as (0, 0), east = +x, north = +y.",
+              "R = (15, 0), T = (15, -20)",
+              "Z = T + 6 m east = (21, -20)",
+              "Shortest distance = $\\sqrt{21^2 + 20^2} = \\sqrt{841}$ = 29 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from T — the extra 6 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-07",
+      "subtype": "point-set",
+      "difficulty": "medium",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint D is 12 m to the west of point A.\nPoint G is 5 m to the south of point D.\nPoint L is 16 m to the east of point G.\nPoint N is 9 m to the south of point L.\nPoint P is 3 m to the west of point N and 14 m to the north of point S.\nPoint U is 8 m to the east of point A.",
+      "questions": [
+        {
+          "key": "dr-07-q1",
+          "subtype": "point-set",
+          "prompt": "In which direction is point S with respect to point A?",
+          "options": [
+            "North-west",
+            "South",
+            "East",
+            "South-east",
+            "South-west"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point A as (0, 0), east = +x, north = +y.",
+              "D = (-12, 0), G = (-12, -5), L = (4, -5), N = (4, -14), P = (1, -14), S = (1, -28)",
+              "S is 28 m south and 1 m east of A → **South-east**."
+            ],
+            "shortcut": "Only the signs matter for direction: net north/south and net east/west of the reference point.",
+            "trap": "The east–west offset is only 1 m, but it is not zero — so the direction is South-east, not South.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "A"
+                },
+                {
+                  "x": -12,
+                  "y": 0,
+                  "label": "D"
+                },
+                {
+                  "x": -12,
+                  "y": -5,
+                  "label": "G"
+                },
+                {
+                  "x": 4,
+                  "y": -5,
+                  "label": "L"
+                },
+                {
+                  "x": 4,
+                  "y": -14,
+                  "label": "N"
+                },
+                {
+                  "x": 1,
+                  "y": -14,
+                  "label": "P"
+                },
+                {
+                  "x": 1,
+                  "y": -28,
+                  "label": "S"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "A",
+                "to": "S",
+                "label": "√785 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-07-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point G and point P?",
+          "options": [
+            "15 m",
+            "$\\sqrt{233}$ m",
+            "$5\\sqrt{10}$ m",
+            "$\\sqrt{277}$ m",
+            "22 m"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point P as (0, 0), east = +x, north = +y.",
+              "N = (3, 0), L = (3, 9), G = (-13, 9)",
+              "Horizontal gap = 13 m, vertical gap = 9 m.",
+              "Shortest distance = $\\sqrt{13^2 + 9^2} = \\sqrt{250}$ = $5\\sqrt{10}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (22 m) or walking the route (28 m) gives a longer distance — the shortest is the straight line.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "P"
+                },
+                {
+                  "x": 3,
+                  "y": 0,
+                  "label": "N"
+                },
+                {
+                  "x": 3,
+                  "y": 9,
+                  "label": "L"
+                },
+                {
+                  "x": -13,
+                  "y": 9,
+                  "label": "G"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "P",
+                "to": "G",
+                "label": "5√10 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-07-q3",
+          "subtype": "point-set",
+          "prompt": "A person starts from point D and walks to point S along the given lines, passing through points G, L, N, P. What is the total distance walked?",
+          "options": [
+            "33 m",
+            "47 m",
+            "49 m",
+            "50 m",
+            "63 m"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "D → G: 5 m",
+              "G → L: 16 m",
+              "L → N: 9 m",
+              "N → P: 3 m",
+              "P → S: 14 m",
+              "Total = 5 + 16 + 9 + 3 + 14 = **47 m**."
+            ],
+            "shortcut": "Read each leg straight from its clue and add — no coordinates needed.",
+            "trap": "The net gaps between D and S add to only 41 m; the walk follows every leg."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:route-length"
+          ]
+        },
+        {
+          "key": "dr-07-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 2 m to the south of point D, what is the shortest distance between point Z and point N?",
+          "options": [
+            "17 m",
+            "18 m",
+            "19 m",
+            "$3\\sqrt{41}$ m",
+            "20 m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point N as (0, 0), east = +x, north = +y.",
+              "L = (0, 9), G = (-16, 9), D = (-16, 14)",
+              "Z = D + 2 m south = (-16, 12)",
+              "Shortest distance = $\\sqrt{16^2 + 12^2} = \\sqrt{400}$ = 20 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from D — the extra 2 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-08",
+      "subtype": "point-set",
+      "difficulty": "hard",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint K is 6 m to the south of point H.\nPoint T is 4 m to the west of point Q.\nPoint E is 14 m to the north of point B and 9 m to the west of point H.\nPoint M is 11 m to the north of point Q.\nPoint W is 3 m to the south of point B.\nPoint M is 17 m to the east of point K.",
+      "questions": [
+        {
+          "key": "dr-08-q1",
+          "subtype": "point-set",
+          "prompt": "In which direction is point T with respect to point W?",
+          "options": [
+            "West",
+            "East",
+            "South-east",
+            "North-east",
+            "South"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point W as (0, 0), east = +x, north = +y.",
+              "B = (0, 3), E = (0, 17), H = (9, 17), K = (9, 11), M = (26, 11), Q = (26, 0), T = (22, 0)",
+              "T is 22 m east of W → **East**."
+            ],
+            "shortcut": "Only the signs matter for direction: net north/south and net east/west of the reference point.",
+            "trap": "T is on the same east–west line as W, so the answer is East, not a corner direction.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "W"
+                },
+                {
+                  "x": 0,
+                  "y": 3,
+                  "label": "B"
+                },
+                {
+                  "x": 0,
+                  "y": 17,
+                  "label": "E"
+                },
+                {
+                  "x": 9,
+                  "y": 17,
+                  "label": "H"
+                },
+                {
+                  "x": 9,
+                  "y": 11,
+                  "label": "K"
+                },
+                {
+                  "x": 26,
+                  "y": 11,
+                  "label": "M"
+                },
+                {
+                  "x": 26,
+                  "y": 0,
+                  "label": "Q"
+                },
+                {
+                  "x": 22,
+                  "y": 0,
+                  "label": "T"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "W",
+                "to": "T",
+                "label": "22 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-08-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point E and point T?",
+          "options": [
+            "$\\sqrt{740}$ m",
+            "$\\sqrt{772}$ m",
+            "$\\sqrt{773}$ m",
+            "$\\sqrt{774}$ m",
+            "39 m"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point T as (0, 0), east = +x, north = +y.",
+              "Q = (4, 0), M = (4, 11), K = (-13, 11), H = (-13, 17), E = (-22, 17)",
+              "Horizontal gap = 22 m, vertical gap = 17 m.",
+              "Shortest distance = $\\sqrt{22^2 + 17^2} = \\sqrt{773}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (39 m) or walking the route (47 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 22² + 17² is exactly 773.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "T"
+                },
+                {
+                  "x": 4,
+                  "y": 0,
+                  "label": "Q"
+                },
+                {
+                  "x": 4,
+                  "y": 11,
+                  "label": "M"
+                },
+                {
+                  "x": -13,
+                  "y": 11,
+                  "label": "K"
+                },
+                {
+                  "x": -13,
+                  "y": 17,
+                  "label": "H"
+                },
+                {
+                  "x": -22,
+                  "y": 17,
+                  "label": "E"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "T",
+                "to": "E",
+                "label": "√773 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-08-q3",
+          "subtype": "point-set",
+          "prompt": "Four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
+          "options": [
+            "Q, B",
+            "H, B",
+            "K, B",
+            "M, B",
+            "M, T"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Coordinates (taking B as (0, 0)): H = (9, 14), K = (9, 8), M = (26, 8), Q = (26, -3), T = (22, -3).",
+              "Q w.r.t. B: 3 m south and 26 m east → South-east",
+              "H w.r.t. B: 14 m north and 9 m east → North-east",
+              "K w.r.t. B: 8 m north and 9 m east → North-east",
+              "M w.r.t. B: 8 m north and 26 m east → North-east",
+              "M w.r.t. T: 11 m north and 4 m east → North-east",
+              "Four pairs are North-east; **Q, B** is South-east."
+            ],
+            "shortcut": "Fix coordinates once; then each pair needs only the signs of Δx and Δy.",
+            "trap": "Q, B is the near miss: one offset is small (3 m) and goes the other way, so it is South-east, not North-east."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:odd-pair"
+          ]
+        },
+        {
+          "key": "dr-08-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 8 m to the north of point T, what is the shortest distance between point Z and point B?",
+          "options": [
+            "$\\sqrt{493}$ m",
+            "$\\sqrt{500}$ m",
+            "$\\sqrt{507}$ m",
+            "$\\sqrt{508}$ m",
+            "$\\sqrt{509}$ m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point B as (0, 0), east = +x, north = +y.",
+              "E = (0, 14), H = (9, 14), K = (9, 8), M = (26, 8), Q = (26, -3), T = (22, -3)",
+              "Z = T + 8 m north = (22, 5)",
+              "Shortest distance = $\\sqrt{22^2 + 5^2} = \\sqrt{509}$ m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from T — the extra 8 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-09",
+      "subtype": "point-set",
+      "difficulty": "hard",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint N is 9 m to the west of point L.\nPoint D is 7 m to the west of point C.\nPoint V is 6 m to the north of point S.\nPoint J is 18 m to the east of point F and 5 m to the north of point L.\nPoint R is 16 m to the south of point N.\nPoint F is 13 m to the north of point D.\nPoint S is 10 m to the east of point R.",
+      "questions": [
+        {
+          "key": "dr-09-q1",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the north-east of point R?",
+          "options": [
+            "N",
+            "S",
+            "V",
+            "C",
+            "D"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point R as (0, 0), east = +x, north = +y.",
+              "C = (-2, 8), D = (-9, 8), N = (0, 16), S = (10, 0), V = (10, 6)",
+              "N: 16 m north of R → North",
+              "S: 10 m east of R → East",
+              "V: 6 m north and 10 m east of R → North-east",
+              "C: 8 m north and 2 m west of R → North-west",
+              "D: 8 m north and 9 m west of R → North-west",
+              "Only **V** is North-east of R."
+            ],
+            "shortcut": "North-east needs both signs right: north (+y) and east (+x) of R.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-09-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point F and point S?",
+          "options": [
+            "$\\sqrt{802}$ m",
+            "$\\sqrt{803}$ m",
+            "29 m",
+            "40 m",
+            "58 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point S as (0, 0), east = +x, north = +y.",
+              "R = (-10, 0), N = (-10, 16), L = (-1, 16), J = (-1, 21), F = (-19, 21)",
+              "Horizontal gap = 19 m, vertical gap = 21 m.",
+              "Shortest distance = $\\sqrt{19^2 + 21^2} = \\sqrt{802}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (40 m) or walking the route (58 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 19² + 21² is exactly 802.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "S"
+                },
+                {
+                  "x": -10,
+                  "y": 0,
+                  "label": "R"
+                },
+                {
+                  "x": -10,
+                  "y": 16,
+                  "label": "N"
+                },
+                {
+                  "x": -1,
+                  "y": 16,
+                  "label": "L"
+                },
+                {
+                  "x": -1,
+                  "y": 21,
+                  "label": "J"
+                },
+                {
+                  "x": -19,
+                  "y": 21,
+                  "label": "F"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "S",
+                "to": "F",
+                "label": "√802 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-09-q3",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point V from point N?",
+          "options": [
+            "$10\\sqrt{2}$ m, North-west",
+            "20 m, South-east",
+            "$10\\sqrt{2}$ m, South-east",
+            "$10\\sqrt{2}$ m, East",
+            "32 m, South-east"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point N as (0, 0), east = +x, north = +y.",
+              "R = (0, -16), S = (10, -16), V = (10, -10)",
+              "V is 10 m south and 10 m east of N → direction **South-east**.",
+              "Shortest distance = $\\sqrt{10^2 + 10^2} = \\sqrt{200}$ = $10\\sqrt{2}$ m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "North-west is the direction of N from V (the reverse); 20 m adds the gaps and 32 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-09-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 12 m to the east of point D, what is the shortest distance between point Z and point J?",
+          "options": [
+            "$\\sqrt{180}$ m",
+            "$\\sqrt{203}$ m",
+            "$\\sqrt{204}$ m",
+            "$\\sqrt{205}$ m",
+            "$\\sqrt{206}$ m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point J as (0, 0), east = +x, north = +y.",
+              "F = (-18, 0), D = (-18, -13)",
+              "Z = D + 12 m east = (-6, -13)",
+              "Shortest distance = $\\sqrt{6^2 + 13^2} = \\sqrt{205}$ m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from D — the extra 12 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-10",
+      "subtype": "point-set",
+      "difficulty": "hard",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint K is 15 m to the north of point I and 21 m to the east of point M.\nPoint T is 6 m to the east of point A.\nPoint G is 20 m to the south of point A.\nPoint P is 12 m to the north of point M.\nPoint I is 8 m to the west of point G.\nPoint X is 7 m to the south of point T.",
+      "questions": [
+        {
+          "key": "dr-10-q1",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point P from point A?",
+          "options": [
+            "$\\sqrt{890}$ m, South-east",
+            "36 m, North-west",
+            "$\\sqrt{890}$ m, North-west",
+            "$\\sqrt{890}$ m, West",
+            "76 m, North-west"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point A as (0, 0), east = +x, north = +y.",
+              "G = (0, -20), I = (-8, -20), K = (-8, -5), M = (-29, -5), P = (-29, 7)",
+              "P is 7 m north and 29 m west of A → direction **North-west**.",
+              "Shortest distance = $\\sqrt{29^2 + 7^2} = \\sqrt{890}$ m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "South-east is the direction of A from P (the reverse); 36 m adds the gaps and 76 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-10-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point I and point X?",
+          "options": [
+            "$\\sqrt{365}$ m",
+            "$\\sqrt{366}$ m",
+            "$\\sqrt{394}$ m",
+            "27 m",
+            "41 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point X as (0, 0), east = +x, north = +y.",
+              "T = (0, 7), A = (-6, 7), G = (-6, -13), I = (-14, -13)",
+              "Horizontal gap = 14 m, vertical gap = 13 m.",
+              "Shortest distance = $\\sqrt{14^2 + 13^2} = \\sqrt{365}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (27 m) or walking the route (41 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 14² + 13² is exactly 365.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "X"
+                },
+                {
+                  "x": 0,
+                  "y": 7,
+                  "label": "T"
+                },
+                {
+                  "x": -6,
+                  "y": 7,
+                  "label": "A"
+                },
+                {
+                  "x": -6,
+                  "y": -13,
+                  "label": "G"
+                },
+                {
+                  "x": -14,
+                  "y": -13,
+                  "label": "I"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "X",
+                "to": "I",
+                "label": "√365 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-10-q3",
+          "subtype": "point-set",
+          "prompt": "If point Z is 2 m to the north of point X, in which direction is point Z with respect to point M?",
+          "options": [
+            "West",
+            "South-east",
+            "North-east",
+            "East",
+            "South"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point M as (0, 0), east = +x, north = +y.",
+              "K = (21, 0), I = (21, -15), G = (29, -15), A = (29, 5), T = (35, 5), X = (35, -2)",
+              "Z = X + 2 m north = (35, 0)",
+              "Z is 35 m east of M → **East**."
+            ],
+            "shortcut": "Shift the known point by the new clue, then read only the signs of the two offsets.",
+            "trap": "Z lands exactly on the east–west line through M, so the answer is East, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-10-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 7 m to the east of point T, what is the shortest distance between point Z and point I?",
+          "options": [
+            "$2\\sqrt{149}$ m",
+            "28 m",
+            "$20\\sqrt{2}$ m",
+            "29 m",
+            "41 m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point I as (0, 0), east = +x, north = +y.",
+              "G = (8, 0), A = (8, 20), T = (14, 20)",
+              "Z = T + 7 m east = (21, 20)",
+              "Shortest distance = $\\sqrt{21^2 + 20^2} = \\sqrt{841}$ = 29 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from T — the extra 7 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-11",
+      "subtype": "point-set",
+      "difficulty": "hard",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint L is 22 m to the east of point J.\nPoint W is 5 m to the west of point U.\nPoint D is 9 m to the north of point B and 16 m to the east of point H.\nPoint Q is 3 m to the west of point S.\nPoint J is 4 m to the north of point H.\nPoint U is 17 m to the south of point S.\nPoint L is 12 m to the north of point Q.",
+      "questions": [
+        {
+          "key": "dr-11-q1",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point D from point Q?",
+          "options": [
+            "10 m, South-east",
+            "14 m, North-west",
+            "10 m, North-west",
+            "10 m, North",
+            "54 m, North-west"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point Q as (0, 0), east = +x, north = +y.",
+              "L = (0, 12), J = (-22, 12), H = (-22, 8), D = (-6, 8)",
+              "D is 8 m north and 6 m west of Q → direction **North-west**.",
+              "Shortest distance = $\\sqrt{6^2 + 8^2} = \\sqrt{100}$ = 10 m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "South-east is the direction of Q from D (the reverse); 14 m adds the gaps and 54 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-11-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point H and point W?",
+          "options": [
+            "$3\\sqrt{41}$ m",
+            "$4\\sqrt{41}$ m",
+            "$4\\sqrt{61}$ m",
+            "$\\sqrt{986}$ m",
+            "$5\\sqrt{41}$ m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point W as (0, 0), east = +x, north = +y.",
+              "U = (5, 0), S = (5, 17), Q = (2, 17), L = (2, 29), J = (-20, 29), H = (-20, 25)",
+              "Horizontal gap = 20 m, vertical gap = 25 m.",
+              "Shortest distance = $\\sqrt{20^2 + 25^2} = \\sqrt{1025}$ = $5\\sqrt{41}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (45 m) or walking the route (63 m) gives a longer distance — the shortest is the straight line.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "W"
+                },
+                {
+                  "x": 5,
+                  "y": 0,
+                  "label": "U"
+                },
+                {
+                  "x": 5,
+                  "y": 17,
+                  "label": "S"
+                },
+                {
+                  "x": 2,
+                  "y": 17,
+                  "label": "Q"
+                },
+                {
+                  "x": 2,
+                  "y": 29,
+                  "label": "L"
+                },
+                {
+                  "x": -20,
+                  "y": 29,
+                  "label": "J"
+                },
+                {
+                  "x": -20,
+                  "y": 25,
+                  "label": "H"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "W",
+                "to": "H",
+                "label": "5√41 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-11-q3",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the south-west of point L?",
+          "options": [
+            "Q",
+            "W",
+            "U",
+            "S",
+            "J"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point L as (0, 0), east = +x, north = +y.",
+              "J = (-22, 0), Q = (0, -12), S = (3, -12), U = (3, -29), W = (-2, -29)",
+              "Q: 12 m south of L → South",
+              "W: 29 m south and 2 m west of L → South-west",
+              "U: 29 m south and 3 m east of L → South-east",
+              "S: 12 m south and 3 m east of L → South-east",
+              "J: 22 m west of L → West",
+              "Only **W** is South-west of L."
+            ],
+            "shortcut": "South-west needs both signs right: south (−y) and west (−x) of L.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-11-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 4 m to the north of point W, what is the shortest distance between point Z and point H?",
+          "options": [
+            "26 m",
+            "27 m",
+            "28 m",
+            "$\\sqrt{802}$ m",
+            "29 m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point H as (0, 0), east = +x, north = +y.",
+              "J = (0, 4), L = (22, 4), Q = (22, -8), S = (25, -8), U = (25, -25), W = (20, -25)",
+              "Z = W + 4 m north = (20, -21)",
+              "Shortest distance = $\\sqrt{20^2 + 21^2} = \\sqrt{841}$ = 29 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from W — the extra 4 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-12",
+      "subtype": "point-set",
+      "difficulty": "hard",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint G is 6 m to the north of point E.\nPoint V is 13 m to the west of point T.\nPoint K is 15 m to the west of point G and 18 m to the south of point N.\nPoint T is 9 m to the south of point C.\nPoint R is 7 m to the east of point N.\nPoint E is 11 m to the east of point C.",
+      "questions": [
+        {
+          "key": "dr-12-q1",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the north-west of point E?",
+          "options": [
+            "R",
+            "C",
+            "G",
+            "T",
+            "V"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point E as (0, 0), east = +x, north = +y.",
+              "C = (-11, 0), G = (0, 6), R = (-8, 24), T = (-11, -9), V = (-24, -9)",
+              "R: 24 m north and 8 m west of E → North-west",
+              "C: 11 m west of E → West",
+              "G: 6 m north of E → North",
+              "T: 9 m south and 11 m west of E → South-west",
+              "V: 9 m south and 24 m west of E → South-west",
+              "Only **R** is North-west of E."
+            ],
+            "shortcut": "North-west needs both signs right: north (+y) and west (−x) of E.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-12-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point V and point G?",
+          "options": [
+            "$\\sqrt{801}$ m",
+            "$\\sqrt{802}$ m",
+            "$\\sqrt{803}$ m",
+            "$\\sqrt{850}$ m",
+            "39 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point G as (0, 0), east = +x, north = +y.",
+              "E = (0, -6), C = (-11, -6), T = (-11, -15), V = (-24, -15)",
+              "Horizontal gap = 24 m, vertical gap = 15 m.",
+              "Shortest distance = $\\sqrt{24^2 + 15^2} = \\sqrt{801}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (39 m) or walking the route (39 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 24² + 15² is exactly 801.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "G"
+                },
+                {
+                  "x": 0,
+                  "y": -6,
+                  "label": "E"
+                },
+                {
+                  "x": -11,
+                  "y": -6,
+                  "label": "C"
+                },
+                {
+                  "x": -11,
+                  "y": -15,
+                  "label": "T"
+                },
+                {
+                  "x": -24,
+                  "y": -15,
+                  "label": "V"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "G",
+                "to": "V",
+                "label": "√801 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-12-q3",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point R from point C?",
+          "options": [
+            "$\\sqrt{585}$ m, South-west",
+            "27 m, North-east",
+            "$\\sqrt{585}$ m, North-east",
+            "$\\sqrt{585}$ m, North",
+            "57 m, North-east"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point C as (0, 0), east = +x, north = +y.",
+              "E = (11, 0), G = (11, 6), K = (-4, 6), N = (-4, 24), R = (3, 24)",
+              "R is 24 m north and 3 m east of C → direction **North-east**.",
+              "Shortest distance = $\\sqrt{3^2 + 24^2} = \\sqrt{585}$ m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "South-west is the direction of C from R (the reverse); 27 m adds the gaps and 57 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-12-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 16 m to the south of point N, what is the shortest distance between point Z and point E?",
+          "options": [
+            "$2\\sqrt{65}$ m",
+            "17 m",
+            "$8\\sqrt{5}$ m",
+            "23 m",
+            "$3\\sqrt{89}$ m"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point E as (0, 0), east = +x, north = +y.",
+              "G = (0, 6), K = (-15, 6), N = (-15, 24)",
+              "Z = N + 16 m south = (-15, 8)",
+              "Shortest distance = $\\sqrt{15^2 + 8^2} = \\sqrt{289}$ = 17 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from N — the extra 16 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-13",
+      "subtype": "point-set",
+      "difficulty": "hard",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint M is 10 m to the south of point J.\nPoint S is 7 m to the north of point Q and 19 m to the south of point U.\nPoint F is 5 m to the north of point H.\nPoint P is 6 m to the west of point M.\nPoint X is 8 m to the east of point U.\nPoint J is 14 m to the east of point H.\nPoint Q is 23 m to the west of point P.",
+      "questions": [
+        {
+          "key": "dr-13-q1",
+          "subtype": "point-set",
+          "prompt": "If point Z is 15 m to the east of point Q, in which direction is point Z with respect to point H?",
+          "options": [
+            "North",
+            "South-west",
+            "South-east",
+            "South",
+            "West"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point H as (0, 0), east = +x, north = +y.",
+              "J = (14, 0), M = (14, -10), P = (8, -10), Q = (-15, -10)",
+              "Z = Q + 15 m east = (0, -10)",
+              "Z is 10 m south of H → **South**."
+            ],
+            "shortcut": "Shift the known point by the new clue, then read only the signs of the two offsets.",
+            "trap": "Z lands exactly on the north–south line through H, so the answer is South, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-13-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point X and point P?",
+          "options": [
+            "$\\sqrt{850}$ m",
+            "30 m",
+            "$\\sqrt{901}$ m",
+            "$\\sqrt{902}$ m",
+            "41 m"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point P as (0, 0), east = +x, north = +y.",
+              "Q = (-23, 0), S = (-23, 7), U = (-23, 26), X = (-15, 26)",
+              "Horizontal gap = 15 m, vertical gap = 26 m.",
+              "Shortest distance = $\\sqrt{15^2 + 26^2} = \\sqrt{901}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (41 m) or walking the route (57 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 15² + 26² is exactly 901.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "P"
+                },
+                {
+                  "x": -23,
+                  "y": 0,
+                  "label": "Q"
+                },
+                {
+                  "x": -23,
+                  "y": 7,
+                  "label": "S"
+                },
+                {
+                  "x": -23,
+                  "y": 26,
+                  "label": "U"
+                },
+                {
+                  "x": -15,
+                  "y": 26,
+                  "label": "X"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "P",
+                "to": "X",
+                "label": "√901 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-13-q3",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point S from point F?",
+          "options": [
+            "17 m, North-east",
+            "23 m, South-west",
+            "17 m, West",
+            "65 m, South-west",
+            "17 m, South-west"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point F as (0, 0), east = +x, north = +y.",
+              "H = (0, -5), J = (14, -5), M = (14, -15), P = (8, -15), Q = (-15, -15), S = (-15, -8)",
+              "S is 8 m south and 15 m west of F → direction **South-west**.",
+              "Shortest distance = $\\sqrt{15^2 + 8^2} = \\sqrt{289}$ = 17 m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "North-east is the direction of F from S (the reverse); 23 m adds the gaps and 65 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-13-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 19 m to the east of point X, what is the shortest distance between point Z and point H?",
+          "options": [
+            "$\\sqrt{305}$ m",
+            "20 m",
+            "$5\\sqrt{17}$ m",
+            "$\\sqrt{433}$ m",
+            "28 m"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point H as (0, 0), east = +x, north = +y.",
+              "J = (14, 0), M = (14, -10), P = (8, -10), Q = (-15, -10), S = (-15, -3), U = (-15, 16), X = (-7, 16)",
+              "Z = X + 19 m east = (12, 16)",
+              "Shortest distance = $\\sqrt{12^2 + 16^2} = \\sqrt{400}$ = 20 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from X — the extra 19 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-14",
+      "subtype": "point-set",
+      "difficulty": "hard",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint L is 2 m to the west of point K.\nPoint D is 9 m to the south of point B.\nPoint R is 8 m to the north of point L and 16 m to the east of point W.\nPoint G is 24 m to the east of point D.\nPoint A is 12 m to the east of point B.\nPoint K is 20 m to the north of point G.",
+      "questions": [
+        {
+          "key": "dr-14-q1",
+          "subtype": "point-set",
+          "prompt": "In which direction is point D with respect to point R?",
+          "options": [
+            "North-east",
+            "South-west",
+            "South",
+            "West",
+            "South-east"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point R as (0, 0), east = +x, north = +y.",
+              "L = (0, -8), K = (2, -8), G = (2, -28), D = (-22, -28)",
+              "D is 28 m south and 22 m west of R → **South-west**."
+            ],
+            "shortcut": "Only the signs matter for direction: net north/south and net east/west of the reference point.",
+            "trap": "Both offsets are non-zero, so it is South-west — not South.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "R"
+                },
+                {
+                  "x": 0,
+                  "y": -8,
+                  "label": "L"
+                },
+                {
+                  "x": 2,
+                  "y": -8,
+                  "label": "K"
+                },
+                {
+                  "x": 2,
+                  "y": -28,
+                  "label": "G"
+                },
+                {
+                  "x": -22,
+                  "y": -28,
+                  "label": "D"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "R",
+                "to": "D",
+                "label": "2√317 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-14-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point D and point L?",
+          "options": [
+            "$\\sqrt{845}$ m",
+            "$\\sqrt{882}$ m",
+            "$\\sqrt{883}$ m",
+            "$\\sqrt{884}$ m",
+            "$\\sqrt{885}$ m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point L as (0, 0), east = +x, north = +y.",
+              "K = (2, 0), G = (2, -20), D = (-22, -20)",
+              "Horizontal gap = 22 m, vertical gap = 20 m.",
+              "Shortest distance = $\\sqrt{22^2 + 20^2} = \\sqrt{884}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (42 m) or walking the route (46 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 22² + 20² is exactly 884.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "L"
+                },
+                {
+                  "x": 2,
+                  "y": 0,
+                  "label": "K"
+                },
+                {
+                  "x": 2,
+                  "y": -20,
+                  "label": "G"
+                },
+                {
+                  "x": -22,
+                  "y": -20,
+                  "label": "D"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "L",
+                "to": "D",
+                "label": "√884 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-14-q3",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the south-west of point L?",
+          "options": [
+            "G",
+            "A",
+            "K",
+            "R",
+            "W"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point L as (0, 0), east = +x, north = +y.",
+              "A = (-10, -11), G = (2, -20), K = (2, 0), R = (0, 8), W = (-16, 8)",
+              "G: 20 m south and 2 m east of L → South-east",
+              "A: 11 m south and 10 m west of L → South-west",
+              "K: 2 m east of L → East",
+              "R: 8 m north of L → North",
+              "W: 8 m north and 16 m west of L → North-west",
+              "Only **A** is South-west of L."
+            ],
+            "shortcut": "South-west needs both signs right: south (−y) and west (−x) of L.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-14-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 3 m to the west of point W, what is the shortest distance between point Z and point G?",
+          "options": [
+            "$2\\sqrt{277}$ m",
+            "34 m",
+            "$4\\sqrt{74}$ m",
+            "35 m",
+            "49 m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point G as (0, 0), east = +x, north = +y.",
+              "K = (0, 20), L = (-2, 20), R = (-2, 28), W = (-18, 28)",
+              "Z = W + 3 m west = (-21, 28)",
+              "Shortest distance = $\\sqrt{21^2 + 28^2} = \\sqrt{1225}$ = 35 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from W — the extra 3 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-15",
+      "subtype": "point-set",
+      "difficulty": "hard",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint N is 4 m to the north of point M and 18 m to the east of point P.\nPoint V is 10 m to the west of point C.\nPoint J is 21 m to the south of point H.\nPoint T is 6 m to the south of point P.\nPoint E is 8 m to the north of point C.\nPoint M is 9 m to the west of point J.\nPoint H is 13 m to the east of point E.",
+      "questions": [
+        {
+          "key": "dr-15-q1",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the south-west of point C?",
+          "options": [
+            "V",
+            "M",
+            "N",
+            "T",
+            "E"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point C as (0, 0), east = +x, north = +y.",
+              "E = (0, 8), M = (4, -13), N = (4, -9), T = (-14, -15), V = (-10, 0)",
+              "V: 10 m west of C → West",
+              "M: 13 m south and 4 m east of C → South-east",
+              "N: 9 m south and 4 m east of C → South-east",
+              "T: 15 m south and 14 m west of C → South-west",
+              "E: 8 m north of C → North",
+              "Only **T** is South-west of C."
+            ],
+            "shortcut": "South-west needs both signs right: south (−y) and west (−x) of C.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-15-q2",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point E and point T?",
+          "options": [
+            "$\\sqrt{725}$ m",
+            "$\\sqrt{726}$ m",
+            "$\\sqrt{754}$ m",
+            "37 m",
+            "71 m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point T as (0, 0), east = +x, north = +y.",
+              "P = (0, 6), N = (18, 6), M = (18, 2), J = (27, 2), H = (27, 23), E = (14, 23)",
+              "Horizontal gap = 14 m, vertical gap = 23 m.",
+              "Shortest distance = $\\sqrt{14^2 + 23^2} = \\sqrt{725}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (37 m) or walking the route (71 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 14² + 23² is exactly 725.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "T"
+                },
+                {
+                  "x": 0,
+                  "y": 6,
+                  "label": "P"
+                },
+                {
+                  "x": 18,
+                  "y": 6,
+                  "label": "N"
+                },
+                {
+                  "x": 18,
+                  "y": 2,
+                  "label": "M"
+                },
+                {
+                  "x": 27,
+                  "y": 2,
+                  "label": "J"
+                },
+                {
+                  "x": 27,
+                  "y": 23,
+                  "label": "H"
+                },
+                {
+                  "x": 14,
+                  "y": 23,
+                  "label": "E"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "T",
+                "to": "E",
+                "label": "√725 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-15-q3",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point M from point V?",
+          "options": [
+            "$\\sqrt{365}$ m, North-west",
+            "27 m, South-east",
+            "$\\sqrt{365}$ m, East",
+            "$\\sqrt{365}$ m, South-east",
+            "61 m, South-east"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point V as (0, 0), east = +x, north = +y.",
+              "C = (10, 0), E = (10, 8), H = (23, 8), J = (23, -13), M = (14, -13)",
+              "M is 13 m south and 14 m east of V → direction **South-east**.",
+              "Shortest distance = $\\sqrt{14^2 + 13^2} = \\sqrt{365}$ m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "North-west is the direction of V from M (the reverse); 27 m adds the gaps and 61 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-15-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 16 m to the east of point V, what is the shortest distance between point Z and point T?",
+          "options": [
+            "$\\sqrt{241}$ m",
+            "24 m",
+            "$\\sqrt{586}$ m",
+            "25 m",
+            "35 m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point T as (0, 0), east = +x, north = +y.",
+              "P = (0, 6), N = (18, 6), M = (18, 2), J = (27, 2), H = (27, 23), E = (14, 23), C = (14, 15), V = (4, 15)",
+              "Z = V + 16 m east = (20, 15)",
+              "Shortest distance = $\\sqrt{20^2 + 15^2} = \\sqrt{625}$ = 25 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Measure from Z, not from V — the extra 16 m changes one of the gaps."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-16",
+      "subtype": "point-set",
+      "difficulty": "extreme",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint M is 13 m to the north of point K and 5 m to the west of point Q.\nPoint U is 11 m to the west of point S.\nPoint F is 7 m to the west of point D.\nPoint K is 19 m to the east of point H.\nPoint A is 15 m to the south of point D.\nPoint S is 24 m to the south of point Q.\nPoint H is 22 m to the south of point F.",
+      "questions": [
+        {
+          "key": "dr-16-q1",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point F and point U?",
+          "options": [
+            "$\\sqrt{1193}$ m",
+            "$\\sqrt{1256}$ m",
+            "$\\sqrt{1257}$ m",
+            "$\\sqrt{1258}$ m",
+            "$\\sqrt{1259}$ m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point U as (0, 0), east = +x, north = +y.",
+              "S = (11, 0), Q = (11, 24), M = (6, 24), K = (6, 11), H = (-13, 11), F = (-13, 33)",
+              "Horizontal gap = 13 m, vertical gap = 33 m.",
+              "Shortest distance = $\\sqrt{13^2 + 33^2} = \\sqrt{1258}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (46 m) or walking the route (94 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 13² + 33² is exactly 1258.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "U"
+                },
+                {
+                  "x": 11,
+                  "y": 0,
+                  "label": "S"
+                },
+                {
+                  "x": 11,
+                  "y": 24,
+                  "label": "Q"
+                },
+                {
+                  "x": 6,
+                  "y": 24,
+                  "label": "M"
+                },
+                {
+                  "x": 6,
+                  "y": 11,
+                  "label": "K"
+                },
+                {
+                  "x": -13,
+                  "y": 11,
+                  "label": "H"
+                },
+                {
+                  "x": -13,
+                  "y": 33,
+                  "label": "F"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "U",
+                "to": "F",
+                "label": "√1258 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-16-q2",
+          "subtype": "point-set",
+          "prompt": "If point Z is 8 m to the east of point U, four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
+          "options": [
+            "Z, M",
+            "Z, Q",
+            "Z, A",
+            "S, D",
+            "U, H"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Coordinates (taking A as (0, 0)): D = (0, 15), H = (-7, -7), M = (12, 6), Q = (17, 6), S = (17, -18), U = (6, -18).",
+              "Z = U + 8 m east = (14, -18)",
+              "Z w.r.t. M: 24 m south and 2 m east → South-east",
+              "Z w.r.t. Q: 24 m south and 3 m west → South-west",
+              "Z w.r.t. A: 18 m south and 14 m east → South-east",
+              "S w.r.t. D: 33 m south and 17 m east → South-east",
+              "U w.r.t. H: 11 m south and 13 m east → South-east",
+              "Four pairs are South-east; **Z, Q** is South-west."
+            ],
+            "shortcut": "Place the new point first, then compare only the signs of Δx and Δy for each pair.",
+            "trap": "Z, Q is the near miss: Z is 24 m south and 3 m west of Q, so the pair is South-west, not South-east."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:odd-pair",
+            "direction:new-point"
+          ]
+        },
+        {
+          "key": "dr-16-q3",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the south-west of point M?",
+          "options": [
+            "K",
+            "S",
+            "D",
+            "Q",
+            "U"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point M as (0, 0), east = +x, north = +y.",
+              "D = (-12, 9), K = (0, -13), Q = (5, 0), S = (5, -24), U = (-6, -24)",
+              "K: 13 m south of M → South",
+              "S: 24 m south and 5 m east of M → South-east",
+              "D: 9 m north and 12 m west of M → North-west",
+              "Q: 5 m east of M → East",
+              "U: 24 m south and 6 m west of M → South-west",
+              "Only **U** is South-west of M."
+            ],
+            "shortcut": "South-west needs both signs right: south (−y) and west (−x) of M.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-16-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 17 m to the south of point D and point Y is 18 m to the east of point Z, what is the shortest distance between point Y and point U?",
+          "options": [
+            "20 m",
+            "$\\sqrt{401}$ m",
+            "$\\sqrt{425}$ m",
+            "28 m",
+            "$\\sqrt{1125}$ m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point U as (0, 0), east = +x, north = +y.",
+              "S = (11, 0), Q = (11, 24), M = (6, 24), K = (6, 11), H = (-13, 11), F = (-13, 33), D = (-6, 33)",
+              "Z = D + 17 m south = (-6, 16)",
+              "Y = Z + 18 m east = (12, 16)",
+              "Shortest distance = $\\sqrt{12^2 + 16^2} = \\sqrt{400}$ = 20 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Stopping at Z (or forgetting the 18 m shift to Y) gives a different pair of gaps; measure from Y."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-17",
+      "subtype": "point-set",
+      "difficulty": "extreme",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint P is 20 m to the north of point N.\nPoint T is 9 m to the south of point R and 21 m to the west of point W.\nPoint G is 6 m to the south of point B.\nPoint L is 8 m to the west of point N.\nPoint J is 17 m to the west of point G.\nPoint R is 13 m to the east of point P.\nPoint J is 9 m to the south of point L.",
+      "questions": [
+        {
+          "key": "dr-17-q1",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point B and point T?",
+          "options": [
+            "$\\sqrt{211}$ m",
+            "$\\sqrt{212}$ m",
+            "$\\sqrt{213}$ m",
+            "$\\sqrt{221}$ m",
+            "18 m"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point T as (0, 0), east = +x, north = +y.",
+              "R = (0, 9), P = (-13, 9), N = (-13, -11), L = (-21, -11), J = (-21, -20), G = (-4, -20), B = (-4, -14)",
+              "Horizontal gap = 4 m, vertical gap = 14 m.",
+              "Shortest distance = $\\sqrt{4^2 + 14^2} = \\sqrt{212}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (18 m) or walking the route (82 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 4² + 14² is exactly 212.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "T"
+                },
+                {
+                  "x": 0,
+                  "y": 9,
+                  "label": "R"
+                },
+                {
+                  "x": -13,
+                  "y": 9,
+                  "label": "P"
+                },
+                {
+                  "x": -13,
+                  "y": -11,
+                  "label": "N"
+                },
+                {
+                  "x": -21,
+                  "y": -11,
+                  "label": "L"
+                },
+                {
+                  "x": -21,
+                  "y": -20,
+                  "label": "J"
+                },
+                {
+                  "x": -4,
+                  "y": -20,
+                  "label": "G"
+                },
+                {
+                  "x": -4,
+                  "y": -14,
+                  "label": "B"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "T",
+                "to": "B",
+                "label": "√212 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-17-q2",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the south-east of point L?",
+          "options": [
+            "J",
+            "B",
+            "N",
+            "T",
+            "P"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point L as (0, 0), east = +x, north = +y.",
+              "B = (17, -3), J = (0, -9), N = (8, 0), P = (8, 20), T = (21, 11)",
+              "J: 9 m south of L → South",
+              "B: 3 m south and 17 m east of L → South-east",
+              "N: 8 m east of L → East",
+              "T: 11 m north and 21 m east of L → North-east",
+              "P: 20 m north and 8 m east of L → North-east",
+              "Only **B** is South-east of L."
+            ],
+            "shortcut": "South-east needs both signs right: south (−y) and east (+x) of L.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-17-q3",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point G from point R?",
+          "options": [
+            "$\\sqrt{857}$ m, North-east",
+            "33 m, South-west",
+            "$\\sqrt{857}$ m, South-west",
+            "$\\sqrt{857}$ m, South",
+            "67 m, South-west"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point R as (0, 0), east = +x, north = +y.",
+              "P = (-13, 0), N = (-13, -20), L = (-21, -20), J = (-21, -29), G = (-4, -29)",
+              "G is 29 m south and 4 m west of R → direction **South-west**.",
+              "Shortest distance = $\\sqrt{4^2 + 29^2} = \\sqrt{857}$ m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "North-east is the direction of R from G (the reverse); 33 m adds the gaps and 67 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-17-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 6 m to the north of point B and point Y is 10 m to the east of point Z, what is the shortest distance between point Y and point P?",
+          "options": [
+            "$\\sqrt{610}$ m",
+            "$\\sqrt{617}$ m",
+            "$\\sqrt{648}$ m",
+            "$\\sqrt{649}$ m",
+            "$\\sqrt{650}$ m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point P as (0, 0), east = +x, north = +y.",
+              "N = (0, -20), L = (-8, -20), J = (-8, -29), G = (9, -29), B = (9, -23)",
+              "Z = B + 6 m north = (9, -17)",
+              "Y = Z + 10 m east = (19, -17)",
+              "Shortest distance = $\\sqrt{19^2 + 17^2} = \\sqrt{650}$ m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Stopping at Z (or forgetting the 10 m shift to Y) gives a different pair of gaps; measure from Y."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-18",
+      "subtype": "point-set",
+      "difficulty": "extreme",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint K is 12 m to the west of point H and 16 m to the south of point M.\nPoint V is 5 m to the east of point S.\nPoint X is 9 m to the south of point C.\nPoint Q is 20 m to the west of point M.\nPoint F is 18 m to the east of point C.\nPoint S is 11 m to the south of point Q.\nPoint H is 7 m to the north of point F.",
+      "questions": [
+        {
+          "key": "dr-18-q1",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point X and point V?",
+          "options": [
+            "$\\sqrt{481}$ m",
+            "$\\sqrt{520}$ m",
+            "$\\sqrt{521}$ m",
+            "$\\sqrt{522}$ m",
+            "$\\sqrt{523}$ m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point V as (0, 0), east = +x, north = +y.",
+              "S = (-5, 0), Q = (-5, 11), M = (15, 11), K = (15, -5), H = (27, -5), F = (27, -12), C = (9, -12), X = (9, -21)",
+              "Horizontal gap = 9 m, vertical gap = 21 m.",
+              "Shortest distance = $\\sqrt{9^2 + 21^2} = \\sqrt{522}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (30 m) or walking the route (98 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 9² + 21² is exactly 522.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "V"
+                },
+                {
+                  "x": -5,
+                  "y": 0,
+                  "label": "S"
+                },
+                {
+                  "x": -5,
+                  "y": 11,
+                  "label": "Q"
+                },
+                {
+                  "x": 15,
+                  "y": 11,
+                  "label": "M"
+                },
+                {
+                  "x": 15,
+                  "y": -5,
+                  "label": "K"
+                },
+                {
+                  "x": 27,
+                  "y": -5,
+                  "label": "H"
+                },
+                {
+                  "x": 27,
+                  "y": -12,
+                  "label": "F"
+                },
+                {
+                  "x": 9,
+                  "y": -12,
+                  "label": "C"
+                },
+                {
+                  "x": 9,
+                  "y": -21,
+                  "label": "X"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "V",
+                "to": "X",
+                "label": "√522 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-18-q2",
+          "subtype": "point-set",
+          "prompt": "If point Z is 9 m to the south of point V, four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
+          "options": [
+            "Z, H",
+            "Z, F",
+            "Z, X",
+            "Q, K",
+            "S, H"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Coordinates (taking F as (0, 0)): H = (0, 7), K = (-12, 7), Q = (-32, 23), S = (-32, 12), V = (-27, 12), X = (-18, -9).",
+              "Z = V + 9 m south = (-27, 3)",
+              "Z w.r.t. H: 4 m south and 27 m west → South-west",
+              "Z w.r.t. F: 3 m north and 27 m west → North-west",
+              "Z w.r.t. X: 12 m north and 9 m west → North-west",
+              "Q w.r.t. K: 16 m north and 20 m west → North-west",
+              "S w.r.t. H: 5 m north and 32 m west → North-west",
+              "Four pairs are North-west; **Z, H** is South-west."
+            ],
+            "shortcut": "Place the new point first, then compare only the signs of Δx and Δy for each pair.",
+            "trap": "Z, H is the near miss: Z is 4 m south and 27 m west of H, so the pair is South-west, not North-west."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:odd-pair",
+            "direction:new-point"
+          ]
+        },
+        {
+          "key": "dr-18-q3",
+          "subtype": "point-set",
+          "prompt": "If point Z is 16 m to the south of point S, in which direction is point Z with respect to point F?",
+          "options": [
+            "North-east",
+            "West",
+            "South-west",
+            "South",
+            "South-east"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Take point F as (0, 0), east = +x, north = +y.",
+              "H = (0, 7), K = (-12, 7), M = (-12, 23), Q = (-32, 23), S = (-32, 12)",
+              "Z = S + 16 m south = (-32, -4)",
+              "Z is 4 m south and 32 m west of F → **South-west**."
+            ],
+            "shortcut": "Shift the known point by the new clue, then read only the signs of the two offsets.",
+            "trap": "Both offsets are non-zero, so it is South-west, not West."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-18-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 16 m to the north of point X and point Y is 6 m to the west of point Z, what is the shortest distance between point Y and point M?",
+          "options": [
+            "18 m",
+            "19 m",
+            "$\\sqrt{369}$ m",
+            "$\\sqrt{399}$ m",
+            "20 m"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point M as (0, 0), east = +x, north = +y.",
+              "K = (0, -16), H = (12, -16), F = (12, -23), C = (-6, -23), X = (-6, -32)",
+              "Z = X + 16 m north = (-6, -16)",
+              "Y = Z + 6 m west = (-12, -16)",
+              "Shortest distance = $\\sqrt{12^2 + 16^2} = \\sqrt{400}$ = 20 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Stopping at Z (or forgetting the 6 m shift to Y) gives a different pair of gaps; measure from Y."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-19",
+      "subtype": "point-set",
+      "difficulty": "extreme",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint L is 15 m to the west of point J and 13 m to the north of point N.\nPoint W is 14 m to the west of point D.\nPoint U is 8 m to the north of point R.\nPoint G is 24 m to the east of point E.\nPoint R is 19 m to the west of point N.\nPoint J is 3 m to the south of point G.\nPoint D is 10 m to the north of point E.",
+      "questions": [
+        {
+          "key": "dr-19-q1",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point W and point N?",
+          "options": [
+            "$\\sqrt{1154}$ m",
+            "$\\sqrt{1203}$ m",
+            "$\\sqrt{1204}$ m",
+            "$\\sqrt{1205}$ m",
+            "$\\sqrt{1206}$ m"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point N as (0, 0), east = +x, north = +y.",
+              "L = (0, 13), J = (15, 13), G = (15, 16), E = (-9, 16), D = (-9, 26), W = (-23, 26)",
+              "Horizontal gap = 23 m, vertical gap = 26 m.",
+              "Shortest distance = $\\sqrt{23^2 + 26^2} = \\sqrt{1205}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (49 m) or walking the route (79 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 23² + 26² is exactly 1205.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "N"
+                },
+                {
+                  "x": 0,
+                  "y": 13,
+                  "label": "L"
+                },
+                {
+                  "x": 15,
+                  "y": 13,
+                  "label": "J"
+                },
+                {
+                  "x": 15,
+                  "y": 16,
+                  "label": "G"
+                },
+                {
+                  "x": -9,
+                  "y": 16,
+                  "label": "E"
+                },
+                {
+                  "x": -9,
+                  "y": 26,
+                  "label": "D"
+                },
+                {
+                  "x": -23,
+                  "y": 26,
+                  "label": "W"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "N",
+                "to": "W",
+                "label": "√1205 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-19-q2",
+          "subtype": "point-set",
+          "prompt": "How far and in which direction is point U from point E?",
+          "options": [
+            "$\\sqrt{164}$ m, North-east",
+            "18 m, South-west",
+            "$\\sqrt{164}$ m, West",
+            "$\\sqrt{164}$ m, South-west",
+            "82 m, South-west"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Take point E as (0, 0), east = +x, north = +y.",
+              "G = (24, 0), J = (24, -3), L = (9, -3), N = (9, -16), R = (-10, -16), U = (-10, -8)",
+              "U is 8 m south and 10 m west of E → direction **South-west**.",
+              "Shortest distance = $\\sqrt{10^2 + 8^2} = \\sqrt{164}$ m"
+            ],
+            "shortcut": "One coordinate pair answers both parts: the signs give the direction, Pythagoras on the gaps gives the distance.",
+            "trap": "North-east is the direction of E from U (the reverse); 18 m adds the gaps and 82 m is the route along the lines, not the straight distance."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "direction:direction",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-19-q3",
+          "subtype": "point-set",
+          "prompt": "If point Z is 13 m to the north of point R, in which direction is point Z with respect to point J?",
+          "options": [
+            "East",
+            "North-west",
+            "South-west",
+            "North",
+            "West"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Take point J as (0, 0), east = +x, north = +y.",
+              "L = (-15, 0), N = (-15, -13), R = (-34, -13)",
+              "Z = R + 13 m north = (-34, 0)",
+              "Z is 34 m west of J → **West**."
+            ],
+            "shortcut": "Shift the known point by the new clue, then read only the signs of the two offsets.",
+            "trap": "Z lands exactly on the east–west line through J, so the answer is West, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-19-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 20 m to the south of point W and point Y is 14 m to the east of point Z, what is the shortest distance between point Y and point G?",
+          "options": [
+            "$\\sqrt{675}$ m",
+            "26 m",
+            "$\\sqrt{677}$ m",
+            "34 m",
+            "$\\sqrt{1544}$ m"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point G as (0, 0), east = +x, north = +y.",
+              "E = (-24, 0), D = (-24, 10), W = (-38, 10)",
+              "Z = W + 20 m south = (-38, -10)",
+              "Y = Z + 14 m east = (-24, -10)",
+              "Shortest distance = $\\sqrt{24^2 + 10^2} = \\sqrt{676}$ = 26 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Stopping at Z (or forgetting the 14 m shift to Y) gives a different pair of gaps; measure from Y."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "dr-20",
+      "subtype": "point-set",
+      "difficulty": "extreme",
+      "title": "Direction and distance",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint P is 4 m to the west of point K and 17 m to the south of point S.\nPoint B is 12 m to the north of point A.\nPoint E is 14 m to the south of point C.\nPoint T is 10 m to the east of point S.\nPoint C is 9 m to the west of point A.\nPoint H is 6 m to the south of point K.\nPoint H is 22 m to the east of point E.",
+      "questions": [
+        {
+          "key": "dr-20-q1",
+          "subtype": "point-set",
+          "prompt": "What is the shortest distance between point B and point H?",
+          "options": [
+            "$\\sqrt{844}$ m",
+            "$\\sqrt{845}$ m",
+            "$\\sqrt{846}$ m",
+            "$\\sqrt{872}$ m",
+            "39 m"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Take point H as (0, 0), east = +x, north = +y.",
+              "E = (-22, 0), C = (-22, 14), A = (-13, 14), B = (-13, 26)",
+              "Horizontal gap = 13 m, vertical gap = 26 m.",
+              "Shortest distance = $\\sqrt{13^2 + 26^2} = \\sqrt{845}$ m"
+            ],
+            "shortcut": "Shortest distance = √(horizontal gap² + vertical gap²); check the 3-4-5, 5-12-13, 8-15-17 families first.",
+            "trap": "Adding the gaps (39 m) or walking the route (57 m) gives a longer distance — the shortest is the straight line. Do not stop at the neighbouring surds: 13² + 26² is exactly 845.",
+            "visual": {
+              "type": "path",
+              "points": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "label": "H"
+                },
+                {
+                  "x": -22,
+                  "y": 0,
+                  "label": "E"
+                },
+                {
+                  "x": -22,
+                  "y": 14,
+                  "label": "C"
+                },
+                {
+                  "x": -13,
+                  "y": 14,
+                  "label": "A"
+                },
+                {
+                  "x": -13,
+                  "y": 26,
+                  "label": "B"
+                }
+              ],
+              "unit": "m",
+              "shortest": {
+                "from": "H",
+                "to": "B",
+                "label": "√845 m"
+              }
+            }
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:distance",
+            "trick:pythagoras"
+          ]
+        },
+        {
+          "key": "dr-20-q2",
+          "subtype": "point-set",
+          "prompt": "If point Z is 5 m to the north of point E, four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
+          "options": [
+            "Z, H",
+            "Z, P",
+            "Z, A",
+            "E, S",
+            "C, T"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Coordinates (taking A as (0, 0)): C = (-9, 0), E = (-9, -14), H = (13, -14), P = (9, -8), S = (9, 9), T = (19, 9).",
+              "Z = E + 5 m north = (-9, -9)",
+              "Z w.r.t. H: 5 m north and 22 m west → North-west",
+              "Z w.r.t. P: 1 m south and 18 m west → South-west",
+              "Z w.r.t. A: 9 m south and 9 m west → South-west",
+              "E w.r.t. S: 23 m south and 18 m west → South-west",
+              "C w.r.t. T: 9 m south and 28 m west → South-west",
+              "Four pairs are South-west; **Z, H** is North-west."
+            ],
+            "shortcut": "Place the new point first, then compare only the signs of Δx and Δy for each pair.",
+            "trap": "Z, H is the near miss: Z is 5 m north and 22 m west of H, so the pair is North-west, not South-west."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:odd-pair",
+            "direction:new-point"
+          ]
+        },
+        {
+          "key": "dr-20-q3",
+          "subtype": "point-set",
+          "prompt": "Which of the following points is to the north-east of point C?",
+          "options": [
+            "T",
+            "A",
+            "E",
+            "H",
+            "P"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point C as (0, 0), east = +x, north = +y.",
+              "A = (9, 0), E = (0, -14), H = (22, -14), P = (18, -8), T = (28, 9)",
+              "T: 9 m north and 28 m east of C → North-east",
+              "A: 9 m east of C → East",
+              "E: 14 m south of C → South",
+              "H: 14 m south and 22 m east of C → South-east",
+              "P: 8 m south and 18 m east of C → South-east",
+              "Only **T** is North-east of C."
+            ],
+            "shortcut": "North-east needs both signs right: north (+y) and east (+x) of C.",
+            "trap": "A point on the same vertical or horizontal line (one offset zero) is in a main direction, not a corner direction."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:direction"
+          ]
+        },
+        {
+          "key": "dr-20-q4",
+          "subtype": "point-set",
+          "prompt": "If point Z is 3 m to the south of point T and point Y is 13 m to the west of point Z, what is the shortest distance between point Y and point E?",
+          "options": [
+            "25 m",
+            "$\\sqrt{626}$ m",
+            "$\\sqrt{656}$ m",
+            "35 m",
+            "$\\sqrt{1313}$ m"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Take point E as (0, 0), east = +x, north = +y.",
+              "H = (22, 0), K = (22, 6), P = (18, 6), S = (18, 23), T = (28, 23)",
+              "Z = T + 3 m south = (28, 20)",
+              "Y = Z + 13 m west = (15, 20)",
+              "Shortest distance = $\\sqrt{15^2 + 20^2} = \\sqrt{625}$ = 25 m"
+            ],
+            "shortcut": "Shift the known point by the new clue(s), then use Pythagoras on the two gaps.",
+            "trap": "Stopping at Z (or forgetting the 13 m shift to Y) gives a different pair of gaps; measure from Y."
+          },
+          "tags": [
+            "direction:point-set",
+            "direction:new-point",
+            "trick:pythagoras"
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "key": "dr-101",
+      "subtype": "walk",
+      "difficulty": "easy",
+      "prompt": "Pooja starts from her house and walks 18 m towards the north. From there, she takes a left turn and walks 12 m. Finally, she turns left and walks 2 m. What is the shortest distance between her starting point and her final position?",
+      "options": [
+        "20 m",
+        "21 m",
+        "$4\\sqrt{34}$ m",
+        "28 m",
+        "32 m"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "18 m north → (0, 18)",
+          "12 m west → (-12, 18)",
+          "2 m south → (-12, 16)",
+          "Net displacement: 16 m north and 12 m west of the start.",
+          "Shortest distance = $\\sqrt{12^2 + 16^2} = \\sqrt{400}$ = 20 m"
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then recognise the 3-4-5 triple (× 4) → 20 m.",
+        "trap": "32 m is the total path walked, not the shortest distance.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": 18
+            },
+            {
+              "x": -12,
+              "y": 18
+            },
+            {
+              "x": -12,
+              "y": 16,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "20 m"
+          },
+          "caption": "Net: 16 m north, 12 m west"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:distance",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-102",
+      "subtype": "walk",
+      "difficulty": "medium",
+      "prompt": "Kavya starts from the post office and walks 14 m towards the west. From there, she takes a right turn and walks 6 m. Next, she turns right and walks 22 m. Finally, she takes a left turn and walks 9 m. In which direction is she now with respect to her starting point?",
+      "options": [
+        "South-west",
+        "North-east",
+        "North",
+        "North-west",
+        "East"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "14 m west → (-14, 0)",
+          "6 m north → (-14, 6)",
+          "22 m east → (8, 6)",
+          "9 m north → (8, 15)",
+          "Net displacement: 15 m north and 8 m east of the start.",
+          "Direction from the start: **North-east**."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately; only the signs of the two net legs decide the direction.",
+        "trap": "With both a north–south and an east–west offset, the answer is an in-between direction (North-east), not North.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": -14,
+              "y": 0
+            },
+            {
+              "x": -14,
+              "y": 6
+            },
+            {
+              "x": 8,
+              "y": 6
+            },
+            {
+              "x": 8,
+              "y": 15,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "17 m"
+          },
+          "caption": "Net: 15 m north, 8 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:direction",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-103",
+      "subtype": "walk",
+      "difficulty": "medium",
+      "prompt": "Imran starts from his office and walks 9 m towards the south. From there, he takes a left turn and walks 7 m. Next, he turns right and walks 6 m. Then he takes a left turn and walks 8 m. Finally, he turns right and walks 5 m. What is the shortest distance between his starting point and his final position?",
+      "options": [
+        "17 m",
+        "20 m",
+        "23 m",
+        "24 m",
+        "25 m"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "9 m south → (0, -9)",
+          "7 m east → (7, -9)",
+          "6 m south → (7, -15)",
+          "8 m east → (15, -15)",
+          "5 m south → (15, -20)",
+          "Net displacement: 20 m south and 15 m east of the start.",
+          "Shortest distance = $\\sqrt{15^2 + 20^2} = \\sqrt{625}$ = 25 m"
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then recognise the 3-4-5 triple (× 5) → 25 m.",
+        "trap": "35 m is the total path walked, not the shortest distance.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": -9
+            },
+            {
+              "x": 7,
+              "y": -9
+            },
+            {
+              "x": 7,
+              "y": -15
+            },
+            {
+              "x": 15,
+              "y": -15
+            },
+            {
+              "x": 15,
+              "y": -20,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "25 m"
+          },
+          "caption": "Net: 20 m south, 15 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:distance",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-104",
+      "subtype": "walk",
+      "difficulty": "medium",
+      "prompt": "Meera starts from her school and walks 16 m towards the north. From there, she turns towards the east and walks 10 m. Next, she turns right and walks 25 m. Finally, she takes a right turn and walks 4 m. In which direction is her starting point with respect to her present position?",
+      "options": [
+        "South-east",
+        "North",
+        "South-west",
+        "West",
+        "North-west"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "16 m north → (0, 16)",
+          "10 m east → (10, 16)",
+          "25 m south → (10, -9)",
+          "4 m west → (6, -9)",
+          "Net displacement: 9 m south and 6 m east of the start.",
+          "She is south-east of the start, so the start is **North-west** of her present position."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately; only the signs of the two net legs decide the direction.",
+        "trap": "South-east is where she is from the start — the question asks the reverse.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": 16
+            },
+            {
+              "x": 10,
+              "y": 16
+            },
+            {
+              "x": 10,
+              "y": -9
+            },
+            {
+              "x": 6,
+              "y": -9,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "3√13 m"
+          },
+          "caption": "Net: 9 m south, 6 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:start-from-end",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-105",
+      "subtype": "walk",
+      "difficulty": "medium",
+      "prompt": "Rohit starts from the temple gate and walks 30 m towards the east. From there, he takes a left turn and walks 12 m. Next, he turns left and walks 18 m. Finally, he takes a right turn and walks 4 m. How far and in which direction is he now from his starting point?",
+      "options": [
+        "20 m, South-west",
+        "20 m, North-east",
+        "28 m, North-east",
+        "20 m, North",
+        "64 m, North-east"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "30 m east → (30, 0)",
+          "12 m north → (30, 12)",
+          "18 m west → (12, 12)",
+          "4 m north → (12, 16)",
+          "Net displacement: 16 m north and 12 m east of the start.",
+          "Shortest distance = $\\sqrt{12^2 + 16^2} = \\sqrt{400}$ = 20 m",
+          "Direction from the start: **North-east**."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then recognise the 3-4-5 triple (× 4) → 20 m.",
+        "trap": "Adding the net legs gives 28 m and the path is 64 m — the straight-line distance is 20 m; and the direction is North-east, not South-west (that is the start seen from his end point).",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 30,
+              "y": 0
+            },
+            {
+              "x": 30,
+              "y": 12
+            },
+            {
+              "x": 12,
+              "y": 12
+            },
+            {
+              "x": 12,
+              "y": 16,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "20 m"
+          },
+          "caption": "Net: 16 m north, 12 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:both",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-106",
+      "subtype": "walk",
+      "difficulty": "medium",
+      "prompt": "Nisha starts from the bus stand and walks 7 m towards the west. From there, she turns towards the south and walks 10 m. Next, she turns left and walks 19 m. Finally, she takes a left turn and walks 6 m. What is the shortest distance between her starting point and her final position?",
+      "options": [
+        "$2\\sqrt{10}$ m",
+        "$3\\sqrt{10}$ m",
+        "11 m",
+        "12 m",
+        "$4\\sqrt{10}$ m"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "7 m west → (-7, 0)",
+          "10 m south → (-7, -10)",
+          "19 m east → (12, -10)",
+          "6 m north → (12, -4)",
+          "Net displacement: 4 m south and 12 m east of the start.",
+          "Shortest distance = $\\sqrt{12^2 + 4^2} = \\sqrt{160}$ = $4\\sqrt{10}$ m"
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then apply Pythagoras on the two net legs.",
+        "trap": "42 m is the total path walked, not the shortest distance.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": -7,
+              "y": 0
+            },
+            {
+              "x": -7,
+              "y": -10
+            },
+            {
+              "x": 12,
+              "y": -10
+            },
+            {
+              "x": 12,
+              "y": -4,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "4√10 m"
+          },
+          "caption": "Net: 4 m south, 12 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:distance",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-107",
+      "subtype": "walk",
+      "difficulty": "hard",
+      "prompt": "Farhan starts from his house and walks 11 m towards the north. From there, he turns right and walks 16 m. Next, he takes a right turn and walks 25 m. Then he turns back and walks 7 m. Finally, he takes a left turn and walks 9 m. In which direction is his starting point with respect to his present position?",
+      "options": [
+        "South-east",
+        "West",
+        "South-west",
+        "North-west",
+        "North"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "11 m north → (0, 11)",
+          "16 m east → (16, 11)",
+          "25 m south → (16, -14)",
+          "7 m north → (16, -7)",
+          "9 m west → (7, -7)",
+          "Net displacement: 7 m south and 7 m east of the start.",
+          "He is south-east of the start, so the start is **North-west** of his present position."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately; only the signs of the two net legs decide the direction.",
+        "trap": "South-east is where he is from the start — the question asks the reverse.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": 11
+            },
+            {
+              "x": 16,
+              "y": 11
+            },
+            {
+              "x": 16,
+              "y": -14
+            },
+            {
+              "x": 16,
+              "y": -7
+            },
+            {
+              "x": 7,
+              "y": -7,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "7√2 m"
+          },
+          "caption": "Net: 7 m south, 7 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:start-from-end",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-108",
+      "subtype": "walk",
+      "difficulty": "hard",
+      "prompt": "Sneha starts from the bank and walks 24 m towards the south. From there, she takes a left turn and walks 13 m. Next, she turns left and walks 10 m. Then she takes a right turn and walks 8 m. Finally, she turns right and walks 6 m. What is the shortest distance between her starting point and her final position?",
+      "options": [
+        "21 m",
+        "28 m",
+        "29 m",
+        "41 m",
+        "61 m"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "24 m south → (0, -24)",
+          "13 m east → (13, -24)",
+          "10 m north → (13, -14)",
+          "8 m east → (21, -14)",
+          "6 m south → (21, -20)",
+          "Net displacement: 20 m south and 21 m east of the start.",
+          "Shortest distance = $\\sqrt{21^2 + 20^2} = \\sqrt{841}$ = 29 m"
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then recognise the 20-21-29 triple.",
+        "trap": "61 m is the total path walked, not the shortest distance.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": -24
+            },
+            {
+              "x": 13,
+              "y": -24
+            },
+            {
+              "x": 13,
+              "y": -14
+            },
+            {
+              "x": 21,
+              "y": -14
+            },
+            {
+              "x": 21,
+              "y": -20,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "29 m"
+          },
+          "caption": "Net: 20 m south, 21 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:distance",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-109",
+      "subtype": "walk",
+      "difficulty": "hard",
+      "prompt": "Vikram starts from the post office and walks 15 m towards the west. From there, he turns left and walks 20 m. Next, he turns towards the east and walks 35 m. Then he turns left and walks 5 m. Finally, he takes a left turn and walks 12 m. How far and in which direction is he now from his starting point?",
+      "options": [
+        "17 m, North-west",
+        "23 m, South-east",
+        "17 m, South",
+        "87 m, South-east",
+        "17 m, South-east"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "15 m west → (-15, 0)",
+          "20 m south → (-15, -20)",
+          "35 m east → (20, -20)",
+          "5 m north → (20, -15)",
+          "12 m west → (8, -15)",
+          "Net displacement: 15 m south and 8 m east of the start.",
+          "Shortest distance = $\\sqrt{8^2 + 15^2} = \\sqrt{289}$ = 17 m",
+          "Direction from the start: **South-east**."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then recognise the 8-15-17 triple.",
+        "trap": "Adding the net legs gives 23 m and the path is 87 m — the straight-line distance is 17 m; and the direction is South-east, not North-west (that is the start seen from his end point).",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": -15,
+              "y": 0
+            },
+            {
+              "x": -15,
+              "y": -20
+            },
+            {
+              "x": 20,
+              "y": -20
+            },
+            {
+              "x": 20,
+              "y": -15
+            },
+            {
+              "x": 8,
+              "y": -15,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "17 m"
+          },
+          "caption": "Net: 15 m south, 8 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:both",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-110",
+      "subtype": "walk",
+      "difficulty": "hard",
+      "prompt": "Divya starts from her office and walks 6 m towards the north. From there, she takes a right turn and walks 14 m. Next, she turns left and walks 9 m. Then she takes a left turn and walks 23 m. Finally, she turns left and walks 3 m. What is the shortest distance between her starting point and her final position?",
+      "options": [
+        "$3\\sqrt{13}$ m",
+        "15 m",
+        "16 m",
+        "21 m",
+        "55 m"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "6 m north → (0, 6)",
+          "14 m east → (14, 6)",
+          "9 m north → (14, 15)",
+          "23 m west → (-9, 15)",
+          "3 m south → (-9, 12)",
+          "Net displacement: 12 m north and 9 m west of the start.",
+          "Shortest distance = $\\sqrt{9^2 + 12^2} = \\sqrt{225}$ = 15 m"
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then recognise the 3-4-5 triple (× 3) → 15 m.",
+        "trap": "55 m is the total path walked, not the shortest distance.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": 6
+            },
+            {
+              "x": 14,
+              "y": 6
+            },
+            {
+              "x": 14,
+              "y": 15
+            },
+            {
+              "x": -9,
+              "y": 15
+            },
+            {
+              "x": -9,
+              "y": 12,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "15 m"
+          },
+          "caption": "Net: 12 m north, 9 m west"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:distance",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-111",
+      "subtype": "walk",
+      "difficulty": "hard",
+      "prompt": "Gaurav starts from the bus stand and walks 13 m towards the east. From there, he turns right and walks 8 m. Next, he takes a right turn and walks 13 m. Then he turns left and walks 6 m. Finally, he turns back and walks 20 m. In which direction is he now with respect to his starting point?",
+      "options": [
+        "South",
+        "North-east",
+        "North",
+        "North-west",
+        "West"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "13 m east → (13, 0)",
+          "8 m south → (13, -8)",
+          "13 m west → (0, -8)",
+          "6 m south → (0, -14)",
+          "20 m north → (0, 6)",
+          "Net displacement: 6 m north of the start.",
+          "Direction from the start: **North**."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately — one of them cancels to zero, so the answer is a main direction.",
+        "trap": "He ends on the same line as the start — the direction is a main direction, not a corner one.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 13,
+              "y": 0
+            },
+            {
+              "x": 13,
+              "y": -8
+            },
+            {
+              "x": 0,
+              "y": -8
+            },
+            {
+              "x": 0,
+              "y": -14
+            },
+            {
+              "x": 0,
+              "y": 6,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "6 m"
+          },
+          "caption": "Net: 6 m north"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:direction"
+      ]
+    },
+    {
+      "key": "dr-112",
+      "subtype": "walk",
+      "difficulty": "hard",
+      "prompt": "Swati starts from the temple gate and walks 17 m towards the south. From there, she takes a left turn and walks 9 m. Next, she turns left and walks 30 m. Then she takes a right turn and walks 4 m. After that, she turns right and walks 16 m. Finally, she takes a left turn and walks 6 m. In which direction is her starting point with respect to her present position?",
+      "options": [
+        "South-east",
+        "West",
+        "North",
+        "North-west",
+        "North-east"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "17 m south → (0, -17)",
+          "9 m east → (9, -17)",
+          "30 m north → (9, 13)",
+          "4 m east → (13, 13)",
+          "16 m south → (13, -3)",
+          "6 m east → (19, -3)",
+          "Net displacement: 3 m south and 19 m east of the start.",
+          "She is south-east of the start, so the start is **North-west** of her present position."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately; only the signs of the two net legs decide the direction.",
+        "trap": "South-east is where she is from the start — the question asks the reverse.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": -17
+            },
+            {
+              "x": 9,
+              "y": -17
+            },
+            {
+              "x": 9,
+              "y": 13
+            },
+            {
+              "x": 13,
+              "y": 13
+            },
+            {
+              "x": 13,
+              "y": -3
+            },
+            {
+              "x": 19,
+              "y": -3,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "√370 m"
+          },
+          "caption": "Net: 3 m south, 19 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:start-from-end",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-113",
+      "subtype": "walk",
+      "difficulty": "hard",
+      "prompt": "Deepak starts from his school and walks 10 m towards the west. From there, he turns towards the north and walks 18 m. Next, he takes a right turn and walks 26 m. Then he turns right and walks 6 m. Finally, he takes a right turn and walks 10 m. What is the shortest distance between his starting point and his final position?",
+      "options": [
+        "$6\\sqrt{5}$ m",
+        "$7\\sqrt{5}$ m",
+        "18 m",
+        "$2\\sqrt{565}$ m",
+        "70 m"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "10 m west → (-10, 0)",
+          "18 m north → (-10, 18)",
+          "26 m east → (16, 18)",
+          "6 m south → (16, 12)",
+          "10 m west → (6, 12)",
+          "Net displacement: 12 m north and 6 m east of the start.",
+          "Shortest distance = $\\sqrt{6^2 + 12^2} = \\sqrt{180}$ = $6\\sqrt{5}$ m"
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then apply Pythagoras on the two net legs.",
+        "trap": "70 m is the total path walked, not the shortest distance.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": -10,
+              "y": 0
+            },
+            {
+              "x": -10,
+              "y": 18
+            },
+            {
+              "x": 16,
+              "y": 18
+            },
+            {
+              "x": 16,
+              "y": 12
+            },
+            {
+              "x": 6,
+              "y": 12,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "6√5 m"
+          },
+          "caption": "Net: 12 m north, 6 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:distance",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-114",
+      "subtype": "walk",
+      "difficulty": "extreme",
+      "prompt": "Tenzing starts from the bank and walks 8 m towards the south. From there, he takes a left turn and walks 21 m. Next, he turns left and walks 30 m. Then he takes a left turn and walks 9 m. After that, he turns back and walks 4 m. Finally, he takes a right turn and walks 13 m. How far and in which direction is he now from his starting point?",
+      "options": [
+        "$\\sqrt{337}$ m, South-west",
+        "25 m, North-east",
+        "$\\sqrt{337}$ m, North-east",
+        "$\\sqrt{337}$ m, East",
+        "85 m, North-east"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "8 m south → (0, -8)",
+          "21 m east → (21, -8)",
+          "30 m north → (21, 22)",
+          "9 m west → (12, 22)",
+          "4 m east → (16, 22)",
+          "13 m south → (16, 9)",
+          "Net displacement: 9 m north and 16 m east of the start.",
+          "Shortest distance = $\\sqrt{16^2 + 9^2} = \\sqrt{337}$ m",
+          "Direction from the start: **North-east**."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then apply Pythagoras on the two net legs.",
+        "trap": "Adding the net legs gives 25 m and the path is 85 m — the straight-line distance is √337 m; and the direction is North-east, not South-west (that is the start seen from his end point).",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": -8
+            },
+            {
+              "x": 21,
+              "y": -8
+            },
+            {
+              "x": 21,
+              "y": 22
+            },
+            {
+              "x": 12,
+              "y": 22
+            },
+            {
+              "x": 16,
+              "y": 22
+            },
+            {
+              "x": 16,
+              "y": 9,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "√337 m"
+          },
+          "caption": "Net: 9 m north, 16 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:both",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-115",
+      "subtype": "walk",
+      "difficulty": "extreme",
+      "prompt": "Bhavna starts from her house and walks 12 m towards the east. From there, she turns left and walks 7 m. Next, she turns towards the west and walks 20 m. Then she turns left and walks 15 m. After that, she takes a left turn and walks 11 m. Finally, she turns right and walks 5 m. In which direction is her starting point with respect to her present position?",
+      "options": [
+        "South-east",
+        "North",
+        "North-west",
+        "West",
+        "North-east"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "12 m east → (12, 0)",
+          "7 m north → (12, 7)",
+          "20 m west → (-8, 7)",
+          "15 m south → (-8, -8)",
+          "11 m east → (3, -8)",
+          "5 m south → (3, -13)",
+          "Net displacement: 13 m south and 3 m east of the start.",
+          "She is south-east of the start, so the start is **North-west** of her present position."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately; only the signs of the two net legs decide the direction.",
+        "trap": "South-east is where she is from the start — the question asks the reverse.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 12,
+              "y": 0
+            },
+            {
+              "x": 12,
+              "y": 7
+            },
+            {
+              "x": -8,
+              "y": 7
+            },
+            {
+              "x": -8,
+              "y": -8
+            },
+            {
+              "x": 3,
+              "y": -8
+            },
+            {
+              "x": 3,
+              "y": -13,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "√178 m"
+          },
+          "caption": "Net: 13 m south, 3 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:start-from-end",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-116",
+      "subtype": "walk",
+      "difficulty": "extreme",
+      "prompt": "Siddharth starts from the post office and walks 20 m towards the north. From there, he takes a left turn and walks 8 m. Next, he turns left and walks 26 m. Then he takes a left turn and walks 15 m. After that, he turns right and walks 9 m. From there, he takes a right turn and walks 14 m. Finally, he turns left and walks 9 m. What is the shortest distance between his starting point and his final position?",
+      "options": [
+        "25 m",
+        "$\\sqrt{626}$ m",
+        "$\\sqrt{833}$ m",
+        "31 m",
+        "101 m"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "20 m north → (0, 20)",
+          "8 m west → (-8, 20)",
+          "26 m south → (-8, -6)",
+          "15 m east → (7, -6)",
+          "9 m south → (7, -15)",
+          "14 m west → (-7, -15)",
+          "9 m south → (-7, -24)",
+          "Net displacement: 24 m south and 7 m west of the start.",
+          "Shortest distance = $\\sqrt{7^2 + 24^2} = \\sqrt{625}$ = 25 m"
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then recognise the 7-24-25 triple.",
+        "trap": "101 m is the total path walked, not the shortest distance.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": 20
+            },
+            {
+              "x": -8,
+              "y": 20
+            },
+            {
+              "x": -8,
+              "y": -6
+            },
+            {
+              "x": 7,
+              "y": -6
+            },
+            {
+              "x": 7,
+              "y": -15
+            },
+            {
+              "x": -7,
+              "y": -15
+            },
+            {
+              "x": -7,
+              "y": -24,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "25 m"
+          },
+          "caption": "Net: 24 m south, 7 m west"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:distance",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-117",
+      "subtype": "walk",
+      "difficulty": "extreme",
+      "prompt": "Hema starts from her office and walks 5 m towards the west. From there, she turns right and walks 12 m. Next, she turns back and walks 20 m. Then she turns left and walks 16 m. After that, she takes a left turn and walks 8 m. Finally, she turns right and walks 3 m. In which direction is she now with respect to her starting point?",
+      "options": [
+        "West",
+        "East",
+        "South-east",
+        "North-east",
+        "South"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "5 m west → (-5, 0)",
+          "12 m north → (-5, 12)",
+          "20 m south → (-5, -8)",
+          "16 m east → (11, -8)",
+          "8 m north → (11, 0)",
+          "3 m east → (14, 0)",
+          "Net displacement: 14 m east of the start.",
+          "Direction from the start: **East**."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately — one of them cancels to zero, so the answer is a main direction.",
+        "trap": "She ends on the same line as the start — the direction is a main direction, not a corner one.",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": -5,
+              "y": 0
+            },
+            {
+              "x": -5,
+              "y": 12
+            },
+            {
+              "x": -5,
+              "y": -8
+            },
+            {
+              "x": 11,
+              "y": -8
+            },
+            {
+              "x": 11,
+              "y": 0
+            },
+            {
+              "x": 14,
+              "y": 0,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "14 m"
+          },
+          "caption": "Net: 14 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:direction"
+      ]
+    },
+    {
+      "key": "dr-118",
+      "subtype": "walk",
+      "difficulty": "extreme",
+      "prompt": "Yusuf starts from the bus stand and walks 9 m towards the north. From there, he takes a right turn and walks 17 m. Next, he turns right and walks 22 m. Then he takes a right turn and walks 6 m. After that, he turns left and walks 13 m. Finally, he takes a left turn and walks 8 m. How far and in which direction is he now from his starting point?",
+      "options": [
+        "$\\sqrt{1037}$ m, North-west",
+        "45 m, South-east",
+        "$\\sqrt{1037}$ m, South",
+        "$\\sqrt{1037}$ m, South-east",
+        "75 m, South-east"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Take the start as (0, 0), east as +x and north as +y.",
+          "9 m north → (0, 9)",
+          "17 m east → (17, 9)",
+          "22 m south → (17, -13)",
+          "6 m west → (11, -13)",
+          "13 m south → (11, -26)",
+          "8 m east → (19, -26)",
+          "Net displacement: 26 m south and 19 m east of the start.",
+          "Shortest distance = $\\sqrt{19^2 + 26^2} = \\sqrt{1037}$ m",
+          "Direction from the start: **South-east**."
+        ],
+        "shortcut": "Add the north–south legs and the east–west legs separately, then apply Pythagoras on the two net legs.",
+        "trap": "Adding the net legs gives 45 m and the path is 75 m — the straight-line distance is √1037 m; and the direction is South-east, not North-west (that is the start seen from his end point).",
+        "visual": {
+          "type": "path",
+          "points": [
+            {
+              "x": 0,
+              "y": 0,
+              "label": "Start"
+            },
+            {
+              "x": 0,
+              "y": 9
+            },
+            {
+              "x": 17,
+              "y": 9
+            },
+            {
+              "x": 17,
+              "y": -13
+            },
+            {
+              "x": 11,
+              "y": -13
+            },
+            {
+              "x": 11,
+              "y": -26
+            },
+            {
+              "x": 19,
+              "y": -26,
+              "label": "End"
+            }
+          ],
+          "unit": "m",
+          "shortest": {
+            "from": "Start",
+            "to": "End",
+            "label": "√1037 m"
+          },
+          "caption": "Net: 26 m south, 19 m east"
+        }
+      },
+      "tags": [
+        "direction:walk",
+        "direction:both",
+        "trick:pythagoras"
+      ]
+    },
+    {
+      "key": "dr-119",
+      "subtype": "final-facing",
+      "difficulty": "easy",
+      "prompt": "Ritu is standing facing north. She turns to her right, then takes an about-turn, then turns to her right. In which direction is she facing now?",
+      "options": [
+        "West",
+        "South",
+        "North-east",
+        "North-west",
+        "North"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: North.",
+          "+90° → East",
+          "+180° → West",
+          "+90° → North",
+          "Final: **North**."
+        ],
+        "shortcut": "Add the turns once: +90 +180 +90 = +360° ≡ 0° clockwise from North → North.",
+        "trap": "Mixing up left (anticlockwise) and right (clockwise) gives North."
+      },
+      "tags": [
+        "direction:final-facing"
+      ]
+    },
+    {
+      "key": "dr-120",
+      "subtype": "final-facing",
+      "difficulty": "medium",
+      "prompt": "Karthik is standing facing east. He turns 135° anticlockwise, then turns to his left, then turns 45° clockwise. In which direction is he facing now?",
+      "options": [
+        "South",
+        "South-west",
+        "West",
+        "East",
+        "North-east"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: East.",
+          "−135° → North-west",
+          "−90° → South-west",
+          "+45° → West",
+          "Final: **West**."
+        ],
+        "shortcut": "Add the turns once: −135 −90 +45 = −180° ≡ 180° clockwise from East → West.",
+        "trap": "Taking the 135° turn the wrong way gives South."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-121",
+      "subtype": "final-facing",
+      "difficulty": "medium",
+      "prompt": "Lakshmi is standing facing south. She turns 90° clockwise, then turns 135° clockwise, then turns to her left, then takes an about-turn. In which direction is she facing now?",
+      "options": [
+        "South-west",
+        "South-east",
+        "North-west",
+        "West",
+        "North-east"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: South.",
+          "+90° → West",
+          "+135° → North-east",
+          "−90° → North-west",
+          "+180° → South-east",
+          "Final: **South-east**."
+        ],
+        "shortcut": "Add the turns once: +90 +135 −90 +180 = +315° ≡ 315° clockwise from South → South-east.",
+        "trap": "Mixing up left (anticlockwise) and right (clockwise) gives South-west."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-122",
+      "subtype": "final-facing",
+      "difficulty": "medium",
+      "prompt": "Manoj is standing facing west. He turns 45° to his right, then turns 180° clockwise, then turns to his left. In which direction is he facing now?",
+      "options": [
+        "South-east",
+        "South-west",
+        "North-east",
+        "North-west",
+        "West"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: West.",
+          "+45° → North-west",
+          "+180° → South-east",
+          "−90° → North-east",
+          "Final: **North-east**."
+        ],
+        "shortcut": "Add the turns once: +45 +180 −90 = +135° ≡ 135° clockwise from West → North-east.",
+        "trap": "Mixing up left (anticlockwise) and right (clockwise) gives South-east."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-123",
+      "subtype": "final-facing",
+      "difficulty": "medium",
+      "prompt": "Anita is standing facing north. She turns 135° clockwise, then turns 90° anticlockwise, then turns to her left, then turns 270° clockwise. In which direction is she facing now?",
+      "options": [
+        "North-east",
+        "South-west",
+        "South-east",
+        "North-west",
+        "West"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: North.",
+          "+135° → South-east",
+          "−90° → North-east",
+          "−90° → North-west",
+          "+270° → South-west",
+          "Final: **South-west**."
+        ],
+        "shortcut": "Add the turns once: +135 −90 −90 +270 = +225° ≡ 225° clockwise from North → South-west.",
+        "trap": "Taking the 270° turn the wrong way gives North-east."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-124",
+      "subtype": "final-facing",
+      "difficulty": "hard",
+      "prompt": "Sandeep is standing facing south-west. He turns 225° clockwise, then turns to his left, then turns 135° anticlockwise, then turns 270° anticlockwise, then takes an about-turn. In which direction is he facing now?",
+      "options": [
+        "North-west",
+        "South-east",
+        "North-east",
+        "West",
+        "South"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: South-west.",
+          "+225° → East",
+          "−90° → North",
+          "−135° → South-west",
+          "−270° → North-west",
+          "+180° → South-east",
+          "Final: **South-east**."
+        ],
+        "shortcut": "Add the turns once: +225 −90 −135 −270 +180 = −90° ≡ 270° clockwise from South-west → South-east.",
+        "trap": "Taking the 270° turn the wrong way gives North-west."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-125",
+      "subtype": "final-facing",
+      "difficulty": "hard",
+      "prompt": "If North-east becomes South-east, South becomes West, and all the other directions change in the same manner, then what will North-west become?",
+      "options": [
+        "South-west",
+        "East",
+        "North",
+        "North-west",
+        "North-east"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "North-east → South-east is a turn of 90° clockwise (270° anticlockwise).",
+          "Check: South + 90° = West ✓",
+          "North-west + 90° = **North-east**."
+        ],
+        "shortcut": "Every direction is rotated by the same angle — find it from one example (count 45° steps clockwise) and apply it.",
+        "trap": "Rotating the other way (90° anticlockwise) gives South-west."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:rotated-compass"
+      ]
+    },
+    {
+      "key": "dr-126",
+      "subtype": "final-facing",
+      "difficulty": "hard",
+      "prompt": "Chitra is standing facing north-west. She turns 90° to her right, then turns 225° anticlockwise, then turns to her right, then turns 315° clockwise, then turns 45° to her left. In which direction is she facing now?",
+      "options": [
+        "South",
+        "West",
+        "East",
+        "South-west",
+        "North"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: North-west.",
+          "+90° → North-east",
+          "−225° → South",
+          "+90° → West",
+          "+315° → South-west",
+          "−45° → South",
+          "Final: **South**."
+        ],
+        "shortcut": "Add the turns once: +90 −225 +90 +315 −45 = +225° ≡ 225° clockwise from North-west → South.",
+        "trap": "Taking the 315° turn the wrong way gives West."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-127",
+      "subtype": "final-facing",
+      "difficulty": "hard",
+      "prompt": "Prakash is standing facing east. He turns 315° anticlockwise, then turns to his right, then turns 135° to his left, then takes an about-turn, then turns 225° anticlockwise. In which direction is he facing now?",
+      "options": [
+        "North-west",
+        "South-east",
+        "West",
+        "South-west",
+        "North-east"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: East.",
+          "−315° → South-east",
+          "+90° → South-west",
+          "−135° → East",
+          "+180° → West",
+          "−225° → North-east",
+          "Final: **North-east**."
+        ],
+        "shortcut": "Add the turns once: −315 +90 −135 +180 −225 = −405° ≡ 315° clockwise from East → North-east.",
+        "trap": "Taking the 315° turn the wrong way gives North-west."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-128",
+      "subtype": "final-facing",
+      "difficulty": "extreme",
+      "prompt": "Bhaskar is standing facing south-east. He turns 315° clockwise, then turns 135° to his left, then turns 270° anticlockwise, then takes an about-turn, then turns 225° clockwise, then turns to his left. In which direction is he facing now?",
+      "options": [
+        "East",
+        "West",
+        "South",
+        "North",
+        "North-east"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: South-east.",
+          "+315° → East",
+          "−135° → North-west",
+          "−270° → North-east",
+          "+180° → South-west",
+          "+225° → East",
+          "−90° → North",
+          "Final: **North**."
+        ],
+        "shortcut": "Add the turns once: +315 −135 −270 +180 +225 −90 = +225° ≡ 225° clockwise from South-east → North.",
+        "trap": "Taking the 315° turn the wrong way gives East."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-129",
+      "subtype": "final-facing",
+      "difficulty": "extreme",
+      "prompt": "Jaya is standing facing south. She turns 135° clockwise, then turns 270° anticlockwise, then turns 45° to her left, then turns to her right, then turns 315° clockwise, then takes an about-turn. In which direction is she facing now?",
+      "options": [
+        "North-west",
+        "South-west",
+        "South-east",
+        "North-east",
+        "West"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: South.",
+          "+135° → North-west",
+          "−270° → North-east",
+          "−45° → North",
+          "+90° → East",
+          "+315° → North-east",
+          "+180° → South-west",
+          "Final: **South-west**."
+        ],
+        "shortcut": "Add the turns once: +135 −270 −45 +90 +315 +180 = +405° ≡ 45° clockwise from South → South-west.",
+        "trap": "Taking the 315° turn the wrong way gives North-west."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    },
+    {
+      "key": "dr-130",
+      "subtype": "final-facing",
+      "difficulty": "extreme",
+      "prompt": "Uma is standing facing north-east. She turns 90° to her left, then turns 225° clockwise, then turns to her right, then turns 135° to her left, then takes an about-turn, then turns 225° anticlockwise. In which direction is she facing now?",
+      "options": [
+        "North",
+        "North-west",
+        "East",
+        "West",
+        "North-east"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Clockwise = +, anticlockwise = −; left = −90°, right = +90°, about-turn = 180°.",
+          "Start: North-east.",
+          "−90° → North-west",
+          "+225° → South",
+          "+90° → West",
+          "−135° → South-east",
+          "+180° → North-west",
+          "−225° → East",
+          "Final: **East**."
+        ],
+        "shortcut": "Add the turns once: −90 +225 +90 −135 +180 −225 = +45° ≡ 45° clockwise from North-east → East.",
+        "trap": "Taking the 225° turn the wrong way gives North."
+      },
+      "tags": [
+        "direction:final-facing",
+        "direction:degree-turns"
+      ]
+    }
+  ]
+}
