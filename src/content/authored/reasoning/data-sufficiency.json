@@ -578,7 +578,7 @@
       "key": "ds-020",
       "subtype": "ranking",
       "difficulty": "extreme",
-      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — J, K, L, M, N, P and Q — each scored different marks in a test.\n**How many persons scored more marks than P?**\n\n**I.** The number of persons heavier than M is one more than the number of persons lighter than N. M scored more marks than N.\n**II.** When the persons are arranged in order of marks, only one person comes between P and M. Neither J nor K scored more marks than P.",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — J, K, L, M, N, P and Q — each scored different marks in a test.\n**How many persons scored more marks than P?**\n\n**I.** The number of persons who scored more marks than M is one more than the number of persons who scored fewer marks than N. M scored more marks than N.\n**II.** When the persons are arranged in order of marks, only one person comes between P and M. Neither J nor K scored more marks than P.",
       "options": [
         "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
         "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
@@ -2303,7 +2303,7 @@
       "key": "ds-077",
       "subtype": "seating",
       "difficulty": "extreme",
-      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — G, H, J, K, L and M — sit around a circular table (not necessarily in the same order). Some of them face the centre and the others face away from the centre.\n**Who sits second to the left of K?**\n\n**I.** K faces outside, and L sits to the immediate right of K. G faces the centre and sits opposite K.\n**II.** J sits to the immediate left of K, and K sits to the immediate left of J. H sits next to J.",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — G, H, J, K, L and M — sit around a circular table (not necessarily in the same order). Some of them face the centre and the others face away from the centre.\n**Who sits second to the left of K?**\n\n**I.** K faces away from the centre, and L sits to the immediate right of K. G faces the centre and sits opposite K.\n**II.** J sits to the immediate left of K, and K sits to the immediate left of J. H sits next to J.",
       "options": [
         "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
         "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
@@ -2315,7 +2315,7 @@
       "solution": {
         "steps": [
           "II: J is K’s immediate left and K is J’s immediate left — possible only when J and K are neighbours facing opposite ways. Then K’s second to the left is J’s other neighbour, and H sits next to J: the answer is H.",
-          "I: K faces outside with L to K’s right and G opposite K; K’s second to the left can be H, J or M.",
+          "I: K faces away from the centre with L to K’s right and G opposite K; K’s second to the left can be H, J or M.",
           "Statement I alone: the person second to the left of K could be H, J or M (e.g. clockwise G(in), H(in), J(in), K(out), L(in), M(in) gives H, while clockwise G(in), J(in), H(in), K(out), L(in), M(in) gives J) → **not sufficient**.",
           "Statement II alone: H sits second to the left of K → **sufficient**.",
           "Hence II alone is sufficient → option B."

@@ -1,0 +1,25 @@
+[
+  {
+    "at": "2026-10-01T20:59:04.744Z",
+    "passed": 16,
+    "failed": [
+      {
+        "key": "io-06",
+        "reason": "io-06-q4: solver chose B, key is A — With 9 words, after Step VIII only 'cello' is left. The sample stops with one word unprocessed (grater), which gives Step VIII. But in the sample the next step would have been an even (move-right) step that changes nothing. Here the next step would be odd: reverse the alphabetically-last word, which turns cello into 'ollec' and does change the line. Applying the rule literally therefore gives Step IX, and A (Step IX; oboe) is arguable."
+      },
+      {
+        "key": "io-13",
+        "reason": "io-13-q4: ambiguity 3 — Without 41 there are 9 numbers. After Step IV only 53 is left, untransformed. Step V turns it into 61 (largest + digit sum). The sample has 8 numbers and no leftover, so it doesn't show what happens. 'Stop when one element is left' gives Step IV (C), which is arguable."
+      },
+      {
+        "key": "io-18",
+        "reason": "io-18-q2: ambiguity 3 — Sample numbers (25, 43, 71, 18) fit two rules. (a) Ascending digit sum: 7, 7, 8, 9, with 18 last. (b) Odd numbers ascending, even numbers left where they are. Under (b), Step II is 27 61 clove 52 fennel 34 cumin 80 ginger pepper, and 4th from the right is cumin (C)."
+      },
+      {
+        "key": "io-20",
+        "reason": "io-20-q1: ambiguity 3 — Even steps move the longest word to the right. At Step II, papaya and cherry tie at 6 letters. The sample's only tie (maroon vs yellow) doesn't separate an alphabetical tie-break from a first-in-line tie-break. Alphabetical (cherry) gives A. First-in-line (papaya) gives D (48 72 26 kiwi guava 63 38 cherry papaya banana), which is also an option. | io-20-q3: ambiguity 3 — Even steps move the longest word to the right. At Step II, papaya and cherry tie at 6 letters. The sample's only tie (maroon vs yellow) doesn't separate an alphabetical tie-break from a first-in-line tie-break. First-in-line gives cherry (A). | io-20-q4: ambiguity 3 — Even steps move the longest word to the right. At Step II, papaya and cherry tie at 6 letters. The sample's only tie (maroon vs yellow) doesn't separate an alphabetical tie-break from a first-in-line tie-break. First-in-line gives Step V = 48 72 26 36 19 kiwi guava cherry papaya banana, and 4th to the left of guava is 26 (D)."
+      }
+    ],
+    "unanswered": []
+  }
+]
