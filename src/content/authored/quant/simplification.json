@@ -1,0 +1,1587 @@
+{
+  "chapter": "simplification",
+  "version": 1,
+  "items": [
+    {
+      "key": "sm-001",
+      "subtype": "bodmas",
+      "difficulty": "easy",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$1848 \\div 24 + 37 \\times 6 - 145 = ?$",
+      "options": [
+        "134",
+        "144",
+        "154",
+        "164",
+        "174"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$1848 \\div 24 = 77$ and $37 \\times 6 = 222$",
+          "$77 + 222 - 145 = 154$",
+          "So, ? = **154**"
+        ],
+        "trap": "Doing the chain strictly left to right, $(77 + 37) \\times 6 - 145 = 539$, ignores that × comes before +.",
+        "shortcut": "Unit digit: 7 + 2 − 5 ends in 4, and the value is near 75 + 220 − 145 = 150."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:bodmas-order"
+      ]
+    },
+    {
+      "key": "sm-002",
+      "subtype": "bodmas",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(426 + 318) \\div 24 \\times 15 - 287 = ?$",
+      "options": [
+        "178",
+        "184",
+        "188",
+        "194",
+        "198"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$426 + 318 = 744$, and $744 \\div 24 = 31$",
+          "$31 \\times 15 = 465$",
+          "$465 - 287 = 178$, so ? = **178**"
+        ],
+        "trap": "**188** comes from a borrowing slip in $465 - 287$; check it as $287 + 178 = 465$.",
+        "shortcut": "$744 \\div 24 \\times 15 = 744 \\times \\frac{15}{24} = 744 \\times \\frac{5}{8} = 465$."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trick:cancel-first"
+      ]
+    },
+    {
+      "key": "sm-003",
+      "subtype": "bodmas",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$2880 \\div 12 \\div 4 \\times 3 + 17 \\times 9 - 68 = ?$",
+      "options": [
+        "105",
+        "245",
+        "255",
+        "265",
+        "275"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Left to right: $2880 \\div 12 = 240$, $240 \\div 4 = 60$, $60 \\times 3 = 180$",
+          "$17 \\times 9 = 153$",
+          "$180 + 153 - 68 = 265$, so ? = **265**"
+        ],
+        "trap": "**105** is what you get if you multiply $4 \\times 3$ first ($2880 \\div 12 \\div 12 = 20$). ÷ and × have equal priority and go left to right."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-004",
+      "subtype": "bodmas",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$72 \\times 15 - 2496 \\div 32 + 19 \\times 7 = ?$",
+      "options": [
+        "869",
+        "1105",
+        "1115",
+        "1125",
+        "1135"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$72 \\times 15 = 1080$, $2496 \\div 32 = 78$, $19 \\times 7 = 133$",
+          "$1080 - 78 + 133 = 1135$",
+          "So, ? = **1135**"
+        ],
+        "trap": "**869** subtracts both 78 and 133 from 1080; only the 78 carries the minus sign, the 133 is added.",
+        "shortcut": "Net change after 1080 is $-78 + 133 = +55$, so the value is $1080 + 55 = 1135$."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:sign"
+      ]
+    },
+    {
+      "key": "sm-005",
+      "subtype": "bodmas",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$[(84 \\times 25) - (1764 \\div 42)] \\div 7 = ?$",
+      "options": [
+        "258",
+        "274",
+        "284",
+        "294",
+        "304"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$84 \\times 25 = 2100$ and $1764 \\div 42 = 42$",
+          "$[2100 - 42] \\div 7 = 2058 \\div 7 = 294$",
+          "So, ? = **294**"
+        ],
+        "trap": "**258** comes from dividing only 2100 by 7 ($300 - 42$). The ÷ 7 applies to the whole square bracket.",
+        "shortcut": "$2100 \\div 7 = 300$ and $42 \\div 7 = 6$, so the value is $300 - 6 = 294$."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:nested-brackets"
+      ]
+    },
+    {
+      "key": "sm-006",
+      "subtype": "bodmas",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$4096 \\div 64 \\times 8 - 23 \\times 17 + 150 = ?$",
+      "options": [
+        "-233",
+        "261",
+        "271",
+        "281",
+        "291"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Left to right: $4096 \\div 64 = 64$, then $64 \\times 8 = 512$",
+          "$23 \\times 17 = 391$",
+          "$512 - 391 + 150 = 271$, so ? = **271**"
+        ],
+        "trap": "**-233** is what you get if you multiply $64 \\times 8$ first and divide $4096 \\div 512 = 8$; ÷ and × go left to right."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-007",
+      "subtype": "bodmas",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$945 \\div 15 + 38 \\times 12 - 17^{2} = ?$",
+      "options": [
+        "220",
+        "230",
+        "240",
+        "250",
+        "923"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$945 \\div 15 = 63$, $38 \\times 12 = 456$, $17^{2} = 289$",
+          "$63 + 456 - 289 = 230$",
+          "So, ? = **230**"
+        ],
+        "trap": "**923** is what you get if you add $63 + 38$ before multiplying by 12. Multiplication comes before addition."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:bodmas-order",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-008",
+      "subtype": "bodmas",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(1296 \\div 36 + 14) \\times (225 \\div 15 - 7) = ?$",
+      "options": [
+        "239",
+        "380",
+        "390",
+        "400",
+        "410"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "First bracket: $1296 \\div 36 = 36$, $36 + 14 = 50$",
+          "Second bracket: $225 \\div 15 = 15$, $15 - 7 = 8$",
+          "$50 \\times 8 = 400$, so ? = **400**"
+        ],
+        "trap": "**239** comes from dropping the brackets: $36 + 14 \\times 15 - 7 = 239$."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:nested-brackets"
+      ]
+    },
+    {
+      "key": "sm-009",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$5832 \\div 18 \\div 9 \\times 4 + 25 \\times 13 - 288 = ?$",
+      "options": [
+        "46",
+        "171",
+        "177",
+        "181",
+        "191"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Left to right: $5832 \\div 18 = 324$, $324 \\div 9 = 36$, $36 \\times 4 = 144$",
+          "$25 \\times 13 = 325$",
+          "$144 + 325 - 288 = 181$, so ? = **181**"
+        ],
+        "trap": "**46** is what you get if you multiply $9 \\times 4$ first ($324 \\div 36 = 9$, then $9 + 325 - 288$). Equal-priority ÷ and × run left to right."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-010",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\{(48 \\times 27) - (2688 \\div 32)\\} \\div 12 + 58 = ?$",
+      "options": [
+        "139",
+        "149",
+        "159",
+        "169",
+        "1347"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$48 \\times 27 = 1296$ and $2688 \\div 32 = 84$",
+          "$\\{1296 - 84\\} \\div 12 = 1212 \\div 12 = 101$",
+          "$101 + 58 = 159$, so ? = **159**"
+        ],
+        "trap": "**1347** comes from ignoring the curly bracket and dividing only 84 by 12: $1296 - 7 + 58$.",
+        "shortcut": "$1296 \\div 12 = 108$ and $84 \\div 12 = 7$, so the bracket gives $108 - 7 = 101$."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:nested-brackets"
+      ]
+    },
+    {
+      "key": "sm-011",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$1440 \\div 4 \\text{ of } 9 + 28 \\times 6 - 115 = ?$",
+      "options": [
+        "63",
+        "78",
+        "88",
+        "93",
+        "3293"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"of\" is done before ÷: $4 \\text{ of } 9 = 36$, so $1440 \\div 36 = 40$",
+          "$28 \\times 6 = 168$",
+          "$40 + 168 - 115 = 93$, so ? = **93**"
+        ],
+        "trap": "**3293** treats \"of\" as an ordinary × done after the division: $1440 \\div 4 \\times 9 = 3240$. In BODMAS, O (of) comes before D."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:of-precedence"
+      ]
+    },
+    {
+      "key": "sm-012",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$36 \\times 14 - 27 \\times 23 + 1512 \\div 56 = ?$",
+      "options": [
+        "-144",
+        "-90",
+        "-80",
+        "80",
+        "90"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$36 \\times 14 = 504$, $27 \\times 23 = 621$, $1512 \\div 56 = 27$",
+          "$504 - 621 + 27 = -117 + 27 = -90$",
+          "So, ? = **-90**"
+        ],
+        "trap": "**-144** subtracts the 27 as well ($504 - 621 - 27$); only 621 carries the minus sign. **90** drops the sign of the result."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:negative-answer",
+        "trap:sign"
+      ]
+    },
+    {
+      "key": "sm-013",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(37^{2} - 29^{2}) \\div 16 + 13 \\times 18 - 205 = ?$",
+      "options": [
+        "33",
+        "42",
+        "52",
+        "57",
+        "62"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$37^{2} - 29^{2} = (37 - 29)(37 + 29) = 8 \\times 66 = 528$",
+          "$528 \\div 16 = 33$ and $13 \\times 18 = 234$",
+          "$33 + 234 - 205 = 62$, so ? = **62**"
+        ],
+        "trap": "**33** is what you get if you stop at the bracket value, or take $37^{2} - 29^{2}$ as $(37 - 29)^{2} = 64$ (giving $4 + 234 - 205 = 33$).",
+        "shortcut": "Use $a^{2} - b^{2} = (a - b)(a + b)$ instead of squaring 37 and 29."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-014",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$9 \\times [84 - \\{46 - (31 - 4 \\times 6)\\}] \\div 15 = ?$",
+      "options": [
+        "27",
+        "33",
+        "36",
+        "45",
+        "120"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Innermost: $31 - 4 \\times 6 = 31 - 24 = 7$",
+          "$\\{46 - 7\\} = 39$, then $[84 - 39] = 45$",
+          "$9 \\times 45 \\div 15 = 405 \\div 15 = 27$, so ? = **27**"
+        ],
+        "trap": "**120** comes from working $(31 - 4) \\times 6 = 162$ inside the bracket; × must be done before − even inside brackets. **45** forgets the outer $9 \\times \\ldots \\div 15$."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:nested-brackets",
+        "trap:bodmas-order"
+      ]
+    },
+    {
+      "key": "sm-015",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$6084 \\div 78 + 2925 \\div 45 - 1170 \\div 26 \\times 3 = ?$",
+      "options": [
+        "6",
+        "8",
+        "12",
+        "18",
+        "128"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$6084 \\div 78 = 78$ and $2925 \\div 45 = 65$",
+          "Left to right: $1170 \\div 26 = 45$, then $45 \\times 3 = 135$",
+          "$78 + 65 - 135 = 8$, so ? = **8**"
+        ],
+        "trap": "**128** is what you get if you take $26 \\times 3$ first ($1170 \\div 78 = 15$). The ÷ and × run left to right."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-016",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(1225 \\div 35 + 15) \\times 12 - (18 \\times 24 - 47) = ?$",
+      "options": [
+        "121",
+        "205",
+        "215",
+        "225",
+        "235"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$1225 \\div 35 = 35$, so the first bracket is $35 + 15 = 50$ and $50 \\times 12 = 600$",
+          "Second bracket: $18 \\times 24 - 47 = 432 - 47 = 385$",
+          "$600 - 385 = 215$, so ? = **215**"
+        ],
+        "trap": "**121** opens the second bracket without changing the sign of 47: $600 - 432 - 47$. Removing a bracket after a minus sign makes −47 into +47."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:sign"
+      ]
+    },
+    {
+      "key": "sm-017",
+      "subtype": "bodmas",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$864 \\div 12 \\div 6 \\times 15 + 768 \\div 16 \\div 4 = ?$",
+      "options": [
+        "172",
+        "182",
+        "192",
+        "202",
+        "372"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$864 \\div 12 = 72$, $72 \\div 6 = 12$, $12 \\times 15 = 180$",
+          "$768 \\div 16 = 48$, $48 \\div 4 = 12$",
+          "$180 + 12 = 192$, so ? = **192**"
+        ],
+        "trap": "**372** comes from working $16 \\div 4 = 4$ first ($768 \\div 4 = 192$). Successive divisions are done left to right."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-018",
+      "subtype": "bodmas",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$45 \\times 18 - [744 \\div \\{42 - (9 \\times 4 - 18)\\}] \\times 7 = ?$",
+      "options": [
+        "593",
+        "603",
+        "613",
+        "623",
+        "1244"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$(9 \\times 4 - 18) = 18$, $\\{42 - 18\\} = 24$, $[744 \\div 24] = 31$",
+          "$45 \\times 18 = 810$ and $31 \\times 7 = 217$",
+          "$810 - 217 = 593$, so ? = **593**"
+        ],
+        "trap": "**1244** comes from opening the round bracket without flipping the sign of 18: $42 - 36 - 18 = -12$, so $744 \\div (-12) \\times 7 = -434$. After a minus sign, $-(36 - 18) = -36 + 18$."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:nested-brackets"
+      ]
+    },
+    {
+      "key": "sm-019",
+      "subtype": "bodmas",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\{(2744 \\div 14) \\div 7 \\times 9 - 13^{2}\\} \\times 6 - 3584 \\div 28 \\div 8 = ?$",
+      "options": [
+        "370",
+        "462",
+        "472",
+        "478",
+        "482"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$2744 \\div 14 = 196$, $196 \\div 7 = 28$, $28 \\times 9 = 252$, $252 - 169 = 83$",
+          "$83 \\times 6 = 498$; $3584 \\div 28 = 128$, $128 \\div 8 = 16$",
+          "$498 - 16 = 482$, so ? = **482**"
+        ],
+        "trap": "**370** forgets the final ÷ 8 and subtracts 128 instead of 16. Successive divisions $3584 \\div 28 \\div 8$ must both be applied, left to right"
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:nested-brackets",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-020",
+      "subtype": "bodmas",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(24 \\times 47 - 27^{2}) \\div 19 - 3150 \\div 14 \\div 5 \\times 3 = ?$",
+      "options": [
+        "-124",
+        "-114",
+        "-104",
+        "6",
+        "114"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$24 \\times 47 = 1128$, $27^{2} = 729$, $(1128 - 729) \\div 19 = 399 \\div 19 = 21$",
+          "Left to right: $3150 \\div 14 = 225$, $225 \\div 5 = 45$, $45 \\times 3 = 135$",
+          "$21 - 135 = -114$, so ? = **-114**"
+        ],
+        "trap": "**6** is what you get if you multiply $5 \\times 3$ first ($225 \\div 15 = 15$). **114** drops the minus sign."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:negative-answer",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-021",
+      "subtype": "bodmas",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$[\\{(52 \\times 15) \\div 26 + 18\\} \\times 4 - 1029 \\div 21] \\div 13 + 8^{2} = ?$",
+      "options": [
+        "19",
+        "27",
+        "65",
+        "70",
+        "75"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$52 \\times 15 = 780$, $780 \\div 26 = 30$, $\\{30 + 18\\} = 48$",
+          "$48 \\times 4 = 192$, $1029 \\div 21 = 49$, $[192 - 49] = 143$",
+          "$143 \\div 13 = 11$, $11 + 64 = 75$, so ? = **75**"
+        ],
+        "trap": "**27** takes $8^{2}$ as $8 \\times 2 = 16$, and **19** adds 8 instead of $8^{2} = 64$.",
+        "shortcut": "$52 \\div 26 = 2$, so $(52 \\times 15) \\div 26 = 30$ at once."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "simplification:nested-brackets"
+      ]
+    },
+    {
+      "key": "sm-022",
+      "subtype": "bodmas",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$2400 \\div 3 \\text{ of } 25 \\times 6 - 3528 \\div 7 \\text{ of } 12 + 19 \\times 11 = ?$",
+      "options": [
+        "359",
+        "369",
+        "379",
+        "389",
+        "399"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"of\" first: $3 \\text{ of } 25 = 75$ and $7 \\text{ of } 12 = 84$",
+          "$2400 \\div 75 \\times 6 = 32 \\times 6 = 192$ and $3528 \\div 84 = 42$; $19 \\times 11 = 209$",
+          "$192 - 42 + 209 = 359$, so ? = **359**"
+        ],
+        "trap": "Reading \"of\" as an ordinary × after the ÷ gives $2400 \\div 3 \\times 25 \\times 6 = 120000$, nowhere near the options; O comes before D in BODMAS."
+      },
+      "tags": [
+        "simplification:bodmas",
+        "trap:of-precedence"
+      ]
+    },
+    {
+      "key": "sm-023",
+      "subtype": "approximation",
+      "difficulty": "hard",
+      "prompt": "What approximate value should come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n$\\sqrt{1023.8} \\times 14.96 + 41.98\\% \\text{ of } 849.7 - 18.03^{2} \\approx ?$",
+      "options": [
+        "435",
+        "460",
+        "485",
+        "510",
+        "535"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Round: $\\sqrt{1024} = 32$, $14.96 \\approx 15$, $42\\% \\text{ of } 850$, $18^{2} = 324$",
+          "$32 \\times 15 = 480$ and $42\\% \\text{ of } 850 = 357$",
+          "$480 + 357 - 324 = 513 \\approx 510$, so ? ≈ **510**"
+        ],
+        "trap": "1023.8 is just below 1024, so $\\sqrt{1023.8} \\approx 32$, not 31. Using 31 gives $465 + 357 - 324 = 498$ and pulls you towards **485**."
+      },
+      "tags": [
+        "simplification:approximation",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-024",
+      "subtype": "approximation",
+      "difficulty": "hard",
+      "prompt": "What approximate value should come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n$(7.98)^{3} - 24.03 \\times 15.97 + 2399.6 \\div 39.98 \\approx ?$",
+      "options": [
+        "165",
+        "188",
+        "210",
+        "230",
+        "250"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Round: $8^{3} = 512$, $24 \\times 16 = 384$, $2400 \\div 40 = 60$",
+          "$512 - 384 + 60 = 188$",
+          "So, ? ≈ **188**"
+        ],
+        "trap": "**210** comes from cutting 15.97 down to 15 instead of rounding it to 16: $512 - 360 + 60 = 212$. Round each decimal to the nearest whole number."
+      },
+      "tags": [
+        "simplification:approximation",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-025",
+      "subtype": "approximation",
+      "difficulty": "hard",
+      "prompt": "What approximate value should come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n$\\frac{4}{9} \\text{ of } 1349.7 + 64.02\\% \\text{ of } 499.8 - \\sqrt[3]{3374.6} \\approx ?$",
+      "options": [
+        "745",
+        "785",
+        "825",
+        "865",
+        "905"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Round: $\\frac{4}{9} \\text{ of } 1350 = 600$, $64\\% \\text{ of } 500 = 320$, $\\sqrt[3]{3375} = 15$",
+          "$600 + 320 - 15 = 905$",
+          "So, ? ≈ **905**"
+        ],
+        "trap": "**865** takes $\\sqrt[3]{3375}$ as 45 (confusing it with $\\sqrt{2025}$), giving 875; $15^{3} = 3375$, so the cube root is 15."
+      },
+      "tags": [
+        "simplification:approximation",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-026",
+      "subtype": "approximation",
+      "difficulty": "hard",
+      "prompt": "What approximate value should come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n$(2299.8 \\div 45.97) \\times 12.02 - 17.98 \\times 23.04 + 15.01^{2} \\approx ?$",
+      "options": [
+        "411",
+        "441",
+        "471",
+        "501",
+        "531"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Round: $2300 \\div 46 = 50$, $50 \\times 12 = 600$",
+          "$18 \\times 23 = 414$ and $15^{2} = 225$",
+          "$600 - 414 + 225 = 411$, so ? ≈ **411**"
+        ],
+        "trap": "**441** comes from taking $18 \\times 23$ as 384; split it as $18 \\times 23 = 360 + 54 = 414$."
+      },
+      "tags": [
+        "simplification:approximation"
+      ]
+    },
+    {
+      "key": "sm-027",
+      "subtype": "approximation",
+      "difficulty": "hard",
+      "prompt": "What approximate value should come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n$\\sqrt{7224.7} \\times 3.98 - 129.97\\% \\text{ of } 160.2 + 11.99 \\times 7.03 \\approx ?$",
+      "options": [
+        "176",
+        "196",
+        "216",
+        "236",
+        "256"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Round: $\\sqrt{7225} = 85$, $85 \\times 4 = 340$",
+          "$130\\% \\text{ of } 160 = 208$ and $12 \\times 7 = 84$",
+          "$340 - 208 + 84 = 216$, so ? ≈ **216**"
+        ],
+        "trap": "**236** treats 129.97% as 120% ($120\\% \\text{ of } 160 = 192$, giving 232). 129.97% rounds to 130%, which is $160 + 48 = 208$."
+      },
+      "tags": [
+        "simplification:approximation",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-028",
+      "subtype": "approximation",
+      "difficulty": "extreme",
+      "prompt": "What approximate value should come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n$[(44.97)^{2} - 34.98\\% \\text{ of } 2199.6] \\div 5.02 + \\sqrt{483.9} \\times 2.98 \\approx ?$",
+      "options": [
+        "227",
+        "257",
+        "287",
+        "317",
+        "347"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Round: $45^{2} = 2025$, $35\\% \\text{ of } 2200 = 770$, so the bracket is $1255$",
+          "$1255 \\div 5 = 251$ and $\\sqrt{484} \\times 3 = 22 \\times 3 = 66$",
+          "$251 + 66 = 317$, so ? ≈ **317**"
+        ],
+        "trap": "**257** divides the 66 by 5 as well; the ÷ 5 applies only to the square bracket."
+      },
+      "tags": [
+        "simplification:approximation",
+        "simplification:nested-brackets",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-029",
+      "subtype": "approximation",
+      "difficulty": "extreme",
+      "prompt": "What approximate value should come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n$\\frac{5}{8} \\text{ of } (1279.6 + 640.3) \\div 7.99 + 24.97\\% \\text{ of } 1919.8 - (12.01)^{2} \\approx ?$",
+      "options": [
+        "456",
+        "486",
+        "516",
+        "546",
+        "576"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Round: $1280 + 640 = 1920$ and $\\frac{5}{8} \\text{ of } 1920 = 1200$; \"of\" comes before ÷, so $1200 \\div 8 = 150$",
+          "$25\\% \\text{ of } 1920 = 480$ and $12^{2} = 144$",
+          "$150 + 480 - 144 = 486$, so ? ≈ **486**"
+        ],
+        "trap": "**516** takes $12^{2}$ as 114. And forgetting the ÷ 7.99 leaves $1200 + 480 - 144 = 1536$; the ÷ 8 acts on the 1200 from the \"of\" term."
+      },
+      "tags": [
+        "simplification:approximation",
+        "trap:of-precedence",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-030",
+      "subtype": "approximation",
+      "difficulty": "extreme",
+      "prompt": "What approximate value should come in place of the question mark (?) in the following question? (Note: You are not expected to calculate the exact value.)\n\n$3599.7 \\div 24.02 \\div 2.99 + 16.03 \\times 18.97 - 49.98\\% \\text{ of } 388.1 \\approx ?$",
+      "options": [
+        "100",
+        "115",
+        "130",
+        "145",
+        "160"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Round: $3600 \\div 24 = 150$, $150 \\div 3 = 50$",
+          "$16 \\times 19 = 304$ and $50\\% \\text{ of } 388 = 194$",
+          "$50 + 304 - 194 = 160$, so ? ≈ **160**"
+        ],
+        "trap": "**130** takes $16 \\times 19$ as 274; use $16 \\times 19 = 16 \\times 20 - 16 = 304$."
+      },
+      "tags": [
+        "simplification:approximation"
+      ]
+    },
+    {
+      "key": "sm-031",
+      "subtype": "missing-inside",
+      "difficulty": "easy",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$? \\div 14 + 38 = 7 \\times 13$",
+      "options": [
+        "742",
+        "756",
+        "770",
+        "784",
+        "1806"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$7 \\times 13 = 91$, so $? \\div 14 = 91 - 38 = 53$",
+          "$? = 53 \\times 14 = 742$",
+          "So, ? = **742**"
+        ],
+        "trap": "**1806** adds 38 instead of subtracting it when moving it across: $(91 + 38) \\times 14$. A transposed term changes sign."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:missing-inside",
+        "trap:transposition"
+      ]
+    },
+    {
+      "key": "sm-032",
+      "subtype": "missing-inside",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$1764 \\div ? \\times 9 = 27 \\times 14$",
+      "options": [
+        "28",
+        "32",
+        "36",
+        "38",
+        "42"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$27 \\times 14 = 378$",
+          "$1764 \\times 9 \\div ? = 378 \\Rightarrow ? = \\frac{15876}{378} = 42$",
+          "So, ? = **42**"
+        ],
+        "trap": "Reading the left side as $1764 \\div (? \\times 9)$ gives a non-integer; ÷ and × run left to right, so the 9 multiplies the quotient.",
+        "shortcut": "$1764 \\div ? = 378 \\div 9 = 42$, so $? = 1764 \\div 42 = 42$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-033",
+      "subtype": "missing-inside",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(648 + ?) \\div 18 = 23 \\times 3 - 11$",
+      "options": [
+        "396",
+        "406",
+        "416",
+        "426",
+        "1692"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$23 \\times 3 - 11 = 58$",
+          "$648 + ? = 58 \\times 18 = 1044$",
+          "$? = 1044 - 648 = 396$, so ? = **396**"
+        ],
+        "trap": "**1692** adds 648 to 1044 instead of subtracting it."
+      },
+      "tags": [
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-034",
+      "subtype": "missing-inside",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$45\\% \\text{ of } 840 - ? = 17 \\times 12 + 63$",
+      "options": [
+        "101",
+        "111",
+        "121",
+        "131",
+        "645"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$45\\% \\text{ of } 840 = 378$; right side $= 204 + 63 = 267$",
+          "$378 - ? = 267 \\Rightarrow ? = 378 - 267 = 111$",
+          "So, ? = **111**"
+        ],
+        "trap": "**645** adds 267 to 378. Since ? is subtracted, $? = 378 - 267$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "trap:transposition"
+      ]
+    },
+    {
+      "key": "sm-035",
+      "subtype": "missing-inside",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$? \\times 16 - 25^{2} = 1863 \\div 9 + 48$",
+      "options": [
+        "45",
+        "48",
+        "50",
+        "55",
+        "60"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$1863 \\div 9 = 207$, so the right side is $207 + 48 = 255$",
+          "$? \\times 16 = 255 + 625 = 880$",
+          "$? = 880 \\div 16 = 55$, so ? = **55**"
+        ],
+        "trap": "**50** comes from taking $25^{2}$ as 545 ($255 + 545 = 800$); $25^{2} = 625$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-036",
+      "subtype": "missing-inside",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$3 \\times ? + 15 \\times 24 = 81 \\times 7 - 3$",
+      "options": [
+        "66",
+        "68",
+        "69",
+        "70",
+        "72"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$15 \\times 24 = 360$ and $81 \\times 7 - 3 = 564$",
+          "$3 \\times ? = 564 - 360 = 204$",
+          "$? = 68$, so ? = **68**"
+        ],
+        "trap": "**69** drops the −3 on the right side ($567 - 360 = 207$); the right side is $567 - 3 = 564$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "trap:bodmas-order"
+      ]
+    },
+    {
+      "key": "sm-037",
+      "subtype": "missing-inside",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$2340 \\div 26 + ? \\times 7 = 31 \\times 9$",
+      "options": [
+        "21",
+        "23",
+        "25",
+        "27",
+        "29"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$2340 \\div 26 = 90$ and $31 \\times 9 = 279$",
+          "$? \\times 7 = 279 - 90 = 189$",
+          "$? = 27$, so ? = **27**"
+        ],
+        "trap": "Check $2340 \\div 26 = 90$ (since $26 \\times 90 = 2340$) before subtracting; a slip there moves the answer to a neighbouring option."
+      },
+      "tags": [
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-038",
+      "subtype": "missing-inside",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{?}{12} + \\frac{?}{4} = 96$",
+      "options": [
+        "240",
+        "264",
+        "288",
+        "312",
+        "768"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$\\frac{?}{12} + \\frac{?}{4} = \\frac{? + 3 \\times ?}{12} = \\frac{4 \\times ?}{12} = \\frac{?}{3}$",
+          "$\\frac{?}{3} = 96 \\Rightarrow ? = 288$",
+          "So, ? = **288**"
+        ],
+        "trap": "**768** adds the fractions as $\\frac{1 + 1}{12 + 4} = \\frac{1}{8}$; add fractions over a common denominator."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:fractions"
+      ]
+    },
+    {
+      "key": "sm-039",
+      "subtype": "missing-inside",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$5 \\times ? - 168 = 2 \\times ? + 351$",
+      "options": [
+        "61",
+        "163",
+        "168",
+        "173",
+        "183"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Collect the ? terms: $5 \\times ? - 2 \\times ? = 351 + 168$",
+          "$3 \\times ? = 519$",
+          "$? = 173$, so ? = **173**"
+        ],
+        "trap": "**61** moves 168 across without changing its sign ($3 \\times ? = 351 - 168 = 183$)."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:unknown-both-sides",
+        "trap:transposition"
+      ]
+    },
+    {
+      "key": "sm-040",
+      "subtype": "missing-inside",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(? + 17) \\times 12 - 15\\% \\text{ of } 480 = 18^{2} + 25 \\times 12$",
+      "options": [
+        "23",
+        "29",
+        "33",
+        "37",
+        "41"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Right side: $324 + 300 = 624$; $15\\% \\text{ of } 480 = 72$",
+          "$(? + 17) \\times 12 = 624 + 72 = 696 \\Rightarrow ? + 17 = 58$",
+          "$? = 41$, so ? = **41**"
+        ],
+        "trap": "**29** subtracts the 72 instead of adding it ($(? + 17) \\times 12 = 552$, $? + 17 = 46$)."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "trap:transposition"
+      ]
+    },
+    {
+      "key": "sm-041",
+      "subtype": "missing-inside",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{4704}{?} + 13 \\times 7 = 9^{3} \\div 3 - 96$",
+      "options": [
+        "56",
+        "72",
+        "84",
+        "96",
+        "112"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$9^{3} = 729$, $729 \\div 3 = 243$, so the right side is $243 - 96 = 147$",
+          "$\\frac{4704}{?} = 147 - 91 = 56$",
+          "$? = 4704 \\div 56 = 84$, so ? = **84**"
+        ],
+        "trap": "**56** is the value of $\\frac{4704}{?}$, not of ?. One more step: $? = 4704 \\div 56$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-042",
+      "subtype": "missing-inside",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$? \\div 8 \\div 3 \\times 5 = 35\\% \\text{ of } 1200 - 225$",
+      "options": [
+        "916",
+        "936",
+        "956",
+        "976",
+        "23400"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$35\\% \\text{ of } 1200 = 420$, so the right side is $195$",
+          "Left to right, the left side is $? \\times \\frac{5}{24}$",
+          "$? = 195 \\times \\frac{24}{5} = 936$, so ? = **936**"
+        ],
+        "trap": "**23400** treats the left side as $? \\div 8 \\div (3 \\times 5)$, i.e. $? = 195 \\times 120$. The × 5 multiplies, it does not divide."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-043",
+      "subtype": "missing-inside",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$[\\{(? - 23) \\times 4\\} \\div 6 + 19] \\times 3 = 249$",
+      "options": [
+        "113",
+        "119",
+        "125",
+        "131",
+        "176"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Peel from outside: $249 \\div 3 = 83$, $83 - 19 = 64$",
+          "$64 \\times 6 = 384$, $384 \\div 4 = 96$",
+          "$? = 96 + 23 = 119$, so ? = **119**"
+        ],
+        "trap": "**176** adds 19 instead of subtracting it while working backwards ($83 + 19 = 102$, $102 \\times 6 \\div 4 = 153$, $153 + 23 = 176$).",
+        "shortcut": "Check: $(119 - 23) \\times 4 = 384$, $384 \\div 6 = 64$, $64 + 19 = 83$, $83 \\times 3 = 249$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:nested-brackets"
+      ]
+    },
+    {
+      "key": "sm-044",
+      "subtype": "missing-inside",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{?}{3} + \\frac{2 \\times ?}{5} - \\frac{?}{6} = 153$",
+      "options": [
+        "170",
+        "210",
+        "230",
+        "250",
+        "270"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Over 30: $\\frac{10 \\times ? + 12 \\times ? - 5 \\times ?}{30} = \\frac{17 \\times ?}{30}$",
+          "$\\frac{17 \\times ?}{30} = 153 \\Rightarrow ? = 9 \\times 30 = 270$",
+          "So, ? = **270**"
+        ],
+        "trap": "**170** adds the $\\frac{?}{6}$ term ($\\frac{27 \\times ?}{30} = 153$). Keep its minus sign."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:unknown-both-sides",
+        "trap:sign"
+      ]
+    },
+    {
+      "key": "sm-045",
+      "subtype": "missing-inside",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt{?} \\times 15 + 23^{2} = 43^{2} - 30 \\times 24$",
+      "options": [
+        "1600",
+        "1681",
+        "1764",
+        "1849",
+        "1936"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Right side: $1849 - 720 = 1129$",
+          "$\\sqrt{?} \\times 15 = 1129 - 529 = 600 \\Rightarrow \\sqrt{?} = 40$",
+          "$? = 40^{2} = 1600$, so ? = **1600**"
+        ],
+        "trap": "Stopping at $\\sqrt{?} = 40$ is the usual slip; ? itself is $40^{2} = 1600$. The other options are squares of 41 to 44."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:roots",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-046",
+      "subtype": "missing-inside",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$?\\% \\text{ of } 650 + 18\\% \\text{ of } 1250 = 23^{2} - 44$",
+      "options": [
+        "36",
+        "38",
+        "40",
+        "44",
+        "48"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Right side: $529 - 44 = 485$; $18\\% \\text{ of } 1250 = 225$",
+          "$?\\% \\text{ of } 650 = 485 - 225 = 260$",
+          "$? = \\frac{260}{650} \\times 100 = 40$, so ? = **40**"
+        ],
+        "trap": "**36** uses $18\\% \\text{ of } 1250 = 251$; 1% of 1250 is 12.5, so 18% is 225."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:percent-of"
+      ]
+    },
+    {
+      "key": "sm-047",
+      "subtype": "missing-inside",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$7 \\times (? - 36) - 15\\% \\text{ of } 360 = 3 \\times (? + 44) + 2^{5}$",
+      "options": [
+        "107.5",
+        "110",
+        "112",
+        "115",
+        "117.5"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Left: $7 \\times ? - 252 - 54 = 7 \\times ? - 306$; right: $3 \\times ? + 132 + 32 = 3 \\times ? + 164$",
+          "$4 \\times ? = 164 + 306 = 470$",
+          "$? = 117.5$, so ? = **117.5**"
+        ],
+        "trap": "**112** takes $2^{5}$ as $2 \\times 5 = 10$; $2^{5} = 32$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:unknown-both-sides",
+        "simplification:decimal-answer"
+      ]
+    },
+    {
+      "key": "sm-048",
+      "subtype": "missing-inside",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{3}{5} \\text{ of } (? + 120) - 25\\% \\text{ of } ? = 40\\% \\text{ of } 870 - 80$",
+      "options": [
+        "490",
+        "560",
+        "600",
+        "640",
+        "680"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Right side: $348 - 80 = 268$",
+          "Left side: $0.6 \\times ? + 72 - 0.25 \\times ? = 0.35 \\times ? + 72$",
+          "$0.35 \\times ? = 196 \\Rightarrow ? = 560$, so ? = **560**"
+        ],
+        "trap": "**490** uses $0.6 - 0.25 = 0.4$; the coefficient of ? is 0.35. Also expand $\\frac{3}{5}$ over both terms of the bracket ($\\frac{3}{5} \\times 120 = 72$)."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:unknown-both-sides",
+        "simplification:percent-of"
+      ]
+    },
+    {
+      "key": "sm-049",
+      "subtype": "missing-inside",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$4608 \\div ? \\div 4 \\times 9 = 18^{2} \\div 2 - 81 \\times \\frac{2}{3}$",
+      "options": [
+        "96",
+        "108",
+        "112",
+        "128",
+        "1536"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Right side: $324 \\div 2 - 54 = 162 - 54 = 108$",
+          "Left side, left to right: $\\frac{4608 \\times 9}{? \\times 4} = \\frac{10368}{?}$",
+          "$? = 10368 \\div 108 = 96$, so ? = **96**"
+        ],
+        "trap": "**1536** reads the left side as $4608 \\div (? \\div 4) \\times 9$. The divisions run left to right: $4608 \\div ? \\div 4 = \\frac{4608}{4 \\times ?}$.",
+        "shortcut": "$4608 \\div 4 \\times 9 = 10368$ can be written first; then $? = 10368 \\div 108$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-050",
+      "subtype": "missing-inside",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$[? - \\{48 - (? \\div 4 + 12)\\}] \\times 2 = 3 \\times ? - 214$",
+      "options": [
+        "188",
+        "264",
+        "274",
+        "284",
+        "294"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Inside: $? - 48 + \\frac{?}{4} + 12 = \\frac{5 \\times ?}{4} - 36$",
+          "$\\times 2$: $\\frac{5 \\times ?}{2} - 72 = 3 \\times ? - 214 \\Rightarrow \\frac{?}{2} = 142$",
+          "$? = 284$, so ? = **284**"
+        ],
+        "trap": "**188** flips the sign of $\\frac{?}{4}$ but not of 12 when removing the brackets. $-\\{48 - (\\frac{?}{4} + 12)\\} = -48 + \\frac{?}{4} + 12$.",
+        "shortcut": "Check: $284 \\div 4 = 71$, $\\{48 - 83\\} = -35$, $[284 + 35] \\times 2 = 638 = 852 - 214$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:unknown-both-sides",
+        "simplification:nested-brackets"
+      ]
+    },
+    {
+      "key": "sm-051",
+      "subtype": "missing-inside",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$62.5\\% \\text{ of } ? - 37.5\\% \\text{ of } 448 = 15 \\times 14 + 12.5\\% \\text{ of } ?$",
+      "options": [
+        "504",
+        "696",
+        "716",
+        "736",
+        "756"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$37.5\\% = \\frac{3}{8}$, so $37.5\\% \\text{ of } 448 = 168$; $15 \\times 14 = 210$",
+          "$\\frac{5}{8} \\times ? - \\frac{1}{8} \\times ? = 210 + 168 \\Rightarrow \\frac{1}{2} \\times ? = 378$",
+          "$? = 756$, so ? = **756**"
+        ],
+        "trap": "**504** adds the 12.5% term to the left instead of subtracting it ($\\frac{3}{4} \\times ? = 378$).",
+        "shortcut": "62.5% = $\\frac{5}{8}$, 37.5% = $\\frac{3}{8}$, 12.5% = $\\frac{1}{8}$."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:unknown-both-sides",
+        "simplification:percent-of"
+      ]
+    },
+    {
+      "key": "sm-052",
+      "subtype": "missing-inside",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(? + 45) \\times 6 - 7 \\times 18 = 4 \\times (? - 3) + 12^{2}$",
+      "options": [
+        "-12",
+        "-9",
+        "-6",
+        "3",
+        "6"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Left: $6 \\times ? + 270 - 126 = 6 \\times ? + 144$",
+          "Right: $4 \\times ? - 12 + 144 = 4 \\times ? + 132$",
+          "$2 \\times ? = 132 - 144 = -12 \\Rightarrow ? = -6$, so ? = **-6**"
+        ],
+        "trap": "**6** drops the sign: $2 \\times ? = -12$, so ? is negative."
+      },
+      "tags": [
+        "simplification:missing-inside",
+        "simplification:unknown-both-sides",
+        "simplification:negative-answer"
+      ]
+    },
+    {
+      "key": "sm-053",
+      "subtype": "decimals",
+      "difficulty": "easy",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$12.5 \\times 3.6 + 8.75 \\times 4 = ?$",
+      "options": [
+        "80",
+        "85",
+        "90",
+        "95",
+        "100"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$12.5 \\times 3.6 = 45$ and $8.75 \\times 4 = 35$",
+          "$45 + 35 = 80$",
+          "So, ? = **80**"
+        ],
+        "trap": "**85** takes $8.75 \\times 4$ as 40; $8.75 \\times 4 = 35$."
+      },
+      "tags": [
+        "simplification:decimals"
+      ]
+    },
+    {
+      "key": "sm-054",
+      "subtype": "decimals",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$0.48 \\times 25 + 17.28 \\div 0.36 - 9.6 = ?$",
+      "options": [
+        "47.4",
+        "48.4",
+        "49.4",
+        "50.4",
+        "51.4"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$0.48 \\times 25 = 12$ and $17.28 \\div 0.36 = 1728 \\div 36 = 48$",
+          "$12 + 48 - 9.6 = 50.4$",
+          "So, ? = **50.4**"
+        ],
+        "trap": "**51.4** comes from $60 - 9.6 = 51.4$, a borrowing slip; $60 - 9.6 = 50.4$."
+      },
+      "tags": [
+        "simplification:decimals"
+      ]
+    },
+    {
+      "key": "sm-055",
+      "subtype": "decimals",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(6.25 \\times 3.2 + 1.44 \\div 0.12) \\times 0.5 = ?$",
+      "options": [
+        "10.6",
+        "16",
+        "18",
+        "20",
+        "26"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$6.25 \\times 3.2 = 20$ and $1.44 \\div 0.12 = 12$",
+          "$(20 + 12) \\times 0.5 = 16$",
+          "So, ? = **16**"
+        ],
+        "trap": "**26** multiplies only the 12 by 0.5 ($20 + 6$); the 0.5 multiplies the whole bracket. **10.6** takes $1.44 \\div 0.12$ as 1.2."
+      },
+      "tags": [
+        "simplification:decimals"
+      ]
+    },
+    {
+      "key": "sm-056",
+      "subtype": "decimals",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$? \\times 0.25 + 3.75 \\times 8 = 7.2 \\times 6.5$",
+      "options": [
+        "4.2",
+        "63.6",
+        "64.8",
+        "66",
+        "67.2"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$7.2 \\times 6.5 = 46.8$ and $3.75 \\times 8 = 30$",
+          "$? \\times 0.25 = 16.8$",
+          "$? = 16.8 \\times 4 = 67.2$, so ? = **67.2**"
+        ],
+        "trap": "**4.2** divides 16.8 by 4. Multiplying by 0.25 is undone by multiplying by 4."
+      },
+      "tags": [
+        "simplification:decimals",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-057",
+      "subtype": "decimals",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$4.5 \\times 1.8 + 0.81 \\div 0.09 - 2.1 \\times 3.4 = ?$",
+      "options": [
+        "9.96",
+        "10.36",
+        "10.76",
+        "11.16",
+        "11.56"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$4.5 \\times 1.8 = 8.1$, $0.81 \\div 0.09 = 9$, $2.1 \\times 3.4 = 7.14$",
+          "$8.1 + 9 - 7.14 = 9.96$",
+          "So, ? = **9.96**"
+        ],
+        "trap": "**10.76** takes $2.1 \\times 3.4$ as 6.34; $2 \\times 3.4 + 0.1 \\times 3.4 = 6.8 + 0.34 = 7.14$."
+      },
+      "tags": [
+        "simplification:decimals"
+      ]
+    },
+    {
+      "key": "sm-058",
+      "subtype": "decimals",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(0.75 \\times 0.75 - 0.25 \\times 0.25) \\div 0.5 + 1.2 \\times 0.15 = ?$",
+      "options": [
+        "0.68",
+        "1.08",
+        "1.18",
+        "1.28",
+        "1.36"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$0.75^{2} - 0.25^{2} = (0.75 - 0.25)(0.75 + 0.25) = 0.5 \\times 1 = 0.5$",
+          "$0.5 \\div 0.5 = 1$ and $1.2 \\times 0.15 = 0.18$",
+          "$1 + 0.18 = 1.18$, so ? = **1.18**"
+        ],
+        "trap": "**0.68** forgets the ÷ 0.5 ($0.5 + 0.18$); **1.36** divides the 0.18 by 0.5 as well. The ÷ 0.5 acts only on the bracket.",
+        "shortcut": "$a^{2} - b^{2} = (a - b)(a + b)$ removes the decimal squaring."
+      },
+      "tags": [
+        "simplification:decimals",
+        "trick:algebraic-identity"
+      ]
+    },
+    {
+      "key": "sm-059",
+      "subtype": "decimals",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$2.4 \\times ? - 15.6 \\div 1.3 = 0.6 \\times 0.6 \\times 100$",
+      "options": [
+        "10",
+        "15",
+        "18",
+        "20",
+        "25"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$15.6 \\div 1.3 = 12$ and $0.6 \\times 0.6 \\times 100 = 36$",
+          "$2.4 \\times ? = 36 + 12 = 48$",
+          "$? = 20$, so ? = **20**"
+        ],
+        "trap": "**10** subtracts 12 from 36 instead of adding it ($2.4 \\times ? = 24$). Moving $-12$ across makes it $+12$."
+      },
+      "tags": [
+        "simplification:decimals",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-060",
+      "subtype": "decimals",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(13.5 \\div 0.45 \\div 0.6) \\times 0.12 + 3.2^{2} = ?$",
+      "options": [
+        "15.24",
+        "15.84",
+        "16.24",
+        "16.64",
+        "17.24"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$13.5 \\div 0.45 = 30$, $30 \\div 0.6 = 50$, $50 \\times 0.12 = 6$",
+          "$3.2^{2} = 10.24$",
+          "$6 + 10.24 = 16.24$, so ? = **16.24**"
+        ],
+        "trap": "**15.84** takes $3.2^{2}$ as 9.84; $32^{2} = 1024$, so $3.2^{2} = 10.24$."
+      },
+      "tags": [
+        "simplification:decimals",
+        "trick:squares-cubes"
+      ]
+    }
+  ]
+}

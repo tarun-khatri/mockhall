@@ -75,10 +75,10 @@ interface Report {
 
 function textsOf(file: AuthoredFile): { key: string; text: string; answerIndex?: number; difficulty: string }[] {
   const out: { key: string; text: string; answerIndex?: number; difficulty: string }[] = [];
-  for (const q of file.items ?? []) out.push({ key: q.key, text: q.prompt + ' ' + q.options.join(' '), answerIndex: q.answerIndex, difficulty: q.difficulty });
+  for (const q of file.items ?? []) out.push({ key: q.key, text: q.prompt + '\n' + q.options.join('\n'), answerIndex: q.answerIndex, difficulty: q.difficulty });
   for (const s of file.sets ?? []) {
     out.push({ key: s.key, text: s.stimulus, difficulty: s.difficulty });
-    for (const q of s.questions) out.push({ key: `${s.key}/${q.key}`, text: q.prompt + ' ' + q.options.join(' '), answerIndex: q.answerIndex, difficulty: q.difficulty ?? s.difficulty });
+    for (const q of s.questions) out.push({ key: `${s.key}/${q.key}`, text: q.prompt + '\n' + q.options.join('\n'), answerIndex: q.answerIndex, difficulty: q.difficulty ?? s.difficulty });
   }
   for (const p of file.paraJumbles ?? []) out.push({ key: p.key, text: p.sentences.map((x) => x.text).join(' '), difficulty: p.difficulty });
   return out;
@@ -114,8 +114,13 @@ function validate(path: string): Report {
   for (const c of counted) report.byDifficulty[c.difficulty] = (report.byDifficulty[c.difficulty] ?? 0) + 1;
   for (const e of entries) if (e.answerIndex !== undefined) report.letters[e.answerIndex]++;
 
-  // near-duplicates within the file
-  const grams = entries.map((e) => ({ key: e.key, g: trigrams(normaliseText(e.text)) }));
+  // near-duplicates within the file — ignoring boilerplate lines (fixed stems and fixed option sets) that recur in
+  // more than a quarter of the entries, so formats like quadratics or critical reasoning compare only what varies.
+  const lineCount = new Map<string, number>();
+  for (const e of entries) for (const l of new Set(e.text.split('\n').map((x) => x.trim()).filter(Boolean))) lineCount.set(l, (lineCount.get(l) ?? 0) + 1);
+  const boiler = (l: string) => entries.length >= 8 && (lineCount.get(l.trim()) ?? 0) > entries.length / 4;
+  const varying = (t: string) => t.split('\n').filter((l) => !boiler(l)).join('\n');
+  const grams = entries.map((e) => ({ key: e.key, g: trigrams(normaliseText(varying(e.text))) }));
   for (let i = 0; i < grams.length; i++) {
     for (let j = i + 1; j < grams.length; j++) {
       const sim = similarity(grams[i].g, grams[j].g);

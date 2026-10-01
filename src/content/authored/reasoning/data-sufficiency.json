@@ -1,0 +1,609 @@
+{
+  "chapter": "data-sufficiency",
+  "version": 1,
+  "items": [
+    {
+      "key": "ds-001",
+      "subtype": "ranking",
+      "difficulty": "easy",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive persons — A, B, C, D and E — each has a different height.\n**Who is the shortest among A, B, C, D and E?**\n\n**I.** C is shorter than both A and D. B is taller than C but shorter than E.\n**II.** A is taller than only one person. D is taller than A.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "From I, C is shorter than A, D and B, and E is taller than B, so nobody is shorter than C.",
+          "Statement I alone: C is the shortest → **sufficient**.",
+          "Statement II alone: the shortest could be B, C or E (e.g. the order C > D > E > A > B gives B, while the order B > D > E > A > C gives C) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:height"
+      ]
+    },
+    {
+      "key": "ds-002",
+      "subtype": "ranking",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive persons — J, K, L, M and N — each has a different weight.\n**How many persons are heavier than M?**\n\n**I.** M is heavier than J but lighter than L. K is the heaviest.\n**II.** N is lighter than M. J is heavier than only one person.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I gives K > … > L > M > J, but N can sit anywhere below K. II puts J fourth (only one person is lighter than J).",
+          "Together: K is first and J fourth, so L and M take places 2 and 3 with L above M; N is fifth. Exactly two persons (K and L) are heavier than M.",
+          "Statement I alone: the number of persons heavier than M could be 2 or 3 (e.g. the order K > L > M > J > N gives 2, while the order K > L > N > M > J gives 3) → **not sufficient**.",
+          "Statement II alone: the number of persons heavier than M could be 0, 1 or 2 (e.g. the order M > K > L > J > N gives 0, while the order K > M > L > J > N gives 1) → **not sufficient**.",
+          "I and II together: exactly 2 persons are heavier than M → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:weight"
+      ]
+    },
+    {
+      "key": "ds-003",
+      "subtype": "ranking",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — P, Q, R, S, T and U — each scored different marks in a test.\n**Who is the second lowest scorer among P, Q, R, S, T and U?**\n\n**I.** R scored more marks than only two persons. U scored more marks than P but fewer than T.\n**II.** Q scored fewer marks than U. S is the highest scorer.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: S is first and R fourth. T > U > P and U > Q force T second and U third, but P and Q can take the last two places in either order.",
+          "Statement I alone: the second lowest scorer could be P, Q, S or U (e.g. the order Q > T > U > R > P > S gives P, while the order S > T > U > R > Q > P gives Q) → **not sufficient**.",
+          "Statement II alone: the second lowest scorer could be P, Q, R, T or U (e.g. the order S > R > T > U > P > Q gives P, while the order S > P > R > U > Q > T gives Q) → **not sufficient**.",
+          "I and II together: the second lowest scorer could be P or Q (e.g. the order S > T > U > R > P > Q gives P, while the order S > T > U > R > Q > P gives Q) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:marks"
+      ]
+    },
+    {
+      "key": "ds-004",
+      "subtype": "ranking",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — Mohan, Neel, Pari, Ravi, Sonal and Tara — each has a different weight.\n**Is Ravi the heaviest among Mohan, Neel, Pari, Ravi, Sonal and Tara?**\n\n**I.** Ravi is heavier than Neel but lighter than Tara. Pari is lighter than Neel.\n**II.** Only two persons are heavier than Sonal. Ravi is heavier than Sonal. Mohan is lighter than Sonal.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: Tara is heavier than Ravi, so Ravi cannot be the heaviest — the answer “No” is certain even though the full order is unknown.",
+          "Statement I alone: the answer is definitely “no” → **sufficient**.",
+          "Statement II alone: Ravi may or may not be the heaviest (e.g. the order Neel > Ravi > Sonal > Mohan > Pari > Tara gives “no”, while the order Ravi > Neel > Sonal > Mohan > Pari > Tara gives “yes”) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "A definite “No” is an answer. Statement I settles the question without fixing the order; do not reject it for leaving other places open."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:weight"
+      ]
+    },
+    {
+      "key": "ds-005",
+      "subtype": "ranking",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive persons — A, B, C, D and E — each is of a different age.\n**Who is the youngest among A, B, C, D and E?**\n\n**I.** C is younger than A, B and D. E is older than C.\n**II.** B is the second youngest. C is younger than B.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: C is younger than all four others. II: B is the second youngest and C is younger than B, so C is the youngest.",
+          "Statement I alone: C is the youngest → **sufficient**.",
+          "Statement II alone: C is the youngest → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:age"
+      ]
+    },
+    {
+      "key": "ds-006",
+      "subtype": "ranking",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — L, M, N, P, Q and R — each has a different weight.\n**Who is the third heaviest among L, M, N, P, Q and R?**\n\n**I.** M is heavier than N but lighter than P. Q is the heaviest.\n**II.** L is heavier than only two persons. R is heavier than L but lighter than both P and Q.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: L is heavier than only two persons, so L is fourth. R is above L but below P and Q, so P and Q take places 1–2 and R is third.",
+          "Statement I alone: the third heaviest could be L, M, P or R (e.g. the order Q > P > L > M > N > R gives L, while the order Q > P > M > L > N > R gives M) → **not sufficient**.",
+          "Statement II alone: R is the third heaviest → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:weight"
+      ]
+    },
+    {
+      "key": "ds-007",
+      "subtype": "ranking",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — A, B, C, D, E and F — each has a different height.\n**How many persons are taller than D?**\n\n**I.** When the persons are arranged in order of height, only two persons come between A and D. A is the tallest.\n**II.** D is shorter than A, B and C but taller than E and F.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: A is first and two persons come between A and D, so D is fourth — three persons are taller.",
+          "II: exactly A, B and C are taller than D (E and F are shorter) — again three.",
+          "Statement I alone: exactly 3 persons are taller than D → **sufficient**.",
+          "Statement II alone: exactly 3 persons are taller than D → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:height"
+      ]
+    },
+    {
+      "key": "ds-008",
+      "subtype": "ranking",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nArun, Bina and some other students stand in a row facing north.\n**How many students are there in the row?**\n\n**I.** Arun is 14th from the left end and Bina is 9th from the right end.\n**II.** If Arun and Bina interchange their positions, Arun becomes 17th from the left end and Bina becomes 12th from the right end.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "After the interchange Arun stands at Bina’s old place, so Bina is 17th from the left; Bina stands at Arun’s old place, so Arun is 12th from the right.",
+          "Together: Bina is 17th from the left (II) and 9th from the right (I), so the row has 17 + 9 − 1 = 25 students (check: Arun 14th from left is 25 − 14 + 1 = 12th from right).",
+          "Statement I alone: the number of students could be 14, 15, 16 and more (e.g. Arun 14th and Bina 6th from the left in a row of 14 gives 14 students, while Arun 14th and Bina 7th from the left in a row of 15 gives 15 students) → **not sufficient**.",
+          "Statement II alone: the number of students could be 17, 18, 19 and more (e.g. Arun 6th and Bina 17th from the left in a row of 17 gives 17 students, while Arun 7th and Bina 17th from the left in a row of 18 gives 18 students) → **not sufficient**.",
+          "I and II together: there are 25 students → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Total = (position from one end) + (position from the other end) − 1. A position counted from one end needs the total before it can be turned into a position from the other end.",
+        "trap": "Statement II looks complete because it gives two positions, but they belong to two different persons; one person’s place from both ends is needed."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:row-position"
+      ]
+    },
+    {
+      "key": "ds-009",
+      "subtype": "ranking",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nCharu, Dev and some other students stand in a row facing north.\n**What is Charu’s position from the right end of the row?**\n\n**I.** Charu is 11th from the left end and Dev is 15th from the left end.\n**II.** Dev is 8th from the right end. Charu stands to the left of Dev, and only three students stand between them.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: Dev is 8th from the right; Charu is 4 places to Dev’s left, so Charu is 8 + 4 = 12th from the right, whatever the length of the row.",
+          "I gives both positions from the left only; without the total, no position from the right follows.",
+          "Statement I alone: Charu’s position from the right end could be 5, 6, 7 and more (e.g. a row of 20 with Charu 11th and Dev 15th from the left gives position 10 from the right, while a row of 21 with Charu 11th and Dev 15th from the left gives position 11 from the right) → **not sufficient**.",
+          "Statement II alone: Charu is 12th from the right end → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Total = (position from one end) + (position from the other end) − 1. A position counted from one end needs the total before it can be turned into a position from the other end.",
+        "trap": "Statement I gives two exact positions and looks complete, but positions from the left cannot be turned into positions from the right without the total."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:row-position"
+      ]
+    },
+    {
+      "key": "ds-010",
+      "subtype": "ranking",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nEvery student in a class got a different rank in an examination.\n**How many students are there in the class?**\n\n**I.** Meera is 9th from the top and Tarun is 15th from the bottom. Only three students are ranked between Meera and Tarun.\n**II.** Tarun is ranked below Meera, and fewer than 30 students are in the class.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I: Tarun is either 4 places below Meera (13th from the top, so 13 + 15 − 1 = 27 students) or 4 places above her (5th from the top, so 19 students).",
+          "II removes the second case: Tarun is below Meera, so he is 13th from the top and the class has 27 students.",
+          "Statement I alone: the number of students could be 19 or 27 (e.g. Meera 9th and Tarun 5th from the top among 19 gives 19 students, while Meera 9th and Tarun 13th from the top among 27 gives 27 students) → **not sufficient**.",
+          "Statement II alone: the number of students could be 2, 3, 4 and more (e.g. Meera 1st and Tarun 2nd from the top among 10 gives 10 students, while Meera 1st and Tarun 2nd from the top among 11 gives 11 students) → **not sufficient**.",
+          "I and II together: there are 27 students → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Total = (position from one end) + (position from the other end) − 1. A position counted from one end needs the total before it can be turned into a position from the other end.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:class-rank"
+      ]
+    },
+    {
+      "key": "ds-011",
+      "subtype": "ranking",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — P, Q, R, S, T, U and V — each has a different height.\n**Who is the third shortest among P, Q, R, S, T, U and V?**\n\n**I.** Only three persons are taller than S. Q is taller than S but shorter than P.\n**II.** U is taller than V but shorter than T. R is not the shortest.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: S is fourth, P and Q are in the top three, and the third place goes to T, U or R; T > U > V and R is not last.",
+          "If T is third, U, R and V fill places 5–7 with V last and R not last: U R V or R U V — the third shortest is U or R.",
+          "Statement I alone: the third shortest could be R, T, U or V (e.g. the order P > Q > T > S > R > U > V gives R, while the order P > Q > R > S > T > U > V gives T) → **not sufficient**.",
+          "Statement II alone: the third shortest could be P, Q, R, S, T, U or V (e.g. the order Q > R > S > T > P > U > V gives P, while the order P > R > S > T > Q > U > V gives Q) → **not sufficient**.",
+          "I and II together: the third shortest could be R, T or U (e.g. the order P > Q > T > S > R > U > V gives R, while the order P > Q > R > S > T > U > V gives T) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:height"
+      ]
+    },
+    {
+      "key": "ds-012",
+      "subtype": "ranking",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — A, B, C, D, E and F — each scored different marks in a test.\n**How many persons scored more marks than C?**\n\n**I.** B scored more marks than only two persons. A scored more marks than B but fewer than C. E is the highest scorer.\n**II.** C scored more marks than D and F, but fewer marks than E. B is not the lowest scorer.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: only two persons are below B, so B is fourth. A and C are both above B with C above A, and E is first; so C is second and A third — exactly one person (E) scored more than C.",
+          "II places C below E and above D and F, but A and B can be above or below C.",
+          "Statement I alone: exactly 1 person scored more marks than C → **sufficient**.",
+          "Statement II alone: the number of persons scoring more marks than C could be 1, 2 or 3 (e.g. the order E > C > A > B > D > F gives 1, while the order A > E > C > B > D > F gives 2) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:marks"
+      ]
+    },
+    {
+      "key": "ds-013",
+      "subtype": "ranking",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — J, K, L, M, N, P and Q — each is of a different age.\n**Who is the second youngest among J, K, L, M, N, P and Q?**\n\n**I.** Only four persons are older than K. Both L and M are younger than K, and L is older than M.\n**II.** As many persons are older than L as are younger than Q. Only one person is older than Q.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: four persons are older than K, so K is fifth; L and M fill places 6 and 7 with L older — L is the second youngest.",
+          "II: one person is older than Q, so five persons are younger than Q; hence five persons are older than L, i.e. L is sixth — again the second youngest.",
+          "Statement I alone: L is the second youngest → **sufficient**.",
+          "Statement II alone: L is the second youngest → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:age"
+      ]
+    },
+    {
+      "key": "ds-014",
+      "subtype": "ranking",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — E, F, G, H, J and K — each has a different height.\n**Who is the tallest among E, F, G, H, J and K?**\n\n**I.** E is taller than F. Only two persons are taller than F. J is shorter than H.\n**II.** Only one person is taller than E. G is shorter than K. H is taller than both K and E.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: only one person is taller than E, and H is taller than E, so H is that person — H is the tallest.",
+          "I: F is third and E is above F, but the other top place can go to G, H or K.",
+          "Statement I alone: the tallest could be E, G, H or K (e.g. the order E > G > F > H > J > K gives E, while the order G > E > F > H > J > K gives G) → **not sufficient**.",
+          "Statement II alone: H is the tallest → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:height"
+      ]
+    },
+    {
+      "key": "ds-015",
+      "subtype": "ranking",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — P, Q, R, S, T and U — each scored different marks in a test.\n**What is the position of T from the top when the persons are arranged in descending order of marks?**\n\n**I.** T scored more marks than R but fewer than S. Q is the lowest scorer.\n**II.** R scored more marks than only two persons. U scored more marks than P.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: R is fourth (only two below him), Q is last, and the top three are S, T and one more. P can be above R only if U is too — that would put four above R — so U is the third one.",
+          "S > T, but U can be first, second or third: S T U, S U T and U S T all fit, so T is second or third.",
+          "Statement I alone: T could be second, third or fourth from the top (e.g. the order S > T > P > R > U > Q gives second, while the order P > S > T > R > U > Q gives third) → **not sufficient**.",
+          "Statement II alone: T could be first, second, third, fifth or sixth from the top (e.g. the order T > Q > S > R > U > P gives first, while the order Q > T > S > R > U > P gives second) → **not sufficient**.",
+          "I and II together: T could be second or third from the top (e.g. the order S > T > U > R > P > Q gives second, while the order S > U > T > R > P > Q gives third) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:marks"
+      ]
+    },
+    {
+      "key": "ds-016",
+      "subtype": "ranking",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — J, K, L, M, N, P and Q — each has a different weight.\n**Is K the third heaviest among J, K, L, M, N, P and Q?**\n\n**I.** The number of persons heavier than K is twice the number of persons lighter than K.\n**II.** When the persons are arranged in order of weight, only two persons come between K and M. M is heavier than N but lighter than L. L is the heaviest.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: if x persons are lighter than K, then 2x are heavier and 2x + x + 1 = 7, so x = 2 — K is fifth, hence certainly not the third heaviest (“No”).",
+          "II: L is first and K, M are three places apart; K = 3rd with M 6th and N 7th fits, but so does K = 6th with M 3rd — “Yes” and “No” are both possible.",
+          "Statement I alone: the answer is definitely “no” → **sufficient**.",
+          "Statement II alone: K may or may not be the third heaviest (e.g. the order L > J > M > N > P > K > Q gives “no”, while the order L > J > K > P > Q > M > N gives “yes”) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:weight"
+      ]
+    },
+    {
+      "key": "ds-017",
+      "subtype": "ranking",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nP, Q, R and some other persons stand in a row facing north.\n**How many persons are there in the row?**\n\n**I.** P is 10th from the left end and Q is 11th from the right end. Only four persons stand between P and Q.\n**II.** Q is 11th from the right end. R is 6th from the left end, and only eight persons stand between R and Q.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: Q is 9 places from R, so Q is 6 + 9 = 15th from the left (6 − 9 is impossible); the row has 15 + 11 − 1 = 25 persons.",
+          "I: Q is 5 places from P — 15th or 5th from the left — and both cases are possible (25 or 15 persons).",
+          "Statement I alone: the number of persons could be 15 or 25 (e.g. Q 5th from the left in a row of 15 gives 15 persons, while Q 15th from the left in a row of 25 gives 25 persons) → **not sufficient**.",
+          "Statement II alone: there are 25 persons → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Total = (position from one end) + (position from the other end) − 1. A position counted from one end needs the total before it can be turned into a position from the other end.",
+        "trap": "In I the case “Q to the left of P” looks impossible at first sight, but Q 5th from the left and 11th from the right simply means a row of 15 — it survives, so I fails."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:row-position"
+      ]
+    },
+    {
+      "key": "ds-018",
+      "subtype": "ranking",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — A, B, C, D, E, F and G — each has a different height.\n**Who is the third tallest among A, B, C, D, E, F and G?**\n\n**I.** As many persons are taller than F as are shorter than E. F is taller than E.\n**II.** When the persons are arranged in order of height, only three persons come between E and G. G is the tallest. D is shorter than E.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I: if k persons are taller than F, then k persons are shorter than E and F is above E, so (F, E) is 1st & 7th, 2nd & 6th or 3rd & 5th.",
+          "II: G is first and three persons come between G and E, so E is fifth. With I, F is third.",
+          "Statement I alone: the third tallest could be A, B, C, D, F or G (e.g. the order B > F > A > C > D > E > G gives A, while the order A > F > B > C > D > E > G gives B) → **not sufficient**.",
+          "Statement II alone: the third tallest could be A, B, C or F (e.g. the order G > B > A > C > E > D > F gives A, while the order G > A > B > C > E > D > F gives B) → **not sufficient**.",
+          "I and II together: F is the third tallest → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:height"
+      ]
+    },
+    {
+      "key": "ds-019",
+      "subtype": "ranking",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nEvery student in a class got a different rank in a test.\n**How many students are there in the class?**\n\n**I.** Asha is 10th from the top and Bela is 11th from the bottom. Only nine students are ranked between Asha and Bela.\n**II.** Chetan is 15th from the top. Bela is ranked below Chetan with only four students between them, and exactly ten students are ranked below Bela.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: Bela is 10 places from Asha — 20th from the top (0th is impossible) — so the class has 20 + 11 − 1 = 30 students.",
+          "II: Bela is 15 + 5 = 20th from the top with ten students below her, so there are 30 students.",
+          "Statement I alone: there are 30 students → **sufficient**.",
+          "Statement II alone: there are 30 students → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Total = (position from one end) + (position from the other end) − 1. A position counted from one end needs the total before it can be turned into a position from the other end.",
+        "trap": "In I, the second case (Bela above Asha) gives rank 0 and must be discarded; the statement is therefore sufficient. Marking E or B here misses that one case is impossible."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:class-rank"
+      ]
+    },
+    {
+      "key": "ds-020",
+      "subtype": "ranking",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — J, K, L, M, N, P and Q — each scored different marks in a test.\n**How many persons scored more marks than P?**\n\n**I.** The number of persons heavier than M is one more than the number of persons lighter than N. M scored more marks than N.\n**II.** When the persons are arranged in order of marks, only one person comes between P and M. Neither J nor K scored more marks than P.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I: if x persons scored fewer marks than N, then x + 1 scored more than M, and M is above N; so (M, N) is 2nd & 7th, 3rd & 6th or 4th & 5th.",
+          "II: P is two places from M, with J and K below P. Together, P can be 1st (M 3rd, N 6th) or 2nd (M 4th, N 5th) — P’s place is not fixed.",
+          "Statement I alone: the number of persons scoring more marks than P could be 0, 1, 2, 3, 4, 5 or 6 (e.g. the order P > J > K > M > N > L > Q gives 0, while the order J > P > K > M > N > L > Q gives 1) → **not sufficient**.",
+          "Statement II alone: the number of persons scoring more marks than P could be 0, 1, 2, 3 or 4 (e.g. the order P > J > M > K > L > N > Q gives 0, while the order L > P > J > M > K > N > Q gives 1) → **not sufficient**.",
+          "I and II together: the number of persons scoring more marks than P could be 0, 1 or 3 (e.g. the order P > J > M > K > L > N > Q gives 0, while the order L > P > J > M > N > K > Q gives 1) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Write the persons in a column from the top and place each clue; only the asked position needs to be fixed, not the whole order.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:ranking",
+        "ranking:marks"
+      ]
+    }
+  ]
+}

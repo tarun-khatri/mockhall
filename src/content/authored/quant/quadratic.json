@@ -1,0 +1,2917 @@
+{
+  "chapter": "quadratic",
+  "version": 1,
+  "items": [
+    {
+      "key": "qd-001",
+      "subtype": "two-quadratics",
+      "difficulty": "easy",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} + 10x + 24 = 0$\nII. $y^{2} + y = 6$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $x^{2} + 10x + 24 = 0$: two numbers with sum 10 and product 24 are 4 and 6 → $(x + 6)(x + 4) = 0$ → x = $-6$ or $-4$",
+          "II. $y^{2} + y = 6$ → $y^{2} + y - 6 = 0$: two numbers with sum 1 and product −6 are −2 and 3 → $(y + 3)(y - 2) = 0$ → y = $-3$ or $2$",
+          "x ∈ {$-6$, $-4$}; y ∈ {$-3$, $2$}. The largest x, $-4$, is smaller than the smallest y, $-3$, so x < y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(x + 6) = 0$ → x = $6$ instead of $-6$) flips every root and gives the reverse answer, x > y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:rearranged"
+      ]
+    },
+    {
+      "key": "qd-002",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $7x^{2} + 10x + 3 = 0$\nII. $9y^{2} + 20 = -28y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $7x^{2} + 10x + 3 = 0$: split 10 into 7 and 3 (product 21 = 7 × 3) → $(7x + 3)(x + 1) = 0$ → x = $-\\frac{3}{7}$ or $-1$",
+          "II. $9y^{2} + 20 = -28y$ → $9y^{2} + 28y + 20 = 0$: split 28 into 18 and 10 (product 180 = 9 × 20) → $(9y + 10)(y + 2) = 0$ → y = $-\\frac{10}{9}$ or $-2$",
+          "x ∈ {$-1$, $-\\frac{3}{7}$ (≈ −0.43)}; y ∈ {$-2$, $-\\frac{10}{9}$ (≈ −1.11)}. The smallest x, $-1$, is greater than the largest y, $-\\frac{10}{9}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $1$ and $\\frac{10}{9}$ by cross-multiplying: 1 × 9 = 9 < 10 = 10 × 1; the negative number with the smaller size is the greater one.",
+        "trap": "The deciding pair is x = $-1$ and y = $-\\frac{10}{9}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $-1$ > $-\\frac{10}{9}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-003",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $8x^{2} + 11x = -3$\nII. $2y^{2} + 5y + 3 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $8x^{2} + 11x = -3$ → $8x^{2} + 11x + 3 = 0$: split 11 into 8 and 3 (product 24 = 8 × 3) → $(8x + 3)(x + 1) = 0$ → x = $-\\frac{3}{8}$ or $-1$",
+          "II. $2y^{2} + 5y + 3 = 0$: split 5 into 3 and 2 (product 6 = 2 × 3) → $(y + 1)(2y + 3) = 0$ → y = $-1$ or $-\\frac{3}{2}$",
+          "x ∈ {$-1$, $-\\frac{3}{8}$ (≈ −0.38)}; y ∈ {$-\\frac{3}{2}$ (= −1.5), $-1$}. The smallest x equals the largest y ($-1$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $-1$ and y = $-1$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-004",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $5x + 7 = 2x - 5$\nII. $y^{2} + 5y + 4 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $5x + 7 = 2x - 5$ is linear: 3x = −12 → x = −4 (one value only)",
+          "II. $y^{2} + 5y + 4 = 0$: two numbers with sum 5 and product 4 are 1 and 4 → $(y + 4)(y + 1) = 0$ → y = $-4$ or $-1$",
+          "x ∈ {$-4$}; y ∈ {$-4$, $-1$}. The largest x equals the smallest y ($-4$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = −4 is also a root of II (y = −4), so x = y for that pair and only x ≤ y holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:linear",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-005",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} + 7x + 10 = 0$\nII. $4y^{2} - 4y - 3 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $x^{2} + 7x + 10 = 0$: two numbers with sum 7 and product 10 are 5 and 2 → $(x + 2)(x + 5) = 0$ → x = $-2$ or $-5$",
+          "II. $4y^{2} - 4y - 3 = 0$: split −4 into −6 and 2 (product −12 = 4 × −3) → $(2y + 1)(2y - 3) = 0$ → y = $-\\frac{1}{2}$ or $\\frac{3}{2}$",
+          "x ∈ {$-5$, $-2$}; y ∈ {$-\\frac{1}{2}$ (= −0.5), $\\frac{3}{2}$ (= 1.5)}. The largest x, $-2$, is smaller than the smallest y, $-\\frac{1}{2}$, so x < y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(x + 5) = 0$ → x = $5$ instead of $-5$) flips every root and gives the reverse answer, x > y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-006",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $3x^{2} - 48 = 0$\nII. $4y^{2} + 17y + 4 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $3x^{2} - 48 = 0$ → $x^{2} = 16$ → x = ±4 (both signs)",
+          "II. $4y^{2} + 17y + 4 = 0$: split 17 into 16 and 1 (product 16 = 4 × 4) → $(4y + 1)(y + 4) = 0$ → y = $-\\frac{1}{4}$ or $-4$",
+          "x ∈ {$-4$, $4$}; y ∈ {$-4$, $-\\frac{1}{4}$ (= −0.25)}. x = $4$ > y = $-4$, but x = $-4$ < y = $-\\frac{1}{4}$, so no single relation holds."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Comparing only the larger roots (x = $4$ vs y = $-\\frac{1}{4}$) suggests x > y, but x = $-4$ is not greater than y = $-\\frac{1}{4}$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-007",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} + 56 = 37x$\nII. $3y^{2} - 23y + 44 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} + 56 = 37x$ → $6x^{2} - 37x + 56 = 0$: split −37 into −16 and −21 (product 336 = 6 × 56) → $(2x - 7)(3x - 8) = 0$ → x = $\\frac{7}{2}$ or $\\frac{8}{3}$",
+          "II. $3y^{2} - 23y + 44 = 0$: split −23 into −11 and −12 (product 132 = 3 × 44) → $(y - 4)(3y - 11) = 0$ → y = $4$ or $\\frac{11}{3}$",
+          "x ∈ {$\\frac{8}{3}$ (≈ 2.67), $\\frac{7}{2}$ (= 3.5)}; y ∈ {$\\frac{11}{3}$ (≈ 3.67), $4$}. The largest x, $\\frac{7}{2}$, is smaller than the smallest y, $\\frac{11}{3}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{7}{2}$ and $\\frac{11}{3}$ by cross-multiplying: 7 × 3 = 21 < 22 = 11 × 2.",
+        "trap": "The deciding pair is x = $\\frac{7}{2}$ and y = $\\frac{11}{3}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{7}{2}$ < $\\frac{11}{3}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-008",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} + 7x - 4 = 0$\nII. $y^{2} + 2y - 3 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} + 7x - 4 = 0$: split 7 into 8 and −1 (product −8 = 2 × −4) → $(2x - 1)(x + 4) = 0$ → x = $\\frac{1}{2}$ or $-4$",
+          "II. $y^{2} + 2y - 3 = 0$: two numbers with sum 2 and product −3 are −1 and 3 → $(y + 3)(y - 1) = 0$ → y = $-3$ or $1$",
+          "x ∈ {$-4$, $\\frac{1}{2}$ (= 0.5)}; y ∈ {$-3$, $1$}. x = $\\frac{1}{2}$ > y = $-3$, but x = $-4$ < y = $-3$, so no single relation holds."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Comparing only the larger roots (x = $\\frac{1}{2}$ vs y = $1$) suggests x < y, but x = $\\frac{1}{2}$ is not smaller than y = $-3$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-009",
+      "subtype": "square-root-forms",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} = 225$\nII. $y = \\sqrt{225}$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $x^{2} = 225$ → x = ±15 (both signs)",
+          "II. $y = \\sqrt{225}$ → y = 15 (positive root only)",
+          "x ∈ {$-15$, $15$}; y ∈ {$15$}. The largest x equals the smallest y ($15$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Taking y = ±15 as well makes the answer look like \"x = y or relation cannot be established\". The √ sign gives y = 15 only, so x = 15 or −15 is always ≤ y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-010",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{3} = 1331$\nII. $y^{2} - 21y = -110$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $x^{3} = 1331$ → x = 11 (one real cube root)",
+          "II. $y^{2} - 21y = -110$ → $y^{2} - 21y + 110 = 0$: two numbers with sum −21 and product 110 are −11 and −10 → $(y - 10)(y - 11) = 0$ → y = $10$ or $11$",
+          "x ∈ {$11$}; y ∈ {$10$, $11$}. The smallest x equals the largest y ($11$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "\"x > y\" is tempting, but x = $11$ and y = $11$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:rearranged",
+        "quadratic:cube",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-011",
+      "subtype": "square-root-forms",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{4} = 16$\nII. $3y^{2} + 21 = 16y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $x^{4} = 16$ → $x^{2} = 4$ (x² cannot be −4) → x = ±2",
+          "II. $3y^{2} + 21 = 16y$ → $3y^{2} - 16y + 21 = 0$: split −16 into −9 and −7 (product 63 = 3 × 21) → $(3y - 7)(y - 3) = 0$ → y = $\\frac{7}{3}$ or $3$",
+          "x ∈ {$-2$, $2$}; y ∈ {$\\frac{7}{3}$ (≈ 2.33), $3$}. The largest x, $2$, is smaller than the smallest y, $\\frac{7}{3}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $2$ and $\\frac{7}{3}$ by cross-multiplying: 2 × 3 = 6 < 7 = 7 × 1.",
+        "trap": "The deciding pair is x = $2$ and y = $\\frac{7}{3}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $2$ < $\\frac{7}{3}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:fourth-power",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-012",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $8x^{2} - 30x + 27 = 0$\nII. $2y^{2} - 3y - 2 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $8x^{2} - 30x + 27 = 0$: split −30 into −12 and −18 (product 216 = 8 × 27) → $(4x - 9)(2x - 3) = 0$ → x = $\\frac{9}{4}$ or $\\frac{3}{2}$",
+          "II. $2y^{2} - 3y - 2 = 0$: split −3 into −4 and 1 (product −4 = 2 × −2) → $(2y + 1)(y - 2) = 0$ → y = $-\\frac{1}{2}$ or $2$",
+          "x ∈ {$\\frac{3}{2}$ (= 1.5), $\\frac{9}{4}$ (= 2.25)}; y ∈ {$-\\frac{1}{2}$ (= −0.5), $2$}. x = $\\frac{3}{2}$ > y = $-\\frac{1}{2}$, but x = $\\frac{3}{2}$ < y = $2$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{9}{4}$ and $2$ by cross-multiplying: 9 × 1 = 9 > 8 = 2 × 4.",
+        "trap": "Comparing only the larger roots (x = $\\frac{9}{4}$ vs y = $2$) suggests x > y, but x = $\\frac{3}{2}$ is not greater than y = $2$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-013",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} + 18 = 15x$\nII. $y^{2} - 15y + 54 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} + 18 = 15x$ → $2x^{2} - 15x + 18 = 0$: split −15 into −3 and −12 (product 36 = 2 × 18) → $(x - 6)(2x - 3) = 0$ → x = $6$ or $\\frac{3}{2}$",
+          "II. $y^{2} - 15y + 54 = 0$: two numbers with sum −15 and product 54 are −9 and −6 → $(y - 6)(y - 9) = 0$ → y = $6$ or $9$",
+          "x ∈ {$\\frac{3}{2}$ (= 1.5), $6$}; y ∈ {$6$, $9$}. The largest x equals the smallest y ($6$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $6$ and y = $6$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-014",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} + 11x + 15 = 0$\nII. $y^{2} + 3y + 2 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} + 11x + 15 = 0$: split 11 into 6 and 5 (product 30 = 2 × 15) → $(2x + 5)(x + 3) = 0$ → x = $-\\frac{5}{2}$ or $-3$",
+          "II. $y^{2} + 3y + 2 = 0$: two numbers with sum 3 and product 2 are 1 and 2 → $(y + 2)(y + 1) = 0$ → y = $-2$ or $-1$",
+          "x ∈ {$-3$, $-\\frac{5}{2}$ (= −2.5)}; y ∈ {$-2$, $-1$}. The largest x, $-\\frac{5}{2}$, is smaller than the smallest y, $-2$, so x < y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(2x + 5) = 0$ → x = $\\frac{5}{2}$ instead of $-\\frac{5}{2}$) flips every root and gives the reverse answer, x > y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-015",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $25x^{2} = 36$\nII. $8y^{3} + 27 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $25x^{2} = 36$ → x = ±$\\frac{6}{5}$ (both signs)",
+          "II. $8y^{3} + 27 = 0$ → $y^{3} = -\\frac{27}{8}$ → y = $-\\frac{3}{2}$ (one real cube root, negative)",
+          "x ∈ {$-\\frac{6}{5}$ (= −1.2), $\\frac{6}{5}$ (= 1.2)}; y ∈ {$-\\frac{3}{2}$ (= −1.5)}. The smallest x, $-\\frac{6}{5}$, is greater than the largest y, $-\\frac{3}{2}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{6}{5}$ and $\\frac{3}{2}$ by cross-multiplying: 6 × 2 = 12 < 15 = 3 × 5; the negative number with the smaller size is the greater one.",
+        "trap": "Taking the cube root as +$\\frac{3}{2}$ (dropping the sign) gives \"relation cannot be established\". The real cube root of a negative number is negative: y = −1.5 < −1.2."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:cube"
+      ]
+    },
+    {
+      "key": "qd-016",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} - 13x = 5$\nII. $6y^{2} - 7y - 5 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} - 13x = 5$ → $6x^{2} - 13x - 5 = 0$: split −13 into 2 and −15 (product −30 = 6 × −5) → $(2x - 5)(3x + 1) = 0$ → x = $\\frac{5}{2}$ or $-\\frac{1}{3}$",
+          "II. $6y^{2} - 7y - 5 = 0$: split −7 into 3 and −10 (product −30 = 6 × −5) → $(3y - 5)(2y + 1) = 0$ → y = $\\frac{5}{3}$ or $-\\frac{1}{2}$",
+          "x ∈ {$-\\frac{1}{3}$ (≈ −0.33), $\\frac{5}{2}$ (= 2.5)}; y ∈ {$-\\frac{1}{2}$ (= −0.5), $\\frac{5}{3}$ (≈ 1.67)}. x = $-\\frac{1}{3}$ > y = $-\\frac{1}{2}$, but x = $-\\frac{1}{3}$ < y = $\\frac{5}{3}$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{1}{3}$ and $\\frac{1}{2}$ by cross-multiplying: 1 × 2 = 2 < 3 = 1 × 3; the negative number with the smaller size is the greater one.",
+        "trap": "Comparing only the larger roots (x = $\\frac{5}{2}$ vs y = $\\frac{5}{3}$) suggests x > y, but x = $-\\frac{1}{3}$ is not greater than y = $\\frac{5}{3}$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged"
+      ]
+    },
+    {
+      "key": "qd-017",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} - 11x = -15$\nII. $2y^{2} + 11y + 14 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} - 11x = -15$ → $2x^{2} - 11x + 15 = 0$: split −11 into −5 and −6 (product 30 = 2 × 15) → $(x - 3)(2x - 5) = 0$ → x = $3$ or $\\frac{5}{2}$",
+          "II. $2y^{2} + 11y + 14 = 0$: split 11 into 7 and 4 (product 28 = 2 × 14) → $(y + 2)(2y + 7) = 0$ → y = $-2$ or $-\\frac{7}{2}$",
+          "x ∈ {$\\frac{5}{2}$ (= 2.5), $3$}; y ∈ {$-\\frac{7}{2}$ (= −3.5), $-2$}. The smallest x, $\\frac{5}{2}$, is greater than the largest y, $-2$, so x > y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(2x - 5) = 0$ → x = $-\\frac{5}{2}$ instead of $\\frac{5}{2}$) flips every root and gives the reverse answer, x < y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged"
+      ]
+    },
+    {
+      "key": "qd-018",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x + \\frac{6}{x} = -5$\nII. $2y + \\frac{3}{y} = 7$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $x + \\frac{6}{x} = -5$: multiply by x (x ≠ 0) → $x^{2} + 5x + 6 = 0$ → $(x + 2)(x + 3) = 0$ → x = −2 or −3",
+          "II. $2y + \\frac{3}{y} = 7$: multiply by y (y ≠ 0) → $2y^{2} - 7y + 3 = 0$: split −7 into −6 and −1 (product 6 = 2 × 3) → $(2y - 1)(y - 3) = 0$ → y = $\\frac{1}{2}$ or 3",
+          "x ∈ {$-3$, $-2$}; y ∈ {$\\frac{1}{2}$ (= 0.5), $3$}. The largest x, $-2$, is smaller than the smallest y, $\\frac{1}{2}$, so x < y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Clearing the fraction carelessly as $x^{2} + 6 = 5x$ gives x = 2 or 3 and the answer \"relation cannot be established\". Keeping the sign, $x^{2} + 5x + 6 = 0$ gives x = −2 or −3, both below y = $\\frac{1}{2}$ and 3."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:reciprocal-form"
+      ]
+    },
+    {
+      "key": "qd-019",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $3x^{2} - 13x + 14 = 0$\nII. $4y^{2} + 27 = 21y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $3x^{2} - 13x + 14 = 0$: split −13 into −6 and −7 (product 42 = 3 × 14) → $(3x - 7)(x - 2) = 0$ → x = $\\frac{7}{3}$ or $2$",
+          "II. $4y^{2} + 27 = 21y$ → $4y^{2} - 21y + 27 = 0$: split −21 into −12 and −9 (product 108 = 4 × 27) → $(4y - 9)(y - 3) = 0$ → y = $\\frac{9}{4}$ or $3$",
+          "x ∈ {$2$, $\\frac{7}{3}$ (≈ 2.33)}; y ∈ {$\\frac{9}{4}$ (= 2.25), $3$}. x = $\\frac{7}{3}$ > y = $\\frac{9}{4}$, but x = $2$ < y = $\\frac{9}{4}$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{7}{3}$ and $\\frac{9}{4}$ by cross-multiplying: 7 × 4 = 28 > 27 = 9 × 3.",
+        "trap": "Comparing only the larger roots (x = $\\frac{7}{3}$ vs y = $3$) suggests x < y, but x = $\\frac{7}{3}$ is not smaller than y = $\\frac{9}{4}$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-020",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} - 35x = -50$\nII. $6y^{2} - 17y + 5 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} - 35x = -50$ → $6x^{2} - 35x + 50 = 0$: split −35 into −15 and −20 (product 300 = 6 × 50) → $(3x - 10)(2x - 5) = 0$ → x = $\\frac{10}{3}$ or $\\frac{5}{2}$",
+          "II. $6y^{2} - 17y + 5 = 0$: split −17 into −2 and −15 (product 30 = 6 × 5) → $(2y - 5)(3y - 1) = 0$ → y = $\\frac{5}{2}$ or $\\frac{1}{3}$",
+          "x ∈ {$\\frac{5}{2}$ (= 2.5), $\\frac{10}{3}$ (≈ 3.33)}; y ∈ {$\\frac{1}{3}$ (≈ 0.33), $\\frac{5}{2}$ (= 2.5)}. The smallest x equals the largest y ($\\frac{5}{2}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $\\frac{5}{2}$ and y = $\\frac{5}{2}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-021",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} + 7 = -17x$\nII. $6y^{2} + y - 1 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} + 7 = -17x$ → $6x^{2} + 17x + 7 = 0$: split 17 into 3 and 14 (product 42 = 6 × 7) → $(3x + 7)(2x + 1) = 0$ → x = $-\\frac{7}{3}$ or $-\\frac{1}{2}$",
+          "II. $6y^{2} + y - 1 = 0$: split 1 into −2 and 3 (product −6 = 6 × −1) → $(2y + 1)(3y - 1) = 0$ → y = $-\\frac{1}{2}$ or $\\frac{1}{3}$",
+          "x ∈ {$-\\frac{7}{3}$ (≈ −2.33), $-\\frac{1}{2}$ (= −0.5)}; y ∈ {$-\\frac{1}{2}$ (= −0.5), $\\frac{1}{3}$ (≈ 0.33)}. The largest x equals the smallest y ($-\\frac{1}{2}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $-\\frac{1}{2}$ and y = $-\\frac{1}{2}$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-022",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x(6x - 11) = 7$\nII. $12y^{2} = 23y + 9$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $x(6x - 11) = 7$ → $6x^{2} - 11x - 7 = 0$: split −11 into −14 and 3 (product −42 = 6 × −7) → $(2x + 1)(3x - 7) = 0$ → x = $-\\frac{1}{2}$ or $\\frac{7}{3}$",
+          "II. $12y^{2} = 23y + 9$ → $12y^{2} - 23y - 9 = 0$: split −23 into 4 and −27 (product −108 = 12 × −9) → $(4y - 9)(3y + 1) = 0$ → y = $\\frac{9}{4}$ or $-\\frac{1}{3}$",
+          "x ∈ {$-\\frac{1}{2}$ (= −0.5), $\\frac{7}{3}$ (≈ 2.33)}; y ∈ {$-\\frac{1}{3}$ (≈ −0.33), $\\frac{9}{4}$ (= 2.25)}. x = $\\frac{7}{3}$ > y = $-\\frac{1}{3}$, but x = $-\\frac{1}{2}$ < y = $-\\frac{1}{3}$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{7}{3}$ and $\\frac{9}{4}$ by cross-multiplying: 7 × 4 = 28 > 27 = 9 × 3.",
+        "trap": "Comparing only the larger roots (x = $\\frac{7}{3}$ vs y = $\\frac{9}{4}$) suggests x > y, but x = $-\\frac{1}{2}$ is not greater than y = $\\frac{9}{4}$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-023",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $4x^{2} + 9x + 5 = 0$\nII. $3y^{2} + y - 2 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $4x^{2} + 9x + 5 = 0$: split 9 into 5 and 4 (product 20 = 4 × 5) → $(x + 1)(4x + 5) = 0$ → x = $-1$ or $-\\frac{5}{4}$",
+          "II. $3y^{2} + y - 2 = 0$: split 1 into −2 and 3 (product −6 = 3 × −2) → $(y + 1)(3y - 2) = 0$ → y = $-1$ or $\\frac{2}{3}$",
+          "x ∈ {$-\\frac{5}{4}$ (= −1.25), $-1$}; y ∈ {$-1$, $\\frac{2}{3}$ (≈ 0.67)}. The largest x equals the smallest y ($-1$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $-1$ and y = $-1$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-024",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} + 1 = -7x$\nII. $10y^{2} - 3 = 13y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} + 1 = -7x$ → $12x^{2} + 7x + 1 = 0$: split 7 into 4 and 3 (product 12 = 12 × 1) → $(4x + 1)(3x + 1) = 0$ → x = $-\\frac{1}{4}$ or $-\\frac{1}{3}$",
+          "II. $10y^{2} - 3 = 13y$ → $10y^{2} - 13y - 3 = 0$: split −13 into −15 and 2 (product −30 = 10 × −3) → $(5y + 1)(2y - 3) = 0$ → y = $-\\frac{1}{5}$ or $\\frac{3}{2}$",
+          "x ∈ {$-\\frac{1}{3}$ (≈ −0.33), $-\\frac{1}{4}$ (= −0.25)}; y ∈ {$-\\frac{1}{5}$ (= −0.2), $\\frac{3}{2}$ (= 1.5)}. The largest x, $-\\frac{1}{4}$, is smaller than the smallest y, $-\\frac{1}{5}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{1}{4}$ and $\\frac{1}{5}$ by cross-multiplying: 1 × 5 = 5 > 4 = 1 × 4; the negative number with the smaller size is the greater one.",
+        "trap": "The deciding pair is x = $-\\frac{1}{4}$ and y = $-\\frac{1}{5}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $-\\frac{1}{4}$ < $-\\frac{1}{5}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-025",
+      "subtype": "square-root-forms",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x = \\sqrt{2.25}$\nII. $10y^{2} - 9y = 7$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $x = \\sqrt{2.25}$ → x = 1.5 (positive root only)",
+          "II. $10y^{2} - 9y = 7$ → $10y^{2} - 9y - 7 = 0$: split −9 into 5 and −14 (product −70 = 10 × −7) → $(5y - 7)(2y + 1) = 0$ → y = $\\frac{7}{5}$ or $-\\frac{1}{2}$",
+          "x ∈ {$\\frac{3}{2}$ (= 1.5)}; y ∈ {$-\\frac{1}{2}$ (= −0.5), $\\frac{7}{5}$ (= 1.4)}. The smallest x, $\\frac{3}{2}$, is greater than the largest y, $\\frac{7}{5}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{3}{2}$ and $\\frac{7}{5}$ by cross-multiplying: 3 × 5 = 15 > 14 = 7 × 2.",
+        "trap": "The deciding pair is x = $\\frac{3}{2}$ and y = $\\frac{7}{5}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{3}{2}$ > $\\frac{7}{5}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:decimal",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-026",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x(6x + 11) = -4$\nII. $3y^{2} - 2 = 5y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $x(6x + 11) = -4$ → $6x^{2} + 11x + 4 = 0$: split 11 into 8 and 3 (product 24 = 6 × 4) → $(3x + 4)(2x + 1) = 0$ → x = $-\\frac{4}{3}$ or $-\\frac{1}{2}$",
+          "II. $3y^{2} - 2 = 5y$ → $3y^{2} - 5y - 2 = 0$: split −5 into −6 and 1 (product −6 = 3 × −2) → $(3y + 1)(y - 2) = 0$ → y = $-\\frac{1}{3}$ or $2$",
+          "x ∈ {$-\\frac{4}{3}$ (≈ −1.33), $-\\frac{1}{2}$ (= −0.5)}; y ∈ {$-\\frac{1}{3}$ (≈ −0.33), $2$}. The largest x, $-\\frac{1}{2}$, is smaller than the smallest y, $-\\frac{1}{3}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{1}{2}$ and $\\frac{1}{3}$ by cross-multiplying: 1 × 3 = 3 > 2 = 1 × 2; the negative number with the smaller size is the greater one.",
+        "trap": "The deciding pair is x = $-\\frac{1}{2}$ and y = $-\\frac{1}{3}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $-\\frac{1}{2}$ < $-\\frac{1}{3}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:expanded-form",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-027",
+      "subtype": "square-root-forms",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $27x^{3} = 64$\nII. $49y^{2} = 81$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $27x^{3} = 64$ → $x^{3} = \\frac{64}{27}$ → x = $\\frac{4}{3}$ ≈ 1.33 (one real cube root)",
+          "II. $49y^{2} = 81$ → y = ±$\\frac{9}{7}$ ≈ ±1.29 (both signs)",
+          "x ∈ {$\\frac{4}{3}$ (≈ 1.33)}; y ∈ {$-\\frac{9}{7}$ (≈ −1.29), $\\frac{9}{7}$ (≈ 1.29)}. The smallest x, $\\frac{4}{3}$, is greater than the largest y, $\\frac{9}{7}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{4}{3}$ and $\\frac{9}{7}$ by cross-multiplying: 4 × 7 = 28 > 27 = 9 × 3.",
+        "trap": "Taking x = ±$\\frac{4}{3}$ (treating the cube like a square) gives \"relation cannot be established\". A cube has one real root, x = $\\frac{4}{3}$, and $\\frac{4}{3}$ > $\\frac{9}{7}$ (4 × 7 = 28 > 27 = 9 × 3), so x beats both y values."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:cube",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-028",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $10x^{2} + 18 = 27x$\nII. $10y^{2} = 7y + 6$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $10x^{2} + 18 = 27x$ → $10x^{2} - 27x + 18 = 0$: split −27 into −15 and −12 (product 180 = 10 × 18) → $(5x - 6)(2x - 3) = 0$ → x = $\\frac{6}{5}$ or $\\frac{3}{2}$",
+          "II. $10y^{2} = 7y + 6$ → $10y^{2} - 7y - 6 = 0$: split −7 into 5 and −12 (product −60 = 10 × −6) → $(5y - 6)(2y + 1) = 0$ → y = $\\frac{6}{5}$ or $-\\frac{1}{2}$",
+          "x ∈ {$\\frac{6}{5}$ (= 1.2), $\\frac{3}{2}$ (= 1.5)}; y ∈ {$-\\frac{1}{2}$ (= −0.5), $\\frac{6}{5}$ (= 1.2)}. The smallest x equals the largest y ($\\frac{6}{5}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $\\frac{6}{5}$ and y = $\\frac{6}{5}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-029",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} + 19x + 10 = 0$\nII. $4y^{2} + 11y = -6$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} + 19x + 10 = 0$: split 19 into 15 and 4 (product 60 = 6 × 10) → $(3x + 2)(2x + 5) = 0$ → x = $-\\frac{2}{3}$ or $-\\frac{5}{2}$",
+          "II. $4y^{2} + 11y = -6$ → $4y^{2} + 11y + 6 = 0$: split 11 into 8 and 3 (product 24 = 4 × 6) → $(4y + 3)(y + 2) = 0$ → y = $-\\frac{3}{4}$ or $-2$",
+          "x ∈ {$-\\frac{5}{2}$ (= −2.5), $-\\frac{2}{3}$ (≈ −0.67)}; y ∈ {$-2$, $-\\frac{3}{4}$ (= −0.75)}. x = $-\\frac{2}{3}$ > y = $-2$, but x = $-\\frac{5}{2}$ < y = $-2$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{2}{3}$ and $\\frac{3}{4}$ by cross-multiplying: 2 × 4 = 8 < 9 = 3 × 3; the negative number with the smaller size is the greater one.",
+        "trap": "Comparing only the larger roots (x = $-\\frac{2}{3}$ vs y = $-\\frac{3}{4}$) suggests x > y, but x = $-\\frac{5}{2}$ is not greater than y = $-\\frac{3}{4}$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-030",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $4x^{2} + 16x + 7 = 0$\nII. $y^{2} + 4y + 3 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $4x^{2} + 16x + 7 = 0$: split 16 into 2 and 14 (product 28 = 4 × 7) → $(2x + 7)(2x + 1) = 0$ → x = $-\\frac{7}{2}$ or $-\\frac{1}{2}$",
+          "II. $y^{2} + 4y + 3 = 0$: two numbers with sum 4 and product 3 are 1 and 3 → $(y + 3)(y + 1) = 0$ → y = $-3$ or $-1$",
+          "x ∈ {$-\\frac{7}{2}$ (= −3.5), $-\\frac{1}{2}$ (= −0.5)}; y ∈ {$-3$, $-1$}. x = $-\\frac{1}{2}$ > y = $-3$, but x = $-\\frac{7}{2}$ < y = $-3$, so no single relation holds."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Comparing only the larger roots (x = $-\\frac{1}{2}$ vs y = $-1$) suggests x > y, but x = $-\\frac{7}{2}$ is not greater than y = $-1$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-031",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} - 12x + 32 = 0$\nII. $2y^{2} - 13y + 20 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $x^{2} - 12x + 32 = 0$: two numbers with sum −12 and product 32 are −4 and −8 → $(x - 8)(x - 4) = 0$ → x = $8$ or $4$",
+          "II. $2y^{2} - 13y + 20 = 0$: split −13 into −5 and −8 (product 40 = 2 × 20) → $(y - 4)(2y - 5) = 0$ → y = $4$ or $\\frac{5}{2}$",
+          "x ∈ {$4$, $8$}; y ∈ {$\\frac{5}{2}$ (= 2.5), $4$}. The smallest x equals the largest y ($4$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $4$ and y = $4$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-032",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $4x^{2} - 81 = 0$\nII. $2y^{2} + 13y + 21 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $4x^{2} - 81 = 0$ → $x^{2} = \\frac{81}{4}$ → x = ±$\\frac{9}{2}$ (both signs)",
+          "II. $2y^{2} + 13y + 21 = 0$: split 13 into 6 and 7 (product 42 = 2 × 21) → $(2y + 7)(y + 3) = 0$ → y = $-\\frac{7}{2}$ or $-3$",
+          "x ∈ {$-\\frac{9}{2}$ (= −4.5), $\\frac{9}{2}$ (= 4.5)}; y ∈ {$-\\frac{7}{2}$ (= −3.5), $-3$}. x = $\\frac{9}{2}$ > y = $-\\frac{7}{2}$, but x = $-\\frac{9}{2}$ < y = $-\\frac{7}{2}$, so no single relation holds."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Comparing only the larger roots (x = $\\frac{9}{2}$ vs y = $-3$) suggests x > y, but x = $-\\frac{9}{2}$ is not greater than y = $-3$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-033",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} - 8x + 1 = 0$\nII. $8y^{2} - 10y + 3 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} - 8x + 1 = 0$: split −8 into −6 and −2 (product 12 = 12 × 1) → $(6x - 1)(2x - 1) = 0$ → x = $\\frac{1}{6}$ or $\\frac{1}{2}$",
+          "II. $8y^{2} - 10y + 3 = 0$: split −10 into −6 and −4 (product 24 = 8 × 3) → $(2y - 1)(4y - 3) = 0$ → y = $\\frac{1}{2}$ or $\\frac{3}{4}$",
+          "x ∈ {$\\frac{1}{6}$ (≈ 0.17), $\\frac{1}{2}$ (= 0.5)}; y ∈ {$\\frac{1}{2}$ (= 0.5), $\\frac{3}{4}$ (= 0.75)}. The largest x equals the smallest y ($\\frac{1}{2}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $\\frac{1}{2}$ and y = $\\frac{1}{2}$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-034",
+      "subtype": "square-root-forms",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{3} = -216$\nII. $y^{2} = 36$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $x^{3} = -216$ → x = −6 (only one real cube root; it keeps the negative sign)",
+          "II. $y^{2} = 36$ → y = ±6 (both signs)",
+          "x ∈ {$-6$}; y ∈ {$-6$, $6$}. The largest x equals the smallest y ($-6$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "\"x < y\" is tempting, but x = $-6$ and y = $-6$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:cube",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-035",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $3x^{2} + 5x + 2 = 0$\nII. $3y^{2} - 7y + 4 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $3x^{2} + 5x + 2 = 0$: split 5 into 3 and 2 (product 6 = 3 × 2) → $(3x + 2)(x + 1) = 0$ → x = $-\\frac{2}{3}$ or $-1$",
+          "II. $3y^{2} - 7y + 4 = 0$: split −7 into −4 and −3 (product 12 = 3 × 4) → $(y - 1)(3y - 4) = 0$ → y = $1$ or $\\frac{4}{3}$",
+          "x ∈ {$-1$, $-\\frac{2}{3}$ (≈ −0.67)}; y ∈ {$1$, $\\frac{4}{3}$ (≈ 1.33)}. The largest x, $-\\frac{2}{3}$, is smaller than the smallest y, $1$, so x < y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(3x + 2) = 0$ → x = $\\frac{2}{3}$ instead of $-\\frac{2}{3}$) flips every root and gives the reverse answer, x > y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-036",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} - 9x - 5 = 0$\nII. $y^{2} - 4y + 3 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} - 9x - 5 = 0$: split −9 into 1 and −10 (product −10 = 2 × −5) → $(x - 5)(2x + 1) = 0$ → x = $5$ or $-\\frac{1}{2}$",
+          "II. $y^{2} - 4y + 3 = 0$: two numbers with sum −4 and product 3 are −1 and −3 → $(y - 3)(y - 1) = 0$ → y = $3$ or $1$",
+          "x ∈ {$-\\frac{1}{2}$ (= −0.5), $5$}; y ∈ {$1$, $3$}. x = $5$ > y = $1$, but x = $-\\frac{1}{2}$ < y = $1$, so no single relation holds."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Comparing only the larger roots (x = $5$ vs y = $3$) suggests x > y, but x = $-\\frac{1}{2}$ is not greater than y = $3$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-037",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} - 17x + 6 = 0$\nII. $8y^{2} - 18y + 9 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} - 17x + 6 = 0$: split −17 into −8 and −9 (product 72 = 12 × 6) → $(4x - 3)(3x - 2) = 0$ → x = $\\frac{3}{4}$ or $\\frac{2}{3}$",
+          "II. $8y^{2} - 18y + 9 = 0$: split −18 into −12 and −6 (product 72 = 8 × 9) → $(4y - 3)(2y - 3) = 0$ → y = $\\frac{3}{4}$ or $\\frac{3}{2}$",
+          "x ∈ {$\\frac{2}{3}$ (≈ 0.67), $\\frac{3}{4}$ (= 0.75)}; y ∈ {$\\frac{3}{4}$ (= 0.75), $\\frac{3}{2}$ (= 1.5)}. The largest x equals the smallest y ($\\frac{3}{4}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $\\frac{3}{4}$ and y = $\\frac{3}{4}$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-038",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} + 7 = 13x$\nII. $10y^{2} = 9 - y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} + 7 = 13x$ → $6x^{2} - 13x + 7 = 0$: split −13 into −6 and −7 (product 42 = 6 × 7) → $(6x - 7)(x - 1) = 0$ → x = $\\frac{7}{6}$ or $1$",
+          "II. $10y^{2} = 9 - y$ → $10y^{2} + y - 9 = 0$: split 1 into 10 and −9 (product −90 = 10 × −9) → $(10y - 9)(y + 1) = 0$ → y = $\\frac{9}{10}$ or $-1$",
+          "x ∈ {$1$, $\\frac{7}{6}$ (≈ 1.17)}; y ∈ {$-1$, $\\frac{9}{10}$ (= 0.9)}. The smallest x, $1$, is greater than the largest y, $\\frac{9}{10}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $1$ and $\\frac{9}{10}$ by cross-multiplying: 1 × 10 = 10 > 9 = 9 × 1.",
+        "trap": "The deciding pair is x = $1$ and y = $\\frac{9}{10}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $1$ > $\\frac{9}{10}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-039",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} - 17x + 10 = 0$\nII. $10y^{2} - 13y + 4 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} - 17x + 10 = 0$: split −17 into −12 and −5 (product 60 = 6 × 10) → $(6x - 5)(x - 2) = 0$ → x = $\\frac{5}{6}$ or $2$",
+          "II. $10y^{2} - 13y + 4 = 0$: split −13 into −5 and −8 (product 40 = 10 × 4) → $(5y - 4)(2y - 1) = 0$ → y = $\\frac{4}{5}$ or $\\frac{1}{2}$",
+          "x ∈ {$\\frac{5}{6}$ (≈ 0.83), $2$}; y ∈ {$\\frac{1}{2}$ (= 0.5), $\\frac{4}{5}$ (= 0.8)}. The smallest x, $\\frac{5}{6}$, is greater than the largest y, $\\frac{4}{5}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{5}{6}$ and $\\frac{4}{5}$ by cross-multiplying: 5 × 5 = 25 > 24 = 4 × 6.",
+        "trap": "The deciding pair is x = $\\frac{5}{6}$ and y = $\\frac{4}{5}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{5}{6}$ > $\\frac{4}{5}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-040",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $3x^{2} + 17x + 22 = 0$\nII. $5y^{2} + 17y + 14 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $3x^{2} + 17x + 22 = 0$: split 17 into 6 and 11 (product 66 = 3 × 22) → $(3x + 11)(x + 2) = 0$ → x = $-\\frac{11}{3}$ or $-2$",
+          "II. $5y^{2} + 17y + 14 = 0$: split 17 into 7 and 10 (product 70 = 5 × 14) → $(y + 2)(5y + 7) = 0$ → y = $-2$ or $-\\frac{7}{5}$",
+          "x ∈ {$-\\frac{11}{3}$ (≈ −3.67), $-2$}; y ∈ {$-2$, $-\\frac{7}{5}$ (= −1.4)}. The largest x equals the smallest y ($-2$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $-2$ and y = $-2$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-041",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $4x^{2} - 23x + 33 = 0$\nII. $6y^{2} - 31y + 40 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $4x^{2} - 23x + 33 = 0$: split −23 into −12 and −11 (product 132 = 4 × 33) → $(4x - 11)(x - 3) = 0$ → x = $\\frac{11}{4}$ or $3$",
+          "II. $6y^{2} - 31y + 40 = 0$: split −31 into −15 and −16 (product 240 = 6 × 40) → $(3y - 8)(2y - 5) = 0$ → y = $\\frac{8}{3}$ or $\\frac{5}{2}$",
+          "x ∈ {$\\frac{11}{4}$ (= 2.75), $3$}; y ∈ {$\\frac{5}{2}$ (= 2.5), $\\frac{8}{3}$ (≈ 2.67)}. The smallest x, $\\frac{11}{4}$, is greater than the largest y, $\\frac{8}{3}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{11}{4}$ and $\\frac{8}{3}$ by cross-multiplying: 11 × 3 = 33 > 32 = 8 × 4.",
+        "trap": "The deciding pair is x = $\\frac{11}{4}$ and y = $\\frac{8}{3}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{11}{4}$ > $\\frac{8}{3}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-042",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} + 47x + 90 = 0$\nII. $3y^{2} + 19y + 30 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} + 47x + 90 = 0$: split 47 into 20 and 27 (product 540 = 6 × 90) → $(2x + 9)(3x + 10) = 0$ → x = $-\\frac{9}{2}$ or $-\\frac{10}{3}$",
+          "II. $3y^{2} + 19y + 30 = 0$: split 19 into 10 and 9 (product 90 = 3 × 30) → $(y + 3)(3y + 10) = 0$ → y = $-3$ or $-\\frac{10}{3}$",
+          "x ∈ {$-\\frac{9}{2}$ (= −4.5), $-\\frac{10}{3}$ (≈ −3.33)}; y ∈ {$-\\frac{10}{3}$ (≈ −3.33), $-3$}. The largest x equals the smallest y ($-\\frac{10}{3}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $-\\frac{10}{3}$ and y = $-\\frac{10}{3}$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-043",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $3x^{2} = 5x$\nII. $4y^{2} + 7y = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $3x^{2} = 5x$ → $x(3x - 5) = 0$ → x = 0 or $\\frac{5}{3}$ (do not divide by x: that loses x = 0)",
+          "II. $4y^{2} + 7y = 0$ → $y(4y + 7) = 0$ → y = 0 or $-\\frac{7}{4}$",
+          "x ∈ {$0$, $\\frac{5}{3}$ (≈ 1.67)}; y ∈ {$-\\frac{7}{4}$ (= −1.75), $0$}. The smallest x equals the largest y ($0$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Cancelling x and y gives x = $\\frac{5}{3}$ and y = $-\\frac{7}{4}$ only, and \"x > y\". Both equations also have the root 0, so x = y = 0 is possible and only x ≥ y holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:zero-root",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-044",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $8x^{2} + 45 = 38x$\nII. $4y^{2} + 9 = 13y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $8x^{2} + 45 = 38x$ → $8x^{2} - 38x + 45 = 0$: split −38 into −18 and −20 (product 360 = 8 × 45) → $(2x - 5)(4x - 9) = 0$ → x = $\\frac{5}{2}$ or $\\frac{9}{4}$",
+          "II. $4y^{2} + 9 = 13y$ → $4y^{2} - 13y + 9 = 0$: split −13 into −4 and −9 (product 36 = 4 × 9) → $(4y - 9)(y - 1) = 0$ → y = $\\frac{9}{4}$ or $1$",
+          "x ∈ {$\\frac{9}{4}$ (= 2.25), $\\frac{5}{2}$ (= 2.5)}; y ∈ {$1$, $\\frac{9}{4}$ (= 2.25)}. The smallest x equals the largest y ($\\frac{9}{4}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $\\frac{9}{4}$ and y = $\\frac{9}{4}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-045",
+      "subtype": "square-root-forms",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} - 18x + 81 = 0$\nII. $y^{3} = 729$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $x^{2} - 18x + 81 = 0$: a perfect square, $(x - 9)^{2} = 0$ → x = $9$ (equal roots)",
+          "II. $y^{3} = 729$ → y = 9 (only one real cube root)",
+          "x ∈ {$9$}; y ∈ {$9$}. x = y in every case."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Do not stop at \"x ≥ y\" or \"x ≤ y\": I is a perfect square with the single root 9 and II has the single real root 9, so x = y in every case, and the option that states exactly this is \"x = y or relation cannot be established\"."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:cube",
+        "quadratic:equal-roots"
+      ]
+    },
+    {
+      "key": "qd-046",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} - 14x + 48 = 0$\nII. $2y^{2} + 66 = 23y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $x^{2} - 14x + 48 = 0$: two numbers with sum −14 and product 48 are −6 and −8 → $(x - 8)(x - 6) = 0$ → x = $8$ or $6$",
+          "II. $2y^{2} + 66 = 23y$ → $2y^{2} - 23y + 66 = 0$: split −23 into −11 and −12 (product 132 = 2 × 66) → $(y - 6)(2y - 11) = 0$ → y = $6$ or $\\frac{11}{2}$",
+          "x ∈ {$6$, $8$}; y ∈ {$\\frac{11}{2}$ (= 5.5), $6$}. The smallest x equals the largest y ($6$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $6$ and y = $6$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-047",
+      "subtype": "square-root-forms",
+      "difficulty": "easy",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x = \\sqrt{144}$\nII. $y^{2} = 121$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $x = \\sqrt{144}$ → x = 12 (positive root only)",
+          "II. $y^{2} = 121$ → y = ±11 (both signs)",
+          "x ∈ {$12$}; y ∈ {$-11$, $11$}. The smallest x, $12$, is greater than the largest y, $11$, so x > y for every pair."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Writing x = ±12 for $x = \\sqrt{144}$ puts −12 below y = 11 and suggests \"relation cannot be established\". The √ sign gives x = 12 only, which beats both 11 and −11."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root"
+      ]
+    },
+    {
+      "key": "qd-048",
+      "subtype": "square-root-forms",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{3} = 343$\nII. $y^{2} = 49$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $x^{3} = 343$ → x = 7 (a cube has only one real root, with the same sign as 343)",
+          "II. $y^{2} = 49$ → y = ±7 (both signs)",
+          "x ∈ {$7$}; y ∈ {$-7$, $7$}. The smallest x equals the largest y ($7$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Treating $x^{3} = 343$ like a square and writing x = ±7 makes the answer look like \"relation cannot be established\". A cube root keeps the sign: x = 7 only, and 7 ≥ ±7."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:cube",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-049",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} - 11x + 12 = 0$\nII. $2y^{2} - y = 1$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} - 11x + 12 = 0$: split −11 into −3 and −8 (product 24 = 2 × 12) → $(x - 4)(2x - 3) = 0$ → x = $4$ or $\\frac{3}{2}$",
+          "II. $2y^{2} - y = 1$ → $2y^{2} - y - 1 = 0$: split −1 into 1 and −2 (product −2 = 2 × −1) → $(y - 1)(2y + 1) = 0$ → y = $1$ or $-\\frac{1}{2}$",
+          "x ∈ {$\\frac{3}{2}$ (= 1.5), $4$}; y ∈ {$-\\frac{1}{2}$ (= −0.5), $1$}. The smallest x, $\\frac{3}{2}$, is greater than the largest y, $1$, so x > y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(2x - 3) = 0$ → x = $-\\frac{3}{2}$ instead of $\\frac{3}{2}$) flips every root and gives the reverse answer, x < y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:rearranged",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-050",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} - 5 = -4x$\nII. $10y^{2} + 3y = 4$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} - 5 = -4x$ → $12x^{2} + 4x - 5 = 0$: split 4 into −6 and 10 (product −60 = 12 × −5) → $(6x + 5)(2x - 1) = 0$ → x = $-\\frac{5}{6}$ or $\\frac{1}{2}$",
+          "II. $10y^{2} + 3y = 4$ → $10y^{2} + 3y - 4 = 0$: split 3 into −5 and 8 (product −40 = 10 × −4) → $(5y + 4)(2y - 1) = 0$ → y = $-\\frac{4}{5}$ or $\\frac{1}{2}$",
+          "x ∈ {$-\\frac{5}{6}$ (≈ −0.83), $\\frac{1}{2}$ (= 0.5)}; y ∈ {$-\\frac{4}{5}$ (= −0.8), $\\frac{1}{2}$ (= 0.5)}. x = $\\frac{1}{2}$ > y = $-\\frac{4}{5}$, but x = $-\\frac{5}{6}$ < y = $-\\frac{4}{5}$, so no single relation holds."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "The shared root ½ suggests x ≤ y or x ≥ y, but x = $-\\frac{5}{6}$ ≈ −0.83 is below y = $-\\frac{4}{5}$ = −0.8 while x = $\\frac{1}{2}$ is above y = $-\\frac{4}{5}$, so neither holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-051",
+      "subtype": "square-root-forms",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} = 98$\nII. $y^{2} + 15y + 56 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} = 98$ → $x^{2} = 49$ → x = ±7 (both signs)",
+          "II. $y^{2} + 15y + 56 = 0$: two numbers with sum 15 and product 56 are 8 and 7 → $(y + 7)(y + 8) = 0$ → y = $-7$ or $-8$",
+          "x ∈ {$-7$, $7$}; y ∈ {$-8$, $-7$}. The smallest x equals the largest y ($-7$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "\"x > y\" is tempting, but x = $-7$ and y = $-7$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-052",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $9x^{2} + 4 = 13x$\nII. $5y^{2} = 12y - 7$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $9x^{2} + 4 = 13x$ → $9x^{2} - 13x + 4 = 0$: split −13 into −9 and −4 (product 36 = 9 × 4) → $(9x - 4)(x - 1) = 0$ → x = $\\frac{4}{9}$ or $1$",
+          "II. $5y^{2} = 12y - 7$ → $5y^{2} - 12y + 7 = 0$: split −12 into −7 and −5 (product 35 = 5 × 7) → $(y - 1)(5y - 7) = 0$ → y = $1$ or $\\frac{7}{5}$",
+          "x ∈ {$\\frac{4}{9}$ (≈ 0.44), $1$}; y ∈ {$1$, $\\frac{7}{5}$ (= 1.4)}. The largest x equals the smallest y ($1$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $1$ and y = $1$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-053",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} + 19x + 15 = 0$\nII. $10y^{2} + 8 = -21y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} + 19x + 15 = 0$: split 19 into 9 and 10 (product 90 = 6 × 15) → $(3x + 5)(2x + 3) = 0$ → x = $-\\frac{5}{3}$ or $-\\frac{3}{2}$",
+          "II. $10y^{2} + 8 = -21y$ → $10y^{2} + 21y + 8 = 0$: split 21 into 5 and 16 (product 80 = 10 × 8) → $(5y + 8)(2y + 1) = 0$ → y = $-\\frac{8}{5}$ or $-\\frac{1}{2}$",
+          "x ∈ {$-\\frac{5}{3}$ (≈ −1.67), $-\\frac{3}{2}$ (= −1.5)}; y ∈ {$-\\frac{8}{5}$ (= −1.6), $-\\frac{1}{2}$ (= −0.5)}. x = $-\\frac{3}{2}$ > y = $-\\frac{8}{5}$, but x = $-\\frac{5}{3}$ < y = $-\\frac{8}{5}$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{5}{3}$ and $\\frac{8}{5}$ by cross-multiplying: 5 × 5 = 25 > 24 = 8 × 3; the negative number with the smaller size is the greater one.",
+        "trap": "Comparing only the larger roots (x = $-\\frac{3}{2}$ vs y = $-\\frac{1}{2}$) suggests x < y, but x = $-\\frac{3}{2}$ is not smaller than y = $-\\frac{8}{5}$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-054",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $5x^{2} - 9x - 2 = 0$\nII. $5y^{2} + 16y + 3 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $5x^{2} - 9x - 2 = 0$: split −9 into −10 and 1 (product −10 = 5 × −2) → $(5x + 1)(x - 2) = 0$ → x = $-\\frac{1}{5}$ or $2$",
+          "II. $5y^{2} + 16y + 3 = 0$: split 16 into 15 and 1 (product 15 = 5 × 3) → $(5y + 1)(y + 3) = 0$ → y = $-\\frac{1}{5}$ or $-3$",
+          "x ∈ {$-\\frac{1}{5}$ (= −0.2), $2$}; y ∈ {$-3$, $-\\frac{1}{5}$ (= −0.2)}. The smallest x equals the largest y ($-\\frac{1}{5}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $-\\frac{1}{5}$ and y = $-\\frac{1}{5}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-055",
+      "subtype": "two-quadratics",
+      "difficulty": "easy",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} - 9x + 14 = 0$\nII. $y^{2} + y - 6 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $x^{2} - 9x + 14 = 0$: two numbers with sum −9 and product 14 are −7 and −2 → $(x - 2)(x - 7) = 0$ → x = $2$ or $7$",
+          "II. $y^{2} + y - 6 = 0$: two numbers with sum 1 and product −6 are 3 and −2 → $(y - 2)(y + 3) = 0$ → y = $2$ or $-3$",
+          "x ∈ {$2$, $7$}; y ∈ {$-3$, $2$}. The smallest x equals the largest y ($2$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $2$ and y = $2$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation"
+      ]
+    },
+    {
+      "key": "qd-056",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $5x^{2} + 33 = 26x$\nII. $6y^{2} = 19y - 13$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $5x^{2} + 33 = 26x$ → $5x^{2} - 26x + 33 = 0$: split −26 into −15 and −11 (product 165 = 5 × 33) → $(5x - 11)(x - 3) = 0$ → x = $\\frac{11}{5}$ or $3$",
+          "II. $6y^{2} = 19y - 13$ → $6y^{2} - 19y + 13 = 0$: split −19 into −6 and −13 (product 78 = 6 × 13) → $(6y - 13)(y - 1) = 0$ → y = $\\frac{13}{6}$ or $1$",
+          "x ∈ {$\\frac{11}{5}$ (= 2.2), $3$}; y ∈ {$1$, $\\frac{13}{6}$ (≈ 2.17)}. The smallest x, $\\frac{11}{5}$, is greater than the largest y, $\\frac{13}{6}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{11}{5}$ and $\\frac{13}{6}$ by cross-multiplying: 11 × 6 = 66 > 65 = 13 × 5.",
+        "trap": "The deciding pair is x = $\\frac{11}{5}$ and y = $\\frac{13}{6}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{11}{5}$ > $\\frac{13}{6}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-057",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $7x - 4 = 3x + 2$\nII. $6y^{2} - 19y + 15 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $7x - 4 = 3x + 2$ is linear: 4x = 6 → x = $\\frac{3}{2}$ (one value only)",
+          "II. $6y^{2} - 19y + 15 = 0$: split −19 into −10 and −9 (product 90 = 6 × 15) → $(2y - 3)(3y - 5) = 0$ → y = $\\frac{3}{2}$ or $\\frac{5}{3}$",
+          "x ∈ {$\\frac{3}{2}$ (= 1.5)}; y ∈ {$\\frac{3}{2}$ (= 1.5), $\\frac{5}{3}$ (≈ 1.67)}. The largest x equals the smallest y ($\\frac{3}{2}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting because $\\frac{3}{2}$ < $\\frac{5}{3}$, but $\\frac{3}{2}$ is also a root of II, so x = y for that pair and only x ≤ y holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:linear",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-058",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} - 37x + 28 = 0$\nII. $12y^{2} - 7y - 10 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} - 37x + 28 = 0$: split −37 into −21 and −16 (product 336 = 12 × 28) → $(3x - 4)(4x - 7) = 0$ → x = $\\frac{4}{3}$ or $\\frac{7}{4}$",
+          "II. $12y^{2} - 7y - 10 = 0$: split −7 into 8 and −15 (product −120 = 12 × −10) → $(4y - 5)(3y + 2) = 0$ → y = $\\frac{5}{4}$ or $-\\frac{2}{3}$",
+          "x ∈ {$\\frac{4}{3}$ (≈ 1.33), $\\frac{7}{4}$ (= 1.75)}; y ∈ {$-\\frac{2}{3}$ (≈ −0.67), $\\frac{5}{4}$ (= 1.25)}. The smallest x, $\\frac{4}{3}$, is greater than the largest y, $\\frac{5}{4}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{4}{3}$ and $\\frac{5}{4}$ by cross-multiplying: 4 × 4 = 16 > 15 = 5 × 3.",
+        "trap": "The deciding pair is x = $\\frac{4}{3}$ and y = $\\frac{5}{4}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{4}{3}$ > $\\frac{5}{4}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-059",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $7x^{2} + 9x + 2 = 0$\nII. $12y^{2} + y - 1 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $7x^{2} + 9x + 2 = 0$: split 9 into 7 and 2 (product 14 = 7 × 2) → $(7x + 2)(x + 1) = 0$ → x = $-\\frac{2}{7}$ or $-1$",
+          "II. $12y^{2} + y - 1 = 0$: split 1 into −3 and 4 (product −12 = 12 × −1) → $(3y + 1)(4y - 1) = 0$ → y = $-\\frac{1}{3}$ or $\\frac{1}{4}$",
+          "x ∈ {$-1$, $-\\frac{2}{7}$ (≈ −0.29)}; y ∈ {$-\\frac{1}{3}$ (≈ −0.33), $\\frac{1}{4}$ (= 0.25)}. x = $-\\frac{2}{7}$ > y = $-\\frac{1}{3}$, but x = $-1$ < y = $-\\frac{1}{3}$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{2}{7}$ and $\\frac{1}{3}$ by cross-multiplying: 2 × 3 = 6 < 7 = 1 × 7; the negative number with the smaller size is the greater one.",
+        "trap": "\"x < y\" is tempting because −1 is far below both y roots, but x = $-\\frac{2}{7}$ ≈ −0.29 is greater than y = $-\\frac{1}{3}$ ≈ −0.33 (cross-multiply: 2 × 3 = 6 < 7 = 1 × 7), so the order breaks."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-060",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $4x^{2} - 17x + 18 = 0$\nII. $4y + 3 = 9y - 7$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $4x^{2} - 17x + 18 = 0$: split −17 into −9 and −8 (product 72 = 4 × 18) → $(x - 2)(4x - 9) = 0$ → x = $2$ or $\\frac{9}{4}$",
+          "II. $4y + 3 = 9y - 7$ is linear: 5y = 10 → y = 2 (one value only)",
+          "x ∈ {$2$, $\\frac{9}{4}$ (= 2.25)}; y ∈ {$2$}. The smallest x equals the largest y ($2$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting because $\\frac{9}{4}$ > 2, but x = 2 is also a root of I, so x = y for that pair and only x ≥ y holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:linear",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-061",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $3x^{2} + 7x + 2 = 0$\nII. $3y^{2} + 16y + 21 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $3x^{2} + 7x + 2 = 0$: split 7 into 6 and 1 (product 6 = 3 × 2) → $(3x + 1)(x + 2) = 0$ → x = $-\\frac{1}{3}$ or $-2$",
+          "II. $3y^{2} + 16y + 21 = 0$: split 16 into 7 and 9 (product 63 = 3 × 21) → $(y + 3)(3y + 7) = 0$ → y = $-3$ or $-\\frac{7}{3}$",
+          "x ∈ {$-2$, $-\\frac{1}{3}$ (≈ −0.33)}; y ∈ {$-3$, $-\\frac{7}{3}$ (≈ −2.33)}. The smallest x, $-2$, is greater than the largest y, $-\\frac{7}{3}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $2$ and $\\frac{7}{3}$ by cross-multiplying: 2 × 3 = 6 < 7 = 7 × 1; the negative number with the smaller size is the greater one.",
+        "trap": "The deciding pair is x = $-2$ and y = $-\\frac{7}{3}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $-2$ > $-\\frac{7}{3}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-062",
+      "subtype": "square-root-forms",
+      "difficulty": "easy",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} = 64$\nII. $y = \\sqrt{81}$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $x^{2} = 64$ → x = ±8 (both signs)",
+          "II. $y = \\sqrt{81}$ → y = 9 (the square-root sign means the positive root only)",
+          "x ∈ {$-8$, $8$}; y ∈ {$9$}. The largest x, $8$, is smaller than the smallest y, $9$, so x < y for every pair."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Writing y = ±9 for $y = \\sqrt{81}$ puts −9 below x = −8 and suggests \"relation cannot be established\". The √ sign gives y = 9 only, and both 8 and −8 are below it."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root"
+      ]
+    },
+    {
+      "key": "qd-063",
+      "subtype": "square-root-forms",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $9x^{2} - 4 = 0$\nII. $y = \\sqrt{0.49}$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $9x^{2} - 4 = 0$ → x = ±$\\frac{2}{3}$ ≈ ±0.67 (both signs)",
+          "II. $y = \\sqrt{0.49}$ → y = 0.7 (positive root only)",
+          "x ∈ {$-\\frac{2}{3}$ (≈ −0.67), $\\frac{2}{3}$ (≈ 0.67)}; y ∈ {$\\frac{7}{10}$ (= 0.7)}. The largest x, $\\frac{2}{3}$, is smaller than the smallest y, $\\frac{7}{10}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{2}{3}$ and $\\frac{7}{10}$ by cross-multiplying: 2 × 10 = 20 < 21 = 7 × 3.",
+        "trap": "$\\frac{2}{3}$ ≈ 0.67 and 0.7 look almost equal, tempting \"x ≤ y\". They are not equal ($\\frac{2}{3}$ = 0.666…), so x < y for both x values."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:decimal",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-064",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $\\frac{3x}{4} + 2 = \\frac{x}{2} + 1$\nII. $12y^{2} + 30 = -53y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $\\frac{3x}{4} + 2 = \\frac{x}{2} + 1$ is linear: multiply by 4 → 3x + 8 = 2x + 4 → x = −4 (one value only)",
+          "II. $12y^{2} + 30 = -53y$ → $12y^{2} + 53y + 30 = 0$: split 53 into 8 and 45 (product 360 = 12 × 30) → $(4y + 15)(3y + 2) = 0$ → y = $-\\frac{15}{4}$ or $-\\frac{2}{3}$",
+          "x ∈ {$-4$}; y ∈ {$-\\frac{15}{4}$ (= −3.75), $-\\frac{2}{3}$ (≈ −0.67)}. The largest x, $-4$, is smaller than the smallest y, $-\\frac{15}{4}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $4$ and $\\frac{15}{4}$ by cross-multiplying: 4 × 4 = 16 > 15 = 15 × 1; the negative number with the smaller size is the greater one.",
+        "trap": "The deciding pair is x = $-4$ and y = $-\\frac{15}{4}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $-4$ < $-\\frac{15}{4}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:linear",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-065",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $8x^{2} - 7 = -26x$\nII. $6y^{2} + 3 = 11y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $8x^{2} - 7 = -26x$ → $8x^{2} + 26x - 7 = 0$: split 26 into −2 and 28 (product −56 = 8 × −7) → $(2x + 7)(4x - 1) = 0$ → x = $-\\frac{7}{2}$ or $\\frac{1}{4}$",
+          "II. $6y^{2} + 3 = 11y$ → $6y^{2} - 11y + 3 = 0$: split −11 into −9 and −2 (product 18 = 6 × 3) → $(3y - 1)(2y - 3) = 0$ → y = $\\frac{1}{3}$ or $\\frac{3}{2}$",
+          "x ∈ {$-\\frac{7}{2}$ (= −3.5), $\\frac{1}{4}$ (= 0.25)}; y ∈ {$\\frac{1}{3}$ (≈ 0.33), $\\frac{3}{2}$ (= 1.5)}. The largest x, $\\frac{1}{4}$, is smaller than the smallest y, $\\frac{1}{3}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{1}{4}$ and $\\frac{1}{3}$ by cross-multiplying: 1 × 3 = 3 < 4 = 1 × 4.",
+        "trap": "The deciding pair is x = $\\frac{1}{4}$ and y = $\\frac{1}{3}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{1}{4}$ < $\\frac{1}{3}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-066",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $9x^{2} = 16$\nII. $3y^{2} + 8 = 10y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $9x^{2} = 16$ → $x^{2} = \\frac{16}{9}$ → x = ±$\\frac{4}{3}$ (both signs)",
+          "II. $3y^{2} + 8 = 10y$ → $3y^{2} - 10y + 8 = 0$: split −10 into −6 and −4 (product 24 = 3 × 8) → $(3y - 4)(y - 2) = 0$ → y = $\\frac{4}{3}$ or $2$",
+          "x ∈ {$-\\frac{4}{3}$ (≈ −1.33), $\\frac{4}{3}$ (≈ 1.33)}; y ∈ {$\\frac{4}{3}$ (≈ 1.33), $2$}. The largest x equals the smallest y ($\\frac{4}{3}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "\"x < y\" is tempting, but x = $\\frac{4}{3}$ and y = $\\frac{4}{3}$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-067",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} - 35x + 25 = 0$\nII. $6y^{2} - 17y + 12 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} - 35x + 25 = 0$: split −35 into −20 and −15 (product 300 = 12 × 25) → $(4x - 5)(3x - 5) = 0$ → x = $\\frac{5}{4}$ or $\\frac{5}{3}$",
+          "II. $6y^{2} - 17y + 12 = 0$: split −17 into −9 and −8 (product 72 = 6 × 12) → $(3y - 4)(2y - 3) = 0$ → y = $\\frac{4}{3}$ or $\\frac{3}{2}$",
+          "x ∈ {$\\frac{5}{4}$ (= 1.25), $\\frac{5}{3}$ (≈ 1.67)}; y ∈ {$\\frac{4}{3}$ (≈ 1.33), $\\frac{3}{2}$ (= 1.5)}. x = $\\frac{5}{3}$ > y = $\\frac{4}{3}$, but x = $\\frac{5}{4}$ < y = $\\frac{4}{3}$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{5}{4}$ and $\\frac{4}{3}$ by cross-multiplying: 5 × 3 = 15 < 16 = 4 × 4.",
+        "trap": "Comparing only the larger roots (x = $\\frac{5}{3}$ vs y = $\\frac{3}{2}$) suggests x > y, but x = $\\frac{5}{4}$ is not greater than y = $\\frac{3}{2}$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-068",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $10x^{2} + 7x - 6 = 0$\nII. $5y^{2} + 18 = -21y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $10x^{2} + 7x - 6 = 0$: split 7 into −5 and 12 (product −60 = 10 × −6) → $(5x + 6)(2x - 1) = 0$ → x = $-\\frac{6}{5}$ or $\\frac{1}{2}$",
+          "II. $5y^{2} + 18 = -21y$ → $5y^{2} + 21y + 18 = 0$: split 21 into 15 and 6 (product 90 = 5 × 18) → $(5y + 6)(y + 3) = 0$ → y = $-\\frac{6}{5}$ or $-3$",
+          "x ∈ {$-\\frac{6}{5}$ (= −1.2), $\\frac{1}{2}$ (= 0.5)}; y ∈ {$-3$, $-\\frac{6}{5}$ (= −1.2)}. The smallest x equals the largest y ($-\\frac{6}{5}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $-\\frac{6}{5}$ and y = $-\\frac{6}{5}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-069",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} - x - 6 = 0$\nII. $y^{2} - 3y - 4 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} - x - 6 = 0$: split −1 into −4 and 3 (product −12 = 2 × −6) → $(2x + 3)(x - 2) = 0$ → x = $-\\frac{3}{2}$ or $2$",
+          "II. $y^{2} - 3y - 4 = 0$: two numbers with sum −3 and product −4 are −4 and 1 → $(y + 1)(y - 4) = 0$ → y = $-1$ or $4$",
+          "x ∈ {$-\\frac{3}{2}$ (= −1.5), $2$}; y ∈ {$-1$, $4$}. x = $2$ > y = $-1$, but x = $-\\frac{3}{2}$ < y = $-1$, so no single relation holds."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Comparing only the larger roots (x = $2$ vs y = $4$) suggests x < y, but x = $2$ is not smaller than y = $-1$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-070",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $3x^{2} - 5x + 2 = 0$\nII. $2y^{2} + 5 = 7y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $3x^{2} - 5x + 2 = 0$: split −5 into −3 and −2 (product 6 = 3 × 2) → $(3x - 2)(x - 1) = 0$ → x = $\\frac{2}{3}$ or $1$",
+          "II. $2y^{2} + 5 = 7y$ → $2y^{2} - 7y + 5 = 0$: split −7 into −5 and −2 (product 10 = 2 × 5) → $(y - 1)(2y - 5) = 0$ → y = $1$ or $\\frac{5}{2}$",
+          "x ∈ {$\\frac{2}{3}$ (≈ 0.67), $1$}; y ∈ {$1$, $\\frac{5}{2}$ (= 2.5)}. The largest x equals the smallest y ($1$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $1$ and y = $1$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-071",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} - 7x + 3 = 0$\nII. $2y^{2} - 15y + 28 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} - 7x + 3 = 0$: split −7 into −6 and −1 (product 6 = 2 × 3) → $(2x - 1)(x - 3) = 0$ → x = $\\frac{1}{2}$ or $3$",
+          "II. $2y^{2} - 15y + 28 = 0$: split −15 into −7 and −8 (product 56 = 2 × 28) → $(y - 4)(2y - 7) = 0$ → y = $4$ or $\\frac{7}{2}$",
+          "x ∈ {$\\frac{1}{2}$ (= 0.5), $3$}; y ∈ {$\\frac{7}{2}$ (= 3.5), $4$}. The largest x, $3$, is smaller than the smallest y, $\\frac{7}{2}$, so x < y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(2x - 1) = 0$ → x = $-\\frac{1}{2}$ instead of $\\frac{1}{2}$) flips every root and gives the reverse answer, x > y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-072",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $3x^{2} - 26x + 35 = 0$\nII. $3y^{2} + y - 10 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $3x^{2} - 26x + 35 = 0$: split −26 into −5 and −21 (product 105 = 3 × 35) → $(x - 7)(3x - 5) = 0$ → x = $7$ or $\\frac{5}{3}$",
+          "II. $3y^{2} + y - 10 = 0$: split 1 into 6 and −5 (product −30 = 3 × −10) → $(3y - 5)(y + 2) = 0$ → y = $\\frac{5}{3}$ or $-2$",
+          "x ∈ {$\\frac{5}{3}$ (≈ 1.67), $7$}; y ∈ {$-2$, $\\frac{5}{3}$ (≈ 1.67)}. The smallest x equals the largest y ($\\frac{5}{3}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $\\frac{5}{3}$ and y = $\\frac{5}{3}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-073",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $8x^{2} - 10x - 3 = 0$\nII. $2y^{2} - 7y + 6 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $8x^{2} - 10x - 3 = 0$: split −10 into −12 and 2 (product −24 = 8 × −3) → $(4x + 1)(2x - 3) = 0$ → x = $-\\frac{1}{4}$ or $\\frac{3}{2}$",
+          "II. $2y^{2} - 7y + 6 = 0$: split −7 into −4 and −3 (product 12 = 2 × 6) → $(2y - 3)(y - 2) = 0$ → y = $\\frac{3}{2}$ or $2$",
+          "x ∈ {$-\\frac{1}{4}$ (= −0.25), $\\frac{3}{2}$ (= 1.5)}; y ∈ {$\\frac{3}{2}$ (= 1.5), $2$}. The largest x equals the smallest y ($\\frac{3}{2}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $\\frac{3}{2}$ and y = $\\frac{3}{2}$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-074",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} = 1.44$\nII. $y = \\sqrt{1.69}$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $x^{2} = 1.44$ → x = ±1.2 (both signs)",
+          "II. $y = \\sqrt{1.69}$ → y = 1.3 (positive root only)",
+          "x ∈ {$-\\frac{6}{5}$ (= −1.2), $\\frac{6}{5}$ (= 1.2)}; y ∈ {$\\frac{13}{10}$ (= 1.3)}. The largest x, $\\frac{6}{5}$, is smaller than the smallest y, $\\frac{13}{10}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{6}{5}$ and $\\frac{13}{10}$ by cross-multiplying: 6 × 10 = 60 < 65 = 13 × 5.",
+        "trap": "Writing y = ±1.3 (as if II were $y^{2} = 1.69$) puts −1.3 below x = −1.2 and suggests \"relation cannot be established\". The √ sign gives y = 1.3 only, which is above both 1.2 and −1.2."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:decimal"
+      ]
+    },
+    {
+      "key": "qd-075",
+      "subtype": "square-root-forms",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{3} = -64$\nII. $(y + 2)^{2} = 9$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $x^{3} = -64$ → x = −4 (one real cube root)",
+          "II. $(y + 2)^{2} = 9$ → y + 2 = ±3 → y = 1 or −5",
+          "x ∈ {$-4$}; y ∈ {$-5$, $1$}. x = $-4$ > y = $-5$, but x = $-4$ < y = $1$, so no single relation holds."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Taking only y + 2 = +3 (y = 1) gives \"x < y\". The negative branch y = −5 is below x = −4, so the order breaks."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:cube"
+      ]
+    },
+    {
+      "key": "qd-076",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} - 15x + 18 = 0$\nII. $y^{2} + 3y - 10 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} - 15x + 18 = 0$: split −15 into −12 and −3 (product 36 = 2 × 18) → $(2x - 3)(x - 6) = 0$ → x = $\\frac{3}{2}$ or $6$",
+          "II. $y^{2} + 3y - 10 = 0$: two numbers with sum 3 and product −10 are 5 and −2 → $(y - 2)(y + 5) = 0$ → y = $2$ or $-5$",
+          "x ∈ {$\\frac{3}{2}$ (= 1.5), $6$}; y ∈ {$-5$, $2$}. x = $\\frac{3}{2}$ > y = $-5$, but x = $\\frac{3}{2}$ < y = $2$, so no single relation holds."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Comparing only the larger roots (x = $6$ vs y = $2$) suggests x > y, but x = $\\frac{3}{2}$ is not greater than y = $2$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-077",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x = \\sqrt{\\frac{49}{36}}$\nII. $6y^{2} - 13y + 6 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $x = \\sqrt{\\frac{49}{36}}$ → x = $\\frac{7}{6}$ (positive root only)",
+          "II. $6y^{2} - 13y + 6 = 0$: split −13 into −4 and −9 (product 36 = 6 × 6) → $(2y - 3)(3y - 2) = 0$ → y = $\\frac{3}{2}$ or $\\frac{2}{3}$",
+          "x ∈ {$\\frac{7}{6}$ (≈ 1.17)}; y ∈ {$\\frac{2}{3}$ (≈ 0.67), $\\frac{3}{2}$ (= 1.5)}. x = $\\frac{7}{6}$ > y = $\\frac{2}{3}$, but x = $\\frac{7}{6}$ < y = $\\frac{3}{2}$, so no single relation holds."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{7}{6}$ and $\\frac{3}{2}$ by cross-multiplying: 7 × 2 = 14 < 18 = 3 × 6.",
+        "trap": "Comparing only the larger roots (x = $\\frac{7}{6}$ vs y = $\\frac{3}{2}$) suggests x < y, but x = $\\frac{7}{6}$ is not smaller than y = $\\frac{2}{3}$, so no single relation holds."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-078",
+      "subtype": "square-root-forms",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} = 196$\nII. $y^{2} - 29y + 210 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $x^{2} = 196$ → x = ±14 (both signs)",
+          "II. $y^{2} - 29y + 210 = 0$: two numbers with sum −29 and product 210 are −15 and −14 → $(y - 14)(y - 15) = 0$ → y = $14$ or $15$",
+          "x ∈ {$-14$, $14$}; y ∈ {$14$, $15$}. The largest x equals the smallest y ($14$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "\"x < y\" is tempting, but x = $14$ and y = $14$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-079",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} + 35 = -41x$\nII. $6y^{2} + 17y = -12$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} + 35 = -41x$ → $12x^{2} + 41x + 35 = 0$: split 41 into 21 and 20 (product 420 = 12 × 35) → $(3x + 5)(4x + 7) = 0$ → x = $-\\frac{5}{3}$ or $-\\frac{7}{4}$",
+          "II. $6y^{2} + 17y = -12$ → $6y^{2} + 17y + 12 = 0$: split 17 into 8 and 9 (product 72 = 6 × 12) → $(2y + 3)(3y + 4) = 0$ → y = $-\\frac{3}{2}$ or $-\\frac{4}{3}$",
+          "x ∈ {$-\\frac{7}{4}$ (= −1.75), $-\\frac{5}{3}$ (≈ −1.67)}; y ∈ {$-\\frac{3}{2}$ (= −1.5), $-\\frac{4}{3}$ (≈ −1.33)}. The largest x, $-\\frac{5}{3}$, is smaller than the smallest y, $-\\frac{3}{2}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{5}{3}$ and $\\frac{3}{2}$ by cross-multiplying: 5 × 2 = 10 > 9 = 3 × 3; the negative number with the smaller size is the greater one.",
+        "trap": "The deciding pair is x = $-\\frac{5}{3}$ and y = $-\\frac{3}{2}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $-\\frac{5}{3}$ < $-\\frac{3}{2}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-080",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{4} = 625$\nII. $y = \\sqrt{25}$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $x^{4} = 625$ → $x^{2} = 25$ (x² cannot be −25) → x = ±5",
+          "II. $y = \\sqrt{25}$ → y = 5 (positive root only)",
+          "x ∈ {$-5$, $5$}; y ∈ {$5$}. The largest x equals the smallest y ($5$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Treating $x^{4} = 625$ as giving x = 5 only (like a √) leads to \"x = y\". An even power gives both signs, x = ±5, and both are ≤ 5."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fourth-power",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-081",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} - 17x + 36 = 0$\nII. $6y^{2} - 41y + 70 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} - 17x + 36 = 0$: split −17 into −8 and −9 (product 72 = 2 × 36) → $(2x - 9)(x - 4) = 0$ → x = $\\frac{9}{2}$ or $4$",
+          "II. $6y^{2} - 41y + 70 = 0$: split −41 into −20 and −21 (product 420 = 6 × 70) → $(2y - 7)(3y - 10) = 0$ → y = $\\frac{7}{2}$ or $\\frac{10}{3}$",
+          "x ∈ {$4$, $\\frac{9}{2}$ (= 4.5)}; y ∈ {$\\frac{10}{3}$ (≈ 3.33), $\\frac{7}{2}$ (= 3.5)}. The smallest x, $4$, is greater than the largest y, $\\frac{7}{2}$, so x > y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(2x - 9) = 0$ → x = $-\\frac{9}{2}$ instead of $\\frac{9}{2}$) flips every root and gives the reverse answer, x < y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots"
+      ]
+    },
+    {
+      "key": "qd-082",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $(x + 2)(x - 3) = 14$\nII. $(2y - 1)(y + 2) = 7$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. $(x + 2)(x - 3) = 14$ → $x^{2} - x - 6 = 14$ → $x^{2} - x - 20 = 0$ → $(x - 5)(x + 4) = 0$ → x = 5 or −4",
+          "II. $(2y - 1)(y + 2) = 7$ → $2y^{2} + 3y - 2 = 7$ → $2y^{2} + 3y - 9 = 0$: split 3 into 6 and −3 (product −18 = 2 × −9) → $(2y - 3)(y + 3) = 0$ → y = $\\frac{3}{2}$ or −3",
+          "x ∈ {$-4$, $5$}; y ∈ {$-3$, $\\frac{3}{2}$ (= 1.5)}. x = $5$ > y = $-3$, but x = $-4$ < y = $-3$, so no single relation holds."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Setting each bracket equal to 14 or 7 (x = −2, 3) is wrong; expand first. The real roots interleave: x = 5 > both y roots but x = −4 < y = −3."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:expanded-form"
+      ]
+    },
+    {
+      "key": "qd-083",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $6x^{2} + 35 = 29x$\nII. $12y^{2} = 7y + 45$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $6x^{2} + 35 = 29x$ → $6x^{2} - 29x + 35 = 0$: split −29 into −15 and −14 (product 210 = 6 × 35) → $(3x - 7)(2x - 5) = 0$ → x = $\\frac{7}{3}$ or $\\frac{5}{2}$",
+          "II. $12y^{2} = 7y + 45$ → $12y^{2} - 7y - 45 = 0$: split −7 into 20 and −27 (product −540 = 12 × −45) → $(4y - 9)(3y + 5) = 0$ → y = $\\frac{9}{4}$ or $-\\frac{5}{3}$",
+          "x ∈ {$\\frac{7}{3}$ (≈ 2.33), $\\frac{5}{2}$ (= 2.5)}; y ∈ {$-\\frac{5}{3}$ (≈ −1.67), $\\frac{9}{4}$ (= 2.25)}. The smallest x, $\\frac{7}{3}$, is greater than the largest y, $\\frac{9}{4}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{7}{3}$ and $\\frac{9}{4}$ by cross-multiplying: 7 × 4 = 28 > 27 = 9 × 3.",
+        "trap": "The deciding pair is x = $\\frac{7}{3}$ and y = $\\frac{9}{4}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{7}{3}$ > $\\frac{9}{4}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-084",
+      "subtype": "two-quadratics",
+      "difficulty": "easy",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} - 8x + 15 = 0$\nII. $y^{2} + y - 2 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $x^{2} - 8x + 15 = 0$: two numbers with sum −8 and product 15 are −5 and −3 → $(x - 3)(x - 5) = 0$ → x = $3$ or $5$",
+          "II. $y^{2} + y - 2 = 0$: two numbers with sum 1 and product −2 are −1 and 2 → $(y + 2)(y - 1) = 0$ → y = $-2$ or $1$",
+          "x ∈ {$3$, $5$}; y ∈ {$-2$, $1$}. The smallest x, $3$, is greater than the largest y, $1$, so x > y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(x - 3) = 0$ → x = $-3$ instead of $3$) flips every root and gives the reverse answer, x < y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation"
+      ]
+    },
+    {
+      "key": "qd-085",
+      "subtype": "two-quadratics",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} - x = 6$\nII. $10y^{2} + 12 = 23y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} - x = 6$ → $12x^{2} - x - 6 = 0$: split −1 into 8 and −9 (product −72 = 12 × −6) → $(4x - 3)(3x + 2) = 0$ → x = $\\frac{3}{4}$ or $-\\frac{2}{3}$",
+          "II. $10y^{2} + 12 = 23y$ → $10y^{2} - 23y + 12 = 0$: split −23 into −15 and −8 (product 120 = 10 × 12) → $(5y - 4)(2y - 3) = 0$ → y = $\\frac{4}{5}$ or $\\frac{3}{2}$",
+          "x ∈ {$-\\frac{2}{3}$ (≈ −0.67), $\\frac{3}{4}$ (= 0.75)}; y ∈ {$\\frac{4}{5}$ (= 0.8), $\\frac{3}{2}$ (= 1.5)}. The largest x, $\\frac{3}{4}$, is smaller than the smallest y, $\\frac{4}{5}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{3}{4}$ and $\\frac{4}{5}$ by cross-multiplying: 3 × 5 = 15 < 16 = 4 × 4.",
+        "trap": "The deciding pair is x = $\\frac{3}{4}$ and y = $\\frac{4}{5}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{3}{4}$ < $\\frac{4}{5}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-086",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} - 13x + 3 = 0$\nII. $8y^{2} + 2y - 1 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} - 13x + 3 = 0$: split −13 into −9 and −4 (product 36 = 12 × 3) → $(3x - 1)(4x - 3) = 0$ → x = $\\frac{1}{3}$ or $\\frac{3}{4}$",
+          "II. $8y^{2} + 2y - 1 = 0$: split 2 into −2 and 4 (product −8 = 8 × −1) → $(2y + 1)(4y - 1) = 0$ → y = $-\\frac{1}{2}$ or $\\frac{1}{4}$",
+          "x ∈ {$\\frac{1}{3}$ (≈ 0.33), $\\frac{3}{4}$ (= 0.75)}; y ∈ {$-\\frac{1}{2}$ (= −0.5), $\\frac{1}{4}$ (= 0.25)}. The smallest x, $\\frac{1}{3}$, is greater than the largest y, $\\frac{1}{4}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{1}{3}$ and $\\frac{1}{4}$ by cross-multiplying: 1 × 4 = 4 > 3 = 1 × 3.",
+        "trap": "The deciding pair is x = $\\frac{1}{3}$ and y = $\\frac{1}{4}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{1}{3}$ > $\\frac{1}{4}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-087",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $2x^{2} - 11x + 15 = 0$\nII. $2y^{2} - 7y + 5 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $2x^{2} - 11x + 15 = 0$: split −11 into −6 and −5 (product 30 = 2 × 15) → $(2x - 5)(x - 3) = 0$ → x = $\\frac{5}{2}$ or $3$",
+          "II. $2y^{2} - 7y + 5 = 0$: split −7 into −2 and −5 (product 10 = 2 × 5) → $(2y - 5)(y - 1) = 0$ → y = $\\frac{5}{2}$ or $1$",
+          "x ∈ {$\\frac{5}{2}$ (= 2.5), $3$}; y ∈ {$1$, $\\frac{5}{2}$ (= 2.5)}. The smallest x equals the largest y ($\\frac{5}{2}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $\\frac{5}{2}$ and y = $\\frac{5}{2}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-088",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} - 11x + 30 = 0$\nII. $y^{2} - y = 12$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $x^{2} - 11x + 30 = 0$: two numbers with sum −11 and product 30 are −5 and −6 → $(x - 6)(x - 5) = 0$ → x = $6$ or $5$",
+          "II. $y^{2} - y = 12$ → $y^{2} - y - 12 = 0$: two numbers with sum −1 and product −12 are 3 and −4 → $(y - 4)(y + 3) = 0$ → y = $4$ or $-3$",
+          "x ∈ {$5$, $6$}; y ∈ {$-3$, $4$}. The smallest x, $5$, is greater than the largest y, $4$, so x > y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(x - 5) = 0$ → x = $-5$ instead of $5$) flips every root and gives the reverse answer, x < y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:rearranged"
+      ]
+    },
+    {
+      "key": "qd-089",
+      "subtype": "square-root-forms",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x = \\sqrt{256}$\nII. $y^{2} + 240 = 31y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $x = \\sqrt{256}$ → x = 16 (positive root only)",
+          "II. $y^{2} + 240 = 31y$ → $y^{2} - 31y + 240 = 0$: two numbers with sum −31 and product 240 are −16 and −15 → $(y - 15)(y - 16) = 0$ → y = $15$ or $16$",
+          "x ∈ {$16$}; y ∈ {$15$, $16$}. The smallest x equals the largest y ($16$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "\"x > y\" is tempting, but x = $16$ and y = $16$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-090",
+      "subtype": "square-root-forms",
+      "difficulty": "extreme",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $(2x - 1)^{2} = 25$\nII. $y^{3} + 27 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $(2x - 1)^{2} = 25$ → 2x − 1 = ±5 → x = 3 or −2",
+          "II. $y^{3} + 27 = 0$ → $y^{3} = -27$ → y = −3 (one real cube root)",
+          "x ∈ {$-2$, $3$}; y ∈ {$-3$}. The smallest x, $-2$, is greater than the largest y, $-3$, so x > y for every pair."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Taking only 2x − 1 = +5 (x = 3) misses x = −2; and reading y as +3 would make \"x ≤ y\" look possible. With x ∈ {3, −2} and y = −3, every x is greater."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:cube"
+      ]
+    },
+    {
+      "key": "qd-091",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} + 11x - 5 = 0$\nII. $6y^{2} + 1 = 5y$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} + 11x - 5 = 0$: split 11 into −4 and 15 (product −60 = 12 × −5) → $(4x + 5)(3x - 1) = 0$ → x = $-\\frac{5}{4}$ or $\\frac{1}{3}$",
+          "II. $6y^{2} + 1 = 5y$ → $6y^{2} - 5y + 1 = 0$: split −5 into −3 and −2 (product 6 = 6 × 1) → $(3y - 1)(2y - 1) = 0$ → y = $\\frac{1}{3}$ or $\\frac{1}{2}$",
+          "x ∈ {$-\\frac{5}{4}$ (= −1.25), $\\frac{1}{3}$ (≈ 0.33)}; y ∈ {$\\frac{1}{3}$ (≈ 0.33), $\\frac{1}{2}$ (= 0.5)}. The largest x equals the smallest y ($\\frac{1}{3}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $\\frac{1}{3}$ and y = $\\frac{1}{3}$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-092",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $5x^{2} + 3x - 2 = 0$\nII. $4y^{2} - 12y + 5 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $5x^{2} + 3x - 2 = 0$: split 3 into 5 and −2 (product −10 = 5 × −2) → $(5x - 2)(x + 1) = 0$ → x = $\\frac{2}{5}$ or $-1$",
+          "II. $4y^{2} - 12y + 5 = 0$: split −12 into −10 and −2 (product 20 = 4 × 5) → $(2y - 1)(2y - 5) = 0$ → y = $\\frac{1}{2}$ or $\\frac{5}{2}$",
+          "x ∈ {$-1$, $\\frac{2}{5}$ (= 0.4)}; y ∈ {$\\frac{1}{2}$ (= 0.5), $\\frac{5}{2}$ (= 2.5)}. The largest x, $\\frac{2}{5}$, is smaller than the smallest y, $\\frac{1}{2}$, so x < y for every pair."
+        ],
+        "shortcut": "For the closest pair, compare $\\frac{2}{5}$ and $\\frac{1}{2}$ by cross-multiplying: 2 × 2 = 4 < 5 = 1 × 5.",
+        "trap": "The deciding pair is x = $\\frac{2}{5}$ and y = $\\frac{1}{2}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $\\frac{2}{5}$ < $\\frac{1}{2}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-093",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $10x^{2} - 8 = 11x$\nII. $2y^{2} - 9y + 10 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $10x^{2} - 8 = 11x$ → $10x^{2} - 11x - 8 = 0$: split −11 into 5 and −16 (product −80 = 10 × −8) → $(5x - 8)(2x + 1) = 0$ → x = $\\frac{8}{5}$ or $-\\frac{1}{2}$",
+          "II. $2y^{2} - 9y + 10 = 0$: split −9 into −5 and −4 (product 20 = 2 × 10) → $(y - 2)(2y - 5) = 0$ → y = $2$ or $\\frac{5}{2}$",
+          "x ∈ {$-\\frac{1}{2}$ (= −0.5), $\\frac{8}{5}$ (= 1.6)}; y ∈ {$2$, $\\frac{5}{2}$ (= 2.5)}. The largest x, $\\frac{8}{5}$, is smaller than the smallest y, $2$, so x < y for every pair."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "Reading the roots with the signs inside their brackets (e.g. $(2x + 1) = 0$ → x = $\\frac{1}{2}$ instead of $-\\frac{1}{2}$) flips every root and gives the reverse answer, x > y."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged"
+      ]
+    },
+    {
+      "key": "qd-094",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} + 28x + 15 = 0$\nII. $6y^{2} + 23y + 21 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} + 28x + 15 = 0$: split 28 into 10 and 18 (product 180 = 12 × 15) → $(2x + 3)(6x + 5) = 0$ → x = $-\\frac{3}{2}$ or $-\\frac{5}{6}$",
+          "II. $6y^{2} + 23y + 21 = 0$: split 23 into 14 and 9 (product 126 = 6 × 21) → $(2y + 3)(3y + 7) = 0$ → y = $-\\frac{3}{2}$ or $-\\frac{7}{3}$",
+          "x ∈ {$-\\frac{3}{2}$ (= −1.5), $-\\frac{5}{6}$ (≈ −0.83)}; y ∈ {$-\\frac{7}{3}$ (≈ −2.33), $-\\frac{3}{2}$ (= −1.5)}. The smallest x equals the largest y ($-\\frac{3}{2}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $-\\frac{3}{2}$ and y = $-\\frac{3}{2}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-095",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $12x^{2} + x = 6$\nII. $6y^{2} - 25y + 14 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $12x^{2} + x = 6$ → $12x^{2} + x - 6 = 0$: split 1 into −8 and 9 (product −72 = 12 × −6) → $(4x + 3)(3x - 2) = 0$ → x = $-\\frac{3}{4}$ or $\\frac{2}{3}$",
+          "II. $6y^{2} - 25y + 14 = 0$: split −25 into −21 and −4 (product 84 = 6 × 14) → $(3y - 2)(2y - 7) = 0$ → y = $\\frac{2}{3}$ or $\\frac{7}{2}$",
+          "x ∈ {$-\\frac{3}{4}$ (= −0.75), $\\frac{2}{3}$ (≈ 0.67)}; y ∈ {$\\frac{2}{3}$ (≈ 0.67), $\\frac{7}{2}$ (= 3.5)}. The largest x equals the smallest y ($\\frac{2}{3}$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $\\frac{2}{3}$ and y = $\\frac{2}{3}$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:rearranged",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-096",
+      "subtype": "square-root-forms",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $8x^{2} - 50x + 77 = 0$\nII. $y = \\sqrt{\\frac{121}{16}}$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $8x^{2} - 50x + 77 = 0$: split −50 into −28 and −22 (product 616 = 8 × 77) → $(4x - 11)(2x - 7) = 0$ → x = $\\frac{11}{4}$ or $\\frac{7}{2}$",
+          "II. $y = \\sqrt{\\frac{121}{16}}$ → y = $\\frac{11}{4}$ (positive root only)",
+          "x ∈ {$\\frac{11}{4}$ (= 2.75), $\\frac{7}{2}$ (= 3.5)}; y ∈ {$\\frac{11}{4}$ (= 2.75)}. The smallest x equals the largest y ($\\frac{11}{4}$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "\"x > y\" is tempting, but x = $\\frac{11}{4}$ and y = $\\frac{11}{4}$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-097",
+      "subtype": "two-quadratics",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} + 11x + 28 = 0$\nII. $3y^{2} + 14y + 8 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. $x^{2} + 11x + 28 = 0$: two numbers with sum 11 and product 28 are 4 and 7 → $(x + 7)(x + 4) = 0$ → x = $-7$ or $-4$",
+          "II. $3y^{2} + 14y + 8 = 0$: split 14 into 2 and 12 (product 24 = 3 × 8) → $(y + 4)(3y + 2) = 0$ → y = $-4$ or $-\\frac{2}{3}$",
+          "x ∈ {$-7$, $-4$}; y ∈ {$-4$, $-\\frac{2}{3}$ (≈ −0.67)}. The largest x equals the smallest y ($-4$); every other pair has x < y, so x ≤ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x < y\" is tempting, but x = $-4$ and y = $-4$ can be equal, so only x ≤ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    },
+    {
+      "key": "qd-098",
+      "subtype": "square-root-forms",
+      "difficulty": "medium",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $x^{2} = 400$\nII. $y^{3} = 9261$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. $x^{2} = 400$ → x = ±20 (both signs)",
+          "II. $y^{3} = 9261$ → y = 21 (21 × 21 × 21 = 9261; one real cube root)",
+          "x ∈ {$-20$, $20$}; y ∈ {$21$}. The largest x, $20$, is smaller than the smallest y, $21$, so x < y for every pair."
+        ],
+        "shortcut": "Remember: $v^{2} = k$ gives both +√k and −√k, but $v = \\sqrt{k}$ means the positive root only.",
+        "trap": "Treating the cube like a square (y = ±21) puts −21 below both x values and suggests \"relation cannot be established\". A cube has one real root, y = 21, which is above both 20 and −20."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:square-root",
+        "quadratic:cube"
+      ]
+    },
+    {
+      "key": "qd-099",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $10x^{2} + 23x + 12 = 0$\nII. $3y^{2} + 11y + 10 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. $10x^{2} + 23x + 12 = 0$: split 23 into 15 and 8 (product 120 = 10 × 12) → $(5x + 4)(2x + 3) = 0$ → x = $-\\frac{4}{5}$ or $-\\frac{3}{2}$",
+          "II. $3y^{2} + 11y + 10 = 0$: split 11 into 5 and 6 (product 30 = 3 × 10) → $(y + 2)(3y + 5) = 0$ → y = $-2$ or $-\\frac{5}{3}$",
+          "x ∈ {$-\\frac{3}{2}$ (= −1.5), $-\\frac{4}{5}$ (= −0.8)}; y ∈ {$-2$, $-\\frac{5}{3}$ (≈ −1.67)}. The smallest x, $-\\frac{3}{2}$, is greater than the largest y, $-\\frac{5}{3}$, so x > y for every pair."
+        ],
+        "shortcut": "For the closest pair, both numbers are negative, so compare $\\frac{3}{2}$ and $\\frac{5}{3}$ by cross-multiplying: 3 × 3 = 9 < 10 = 5 × 2; the negative number with the smaller size is the greater one.",
+        "trap": "The deciding pair is x = $-\\frac{3}{2}$ and y = $-\\frac{5}{3}$, which are close; guessing from rough decimals invites \"relation cannot be established\". Exactly, $-\\frac{3}{2}$ > $-\\frac{5}{3}$, so the strict order holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:close-roots"
+      ]
+    },
+    {
+      "key": "qd-100",
+      "subtype": "two-quadratics",
+      "difficulty": "hard",
+      "prompt": "In the following question, two equations numbered I and II are given. Solve both equations and mark the correct relation between x and y.\n\nI. $5x^{2} + 7x - 6 = 0$\nII. $4y^{2} + 17y + 18 = 0$",
+      "options": [
+        "x > y",
+        "x < y",
+        "x ≥ y",
+        "x ≤ y",
+        "x = y or relation cannot be established"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. $5x^{2} + 7x - 6 = 0$: split 7 into 10 and −3 (product −30 = 5 × −6) → $(5x - 3)(x + 2) = 0$ → x = $\\frac{3}{5}$ or $-2$",
+          "II. $4y^{2} + 17y + 18 = 0$: split 17 into 9 and 8 (product 72 = 4 × 18) → $(y + 2)(4y + 9) = 0$ → y = $-2$ or $-\\frac{9}{4}$",
+          "x ∈ {$-2$, $\\frac{3}{5}$ (= 0.6)}; y ∈ {$-\\frac{9}{4}$ (= −2.25), $-2$}. The smallest x equals the largest y ($-2$); every other pair has x > y, so x ≥ y."
+        ],
+        "shortcut": "Sign rule for $av^{2} + bv + c = 0$ (a > 0): b, c both positive → both roots negative; b negative, c positive → both positive; c negative → one root of each sign. Place all the roots on a number line.",
+        "trap": "\"x > y\" is tempting, but x = $-2$ and y = $-2$ can be equal, so only x ≥ y holds for every pair."
+      },
+      "tags": [
+        "quadratic:comparison",
+        "quadratic:factorisation",
+        "quadratic:fractional-roots",
+        "quadratic:shared-root"
+      ]
+    }
+  ]
+}
