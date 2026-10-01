@@ -1,0 +1,636 @@
+{
+  "chapter": "number-problems",
+  "version": 1,
+  "items": [
+    {
+      "key": "np-001",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A group of 60 people visited a science museum. The entry fee was ₹40 for an adult and ₹25 for a child, and the group paid ₹1,890 in all. How many adults were in the group?",
+      "options": [
+        "26",
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the number of adults be a; then there are (60 − a) children.",
+          "40a + 25(60 − a) = 1,890 → 15a + 1,500 = 1,890 → a = **26**.",
+          "Check: 26 × 40 + 34 × 25 = 1,040 + 850 = ₹1,890."
+        ],
+        "trap": "34 is the number of children: it comes from writing ₹40 against the children and ₹25 against the adults.",
+        "shortcut": "If all 60 were children the bill would be ₹1,500; each adult adds ₹15, so adults = 390 ÷ 15 = 26."
+      },
+      "tags": [
+        "template:adults-children",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A teacher planned to share 360 pencils equally among all the students of her class. On the day of distribution 6 students were absent, so each student present received 2 more pencils than planned. How many students were present?",
+      "options": [
+        "24",
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let the class have n students: 360/(n − 6) − 360/n = 2.",
+          "360 × 6 = 2n(n − 6) → n(n − 6) = 1,080 → n = 36.",
+          "Students present = 36 − 6 = **30** (each got 12 instead of 10)."
+        ],
+        "trap": "36 is the full class strength; the question asks how many were present.",
+        "shortcut": "Look for two factors of 360 that differ by 6 and whose quotients differ by 2: 360 = 36 × 10 = 30 × 12."
+      },
+      "tags": [
+        "template:sharing-absentees",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-003",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A two-digit number is 7 times the sum of its digits. If 27 is subtracted from the number, its digits get reversed. What is the number?",
+      "options": [
+        "36",
+        "54",
+        "63",
+        "72",
+        "81"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the number be 10a + b: 10a + b = 7(a + b) → 3a = 6b → a = 2b.",
+          "Subtracting 27 reverses it: 9(a − b) = 27 → a − b = 3.",
+          "So b = 3, a = 6 and the number is **63** (63 = 7 × 9 and 63 − 27 = 36)."
+        ],
+        "trap": "36 is the reversed number. 72 and 81 are 8 and 9 times their digit sums, not 7 times.",
+        "shortcut": "Multiples of 7 that equal 7 × digit sum: 21, 42, 63, 84. Only 63 − 27 = 36 is its reverse."
+      },
+      "tags": [
+        "template:digit-reversal",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-004",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two numbers differ by 36. If 35% of the larger number is equal to 50% of the smaller number, what is the sum of the two numbers?",
+      "options": [
+        "168",
+        "180",
+        "192",
+        "204",
+        "240"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "35% of L = 50% of S → L : S = 50 : 35 = 10 : 7.",
+          "The difference is 3 parts = 36, so 1 part = 12: L = 120, S = 84.",
+          "Sum = 120 + 84 = **204**."
+        ],
+        "trap": "240 treats the 15-point gap between the percentages as 36 (15% of a number = 36 → 240). The percentages apply to two different numbers.",
+        "shortcut": "Sum = 17 parts and difference = 3 parts, so sum = 36 × 17/3 = 204."
+      },
+      "tags": [
+        "template:percent-equal",
+        "num:linear-equation",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-005",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The sum of three consecutive even numbers is 162. What is the product of the smallest and the largest of them?",
+      "options": [
+        "2,912",
+        "2,916",
+        "2,970",
+        "3,024",
+        "3,080"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The middle number = 162 ÷ 3 = 54, so the numbers are 52, 54 and 56.",
+          "Smallest × largest = 52 × 56 = **2,912**."
+        ],
+        "trap": "2,916 is 54², the square of the middle number; 3,024 multiplies the middle and the largest numbers.",
+        "shortcut": "52 × 56 = (54 − 2)(54 + 2) = 54² − 4 = 2,916 − 4 = 2,912."
+      },
+      "tags": [
+        "template:consecutive-integers",
+        "num:consecutive"
+      ]
+    },
+    {
+      "key": "np-006",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A test has 80 questions. Each correct answer earns 4 marks and 1 mark is deducted for each wrong answer. Ravi attempted every question and scored 220. How many of his answers were correct?",
+      "options": [
+        "52",
+        "55",
+        "56",
+        "58",
+        "60"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let c answers be correct; then (80 − c) are wrong.",
+          "4c − (80 − c) = 220 → 5c = 300 → c = **60**.",
+          "Check: 60 × 4 − 20 × 1 = 240 − 20 = 220."
+        ],
+        "trap": "55 is 220 ÷ 4, which ignores the deduction for the 20 wrong answers.",
+        "shortcut": "Each wrong answer costs 5 marks compared with a right one: full marks 320, lost 100 → 100 ÷ 5 = 20 wrong, 60 right."
+      },
+      "tags": [
+        "template:negative-marking",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-007",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Meena bought 25 items in all, some notebooks at ₹45 each and the rest pens at ₹12 each, and paid ₹762. Had she bought as many notebooks as she actually bought pens, and as many pens as she actually bought notebooks, how much would she have paid?",
+      "options": [
+        "₹630",
+        "₹663",
+        "₹696",
+        "₹729",
+        "₹762"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let n notebooks: 45n + 12(25 − n) = 762 → 33n = 462 → n = 14, pens = 11.",
+          "Swapped purchase: 11 notebooks and 14 pens = 11 × 45 + 14 × 12 = 495 + 168 = **₹663**."
+        ],
+        "trap": "₹762 is the bill she actually paid; the question asks for the bill after the counts are interchanged.",
+        "shortcut": "Swapping moves 14 − 11 = 3 items from ₹45 to ₹12, saving 3 × 33 = ₹99: 762 − 99 = ₹663."
+      },
+      "tags": [
+        "template:purchase-two-items",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-008",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Four bells toll at intervals of 6, 8, 12 and 15 seconds respectively. They start by tolling together. How many times will they toll together in 30 minutes, including the first time?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "30",
+        "31"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The bells toll together every LCM(6, 8, 12, 15) = 120 seconds.",
+          "30 minutes = 1,800 seconds = 15 intervals of 120 s.",
+          "Counting the start as well, they toll together 15 + 1 = **16** times."
+        ],
+        "trap": "15 counts only the intervals and leaves out the first toll at the start; 31 uses 60 s as the LCM, which ignores the 8-second bell."
+      },
+      "tags": [
+        "template:hcf-lcm-bells",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-009",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If 3 is added to both the numerator and the denominator of a fraction, it becomes $\\frac{2}{3}$. If 2 is subtracted from both the numerator and the denominator, it becomes $\\frac{1}{2}$. What is the fraction?",
+      "options": [
+        "$\\frac{1}{2}$",
+        "$\\frac{5}{9}$",
+        "$\\frac{4}{7}$",
+        "$\\frac{7}{12}$",
+        "$\\frac{2}{3}$"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the fraction be x/y: 3(x + 3) = 2(y + 3) → 3x − 2y = −3.",
+          "2(x − 2) = y − 2 → y = 2x − 2.",
+          "3x − 2(2x − 2) = −3 → x = 7, y = 12, so the fraction is $\\frac{7}{12}$."
+        ],
+        "trap": "$\\frac{2}{3}$ and $\\frac{1}{2}$ are the fractions after the changes, not the original one.",
+        "shortcut": "Test the options: $\\frac{7}{12}$ → $\\frac{10}{15}$ = $\\frac{2}{3}$ and $\\frac{5}{10}$ = $\\frac{1}{2}$."
+      },
+      "tags": [
+        "template:fraction-change",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-010",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A cashier has ₹2,800, made up only of ₹50 notes and ₹100 notes. If there are 41 notes in all, how many ₹50 notes are there?",
+      "options": [
+        "15",
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let x be the number of ₹50 notes: 50x + 100(41 − x) = 2,800.",
+          "4,100 − 50x = 2,800 → x = **26** (and 15 notes of ₹100)."
+        ],
+        "trap": "15 is the number of ₹100 notes; that is what you get if the two denominations are swapped in the equation.",
+        "shortcut": "If all 41 were ₹100 notes: ₹4,100. Each ₹50 note reduces this by ₹50: 1,300 ÷ 50 = 26."
+      },
+      "tags": [
+        "template:notes-coins",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-011",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A parking lot has only cars and motorcycles: 54 vehicles with 168 wheels in all. Later 6 cars leave and 10 more motorcycles come in. What is now the ratio of cars to motorcycles?",
+      "options": [
+        "12 : 17",
+        "15 : 17",
+        "17 : 12",
+        "5 : 4",
+        "9 : 20"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "c + m = 54 and 4c + 2m = 168 → 2c = 168 − 108 = 60 → c = 30, m = 24.",
+          "After the change: cars = 30 − 6 = 24, motorcycles = 24 + 10 = 34.",
+          "Ratio = 24 : 34 = **12 : 17**."
+        ],
+        "trap": "17 : 12 is the reverse ratio; 15 : 17 (30 : 34) forgets that 6 cars left; 5 : 4 is the ratio before the change."
+      },
+      "tags": [
+        "template:wheels-count",
+        "num:linear-equation",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-012",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "What is the smallest number which, when divided by 12, 18 and 27, leaves a remainder of 5 in each case?",
+      "options": [
+        "103",
+        "113",
+        "221",
+        "329",
+        "437"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "LCM(12, 18, 27) = 108, so the number is 108k + 5.",
+          "The smallest such number (k = 1) is 108 + 5 = **113**."
+        ],
+        "trap": "103 subtracts the remainder (108 − 5); 221 and 329 also leave remainder 5 but are not the smallest."
+      },
+      "tags": [
+        "template:divisibility-remainder",
+        "num:hcf-lcm",
+        "num:remainders"
+      ]
+    },
+    {
+      "key": "np-013",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The sum of the squares of two positive integers is 400 and their difference is 4. What is the sum of the two integers?",
+      "options": [
+        "24",
+        "26",
+        "28",
+        "30",
+        "32"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "(a − b)² = a² + b² − 2ab → 16 = 400 − 2ab → 2ab = 384.",
+          "(a + b)² = 400 + 384 = 784 → a + b = **28** (the integers are 16 and 12)."
+        ],
+        "trap": "24 comes from adding ab (192) instead of 2ab (384) to 400: √592 ≈ 24.3. (a + b)² = a² + b² + 2ab.",
+        "shortcut": "(a + b)² + (a − b)² = 2(a² + b²) → (a + b)² = 800 − 16 = 784."
+      },
+      "tags": [
+        "template:sum-of-squares",
+        "num:squares"
+      ]
+    },
+    {
+      "key": "np-014",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The digits of a three-digit number add up to 16, and its hundreds digit is 1 more than its tens digit. When the digits are reversed, the new number is 198 more than the original number. What is the original number?",
+      "options": [
+        "457",
+        "466",
+        "538",
+        "547",
+        "745"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the digits be h, t, u. Reversed − original = 99(u − h) = 198 → u = h + 2.",
+          "t = h − 1, so h + (h − 1) + (h + 2) = 16 → h = 5, t = 4, u = 7.",
+          "The number is **547** (reversed 745 = 547 + 198)."
+        ],
+        "trap": "745 is the reversed number. 457 has digit sum 16, but its hundreds digit is not 1 more than its tens digit."
+      },
+      "tags": [
+        "template:three-digit-number",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-015",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If every child in a group is given 6 toffees, 14 toffees are left over; if every child is given 8 toffees, 10 more toffees are needed. How many toffees are there?",
+      "options": [
+        "72",
+        "82",
+        "86",
+        "96",
+        "106"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let there be n children: 6n + 14 = 8n − 10 → 2n = 24 → n = 12.",
+          "Toffees = 6 × 12 + 14 = **86** (check: 8 × 12 − 10 = 86)."
+        ],
+        "trap": "96 is 8 × 12, the toffees needed for 8 each; it ignores the shortfall of 10.",
+        "shortcut": "Giving 2 more each turns a surplus of 14 into a shortage of 10, a swing of 24, so n = 24 ÷ 2 = 12."
+      },
+      "tags": [
+        "template:distribution-shortfall",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-016",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A student was asked to multiply a number by $\\frac{3}{4}$, but by mistake he divided it by $\\frac{3}{4}$. His answer was 35 more than the correct answer. What was the number?",
+      "options": [
+        "36",
+        "45",
+        "48",
+        "60",
+        "80"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Wrong answer − correct answer = $\\frac{4}{3}$x − $\\frac{3}{4}$x = $\\frac{7}{12}$x.",
+          "$\\frac{7}{12}$x = 35 → x = **60**."
+        ],
+        "trap": "80 is the student's wrong answer (60 × 4/3) and 45 the correct answer; neither is the original number."
+      },
+      "tags": [
+        "template:wrong-operation",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-017",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The floor of a hall is 15.3 m long and 8.5 m wide. It is to be paved with identical square tiles, using no broken tiles. What is the least number of tiles needed?",
+      "options": [
+        "45",
+        "60",
+        "90",
+        "135",
+        "180"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "In cm the floor is 1,530 × 850. The largest square tile has side HCF(1,530, 850) = 170 cm.",
+          "Tiles = (1,530 ÷ 170) × (850 ÷ 170) = 9 × 5 = **45**."
+        ],
+        "trap": "180 uses an 85 cm tile (a common factor but not the highest), giving 18 × 10 tiles."
+      },
+      "tags": [
+        "template:hcf-lcm-tiles",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-018",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "When 40% of a number is added to 48, the result is the number itself. What is 25% of the number?",
+      "options": [
+        "12",
+        "20",
+        "24",
+        "32",
+        "80"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "x = 0.4x + 48 → 0.6x = 48 → x = 80.",
+          "25% of 80 = **20**."
+        ],
+        "trap": "80 is the number itself and 32 is 40% of it; 12 takes 25% of 48."
+      },
+      "tags": [
+        "template:number-percent",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-019",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The sum of four consecutive odd numbers is 46 more than twice the largest of them. What is the product of the second and the fourth numbers?",
+      "options": [
+        "621",
+        "667",
+        "675",
+        "725",
+        "783"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the numbers be x, x + 2, x + 4, x + 6: 4x + 12 = 2(x + 6) + 46 → 2x = 46 → x = 23.",
+          "The numbers are 23, 25, 27, 29; second × fourth = 25 × 29 = **725**."
+        ],
+        "trap": "667 multiplies the first and the fourth (23 × 29); 675 multiplies the second and the third (25 × 27)."
+      },
+      "tags": [
+        "template:consecutive-integers",
+        "num:consecutive"
+      ]
+    },
+    {
+      "key": "np-020",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A cinema hall sold 250 tickets for a show, some at ₹180 each and the rest at ₹120 each, and collected ₹38,400. How many ₹180 tickets were sold?",
+      "options": [
+        "110",
+        "120",
+        "125",
+        "130",
+        "140"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let x tickets be sold at ₹180: 180x + 120(250 − x) = 38,400.",
+          "60x + 30,000 = 38,400 → x = **140** (110 tickets at ₹120)."
+        ],
+        "trap": "110 is the number of ₹120 tickets; it comes from attaching the prices to the wrong categories.",
+        "shortcut": "All at ₹120 gives ₹30,000; each ₹180 ticket adds ₹60: 8,400 ÷ 60 = 140."
+      },
+      "tags": [
+        "template:tickets-two-prices",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-021",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a 100-question test, a correct answer earns 3 marks, a wrong answer costs 1 mark and an unattempted question scores 0. Sneha scored 176. Had she attempted all her unattempted questions and got every one of them right, she would have scored 212. How many wrong answers did she give?",
+      "options": [
+        "12",
+        "18",
+        "22",
+        "24",
+        "66"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The extra 212 − 176 = 36 marks at 3 each means 12 questions were unattempted, so she attempted 88.",
+          "3c − (88 − c) = 176 → 4c = 264 → c = 66.",
+          "Wrong answers = 88 − 66 = **22**."
+        ],
+        "trap": "12 is the number of unattempted questions and 66 the number of correct answers; the question asks for wrong answers."
+      },
+      "tags": [
+        "template:negative-marking",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-022",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two numbers are in the ratio 5 : 7. If 9 is subtracted from each, the ratio becomes 7 : 11. What is the sum of the two numbers?",
+      "options": [
+        "72",
+        "84",
+        "96",
+        "108",
+        "120"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the numbers be 5k and 7k: 11(5k − 9) = 7(7k − 9).",
+          "55k − 99 = 49k − 63 → 6k = 36 → k = 6; the numbers are 30 and 42.",
+          "Sum = **72** (check: 21 : 33 = 7 : 11)."
+        ],
+        "trap": "84, 96 and 108 are also multiples of 12 but fail the check: with sum 84 the numbers are 35 and 49, and 26 : 40 = 13 : 20, not 7 : 11."
+      },
+      "tags": [
+        "template:ratio-shift",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-023",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Some biscuits were to be shared equally among a group of children. If 5 children had dropped out, each of the others would have got 3 more biscuits; if instead 10 more children had joined, each child would have got 3 fewer biscuits. How many biscuits were there?",
+      "options": [
+        "120",
+        "135",
+        "150",
+        "165",
+        "180"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let there be n children with q biscuits each. nq = (n − 5)(q + 3) → 3n − 5q = 15.",
+          "nq = (n + 10)(q − 3) → −3n + 10q = 30.",
+          "Adding: 5q = 45 → q = 9, then n = 20. Biscuits = 20 × 9 = **180** (15 children get 12; 30 children get 6)."
+        ],
+        "trap": "135 is 15 × 9: the 15 remaining children multiplied by the original share, which mixes the two situations."
+      },
+      "tags": [
+        "template:sharing-absentees",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-024",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Three drums contain 168 litres, 252 litres and 420 litres of oil. The oil is to be filled into identical containers, each filled completely with oil from one drum only. What is the least number of containers needed?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14",
+        "20"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The container should be as large as possible: HCF(168, 252, 420) = 84 litres.",
+          "Containers = 168/84 + 252/84 + 420/84 = 2 + 3 + 5 = **10**."
+        ],
+        "trap": "20 uses 42 litres, a common factor but not the highest one, so it needs twice as many containers."
+      },
+      "tags": [
+        "template:hcf-lcm-containers",
+        "num:hcf-lcm"
+      ]
+    }
+  ]
+}

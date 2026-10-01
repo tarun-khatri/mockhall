@@ -1896,6 +1896,638 @@
         "arith:cp-sp",
         "template:loss-to-profit"
       ]
+    },
+    {
+      "key": "pl-076",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ramesh sells a water purifier at a loss of 10%. If he had sold it at a price 30% higher than his actual selling price, he would have gained ₹255. What is the cost price of the purifier?",
+      "options": [
+        "₹850",
+        "₹1,275",
+        "₹1,350",
+        "₹1,500",
+        "₹1,700"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Actual SP = 0.9C; the higher price = 1.3 × 0.9C = 1.17C.",
+          "Gain = 0.17C = ₹255 → C = ₹1,500."
+        ],
+        "trap": "₹1,275 treats the change as a 30% − 10% = 20% gain on cost; the 30% is on the selling price, so the gain is 17%."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:loss-to-profit"
+      ]
+    },
+    {
+      "key": "pl-077",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A shopkeeper sold two radios at the same price, one at a loss of 20% and the other at a profit of 25%. Had he raised the selling price of each radio by 25%, his overall profit would have been ₹540. What was his actual overall profit or loss?",
+      "options": [
+        "Loss of ₹120",
+        "Loss of ₹60",
+        "No profit, no loss",
+        "Profit of ₹60",
+        "Profit of ₹135"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let each SP be S. CPs: S ÷ 0.8 = 1.25S and S ÷ 1.25 = 0.8S; total CP = 2.05S.",
+          "With prices 25% higher, profit = 2.5S − 2.05S = 0.45S = ₹540 → S = ₹1,200.",
+          "Actual result = 2S − 2.05S = −0.05S, i.e. a loss of ₹60."
+        ],
+        "trap": "\"No profit, no loss\" assumes a 20% loss and a 25% profit cancel; with equal selling prices the costs are 1.25S and 0.8S, which do not balance."
+      },
+      "tags": [
+        "arith:same-sp",
+        "template:loss-to-profit"
+      ]
+    },
+    {
+      "key": "pl-078",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A loss of 16% on a pair of headphones turns into a profit of 16% when the selling price is increased by ₹272. At what price should the headphones be sold to earn a profit of 20%?",
+      "options": [
+        "₹960",
+        "₹986",
+        "₹1,020",
+        "₹1,050",
+        "₹1,088"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A swing from −16% to +16% is 32% of CP = ₹272 → CP = ₹850.",
+          "Price for a 20% profit = 1.2 × 850 = ₹1,020."
+        ],
+        "trap": "₹986 is the price that gives the 16% profit, not 20%."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:loss-to-profit"
+      ]
+    },
+    {
+      "key": "pl-079",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A dinner set is marked at ₹2,000. The shop gives a discount of 15% and then charges GST at 12% on the discounted price. How much does the customer pay?",
+      "options": [
+        "₹1,904",
+        "₹1,940",
+        "₹1,960",
+        "₹2,000",
+        "₹2,240"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Discounted price = 2,000 × 0.85 = ₹1,700.",
+          "With 12% GST: 1,700 × 1.12 = ₹1,904."
+        ],
+        "trap": "₹1,940 nets the two rates to a 3% discount; GST is charged on the reduced price, so the effects multiply."
+      },
+      "tags": [
+        "arith:gst",
+        "template:gst-after-discount"
+      ]
+    },
+    {
+      "key": "pl-080",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A customer pays ₹2,478 for a suitcase. This includes GST at 18%, charged on the price after a 30% discount. What is the marked price of the suitcase?",
+      "options": [
+        "₹2,100",
+        "₹2,800",
+        "₹2,850",
+        "₹2,950",
+        "₹3,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Price before GST = 2,478 ÷ 1.18 = ₹2,100.",
+          "Marked price = 2,100 ÷ 0.7 = ₹3,000."
+        ],
+        "trap": "₹2,100 is the discounted price before GST, not the marked price."
+      },
+      "tags": [
+        "arith:gst",
+        "template:gst-after-discount"
+      ]
+    },
+    {
+      "key": "pl-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A shopkeeper marks a blender 40% above cost, allows a discount of 20%, and then adds GST at 5% on the discounted price, which he passes on to the government. A customer pays ₹1,764. What is the shopkeeper's profit?",
+      "options": [
+        "₹150",
+        "₹168",
+        "₹180",
+        "₹240",
+        "₹264"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Price before GST = 1,764 ÷ 1.05 = ₹1,680 = 1.4 × 0.8 × CP = 1.12 × CP.",
+          "CP = ₹1,500, so the profit = 1,680 − 1,500 = ₹180."
+        ],
+        "trap": "₹264 counts the GST as part of his takings (1,764 − 1,500); the GST goes to the government."
+      },
+      "tags": [
+        "arith:gst",
+        "template:gst-after-discount"
+      ]
+    },
+    {
+      "key": "pl-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "After a discount of 16% and GST of 18% on the discounted price, a customer pays ₹4,956 for a vacuum cleaner. How much would she have paid if the discount had been 20% instead?",
+      "options": [
+        "₹4,640",
+        "₹4,680",
+        "₹4,700",
+        "₹4,720",
+        "₹4,756"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Amount paid = MP × 0.84 × 1.18 = 0.9912 × MP → MP = 4,956 ÷ 0.9912 = ₹5,000.",
+          "With 20% off: 5,000 × 0.8 × 1.18 = ₹4,720."
+        ],
+        "trap": "₹4,756 removes the extra 4% of the marked price (₹200) but forgets that GST was charged on it too (₹236 in all).",
+        "shortcut": "The bill is proportional to (1 − discount): 4,956 × 0.80/0.84 = ₹4,720."
+      },
+      "tags": [
+        "arith:gst",
+        "template:gst-after-discount"
+      ]
+    },
+    {
+      "key": "pl-083",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A customer pays ₹1,323 for a set of steel utensils, including GST at 5% on the shopkeeper's selling price. The shopkeeper makes a profit of 20% on cost. What is the cost price of the set?",
+      "options": [
+        "₹1,008",
+        "₹1,050",
+        "₹1,102.50",
+        "₹1,200",
+        "₹1,260"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Selling price before GST = 1,323 ÷ 1.05 = ₹1,260.",
+          "CP = 1,260 ÷ 1.2 = ₹1,050."
+        ],
+        "trap": "₹1,102.50 divides the GST-inclusive amount by 1.2; ₹1,008 takes the 20% profit on the selling price."
+      },
+      "tags": [
+        "arith:gst",
+        "template:gst-after-discount"
+      ]
+    },
+    {
+      "key": "pl-084",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A shopkeeper marks a printer 50% above its cost price. After giving a discount of d% on the marked price and adding GST at 18% on the discounted price, he charges the customer ₹2,832. His profit, excluding GST, is 20%. What is the value of d?",
+      "options": [
+        "5.6",
+        "15",
+        "18",
+        "20",
+        "25"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Price before GST = 2,832 ÷ 1.18 = ₹2,400 = 1.2 × CP → CP = ₹2,000.",
+          "MP = 1.5 × 2,000 = ₹3,000, so the discount is ₹600 on ₹3,000, i.e. d = 20."
+        ],
+        "trap": "5.6 compares the GST-inclusive ₹2,832 with the marked price; the discount is taken before GST is added."
+      },
+      "tags": [
+        "arith:gst",
+        "template:gst-after-discount"
+      ]
+    },
+    {
+      "key": "pl-085",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A vendor buys 200 eggs at ₹6 each. Twenty of them break, and he sells the rest at ₹8 each. What is his profit percentage?",
+      "options": [
+        "16%",
+        "20%",
+        "25%",
+        "30%",
+        "$33\\frac{1}{3}$%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "CP = 200 × 6 = ₹1,200; SP = 180 × 8 = ₹1,440.",
+          "Profit = ₹240 on ₹1,200 = 20%."
+        ],
+        "trap": "$33\\frac{1}{3}$% compares ₹8 with ₹6 and forgets the 20 broken eggs."
+      },
+      "tags": [
+        "arith:damaged-goods",
+        "template:damaged-goods"
+      ]
+    },
+    {
+      "key": "pl-086",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A crockery shop buys 150 glass tumblers at ₹40 each. During unloading, 10% of them break. At what price must each remaining tumbler be sold to make a profit of 26% on the whole lot?",
+      "options": [
+        "₹50.40",
+        "₹52",
+        "₹54",
+        "₹56",
+        "₹60"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total CP = 150 × 40 = ₹6,000; target revenue = 1.26 × 6,000 = ₹7,560.",
+          "Unbroken tumblers = 135, so each must sell for 7,560 ÷ 135 = ₹56."
+        ],
+        "trap": "₹50.40 adds 26% to one tumbler's cost and ignores the breakage."
+      },
+      "tags": [
+        "arith:damaged-goods",
+        "template:damaged-goods"
+      ]
+    },
+    {
+      "key": "pl-087",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A vendor buys 120 kg of tomatoes at ₹25 per kg. One-sixth of them spoil. He sells 40 kg of the good tomatoes at ₹33 per kg. At what price per kg must he sell the remaining tomatoes to make an overall profit of 20%?",
+      "options": [
+        "₹30",
+        "₹36",
+        "₹38",
+        "₹40",
+        "₹43"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "CP = 120 × 25 = ₹3,000; target revenue = 1.2 × 3,000 = ₹3,600.",
+          "Good tomatoes = 100 kg; 40 kg bring 40 × 33 = ₹1,320, leaving 60 kg.",
+          "Required price = (3,600 − 1,320) ÷ 60 = ₹38 per kg."
+        ],
+        "trap": "₹30 adds 20% to ₹25 and ignores the spoilage; ₹36 spreads the whole target over all 100 good kilograms (3,600 ÷ 100) without allowing for the ₹33 sale."
+      },
+      "tags": [
+        "arith:damaged-goods",
+        "template:damaged-goods"
+      ]
+    },
+    {
+      "key": "pl-088",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A shopkeeper buys 500 bulbs at ₹50 each and pays ₹1,000 for transport. 5% of the bulbs turn out to be defective and cannot be sold. He sells the rest at ₹65 each less a discount of 4%. What is his profit percentage?",
+      "options": [
+        "12%",
+        "14%",
+        "16%",
+        "18.56%",
+        "20%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total cost = 500 × 50 + 1,000 = ₹26,000.",
+          "475 bulbs × ₹62.40 (65 × 0.96) = ₹29,640.",
+          "Profit = ₹3,640 on ₹26,000 = 14%."
+        ],
+        "trap": "18.56% leaves out the ₹1,000 transport; 20% forgets the defective bulbs."
+      },
+      "tags": [
+        "arith:damaged-goods",
+        "template:damaged-goods"
+      ]
+    },
+    {
+      "key": "pl-089",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A trader buys 60 chairs at ₹800 each. Some of them get damaged and are sold at a loss of 40%. The rest are marked 50% above cost and sold at a discount of 20%. If his overall profit is ₹5,760, how many chairs were damaged?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12",
+        "24"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Undamaged chairs sell at 1.5 × 0.8 = 1.2 × cost, earning ₹160 each; damaged ones lose 40% of 800 = ₹320 each.",
+          "160(60 − d) − 320d = 5,760 → 9,600 − 480d = 5,760 → d = 8."
+        ],
+        "trap": "24 ignores the loss on the damaged chairs (160(60 − d) = 5,760)."
+      },
+      "tags": [
+        "arith:damaged-goods",
+        "template:damaged-goods"
+      ]
+    },
+    {
+      "key": "pl-090",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A fruit seller buys 50 kg of apples at ₹120 per kg. 10 kg turn out to be rotten and are thrown away. He sells the rest at ₹165 per kg. What is his profit percentage?",
+      "options": [
+        "10%",
+        "12%",
+        "12.5%",
+        "15%",
+        "37.5%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "CP = 50 × 120 = ₹6,000; SP = 40 × 165 = ₹6,600.",
+          "Profit = ₹600 on ₹6,000 = 10%."
+        ],
+        "trap": "37.5% compares ₹165 with ₹120 per kg and ignores the 10 kg that were thrown away."
+      },
+      "tags": [
+        "arith:damaged-goods",
+        "template:damaged-goods"
+      ]
+    },
+    {
+      "key": "pl-091",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A wholesaler buys 240 mangoes at the rate of 12 for ₹100. Forty of them turn out to be unfit for sale, and he sells the rest at the rate of 10 for ₹120. What is his profit percentage?",
+      "options": [
+        "12%",
+        "16%",
+        "20%",
+        "24%",
+        "44%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "CP = (240 ÷ 12) × 100 = ₹2,000.",
+          "200 good mangoes at 10 for ₹120 bring (200 ÷ 10) × 120 = ₹2,400. Profit % = 400/2,000 × 100 = 20%."
+        ],
+        "trap": "44% compares the rates (₹12 against ₹8.33 a mango) and ignores the 40 unsold mangoes."
+      },
+      "tags": [
+        "arith:damaged-goods",
+        "template:damaged-goods"
+      ]
+    },
+    {
+      "key": "pl-092",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A grocer buys 50 kg of sugar at ₹40 per kg. He sells 30 kg at a profit of 10% and the remaining sugar at a loss of 5%. What is his overall profit percentage?",
+      "options": [
+        "4%",
+        "5%",
+        "6%",
+        "7%",
+        "7.5%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Profit on 30 kg = 10% of 1,200 = ₹120; loss on 20 kg = 5% of 800 = ₹40.",
+          "Net profit = ₹80 on ₹2,000 = 4%."
+        ],
+        "trap": "5% simply subtracts 5 from 10, ignoring that the two parts are of different sizes.",
+        "shortcut": "Weighted average: (30 × 10 − 20 × 5) ÷ 50 = 4%."
+      },
+      "tags": [
+        "arith:weighted-percent",
+        "template:part-profit-part-loss"
+      ]
+    },
+    {
+      "key": "pl-093",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A trader sells $\\frac{2}{5}$ of his total stock at a profit of 25% and $\\frac{1}{3}$ of his total stock at a loss of 10%. At what profit percentage must he sell the rest to make an overall profit of 15%?",
+      "options": [
+        "17.5%",
+        "25%",
+        "28%",
+        "30%",
+        "31.25%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Rest = 1 − 2/5 − 1/3 = 4/15 of the stock.",
+          "(2/5)(25) − (1/3)(10) + (4/15)x = 15 → 10 − 10/3 + 4x/15 = 15 → 4x/15 = 25/3 → x = 31.25%."
+        ],
+        "trap": "17.5% takes the $\\frac{1}{3}$ as one-third of the stock left after the first sale; both fractions are of the total stock."
+      },
+      "tags": [
+        "arith:weighted-percent",
+        "template:part-profit-part-loss"
+      ]
+    },
+    {
+      "key": "pl-094",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A grocer mixes 30 kg of dal costing ₹90 per kg with 50 kg of dal costing ₹106 per kg. At what price per kg should he sell the mixture to earn a profit of 15%?",
+      "options": [
+        "₹110.40",
+        "₹112.70",
+        "₹114",
+        "₹115",
+        "₹120"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total cost = 30 × 90 + 50 × 106 = 2,700 + 5,300 = ₹8,000 for 80 kg, i.e. ₹100 per kg.",
+          "SP for a 15% profit = 1.15 × 100 = ₹115 per kg."
+        ],
+        "trap": "₹112.70 uses the plain average of ₹90 and ₹106 (₹98) instead of weighting by quantity; ₹110.40 swaps the weights."
+      },
+      "tags": [
+        "arith:weighted-percent",
+        "template:part-profit-part-loss"
+      ]
+    },
+    {
+      "key": "pl-095",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A dealer buys 60 bicycles at ₹3,000 each. He sells one-fourth of them at a loss of 15% and one-third of them at a profit of 20%. At what profit percentage must he sell the remaining bicycles to make a total profit of ₹13,500?",
+      "options": [
+        "9%",
+        "10%",
+        "11%",
+        "12%",
+        "18%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "One-fourth = 15 bicycles (loss 15 × 450 = ₹6,750); one-third = 20 bicycles (profit 20 × 600 = ₹12,000); 25 remain.",
+          "Needed from the rest = 13,500 + 6,750 − 12,000 = ₹8,250 = 25 × 3,000 × x/100 → x = 11%."
+        ],
+        "trap": "18% expects the whole ₹13,500 from the last 25 bicycles, ignoring the profit and loss already made."
+      },
+      "tags": [
+        "arith:weighted-percent",
+        "template:part-profit-part-loss"
+      ]
+    },
+    {
+      "key": "pl-096",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A dealer buys 120 identical pressure cookers. He sells 30 of them at a profit of 30%, and 50 more at a 20% discount on a marked price that is 40% above cost. If his overall profit is 10%, at what loss percentage did he sell the remaining cookers?",
+      "options": [
+        "5%",
+        "6%",
+        "6.25%",
+        "7.5%",
+        "17.5%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Take each cooker's cost as 1. 30 cookers fetch 30 × 1.3 = 39; 50 fetch 50 × 1.4 × 0.8 = 56.",
+          "For 10% overall, all 120 must fetch 132, so the last 40 fetch 132 − 95 = 37.",
+          "Loss on them = 3 on 40 = 7.5%."
+        ],
+        "trap": "17.5% takes the discounted lot's profit as 40 − 20 = 20%; in fact 1.4 × 0.8 = 1.12, a 12% profit."
+      },
+      "tags": [
+        "arith:weighted-percent",
+        "template:part-profit-part-loss"
+      ]
+    },
+    {
+      "key": "pl-097",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A wholesaler sells $\\frac{3}{5}$ of his stock at a profit of 20% and the rest at a loss of 10%, making a profit of ₹1,600 in all. What would his overall profit or loss have been if he had sold $\\frac{3}{5}$ of the stock at a loss of 10% and the rest at a profit of 20%?",
+      "options": [
+        "Loss of ₹1,600",
+        "Loss of ₹400",
+        "Profit of ₹200",
+        "Profit of ₹320",
+        "Profit of ₹400"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Actual: 0.6 × 20% − 0.4 × 10% = 8% of the total cost = ₹1,600 → total cost = ₹20,000.",
+          "Swapped: −0.6 × 10% + 0.4 × 20% = +2% of 20,000, i.e. a profit of ₹400."
+        ],
+        "trap": "\"Loss of ₹1,600\" mirrors the original result; swapping the percentages between the shares is not the same as flipping every sign."
+      },
+      "tags": [
+        "arith:weighted-percent",
+        "template:part-profit-part-loss"
+      ]
+    },
+    {
+      "key": "pl-098",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A vendor buys equal numbers of oranges from two orchards, at 3 for ₹10 from one and 5 for ₹10 from the other. He sells all of them at 4 for ₹10. What is his overall profit or loss percentage?",
+      "options": [
+        "6.25% loss",
+        "4% loss",
+        "No profit, no loss",
+        "4% profit",
+        "6.25% profit"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take 15 oranges of each kind: cost = 5 × 10 + 3 × 10 = ₹80 for 30 oranges.",
+          "Revenue = (30 ÷ 4) × 10 = ₹75. Loss = ₹5 on ₹80 = 6.25%."
+        ],
+        "trap": "\"No profit, no loss\" assumes 4 for ₹10 is the average rate; the average cost per orange is (₹10/3 + ₹2) ÷ 2 = ₹8/3, more than the ₹2.50 he charges."
+      },
+      "tags": [
+        "arith:weighted-percent",
+        "template:two-lots-single-rate"
+      ]
+    },
+    {
+      "key": "pl-099",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A trader sells a lamp for ₹375 and finds that his profit percentage is numerically equal to the cost price in rupees. What is the cost price?",
+      "options": [
+        "₹150",
+        "₹175",
+        "₹187.50",
+        "₹200",
+        "₹250"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "If CP = ₹x, the profit is x% of x = x²/100, so x + x²/100 = 375.",
+          "x² + 100x − 37,500 = 0 → (x − 150)(x + 250) = 0 → x = ₹150 (profit 150%, i.e. ₹225)."
+        ],
+        "trap": "₹187.50 halves the selling price, assuming a 100% profit."
+      },
+      "tags": [
+        "arith:quadratic",
+        "template:profit-percent-equals-cp"
+      ]
+    },
+    {
+      "key": "pl-100",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A man buys two articles. He sells the first at a profit of 20% and the second at a loss of 10%, and makes an overall profit of 8%. What is the ratio of the cost price of the first article to that of the second?",
+      "options": [
+        "2 : 3",
+        "3 : 4",
+        "4 : 3",
+        "5 : 3",
+        "3 : 2"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the CPs be a and b: 0.2a − 0.1b = 0.08(a + b).",
+          "0.12a = 0.18b → a : b = 18 : 12 = 3 : 2."
+        ],
+        "trap": "2 : 3 is the reversed ratio, from placing the alligation distances the wrong way round.",
+        "shortcut": "Alligation: 20 and −10 around 8 give distances 18 and 12, so first : second = 18 : 12 = 3 : 2."
+      },
+      "tags": [
+        "arith:weighted-percent",
+        "template:ratio-of-cps"
+      ]
     }
   ]
 }

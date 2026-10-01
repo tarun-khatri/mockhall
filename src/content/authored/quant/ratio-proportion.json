@@ -1,0 +1,2651 @@
+{
+  "chapter": "ratio-proportion",
+  "version": 1,
+  "items": [
+    {
+      "key": "rp-001",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Two numbers are in the ratio 5 : 7. If 8 is subtracted from the first number and added to the second, the ratio becomes 3 : 5. What is the first number?",
+      "options": [
+        "64",
+        "72",
+        "80",
+        "88",
+        "112"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the numbers be 5k and 7k. Then (5k − 8) : (7k + 8) = 3 : 5.",
+          "5(5k − 8) = 3(7k + 8) ⇒ 25k − 40 = 21k + 24 ⇒ 4k = 64 ⇒ k = 16.",
+          "First number = 5 × 16 = 80 (check: 72 : 120 = 3 : 5)."
+        ],
+        "shortcut": "The total 12k is unchanged. After the shift the first number is 3/8 of 12k = 4.5k, so 5k − 4.5k = 8 ⇒ k = 16.",
+        "trap": "72 is the first number after 8 is taken away; the question asks for the original first number."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:transfer-between-two"
+      ]
+    },
+    {
+      "key": "rp-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The amounts with Ritika and Sameer are in the ratio 4 : 3. After Ritika gives ₹360 to Sameer, the ratio of their amounts becomes 5 : 6. How much money did Ritika have at first?",
+      "options": [
+        "₹1,320",
+        "₹1,400",
+        "₹1,680",
+        "₹1,760",
+        "₹1,840"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the amounts be 4k and 3k. After the gift: (4k − 360) : (3k + 360) = 5 : 6.",
+          "6(4k − 360) = 5(3k + 360) ⇒ 24k − 2160 = 15k + 1800 ⇒ 9k = 3960 ⇒ k = 440.",
+          "Ritika had 4 × 440 = ₹1,760 (after the gift ₹1,400 : ₹1,680 = 5 : 6)."
+        ],
+        "shortcut": "Total 7k is fixed. Ritika ends with 5/11 of 7k = 35k/11, so 4k − 35k/11 = 9k/11 = 360 ⇒ k = 440.",
+        "trap": "₹1,400 is what Ritika has after giving ₹360; ₹1,320 is Sameer's starting amount."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:transfer-between-two"
+      ]
+    },
+    {
+      "key": "rp-003",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The numbers of books on shelves P and Q are in the ratio 7 : 9. When 15 books are shifted from shelf Q to shelf P, the ratio becomes 4 : 3. How many books are there on shelf Q now?",
+      "options": [
+        "45",
+        "48",
+        "54",
+        "63",
+        "64"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let P = 7k and Q = 9k. After the shift: (7k + 15) : (9k − 15) = 4 : 3.",
+          "3(7k + 15) = 4(9k − 15) ⇒ 21k + 45 = 36k − 60 ⇒ 15k = 105 ⇒ k = 7.",
+          "Q had 63 books; now it has 63 − 15 = 48 (P has 64, and 64 : 48 = 4 : 3)."
+        ],
+        "shortcut": "Total 16k is fixed and Q ends with 3/7 of it: 9k − 48k/7 = 15k/7 = 15 ⇒ k = 7, so Q now has 48.",
+        "trap": "63 is the number on shelf Q before the shift; the question asks for the number now."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:transfer-between-two"
+      ]
+    },
+    {
+      "key": "rp-004",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two boxes A and B contain marbles in the ratio 5 : 3. If 12 marbles are moved from A to B, the ratio becomes 7 : 5. How many marbles must now be moved from B to A so that the ratio becomes 3 : 1?",
+      "options": [
+        "32",
+        "36",
+        "40",
+        "44",
+        "48"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let A = 5k, B = 3k: (5k − 12) : (3k + 12) = 7 : 5 ⇒ 25k − 60 = 21k + 84 ⇒ k = 36.",
+          "So A = 180, B = 108; after the first move A = 168, B = 120. Total = 288.",
+          "For 3 : 1, A must hold 3/4 × 288 = 216, so 216 − 168 = 48 marbles move from B to A."
+        ],
+        "shortcut": "Total 288 is fixed throughout: A needs 216 at the end and has 168 now.",
+        "trap": "36 comes from working from the original 180 (216 − 180); the first 12 marbles have already left A, so A holds only 168."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:transfer-between-two",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-005",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two numbers are in the ratio 8 : 5. If 27 is subtracted from the first and added to the second, the ratio gets reversed. What is the sum of the two numbers?",
+      "options": [
+        "117",
+        "126",
+        "135",
+        "144",
+        "162"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the numbers be 8k and 5k. Reversed ratio: (8k − 27) : (5k + 27) = 5 : 8.",
+          "8(8k − 27) = 5(5k + 27) ⇒ 64k − 216 = 25k + 135 ⇒ 39k = 351 ⇒ k = 9.",
+          "Numbers 72 and 45; sum = 117 (check: 45 : 72 = 5 : 8)."
+        ],
+        "shortcut": "For the ratio to reverse, the two numbers simply swap, so 27 must equal their difference 3k ⇒ k = 9, sum = 13k = 117.",
+        "trap": "144 is twice the first number (72 × 2); the sum is 72 + 45 = 117."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:transfer-between-two",
+        "ratio:reverse"
+      ]
+    },
+    {
+      "key": "rp-006",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The amounts with Arjun and Bhavna are in the ratio 9 : 7. Arjun gives ₹480 to Bhavna, and then Bhavna gives ₹160 back to Arjun. The ratio of Arjun's amount to Bhavna's amount is now 7 : 9. How much money did Arjun have at first?",
+      "options": [
+        "₹1,280",
+        "₹1,440",
+        "₹1,600",
+        "₹1,920",
+        "₹2,160"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Net transfer from Arjun to Bhavna = 480 − 160 = ₹320.",
+          "(9k − 320) : (7k + 320) = 7 : 9 ⇒ 81k − 2880 = 49k + 2240 ⇒ 32k = 5120 ⇒ k = 160.",
+          "Arjun had 9 × 160 = ₹1,440 (finally ₹1,120 : ₹1,440 = 7 : 9)."
+        ],
+        "shortcut": "The ratio simply reverses, so the net transfer 320 equals the difference 2k ⇒ k = 160.",
+        "trap": "₹2,160 comes from using only the ₹480 and forgetting the ₹160 that came back."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:transfer-between-two",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-007",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two numbers are in the ratio 3 : 4. If 6 is subtracted from the first and added to the second, the ratio becomes 1 : 2. If instead 9 is added to the first and subtracted from the second, what will the ratio be?",
+      "options": [
+        "3 : 4",
+        "4 : 3",
+        "5 : 4",
+        "7 : 6",
+        "9 : 8"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let the numbers be 3k and 4k: (3k − 6) : (4k + 6) = 1 : 2 ⇒ 6k − 12 = 4k + 6 ⇒ k = 9.",
+          "Numbers 27 and 36. Adding 9 to 27 and taking 9 from 36 gives 36 and 27.",
+          "New ratio = 36 : 27 = 4 : 3."
+        ],
+        "trap": "3 : 4 is the original ratio; moving 9 (= the difference) from the larger to the smaller swaps the numbers, so the ratio reverses."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:transfer-between-two",
+        "ratio:reverse"
+      ]
+    },
+    {
+      "key": "rp-008",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "If P : (P + 12) = 3 : 5 and (P + 6) : (Q − 4) = 4 : 5, what is the value of P + Q?",
+      "options": [
+        "34",
+        "40",
+        "46",
+        "52",
+        "58"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "5P = 3(P + 12) ⇒ 2P = 36 ⇒ P = 18.",
+          "P + 6 = 24, so 24 : (Q − 4) = 4 : 5 ⇒ Q − 4 = 30 ⇒ Q = 34.",
+          "P + Q = 18 + 34 = 52."
+        ],
+        "trap": "46 comes from taking Q − 4 = 30 as Q (forgetting the offset); 34 is Q alone."
+      },
+      "tags": [
+        "ratio:offset",
+        "template:chained-offset"
+      ]
+    },
+    {
+      "key": "rp-009",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If A : (A + 15) = 4 : 7 and (A + 30) : (B − 10) = 5 : 6, what is the value of A + B?",
+      "options": [
+        "80",
+        "85",
+        "90",
+        "95",
+        "100"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "7A = 4(A + 15) ⇒ 3A = 60 ⇒ A = 20.",
+          "A + 30 = 50 = 5 parts ⇒ 1 part = 10, so B − 10 = 60 ⇒ B = 70.",
+          "A + B = 20 + 70 = 90."
+        ],
+        "shortcut": "In the first ratio the offset 15 equals 3 parts, so 1 part = 5 and A = 20 at once.",
+        "trap": "80 uses B − 10 = 60 as B itself; the offset must be added back."
+      },
+      "tags": [
+        "ratio:offset",
+        "template:chained-offset"
+      ]
+    },
+    {
+      "key": "rp-010",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If M : (M − 18) = 5 : 3 and (M + 9) : (N + 15) = 3 : 4, what is the value of N − M?",
+      "options": [
+        "9",
+        "12",
+        "15",
+        "18",
+        "27"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "3M = 5(M − 18) ⇒ 2M = 90 ⇒ M = 45.",
+          "M + 9 = 54 = 3 parts ⇒ 1 part = 18, so N + 15 = 72 ⇒ N = 57.",
+          "N − M = 57 − 45 = 12."
+        ],
+        "shortcut": "In M : (M − 18) = 5 : 3 the 18 is 2 parts, so 1 part = 9 and M = 45.",
+        "trap": "27 takes N + 15 = 72 as N; 72 − 45 = 27 is not N − M."
+      },
+      "tags": [
+        "ratio:offset",
+        "template:chained-offset"
+      ]
+    },
+    {
+      "key": "rp-011",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a school library, the ratio of the number of Hindi books to that number increased by 40 is 5 : 7. The ratio of the number of Hindi books increased by 20 to the number of English books decreased by 30 is 6 : 5. How many Hindi and English books are there in all?",
+      "options": [
+        "200",
+        "220",
+        "230",
+        "250",
+        "260"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "H : (H + 40) = 5 : 7 ⇒ 7H = 5H + 200 ⇒ H = 100.",
+          "(100 + 20) : (E − 30) = 6 : 5 ⇒ E − 30 = 100 ⇒ E = 130.",
+          "Total = 100 + 130 = 230."
+        ],
+        "shortcut": "The 40 extra books are 2 parts, so 1 part = 20 and H = 5 × 20 = 100.",
+        "trap": "200 adds H = 100 to E − 30 = 100, forgetting to add the 30 back to get E."
+      },
+      "tags": [
+        "ratio:offset",
+        "template:chained-offset"
+      ]
+    },
+    {
+      "key": "rp-012",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two numbers X and Y are such that (X + 8) : (Y + 8) = 3 : 4 and (X − 6) : (Y − 6) = 2 : 3. What is the value of X + Y?",
+      "options": [
+        "70",
+        "76",
+        "82",
+        "90",
+        "98"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "4(X + 8) = 3(Y + 8) ⇒ 4X − 3Y = −8, and 3(X − 6) = 2(Y − 6) ⇒ 3X − 2Y = 6.",
+          "Multiply the second by 3 and the first by 2: 9X − 6Y = 18 and 8X − 6Y = −16 ⇒ X = 34, then Y = 48.",
+          "X + Y = 82 (check: 42 : 56 = 3 : 4 and 28 : 42 = 2 : 3)."
+        ],
+        "shortcut": "Y − X is the same in both ratios: it is 1 part of (X + 8) : (Y + 8) and 1 part of (X − 6) : (Y − 6). So 3d − 8 = 2d + 6 ⇒ d = 14, X = 34, Y = 48.",
+        "trap": "98 (= 42 + 56) and 70 (= 28 + 42) are the totals after the shifts; the question asks for X + Y themselves."
+      },
+      "tags": [
+        "ratio:offset",
+        "template:chained-offset",
+        "ratio:add-remove"
+      ]
+    },
+    {
+      "key": "rp-013",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If A : (A + 24) = 5 : 8 and (A + 10) : (B + 10) = 10 : 13, then B is what per cent more than A?",
+      "options": [
+        "25%",
+        "30%",
+        "32.5%",
+        "37.5%",
+        "40%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "8A = 5(A + 24) ⇒ 3A = 120 ⇒ A = 40.",
+          "A + 10 = 50 = 10 parts ⇒ 1 part = 5, so B + 10 = 65 ⇒ B = 55.",
+          "B is (55 − 40)/40 × 100 = 37.5% more than A."
+        ],
+        "trap": "30% is the ratio-based jump (13 − 10)/10 from the second ratio; the offsets mean A and B themselves are not in the ratio 10 : 13."
+      },
+      "tags": [
+        "ratio:offset",
+        "template:chained-offset",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-014",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If P : (P + 14) = 2 : 3, (P + 7) : (Q − 7) = 5 : 6 and (Q + 3) : (R − 2) = 4 : 5, what is the value of P + Q + R?",
+      "options": [
+        "132",
+        "135",
+        "144",
+        "150",
+        "156"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "3P = 2(P + 14) ⇒ P = 28.",
+          "P + 7 = 35 = 5 parts ⇒ 1 part = 7 ⇒ Q − 7 = 42 ⇒ Q = 49.",
+          "Q + 3 = 52 = 4 parts ⇒ 1 part = 13 ⇒ R − 2 = 65 ⇒ R = 67. Sum = 28 + 49 + 67 = 144."
+        ],
+        "trap": "135 = 28 + 42 + 65 uses Q − 7 and R − 2 in place of Q and R; carry each offset back before adding."
+      },
+      "tags": [
+        "ratio:offset",
+        "template:chained-offset",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-015",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A number M is 20% less than (M + 15). Another number N is such that (M + 12) : (N − 8) = 9 : 11. What is the ratio of (M + N) to (N − M)?",
+      "options": [
+        "3 : 13",
+        "11 : 3",
+        "13 : 3",
+        "13 : 4",
+        "26 : 9"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "M = 0.8(M + 15) ⇒ 0.2M = 12 ⇒ M = 60.",
+          "M + 12 = 72 = 9 parts ⇒ 1 part = 8 ⇒ N − 8 = 88 ⇒ N = 96.",
+          "(M + N) : (N − M) = 156 : 36 = 13 : 3."
+        ],
+        "shortcut": "\"20% less than (M + 15)\" means M : (M + 15) = 4 : 5, so 15 is 1 part and M = 60.",
+        "trap": "3 : 13 is the reversed ratio, (N − M) : (M + N). Reading \"20% less\" as M + 15 = 1.2M gives M = 75 and wrong values downstream."
+      },
+      "tags": [
+        "ratio:offset",
+        "template:chained-offset",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-016",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a fruit shop, the ratio of mangoes to apples is 3 : 4 and the ratio of apples to oranges is 6 : 7. If there are 84 oranges, how many mangoes are there?",
+      "options": [
+        "36",
+        "48",
+        "54",
+        "63",
+        "72"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Make the apple term common: M : A = 3 : 4 = 9 : 12 and A : O = 6 : 7 = 12 : 14.",
+          "M : A : O = 9 : 12 : 14. Oranges 14 parts = 84 ⇒ 1 part = 6.",
+          "Mangoes = 9 × 6 = 54."
+        ],
+        "trap": "63 comes from using M : O = 3 : 4 directly; the two ratios must be joined through the common term (apples) first."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:three-way-ratio"
+      ]
+    },
+    {
+      "key": "rp-017",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If A : B = 2 : 3, B : C = 4 : 5 and C : D = 6 : 7, what is A : D?",
+      "options": [
+        "8 : 21",
+        "16 : 35",
+        "35 : 16",
+        "12 : 35",
+        "4 : 7"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "A/D = (A/B) × (B/C) × (C/D) = (2/3) × (4/5) × (6/7).",
+          "= 48/105 = 16/35.",
+          "So A : D = 16 : 35."
+        ],
+        "shortcut": "Multiply all the antecedents and all the consequents: (2 × 4 × 6) : (3 × 5 × 7) = 48 : 105 = 16 : 35.",
+        "trap": "35 : 16 is D : A, the reversed ratio. 4 : 7 multiplies only the first terms with the last term of the last ratio."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:three-way-ratio"
+      ]
+    },
+    {
+      "key": "rp-018",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The ages of three trees A, B and C are such that A : B = 5 : 6 and B : C = 4 : 7. If C is 66 years older than A, how old is B?",
+      "options": [
+        "54 years",
+        "60 years",
+        "66 years",
+        "72 years",
+        "84 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "A : B = 10 : 12 and B : C = 12 : 21, so A : B : C = 10 : 12 : 21.",
+          "C − A = 11 parts = 66 ⇒ 1 part = 6.",
+          "B = 12 × 6 = 72 years."
+        ],
+        "trap": "60 years is A's age (10 parts) and 66 years is the gap C − A itself; B is 12 parts."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:three-way-ratio"
+      ]
+    },
+    {
+      "key": "rp-019",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "₹5,400 is divided among A, B and C such that A : B = $\\frac{1}{2}$ : $\\frac{1}{3}$ and B : C = $\\frac{1}{5}$ : $\\frac{1}{4}$. What is C\\'s share?",
+      "options": [
+        "₹1,200",
+        "₹1,440",
+        "₹1,600",
+        "₹1,800",
+        "₹2,160"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "A : B = 1/2 : 1/3 = 3 : 2 and B : C = 1/5 : 1/4 = 4 : 5.",
+          "A : B : C = 6 : 4 : 5 (15 parts); 1 part = 5,400 ÷ 15 = 360.",
+          "C's share = 5 × 360 = ₹1,800."
+        ],
+        "trap": "₹1,440 is B's share and ₹2,160 is A's. Writing 1/2 : 1/3 as 2 : 3 (not inverting correctly) also misleads; clear fractions by multiplying by the LCM."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:three-way-ratio",
+        "ratio:reciprocal"
+      ]
+    },
+    {
+      "key": "rp-020",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A sum of money is shared among Aman, Bela and Chirag. Aman's share : Bela's share = 4 : 5 and Aman's share : Chirag's share = 6 : 7. If Bela gets ₹280 more than Chirag, what is Aman's share?",
+      "options": [
+        "₹3,080",
+        "₹3,360",
+        "₹3,640",
+        "₹3,920",
+        "₹4,200"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Make Aman's term common: A : B = 12 : 15 and A : C = 12 : 14, so A : B : C = 12 : 15 : 14.",
+          "B − C = 1 part = ₹280.",
+          "Aman = 12 × 280 = ₹3,360."
+        ],
+        "trap": "₹3,920 is Chirag's share (14 parts). Writing 4 : 5 : 7 by just placing the numbers side by side would wrongly make Chirag get more than Bela."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:three-way-ratio"
+      ]
+    },
+    {
+      "key": "rp-021",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A prize is shared by four friends A, B, C and D such that A : B = 3 : 4, B : C = 5 : 6 and C : D = 8 : 9. If D gets ₹1,320 more than A, what is the total prize?",
+      "options": [
+        "₹8,580",
+        "₹8,800",
+        "₹9,020",
+        "₹9,240",
+        "₹9,460"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "A : B = 15 : 20, B : C = 20 : 24, C : D = 24 : 27 ⇒ A : B : C : D = 15 : 20 : 24 : 27.",
+          "D − A = 12 parts = ₹1,320 ⇒ 1 part = ₹110.",
+          "Total = (15 + 20 + 24 + 27) × 110 = 86 × 110 = ₹9,460."
+        ],
+        "trap": "Chaining as 3 : 4 : 6 : 9 (copying terms without scaling) gives D − A = 6 parts and a wrong total; each common term must be equalised before joining."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:three-way-ratio",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-022",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The monthly incomes of Pallavi and Qasim are in the ratio 7 : 5 and their monthly expenditures are in the ratio 3 : 2. Pallavi earns ₹28,000 a month and Qasim saves ₹5,000 a month. How much does Pallavi save a month?",
+      "options": [
+        "₹4,500",
+        "₹5,000",
+        "₹5,500",
+        "₹6,000",
+        "₹7,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Qasim's income = 28,000 × 5/7 = ₹20,000, so his expenditure = 20,000 − 5,000 = ₹15,000.",
+          "Pallavi's expenditure = 15,000 × 3/2 = ₹22,500.",
+          "Pallavi saves 28,000 − 22,500 = ₹5,500."
+        ],
+        "trap": "₹7,000 assumes savings are in the income ratio 7 : 5; only incomes and expenditures are in the given ratios."
+      },
+      "tags": [
+        "ratio:income-expenditure",
+        "template:income-expenditure"
+      ]
+    },
+    {
+      "key": "rp-023",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The monthly incomes of Kavya and Neeraj are in the ratio 4 : 3 and their monthly expenditures are in the ratio 3 : 2. Their monthly savings are in the ratio 2 : 3, and Neeraj saves ₹4,800 a month. What is Kavya's monthly income?",
+      "options": [
+        "₹24,000",
+        "₹28,800",
+        "₹30,000",
+        "₹32,000",
+        "₹36,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Incomes 4x, 3x; expenditures 3y, 2y. Savings: (4x − 3y) : (3x − 2y) = 2 : 3 ⇒ 12x − 9y = 6x − 4y ⇒ 6x = 5y.",
+          "Neeraj's saving 3x − 2y = 3x − 2.4x = 0.6x = 4,800 ⇒ x = 8,000.",
+          "Kavya's income = 4x = ₹32,000 (expenditure ₹28,800, saving ₹3,200)."
+        ],
+        "trap": "₹28,800 is Kavya's expenditure, and ₹24,000 is Neeraj's income."
+      },
+      "tags": [
+        "ratio:income-expenditure",
+        "template:income-expenditure"
+      ]
+    },
+    {
+      "key": "rp-024",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The monthly incomes of two sisters are in the ratio 9 : 7 and their monthly expenditures are in the ratio 4 : 3. If each of them saves ₹2,000 a month, what is the difference between their monthly expenditures?",
+      "options": [
+        "₹2,000",
+        "₹3,000",
+        "₹4,000",
+        "₹4,500",
+        "₹5,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Incomes 9x, 7x; expenditures 4y, 3y. 9x − 4y = 2,000 and 7x − 3y = 2,000.",
+          "Multiply: 27x − 12y = 6,000 and 28x − 12y = 8,000 ⇒ x = 2,000, then y = 4,000.",
+          "Expenditures ₹16,000 and ₹12,000; difference = ₹4,000."
+        ],
+        "shortcut": "Equal savings ⇒ expenditure difference = income difference = 2x; one more step finds x.",
+        "trap": "₹2,000 is the common saving. With equal savings, the gap in expenditures equals the gap in incomes, 2x = ₹4,000."
+      },
+      "tags": [
+        "ratio:income-expenditure",
+        "template:income-expenditure"
+      ]
+    },
+    {
+      "key": "rp-025",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The monthly incomes of Asha and Bimal are in the ratio 4 : 5 and their monthly expenditures are in the ratio 2 : 3. Asha saves ₹5,000 a month and Bimal saves ₹4,000 a month. What is Bimal's monthly expenditure?",
+      "options": [
+        "₹9,000",
+        "₹12,000",
+        "₹13,500",
+        "₹14,000",
+        "₹17,500"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Incomes 4x, 5x; expenditures 2y, 3y. 4x − 2y = 5,000 and 5x − 3y = 4,000.",
+          "Multiply the first by 1.5: 6x − 3y = 7,500. Subtract: x = 3,500, so 2y = 14,000 − 5,000 ⇒ y = 4,500.",
+          "Bimal's expenditure = 3y = ₹13,500 (income ₹17,500, saving ₹4,000)."
+        ],
+        "trap": "₹9,000 is Asha's expenditure and ₹17,500 is Bimal's income; the savings differ, so the equal-savings shortcut does not apply."
+      },
+      "tags": [
+        "ratio:income-expenditure",
+        "template:income-expenditure"
+      ]
+    },
+    {
+      "key": "rp-026",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The monthly incomes of Arpita and Bhanu are in the ratio 5 : 6. Arpita spends 80% of her income and Bhanu spends 75% of his. If Bhanu saves ₹1,200 a month more than Arpita, what is Bhanu's monthly expenditure?",
+      "options": [
+        "₹8,400",
+        "₹9,000",
+        "₹9,600",
+        "₹10,200",
+        "₹10,800"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Incomes 5x and 6x. Savings: Arpita 20% of 5x = x; Bhanu 25% of 6x = 1.5x.",
+          "1.5x − x = 0.5x = 1,200 ⇒ x = 2,400, so Bhanu earns 6 × 2,400 = ₹14,400.",
+          "Bhanu spends 75% of 14,400 = ₹10,800."
+        ],
+        "trap": "₹9,600 is Arpita's expenditure (80% of ₹12,000), not Bhanu's."
+      },
+      "tags": [
+        "ratio:income-expenditure",
+        "template:income-expenditure",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-027",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The monthly incomes of A, B and C are in the ratio 6 : 8 : 9 and their monthly expenditures are in the ratio 4 : 5 : 6. A saves one-third of his income and B saves ₹6,300 a month. What is the total monthly income of the three?",
+      "options": [
+        "₹31,500",
+        "₹42,000",
+        "₹44,100",
+        "₹46,200",
+        "₹48,300"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let incomes be 6k, 8k, 9k. A saves 2k, so A spends 4k; then the expenditure unit is k (4k : 5k : 6k).",
+          "B saves 8k − 5k = 3k = 6,300 ⇒ k = 2,100.",
+          "Total income = (6 + 8 + 9)k = 23 × 2,100 = ₹48,300."
+        ],
+        "trap": "₹31,500 is the total expenditure (15k). The incomes and expenditures use different units until A's saving links them."
+      },
+      "tags": [
+        "ratio:income-expenditure",
+        "template:income-expenditure",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-028",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The monthly incomes of Gaurav and Hema are in the ratio 3 : 4 and their monthly expenditures are in the ratio 2 : 3. Each of them saves ₹6,000 a month. Next year, Gaurav's income rises by 20%, Hema's income rises by 25% and both their expenditures rise by 10%. What will be the ratio of Gaurav's savings to Hema's savings then?",
+      "options": [
+        "14 : 17",
+        "17 : 14",
+        "7 : 8",
+        "12 : 17",
+        "1 : 1"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "3x − 2y = 6,000 and 4x − 3y = 6,000 ⇒ x = 6,000, y = 6,000: incomes ₹18,000 and ₹24,000; expenditures ₹12,000 and ₹18,000.",
+          "Next year: incomes ₹21,600 and ₹30,000; expenditures ₹13,200 and ₹19,800.",
+          "Savings ₹8,400 and ₹10,200 ⇒ ratio 84 : 102 = 14 : 17."
+        ],
+        "trap": "1 : 1 keeps the old equal savings, and 17 : 14 is the reversed ratio. The raises are on different bases, so the savings change by different amounts."
+      },
+      "tags": [
+        "ratio:income-expenditure",
+        "template:income-expenditure",
+        "ratio:successive-change"
+      ]
+    },
+    {
+      "key": "rp-029",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A bag contains ₹1, 50-paise and 25-paise coins in the ratio 3 : 4 : 8 by number. If the total value of the coins is ₹210, how many 25-paise coins are there?",
+      "options": [
+        "120",
+        "150",
+        "180",
+        "210",
+        "240"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the numbers be 3x, 4x and 8x. Value = 3x + 0.5(4x) + 0.25(8x) = 3x + 2x + 2x = 7x.",
+          "7x = 210 ⇒ x = 30.",
+          "25-paise coins = 8 × 30 = 240."
+        ],
+        "shortcut": "Convert the number ratio to a value ratio first: 3 : 2 : 2.",
+        "trap": "210 treats the total value as the number of coins; 120 is the number of 50-paise coins."
+      },
+      "tags": [
+        "ratio:coins",
+        "template:coins-value"
+      ]
+    },
+    {
+      "key": "rp-030",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A box contains ₹1, 50-paise and 25-paise coins whose values are in the ratio 5 : 3 : 2. If the total value is ₹400, how many coins are there in the box?",
+      "options": [
+        "400",
+        "560",
+        "640",
+        "700",
+        "760"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Values: ₹1 coins ₹200, 50-paise ₹120, 25-paise ₹80.",
+          "Numbers: 200, 120 × 2 = 240 and 80 × 4 = 320.",
+          "Total coins = 200 + 240 + 320 = 760."
+        ],
+        "trap": "400 confuses value with number; the 5 : 3 : 2 is a value ratio, so each value must be converted into coins."
+      },
+      "tags": [
+        "ratio:coins",
+        "template:coins-value"
+      ]
+    },
+    {
+      "key": "rp-031",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A cash box has ₹500, ₹200 and ₹100 notes in the ratio 2 : 3 : 5 by number. If the total amount in the box is ₹1,05,000, how many ₹500 notes are there?",
+      "options": [
+        "100",
+        "120",
+        "150",
+        "175",
+        "210"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Value of one set: 2 × 500 + 3 × 200 + 5 × 100 = 1,000 + 600 + 500 = ₹2,100.",
+          "Number of sets x = 1,05,000 ÷ 2,100 = 50.",
+          "₹500 notes = 2 × 50 = 100."
+        ],
+        "trap": "210 comes from dividing 1,05,000 by 500 as if all notes were ₹500 notes; 150 is the number of ₹200 notes."
+      },
+      "tags": [
+        "ratio:coins",
+        "template:coins-value"
+      ]
+    },
+    {
+      "key": "rp-032",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A bag contains ₹1, 50-paise and 25-paise coins in the ratio 4 : 5 : 6 by number. If 30 more ₹1 coins are put in, the number of ₹1 coins becomes equal to the number of 25-paise coins. What was the total value of the coins in the bag originally?",
+      "options": [
+        "₹105",
+        "₹120",
+        "₹135",
+        "₹150",
+        "₹180"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "4x + 30 = 6x ⇒ x = 15: 60 ₹1 coins, 75 fifty-paise coins and 90 twenty-five-paise coins.",
+          "Value = 60 + 37.50 + 22.50 = ₹120."
+        ],
+        "shortcut": "Value per set = 4 + 2.5 + 1.5 = ₹8, so the value is 8x = ₹120.",
+        "trap": "₹150 includes the 30 extra ₹1 coins; the question asks for the original value."
+      },
+      "tags": [
+        "ratio:coins",
+        "template:coins-value"
+      ]
+    },
+    {
+      "key": "rp-033",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A box contains ₹10, ₹5 and ₹2 coins. The total values of the three kinds of coins are in the ratio 5 : 3 : 2. If there are 40 more ₹2 coins than ₹10 coins, what is the total value of the coins?",
+      "options": [
+        "₹600",
+        "₹640",
+        "₹720",
+        "₹760",
+        "₹800"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the values be ₹5v, ₹3v and ₹2v. Numbers: 5v ÷ 10 = 0.5v, 3v ÷ 5 = 0.6v and 2v ÷ 2 = v.",
+          "v − 0.5v = 0.5v = 40 ⇒ v = 80.",
+          "Total value = 10v = ₹800 (40 ten-rupee, 48 five-rupee and 80 two-rupee coins)."
+        ],
+        "trap": "Treating 5 : 3 : 2 as a ratio of numbers of coins gives a different (wrong) total; here the ratio is of values."
+      },
+      "tags": [
+        "ratio:coins",
+        "template:coins-value"
+      ]
+    },
+    {
+      "key": "rp-034",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A purse has 50-paise, ₹1 and ₹2 coins in the ratio 6 : 4 : 3 by number, and the total value is ₹260. If 20 of the ₹2 coins are exchanged for 50-paise coins of the same total value, what is the new ratio of the numbers of 50-paise, ₹1 and ₹2 coins?",
+      "options": [
+        "5 : 2 : 1",
+        "1 : 2 : 5",
+        "4 : 2 : 1",
+        "7 : 4 : 2",
+        "5 : 2 : 2"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Value per set = 6 × 0.5 + 4 × 1 + 3 × 2 = ₹13, so x = 260 ÷ 13 = 20: 120, 80 and 60 coins.",
+          "20 two-rupee coins = ₹40 = 80 fifty-paise coins.",
+          "New numbers: 200, 80, 40 ⇒ 5 : 2 : 1."
+        ],
+        "trap": "7 : 4 : 2 (140 : 80 : 40) adds only 20 fifty-paise coins; equal value means ₹40 worth, i.e. 80 coins."
+      },
+      "tags": [
+        "ratio:coins",
+        "template:coins-value",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-035",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A sum of money is divided among Prerna, Qadir and Rohan such that half of Prerna's share, one-third of Qadir's share and one-fourth of Rohan's share are equal. If Rohan gets ₹1,600, what is the total sum?",
+      "options": [
+        "₹3,200",
+        "₹3,600",
+        "₹4,000",
+        "₹4,800",
+        "₹7,200"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "If P/2 = Q/3 = R/4 = k, then P = 2k, Q = 3k, R = 4k.",
+          "R = 4k = 1,600 ⇒ k = 400.",
+          "Total = 9k = ₹3,600."
+        ],
+        "trap": "Writing the shares as 1/2 : 1/3 : 1/4 (= 6 : 4 : 3) is the inverse slip; equal halves, thirds and quarters mean the shares are 2 : 3 : 4."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:equal-fraction-shares"
+      ]
+    },
+    {
+      "key": "rp-036",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "₹6,200 is divided among A, B and C such that two-thirds of A's share, three-fifths of B's share and half of C's share are all equal. What is C's share?",
+      "options": [
+        "₹1,800",
+        "₹2,000",
+        "₹2,100",
+        "₹2,250",
+        "₹2,400"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let 2A/3 = 3B/5 = C/2 = k: A = 3k/2, B = 5k/3, C = 2k.",
+          "Multiply by 6: A : B : C = 9 : 10 : 12 (31 parts); 1 part = 6,200 ÷ 31 = 200.",
+          "C = 12 × 200 = ₹2,400."
+        ],
+        "trap": "₹1,800 is A's share and ₹2,000 is B's. Using 2/3 : 3/5 : 1/2 directly as the share ratio is the inverse slip."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:equal-fraction-shares"
+      ]
+    },
+    {
+      "key": "rp-037",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Four times A's share, five times B's share and ten times C's share are all equal. If A gets ₹900 more than C, what is C's share?",
+      "options": [
+        "₹600",
+        "₹750",
+        "₹900",
+        "₹1,200",
+        "₹1,500"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "4A = 5B = 10C ⇒ A : B : C = 1/4 : 1/5 : 1/10 = 5 : 4 : 2.",
+          "A − C = 3 parts = 900 ⇒ 1 part = 300.",
+          "C = 2 × 300 = ₹600."
+        ],
+        "shortcut": "Divide the LCM 20 by 4, 5 and 10 to get 5 : 4 : 2 straight away.",
+        "trap": "₹1,500 is A's share and ₹1,200 is B's; taking 4 : 5 : 10 as the share ratio would make C the largest."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:equal-fraction-shares"
+      ]
+    },
+    {
+      "key": "rp-038",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "₹9,500 is divided among Ram, Shyam and Mohan such that 40% of Ram's share, 25% of Shyam's share and one-third of Mohan's share are equal. What is Ram's share?",
+      "options": [
+        "₹2,000",
+        "₹2,500",
+        "₹2,800",
+        "₹3,000",
+        "₹4,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let 0.4R = 0.25S = M/3 = k: R = 2.5k, S = 4k, M = 3k ⇒ R : S : M = 5 : 8 : 6.",
+          "19 parts = 9,500 ⇒ 1 part = 500.",
+          "Ram's share = 5 × 500 = ₹2,500."
+        ],
+        "trap": "₹4,000 is Shyam's share and ₹3,000 is Mohan's; a larger percentage means a smaller share, so Ram does not get the most."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:equal-fraction-shares",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-039",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A sum of money is divided among A, B and C such that (A − 20)/3 = (B + 10)/4 = (C − 30)/5. If A and C together get ₹1,260 more than B, what is the total sum?",
+      "options": [
+        "₹3,480",
+        "₹3,520",
+        "₹3,560",
+        "₹3,600",
+        "₹3,640"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let each fraction be k: A = 3k + 20, B = 4k − 10, C = 5k + 30.",
+          "A + C − B = 4k + 60 = 1,260 ⇒ k = 300.",
+          "Total = 12k + 40 = 3,600 + 40 = ₹3,640."
+        ],
+        "trap": "₹3,600 is 12k, which forgets the offsets +20, −10 and +30 (net +₹40)."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:equal-fraction-shares",
+        "ratio:offset"
+      ]
+    },
+    {
+      "key": "rp-040",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "₹5,400 is divided among P, Q and R such that P/2 = Q/3 = R/4. Later, P gives half of his share to Q, and R gives one-fourth of his share to P. How much does R have now?",
+      "options": [
+        "₹1,800",
+        "₹2,000",
+        "₹2,100",
+        "₹2,400",
+        "₹2,700"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "P : Q : R = 2 : 3 : 4, so 9k = 5,400 ⇒ k = 600: P = ₹1,200, Q = ₹1,800, R = ₹2,400.",
+          "P gives ₹600 to Q; R gives ₹600 to P.",
+          "R now has 2,400 − 600 = ₹1,800 (P ₹1,200, Q ₹2,400)."
+        ],
+        "trap": "₹2,400 is R's original share — and also Q's final amount; R has given away a quarter of his share."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:equal-fraction-shares",
+        "ratio:transfer"
+      ]
+    },
+    {
+      "key": "rp-041",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "What number must be subtracted from each of 15, 28, 20 and 38 so that the remainders are in proportion?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "(15 − x) : (28 − x) = (20 − x) : (38 − x) ⇒ (15 − x)(38 − x) = (28 − x)(20 − x).",
+          "570 − 53x + x² = 560 − 48x + x² ⇒ 10 = 5x ⇒ x = 2.",
+          "Check: 13 : 26 = 18 : 36 = 1 : 2."
+        ],
+        "shortcut": "Try the options: 2 gives 13, 26, 18, 36 — both pairs are 1 : 2.",
+        "trap": "Equating 15 × 28 with 20 × 38 (1st × 2nd = 3rd × 4th) is the usual slip; in a proportion the product of the extremes (1st × 4th) equals the product of the means (2nd × 3rd)."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:add-to-proportion"
+      ]
+    },
+    {
+      "key": "rp-042",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "What number must be added to each term of the ratio 7 : 11 to make it 3 : 4?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "(7 + x) : (11 + x) = 3 : 4 ⇒ 28 + 4x = 33 + 3x ⇒ x = 5.",
+          "Check: 12 : 16 = 3 : 4."
+        ],
+        "shortcut": "The difference 4 stays fixed and equals 1 part of 3 : 4, so the terms become 12 and 16 ⇒ add 5.",
+        "trap": "4 is the gap between the terms (11 − 7), not the number to be added."
+      },
+      "tags": [
+        "ratio:add-remove",
+        "template:add-to-proportion"
+      ]
+    },
+    {
+      "key": "rp-043",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "What number must be added to each of 5, 14 and 32 so that the second number becomes the mean proportional between the first and the third?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "(14 + x)² = (5 + x)(32 + x) ⇒ 196 + 28x = 160 + 37x.",
+          "9x = 36 ⇒ x = 4.",
+          "Check: 9, 18, 36 and 18² = 9 × 36 = 324."
+        ],
+        "trap": "Setting 14 + x as the average of 5 + x and 32 + x is the arithmetic-mean slip; the mean proportional needs b² = ac."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:add-to-proportion",
+        "ratio:mean-proportional"
+      ]
+    },
+    {
+      "key": "rp-044",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "What number must be subtracted from each of 54, 71, 75 and 99 so that the remainders are in proportion?",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "(54 − x)(99 − x) = (71 − x)(75 − x) ⇒ 5,346 − 153x = 5,325 − 146x.",
+          "21 = 7x ⇒ x = 3.",
+          "Check: 51 : 68 = 72 : 96 = 3 : 4."
+        ],
+        "trap": "Equating 1st × 2nd with 3rd × 4th is the common slip; in a proportion the product of the extremes (1st × 4th) equals the product of the means (2nd × 3rd)."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:add-to-proportion"
+      ]
+    },
+    {
+      "key": "rp-045",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "When a number x is added to each of 7, 15, 17 and 33, the resulting numbers are in proportion. What is the third proportional to x and 12?",
+      "options": [
+        "6",
+        "48",
+        "52",
+        "60",
+        "72"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "(7 + x)(33 + x) = (15 + x)(17 + x) ⇒ 231 + 40x = 255 + 32x ⇒ x = 3 (10, 18, 20, 36).",
+          "Third proportional to 3 and 12: 3 : 12 = 12 : t ⇒ t = 144 ÷ 3 = 48."
+        ],
+        "trap": "6 is the mean proportional between 3 and 12 (√36), not the third proportional."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:add-to-proportion",
+        "ratio:third-proportional"
+      ]
+    },
+    {
+      "key": "rp-046",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "What is the fourth proportional to 6, 15 and 26?",
+      "options": [
+        "39",
+        "45",
+        "52",
+        "60",
+        "65"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "6 : 15 = 26 : d ⇒ d = (15 × 26) ÷ 6.",
+          "d = 390 ÷ 6 = 65."
+        ],
+        "trap": "52 doubles 26 as if the ratio were 1 : 2; 6 : 15 is 2 : 5, so d = 26 × 5/2 = 65."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:proportionals"
+      ]
+    },
+    {
+      "key": "rp-047",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If 27 is the fourth proportional to 4, 9 and x, what is the mean proportional between x and 27?",
+      "options": [
+        "9",
+        "12",
+        "15",
+        "18",
+        "24"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "4 : 9 = x : 27 ⇒ x = (4 × 27) ÷ 9 = 12.",
+          "Mean proportional between 12 and 27 = √(12 × 27) = √324 = 18."
+        ],
+        "trap": "12 is x itself; the question asks for the mean proportional between 12 and 27."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:proportionals"
+      ]
+    },
+    {
+      "key": "rp-048",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If 48 is the third proportional to x and 24, what is the fourth proportional to x, 18 and 30?",
+      "options": [
+        "20",
+        "45",
+        "48",
+        "54",
+        "72"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "x : 24 = 24 : 48 ⇒ x = 576 ÷ 48 = 12.",
+          "12 : 18 = 30 : d ⇒ d = (18 × 30) ÷ 12 = 45."
+        ],
+        "trap": "20 inverts the last step (12 × 30 ÷ 18); for a : b = c : d, d = bc ÷ a."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:proportionals"
+      ]
+    },
+    {
+      "key": "rp-049",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If 6 is the mean proportional between (x − 2) and (x + 7), where x is positive, what is the third proportional to x and (x + 5)?",
+      "options": [
+        "15",
+        "18",
+        "20",
+        "24",
+        "25"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "(x − 2)(x + 7) = 36 ⇒ x² + 5x − 50 = 0 ⇒ (x + 10)(x − 5) = 0 ⇒ x = 5.",
+          "Third proportional to 5 and 10: 5 : 10 = 10 : t ⇒ t = 100 ÷ 5 = 20."
+        ],
+        "trap": "25 squares x instead of (x + 5); the third proportional to a and b is b² ÷ a = 100 ÷ 5 = 20. Also reject x = −10, since x is positive."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:proportionals",
+        "ratio:mean-proportional"
+      ]
+    },
+    {
+      "key": "rp-050",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Three positive numbers are in continued proportion. The first and the third are in the ratio 4 : 9 and the sum of the three numbers is 133. What is the third number?",
+      "options": [
+        "28",
+        "42",
+        "49",
+        "56",
+        "63"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "In continued proportion b² = ac. With a : c = 4 : 9, b is 6 parts (6² = 4 × 9), so a : b : c = 4 : 6 : 9.",
+          "19 parts = 133 ⇒ 1 part = 7.",
+          "Third number = 9 × 7 = 63."
+        ],
+        "trap": "42 is the middle number. Taking the middle term as 6.5 parts (the average of 4 and 9) is the arithmetic-mean slip."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:proportionals",
+        "ratio:continued"
+      ]
+    },
+    {
+      "key": "rp-051",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "x is the third proportional to 9 and 15, y is the mean proportional between x and 49, and z is the fourth proportional to 7, x and y. What is x : y : z?",
+      "options": [
+        "5 : 7 : 25",
+        "25 : 7 : 5",
+        "5 : 7 : 20",
+        "5 : 9 : 25",
+        "1 : 7 : 25"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "x: 9 : 15 = 15 : x ⇒ x = 225 ÷ 9 = 25.",
+          "y = √(25 × 49) = 35.",
+          "z: 7 : 25 = 35 : z ⇒ z = (25 × 35) ÷ 7 = 125. So x : y : z = 25 : 35 : 125 = 5 : 7 : 25."
+        ],
+        "trap": "25 : 7 : 5 is the reverse order. For the fourth proportional, a : b = c : d gives d = bc ÷ a = 25 × 35 ÷ 7, not 7 × 35 ÷ 25."
+      },
+      "tags": [
+        "ratio:proportion",
+        "template:proportionals",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-052",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If 10 students are moved from section A to section B, both sections have equal numbers of students. If instead 10 students are moved from section B to section A, the ratio of students in A to B becomes 3 : 2. How many students are there in the two sections together?",
+      "options": [
+        "150",
+        "180",
+        "190",
+        "200",
+        "240"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "From the first condition A − 10 = B + 10 ⇒ A = B + 20.",
+          "(A + 10) : (B − 10) = 3 : 2 ⇒ 2(B + 30) = 3(B − 10) ⇒ B = 90, A = 110.",
+          "Total = 200 (check: 120 : 80 = 3 : 2)."
+        ],
+        "shortcut": "Total T is fixed. In the second case A has 3/5 of T, and A − 10 = T/2 from the first case: (T/2 + 20) = 3T/5 ⇒ T = 200.",
+        "trap": "150 comes from taking A = B + 10; moving 10 students closes the gap by 20, so A = B + 20."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:class-transfer"
+      ]
+    },
+    {
+      "key": "rp-053",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The numbers of students in classes X and Y are in the ratio 7 : 5. After 10 students are moved from X to Y and 6 new students join Y, both classes have the same number of students. How many students were there in class X originally?",
+      "options": [
+        "65",
+        "78",
+        "81",
+        "84",
+        "91"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "7k − 10 = 5k + 10 + 6 ⇒ 2k = 26 ⇒ k = 13.",
+          "Class X had 7 × 13 = 91 students (now 81 each)."
+        ],
+        "trap": "81 is the strength of each class after the changes; 65 is class Y's original strength."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:class-transfer"
+      ]
+    },
+    {
+      "key": "rp-054",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The numbers of students in hostels P and Q are in the ratio 3 : 2. 20% of the students of P shift to Q, and then 30 new students join P. Now both hostels have the same number of students. How many students were there in hostel P originally?",
+      "options": [
+        "360",
+        "450",
+        "480",
+        "510",
+        "540"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let P = 3k, Q = 2k. 20% of P = 0.6k shifts, so P = 2.4k and Q = 2.6k.",
+          "2.4k + 30 = 2.6k ⇒ 0.2k = 30 ⇒ k = 150.",
+          "P originally had 3 × 150 = 450 students."
+        ],
+        "trap": "360 is P after 20% left (0.8 × 450). Forgetting to add the shifted students to Q makes 2.4k + 30 = 2k and gives a negative answer."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:class-transfer",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-055",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Section A has 40 students with boys and girls in the ratio 3 : 5, and section B has 36 students with boys and girls in the ratio 5 : 4. If the two sections are merged, what is the ratio of boys to girls?",
+      "options": [
+        "35 : 41",
+        "41 : 35",
+        "8 : 9",
+        "3 : 4",
+        "37 : 39"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Section A: boys 40 × 3/8 = 15, girls 25. Section B: boys 36 × 5/9 = 20, girls 16.",
+          "Merged: boys 35, girls 41 ⇒ 35 : 41."
+        ],
+        "trap": "8 : 9 adds the ratio terms (3 + 5 : 5 + 4); ratios of groups of different sizes cannot be added term by term. 41 : 35 is the reversed ratio."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:class-transfer"
+      ]
+    },
+    {
+      "key": "rp-056",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The numbers of students in two sections A and B are in the ratio 5 : 3. If some students move from A to B, the two sections become equal. If instead the same number of students had moved from B to A, what would the ratio of A to B have been?",
+      "options": [
+        "1 : 3",
+        "2 : 1",
+        "5 : 2",
+        "3 : 1",
+        "7 : 3"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let A = 5k, B = 3k (total 8k). Equal sections means 4k each, so k students move.",
+          "If k students move from B to A instead: A = 6k, B = 2k.",
+          "Ratio = 6k : 2k = 3 : 1."
+        ],
+        "trap": "1 : 3 is the reversed ratio (B : A). 7 : 3 comes from moving k students but changing only A."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:class-transfer",
+        "ratio:reverse"
+      ]
+    },
+    {
+      "key": "rp-057",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In a college, the numbers of Science and Commerce students are in the ratio 7 : 5. If x students shift from Science to Commerce and 40 new students join Commerce, both streams have equal strength. If instead x students had shifted from Commerce to Science (with no new admissions), the ratio of Science to Commerce students would have been 3 : 2. How many students were there in the college originally?",
+      "options": [
+        "260",
+        "280",
+        "300",
+        "320",
+        "340"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let S = 7k, C = 5k. First case: 7k − x = 5k + x + 40 ⇒ k − x = 20.",
+          "Second case: (7k + x) : (5k − x) = 3 : 2 ⇒ 14k + 2x = 15k − 3x ⇒ k = 5x.",
+          "5x − x = 20 ⇒ x = 5, k = 25. Original strength = 12k = 300 (175 Science, 125 Commerce)."
+        ],
+        "trap": "340 would count the 40 newcomers; the question asks for the original strength, before anyone joined."
+      },
+      "tags": [
+        "ratio:transfer",
+        "template:class-transfer",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-058",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The ratio of boys to girls in a class is 5 : 4. If 6 more girls join the class, the numbers of boys and girls become equal. How many boys are there in the class?",
+      "options": [
+        "30",
+        "36",
+        "40",
+        "45",
+        "54"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Boys 5k, girls 4k. 4k + 6 = 5k ⇒ k = 6.",
+          "Boys = 5 × 6 = 30."
+        ],
+        "trap": "36 adds the 6 newcomers to the boys; only the girls change. The 6 girls make up the 1-part gap, so 1 part = 6."
+      },
+      "tags": [
+        "ratio:add-remove",
+        "template:boys-girls-join"
+      ]
+    },
+    {
+      "key": "rp-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a class, the ratio of boys to girls is 7 : 5. After 8 boys leave and 2 girls join, the number of girls becomes 80% of the number of boys. How many students were there in the class originally?",
+      "options": [
+        "144",
+        "156",
+        "162",
+        "168",
+        "180"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "5k + 2 = 0.8(7k − 8) ⇒ 5k + 2 = 5.6k − 6.4 ⇒ 0.6k = 8.4 ⇒ k = 14.",
+          "Original: 98 boys and 70 girls, total 168 (after the change 90 boys and 72 girls; 72 = 80% of 90)."
+        ],
+        "shortcut": "80% means girls : boys = 4 : 5 after the change, so 5(5k + 2) = 4(7k − 8) ⇒ 3k = 42.",
+        "trap": "162 is the strength after the changes (90 + 72); the question asks for the original strength."
+      },
+      "tags": [
+        "ratio:add-remove",
+        "template:boys-girls-join",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-060",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In an office, the ratio of men to women is 9 : 5. After 12 more women join, women make up 40% of the staff. How many men are there in the office?",
+      "options": [
+        "96",
+        "108",
+        "117",
+        "120",
+        "180"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Men 9k, women 5k. 40% women means women : men = 2 : 3 after the change.",
+          "3(5k + 12) = 2 × 9k ⇒ 15k + 36 = 18k ⇒ k = 12.",
+          "Men = 9 × 12 = 108 (women 60 + 12 = 72; 72 of 180 is 40%)."
+        ],
+        "trap": "180 takes 40% of the original staff (before the 12 women joined); the 40% is of the new total, i.e. women : men = 2 : 3."
+      },
+      "tags": [
+        "ratio:add-remove",
+        "template:boys-girls-join",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-061",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "At a camp, the ratio of boys to girls is 3 : 2. When 18 boys leave, the ratio becomes 6 : 5. How many more girls must now join so that the ratio of boys to girls becomes 2 : 3?",
+      "options": [
+        "36",
+        "42",
+        "48",
+        "54",
+        "75"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "5(3k − 18) = 6 × 2k ⇒ 15k − 90 = 12k ⇒ k = 30: 90 boys, 60 girls; now 72 boys.",
+          "For 2 : 3 with 72 boys, girls must be 72 × 3/2 = 108.",
+          "Girls to join = 108 − 60 = 48."
+        ],
+        "trap": "75 uses the original 90 boys (135 − 60); the 18 boys have already left."
+      },
+      "tags": [
+        "ratio:add-remove",
+        "template:boys-girls-join",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-062",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a class, the number of girls is 25% less than the number of boys. If 9 boys leave and 9 girls join, the number of girls becomes 20% more than the number of boys. How many students are there in the class?",
+      "options": [
+        "70",
+        "77",
+        "84",
+        "91",
+        "98"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "25% less ⇒ boys : girls = 4 : 3; let them be 4k and 3k.",
+          "20% more ⇒ (3k + 9) : (4k − 9) = 6 : 5 ⇒ 15k + 45 = 24k − 54 ⇒ 9k = 99 ⇒ k = 11.",
+          "Students = 7k = 77 (44 boys, 33 girls; later 35 boys, 42 girls). The total is the same before and after."
+        ],
+        "trap": "Reading \"25% less\" as boys : girls = 5 : 4 is the classic slip; girls = 0.75 × boys means 3 : 4 girls to boys."
+      },
+      "tags": [
+        "ratio:add-remove",
+        "template:boys-girls-join",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-063",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In a school, the ratio of boys to girls is 5 : 4. During the year, 20% of the boys leave and the number of girls increases by 25%. Then 40 new boys join, and the numbers of boys and girls become equal. How many students did the school have at the start of the year?",
+      "options": [
+        "300",
+        "320",
+        "340",
+        "360",
+        "400"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Boys 5k → 0.8 × 5k = 4k; girls 4k → 1.25 × 4k = 5k.",
+          "4k + 40 = 5k ⇒ k = 40.",
+          "Start of year: 200 boys + 160 girls = 360 students."
+        ],
+        "trap": "400 is the strength at the end (200 boys and 200 girls); the question asks for the strength at the start."
+      },
+      "tags": [
+        "ratio:add-remove",
+        "template:boys-girls-join",
+        "ratio:successive-change"
+      ]
+    },
+    {
+      "key": "rp-064",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The salaries of Deepa and Elango are in the ratio 2 : 3. If Deepa's salary is increased by 20% and Elango's by 10%, what will be the new ratio of their salaries?",
+      "options": [
+        "8 : 11",
+        "11 : 8",
+        "2 : 3",
+        "4 : 5",
+        "12 : 11"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "New salaries: 2 × 1.2 = 2.4 and 3 × 1.1 = 3.3.",
+          "2.4 : 3.3 = 24 : 33 = 8 : 11."
+        ],
+        "trap": "11 : 8 is the reversed ratio, and 2 : 3 assumes the raises leave the ratio unchanged; different percentages change it."
+      },
+      "tags": [
+        "ratio:successive-change",
+        "template:salary-increment"
+      ]
+    },
+    {
+      "key": "rp-065",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The salaries of Pooja and Qutub are in the ratio 4 : 5. Pooja's salary is increased by 25% and Qutub's by 20%. If their new salaries add up to ₹33,000, what was Qutub's original salary?",
+      "options": [
+        "₹12,000",
+        "₹13,750",
+        "₹15,000",
+        "₹16,500",
+        "₹18,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Original 4x and 5x; new salaries 1.25 × 4x = 5x and 1.2 × 5x = 6x.",
+          "5x + 6x = 11x = 33,000 ⇒ x = 3,000.",
+          "Qutub's original salary = 5x = ₹15,000."
+        ],
+        "shortcut": "Both raises turn into whole parts: 4 → 5 and 5 → 6, so the new ratio is 5 : 6.",
+        "trap": "₹18,000 is Qutub's new salary (6x); ₹12,000 is Pooja's original salary."
+      },
+      "tags": [
+        "ratio:successive-change",
+        "template:salary-increment"
+      ]
+    },
+    {
+      "key": "rp-066",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The monthly salaries of Meera and Nisha are in the ratio 5 : 7. Meera gets a 60% raise and Nisha gets a raise of ₹5,000; after this, their salaries are equal. What is Nisha's new salary?",
+      "options": [
+        "₹35,000",
+        "₹37,500",
+        "₹40,000",
+        "₹42,000",
+        "₹45,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Meera 5x → 1.6 × 5x = 8x; Nisha 7x → 7x + 5,000.",
+          "8x = 7x + 5,000 ⇒ x = 5,000.",
+          "Nisha's new salary = 35,000 + 5,000 = ₹40,000."
+        ],
+        "trap": "₹35,000 is Nisha's old salary; the question asks for the salary after the raise."
+      },
+      "tags": [
+        "ratio:successive-change",
+        "template:salary-increment"
+      ]
+    },
+    {
+      "key": "rp-067",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The salaries of A, B and C are in the ratio 2 : 3 : 5. Their salaries are increased by 15%, 10% and 20% respectively. What is the new ratio of their salaries?",
+      "options": [
+        "60 : 33 : 23",
+        "23 : 33 : 60",
+        "23 : 33 : 50",
+        "3 : 4 : 7",
+        "46 : 63 : 120"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "New salaries: 2 × 1.15 = 2.3, 3 × 1.1 = 3.3, 5 × 1.2 = 6.",
+          "2.3 : 3.3 : 6 = 23 : 33 : 60."
+        ],
+        "trap": "23 : 33 : 50 forgets C's 20% raise, and 60 : 33 : 23 is the reversed order."
+      },
+      "tags": [
+        "ratio:successive-change",
+        "template:salary-increment"
+      ]
+    },
+    {
+      "key": "rp-068",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "After increments of 20% and 25% respectively, the salaries of Xavier and Yamini are in the ratio 9 : 10. What was the ratio of their salaries before the increments?",
+      "options": [
+        "3 : 4",
+        "9 : 10",
+        "15 : 16",
+        "16 : 15",
+        "6 : 5"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Old salaries = new ÷ multiplier: 9 ÷ 1.2 = 7.5 and 10 ÷ 1.25 = 8.",
+          "7.5 : 8 = 15 : 16."
+        ],
+        "trap": "16 : 15 is the reversed ratio, and 9 : 10 assumes the increments do not change the ratio."
+      },
+      "tags": [
+        "ratio:successive-change",
+        "template:salary-increment"
+      ]
+    },
+    {
+      "key": "rp-069",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The salaries of Kiran and Lata are in the ratio 4 : 3. Kiran's salary is increased by 25% and Lata's by x%, after which their salaries are in the ratio 10 : 9. What is the value of x?",
+      "options": [
+        "20%",
+        "30%",
+        "40%",
+        "45%",
+        "50%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Kiran: 4 → 5. Let Lata's new salary be L: 5 : L = 10 : 9 ⇒ L = 4.5.",
+          "Lata went from 3 to 4.5, an increase of 1.5 on 3 = 50%."
+        ],
+        "trap": "20% applies the new ratio 10 : 9 to Kiran's old salary (4 → 3.6); Kiran's salary is already 5 after his raise."
+      },
+      "tags": [
+        "ratio:successive-change",
+        "template:salary-increment",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-070",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The salaries of Farhan and Gita are in the ratio 3 : 4. Farhan gets a raise of 30% and Gita a raise of 20%. Farhan's raise turns out to be ₹600 more than Gita's raise. What is the sum of their new salaries?",
+      "options": [
+        "₹42,000",
+        "₹46,800",
+        "₹48,000",
+        "₹50,400",
+        "₹52,200"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Raises: 30% of 3x = 0.9x and 20% of 4x = 0.8x. 0.9x − 0.8x = 0.1x = 600 ⇒ x = 6,000.",
+          "Old salaries ₹18,000 and ₹24,000; new salaries ₹23,400 and ₹28,800.",
+          "Sum of new salaries = ₹52,200."
+        ],
+        "trap": "₹42,000 is the sum of the old salaries. Assuming the larger salary gets the larger raise (0.8x − 0.9x) gives a negative x, a sign the setup is reversed."
+      },
+      "tags": [
+        "ratio:successive-change",
+        "template:salary-increment",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-071",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A 60-litre mixture contains milk and water in the ratio 7 : 3. How much water must be added to make the ratio of milk to water 3 : 2?",
+      "options": [
+        "6 litres",
+        "10 litres",
+        "12 litres",
+        "14 litres",
+        "18 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Milk = 42 litres, water = 18 litres. Milk does not change.",
+          "For 3 : 2, water = 42 × 2/3 = 28 litres.",
+          "Water to add = 28 − 18 = 10 litres."
+        ],
+        "trap": "6 litres makes water 2/5 of the old 60 litres (24 − 18); once water is added the total changes, so fix the milk and scale from it."
+      },
+      "tags": [
+        "ratio:mixture",
+        "template:milk-water-quantity"
+      ]
+    },
+    {
+      "key": "rp-072",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A vessel contains 80 litres of a mixture of milk and water in the ratio 5 : 3. How much milk must be added so that the ratio of milk to water becomes 3 : 1?",
+      "options": [
+        "10 litres",
+        "20 litres",
+        "30 litres",
+        "40 litres",
+        "50 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Milk = 50 litres, water = 30 litres. Water stays 30 litres.",
+          "For 3 : 1, milk = 90 litres.",
+          "Milk to add = 90 − 50 = 40 litres."
+        ],
+        "trap": "10 litres makes milk 3/4 of the old 80 litres (60 − 50); adding milk changes the total, so scale from the fixed water."
+      },
+      "tags": [
+        "ratio:mixture",
+        "template:milk-water-quantity"
+      ]
+    },
+    {
+      "key": "rp-073",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 120-litre drink contains juice and water in the ratio 4 : 1. How much water must be added so that water makes up 25% of the drink?",
+      "options": [
+        "4 litres",
+        "5 litres",
+        "6 litres",
+        "7.5 litres",
+        "8 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Juice = 96 litres, water = 24 litres. 25% water means juice : water = 3 : 1.",
+          "Water needed = 96 ÷ 3 = 32 litres.",
+          "Water to add = 32 − 24 = 8 litres."
+        ],
+        "trap": "6 litres is 5% of 120 (the jump from 20% to 25% applied to the old volume); the total grows as water is added, so fix the juice instead."
+      },
+      "tags": [
+        "ratio:mixture",
+        "template:milk-water-quantity",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-074",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A can contains milk and water in the ratio 5 : 3. When 16 litres of the mixture is drawn off and the can is filled up with water, the quantities of milk and water become equal. How much milk was in the can at first?",
+      "options": [
+        "32 litres",
+        "36 litres",
+        "40 litres",
+        "45 litres",
+        "50 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the can hold C litres. After drawing off 16 litres, milk = (5/8)(C − 16); refilling with water keeps the volume C.",
+          "Milk = half of C ⇒ (5/8)(C − 16) = C/2 ⇒ 5C − 80 = 4C ⇒ C = 80.",
+          "Milk at first = 5/8 × 80 = 50 litres."
+        ],
+        "trap": "40 litres is the milk left after drawing off; the question asks for the milk at first."
+      },
+      "tags": [
+        "ratio:mixture",
+        "template:milk-water-quantity"
+      ]
+    },
+    {
+      "key": "rp-075",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vessel A holds 40 litres of milk and water in the ratio 3 : 1 and vessel B holds 30 litres of milk and water in the ratio 2 : 3. Both are poured into a large drum. How much water must be added to the drum so that milk and water are in equal quantities?",
+      "options": [
+        "10 litres",
+        "12 litres",
+        "14 litres",
+        "16 litres",
+        "18 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A: milk 30, water 10. B: milk 12, water 18.",
+          "Drum: milk 42, water 28.",
+          "Water to add = 42 − 28 = 14 litres."
+        ],
+        "trap": "Adding the ratios (3 : 1 + 2 : 3 = 5 : 4) ignores the different volumes; convert each vessel into litres first."
+      },
+      "tags": [
+        "ratio:mixture",
+        "template:milk-water-quantity"
+      ]
+    },
+    {
+      "key": "rp-076",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A 63-litre mixture contains milk and water in the ratio 4 : 3. How much of the mixture must be taken out and replaced with milk so that the ratio of milk to water becomes 2 : 1?",
+      "options": [
+        "6 litres",
+        "7 litres",
+        "10.5 litres",
+        "12 litres",
+        "14 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Milk 36 litres, water 27 litres. The volume stays 63 litres, so for 2 : 1 water must fall to 21 litres.",
+          "Each litre of mixture removed takes out 3/7 litre of water: (3/7)y = 27 − 21 = 6 ⇒ y = 14 litres.",
+          "Check: milk 36 − 8 + 14 = 42, water 21 ⇒ 2 : 1."
+        ],
+        "trap": "6 litres is the fall needed in water; but removing mixture takes out only 3/7 of each litre as water, so 14 litres must be removed."
+      },
+      "tags": [
+        "ratio:mixture",
+        "template:milk-water-quantity"
+      ]
+    },
+    {
+      "key": "rp-077",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Three vessels contain milk and water in the ratios 2 : 1, 3 : 2 and 4 : 1. 15 litres, 30 litres and 45 litres are taken from them respectively and mixed together. What is the ratio of milk to water in the new mixture?",
+      "options": [
+        "32 : 13",
+        "13 : 32",
+        "9 : 4",
+        "29 : 13",
+        "31 : 14"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Milk: 2/3 × 15 = 10, 3/5 × 30 = 18, 4/5 × 45 = 36 ⇒ 64 litres.",
+          "Water: 5 + 12 + 9 = 26 litres.",
+          "Milk : water = 64 : 26 = 32 : 13."
+        ],
+        "trap": "9 : 4 adds the ratio terms (2 + 3 + 4 : 1 + 2 + 1), and 31 : 14 assumes equal quantities from each vessel; the quantities 15, 30, 45 must weight each vessel."
+      },
+      "tags": [
+        "ratio:mixture",
+        "template:milk-water-quantity",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-078",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a village, the ratio of literate to illiterate adults is 7 : 3. After a literacy drive, 40% of the illiterate adults become literate. What percentage of the adults are now literate?",
+      "options": [
+        "75%",
+        "78%",
+        "80%",
+        "82%",
+        "85%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Take 100 adults: 70 literate, 30 illiterate.",
+          "40% of 30 = 12 become literate ⇒ 82 literate.",
+          "Literate share = 82%."
+        ],
+        "trap": "The 40% is of the illiterate group (30 adults), i.e. 12 more people — not 40% of all adults and not 40% added to the 7 : 3 terms."
+      },
+      "tags": [
+        "ratio:to-percent",
+        "template:ratio-to-percent"
+      ]
+    },
+    {
+      "key": "rp-079",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a company, the ratio of men to women employees is 11 : 9. 20% of the men and 30% of the women are graduates. What percentage of all the employees are graduates?",
+      "options": [
+        "24.5%",
+        "25%",
+        "26%",
+        "27.5%",
+        "50%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take 20 employees: 11 men, 9 women.",
+          "Graduates = 0.2 × 11 + 0.3 × 9 = 2.2 + 2.7 = 4.9.",
+          "4.9 out of 20 = 24.5%."
+        ],
+        "trap": "25% is the plain average of 20% and 30%; the groups are not equal (11 : 9), so weight them. 50% adds the two percentages."
+      },
+      "tags": [
+        "ratio:to-percent",
+        "template:ratio-to-percent"
+      ]
+    },
+    {
+      "key": "rp-080",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Two numbers are in the ratio 4 : 5. By what percentage is the second number more than the first?",
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "30%",
+        "80%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The second exceeds the first by 1 part on a base of 4 parts.",
+          "1/4 × 100 = 25%."
+        ],
+        "trap": "20% is how much the first is less than the second (1 on a base of 5); \"more than the first\" uses the first as the base."
+      },
+      "tags": [
+        "ratio:to-percent",
+        "template:ratio-to-percent"
+      ]
+    },
+    {
+      "key": "rp-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The prices of two articles A and B are in the ratio 5 : 7. The price of A is increased by 26% and the price of B is reduced by x%, after which both prices are equal. What is x?",
+      "options": [
+        "8%",
+        "10%",
+        "12%",
+        "14%",
+        "15%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "New price of A = 5 × 1.26 = 6.3.",
+          "B must fall from 7 to 6.3, a fall of 0.7 on 7 = 10%."
+        ],
+        "trap": "14% = 40% − 26% treats percentages as additive (B is 40% above A); the cut is on B's own price, 0.7 out of 7."
+      },
+      "tags": [
+        "ratio:to-percent",
+        "template:ratio-to-percent",
+        "ratio:successive-change"
+      ]
+    },
+    {
+      "key": "rp-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In an examination, the ratio of candidates who passed to those who failed is 7 : 2. Had 20 fewer candidates appeared and 20 fewer failed, the pass percentage would have been 87.5%. How many candidates appeared?",
+      "options": [
+        "140",
+        "160",
+        "170",
+        "180",
+        "200"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Passed 7x, failed 2x. In the new case: passed 7x out of (9x − 20).",
+          "87.5% = 7/8 ⇒ 7x/(9x − 20) = 7/8 ⇒ 8x = 9x − 20 ⇒ x = 20.",
+          "Candidates who appeared = 9x = 180."
+        ],
+        "shortcut": "87.5% pass means passed : failed = 7 : 1, so the failures 2x − 20 must equal x ⇒ x = 20.",
+        "trap": "160 is the number who would have appeared in the \"had\" case (180 − 20); the question asks for the actual number."
+      },
+      "tags": [
+        "ratio:to-percent",
+        "template:ratio-to-percent"
+      ]
+    },
+    {
+      "key": "rp-083",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The cost prices of two articles are in the ratio 2 : 3. The first is sold at a profit of 25% and the second at a loss of 10%. What is the overall profit percentage?",
+      "options": [
+        "4%",
+        "5%",
+        "6%",
+        "7.5%",
+        "15%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take CPs ₹200 and ₹300 (total ₹500).",
+          "SPs: 200 × 1.25 = ₹250 and 300 × 0.9 = ₹270 ⇒ total ₹520.",
+          "Profit = 20 on 500 = 4%."
+        ],
+        "trap": "7.5% averages +25% and −10% equally, and 15% simply subtracts them; the two articles have different costs, so weight by 2 : 3."
+      },
+      "tags": [
+        "ratio:to-percent",
+        "template:ratio-to-percent"
+      ]
+    },
+    {
+      "key": "rp-084",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The numbers of students in classes A, B and C are in the ratio 3 : 4 : 5. The pass percentages of A and B are 80% and 75% respectively. If the overall pass percentage of the three classes is 75%, what is the pass percentage of class C?",
+      "options": [
+        "64%",
+        "66%",
+        "68%",
+        "70%",
+        "72%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take 3 × 20 = 60, 80 and 100 students (240 in all).",
+          "Passed: A 48, B 60; overall 75% of 240 = 180 ⇒ C must have 180 − 108 = 72 passes.",
+          "C's pass percentage = 72/100 = 72%."
+        ],
+        "trap": "70% comes from a simple average ((80 + 75 + p)/3 = 75); the classes have different sizes, so weight them 3 : 4 : 5."
+      },
+      "tags": [
+        "ratio:to-percent",
+        "template:ratio-to-percent",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-085",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ankit's salary is 20% more than Bharat's, and Bharat's salary is 25% less than Chetan's. If their salaries total ₹1,06,000, what is Ankit's salary?",
+      "options": [
+        "₹30,000",
+        "₹36,000",
+        "₹40,000",
+        "₹42,000",
+        "₹45,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let Chetan = 20. Then Bharat = 15 and Ankit = 1.2 × 15 = 18 ⇒ A : B : C = 18 : 15 : 20.",
+          "53 parts = 1,06,000 ⇒ 1 part = 2,000.",
+          "Ankit = 18 × 2,000 = ₹36,000."
+        ],
+        "trap": "₹40,000 is Chetan's salary and ₹30,000 is Bharat's; taking Ankit = 20% more than Chetan is the base slip."
+      },
+      "tags": [
+        "ratio:to-percent",
+        "template:ratio-to-percent",
+        "ratio:combine"
+      ]
+    },
+    {
+      "key": "rp-086",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two numbers are in the ratio 3 : 5 and the sum of their squares is 1,224. What is the difference between the two numbers?",
+      "options": [
+        "12",
+        "16",
+        "18",
+        "24",
+        "30"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "(3k)² + (5k)² = 34k² = 1,224 ⇒ k² = 36 ⇒ k = 6.",
+          "Numbers 18 and 30; difference = 12."
+        ],
+        "trap": "18 is the smaller number and 30 the larger; the question asks for their difference (2k)."
+      },
+      "tags": [
+        "ratio:numbers",
+        "template:numbers-sum-squares"
+      ]
+    },
+    {
+      "key": "rp-087",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Three numbers are in the ratio 2 : 3 : 5 and the sum of their squares is 1,368. What number must be added to the smallest number to make it equal to the average of the other two?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "4k² + 9k² + 25k² = 38k² = 1,368 ⇒ k² = 36 ⇒ k = 6: numbers 12, 18, 30.",
+          "Average of 18 and 30 = 24.",
+          "Number to add = 24 − 12 = 12."
+        ],
+        "trap": "6 is the value of one part (k), not the amount to add; and averaging all three numbers (20) gives 8."
+      },
+      "tags": [
+        "ratio:numbers",
+        "template:numbers-sum-squares",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-088",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two positive numbers are in the ratio 5 : 7 and the difference of their squares is 384. By what percentage must the smaller number be increased to make it equal to the larger?",
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "35%",
+        "40%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "49k² − 25k² = 24k² = 384 ⇒ k = 4: numbers 20 and 28.",
+          "Increase needed = 8 on 20 = 40%."
+        ],
+        "shortcut": "The percentage depends only on the ratio: (7 − 5)/5 = 40%. The squares just confirm the numbers.",
+        "trap": "Using the larger number as the base (8 on 28 ≈ 28.6%) answers \"by what per cent is the smaller less than the larger\", a different question."
+      },
+      "tags": [
+        "ratio:numbers",
+        "template:numbers-sum-squares",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-089",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two numbers are in the ratio 3 : 5 and their product is 1,215. What is the sum of the two numbers?",
+      "options": [
+        "72",
+        "81",
+        "90",
+        "96",
+        "108"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "3k × 5k = 15k² = 1,215 ⇒ k² = 81 ⇒ k = 9.",
+          "Numbers 27 and 45; sum = 72."
+        ],
+        "trap": "81 is k², not k; the numbers are 3 × 9 and 5 × 9."
+      },
+      "tags": [
+        "ratio:numbers",
+        "template:numbers-sum-squares"
+      ]
+    },
+    {
+      "key": "rp-090",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "An amount was to be divided among A, B and C in the ratio 2 : 3 : 5, but it was divided in the ratio 3 : 4 : 5 instead. As a result, C got ₹600 less than his due share. What was the amount?",
+      "options": [
+        "₹7,200",
+        "₹7,500",
+        "₹7,800",
+        "₹8,400",
+        "₹9,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "C's due share = 5/10 = 1/2 of the amount; he got 5/12 of it.",
+          "1/2 − 5/12 = 1/12 of the amount = ₹600.",
+          "Amount = 600 × 12 = ₹7,200."
+        ],
+        "trap": "C's term is 5 in both ratios, which tempts you to think his share is unchanged; the totals of parts differ (10 against 12)."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:wrong-ratio-division"
+      ]
+    },
+    {
+      "key": "rp-091",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A sum of money was to be divided among P, Q and R in the ratio 2 : 3 : 4, but by mistake it was divided in the ratio $\\frac{1}{2}$ : $\\frac{1}{3}$ : $\\frac{1}{4}$. As a result, R received ₹1,250 less than his due share. What was the sum?",
+      "options": [
+        "₹4,680",
+        "₹5,265",
+        "₹5,400",
+        "₹5,850",
+        "₹6,435"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "1/2 : 1/3 : 1/4 = 6 : 4 : 3 (multiply by 12). R got 3/13 instead of 4/9.",
+          "4/9 − 3/13 = (52 − 27)/117 = 25/117 of the sum = ₹1,250.",
+          "Sum = 1,250 × 117/25 = ₹5,850."
+        ],
+        "trap": "Treating 1/2 : 1/3 : 1/4 as the same as 2 : 3 : 4 (or as 4 : 3 : 2 in reverse) misses that the fractions become 6 : 4 : 3 over 13 parts."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:wrong-ratio-division",
+        "ratio:reciprocal"
+      ]
+    },
+    {
+      "key": "rp-092",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A profit is to be shared between Esha and Farid. If it is shared in the ratio 3 : 2, Esha gets ₹1,400 more than she would get if it were shared in the ratio 4 : 5. What is the profit?",
+      "options": [
+        "₹8,100",
+        "₹8,550",
+        "₹9,000",
+        "₹9,450",
+        "₹9,900"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Esha's fraction: 3/5 in the first case, 4/9 in the second.",
+          "3/5 − 4/9 = (27 − 20)/45 = 7/45 of the profit = ₹1,400.",
+          "Profit = 1,400 × 45/7 = ₹9,000."
+        ],
+        "trap": "Comparing the terms 3 and 4 directly (as if 1 part = ₹1,400) ignores that the parts total 5 in one ratio and 9 in the other."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:wrong-ratio-division"
+      ]
+    },
+    {
+      "key": "rp-093",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A sum is divided among A, B and C in the ratio 3 : 4 : 5. Had it been divided in the ratio 2 : 3 : 4, A would have got ₹150 less. How much would C have got under the second ratio?",
+      "options": [
+        "₹2,100",
+        "₹2,250",
+        "₹2,325",
+        "₹2,400",
+        "₹2,550"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "A's fraction falls from 3/12 = 1/4 to 2/9: 1/4 − 2/9 = 1/36 of the sum = ₹150 ⇒ sum = ₹5,400.",
+          "Under 2 : 3 : 4, C gets 4/9 × 5,400 = ₹2,400.",
+          "(B's share is 1/3 in both cases, so the ₹150 lost by A goes to C: 2,250 + 150 = 2,400.)"
+        ],
+        "trap": "₹2,250 is C's share under the first ratio (5/12 × 5,400)."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:wrong-ratio-division",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "rp-094",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "An amount is divided among Lalit, Manju and Nirmal in the ratio 3 : 5 : 7. If Nirmal gets ₹2,000 more than Lalit, what is Manju's share?",
+      "options": [
+        "₹2,500",
+        "₹2,800",
+        "₹3,000",
+        "₹3,500",
+        "₹4,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Nirmal − Lalit = 7 − 3 = 4 parts = ₹2,000 ⇒ 1 part = ₹500.",
+          "Manju = 5 × 500 = ₹2,500."
+        ],
+        "trap": "₹3,500 is Nirmal's share (7 parts); Manju has 5 parts."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:divide-by-difference"
+      ]
+    },
+    {
+      "key": "rp-095",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If 40% of A equals three-fifths of B, and 25% of B equals one-third of C, what is A : B : C?",
+      "options": [
+        "6 : 4 : 3",
+        "3 : 4 : 6",
+        "3 : 2 : 1",
+        "6 : 4 : 5",
+        "9 : 6 : 4"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "0.4A = 0.6B ⇒ A : B = 0.6 : 0.4 = 3 : 2.",
+          "B/4 = C/3 ⇒ B : C = 4 : 3.",
+          "Make B common: A : B = 6 : 4, B : C = 4 : 3 ⇒ A : B : C = 6 : 4 : 3."
+        ],
+        "trap": "3 : 4 : 6 is the reverse order. If pA = qB, then A : B = q : p (not p : q): the bigger fraction goes with the smaller quantity."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:percent-equal-parts"
+      ]
+    },
+    {
+      "key": "rp-096",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "₹24,200 is divided among A, B and C such that three-fourths of A's share, two-thirds of B's share and five-sixths of C's share are all equal. What is A's share?",
+      "options": [
+        "₹6,000",
+        "₹7,200",
+        "₹7,500",
+        "₹8,000",
+        "₹9,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let each be k: A = 4k/3, B = 3k/2, C = 6k/5.",
+          "Multiply by 30: A : B : C = 40 : 45 : 36 (121 parts); 1 part = 24,200 ÷ 121 = 200.",
+          "A = 40 × 200 = ₹8,000."
+        ],
+        "trap": "₹9,000 is B's share and ₹7,200 is C's; using 3/4 : 2/3 : 5/6 directly as the share ratio is the inverse slip."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:percent-equal-parts"
+      ]
+    },
+    {
+      "key": "rp-097",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "60% of A equals 75% of B, and 50% of B equals 25% of C. If C exceeds A by 45, what is B?",
+      "options": [
+        "45",
+        "50",
+        "54",
+        "60",
+        "75"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "0.6A = 0.75B ⇒ A = 1.25B. 0.5B = 0.25C ⇒ C = 2B.",
+          "C − A = 2B − 1.25B = 0.75B = 45 ⇒ B = 60.",
+          "(A = 75, C = 120.)"
+        ],
+        "trap": "75 is A, and 45 is the gap C − A itself; reading 60% of A = 75% of B as A : B = 60 : 75 makes A smaller than B, which is reversed."
+      },
+      "tags": [
+        "ratio:combine",
+        "template:percent-equal-parts"
+      ]
+    },
+    {
+      "key": "rp-098",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "₹15,400 is divided among A, B and C. A gets 20% more than B, and C gets 25% less than A and B together. What is C's share?",
+      "options": [
+        "₹6,000",
+        "₹6,300",
+        "₹6,600",
+        "₹7,040",
+        "₹7,700"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let B = 20: A = 24, A + B = 44, C = 0.75 × 44 = 33 ⇒ A : B : C = 24 : 20 : 33.",
+          "77 parts = 15,400 ⇒ 1 part = 200.",
+          "C = 33 × 200 = ₹6,600 (A ₹4,800, B ₹4,000)."
+        ],
+        "trap": "₹7,700 is half the total, as if C equalled A and B together; \"25% less\" makes C only three-quarters of (A + B)."
+      },
+      "tags": [
+        "ratio:divide",
+        "template:percent-equal-parts",
+        "ratio:to-percent"
+      ]
+    },
+    {
+      "key": "rp-099",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A shopkeeper buys pens and pencils in the ratio 2 : 5 by number. The price of a pen and the price of a pencil are in the ratio 6 : 1. If he spends ₹1,870 in all, how much does he spend on pencils?",
+      "options": [
+        "₹440",
+        "₹550",
+        "₹660",
+        "₹770",
+        "₹1,320"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Spending ratio = (2 × 6) : (5 × 1) = 12 : 5 (17 parts).",
+          "1 part = 1,870 ÷ 17 = ₹110.",
+          "Pencils = 5 × 110 = ₹550."
+        ],
+        "trap": "₹1,320 is the spend on pens (12 parts). Using only the number ratio 2 : 5 ignores that a pen costs six times as much."
+      },
+      "tags": [
+        "ratio:compound",
+        "template:price-quantity"
+      ]
+    },
+    {
+      "key": "rp-100",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The fares for first, second and third class on a route are in the ratio 5 : 3 : 2, and the numbers of passengers in these classes are in the ratio 2 : 5 : 12. The total collection is ₹98,000. If the second-class fare is raised by 20% and the number of second-class passengers falls by 10%, with the other classes unchanged, what will the total collection be?",
+      "options": [
+        "₹1,00,000",
+        "₹1,00,400",
+        "₹1,01,000",
+        "₹1,02,800",
+        "₹1,04,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Collections are in the ratio (5 × 2) : (3 × 5) : (2 × 12) = 10 : 15 : 24 (49 parts) ⇒ 1 part = ₹2,000.",
+          "Second class collects ₹30,000; after the changes it collects 30,000 × 1.2 × 0.9 = ₹32,400.",
+          "New total = 98,000 + 2,400 = ₹1,00,400."
+        ],
+        "trap": "₹1,01,000 adds +20% and −10% to get +10%; the effects multiply: 1.2 × 0.9 = 1.08, i.e. +8%."
+      },
+      "tags": [
+        "ratio:compound",
+        "template:price-quantity",
+        "ratio:successive-change"
+      ]
+    }
+  ]
+}
