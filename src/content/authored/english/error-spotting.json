@@ -4279,6 +4279,572 @@
       "tags": [
         "grammar:preposition"
       ]
+    },
+    {
+      "key": "es-161",
+      "subtype": "incorrect-sentence",
+      "difficulty": "easy",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "My brother and his friend goes to the gym near our colony every morning before work.",
+        "The bank remains closed on the second and fourth Saturdays of every month.",
+        "Please keep your passbook ready so that the clerk can update it quickly at the counter.",
+        "Our neighbour has been teaching mathematics at the government school for nearly twelve years.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. Two subjects joined by 'and' ('my brother and his friend') make a plural subject, so the verb must be 'go', not 'goes'.",
+          "Correct: *My brother and his friend go to the gym near our colony every morning before work.*",
+          "The other three are correct: B has the singular subject 'bank' with 'remains'; C has the base verb 'update' after the modal 'can'; D uses the present perfect continuous with 'for' + a period."
+        ],
+        "rule": "Subject–verb agreement: X and Y → plural verb",
+        "trap": "'his friend', a singular noun, sits right before the verb and pulls you towards 'goes'.",
+        "shortcut": "Replace the subject with 'they': they go."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-162",
+      "subtype": "incorrect-sentence",
+      "difficulty": "easy",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The new canteen in our office serves hot idlis and filter coffee every morning.",
+        "My grandmother tells us interesting stories about her childhood in a small village near Madurai.",
+        "The police collected several evidences from the house where the theft took place.",
+        "Ravi forgot his umbrella at home, so he got completely wet in the rain.",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sentence C is incorrect. 'Evidence' is an uncountable noun: it has no plural and cannot follow 'several'. Use 'several pieces of evidence' or 'a lot of evidence'.",
+          "Correct: *The police collected several pieces of evidence from the house where the theft took place.*",
+          "The other three are correct: A has the singular 'canteen' with 'serves'; B is a simple present habit with a singular subject; D has both clauses in the simple past, joined by 'so'."
+        ],
+        "rule": "Countability: 'evidence' is uncountable",
+        "trap": "'The police collected' is correct ('police' is plural); the error is the plural 'evidences'.",
+        "shortcut": "evidence, advice, information, equipment → no -s."
+      },
+      "tags": [
+        "grammar:uncountable-noun",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-163",
+      "subtype": "incorrect-sentence",
+      "difficulty": "easy",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Every Sunday, my father cleans his scooter and checks the air in the tyres.",
+        "The students were excited because the school had announced a trip to Mysuru Palace.",
+        "If you need any help with the form, please ask the lady at the enquiry desk.",
+        "Last week, Meera has bought a new mobile phone with the money she had saved.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. 'Last week' is a finished past time, so the present perfect 'has bought' is wrong; the simple past 'bought' is needed.",
+          "Correct: *Last week, Meera bought a new mobile phone with the money she had saved.*",
+          "The other three are correct: A uses the simple present for a routine; B uses the past perfect for the earlier action (the announcement); C is a correct real conditional with an imperative."
+        ],
+        "rule": "Tense: simple past with a definite past time (last week, yesterday, in 2020)",
+        "trap": "'had saved' may look odd, but the saving came before the buying, so the past perfect there is correct.",
+        "shortcut": "Finished time word → simple past."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:present-perfect-past-time",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-164",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The parking area behind the branch is reserved for staff vehicles on working days.",
+        "One of the cashiers in our branch have been selected for a training programme in Mumbai.",
+        "Neha and her colleagues ordered lunch from a nearby restaurant to celebrate her promotion.",
+        "The auditor checked every voucher carefully before signing the final report of the branch.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. The subject is 'one' (of the cashiers), which is singular, so the verb must be 'has been selected'.",
+          "Correct: *One of the cashiers in our branch has been selected for a training programme in Mumbai.*",
+          "The other three are correct: A agrees 'is' with the singular 'parking area'; C has a compound subject with a past verb, so there is no agreement issue; D uses 'every' with a singular noun and a gerund after 'before'."
+        ],
+        "rule": "Subject–verb agreement: 'one of the + plural noun' → singular verb",
+        "trap": "The plural 'cashiers' and 'branch' stand between 'one' and the verb.",
+        "shortcut": "Cover 'of the cashiers in our branch': 'One … has been selected'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:one-of-the",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-165",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The manager thanked the security guard for his presence of mind during the robbery attempt.",
+        "Anjali felt proud when her parents came to watch her receive the best employee award.",
+        "The children promised their teacher that they would finish the project by Friday.",
+        "The bank sent letters of appreciation to my colleague and I for completing the audit early.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. 'my colleague and I' is the object of the preposition 'to', so the object pronoun is needed: 'to my colleague and me'.",
+          "Correct: *The bank sent letters of appreciation to my colleague and me for completing the audit early.*",
+          "The other three are correct: A uses the idiom 'presence of mind' correctly; B has a bare infinitive ('receive') after 'watch her'; C backshifts 'will' to 'would' after the past verb 'promised'."
+        ],
+        "rule": "Pronoun case: object form after a preposition",
+        "trap": "'… and I' is often taught as the polite form, but it is right only in subject position.",
+        "shortcut": "Drop 'my colleague and': 'sent letters to I' is clearly wrong."
+      },
+      "tags": [
+        "grammar:pronoun",
+        "pattern:case",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-166",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Mr Iyer is working as a branch manager in Coimbatore since the beginning of 2022.",
+        "The old post office building was converted into a museum after it was renovated.",
+        "We reached the railway station just in time to catch the last train to Lucknow.",
+        "The villagers have planted more than five hundred saplings along the canal this year.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. An action that began in the past ('since the beginning of 2022') and continues now needs the present perfect continuous: 'has been working'.",
+          "Correct: *Mr Iyer has been working as a branch manager in Coimbatore since the beginning of 2022.*",
+          "The other three are correct: B is a correct passive in the simple past; C uses 'just in time to' + verb correctly; D uses the present perfect with 'this year', a period not yet over."
+        ],
+        "rule": "Tense: 'since' + point of time → present perfect (continuous)",
+        "trap": "The sentence describes his present job, so the present continuous feels right; 'since' makes the present perfect necessary.",
+        "shortcut": "since / for up to now → has been + -ing."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:since-for",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-167",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "You should switch off the lights and fans before leaving the office in the evening.",
+        "The clerk asked me to return back the old debit card when I collected the new one.",
+        "The customer was asked to visit the branch with a copy of her PAN card.",
+        "Students who want to apply for the scholarship must submit their forms by Monday.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. 'Return' already means 'give back' or 'go back', so 'return back' is redundant. Use 'return the old debit card'.",
+          "Correct: *The clerk asked me to return the old debit card when I collected the new one.*",
+          "The other three are correct: A has 'should' + base verb and a gerund after 'before'; C is a correct passive with a to-infinitive; D has 'must' + base verb and a plural relative clause."
+        ],
+        "rule": "Redundancy: return back, repeat again, revert back → drop 'back' / 'again'",
+        "trap": "'return back' is common in Indian speech, so it sounds normal; the meaning of 'back' is already in 'return'.",
+        "shortcut": "re- words (return, repeat, revert) need no 'back' or 'again'."
+      },
+      "tags": [
+        "grammar:redundancy",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-168",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "There is very few water left in the tank, so we must use it carefully.",
+        "The patient was too weak to walk, so the nurse helped him into the wheelchair.",
+        "My aunt runs a small tailoring shop and employs four women from the neighbourhood.",
+        "The tea stall outside the station opens at five in the morning for early commuters.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. 'Water' is uncountable, so it takes 'little', not 'few': 'very little water'.",
+          "Correct: *There is very little water left in the tank, so we must use it carefully.*",
+          "The other three are correct: B uses 'too … to' correctly; C keeps both verbs in the simple present with a singular subject; D has the singular 'tea stall' with 'opens'."
+        ],
+        "rule": "Countability: little + uncountable; few + countable plural",
+        "trap": "'There is' is correct (water is singular), which makes the sentence look fine at first glance.",
+        "shortcut": "Countable? No → little / much / less."
+      },
+      "tags": [
+        "grammar:countability",
+        "pattern:few-little",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-169",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Mumbai's local trains are often crowded during the morning and evening rush hours.",
+        "Our new branch is much bigger than the old one and has a separate counter for pensioners.",
+        "This is the most comfortable bus I have ever travelled in on this route.",
+        "Among all the trainees in the batch, Arjun is the more hardworking and sincere.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. 'Among all the trainees' compares Arjun with more than two people, so the superlative is needed: 'the most hardworking and sincere'.",
+          "Correct: *Among all the trainees in the batch, Arjun is the most hardworking and sincere.*",
+          "The other three are correct: A has the plural subject 'trains' with 'are'; B uses 'much' to strengthen a comparative ('much bigger'); C has a superlative followed by 'I have ever …'."
+        ],
+        "rule": "Degrees of comparison: superlative for three or more; comparative only for two",
+        "trap": "'the more …' is right with 'Of the two'; here 'all the trainees' is a larger group.",
+        "shortcut": "Group of more than two → most / -est."
+      },
+      "tags": [
+        "grammar:degrees-of-comparison",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-170",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The new clerk is not well acquainted about the rules for opening joint accounts.",
+        "My sister is fond of reading detective novels during her long train journeys.",
+        "The farmer was confident of getting a good price for his cotton this season.",
+        "We congratulated our colleague on his promotion to the post of assistant manager.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. 'Acquainted' takes the preposition 'with': 'acquainted with the rules'.",
+          "Correct: *The new clerk is not well acquainted with the rules for opening joint accounts.*",
+          "The other three are correct: B uses 'fond of' + gerund; C uses 'confident of' + gerund; D uses 'congratulate someone on'."
+        ],
+        "rule": "Prepositions: acquainted with, familiar with, aware of",
+        "trap": "'aware of' and 'know about' are close in meaning, which leads to 'acquainted about'."
+      },
+      "tags": [
+        "grammar:preposition",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-171",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Although the queue was long, the clerk at the counter served everyone with a smile.",
+        "The shop was closed when we arrived, so we decided to come back the next day.",
+        "Neither the manager or his deputy was available when the customer called the branch.",
+        "Unless you fill in every column of the form, the bank cannot process your request.",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sentence C is incorrect. 'Neither' pairs with 'nor', not 'or': 'Neither the manager nor his deputy was available'.",
+          "Correct: *Neither the manager nor his deputy was available when the customer called the branch.*",
+          "The other three are correct: A uses 'although' with no extra 'but'; B joins two past clauses with 'so'; D uses 'unless' without a second negative in its clause."
+        ],
+        "rule": "Correlative conjunctions: neither … nor; either … or",
+        "trap": "'was' is correct here (the nearer subject 'deputy' is singular), so the verb is not the problem.",
+        "shortcut": "neither ↔ nor, either ↔ or: never mix them."
+      },
+      "tags": [
+        "grammar:conjunction",
+        "pattern:neither-nor",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-172",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "Our office used to close at six, but now it closes at half past five.",
+        "Many residents objected to cut down the old trees for widening the road.",
+        "The children were told to wash their hands before eating their mid-day meal.",
+        "My parents have decided to spend the summer holidays with our relatives in Shillong.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. In 'object to', 'to' is a preposition and must be followed by a gerund: 'objected to cutting down the old trees'.",
+          "Correct: *Many residents objected to cutting down the old trees for widening the road.*",
+          "The other three are correct: A uses 'used to' + base verb for a past habit; C has a gerund after the preposition 'before'; D uses 'decide' + to-infinitive."
+        ],
+        "rule": "Verb form: object to / look forward to / be used to + -ing",
+        "trap": "'to cut' looks like a normal infinitive; test with a noun: 'objected to the plan' works, so 'to' is a preposition.",
+        "shortcut": "Noun fits after 'to'? → -ing."
+      },
+      "tags": [
+        "grammar:gerund-infinitive",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-173",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The team of doctors examined the patients at the camp and distributed free medicines.",
+        "Every passenger on the bus was asked to show a valid ticket to the inspector.",
+        "The cattle were moved to higher ground before the river began to overflow.",
+        "Each of the new accounts opened this month need to be verified by the manager.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. 'Each' is the subject and is singular, so the verb must be 'needs'.",
+          "Correct: *Each of the new accounts opened this month needs to be verified by the manager.*",
+          "The other three are correct: A uses past verbs, so there is no agreement problem with 'team'; B has 'every' + singular noun + singular verb; C treats 'cattle' as plural, which it always is."
+        ],
+        "rule": "Subject–verb agreement: each of + plural noun → singular verb",
+        "trap": "'accounts' and 'month' come between 'each' and the verb; 'month' is singular too, which hides the mistake.",
+        "shortcut": "Each … needs / has / is."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:each-every",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-174",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The clerk told me that the cheque book will be delivered to my address the following week.",
+        "The manager asked whether I had brought the original documents for verification.",
+        "Seema said that she was feeling tired after the long journey from Guwahati.",
+        "The teacher reminded the students that the exam would begin at ten sharp.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. The statement is reported with a past verb ('told') and 'the following week', so 'will' must shift back to 'would': 'would be delivered'.",
+          "Correct: *The clerk told me that the cheque book would be delivered to my address the following week.*",
+          "The other three are correct: B uses statement order and the past perfect in a reported question; C backshifts 'am feeling' to 'was feeling'; D backshifts 'will' to 'would' after a past reporting verb."
+        ],
+        "rule": "Reported speech: past reporting verb → will becomes would",
+        "trap": "'the following week' is already the reported form of 'next week', and it confirms that the verb must shift as well.",
+        "shortcut": "told / said + 'the following week' → would."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:reported-speech",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-175",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The office has bought new chairs and tables for the waiting area near the cash counter.",
+        "The office assistant ordered fresh stationeries such as registers, pens and files for the branch.",
+        "A few customers complained that the ATM had run out of cash on Sunday.",
+        "The children planted vegetables in the school garden as part of their science project.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. 'Stationery' (writing materials) is an uncountable noun and has no plural. It should be 'fresh stationery'.",
+          "Correct: *The office assistant ordered fresh stationery such as registers, pens and files for the branch.*",
+          "The other three are correct: A uses countable plurals ('chairs and tables') correctly; C has 'a few' + countable plural; D is a simple past sentence with a plural subject."
+        ],
+        "rule": "Countability: 'stationery' is uncountable",
+        "trap": "The list 'registers, pens and files' is plural, which makes a plural noun feel natural.",
+        "shortcut": "stationery, machinery, jewellery, crockery → no -s."
+      },
+      "tags": [
+        "grammar:uncountable-noun",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-176",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The festival lights made the whole street look bright and colourful at night.",
+        "The soup at this dhaba tastes delicious, especially on a cold winter evening.",
+        "The cashier counted the notes very careful before handing them over to the customer.",
+        "The bus driver drove slowly through the crowded market to avoid an accident.",
+        "All are correct"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sentence C is incorrect. 'Careful' describes how the cashier counted, which is an action, so the adverb is needed: 'very carefully'.",
+          "Correct: *The cashier counted the notes very carefully before handing them over to the customer.*",
+          "The other three are correct: A has adjectives after the linking verb 'look'; B has an adjective after the linking verb 'tastes'; D uses the adverb 'slowly' with the action verb 'drove'."
+        ],
+        "rule": "Adjective vs adverb: action verb + adverb; linking verb + adjective",
+        "trap": "Sentences B and C also have an adjective after the verb and are correct, because 'look' and 'taste' are linking verbs there. 'Count' is an action verb.",
+        "shortcut": "Ask 'how did he count?' → -ly."
+      },
+      "tags": [
+        "grammar:adjective-adverb",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-177",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The bank has warned its customers against sharing their passwords with strangers.",
+        "My cousin is good at drawing and wants to become an architect.",
+        "The security guard prevented the stray dogs from entering the hospital premises at night.",
+        "The villagers are complaining for the irregular supply of electricity in their area.",
+        "All are correct"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sentence D is incorrect. 'Complain' takes 'about' (or 'of'), not 'for': 'complaining about the irregular supply of electricity'.",
+          "Correct: *The villagers are complaining about the irregular supply of electricity in their area.*",
+          "The other three are correct: A uses 'warn against' + gerund; B uses 'good at' + gerund; C uses 'prevent … from' + gerund."
+        ],
+        "rule": "Prepositions: complain about / of (something), complain to (someone)",
+        "trap": "'for' follows 'ask' and 'demand' in Indian speech ('ask for a better supply'), so 'complain for' sounds possible."
+      },
+      "tags": [
+        "grammar:preposition",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-178",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "My cousin brother is coming from Bhopal to attend my sister's wedding next month.",
+        "Please return the file to the record room after you have finished checking it.",
+        "The meeting was postponed because the chairman was stuck in heavy traffic.",
+        "An honest officer never accepts gifts from customers whose loans he has sanctioned.",
+        "All are correct"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sentence A is incorrect. 'Cousin brother' is redundant in standard English; 'cousin' already covers the relationship. Write 'My cousin' (or 'My cousin, Arvind,' with a name).",
+          "Correct: *My cousin is coming from Bhopal to attend my sister's wedding next month.*",
+          "The other three are correct: B uses the present perfect in a time clause; C is a correct passive with a reason clause; D uses 'an' before the silent 'h' in 'honest' and 'whose' correctly."
+        ],
+        "rule": "Redundancy: cousin brother / cousin sister → cousin",
+        "trap": "The phrase is everyday Indian English, so it does not feel like an error; exams treat it as redundant."
+      },
+      "tags": [
+        "grammar:redundancy",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-179",
+      "subtype": "incorrect-sentence",
+      "difficulty": "medium",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "The spectacles that my grandfather wears for reading have a thick black frame.",
+        "Either the clerk or the peons have to open the branch at nine every morning.",
+        "Two hours is enough time to finish the audit of this small branch.",
+        "The bank's new branch, along with its ATM, was inaugurated by the district collector.",
+        "All are correct"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "All four sentences are correct. Each one uses a pattern that looks wrong at first but is standard.",
+          "A: 'spectacles' is plural-only, so 'have' is right; B: with 'either … or' the verb agrees with the nearer subject, 'peons' → 'have'; C: a period of time taken as one amount takes 'is'; D: 'along with its ATM' does not change the singular subject 'branch' → 'was'."
+        ],
+        "rule": "No error: plural-only nouns, either … or proximity, amounts as a unit, 'along with'",
+        "trap": "Each sentence has a trap that suggests an error (spectacles … have, clerk … have, hours … is, ATM … was). Check each against its rule before marking it.",
+        "shortcut": "Mark a sentence only when you can name the rule it breaks."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:no-error",
+        "format:incorrect-sentence"
+      ]
+    },
+    {
+      "key": "es-180",
+      "subtype": "incorrect-sentence",
+      "difficulty": "hard",
+      "prompt": "Which of the following sentences is grammatically incorrect? If all the sentences are correct, choose 'All are correct'.",
+      "options": [
+        "A number of senior citizens were waiting outside the branch before it opened.",
+        "The number of customers using mobile banking in rural areas have grown rapidly since the pandemic.",
+        "Neither the cashier nor the clerks were aware that the vault key was missing.",
+        "The committee has finally approved the proposal to set up a new ATM near the bus stand.",
+        "All are correct"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sentence B is incorrect. 'The number of …' takes a singular verb, because the subject is 'the number'. It should be 'has grown'.",
+          "Correct: *The number of customers using mobile banking in rural areas has grown rapidly since the pandemic.*",
+          "The other three are correct: A 'a number of' (= many) takes a plural verb; C the verb agrees with the nearer subject 'clerks' → 'were'; D the committee acts as one body → 'has'."
+        ],
+        "rule": "Subject–verb agreement: the number of → singular; a number of → plural",
+        "trap": "Sentence A ('A number of … were') is correct and looks like the same pattern; the article decides: 'a number' = many, 'the number' = a figure.",
+        "shortcut": "the number … has; a number of … have."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:number-of",
+        "format:incorrect-sentence"
+      ]
     }
   ]
 }

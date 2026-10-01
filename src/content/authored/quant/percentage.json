@@ -648,6 +648,650 @@
         "template:p-of-a-equals-q-of-b",
         "trap:reversed-ratio"
       ]
+    },
+    {
+      "key": "pc-026",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If the numerator of a fraction is increased by 25% and its denominator is decreased by 20%, the new fraction is $\\frac{5}{4}$. What is the original fraction?",
+      "options": [
+        "$\\frac{4}{5}$",
+        "$\\frac{5}{4}$",
+        "$\\frac{25}{16}$",
+        "$\\frac{125}{64}$",
+        "$\\frac{16}{5}$"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "New fraction = original × $\\frac{1.25}{0.8}$ = original × $\\frac{25}{16}$.",
+          "Original = $\\frac{5}{4}$ × $\\frac{16}{25}$ = **$\\frac{4}{5}$**."
+        ],
+        "trap": "$\\frac{125}{64}$ multiplies $\\frac{5}{4}$ by $\\frac{25}{16}$ again instead of dividing by it: the changes must be undone, not repeated.",
+        "shortcut": "Check an option forward: $\\frac{4 × 1.25}{5 × 0.8}$ = $\\frac{5}{4}$ ✓."
+      },
+      "tags": [
+        "percent:fraction-change",
+        "template:num-den-change"
+      ]
+    },
+    {
+      "key": "pc-027",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "When the numerator of a fraction is increased by 200% and its denominator is increased by 150%, the resulting fraction is $\\frac{9}{10}$. What is the original fraction?",
+      "options": [
+        "$\\frac{3}{5}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{27}{40}$",
+        "$\\frac{18}{25}$",
+        "$\\frac{3}{4}$"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Increased by 200% means × 3; increased by 150% means × 2.5. So new = original × $\\frac{3}{2.5}$ = original × $\\frac{6}{5}$.",
+          "Original = $\\frac{9}{10}$ × $\\frac{5}{6}$ = **$\\frac{3}{4}$**."
+        ],
+        "trap": "$\\frac{27}{40}$ reads 'increased by 200%' as × 2 and 'by 150%' as × 1.5. An increase of x% multiplies by (1 + x/100)."
+      },
+      "tags": [
+        "percent:fraction-change",
+        "template:num-den-change",
+        "trap:increase-by-vs-to"
+      ]
+    },
+    {
+      "key": "pc-028",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If the numerator of a fraction is increased by 20% and its denominator is decreased by 10%, the fraction increases by $\\frac{2}{15}$. What is the original fraction?",
+      "options": [
+        "$\\frac{2}{5}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{8}{15}$",
+        "$\\frac{3}{5}$",
+        "$\\frac{2}{3}$"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "New fraction = f × $\\frac{1.2}{0.9}$ = $\\frac{4}{3}$f, so the increase is $\\frac{1}{3}$f.",
+          "$\\frac{1}{3}$f = $\\frac{2}{15}$ → f = **$\\frac{2}{5}$**."
+        ],
+        "trap": "$\\frac{8}{15}$ is the new fraction ($\\frac{4}{3}$ × $\\frac{2}{5}$), not the original one."
+      },
+      "tags": [
+        "percent:fraction-change",
+        "template:num-den-change",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-029",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If the numerator of a fraction is increased by 40% and its denominator is increased by 60%, the fraction becomes $\\frac{7}{12}$. What will the original fraction become if its numerator is decreased by 25% and its denominator is increased by 50%?",
+      "options": [
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{4}{9}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{2}{3}$"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Original = $\\frac{7}{12}$ × $\\frac{1.6}{1.4}$ = $\\frac{7}{12}$ × $\\frac{8}{7}$ = $\\frac{2}{3}$.",
+          "New = $\\frac{2}{3}$ × $\\frac{0.75}{1.5}$ = $\\frac{2}{3}$ × $\\frac{1}{2}$ = **$\\frac{1}{3}$**."
+        ],
+        "trap": "$\\frac{2}{3}$ is the original fraction; the second set of changes still has to be applied to it."
+      },
+      "tags": [
+        "percent:fraction-change",
+        "template:num-den-change",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-030",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If the numerator of a fraction is increased by 50% and its denominator is decreased by 25%, the fraction becomes $\\frac{8}{5}$. If the denominator of the original fraction is 15 more than its numerator, what is the denominator?",
+      "options": [
+        "45",
+        "60",
+        "72",
+        "75",
+        "90"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Original = $\\frac{8}{5}$ × $\\frac{0.75}{1.5}$ = $\\frac{8}{5}$ × $\\frac{1}{2}$ = $\\frac{4}{5}$, so numerator : denominator = 4 : 5.",
+          "Denominator − numerator = 1 part = 15, so the denominator = 5 × 15 = **75**."
+        ],
+        "trap": "60 is the numerator (4 parts). The question asks for the denominator."
+      },
+      "tags": [
+        "percent:fraction-change",
+        "template:num-den-change",
+        "percent:feeds-ratio"
+      ]
+    },
+    {
+      "key": "pc-031",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If the numerator of a fraction is decreased by 20% and its denominator is increased by 20%, the new fraction is $\\frac{5}{9}$. What is the original fraction?",
+      "options": [
+        "$\\frac{10}{27}$",
+        "$\\frac{5}{9}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{5}{6}$",
+        "$\\frac{25}{27}$"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "New = original × $\\frac{0.8}{1.2}$ = original × $\\frac{2}{3}$.",
+          "Original = $\\frac{5}{9}$ × $\\frac{3}{2}$ = **$\\frac{5}{6}$**."
+        ],
+        "trap": "$\\frac{10}{27}$ multiplies $\\frac{5}{9}$ by $\\frac{2}{3}$ (applies the changes again) instead of dividing by $\\frac{2}{3}$."
+      },
+      "tags": [
+        "percent:fraction-change",
+        "template:num-den-change"
+      ]
+    },
+    {
+      "key": "pc-032",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Neeraj spends 30% of his monthly salary on rent and 25% of the remaining amount on food. He saves the rest, which is ₹15,750. What is his monthly salary?",
+      "options": [
+        "₹28,000",
+        "₹30,000",
+        "₹31,500",
+        "₹35,000",
+        "₹45,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After rent: 70% of the salary. After food: 75% of 70% = 52.5% of the salary.",
+          "52.5% = ₹15,750, so the salary = ₹15,750 × 100/52.5 = **₹30,000**."
+        ],
+        "trap": "₹35,000 takes food as 25% of the salary (savings = 45%). The 25% is of the amount left after rent."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "template:salary-savings",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-033",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Lata's monthly income rises by 20% and her monthly expenditure rises by 10%. As a result, her monthly savings rise by 40%. What percentage of her original income was she saving?",
+      "options": [
+        "25%",
+        "30%",
+        "$33\\frac{1}{3}$%",
+        "40%",
+        "$66\\frac{2}{3}$%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take income = 100 and savings = s, so expenditure = 100 − s.",
+          "New savings: 120 − 1.1(100 − s) = 1.4s → 10 + 1.1s = 1.4s → s = $\\frac{10}{0.3}$ = **$33\\frac{1}{3}$%**."
+        ],
+        "trap": "$66\\frac{2}{3}$% is the expenditure share. In the alligation 10 : 20, the savings get the smaller part (income change 20 is nearer to the expenditure change 10).",
+        "shortcut": "Alligation: income change 20% lies between expenditure 10% and savings 40%. Expenditure : savings = (40 − 20) : (20 − 10) = 2 : 1, so savings = $\\frac{1}{3}$ of income."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "template:salary-savings"
+      ]
+    },
+    {
+      "key": "pc-034",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Kavita saves 25% of her monthly salary. Her salary increases by 16% and her savings increase by 40%. By what percent does her expenditure increase?",
+      "options": [
+        "6%",
+        "8%",
+        "10%",
+        "12%",
+        "16%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Salary 100 → 116; savings 25 → 35. Expenditure 75 → 116 − 35 = 81.",
+          "Increase = 6 on 75 = **8%**."
+        ],
+        "trap": "16% assumes the expenditure rose in step with the salary. The savings rose faster, so the expenditure rose by less."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "template:salary-savings"
+      ]
+    },
+    {
+      "key": "pc-035",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Arjun spends 40% of his monthly salary on household expenses, 20% of the remaining amount on his children's education and 25% of what is then left on travel. He invests the remaining ₹10,800. How much does he spend on his children's education?",
+      "options": [
+        "₹2,700",
+        "₹2,880",
+        "₹3,000",
+        "₹3,240",
+        "₹3,600"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Left after each step: 60% → 80% of 60% = 48% → 75% of 48% = 36% of the salary = ₹10,800, so the salary = ₹30,000.",
+          "Education = 20% of the ₹18,000 left after household expenses = **₹3,600**."
+        ],
+        "trap": "₹2,880 is 20% of ₹14,400 (the amount left after education, taken as the base by mistake). Education is 20% of ₹18,000, what was left after household expenses."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "template:salary-savings",
+        "percent:successive-change"
+      ]
+    },
+    {
+      "key": "pc-036",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Meena's monthly salary is 25% more than Tarun's. Meena spends 64% of her salary and Tarun spends 60% of his. If Meena saves ₹1,500 a month more than Tarun, what is Meena's monthly expenditure?",
+      "options": [
+        "₹18,000",
+        "₹20,000",
+        "₹21,600",
+        "₹22,500",
+        "₹24,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Tarun = 100x, Meena = 125x. Savings: Meena 36% of 125x = 45x; Tarun 40x. 5x = ₹1,500 → x = 300.",
+          "Meena's salary = ₹37,500; expenditure = 64% = **₹24,000**."
+        ],
+        "trap": "₹18,000 is Tarun's expenditure (60% of ₹30,000). The question asks for Meena's."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "template:salary-savings",
+        "percent:feeds-ratio"
+      ]
+    },
+    {
+      "key": "pc-037",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rahul pays 10% of his salary as income tax. Of the rest, he spends 60% and saves the remaining ₹14,400. Next year his salary increases by 20% and the tax rate becomes 12.5%. If he still spends 60% of what is left after tax, what will his savings be?",
+      "options": [
+        "₹16,200",
+        "₹16,800",
+        "₹17,280",
+        "₹17,500",
+        "₹18,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Savings = 40% of 90% = 36% of the salary = ₹14,400 → salary = ₹40,000.",
+          "New salary ₹48,000; after 12.5% tax: ₹42,000; savings = 40% = **₹16,800**."
+        ],
+        "trap": "₹17,280 is ₹14,400 × 1.2: it raises the savings with the salary but ignores the higher tax rate."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "template:salary-savings",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-038",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Sunita's monthly income increased by 12% and her monthly expenditure increased by 20%, so her monthly savings fell by 12%. If her new monthly savings are ₹9,240, what was her original monthly income?",
+      "options": [
+        "₹36,960",
+        "₹40,000",
+        "₹42,000",
+        "₹44,000",
+        "₹47,040"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Income 100, savings s: 112 − 1.2(100 − s) = 0.88s → 0.32s = 8 → s = 25%.",
+          "New savings = 0.88 × 25% = 22% of the original income = ₹9,240 → income = **₹42,000**."
+        ],
+        "trap": "₹47,040 is the new income (1.12 × ₹42,000). The question asks for the original income.",
+        "shortcut": "Alligation on the changes: income +12 lies between expenditure +20 and savings −12 → expenditure : savings = 24 : 8 = 3 : 1, so savings = 25%."
+      },
+      "tags": [
+        "percent:income-expenditure",
+        "template:salary-savings",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-039",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "In a test, a student who scored 30% of the maximum marks failed by 30 marks, while another who scored 45% got 15 marks more than the pass mark. What are the maximum marks?",
+      "options": [
+        "100",
+        "150",
+        "200",
+        "250",
+        "300"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The gap between the two scores is 45% − 30% = 15% of the maximum = 30 + 15 = 45 marks.",
+          "Maximum = 45 × 100/15 = **300**."
+        ],
+        "trap": "100 subtracts the marks (30 − 15 = 15 = 15%). One student is below the pass mark and the other above it, so the distances add."
+      },
+      "tags": [
+        "percent:marks-pass",
+        "template:fail-by-pass-by"
+      ]
+    },
+    {
+      "key": "pc-040",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Tanvi scored 36% of the maximum marks and failed by 24 marks. Isha scored 52% of the maximum marks and got 40 marks more than the pass mark. What is the pass percentage?",
+      "options": [
+        "40%",
+        "41%",
+        "42%",
+        "44%",
+        "45%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "52% − 36% = 16% of the maximum = 24 + 40 = 64 → maximum = 400.",
+          "Pass mark = 36% of 400 + 24 = 168 = **42%** of 400."
+        ],
+        "trap": "44% is the midpoint of 36% and 52%. It would be right only if both girls were the same distance (24 = 40) from the pass mark."
+      },
+      "tags": [
+        "percent:marks-pass",
+        "template:fail-by-pass-by"
+      ]
+    },
+    {
+      "key": "pc-041",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The pass mark in an examination is 40%. Ravi scored 178 marks and failed by 22 marks. How many more marks would he have needed to score 60%?",
+      "options": [
+        "100",
+        "112",
+        "122",
+        "132",
+        "144"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pass mark = 178 + 22 = 200 = 40% → maximum = 500.",
+          "60% of 500 = 300, so he needed 300 − 178 = **122** more marks."
+        ],
+        "trap": "100 is 20% of 500, the gap between 40% and 60%. Ravi was already 22 marks short of 40%, so he needs 100 + 22."
+      },
+      "tags": [
+        "percent:marks-pass",
+        "template:fail-by-pass-by"
+      ]
+    },
+    {
+      "key": "pc-042",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "An examination has two papers: Paper I of 150 marks and Paper II of 200 marks. To pass, a candidate must get at least 40% in each paper and at least 45% of the aggregate. Kiran scored 64% in Paper I. What is the minimum he must score in Paper II to pass? (Marks are whole numbers.)",
+      "options": [
+        "62",
+        "70",
+        "78",
+        "80",
+        "84"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Paper I = 64% of 150 = 96. Aggregate needed = 45% of 350 = 157.5, i.e. 158, so the aggregate rule alone needs 158 − 96 = 62 in Paper II.",
+          "But Paper II also needs 40% of 200 = 80 on its own. The stricter condition wins: **80** (aggregate 176 ≥ 158 ✓)."
+        ],
+        "trap": "62 satisfies only the aggregate rule; 62 out of 200 is 31%, below the 40% needed in Paper II."
+      },
+      "tags": [
+        "percent:marks-pass",
+        "template:two-paper-pass",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-043",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The pass mark in a test is 40% of the maximum marks. Sohan scored exactly the pass mark. Rohan scored 20% more marks than Sohan, which was 48 marks more than the pass mark. How many marks did Rohan score?",
+      "options": [
+        "144",
+        "240",
+        "264",
+        "288",
+        "312"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Rohan − Sohan = 20% of Sohan's marks = 48 → Sohan (= pass mark) = 240.",
+          "Rohan = 240 + 48 = **288** (maximum = 600, so Rohan got 48%)."
+        ],
+        "trap": "144 reads '20% more' as 20 percentage points (Rohan = 60%), making 20% of the maximum = 48. The 20% is on Sohan's marks, not on the maximum."
+      },
+      "tags": [
+        "percent:marks-pass",
+        "template:fail-by-pass-by",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-044",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The pass mark in an examination is 35%. Arun scored 255 marks and failed by 25 marks. Bhavna scored 15% more marks than the pass mark. How many marks did Bhavna score?",
+      "options": [
+        "322",
+        "336",
+        "350",
+        "368",
+        "400"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pass mark = 255 + 25 = 280 (35% of a maximum of 800).",
+          "Bhavna = 280 × 1.15 = **322**."
+        ],
+        "trap": "400 treats '15% more than the pass mark' as 35% + 15% = 50% of 800. The 15% is taken on the pass mark (280), not on the maximum."
+      },
+      "tags": [
+        "percent:marks-pass",
+        "template:fail-by-pass-by",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-045",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In an examination, Anu scored 10% more marks than the pass mark and Binu scored 20% fewer marks than the pass mark. Anu scored 90 marks more than Binu. If the pass mark is 40% of the maximum marks, what are the maximum marks?",
+      "options": [
+        "300",
+        "600",
+        "675",
+        "750",
+        "900"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Anu − Binu = 110% − 80% = 30% of the pass mark = 90 → pass mark = 300.",
+          "300 is 40% of the maximum, so the maximum = **750**."
+        ],
+        "trap": "300 is the pass mark; stopping there (or treating the 10% and 20% as shares of the maximum) gives 300. One more step: 300 ÷ 0.4."
+      },
+      "tags": [
+        "percent:marks-pass",
+        "template:fail-by-pass-by",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-046",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "In an election between two candidates, 10% of the votes cast were invalid. The winner got 60% of the valid votes and won by 3,600 votes. How many votes did the losing candidate get?",
+      "options": [
+        "7,200",
+        "8,000",
+        "9,000",
+        "10,800",
+        "12,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Margin = 60% − 40% = 20% of the valid votes = 3,600 → 18,000 valid votes.",
+          "Loser = 40% of 18,000 = **7,200**."
+        ],
+        "trap": "8,000 is 40% of the 20,000 votes cast. The 40% is of the valid votes only."
+      },
+      "tags": [
+        "percent:election",
+        "template:election-invalid",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-047",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In an election between two candidates, 80% of the registered voters cast their votes and 5% of the votes cast were invalid. The winner got 55% of the valid votes and won by 2,280 votes. How many voters were registered?",
+      "options": [
+        "24,000",
+        "25,000",
+        "27,500",
+        "28,500",
+        "30,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Margin = 10% of valid votes = 2,280 → valid = 22,800.",
+          "Valid = 95% of votes cast → cast = 24,000; cast = 80% of registered → registered = **30,000**."
+        ],
+        "trap": "24,000 is the number of votes cast. The question asks for registered voters, of whom only 80% voted."
+      },
+      "tags": [
+        "percent:election",
+        "template:election-invalid"
+      ]
+    },
+    {
+      "key": "pc-048",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In an election among three candidates, 8% of the votes cast were invalid. Of the valid votes, Asha got 42%, Bimal got 35% and Chitra got the rest. If Asha defeated Chitra by 4,370 votes, how many votes did Bimal get?",
+      "options": [
+        "5,290",
+        "8,050",
+        "8,400",
+        "8,750",
+        "9,660"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Chitra = 100% − 42% − 35% = 23% of valid votes. Asha − Chitra = 19% of valid = 4,370 → valid = 23,000.",
+          "Bimal = 35% of 23,000 = **8,050**."
+        ],
+        "trap": "8,750 is 35% of the 25,000 votes cast. Bimal's 35% is of the valid votes."
+      },
+      "tags": [
+        "percent:election",
+        "template:election-invalid",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-049",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In an election between two candidates, X won by a margin equal to 20% of the votes polled. If 1,500 voters who voted for X had voted for Y instead, Y would have won by 1,000 votes. How many votes did X get? (No vote was invalid.)",
+      "options": [
+        "6,000",
+        "6,250",
+        "6,500",
+        "7,000",
+        "7,500"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Each switched vote cuts X's lead by 2, so the lead changes by 3,000: 20% of T − 3,000 = −1,000 → 20% of T = 2,000 → T = 10,000.",
+          "X − Y = 2,000 and X + Y = 10,000 → X = **6,000**."
+        ],
+        "trap": "7,500 counts each switched vote once (margin change 1,500 + 1,000 = 2,500 = 20% → T = 12,500). A switched vote takes one from X and adds one to Y."
+      },
+      "tags": [
+        "percent:election",
+        "template:election-swing"
+      ]
+    },
+    {
+      "key": "pc-050",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In an election between two candidates, 12% of the voters on the list did not vote and 800 votes were invalid. The winner got votes equal to 52% of the voters on the list and won by 6,400 votes. How many voters were on the list?",
+      "options": [
+        "30,800",
+        "32,000",
+        "35,000",
+        "37,500",
+        "40,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the list be N. Votes cast = 0.88N; valid = 0.88N − 800; loser = 0.88N − 800 − 0.52N = 0.36N − 800.",
+          "Margin = 0.52N − (0.36N − 800) = 0.16N + 800 = 6,400 → N = **35,000**."
+        ],
+        "trap": "40,000 ignores the 800 invalid votes (0.16N = 6,400). Invalid votes reduce the loser's share, so they add to the margin."
+      },
+      "tags": [
+        "percent:election",
+        "template:election-invalid",
+        "level:multi-step"
+      ]
     }
   ]
 }
