@@ -7713,6 +7713,750 @@
           ]
         }
       ]
+    },
+    {
+      "key": "rc-32",
+      "subtype": "science-history",
+      "difficulty": "extreme",
+      "title": "A tube and a method",
+      "stimulus": "Until the early nineteenth century, a physician who wished to hear what was happening inside a patient's chest had only one method: he pressed his ear against it. This \"immediate\" listening could reveal a great deal to a practised ear, but it had obvious drawbacks. It was awkward and unhygienic, it was of little use when a thick layer of fat muffled the sounds, and with many patients it was regarded as improper.\n\nIn 1816 a young French physician, René Laennec, faced exactly this difficulty at the Necker Hospital in Paris. His patient, a young woman with symptoms of heart disease, was too stout for tapping on the chest to be informative, and her age and sex made it unthinkable for him to put his ear to her chest. Laennec later recalled having seen children playing with a long wooden beam, one scratching at one end with a pin while another, ear pressed to the other end, heard the sound clearly. He rolled a sheaf of paper into a tight cylinder, placed one end on the patient's chest and the other at his ear, and found that he could hear the heart more distinctly than he ever had by direct listening.\n\nThe paper roll soon gave way to a hollow wooden tube, **crude** by later standards, which Laennec named the stethoscope, from Greek words meaning \"chest\" and \"to examine\". But the device itself was the smaller part of his achievement. Over the next three years he listened to hundreds of patients, recorded the sounds he heard and, when patients died, compared his notes with what the post-mortem examination revealed in their lungs and hearts. His treatise of 1819 set out, for the first time, a systematic correspondence between particular sounds and particular diseases. Listening had become a method of diagnosis rather than an art practised by intuition.\n\nThe innovation was **received** with mixed feelings. Some physicians mocked the wooden tube as a gimmick; others worried that it placed a barrier between doctor and patient, and many were slow to ______ **(blank)** the new instrument. Within a few decades, however, it had become indispensable, and by the 1850s versions with two flexible earpieces, much like those used today, had appeared.\n\nThere is a melancholy footnote to the story. Much of Laennec's work concerned tuberculosis, then one of the commonest causes of death in Paris, and he described its signs in the chest with great precision. In 1826, at the age of forty-five, he died of the same disease.\n\nTwo centuries on, the stethoscope faces challengers of its own. Pocket ultrasound devices can now show a doctor the heart's chambers and valves directly, and some educators question whether students should spend long hours learning to interpret sounds that a machine can display as images. Defenders reply that the stethoscope remains cheap, instant and available everywhere, and that the habit of listening carefully to a patient's body is part of listening carefully to the patient. Laennec's own career suggests a standard for judging both sides: his tube mattered because it was joined to a disciplined way of reasoning, and any newer instrument will be judged by the same test.",
+      "questions": [
+        {
+          "key": "rc-32-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, why could Laennec not rely on the usual methods with his patient in 1816?",
+          "options": [
+            "Her heart sounds were too faint to be heard even with a paper tube.",
+            "She was suffering from tuberculosis, which made direct listening dangerous.",
+            "The Necker Hospital had banned physicians from examining patients' chests.",
+            "Direct listening had already been abandoned by physicians in Paris.",
+            "Her build made tapping on the chest uninformative, and her age and sex made it improper to put his ear to her chest."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 2: she 'was too stout for tapping on the chest to be informative, and her age and sex made it unthinkable for him to put his ear to her chest'."
+            ],
+            "trap": "The faint-sounds option reverses the outcome: with the paper roll he heard the heart 'more distinctly than he ever had'. Tuberculosis enters only in para 5, in another context."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what was the greater part of Laennec's achievement?",
+          "options": [
+            "Replacing the rolled paper with a hollow wooden tube",
+            "Giving the instrument a name taken from Greek words",
+            "Being the first physician to listen to sounds inside the chest",
+            "Systematically linking particular chest sounds with particular diseases by comparing his notes with post-mortem findings",
+            "Designing the version with two flexible earpieces"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 3: 'the device itself was the smaller part of his achievement'. His treatise 'set out, for the first time, a systematic correspondence between particular sounds and particular diseases', built on post-mortem comparison."
+            ],
+            "trap": "The 'first to listen' option ignores para 1: physicians already listened by pressing an ear to the chest. The two-earpiece version is never credited to Laennec."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "take off",
+            "take up",
+            "take after",
+            "take apart",
+            "take over"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Physicians who mocked or distrusted the tube were slow to start using it: slow to *take up* (adopt) the new instrument.",
+              "'Take off' (remove, or succeed suddenly), 'take after' (resemble), 'take apart' (dismantle) and 'take over' (gain control of) do not mean adopt."
+            ],
+            "trap": "'Take over' can sound like 'start using', but it means to assume control of something from someone else, which makes no sense with an instrument."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Before the stethoscope, physicians had no way of hearing sounds inside a patient's chest.\nII. Laennec's idea was prompted partly by his memory of children playing with a wooden beam.\nIII. Laennec compared what he heard in living patients with what post-mortem examinations revealed.",
+          "options": [
+            "Only II",
+            "Only III",
+            "Both I and III",
+            "All I, II and III",
+            "Both II and III"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "I is false: para 1 describes 'immediate' listening, with the ear pressed to the chest.",
+              "II is true: para 2.",
+              "III is true: para 3."
+            ],
+            "trap": "Statement I confuses 'no instrument' with 'no way of hearing'; the passage says direct listening 'could reveal a great deal'."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q05",
+          "subtype": "inference",
+          "prompt": "Why does the author call the fact described in paragraph 5 a \"melancholy footnote\"?",
+          "options": [
+            "Laennec died before his treatise could be published.",
+            "Laennec's own stethoscope failed to detect his illness.",
+            "Tuberculosis was rare in Paris, so his work on it was wasted.",
+            "Laennec died of the very disease whose signs in the chest he had described so precisely.",
+            "Other physicians went on mocking his instrument until he died."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 5: much of his work 'concerned tuberculosis' and he described its signs 'with great precision'; 'he died of the same disease'. The sad irony is what makes it melancholy."
+            ],
+            "trap": "The treatise option gets the dates wrong: the treatise appeared in 1819 and he died in 1826. Nothing is said about his stethoscope and his own illness."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Laennec's first stethoscope was a hollow wooden tube.",
+            "Laennec listened to hundreds of patients over the three years after his first experiment.",
+            "Some physicians feared that the stethoscope placed a barrier between doctor and patient.",
+            "The name 'stethoscope' comes from Greek words meaning 'chest' and 'to examine'.",
+            "Tuberculosis was then one of the commonest causes of death in Paris."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 2–3: his first instrument was a rolled sheaf of paper; 'The paper roll soon gave way to a hollow wooden tube'. The first statement is false.",
+              "The others are given in paras 3, 4 and 5."
+            ],
+            "trap": "The wooden tube was the first instrument he *named* the stethoscope, which makes the false statement tempting; the paper roll came first."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q07",
+          "subtype": "inference",
+          "prompt": "Which of the following best describes the author's position in the final paragraph?",
+          "options": [
+            "Pocket ultrasound devices should replace the stethoscope in medical training.",
+            "The stethoscope is superior to ultrasound in every respect.",
+            "An instrument's worth depends on the disciplined reasoning it serves, and both the stethoscope and newer devices should be judged on that basis.",
+            "Laennec would have rejected ultrasound devices had they existed.",
+            "Medical students should stop learning to interpret chest sounds."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "The author sets out both sides and then offers Laennec's career as 'a standard for judging both sides': his tube mattered 'because it was joined to a disciplined way of reasoning'. Any instrument faces 'the same test'."
+            ],
+            "trap": "Both the replace-it and the superior-in-every-respect options take one side of a debate that the author deliberately leaves to the standard."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "The stethoscope's importance lay less in the tube than in Laennec's systematic linking of sounds to disease, a standard by which newer tools can also be judged.",
+            "The stethoscope was invented by accident and accepted by physicians at once.",
+            "Laennec's death from tuberculosis shows that his instrument was of little use.",
+            "Pocket ultrasound devices have made the stethoscope obsolete.",
+            "Children's games have been the source of most medical inventions."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 3 says the device was 'the smaller part of his achievement'; para 6 applies the same standard of disciplined reasoning to modern devices."
+            ],
+            "trap": "The 'accepted at once' option contradicts para 4: it was 'received with mixed feelings' and many were slow to adopt it."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **received** as used in the passage.",
+          "options": [
+            "obtained",
+            "collected",
+            "greeted",
+            "acquired",
+            "admitted"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'The innovation was received with mixed feelings' describes how physicians reacted to it.",
+              "Received here = greeted (met with a particular reaction)."
+            ],
+            "trap": "'Obtained', 'collected' and 'acquired' are the everyday sense of receive (to get something); an innovation 'received with mixed feelings' is one that people reacted to in a certain way. 'Admitted' fits a patient received into hospital."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-32-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **crude** as used in the passage.",
+          "options": [
+            "rudimentary",
+            "sophisticated",
+            "unpolished",
+            "primitive",
+            "vulgar"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'a hollow wooden tube, crude by later standards' is simple and roughly made compared with modern stethoscopes.",
+              "The opposite is sophisticated."
+            ],
+            "trap": "Rudimentary, unpolished and primitive are synonyms; 'vulgar' is the sense of crude in 'a crude joke', which is a synonym too, not an opposite."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:science-history"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-33",
+      "subtype": "environment",
+      "difficulty": "extreme",
+      "title": "The flowering invader",
+      "stimulus": "Visitors to many Indian forests, from the Western Ghats to the foothills of the Himalayas, have admired the small clusters of orange, pink and yellow flowers that line the paths. Few realise that the shrub bearing them, *Lantana camara*, is one of the most serious threats those forests face. Native to Central and South America, lantana was brought to India in the early nineteenth century as an ornamental plant for gardens. It escaped, as such plants often do, and has since **claimed** a substantial share of the country's forest land.\n\nIts success owes much to a combination of traits. Lantana grows quickly, tolerates poor soil and drought, and forms dense thickets that shade out the grasses and herbs beneath it. Birds eat its berries and scatter the seeds widely. Its leaves are unpalatable, and in some cases toxic, to most grazing animals, so it is left alone while the native plants around it are eaten. Its thickets also burn readily, and in dry forests they can turn a slow ground fire into a fierce one.\n\nThe consequences ripple through the food chain. Where lantana replaces grasses, deer and other herbivores lose fodder, and forest managers fear that the carnivores which depend on them, tigers and leopards among them, will eventually feel the shortage. Forest-dwelling communities lose access to the plants they gather for food, fodder and medicine, and paths that were once open become difficult to walk.\n\nRemoving lantana has proved frustrating. Cutting it at ground level merely prompts it to send up fresh shoots from its roots, so that a cleared patch can be green again within a season. Foresters have had more success with a labour-intensive method in which each plant's stem is cut below the point where it joins the root, which prevents regrowth. Even then, the work is wasted unless the cleared ground is ______ **(blank)** with native grasses, because bare soil is quickly colonised again by lantana seedlings.\n\nSome forest communities have found an unexpected use for the plant. Its stems, which are strong and flexible once treated, can be made into furniture and baskets, and several programmes now pay local craftspeople to turn harvested lantana into goods for sale. The income is welcome, and the harvesting thins dense **stands** of the shrub. Critics caution, however, that an industry built on lantana could in time give people a reason to want it to remain; others reply that the plant is so widespread that there is no danger of its running short.\n\nMost ecologists now accept that lantana cannot be eliminated from India. The realistic goal is to keep it out of the places where it does the most harm, such as grasslands that sustain prey animals, the edges of water bodies and the core zones of protected areas, and to restore native vegetation there. That is a less satisfying ambition than eradication, but it is one that can actually be achieved. The deeper lesson of lantana, ecologists say, concerns the casualness with which it was introduced: a shrub planted for its beauty two centuries ago has become a problem that no single generation can solve.",
+      "questions": [
+        {
+          "key": "rc-33-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, why does lantana spread at the expense of native plants where animals graze?",
+          "options": [
+            "Grazing animals avoid its unpalatable, sometimes toxic, leaves while eating the native plants around it.",
+            "Its berries poison the birds that would otherwise spread the seeds of native plants.",
+            "It is protected by law, so foresters are not allowed to cut it.",
+            "Grazing animals eat its leaves and spread its seeds in their droppings.",
+            "It needs more water than native plants and dries out the soil around them."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 2: its leaves are unpalatable or toxic to most grazing animals, 'so it is left alone while the native plants around it are eaten'."
+            ],
+            "trap": "The seed-spreading option swaps the animals: *birds* eat the berries and scatter the seeds; grazing animals avoid the plant."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why does cutting lantana at ground level fail to remove it?",
+          "options": [
+            "It scatters the plant's seeds over a wider area.",
+            "The cut stems burn readily and start forest fires.",
+            "Its stems are too strong to be cut with ordinary tools.",
+            "It prompts the plant to send up fresh shoots from its roots, so the patch turns green again within a season.",
+            "Birds bring new seeds to the cleared patch within days."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4: 'Cutting it at ground level merely prompts it to send up fresh shoots from its roots, so that a cleared patch can be green again within a season.'"
+            ],
+            "trap": "Re-invasion by seedlings (para 4) is the risk *after* the better method, when bare soil is left unplanted; it is not why ground-level cutting fails."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "replanted",
+            "uprooted",
+            "invaded",
+            "abandoned",
+            "burnt"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "The sentence explains that bare soil is quickly taken over by lantana seedlings, so the ground must be covered again with native grasses: it must be *replanted* with them.",
+              "'Uprooted with native grasses', 'invaded with', 'abandoned with' and 'burnt with' make no sense and would not stop seedlings from colonising bare soil."
+            ],
+            "trap": "'Invaded' echoes the passage's theme, but the cleared ground has to be protected from invasion, not invaded."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Lantana was first brought to India as a garden plant.\nII. Lantana thickets can make forest fires fiercer.\nIII. When grasses decline, grazing animals come to depend on lantana leaves for fodder.",
+          "options": [
+            "Only I",
+            "Both I and II",
+            "Both II and III",
+            "Only III",
+            "All I, II and III"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "I is true: para 1, 'as an ornamental plant for gardens'.",
+              "II is true: para 2, thickets 'can turn a slow ground fire into a fierce one'.",
+              "III is false: para 2 says grazing animals leave lantana alone, and para 3 says herbivores *lose* fodder where it replaces grasses."
+            ],
+            "trap": "Statement III sounds like adaptation, but the passage says the leaves are unpalatable and toxic, which is exactly why herbivores lose out."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q05",
+          "subtype": "inference",
+          "prompt": "The critics' caution in paragraph 5 implies that:",
+          "options": [
+            "furniture made from lantana is of poor quality and will not sell",
+            "craftspeople will soon harvest lantana faster than it can grow back",
+            "programmes that pay craftspeople should be expanded across the country",
+            "a livelihood that depends on lantana could create an interest in keeping it, working against efforts to control it",
+            "harvesting lantana stems damages the native grasses around them"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 5: 'an industry built on lantana could in time give people a reason to want it to remain'. If people earn from the weed, they may not want it removed."
+            ],
+            "trap": "The option about harvesting faster than it grows is the *reply* to the critics' point ('no danger of its running short') turned upside down; it is not what the critics say."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage as a consequence of lantana's spread?",
+          "options": [
+            "Deer and other herbivores lose fodder.",
+            "Forest-dwelling communities lose access to plants they gather.",
+            "Streams in the forests have dried up because lantana draws up groundwater.",
+            "Paths that were once open become difficult to walk.",
+            "Forest managers fear that carnivores will eventually feel the shortage of prey."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3 lists the loss of fodder, the fear for carnivores, lost access to plants and blocked paths.",
+              "Water bodies appear only in para 6 as places to protect; no drying of streams is mentioned."
+            ],
+            "trap": "'Edges of water bodies' in para 6 may make the water claim look familiar, but nothing is said about lantana drying them up."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q07",
+          "subtype": "inference",
+          "prompt": "Which of the following best reflects the author's view on how lantana should be managed?",
+          "options": [
+            "All of India's forests should be cleared of lantana within one generation.",
+            "Lantana should be left alone because its stems are useful for making furniture.",
+            "Effort should be concentrated on keeping it out of the most vulnerable places and restoring native plants there, since total removal is unrealistic.",
+            "Cutting lantana at ground level should be carried out on a much larger scale.",
+            "Grasslands should be given up to lantana so that core zones can be protected."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 6: lantana 'cannot be eliminated'; 'The realistic goal is to keep it out of the places where it does the most harm… and to restore native vegetation there', an aim 'that can actually be achieved'."
+            ],
+            "trap": "The grasslands option reverses para 6: grasslands that sustain prey animals are among the places to protect."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Lantana is harmless to forests but troublesome for visitors who walk on forest paths.",
+            "An ornamental shrub introduced carelessly has become a widespread threat to Indian forests, and since it cannot be removed, it must be managed where it matters most.",
+            "The craft industry built on lantana has solved the problem of its spread.",
+            "Lantana can be wiped out within a few years if the right cutting method is used.",
+            "Birds are mainly responsible for the decline of India's forests."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Paras 1–3 explain how lantana spread and what it harms; para 4 why removal is hard; para 5 a partial use; para 6 the realistic goal and the lesson about careless introduction."
+            ],
+            "trap": "The cutting-method option ignores para 6: ecologists accept that lantana 'cannot be eliminated', and even the better method is 'labour-intensive'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **claimed** as used in the passage.",
+          "options": [
+            "asserted",
+            "demanded",
+            "declared",
+            "maintained",
+            "occupied"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Lantana 'has since claimed a substantial share of the country's forest land' means it has taken over that land.",
+              "Claimed here = occupied, taken over."
+            ],
+            "trap": "Asserted, declared and maintained are the 'say that something is true' sense of claim; 'demanded' is the 'ask for as a right' sense. A shrub takes land; it does not state or demand anything."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:environment"
+          ]
+        },
+        {
+          "key": "rc-33-q10",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **stands** as used in the passage.",
+          "options": [
+            "positions",
+            "opinions",
+            "stalls",
+            "pedestals",
+            "thickets"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "'the harvesting thins dense stands of the shrub' refers to dense growths of lantana.",
+              "Stands here = thickets, clumps of plants growing together."
+            ],
+            "trap": "'Positions' and 'opinions' fit 'take a stand'; 'stalls' and 'pedestals' are objects. Only thickets can be dense and thinned out."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:environment"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-34",
+      "subtype": "science-history",
+      "difficulty": "hard",
+      "title": "The curve of forgetting",
+      "stimulus": "In the early 1880s a German scholar named Hermann Ebbinghaus set out to do something many of his contemporaries thought impossible: to measure memory with the precision of a physics experiment. Working without a laboratory, he used the one subject who was always available, himself, and over several years put his own mind through thousands of tedious trials.\n\nHis first problem was that ordinary words carry meanings and associations, which make some of them easier to remember than others for reasons that have little to do with memory itself. Ebbinghaus's answer was to invent his own material: some two thousand three hundred \"nonsense syllables\", each made of a consonant, a vowel and a consonant that together formed no word. He would read a list of them aloud at a fixed pace until he could recite it without error.\n\nTo measure forgetting, he relearnt the same lists after intervals ranging from twenty minutes to a month and recorded how much less time the relearning took than the original learning. These **savings**, as he called them, showed something now familiar to every student. Forgetting is **steep** at first and then slows down: a large part of what is learnt is lost within the first day, after which the remainder fades much more gradually. Plotted on a graph, the results form what is now called the forgetting curve.\n\nEbbinghaus also noticed that the timing of practice mattered. Repetitions spread over several days fixed a list in memory more economically than the same number of repetitions crowded into a single sitting. More than a century of later research has confirmed this \"spacing effect\" with words, facts, skills and real classroom material. One explanation is that when a partly forgotten memory is ______ **(blank)** with effort, it is strengthened more than one that is still fresh. This is also why testing oneself, rather than rereading, tends to produce more lasting learning.\n\nThe findings carry an uncomfortable message for anyone preparing for an examination. Cramming the night before can produce good results the next morning, and it feels efficient because the material seems familiar. But much of what is crammed fades quickly, and familiarity is easily mistaken for mastery. A schedule that returns to each topic after a day, then a few days, then a week or two, feels slower and harder, yet leaves far more in memory when it is needed.\n\nEbbinghaus's work has limits that he himself acknowledged. He studied a single person, and nonsense syllables are forgotten faster than meaningful material, which can be linked to what one already knows. The exact shape of the curve differs from person to person and from subject to subject. But the broad pattern he found, rapid early forgetting and the power of spaced practice to slow it, has proved one of the most durable results in psychology.",
+      "questions": [
+        {
+          "key": "rc-34-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, why did Ebbinghaus invent nonsense syllables?",
+          "options": [
+            "Nonsense syllables were easier to read aloud at a fixed pace.",
+            "He wanted to study how people learn a foreign language.",
+            "Ordinary words carry meanings and associations that make some easier to remember for reasons unrelated to memory itself.",
+            "Real words were forgotten too quickly for him to measure.",
+            "He had no books from which to take lists of real words."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 2: ordinary words 'carry meanings and associations, which make some of them easier to remember than others for reasons that have little to do with memory itself'."
+            ],
+            "trap": "The 'forgotten too quickly' option reverses para 6: it is nonsense syllables that are forgotten faster than meaningful material."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, how did Ebbinghaus measure forgetting?",
+          "options": [
+            "He counted how many syllables he could recall without looking at the list again.",
+            "He asked other people to learn his lists and tested them a month later.",
+            "He timed how long he could go on reciting a list without making an error.",
+            "He compared his memory of nonsense syllables with his memory of real words.",
+            "He relearnt the same lists after various intervals and recorded how much less time the relearning took."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 3: he 'relearnt the same lists after intervals ranging from twenty minutes to a month and recorded how much less time the relearning took than the original learning'."
+            ],
+            "trap": "Counting what he could recall is a natural way to measure memory, but it is not the method the passage describes; his measure was relearning time saved."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "retired",
+            "retrieved",
+            "replaced",
+            "rejected",
+            "refused"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "The explanation concerns a partly forgotten memory that is called back to mind with effort; that act strengthens it. The memory is *retrieved*.",
+              "The next sentence supports this: testing oneself (pulling information out of memory) works better than rereading."
+            ],
+            "trap": "'Replaced' looks similar, but a replaced memory would be swapped for another, not strengthened."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following is/are true according to the passage?\n(A) Ebbinghaus tested a large group of volunteers in a laboratory.\n(B) Meaningful material is forgotten more slowly than nonsense syllables.\n(C) The spacing effect has been confirmed with real classroom material.",
+          "options": [
+            "Only (B)",
+            "Both (A) and (C)",
+            "Both (B) and (C)",
+            "All of these",
+            "None of these"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "(A) is false: he worked 'without a laboratory' and was his own subject; para 6, 'He studied a single person'.",
+              "(B) is true: para 6.",
+              "(C) is true: para 4."
+            ],
+            "trap": "Statement (A) may sound like normal scientific practice, but the passage stresses the opposite."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q05",
+          "subtype": "inference",
+          "prompt": "Which of the following study plans for a candidate with four weeks left would the passage most strongly support?",
+          "options": [
+            "Read each topic once carefully and then revise everything on the last night.",
+            "Reread each chapter several times in a single sitting until it feels familiar.",
+            "Spend the first three weeks on new topics and the final week rereading notes.",
+            "Return to each topic after a day, then a few days, then a week or two, testing oneself on it each time.",
+            "Practise lists of nonsense syllables every day to strengthen memory in general."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 5 recommends returning 'after a day, then a few days, then a week or two'; para 4 says testing oneself beats rereading. The first plan combines both."
+            ],
+            "trap": "The familiarity plan is the trap para 5 warns about: 'familiarity is easily mistaken for mastery'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Ebbinghaus acknowledged that his work had limits.",
+            "The intervals before relearning ranged from twenty minutes to a month.",
+            "Ebbinghaus found that forgetting goes on at a steady rate throughout the month after learning.",
+            "The exact shape of the forgetting curve varies from person to person.",
+            "Testing oneself tends to produce more lasting learning than rereading."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: forgetting 'is steep at first and then slows down'. A steady rate contradicts this, so the first statement is false.",
+              "The others are given in paras 3, 4 and 6."
+            ],
+            "trap": "The intervals statement is true and also mentions 'a month', which can make the steady-rate claim feel like it comes from the same sentence."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q07",
+          "subtype": "inference",
+          "prompt": "Why does the author describe the message for examination candidates as \"uncomfortable\"?",
+          "options": [
+            "Spaced revision is impossible for most candidates to follow.",
+            "Cramming always leads to poor results the next morning.",
+            "Examinations test material that is as meaningless as nonsense syllables.",
+            "Candidates do not like being told about psychology research.",
+            "The method that feels efficient and gives good results the next morning is actually a poor way to keep material for long."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 5: cramming 'can produce good results the next morning' and 'feels efficient', 'But much of what is crammed fades quickly'. What feels right is not what works, which is the uncomfortable part."
+            ],
+            "trap": "The 'poor results the next morning' option reverses para 5, which concedes that cramming can work in the short run."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Ebbinghaus's experiments on himself revealed rapid early forgetting and the value of spaced practice, findings that have lasted despite the limits of his method.",
+            "Ebbinghaus proved that memory works in exactly the same way in everyone.",
+            "Nonsense syllables are the best material for anyone trying to learn quickly.",
+            "Cramming is the most reliable way to prepare for an examination.",
+            "Later research has overturned most of Ebbinghaus's findings."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Paras 1–4 describe his method and the two findings; para 5 applies them; para 6 notes the limits but calls the broad pattern 'one of the most durable results in psychology'."
+            ],
+            "trap": "The 'exactly the same way in everyone' option contradicts para 6: the curve 'differs from person to person'."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q09",
+          "subtype": "synonym",
+          "prompt": "As used in the passage, the word **savings** refers to:",
+          "options": [
+            "money that is set aside for the future",
+            "the syllables that he could still remember",
+            "discounts offered on the price of something",
+            "the reduction in the time needed to relearn a list",
+            "rescues of people from danger"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 3 defines it: he recorded 'how much less time the relearning took than the original learning. These savings, as he called them…'",
+              "Savings here = the reduction in relearning time."
+            ],
+            "trap": "'The syllables he could still remember' sounds like what memory 'saves', but Ebbinghaus measured time saved in relearning, not a count of syllables."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:science-history"
+          ]
+        },
+        {
+          "key": "rc-34-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **steep** as used in the passage.",
+          "options": [
+            "sharp",
+            "gradual",
+            "abrupt",
+            "expensive",
+            "lofty"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "'Forgetting is steep at first and then slows down' means it falls sharply at first.",
+              "The opposite is gradual, which the passage itself uses for the later stage ('fades much more gradually')."
+            ],
+            "trap": "'Sharp' and 'abrupt' are synonyms; 'expensive' is the sense of steep in 'a steep price', and 'lofty' the sense of a steep, high cliff. Neither is an opposite."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:science-history"
+          ]
+        }
+      ]
     }
   ]
 }

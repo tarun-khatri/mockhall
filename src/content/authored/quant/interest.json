@@ -655,6 +655,1949 @@
         "template:ci-varying-rates",
         "interest:compound"
       ]
+    },
+    {
+      "key": "in-026",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Manoj borrowed ₹25,000 at 10% per annum simple interest and lent the same amount at 10% per annum compound interest, compounded annually. Find his gain at the end of 2 years.",
+      "options": [
+        "₹500",
+        "₹2,500",
+        "₹250",
+        "₹225",
+        "₹300"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "CI earned = 21% of 25,000 = ₹5,250; SI paid = 20% of 25,000 = ₹5,000.",
+          "Gain = 5,250 − 5,000 = ₹250."
+        ],
+        "shortcut": "At the same rate, 2-year CI − SI = P × (r/100)² = 25,000 × 0.01 = ₹250.",
+        "trap": "₹2,500 is one year's interest; the gain is only the extra interest-on-interest, 10% of ₹2,500."
+      },
+      "tags": [
+        "template:borrow-si-lend-ci",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-027",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "In what time will ₹9,600 earn ₹1,620 as simple interest at 7.5% per annum?",
+      "options": [
+        "2 years 4 months",
+        "2 years 3 months",
+        "2 years 6 months",
+        "2 years 2 months",
+        "1 year 9 months"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interest for 1 year = 9,600 × 7.5 ÷ 100 = ₹720.",
+          "Time = 1,620 ÷ 720 = 2.25 years = 2 years 3 months."
+        ],
+        "trap": "0.25 of a year is ¼ × 12 = 3 months, so 2.25 years is 2 years 3 months, not 2 years 2 months."
+      },
+      "tags": [
+        "template:time-for-si",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-028",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "On a certain sum, the simple interest for 2 years at a certain rate is ₹3,600. The compound interest (compounded annually) on the same sum at the same rate for 2 years exceeds this simple interest by ₹216. Find the rate of interest per annum.",
+      "options": [
+        "6%",
+        "12%",
+        "10%",
+        "8%",
+        "15%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "SI for 1 year = 3,600 ÷ 2 = ₹1,800.",
+          "CI − SI for 2 years = interest on the first year's interest = 1,800 × r/100 = 216 → r = 12%.",
+          "Check: sum = ₹15,000; CI = 15,000 × 0.2544 = ₹3,816 = 3,600 + 216."
+        ],
+        "shortcut": "r = (CI − SI) × 200 ÷ SI = 216 × 200 ÷ 3,600 = 12%.",
+        "trap": "6% divides ₹216 by the whole 2-year SI of ₹3,600; the extra ₹216 is interest on only ONE year's interest (₹1,800)."
+      },
+      "tags": [
+        "template:ci-si-difference",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-029",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pooja invested ₹P at 10% per annum compound interest, compounded annually, for 2 years and ₹(P − 5,000) at 8% per annum simple interest for 2 years. The compound interest exceeded the simple interest by ₹2,800. Find P.",
+      "options": [
+        "₹35,000",
+        "₹56,000",
+        "₹40,000",
+        "₹45,000",
+        "₹36,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "CI = 21% of P = 0.21P; SI = 16% of (P − 5,000) = 0.16P − 800.",
+          "0.21P − 0.16P + 800 = 2,800 → 0.05P = 2,000 → P = 40,000.",
+          "Check: ₹8,400 − ₹5,600 = ₹2,800."
+        ],
+        "trap": "₹56,000 ignores the ₹800 from the smaller second principal (2,800 ÷ 0.05); ₹35,000 is the second principal."
+      },
+      "tags": [
+        "template:two-scheme-difference",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-030",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "₹55,000 is divided into two parts such that the simple interest on the first part at 5% per annum for 8 years equals the simple interest on the second part at 8% per annum for 6 years. Find the first part.",
+      "options": [
+        "₹25,000",
+        "₹27,500",
+        "₹32,000",
+        "₹33,000",
+        "₹30,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "First earns 40% of itself; second earns 48% of itself.",
+          "40a = 48b → a : b = 48 : 40 = 6 : 5.",
+          "First part = 6/11 × 55,000 = ₹30,000."
+        ],
+        "trap": "₹25,000 is the second part; the part earning the lower total percentage (40%) must be larger."
+      },
+      "tags": [
+        "template:equal-interest",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-031",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The compound interest on a sum for 2 years at 20% per annum, compounded annually, is ₹2,800 more than the simple interest on the same sum at 15% per annum for 2 years. Find the sum.",
+      "options": [
+        "₹70,000",
+        "₹28,000",
+        "₹20,000",
+        "₹18,000",
+        "₹25,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "CI at 20% for 2 years = 44% of the sum; SI at 15% for 2 years = 30% of the sum.",
+          "44% − 30% = 14% of the sum = ₹2,800 → sum = ₹20,000."
+        ],
+        "shortcut": "20% compounded for 2 years = 20 + 20 + 4 = 44%.",
+        "trap": "₹28,000 uses 40% for the CI (treating it as simple); ₹70,000 compares CI and SI both at 20%, a gap of only 4%."
+      },
+      "tags": [
+        "template:ci-vs-si-different-rate",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-032",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A sum of ₹25,000 amounts to ₹32,500 in 5 years at simple interest. If the rate of interest is increased by 2% per annum, what simple interest will ₹30,000 earn in 6 years?",
+      "options": [
+        "₹14,400",
+        "₹10,800",
+        "₹12,600",
+        "₹16,200",
+        "₹44,400"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interest = 32,500 − 25,000 = ₹7,500 → rate = 7,500 × 100 ÷ (25,000 × 5) = 6%.",
+          "New rate = 8%; SI = 30,000 × 8 × 6 ÷ 100 = ₹14,400."
+        ],
+        "trap": "₹44,400 is the amount (principal + interest); the question asks for the interest. ₹10,800 keeps the old 6% rate."
+      },
+      "tags": [
+        "template:rate-then-new-rate",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-033",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ramesh divided ₹50,000 between two schemes. Scheme A pays 8% per annum simple interest for 3 years and scheme B pays 12% per annum simple interest for 4 years. The interests from A and B are in the ratio 3 : 4. How much did he invest in scheme B?",
+      "options": [
+        "₹30,000",
+        "₹25,000",
+        "₹24,000",
+        "₹20,000",
+        "₹28,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "A earns 24% of its sum (a); B earns 48% of its sum (b).",
+          "0.24a : 0.48b = 3 : 4 → 0.96a = 1.44b → a : b = 3 : 2.",
+          "B = 2/5 × 50,000 = ₹20,000 (A = ₹30,000; interests ₹7,200 and ₹9,600)."
+        ],
+        "trap": "₹30,000 is scheme A's share; the 3 : 4 is the ratio of interests, not of the sums."
+      },
+      "tags": [
+        "template:two-scheme-ratio",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-034",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Gaurav lent ₹36,000, a part at 7% per annum and the rest at 11% per annum simple interest. The total interest he received at the end of one year was ₹3,420. Find the ratio of the part lent at 7% to the part lent at 11%.",
+      "options": [
+        "5 : 3",
+        "2 : 3",
+        "3 : 4",
+        "3 : 5",
+        "5 : 7"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Average rate = 3,420 × 100 ÷ 36,000 = 9.5%.",
+          "Alligation: 7% part : 11% part = (11 − 9.5) : (9.5 − 7) = 1.5 : 2.5 = 3 : 5.",
+          "Check: ₹13,500 at 7% + ₹22,500 at 11% = 945 + 2,475 = ₹3,420."
+        ],
+        "trap": "5 : 3 is the reverse ratio; the average 9.5% is nearer 11%, so more money is at 11%."
+      },
+      "tags": [
+        "template:split-sum",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-035",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A sum of money becomes 3 times itself in 12 years at simple interest. In how many years will it become 5 times itself at the same rate?",
+      "options": [
+        "20 years",
+        "24 years",
+        "18 years",
+        "30 years",
+        "36 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "3 times → interest = 2 × sum in 12 years, so interest equal to the sum takes 6 years.",
+          "5 times → interest = 4 × sum → 4 × 6 = 24 years."
+        ],
+        "trap": "20 years scales 12 × 5/3 using the amount; simple interest grows with the interest (2 parts → 4 parts), not the amount."
+      },
+      "tags": [
+        "template:sum-multiple",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-036",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Farida invested a sum at 12% per annum simple interest for 3 years. She then invested the entire amount at 10% per annum compound interest, compounded annually, for 2 years and earned ₹5,712 as compound interest. Find the sum she first invested.",
+      "options": [
+        "₹27,200",
+        "₹22,400",
+        "₹20,000",
+        "₹18,000",
+        "₹24,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "CI = 21% of the reinvested amount → amount = 5,712 ÷ 0.21 = ₹27,200.",
+          "Amount = sum × (1 + 0.36) → sum = 27,200 ÷ 1.36 = ₹20,000."
+        ],
+        "trap": "₹27,200 is the amount after the simple-interest stage; one more step back gives the original sum."
+      },
+      "tags": [
+        "template:si-to-ci-reinvest",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-037",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A bank pays compound interest at 12% for the first year and 15% for the second year. If the compound interest earned on a deposit over the 2 years is ₹7,200, find the deposit.",
+      "options": [
+        "₹24,000",
+        "₹28,800",
+        "₹26,500",
+        "₹30,000",
+        "₹25,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Growth factor = 1.12 × 1.15 = 1.288, so CI = 28.8% of the deposit.",
+          "Deposit = 7,200 ÷ 0.288 = ₹25,000."
+        ],
+        "shortcut": "Effective rate = 12 + 15 + (12 × 15)/100 = 28.8%.",
+        "trap": "Using 12% + 15% = 27% gives about ₹26,667, which is not an option; ₹28,800 confuses the 28.8% rate with the deposit."
+      },
+      "tags": [
+        "template:ci-varying-rates",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-038",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ishaan borrowed a sum at 12% per annum simple interest and immediately lent it at 16% per annum compound interest, compounded annually. At the end of 2 years he gained ₹2,640. Find the sum.",
+      "options": [
+        "₹25,000",
+        "₹33,000",
+        "₹22,500",
+        "₹27,500",
+        "₹20,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "CI at 16% for 2 years = 16 + 16 + 2.56 = 34.56% of the sum; SI at 12% for 2 years = 24%.",
+          "Gain = 10.56% of the sum = ₹2,640 → sum = 2,640 ÷ 0.1056 = ₹25,000."
+        ],
+        "trap": "₹33,000 takes the lending side as simple interest (32% − 24% = 8%)."
+      },
+      "tags": [
+        "template:borrow-si-lend-ci",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-039",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Find the ratio of the simple interest to the compound interest (compounded annually) on the same sum at 10% per annum for 2 years.",
+      "options": [
+        "20 : 21",
+        "21 : 20",
+        "10 : 11",
+        "11 : 10",
+        "19 : 21"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "SI for 2 years = 20% of the sum; CI for 2 years = 10 + 10 + 1 = 21% of the sum.",
+          "SI : CI = 20 : 21."
+        ],
+        "trap": "21 : 20 is CI : SI, the reverse order."
+      },
+      "tags": [
+        "template:si-ci-ratio",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-040",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A sum invested at compound interest, compounded annually, grows to ₹18,000 in 2 years and to ₹21,600 in 3 years. Find the compound interest earned in the first 2 years.",
+      "options": [
+        "₹3,600",
+        "₹7,200",
+        "₹5,500",
+        "₹6,000",
+        "₹5,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interest in year 3 = 21,600 − 18,000 = ₹3,600 on ₹18,000 → rate = 20%.",
+          "Sum = 18,000 ÷ 1.2² = 18,000 ÷ 1.44 = ₹12,500.",
+          "CI for 2 years = 18,000 − 12,500 = ₹5,500."
+        ],
+        "trap": "₹7,200 assumes ₹3,600 of interest in each of the first two years; they were ₹2,500 and ₹3,000."
+      },
+      "tags": [
+        "template:amounts-two-years",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-041",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "₹44,200 is divided between Asha and Bina so that the amount Asha receives after 3 years equals the amount Bina receives after 5 years, both invested at 10% per annum compound interest, compounded annually. Find Asha's share.",
+      "options": [
+        "₹24,200",
+        "₹20,000",
+        "₹22,100",
+        "₹23,100",
+        "₹25,200"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "a × 1.1³ = b × 1.1⁵ → a = b × 1.1² = 1.21b.",
+          "a : b = 121 : 100 → Asha = 121/221 × 44,200 = ₹24,200 (Bina ₹20,000)."
+        ],
+        "shortcut": "Only the 2-year gap matters: shares are in the ratio 1.1² : 1 = 121 : 100.",
+        "trap": "₹20,000 is Bina's share; Asha's money grows for 2 fewer years, so her share must be the larger one."
+      },
+      "tags": [
+        "template:equal-amounts-split",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-042",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Kiran lent two sums of money, one at 6% per annum simple interest for 5 years and the other at 10% per annum simple interest for 4 years. The interests received were in the ratio 3 : 5. Find the ratio of the first sum to the second sum.",
+      "options": [
+        "5 : 4",
+        "3 : 5",
+        "9 : 10",
+        "6 : 5",
+        "4 : 5"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "First earns 30% of its sum (a); second earns 40% of its sum (b).",
+          "0.3a : 0.4b = 3 : 5 → 1.5a = 1.2b → a : b = 1.2 : 1.5 = 4 : 5."
+        ],
+        "trap": "5 : 4 is the reverse ratio; 3 : 5 is the ratio of the interests, not of the sums."
+      },
+      "tags": [
+        "template:two-scheme-ratio",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-043",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Tarun split ₹46,000 into two parts. He lent the first part at 9% per annum simple interest for 4 years and the second part at 12% per annum simple interest for 2 years. The interest on the first part exceeded the interest on the second part by ₹3,360. Find the second part.",
+      "options": [
+        "₹24,000",
+        "₹23,000",
+        "₹20,000",
+        "₹26,000",
+        "₹22,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the first part be a: 0.36a − 0.24(46,000 − a) = 3,360.",
+          "0.6a − 11,040 = 3,360 → a = 24,000, so the second part = 46,000 − 24,000 = ₹22,000.",
+          "Check: ₹8,640 − ₹5,280 = ₹3,360."
+        ],
+        "trap": "₹24,000 is the first part; the question asks for the second."
+      },
+      "tags": [
+        "template:two-scheme-difference",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-044",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rekha invested ₹x at 10% per annum compound interest, compounded annually, and ₹(x + 3,000) at 8% per annum simple interest, both for 2 years. Both investments earned the same interest. Find x.",
+      "options": [
+        "₹12,600",
+        "₹8,000",
+        "₹12,000",
+        "₹9,600",
+        "₹9,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "CI = 21% of x = 0.21x; SI = 16% of (x + 3,000) = 0.16x + 480.",
+          "0.21x = 0.16x + 480 → 0.05x = 480 → x = 9,600."
+        ],
+        "trap": "₹12,000 treats the 10% interest as simple (0.2x = 0.16x + 480); compounding makes it 21%."
+      },
+      "tags": [
+        "template:equal-interest",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-045",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "On a certain sum, the compound interest for 2 years at 15% per annum, compounded annually, exceeds the simple interest for 2 years at 12% per annum by ₹3,300. Find the sum.",
+      "options": [
+        "₹55,000",
+        "₹44,000",
+        "₹40,000",
+        "₹36,000",
+        "₹48,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "CI at 15% for 2 years = 15 + 15 + 2.25 = 32.25% of the sum; SI at 12% for 2 years = 24%.",
+          "32.25% − 24% = 8.25% of the sum = ₹3,300 → sum = ₹40,000."
+        ],
+        "trap": "₹55,000 treats the 15% as simple (30% − 24% = 6%) and forgets the 2.25% interest-on-interest."
+      },
+      "tags": [
+        "template:ci-vs-si-different-rate",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-046",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "At 12% per annum compound interest, compounded annually, the interest for the second year on a sum is ₹180 more than the interest for the first year. Find the sum.",
+      "options": [
+        "₹15,000",
+        "₹1,500",
+        "₹12,000",
+        "₹12,500",
+        "₹13,500"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The second year's extra interest is 12% of the first year's interest.",
+          "First-year interest = 180 ÷ 0.12 = ₹1,500 → sum = 1,500 ÷ 0.12 = ₹12,500."
+        ],
+        "shortcut": "Extra = P × (r/100)² → P = 180 ÷ 0.0144 = ₹12,500.",
+        "trap": "₹1,500 is the first year's interest, not the sum; divide by 12% once more."
+      },
+      "tags": [
+        "template:ci-nth-year",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-047",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "In how many years will ₹16,500 amount to ₹22,440 at 9% per annum simple interest?",
+      "options": [
+        "4 years",
+        "3 years",
+        "5 years",
+        "6 years",
+        "4.5 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interest = 22,440 − 16,500 = ₹5,940; interest for 1 year = 9% of 16,500 = ₹1,485.",
+          "Time = 5,940 ÷ 1,485 = 4 years."
+        ],
+        "trap": "Dividing the amount ₹22,440 instead of the interest by ₹1,485 gives about 15 years; first subtract the principal."
+      },
+      "tags": [
+        "template:time-for-si",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-048",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Mohan earned ₹5,670 as simple interest on ₹13,500 in 6 years. If the rate is raised by 1.5% per annum, in how many years will ₹16,000 earn ₹6,800 as simple interest?",
+      "options": [
+        "4 years",
+        "6 years",
+        "4.5 years",
+        "5 years",
+        "5.5 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Old rate = 5,670 × 100 ÷ (13,500 × 6) = 7% per annum; new rate = 8.5%.",
+          "Interest per year = 16,000 × 8.5 ÷ 100 = ₹1,360.",
+          "Time = 6,800 ÷ 1,360 = 5 years."
+        ],
+        "trap": "Keeping the old 7% gives ₹1,120 a year and about 6 years; the rate has risen to 8.5%."
+      },
+      "tags": [
+        "template:rate-then-new-rate",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-049",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vinod deposits ₹2,000 at the beginning of each year for 3 years in a scheme that pays 10% per annum simple interest. What total amount will he have at the end of the third year?",
+      "options": [
+        "₹6,600",
+        "₹7,800",
+        "₹6,000",
+        "₹7,282",
+        "₹7,200"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "1st deposit earns 3 years: 2,000 × 1.3 = ₹2,600; 2nd earns 2 years: ₹2,400; 3rd earns 1 year: ₹2,200.",
+          "Total = 2,600 + 2,400 + 2,200 = ₹7,200."
+        ],
+        "trap": "₹7,800 gives every deposit 3 years of interest; the later deposits stay in for 2 years and 1 year. ₹7,282 compounds the interest."
+      },
+      "tags": [
+        "template:recurring-deposit",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-050",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Leela invested ₹75,000 in three parts at 5%, 8% and 10% per annum simple interest. The part invested at 8% is twice the part invested at 5%, and her total interest for one year is ₹6,600. Find the part invested at 10%.",
+      "options": [
+        "₹45,000",
+        "₹20,000",
+        "₹10,000",
+        "₹40,000",
+        "₹35,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the 5% part be a, the 8% part 2a and the 10% part 75,000 − 3a.",
+          "0.05a + 0.16a + 0.10(75,000 − 3a) = 6,600 → 7,500 − 0.09a = 6,600 → a = 10,000.",
+          "10% part = 75,000 − 30,000 = ₹45,000."
+        ],
+        "trap": "₹20,000 is the 8% part; ₹10,000 is the 5% part."
+      },
+      "tags": [
+        "template:split-sum",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-051",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "₹5,000 becomes ₹10,000 in 3 years at compound interest, compounded annually. In how many more years will it become ₹40,000 at the same rate?",
+      "options": [
+        "9 years",
+        "3 years",
+        "6 years",
+        "12 years",
+        "4.5 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "At compound interest the sum doubles every 3 years.",
+          "₹5,000 → ₹10,000 → ₹20,000 → ₹40,000 is 3 doublings = 9 years in all.",
+          "More years needed = 9 − 3 = 6 years."
+        ],
+        "trap": "9 years is the total time from the start; the question asks how many MORE years after the first 3."
+      },
+      "tags": [
+        "template:sum-multiple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-052",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Uday invested ₹25,000 at 20% per annum compound interest, compounded annually, for 2 years. He then invested the amount at 7.5% per annum simple interest for 4 years. Find the total interest he earned from both investments.",
+      "options": [
+        "₹21,800",
+        "₹18,500",
+        "₹10,800",
+        "₹46,800",
+        "₹22,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "CI = 44% of 25,000 = ₹11,000; amount = ₹36,000.",
+          "SI on ₹36,000 at 7.5% for 4 years = 30% of 36,000 = ₹10,800.",
+          "Total interest = 11,000 + 10,800 = ₹21,800."
+        ],
+        "trap": "₹18,500 computes the second-stage interest on the original ₹25,000 (₹7,500); the whole ₹36,000 was reinvested. ₹46,800 is the final amount, not the interest."
+      },
+      "tags": [
+        "template:ci-to-si-reinvest",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-053",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Pallavi deposited ₹40,000 in a scheme that paid 10% compound interest in the first year and r% in the second year. At the end of 2 years she received ₹50,600. Find r.",
+      "options": [
+        "15%",
+        "16.5%",
+        "12%",
+        "13.5%",
+        "14%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "After year 1: 40,000 × 1.1 = ₹44,000.",
+          "Second-year interest = 50,600 − 44,000 = ₹6,600 on ₹44,000 → r = 6,600 × 100 ÷ 44,000 = 15%."
+        ],
+        "trap": "16.5% treats the total ₹10,600 as simple interest on ₹40,000 (26.5% − 10%); the second year's rate applies to ₹44,000."
+      },
+      "tags": [
+        "template:ci-varying-rates",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-054",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rajiv borrowed ₹50,000 at 6% per annum simple interest and lent the whole sum at 8% per annum compound interest, compounded half-yearly. Find his gain at the end of 1 year.",
+      "options": [
+        "₹1,000",
+        "₹4,080",
+        "₹1,160",
+        "₹980",
+        "₹1,080"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Half-yearly at 8% per annum = 4% per half-year for 2 periods: CI = 50,000 × (1.04² − 1) = 50,000 × 0.0816 = ₹4,080.",
+          "SI paid = 6% of 50,000 = ₹3,000.",
+          "Gain = 4,080 − 3,000 = ₹1,080."
+        ],
+        "shortcut": "4% per half-year for 2 periods = 4 + 4 + 0.16 = 8.16% a year.",
+        "trap": "₹1,000 ignores the half-yearly compounding (8% − 6% of 50,000); ₹4,080 is the interest earned, not the gain."
+      },
+      "tags": [
+        "template:borrow-si-lend-ci",
+        "interest:half-yearly",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-055",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Scheme A: ₹20,000 at r% per annum simple interest for 4 years. Scheme B: ₹25,000 at (r + 3)% per annum simple interest for 2 years. The interests from A and B are in the ratio 8 : 7. Find r.",
+      "options": [
+        "10.5%",
+        "7.5%",
+        "7%",
+        "8%",
+        "6%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Interest A = 20,000 × r × 4 ÷ 100 = 800r; interest B = 25,000 × (r + 3) × 2 ÷ 100 = 500(r + 3).",
+          "7 × 800r = 8 × 500(r + 3) → 5,600r = 4,000r + 12,000 → r = 7.5.",
+          "Check: ₹6,000 : ₹5,250 = 8 : 7."
+        ],
+        "trap": "10.5% is scheme B's rate (r + 3); the question asks for r."
+      },
+      "tags": [
+        "template:two-scheme-ratio",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-056",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Equal sums were invested in two plans. Plan X pays 20% per annum compound interest, compounded annually, for 2 years; plan Y pays 12% per annum simple interest for 3 years. Plan X gave ₹2,000 more interest than plan Y. Find the sum invested in each plan.",
+      "options": [
+        "₹50,000",
+        "₹20,000",
+        "₹30,000",
+        "₹25,000",
+        "₹12,500"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Plan X: 20% compounded for 2 years = 44% of the sum. Plan Y: 12 × 3 = 36% of the sum.",
+          "44% − 36% = 8% of the sum = ₹2,000 → sum = ₹25,000 in each plan."
+        ],
+        "trap": "₹50,000 takes plan X as simple interest (40% − 36% = 4%); compounding adds 4% more."
+      },
+      "tags": [
+        "template:two-scheme-difference",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-057",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "₹15,000 lent at r% per annum simple interest for 4 years earns the same interest as ₹18,000 lent at (r + 1)% per annum simple interest for 3 years. Find r.",
+      "options": [
+        "9%",
+        "10%",
+        "8%",
+        "12%",
+        "7.5%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "15,000 × r × 4 = 18,000 × (r + 1) × 3 → 60,000r = 54,000r + 54,000.",
+          "6,000r = 54,000 → r = 9% (the second loan is at 10%; both earn ₹5,400)."
+        ],
+        "trap": "10% is the second loan's rate (r + 1); the question asks for r."
+      },
+      "tags": [
+        "template:equal-interest",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-058",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "On ₹50,000, the compound interest for 2 years at r% per annum, compounded annually, exceeds the simple interest for 2 years at 8% per annum by ₹2,500. Find r.",
+      "options": [
+        "10.5%",
+        "12%",
+        "10%",
+        "9%",
+        "11%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "SI at 8% for 2 years = ₹8,000, so CI = 8,000 + 2,500 = ₹10,500.",
+          "Amount = ₹60,500 → (1 + r/100)² = 60,500 ÷ 50,000 = 1.21 → 1 + r/100 = 1.1 → r = 10%."
+        ],
+        "trap": "10.5% halves the 21% CI as if it were simple interest; compound interest for 2 years at 10% is 21%."
+      },
+      "tags": [
+        "template:ci-vs-si-different-rate",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A sum lent at simple interest amounts to ₹14,880 in 3 years and to ₹16,800 in 5 years. What will it amount to in 8 years?",
+      "options": [
+        "₹20,160",
+        "₹18,720",
+        "₹21,600",
+        "₹19,680",
+        "₹19,200"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interest for 2 years = 16,800 − 14,880 = ₹1,920 → ₹960 per year.",
+          "Sum = 14,880 − 3 × 960 = ₹12,000.",
+          "Amount in 8 years = 12,000 + 8 × 960 = ₹19,680."
+        ],
+        "shortcut": "From year 5 to year 8 add 3 × 960: 16,800 + 2,880 = ₹19,680.",
+        "trap": "₹18,720 adds interest for only 7 years; count all 8 years of ₹960 on the ₹12,000 sum."
+      },
+      "tags": [
+        "template:amounts-two-years",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-060",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "At 20% per annum compound interest, compounded annually, the interest for the third year on a sum is ₹2,880. Find the sum.",
+      "options": [
+        "₹14,400",
+        "₹12,000",
+        "₹4,800",
+        "₹8,000",
+        "₹10,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Third-year interest = 20% of the amount at the end of year 2 = 0.2 × 1.44 × sum = 0.288 × sum.",
+          "Sum = 2,880 ÷ 0.288 = ₹10,000."
+        ],
+        "trap": "₹14,400 is the amount at the end of year 2 (2,880 ÷ 0.2); go back two more years: 14,400 ÷ 1.44."
+      },
+      "tags": [
+        "template:ci-nth-year",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-061",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The difference between the compound interest (compounded annually) and the simple interest on a sum for 3 years at 20% per annum is ₹4,480. Find the compound interest on the same sum at the same rate for 2 years.",
+      "options": [
+        "₹14,000",
+        "₹15,400",
+        "₹1,400",
+        "₹16,800",
+        "₹25,480"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "3-year CI at 20% = 72.8% of the sum; 3-year SI = 60% → difference = 12.8% of the sum.",
+          "Sum = 4,480 ÷ 0.128 = ₹35,000.",
+          "2-year CI = 44% of 35,000 = ₹15,400."
+        ],
+        "shortcut": "3-year CI − SI = P(r/100)²(3 + r/100) = P × 0.04 × 3.2 = 0.128P.",
+        "trap": "₹14,000 is the 2-year simple interest (40%); ₹25,480 is the 3-year CI."
+      },
+      "tags": [
+        "template:ci-si-difference",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-062",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ashok earned ₹1,512 as simple interest on ₹8,400 in 2 years 3 months. At a rate 2.5% per annum higher, what simple interest would ₹12,000 earn in 3 years 6 months?",
+      "options": [
+        "₹3,360",
+        "₹4,410",
+        "₹4,200",
+        "₹3,780",
+        "₹4,620"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "2 years 3 months = 2.25 years → old rate = 1,512 × 100 ÷ (8,400 × 2.25) = 8%.",
+          "New rate = 10.5%; SI = 12,000 × 10.5 × 3.5 ÷ 100 = ₹4,410."
+        ],
+        "trap": "₹3,780 uses only 3 years; ₹4,200 rounds the new rate to 10%."
+      },
+      "tags": [
+        "template:rate-then-new-rate",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-063",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Out of ₹50,000, Meera put a part in a deposit paying 10% per annum compound interest, compounded annually, and the rest in a bond paying 12% per annum simple interest. After 2 years her total interest was ₹11,400. How much did she put in the deposit?",
+      "options": [
+        "₹30,000",
+        "₹25,000",
+        "₹24,000",
+        "₹20,000",
+        "₹15,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Deposit earns 21% in 2 years; bond earns 24% in 2 years.",
+          "0.21d + 0.24(50,000 − d) = 11,400 → 12,000 − 0.03d = 11,400 → d = ₹20,000."
+        ],
+        "trap": "₹30,000 is the bond part; using 20% for the deposit gives 12,000 − 0.04d = 11,400 → ₹15,000, which forgets the compounding."
+      },
+      "tags": [
+        "template:split-sum",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-064",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A sum is lent at 15% per annum simple interest. After how many years will the interest be $\\frac{3}{8}$ of the amount?",
+      "options": [
+        "4 years",
+        "2.5 years",
+        "3 years",
+        "5 years",
+        "4.5 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Interest = 3/8 of amount → interest : amount = 3 : 8 → interest : principal = 3 : 5.",
+          "Interest = 60% of the principal → time = 60 ÷ 15 = 4 years."
+        ],
+        "trap": "2.5 years makes the interest 3/8 of the PRINCIPAL; the question compares it with the amount (principal + interest)."
+      },
+      "tags": [
+        "template:time-for-si",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-065",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "₹71,000 is divided into two parts. The first part is lent at 6% per annum simple interest for 5 years and the second part at 9% per annum simple interest for 6 years. The two amounts received are equal. Find the second part.",
+      "options": [
+        "₹38,500",
+        "₹35,500",
+        "₹32,500",
+        "₹30,000",
+        "₹33,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Amount factors: first 1 + 0.30 = 1.30; second 1 + 0.54 = 1.54.",
+          "1.30a = 1.54b → a : b = 154 : 130 = 77 : 65.",
+          "Second part = 65/142 × 71,000 = ₹32,500 (first ₹38,500; each amount ₹50,050)."
+        ],
+        "trap": "₹38,500 is the first part; the part with the larger growth factor (1.54) is the smaller part."
+      },
+      "tags": [
+        "template:equal-amounts-split",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-066",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two sums together total ₹62,000. The first is invested at 10% per annum compound interest, compounded annually, for 2 years and the second at 7% per annum simple interest for 3 years. The interests from the two are in the ratio 2 : 3. Find the first sum.",
+      "options": [
+        "₹37,200",
+        "₹24,800",
+        "₹26,000",
+        "₹31,000",
+        "₹28,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "First earns 21% of its sum; second earns 7 × 3 = 21% of its sum — the same percentage.",
+          "So the sums are in the same ratio as the interests, 2 : 3 → first = 2/5 × 62,000 = ₹24,800."
+        ],
+        "trap": "₹37,200 is the second sum; with equal 21% returns, the smaller interest belongs to the smaller sum."
+      },
+      "tags": [
+        "template:two-scheme-ratio",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-067",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Amit invested ₹P at 10% per annum compound interest, compounded annually, for 2 years and ₹(P + 8,000) at 8% per annum simple interest for 3 years. The simple interest exceeded the compound interest by ₹4,140. Find P.",
+      "options": [
+        "₹82,000",
+        "₹1,38,000",
+        "₹70,000",
+        "₹76,000",
+        "₹74,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "SI = 24% of (P + 8,000) = 0.24P + 1,920; CI = 21% of P = 0.21P.",
+          "0.24P + 1,920 − 0.21P = 4,140 → 0.03P = 2,220 → P = 74,000."
+        ],
+        "trap": "₹1,38,000 ignores the ₹1,920 earned on the extra ₹8,000 (4,140 ÷ 0.03); ₹82,000 is the second principal."
+      },
+      "tags": [
+        "template:two-scheme-difference",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-068",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The compound interest on a sum for 2 years at 10% per annum, compounded annually, is ₹5,250. Find the simple interest on the same sum at the same rate for 3 years.",
+      "options": [
+        "₹7,875",
+        "₹5,000",
+        "₹8,275",
+        "₹7,000",
+        "₹7,500"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "2-year CI at 10% = 21% of the sum → sum = 5,250 ÷ 0.21 = ₹25,000.",
+          "SI for 3 years = 30% of 25,000 = ₹7,500."
+        ],
+        "trap": "₹7,875 scales ₹5,250 by 3/2 as if CI grew like SI; ₹8,275 is the 3-year compound interest."
+      },
+      "tags": [
+        "template:ci-to-si-convert",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-069",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A sum of money at simple interest becomes $\\frac{7}{4}$ of itself in 6 years. At the same rate, find the compound interest on ₹32,000 for 2 years, compounded annually.",
+      "options": [
+        "₹8,000",
+        "₹8,200",
+        "₹8,640",
+        "₹8,500",
+        "₹9,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interest = 3/4 of the sum in 6 years → rate = 75 ÷ 6 = 12.5% per annum.",
+          "CI = 32,000 × (1.125² − 1) = 32,000 × 0.265625 = ₹8,500."
+        ],
+        "shortcut": "12.5% = 1/8: amount = 32,000 × 9/8 × 9/8 = ₹40,500, so CI = ₹8,500.",
+        "trap": "₹8,000 is the simple interest at 12.5% for 2 years; CI adds 12.5% of the first year's ₹4,000, i.e. ₹500."
+      },
+      "tags": [
+        "template:sum-multiple",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-070",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Lata invested a sum at 10% per annum compound interest, compounded annually, for 2 years. She then invested only the interest earned at 12% per annum simple interest for 5 years, which gave her ₹2,520. Find the sum she first invested.",
+      "options": [
+        "₹21,000",
+        "₹20,000",
+        "₹4,200",
+        "₹24,200",
+        "₹25,200"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Second stage: 60% of the reinvested interest = ₹2,520 → CI = 2,520 ÷ 0.6 = ₹4,200.",
+          "First stage: CI = 21% of the sum → sum = 4,200 ÷ 0.21 = ₹20,000."
+        ],
+        "trap": "₹21,000 uses 20% (simple interest) for the first stage; ₹4,200 is the compound interest, not the sum."
+      },
+      "tags": [
+        "template:ci-to-si-reinvest",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-071",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "On ₹16,000, the rates of interest for three successive years are 5%, 10% and 20% per annum. Find the difference between the interest earned if it is compounded annually and the interest earned if it is simple.",
+      "options": [
+        "₹6,176",
+        "₹496",
+        "₹576",
+        "₹640",
+        "₹528"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Compound: 16,000 × 1.05 × 1.10 × 1.20 = 16,800 × 1.10 × 1.20 = 18,480 × 1.20 = ₹22,176 → CI = ₹6,176.",
+          "Simple: (5 + 10 + 20)% of 16,000 = ₹5,600.",
+          "Difference = 6,176 − 5,600 = ₹576."
+        ],
+        "trap": "₹6,176 is the compound interest itself; the question asks how much more it is than the simple interest."
+      },
+      "tags": [
+        "template:ci-varying-rates",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-072",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Sameer borrowed ₹40,000 at r% per annum simple interest and lent it at the same rate of compound interest, compounded annually. At the end of 2 years he gained ₹576. Find r.",
+      "options": [
+        "12%",
+        "1.44%",
+        "6%",
+        "14.4%",
+        "24%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "At the same rate, 2-year CI − SI = P × (r/100)².",
+          "40,000 × (r/100)² = 576 → (r/100)² = 0.0144 → r/100 = 0.12 → r = 12%."
+        ],
+        "trap": "1.44% stops at (r/100)² × 100 without taking the square root."
+      },
+      "tags": [
+        "template:borrow-si-lend-ci",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-073",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "₹75,000 is divided into three parts such that the simple interest on the first part at 5% per annum for 4 years, on the second at 6% per annum for 5 years and on the third at 8% per annum for 3 years are all equal. Find the third part.",
+      "options": [
+        "₹20,000",
+        "₹30,000",
+        "₹25,000",
+        "₹24,000",
+        "₹22,500"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interest percentages: first 20%, second 30%, third 24% of their parts.",
+          "20a = 30b = 24c → a : b : c = 1/20 : 1/30 : 1/24 = 6 : 4 : 5.",
+          "Third part = 5/15 × 75,000 = ₹25,000 (parts ₹30,000, ₹20,000, ₹25,000; each earns ₹6,000)."
+        ],
+        "trap": "₹20,000 is the second part (30% return, smallest share); ₹30,000 is the first."
+      },
+      "tags": [
+        "template:equal-interest",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-074",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Hemant deposited a sum for 2 years at 12% per annum compound interest, compounded annually. His sister deposited the same sum for 2 years at 9% per annum simple interest. Hemant earned ₹1,860 more interest than his sister. How much did each of them deposit?",
+      "options": [
+        "₹25,000",
+        "₹31,000",
+        "₹24,000",
+        "₹26,000",
+        "₹20,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "CI at 12% for 2 years = 12 + 12 + 1.44 = 25.44% of the sum; SI at 9% for 2 years = 18%.",
+          "25.44% − 18% = 7.44% of the sum = ₹1,860 → sum = 1,860 ÷ 0.0744 = ₹25,000."
+        ],
+        "trap": "₹31,000 takes 24% − 18% = 6% and forgets the 1.44% interest-on-interest."
+      },
+      "tags": [
+        "template:ci-vs-si-different-rate",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-075",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A sum of money becomes 1.44 times itself in 2 years at compound interest, compounded annually. At the same rate, find the simple interest on ₹18,000 for 3 years.",
+      "options": [
+        "₹7,920",
+        "₹10,800",
+        "₹13,104",
+        "₹11,880",
+        "₹9,720"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "(1 + r/100)² = 1.44 → 1 + r/100 = 1.2 → r = 20%.",
+          "SI = 18,000 × 20 × 3 ÷ 100 = ₹10,800."
+        ],
+        "trap": "₹11,880 halves the 44% growth to get 22%; the rate comes from the square root of 1.44, which is 20%. ₹13,104 is the 3-year compound interest."
+      },
+      "tags": [
+        "template:sum-multiple",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-076",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "On a sum invested at compound interest, compounded annually, the interest for the second year is ₹1,320 and the interest for the third year is ₹1,452. Find the sum.",
+      "options": [
+        "₹13,200",
+        "₹11,000",
+        "₹12,100",
+        "₹14,520",
+        "₹12,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Third-year interest − second-year interest = ₹132, which is interest on ₹1,320 → rate = 132 × 100 ÷ 1,320 = 10%.",
+          "Second-year interest = 10% of (sum × 1.1) = 0.11 × sum = 1,320 → sum = ₹12,000."
+        ],
+        "trap": "₹13,200 divides ₹1,320 by 10% and gives the amount at the end of year 1; one more step back (÷ 1.1) gives the sum."
+      },
+      "tags": [
+        "template:ci-nth-year",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-077",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The simple interest on a sum for 4 years is ₹9,600. Had the rate been 3% per annum higher, the simple interest on the same sum for 3 years would have been ₹9,900. Find the sum.",
+      "options": [
+        "₹10,000",
+        "₹24,000",
+        "₹30,000",
+        "₹36,000",
+        "₹27,500"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Interest per year at the old rate = 9,600 ÷ 4 = ₹2,400.",
+          "At the higher rate, interest per year = 9,900 ÷ 3 = ₹3,300.",
+          "Extra 3% of the sum = 3,300 − 2,400 = ₹900 → sum = ₹30,000 (old rate 8%)."
+        ],
+        "shortcut": "Work per year: ₹2,400 vs ₹3,300; the ₹900 gap is 3% of the sum.",
+        "trap": "₹10,000 takes ₹9,900 − ₹9,600 = ₹300 as 3% of the sum, but the two interests cover different periods (4 and 3 years); compare interest per year."
+      },
+      "tags": [
+        "template:rate-then-new-rate",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-078",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Bhavna lent ₹30,000 in two parts: one part to Farhan at 9% per annum for 2 years and the rest to Yamini at 8% per annum for 3 years, both at simple interest. She received ₹6,420 as total interest. How much did she lend to Farhan?",
+      "options": [
+        "₹17,000",
+        "₹15,000",
+        "₹12,000",
+        "₹13,000",
+        "₹14,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Farhan's part earns 18%; Yamini's part earns 24%.",
+          "0.18a + 0.24(30,000 − a) = 6,420 → 7,200 − 0.06a = 6,420 → a = 13,000."
+        ],
+        "trap": "₹17,000 is Yamini's part; the question asks for Farhan's."
+      },
+      "tags": [
+        "template:split-sum",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-079",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ankit invested ₹x at 20% per annum compound interest, compounded annually, for 2 years and ₹(x + 6,250) at 16% per annum simple interest for 3 years. The interests from the two investments are in the ratio 11 : 15. Find x.",
+      "options": [
+        "₹31,250",
+        "₹20,000",
+        "₹30,000",
+        "₹25,000",
+        "₹22,500"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "CI = 44% of x = 0.44x; SI = 48% of (x + 6,250) = 0.48x + 3,000.",
+          "15 × 0.44x = 11 × (0.48x + 3,000) → 6.6x = 5.28x + 33,000 → 1.32x = 33,000 → x = 25,000.",
+          "Check: ₹11,000 : ₹15,000 = 11 : 15."
+        ],
+        "trap": "₹31,250 is the second principal (x + 6,250); the question asks for x."
+      },
+      "tags": [
+        "template:two-scheme-ratio",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-080",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Bank A pays 9.5% per annum simple interest and Bank B pays 8% per annum simple interest. On the same sum for 4 years, Bank A pays ₹1,080 more interest than Bank B. Find the sum.",
+      "options": [
+        "₹27,000",
+        "₹18,000",
+        "₹72,000",
+        "₹16,000",
+        "₹20,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Rate difference = 9.5% − 8% = 1.5% per year → 6% over 4 years.",
+          "6% of the sum = ₹1,080 → sum = ₹18,000."
+        ],
+        "trap": "₹72,000 uses the 1.5% difference for one year only; the gap builds up over 4 years."
+      },
+      "tags": [
+        "template:two-scheme-difference",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rahul invested a sum at r% per annum. The simple interest for one year is ₹3,000, and the compound interest (compounded annually) for 2 years exceeds the simple interest for 2 years by ₹360. Find the sum.",
+      "options": [
+        "₹50,000",
+        "₹25,000",
+        "₹20,000",
+        "₹36,000",
+        "₹24,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "CI − SI for 2 years = interest on one year's interest: 3,000 × r/100 = 360 → r = 12%.",
+          "Sum = 3,000 × 100 ÷ 12 = ₹25,000."
+        ],
+        "trap": "₹50,000 divides ₹360 by the 2-year SI of ₹6,000 (giving 6%); the extra ₹360 is interest on only ONE year's interest of ₹3,000."
+      },
+      "tags": [
+        "template:ci-si-difference",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-082",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Raghav lent ₹20,000 at 10% per annum simple interest, and on the same day Kabir lent ₹16,000 at 15% per annum simple interest. After how many years will the amounts due to the two of them be equal?",
+      "options": [
+        "10 years",
+        "8 years",
+        "12 years",
+        "5 years",
+        "15 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Raghav's amount grows by ₹2,000 a year; Kabir's by ₹2,400 a year.",
+          "Kabir closes the ₹4,000 gap at ₹400 a year → 4,000 ÷ 400 = 10 years (both ₹40,000)."
+        ],
+        "trap": "After 5 years the amounts are ₹30,000 and ₹28,000; the gap closes by only ₹400 a year (₹2,400 − ₹2,000), so it takes 10 years."
+      },
+      "tags": [
+        "template:equal-amounts-split",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-083",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The simple interest on a sum at 8% per annum for 3 years is ₹7,200. Find the difference between the compound interest on the same sum at 15% per annum for 2 years, compounded annually, and this simple interest.",
+      "options": [
+        "₹1,800",
+        "₹2,700",
+        "₹2,475",
+        "₹675",
+        "₹2,175"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sum = 7,200 × 100 ÷ (8 × 3) = ₹30,000.",
+          "CI at 15% for 2 years = 32.25% of 30,000 = ₹9,675.",
+          "Difference = 9,675 − 7,200 = ₹2,475."
+        ],
+        "trap": "₹1,800 uses simple interest at 15% (₹9,000); compounding adds ₹675 more."
+      },
+      "tags": [
+        "template:ci-vs-si-different-rate",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-084",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A sum of money doubles itself at a certain rate of simple interest. Had the rate been 5% per annum higher, it would have doubled 10 years sooner. Find the original rate.",
+      "options": [
+        "10%",
+        "7.5%",
+        "4%",
+        "2.5%",
+        "5%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Time to double at r% = 100/r years.",
+          "100/r − 100/(r + 5) = 10 → 500 = 10r(r + 5) → r² + 5r − 50 = 0 → (r + 10)(r − 5) = 0 → r = 5%.",
+          "Check: 20 years at 5% vs 10 years at 10%."
+        ],
+        "trap": "10% is the higher rate (r + 5); the question asks for the original rate."
+      },
+      "tags": [
+        "template:sum-multiple",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-085",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Sonal invested ₹25,000 at 8% per annum simple interest for 3 years. She then invested the amount at r% per annum compound interest, compounded annually, for 2 years and earned ₹6,510 as compound interest. Find r.",
+      "options": [
+        "10.5%",
+        "9%",
+        "12%",
+        "10%",
+        "13%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Amount after 3 years = 25,000 × 1.24 = ₹31,000.",
+          "31,000 × [(1 + r/100)² − 1] = 6,510 → (1 + r/100)² = 37,510 ÷ 31,000 = 1.21 → r = 10%."
+        ],
+        "trap": "10.5% halves the 21% growth as if it were simple interest; 21% over 2 years compounded means 10% a year."
+      },
+      "tags": [
+        "template:si-to-ci-reinvest",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-086",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The simple interest on a sum for 3 years at r% per annum is equal to the simple interest on the same sum for 5 years at (r − 2)% per annum. Find r.",
+      "options": [
+        "3%",
+        "4%",
+        "5%",
+        "6%",
+        "7.5%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Same sum, so rate × time must match: 3r = 5(r − 2).",
+          "3r = 5r − 10 → r = 5% (the second rate is 3%)."
+        ],
+        "trap": "3% is the second rate (r − 2); the question asks for r."
+      },
+      "tags": [
+        "template:rate-time-relation",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-087",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The amount on ₹x at 8% per annum simple interest for 5 years equals the amount on ₹(x − 4,000) at 12.5% per annum simple interest for 6 years. Find x.",
+      "options": [
+        "₹16,000",
+        "₹24,000",
+        "₹20,000",
+        "₹18,000",
+        "₹22,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Amount 1 = 1.4x; amount 2 = (1 + 0.75)(x − 4,000) = 1.75x − 7,000.",
+          "1.4x = 1.75x − 7,000 → 0.35x = 7,000 → x = 20,000 (both amounts ₹28,000)."
+        ],
+        "trap": "₹16,000 is the second principal (x − 4,000). Equating only the interests (0.4x = 0.75x − 3,000) gives about ₹8,571, which is not an option."
+      },
+      "tags": [
+        "template:equal-amounts-split",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-088",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Kunal borrowed a sum at 8% per annum simple interest for 3 years and lent it at 10% per annum compound interest, compounded annually, for 3 years. His gain was ₹1,820. Find the sum.",
+      "options": [
+        "₹20,000",
+        "₹36,400",
+        "₹22,750",
+        "₹18,000",
+        "₹26,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "CI at 10% for 3 years = 1.1³ − 1 = 33.1% of the sum; SI at 8% for 3 years = 24%.",
+          "Gain = 33.1% − 24% = 9.1% of the sum = ₹1,820 → sum = ₹20,000."
+        ],
+        "trap": "₹36,400 works with 2 years (21% − 16% = 5%); the deal runs for 3 years, where CI is 33.1% and SI is 24%."
+      },
+      "tags": [
+        "template:borrow-si-lend-ci",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-089",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A sum invested at compound interest, compounded annually, amounts to ₹21,160 in 2 years and to ₹24,334 in 3 years. Find the rate of interest per annum.",
+      "options": [
+        "12%",
+        "13%",
+        "14%",
+        "15%",
+        "16%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Interest in year 3 = 24,334 − 21,160 = ₹3,174.",
+          "This is earned on ₹21,160 → rate = 3,174 × 100 ÷ 21,160 = 15%."
+        ],
+        "trap": "Dividing ₹3,174 by ₹24,334 (the later amount) gives about 13%; interest for a year is on the amount at the START of that year."
+      },
+      "tags": [
+        "template:amounts-two-years",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-090",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The sums invested by Vimal and Wasim are in the ratio 3 : 4. Vimal invested at 12% per annum simple interest for 4 years and earned ₹8,640. Wasim invested at 10% per annum simple interest and earned ₹3,360 more than Vimal. For how many years did Wasim invest?",
+      "options": [
+        "4 years",
+        "5 years",
+        "6 years",
+        "4.5 years",
+        "5.5 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Vimal's sum = 8,640 × 100 ÷ (12 × 4) = ₹18,000 → Wasim's sum = 18,000 × 4/3 = ₹24,000.",
+          "Wasim's interest = 8,640 + 3,360 = ₹12,000 → time = 12,000 × 100 ÷ (24,000 × 10) = 5 years."
+        ],
+        "trap": "Using ₹3,360 as Wasim's whole interest gives 1.4 years; it is only the excess over Vimal's ₹8,640."
+      },
+      "tags": [
+        "template:two-scheme-ratio",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-091",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "₹x is lent at 10% per annum and ₹(x + 3,000) at 8% per annum, both at simple interest for 5 years. The amount from the first loan exceeds the amount from the second loan by ₹600. Find x.",
+      "options": [
+        "₹48,000",
+        "₹18,000",
+        "₹42,000",
+        "₹51,000",
+        "₹45,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Amount 1 = 1.5x; amount 2 = 1.4(x + 3,000) = 1.4x + 4,200.",
+          "1.5x − 1.4x − 4,200 = 600 → 0.1x = 4,800 → x = 48,000."
+        ],
+        "trap": "₹18,000 compares the interests (0.5x − 0.4x − 1,200 = 600) instead of the amounts; amounts include the different principals."
+      },
+      "tags": [
+        "template:two-scheme-difference",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-092",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The simple interest on ₹x at 12% per annum for 2 years equals the simple interest on ₹(x − 2,000) at 10% per annum for 3 years. Find x.",
+      "options": [
+        "₹8,000",
+        "₹10,000",
+        "₹12,000",
+        "₹9,000",
+        "₹11,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "24% of x = 30% of (x − 2,000) → 24x = 30x − 60,000.",
+          "6x = 60,000 → x = 10,000 (both earn ₹2,400)."
+        ],
+        "trap": "₹8,000 is the second principal (x − 2,000); the question asks for x."
+      },
+      "tags": [
+        "template:equal-interest",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-093",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Bank X offers 8% per annum compound interest, compounded annually, and Bank Y offers 9% per annum simple interest. On the same deposit for 2 years, Bank Y pays ₹340 more interest than Bank X. Find the deposit.",
+      "options": [
+        "₹17,000",
+        "₹20,000",
+        "₹25,000",
+        "₹30,000",
+        "₹21,250"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Bank X: 8 + 8 + 0.64 = 16.64% in 2 years. Bank Y: 9 × 2 = 18%.",
+          "18% − 16.64% = 1.36% of the deposit = ₹340 → deposit = 340 ÷ 0.0136 = ₹25,000."
+        ],
+        "trap": "₹17,000 treats Bank X as simple interest (18% − 16% = 2%); the 0.64% interest-on-interest narrows the gap."
+      },
+      "tags": [
+        "template:ci-vs-si-different-rate",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-094",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The difference between the compound interest and the simple interest on a sum for 1 year at 10% per annum, when the compound interest is compounded half-yearly, is ₹150. Find the sum.",
+      "options": [
+        "₹15,000",
+        "₹60,000",
+        "₹30,000",
+        "₹75,000",
+        "₹50,000"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Half-yearly: 5% per half-year for 2 periods → CI for 1 year = 5 + 5 + 0.25 = 10.25% of the sum.",
+          "SI for 1 year = 10%. Difference = 0.25% of the sum = ₹150 → sum = ₹60,000."
+        ],
+        "trap": "₹15,000 uses the annual 2-year rule (r² = 1%); here each period is 5%, so the gap is 0.25%."
+      },
+      "tags": [
+        "template:ci-si-difference",
+        "interest:half-yearly",
+        "interest:simple",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-095",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "₹66,300 is divided between two cousins aged 14 years and 16 years. Their shares are invested at 10% per annum compound interest, compounded annually, so that each receives the same amount on turning 18. Find the younger cousin's share.",
+      "options": [
+        "₹36,300",
+        "₹33,150",
+        "₹32,000",
+        "₹30,000",
+        "₹31,500"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The younger cousin's share grows for 4 years; the elder's for 2 years.",
+          "y × 1.1⁴ = e × 1.1² → e = 1.21y → y + 1.21y = 66,300 → y = 66,300 ÷ 2.21 = ₹30,000 (elder ₹36,300)."
+        ],
+        "trap": "₹36,300 is the elder cousin's share; the younger one's money has 2 extra years to grow, so it starts smaller."
+      },
+      "tags": [
+        "template:equal-amounts-split",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-096",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vikram borrowed ₹50,000 at 10% per annum compound interest, compounded annually. He repaid ₹25,000 at the end of the first year. How much must he pay at the end of the second year to clear the loan?",
+      "options": [
+        "₹30,500",
+        "₹35,500",
+        "₹30,000",
+        "₹32,500",
+        "₹33,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Due at the end of year 1 = 50,000 × 1.1 = ₹55,000; after repaying ₹25,000, ₹30,000 remains.",
+          "Due at the end of year 2 = 30,000 × 1.1 = ₹33,000."
+        ],
+        "trap": "₹35,500 subtracts ₹25,000 from the 2-year amount ₹60,500, ignoring that the repayment also stops interest on itself in year 2."
+      },
+      "tags": [
+        "template:part-repayment",
+        "interest:compound"
+      ]
+    },
+    {
+      "key": "in-097",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Nikhil invested $\\frac{1}{3}$ of his savings at 7%, $\\frac{1}{4}$ at 8% and the rest at 10% per annum simple interest. His total interest for one year was ₹5,610. Find his total savings.",
+      "options": [
+        "₹66,000",
+        "₹70,125",
+        "₹60,000",
+        "₹64,000",
+        "₹72,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The rest = 1 − 1/3 − 1/4 = 5/12 of the savings.",
+          "Average rate = (1/3)(7) + (1/4)(8) + (5/12)(10) = 28/12 + 24/12 + 50/12 = 102/12 = 8.5%.",
+          "Savings = 5,610 ÷ 0.085 = ₹66,000."
+        ],
+        "trap": "₹70,125 uses 8% as the average rate; the weights are unequal, so the weighted average is 8.5%."
+      },
+      "tags": [
+        "template:split-sum",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-098",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Amit invested 40% of his savings at 10% per annum and the rest at 15% per annum, both at simple interest. He earned ₹6,500 as interest in one year. Find his savings.",
+      "options": [
+        "₹52,000",
+        "₹45,000",
+        "₹50,000",
+        "₹54,000",
+        "₹48,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Average rate = 0.4 × 10 + 0.6 × 15 = 4 + 9 = 13%.",
+          "Savings = 6,500 ÷ 0.13 = ₹50,000."
+        ],
+        "trap": "₹52,000 uses the plain average 12.5%; 60% of the money is at 15%, so the weighted rate is 13%."
+      },
+      "tags": [
+        "template:split-sum",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-099",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The simple interest on ₹12,000 is ₹4,320. If the number of years is one-fourth of the rate per cent per annum, find the rate.",
+      "options": [
+        "9%",
+        "6%",
+        "18%",
+        "3%",
+        "12%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "12,000 × r × t ÷ 100 = 4,320 → r × t = 36.",
+          "t = r/4 → r²/4 = 36 → r² = 144 → r = 12% (time 3 years)."
+        ],
+        "trap": "3 is the time in years, not the rate."
+      },
+      "tags": [
+        "template:rate-time-relation",
+        "interest:simple"
+      ]
+    },
+    {
+      "key": "in-100",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Rajat earned ₹4,320 as simple interest on ₹18,000 in 3 years. He now invests ₹25,000 at compound interest, compounded annually, at a rate 2% per annum higher than before. Find the compound interest for 2 years.",
+      "options": [
+        "₹5,000",
+        "₹4,160",
+        "₹5,500",
+        "₹5,250",
+        "₹4,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Old rate = 4,320 × 100 ÷ (18,000 × 3) = 8%; new rate = 10%.",
+          "CI for 2 years at 10% = 21% of 25,000 = ₹5,250."
+        ],
+        "trap": "₹5,000 is simple interest at 10%; ₹4,160 compounds at the old 8% rate."
+      },
+      "tags": [
+        "template:rate-then-new-rate",
+        "interest:simple",
+        "interest:compound"
+      ]
     }
   ]
 }

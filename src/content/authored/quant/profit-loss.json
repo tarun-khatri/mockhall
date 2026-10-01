@@ -638,6 +638,635 @@
         "arith:equal-cp",
         "template:equal-cp-net-loss"
       ]
+    },
+    {
+      "key": "pl-026",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A shopkeeper sells an electric iron at a profit of 10%. Had he sold it for ₹90 more, his profit would have been 16%. What is the cost price of the iron?",
+      "options": [
+        "₹1,500",
+        "₹1,590",
+        "₹1,650",
+        "₹1,740",
+        "₹1,800"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The extra ₹90 raises the profit from 10% to 16%, i.e. by 6% of CP.",
+          "CP = 90 ÷ 0.06 = ₹1,500."
+        ],
+        "trap": "₹1,650 is the actual selling price (1.1 × 1,500) and ₹1,740 the price that would give 16%."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:extra-amount-new-percent"
+      ]
+    },
+    {
+      "key": "pl-027",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Meena sold a handbag at a profit of 15%. Had she sold it for ₹156 less, she would have incurred a loss of 5%. At what price did she sell the handbag?",
+      "options": [
+        "₹741",
+        "₹780",
+        "₹819",
+        "₹858",
+        "₹897"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The ₹156 drop turns +15% into −5%, a swing of 20% of CP.",
+          "CP = 156 ÷ 0.2 = ₹780; SP = 1.15 × 780 = ₹897."
+        ],
+        "trap": "₹780 is the cost price and ₹741 the price that gives the 5% loss; the question asks for the actual selling price."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:extra-amount-new-percent"
+      ]
+    },
+    {
+      "key": "pl-028",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "When a study table is sold for ₹1,140, the seller suffers a loss of a certain percentage. When it is sold for ₹1,320, the profit percentage is twice that loss percentage. What is the cost price of the study table?",
+      "options": [
+        "₹1,200",
+        "₹1,230",
+        "₹1,250",
+        "₹1,260",
+        "₹1,280"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The cost price is the same in both sales, so \"profit % = 2 × loss %\" means profit amount = 2 × loss amount.",
+          "1,320 − C = 2(C − 1,140) → 3C = 3,600 → C = ₹1,200 (loss 5%, profit 10%)."
+        ],
+        "trap": "₹1,230, the average of the two prices, is the answer only when the profit and loss percentages are equal."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:extra-amount-new-percent"
+      ]
+    },
+    {
+      "key": "pl-029",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The profit earned by selling a carpet for ₹1,560 is three times the loss incurred by selling it for ₹1,040. At what price should the carpet be sold to earn a profit of 20%?",
+      "options": [
+        "₹1,248",
+        "₹1,350",
+        "₹1,404",
+        "₹1,452",
+        "₹1,560"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "1,560 − C = 3(C − 1,040) → 4C = 4,680 → C = ₹1,170.",
+          "Price for a 20% profit = 1.2 × 1,170 = ₹1,404."
+        ],
+        "trap": "₹1,560 takes the CP as the simple average ₹1,300 and adds 20%; the average works only when profit equals loss."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:extra-amount-new-percent"
+      ]
+    },
+    {
+      "key": "pl-030",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "After allowing a discount of 20% on the marked price of an office chair, a shopkeeper makes a profit of 12%. Had he allowed a discount of only 10%, he would have earned ₹420 more. What is the cost price of the chair?",
+      "options": [
+        "₹2,625",
+        "₹2,800",
+        "₹2,940",
+        "₹3,000",
+        "₹4,200"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "0.8 × MP = 1.12 × CP → MP = 1.4 × CP.",
+          "Cutting the discount from 20% to 10% adds 10% of MP = 0.14 × CP = ₹420 → CP = ₹3,000."
+        ],
+        "trap": "₹4,200 divides ₹420 by 10% and so finds the marked price, not the cost price."
+      },
+      "tags": [
+        "arith:markup-discount",
+        "template:extra-amount-new-percent"
+      ]
+    },
+    {
+      "key": "pl-031",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A dealer sells a toaster at a profit of 25%. If both the cost price and the selling price were ₹100 less, the profit would be 30%. What is the cost price of the toaster?",
+      "options": [
+        "₹500",
+        "₹550",
+        "₹600",
+        "₹650",
+        "₹750"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "New SP = 1.25C − 100 and new CP = C − 100.",
+          "1.25C − 100 = 1.3(C − 100) → 0.05C = 30 → C = ₹600."
+        ],
+        "trap": "₹750 is the selling price. Note the profit stays ₹150 in both cases; only the base shrinks from 600 to 500."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:extra-amount-new-percent"
+      ]
+    },
+    {
+      "key": "pl-032",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Pooja sold a sewing machine at a loss of 20%. Had she bought it for 10% less and sold it for ₹390 more, she would have made a profit of 25%. What was her actual selling price?",
+      "options": [
+        "₹900",
+        "₹960",
+        "₹1,080",
+        "₹1,200",
+        "₹1,350"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "New CP = 0.9C and new SP = 0.8C + 390, which must equal 1.25 × 0.9C = 1.125C.",
+          "0.325C = 390 → C = ₹1,200.",
+          "Actual SP = 0.8 × 1,200 = ₹960."
+        ],
+        "trap": "₹1,200 is the cost price and ₹1,350 the hypothetical selling price (960 + 390)."
+      },
+      "tags": [
+        "arith:cp-sp",
+        "template:extra-amount-new-percent"
+      ]
+    },
+    {
+      "key": "pl-033",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If the selling price of an article is raised by 20%, the profit on it rises by 60%. What is the profit percentage at the original selling price?",
+      "options": [
+        "25%",
+        "30%",
+        "$33\\frac{1}{3}$%",
+        "40%",
+        "50%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let SP = S and profit = P. The extra 0.2S equals the extra profit 0.6P, so P = S/3.",
+          "CP = S − S/3 = 2S/3, so profit % = (S/3) ÷ (2S/3) × 100 = 50%."
+        ],
+        "trap": "$33\\frac{1}{3}$% is the profit as a share of the selling price, not of the cost price."
+      },
+      "tags": [
+        "arith:profit-on-sp",
+        "template:extra-amount-new-percent"
+      ]
+    },
+    {
+      "key": "pl-034",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A pair of running shoes is marked at ₹2,500. Shop X offers a single discount of 30%, while Shop Y offers successive discounts of 20% and 10%. How much more does a customer pay at Shop Y?",
+      "options": [
+        "₹50",
+        "₹60",
+        "₹75",
+        "₹100",
+        "₹125"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Shop Y: 2,500 × 0.8 × 0.9 = ₹1,800. Shop X: 2,500 × 0.7 = ₹1,750.",
+          "Difference = ₹50 (successive 20% and 10% equal a single 28%, not 30%)."
+        ],
+        "trap": "Adding 20% and 10% to get 30% suggests no difference at all; the second discount is taken on a smaller amount."
+      },
+      "tags": [
+        "arith:successive-percent",
+        "template:successive-vs-single"
+      ]
+    },
+    {
+      "key": "pl-035",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two successive discounts of 20% and x% on a marked price are together equivalent to a single discount of 32%. What is the value of x?",
+      "options": [
+        "10",
+        "12",
+        "12.5",
+        "14",
+        "15"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "After 20% off, 80% of the MP remains; after the second discount, 68% must remain.",
+          "1 − x/100 = 68/80 = 0.85 → x = 15."
+        ],
+        "trap": "12 subtracts 20 from 32; the second discount is on 80% of the MP, not on the full MP."
+      },
+      "tags": [
+        "arith:successive-percent",
+        "template:successive-vs-single"
+      ]
+    },
+    {
+      "key": "pl-036",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A showroom gives a discount of 25% on a jacket, and a festive coupon takes a further 12% off the discounted price. If a customer pays ₹1,980, what is the marked price of the jacket?",
+      "options": [
+        "₹2,640",
+        "₹2,800",
+        "₹2,850",
+        "₹3,000",
+        "₹3,300"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Amount paid = MP × 0.75 × 0.88 = 0.66 × MP.",
+          "MP = 1,980 ÷ 0.66 = ₹3,000."
+        ],
+        "trap": "₹2,640 undoes only the 25% discount and forgets the coupon."
+      },
+      "tags": [
+        "arith:successive-percent",
+        "template:successive-vs-single"
+      ]
+    },
+    {
+      "key": "pl-037",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "On the same marked price, a single discount of 35% saves a buyer ₹72 more than two successive discounts of 20% and 15%. What is the marked price?",
+      "options": [
+        "₹1,800",
+        "₹2,100",
+        "₹2,400",
+        "₹2,880",
+        "₹3,600"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Successive 20% and 15% leave 0.8 × 0.85 = 0.68 of the MP, i.e. a 32% discount.",
+          "35% − 32% = 3% of MP = ₹72 → MP = ₹2,400."
+        ],
+        "trap": "₹3,600 takes the successive discounts as 33% (a 2% gap); 20 + 15 − (20 × 15)/100 = 32%."
+      },
+      "tags": [
+        "arith:successive-percent",
+        "template:successive-vs-single"
+      ]
+    },
+    {
+      "key": "pl-038",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A wholesaler offers three successive discounts on the list price of a printer: 10%, 20% and a third discount. If the three together are equivalent to a single discount of 46%, what is the third discount?",
+      "options": [
+        "16%",
+        "20%",
+        "22.5%",
+        "24%",
+        "25%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "After 10% and 20%, 0.9 × 0.8 = 0.72 of the price remains; 0.54 must remain at the end.",
+          "Third factor = 0.54 ÷ 0.72 = 0.75 → third discount = 25%."
+        ],
+        "trap": "16% simply subtracts 10 + 20 from 46."
+      },
+      "tags": [
+        "arith:successive-percent",
+        "template:successive-vs-single"
+      ]
+    },
+    {
+      "key": "pl-039",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A trader marks an air cooler 60% above its cost price and gives successive discounts of 25% and 10%. He still earns a profit of ₹96. What is the marked price of the cooler?",
+      "options": [
+        "₹1,920",
+        "₹2,040",
+        "₹2,160",
+        "₹2,400",
+        "₹3,840"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "SP = 1.6 × 0.75 × 0.9 = 1.08 × CP, so the profit is 8% of CP = ₹96 → CP = ₹1,200.",
+          "MP = 1.6 × 1,200 = ₹1,920."
+        ],
+        "trap": "Taking the discounts as a flat 35% gives a 4% profit, a CP of ₹2,400 and an MP of ₹3,840."
+      },
+      "tags": [
+        "arith:successive-percent",
+        "template:successive-vs-single"
+      ]
+    },
+    {
+      "key": "pl-040",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A shopkeeper planned to sell a dressing table at successive discounts of 20% and 15% on its marked price, which would have given him a profit of 2%. Instead, he allowed a single discount of 30%, and his profit went up by ₹75. What is the cost price of the dressing table?",
+      "options": [
+        "₹2,500",
+        "₹2,600",
+        "₹2,750",
+        "₹3,000",
+        "₹3,750"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Planned: 0.8 × 0.85 × MP = 0.68 MP = 1.02 CP → MP = 1.5 CP.",
+          "A 30% discount leaves 0.70 MP, so the SP (and the profit) rises by 0.02 MP = ₹75 → MP = ₹3,750.",
+          "CP = 3,750 ÷ 1.5 = ₹2,500 (profit rises from ₹50 to ₹125)."
+        ],
+        "trap": "₹3,750 is the marked price; the ₹75 is 2% of MP, which is 3% of CP."
+      },
+      "tags": [
+        "arith:successive-percent",
+        "template:successive-vs-single"
+      ]
+    },
+    {
+      "key": "pl-041",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A shopkeeper marks his goods 40% above cost price and runs a \"buy 6, get 1 free\" offer. What is his profit percentage on a sale under this offer?",
+      "options": [
+        "$16\\frac{2}{3}$%",
+        "20%",
+        "22%",
+        "24%",
+        "25%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "For every 7 items (cost 7C) he receives the price of 6: 6 × 1.4C = 8.4C.",
+          "Profit = 1.4C on 7C = 20%."
+        ],
+        "trap": "$16\\frac{2}{3}$% reads the offer as 1 free item in every 6 (1.4 × 5/6); in fact 7 items go for the price of 6."
+      },
+      "tags": [
+        "arith:buy-get-free",
+        "template:buy-get-free-target"
+      ]
+    },
+    {
+      "key": "pl-042",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A store sells a brand of soap under a \"buy 3, get 1 free\" offer and also gives a further 10% discount on the bill. If the store still wants a profit of 8%, by what percentage above cost price must the soap be marked?",
+      "options": [
+        "44%",
+        "48%",
+        "50%",
+        "54%",
+        "60%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "For 4 soaps (cost 4C) the customer pays 3 × MP × 0.9 = 2.7 MP.",
+          "2.7 MP = 1.08 × 4C → MP = 1.6C, i.e. 60% above cost."
+        ],
+        "trap": "44% ignores the extra 10% on the bill (3 MP = 4.32C gives MP = 1.44C)."
+      },
+      "tags": [
+        "arith:buy-get-free",
+        "template:buy-get-free-target"
+      ]
+    },
+    {
+      "key": "pl-043",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "LED bulbs cost a retailer ₹50 each. He offers \"buy 8, get 2 free\" and still wants a profit of 12%. What should be the marked price of each bulb?",
+      "options": [
+        "₹56",
+        "₹60",
+        "₹64",
+        "₹70",
+        "₹72"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "10 bulbs cost 10 × 50 = ₹500; with a 12% profit he needs ₹560.",
+          "The customer pays for 8 bulbs: 8 × MP = 560 → MP = ₹70."
+        ],
+        "trap": "₹56 adds 12% to one bulb's cost and forgets that 2 of every 10 bulbs go free."
+      },
+      "tags": [
+        "arith:buy-get-free",
+        "template:buy-get-free-target"
+      ]
+    },
+    {
+      "key": "pl-044",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A dealer marks bedsheets 50% above cost and offers \"buy 4, get 1 free\". In addition, he gives a cash discount of d% on the bill and ends up with a profit of 8%. What is the value of d?",
+      "options": [
+        "8",
+        "10",
+        "12.5",
+        "20",
+        "28"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Five bedsheets (cost 5C) are billed at 4 × 1.5C = 6C, i.e. 1.2C each before the cash discount.",
+          "1.2C × (1 − d/100) = 1.08C → 1 − d/100 = 0.9 → d = 10."
+        ],
+        "trap": "28 forgets the free bedsheet and applies the discount straight to the 50% mark-up (1.5 × 0.72 = 1.08)."
+      },
+      "tags": [
+        "arith:buy-get-free",
+        "template:buy-get-free-target"
+      ]
+    },
+    {
+      "key": "pl-045",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A supplier gives a stationer 10 notebooks for the price of 8. The stationer marks each notebook 50% above the supplier's list price for one notebook and sells them under a \"buy 5, get 1 free\" offer. What is his profit percentage?",
+      "options": [
+        "25%",
+        "50%",
+        "56.25%",
+        "$58\\frac{1}{3}$%",
+        "62.5%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the supplier's list price be ₹1 per notebook. The stationer's actual cost is 8/10 = ₹0.80 per notebook.",
+          "Selling: 6 notebooks fetch 5 × 1.5 = ₹7.50, i.e. ₹1.25 per notebook.",
+          "Profit % = (1.25 − 0.80) ÷ 0.80 × 100 = 56.25%."
+        ],
+        "trap": "25% compares the selling price with the supplier's list price and forgets that the stationer paid only 80% of it."
+      },
+      "tags": [
+        "arith:buy-get-free",
+        "template:buy-get-free-target"
+      ]
+    },
+    {
+      "key": "pl-046",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Sunita needs 30 notebooks priced at ₹40 each. Shop A offers \"buy 4, get 1 free\", while Shop B offers a flat discount of 18%. How much less does she pay if she buys all 30 from the cheaper shop?",
+      "options": [
+        "₹12",
+        "₹18",
+        "₹24",
+        "₹60",
+        "₹84"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Shop A: 30 notebooks = 6 sets of (4 + 1), so she pays for 24: 24 × 40 = ₹960.",
+          "Shop B: 30 × 40 × 0.82 = ₹984. Shop A is cheaper by ₹24."
+        ],
+        "trap": "Taking \"buy 4, get 1 free\" as a 25% discount makes Shop A look ₹84 cheaper; one free in every five is a 20% discount."
+      },
+      "tags": [
+        "arith:buy-get-free",
+        "template:buy-get-free-target"
+      ]
+    },
+    {
+      "key": "pl-047",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A grocer claims to sell rice at cost price, but uses a weight of 900 g in place of 1 kg. What is his gain percentage?",
+      "options": [
+        "10%",
+        "$11\\frac{1}{9}$%",
+        "12%",
+        "12.5%",
+        "15%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "He gives 900 g and charges for 1,000 g, so he gains 100 g on every 900 g.",
+          "Gain % = 100/900 × 100 = $11\\frac{1}{9}$%."
+        ],
+        "trap": "10% divides the 100 g by 1,000 g; the gain is measured on what he actually gives (900 g)."
+      },
+      "tags": [
+        "arith:dishonest-dealer",
+        "template:false-weight"
+      ]
+    },
+    {
+      "key": "pl-048",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A shopkeeper uses a false weight of 800 g for 1 kg and, on top of that, sells his goods at 10% above cost price. What is his overall gain percentage?",
+      "options": [
+        "30%",
+        "32%",
+        "32.5%",
+        "35%",
+        "37.5%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "For 800 g (costing 0.8 of a kilo's price) he charges 1.1 times the cost of 1 kg.",
+          "Gain % = (1.1 − 0.8) ÷ 0.8 × 100 = 37.5%."
+        ],
+        "trap": "32% takes the short weight as a 20% gain (1.1 × 1.2); 200 g short on 800 g is a 25% gain, and 1.1 × 1.25 = 1.375."
+      },
+      "tags": [
+        "arith:dishonest-dealer",
+        "template:false-weight"
+      ]
+    },
+    {
+      "key": "pl-049",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A trader marks his dry fruits 25% above cost price and allows a discount of 12% on the marked price. He also uses a weight of 880 g instead of 1 kg. What is his actual profit percentage?",
+      "options": [
+        "10%",
+        "25%",
+        "26%",
+        "28%",
+        "30%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Price charged per \"kg\" = 1.25 × 0.88 = 1.1 times the cost of 1 kg.",
+          "He delivers only 880 g, which cost him 0.88 of a kilo's price: profit % = (1.1 − 0.88) ÷ 0.88 × 100 = 25%."
+        ],
+        "trap": "10% stops after the mark-up and discount and forgets the short weight.",
+        "shortcut": "The 12% discount and the 12% short weight cancel exactly (0.88 ÷ 0.88), leaving the 25% mark-up."
+      },
+      "tags": [
+        "arith:dishonest-dealer",
+        "template:false-weight"
+      ]
+    },
+    {
+      "key": "pl-050",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A dealer openly sells sugar at a loss of 4%, but secretly gives only 800 g for every kilogram he charges for. What is his actual gain percentage?",
+      "options": [
+        "16%",
+        "18%",
+        "19%",
+        "20%",
+        "25%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "He charges 0.96 of the cost of 1 kg but hands over only 800 g, which cost him 0.8 of it.",
+          "Gain % = (0.96 − 0.8) ÷ 0.8 × 100 = 20%."
+        ],
+        "trap": "16% subtracts 4 from the 20% weight shortfall; 25% ignores the 4% loss in price."
+      },
+      "tags": [
+        "arith:dishonest-dealer",
+        "template:false-weight"
+      ]
     }
   ]
 }
