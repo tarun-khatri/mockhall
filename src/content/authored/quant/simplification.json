@@ -1582,6 +1582,796 @@
         "simplification:decimals",
         "trick:squares-cubes"
       ]
+    },
+    {
+      "key": "sm-061",
+      "subtype": "percent-of",
+      "difficulty": "easy",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$35\\% \\text{ of } 760 + 12\\% \\text{ of } 450 = ?$",
+      "options": [
+        "280",
+        "290",
+        "300",
+        "310",
+        "320"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$35\\% \\text{ of } 760 = 266$ and $12\\% \\text{ of } 450 = 54$",
+          "$266 + 54 = 320$",
+          "So, ? = **320**"
+        ],
+        "trap": "**310** takes $35\\% \\text{ of } 760$ as 256; 10% is 76, so 35% is $228 + 38 = 266$."
+      },
+      "tags": [
+        "simplification:percent-of"
+      ]
+    },
+    {
+      "key": "sm-062",
+      "subtype": "percent-of",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$62.5\\% \\text{ of } 1440 - 37.5\\% \\text{ of } 960 + 144 = ?$",
+      "options": [
+        "468",
+        "664",
+        "674",
+        "684",
+        "694"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$62.5\\% = \\frac{5}{8}$: $\\frac{5}{8} \\times 1440 = 900$",
+          "$37.5\\% = \\frac{3}{8}$: $\\frac{3}{8} \\times 960 = 360$",
+          "$900 - 360 + 144 = 684$, so ? = **684**"
+        ],
+        "trap": "**468** takes 37.5% as $\\frac{3}{5}$ ($\\frac{3}{5} \\times 960 = 576$); 37.5% is $\\frac{3}{8}$.",
+        "shortcut": "12.5% = $\\frac{1}{8}$, so 37.5% = $\\frac{3}{8}$ and 62.5% = $\\frac{5}{8}$."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "trick:percent-fraction"
+      ]
+    },
+    {
+      "key": "sm-063",
+      "subtype": "percent-of",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$144\\% \\text{ of } 625 - 24\\% \\text{ of } 2250 = ?$",
+      "options": [
+        "360",
+        "380",
+        "400",
+        "420",
+        "440"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$144\\% \\text{ of } 625 = 1.44 \\times 625 = 900$",
+          "$24\\% \\text{ of } 2250 = 540$",
+          "$900 - 540 = 360$, so ? = **360**"
+        ],
+        "trap": "**400** takes $24\\% \\text{ of } 2250$ as 500; 1% is 22.5, so 24% is 540.",
+        "shortcut": "$144\\% \\text{ of } 625 = 144 \\times 6.25 = 144 \\times \\frac{25}{4} = 900$."
+      },
+      "tags": [
+        "simplification:percent-of"
+      ]
+    },
+    {
+      "key": "sm-064",
+      "subtype": "percent-of",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$4.5\\% \\text{ of } 2400 + 19\\% \\text{ of } 700 - 11\\% \\text{ of } 900 = ?$",
+      "options": [
+        "142",
+        "152",
+        "162",
+        "172",
+        "340"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$4.5\\% \\text{ of } 2400 = 108$, $19\\% \\text{ of } 700 = 133$, $11\\% \\text{ of } 900 = 99$",
+          "$108 + 133 - 99 = 142$",
+          "So, ? = **142**"
+        ],
+        "trap": "**340** adds the 11% term instead of subtracting it ($108 + 133 + 99$)."
+      },
+      "tags": [
+        "simplification:percent-of"
+      ]
+    },
+    {
+      "key": "sm-065",
+      "subtype": "percent-of",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$225\\% \\text{ of } 168 \\div 9 + 48\\% \\text{ of } 375 = ?$",
+      "options": [
+        "212",
+        "222",
+        "232",
+        "242",
+        "558"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"of\" first: $225\\% \\text{ of } 168 = 378$, then $378 \\div 9 = 42$",
+          "$48\\% \\text{ of } 375 = 180$",
+          "$42 + 180 = 222$, so ? = **222**"
+        ],
+        "trap": "**558** skips the ÷ 9 ($378 + 180$).",
+        "shortcut": "$48\\% \\text{ of } 375 = 375 \\times \\frac{12}{25} = 180$."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "trap:of-precedence"
+      ]
+    },
+    {
+      "key": "sm-066",
+      "subtype": "percent-of",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$?\\% \\text{ of } 1250 = 65\\% \\text{ of } 900 - 2.5\\% \\text{ of } 3400$",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "46",
+        "48"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$65\\% \\text{ of } 900 = 585$ and $2.5\\% \\text{ of } 3400 = 85$",
+          "$?\\% \\text{ of } 1250 = 500$",
+          "$? = \\frac{500}{1250} \\times 100 = 40$, so ? = **40**"
+        ],
+        "trap": "**44** comes from $2.5\\% \\text{ of } 3400$ taken as 35 ($585 - 35 = 550$); 1% of 3400 is 34, so 2.5% is 85."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-067",
+      "subtype": "percent-of",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$12.5\\% \\text{ of } 1920 + 87.5\\% \\text{ of } 640 - 160\\% \\text{ of } 115 = ?$",
+      "options": [
+        "576",
+        "586",
+        "596",
+        "606",
+        "616"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$\\frac{1}{8} \\times 1920 = 240$ and $\\frac{7}{8} \\times 640 = 560$",
+          "$160\\% \\text{ of } 115 = 184$",
+          "$240 + 560 - 184 = 616$, so ? = **616**"
+        ],
+        "trap": "**606** takes $160\\% \\text{ of } 115$ as 194; it is $115 + 69 = 184$."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "trick:percent-fraction"
+      ]
+    },
+    {
+      "key": "sm-068",
+      "subtype": "percent-of",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$33\\frac{1}{3}\\% \\text{ of } 1617 + 16\\frac{2}{3}\\% \\text{ of } 1428 = ?$",
+      "options": [
+        "757",
+        "777",
+        "797",
+        "817",
+        "837"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$33\\frac{1}{3}\\% = \\frac{1}{3}$: $1617 \\div 3 = 539$",
+          "$16\\frac{2}{3}\\% = \\frac{1}{6}$: $1428 \\div 6 = 238$",
+          "$539 + 238 = 777$, so ? = **777**"
+        ],
+        "trap": "**757** takes $1617 \\div 3$ as 519; $3 \\times 539 = 1617$."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "trick:percent-fraction"
+      ]
+    },
+    {
+      "key": "sm-069",
+      "subtype": "percent-of",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$45\\% \\text{ of } 60\\% \\text{ of } ? = 24 \\times 18 - 135$",
+      "options": [
+        "990",
+        "1050",
+        "1100",
+        "1210",
+        "1980"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Right side: $432 - 135 = 297$",
+          "$45\\% \\text{ of } 60\\% = 0.45 \\times 0.6 = 0.27$, so $0.27 \\times ? = 297$",
+          "$? = 297 \\div 0.27 = 1100$, so ? = **1100**"
+        ],
+        "trap": "**1980** subtracts the percentages ($60\\% - 45\\% = 15\\%$, $297 \\div 0.15$). A percentage of a percentage multiplies: 27%."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "simplification:missing-inside",
+        "trap:percent-of-percent"
+      ]
+    },
+    {
+      "key": "sm-070",
+      "subtype": "percent-of",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(37.5\\% \\text{ of } 1296 + 62.5\\% \\text{ of } 1104) \\div 12 = ?$",
+      "options": [
+        "98",
+        "102",
+        "108",
+        "112",
+        "543.5"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$\\frac{3}{8} \\times 1296 = 486$ and $\\frac{5}{8} \\times 1104 = 690$",
+          "$(486 + 690) \\div 12 = 1176 \\div 12 = 98$",
+          "So, ? = **98**"
+        ],
+        "trap": "**543.5** divides only the second term by 12 ($486 + 57.5$). The ÷ 12 applies to the whole bracket."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "trick:percent-fraction"
+      ]
+    },
+    {
+      "key": "sm-071",
+      "subtype": "percent-of",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$?\\% \\text{ of } 840 + 11\\% \\text{ of } 1500 = 225\\% \\text{ of } 164 - 13 \\times 6$",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "17.5",
+        "20"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Right side: $225\\% \\text{ of } 164 = 369$, $369 - 78 = 291$",
+          "$?\\% \\text{ of } 840 = 291 - 165 = 126$",
+          "$? = \\frac{126}{840} \\times 100 = 15$, so ? = **15**"
+        ],
+        "trap": "Isolate ? only after evaluating every known term: $225\\% \\text{ of } 164 = 369$, $13 \\times 6 = 78$, $11\\% \\text{ of } 1500 = 165$. Check: $15\\% \\text{ of } 840 = 126$ and $126 + 165 = 291 = 369 - 78$."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-072",
+      "subtype": "percent-of",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$2.5\\% \\text{ of } 4480 \\times 15 \\div 8 + 48\\% \\text{ of } 650 = ?$",
+      "options": [
+        "482",
+        "492",
+        "502",
+        "512",
+        "522"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$2.5\\% \\text{ of } 4480 = 112$",
+          "Left to right: $112 \\times 15 = 1680$, $1680 \\div 8 = 210$; $48\\% \\text{ of } 650 = 312$",
+          "$210 + 312 = 522$, so ? = **522**"
+        ],
+        "trap": "**512** takes $48\\% \\text{ of } 650$ as 302; 1% is 6.5, so 48% is $6.5 \\times 48 = 312$."
+      },
+      "tags": [
+        "simplification:percent-of"
+      ]
+    },
+    {
+      "key": "sm-073",
+      "subtype": "percent-of",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$65\\% \\text{ of } 40\\% \\text{ of } 2750 - 144\\% \\text{ of } 350 + 24^{2} = ?$",
+      "options": [
+        "757",
+        "767",
+        "777",
+        "787",
+        "797"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$40\\% \\text{ of } 2750 = 1100$; $65\\% \\text{ of } 1100 = 715$",
+          "$144\\% \\text{ of } 350 = 504$ and $24^{2} = 576$",
+          "$715 - 504 + 576 = 787$, so ? = **787**"
+        ],
+        "trap": "**777** takes $24^{2}$ as 566; $24^{2} = 576$."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "trap:percent-of-percent",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-074",
+      "subtype": "percent-of",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$160\\% \\text{ of } ? - 35\\% \\text{ of } 1240 = 12.5\\% \\text{ of } 2896 + 10^{2}$",
+      "options": [
+        "560",
+        "580",
+        "600",
+        "620",
+        "1433.6"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$35\\% \\text{ of } 1240 = 434$; $12.5\\% \\text{ of } 2896 = 362$, so the right side is $462$",
+          "$160\\% \\text{ of } ? = 462 + 434 = 896$",
+          "$? = 896 \\times \\frac{100}{160} = 560$, so ? = **560**"
+        ],
+        "trap": "**1433.6** multiplies 896 by 1.6 instead of dividing by it."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-075",
+      "subtype": "percent-of",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$14\\frac{2}{7}\\% \\text{ of } 1638 + 8\\frac{1}{3}\\% \\text{ of } 2028 - 6\\frac{1}{4}\\% \\text{ of } 1472 = ?$",
+      "options": [
+        "291",
+        "301",
+        "306",
+        "311",
+        "495"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$14\\frac{2}{7}\\% = \\frac{1}{7}$, $8\\frac{1}{3}\\% = \\frac{1}{12}$, $6\\frac{1}{4}\\% = \\frac{1}{16}$",
+          "$1638 \\div 7 = 234$, $2028 \\div 12 = 169$, $1472 \\div 16 = 92$",
+          "$234 + 169 - 92 = 311$, so ? = **311**"
+        ],
+        "trap": "**495** adds the last term ($234 + 169 + 92$); it is subtracted.",
+        "shortcut": "Fraction equivalents: $\\frac{1}{7} = 14\\frac{2}{7}\\%$, $\\frac{1}{12} = 8\\frac{1}{3}\\%$, $\\frac{1}{16} = 6\\frac{1}{4}\\%$."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "trick:percent-fraction"
+      ]
+    },
+    {
+      "key": "sm-076",
+      "subtype": "percent-of",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$19\\% \\text{ of } 1300 + 24\\% \\text{ of } 1150 - 4.5\\% \\text{ of } 2600 + 15 \\times 17 = ?$",
+      "options": [
+        "631",
+        "641",
+        "651",
+        "661",
+        "671"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$19\\% \\text{ of } 1300 = 247$, $24\\% \\text{ of } 1150 = 276$",
+          "$4.5\\% \\text{ of } 2600 = 117$ and $15 \\times 17 = 255$",
+          "$247 + 276 - 117 + 255 = 661$, so ? = **661**"
+        ],
+        "trap": "**671** takes $4.5\\% \\text{ of } 2600$ as 107; 1% is 26, so 4.5% is $104 + 13 = 117$."
+      },
+      "tags": [
+        "simplification:percent-of"
+      ]
+    },
+    {
+      "key": "sm-077",
+      "subtype": "percent-of",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$35\\% \\text{ of } ? + 225 = 62.5\\% \\text{ of } ? - 10\\% \\text{ of } 2150$",
+      "options": [
+        "1540",
+        "1600",
+        "1660",
+        "1720",
+        "1760"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$10\\% \\text{ of } 2150 = 215$",
+          "$62.5\\% \\text{ of } ? - 35\\% \\text{ of } ? = 225 + 215 \\Rightarrow 27.5\\% \\text{ of } ? = 440$",
+          "$? = 440 \\div 0.275 = 1600$, so ? = **1600**"
+        ],
+        "trap": "**1760** uses 60% instead of 62.5% (25% of ? = 440). The difference is $62.5 - 35 = 27.5$ percentage points."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "simplification:missing-inside",
+        "simplification:unknown-both-sides"
+      ]
+    },
+    {
+      "key": "sm-078",
+      "subtype": "percent-of",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$[48\\% \\text{ of } (1250 - 35\\% \\text{ of } 1000)] \\div 12 + 4.5\\% \\text{ of } 1800 = ?$",
+      "options": [
+        "107",
+        "112",
+        "117",
+        "122",
+        "513"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Inside: $35\\% \\text{ of } 1000 = 350$, $1250 - 350 = 900$",
+          "$48\\% \\text{ of } 900 = 432$, $432 \\div 12 = 36$; $4.5\\% \\text{ of } 1800 = 81$",
+          "$36 + 81 = 117$, so ? = **117**"
+        ],
+        "trap": "**513** forgets the ÷ 12 ($432 + 81$). The 48% must also be applied to the finished bracket (900), not to 1250 alone."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "simplification:nested-brackets"
+      ]
+    },
+    {
+      "key": "sm-079",
+      "subtype": "percent-of",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$7200 \\div 24\\% \\text{ of } 1250 \\times 15\\% \\text{ of } 80 + 225\\% \\text{ of } 36 = ?$",
+      "options": [
+        "83",
+        "359",
+        "369",
+        "379",
+        "389"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "\"of\" first: $24\\% \\text{ of } 1250 = 300$, $15\\% \\text{ of } 80 = 12$, $225\\% \\text{ of } 36 = 81$",
+          "Left to right: $7200 \\div 300 = 24$, $24 \\times 12 = 288$",
+          "$288 + 81 = 369$, so ? = **369**"
+        ],
+        "trap": "**83** multiplies $300 \\times 12$ first and divides $7200 \\div 3600 = 2$. After the \"of\" terms, ÷ and × still go left to right."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "trap:of-precedence",
+        "trap:left-to-right"
+      ]
+    },
+    {
+      "key": "sm-080",
+      "subtype": "percent-of",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$?\\% \\text{ of } ?\\% \\text{ of } 2500 = 16\\% \\text{ of } 1225 + 12\\% \\text{ of } 450 - 6 \\times 9$",
+      "options": [
+        "14",
+        "21",
+        "24",
+        "26",
+        "28"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Right side: $196 + 54 - 54 = 196$",
+          "Left side: $\\frac{?}{100} \\times \\frac{?}{100} \\times 2500 = \\frac{?^{2}}{4}$",
+          "$?^{2} = 784 \\Rightarrow ? = 28$, so ? = **28**"
+        ],
+        "trap": "**14** solves $?^{2} = 196$, forgetting the factor $\\frac{2500}{10000} = \\frac{1}{4}$."
+      },
+      "tags": [
+        "simplification:percent-of",
+        "simplification:missing-inside",
+        "simplification:square-unknown"
+      ]
+    },
+    {
+      "key": "sm-081",
+      "subtype": "decimals",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$0.025 \\times 480 + 1.75 \\times 1.6 - 0.9 \\div 0.15 = ?$",
+      "options": [
+        "8.8",
+        "9.2",
+        "9.8",
+        "10.2",
+        "10.8"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$0.025 \\times 480 = 12$, $1.75 \\times 1.6 = 2.8$, $0.9 \\div 0.15 = 6$",
+          "$12 + 2.8 - 6 = 8.8$",
+          "So, ? = **8.8**"
+        ],
+        "trap": "**9.8** takes $1.75 \\times 1.6$ as 3.8; it is $1.6 + 1.2 = 2.8$."
+      },
+      "tags": [
+        "simplification:decimals"
+      ]
+    },
+    {
+      "key": "sm-082",
+      "subtype": "decimals",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(3.6 \\times 0.25 + 0.072 \\div 0.0024) \\div 0.3 - 1.2^{2} = ?$",
+      "options": [
+        "100.56",
+        "101.06",
+        "101.56",
+        "102.56",
+        "104.44"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$3.6 \\times 0.25 = 0.9$ and $0.072 \\div 0.0024 = 720 \\div 24 = 30$",
+          "$(0.9 + 30) \\div 0.3 = 30.9 \\div 0.3 = 103$",
+          "$103 - 1.44 = 101.56$, so ? = **101.56**"
+        ],
+        "trap": "**104.44** adds $1.2^{2}$ instead of subtracting it. Also watch $0.072 \\div 0.0024$: shift four places to get $720 \\div 24 = 30$, not 3."
+      },
+      "tags": [
+        "simplification:decimals"
+      ]
+    },
+    {
+      "key": "sm-083",
+      "subtype": "decimals",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$? \\div 0.04 - 12.5 \\times 0.8 = 0.35 \\times 140 + 2.2 \\times 5$",
+      "options": [
+        "1.96",
+        "2.8",
+        "3.2",
+        "3.6",
+        "1750"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Right side: $49 + 11 = 60$; $12.5 \\times 0.8 = 10$",
+          "$? \\div 0.04 = 70$",
+          "$? = 70 \\times 0.04 = 2.8$, so ? = **2.8**"
+        ],
+        "trap": "**1750** divides 70 by 0.04 instead of multiplying; to undo ÷ 0.04, multiply by 0.04. **1.96** uses only $0.35 \\times 140 = 49$ and forgets the other terms."
+      },
+      "tags": [
+        "simplification:decimals",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-084",
+      "subtype": "decimals",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{2.25 \\times 2.25 - 1.75 \\times 1.75}{0.125} \\times 0.36 + \\sqrt{0.0169} \\times 10 = ?$",
+      "options": [
+        "5.89",
+        "6.46",
+        "6.76",
+        "6.96",
+        "7.06"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$2.25^{2} - 1.75^{2} = (2.25 - 1.75)(2.25 + 1.75) = 0.5 \\times 4 = 2$, and $2 \\div 0.125 = 16$",
+          "$16 \\times 0.36 = 5.76$; $\\sqrt{0.0169} = 0.13$, so $0.13 \\times 10 = 1.3$",
+          "$5.76 + 1.3 = 7.06$, so ? = **7.06**"
+        ],
+        "trap": "**5.89** takes $\\sqrt{0.0169}$ as 0.013. 0.0169 has four decimal places, so its root has two: 0.13.",
+        "shortcut": "$a^{2} - b^{2} = (a - b)(a + b)$; dividing by 0.125 is multiplying by 8."
+      },
+      "tags": [
+        "simplification:decimals",
+        "trick:algebraic-identity",
+        "simplification:roots"
+      ]
+    },
+    {
+      "key": "sm-085",
+      "subtype": "fractions",
+      "difficulty": "easy",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{3}{8} \\text{ of } \\frac{4}{9} \\text{ of } 2160 + 45 = ?$",
+      "options": [
+        "360",
+        "405",
+        "415",
+        "425",
+        "435"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$\\frac{4}{9} \\text{ of } 2160 = 960$",
+          "$\\frac{3}{8} \\text{ of } 960 = 360$",
+          "$360 + 45 = 405$, so ? = **405**"
+        ],
+        "trap": "**360** stops at $\\frac{3}{8} \\text{ of } \\frac{4}{9} \\text{ of } 2160$ and forgets to add 45.",
+        "shortcut": "$\\frac{3}{8} \\times \\frac{4}{9} = \\frac{1}{6}$, and $2160 \\div 6 = 360$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:fraction-chain"
+      ]
+    },
+    {
+      "key": "sm-086",
+      "subtype": "fractions",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$2\\frac{1}{3} + 3\\frac{3}{4} - 1\\frac{5}{6} = ?$",
+      "options": [
+        "$3\\frac{3}{4}$",
+        "$4\\frac{1}{6}$",
+        "$4\\frac{1}{4}$",
+        "$4\\frac{5}{12}$",
+        "$5\\frac{11}{12}$"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Whole parts: $2 + 3 - 1 = 4$",
+          "Fractions over 12: $\\frac{4}{12} + \\frac{9}{12} - \\frac{10}{12} = \\frac{3}{12} = \\frac{1}{4}$",
+          "So, ? = $4\\frac{1}{4}$"
+        ],
+        "trap": "$5\\frac{11}{12}$ adds the $\\frac{5}{6}$ instead of subtracting it; the minus sign applies to the whole mixed number $1\\frac{5}{6}$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:mixed-fractions",
+        "simplification:fraction-answer"
+      ]
+    },
+    {
+      "key": "sm-087",
+      "subtype": "fractions",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{5}{12} \\text{ of } 1008 \\div \\frac{7}{9} - \\frac{2}{3} \\text{ of } 351 = ?$",
+      "options": [
+        "266",
+        "276",
+        "286",
+        "296",
+        "306"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "\"of\" first: $\\frac{5}{12} \\text{ of } 1008 = 420$ and $\\frac{2}{3} \\text{ of } 351 = 234$",
+          "$420 \\div \\frac{7}{9} = 420 \\times \\frac{9}{7} = 540$",
+          "$540 - 234 = 306$, so ? = **306**"
+        ],
+        "trap": "Dividing by $\\frac{7}{9}$ means multiplying by $\\frac{9}{7}$. Multiplying by $\\frac{7}{9}$ instead gives $326\\frac{2}{3}$, and then $326\\frac{2}{3} - 234$ matches no option."
+      },
+      "tags": [
+        "simplification:fractions",
+        "trap:of-precedence"
+      ]
+    },
+    {
+      "key": "sm-088",
+      "subtype": "fractions",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$4\\frac{2}{7} \\times 2\\frac{5}{8} + 5\\frac{1}{3} \\div 1\\frac{7}{9} - ? = 6\\frac{1}{4}$",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$\\frac{30}{7} \\times \\frac{21}{8} = \\frac{45}{4}$ and $\\frac{16}{3} \\div \\frac{16}{9} = 3$",
+          "$\\frac{45}{4} + 3 = \\frac{57}{4}$, so $? = \\frac{57}{4} - \\frac{25}{4} = \\frac{32}{4}$",
+          "So, ? = **8**"
+        ],
+        "trap": "Multiplying mixed numbers part by part ($4 \\times 2 + \\frac{2}{7} \\times \\frac{5}{8}$) loses the cross terms; convert to improper fractions first."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:mixed-fractions",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-089",
+      "subtype": "fractions",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{3}{4} \\div \\frac{9}{16} \\times \\frac{3}{8} - \\frac{1}{3} = ?$",
+      "options": [
+        "$\\frac{1}{6}$",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{1}{2}$",
+        "$3\\frac{2}{9}$"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Left to right: $\\frac{3}{4} \\div \\frac{9}{16} = \\frac{3}{4} \\times \\frac{16}{9} = \\frac{4}{3}$",
+          "$\\frac{4}{3} \\times \\frac{3}{8} = \\frac{1}{2}$, and $\\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$",
+          "So, ? = $\\frac{1}{6}$"
+        ],
+        "trap": "$3\\frac{2}{9}$ multiplies $\\frac{9}{16} \\times \\frac{3}{8}$ first ($\\frac{3}{4} \\div \\frac{27}{128} = \\frac{32}{9}$). ÷ and × run left to right. $\\frac{1}{2}$ forgets to subtract $\\frac{1}{3}$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "trap:left-to-right",
+        "simplification:fraction-answer"
+      ]
+    },
+    {
+      "key": "sm-090",
+      "subtype": "fractions",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{2}{3} \\text{ of } \\left[1\\frac{1}{2} + \\frac{5}{6} \\div \\left(2\\frac{1}{4} - 1\\frac{7}{12}\\right)\\right] \\times ? = 2\\frac{3}{4}$",
+      "options": [
+        "1",
+        "$1\\frac{1}{4}$",
+        "$1\\frac{1}{3}$",
+        "$1\\frac{1}{2}$",
+        "$1\\frac{2}{3}$"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$2\\frac{1}{4} - 1\\frac{7}{12} = \\frac{27}{12} - \\frac{19}{12} = \\frac{2}{3}$, and $\\frac{5}{6} \\div \\frac{2}{3} = \\frac{5}{4}$",
+          "Bracket: $\\frac{3}{2} + \\frac{5}{4} = \\frac{11}{4}$; $\\frac{2}{3} \\text{ of } \\frac{11}{4} = \\frac{11}{6}$",
+          "$\\frac{11}{6} \\times ? = \\frac{11}{4} \\Rightarrow ? = \\frac{6}{4}$, so ? = $1\\frac{1}{2}$"
+        ],
+        "trap": "**1** forgets the $\\frac{2}{3} \\text{ of }$ in front of the bracket ($\\frac{11}{4} \\times ? = \\frac{11}{4}$)."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:mixed-fractions",
+        "simplification:nested-brackets",
+        "simplification:fraction-answer"
+      ]
     }
   ]
 }
