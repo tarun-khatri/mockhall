@@ -1,0 +1,2966 @@
+{
+  "chapter": "data-interpretation",
+  "version": 1,
+  "sets": [
+    {
+      "key": "di-01",
+      "subtype": "caselet",
+      "difficulty": "easy",
+      "title": "Caselet: students in three courses",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nA coaching centre has 1,200 students enrolled in three courses — Banking, SSC and Railways — in the ratio 5 : 4 : 3 respectively. In the Banking course, 60% of the students are boys. In the SSC course, $\\frac{3}{8}$ of the students are girls. In the Railways course, the ratio of boys to girls is 2 : 1.",
+      "questions": [
+        {
+          "key": "di-01-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of boys in the Banking course to the number of boys in the SSC course?",
+          "options": [
+            "7 : 5",
+            "6 : 5",
+            "5 : 6",
+            "2 : 1",
+            "4 : 3"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Banking = 5/12 × 1,200 = 500, SSC = 400, Railways = 300",
+              "Boys in Banking = 60% of 500 = 300",
+              "Boys in SSC = 400 − 3/8 × 400 = 400 − 150 = 250",
+              "Required ratio = 300 : 250 = 6 : 5"
+            ],
+            "shortcut": "Cancel the common factor 50 at once.",
+            "trap": "**5 : 6** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-01-q2",
+          "subtype": "caselet",
+          "prompt": "The number of girls in the Railways course is what percent of the number of girls in the Banking course?",
+          "options": [
+            "20%",
+            "33.33%",
+            "50%",
+            "66.67%",
+            "200%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Girls in Railways = 1/3 × 300 = 100",
+              "Girls in Banking = 40% of 500 = 200",
+              "Required % = 100 ÷ 200 × 100 = 50%"
+            ],
+            "trap": "**200%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-01-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the number of students in the Banking course more than the number of students in the Railways course?",
+          "options": [
+            "25%",
+            "40%",
+            "63%",
+            "66.67%",
+            "166.67%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Banking = 5/12 × 1,200 = 500, SSC = 400, Railways = 300",
+              "Difference = 500 − 300 = 200",
+              "Required % = 200 ÷ 300 × 100 = 66.67%"
+            ],
+            "shortcut": "In ratio terms: (5 − 3) ÷ 3 × 100 = 66.67%.",
+            "trap": "**40%** is what you get if you divide the difference by the Banking figure instead of the Railways figure."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-01-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of girls per course?",
+          "options": [
+            "150",
+            "175",
+            "250",
+            "400",
+            "450"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Girls: Banking 200, SSC 150, Railways 100",
+              "Average = 450 ÷ 3 = 150"
+            ],
+            "trap": "**250** is what you get if you average the boys instead of the girls."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-01-q5",
+          "subtype": "caselet",
+          "prompt": "How many boys are there in the three courses together?",
+          "options": [
+            "450",
+            "650",
+            "720",
+            "750",
+            "800"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Boys: Banking 300, SSC 250, Railways 200",
+              "Total = 300 + 250 + 200 = 750"
+            ],
+            "shortcut": "Girls = 200 + 150 + 100 = 450, so boys = 1,200 − 450.",
+            "trap": "**650** is what you get if you take $\\frac{3}{8}$ of the SSC students as boys."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sum"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-02",
+      "subtype": "caselet",
+      "difficulty": "medium",
+      "title": "Caselet: air conditioners in three cities",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nTwo companies, X and Y, sell air conditioners in three cities — Pune, Jaipur and Indore. Company X sold 2,400 air conditioners in all: 35% of them in Pune, $\\frac{1}{4}$ of them in Jaipur and the rest in Indore. Company Y sold 3,200 air conditioners in all. Y's sales in Pune were 25% more than X's sales in Pune, and Y's sales in Jaipur and Indore were in the ratio 2 : 3 respectively.",
+      "questions": [
+        {
+          "key": "di-02-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of air conditioners sold by X in Indore to the number sold by Y in Indore?",
+          "options": [
+            "43 : 32",
+            "48 : 43",
+            "4 : 5",
+            "33 : 43",
+            "32 : 43"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "X: Pune = 35% of 2,400 = 840, Jaipur = 1/4 × 2,400 = 600, Indore = 960",
+              "Y: Pune = 840 × 1.25 = 1,050; Jaipur + Indore = 3,200 − 1,050 = 2,150, split 2 : 3 → 860 and 1,290",
+              "Required ratio = 960 : 1,290 = 32 : 43"
+            ],
+            "trap": "**43 : 32** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-02-q2",
+          "subtype": "caselet",
+          "prompt": "X's sales in Jaipur are what percent of Y's sales in Jaipur?",
+          "options": [
+            "30.23%",
+            "41.1%",
+            "62.5%",
+            "69.77%",
+            "143.33%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "X in Jaipur = 600",
+              "Y: Pune = 840 × 1.25 = 1,050; Jaipur + Indore = 3,200 − 1,050 = 2,150, split 2 : 3 → 860 and 1,290",
+              "Required % = 600 ÷ 860 × 100 = 69.77%"
+            ],
+            "trap": "**143.33%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-02-q3",
+          "subtype": "caselet",
+          "prompt": "Y's total sales in Pune and Jaipur together are what percent more than X's total sales in Pune and Jaipur together?",
+          "options": [
+            "24.61%",
+            "25%",
+            "32.64%",
+            "33.33%",
+            "43.33%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "X: Pune = 35% of 2,400 = 840, Jaipur = 1/4 × 2,400 = 600, Indore = 960",
+              "Y: Pune = 840 × 1.25 = 1,050; Jaipur + Indore = 3,200 − 1,050 = 2,150, split 2 : 3 → 860 and 1,290",
+              "Y (Pune + Jaipur) = 1,910; X (Pune + Jaipur) = 1,440",
+              "Required % = 470 ÷ 1,440 × 100 = 32.64%"
+            ],
+            "trap": "**24.61%** is what you get if you divide the difference by Y's figure instead of X's."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-02-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of air conditioners sold in Indore by the two companies?",
+          "options": [
+            "730",
+            "910",
+            "945",
+            "1,074",
+            "1,125"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "X in Indore = 960",
+              "Y: Pune = 840 × 1.25 = 1,050; Jaipur + Indore = 3,200 − 1,050 = 2,150, split 2 : 3 → 860 and 1,290",
+              "Average = (960 + 1,290) ÷ 2 = 1,125"
+            ],
+            "trap": "**945** is what you get if you average the Pune sales instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-02-q5",
+          "subtype": "caselet",
+          "prompt": "A third company Z sold 20% more air conditioners than X in Jaipur and $\\frac{1}{3}$ fewer than Y in Indore. How many air conditioners did Z sell in these two cities together?",
+          "options": [
+            "1,150",
+            "1,460",
+            "1,580",
+            "1,868",
+            "2,010"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Z in Jaipur = 1.2 × 600 = 720",
+              "Z in Indore = 1,290 − 1/3 × 1,290 = 860",
+              "Total = 720 + 860 = 1,580"
+            ],
+            "trap": "**1,150** is what you get if you take $\\frac{1}{3}$ of Y's Indore sales instead of $\\frac{1}{3}$ fewer."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-03",
+      "subtype": "caselet",
+      "difficulty": "medium",
+      "title": "Caselet: three investors",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nNeha invested ₹40,000 in scheme A, which pays simple interest at 12% per annum, for 3 years. Kabir invested ₹10,000 more than Neha in scheme B, which pays 10% per annum compounded annually, for 2 years. Meera invested a sum equal to the total interest earned by Neha and Kabir in scheme C, which pays simple interest at 8% per annum, for 5 years.",
+      "questions": [
+        {
+          "key": "di-03-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the interest earned by Neha to the interest earned by Kabir?",
+          "options": [
+            "36 : 25",
+            "48 : 35",
+            "12 : 7",
+            "35 : 48",
+            "7 : 5"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Neha's interest = 40,000 × 12 × 3 ÷ 100 = ₹14,400",
+              "Kabir's sum = ₹50,000; CI = 50,000 × (1.1² − 1) = 50,000 × 0.21 = ₹10,500",
+              "Required ratio = 14,400 : 10,500 = 48 : 35"
+            ],
+            "trap": "**36 : 25** is what you get if you treat Kabir's scheme as simple interest (₹10,000); **35 : 48** is the ratio written the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-03-q2",
+          "subtype": "caselet",
+          "prompt": "Kabir's interest is what percent of Neha's interest?",
+          "options": [
+            "69.44%",
+            "72.92%",
+            "76.93%",
+            "80.94%",
+            "137.14%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Neha: ₹14,400; Kabir: 50,000 × 0.21 = ₹10,500",
+              "Required % = 10,500 ÷ 14,400 × 100 = 72.92%"
+            ],
+            "trap": "**137.14%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-03-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is Neha's interest more than Kabir's interest?",
+          "options": [
+            "27.08%",
+            "37.14%",
+            "39.19%",
+            "44%",
+            "71.43%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Difference = 14,400 − 10,500 = ₹3,900",
+              "Required % = 3,900 ÷ 10,500 × 100 = 37.14%"
+            ],
+            "trap": "**27.08%** is what you get if you divide the difference by Neha's interest instead of Kabir's."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-03-q4",
+          "subtype": "caselet",
+          "prompt": "What interest did Meera earn from scheme C?",
+          "options": [
+            "₹1,992",
+            "₹5,976",
+            "₹9,120",
+            "₹9,760",
+            "₹9,960"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Meera's sum = 14,400 + 10,500 = ₹24,900",
+              "Interest = 24,900 × 8 × 5 ÷ 100 = ₹9,960"
+            ],
+            "trap": "**₹9,760** is what you get if you treat Kabir's interest as simple interest."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-03-q5",
+          "subtype": "caselet",
+          "prompt": "What total amount (principal plus interest) did Neha and Kabir receive together at the end of their schemes?",
+          "options": [
+            "₹24,900",
+            "₹1,00,500",
+            "₹1,04,400",
+            "₹1,14,400",
+            "₹1,14,900"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Neha gets 40,000 + 14,400 = ₹54,400",
+              "Kabir gets 50,000 × 1.21 = ₹60,500",
+              "Total = ₹1,14,900"
+            ],
+            "trap": "**₹24,900** is what you get if you give only the total interest."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sum",
+            "di:interest"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-04",
+      "subtype": "caselet",
+      "difficulty": "medium",
+      "title": "Caselet: men and women in three firms",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nThe total number of employees in three firms P, Q and R is 3,300. Firm P has 25% more employees than firm R, and firm Q has 200 fewer employees than firm P. In firm P, 40% of the employees are women. In firm Q, the ratio of men to women is 4 : 3. In firm R, the number of men is 160 more than the number of women.",
+      "questions": [
+        {
+          "key": "di-04-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of men in firm P to the number of men in firm R?",
+          "options": [
+            "75 : 58",
+            "38 : 29",
+            "58 : 75",
+            "5 : 4",
+            "25 : 21"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "R = r, P = 1.25r, Q = 1.25r − 200 → 3.5r − 200 = 3,300 → r = 1,000; P = 1,250, Q = 1,050",
+              "Men in P = 60% of 1,250 = 750",
+              "In R: women = (1,000 − 160) ÷ 2 = 420, men = 580",
+              "Required ratio = 750 : 580 = 75 : 58"
+            ],
+            "trap": "**58 : 75** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-04-q2",
+          "subtype": "caselet",
+          "prompt": "The number of women in firm Q is what percent of the number of women in firm R?",
+          "options": [
+            "45%",
+            "77.59%",
+            "93.33%",
+            "107.14%",
+            "142.86%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "R = r, P = 1.25r, Q = 1.25r − 200 → 3.5r − 200 = 3,300 → r = 1,000; P = 1,250, Q = 1,050",
+              "Women in Q = 3/7 × 1,050 = 450; women in R = 420",
+              "Required % = 450 ÷ 420 × 100 = 107.14%"
+            ],
+            "trap": "**93.33%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-04-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the total number of men in the three firms more than the total number of women?",
+          "options": [
+            "16.97%",
+            "29.02%",
+            "40.88%",
+            "43.12%",
+            "140.88%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Men = 750 + 600 + 580 = 1,930",
+              "Women = 500 + 450 + 420 = 1,370",
+              "Required % = 560 ÷ 1,370 × 100 = 40.88%"
+            ],
+            "trap": "**29.02%** is what you get if you divide the difference by the men instead of the women."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-04-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of women per firm?",
+          "options": [
+            "456.67",
+            "475",
+            "481.78",
+            "643.33",
+            "1,100"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Women = 500 + 450 + 420 = 1,370",
+              "Average = 1,370 ÷ 3 = 456.67"
+            ],
+            "trap": "**643.33** is what you get if you average the men instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-04-q5",
+          "subtype": "caselet",
+          "prompt": "A fourth firm S has 20% more men than firm Q, and women make up $\\frac{2}{5}$ of its employees. How many employees does S have?",
+          "options": [
+            "1,000",
+            "1,008",
+            "1,200",
+            "1,260",
+            "1,800"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Men in Q = 4/7 × 1,050 = 600; men in S = 1.2 × 600 = 720",
+              "Men are 3/5 of S, so S = 720 × 5/3 = 1,200"
+            ],
+            "trap": "**1,800** is what you get if you treat the men as $\\frac{2}{5}$ of the employees."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-05",
+      "subtype": "caselet",
+      "difficulty": "medium",
+      "title": "Caselet: phones and tablets",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nA shop sold mobile phones and tablets from January to April. It sold 320 phones in January. Its phone sales in February were 25% more than in January, its phone sales in March were 60 fewer than in February, and its phone sales in April were $\\frac{3}{4}$ of its combined phone sales of January and March. The shop sold 1,000 tablets in the four months together. Its tablet sales in January and February were in the ratio 4 : 5 and came to 540 together, and its tablet sales in March and April were in the ratio 3 : 2 respectively.",
+      "questions": [
+        {
+          "key": "di-05-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of phones sold in March to the number of tablets sold in March?",
+          "options": [
+            "85 : 69",
+            "85 : 46",
+            "69 : 85",
+            "165 : 92",
+            "86 : 69"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Phones: Feb = 400, Mar = 400 − 60 = 340",
+              "Tablets in March and April = 1,000 − 540 = 460; March = 3/5 × 460 = 276",
+              "Required ratio = 340 : 276 = 85 : 69"
+            ],
+            "trap": "**69 : 85** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-05-q2",
+          "subtype": "caselet",
+          "prompt": "The number of tablets sold in February is what percent of the number of phones sold in April?",
+          "options": [
+            "37.17%",
+            "55.56%",
+            "60.61%",
+            "75%",
+            "165%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Phones in April = 3/4 × (320 + 340) = 495",
+              "Tablets in February = 5/9 × 540 = 300",
+              "Required % = 300 ÷ 495 × 100 = 60.61%"
+            ],
+            "trap": "**165%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-05-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the total number of phones sold in the four months more than the total number of tablets sold?",
+          "options": [
+            "29.9%",
+            "35.69%",
+            "52.45%",
+            "55.5%",
+            "60%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Phones = 320 + 400 + 340 + 495 = 1,555",
+              "Required % = (1,555 − 1,000) ÷ 1,000 × 100 = 55.5%"
+            ],
+            "trap": "**35.69%** is what you get if you divide the difference by the phones instead of the tablets."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-05-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of phones sold per month from January to April?",
+          "options": [
+            "250",
+            "388.75",
+            "400",
+            "410.13",
+            "638.75"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Phones: 320, 400, 340, 495; total = 1,555",
+              "Average = 1,555 ÷ 4 = 388.75"
+            ],
+            "trap": "**250** is what you get if you average the tablets instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-05-q5",
+          "subtype": "caselet",
+          "prompt": "In May, the shop's phone sales were 20% more than in April and its tablet sales were 25% less than in April. How many phones and tablets did it sell in May altogether?",
+          "options": [
+            "626",
+            "679",
+            "699",
+            "732",
+            "778"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "April: phones 495, tablets 2/5 × 460 = 184",
+              "May: phones = 1.2 × 495 = 594; tablets = 0.75 × 184 = 138",
+              "Total = 732"
+            ],
+            "trap": "**679** is what you get if you give April's total."
+          },
+          "tags": [
+            "di:caselet",
+            "di:next-period"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-06",
+      "subtype": "caselet",
+      "difficulty": "medium",
+      "title": "Caselet: a shopkeeper's three items",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nA shopkeeper bought 120 shirts at ₹400 each, 80 trousers at ₹600 each and 40 jackets at ₹1,250 each. He marked the shirts 50% above their cost price and sold all of them at a discount of 20%. He sold all the trousers at a profit of 15%, and he sold each jacket for ₹1,450.",
+      "questions": [
+        {
+          "key": "di-06-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the shopkeeper's total profit on shirts to his total profit on trousers?",
+          "options": [
+            "4 : 3",
+            "5 : 3",
+            "2 : 1",
+            "6 : 5",
+            "3 : 4"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Shirt: MP = ₹600, SP = 80% of 600 = ₹480, profit = ₹80 × 120 = ₹9,600",
+              "Trouser: profit = 15% of 600 = ₹90 × 80 = ₹7,200",
+              "Required ratio = 9,600 : 7,200 = 4 : 3"
+            ],
+            "trap": "**2 : 1** is what you get if you take the shirt profit as 50% − 20% = 30% (₹120 each); a 20% discount on a 50% mark-up gives only 1.5 × 0.8 = 1.2, i.e. 20%."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-06-q2",
+          "subtype": "caselet",
+          "prompt": "What was the shopkeeper's overall profit percentage on the three items?",
+          "options": [
+            "14.52%",
+            "16.99%",
+            "17%",
+            "17.92%",
+            "20.27%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Cost = 48,000 + 48,000 + 50,000 = ₹1,46,000",
+              "Profit = 9,600 + 7,200 + 8,000 = ₹24,800",
+              "Profit % = 24,800 ÷ 1,46,000 × 100 = 16.99%"
+            ],
+            "trap": "**14.52%** is what you get if you divide the profit by the selling price instead of the cost price."
+          },
+          "tags": [
+            "di:caselet",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-06-q3",
+          "subtype": "caselet",
+          "prompt": "The selling price of one jacket is what percent more than the selling price of one trouser?",
+          "options": [
+            "52.41%",
+            "98.03%",
+            "104.09%",
+            "108.33%",
+            "110.14%"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "SP of a trouser = 1.15 × 600 = ₹690",
+              "Required % = (1,450 − 690) ÷ 690 × 100 = 110.14%"
+            ],
+            "trap": "**52.41%** is what you get if you divide the difference by the jacket's price instead of the trouser's."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-06-q4",
+          "subtype": "caselet",
+          "prompt": "What total amount did the shopkeeper receive from selling the shirts and the jackets?",
+          "options": [
+            "₹98,000",
+            "₹1,12,800",
+            "₹1,15,600",
+            "₹1,20,400",
+            "₹1,30,000"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Shirts: 120 × ₹480 = ₹57,600",
+              "Jackets: 40 × ₹1,450 = ₹58,000",
+              "Total = ₹1,15,600"
+            ],
+            "trap": "**₹1,20,400** is what you get if you take a net 30% mark-up on the shirts."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sum",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-06-q5",
+          "subtype": "caselet",
+          "prompt": "Had the shopkeeper allowed a discount of 25% instead of 20% on the shirts, by how much would his profit on the shirts have been less?",
+          "options": [
+            "₹30",
+            "₹2,400",
+            "₹2,880",
+            "₹3,600",
+            "₹6,000"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "The extra 5% discount is on the marked price ₹600: 5% of 600 = ₹30 per shirt",
+              "Fall in profit = 30 × 120 = ₹3,600"
+            ],
+            "trap": "**₹2,400** is what you get if you take 5% of the cost price."
+          },
+          "tags": [
+            "di:caselet",
+            "di:profit"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-07",
+      "subtype": "caselet",
+      "difficulty": "medium",
+      "title": "Caselet: olympiad candidates",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nStudents of classes IX and X appeared in olympiads in Maths, Science and English, and each student appeared in exactly one olympiad. Class IX has 720 students: $\\frac{5}{12}$ of them appeared in Maths, 35% in Science and the rest in English. Class X has 25% more students than class IX, and the numbers of class X students who appeared in Maths, Science and English are in the ratio 7 : 5 : 3 respectively.",
+      "questions": [
+        {
+          "key": "di-07-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of class IX students who appeared in Science to the number of class X students who appeared in Science?",
+          "options": [
+            "21 : 25",
+            "22 : 25",
+            "3 : 5",
+            "25 : 21",
+            "14 : 15"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Class IX Science = 35% of 720 = 252",
+              "Class X = 1.25 × 720 = 900; Science = 5/15 × 900 = 300",
+              "Required ratio = 252 : 300 = 21 : 25"
+            ],
+            "trap": "**25 : 21** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-07-q2",
+          "subtype": "caselet",
+          "prompt": "The number of class IX students who appeared in English is what percent of the number of class X students who appeared in English?",
+          "options": [
+            "18.67%",
+            "56%",
+            "66.67%",
+            "93.33%",
+            "107.14%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Class IX English = 720 − 300 − 252 = 168",
+              "Class X English = 3/15 × 900 = 180",
+              "Required % = 168 ÷ 180 × 100 = 93.33%"
+            ],
+            "trap": "**107.14%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-07-q3",
+          "subtype": "caselet",
+          "prompt": "Taking both classes together, by what percent is the number of students who appeared in Maths more than the number who appeared in Science?",
+          "options": [
+            "19.05%",
+            "23.33%",
+            "27.09%",
+            "28.76%",
+            "30.43%"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Maths = 300 + 420 = 720; Science = 252 + 300 = 552",
+              "Required % = 168 ÷ 552 × 100 = 30.43%"
+            ],
+            "trap": "**23.33%** is what you get if you divide the difference by the Maths figure."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-07-q4",
+          "subtype": "caselet",
+          "prompt": "Three-fourths of the class IX Maths candidates and 80% of the class X Maths candidates qualified for the next round. How many Maths candidates qualified in all?",
+          "options": [
+            "159",
+            "536",
+            "540",
+            "555",
+            "561"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Class IX: 3/4 × 300 = 225",
+              "Class X: 80% of 420 = 336",
+              "Total = 561"
+            ],
+            "trap": "**555** is what you get if you swap the two rates."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sub-split"
+          ]
+        },
+        {
+          "key": "di-07-q5",
+          "subtype": "caselet",
+          "prompt": "Class XI has 20% fewer students than class X. Each class XI student also appeared in exactly one of the three olympiads, and the numbers who appeared in Maths, Science and English are in the ratio 3 : 2 : 1 respectively. How many students of classes IX, X and XI together appeared in Maths?",
+          "options": [
+            "720",
+            "960",
+            "1,008",
+            "1,030",
+            "1,080"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Class XI = 0.8 × 900 = 720; Maths = 3/6 × 720 = 360",
+              "Total = 300 + 420 + 360 = 1,080"
+            ],
+            "trap": "**1,008** is what you get if you take 20% fewer than class IX."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity",
+            "di:sum"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-08",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: scooter sales in three cities",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nTwo companies, M and N, sold scooters in three cities — Lucknow, Bhopal and Nagpur. M sold 4,800 scooters in all and N sold 5,400 scooters in all. 30% of M's scooters were sold in Lucknow, and M's sales in Bhopal and Nagpur were in the ratio 7 : 5 respectively. N's sales in Lucknow were $33\\frac{1}{3}$% more than M's sales in Lucknow, and N's sales in Bhopal were 20% less than M's sales in Bhopal. The rest of N's scooters were sold in Nagpur.",
+      "questions": [
+        {
+          "key": "di-08-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of scooters sold by M in Nagpur to the number sold by N in Nagpur?",
+          "options": [
+            "239 : 175",
+            "175 : 239",
+            "25 : 28",
+            "35 : 48",
+            "176 : 239"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "M: Lucknow = 30% of 4,800 = 1,440; Bhopal + Nagpur = 3,360 in 7 : 5 → 1,960 and 1,400",
+              "N: Lucknow = 1,440 × 4/3 = 1,920; Bhopal = 0.8 × 1,960 = 1,568; Nagpur = 5,400 − 1,920 − 1,568 = 1,912",
+              "Required ratio = 1,400 : 1,912 = 175 : 239"
+            ],
+            "trap": "**239 : 175** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-08-q2",
+          "subtype": "caselet",
+          "prompt": "M's sales in Bhopal are what percent of N's sales in Lucknow?",
+          "options": [
+            "72.92%",
+            "97.96%",
+            "102.08%",
+            "102.51%",
+            "125%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "M: Lucknow = 30% of 4,800 = 1,440; Bhopal + Nagpur = 3,360 in 7 : 5 → 1,960 and 1,400",
+              "N in Lucknow = 1,440 × 4/3 = 1,920",
+              "Required % = 1,960 ÷ 1,920 × 100 = 102.08%"
+            ],
+            "trap": "**97.96%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-08-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent are N's sales in Nagpur more than M's sales in Nagpur?",
+          "options": [
+            "12.5%",
+            "26.78%",
+            "33.33%",
+            "34.56%",
+            "36.57%"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "M: Lucknow = 30% of 4,800 = 1,440; Bhopal + Nagpur = 3,360 in 7 : 5 → 1,960 and 1,400",
+              "N: Lucknow = 1,440 × 4/3 = 1,920; Bhopal = 0.8 × 1,960 = 1,568; Nagpur = 5,400 − 1,920 − 1,568 = 1,912",
+              "Required % = (1,912 − 1,400) ÷ 1,400 × 100 = 36.57%"
+            ],
+            "trap": "**26.78%** is what you get if you divide the difference by N's figure instead of M's."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-08-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of scooters sold by N in Bhopal and Nagpur?",
+          "options": [
+            "1,680",
+            "1,740",
+            "1,800",
+            "1,916",
+            "1,936"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "N: Lucknow = 1,440 × 4/3 = 1,920; Bhopal = 0.8 × 1,960 = 1,568; Nagpur = 5,400 − 1,920 − 1,568 = 1,912",
+              "Average = (1,568 + 1,912) ÷ 2 = 1,740"
+            ],
+            "shortcut": "N's Bhopal + Nagpur = 5,400 − 1,920 = 3,480; half of it is 1,740.",
+            "trap": "**1,680** is what you get if you average M's figures."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-08-q5",
+          "subtype": "caselet",
+          "prompt": "15% of the scooters M sold in Bhopal and 12.5% of the scooters N sold in Nagpur were electric. How many electric scooters were these in all?",
+          "options": [
+            "533",
+            "534",
+            "557",
+            "581",
+            "3,339"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Electric (M, Bhopal) = 15% of 1,960 = 294",
+              "Electric (N, Nagpur) = 12.5% of 1,912 = 239",
+              "Total = 533"
+            ],
+            "trap": "**534** is what you get if you take 12.5% of N's Lucknow sales."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sub-split"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-09",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: employees of three firms",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nThree firms X, Y and Z together have 4,200 employees. Firm X has 504 women employees, and they form 36% of X's employees. Firm Y has 20% more employees than firm X, and men make up $\\frac{5}{8}$ of Y's employees. The rest of the employees work in firm Z, where the ratio of men to women is 9 : 7.",
+      "questions": [
+        {
+          "key": "di-09-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of men in firm X to the number of men in firm Z?",
+          "options": [
+            "64 : 45",
+            "64 : 75",
+            "36 : 35",
+            "13 : 9",
+            "45 : 64"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "X = 504 ÷ 0.36 = 1,400; Y = 1.2 × 1,400 = 1,680; Z = 4,200 − 1,400 − 1,680 = 1,120",
+              "Men in X = 1,400 − 504 = 896; men in Z = 9/16 × 1,120 = 630",
+              "Required ratio = 896 : 630 = 64 : 45"
+            ],
+            "trap": "**45 : 64** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-09-q2",
+          "subtype": "caselet",
+          "prompt": "The number of women in firm Z is what percent of the number of women in firm X?",
+          "options": [
+            "35%",
+            "54.69%",
+            "77.78%",
+            "97.22%",
+            "102.86%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "X = 504 ÷ 0.36 = 1,400; Y = 1.2 × 1,400 = 1,680; Z = 4,200 − 1,400 − 1,680 = 1,120",
+              "Women in Z = 7/16 × 1,120 = 490",
+              "Required % = 490 ÷ 504 × 100 = 97.22%"
+            ],
+            "trap": "**102.86%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-09-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the total number of men in the three firms more than the total number of women?",
+          "options": [
+            "22.67%",
+            "36.96%",
+            "58.62%",
+            "61.84%",
+            "71.6%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Men = 896 + 1,050 + 630 = 2,576",
+              "Women = 504 + 630 + 490 = 1,624",
+              "Required % = 952 ÷ 1,624 × 100 = 58.62%"
+            ],
+            "trap": "**36.96%** is what you get if you divide the difference by the men instead of the women."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-09-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of women in firms Y and Z?",
+          "options": [
+            "560",
+            "567",
+            "700",
+            "840",
+            "1,120"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Women in Y = 3/8 × 1,680 = 630; women in Z = 490",
+              "Average = (630 + 490) ÷ 2 = 560"
+            ],
+            "trap": "**840** is what you get if you average the men instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-09-q5",
+          "subtype": "caselet",
+          "prompt": "Next year, the number of men in firm X increases by 12.5% and the number of women in firm X decreases by $\\frac{1}{6}$. How many employees will firm X then have?",
+          "options": [
+            "1,316",
+            "1,372",
+            "1,428",
+            "1,512",
+            "1,596"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Men: 896 × 1.125 = 1,008",
+              "Women: 504 × 5/6 = 420",
+              "Total = 1,428"
+            ],
+            "trap": "**1,512** is what you get if you leave the number of women unchanged."
+          },
+          "tags": [
+            "di:caselet",
+            "di:next-period"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-10",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: Rohan's three schemes",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nRohan divided ₹1,20,000 between schemes A and B in the ratio 3 : 5. Scheme A pays simple interest at 12% per annum and he kept his money in it for 3 years. Scheme B pays 10% per annum compounded annually and he kept his money in it for 2 years. When scheme A matured, he invested the entire amount he received from it in scheme C, which pays 20% per annum compounded half-yearly, for 1 year.",
+      "questions": [
+        {
+          "key": "di-10-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the interest Rohan earned from scheme A to the interest he earned from scheme B?",
+          "options": [
+            "37 : 35",
+            "36 : 35",
+            "24 : 35",
+            "35 : 36",
+            "27 : 25"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "A = 3/8 × 1,20,000 = ₹45,000; B = ₹75,000",
+              "Interest from A = 45,000 × 12 × 3 ÷ 100 = ₹16,200",
+              "Interest from B = 75,000 × (1.1² − 1) = ₹15,750",
+              "Required ratio = 16,200 : 15,750 = 36 : 35"
+            ],
+            "trap": "**27 : 25** is what you get if you treat scheme B as simple interest (₹15,000); **35 : 36** is the ratio written the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-10-q2",
+          "subtype": "caselet",
+          "prompt": "The interest Rohan earned from scheme B is what percent of the sum he invested in scheme A?",
+          "options": [
+            "13.13%",
+            "21%",
+            "33.33%",
+            "35%",
+            "36%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "A = ₹45,000; interest from B = ₹15,750",
+              "Required % = 15,750 ÷ 45,000 × 100 = 35%"
+            ],
+            "trap": "**21%** is what you get if you divide by the sum invested in B."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-10-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the amount Rohan received from scheme B more than the sum he invested in scheme C?",
+          "options": [
+            "32.56%",
+            "47.06%",
+            "48.28%",
+            "66.67%",
+            "101.67%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "From B: 75,000 × 1.21 = ₹90,750",
+              "Invested in C = amount from A = 45,000 + 16,200 = ₹61,200",
+              "Required % = 29,550 ÷ 61,200 × 100 = 48.28%"
+            ],
+            "trap": "**32.56%** is what you get if you divide the difference by B's amount instead of C's sum."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-10-q4",
+          "subtype": "caselet",
+          "prompt": "What interest did Rohan earn from scheme C?",
+          "options": [
+            "₹3,402",
+            "₹9,450",
+            "₹12,240",
+            "₹12,852",
+            "₹13,464"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Sum invested in C = ₹61,200",
+              "Half-yearly: rate 10% per half-year for 2 half-years → factor 1.1² = 1.21",
+              "Interest = 61,200 × 0.21 = ₹12,852"
+            ],
+            "trap": "**₹12,240** is what you get if you compound the interest annually (or treat it as simple interest)."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-10-q5",
+          "subtype": "caselet",
+          "prompt": "Had scheme B paid simple interest at the same rate, how much less interest would Rohan have earned from it?",
+          "options": [
+            "₹750",
+            "₹1,500",
+            "₹1,575",
+            "₹7,500",
+            "₹15,000"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "CI on ₹75,000 for 2 years = ₹15,750; SI = 75,000 × 10 × 2 ÷ 100 = ₹15,000",
+              "Difference = ₹750"
+            ],
+            "shortcut": "For 2 years, CI − SI = P × (r/100)² = 75,000 × 0.01 = ₹750.",
+            "trap": "**₹7,500** is what you get if you take one year's interest."
+          },
+          "tags": [
+            "di:caselet",
+            "di:interest"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-11",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: televisions and laptops",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nAn electronics store sold LED televisions and laptops in July, August and September. It sold 1,260 televisions in the three months together: 25% of them in July, and its August television sales were $33\\frac{1}{3}$% more than its July television sales. It sold 1,136 laptops in the three months together. Its laptop sales in August were 20% less than its television sales in August, and its laptop sales in July and September were in the ratio 3 : 5 respectively.",
+      "questions": [
+        {
+          "key": "di-11-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of televisions sold in July to the number of laptops sold in September?",
+          "options": [
+            "7 : 4",
+            "21 : 20",
+            "100 : 63",
+            "16 : 25",
+            "63 : 100"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "TV: July = 25% of 1,260 = 315, August = 315 × 4/3 = 420, September = 525",
+              "Laptops: August = 0.8 × 420 = 336; July + September = 800 in 3 : 5 → 300 and 500",
+              "Required ratio = 315 : 500 = 63 : 100"
+            ],
+            "trap": "**100 : 63** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-11-q2",
+          "subtype": "caselet",
+          "prompt": "The store's laptop sales in August were what percent of its total sales (televisions and laptops) in August?",
+          "options": [
+            "29.58%",
+            "44.44%",
+            "46.89%",
+            "55.56%",
+            "80%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "TV: July = 25% of 1,260 = 315, August = 315 × 4/3 = 420, September = 525",
+              "Laptops in August = 0.8 × 420 = 336; August total = 756",
+              "Required % = 336 ÷ 756 × 100 = 44.44%"
+            ],
+            "trap": "**80%** is what you get if you divide by the August televisions only."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-11-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the total number of televisions sold in the three months more than the total number of laptops sold?",
+          "options": [
+            "5%",
+            "9.71%",
+            "9.84%",
+            "10.32%",
+            "10.92%"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Difference = 1,260 − 1,136 = 124",
+              "Required % = 124 ÷ 1,136 × 100 = 10.92%"
+            ],
+            "trap": "**9.84%** is what you get if you divide the difference by the televisions instead of the laptops."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-11-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of laptops sold per month?",
+          "options": [
+            "318",
+            "378.67",
+            "399.33",
+            "400",
+            "420"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Average = 1,136 ÷ 3 = 378.67"
+            ],
+            "trap": "**420** is what you get if you average the televisions instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-11-q5",
+          "subtype": "caselet",
+          "prompt": "In September, 12% of the televisions and 8% of the laptops the store sold were returned as defective. How many of the televisions and laptops sold in September were not returned?",
+          "options": [
+            "103",
+            "820",
+            "922",
+            "923",
+            "962"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "September: televisions = 525, laptops = 500",
+              "Kept: televisions = 88% of 525 = 462; laptops = 92% of 500 = 460",
+              "Total = 922"
+            ],
+            "trap": "**923** is what you get if you swap the two rates."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sub-split"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-12",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: a grain trader's stock",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nA trader bought 250 kg of rice at ₹48 per kg, 180 kg of wheat at ₹30 per kg and 120 kg of pulses at ₹90 per kg. He marked the rice 25% above its cost price and sold all of it at a discount of 10%. 10% of the wheat got spoilt and was thrown away, and he sold the rest of the wheat at ₹36 per kg. He sold $\\frac{3}{4}$ of the pulses at a profit of 20% and the remaining pulses at a loss of 10%.",
+      "questions": [
+        {
+          "key": "di-12-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the trader's profit on rice to his profit on pulses?",
+          "options": [
+            "10 : 9",
+            "4 : 3",
+            "25 : 36",
+            "11 : 9",
+            "9 : 10"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Rice: SP = 48 × 1.25 × 0.9 = ₹54 per kg; profit = ₹6 × 250 = ₹1,500",
+              "Pulses: CP = ₹10,800; revenue = 90 × 108 + 30 × 81 = ₹12,150; profit = ₹1,350",
+              "Required ratio = 1,500 : 1,350 = 10 : 9"
+            ],
+            "trap": "**4 : 3** is what you get if you take the rice profit as 25% − 10% = 15% (₹1,800); **9 : 10** is the ratio written the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-12-q2",
+          "subtype": "caselet",
+          "prompt": "What was the trader's overall profit percentage?",
+          "options": [
+            "10.43%",
+            "11.64%",
+            "12.28%",
+            "12.7%",
+            "13.94%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Cost = 12,000 + 5,400 + 10,800 = ₹28,200",
+              "Profit: rice ₹1,500, wheat 162 × 36 − 5,400 = ₹432, pulses ₹1,350; total ₹3,282",
+              "Profit % = 3,282 ÷ 28,200 × 100 = 11.64%"
+            ],
+            "trap": "**10.43%** is what you get if you divide the profit by the revenue instead of the cost."
+          },
+          "tags": [
+            "di:caselet",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-12-q3",
+          "subtype": "caselet",
+          "prompt": "The trader's revenue from wheat is what percent of his revenue from rice?",
+          "options": [
+            "38.88%",
+            "43.2%",
+            "45%",
+            "48%",
+            "231.48%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Wheat sold = 90% of 180 = 162 kg; revenue = 162 × 36 = ₹5,832",
+              "Rice revenue = 250 × 54 = ₹13,500",
+              "Required % = 5,832 ÷ 13,500 × 100 = 43.2%"
+            ],
+            "trap": "**48%** is what you get if you ignore the spoilt wheat."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-12-q4",
+          "subtype": "caselet",
+          "prompt": "What was the trader's profit percentage on the wheat?",
+          "options": [
+            "8%",
+            "8.44%",
+            "8.89%",
+            "10%",
+            "20%"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Cost = 180 × 30 = ₹5,400; revenue = ₹5,832",
+              "Profit = ₹432; profit % = 432 ÷ 5,400 × 100 = 8%"
+            ],
+            "shortcut": "Selling 90% of the stock at 1.2 times cost gives 0.9 × 1.2 = 1.08 → 8% profit.",
+            "trap": "**20%** is what you get if you ignore the spoilt wheat."
+          },
+          "tags": [
+            "di:caselet",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-12-q5",
+          "subtype": "caselet",
+          "prompt": "Had none of the wheat been spoilt and all 180 kg been sold at ₹36 per kg, what would the trader's overall profit percentage have been?",
+          "options": [
+            "11.64%",
+            "12.23%",
+            "13.17%",
+            "13.94%",
+            "15%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Extra revenue = 18 kg × ₹36 = ₹648",
+              "Profit = 3,282 + 648 = ₹3,930",
+              "Profit % = 3,930 ÷ 28,200 × 100 = 13.94%"
+            ],
+            "trap": "**11.64%** is what you get if you give the actual profit percentage."
+          },
+          "tags": [
+            "di:caselet",
+            "di:profit"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-13",
+      "subtype": "caselet",
+      "difficulty": "extreme",
+      "title": "Caselet: students and languages",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nEvery student of a school studies exactly two of the three languages Hindi, Sanskrit and French. 830 students study Hindi, 650 study Sanskrit and 520 study French.",
+      "questions": [
+        {
+          "key": "di-13-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of students who study Hindi and Sanskrit to the number who study Hindi and French?",
+          "options": [
+            "48 : 35",
+            "83 : 65",
+            "7 : 5",
+            "35 : 48",
+            "48 : 17"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Each student is counted twice, so students = (830 + 650 + 520) ÷ 2 = 1,000",
+              "Hindi & Sanskrit = 1,000 − 520 = 480; Hindi & French = 1,000 − 650 = 350; Sanskrit & French = 1,000 − 830 = 170",
+              "Required ratio = 480 : 350 = 48 : 35"
+            ],
+            "shortcut": "The students who study a pair are exactly those who do not study the third language: total − that language.",
+            "trap": "**35 : 48** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-13-q2",
+          "subtype": "caselet",
+          "prompt": "The number of students who do not study Hindi is what percent of the number who study both Hindi and French?",
+          "options": [
+            "17%",
+            "20.48%",
+            "45.9%",
+            "48.57%",
+            "205.88%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Each student is counted twice, so students = (830 + 650 + 520) ÷ 2 = 1,000",
+              "Students without Hindi study Sanskrit & French: 1,000 − 830 = 170; Hindi & French = 350",
+              "Required % = 170 ÷ 350 × 100 = 48.57%"
+            ],
+            "trap": "**205.88%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-13-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the number of students who study Hindi and Sanskrit more than the number who study Sanskrit and French?",
+          "options": [
+            "37.14%",
+            "59.62%",
+            "64.58%",
+            "182.35%",
+            "282.35%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Each student is counted twice, so students = (830 + 650 + 520) ÷ 2 = 1,000",
+              "Hindi & Sanskrit = 1,000 − 520 = 480; Hindi & French = 1,000 − 650 = 350; Sanskrit & French = 1,000 − 830 = 170",
+              "Required % = (480 − 170) ÷ 170 × 100 = 182.35%"
+            ],
+            "trap": "**64.58%** is what you get if you divide the difference by the Hindi-and-Sanskrit group."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-13-q4",
+          "subtype": "caselet",
+          "prompt": "$\\frac{3}{8}$ of the students who study Hindi and Sanskrit, 60% of those who study Hindi and French and half of those who study Sanskrit and French are girls. How many girls are there in the school?",
+          "options": [
+            "405",
+            "475",
+            "496",
+            "525",
+            "595"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Hindi & Sanskrit = 1,000 − 520 = 480; Hindi & French = 1,000 − 650 = 350; Sanskrit & French = 1,000 − 830 = 170",
+              "Girls = 3/8 × 480 + 60% of 350 + 1/2 × 170 = 180 + 210 + 85",
+              "Total girls = 475"
+            ],
+            "trap": "**525** is what you get if you count the boys instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sub-split"
+          ]
+        },
+        {
+          "key": "di-13-q5",
+          "subtype": "caselet",
+          "prompt": "Next year, the number of students who study Hindi rises by 20%, the number who study French rises by 25% and the number who study Sanskrit does not change; every student still studies exactly two of the three languages. How many students will then study Sanskrit and French?",
+          "options": [
+            "152",
+            "212",
+            "304",
+            "498",
+            "1,148"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Next year: Hindi = 996, Sanskrit = 650, French = 650",
+              "Students = (996 + 650 + 650) ÷ 2 = 1,148",
+              "Sanskrit & French = 1,148 − 996 = 152"
+            ],
+            "trap": "**304** is what you get if you forget to halve."
+          },
+          "tags": [
+            "di:caselet",
+            "di:next-period"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-14",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: savings accounts in three branches",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nTwo banks, P and Q, opened new savings accounts at their branches in Agra, Kanpur and Varanasi. Bank P opened 3,600 accounts in all, and its accounts in Agra, Kanpur and Varanasi were in the ratio 5 : 4 : 3 respectively. Bank Q opened 4,200 accounts in all: 35% of them in Kanpur and 180 fewer in Agra than bank P opened in Agra, and the rest in Varanasi. $\\frac{2}{9}$ of bank P's accounts in Varanasi and 20% of bank Q's accounts in Varanasi were zero-balance accounts.",
+      "questions": [
+        {
+          "key": "di-14-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of accounts opened by bank P in Varanasi to the number opened by bank Q in Varanasi?",
+          "options": [
+            "30 : 49",
+            "31 : 47",
+            "40 : 49",
+            "47 : 30",
+            "30 : 47"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "P: Agra = 5/12 × 3,600 = 1,500, Kanpur = 1,200, Varanasi = 900",
+              "Q: Kanpur = 35% of 4,200 = 1,470, Agra = 1,500 − 180 = 1,320, Varanasi = 4,200 − 1,470 − 1,320 = 1,410",
+              "Required ratio = 900 : 1,410 = 30 : 47"
+            ],
+            "trap": "**47 : 30** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-14-q2",
+          "subtype": "caselet",
+          "prompt": "The number of accounts bank Q opened in Agra is what percent of the number bank P opened in Agra?",
+          "options": [
+            "12%",
+            "88%",
+            "89.8%",
+            "110%",
+            "113.64%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "P in Agra = 1,500; Q in Agra = 1,320",
+              "Required % = 1,320 ÷ 1,500 × 100 = 88%"
+            ],
+            "trap": "**113.64%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-14-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the number of accounts bank Q opened in Kanpur more than the number bank P opened in Kanpur?",
+          "options": [
+            "1.67%",
+            "16.67%",
+            "18.37%",
+            "22.5%",
+            "56.67%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "P in Kanpur = 4/12 × 3,600 = 1,200; Q in Kanpur = 1,470",
+              "Required % = 270 ÷ 1,200 × 100 = 22.5%"
+            ],
+            "trap": "**18.37%** is what you get if you divide the difference by Q's figure instead of P's."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-14-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of accounts opened by bank Q in Agra and Varanasi?",
+          "options": [
+            "1,200",
+            "1,304",
+            "1,365",
+            "1,400",
+            "1,440"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Q: Kanpur = 35% of 4,200 = 1,470, Agra = 1,500 − 180 = 1,320, Varanasi = 4,200 − 1,470 − 1,320 = 1,410",
+              "Average = (1,320 + 1,410) ÷ 2 = 1,365"
+            ],
+            "shortcut": "Agra + Varanasi for Q = 4,200 − 1,470 = 2,730; half is 1,365.",
+            "trap": "**1,440** is what you get if you use Kanpur and Varanasi."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-14-q5",
+          "subtype": "caselet",
+          "prompt": "How many of the accounts opened by the two banks in Varanasi were not zero-balance accounts?",
+          "options": [
+            "482",
+            "1,328",
+            "1,828",
+            "1,848",
+            "1,876"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "P: 900 − 2/9 × 900 = 700",
+              "Q: 1,410 − 20% of 1,410 = 1,128",
+              "Total = 1,828"
+            ],
+            "trap": "**1,848** is what you get if you apply 20% to both banks' accounts."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sub-split"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-15",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: staff of three companies",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nIn company C there are 84 women, and they make up 35% of C's employees. Company A has 25% more employees than company C, and company B has $\\frac{2}{3}$ as many employees as companies A and C together. In company A, the ratio of men to women is 7 : 5, and in company B, 45% of the employees are women.",
+      "questions": [
+        {
+          "key": "di-15-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of men in company A to the number of men in company B?",
+          "options": [
+            "175 : 198",
+            "198 : 175",
+            "8 : 9",
+            "175 : 156",
+            "125 : 162"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "C = 84 ÷ 0.35 = 240; A = 1.25 × 240 = 300; B = 2/3 × (300 + 240) = 360",
+              "Men in A = 7/12 × 300 = 175; men in B = 55% of 360 = 198",
+              "Required ratio = 175 : 198 (175 and 198 have no common factor)"
+            ],
+            "trap": "**198 : 175** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-15-q2",
+          "subtype": "caselet",
+          "prompt": "The number of women in company C is what percent of the number of women in company A?",
+          "options": [
+            "28%",
+            "48%",
+            "51.85%",
+            "67.2%",
+            "148.81%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "C = 84 ÷ 0.35 = 240; A = 1.25 × 240 = 300; B = 2/3 × (300 + 240) = 360",
+              "Women in A = 5/12 × 300 = 125",
+              "Required % = 84 ÷ 125 × 100 = 67.2%"
+            ],
+            "trap": "**148.81%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-15-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the total number of men in the three companies more than the total number of women?",
+          "options": [
+            "17.56%",
+            "29.87%",
+            "29.97%",
+            "40.25%",
+            "42.59%"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Men = 175 + 198 + 156 = 529",
+              "Women = 125 + 162 + 84 = 371",
+              "Required % = 158 ÷ 371 × 100 = 42.59%"
+            ],
+            "trap": "**29.87%** is what you get if you divide the difference by the men instead of the women."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-15-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of men per company?",
+          "options": [
+            "123.67",
+            "165.5",
+            "176.33",
+            "186.5",
+            "300"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Men = 175 + 198 + 156 = 529",
+              "Average = 529 ÷ 3 = 176.33"
+            ],
+            "trap": "**123.67** is what you get if you average the women instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-15-q5",
+          "subtype": "caselet",
+          "prompt": "Company D has $\\frac{4}{5}$ as many men as company A, and the number of women in D is $\\frac{5}{6}$ of the number of men in company B. How many employees does D have?",
+          "options": [
+            "265",
+            "275",
+            "291",
+            "305",
+            "338"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Men in D = 4/5 × 175 = 140",
+              "Women in D = 5/6 × 198 = 165",
+              "D = 140 + 165 = 305"
+            ],
+            "trap": "**275** is what you get if you use B's women instead of its men."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-16",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: loans disbursed by a bank",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nA bank disbursed home loans, car loans and education loans in 2024 and 2025. In 2024 it disbursed 2,500 loans in all: 44% of them were home loans, $\\frac{3}{10}$ were car loans and the rest were education loans. In 2025, the number of home loans rose by 15%, the number of car loans fell by 12% and the number of education loans rose by 20% over 2024.",
+      "questions": [
+        {
+          "key": "di-16-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of car loans to the number of education loans disbursed in 2025?",
+          "options": [
+            "11 : 13",
+            "13 : 11",
+            "66 : 65",
+            "12 : 13",
+            "15 : 13"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "2024: home = 44% of 2,500 = 1,100, car = 750, education = 650",
+              "2025: home = 1.15 × 1,100 = 1,265, car = 0.88 × 750 = 660, education = 1.2 × 650 = 780",
+              "Required ratio = 660 : 780 = 11 : 13"
+            ],
+            "trap": "**13 : 11** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-16-q2",
+          "subtype": "caselet",
+          "prompt": "The number of home loans disbursed in 2024 is what percent of the number of car and education loans together disbursed in 2025?",
+          "options": [
+            "40.67%",
+            "76.39%",
+            "78.57%",
+            "87.85%",
+            "130.91%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "2024: home = 44% of 2,500 = 1,100, car = 750, education = 650",
+              "2025: home = 1.15 × 1,100 = 1,265, car = 0.88 × 750 = 660, education = 1.2 × 650 = 780",
+              "Car + education (2025) = 1,440",
+              "Required % = 1,100 ÷ 1,440 × 100 = 76.39%"
+            ],
+            "trap": "**130.91%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of",
+            "di:next-period"
+          ]
+        },
+        {
+          "key": "di-16-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent did the total number of loans rise from 2024 to 2025?",
+          "options": [
+            "7.3%",
+            "7.58%",
+            "7.67%",
+            "7.75%",
+            "8.2%"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "2025: home = 1.15 × 1,100 = 1,265, car = 0.88 × 750 = 660, education = 1.2 × 650 = 780",
+              "Total 2025 = 2,705",
+              "Rise = 205; % rise = 205 ÷ 2,500 × 100 = 8.2%"
+            ],
+            "shortcut": "Weighted change = 0.44 × 15 − 0.30 × 12 + 0.26 × 20 = 6.6 − 3.6 + 5.2 = 8.2%.",
+            "trap": "**7.58%** is what you get if you divide the rise by the 2025 total."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more",
+            "di:next-period"
+          ]
+        },
+        {
+          "key": "di-16-q4",
+          "subtype": "caselet",
+          "prompt": "What was the average number of loans per category in 2025?",
+          "options": [
+            "720",
+            "833.33",
+            "901.67",
+            "1,022.5",
+            "1,352.5"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "2025: home = 1.15 × 1,100 = 1,265, car = 0.88 × 750 = 660, education = 1.2 × 650 = 780",
+              "Average = 2,705 ÷ 3 = 901.67"
+            ],
+            "trap": "**833.33** is what you get if you use the 2024 total."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-16-q5",
+          "subtype": "caselet",
+          "prompt": "In 2025, 40% of the home loans and 25% of the education loans went to women borrowers. How many of the home and education loans of 2025 went to men borrowers?",
+          "options": [
+            "701",
+            "1,227",
+            "1,284",
+            "1,344",
+            "2,004"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Women: 40% of 1,265 = 506; 25% of 780 = 195",
+              "Men = (1,265 + 780) − 701 = 1,344"
+            ],
+            "trap": "**701** is what you get if you count the women borrowers."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sub-split",
+            "di:next-period"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-17",
+      "subtype": "caselet",
+      "difficulty": "extreme",
+      "title": "Caselet: refrigerator sales in three cities",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nTwo companies, A and B, sold refrigerators in Delhi, Chennai and Kolkata. A sold 6,000 refrigerators in all and B sold 7,200 in all. One-third of A's refrigerators were sold in Kolkata, and 30% of B's refrigerators were sold in Delhi. A's sales in Delhi were 20% more than B's sales in Delhi, and B's sales in Chennai were 1,000 more than A's sales in Chennai. The rest of B's refrigerators were sold in Kolkata.",
+      "questions": [
+        {
+          "key": "di-17-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of refrigerators sold by A in Chennai to the number sold by B in Kolkata?",
+          "options": [
+            "329 : 176",
+            "250 : 329",
+            "176 : 301",
+            "177 : 329",
+            "176 : 329"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "A: Kolkata = 1/3 × 6,000 = 2,000; Delhi = 1.2 × B's Delhi = 1.2 × 2,160 = 2,592; Chennai = 6,000 − 2,000 − 2,592 = 1,408",
+              "B: Delhi = 30% of 7,200 = 2,160; Chennai = 1,408 + 1,000 = 2,408; Kolkata = 7,200 − 2,160 − 2,408 = 2,632",
+              "Required ratio = 1,408 : 2,632 = 176 : 329"
+            ],
+            "trap": "**329 : 176** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-17-q2",
+          "subtype": "caselet",
+          "prompt": "A's sales in Delhi are what percent of B's sales in Kolkata?",
+          "options": [
+            "75.99%",
+            "98.48%",
+            "101.54%",
+            "107.64%",
+            "120%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "A: Kolkata = 1/3 × 6,000 = 2,000; Delhi = 1.2 × B's Delhi = 1.2 × 2,160 = 2,592; Chennai = 6,000 − 2,000 − 2,592 = 1,408",
+              "B: Delhi = 30% of 7,200 = 2,160; Chennai = 1,408 + 1,000 = 2,408; Kolkata = 7,200 − 2,160 − 2,408 = 2,632",
+              "Required % = 2,592 ÷ 2,632 × 100 = 98.48%"
+            ],
+            "trap": "**101.54%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-17-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent are B's sales in Chennai more than A's sales in Chennai?",
+          "options": [
+            "20%",
+            "31.6%",
+            "41.53%",
+            "50%",
+            "71.02%"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "A: Kolkata = 1/3 × 6,000 = 2,000; Delhi = 1.2 × B's Delhi = 1.2 × 2,160 = 2,592; Chennai = 6,000 − 2,000 − 2,592 = 1,408",
+              "B in Chennai = 2,408",
+              "Required % = 1,000 ÷ 1,408 × 100 = 71.02%"
+            ],
+            "trap": "**41.53%** is what you get if you divide the difference by B's figure instead of A's."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-17-q4",
+          "subtype": "caselet",
+          "prompt": "A third company C sold 25% more refrigerators than A in Delhi and $\\frac{3}{8}$ fewer than B in Kolkata, and its sales in Chennai were the average of A's and B's sales in Chennai. How many refrigerators did C sell in the three cities together?",
+          "options": [
+            "6,135",
+            "6,145",
+            "6,253",
+            "6,793",
+            "8,701"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "C: Delhi = 1.25 × 2,592 = 3,240",
+              "Kolkata = 5/8 × 2,632 = 1,645; Chennai = (1,408 + 2,408) ÷ 2 = 1,908",
+              "Total = 3,240 + 1,645 + 1,908 = 6,793"
+            ],
+            "trap": "**6,135** is what you get if you take $\\frac{3}{8}$ of B's Kolkata sales instead of $\\frac{3}{8}$ fewer."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity"
+          ]
+        },
+        {
+          "key": "di-17-q5",
+          "subtype": "caselet",
+          "prompt": "Next year, A's sales in Delhi rise by 12.5% and B's sales in Kolkata fall by 12.5%. By how many refrigerators will A's Delhi sales then exceed B's Kolkata sales?",
+          "options": [
+            "40",
+            "284",
+            "289",
+            "585",
+            "613"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "A's Delhi next year = 1.125 × 2,592 = 2,916",
+              "B's Kolkata next year = 0.875 × 2,632 = 2,303",
+              "Gap = 2,916 − 2,303 = 613"
+            ],
+            "trap": "**40** is what you get if you give this year's gap."
+          },
+          "tags": [
+            "di:caselet",
+            "di:next-period"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-18",
+      "subtype": "caselet",
+      "difficulty": "extreme",
+      "title": "Caselet: three companies and one total",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nThree companies P, Q and R have 5,400 employees in all. Company P has 200 more employees than company R. In P, 40% of the employees are women. In Q, the ratio of men to women is 3 : 2, and the number of men in Q is 160 more than the number of women in P. In R, 45% of the employees are women.",
+      "questions": [
+        {
+          "key": "di-18-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of men in company P to the number of men in company R?",
+          "options": [
+            "40 : 33",
+            "80 : 81",
+            "41 : 33",
+            "33 : 40",
+            "5 : 4"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Let R = r. Then P = r + 200, women in P = 0.4(r + 200), men in Q = 0.4r + 240 and Q = 5/3 × (0.4r + 240) = $\\frac{2}{3}$r + 400",
+              "(r + 200) + ($\\frac{2}{3}$r + 400) + r = 5,400 → $\\frac{8}{3}$r = 4,800 → r = 1,800; P = 2,000, Q = 1,600",
+              "Men in P = 60% of 2,000 = 1,200; men in R = 55% of 1,800 = 990",
+              "Required ratio = 1,200 : 990 = 40 : 33"
+            ],
+            "trap": "**33 : 40** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-18-q2",
+          "subtype": "caselet",
+          "prompt": "The number of women in company Q is what percent of the number of women in company R?",
+          "options": [
+            "35.56%",
+            "64.65%",
+            "79.01%",
+            "118.52%",
+            "126.56%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "(r + 200) + ($\\frac{2}{3}$r + 400) + r = 5,400 → $\\frac{8}{3}$r = 4,800 → r = 1,800; P = 2,000, Q = 1,600",
+              "Women in Q = 2/5 × 1,600 = 640; women in R = 45% of 1,800 = 810",
+              "Required % = 640 ÷ 810 × 100 = 79.01%"
+            ],
+            "trap": "**126.56%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-18-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the total number of men in the three companies more than the total number of women?",
+          "options": [
+            "16.67%",
+            "28.57%",
+            "36.02%",
+            "40%",
+            "50%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "(r + 200) + ($\\frac{2}{3}$r + 400) + r = 5,400 → $\\frac{8}{3}$r = 4,800 → r = 1,800; P = 2,000, Q = 1,600",
+              "Men = 1,200 + 960 + 990 = 3,150; women = 800 + 640 + 810 = 2,250",
+              "Required % = 900 ÷ 2,250 × 100 = 40%"
+            ],
+            "trap": "**28.57%** is what you get if you divide the difference by the men instead of the women."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-18-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average number of women per company?",
+          "options": [
+            "725",
+            "750",
+            "780",
+            "1,050",
+            "1,800"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Women = 800 + 640 + 810 = 2,250",
+              "Average = 2,250 ÷ 3 = 750"
+            ],
+            "trap": "**1,050** is what you get if you average the men instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-18-q5",
+          "subtype": "caselet",
+          "prompt": "In the three companies, 20% of the men and 10% of the women work night shifts and everyone else works day shifts. How many employees work day shifts?",
+          "options": [
+            "855",
+            "4,320",
+            "4,545",
+            "4,590",
+            "4,635"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Night shifts = 20% of 3,150 + 10% of 2,250 = 630 + 225 = 855",
+              "Day shifts = 5,400 − 855 = 4,545"
+            ],
+            "trap": "**855** is what you get if you count the night-shift employees."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sub-split"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-19",
+      "subtype": "caselet",
+      "difficulty": "extreme",
+      "title": "Caselet: Aman's four schemes",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nAman invested ₹x in scheme A, which pays simple interest at 12% per annum, for 5 years, and ₹(x + 20,000) in scheme B, which pays 10% per annum compounded annually, for 2 years. The interest from scheme A was ₹3,600 more than the interest from scheme B. He then invested the entire amount he received from scheme B in scheme C, which pays simple interest at 15% per annum, for 2 years, and half of the amount he received from scheme A in scheme D, which pays 20% per annum compounded half-yearly, for $1\\frac{1}{2}$ years.",
+      "questions": [
+        {
+          "key": "di-19-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the interest Aman earned from scheme A to the interest he earned from scheme B?",
+          "options": [
+            "10 : 7",
+            "7 : 10",
+            "3 : 2",
+            "1 : 2",
+            "11 : 7"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "SI from A = 0.6x; CI from B = 0.21(x + 20,000). 0.6x − 0.21x − 4,200 = 3,600 → 0.39x = 7,800 → x = 20,000",
+              "A: ₹20,000, interest ₹12,000; B: ₹40,000, interest ₹8,400",
+              "Required ratio = 12,000 : 8,400 = 10 : 7"
+            ],
+            "trap": "**3 : 2** is what you get if you treat scheme B as simple interest (₹8,000); **7 : 10** is the ratio written the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-19-q2",
+          "subtype": "caselet",
+          "prompt": "The interest Aman earned from scheme B is what percent of the sum he invested in scheme A?",
+          "options": [
+            "21%",
+            "26.25%",
+            "40%",
+            "42%",
+            "60%"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "SI from A = 0.6x; CI from B = 0.21(x + 20,000). 0.6x − 0.21x − 4,200 = 3,600 → 0.39x = 7,800 → x = 20,000",
+              "Interest from B = 40,000 × 0.21 = ₹8,400",
+              "Required % = 8,400 ÷ 20,000 × 100 = 42%"
+            ],
+            "trap": "**21%** is what you get if you divide by B's principal."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-19-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the interest Aman earned from scheme C more than the interest he earned from scheme A?",
+          "options": [
+            "17.36%",
+            "21%",
+            "30.08%",
+            "72.86%",
+            "121%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Amount from B = 40,000 × 1.21 = ₹48,400",
+              "Interest from C = 48,400 × 15 × 2 ÷ 100 = ₹14,520; interest from A = ₹12,000",
+              "Required % = 2,520 ÷ 12,000 × 100 = 21%"
+            ],
+            "trap": "**17.36%** is what you get if you divide the difference by C's interest instead of A's."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-19-q4",
+          "subtype": "caselet",
+          "prompt": "What interest did Aman earn from scheme D?",
+          "options": [
+            "₹3,360",
+            "₹4,800",
+            "₹5,058",
+            "₹5,120",
+            "₹5,296"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Amount from A = 20,000 + 12,000 = ₹32,000; half = ₹16,000",
+              "Half-yearly: 10% per half-year for 3 half-years → factor 1.1³ = 1.331",
+              "Interest = 16,000 × 0.331 = ₹5,296"
+            ],
+            "trap": "**₹4,800** is what you get if you treat scheme D as simple interest."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity",
+            "di:interest"
+          ]
+        },
+        {
+          "key": "di-19-q5",
+          "subtype": "caselet",
+          "prompt": "What interest did Aman earn from scheme C?",
+          "options": [
+            "₹7,260",
+            "₹9,600",
+            "₹12,000",
+            "₹14,520",
+            "₹15,609"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "SI from A = 0.6x; CI from B = 0.21(x + 20,000). 0.6x − 0.21x − 4,200 = 3,600 → 0.39x = 7,800 → x = 20,000",
+              "Amount from B = 40,000 × 1.21 = ₹48,400",
+              "Interest from C = 48,400 × 15 × 2 ÷ 100 = ₹14,520"
+            ],
+            "trap": "**₹12,000** is what you get if you invest only B's principal in C."
+          },
+          "tags": [
+            "di:caselet",
+            "di:derived-entity",
+            "di:interest"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-20",
+      "subtype": "caselet",
+      "difficulty": "extreme",
+      "title": "Caselet: two motorbike models",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nA dealer sold two models of motorbike, X and Y, from January to April. He sold 2,400 bikes of model X and 2,000 bikes of model Y in the four months together. 15% of the model X bikes were sold in January, model X sales in February were $33\\frac{1}{3}$% more than in January, and model X sales in March and April were in the ratio 3 : 5 respectively. Model Y sales in January were $\\frac{2}{3}$ of model X sales in February, model Y sales in February were 25% more than in January, model Y sales in March were 105 fewer than model X sales in March, and the rest of the model Y bikes were sold in April.",
+      "questions": [
+        {
+          "key": "di-20-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of model X sales in March to model Y sales in April?",
+          "options": [
+            "117 : 160",
+            "59 : 80",
+            "39 : 32",
+            "9 : 20",
+            "160 : 117"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "X: Jan = 15% of 2,400 = 360, Feb = 480, Mar + Apr = 1,560 in 3 : 5 → 585 and 975",
+              "Y: Jan = 2/3 × 480 = 320, Feb = 1.25 × 320 = 400, Mar = 585 − 105 = 480, Apr = 2,000 − 1,200 = 800",
+              "Required ratio = 585 : 800 = 117 : 160"
+            ],
+            "trap": "**160 : 117** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-20-q2",
+          "subtype": "caselet",
+          "prompt": "Model Y sales in January and February together are what percent of model X sales in March and April together?",
+          "options": [
+            "30%",
+            "36%",
+            "46.15%",
+            "53.85%",
+            "216.67%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "X: Jan = 15% of 2,400 = 360, Feb = 480, Mar + Apr = 1,560 in 3 : 5 → 585 and 975",
+              "Y: Jan = 2/3 × 480 = 320, Feb = 1.25 × 320 = 400, Mar = 585 − 105 = 480, Apr = 2,000 − 1,200 = 800",
+              "Required % = 720 ÷ 1,560 × 100 = 46.15%"
+            ],
+            "trap": "**216.67%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-20-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent were the total sales of both models in April more than the total sales of both models in February?",
+          "options": [
+            "50.42%",
+            "100%",
+            "101.7%",
+            "103.13%",
+            "201.7%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "X: Jan = 15% of 2,400 = 360, Feb = 480, Mar + Apr = 1,560 in 3 : 5 → 585 and 975",
+              "Y: Jan = 2/3 × 480 = 320, Feb = 1.25 × 320 = 400, Mar = 585 − 105 = 480, Apr = 2,000 − 1,200 = 800",
+              "April = 975 + 800 = 1,775; February = 480 + 400 = 880",
+              "Required % = 895 ÷ 880 × 100 = 101.7%"
+            ],
+            "trap": "**50.42%** is what you get if you divide the difference by April's total."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-20-q4",
+          "subtype": "caselet",
+          "prompt": "What is the average of model X sales in January, model X sales in March and model Y sales in April?",
+          "options": [
+            "475",
+            "581.67",
+            "613.66",
+            "621.67",
+            "711.67"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "X: Jan = 15% of 2,400 = 360, Feb = 480, Mar + Apr = 1,560 in 3 : 5 → 585 and 975",
+              "Y: Jan = 2/3 × 480 = 320, Feb = 1.25 × 320 = 400, Mar = 585 − 105 = 480, Apr = 2,000 − 1,200 = 800",
+              "Average = (360 + 585 + 800) ÷ 3 = 581.67"
+            ],
+            "trap": "**475** is what you get if you use model Y's March sales."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        },
+        {
+          "key": "di-20-q5",
+          "subtype": "caselet",
+          "prompt": "In May, model X sales were 20% less than in April and model Y sales were 12.5% more than in April. The total sales in May were what percent of the total model X sales from January to April?",
+          "options": [
+            "70%",
+            "72.37%",
+            "73.85%",
+            "73.96%",
+            "84%"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "April: X = 975, Y = 800",
+              "May: X = 0.8 × 975 = 780; Y = 1.125 × 800 = 900; total = 1,680",
+              "Required % = 1,680 ÷ 2,400 × 100 = 70%"
+            ],
+            "trap": "**73.96%** is what you get if you use April's total."
+          },
+          "tags": [
+            "di:caselet",
+            "di:next-period"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-21",
+      "subtype": "caselet",
+      "difficulty": "extreme",
+      "title": "Caselet: mark-ups and discounts",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nA shopkeeper deals in three items A, B and C. One unit of A costs him ₹1,200. One unit of B costs 25% more than one unit of A, and one unit of C costs ₹600 less than one unit of A and one unit of B together. He marks A 40% above its cost price and sells it at a discount of 15%; he marks B 50% above its cost price and sells it at a discount of 12%; he marks C 30% above its cost price but sells it at a loss of 5%. In a month he sells 40 units of A, 25 units of B and 20 units of C.",
+      "questions": [
+        {
+          "key": "di-21-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the shopkeeper's total profit on A to his total profit on B in the month?",
+          "options": [
+            "19 : 40",
+            "25 : 19",
+            "4 : 5",
+            "16 : 19",
+            "19 : 25"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Cost: A ₹1,200, B 1.25 × 1,200 = ₹1,500, C = 1,200 + 1,500 − 600 = ₹2,100",
+              "A: SP = 1,680 × 0.85 = ₹1,428, profit ₹228 × 40 = ₹9,120",
+              "B: SP = 2,250 × 0.88 = ₹1,980, profit ₹480 × 25 = ₹12,000",
+              "Required ratio = 9,120 : 12,000 = 19 : 25"
+            ],
+            "trap": "**19 : 40** is what you get if you compare the profit on one unit and forget the numbers sold; **25 : 19** is the ratio written the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-21-q2",
+          "subtype": "caselet",
+          "prompt": "The selling price of one unit of C is what percent of the marked price of one unit of B?",
+          "options": [
+            "88.67%",
+            "100.76%",
+            "112.78%",
+            "121.33%",
+            "133%"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Cost: A ₹1,200, B 1.25 × 1,200 = ₹1,500, C = 1,200 + 1,500 − 600 = ₹2,100",
+              "SP of C = 95% of 2,100 = ₹1,995; MP of B = 1.5 × 1,500 = ₹2,250",
+              "Required % = 1,995 ÷ 2,250 × 100 = 88.67%"
+            ],
+            "trap": "**100.76%** is what you get if you use B's selling price."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-21-q3",
+          "subtype": "caselet",
+          "prompt": "What rate of discount does the shopkeeper allow on C?",
+          "options": [
+            "25%",
+            "26.92%",
+            "28.4%",
+            "35%",
+            "36.84%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "C: CP = ₹2,100, MP = 1.3 × 2,100 = ₹2,730, SP = 0.95 × 2,100 = ₹1,995",
+              "Discount = 735; rate = 735 ÷ 2,730 × 100 = 26.92%"
+            ],
+            "shortcut": "SP/MP = 0.95 ÷ 1.30 = 19/26, so discount = 7/26 = 26.92%.",
+            "trap": "**35%** is what you get if you add the mark-up and the loss percentages."
+          },
+          "tags": [
+            "di:caselet",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-21-q4",
+          "subtype": "caselet",
+          "prompt": "What is the shopkeeper's overall profit percentage for the month?",
+          "options": [
+            "12.98%",
+            "14.92%",
+            "15.33%",
+            "18.21%",
+            "24.7%"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Cost: A ₹1,200, B 1.25 × 1,200 = ₹1,500, C = 1,200 + 1,500 − 600 = ₹2,100",
+              "Cost = 48,000 + 37,500 + 42,000 = ₹1,27,500",
+              "Profit = 9,120 + 12,000 − 2,100 = ₹19,020",
+              "Profit % = 19,020 ÷ 1,27,500 × 100 = 14.92%"
+            ],
+            "trap": "**12.98%** is what you get if you divide the profit by the sales revenue."
+          },
+          "tags": [
+            "di:caselet",
+            "di:profit"
+          ]
+        },
+        {
+          "key": "di-21-q5",
+          "subtype": "caselet",
+          "prompt": "Had the shopkeeper sold C at its marked price, what would his total profit for the month have been?",
+          "options": [
+            "₹14,700",
+            "₹21,120",
+            "₹21,750",
+            "₹31,620",
+            "₹33,720"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Profit on C at MP = (2,730 − 2,100) × 20 = ₹12,600",
+              "Total = 9,120 + 12,000 + 12,600 = ₹33,720"
+            ],
+            "trap": "**₹31,620** is what you get if you add C's mark-up to the actual profit, which already includes C's loss."
+          },
+          "tags": [
+            "di:caselet",
+            "di:profit"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "di-22",
+      "subtype": "caselet",
+      "difficulty": "hard",
+      "title": "Caselet: results of three schools",
+      "stimulus": "Read the following information carefully and answer the questions that follow.\n\nIn an examination, 3,000 students appeared from three schools P, Q and R. 840 of them appeared from R, and the numbers who appeared from P and Q were in the ratio 5 : 4 respectively. In P, 72.5% of the students who appeared passed. In Q, the ratio of the number of students who failed to the number who passed was 1 : 3. In R, the number of students who passed was 1.5 times the number who failed. Among the students who passed, girls made up 40% in P and $\\frac{5}{12}$ in Q, and the ratio of boys to girls was 4 : 3 in R.",
+      "questions": [
+        {
+          "key": "di-22-q1",
+          "subtype": "caselet",
+          "prompt": "What is the ratio of the number of students who passed from P to the number who passed from R?",
+          "options": [
+            "84 : 145",
+            "10 : 7",
+            "73 : 42",
+            "55 : 56",
+            "145 : 84"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "P + Q = 3,000 − 840 = 2,160 → P = 1,200, Q = 960",
+              "Passed: P = 72.5% of 1,200 = 870; Q = 3/4 × 960 = 720; R = 1.5/2.5 × 840 = 504",
+              "Required ratio = 870 : 504 = 145 : 84"
+            ],
+            "trap": "**84 : 145** is what you get if you write the ratio the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:ratio"
+          ]
+        },
+        {
+          "key": "di-22-q2",
+          "subtype": "caselet",
+          "prompt": "The total number of students who failed from the three schools is what percent of the number who passed from Q?",
+          "options": [
+            "30.2%",
+            "79.17%",
+            "79.47%",
+            "94.38%",
+            "125.83%"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "P + Q = 3,000 − 840 = 2,160 → P = 1,200, Q = 960",
+              "Failed: P = 330, Q = 240, R = 840 − 504 = 336; total = 906",
+              "Required % = 906 ÷ 720 × 100 = 125.83%"
+            ],
+            "trap": "**79.47%** is what you get if you divide the other way round."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-of"
+          ]
+        },
+        {
+          "key": "di-22-q3",
+          "subtype": "caselet",
+          "prompt": "By what percent is the number of students who passed from P more than the number who passed from Q?",
+          "options": [
+            "16%",
+            "17.24%",
+            "20.83%",
+            "24.29%",
+            "25%"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "P + Q = 3,000 − 840 = 2,160 → P = 1,200, Q = 960",
+              "Passed: P = 870, Q = 720",
+              "Required % = 150 ÷ 720 × 100 = 20.83%"
+            ],
+            "trap": "**17.24%** is what you get if you divide the difference by P's figure instead of Q's."
+          },
+          "tags": [
+            "di:caselet",
+            "di:percent-more"
+          ]
+        },
+        {
+          "key": "di-22-q4",
+          "subtype": "caselet",
+          "prompt": "How many girls passed from the three schools together?",
+          "options": [
+            "648",
+            "864",
+            "936",
+            "984",
+            "1,230"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Passed: P = 72.5% of 1,200 = 870; Q = 3/4 × 960 = 720; R = 1.5/2.5 × 840 = 504",
+              "Girls: P = 40% of 870 = 348; Q = 5/12 × 720 = 300; R = 3/7 × 504 = 216",
+              "Total = 864"
+            ],
+            "trap": "**1,230** is what you get if you count the boys instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:sub-split"
+          ]
+        },
+        {
+          "key": "di-22-q5",
+          "subtype": "caselet",
+          "prompt": "What is the average number of boys who passed per school?",
+          "options": [
+            "288",
+            "386",
+            "410",
+            "471",
+            "698"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Boys who passed: P = 522, Q = 420, R = 288",
+              "Average = 1,230 ÷ 3 = 410"
+            ],
+            "trap": "**288** is what you get if you average the girls instead."
+          },
+          "tags": [
+            "di:caselet",
+            "di:average"
+          ]
+        }
+      ]
+    }
+  ]
+}
