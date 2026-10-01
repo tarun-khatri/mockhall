@@ -1090,36 +1090,6 @@
       ]
     },
     {
-      "key": "ds-037",
-      "subtype": "blood-relation",
-      "difficulty": "extreme",
-      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nJ, K, L, M, N, P and Q are the only seven members of a family of three generations. There are three married couples in the family, and every child in the family has both parents in the family.\n**How is Q related to M?**\n\n**I.** Q is married to N. N is the granddaughter of K. P is the grandson of J.\n**II.** N is the daughter of L. L is the husband of M. Q is the husband of N.",
-      "options": [
-        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
-        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
-        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
-        "The data in both the statements I and II together are necessary to answer the question",
-        "The data in both the statements I and II together are not sufficient to answer the question"
-      ],
-      "answerIndex": 2,
-      "solution": {
-        "steps": [
-          "I: N’s parent is a child of K. Seven persons and three couples (Q–N, K and K’s spouse, N’s parents) leave P as the only other member; P cannot be N’s child (that would make four generations), so P is N’s brother and J, his grandparent, is K’s spouse. Hence L and M are N’s parents and Q, N’s husband, is M’s son-in-law.",
-          "II: N’s father L is married to M, so M is N’s mother and N’s husband Q is M’s son-in-law.",
-          "Statement I alone: Q is the son-in-law of M → **sufficient**.",
-          "Statement II alone: Q is the son-in-law of M → **sufficient**.",
-          "Hence either I or II alone is sufficient → option C."
-        ],
-        "shortcut": "Draw the tree with + (male) and − (female). Use the stem: the number of couples and generations, and “both parents in the family”, often decide who must be married to whom.",
-        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
-      },
-      "tags": [
-        "ds:standard-five",
-        "ds:blood-relation",
-        "blood-relation:closed-family"
-      ]
-    },
-    {
       "key": "ds-038",
       "subtype": "blood-relation",
       "difficulty": "extreme",
