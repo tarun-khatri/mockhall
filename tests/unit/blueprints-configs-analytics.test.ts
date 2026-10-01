@@ -3,7 +3,8 @@ import { BLUEPRINTS, MAINS, fixedMockVariants, MOCK_PRESETS } from '../../src/co
 import { decodeConfig, encodeConfig, fixedMock, chapterConfig, chapterSeconds } from '../../src/exam/configs';
 import { median, stat, weakAreas, mastery } from '../../src/analytics';
 import type { LogEntry } from '../../src/lib/storage';
-import { assembleChapter } from '../../src/exam/assemble';
+import { assembleChapter, assembleBlueprint } from '../../src/exam/assemble';
+import { blueprint } from '../../src/content/blueprints';
 import { mixedProvider, type ChapterProvider } from '../../src/content/providers';
 import type { Difficulty, Item } from '../../src/content/types';
 
@@ -124,7 +125,28 @@ describe('mixed generator + authored provider', () => {
   it('is deterministic in the seed', async () => {
     expect(await mixed.item('same', 'medium')).toEqual(await mixed.item('same', 'medium'));
   });
+  it('shares a subtype both sides have, using the bank only where it has that difficulty', async () => {
+    const bank = { ...fake('auth', ['election'], ['hard']), has: (d: Difficulty, st?: string) => d === 'hard' && (!st || st === 'election') };
+    const both = mixedProvider(gen, bank);
+    const hard = await Promise.all(Array.from({ length: 200 }, async (_, i) => (await both.item(`e${i}`, 'hard', 'election')).questions[0].id.split(':')[0]));
+    expect(hard.filter((d) => d === 'auth').length).toBeGreaterThan(40);
+    expect(hard.filter((d) => d === 'gen').length).toBeGreaterThan(80);
+    const medium = await Promise.all(Array.from({ length: 50 }, async (_, i) => (await both.item(`e${i}`, 'medium', 'election')).questions[0].id.split(':')[0]));
+    expect(medium.every((d) => d === 'gen')).toBe(true);
+  });
   it('falls back to the generator when the bank is empty', () => {
     expect(mixedProvider(gen, fake('auth', [], []))).toBe(gen);
+  });
+});
+
+describe('fresh mocks', () => {
+  it('skip previously attempted questions and still fill the section', async () => {
+    const bp = blueprint('english', 'A');
+    const mix = { easy: 0, medium: 0.5, hard: 0.5, extreme: 0 };
+    const first = await assembleBlueprint(bp, 'fresh-a', mix);
+    const seen = new Set(first.questions.map((q) => q.id));
+    const second = await assembleBlueprint(bp, 'fresh-a', mix, seen);
+    expect(second.questions).toHaveLength(bp.total);
+    expect(second.questions.filter((q) => seen.has(q.id)).length).toBeLessThan(bp.total / 3);
   });
 });
