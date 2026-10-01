@@ -1,0 +1,2944 @@
+{
+  "chapter": "blood-relation",
+  "version": 1,
+  "sets": [
+    {
+      "key": "br-01",
+      "subtype": "family-puzzle",
+      "difficulty": "easy",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 6 members — P, Q, R, S, T, U — in a family of three generations. There are two married couples in the family.\nQ is the wife of P.\nR is the only daughter of P.\nS is the brother of R.\nT is the daughter-in-law of Q.\nU is the son of T.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-01-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is U related to R?",
+          "options": [
+            "Son",
+            "Cousin",
+            "Nephew",
+            "Grandson",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: P (male) = Q (female) → children R (female) and S (male); S = T (female) → son U (male).",
+              "R is the daughter of P and Q; S, her brother, is their son.",
+              "T is Q's daughter-in-law, so T is the wife of Q's son S; U is the son of T (and S).",
+              "U is the son of R's brother → U is R's **nephew**."
+            ],
+            "trap": "Son would need R to be U's parent; U's parents are S and T."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-01-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the grandmother of U?",
+          "options": [
+            "R",
+            "Q",
+            "T",
+            "P",
+            "S"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: P (male) = Q (female) → children R (female) and S (male); S = T (female) → son U (male).",
+              "U's father is S, and S's mother is Q (the wife of P).",
+              "So **Q** is U's grandmother."
+            ],
+            "trap": "T is U's mother, not grandmother; P is the grandfather."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-01-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many female members are there in the family?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: P (male) = Q (female) → children R (female) and S (male); S = T (female) → son U (male).",
+              "\"Wife\" fixes Q, \"only daughter\" fixes R, \"daughter-in-law\" fixes T as female.",
+              "P (husband of Q), S (brother) and U (son) are male → female members = **3**."
+            ],
+            "trap": "Do not miss T: \"daughter-in-law\" is a female relation."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-01-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If W is the husband of R, how is W related to S?",
+          "options": [
+            "Cousin",
+            "Brother",
+            "Son-in-law",
+            "Brother-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: P (male) = Q (female) → children R (female) and S (male); S = T (female) → son U (male).",
+              "W would be the husband of S's sister R.",
+              "The husband of one's sister is one's **brother-in-law**."
+            ],
+            "trap": "Son-in-law is W's relation to P and Q, not to S."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-02",
+      "subtype": "family-puzzle",
+      "difficulty": "medium",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 7 members — A, B, C, D, E, F, G — in a family of three generations. There are two married couples in the family.\nB is the husband of E.\nF is the only daughter of E.\nA is the sister-in-law of F.\nF is not married.\nC is the granddaughter of B.\nG is the brother of C.\nD is the father of G.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-02-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is A related to E?",
+          "options": [
+            "Niece",
+            "Daughter",
+            "Daughter-in-law",
+            "Sister-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: B (male) = E (female) → children D (male) and F (female, unmarried); D = A (female) → children C (female) and G (male).",
+              "F is unmarried, so A can be F's sister-in-law only as the wife of F's brother.",
+              "C, a granddaughter of B, needs a parent among B's children. F has no children (unmarried, no single parent) and A cannot be B's daughter (F is E's only daughter), so that parent is D (father of G and C), a son of B and E.",
+              "Only two couples exist (B–E and one more), so D's wife is A. A is the wife of E's son → **daughter-in-law**."
+            ],
+            "trap": "Sister-in-law is A's relation to F, not to E."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-02-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the daughter of A?",
+          "options": [
+            "G",
+            "F",
+            "E",
+            "B",
+            "C"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: B (male) = E (female) → children D (male) and F (female, unmarried); D = A (female) → children C (female) and G (male).",
+              "A is D's wife, and D is the father of G and C.",
+              "C is a granddaughter (female) and G is a brother (male) → **C** is A's daughter."
+            ],
+            "trap": "F is E's daughter (A's sister-in-law), not A's."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-02-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many grandsons does B have?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: B (male) = E (female) → children D (male) and F (female, unmarried); D = A (female) → children C (female) and G (male).",
+              "B's grandchildren are C and G, the children of his son D (F is unmarried and has no children).",
+              "C is a granddaughter and G a grandson → B has **1** grandson."
+            ],
+            "trap": "F is B's daughter, not a grandchild, and C is female."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-02-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If H is the husband of F, how is H related to D?",
+          "options": [
+            "Brother",
+            "Uncle",
+            "Son-in-law",
+            "Brother-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: B (male) = E (female) → children D (male) and F (female, unmarried); D = A (female) → children C (female) and G (male).",
+              "F is D's sister, so her husband H would be D's **brother-in-law**."
+            ],
+            "trap": "H would be the son-in-law of B and E, not of D."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-03",
+      "subtype": "family-puzzle",
+      "difficulty": "medium",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 7 members — J, K, L, M, N, O, S — in a family of three generations. There are two married couples in the family.\nL is the wife of K.\nM has no siblings.\nN is the daughter of O.\nK is the father of M.\nO is the son-in-law of K.\nJ is the sister of N.\nS is the grandson of L.",
+      "questions": [
+        {
+          "key": "br-03-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is M related to K?",
+          "options": [
+            "Daughter",
+            "Granddaughter",
+            "Daughter-in-law",
+            "Son",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: K (male) = L (female) → only child M (female); M = O (male) → children N (female), J (female) and S (male).",
+              "M is the only child of K (M has no siblings).",
+              "O is K's son-in-law, i.e. the husband of K's daughter; K has no child other than M, so M is that daughter.",
+              "M is the **daughter** of K."
+            ],
+            "trap": "No clue calls M a \"daughter\" directly — the gender comes from \"son-in-law of K\"; Son ignores it."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-03-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the son of M?",
+          "options": [
+            "J",
+            "O",
+            "N",
+            "K",
+            "S"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: K (male) = L (female) → only child M (female); M = O (male) → children N (female), J (female) and S (male).",
+              "S is a grandson of L; L's only child is M, so S is a child of M (and O).",
+              "S is male → **S** is the son of M. N and J are daughters."
+            ],
+            "trap": "O is M's husband, not her son."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-03-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How is K related to J?",
+          "options": [
+            "Uncle",
+            "Grandfather",
+            "Father-in-law",
+            "Father",
+            "Cannot be determined"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: K (male) = L (female) → only child M (female); M = O (male) → children N (female), J (female) and S (male).",
+              "J is the sister of N, and N is the daughter of O; O's wife is M, so J is a child of M.",
+              "M is K's daughter → K is the **grandfather** of J."
+            ],
+            "trap": "Father-in-law is K's relation to O, not to J."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-03-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If T is the wife of S, how is T related to O?",
+          "options": [
+            "Daughter-in-law",
+            "Sister-in-law",
+            "Niece",
+            "Daughter",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: K (male) = L (female) → only child M (female); M = O (male) → children N (female), J (female) and S (male).",
+              "S is the son of O and M.",
+              "The wife of one's son is one's **daughter-in-law**."
+            ],
+            "trap": "Sister-in-law would need S to be O's brother; S is O's son."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-04",
+      "subtype": "family-puzzle",
+      "difficulty": "medium",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 7 members — P, Q, R, T, V, W, Y — in a family of three generations. There are two married couples in the family.\nT is the only son of W.\nV is the sister-in-law of R.\nQ is the father-in-law of R.\nP and Y are the children of T.\nY is the nephew of V.\nW is the wife of Q.\nP is not the brother of Y.",
+      "questions": [
+        {
+          "key": "br-04-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is P related to W?",
+          "options": [
+            "Niece",
+            "Grandson",
+            "Daughter",
+            "Granddaughter",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: Q (male) = W (female) → children T (male) and V (female); T = R (female) → children P (female) and Y (male).",
+              "R is married to a son of Q; Q's only son is T (the only son of his wife W), so T = R.",
+              "P is a child of T, i.e. a grandchild of W. P is Y's sibling but not his brother → P is a sister (female).",
+              "P is the **granddaughter** of W."
+            ],
+            "trap": "\"P is not the brother of Y\" does not make P unrelated — P is still Y's sibling, so P must be his sister."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-04-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is V related to P?",
+          "options": [
+            "Mother",
+            "Cousin",
+            "Aunt",
+            "Sister",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: Q (male) = W (female) → children T (male) and V (female); T = R (female) → children P (female) and Y (male).",
+              "Only two couples exist (Q–W and T–R), so V is not the wife of R's brother; V must be the sister of R's husband T.",
+              "V is the sister of P's father T → V is P's **aunt**."
+            ],
+            "trap": "Mother is R, the wife of T; V is T's sister."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-04-q3",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the daughter of Q?",
+          "options": [
+            "W",
+            "P",
+            "Y",
+            "R",
+            "V"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: Q (male) = W (female) → children T (male) and V (female); T = R (female) → children P (female) and Y (male).",
+              "Q's children are T (son) and V, T's sister.",
+              "**V** is Q's daughter; R is his daughter-in-law and P his granddaughter."
+            ],
+            "trap": "R is the daughter-in-law of Q — \"in-law\" is not a daughter."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-04-q4",
+          "subtype": "family-puzzle",
+          "prompt": "What is the number of male members in the family?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: Q (male) = W (female) → children T (male) and V (female); T = R (female) → children P (female) and Y (male).",
+              "Male: Q (wife W), T (son), Y (nephew).",
+              "Female: W, V, R (daughter-in-law, as T's wife), P (not the brother) → male members = **3**."
+            ],
+            "trap": "P is female: a sibling who is \"not the brother\" is a sister."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-05",
+      "subtype": "family-puzzle",
+      "difficulty": "medium",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 7 members — D, E, F, G, H, J, K — in a family of three generations. There are two married couples in the family.\nD is the daughter-in-law of H.\nK is the sister of G.\nF is the granddaughter of E.\nJ is the brother of F.\nH is the husband of E.\nK is not married.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-05-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is E related to D?",
+          "options": [
+            "Mother",
+            "Grandmother",
+            "Mother-in-law",
+            "Aunt",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: H (male) = E (female) → children G (male) and K (female, unmarried); G = D (female) → children F (female) and J (male).",
+              "D is married to a son of H. J is a grandchild and K is a sister, so the only possible son is G; D is G's wife.",
+              "E is the mother of G (wife of H) → E is D's **mother-in-law**."
+            ],
+            "trap": "Mother would need D to be E's own child; D only married into the family."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-05-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the father of F?",
+          "options": [
+            "G",
+            "H",
+            "J",
+            "K",
+            "D"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: H (male) = E (female) → children G (male) and K (female, unmarried); G = D (female) → children F (female) and J (male).",
+              "F is a granddaughter of E, so F's parent is a child of E. K is unmarried and there is no single parent, so K has no children.",
+              "So F is the child of G (and D) → **G** is F's father."
+            ],
+            "trap": "H is F's grandfather."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-05-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many grandchildren does H have?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: H (male) = E (female) → children G (male) and K (female, unmarried); G = D (female) → children F (female) and J (male).",
+              "H's children are G and K; K is unmarried with no children.",
+              "G's children are F and J → H has **2** grandchildren."
+            ],
+            "trap": "D is a daughter-in-law, not a grandchild."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-05-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If L is the husband of K, how is L related to F?",
+          "options": [
+            "Grandfather",
+            "Brother-in-law",
+            "Father",
+            "Uncle",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: H (male) = E (female) → children G (male) and K (female, unmarried); G = D (female) → children F (female) and J (male).",
+              "K is the sister of F's father G, i.e. F's aunt.",
+              "The husband of one's aunt is one's **uncle**."
+            ],
+            "trap": "Brother-in-law is L's relation to G and D, not to F."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-06",
+      "subtype": "family-puzzle",
+      "difficulty": "medium",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 7 members — L, M, N, P, Q, R, S — in a family of three generations. There are two married couples in the family.\nN has no siblings.\nQ is the mother of N.\nM is the husband of Q.\nR is the daughter-in-law of M.\nS is the mother of R.\nL is the daughter of R.\nP is the grandson of S.",
+      "questions": [
+        {
+          "key": "br-06-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is S related to N?",
+          "options": [
+            "Mother",
+            "Grandmother",
+            "Mother-in-law",
+            "Aunt",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: M (male) = Q (female) → only child N (male); S (female) → daughter R (female); N = R → children L (female) and P (male).",
+              "R is married to a son of M. M's only child is N (N has no siblings), so N is male and R's husband.",
+              "S is the mother of R, N's wife → S is N's **mother-in-law**."
+            ],
+            "trap": "Mother is Q, the wife of M."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-06-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is L related to M?",
+          "options": [
+            "Grandson",
+            "Granddaughter",
+            "Niece",
+            "Daughter",
+            "Cannot be determined"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: M (male) = Q (female) → only child N (male); S (female) → daughter R (female); N = R → children L (female) and P (male).",
+              "L is the daughter of R, and R's husband is N, M's son.",
+              "So L is the **granddaughter** of M."
+            ],
+            "trap": "Daughter would be L's relation to N and R."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-06-q3",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the husband of R?",
+          "options": [
+            "P",
+            "M",
+            "S",
+            "L",
+            "N"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: M (male) = Q (female) → only child N (male); S (female) → daughter R (female); N = R → children L (female) and P (male).",
+              "R is the daughter-in-law of M, so she is married to M's son.",
+              "M's only child is N → **N** is R's husband."
+            ],
+            "trap": "P is R's son (grandson of S)."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-06-q4",
+          "subtype": "family-puzzle",
+          "prompt": "How many female members belong to the youngest generation?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: M (male) = Q (female) → only child N (male); S (female) → daughter R (female); N = R → children L (female) and P (male).",
+              "The youngest generation is N and R's children, L and P.",
+              "L is a daughter and P a grandson → **1** female member."
+            ],
+            "trap": "R is a daughter-in-law in the middle generation — do not count her with the youngest."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-07",
+      "subtype": "family-puzzle",
+      "difficulty": "medium",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — S, T, U, V, W, X, Y, Z — in a family of three generations. There are three married couples in the family.\nW is the son-in-law of Y.\nU is the son of T.\nX is the brother-in-law of W.\nS is the cousin of U.\nY is the wife of V.\nZ is the mother of S.\nT is the only daughter of V.\nS is a grandchild of V.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-07-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is S related to T?",
+          "options": [
+            "Niece",
+            "Cousin",
+            "Daughter",
+            "Nephew",
+            "Cannot be determined"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: V (male) = Y (female) → children T (female) and X (male); T = W (male) → son U (male); X = Z (female) → child S (gender not given).",
+              "W is married to T (Y's daughter is V's only daughter T). S, a grandchild of V, is not T's child (S is U's cousin), so S is the child of X and Z, with X the brother of T.",
+              "S is the child of T's brother → nephew or niece. No clue gives S's gender → **Cannot be determined**."
+            ],
+            "trap": "\"Cousin of U\" and \"grandchild of V\" are gender-neutral; picking Nephew or Niece guesses the gender."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:cannot-determine"
+          ]
+        },
+        {
+          "key": "br-07-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is Z related to Y?",
+          "options": [
+            "Niece",
+            "Sister-in-law",
+            "Daughter",
+            "Daughter-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: V (male) = Y (female) → children T (female) and X (male); T = W (male) → son U (male); X = Z (female) → child S (gender not given).",
+              "S is a grandchild of V but not through T (S is only U's cousin), so S's parent X is V's son and Z, S's mother, is X's wife.",
+              "Z is the wife of Y's son → **daughter-in-law**."
+            ],
+            "trap": "Daughter is ruled out: T is V's only daughter."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-07-q3",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the son-in-law of V?",
+          "options": [
+            "W",
+            "S",
+            "Z",
+            "U",
+            "X"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: V (male) = Y (female) → children T (female) and X (male); T = W (male) → son U (male); X = Z (female) → child S (gender not given).",
+              "W is the husband of T, V's daughter → **W** is V's son-in-law."
+            ],
+            "trap": "X is V's own son and W's brother-in-law — not a son-in-law."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-07-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If S is female, how is S related to W?",
+          "options": [
+            "Cousin",
+            "Nephew",
+            "Niece",
+            "Daughter",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: V (male) = Y (female) → children T (female) and X (male); T = W (male) → son U (male); X = Z (female) → child S (gender not given).",
+              "S is the child of X, the brother of W's wife T, so W is S's uncle (by marriage).",
+              "A female S is W's **niece**."
+            ],
+            "trap": "Cousin is S's relation to U, W's son."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-08",
+      "subtype": "family-puzzle",
+      "difficulty": "hard",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — A, B, C, D, E, F, G, H — in a family of three generations. There are three married couples in the family.\nD is the grandson of F.\nH is the only sister of D.\nA is the brother-in-law of E.\nG is the daughter of C.\nE is the father of H.\nB is the sister-in-law of G.\nC is the husband of F.\nG has no children.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-08-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is A related to F?",
+          "options": [
+            "Nephew",
+            "Son",
+            "Brother-in-law",
+            "Son-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: C (male) = F (female) → children E (male) and G (female); E = B (female) → children D (male) and H (female); G = A (male), no children.",
+              "D and H are children of E. D is F's grandson, so E or E's wife is F's child. If E's wife were F's daughter G, G would have children — but G has none. So E is the son of C and F, and E's wife is B (B is the wife of G's brother).",
+              "The third couple must be G and A: D and H are E's children, and G and A are the only two members left who can marry each other (A is male, being a brother-in-law). A is the husband of E's sister G.",
+              "A is the husband of F's daughter → **son-in-law**."
+            ],
+            "trap": "Son fits only the rejected case where A is G's brother; \"G has no children\" removes that case."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-08-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the daughter-in-law of C?",
+          "options": [
+            "H",
+            "G",
+            "A",
+            "F",
+            "B"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: C (male) = F (female) → children E (male) and G (female); E = B (female) → children D (male) and H (female); G = A (male), no children.",
+              "C's son E is married to B → **B** is C's daughter-in-law."
+            ],
+            "trap": "G is C's daughter and H his granddaughter."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-08-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many of the female members are married?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: C (male) = F (female) → children E (male) and G (female); E = B (female) → children D (male) and H (female); G = A (male), no children.",
+              "Married women: F (wife of C), B (wife of E) and G (wife of A, the third couple).",
+              "H is a child and unmarried → **3**."
+            ],
+            "trap": "No clue says \"G is the wife of A\" — it follows from the three couples, so do not leave G out."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-08-q4",
+          "subtype": "family-puzzle",
+          "prompt": "Which of the following statements is true?",
+          "options": [
+            "G is the aunt of D.",
+            "H is the granddaughter of A.",
+            "D is the cousin of H.",
+            "B is the daughter of F.",
+            "E is the son-in-law of C."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: C (male) = F (female) → children E (male) and G (female); E = B (female) → children D (male) and H (female); G = A (male), no children.",
+              "G is the sister of D's father E → G is D's aunt (true).",
+              "B is F's daughter-in-law, H is A's niece, E is C's son and D is H's brother — the other four are false."
+            ],
+            "trap": "E is C's son; the son-in-law of C is A."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:statements"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-09",
+      "subtype": "family-puzzle",
+      "difficulty": "hard",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — K, L, M, N, O, P, Q, R — in a family of three generations. There are three married couples in the family.\nQ is the only child of M.\nL is the son-in-law of R.\nO is the brother-in-law of L.\nK is the father-in-law of M.\nN is the grandmother of Q.\nP is the husband of R.\nO is not married.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-09-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is R related to L?",
+          "options": [
+            "Mother",
+            "Aunt",
+            "Mother-in-law",
+            "Sister-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: K (male) = N (female) → son L (male); P (male) = R (female) → children M (female) and O (male, unmarried); L = M → only child Q (gender not given).",
+              "M's husband is K's son. The only men who can be married in the middle generation are L and O, and O is unmarried, so M is L's wife.",
+              "L is R's son-in-law, so M is R's daughter → R is L's **mother-in-law**."
+            ],
+            "trap": "Mother is N: N is Q's other grandmother, so she must be L's mother (M's parents are P and R)."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-09-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the mother-in-law of M?",
+          "options": [
+            "R",
+            "Q",
+            "O",
+            "K",
+            "N"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: K (male) = N (female) → son L (male); P (male) = R (female) → children M (female) and O (male, unmarried); L = M → only child Q (gender not given).",
+              "M's husband L is the son of K; N, a grandmother of Q who is not M's mother, is K's wife and L's mother.",
+              "**N** is M's mother-in-law."
+            ],
+            "trap": "R is M's own mother."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-09-q3",
+          "subtype": "family-puzzle",
+          "prompt": "If S is the wife of O, how is S related to M?",
+          "options": [
+            "Daughter-in-law",
+            "Sister",
+            "Aunt",
+            "Sister-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: K (male) = N (female) → son L (male); P (male) = R (female) → children M (female) and O (male, unmarried); L = M → only child Q (gender not given).",
+              "O is the brother of M (O is L's brother-in-law and unmarried, so he is the brother of L's wife M).",
+              "The wife of one's brother is one's **sister-in-law**."
+            ],
+            "trap": "Daughter-in-law is S's relation to P and R."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        },
+        {
+          "key": "br-09-q4",
+          "subtype": "family-puzzle",
+          "prompt": "Which of the following statements is NOT true?",
+          "options": [
+            "N is the mother-in-law of M.",
+            "K is the grandfather of Q.",
+            "P is the father-in-law of L.",
+            "O is the uncle of Q.",
+            "R is the grandmother of O."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: K (male) = N (female) → son L (male); P (male) = R (female) → children M (female) and O (male, unmarried); L = M → only child Q (gender not given).",
+              "R is O's mother, not grandmother → this statement is false.",
+              "O is the brother of Q's mother (uncle, whatever Q's gender); K and N are L's parents; P is M's father → the other four are true."
+            ],
+            "trap": "\"O is the uncle of Q\" is true even though Q's gender is unknown — uncle describes O, not Q."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:statements"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-10",
+      "subtype": "family-puzzle",
+      "difficulty": "hard",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — S, T, U, V, W, X, Y, Z — in a family of three generations. There are three married couples in the family.\nY has only one son.\nS is the sister-in-law of Z.\nX is the son-in-law of W.\nT is the granddaughter of Y.\nV is the brother of T.\nZ is the mother of V.\nY is the wife of W.\nZ has no siblings.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-10-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is X related to V?",
+          "options": [
+            "Uncle",
+            "Father",
+            "Brother-in-law",
+            "Cousin",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: W (male) = Y (female) → children U (male) and S (female); U = Z (female) → children T (female) and V (male); S = X (male), no children.",
+              "T and V are Z's children and grandchildren of Y, so Z or Z's husband is Y's child. Z has no siblings, so Z is not Y's child; Z's husband is Y's only son — call him U.",
+              "S, sister-in-law of Z, is then U's sister (the third couple is not available for \"wife of Z's brother\" since Z has no brother). X, son-in-law of W, is the husband of W's daughter S.",
+              "X is the husband of V's father's sister → **uncle**."
+            ],
+            "trap": "Father is U; X married into the family through S."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-10-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the brother-in-law of U?",
+          "options": [
+            "V",
+            "W",
+            "S",
+            "X",
+            "T"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: W (male) = Y (female) → children U (male) and S (female); U = Z (female) → children T (female) and V (male); S = X (male), no children.",
+              "U's sister S is married to X, and U's wife Z has no siblings.",
+              "So **X** is the only brother-in-law of U."
+            ],
+            "trap": "V is U's son; W is U's father."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-10-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many members of the family have no siblings?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: W (male) = Y (female) → children U (male) and S (female); U = Z (female) → children T (female) and V (male); S = X (male), no children.",
+              "Sibling pairs: U and S (children of W and Y), T and V (children of U and Z).",
+              "W, Y, Z (stated) and X have no sibling in the family → **4**."
+            ],
+            "trap": "U's sibling S is easy to miss: she is the sister-in-law of Z and the wife of X."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-10-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If R is the son of X, how is R related to V?",
+          "options": [
+            "Brother",
+            "Cousin",
+            "Nephew",
+            "Son",
+            "Cannot be determined"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: W (male) = Y (female) → children U (male) and S (female); U = Z (female) → children T (female) and V (male); S = X (male), no children.",
+              "R would be the child of X and his wife S, and S is the sister of V's father U.",
+              "Children of a brother and a sister are **cousins**."
+            ],
+            "trap": "Nephew would be R's relation to U and Z, not to V."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-11",
+      "subtype": "family-puzzle",
+      "difficulty": "hard",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — B, C, D, F, G, H, J, K — in a family of three generations. There are three married couples in the family.\nG is the wife of the only son of H.\nJ is the granddaughter of D.\nF is the son-in-law of D.\nC is the brother of J.\nK is the sister-in-law of G.\nH is the mother-in-law of F.\nC is the nephew of F.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-11-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is K related to J?",
+          "options": [
+            "Cousin",
+            "Sister-in-law",
+            "Mother",
+            "Aunt",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: D (male) = H (female) → children B (male) and K (female); B = G (female) → children C (male) and J (female); K = F (male), no children.",
+              "H is F's mother-in-law, so H is female and F is the husband of H's daughter; with no single parent, H's husband D is the other parent. G is married to H's only son, B.",
+              "J (with her brother C) is D's grandchild. C is F's nephew, so C and J are not F's own children — they are the children of B and G. F's wife, D's daughter, is K (the sister of B).",
+              "K is the sister of J's father B → **aunt**."
+            ],
+            "trap": "Mother fits only if J were the child of F and K — \"C is the nephew of F\" rules that out."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-11-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the daughter of D?",
+          "options": [
+            "K",
+            "G",
+            "B",
+            "H",
+            "J"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: D (male) = H (female) → children B (male) and K (female); B = G (female) → children C (male) and J (female); K = F (male), no children.",
+              "D's children are B (the only son) and K, the wife of D's son-in-law F.",
+              "**K** is D's daughter."
+            ],
+            "trap": "G is the daughter-in-law and J the granddaughter."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-11-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many members belong to the second generation?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: D (male) = H (female) → children B (male) and K (female); B = G (female) → children C (male) and J (female); K = F (male), no children.",
+              "Second generation: B and K (children of D and H) and their spouses G and F.",
+              "C and J are the third generation → **4**."
+            ],
+            "trap": "Spouses who marry into the family belong to their partner's generation — count G and F."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-11-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If M is the daughter of F, how is M related to B?",
+          "options": [
+            "Daughter",
+            "Niece",
+            "Granddaughter",
+            "Cousin",
+            "Cannot be determined"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: D (male) = H (female) → children B (male) and K (female); B = G (female) → children C (male) and J (female); K = F (male), no children.",
+              "M would be the daughter of F and his wife K, and K is B's sister.",
+              "The daughter of one's sister is one's **niece**."
+            ],
+            "trap": "Cousin is M's relation to B's children C and J."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-12",
+      "subtype": "family-puzzle",
+      "difficulty": "hard",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — L, M, N, P, R, S, T, V — in a family of three generations. There are two married couples in the family.\nT has two daughters.\nN is the only son of P.\nS is the daughter-in-law of T.\nL is the sister of R.\nV is a grandchild of P.\nM is a sibling of V.\nR is the aunt of M.\nThere are five female members in the family.\nP is the husband of T.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-12-q1",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the granddaughter of P?",
+          "options": [
+            "M",
+            "Either M or V",
+            "L",
+            "V",
+            "S"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: P (male) = T (female) → children N (male), L (female) and R (female); N = S (female) → two children M and V, one a boy and one a girl (which is which is not fixed).",
+              "S, T's daughter-in-law, is the wife of T's only son N. With just two couples (P–T and N–S) and no single parent, L and R have no children, so V and M are the children of N and S.",
+              "Fixed females: T, S, L, R (sisters/aunt) = 4. Five females in all means exactly one of M and V is female, but no clue says which.",
+              "The granddaughter is **either M or V**."
+            ],
+            "trap": "Choosing M or V alone assumes a gender that no clue fixes; \"sibling\" and \"grandchild\" are gender-neutral."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who",
+            "blood:either-or"
+          ]
+        },
+        {
+          "key": "br-12-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is S related to L?",
+          "options": [
+            "Sister-in-law",
+            "Daughter-in-law",
+            "Sister",
+            "Cousin",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: P (male) = T (female) → children N (male), L (female) and R (female); N = S (female) → two children M and V, one a boy and one a girl (which is which is not fixed).",
+              "T's two daughters must be L and R (R is an aunt, L her sister; S is only a daughter-in-law).",
+              "S is the wife of N, the brother of L → **sister-in-law**."
+            ],
+            "trap": "Daughter-in-law is S's relation to P and T."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-12-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many of the eight members are male?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: P (male) = T (female) → children N (male), L (female) and R (female); N = S (female) → two children M and V, one a boy and one a girl (which is which is not fixed).",
+              "Females: T, S, L, R and exactly one of M/V = 5.",
+              "Males: P, N and the other of M/V → **3**."
+            ],
+            "trap": "The count is fixed even though M's and V's individual genders are not."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-12-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If V is the brother of M, how is M related to R?",
+          "options": [
+            "Nephew",
+            "Daughter",
+            "Cousin",
+            "Niece",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: P (male) = T (female) → children N (male), L (female) and R (female); N = S (female) → two children M and V, one a boy and one a girl (which is which is not fixed).",
+              "If V is a brother, he is the male child, so M is the female child (one of the two is female).",
+              "M is the daughter of R's brother N → M is R's **niece**."
+            ],
+            "trap": "\"V is the brother of M\" fixes V as male; M's gender follows from the count of five females, so Nephew is wrong."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-13",
+      "subtype": "family-puzzle",
+      "difficulty": "hard",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — A, C, E, G, J, L, N, Q — in a family of three generations. There are three married couples in the family.\nN is the daughter of the mother-in-law of L.\nG is the brother-in-law of J.\nA is the father of the husband of N.\nQ is the only grandchild of E.\nL is the daughter of E.\nE is the wife of A.\nJ has no children.\nQ is a grandchild of C.\nQ is the nephew of L.",
+      "questions": [
+        {
+          "key": "br-13-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is C related to G?",
+          "options": [
+            "Grandmother",
+            "Aunt",
+            "Mother-in-law",
+            "Mother",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = E (female) → children G (male) and L (female); C (female) → children J (male) and N (female); G = N → son Q (male); J = L, no children.",
+              "Q, E's only grandchild, is L's nephew, so Q is the child of a son of E and A. N's husband is a son of A; of the possible men, J has no children, so N's husband is G and Q is the son of G and N.",
+              "Q is also C's grandchild; Q's father G is A's son, so C is N's mother. N is the daughter of L's mother-in-law, so C is L's mother-in-law: L (E's daughter) is married to C's son J, N's brother.",
+              "C is the mother of G's wife → **mother-in-law**."
+            ],
+            "trap": "Mother is E, the wife of A."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-13-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is L related to Q?",
+          "options": [
+            "Aunt",
+            "Sister-in-law",
+            "Grandmother",
+            "Mother",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = E (female) → children G (male) and L (female); C (female) → children J (male) and N (female); G = N → son Q (male); J = L, no children.",
+              "Q is the son of G and N. L is G's sister (and also the wife of N's brother J).",
+              "Either way L is Q's **aunt**."
+            ],
+            "trap": "Sister-in-law is L's relation to N, not to Q."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-13-q3",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the son-in-law of E?",
+          "options": [
+            "A",
+            "C",
+            "Q",
+            "G",
+            "J"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = E (female) → children G (male) and L (female); C (female) → children J (male) and N (female); G = N → son Q (male); J = L, no children.",
+              "E's daughter L is married to J (L's mother-in-law is C, the mother of J and N).",
+              "**J** is E's son-in-law."
+            ],
+            "trap": "G is E's son — he is C's son-in-law."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-13-q4",
+          "subtype": "family-puzzle",
+          "prompt": "Which of the following is a married couple?",
+          "options": [
+            "G and L",
+            "J and N",
+            "C and G",
+            "A and C",
+            "J and L"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = E (female) → children G (male) and L (female); C (female) → children J (male) and N (female); G = N → son Q (male); J = L, no children.",
+              "The three couples are A–E, G–N and J–L.",
+              "**J and L** is the only pair listed that is married."
+            ],
+            "trap": "J and N are siblings (both C's children); G and L are siblings (both E's children)."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:couple"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-14",
+      "subtype": "family-puzzle",
+      "difficulty": "hard",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 9 members — B, D, F, H, K, M, P, R, T — in a family of three generations. There are two married couples in the family.\nR is the brother-in-law of H.\nF is the mother-in-law of H.\nD is the only daughter of K.\nT is the granddaughter of B.\nP is the brother of T.\nM is the mother of P.\nK is the wife of B.\nD is not married.\nR is not married.",
+      "questions": [
+        {
+          "key": "br-14-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is R related to T?",
+          "options": [
+            "Cousin",
+            "Uncle",
+            "Father",
+            "Brother-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: B (male) = K (female) → children H (male) and D (female, unmarried); F (female) → children M (female) and R (male, unmarried); H = M → children P (male) and T (female).",
+              "P and T are M's children. T is B's granddaughter, so M or her husband is a child of B (and of B's wife K). M cannot be K's daughter — D is K's only daughter — so M is married to a son of B.",
+              "H is married (F is his mother-in-law) and only two couples exist (B–K and M's), so H is that son and M's husband, and M is F's daughter. R, unmarried, can be H's brother-in-law only as the brother of H's wife M.",
+              "R is the brother of T's mother → **uncle**."
+            ],
+            "trap": "Brother-in-law is R's relation to H, not to T."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-14-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is F related to P?",
+          "options": [
+            "Mother",
+            "Aunt",
+            "Mother-in-law",
+            "Grandmother",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: B (male) = K (female) → children H (male) and D (female, unmarried); F (female) → children M (female) and R (male, unmarried); H = M → children P (male) and T (female).",
+              "F is the mother of M, and M is the mother of P.",
+              "F is P's **grandmother** (maternal)."
+            ],
+            "trap": "Mother-in-law is F's relation to H."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-14-q3",
+          "subtype": "family-puzzle",
+          "prompt": "If R is married to D, how is R related to H?",
+          "options": [
+            "Cousin",
+            "Brother",
+            "Son-in-law",
+            "Brother-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: B (male) = K (female) → children H (male) and D (female, unmarried); F (female) → children M (female) and R (male, unmarried); H = M → children P (male) and T (female).",
+              "R is already the brother of H's wife M; after the marriage he is also the husband of H's sister D.",
+              "Both links make R H's **brother-in-law**."
+            ],
+            "trap": "Son-in-law would be R's relation to B and K."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        },
+        {
+          "key": "br-14-q4",
+          "subtype": "family-puzzle",
+          "prompt": "How many female members are there in the second generation?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: B (male) = K (female) → children H (male) and D (female, unmarried); F (female) → children M (female) and R (male, unmarried); H = M → children P (male) and T (female).",
+              "Second generation: H and D (children of B and K), M and R (children of F).",
+              "Females: D (daughter) and M (mother) → **2**."
+            ],
+            "trap": "R is male (he is a brother-in-law), and F belongs to the first generation."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-15",
+      "subtype": "family-puzzle",
+      "difficulty": "hard",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — C, E, G, J, K, N, S, W — in a family of three generations. There are three married couples in the family.\nC and K are the daughters of S.\nE is the only brother of C.\nN is the sister-in-law of K.\nW is the son-in-law of J.\nG is the grandson of S.\nG is not the son of W.\nJ is the husband of S.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-15-q1",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the wife of W?",
+          "options": [
+            "S",
+            "K",
+            "N",
+            "Either C or K",
+            "C"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: J (male) = S (female) → children C (female), K (female) and E (male); E = N (female) → son G (male); W (male) is married to one of C and K (not fixed); the other daughter is unmarried.",
+              "W, J's son-in-law, is married to one of J's daughters, C or K.",
+              "G (S's grandson, not W's son) must be the son of E and his wife; that wife is N (the only woman left to be K's sister-in-law). No clue says which daughter W married.",
+              "W's wife is **either C or K**."
+            ],
+            "trap": "\"N is the sister-in-law of K\" is already explained by N being E's wife — it does not tell you that W married K."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who",
+            "blood:either-or"
+          ]
+        },
+        {
+          "key": "br-15-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is W related to G?",
+          "options": [
+            "Uncle",
+            "Cousin",
+            "Brother-in-law",
+            "Father",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: J (male) = S (female) → children C (female), K (female) and E (male); E = N (female) → son G (male); W (male) is married to one of C and K (not fixed); the other daughter is unmarried.",
+              "G is the son of E. W is the husband of E's sister (C or K — it does not matter which).",
+              "W is G's **uncle**."
+            ],
+            "trap": "Father is ruled out by \"G is not the son of W\"."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-15-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How is N related to S?",
+          "options": [
+            "Sister-in-law",
+            "Daughter",
+            "Daughter-in-law",
+            "Niece",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: J (male) = S (female) → children C (female), K (female) and E (male); E = N (female) → son G (male); W (male) is married to one of C and K (not fixed); the other daughter is unmarried.",
+              "G is S's grandson but not W's son, so G's parent must be E; with no single parent, E is married.",
+              "The only woman who can be E's wife is N (C and K are E's sisters, S his mother). N is the wife of S's son E → **daughter-in-law**."
+            ],
+            "trap": "Sister-in-law is N's relation to K and C."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-15-q4",
+          "subtype": "family-puzzle",
+          "prompt": "How many unmarried members are there in the family?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: J (male) = S (female) → children C (female), K (female) and E (male); E = N (female) → son G (male); W (male) is married to one of C and K (not fixed); the other daughter is unmarried.",
+              "Married: J, S, E, N, W and W's wife (C or K).",
+              "Unmarried: the other of C and K, and G → **2**, whichever daughter W married."
+            ],
+            "trap": "The answer does not depend on which daughter W married."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-16",
+      "subtype": "family-puzzle",
+      "difficulty": "extreme",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 9 members — A, B, C, D, E, F, G, H, J — in a family of three generations. There are three married couples in the family.\nE is the only granddaughter of D.\nJ is the son of the brother of B.\nC is the mother of the cousin of J.\nG is the daughter-in-law of A.\nF is the sister of the father of E.\nD is the wife of A.\nF is not married.\nD has three children.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-16-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is G related to E?",
+          "options": [
+            "Cousin",
+            "Aunt",
+            "Mother",
+            "Sister-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = D (female) → children B (male), H (male) and F (female, unmarried); B = C (female) → daughter E (female); H = G (female) → son J (male).",
+              "J's cousin must be in J's generation, and the only candidate is E; so C is E's mother, and E's father is not J's father (they are cousins, not siblings).",
+              "J's father is a brother of B, E's father has the sister F, and D has exactly three children — so they are B, F and H (J's father), with B = C → E and H = G → J (G is A's daughter-in-law).",
+              "G is the wife of E's father's brother → **aunt**."
+            ],
+            "trap": "Sister-in-law is G's relation to B, C and F, not to E."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-16-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is C related to H?",
+          "options": [
+            "Sister-in-law",
+            "Sister",
+            "Wife",
+            "Cousin",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = D (female) → children B (male), H (male) and F (female, unmarried); B = C (female) → daughter E (female); H = G (female) → son J (male).",
+              "C is the wife of B, and B is the brother of H.",
+              "The wife of one's brother is one's **sister-in-law**."
+            ],
+            "trap": "Wife is G — C is the mother of J's cousin, not of J."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-16-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many daughters-in-law does D have?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = D (female) → children B (male), H (male) and F (female, unmarried); B = C (female) → daughter E (female); H = G (female) → son J (male).",
+              "D's sons are B and H; their wives C and G are D's daughters-in-law.",
+              "F is D's unmarried daughter → **2**."
+            ],
+            "trap": "G is the only one called a daughter-in-law in the clues, but C, B's wife, is one too."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-16-q4",
+          "subtype": "family-puzzle",
+          "prompt": "Which of the following statements is true?",
+          "options": [
+            "F is the mother of J.",
+            "B is the uncle of E.",
+            "H is the son-in-law of D.",
+            "E is the niece of A.",
+            "J is the nephew of C."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = D (female) → children B (male), H (male) and F (female, unmarried); B = C (female) → daughter E (female); H = G (female) → son J (male).",
+              "C is the wife of J's father's brother B, so C is J's aunt and J is C's nephew → true.",
+              "E is A's granddaughter, B is E's father, F is J's aunt and H is D's son — the other four are false."
+            ],
+            "trap": "\"Nephew of C\" works through marriage: C is J's aunt because she is married to J's uncle."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:statements"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-17",
+      "subtype": "family-puzzle",
+      "difficulty": "extreme",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — K, L, M, N, P, Q, R, S — in a family of three generations. There are two married couples in the family.\nL has no siblings.\nK is the mother of L.\nP is the daughter of the wife of M.\nQ is the brother-in-law of L.\nS is a grandchild of M.\nR is the sister of S.\nQ is the son of N.\nK is the grandmother of R.\nThere are four female members in the family.",
+      "questions": [
+        {
+          "key": "br-17-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is K related to P?",
+          "options": [
+            "Aunt",
+            "Grandmother",
+            "Mother-in-law",
+            "Mother",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: K (female) → only child L (male); M (male) = N (female) → children P (female) and Q (male); L = P → children R (female) and S (male).",
+              "M's wife must be N: K is L's mother and L has no siblings, so K is not P's mother, and R and S are grandchildren. So P and Q are both children of M and N.",
+              "L has no siblings, so Q can be L's brother-in-law only as the brother of L's spouse — P. K, R's grandmother, has only one child, L, so R and S are children of L and P; P is female, so L is male.",
+              "K is the mother of P's husband → **mother-in-law**."
+            ],
+            "trap": "Mother is N; K is linked to P only through L."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-17-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is Q related to R?",
+          "options": [
+            "Uncle",
+            "Father",
+            "Cousin",
+            "Brother",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: K (female) → only child L (male); M (male) = N (female) → children P (female) and Q (male); L = P → children R (female) and S (male).",
+              "R is the daughter of L and P; Q is P's brother.",
+              "Q is the brother of R's mother → **uncle**."
+            ],
+            "trap": "Brother is ruled out: R's siblings are S only, and Q belongs to the generation above."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-17-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How is S related to N?",
+          "options": [
+            "Nephew",
+            "Son",
+            "Granddaughter",
+            "Grandson",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: K (female) → only child L (male); M (male) = N (female) → children P (female) and Q (male); L = P → children R (female) and S (male).",
+              "Females fixed by the clues: K (mother), N (wife of M), P (daughter), R (sister) — already four.",
+              "There are only four female members, so S is male. S is a child of N's daughter P → **grandson**."
+            ],
+            "trap": "No relation word fixes S's gender (\"grandchild\", \"R is the sister of S\"); only the count of four females does — so Cannot be determined is wrong."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-17-q4",
+          "subtype": "family-puzzle",
+          "prompt": "If T is the wife of Q, how is T related to S?",
+          "options": [
+            "Grandmother",
+            "Aunt",
+            "Sister-in-law",
+            "Mother",
+            "Cannot be determined"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: K (female) → only child L (male); M (male) = N (female) → children P (female) and Q (male); L = P → children R (female) and S (male).",
+              "Q is the brother of S's mother P, i.e. S's uncle.",
+              "The wife of one's uncle is one's **aunt**."
+            ],
+            "trap": "Sister-in-law is T's relation to P and L."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:conditional"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-18",
+      "subtype": "family-puzzle",
+      "difficulty": "extreme",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 9 members — P, Q, R, S, T, U, V, W, X — in a family of three generations. There are three married couples in the family.\nW is the daughter of the brother of X.\nS is the son of the only daughter of V.\nQ is the son-in-law of R.\nU is the sister-in-law of X.\nR is the grandfather of W.\nT is the father of W.\nV is the wife of R.\nX is not married.\nP is the mother of S.\nX is a child of V.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-18-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is Q related to X?",
+          "options": [
+            "Brother",
+            "Cousin",
+            "Brother-in-law",
+            "Son-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: R (male) = V (female) → children P (female), T (male) and X (male, unmarried); T = U (female) → daughter W (female); P = Q (male) → son S (male).",
+              "P, the mother of S, is V's only daughter (S is the son of that daughter). Q, R's son-in-law, must be married to a daughter of R — that is P.",
+              "X is V's child, so X is P's brother. Q is the husband of X's sister → **brother-in-law**."
+            ],
+            "trap": "Son-in-law is Q's relation to R and V, not to X."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-18-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is S related to W?",
+          "options": [
+            "Cousin",
+            "Brother",
+            "Grandson",
+            "Nephew",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: R (male) = V (female) → children P (female), T (male) and X (male, unmarried); T = U (female) → daughter W (female); P = Q (male) → son S (male).",
+              "W's father T is the brother of X, and R is W's grandfather, so T is a son of R and V; T is married to U (X is unmarried, so U is the wife of X's brother).",
+              "S is the son of P and W the daughter of T; P and T are siblings → S and W are **cousins**."
+            ],
+            "trap": "Brother would need S and W to share parents; S's parents are P and Q."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-18-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many sons does R have?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Tree: R (male) = V (female) → children P (female), T (male) and X (male, unmarried); T = U (female) → daughter W (female); P = Q (male) → son S (male).",
+              "R's children are P, T and X (X is a child of V, R's wife; T is W's father and X's brother).",
+              "P is a daughter → R has **2** sons, T and X."
+            ],
+            "trap": "Q is R's son-in-law, not a son."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-18-q4",
+          "subtype": "family-puzzle",
+          "prompt": "Which of the following statements is NOT true?",
+          "options": [
+            "W is the niece of P.",
+            "U is the daughter-in-law of V.",
+            "R is the father-in-law of Q.",
+            "X is the uncle of S.",
+            "T is the brother-in-law of P."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: R (male) = V (female) → children P (female), T (male) and X (male, unmarried); T = U (female) → daughter W (female); P = Q (male) → son S (male).",
+              "T and P are both children of R and V, so T is P's brother, not her brother-in-law → this statement is false.",
+              "U is the wife of V's son T; X is the brother of S's mother; Q is married to R's daughter; P is the sister of W's father — the other four are true."
+            ],
+            "trap": "T is the brother-in-law of Q, not of P."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:statements"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-19",
+      "subtype": "family-puzzle",
+      "difficulty": "extreme",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 9 members — A, B, C, D, E, F, G, H, K — in a family of three generations. There are three married couples in the family.\nG is the only child of E.\nA has two grandsons.\nF is the sister-in-law of C.\nK is the cousin of G.\nH is the sister of K.\nD is the son of B.\nE is the daughter-in-law of A.\nB is the wife of A.\nH is the niece of E.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-19-q1",
+          "subtype": "family-puzzle",
+          "prompt": "How is H related to C?",
+          "options": [
+            "Cousin",
+            "Daughter",
+            "Nephew",
+            "Niece",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = B (female) → sons C (male) and D (male); C = E (female) → only child G (male); D = F (female) → children H (female) and K (male).",
+              "E, A's daughter-in-law, is married to a son of A; G is E's only child, so H and K (G's cousin and his sister) are not E's children.",
+              "If E's husband were D, the third couple would be C and F with children H and K — but then F would be C's wife, not her sister-in-law. So E is married to C (A's son), and the third couple is D and F, the parents of H and K.",
+              "H is the daughter of C's brother D → **niece**."
+            ],
+            "trap": "Daughter would make H the child of C and E, but G is E's only child."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-19-q2",
+          "subtype": "family-puzzle",
+          "prompt": "Who are the grandsons of B?",
+          "options": [
+            "Both H and K",
+            "K",
+            "Both G and H",
+            "G",
+            "Both G and K"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = B (female) → sons C (male) and D (male); C = E (female) → only child G (male); D = F (female) → children H (female) and K (male).",
+              "B's grandchildren are G (son of C and E), and H and K (children of D and F).",
+              "H is female (sister, niece). \"A has two grandsons\", so the other two, G and K, are both male → **G and K**."
+            ],
+            "trap": "G's gender is not given by any relation word (\"only child\", \"cousin\"); it comes from \"A has two grandsons\", so picking K alone is wrong."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who"
+          ]
+        },
+        {
+          "key": "br-19-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How many cousins does G have?",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = B (female) → sons C (male) and D (male); C = E (female) → only child G (male); D = F (female) → children H (female) and K (male).",
+              "G is the only child of C and E; C's brother D has two children, H and K.",
+              "G has **2** cousins."
+            ],
+            "trap": "G is an only child, so H and K are not his siblings — both are his cousins."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        },
+        {
+          "key": "br-19-q4",
+          "subtype": "family-puzzle",
+          "prompt": "How is E related to K?",
+          "options": [
+            "Aunt",
+            "Mother",
+            "Cousin",
+            "Sister-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Tree: A (male) = B (female) → sons C (male) and D (male); C = E (female) → only child G (male); D = F (female) → children H (female) and K (male).",
+              "K is the son of D and F; E is the wife of D's brother C.",
+              "The wife of one's father's brother is one's **aunt**."
+            ],
+            "trap": "Sister-in-law is E's relation to D, not to K."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "br-20",
+      "subtype": "family-puzzle",
+      "difficulty": "extreme",
+      "title": "Family puzzle",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nThere are 8 members — J, L, N, P, R, T, V, X — in a family of three generations. There are three married couples in the family.\nR is the cousin of P.\nT is the grandmother of R.\nL is the sister-in-law of X.\nV is the son-in-law of N.\nP is the grandson of T.\nJ is the father of R.\nN is the husband of T.\nR is the niece of V.\nThere is no single parent in the family.",
+      "questions": [
+        {
+          "key": "br-20-q1",
+          "subtype": "family-puzzle",
+          "prompt": "Who is the daughter of T?",
+          "options": [
+            "Both L and X",
+            "X",
+            "R",
+            "L",
+            "Either L or X"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Two trees fit: N (male) = T (female) → son J (male) and a daughter, who is either X or L; J is married to the other of X and L, and V (male) is married to N's daughter. R (female) is J's daughter and P (male) is V's son.",
+              "J (father of R) and V's wife are T's children: R and P are cousins and both are T's grandchildren, so J is T's son and V (son-in-law of N) is married to T's daughter.",
+              "L and X are sisters-in-law: one is J's wife and the other T's daughter (V's wife). Either arrangement satisfies every clue.",
+              "T's daughter is **either L or X**."
+            ],
+            "trap": "\"L is the sister-in-law of X\" is symmetric — it does not say which of them is born into the family."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:who",
+            "blood:either-or"
+          ]
+        },
+        {
+          "key": "br-20-q2",
+          "subtype": "family-puzzle",
+          "prompt": "How is V related to J?",
+          "options": [
+            "Brother",
+            "Son-in-law",
+            "Cousin",
+            "Brother-in-law",
+            "Cannot be determined"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Two trees fit: N (male) = T (female) → son J (male) and a daughter, who is either X or L; J is married to the other of X and L, and V (male) is married to N's daughter. R (female) is J's daughter and P (male) is V's son.",
+              "In both trees V is the husband of T's daughter, and J is T's son.",
+              "V is the husband of J's sister → **brother-in-law**."
+            ],
+            "trap": "Son-in-law is V's relation to N and T."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-20-q3",
+          "subtype": "family-puzzle",
+          "prompt": "How is T related to V?",
+          "options": [
+            "Mother",
+            "Aunt",
+            "Mother-in-law",
+            "Grandmother",
+            "Cannot be determined"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Two trees fit: N (male) = T (female) → son J (male) and a daughter, who is either X or L; J is married to the other of X and L, and V (male) is married to N's daughter. R (female) is J's daughter and P (male) is V's son.",
+              "V is N's son-in-law, i.e. the husband of a daughter of N and T.",
+              "T is the mother of V's wife → **mother-in-law**, whichever of L and X that wife is."
+            ],
+            "trap": "Grandmother is T's relation to P, V's son."
+          },
+          "tags": [
+            "blood:family-puzzle"
+          ]
+        },
+        {
+          "key": "br-20-q4",
+          "subtype": "family-puzzle",
+          "prompt": "How many married men are there in the family?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Two trees fit: N (male) = T (female) → son J (male) and a daughter, who is either X or L; J is married to the other of X and L, and V (male) is married to N's daughter. R (female) is J's daughter and P (male) is V's son.",
+              "Married men: N (husband of T), J (married to X or L) and V (son-in-law of N).",
+              "P is a child → **3** in both trees."
+            ],
+            "trap": "Which woman J married is not fixed, but that he is married is."
+          },
+          "tags": [
+            "blood:family-puzzle",
+            "blood:count"
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "key": "br-101",
+      "subtype": "pointing",
+      "difficulty": "easy",
+      "prompt": "Pointing to a boy in a photograph, Nikhil said, 'He is the only son of my father's sister.' How is the boy in the photograph related to Nikhil?",
+      "options": [
+        "Nephew",
+        "Brother",
+        "Uncle",
+        "Son",
+        "Cousin"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "\"My father's sister\" = Nikhil's aunt (bua).",
+          "Her son is the child of Nikhil's parent's sibling → **cousin**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Nephew would be the son of Nikhil's own sister, not of his father's sister."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-102",
+      "subtype": "pointing",
+      "difficulty": "medium",
+      "prompt": "Pointing to a woman in a photograph, Arvind told his friend, 'Her mother is the wife of my father's only son.' How is the woman in the photograph related to Arvind?",
+      "options": [
+        "Sister",
+        "Daughter-in-law",
+        "Granddaughter",
+        "Niece",
+        "Daughter"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Arvind is male (\"his friend\"), so his father's only son is Arvind himself.",
+          "Her mother is Arvind's wife, so the woman is Arvind's **daughter**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Niece assumes \"my father's only son\" is a brother of Arvind; a man with no brother is his father's only son himself."
+      },
+      "tags": [
+        "blood:pointing",
+        "trap:only-child"
+      ]
+    },
+    {
+      "key": "br-103",
+      "subtype": "pointing",
+      "difficulty": "medium",
+      "prompt": "Pointing to a girl in a photograph, Rohit told his friend, 'Her father is the son-in-law of my mother.' How is the girl in the photograph related to Rohit?",
+      "options": [
+        "Sister",
+        "Daughter",
+        "Granddaughter",
+        "Niece",
+        "Cousin"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Rohit is male, so his mother's son-in-law is the husband of Rohit's sister.",
+          "The girl is the daughter of Rohit's sister → **niece**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Daughter would need Rohit to be the son-in-law himself; a son-in-law of Rohit's mother cannot be her own son."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-104",
+      "subtype": "pointing",
+      "difficulty": "medium",
+      "prompt": "Pointing to a man in a photograph, Anita said, 'His wife is the only daughter of my husband.' How is the man in the photograph related to Anita?",
+      "options": [
+        "Husband",
+        "Son",
+        "Brother-in-law",
+        "Nephew",
+        "Son-in-law"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Anita's husband's only daughter is Anita's daughter too (a child of a married man is the child of his wife).",
+          "The man is the husband of Anita's daughter → **son-in-law**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Brother-in-law would be the husband of Anita's sister, not of her daughter."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-105",
+      "subtype": "pointing",
+      "difficulty": "medium",
+      "prompt": "Pointing to a man in a photograph, Tenzing said, 'The wife of his only son is the mother of my brother.' How is the man in the photograph related to Tenzing?",
+      "options": [
+        "Grandfather",
+        "Brother",
+        "Uncle",
+        "Father",
+        "Father-in-law"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The mother of Tenzing's brother is Tenzing's mother; her husband is Tenzing's father.",
+          "So the man's only son is Tenzing's father → the man is Tenzing's (paternal) **grandfather**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Father-in-law is the man's relation to Tenzing's mother, not to Tenzing."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-106",
+      "subtype": "pointing",
+      "difficulty": "hard",
+      "prompt": "Pointing to a man in a photograph, Nandini told her colleague, 'His mother is the only daughter of my mother.' How is the man in the photograph related to Nandini?",
+      "options": [
+        "Grandson",
+        "Cousin",
+        "Nephew",
+        "Brother",
+        "Son"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Nandini is female (\"her colleague\"), so she is a daughter of her mother — and the only one.",
+          "His mother is Nandini herself → the man is Nandini's **son**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Nephew treats \"the only daughter of my mother\" as Nandini's sister; a woman is her mother's daughter, so \"only\" means Nandini."
+      },
+      "tags": [
+        "blood:pointing",
+        "trap:only-child"
+      ]
+    },
+    {
+      "key": "br-107",
+      "subtype": "pointing",
+      "difficulty": "hard",
+      "prompt": "Pointing to a woman in a photograph, Harish told his friend, 'Her mother-in-law is the wife of my father's only son.' How is the woman in the photograph related to Harish?",
+      "options": [
+        "Daughter-in-law",
+        "Niece",
+        "Sister-in-law",
+        "Daughter",
+        "Wife"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Harish is male, so \"my father's only son\" is Harish himself, and its wife is Harish's wife.",
+          "Her mother-in-law is Harish's wife, so her husband is Harish's son → she is Harish's **daughter-in-law**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Sister-in-law results from taking \"my father's only son\" as Harish's brother."
+      },
+      "tags": [
+        "blood:pointing",
+        "trap:only-child"
+      ]
+    },
+    {
+      "key": "br-108",
+      "subtype": "pointing",
+      "difficulty": "hard",
+      "prompt": "Pointing to a man in a photograph, Neha said, 'He is the son of the only son of the father of my brother's mother.' How is the man in the photograph related to Neha?",
+      "options": [
+        "Uncle",
+        "Nephew",
+        "Son",
+        "Cousin",
+        "Brother"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"My brother's mother\" = Neha's mother; her father = Neha's maternal grandfather.",
+          "His only son = Neha's maternal uncle (mama); the uncle's son is Neha's **cousin**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Brother would need the \"only son\" to be Neha's father, but he is a son of the mother's father — her brother, not her husband."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-109",
+      "subtype": "pointing",
+      "difficulty": "hard",
+      "prompt": "Pointing to a man in a photograph, Chitra said, 'He is the brother of the husband of my mother's only daughter-in-law.' How is the man in the photograph related to Chitra?",
+      "options": [
+        "Cousin",
+        "Brother-in-law",
+        "Brother",
+        "Son",
+        "Uncle"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The mother's daughter-in-law is the wife of one of her sons; that son is Chitra's brother (or Chitra himself, if Chitra is a man).",
+          "The man is a brother of that son, i.e. another son of Chitra's mother → Chitra's **brother** whatever Chitra's gender."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Brother-in-law is the man's relation to the daughter-in-law, not to Chitra."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-110",
+      "subtype": "pointing",
+      "difficulty": "hard",
+      "prompt": "Pointing to a man in a photograph, Lakshmi told her neighbour, 'His only son is the husband of the mother of my children.' How is the man in the photograph related to Lakshmi?",
+      "options": [
+        "Grandfather",
+        "Father-in-law",
+        "Father",
+        "Uncle",
+        "Brother-in-law"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Lakshmi is a woman, so \"the mother of my children\" is Lakshmi herself, and her husband is Lakshmi's husband.",
+          "The man's only son is Lakshmi's husband → he is Lakshmi's **father-in-law**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Father would be correct only for a male speaker, whose children's mother is his wife."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-111",
+      "subtype": "pointing",
+      "difficulty": "hard",
+      "prompt": "Pointing to a woman in a photograph, Sneha told her friend, 'The sister of her son is the mother of my only daughter.' How is the woman in the photograph related to Sneha?",
+      "options": [
+        "Mother-in-law",
+        "Mother",
+        "Grandmother",
+        "Aunt",
+        "Sister"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sneha is a woman, so the mother of her only daughter is Sneha herself.",
+          "Sneha is the sister of the woman's son, i.e. the woman's daughter → the woman is Sneha's **mother**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Mother-in-law would fit a male speaker, whose daughter's mother is his wife."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-112",
+      "subtype": "pointing",
+      "difficulty": "extreme",
+      "prompt": "Pointing to a boy in a photograph, Joseph said, 'His mother is the sister of the only son of my mother's father. I am the only son of my parents.' How is the boy in the photograph related to Joseph?",
+      "options": [
+        "Brother",
+        "Nephew",
+        "Uncle",
+        "Son",
+        "Cousin"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The only son of Joseph's mother's father is Joseph's maternal uncle; his sisters are Joseph's mother and her sisters.",
+          "If the boy's mother were Joseph's mother, the boy would be Joseph's brother — impossible, as Joseph is his parents' only son.",
+          "So the boy's mother is Joseph's mother's sister → the boy is Joseph's **cousin**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Brother is the reading that ignores the second sentence; \"the sister of my uncle\" may be one's own mother, so check it."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-113",
+      "subtype": "pointing",
+      "difficulty": "extreme",
+      "prompt": "Pointing to a woman in a photograph, Manoj said, 'The only son of her mother-in-law is the father of my wife's only son.' How is the woman in the photograph related to Manoj?",
+      "options": [
+        "Sister-in-law",
+        "Daughter-in-law",
+        "Sister",
+        "Wife",
+        "Mother"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The father of Manoj's wife's only son is Manoj himself.",
+          "Her mother-in-law's only son must be her own husband (her husband is a son of her mother-in-law). So her husband is Manoj → she is Manoj's **wife**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Sister-in-law comes from assuming the mother-in-law's only son is someone other than the woman's husband."
+      },
+      "tags": [
+        "blood:pointing"
+      ]
+    },
+    {
+      "key": "br-114",
+      "subtype": "pointing",
+      "difficulty": "extreme",
+      "prompt": "Pointing to a man in a photograph, Gita told her friend, 'His mother is the only daughter-in-law of the father of my husband's only brother.' How is the man in the photograph related to Gita?",
+      "options": [
+        "Son",
+        "Grandson",
+        "Brother",
+        "Brother-in-law",
+        "Nephew"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The father of Gita's husband's brother is Gita's father-in-law. Gita, married to his son, is a daughter-in-law of his.",
+          "He has only one daughter-in-law, so it is Gita (the brother is unmarried). The man's mother is Gita → he is her **son**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Nephew assumes the daughter-in-law is the brother's wife; \"only\" leaves room for just one, and Gita already is one."
+      },
+      "tags": [
+        "blood:pointing",
+        "trap:only-child"
+      ]
+    },
+    {
+      "key": "br-115",
+      "subtype": "pointing",
+      "difficulty": "extreme",
+      "prompt": "Pointing to a man in a photograph, Pooja told her friend, 'His wife's father-in-law is the only son of my father.' How is the man in the photograph related to Pooja?",
+      "options": [
+        "Grandson",
+        "Brother",
+        "Nephew",
+        "Son",
+        "Cousin"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "His wife's father-in-law is his own father.",
+          "Pooja is female, so her father's only son is her brother. The man is the son of Pooja's brother → **nephew**."
+        ],
+        "shortcut": "Decode the sentence from the end (\"my …\") backwards, one relation at a time; check whether an \"only son/daughter\" is the speaker.",
+        "trap": "Son would follow only if the speaker were male and the \"only son\" were the speaker."
+      },
+      "tags": [
+        "blood:pointing",
+        "trap:only-child"
+      ]
+    },
+    {
+      "key": "br-116",
+      "subtype": "direct",
+      "difficulty": "easy",
+      "prompt": "Kunal is the brother of Meera. Meera is the daughter of Sunil. Sunil is the husband of Rekha. How is Rekha related to Kunal?",
+      "options": [
+        "Aunt",
+        "Grandmother",
+        "Sister",
+        "Mother",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Kunal is Meera's brother, so he is also a child of Sunil, and of Sunil's wife Rekha.",
+          "Rekha is Kunal's **mother**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Aunt would need Rekha to be a sibling of Kunal's parent; she is married to his father."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-117",
+      "subtype": "direct",
+      "difficulty": "medium",
+      "prompt": "Arjun is the son of Lata. Lata is the sister of Vinod. Vinod is the father of Tanvi. How is Tanvi related to Arjun?",
+      "options": [
+        "Sister",
+        "Aunt",
+        "Cousin",
+        "Niece",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Arjun's mother Lata and Tanvi's father Vinod are siblings.",
+          "Children of siblings are **cousins** — the same word whatever Tanvi's gender."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Tanvi's gender is not given, but Cousin does not depend on it, so Cannot be determined is wrong."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-118",
+      "subtype": "direct",
+      "difficulty": "medium",
+      "prompt": "Pallavi is the wife of Rakesh. Rakesh is the only son of Usha. Usha is the mother of Jyoti. How is Jyoti related to Pallavi?",
+      "options": [
+        "Sister-in-law",
+        "Sister",
+        "Daughter-in-law",
+        "Cousin",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Jyoti is Usha's child but not her son (Rakesh is the only son), so Jyoti is a daughter — Rakesh's sister.",
+          "Jyoti is the sister of Pallavi's husband → **sister-in-law**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "\"Mother of Jyoti\" alone does not fix Jyoti's gender; \"only son\" does — so Cannot be determined is wrong."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-119",
+      "subtype": "direct",
+      "difficulty": "medium",
+      "prompt": "Mohan is the father of Ritika. Ritika is the wife of Sagar. Sagar is the father of Aarav. Aarav is the brother of Diya. How is Mohan related to Diya?",
+      "options": [
+        "Uncle",
+        "Grandfather",
+        "Father-in-law",
+        "Father",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Aarav and Diya are children of Sagar and his wife Ritika.",
+          "Mohan is Ritika's father → Diya's (maternal) **grandfather**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Father-in-law is Mohan's relation to Sagar. Diya's unknown gender does not matter — Mohan's is fixed."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-120",
+      "subtype": "direct",
+      "difficulty": "medium",
+      "prompt": "Neeraj is the husband of Shweta. Shweta is the daughter of Kamala. Kamala is the wife of Girish. Girish is the father of Vikas. How is Vikas related to Neeraj?",
+      "options": [
+        "Brother-in-law",
+        "Son-in-law",
+        "Sister-in-law",
+        "Brother",
+        "Cannot be determined"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Vikas is a child of Girish and Kamala, so Vikas is a sibling of Shweta, Neeraj's wife.",
+          "No relation word fixes Vikas's gender: Vikas may be Neeraj's brother-in-law or sister-in-law → **Cannot be determined**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Brother-in-law guesses Vikas's gender from the name; only relation words fix gender."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain",
+        "blood:cannot-determine"
+      ]
+    },
+    {
+      "key": "br-121",
+      "subtype": "direct",
+      "difficulty": "medium",
+      "prompt": "Salim is the father of Imran. Imran has no siblings. Farah is the daughter-in-law of Salim. Zoya is the daughter of Farah. How is Imran related to Zoya?",
+      "options": [
+        "Grandfather",
+        "Brother",
+        "Father",
+        "Uncle",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Farah is married to a son of Salim; Salim's only child is Imran, so Imran is that son (male) and Farah's husband.",
+          "Zoya is the daughter of Farah and Imran → Imran is Zoya's **father**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Uncle needs another son of Salim to be Farah's husband, but Imran has no siblings."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-122",
+      "subtype": "direct",
+      "difficulty": "hard",
+      "prompt": "Ela is the mother of Dev. Harsh is the son of Geeta. Dev is the father of Chhaya. Farooq is the husband of Ela. Geeta is the sister of Farooq. How is Harsh related to Dev?",
+      "options": [
+        "Cousin",
+        "Brother",
+        "Nephew",
+        "Uncle",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Dev is the son of Ela and her husband Farooq. Harsh is the son of Geeta, Farooq's sister.",
+          "Harsh and Dev are children of a brother and a sister → **cousins**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Uncle would make Harsh a sibling of Dev's parent; Harsh is in Dev's generation. Chhaya is a distractor."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-123",
+      "subtype": "direct",
+      "difficulty": "hard",
+      "prompt": "Naveen is the husband of Ojasvi. Mansi is the mother of Naveen. Kiran is the wife of Lokesh. Lokesh is the brother of Mansi. How is Kiran related to Naveen?",
+      "options": [
+        "Grandmother",
+        "Mother",
+        "Sister-in-law",
+        "Aunt",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Lokesh is the brother of Naveen's mother Mansi, i.e. Naveen's maternal uncle.",
+          "Kiran is Lokesh's wife → Naveen's **aunt** (mami)."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Sister-in-law is Kiran's relation to Mansi, not to Naveen."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-124",
+      "subtype": "direct",
+      "difficulty": "hard",
+      "prompt": "Asha is the mother of Bhanu. Varun is the son of Yamini. Bhanu is the father of Charu. Zubin is the husband of Asha. Yamini is the daughter of Zubin. How is Bhanu related to Varun?",
+      "options": [
+        "Brother-in-law",
+        "Uncle",
+        "Father",
+        "Cousin",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Yamini is a daughter of Zubin; Zubin's wife Asha is the mother of Bhanu, so Bhanu (a father, so male) is Yamini's brother.",
+          "Bhanu is the brother of Varun's mother → **uncle**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Cousin is Charu's relation to Varun, not Bhanu's."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-125",
+      "subtype": "direct",
+      "difficulty": "hard",
+      "prompt": "Om is the father of Pari. Kabir is the husband of Leela. Madhav is the father of Om. Leela is the only daughter of Madhav. How is Kabir related to Pari?",
+      "options": [
+        "Father",
+        "Grandfather",
+        "Uncle",
+        "Brother-in-law",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Om and Leela are both Madhav's children, so Leela is the sister of Pari's father Om.",
+          "Kabir is the husband of Pari's father's sister → **uncle** (phupha)."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Brother-in-law is Kabir's relation to Om, not to Pari."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-126",
+      "subtype": "direct",
+      "difficulty": "hard",
+      "prompt": "Hina is the mother of Ishaan. Kartik is the only child of Gopal. Ishaan is the brother of Jhanvi. Gopal is the father-in-law of Hina. How is Kartik related to Jhanvi?",
+      "options": [
+        "Grandfather",
+        "Father",
+        "Brother",
+        "Uncle",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Hina is married to a child of Gopal; Gopal has only one child, Kartik, so Kartik is Hina's husband (and therefore male).",
+          "Jhanvi, Ishaan's sibling, is a child of Hina and Kartik → Kartik is Jhanvi's **father**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Uncle needs a second child of Gopal; \"only child\" rules it out, and it also fixes Kartik's gender through the marriage."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-127",
+      "subtype": "direct",
+      "difficulty": "extreme",
+      "prompt": "Chetan is the father-in-law of Farida. Farida is the mother of Eshan. Ajay is the only son of Bela. Dimple is the daughter of Chetan. Bela is the wife of Chetan. How is Dimple related to Farida?",
+      "options": [
+        "Aunt",
+        "Sister",
+        "Daughter",
+        "Sister-in-law",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Farida is married to a son of Chetan. Chetan's sons are his wife Bela's sons, and Bela has only one son, Ajay — so Farida is Ajay's wife.",
+          "Dimple, Chetan's daughter, is Ajay's sister → she is Farida's **sister-in-law**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Aunt is Dimple's relation to Eshan, not to Farida; Eshan is only a distractor link."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-128",
+      "subtype": "direct",
+      "difficulty": "extreme",
+      "prompt": "Rani is the mother of Sahil. Nitin is the only son of Pushpa. Lalit is the son of Mala. Pushpa is the mother of Rani. Nitin is the husband of Mala. How is Sahil related to Lalit?",
+      "options": [
+        "Cousin",
+        "Nephew",
+        "Uncle",
+        "Brother",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Rani is Pushpa's child but not her son (Nitin is the only son), so Rani is Nitin's sister.",
+          "Lalit is the son of Mala and her husband Nitin. Sahil, Rani's child, and Lalit are children of a sister and a brother → **cousins**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Sahil's gender is unknown, but Cousin is the same word for both genders — Cannot be determined is wrong."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    },
+    {
+      "key": "br-129",
+      "subtype": "direct",
+      "difficulty": "extreme",
+      "prompt": "Waman is the father of Yash. Tejas is the husband of Urmila. Yash is the father of Zara. Urmila is the daughter of Vanita. Vanita is the wife of Waman. How is Zara related to Tejas?",
+      "options": [
+        "Niece",
+        "Daughter",
+        "Nephew",
+        "Cousin",
+        "Cannot be determined"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Urmila and Yash are both children of Waman and Vanita, so Urmila is the sister of Zara's father Yash, and Tejas is Zara's uncle.",
+          "Zara is the child of Yash, but no relation word gives Zara's gender → niece or nephew → **Cannot be determined**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Niece guesses Zara's gender from the name."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain",
+        "blood:cannot-determine"
+      ]
+    },
+    {
+      "key": "br-130",
+      "subtype": "direct",
+      "difficulty": "extreme",
+      "prompt": "Esha is the mother of Gauri. Bhavya is the only daughter of Charu. Dhruv is the father-in-law of Esha. Abhay is the brother of Bhavya. Charu is the wife of Dhruv. Dhruv has two children. How is Abhay related to Gauri?",
+      "options": [
+        "Grandfather",
+        "Father",
+        "Brother",
+        "Uncle",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Abhay and Bhavya are children of Charu and her husband Dhruv; Dhruv has only these two children.",
+          "Esha is married to a son of Dhruv, and Dhruv's only son is Abhay → Esha's husband is Abhay, the father of Gauri → **father**."
+        ],
+        "shortcut": "Draw the tree as you read: generation up/down, = for marriage; mark a gender only when a relation word fixes it.",
+        "trap": "Uncle needs another son of Dhruv; \"Dhruv has two children\" leaves only Abhay and Bhavya."
+      },
+      "tags": [
+        "blood:direct",
+        "blood:chain"
+      ]
+    }
+  ]
+}
