@@ -2808,6 +2808,1020 @@
         "ranking:comparison",
         "ranking:between-count"
       ]
+    },
+    {
+      "key": "or-076",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Seven persons — A, B, F, J, P, S, W — have different weights.\nW is the 4th heaviest.\nThe number of persons between A and W is the same as the number of persons between W and J.\nA is heavier than J.\nOnly one person is lighter than F.\nS is heavier than A.\nB is lighter than P.\n\nWho is the lightest?",
+      "options": [
+        "F",
+        "B",
+        "J",
+        "P",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "W is 4th. A and J are equally far from W with A heavier: (1st, 7th), (2nd, 6th) or (3rd, 5th).",
+          "F is 6th (only one person is lighter), which rules out (2nd, 6th). S is heavier than A, so A is not 1st: A is 3rd and J is 5th.",
+          "S, P, B fill 1st, 2nd and 7th. S must be above A, and B is lighter than P, so B is 7th. The lightest is **B**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "F is 6th, the second lightest. S and P can swap at the top, but B stays last.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "P",
+            "S",
+            "A",
+            "W",
+            "J",
+            "F",
+            "B"
+          ],
+          "label": "Heaviest → lightest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:equal-gap"
+      ]
+    },
+    {
+      "key": "or-077",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — C, H, L, R, V, Z — have different heights.\nH is taller than R but shorter than Z.\nOnly two persons are shorter than C.\nV is not the tallest.\nL is shorter than C.\nExactly one person is between V and C in height.\n\nWho is the second tallest?",
+      "options": [
+        "H",
+        "V",
+        "Z",
+        "R",
+        "Cannot be determined"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Only two persons are shorter than C: C is 4th. One person between V and C: V is 2nd or 6th.",
+          "If V is 6th: Z > H > R fill 1st–3rd and L (shorter than C) is 5th, so H is 2nd.",
+          "If V is 2nd: V is not the tallest, so Z is 1st, H is 3rd, and R and L take 5th and 6th. Then V is 2nd. Two answers → **Cannot be determined**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "H is 2nd only when V is 6th; the clues also allow V to be 2nd.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "Z",
+            "H",
+            "R",
+            "C",
+            "L",
+            "V"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:cannot-determine",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-078",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Seven persons — D, G, K, M, Q, T, X — scored different marks in a test.\nOnly one person scored more marks than K.\nX scored more marks than D but fewer marks than T.\nOnly two persons scored fewer marks than M.\nExactly one person is between K and T in marks.\nG scored fewer marks than Q.\n\nWho is the third lowest scorer?",
+      "options": [
+        "X",
+        "T",
+        "M",
+        "G",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Only one person scored more than K: K is 2nd. Only two scored fewer than M: M is 5th. One person between K and T: T is 4th.",
+          "X scored fewer than T but more than D: X 6th, D 7th. G scored fewer than Q: Q 1st, G 3rd.",
+          "Order: Q > K > G > T > M > X > D. The third lowest scorer (5th) is **M**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "X is the second lowest; the third lowest is one place higher.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "Q",
+            "K",
+            "G",
+            "T",
+            "M",
+            "X",
+            "D"
+          ],
+          "label": "Highest → lowest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-079",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Seven persons — A, E, H, N, R, U, Z — have different heights.\nZ is the tallest.\nAs many persons are taller than R as are shorter than N.\nR is shorter than N.\nH is shorter than R.\nExactly one person is between E and H in height.\nA is taller than U.\nH is not the shortest.\n\nWho is the third tallest?",
+      "options": [
+        "A",
+        "E",
+        "R",
+        "N",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "As many persons are taller than R as are shorter than N: (rank of R − 1) = (7 − rank of N), so the two ranks add up to 8. R is below N and Z is 1st: (N, R) = (2nd, 6th) or (3rd, 5th).",
+          "If R is 6th, H (shorter than R) must be 7th, but H is not the shortest. So N is 3rd and R is 5th.",
+          "H is 6th, E is 4th (one person between E and H), and A > U gives A 2nd, U 7th: Z > A > N > E > R > H > U. The third tallest is **N**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "A is 2nd. Taking N as 2nd uses the (2nd, 6th) case, which the H clue rules out.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "Z",
+            "A",
+            "N",
+            "E",
+            "R",
+            "H",
+            "U"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:as-many"
+      ]
+    },
+    {
+      "key": "or-080",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — B, G, J, M, Q, T — have different weights.\nJ is lighter than M but heavier than G.\nT is heavier than only B.\nAs many persons are heavier than Q as are lighter than G.\nQ is heavier than G.\n\nWho is the third heaviest?",
+      "options": [
+        "M",
+        "J",
+        "G",
+        "Q",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "T is heavier than only B: T is 5th and B is 6th. M, J, G, Q fill 1st–4th with M > J > G.",
+          "As many heavier than Q as lighter than G: (rank of Q − 1) = (6 − rank of G), so the ranks add up to 7: Q and G are 3rd and 4th.",
+          "Q is heavier than G: Q 3rd, G 4th, so M 1st, J 2nd. The third heaviest is **Q**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "G is 4th; the \"as many\" clue only says Q and G share 3rd and 4th.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "M",
+            "J",
+            "Q",
+            "G",
+            "T",
+            "B"
+          ],
+          "label": "Heaviest → lightest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:as-many"
+      ]
+    },
+    {
+      "key": "or-081",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Seven persons — C, F, K, L, P, S, W — have different heights.\nK is neither the tallest nor the shortest.\nS is the 2nd shortest.\nExactly three persons are between S and W in height.\nC is taller than W.\nF is shorter than P but taller than L.\nK is shorter than F.\n\nHow many persons are taller than K?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "S is the 2nd shortest (6th). Three persons between S and W: W is 2nd. C is taller than W: C is 1st.",
+          "Slots 3, 4, 5, 7 remain for K, F, P, L with P > F > L and F > K. K is not the shortest, so L is 7th.",
+          "P > F > K fills 3rd–5th: C > W > P > F > K > S > L. Taller than K: C, W, P, F = **4**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "3 forgets C, who is fixed only through \"C is taller than W\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "C",
+            "W",
+            "P",
+            "F",
+            "K",
+            "S",
+            "L"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:between-count",
+        "ranking:not-clue"
+      ]
+    },
+    {
+      "key": "or-082",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — A, D, H, R, V, Y — scored different marks in a test.\nOnly two persons scored more marks than D.\nY scored more marks than H but fewer marks than A.\nR is the lowest scorer.\nV scored fewer marks than D.\n\nHow many persons scored fewer marks than H?",
+      "options": [
+        "None",
+        "1",
+        "2",
+        "3",
+        "Cannot be determined"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Only two persons scored more than D: D is 3rd. R is the lowest (6th).",
+          "A > Y > H with only 1st, 2nd, 4th, 5th free, and V is below D: A 1st, Y 2nd; H and V share 4th and 5th in either order.",
+          "If H is 4th, 2 persons scored fewer; if H is 5th, only 1 → **Cannot be determined**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "Both A > Y > D > H > V > R and A > Y > D > V > H > R fit every clue.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "A",
+            "Y",
+            "D",
+            "H",
+            "V",
+            "R"
+          ],
+          "label": "Highest → lowest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:cannot-determine"
+      ]
+    },
+    {
+      "key": "or-083",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — B, D, G, K, M, T, X — have different heights.\nAs many persons are taller than K as are shorter than K.\nThe number of persons between G and K is the same as the number of persons between K and X.\nG is taller than X.\nExactly one person is between G and M in height.\nM is shorter than T.\n\nWho is the second tallest?",
+      "options": [
+        "T",
+        "M",
+        "G",
+        "D",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "As many persons are taller than K as shorter than K: K is 4th. G and X are equally far from K with G taller: (1st, 7th), (2nd, 6th) or (3rd, 5th).",
+          "One person is between G and M. G 2nd would need M 4th (K) – impossible. G 3rd needs M 1st or 5th; 5th is X, and M 1st breaks \"M is shorter than T\". So G is 1st and X is 7th.",
+          "M is 3rd, and T (taller than M) is 2nd; B and D take 5th and 6th. The second tallest is **T**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "M is 3rd. Testing only the (1st, 7th) case without ruling out the others is a guess.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "G",
+            "T",
+            "M",
+            "K",
+            "B",
+            "D",
+            "X"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:equal-gap",
+        "ranking:as-many"
+      ]
+    },
+    {
+      "key": "or-084",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Seven persons — A, C, E, J, P, U, Y — have different weights.\nMore than four persons are heavier than J.\nExactly two persons are between J and P in weight.\nU is heavier than P but lighter than Y.\nThe number of persons between C and P is the same as the number of persons between P and E.\nC is lighter than E.\nA is not the lightest.\n\nHow many persons are heavier than P?",
+      "options": [
+        "None",
+        "1",
+        "2",
+        "3",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "More than four persons are heavier than J: J is 6th or 7th. Two persons between J and P: P is 3rd or 4th.",
+          "Y > U > P. If P were 3rd, Y and U would be 1st and 2nd, and C and E (equally far from P) would need 1st/5th or 2nd/4th – both blocked. So P is 4th and J is 7th.",
+          "Then (E, C) = (2nd, 6th) or (3rd, 5th) — (1st, 7th) is blocked by J — with Y and U filling the rest above P. Either way P is 4th: **3** persons are heavier."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "J is 6th or 7th at first; only the P–C–E clue settles it.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "Y",
+            "E",
+            "U",
+            "P",
+            "A",
+            "C",
+            "J"
+          ],
+          "label": "Heaviest → lightest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:equal-gap",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-085",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — C, F, J, N, R, V, Y — scored different marks in a test.\nOnly three persons scored more marks than R.\nThe number of persons between F and R is the same as the number of persons between R and Y.\nF scored more marks than Y.\nExactly one person is between F and N in marks.\nJ scored more marks than C but fewer marks than N.\nV is not the lowest scorer.\nY scored more marks than C.\n\nWho is the second highest scorer?",
+      "options": [
+        "J",
+        "V",
+        "N",
+        "F",
+        "Cannot be determined"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "R is 4th. F and Y are equally far from R with F higher: (1st, 7th), (2nd, 6th) or (3rd, 5th). Y scored more than C, so Y is not 7th. F 2nd needs N 4th (R) – impossible. So F is 3rd and Y is 5th.",
+          "One person between F and N: N is 1st (5th is Y). J > C and Y > C with V not lowest, so C is 7th; J and V take 2nd and 6th.",
+          "N > J > F > R > Y > V > C and N > V > F > R > Y > J > C both fit → **Cannot be determined**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "J and V can swap between 2nd and 6th; no clue separates them.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "N",
+            "J",
+            "F",
+            "R",
+            "Y",
+            "V",
+            "C"
+          ],
+          "label": "Highest → lowest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:cannot-determine",
+        "ranking:equal-gap"
+      ]
+    },
+    {
+      "key": "or-086",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — A, D, G, K, P, S, W — have different heights.\nMore than two persons are taller than K.\nExactly three persons are between K and S in height.\nS is taller than W but shorter than G.\nAs many persons are taller than A as are shorter than W.\nP is shorter than D.\nA is not the 2nd tallest.\n\nWho is the second shortest?",
+      "options": [
+        "P",
+        "K",
+        "W",
+        "A",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "G > S > W, so S is not 1st. K is 4th or lower and three persons are between K and S: (S, K) = (2nd, 6th) or (3rd, 7th).",
+          "As many taller than A as shorter than W: the ranks of A and W add up to 8. If S is 3rd and K 7th, W (below S) is 4th, 5th or 6th, making A 4th (W's own place), 3rd (S's place) or 2nd – but A is not 2nd, so this case fails.",
+          "So S is 2nd, G 1st, K 6th; (W, A) = (3rd, 5th) or (5th, 3rd); P < D gives D 4th, P 7th. The second shortest is **K**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "P is the shortest. A and W can swap, but K stays 6th.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "G",
+            "S",
+            "A",
+            "D",
+            "W",
+            "K",
+            "P"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:as-many",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-087",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Five persons — A, D, K, R, V — have different heights.\nK is the tallest.\nD is taller than R but shorter than A.\nV is the shortest.\nThe 3rd tallest person is 158 cm tall.\nThe sum of the heights of A and the 3rd tallest person is 325 cm.\n\nWhat is the height of A?",
+      "options": [
+        "167 cm",
+        "169 cm",
+        "172 cm",
+        "175 cm",
+        "183 cm"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "K is the tallest, V is the shortest and A > D > R fills 2nd–4th: K > A > D > R > V.",
+          "The 3rd tallest is D = 158 cm. A = 325 − 158 = **167 cm**."
+        ],
+        "shortcut": "Identify who holds the given rank before using the sum.",
+        "trap": "158 cm is the 3rd tallest person (D), not A.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "K",
+            "A (167 cm)",
+            "D (158 cm)",
+            "R",
+            "V"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric"
+      ]
+    },
+    {
+      "key": "or-088",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Six persons — B, F, H, L, S, W — have different weights.\nS is the heaviest.\nH is the 2nd heaviest.\nL is heavier than W but lighter than F.\nB is the lightest.\nThe heaviest person weighs 78 kg.\nH is 11 kg lighter than S.\nThe sum of the weights of H and L is 121 kg.\n\nWhat is the weight of L?",
+      "options": [
+        "49 kg",
+        "54 kg",
+        "57 kg",
+        "60 kg",
+        "67 kg"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Order: S > H > F > L > W > B (L is between W and F, with S, H fixed at the top and B at the bottom).",
+          "S = 78 kg, so H = 78 − 11 = 67 kg.",
+          "L = 121 − 67 = **54 kg**."
+        ],
+        "shortcut": "Chain the values from the given weight: S → H → L.",
+        "trap": "67 kg is H, not L.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "S (78 kg)",
+            "H (67 kg)",
+            "F",
+            "L (54 kg)",
+            "W",
+            "B"
+          ],
+          "label": "Heaviest → lightest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric"
+      ]
+    },
+    {
+      "key": "or-089",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — C, E, M, P, T, Y — have different heights.\nOnly two persons are taller than M.\nP is taller than M but shorter than Y.\nE is shorter than T.\nC is not the shortest.\nThe 2nd tallest person is 171 cm tall.\nY is 8 cm taller than P.\nThe sum of the heights of M and the shortest person is 305 cm.\nE is 21 cm shorter than M.\n\nWhat is the sum of the heights of Y and E?",
+      "options": [
+        "305 cm",
+        "313 cm",
+        "321 cm",
+        "326 cm",
+        "334 cm"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "M is 3rd; Y > P > M puts Y 1st and P 2nd. T > E and C is not the shortest, so E is 6th (C and T take 4th and 5th).",
+          "P (2nd tallest) = 171 cm, so Y = 179 cm. M + E = 305 and M − E = 21 give M = 163, E = 142.",
+          "Y + E = 179 + 142 = **321 cm**."
+        ],
+        "shortcut": "Sum and difference of the same pair: larger = (305 + 21) ÷ 2.",
+        "trap": "313 cm adds P (the 2nd tallest) instead of Y.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "Y (179 cm)",
+            "P (171 cm)",
+            "M (163 cm)",
+            "C",
+            "T",
+            "E (142 cm)"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric"
+      ]
+    },
+    {
+      "key": "or-090",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — A, G, J, N, R, U — have different weights.\nJ is heavier than only U.\nA is heavier than R but lighter than N.\nG is the 3rd heaviest.\nJ weighs 52 kg.\nThe sum of the weights of J and the 3rd heaviest person is 121 kg.\nThe weight of G is the average of the weights of A and J.\nN is 9 kg heavier than A.\n\nWhat is the weight of N?",
+      "options": [
+        "78 kg",
+        "86 kg",
+        "90 kg",
+        "95 kg",
+        "104 kg"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "J is 5th, U is 6th, G is 3rd; N > A > R fills 1st, 2nd and 4th.",
+          "G = 121 − 52 = 69 kg. G is the average of A and J: A = 2 × 69 − 52 = 86 kg.",
+          "N = 86 + 9 = **95 kg**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "86 kg is A; N is 9 kg heavier.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "N (95 kg)",
+            "A (86 kg)",
+            "G (69 kg)",
+            "R",
+            "J (52 kg)",
+            "U"
+          ],
+          "label": "Heaviest → lightest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric"
+      ]
+    },
+    {
+      "key": "or-091",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — B, F, K, Q, S, X — scored different marks in a test.\nOnly one person scored more marks than Q.\nX scored fewer marks than K.\nS is the lowest scorer.\nF scored more marks than B.\nK scored fewer marks than B.\nQ scored 84 marks.\nThe difference between the marks of Q and K is 19 marks.\nB scored 7 marks more than K.\n\nWhat is the sum of the marks of B and K?",
+      "options": [
+        "117 marks",
+        "123 marks",
+        "130 marks",
+        "133 marks",
+        "137 marks"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Q is 2nd and S is 6th. F > B > K > X needs four places, so F 1st, B 3rd, K 4th, X 5th.",
+          "K is below Q, so K = 84 − 19 = 65 (84 + 19 = 103 would put K above Q).",
+          "B = 65 + 7 = 72, so B + K = **137 marks**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "123 marks takes B as 7 marks fewer than K.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "F",
+            "Q (84 marks)",
+            "B (72 marks)",
+            "K (65 marks)",
+            "X",
+            "S"
+          ],
+          "label": "Highest → lowest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric"
+      ]
+    },
+    {
+      "key": "or-092",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — D, H, L, N, R, V, Z — have different heights.\nZ is the tallest.\nN is the 4th tallest.\nExactly two persons are between N and H in height.\nR is shorter than L but taller than N.\nThe 4th tallest person is 154 cm tall.\nR is 6 cm taller than N.\nL is 22 cm taller than the 4th tallest person.\nThe sum of the heights of L and H is 310 cm.\n\nWhat is the difference between the heights of R and H?",
+      "options": [
+        "26 cm",
+        "32 cm",
+        "36 cm",
+        "42 cm",
+        "46 cm"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Z is 1st and N is 4th. Two persons between N and H: H is 7th (1st is Z). R is taller than N and L is taller than R: L 2nd, R 3rd.",
+          "N = 154 cm, R = 160 cm, L = 154 + 22 = 176 cm, H = 310 − 176 = 134 cm.",
+          "R − H = 160 − 134 = **26 cm**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "42 cm is L − H, not R − H.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "Z",
+            "L (176 cm)",
+            "R (160 cm)",
+            "N (154 cm)",
+            "D",
+            "V",
+            "H (134 cm)"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-093",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — C, J, M, S, T, W — have different weights.\nW is heavier than only S.\nM is the heaviest.\nT is lighter than J.\nThe 2nd heaviest person weighs 74 kg.\nC weighs 74 kg.\nJ is 5 kg lighter than C.\nThe sum of the weights of J and W is 118 kg.\n\nWhat is the weight of W?",
+      "options": [
+        "44 kg",
+        "49 kg",
+        "54 kg",
+        "59 kg",
+        "69 kg"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "M is 1st, W is 5th, S is 6th; C, J, T fill 2nd–4th with J > T.",
+          "The 2nd heaviest weighs 74 kg and C weighs 74 kg; all weights differ, so C is 2nd (J 3rd, T 4th).",
+          "J = 74 − 5 = 69 kg, so W = 118 − 69 = **49 kg**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "44 kg uses C (74 kg) in the sum instead of J.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "M",
+            "C (74 kg)",
+            "J (69 kg)",
+            "T",
+            "W (49 kg)",
+            "S"
+          ],
+          "label": "Heaviest → lightest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric"
+      ]
+    },
+    {
+      "key": "or-094",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — B, E, G, K, P, U — have different heights.\nB is taller than both K and U.\nP is the 2nd shortest.\nG is taller than B.\nE is the tallest.\nE is 175 cm tall.\nThe height of G is the average of the heights of E and B.\nThe sum of the heights of B and P is 309 cm.\nP is 9 cm shorter than B.\n\nWhat is the height of G?",
+      "options": [
+        "159 cm",
+        "162 cm",
+        "167 cm",
+        "169 cm",
+        "171 cm"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "E is 1st and P is 5th; G > B > K and U, so G 2nd, B 3rd, with K and U at 4th and 6th.",
+          "B + P = 309 and B − P = 9 give B = 159 cm and P = 150 cm.",
+          "G = (175 + 159) ÷ 2 = **167 cm**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "159 cm is B; G is the average of E and B.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "E (175 cm)",
+            "G (167 cm)",
+            "B (159 cm)",
+            "K",
+            "P (150 cm)",
+            "U"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric"
+      ]
+    },
+    {
+      "key": "or-095",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — A, C, F, H, M, S, V — have different heights.\nOnly three persons are taller than H.\nThe number of persons between C and H is the same as the number of persons between H and V.\nC is taller than V.\nM is taller than C.\nF is shorter than V.\nS is not the shortest.\nThe 4th tallest person is 160 cm tall.\nThe difference between the heights of H and V is 13 cm.\nThe sum of the heights of C and V is 316 cm.\nM is 8 cm taller than C.\n\nWhat is the sum of the heights of M and V?",
+      "options": [
+        "303 cm",
+        "309 cm",
+        "316 cm",
+        "320 cm",
+        "324 cm"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "H is 4th, so H = 160 cm. C and V are equally far from H with C taller, so V is below H.",
+          "V = 160 − 13 = 147 cm. C = 316 − 147 = 169 cm and M = 169 + 8 = 177 cm.",
+          "M + V = 177 + 147 = **324 cm**. (Several orders fit, but every one gives these values.)"
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "V = 173 cm (H + 13) would put V above H, which the equal-gap clue forbids; 316 cm is C + V.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "A",
+            "M (177 cm)",
+            "C (169 cm)",
+            "H (160 cm)",
+            "V (147 cm)",
+            "S",
+            "F"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric",
+        "ranking:equal-gap"
+      ]
+    },
+    {
+      "key": "or-096",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — B, D, J, L, Q, T, Y — have different weights.\nExactly two persons are between L and Q in weight.\nL is the 2nd heaviest.\nT is lighter than Q but heavier than B.\nY is heavier than D.\nJ is not the heaviest.\nThe heaviest person weighs 92 kg.\nL is 6 kg lighter than Y.\nThe sum of the weights of L and the lightest person is 133 kg.\nT is 9 kg heavier than B.\n\nWhat is the sum of the weights of T and Y?",
+      "options": [
+        "139 kg",
+        "142 kg",
+        "146 kg",
+        "148 kg",
+        "157 kg"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "L is 2nd; two persons between L and Q put Q 5th. T is lighter than Q but heavier than B: T 6th, B 7th. Y > D and J is not the heaviest, so Y is 1st.",
+          "Y = 92 kg, L = 86 kg. L + B = 133 gives B = 47 kg, so T = 47 + 9 = 56 kg.",
+          "T + Y = 56 + 92 = **148 kg**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "D and J can swap at 3rd/4th, but neither is needed.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "Y (92 kg)",
+            "L (86 kg)",
+            "D",
+            "J",
+            "Q",
+            "T (56 kg)",
+            "B (47 kg)"
+          ],
+          "label": "Heaviest → lightest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-097",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — C, E, G, K, N, R, W — scored different marks in a test.\nOnly two persons scored fewer marks than G.\nExactly one person is between G and W in marks.\nW scored more marks than K.\nE scored more marks than W but fewer marks than N.\nR is not the lowest scorer.\nW scored 68 marks.\nThe sum of the marks of the highest scorer and W is 159 marks.\nE scored 13 marks fewer than N.\nThe marks of W are the average of the marks of E and G.\n\nWhat is the difference between the marks of N and G?",
+      "options": [
+        "13 marks",
+        "20 marks",
+        "23 marks",
+        "28 marks",
+        "33 marks"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "G is 5th. One person between G and W: W is 3rd or 7th; W scored more than K, so W is 3rd. N > E > W: N 1st, E 2nd.",
+          "N = 159 − 68 = 91, E = 91 − 13 = 78. W is the average of E and G: G = 2 × 68 − 78 = 58.",
+          "N − G = 91 − 58 = **33 marks**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "23 marks is N − W, not N − G.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "N (91 marks)",
+            "E (78 marks)",
+            "W (68 marks)",
+            "C",
+            "G (58 marks)",
+            "R",
+            "K"
+          ],
+          "label": "Highest → lowest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-098",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — B, D, H, J, P, T, X — have different heights.\nD is the 3rd tallest.\nH is taller than D.\nAs many persons are taller than J as are shorter than D.\nX is shorter than J.\nB is taller than T but shorter than P.\nD is 163 cm tall.\nThe difference between the heights of D and J is 11 cm.\nThe difference between the heights of J and X is 9 cm.\nThe sum of the heights of H and X is 321 cm.\n\nWhat is the difference between the heights of H and J?",
+      "options": [
+        "26 cm",
+        "28 cm",
+        "30 cm",
+        "35 cm",
+        "37 cm"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "D is 3rd, so 4 persons are shorter than D; as many are taller than J, so J is 5th. D is taller than J and X is shorter than J.",
+          "J = 163 − 11 = 152 cm, X = 152 − 9 = 143 cm, H = 321 − 143 = 178 cm.",
+          "H − J = 178 − 152 = **26 cm**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "35 cm is H − X. Taking J = 174 cm (D + 11) would put J above D.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "H (178 cm)",
+            "P",
+            "D (163 cm)",
+            "B",
+            "J (152 cm)",
+            "T",
+            "X (143 cm)"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric",
+        "ranking:as-many"
+      ]
+    },
+    {
+      "key": "or-099",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Six persons — A, F, K, M, R, V — have different weights.\nK is lighter than M but heavier than R.\nV is the heaviest.\nOnly one person is lighter than A.\nThe 3rd heaviest person weighs 71 kg.\nF weighs 80 kg.\nThe sum of the weights of A, K and M is 194 kg.\nK is 7 kg heavier than A.\nR is 6 kg lighter than A.\n\nWhat is the sum of the weights of K and R?",
+      "options": [
+        "104 kg",
+        "110 kg",
+        "112 kg",
+        "115 kg",
+        "117 kg"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "V is 1st and A is 5th; F, M, K, R fill 2nd, 3rd, 4th and 6th with M > K > R. F weighs 80 kg, more than the 3rd heaviest (71 kg), so F is 2nd.",
+          "M > K > R then takes 3rd, 4th, 6th: M = 71. A + K = 194 − 71 = 123 and K − A = 7 give K = 65, A = 58; R = 58 − 6 = 52.",
+          "K + R = 65 + 52 = **117 kg**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "Without F's weight one might put M 2nd and K 3rd (K = 71 kg), which gives a different total.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "V",
+            "F (80 kg)",
+            "M (71 kg)",
+            "K (65 kg)",
+            "A (58 kg)",
+            "R (52 kg)"
+          ],
+          "label": "Heaviest → lightest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric"
+      ]
+    },
+    {
+      "key": "or-100",
+      "subtype": "comparison-single",
+      "difficulty": "extreme",
+      "prompt": "Seven persons — C, G, L, N, Q, T, W — have different heights.\nN is the 2nd shortest.\nExactly three persons are between N and G in height.\nC is taller than G.\nL is shorter than T but taller than W.\nThe 2nd tallest person is 171 cm tall.\nThe sum of the heights of C and G is 349 cm.\nQ is 13 cm shorter than G.\nT is 4 cm taller than Q.\n\nWho is the third tallest?",
+      "options": [
+        "Q",
+        "L",
+        "T",
+        "G",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "N is 6th; three persons between N and G put G 2nd; C is taller than G, so C is 1st.",
+          "G = 171 cm, C = 349 − 171 = 178 cm, Q = 171 − 13 = 158 cm, T = 158 + 4 = 162 cm.",
+          "T > L > W and T (162) > Q (158), so T is above every remaining person: T is 3rd. The third tallest is **T**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "L, W and Q can be arranged in more than one way below T, but T's place is fixed.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "C (178 cm)",
+            "G (171 cm)",
+            "T (162 cm)",
+            "L",
+            "Q (158 cm)",
+            "N",
+            "W"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:numeric",
+        "ranking:between-count"
+      ]
     }
   ]
 }
