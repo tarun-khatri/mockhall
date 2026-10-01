@@ -1,0 +1,2577 @@
+{
+  "chapter": "averages",
+  "version": 1,
+  "items": [
+    {
+      "key": "av-001",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The average monthly rent paid by the 4 tenants of a building is ₹9,500. A fifth tenant moves in and pays ₹2,000 more than the average rent of the first four. What is the new average rent of the five tenants?",
+      "options": [
+        "₹9,800",
+        "₹9,900",
+        "₹10,000",
+        "₹10,500",
+        "₹11,500"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The fifth tenant pays ₹9,500 + ₹2,000 = ₹11,500. The extra ₹2,000 is shared among all 5 tenants.",
+          "New average = ₹9,500 + 2,000 ÷ 5 = **₹9,900**."
+        ],
+        "trap": "₹10,000 divides the extra ₹2,000 by 4. Once the fifth tenant is in, the excess is spread over 5 people.",
+        "shortcut": "Rise in average = excess over the old average ÷ new count = 2,000 ÷ 5 = ₹400."
+      },
+      "tags": [
+        "avg:new-member",
+        "template:member-k-more",
+        "trap:wrong-count"
+      ]
+    },
+    {
+      "key": "av-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average age of the members of a committee is 38 years. A new member, who is 18 years older than this average, joins the committee, and the average age rises to 41 years. What is the total age of all the members now?",
+      "options": [
+        "190 years",
+        "228 years",
+        "246 years",
+        "266 years",
+        "287 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The new member's 18 extra years raise the average by 3, so they are shared by 18 ÷ 3 = 6 members, i.e. the committee now has 6 members (5 originally).",
+          "Total now = 6 × 41 = **246 years** (check: 5 × 38 + 56 = 246)."
+        ],
+        "trap": "287 years treats 6 as the original strength and multiplies 41 by 7. The excess 18 is spread over everyone after the joining, so 6 is the new strength."
+      },
+      "tags": [
+        "avg:new-member",
+        "template:member-k-more",
+        "trap:wrong-count"
+      ]
+    },
+    {
+      "key": "av-003",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "When a new employee joins a team, her monthly salary is ₹7,000 more than the team's average salary at that time, and the average rises by ₹500. Next, another employee joins whose salary is ₹4,200 less than the team's average at that time. By how much is the final average salary higher than the original average?",
+      "options": [
+        "₹200",
+        "₹220",
+        "₹240",
+        "₹260",
+        "₹280"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "First joining: 7,000 ÷ 500 = 14 people share the excess, so the team then has 14 members.",
+          "Second joining: the team becomes 15, and the shortfall of ₹4,200 lowers the average by 4,200 ÷ 15 = ₹280.",
+          "Net change = 500 − 280 = **₹220** higher."
+        ],
+        "trap": "₹200 divides the ₹4,200 shortfall by 14, the team size before the second employee joined. She is included in the new average, so divide by 15."
+      },
+      "tags": [
+        "avg:new-member",
+        "template:member-k-more",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-004",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average score of a group of students in a quiz is 64. A new student whose score is 24 less than the group's average joins the group, and the average falls to 62. How many students were in the group originally?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The shortfall of 24 lowers the average by 2, so it is shared by 24 ÷ 2 = 12 students — the group including the newcomer.",
+          "Originally there were 12 − 1 = **11** students."
+        ],
+        "trap": "12 is the size after the new student joined. The question asks for the original group."
+      },
+      "tags": [
+        "avg:new-member",
+        "template:member-k-less",
+        "trap:wrong-count"
+      ]
+    },
+    {
+      "key": "av-005",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average weight of the rowers in a team is 72 kg. Two new rowers join the team: one weighs 9 kg more and the other 3 kg less than the team's average before they joined. As a result, the average weight rises by 0.5 kg. How many rowers are there in the team now?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12",
+        "24"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Net excess brought in = 9 − 3 = 6 kg over the old average.",
+          "This 6 kg raises the average by 0.5 kg, so it is shared by 6 ÷ 0.5 = **12** rowers — the team after both joined (10 before)."
+        ],
+        "trap": "24 adds the deviations (9 + 3 = 12) instead of netting them; 10 is the team before the two joined."
+      },
+      "tags": [
+        "avg:new-member",
+        "template:member-k-more",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-006",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A new member joins a club; his age is 25 years more than the club's average age, and the average age goes up by 1 year. Then two more members join, each 9 years younger than the average age of the club at that time. By how many months is the final average age higher than the original average?",
+      "options": [
+        "2 months",
+        "3 months",
+        "4 months",
+        "6 months",
+        "8 months"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "First joining: 25 ÷ 1 = 25 members after it, average up by 1 year = 12 months.",
+          "Second step: the club becomes 27; total shortfall 2 × 9 = 18 years, so the average falls by 18 ÷ 27 = $\\frac{2}{3}$ year = 8 months.",
+          "Net = 12 − 8 = **4 months** higher."
+        ],
+        "trap": "3 months divides the 18-year shortfall by 24 (or 25 − 1) instead of the 27 members present after the two join; 8 months is only the fall in the second step."
+      },
+      "tags": [
+        "avg:new-member",
+        "template:member-k-more",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-007",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In a hostel, the average monthly mess bill of the residents is ₹3,600. A new resident joins whose bill is ₹1,950 more than this average, and the average rises by ₹75. Later, one of the original residents, whose bill was ₹2,400, leaves the hostel. What is the final average monthly bill?",
+      "options": [
+        "₹3,651",
+        "₹3,675",
+        "₹3,700",
+        "₹3,726",
+        "₹3,750"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "1,950 ÷ 75 = 26 residents after the joining (25 before); the average is then ₹3,675 and the total is 26 × 3,675 = ₹95,550.",
+          "After the ₹2,400 resident leaves: (95,550 − 2,400) ÷ 25 = 93,150 ÷ 25 = **₹3,726**."
+        ],
+        "trap": "₹3,675 stops after the joining. A resident billed below the average leaving pushes the average up again, by (3,675 − 2,400) ÷ 25 = ₹51.",
+        "shortcut": "Rise on leaving = (3,675 − 2,400) ÷ 25 = 51, so 3,675 + 51 = 3,726."
+      },
+      "tags": [
+        "avg:new-member",
+        "template:member-k-more",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-008",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average daily sale of a bookshop over 11 days was 50 books. The average for the first 6 days was 48 books and that for the last 6 days was 54 books. How many books were sold on the 6th day?",
+      "options": [
+        "50",
+        "51",
+        "54",
+        "58",
+        "62"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "First 6 days = 6 × 48 = 288; last 6 days = 6 × 54 = 324; all 11 days = 11 × 50 = 550.",
+          "The 6th day is counted in both groups: 288 + 324 − 550 = **62**."
+        ],
+        "trap": "51 averages 48 and 54. The two groups overlap on day 6, so it is the excess of (first 6 + last 6) over the 11-day total."
+      },
+      "tags": [
+        "avg:overlap",
+        "template:first-last-overlap"
+      ]
+    },
+    {
+      "key": "av-009",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average weight of 9 parcels is 24 kg. The average weight of the first 5 parcels is 22 kg and that of the last 5 parcels is 27 kg. What is the weight of the 5th parcel?",
+      "options": [
+        "29 kg",
+        "31 kg",
+        "37 kg",
+        "45 kg",
+        "53 kg"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "First 5 = 5 × 22 = 110 kg; last 5 = 5 × 27 = 135 kg; all 9 = 9 × 24 = 216 kg.",
+          "5th parcel = 110 + 135 − 216 = **29 kg**."
+        ],
+        "trap": "53 kg subtracts 8 × 24 = 192 (as if only 8 parcels). The total of all 9 parcels is 216 kg."
+      },
+      "tags": [
+        "avg:overlap",
+        "template:first-last-overlap"
+      ]
+    },
+    {
+      "key": "av-010",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average of 11 observations is 45. The average of the first 6 observations is 43 and that of the last 6 observations is 49. If the 6th observation is removed, what is the average of the remaining 10 observations?",
+      "options": [
+        "43.8",
+        "44.2",
+        "44.9",
+        "45.6",
+        "46"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "6th observation = 6 × 43 + 6 × 49 − 11 × 45 = 258 + 294 − 495 = 57.",
+          "Remaining average = (495 − 57) ÷ 10 = 438 ÷ 10 = **43.8**."
+        ],
+        "trap": "44.9 takes the 6th observation as 46 (the mean of 43 and 49). The overlap value must come from the totals: 57."
+      },
+      "tags": [
+        "avg:overlap",
+        "template:first-last-overlap",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-011",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average of 10 numbers is 36. The average of the first 6 numbers is 34 and the average of the last 6 numbers is 40. What is the average of the 5th and 6th numbers?",
+      "options": [
+        "38",
+        "40",
+        "42",
+        "44",
+        "84"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The first 6 (1st–6th) and last 6 (5th–10th) overlap on two numbers: the 5th and 6th.",
+          "5th + 6th = 6 × 34 + 6 × 40 − 10 × 36 = 204 + 240 − 360 = 84, so their average is **42**."
+        ],
+        "trap": "84 is the sum of the two overlapping numbers, not their average."
+      },
+      "tags": [
+        "avg:overlap",
+        "template:first-last-overlap"
+      ]
+    },
+    {
+      "key": "av-012",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The average of 10 numbers is 45. The average of the first 6 numbers is 43 and that of the last 6 numbers is 50. If the 5th and 6th numbers are in the ratio 5 : 7, what is the 6th number?",
+      "options": [
+        "45",
+        "54",
+        "60",
+        "63",
+        "72"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Groups 1st–6th and 5th–10th overlap on the 5th and 6th numbers: 5th + 6th = 6 × 43 + 6 × 50 − 10 × 45 = 258 + 300 − 450 = 108.",
+          "Split 108 in the ratio 5 : 7: 108 ÷ 12 = 9, so the 5th = 45 and the 6th = **63**."
+        ],
+        "trap": "45 is the 5th number; 54 splits 108 equally, ignoring the ratio."
+      },
+      "tags": [
+        "avg:overlap",
+        "template:first-last-overlap",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-013",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A batter's average in 15 innings is 42. His average in the first 9 innings is 40 and in the last 7 innings is 47. How many runs did he score in the 9th innings?",
+      "options": [
+        "43.5",
+        "47",
+        "52",
+        "55",
+        "59"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "First 9 innings = 9 × 40 = 360; last 7 innings (9th–15th) = 7 × 47 = 329; all 15 = 15 × 42 = 630.",
+          "9 + 7 = 16 > 15, so the 9th innings is counted twice: 360 + 329 − 630 = **59**."
+        ],
+        "trap": "43.5 averages 40 and 47. The groups overlap on the 9th innings, so take the excess of the two group totals over the 15-innings total."
+      },
+      "tags": [
+        "avg:overlap",
+        "template:first-last-overlap",
+        "avg:cricket"
+      ]
+    },
+    {
+      "key": "av-014",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average daily footfall at a museum for a week (Monday to Sunday) was 800. The average for Monday to Thursday was 760 and that for Thursday to Sunday was 880. By what percentage was Thursday's footfall more than the weekly average?",
+      "options": [
+        "10%",
+        "12.5%",
+        "16.67%",
+        "20%",
+        "25%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Mon–Thu = 4 × 760 = 3,040; Thu–Sun = 4 × 880 = 3,520; week = 7 × 800 = 5,600.",
+          "Thursday = 3,040 + 3,520 − 5,600 = 960.",
+          "960 is (960 − 800) ÷ 800 × 100 = **20%** more than 800."
+        ],
+        "trap": "16.67% divides the gap of 160 by 960 (wrong base); 'more than the weekly average' takes 800 as the base."
+      },
+      "tags": [
+        "avg:overlap",
+        "template:first-last-overlap",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "av-015",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The average marks of 30 students in a test were calculated as 64. Later it was found that one student's marks had been entered as 48 instead of 84. What is the correct average?",
+      "options": [
+        "62.8",
+        "63.2",
+        "64.8",
+        "65",
+        "65.2"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The total was short by 84 − 48 = 36 marks.",
+          "Correct average = 64 + 36 ÷ 30 = 64 + 1.2 = **65.2**."
+        ],
+        "trap": "62.8 subtracts the 1.2 instead of adding it. The true marks (84) are higher than the entered marks, so the average goes up."
+      },
+      "tags": [
+        "avg:wrong-entry",
+        "template:misread-value"
+      ]
+    },
+    {
+      "key": "av-016",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average of 36 numbers is 72. It was later found that two numbers, 46 and 81, had been copied as 64 and 18 respectively. What is the correct average?",
+      "options": [
+        "70.75",
+        "73.25",
+        "73.5",
+        "74.25",
+        "74.5"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct pair = 46 + 81 = 127; copied pair = 64 + 18 = 82. The total was short by 45.",
+          "Correct average = 72 + 45 ÷ 36 = 72 + 1.25 = **73.25**."
+        ],
+        "trap": "70.75 applies the correction in the wrong direction. The true numbers sum to more than the copied ones, so the average rises."
+      },
+      "tags": [
+        "avg:wrong-entry",
+        "template:misread-value"
+      ]
+    },
+    {
+      "key": "av-017",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average of 25 observations was found to be 48. On checking, it was found that one observation, 73, had been wrongly taken as 37, and another observation, 60, had been included although it should have been left out. What is the correct average of the valid observations?",
+      "options": [
+        "46",
+        "47.04",
+        "49",
+        "50.5",
+        "51.5"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Recorded total = 25 × 48 = 1,200. Fix the misread value: + (73 − 37) = +36 → 1,236.",
+          "Drop the invalid 60: 1,236 − 60 = 1,176 over 24 observations → 1,176 ÷ 24 = **49**."
+        ],
+        "trap": "47.04 still divides by 25 after removing an observation; 51.5 fixes the misread value but forgets to drop the 60."
+      },
+      "tags": [
+        "avg:wrong-entry",
+        "template:misread-and-remove",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-018",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average monthly electricity bill of 12 households was computed as ₹1,850. It was then noticed that one bill had been read as ₹1,770 instead of its true amount. With this corrected, the average becomes ₹1,900. What is the true amount of that bill?",
+      "options": [
+        "₹1,820",
+        "₹2,320",
+        "₹2,370",
+        "₹2,420",
+        "₹2,470"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The total rises by 12 × (1,900 − 1,850) = ₹600.",
+          "True bill = 1,770 + 600 = **₹2,370**."
+        ],
+        "trap": "₹1,820 adds only the ₹50 change in the average. The change in the total is 12 × 50 = ₹600."
+      },
+      "tags": [
+        "avg:wrong-entry",
+        "template:find-true-value"
+      ]
+    },
+    {
+      "key": "av-019",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average of a set of numbers was found to be 56. It was later noticed that 84 had been misread as 48 and 29 had been misread as 92. With both corrected, the average became 55.25. How many numbers are there in the set?",
+      "options": [
+        "36",
+        "48",
+        "84",
+        "99",
+        "132"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Net change in total = (84 − 48) + (29 − 92) = 36 − 63 = −27.",
+          "The average fell by 56 − 55.25 = 0.75, so n = 27 ÷ 0.75 = **36**."
+        ],
+        "trap": "132 adds the two errors (36 + 63 = 99) instead of netting them; 48 and 84 use only one of the two corrections (36 ÷ 0.75 and 63 ÷ 0.75)."
+      },
+      "tags": [
+        "avg:wrong-entry",
+        "template:find-count",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-020",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average marks of a class of 40 students were computed as 55, but the marks of one student, 68, had been left out, so the total of the other 39 was divided by 39. Also, one student's marks had been entered as 47 instead of 74. What is the correct average of the class?",
+      "options": [
+        "56",
+        "56.5",
+        "57",
+        "57.375",
+        "58"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Computed total = 39 × 55 = 2,145. Fix the entry: + (74 − 47) = +27 → 2,172.",
+          "Add the missing 68: 2,240 over 40 students → 2,240 ÷ 40 = **56**."
+        ],
+        "trap": "57.375 starts from 40 × 55 = 2,200, but the 55 was an average over only 39 students."
+      },
+      "tags": [
+        "avg:wrong-entry",
+        "template:misread-and-missing",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-021",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "After 24 innings, Kavya's batting average is 38. How many runs must she score in her 25th innings to raise her average to 40?",
+      "options": [
+        "40",
+        "42",
+        "64",
+        "86",
+        "88"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Runs needed for an average of 40 in 25 innings = 25 × 40 = 1,000; runs so far = 24 × 38 = 912.",
+          "Required score = 1,000 − 912 = **88**."
+        ],
+        "trap": "86 uses 40 + 2 × 23; each of the 24 earlier innings needs 2 more runs, so it is 40 + 2 × 24 = 88.",
+        "shortcut": "Score = new average + rise × earlier innings = 40 + 2 × 24 = 88."
+      },
+      "tags": [
+        "avg:cricket",
+        "template:next-innings"
+      ]
+    },
+    {
+      "key": "av-022",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A batter's average is calculated as total runs ÷ number of times out. After being out 16 times, his average is 45. In his next two innings he scores 78 (out) and 52 (not out). What is his new average?",
+      "options": [
+        "47.2",
+        "48",
+        "50",
+        "53.125",
+        "54"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Runs = 16 × 45 + 78 + 52 = 720 + 130 = 850.",
+          "Dismissals = 16 + 1 = 17 (the 52 was not out), so average = 850 ÷ 17 = **50**."
+        ],
+        "trap": "47.2 divides by 18, counting the not-out innings as a dismissal; 53.125 keeps 16 dismissals and ignores that he was out for 78."
+      },
+      "tags": [
+        "avg:cricket",
+        "template:not-out-average"
+      ]
+    },
+    {
+      "key": "av-023",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A bowler has taken 70 wickets at an average of 25 runs per wicket. In his next match he takes 5 wickets for 50 runs. What is his new bowling average (runs per wicket)?",
+      "options": [
+        "24",
+        "24.5",
+        "25",
+        "25.71",
+        "26"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Runs conceded = 70 × 25 + 50 = 1,800; wickets = 70 + 5 = 75.",
+          "New average = 1,800 ÷ 75 = **24**."
+        ],
+        "trap": "25.71 divides the new runs total by the old 70 wickets. Both runs and wickets change after the match."
+      },
+      "tags": [
+        "avg:cricket",
+        "template:bowling-average"
+      ]
+    },
+    {
+      "key": "av-024",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A batter's average after a certain number of innings is 36. In the next innings he scores 96 runs, which raises his average by 3. How many runs must he score in the following innings to raise his average to 40?",
+      "options": [
+        "57",
+        "60",
+        "84",
+        "100",
+        "120"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "96 is 60 above the old average and raises it by 3, so after that innings he has played 60 ÷ 3 = 20 innings, with average 39 and total 780.",
+          "For an average of 40 after 21 innings he needs 21 × 40 = 840, so he must score 840 − 780 = **60**."
+        ],
+        "trap": "120 uses the old average 36 for all 20 innings (21 × 40 − 20 × 36); the average had already risen to 39.",
+        "shortcut": "Needed = 40 + (40 − 39) × 20 = 60."
+      },
+      "tags": [
+        "avg:cricket",
+        "template:next-innings",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-025",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A batter's average after 18 innings is 32. In each of his next few innings he scores 64 runs, and his average becomes 40. How many innings has he played in all?",
+      "options": [
+        "6",
+        "12",
+        "18",
+        "22",
+        "24"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let k more innings be played: 18 × 32 + 64k = 40(18 + k) → 576 + 64k = 720 + 40k → 24k = 144 → k = 6.",
+          "Total innings = 18 + 6 = **24**."
+        ],
+        "trap": "6 is only the number of extra innings; the question asks for all the innings played.",
+        "shortcut": "Each 64 is 24 above the target 40; the 18 old innings are 8 short each = 144. 144 ÷ 24 = 6 innings."
+      },
+      "tags": [
+        "avg:cricket",
+        "template:repeated-score"
+      ]
+    },
+    {
+      "key": "av-026",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A batter has scored 1,152 runs in 32 innings and was not out in 4 of them. His batting average is calculated as runs ÷ dismissals. In his next 4 innings he is out each time, and his batting average becomes 44. What is the average of his scores in these 4 innings?",
+      "options": [
+        "56",
+        "64",
+        "72",
+        "96",
+        "108"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Dismissals so far = 32 − 4 = 28; after 4 more innings (all out) = 32.",
+          "Runs needed = 32 × 44 = 1,408, so the 4 innings total 1,408 − 1,152 = 256 and average **64**."
+        ],
+        "trap": "108 multiplies 44 by all 36 innings, counting the 4 not-out innings as dismissals."
+      },
+      "tags": [
+        "avg:cricket",
+        "template:not-out-average",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-027",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A batter's average after 10 innings was 52. After two more innings his average fell to 50. If his scores in those two innings differed by 22 runs, what was the higher of the two scores?",
+      "options": [
+        "51",
+        "54",
+        "58",
+        "62",
+        "80"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Runs in the two innings = 12 × 50 − 10 × 52 = 600 − 520 = 80.",
+          "Higher score = (80 + 22) ÷ 2 = **51** (the lower is 29)."
+        ],
+        "trap": "80 is the total of the two innings, not the higher score."
+      },
+      "tags": [
+        "avg:cricket",
+        "template:two-innings-split"
+      ]
+    },
+    {
+      "key": "av-028",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The average age of a 10-member hockey squad rises by 0.8 years when a 19-year-old player is replaced by a new player. What is the age of the new player?",
+      "options": [
+        "19.8 years",
+        "23 years",
+        "26 years",
+        "26.2 years",
+        "27 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The squad's total age rises by 10 × 0.8 = 8 years.",
+          "New player = 19 + 8 = **27 years**."
+        ],
+        "trap": "19.8 years adds only the 0.8-year rise in the average; the total rises by 0.8 for each of the 10 players."
+      },
+      "tags": [
+        "avg:replacement",
+        "template:replace-one"
+      ]
+    },
+    {
+      "key": "av-029",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average weight of 12 students is 48 kg. Two students weighing 42 kg and 45 kg leave the group and one new student joins, after which the average weight of the group becomes 49 kg. What is the weight of the new student?",
+      "options": [
+        "50 kg",
+        "51 kg",
+        "54 kg",
+        "56 kg",
+        "99 kg"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total after the two leave = 12 × 48 − (42 + 45) = 576 − 87 = 489 kg.",
+          "The group now has 11 students: 11 × 49 = 539 kg, so the new student weighs 539 − 489 = **50 kg**."
+        ],
+        "trap": "99 kg multiplies 49 by 12, forgetting the group shrinks to 11 when two leave and one joins."
+      },
+      "tags": [
+        "avg:replacement",
+        "template:two-out-one-in",
+        "trap:wrong-count"
+      ]
+    },
+    {
+      "key": "av-030",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average age of the 15 teachers of a school falls by 1.2 years when a 54-year-old teacher retires and is replaced by a new teacher. How old is the new teacher?",
+      "options": [
+        "30 years",
+        "32 years",
+        "34 years",
+        "36 years",
+        "52.8 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The total age falls by 15 × 1.2 = 18 years.",
+          "New teacher = 54 − 18 = **36 years**."
+        ],
+        "trap": "52.8 years subtracts only 1.2 years. The fall in the total is 1.2 × 15 = 18 years."
+      },
+      "tags": [
+        "avg:replacement",
+        "template:replace-one"
+      ]
+    },
+    {
+      "key": "av-031",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average weight of A, B and C is 64 kg. When D joins them, the average weight of the four becomes 63 kg. E, who weighs 3 kg more than D, then replaces A, and the average weight of B, C, D and E becomes 62 kg. What is A's weight?",
+      "options": [
+        "61 kg",
+        "63 kg",
+        "64 kg",
+        "65 kg",
+        "67 kg"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "A + B + C = 192; D = 4 × 63 − 192 = 60, so E = 63.",
+          "B + C + D + E = 4 × 62 = 248 → B + C = 248 − 60 − 63 = 125.",
+          "A = 192 − 125 = **67 kg**."
+        ],
+        "trap": "63 kg is E's weight. Replacing A by E lowers the total by 4 kg (252 → 248), so A = E + 4 = 67.",
+        "shortcut": "Total falls from 252 to 248 when E replaces A, so A = E + 4 = 63 + 4."
+      },
+      "tags": [
+        "avg:replacement",
+        "template:join-then-replace",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-032",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average age of 10 players rises by 3 years when two of them, aged 22 and 25 years, are replaced by two new players whose ages are in the ratio 3 : 4. What is the age of the older new player?",
+      "options": [
+        "33 years",
+        "36 years",
+        "38.5 years",
+        "40 years",
+        "44 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The total rises by 10 × 3 = 30, so the new pair's total = 22 + 25 + 30 = 77 years.",
+          "Split 77 in the ratio 3 : 4: 77 ÷ 7 = 11, so the ages are 33 and **44 years**."
+        ],
+        "trap": "33 years is the younger new player; 38.5 years splits 77 equally."
+      },
+      "tags": [
+        "avg:replacement",
+        "template:replace-two-ratio"
+      ]
+    },
+    {
+      "key": "av-033",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A group of 20 workers has an average daily wage of ₹640. Four workers whose average wage is ₹580 leave, and 6 new workers join, after which the group's average wage becomes ₹670. Of the new workers, 2 are supervisors who each earn ₹150 more than each of the other 4, who earn equal wages. What is the daily wage of a supervisor?",
+      "options": [
+        "₹660",
+        "₹710",
+        "₹780",
+        "₹810",
+        "₹860"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "After the 4 leave: 20 × 640 − 4 × 580 = 12,800 − 2,320 = ₹10,480 for 16 workers.",
+          "The group becomes 22: 22 × 670 = 14,740, so the 6 newcomers earn 14,740 − 10,480 = ₹4,260.",
+          "4x + 2(x + 150) = 4,260 → 6x = 3,960 → x = 660; supervisor = **₹810**."
+        ],
+        "trap": "₹710 is the average wage of the 6 newcomers and ₹660 is the wage of each of the other 4; the supervisor earns ₹150 more than ₹660."
+      },
+      "tags": [
+        "avg:replacement",
+        "template:leave-and-join",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-034",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average height of 25 girls in a dance group is 152 cm. One girl leaves the group and two new girls of heights 160 cm and 149 cm join, after which the average height becomes 152.5 cm. What is the height of the girl who left?",
+      "options": [
+        "144 cm",
+        "146 cm",
+        "148 cm",
+        "150 cm",
+        "152 cm"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The group now has 26 girls: 26 × 152.5 = 3,965 cm.",
+          "Before the change: 25 × 152 = 3,800. So 3,800 − x + 160 + 149 = 3,965 → x = **144 cm**."
+        ],
+        "trap": "152 cm is the old average. The group grows to 26, so compare 26 × 152.5 with 3,800 + 309."
+      },
+      "tags": [
+        "avg:replacement",
+        "template:one-out-two-in"
+      ]
+    },
+    {
+      "key": "av-035",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The average of five consecutive even numbers is 46. What is the product of the smallest and the largest of these numbers?",
+      "options": [
+        "2,100",
+        "2,112",
+        "2,116",
+        "2,160",
+        "2,200"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The middle number equals the average: the numbers are 42, 44, 46, 48, 50.",
+          "Smallest × largest = 42 × 50 = **2,100**."
+        ],
+        "trap": "2,112 multiplies 44 × 48 (second and fourth numbers); 2,116 is 46 × 46."
+      },
+      "tags": [
+        "avg:consecutive",
+        "template:consecutive-even"
+      ]
+    },
+    {
+      "key": "av-036",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The sum of seven consecutive odd numbers is 357. What is the average of the largest three of these numbers?",
+      "options": [
+        "51",
+        "52",
+        "53",
+        "54",
+        "55"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Middle (4th) number = 357 ÷ 7 = 51, so the numbers are 45, 47, 49, 51, 53, 55, 57.",
+          "Largest three = 53, 55, 57; their average = **55**."
+        ],
+        "trap": "53 is the smallest of the three largest numbers (the 5th number), not their average; 51 is the average of all seven."
+      },
+      "tags": [
+        "avg:consecutive",
+        "template:consecutive-odd"
+      ]
+    },
+    {
+      "key": "av-037",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average of 8 consecutive multiples of 6 is 87. What is the largest of these multiples?",
+      "options": [
+        "96",
+        "102",
+        "105",
+        "108",
+        "114"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "With 8 terms the average 87 lies midway between the 4th and 5th terms, so they are 84 and 90.",
+          "Largest (8th) = 90 + 3 × 6 = **108**."
+        ],
+        "trap": "102 counts the 3 steps from 84 (the 4th term) instead of from 90 (the 5th term)."
+      },
+      "tags": [
+        "avg:consecutive",
+        "template:consecutive-multiples"
+      ]
+    },
+    {
+      "key": "av-038",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average of 6 consecutive even numbers is 37. If the next 4 consecutive even numbers are added to this list, what is the average of all 10 numbers?",
+      "options": [
+        "41",
+        "42",
+        "43",
+        "44",
+        "47"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The 6 numbers are 32, 34, 36, 38, 40, 42; the next 4 are 44, 46, 48, 50.",
+          "All 10 run from 32 to 50 in steps of 2, so their average = (32 + 50) ÷ 2 = **41**."
+        ],
+        "trap": "47 is the average of the 4 added numbers alone."
+      },
+      "tags": [
+        "avg:consecutive",
+        "template:extend-sequence"
+      ]
+    },
+    {
+      "key": "av-039",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average of 9 consecutive natural numbers is n. When the smallest two of them are removed, the average of the remaining numbers becomes 47. What is n?",
+      "options": [
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the numbers be a, a + 1, …, a + 8, so n = a + 4.",
+          "Without a and a + 1, the remaining 7 run from a + 2 to a + 8, average a + 5 = 47 → a = 42.",
+          "n = 42 + 4 = **46**."
+        ],
+        "trap": "45 subtracts 2 (one per removed number) from 47; removing two from the bottom raises the average by only 1."
+      },
+      "tags": [
+        "avg:consecutive",
+        "template:remove-from-sequence"
+      ]
+    },
+    {
+      "key": "av-040",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The average of 8 consecutive odd numbers is 3 less than the average of 6 consecutive even numbers. The sum of the largest odd number and the largest even number is 95. What is the difference between the sum of the odd numbers and the sum of the even numbers?",
+      "options": [
+        "50",
+        "54",
+        "58",
+        "62",
+        "66"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the odd numbers be a, …, a + 14 (average a + 7) and the even numbers b, …, b + 10 (average b + 5). Then a + 7 = b + 5 − 3 → b = a + 5.",
+          "(a + 14) + (b + 10) = 95 → 2a + 29 = 95 → a = 33, b = 38.",
+          "Odd sum = 8 × 40 = 320; even sum = 6 × 43 = 258; difference = **62**."
+        ],
+        "trap": "The 8 odd numbers have the lower average but there are more of them; comparing averages alone (a gap of 3) ignores the counts."
+      },
+      "tags": [
+        "avg:consecutive",
+        "template:two-sequences",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-041",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A shop sold 120 kg of rice at an average price of ₹45 per kg on Monday and 80 kg at an average price of ₹50 per kg on Tuesday. What was the average price per kg over the two days?",
+      "options": [
+        "₹45.5",
+        "₹46",
+        "₹47",
+        "₹47.5",
+        "₹48"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total sales = 120 × 45 + 80 × 50 = 5,400 + 4,000 = ₹9,400 for 200 kg.",
+          "Average = 9,400 ÷ 200 = **₹47** per kg."
+        ],
+        "trap": "₹47.5 is the simple average of 45 and 50; more rice was sold at ₹45, so the weighted average is lower."
+      },
+      "tags": [
+        "avg:weighted",
+        "template:two-groups"
+      ]
+    },
+    {
+      "key": "av-042",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In an office, the average age of the men is 42 years and that of the women is 36 years. The average age of all the employees is 39.6 years. If there are 30 more men than women, how many employees are there in the office?",
+      "options": [
+        "75",
+        "150",
+        "160",
+        "180",
+        "200"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Men : women = (39.6 − 36) : (42 − 39.6) = 3.6 : 2.4 = 3 : 2.",
+          "The difference of 1 part = 30, so the total = 5 parts = **150**."
+        ],
+        "trap": "75 equates 30 with the women's 2 parts (5 parts = 75). The 30 is the gap between men and women, which is 1 part.",
+        "shortcut": "Alligation: distances 3.6 and 2.4 from the overall average give the ratio 3 : 2."
+      },
+      "tags": [
+        "avg:weighted",
+        "template:alligation-count"
+      ]
+    },
+    {
+      "key": "av-043",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average score of 50 candidates in a test is 64. The average score of the 30 candidates who passed is 76. What is the average score of the candidates who failed?",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "46",
+        "52"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Total = 50 × 64 = 3,200; passed = 30 × 76 = 2,280.",
+          "Failed (20 candidates) = 920 → average = 920 ÷ 20 = **46**."
+        ],
+        "trap": "52 assumes the two groups are of equal size (2 × 64 − 76). The 20 who failed must balance the 30 who passed."
+      },
+      "tags": [
+        "avg:weighted",
+        "template:pass-fail"
+      ]
+    },
+    {
+      "key": "av-044",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The numbers of students in sections A, B and C are in the ratio 2 : 3 : 5, and their average marks are 58, 64 and x respectively. If the average marks of all the students together are 66, what is x?",
+      "options": [
+        "68",
+        "69.2",
+        "70.4",
+        "72",
+        "76"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take 2, 3 and 5 students: 2 × 58 + 3 × 64 + 5x = 10 × 66 → 116 + 192 + 5x = 660.",
+          "5x = 352 → x = **70.4**."
+        ],
+        "trap": "76 treats the three sections as equal in size (3 × 66 − 58 − 64). Weight each average by its share 2 : 3 : 5."
+      },
+      "tags": [
+        "avg:weighted",
+        "template:three-groups-ratio"
+      ]
+    },
+    {
+      "key": "av-045",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Section A has 35 students with average marks 68, and section B has average marks 60. The average marks of the two sections together are 65. Later it is found that 5 students with average marks 72 were wrongly listed in section B and actually belong to section A. What is the correct average of section B?",
+      "options": [
+        "54.5",
+        "55.5",
+        "56.25",
+        "57",
+        "60"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Size of B as listed: 35 × 68 + 60b = 65(35 + b) → 2,380 + 60b = 2,275 + 65b → b = 21, total 1,260.",
+          "Remove the 5 students (total 5 × 72 = 360): 900 over 16 students → 900 ÷ 16 = **56.25**."
+        ],
+        "trap": "60 is the uncorrected average. The 5 students scored above B's average, so taking them out lowers it; first find B's size from the overall average."
+      },
+      "tags": [
+        "avg:weighted",
+        "template:regroup",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-046",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A company has three branches P, Q and R, whose numbers of employees are in the ratio 4 : 5 : 5. The average monthly salaries in P and Q are ₹36,000 and ₹30,000, and the average for all three branches together is ₹32,000. If 20% of R's employees, whose average salary is ₹35,000, are shifted to P, what is the new average salary in R?",
+      "options": [
+        "₹29,500",
+        "₹29,750",
+        "₹30,000",
+        "₹30,250",
+        "₹30,800"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Take 4, 5, 5 units: 4 × 36 + 5 × 30 + 5r = 14 × 32 → 144 + 150 + 5r = 448 → r = 30.8 (₹30,800).",
+          "R's total = 5 × 30.8 = 154; 20% of R = 1 unit with total 35 leaves.",
+          "New R average = (154 − 35) ÷ 4 = 29.75 → **₹29,750**."
+        ],
+        "trap": "₹30,800 is R's average before the shift. Employees paid above R's average leave, so R's average falls."
+      },
+      "tags": [
+        "avg:weighted",
+        "template:three-groups-ratio",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-047",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average of 45 numbers is 38. The average of the first 20 numbers is 34 and that of the next 15 numbers is 40. What is the average of the last 10 numbers?",
+      "options": [
+        "40",
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = 45 × 38 = 1,710; first 20 = 680; next 15 = 600.",
+          "Last 10 = 1,710 − 680 − 600 = 430 → average = **43**."
+        ],
+        "trap": "40 treats the three groups as equal in size (3 × 38 − 34 − 40); the groups have 20, 15 and 10 numbers."
+      },
+      "tags": [
+        "avg:weighted",
+        "template:three-blocks"
+      ]
+    },
+    {
+      "key": "av-048",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Amit's average marks in 5 subjects are 68. His average in the 4 subjects other than English is 66. If his English marks increase by 15 on re-evaluation, what will his new average in the 5 subjects be?",
+      "options": [
+        "71",
+        "72",
+        "74",
+        "76",
+        "83"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "English = 5 × 68 − 4 × 66 = 340 − 264 = 76 (after re-evaluation 91).",
+          "New average = (340 + 15) ÷ 5 = **71**."
+        ],
+        "trap": "83 adds the full 15 marks to the average; a 15-mark rise in one subject raises the 5-subject average by 15 ÷ 5 = 3."
+      },
+      "tags": [
+        "avg:marks",
+        "template:subject-revised"
+      ]
+    },
+    {
+      "key": "av-049",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Neha's average marks in 6 subjects are 78. Her average in the 5 subjects other than Maths is 75, and her average in the 5 subjects other than Science is 79. By how many marks does her Maths score exceed her Science score?",
+      "options": [
+        "4",
+        "12",
+        "16",
+        "18",
+        "20"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total = 6 × 78 = 468. Maths = 468 − 5 × 75 = 93; Science = 468 − 5 × 79 = 73.",
+          "Maths − Science = 93 − 73 = **20**."
+        ],
+        "trap": "4 is the gap between the two averages (79 − 75); each average is over 5 subjects, so the gap in marks is 5 × 4 = 20.",
+        "shortcut": "Maths − Science = 5 × (79 − 75) = 20."
+      },
+      "tags": [
+        "avg:marks",
+        "template:excluding-one-subject"
+      ]
+    },
+    {
+      "key": "av-050",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Tanu's average marks in Maths, Science and English are 72. Her average in Science, English and Hindi is 68, and she scored 54 in Hindi. What is her average in all four subjects?",
+      "options": [
+        "66",
+        "67",
+        "67.5",
+        "68",
+        "70"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Maths − Hindi = 3 × 72 − 3 × 68 = 12, so Maths = 66.",
+          "Science + English = 216 − 66 = 150.",
+          "Average of four = (66 + 150 + 54) ÷ 4 = 270 ÷ 4 = **67.5**."
+        ],
+        "trap": "70 averages the two given averages (72 and 68); the groups share two subjects and must be combined through the totals."
+      },
+      "tags": [
+        "avg:marks",
+        "template:shared-subjects",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-051",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Pooja's average marks in 6 subjects are 75. If her marks in Maths had been 25% lower, her average would have been 3.5 less. What is her average in the other 5 subjects?",
+      "options": [
+        "72.6",
+        "73.2",
+        "73.8",
+        "74.4",
+        "87.2"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "A fall of 3.5 in the average of 6 subjects = 21 marks, which is 25% of Maths → Maths = 84.",
+          "Other 5 = 6 × 75 − 84 = 366 → average = **73.2**."
+        ],
+        "trap": "87.2 takes 25% of Maths as 3.5 (Maths = 14); the 3.5 is the fall in the average, so the fall in the total is 6 × 3.5 = 21."
+      },
+      "tags": [
+        "avg:marks",
+        "template:subject-percent-change"
+      ]
+    },
+    {
+      "key": "av-052",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The average marks of 40 students in Physics were 58. On re-evaluation, 25% of the students gained 12 marks each, 10% of the students lost 5 marks each, and the rest were unchanged. After re-evaluation, the two lowest scores, 28 and 36, are excluded. What is the average of the remaining 38 students?",
+      "options": [
+        "58.9",
+        "60.5",
+        "61.5",
+        "62",
+        "63.4"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Original total = 40 × 58 = 2,320. Gains: 10 students × 12 = +120; losses: 4 students × 5 = −20 → 2,420.",
+          "Exclude 28 + 36 = 64: 2,356 over 38 students → **62**."
+        ],
+        "trap": "60.5 stops at 2,420 ÷ 40 and does not exclude the two scores; 58.9 excludes them but still divides by 40."
+      },
+      "tags": [
+        "avg:marks",
+        "template:re-evaluation",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-053",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Kiran's marks in five subjects are 78, 84, 69, 91 and 73. How many marks must she score in the sixth subject so that her average over the six subjects is 80?",
+      "options": [
+        "80",
+        "85",
+        "86",
+        "88",
+        "90"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Required total = 6 × 80 = 480; marks so far = 78 + 84 + 69 + 91 + 73 = 395.",
+          "Sixth subject = 480 − 395 = **85**."
+        ],
+        "trap": "80 assumes scoring the target average is enough; her first five average only 79, so she needs 80 + 5 × 1 = 85."
+      },
+      "tags": [
+        "avg:marks",
+        "template:required-score"
+      ]
+    },
+    {
+      "key": "av-054",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average monthly salary of 25 employees of a firm is ₹28,000. Ten of them get a raise of ₹3,000 each and five others get a raise of ₹2,000 each; the rest get no raise. What is the new average salary?",
+      "options": [
+        "₹29,600",
+        "₹30,000",
+        "₹30,500",
+        "₹31,000",
+        "₹33,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total raise = 10 × 3,000 + 5 × 2,000 = ₹40,000, shared over all 25 employees.",
+          "New average = 28,000 + 40,000 ÷ 25 = 28,000 + 1,600 = **₹29,600**."
+        ],
+        "trap": "₹30,500 adds the average of the two raises (₹2,500) to everyone; only 15 of the 25 employees got a raise."
+      },
+      "tags": [
+        "avg:salary",
+        "template:partial-raise"
+      ]
+    },
+    {
+      "key": "av-055",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average monthly salary of the 12 staff members of a branch is ₹25,000. Every staff member gets a 10% increment. Then the manager, whose salary after the increment is ₹55,000, is transferred out. What is the average salary of the remaining staff?",
+      "options": [
+        "₹22,500",
+        "₹24,000",
+        "₹25,000",
+        "₹27,500",
+        "₹30,000"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total after increment = 12 × 25,000 × 1.1 = ₹3,30,000.",
+          "Without the manager: (3,30,000 − 55,000) ÷ 11 = 2,75,000 ÷ 11 = **₹25,000**."
+        ],
+        "trap": "₹27,500 is the average after the increment but before the highly paid manager leaves."
+      },
+      "tags": [
+        "avg:salary",
+        "template:raise-then-exit",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-056",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average monthly wage of the 45 workers in a factory is ₹15,000. The average for skilled workers is ₹21,000 and for unskilled workers ₹12,000. Every skilled worker gets a 10% raise and every unskilled worker a raise of ₹600. What is the new average monthly wage of all the workers?",
+      "options": [
+        "₹15,900",
+        "₹16,000",
+        "₹16,100",
+        "₹16,350",
+        "₹16,500"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Skilled : unskilled = (15,000 − 12,000) : (21,000 − 15,000) = 1 : 2 → 15 skilled, 30 unskilled.",
+          "Total raise = 15 × 2,100 + 30 × 600 = 31,500 + 18,000 = ₹49,500.",
+          "New average = 15,000 + 49,500 ÷ 45 = 15,000 + 1,100 = **₹16,100**."
+        ],
+        "trap": "₹16,350 adds the simple average of the two raises (2,100 and 600); there are twice as many unskilled workers."
+      },
+      "tags": [
+        "avg:salary",
+        "template:group-raise",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-057",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a team, 6 members get a raise of ₹3,000 each and the others get no raise. At the same time a new member joins at a salary equal to the team's old average salary. As a result, the average salary of the team rises by ₹1,125. How many members did the team have before the new member joined?",
+      "options": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "20"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The newcomer is paid exactly the old average, so only the raises (6 × 3,000 = ₹18,000) lift the average.",
+          "₹18,000 shared over the new team raises the average by ₹1,125 → new team = 18,000 ÷ 1,125 = 16, so before joining there were **15**."
+        ],
+        "trap": "16 is the size after the new member joined."
+      },
+      "tags": [
+        "avg:salary",
+        "template:raise-and-join",
+        "trap:wrong-count"
+      ]
+    },
+    {
+      "key": "av-058",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "An office has 30 employees whose average monthly salary is ₹36,000. The officers earn ₹48,000 on average and the clerks ₹30,000. Every officer gets a 15% raise and every clerk a raise of ₹3,100. Then two clerks, each earning ₹33,000 after the raise, retire. What is the new average salary of the employees?",
+      "options": [
+        "₹39,800",
+        "₹40,200",
+        "₹40,500",
+        "₹41,000",
+        "₹41,500"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Officers : clerks = (36 − 30) : (48 − 36) = 1 : 2 → 10 officers, 20 clerks; total ₹10,80,000.",
+          "Raises = 10 × 7,200 + 20 × 3,100 = 72,000 + 62,000 → total ₹12,14,000.",
+          "After two retire: (12,14,000 − 66,000) ÷ 28 = 11,48,000 ÷ 28 = **₹41,000**."
+        ],
+        "trap": "₹40,500 comes from stopping before the retirements (12,14,000 ÷ 30 ≈ ₹40,467). The two retiring clerks earn less than the average, so removing them lifts it to ₹41,000."
+      },
+      "tags": [
+        "avg:salary",
+        "template:group-raise",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average salary of 8 employees is ₹22,000. One employee's salary is raised from ₹18,000 to ₹26,000, and another employee, who earns ₹30,000, takes a 10% pay cut. What is the new average salary?",
+      "options": [
+        "₹22,625",
+        "₹22,750",
+        "₹23,000",
+        "₹23,250",
+        "₹23,375"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Change in total = +8,000 (raise) − 3,000 (10% of 30,000) = +₹5,000.",
+          "New average = 22,000 + 5,000 ÷ 8 = **₹22,625**."
+        ],
+        "trap": "₹23,375 adds the pay cut instead of subtracting it ((8,000 + 3,000) ÷ 8 = 1,375)."
+      },
+      "tags": [
+        "avg:salary",
+        "template:raise-and-cut"
+      ]
+    },
+    {
+      "key": "av-060",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The average of three numbers is 48. The first number is twice the second, and the third is three times the second. What is the largest of the three numbers?",
+      "options": [
+        "24",
+        "48",
+        "64",
+        "72",
+        "96"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the second be x: 2x + x + 3x = 3 × 48 = 144 → x = 24.",
+          "Largest = 3x = **72**."
+        ],
+        "trap": "24 is the second (smallest) number."
+      },
+      "tags": [
+        "avg:relations",
+        "template:multiples-of-one"
+      ]
+    },
+    {
+      "key": "av-061",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average of three numbers A, B and C is 56. A is 25% more than B, and C is 25% less than B. What is A − C?",
+      "options": [
+        "7",
+        "14",
+        "18",
+        "21",
+        "28"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "A = 1.25B and C = 0.75B, so A + B + C = 3B = 168 → B = 56.",
+          "A − C = 0.5B = **28**."
+        ],
+        "trap": "14 takes A − C as 25% of B; A is 25% above B and C is 25% below it, a gap of 50% of B."
+      },
+      "tags": [
+        "avg:relations",
+        "template:percent-relations"
+      ]
+    },
+    {
+      "key": "av-062",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average of four numbers is 40. The average of the first three is 36 and the average of the last three is 42. If the first number is 30, what is the fourth number?",
+      "options": [
+        "36",
+        "42",
+        "44",
+        "46",
+        "48"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Fourth − first = (last three) − (first three) = 3 × 42 − 3 × 36 = 18.",
+          "Fourth = 30 + 18 = **48**."
+        ],
+        "trap": "36 adds only the 6-mark gap in the averages; the totals differ by 3 × 6 = 18."
+      },
+      "tags": [
+        "avg:relations",
+        "template:shifted-window"
+      ]
+    },
+    {
+      "key": "av-063",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Of three numbers, the first is $\\frac{2}{3}$ of the second and the third is $\\frac{5}{4}$ of the first. If the average of the three numbers is 110, what is the average of the first and the third?",
+      "options": [
+        "99",
+        "104.5",
+        "110",
+        "115.5",
+        "121"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the second = 12k: first = 8k, third = 10k; total 30k = 330 → k = 11.",
+          "First = 88, third = 110; their average = **99**."
+        ],
+        "trap": "110 is the overall average (and also the third number), not the average of the first and third."
+      },
+      "tags": [
+        "avg:relations",
+        "template:fraction-relations"
+      ]
+    },
+    {
+      "key": "av-064",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average of five numbers is 64. The average of the first two is 58. The fourth number is 8 less than the third, and the fifth is 5 more than the third. What is the fifth number?",
+      "options": [
+        "66",
+        "69",
+        "72",
+        "74",
+        "78"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Last three = 5 × 64 − 2 × 58 = 320 − 116 = 204.",
+          "c + (c − 8) + (c + 5) = 204 → 3c = 207 → c = 69; fifth = **74**."
+        ],
+        "trap": "69 is the third number, not the fifth."
+      },
+      "tags": [
+        "avg:relations",
+        "template:linked-numbers"
+      ]
+    },
+    {
+      "key": "av-065",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The average of four numbers A, B, C and D is 45. A is 50% more than the average of B, C and D. B is 12 less than A, and C is twice D. What is D?",
+      "options": [
+        "18",
+        "20",
+        "24",
+        "27",
+        "36"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 180. If m is the average of B, C, D, then A = 1.5m and A + 3m = 180 → 4.5m = 180 → m = 40, A = 60.",
+          "B = 48, so C + D = 180 − 60 − 48 = 72 with C = 2D → D = **24**."
+        ],
+        "trap": "36 is the average of C and D (72 ÷ 2), not D. Note that A is compared with the average of the other three (40), not with 45."
+      },
+      "tags": [
+        "avg:relations",
+        "template:average-of-others",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-066",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average of x, y and z is 38. The average of x and y is 33, and z is 4 more than x. What is y?",
+      "options": [
+        "12",
+        "14",
+        "18",
+        "20",
+        "22"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "z = 3 × 38 − 2 × 33 = 114 − 66 = 48, so x = 48 − 4 = 44.",
+          "y = 66 − 44 = **22**."
+        ],
+        "trap": "14 reads the relation the wrong way round (x = z + 4 = 52); z is 4 more than x, so x = 44."
+      },
+      "tags": [
+        "avg:relations",
+        "template:linked-numbers"
+      ]
+    },
+    {
+      "key": "av-067",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A team scored an average of 268 runs in the first 7 matches of a league. What average must it score in the remaining 3 matches to finish with an average of 280 over all 10 matches?",
+      "options": [
+        "292",
+        "296",
+        "300",
+        "304",
+        "308"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Required total = 10 × 280 = 2,800; scored so far = 7 × 268 = 1,876.",
+          "Remaining 3 matches need 924 → average **308**."
+        ],
+        "trap": "292 adds only the 12-run shortfall per match once; the 7 matches together are 7 × 12 = 84 short, which the last 3 must make up (84 ÷ 3 = 28 extra each).",
+        "shortcut": "Shortfall = 7 × 12 = 84; spread over 3 matches = 28 above 280 → 308."
+      },
+      "tags": [
+        "avg:target",
+        "template:remaining-matches"
+      ]
+    },
+    {
+      "key": "av-068",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Chasing a target of 282 runs in a 50-over match, a team scored at an average of 4.8 runs per over in the first 20 overs. What average run rate does it need in the remaining 30 overs to reach the target exactly?",
+      "options": [
+        "6.2",
+        "6.4",
+        "6.6",
+        "7.2",
+        "9.4"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Runs in the first 20 overs = 20 × 4.8 = 96; still needed = 282 − 96 = 186.",
+          "Required rate = 186 ÷ 30 = **6.2** runs per over."
+        ],
+        "trap": "9.4 divides the whole target by 30 overs, forgetting the 96 runs already scored."
+      },
+      "tags": [
+        "avg:target",
+        "template:required-run-rate"
+      ]
+    },
+    {
+      "key": "av-069",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A batter averaged 42 runs in the first 8 matches of a 12-match series. In the 9th and 10th matches he scored 15 and 21. What must be his average score in the last 2 matches for his series average to be 45?",
+      "options": [
+        "60",
+        "72",
+        "84",
+        "96",
+        "102"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Required total = 12 × 45 = 540; scored = 8 × 42 + 15 + 21 = 336 + 36 = 372.",
+          "Last 2 matches need 540 − 372 = 168 → average **84**."
+        ],
+        "trap": "102 forgets the 36 runs in the 9th and 10th matches; 60 uses 10 × 42 as if the average of 42 covered 10 matches."
+      },
+      "tags": [
+        "avg:target",
+        "template:remaining-matches",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-070",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A team's average score over the first 6 matches of a tournament was 250. In the 7th match it scored 320. What must it score in the 8th match so that its average over 8 matches is 10 more than its average after 7 matches?",
+      "options": [
+        "260",
+        "280",
+        "300",
+        "340",
+        "360"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "After 7 matches: (1,500 + 320) ÷ 7 = 1,820 ÷ 7 = 260.",
+          "Target average over 8 = 270 → total 2,160; 8th match = 2,160 − 1,820 = **340**."
+        ],
+        "trap": "260 aims for 10 more than the 6-match average (250 + 10) instead of 10 more than the 7-match average of 260.",
+        "shortcut": "Score needed = new average + rise × previous matches = 270 + 10 × 7 = 340."
+      },
+      "tags": [
+        "avg:target",
+        "template:raise-average-by-k",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-071",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A team aims for an average of 300 runs per match over a 12-match season. After 5 matches its average is 280. In the next 4 matches its average is 15% more than in the first 5. What must its average be in the last 3 matches to meet the target?",
+      "options": [
+        "288",
+        "304",
+        "320",
+        "340",
+        "360"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Target total = 12 × 300 = 3,600. First 5 = 1,400; next 4 at 280 × 1.15 = 322 → 1,288.",
+          "Last 3 need 3,600 − 2,688 = 912 → average **304**."
+        ],
+        "trap": "340 raises 280 by 15 runs instead of 15% (295 per match, 1,180 in 4 matches)."
+      },
+      "tags": [
+        "avg:target",
+        "template:remaining-matches",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-072",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a 5-match series, a batter's scores in the first four matches were 46, 72, 38 and 64. How many runs must he score in the fifth match to finish the series with an average of 60?",
+      "options": [
+        "60",
+        "76",
+        "80",
+        "84",
+        "88"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Required total = 5 × 60 = 300; first four = 46 + 72 + 38 + 64 = 220.",
+          "Fifth match = 300 − 220 = **80**."
+        ],
+        "trap": "60 assumes scoring the target average is enough; the first four average only 55, so he must make up 4 × 5 = 20 extra runs."
+      },
+      "tags": [
+        "avg:target",
+        "template:required-score"
+      ]
+    },
+    {
+      "key": "av-073",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A family's average monthly expenditure was ₹28,000 for the first 4 months of a year, ₹31,000 for the next 5 months and ₹36,500 for the last 3 months. If the family saved ₹48,000 in the year, what was its average monthly income?",
+      "options": [
+        "₹31,375",
+        "₹34,625",
+        "₹35,375",
+        "₹35,833",
+        "₹36,125"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Annual expenditure = 4 × 28,000 + 5 × 31,000 + 3 × 36,500 = 1,12,000 + 1,55,000 + 1,09,500 = ₹3,76,500.",
+          "Income = 3,76,500 + 48,000 = ₹4,24,500 → monthly average = **₹35,375**."
+        ],
+        "trap": "₹35,833 adds ₹4,000 to the simple average of 28,000, 31,000 and 36,500, ignoring that the periods have different lengths."
+      },
+      "tags": [
+        "avg:expenditure",
+        "template:income-savings"
+      ]
+    },
+    {
+      "key": "av-074",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ravi's average monthly expenditure was ₹18,500 from January to June and ₹21,000 from July to December. His annual income was ₹2,82,000. What were his average monthly savings?",
+      "options": [
+        "₹3,750",
+        "₹4,000",
+        "₹4,250",
+        "₹4,500",
+        "₹4,750"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Annual expenditure = 6 × 18,500 + 6 × 21,000 = 1,11,000 + 1,26,000 = ₹2,37,000.",
+          "Savings = 2,82,000 − 2,37,000 = ₹45,000 → monthly average = **₹3,750**."
+        ],
+        "trap": "₹4,500 divides the annual savings by 10 instead of 12 months."
+      },
+      "tags": [
+        "avg:expenditure",
+        "template:income-savings"
+      ]
+    },
+    {
+      "key": "av-075",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A man's average monthly expenditure was ₹15,000 for the first 3 months of a year, ₹16,500 for the next 4 months and ₹15,000 for the last 5 months. His monthly income was the same for the first 7 months and then rose by 20% for the last 5 months. If he saved ₹48,000 in the year, what was his monthly income in the first 7 months?",
+      "options": [
+        "₹17,500",
+        "₹18,000",
+        "₹19,500",
+        "₹20,000",
+        "₹21,600"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Annual expenditure = 45,000 + 66,000 + 75,000 = ₹1,86,000, so income = 1,86,000 + 48,000 = ₹2,34,000.",
+          "Income = 7I + 5 × 1.2I = 13I = 2,34,000 → I = **₹18,000**."
+        ],
+        "trap": "₹19,500 is 2,34,000 ÷ 12, ignoring the 20% rise; ₹21,600 is the income after the rise."
+      },
+      "tags": [
+        "avg:expenditure",
+        "template:income-change",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-076",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "There were 48 students in a hostel. When 12 new students joined, the mess expenses rose by ₹840 per day, while the average expenditure per student fell by ₹5. What was the original daily mess expenditure?",
+      "options": [
+        "₹4,560",
+        "₹4,800",
+        "₹5,040",
+        "₹5,400",
+        "₹5,700"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the original average be a: 48a + 840 = 60(a − 5) → 12a = 1,140 → a = 95.",
+          "Original expenditure = 48 × 95 = **₹4,560**."
+        ],
+        "trap": "₹5,400 is the new daily expenditure (60 × 90), not the original."
+      },
+      "tags": [
+        "avg:expenditure",
+        "template:mess-expense"
+      ]
+    },
+    {
+      "key": "av-077",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The average monthly income of P and Q is ₹42,000, that of Q and R is ₹46,500, and that of P and R is ₹45,000. P saves 20% of his income, Q saves 25% and R saves 15%. What is the average monthly expenditure of the three?",
+      "options": [
+        "₹35,100",
+        "₹35,700",
+        "₹36,300",
+        "₹37,200",
+        "₹44,500"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "P + Q + R = (84,000 + 93,000 + 90,000) ÷ 2 = ₹1,33,500 → P = 40,500, Q = 43,500, R = 49,500.",
+          "Expenditures: 0.8 × 40,500 + 0.75 × 43,500 + 0.85 × 49,500 = 32,400 + 32,625 + 42,075 = ₹1,07,100.",
+          "Average = 1,07,100 ÷ 3 = **₹35,700**."
+        ],
+        "trap": "₹44,500 is the average income, not the average expenditure."
+      },
+      "tags": [
+        "avg:expenditure",
+        "template:pairwise-income",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-078",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Meena's electricity bills for January to May were ₹1,240, ₹1,180, ₹1,420, ₹1,690 and ₹1,970. What was her average monthly bill?",
+      "options": [
+        "₹1,380",
+        "₹1,420",
+        "₹1,440",
+        "₹1,480",
+        "₹1,500"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total = 1,240 + 1,180 + 1,420 + 1,690 + 1,970 = ₹7,500.",
+          "Average = 7,500 ÷ 5 = **₹1,500**."
+        ],
+        "trap": "₹1,420 is the middle bill (the median), not the average."
+      },
+      "tags": [
+        "avg:expenditure",
+        "template:simple-average"
+      ]
+    },
+    {
+      "key": "av-079",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average temperature of a town from Monday to Wednesday was 32°C, and from Tuesday to Thursday it was 34°C. If the temperature on Thursday was 35°C, what was the temperature on Monday?",
+      "options": [
+        "27°C",
+        "29°C",
+        "31°C",
+        "33°C",
+        "35°C"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Tue–Thu total − Mon–Wed total = Thu − Mon = 3 × 34 − 3 × 32 = 6.",
+          "Monday = 35 − 6 = **29°C**."
+        ],
+        "trap": "33°C subtracts only the 2°C gap in the averages; the totals of the 3-day windows differ by 3 × 2 = 6."
+      },
+      "tags": [
+        "avg:temperature",
+        "template:sliding-window"
+      ]
+    },
+    {
+      "key": "av-080",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average temperature from Monday to Thursday was 30°C and from Tuesday to Friday it was 31.5°C. Friday's temperature was 25% more than Monday's. What was the temperature on Friday?",
+      "options": [
+        "24°C",
+        "26°C",
+        "27.5°C",
+        "28.5°C",
+        "30°C"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Fri − Mon = 4 × 31.5 − 4 × 30 = 6.",
+          "Fri = 1.25 Mon → 0.25 Mon = 6 → Mon = 24, so Friday = **30°C**."
+        ],
+        "trap": "24°C is Monday's temperature. Friday is 6°C warmer."
+      },
+      "tags": [
+        "avg:temperature",
+        "template:sliding-window"
+      ]
+    },
+    {
+      "key": "av-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average temperature from Monday to Wednesday was 28°C, from Tuesday to Thursday 30°C and from Wednesday to Friday 31°C. The temperatures on Monday and Thursday were in the ratio 4 : 5, and Wednesday's temperature was 28°C. What was the temperature on Friday?",
+      "options": [
+        "31°C",
+        "33°C",
+        "34°C",
+        "35°C",
+        "37°C"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Thu − Mon = 3 × 30 − 3 × 28 = 6 and Thu : Mon = 5 : 4, so 1 part = 6 → Mon = 24°C, Thu = 30°C.",
+          "Wed + Thu + Fri = 3 × 31 = 93 → Fri = 93 − 28 − 30 = **35°C**."
+        ],
+        "trap": "33°C adds 9 (the gap between the Wed–Fri and Mon–Wed totals) to Monday's 24°C, but that gap is (Thu + Fri) − (Mon + Tue), not Fri − Mon."
+      },
+      "tags": [
+        "avg:temperature",
+        "template:sliding-window",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a 30-day month, the average temperature of a city was 34°C for the first 10 days and 32°C for the next 12 days. The average temperature for the remaining days was 2.5°C less than the average for the whole month. What was the average temperature for the remaining days?",
+      "options": [
+        "28.5°C",
+        "29°C",
+        "29.5°C",
+        "30°C",
+        "32°C"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the monthly average be m. Remaining 8 days average m − 2.5.",
+          "340 + 384 + 8(m − 2.5) = 30m → 704 = 22m → m = 32.",
+          "Remaining days average = 32 − 2.5 = **29.5°C**."
+        ],
+        "trap": "32°C is the monthly average m; the last 8 days were 2.5°C cooler than that."
+      },
+      "tags": [
+        "avg:temperature",
+        "template:month-blocks",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-083",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The average temperature from Monday to Thursday was 33°C, from Tuesday to Friday 34.5°C and from Wednesday to Saturday 35°C. Monday's temperature was 30°C and Saturday's was 34°C. If Wednesday was 4°C cooler than Thursday, what was the temperature on Thursday?",
+      "options": [
+        "33°C",
+        "35°C",
+        "36°C",
+        "37°C",
+        "39°C"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Fri − Mon = 4 × 34.5 − 4 × 33 = 6 → Friday = 36°C.",
+          "Wed + Thu = (Wed–Sat total) − Fri − Sat = 140 − 36 − 34 = 70.",
+          "With Wed = Thu − 4: 2 Thu − 4 = 70 → Thursday = **37°C**."
+        ],
+        "trap": "33°C is Wednesday's temperature, the cooler of the pair."
+      },
+      "tags": [
+        "avg:temperature",
+        "template:sliding-window",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-084",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average temperature for the first 3 days of a week was 27°C and for the next 3 days 29°C. The average temperature for the whole week (7 days) was 28.5°C. What was the temperature on the 7th day?",
+      "options": [
+        "28.5°C",
+        "30°C",
+        "31.5°C",
+        "32°C",
+        "33.5°C"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Week total = 7 × 28.5 = 199.5; first six days = 3 × 27 + 3 × 29 = 168.",
+          "7th day = 199.5 − 168 = **31.5°C**."
+        ],
+        "trap": "28.5°C assumes the 7th day simply equals the weekly average; it must also lift the first six days from 28°C to 28.5°C, so it is 28.5 + 6 × 0.5 = 31.5°C."
+      },
+      "tags": [
+        "avg:temperature",
+        "template:last-day"
+      ]
+    },
+    {
+      "key": "av-085",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Four years ago, the average age of a family of 5 was 28 years. A baby has since been born into the family, and today the average age of the 6 members is 27 years. How old is the baby?",
+      "options": [
+        "1 year",
+        "2 years",
+        "3 years",
+        "4 years",
+        "6 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The 5 older members total 5 × 28 + 5 × 4 = 160 years today.",
+          "Family of 6 today = 6 × 27 = 162 → baby = 162 − 160 = **2 years**."
+        ],
+        "trap": "Adding only 4 years in total (not 4 years for each of the 5 members) gives 162 − 144 = 18, which is impossible for a baby born in the last four years; every member ages 4 years."
+      },
+      "tags": [
+        "avg:ages",
+        "template:family-new-member"
+      ]
+    },
+    {
+      "key": "av-086",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Ten years ago, the average age of a married couple was 26 years. Today, the average age of the couple and their two children is 24 years. If the children were born 4 years apart, how old is the elder child?",
+      "options": [
+        "8 years",
+        "10 years",
+        "12 years",
+        "13 years",
+        "14 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Couple today = 2 × 26 + 2 × 10 = 72 years; family of four = 4 × 24 = 96.",
+          "Children together = 24 → elder = (24 + 4) ÷ 2 = **14 years**."
+        ],
+        "trap": "10 years is the younger child; 12 years splits 24 equally."
+      },
+      "tags": [
+        "avg:ages",
+        "template:couple-children"
+      ]
+    },
+    {
+      "key": "av-087",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average age of a 9-member committee today is 2 years more than it was 5 years ago, even though one member, aged 61, has just been replaced by a new member. How old is the new member?",
+      "options": [
+        "25 years",
+        "34 years",
+        "43 years",
+        "52 years",
+        "59 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Without the replacement, the total would have risen by 9 × 5 = 45 years; it actually rose by only 9 × 2 = 18.",
+          "So the new member is 45 − 18 = 27 years younger than the member replaced: 61 − 27 = **34 years**."
+        ],
+        "trap": "43 years subtracts only 18 (the actual rise) from 61, forgetting that every member has aged 5 years."
+      },
+      "tags": [
+        "avg:ages",
+        "template:committee-replacement",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-088",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Three years ago, the average age of A, B and C was 27 years. Five years ago, the average age of B and C was 22 years. How old is A now?",
+      "options": [
+        "32 years",
+        "36 years",
+        "37 years",
+        "40 years",
+        "46 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "A + B + C today = 3 × 27 + 3 × 3 = 90.",
+          "B + C today = 2 × 22 + 2 × 5 = 54 → A = 90 − 54 = **36 years**."
+        ],
+        "trap": "37 years subtracts the old totals (81 − 44) as if they referred to the same time; 46 years ages A, B and C but forgets to age B and C."
+      },
+      "tags": [
+        "avg:ages",
+        "template:different-years"
+      ]
+    },
+    {
+      "key": "av-089",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Four years ago, the average age of a family of six — a father, a mother and their four children — was 18 years. Today, the average age of the mother and the four children is 18 years, and the father is 6 years older than the mother. What will the average age of the four children be 5 years from now?",
+      "options": [
+        "13.5 years",
+        "17.5 years",
+        "18.5 years",
+        "19.5 years",
+        "22.5 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Family today = 6 × 18 + 6 × 4 = 132; mother + children = 5 × 18 = 90 → father = 42, mother = 36.",
+          "Children today = 90 − 36 = 54 → average 13.5; in 5 years each is 5 years older → **18.5 years**."
+        ],
+        "trap": "13.5 years is the children's average today, not 5 years from now."
+      },
+      "tags": [
+        "avg:ages",
+        "template:family-split",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-090",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The average age of three friends is 24 years. When a fourth friend, aged 32, joins them, what is the average age of the four friends?",
+      "options": [
+        "26 years",
+        "27 years",
+        "27.5 years",
+        "28 years",
+        "28.5 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total = 3 × 24 + 32 = 104 years.",
+          "Average = 104 ÷ 4 = **26 years**."
+        ],
+        "trap": "28 years averages 24 and 32 as if they carried equal weight; the 24 stands for three people."
+      },
+      "tags": [
+        "avg:ages",
+        "template:new-member"
+      ]
+    },
+    {
+      "key": "av-091",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The number of savings accounts opened by a bank branch in five months is given below.\nJanuary – 145\nFebruary – 168\nMarch – 152\nApril – 189\nMay – 171\nWhat is the average number of accounts opened per month in the months in which more than 150 accounts were opened?",
+      "options": [
+        "160",
+        "163",
+        "165",
+        "168",
+        "170"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Months above 150: February, March, April, May → 168 + 152 + 189 + 171 = 680.",
+          "Average = 680 ÷ 4 = **170**."
+        ],
+        "trap": "165 is the average over all five months, including January (145)."
+      },
+      "tags": [
+        "avg:di",
+        "template:filtered-average"
+      ]
+    },
+    {
+      "key": "av-092",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The quarterly sales (in units) of two products are given below.\nProduct P: Q1 – 240, Q2 – 310, Q3 – 280, Q4 – 330\nProduct Q: Q1 – 190, Q2 – 225, Q3 – 270, Q4 – 237\nBy how much does the average quarterly sales of P exceed the average sales of Q in the quarters in which Q sold more than 200 units?",
+      "options": [
+        "40",
+        "44",
+        "46",
+        "52",
+        "59.5"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Average of P = (240 + 310 + 280 + 330) ÷ 4 = 1,160 ÷ 4 = 290.",
+          "Q above 200: 225, 270, 237 → 732 ÷ 3 = 244. Difference = 290 − 244 = **46**."
+        ],
+        "trap": "59.5 uses Q's average over all four quarters (922 ÷ 4 = 230.5) instead of only the quarters above 200 units."
+      },
+      "tags": [
+        "avg:di",
+        "template:filtered-average",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-093",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The runs scored and innings played by five batters in a season are given below.\nA – 312 runs in 8 innings\nB – 270 runs in 6 innings\nC – 248 runs in 8 innings\nD – 333 runs in 9 innings\nE – 187 runs in 5 innings\nWhat is the average number of runs per innings for the five batters taken together?",
+      "options": [
+        "36",
+        "37.5",
+        "37.88",
+        "38.5",
+        "39"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total runs = 312 + 270 + 248 + 333 + 187 = 1,350; total innings = 8 + 6 + 8 + 9 + 5 = 36.",
+          "Combined average = 1,350 ÷ 36 = **37.5**."
+        ],
+        "trap": "37.88 is the simple mean of the five individual averages (39, 45, 31, 37, 37.4); a combined average must weight each batter by innings."
+      },
+      "tags": [
+        "avg:di",
+        "template:combined-rate",
+        "trap:average-of-averages"
+      ]
+    },
+    {
+      "key": "av-094",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A showroom's sales of televisions in five months were: January – 120, February – 150, March – x, April – 180 and May – 140. The average monthly sales from January to May were 154. In June, sales were 25% more than in March. What were the average monthly sales from February to June?",
+      "options": [
+        "165",
+        "170",
+        "171",
+        "175",
+        "180"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "x = 5 × 154 − (120 + 150 + 180 + 140) = 770 − 590 = 180; June = 1.25 × 180 = 225.",
+          "February to June = 150 + 180 + 180 + 140 + 225 = 875 → average = **175**."
+        ],
+        "trap": "171 takes June as 25 units more than March (205) rather than 25% more."
+      },
+      "tags": [
+        "avg:di",
+        "template:missing-value",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-095",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "On a bus route, the average number of passengers was 420 per day from Monday to Friday and 525 per day on Saturday and Sunday. What was the average number of passengers per day for the whole week?",
+      "options": [
+        "440",
+        "450",
+        "460",
+        "472.5",
+        "480"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Week total = 5 × 420 + 2 × 525 = 2,100 + 1,050 = 3,150.",
+          "Average = 3,150 ÷ 7 = **450**."
+        ],
+        "trap": "472.5 is the simple average of 420 and 525; weekdays count 5 times and the weekend only twice."
+      },
+      "tags": [
+        "avg:di",
+        "template:weekday-weekend",
+        "trap:average-of-averages"
+      ]
+    },
+    {
+      "key": "av-096",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Section A has 30 students with average marks 60, and section B has 20 students with average marks 70. Five students whose average marks are 66 move from section A to section B. What is the new average of section A?",
+      "options": [
+        "58.8",
+        "59.4",
+        "60",
+        "60.6",
+        "61.2"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Section A's total = 30 × 60 = 1,800; the 5 students take away 5 × 66 = 330.",
+          "New average = (1,800 − 330) ÷ 25 = 1,470 ÷ 25 = **58.8**."
+        ],
+        "trap": "61.2 adds the movers' marks instead of removing them; students above A's average leave, so A's average falls."
+      },
+      "tags": [
+        "avg:transfer",
+        "template:move-between-groups"
+      ]
+    },
+    {
+      "key": "av-097",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Class X has 9 students and class Y has 11 students. When one student, who scored 72, moves from class X to class Y, the average marks of both classes rise by 1. What was the original average of class Y?",
+      "options": [
+        "59",
+        "60",
+        "61",
+        "62",
+        "71"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "For Y: (11b + 72) ÷ 12 = b + 1 → 11b + 72 = 12b + 12 → b = **60**.",
+          "Check X: (9a − 72) ÷ 8 = a + 1 → a = 80, and 72 is below 80, so X's average does rise."
+        ],
+        "trap": "61 is Y's new average; 71 assumes the student scored exactly one mark above Y's average."
+      },
+      "tags": [
+        "avg:transfer",
+        "template:both-averages-rise"
+      ]
+    },
+    {
+      "key": "av-098",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Group P has 24 members with an average age of 32 years and group Q has 16 members with an average age of 37 years. Some members of P, each aged 42 years, move to Q, after which the average age of Q becomes 38 years. What is the new average age of group P?",
+      "options": [
+        "25 years",
+        "28 years",
+        "29.4 years",
+        "30 years",
+        "31 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let k move: 16 × 37 + 42k = 38(16 + k) → 592 + 42k = 608 + 38k → k = 4.",
+          "P: (24 × 32 − 4 × 42) ÷ 20 = (768 − 168) ÷ 20 = **30 years**."
+        ],
+        "trap": "25 years divides 600 by 24, forgetting that P now has only 20 members."
+      },
+      "tags": [
+        "avg:transfer",
+        "template:move-between-groups",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-099",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Department X of a firm has 18 employees with an average monthly salary of ₹40,000, and department Y has 12 employees with an average of ₹35,000. Three employees of X, whose average salary is ₹46,000, are transferred to Y and each gets a 10% raise on transfer. What is the new average salary in department Y?",
+      "options": [
+        "₹36,800",
+        "₹37,200",
+        "₹37,600",
+        "₹37,960",
+        "₹38,120"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The 3 transferred employees now earn 1.1 × 46,000 = ₹50,600 each, i.e. ₹1,51,800 in all.",
+          "Y = (12 × 35,000 + 1,51,800) ÷ 15 = (4,20,000 + 1,51,800) ÷ 15 = **₹38,120**."
+        ],
+        "trap": "₹37,200 forgets the 10% raise on transfer (5,58,000 ÷ 15)."
+      },
+      "tags": [
+        "avg:transfer",
+        "template:transfer-with-raise",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "av-100",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The average marks of classes A and B are 64 and 76 respectively, and the average of the two classes together is 68.8. When 6 students of class B, whose average marks are 70, move to class A, the average of class A becomes 64.6. How many students are there in the two classes together?",
+      "options": [
+        "60",
+        "75",
+        "80",
+        "90",
+        "100"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "A : B = (76 − 68.8) : (68.8 − 64) = 7.2 : 4.8 = 3 : 2, so A = 3k and B = 2k.",
+          "(64 × 3k + 6 × 70) ÷ (3k + 6) = 64.6 → 192k + 420 = 193.8k + 387.6 → 1.8k = 32.4 → k = 18.",
+          "Total = 5k = **90**."
+        ],
+        "trap": "60 is the new size of class A (3k + 6), not the total of both classes."
+      },
+      "tags": [
+        "avg:transfer",
+        "template:alligation-with-move",
+        "level:multi-step"
+      ]
+    }
+  ]
+}
