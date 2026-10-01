@@ -30,3 +30,8 @@ One line each: assumption or default → reason.
 - Simplification: approximation weight lowered to ~9% and squares raised to 45² per research (all 2024–26 items were exact).
 - "All correct"/"No error"-type keys kept rare (~8–15%) per research.
 - Playwright uses the system Chrome locally (bundled Chromium download is blocked on this machine); CI installs Chromium.
+- Generator chapters can also carry a blind-verified authored bank (`authored/quant/*.json`, subtype `exam-style`) → real 2024–26 templates and multi-step twists the generators can't express; `mixedProvider` serves ~40% of unspecified draws from it, and only at difficulties the bank covers.
+- New quant chapter "Problems on numbers & equations" (authored only) → research Q18 found it in 4 of 5 recent papers; it joins the arithmetic rotation.
+- Chapter practice/tests started on the device skip already-attempted questions (from the answer log) while unseen ones remain → users reported solving the same items repeatedly; shared links and mocks stay deterministic.
+- Oct 2026 expansion split new items ~10/40/35/15 (E/M/H/X) → users found the banks too easy; real-paper formats added: incorrect-sentence error spotting, 3-word and fragment rearrangement, idiom/phrasal-verb meaning, connector correction, RC in-passage blanks and I/II/III statement combinations.
+
