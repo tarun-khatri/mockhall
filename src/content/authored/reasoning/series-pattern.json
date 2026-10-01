@@ -1,0 +1,3256 @@
+{
+  "chapter": "series-pattern",
+  "version": 1,
+  "sets": [
+    {
+      "key": "sp-01",
+      "subtype": "alphanumeric-set",
+      "difficulty": "easy",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**P 4 @ R E 7 # 2 M 9 % U 1 T £ B 6 & 3 A W ★ H 8**",
+      "questions": [
+        {
+          "key": "sp-01-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many such numbers are there in the above arrangement, each of which is immediately preceded by a letter and immediately followed by a symbol?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Check each number: it needs a letter just before it and a symbol just after it.",
+              "P **4** @ ✓",
+              "E **7** # ✓",
+              "M **9** % ✓",
+              "B **6** & ✓",
+              "Such numbers: 4 → **More than three**."
+            ],
+            "shortcut": "Scan only the numbers and glance at the element on each side — no need to read every element.",
+            "trap": "U **1** T does not count — it is followed by T, not a symbol."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count"
+          ]
+        },
+        {
+          "key": "sp-01-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "In the above arrangement, how many symbols are immediately preceded by a number and immediately followed by a letter?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Check each symbol: it needs a number just before it and a letter just after it.",
+              "4 **@** R ✓",
+              "9 **%** U ✓",
+              "Such symbols: 2 → **Two**."
+            ],
+            "shortcut": "Scan only the symbols and glance at the element on each side — no need to read every element.",
+            "trap": "7 **#** 2 does not count — it is followed by 2, not a letter."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count"
+          ]
+        },
+        {
+          "key": "sp-01-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 9th element from the right end in the above arrangement?",
+          "options": [
+            "M",
+            "B",
+            "6",
+            "£",
+            "&"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "9th from the right end = 24 − 9 + 1 = 16th from the left end (**B**).",
+              "16th from the left end = **B**."
+            ],
+            "shortcut": "From the right end, position = n − m + 1 = 24 − 9 + 1 = 16.",
+            "trap": "Counting from the left end gives **M**."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:position-from-end"
+          ]
+        },
+        {
+          "key": "sp-01-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 6th element to the right of the 8th element from the left end in the above arrangement?",
+          "options": [
+            "4",
+            "£",
+            "H",
+            "T",
+            "1"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "8th from the left end = **2**.",
+              "6th to the right of it = 8 + 6 = 14th from the left end.",
+              "14th from the left end = **T**."
+            ],
+            "shortcut": "Convert to one count from the left: 8th + 6 = 14th.",
+            "trap": "Moving 6 to the left instead gives **4**."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position"
+          ]
+        },
+        {
+          "key": "sp-01-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 5th element to the left of **★** in the above arrangement?",
+          "options": [
+            "6",
+            "4",
+            "&",
+            "B",
+            "P"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "**★** is 22nd from the left end.",
+              "5th to the left → 17th from the left end (**6**)."
+            ],
+            "shortcut": "Net movement = −5 = −5 → 5 to the left of ★.",
+            "trap": "Do not count ★ itself as the first step — starting the count on ★ lands on **&**, one place short."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-02",
+      "subtype": "alphanumeric-set",
+      "difficulty": "medium",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**5 D © 8 I N 3 ↑ P 2 = Q 6 # O L 9 \\$ 4 F G 7 % E**",
+      "questions": [
+        {
+          "key": "sp-02-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many even numbers in the above arrangement have a letter immediately before them and a symbol immediately after them?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Check each even number: it needs a letter just before it and a symbol just after it.",
+              "P **2** = ✓",
+              "Q **6** # ✓",
+              "Such even numbers: 2 → **Two**."
+            ],
+            "shortcut": "Scan only the even numbers and glance at the element on each side — no need to read every element.",
+            "trap": "In \\$ **4** F the symbol and the letter are on the wrong sides — 4 is preceded by a symbol, not a letter, so it does not count."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count"
+          ]
+        },
+        {
+          "key": "sp-02-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the vowels are removed from the above arrangement, how many symbols in the new arrangement will be immediately preceded by a number and immediately followed by a consonant?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Remove all the vowels. New arrangement (21 elements):\n5 D © 8 N 3 ↑ P 2 = Q 6 # L 9 \\$ 4 F G 7 %",
+              "Check each symbol: it needs a number just before it and a consonant just after it.",
+              "3 **↑** P ✓",
+              "2 **=** Q ✓",
+              "6 **#** L ✓",
+              "Such symbols: 3 → **Three**."
+            ],
+            "shortcut": "Scan only the symbols of the new arrangement and glance at the element on each side — no need to read every element.",
+            "trap": "Counting on the original arrangement gives 2 — the change creates new neighbours, so count only on the new arrangement."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-02-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "If the first 12 elements (from the left end) of the above arrangement are written in reverse order, which of the following will be the 5th element to the right of the 4th element from the left end?",
+          "options": [
+            "8",
+            "P",
+            "I",
+            "D",
+            "©"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Reverse the first 12 elements. New arrangement:\nQ = 2 P ↑ 3 N I 8 © D 5 6 # O L 9 \\$ 4 F G 7 % E",
+              "4th from the left end = **P**.",
+              "5th to the right of it = 4 + 5 = 9th from the left end.",
+              "9th from the left end = **8**."
+            ],
+            "shortcut": "Convert to one count from the left: 4th + 5 = 9th.",
+            "trap": "Counting the same way on the original arrangement gives **P** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:reverse-block"
+          ]
+        },
+        {
+          "key": "sp-02-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 7th element to the left of the 6th element from the right end in the above arrangement?",
+          "options": [
+            "2",
+            "#",
+            "6",
+            "=",
+            "Q"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "6th from the right end = 24 − 6 + 1 = 19th from the left end (**4**).",
+              "7th to the left of it = 19 − 7 = 12th from the left end.",
+              "12th from the left end = **Q**."
+            ],
+            "shortcut": "Convert to one count from the left: 19th − 7 = 12th.",
+            "trap": "The 6th from the right is the 19th from the left (24 − 6 + 1); using 24 − 6 = 18 lands on **=** instead."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position"
+          ]
+        },
+        {
+          "key": "sp-02-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Four of the following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+          "options": [
+            "©I8",
+            "NP3",
+            "2Q=",
+            "#LO",
+            "4GF"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Pattern (from ©I8): take an element, then the element 2nd to the right of it, then the element 1st to the right of it.",
+              "©I8 — first element at position 3, follows it ✓",
+              "NP3 — does not follow this pattern ✗",
+              "2Q= — first element at position 10, follows it ✓",
+              "#LO — first element at position 14, follows it ✓",
+              "4GF — first element at position 19, follows it ✓",
+              "Odd one: **NP3**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "NP3 looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-03",
+      "subtype": "alphanumeric-set",
+      "difficulty": "medium",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**7 # 3 8 © 5 2 @ 9 % 6 1 & 4 ★ 7 2 £ 8 = 5 3 ↑**",
+      "questions": [
+        {
+          "key": "sp-03-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "In the above arrangement, how many even numbers are immediately preceded by an odd number and immediately followed by a symbol?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Check each even number: it needs an odd number just before it and a symbol just after it.",
+              "3 **8** © ✓",
+              "5 **2** @ ✓",
+              "7 **2** £ ✓",
+              "Such even numbers: 3 → **Three**."
+            ],
+            "shortcut": "Scan only the even numbers and glance at the element on each side — no need to read every element.",
+            "trap": "& **4** ★ does not count — it is preceded by &, not an odd number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count"
+          ]
+        },
+        {
+          "key": "sp-03-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "What is the sum of all the odd numbers in the above arrangement, each of which is immediately preceded by a symbol and immediately followed by an even number?",
+          "options": [
+            "15",
+            "17",
+            "13",
+            "12",
+            "24"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Check each odd number: it needs a symbol just before it and an even number just after it.",
+              "# **3** 8 ✓",
+              "© **5** 2 ✓",
+              "★ **7** 2 ✓",
+              "Sum = 3 + 5 + 7 = **15**."
+            ],
+            "shortcut": "Mark the qualifying odd numbers while scanning once, then add only those.",
+            "trap": "@ **9** % does not count — it is followed by %, not an even number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:digit-sum"
+          ]
+        },
+        {
+          "key": "sp-03-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the even numbers are removed from the above arrangement, which of the following will be the 4th element to the left of the 6th element from the right end?",
+          "options": [
+            "3",
+            "#",
+            "%",
+            "1",
+            "4"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Remove all the even numbers. New arrangement (17 elements):\n7 # 3 © 5 @ 9 % 1 & ★ 7 £ = 5 3 ↑",
+              "6th from the right end = 17 − 6 + 1 = 12th from the left end (**7**).",
+              "4th to the left of it = 12 − 4 = 8th from the left end.",
+              "8th from the left end = **%**."
+            ],
+            "shortcut": "Convert to one count from the left: 12th − 4 = 8th.",
+            "trap": "Counting the same way on the original arrangement gives **4** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-03-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many odd numbers are there between **#** and **★** in the above arrangement?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "**#** is 2nd and **★** is 15th from the left end.",
+              "Elements between them: 3 8 © 5 2 @ 9 % 6 1 & 4",
+              "Odd numbers among them: 3, 5, 9, 1 → **More than three**."
+            ],
+            "shortcut": "Underline the two symbols, then scan only the stretch between them.",
+            "trap": "Do not count # or ★ themselves, and do not stop at an earlier look-alike symbol."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:between-count"
+          ]
+        },
+        {
+          "key": "sp-03-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Four of the following five groups of elements are alike in a certain way based on their positions in the above arrangement. Which one does not belong to that group?",
+          "options": [
+            "#3©",
+            "52%",
+            "%6&",
+            "4★2",
+            "£85"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Pattern (from #3©): take an element, then the element 1st to the right of it, then the element 3rd to the right of it.",
+              "#3© — first element at position 2, follows it ✓",
+              "52% — does not follow this pattern ✗",
+              "%6& — first element at position 10, follows it ✓",
+              "4★2 — first element at position 14, follows it ✓",
+              "£85 — first element at position 18, follows it ✓",
+              "Odd one: **52%**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "52% looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-04",
+      "subtype": "alphanumeric-set",
+      "difficulty": "medium",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**3 8 5 2 7 4 9 1 6 3 2 8 5 7 4 6 9 2 1 5 8 3 7 4**",
+      "questions": [
+        {
+          "key": "sp-04-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many even numbers in the above arrangement have an odd number immediately before them and a perfect square immediately after them?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Check each even number: it needs an odd number just before it and a perfect square just after it.",
+              "7 **4** 9 ✓",
+              "9 **2** 1 ✓",
+              "Such even numbers: 2 → **Two**."
+            ],
+            "shortcut": "Scan only the even numbers and glance at the element on each side — no need to read every element.",
+            "trap": "3 **8** 5 does not count — it is followed by 5, not a perfect square."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count"
+          ]
+        },
+        {
+          "key": "sp-04-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many such odd numbers are there in the above arrangement, each of which is immediately preceded by an even number and immediately followed by an even number?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Check each odd number: it needs an even number just before it and an even number just after it.",
+              "8 **5** 2 ✓",
+              "2 **7** 4 ✓",
+              "6 **3** 2 ✓",
+              "6 **9** 2 ✓",
+              "Such odd numbers: 4 → **More than three**."
+            ],
+            "shortcut": "Scan only the odd numbers and glance at the element on each side — no need to read every element.",
+            "trap": "4 **9** 1 does not count — it is followed by 1, not an even number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count"
+          ]
+        },
+        {
+          "key": "sp-04-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 7th element to the left of the 4th element from the right end in the above arrangement?",
+          "options": [
+            "6",
+            "7",
+            "4",
+            "5",
+            "8"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "4th from the right end = 24 − 4 + 1 = 21st from the left end (**8**).",
+              "7th to the left of it = 21 − 7 = 14th from the left end.",
+              "14th from the left end = **7**."
+            ],
+            "shortcut": "Convert to one count from the left: 21st − 7 = 14th.",
+            "trap": "The 4th from the right is the 21st from the left (24 − 4 + 1); using 24 − 4 = 20 lands on **5** instead."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position"
+          ]
+        },
+        {
+          "key": "sp-04-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the perfect squares are removed from the above arrangement, which of the following will be the 6th element to the right of the 5th element from the left end?",
+          "options": [
+            "7",
+            "5",
+            "6",
+            "8",
+            "2"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Remove all the perfect squares. New arrangement (17 elements):\n3 8 5 2 7 6 3 2 8 5 7 6 2 5 8 3 7",
+              "5th from the left end = **7**.",
+              "6th to the right of it = 5 + 6 = 11th from the left end.",
+              "11th from the left end = **7**."
+            ],
+            "shortcut": "Convert to one count from the left: 5th + 6 = 11th.",
+            "trap": "Counting the same way on the original arrangement gives **2** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-04-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "What is the sum of the even numbers in the above arrangement that are immediately preceded by an odd number and immediately followed by an odd number?",
+          "options": [
+            "40",
+            "31",
+            "28",
+            "30",
+            "32"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Check each even number: it needs an odd number just before it and an odd number just after it.",
+              "3 **8** 5 ✓",
+              "5 **2** 7 ✓",
+              "7 **4** 9 ✓",
+              "1 **6** 3 ✓",
+              "9 **2** 1 ✓",
+              "5 **8** 3 ✓",
+              "Sum = 8 + 2 + 4 + 6 + 2 + 8 = **30**."
+            ],
+            "shortcut": "Mark the qualifying even numbers while scanning once, then add only those.",
+            "trap": "3 **2** 8 does not count — it is followed by 8, not an odd number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:digit-sum"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-05",
+      "subtype": "alphanumeric-set",
+      "difficulty": "medium",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**H 2 € A 6 S 9 \\* T 4 V I 1 = L 8 C © O 5 Z ↑ 3 Y #**",
+      "questions": [
+        {
+          "key": "sp-05-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many such vowels are there in the above arrangement, each of which is immediately preceded by a symbol and immediately followed by a number?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Four",
+            "More than four"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Check each vowel: it needs a symbol just before it and a number just after it.",
+              "€ **A** 6 ✓",
+              "© **O** 5 ✓",
+              "Such vowels: 2 → **Two**."
+            ],
+            "shortcut": "Scan only the vowels and glance at the element on each side — no need to read every element.",
+            "trap": "V **I** 1 does not count — it is preceded by V, not a symbol."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count"
+          ]
+        },
+        {
+          "key": "sp-05-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 2nd number to the right of the 3rd symbol from the left end in the above arrangement?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "8",
+            "5"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Symbols from the left end: €, \\*, = → the 3rd is **=** (position 14 from the left).",
+              "Numbers to its right, in order: 8, 5, 3 …",
+              "The 2nd of them = **5**."
+            ],
+            "shortcut": "Mark the symbols first, then hop over everything that is not a number.",
+            "trap": "The 2nd element (of any kind) to the right of = is **8** — count only numbers."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:class-position"
+          ]
+        },
+        {
+          "key": "sp-05-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the symbols are removed from the above arrangement, which of the following will be the 5th element to the left of the 8th element from the right end?",
+          "options": [
+            "4",
+            "Z",
+            "T",
+            "1",
+            "A"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Remove all the symbols. New arrangement (19 elements):\nH 2 A 6 S 9 T 4 V I 1 L 8 C O 5 Z 3 Y",
+              "8th from the right end = 19 − 8 + 1 = 12th from the left end (**L**).",
+              "5th to the left of it = 12 − 5 = 7th from the left end.",
+              "7th from the left end = **T**."
+            ],
+            "shortcut": "Convert to one count from the left: 12th − 5 = 7th.",
+            "trap": "Counting the same way on the original arrangement gives **1** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-05-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "Based on their positions in the above arrangement, four of the following five are alike in a certain way and form a group. Which of the following does not belong to that group?",
+          "options": [
+            "€62",
+            "9TS",
+            "I=V",
+            "8©=",
+            "Z35"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Pattern (from €62): take an element, then the element 2nd to the right of it, then the element 1st to the left of it.",
+              "€62 — first element at position 3, follows it ✓",
+              "9TS — first element at position 7, follows it ✓",
+              "I=V — first element at position 12, follows it ✓",
+              "8©= — does not follow this pattern ✗",
+              "Z35 — first element at position 21, follows it ✓",
+              "Odd one: **8©=**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "8©= looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        },
+        {
+          "key": "sp-05-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 3rd element to the left of the 7th element to the right of **S** in the above arrangement?",
+          "options": [
+            "4",
+            "8",
+            "V",
+            "T",
+            "2"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "**S** is 6th from the left end.",
+              "7th to the right → 13th from the left end (**1**).",
+              "3rd to the left → 10th from the left end (**4**)."
+            ],
+            "shortcut": "Net movement = +7 −3 = +4 → 4 to the right of S.",
+            "trap": "Moving the other way (4 to the left) gives **2**."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-06",
+      "subtype": "alphanumeric-set",
+      "difficulty": "hard",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**B 7 % I 4 N ↑ 9 Q 3 £ E 6 R W 1 @ 8 J U 2 & 5 X © K**",
+      "questions": [
+        {
+          "key": "sp-06-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many even numbers in the above arrangement have a symbol immediately after them but no odd number immediately before them?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Check each even number: it needs no odd number just before it and a symbol just after it.",
+              "U **2** & ✓",
+              "Such even numbers: 1 → **One**."
+            ],
+            "shortcut": "Scan only the even numbers and glance at the element on each side — no need to read every element.",
+            "trap": "I **4** N does not count — it is followed by N, not a symbol."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "trap:negative-condition"
+          ]
+        },
+        {
+          "key": "sp-06-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the odd numbers which are immediately preceded by a consonant are removed from the above arrangement, which of the following will be the 6th element to the right of the 9th element from the left end?",
+          "options": [
+            "I",
+            "X",
+            "W",
+            "8",
+            "J"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Remove all the odd numbers which are immediately preceded by a consonant (judged on the arrangement before removal). New arrangement (23 elements):\nB % I 4 N ↑ 9 Q £ E 6 R W @ 8 J U 2 & 5 X © K",
+              "9th from the left end = **£**.",
+              "6th to the right of it = 9 + 6 = 15th from the left end.",
+              "15th from the left end = **8**."
+            ],
+            "shortcut": "Convert to one count from the left: 9th + 6 = 15th.",
+            "trap": "Counting the same way on the original arrangement gives **W** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-06-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "What is the sum of all the numbers in the above arrangement, each of which is immediately preceded by a symbol and immediately followed by a letter?",
+          "options": [
+            "22",
+            "32",
+            "17",
+            "26",
+            "13"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Check each number: it needs a symbol just before it and a letter just after it.",
+              "↑ **9** Q ✓",
+              "@ **8** J ✓",
+              "& **5** X ✓",
+              "Sum = 9 + 8 + 5 = **22**."
+            ],
+            "shortcut": "Mark the qualifying numbers while scanning once, then add only those.",
+            "trap": "I **4** N does not count — it is preceded by I, not a symbol."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:digit-sum"
+          ]
+        },
+        {
+          "key": "sp-06-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "If the last 14 elements (at the right end) of the above arrangement are written in reverse order, which of the following will be the 8th element to the left of the 5th element from the right end?",
+          "options": [
+            "R",
+            "K",
+            "X",
+            "5",
+            "©"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Reverse the last 14 elements. New arrangement:\nB 7 % I 4 N ↑ 9 Q 3 £ E K © X 5 & 2 U J 8 @ 1 W R 6",
+              "5th from the right end = 26 − 5 + 1 = 22nd from the left end (**@**).",
+              "8th to the left of it = 22 − 8 = 14th from the left end.",
+              "14th from the left end = **©**."
+            ],
+            "shortcut": "Convert to one count from the left: 22nd − 8 = 14th.",
+            "trap": "Counting the same way on the original arrangement gives **R** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:reverse-block"
+          ]
+        },
+        {
+          "key": "sp-06-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Four of the following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+          "options": [
+            "%IB",
+            "↑94",
+            "W1R",
+            "JU@",
+            "5X2"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Pattern (from %IB): take an element, then the element 1st to the right of it, then the element 2nd to the left of it.",
+              "%IB — first element at position 3, follows it ✓",
+              "↑94 — first element at position 7, follows it ✓",
+              "W1R — does not follow this pattern ✗",
+              "JU@ — first element at position 19, follows it ✓",
+              "5X2 — first element at position 23, follows it ✓",
+              "Odd one: **W1R**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "W1R looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-07",
+      "subtype": "alphanumeric-set",
+      "difficulty": "hard",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**4 % 9 2 ★ 6 3 \\$ 1 8 # 7 5 © 2 = 9 4 @ 6 1 € 3 8 &**",
+      "questions": [
+        {
+          "key": "sp-07-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "In the above arrangement, how many symbols are immediately followed by a perfect square but not immediately preceded by an even number?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Check each symbol: it needs no even number just before it and a perfect square just after it.",
+              "3 **\\$** 1 ✓",
+              "Such symbols: 1 → **One**."
+            ],
+            "shortcut": "Scan only the symbols and glance at the element on each side — no need to read every element.",
+            "trap": "4 **%** 9 does not count — it is preceded by 4, which is an even number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "trap:negative-condition"
+          ]
+        },
+        {
+          "key": "sp-07-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many even numbers lie between **\\$** and **@** in the above arrangement?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "**\\$** is 8th and **@** is 19th from the left end.",
+              "Elements between them: 1 8 # 7 5 © 2 = 9 4",
+              "Even numbers among them: 8, 2, 4 → **Three**."
+            ],
+            "shortcut": "Underline the two symbols, then scan only the stretch between them.",
+            "trap": "Do not count \\$ or @ themselves, and do not stop at an earlier look-alike symbol."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:between-count"
+          ]
+        },
+        {
+          "key": "sp-07-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the even numbers which are immediately followed by a symbol are removed from the above arrangement, which of the following will be the 9th element to the right of the 7th element from the left end?",
+          "options": [
+            "1",
+            "€",
+            "=",
+            "3",
+            "6"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Remove all the even numbers which are immediately followed by a symbol (judged on the arrangement before removal). New arrangement (19 elements):\n% 9 ★ 6 3 \\$ 1 # 7 5 © = 9 @ 6 1 € 3 &",
+              "7th from the left end = **1**.",
+              "9th to the right of it = 7 + 9 = 16th from the left end.",
+              "16th from the left end = **1**."
+            ],
+            "shortcut": "Convert to one count from the left: 7th + 9 = 16th.",
+            "trap": "Counting the same way on the original arrangement gives **=** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-07-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "What is the sum of all the odd numbers in the above arrangement, each of which is immediately preceded by a symbol and immediately followed by a number?",
+          "options": [
+            "31",
+            "30",
+            "27",
+            "28",
+            "29"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Check each odd number: it needs a symbol just before it and a number just after it.",
+              "% **9** 2 ✓",
+              "\\$ **1** 8 ✓",
+              "# **7** 5 ✓",
+              "= **9** 4 ✓",
+              "€ **3** 8 ✓",
+              "Sum = 9 + 1 + 7 + 9 + 3 = **29**."
+            ],
+            "shortcut": "Mark the qualifying odd numbers while scanning once, then add only those.",
+            "trap": "\"Preceded\" means the element on the left: in = **9** 4 the symbol is on the left of 9, so it counts; in 7 **5** © the symbol is on the right, so 5 does not."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:digit-sum"
+          ]
+        },
+        {
+          "key": "sp-07-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Four of the following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+          "options": [
+            "492",
+            "6\\$1",
+            "8#5",
+            "©=9",
+            "@1€"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Pattern (from 492): take an element, then the element 2nd to the right of it, then the element 3rd to the right of it.",
+              "492 — first element at position 1, follows it ✓",
+              "6\\$1 — first element at position 6, follows it ✓",
+              "8#5 — does not follow this pattern ✗",
+              "©=9 — first element at position 14, follows it ✓",
+              "@1€ — first element at position 19, follows it ✓",
+              "Odd one: **8#5**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "8#5 looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-08",
+      "subtype": "alphanumeric-set",
+      "difficulty": "hard",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**6 1 4 9 3 7 2 8 5 4 1 6 9 2 3 5 8 7 1 4 6 3 9 2**",
+      "questions": [
+        {
+          "key": "sp-08-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "How many prime numbers in the above arrangement have an even number immediately before them and an odd number immediately after them?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Prime numbers among the digits: 2, 3, 5 and 7 (1 is not prime).",
+              "Check each prime number: it needs an even number just before it and an odd number just after it.",
+              "2 **3** 5 ✓",
+              "8 **7** 1 ✓",
+              "6 **3** 9 ✓",
+              "Such prime numbers: 3 → **Three**."
+            ],
+            "shortcut": "Scan only the prime numbers and glance at the element on each side — no need to read every element.",
+            "trap": "9 **3** 7 does not count — it is preceded by 9, not an even number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count"
+          ]
+        },
+        {
+          "key": "sp-08-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the perfect squares are removed from the above arrangement, how many odd numbers in the new arrangement will have an even number immediately before them and an odd number immediately after them?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Remove all the perfect squares. New arrangement (15 elements):\n6 3 7 2 8 5 6 2 3 5 8 7 6 3 2",
+              "Check each odd number: it needs an even number just before it and an odd number just after it.",
+              "6 **3** 7 ✓",
+              "2 **3** 5 ✓",
+              "Such odd numbers: 2 → **Two**."
+            ],
+            "shortcut": "Scan only the odd numbers of the new arrangement and glance at the element on each side — no need to read every element.",
+            "trap": "Counting on the original arrangement gives 4 — the change creates new neighbours, so count only on the new arrangement."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-08-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "What is the sum of all the odd numbers in the above arrangement, each of which is immediately followed by a prime number but not immediately preceded by a perfect square?",
+          "options": [
+            "28",
+            "29",
+            "25",
+            "24",
+            "38"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Prime numbers among the digits: 2, 3, 5 and 7 (1 is not prime).",
+              "Check each odd number: it needs no perfect square just before it and a prime number just after it.",
+              "3 **7** 2 ✓",
+              "6 **9** 2 ✓",
+              "2 **3** 5 ✓",
+              "3 **9** 2 ✓",
+              "Sum = 7 + 9 + 3 + 9 = **28**."
+            ],
+            "shortcut": "Mark the qualifying odd numbers while scanning once, then add only those.",
+            "trap": "6 **1** 4 does not count — it is followed by 4, not a prime number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:digit-sum"
+          ]
+        },
+        {
+          "key": "sp-08-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "If the first 13 elements (from the left end) of the above arrangement are written in reverse order, which of the following will be the 6th element to the right of the 4th element from the left end?",
+          "options": [
+            "4",
+            "1",
+            "7",
+            "3",
+            "9"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Reverse the first 13 elements. New arrangement:\n9 6 1 4 5 8 2 7 3 9 4 1 6 2 3 5 8 7 1 4 6 3 9 2",
+              "4th from the left end = **4**.",
+              "6th to the right of it = 4 + 6 = 10th from the left end.",
+              "10th from the left end = **9**."
+            ],
+            "shortcut": "Convert to one count from the left: 4th + 6 = 10th.",
+            "trap": "Counting the same way on the original arrangement gives **4** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:reverse-block"
+          ]
+        },
+        {
+          "key": "sp-08-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Based on their positions in the above arrangement, four of the following five are alike in a certain way and form a group. Which of the following does not belong to that group?",
+          "options": [
+            "973",
+            "815",
+            "196",
+            "436",
+            "329"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Pattern (from 973): take an element, then the element 2nd to the right of it, then the element 1st to the right of it.",
+              "973 — first element at position 4, follows it ✓",
+              "815 — does not follow this pattern ✗",
+              "196 — first element at position 11, follows it ✓",
+              "436 — first element at position 20, follows it ✓",
+              "329 — first element at position 22, follows it ✓",
+              "Odd one: **815**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "815 looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-09",
+      "subtype": "alphanumeric-set",
+      "difficulty": "hard",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**9 F ★ O 2 G 8 = U 5 M D 1 # A 7 P £ 3 Y 6 & I S 4 €**",
+      "questions": [
+        {
+          "key": "sp-09-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "In the above arrangement, how many letters are immediately preceded by a symbol but not immediately followed by an odd number?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Check each letter: it needs a symbol just before it and no odd number just after it.",
+              "★ **O** 2 ✓",
+              "& **I** S ✓",
+              "Such letters: 2 → **Two**."
+            ],
+            "shortcut": "Scan only the letters and glance at the element on each side — no need to read every element.",
+            "trap": "9 **F** ★ does not count — it is preceded by 9, not a symbol."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "trap:negative-condition"
+          ]
+        },
+        {
+          "key": "sp-09-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 3rd letter to the left of the 2nd odd number from the right end in the above arrangement?",
+          "options": [
+            "M",
+            "D",
+            "I",
+            "1",
+            "U"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Odd numbers from the right end: 3, 7 → the 2nd is **7** (position 16 from the left).",
+              "Letters to its left, in order: A, D, M, U …",
+              "The 3rd of them = **M**."
+            ],
+            "shortcut": "Mark the odd numbers first, then hop over everything that is not a letter.",
+            "trap": "The 3rd element (of any kind) to the left of 7 is **1** — count only letters."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:class-position"
+          ]
+        },
+        {
+          "key": "sp-09-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the vowels are removed from the above arrangement, how many such odd numbers will be there in the new arrangement, each of which is immediately preceded by a symbol and immediately followed by a consonant?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Remove all the vowels. New arrangement (22 elements):\n9 F ★ 2 G 8 = 5 M D 1 # 7 P £ 3 Y 6 & S 4 €",
+              "Check each odd number: it needs a symbol just before it and a consonant just after it.",
+              "= **5** M ✓",
+              "# **7** P ✓",
+              "£ **3** Y ✓",
+              "Such odd numbers: 3 → **Three**."
+            ],
+            "shortcut": "Scan only the odd numbers of the new arrangement and glance at the element on each side — no need to read every element.",
+            "trap": "Counting on the original arrangement gives 1 — the change creates new neighbours, so count only on the new arrangement."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-09-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the consonants are removed from the above arrangement, which of the following will be the 4th element to the right of the 7th element from the right end?",
+          "options": [
+            "S",
+            "I",
+            "1",
+            "A",
+            "4"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Remove all the consonants. New arrangement (19 elements):\n9 ★ O 2 8 = U 5 1 # A 7 £ 3 6 & I 4 €",
+              "7th from the right end = 19 − 7 + 1 = 13th from the left end (**£**).",
+              "4th to the right of it = 13 + 4 = 17th from the left end.",
+              "17th from the left end = **I**."
+            ],
+            "shortcut": "Convert to one count from the left: 13th + 4 = 17th.",
+            "trap": "Counting the same way on the original arrangement gives **S** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-09-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Four of the following five are alike in a certain way based on their positions in the above arrangement and so form a group. Which is the one that does not belong to that group?",
+          "options": [
+            "★F2",
+            "=85",
+            "DM#",
+            "P73",
+            "&64"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Pattern (from ★F2): take an element, then the element 1st to the left of it, then the element 2nd to the right of it.",
+              "★F2 — first element at position 3, follows it ✓",
+              "=85 — first element at position 8, follows it ✓",
+              "DM# — first element at position 12, follows it ✓",
+              "P73 — first element at position 17, follows it ✓",
+              "&64 — does not follow this pattern ✗",
+              "Odd one: **&64**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "&64 looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-10",
+      "subtype": "alphanumeric-set",
+      "difficulty": "extreme",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**R 3 ↑ E 8 \\* N 1 % 6 A J 7 © 2 W O 9 \\$ L 4 = U C 5 @**",
+      "questions": [
+        {
+          "key": "sp-10-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the vowels are removed from the above arrangement and then the first 10 elements of the new arrangement are written in reverse order, which of the following will be the 5th element to the right of the 6th element from the left end?",
+          "options": [
+            "A",
+            "©",
+            "7",
+            "@",
+            "J"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Remove all the vowels. New arrangement (22 elements):\nR 3 ↑ 8 \\* N 1 % 6 J 7 © 2 W 9 \\$ L 4 = C 5 @",
+              "Reverse the first 10 elements. New arrangement:\nJ 6 % 1 N \\* 8 ↑ 3 R 7 © 2 W 9 \\$ L 4 = C 5 @",
+              "6th from the left end = **\\***.",
+              "5th to the right of it = 6 + 5 = 11th from the left end.",
+              "11th from the left end = **7**."
+            ],
+            "shortcut": "Convert to one count from the left: 6th + 5 = 11th.",
+            "trap": "Counting the same way on the original arrangement gives **A** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal",
+            "series:reverse-block"
+          ]
+        },
+        {
+          "key": "sp-10-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the symbols which are immediately preceded by a number are removed from the above arrangement, how many consonants in the new arrangement will have an odd number immediately before them but no symbol immediately after them?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Remove all the symbols which are immediately preceded by a number (judged on the arrangement before removal). New arrangement (19 elements):\nR 3 E 8 N 1 6 A J 7 2 W O 9 L 4 U C 5",
+              "Check each consonant: it needs an odd number just before it and no symbol just after it.",
+              "9 **L** 4 ✓",
+              "Such consonants: 1 → **One**."
+            ],
+            "shortcut": "Scan only the consonants of the new arrangement and glance at the element on each side — no need to read every element.",
+            "trap": "Counting on the original arrangement gives 0 — the change creates new neighbours, so count only on the new arrangement."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "series:removal",
+            "trap:negative-condition"
+          ]
+        },
+        {
+          "key": "sp-10-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "What is the sum of the odd numbers in the above arrangement that are immediately followed by a symbol but not immediately preceded by a vowel?",
+          "options": [
+            "25",
+            "14",
+            "18",
+            "16",
+            "15"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Check each odd number: it needs no vowel just before it and a symbol just after it.",
+              "R **3** ↑ ✓",
+              "N **1** % ✓",
+              "J **7** © ✓",
+              "C **5** @ ✓",
+              "Sum = 3 + 1 + 7 + 5 = **16**."
+            ],
+            "shortcut": "Mark the qualifying odd numbers while scanning once, then add only those.",
+            "trap": "O **9** \\$ does not count — it is preceded by O, which is a vowel."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:digit-sum"
+          ]
+        },
+        {
+          "key": "sp-10-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "Four of the following five groups of elements are alike in a certain way based on their positions in the above arrangement. Which one does not belong to that group?",
+          "options": [
+            "©2W",
+            "W9\\$",
+            "9L4",
+            "4UC",
+            "U5@"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Pattern (from W9\\$): take an element, then the element 2nd to the right of it, then the element 3rd to the right of it.",
+              "©2W — does not follow this pattern ✗",
+              "W9\\$ — first element at position 16, follows it ✓",
+              "9L4 — first element at position 18, follows it ✓",
+              "4UC — first element at position 21, follows it ✓",
+              "U5@ — first element at position 23, follows it ✓",
+              "Odd one: **©2W**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "©2W looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        },
+        {
+          "key": "sp-10-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is the 4th symbol to the right of the 2nd vowel from the left end in the above arrangement?",
+          "options": [
+            "2",
+            "=",
+            "©",
+            "\\$",
+            "@"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Vowels from the left end: E, A → the 2nd is **A** (position 11 from the left).",
+              "Symbols to its right, in order: ©, \\$, =, @ …",
+              "The 4th of them = **@**."
+            ],
+            "shortcut": "Mark the vowels first, then hop over everything that is not a symbol.",
+            "trap": "The 4th element (of any kind) to the right of A is **2** — count only symbols."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:class-position"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-11",
+      "subtype": "alphanumeric-set",
+      "difficulty": "extreme",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**2 € 7 4 % 9 \\* 3 6 £ 1 5 ↑ 8 @ 4 2 # 7 9 © 3 = 6 1 &**",
+      "questions": [
+        {
+          "key": "sp-11-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "If every perfect square in the above arrangement is replaced by its square root (1 by 1, 4 by 2 and 9 by 3), how many such prime numbers will be there in the new arrangement, each of which is immediately preceded by a symbol and immediately followed by a symbol?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Prime numbers among the digits: 2, 3, 5 and 7 (1 is not prime).",
+              "Replace 4 → 2 and 9 → 3 (1 stays 1). New arrangement:\n2 € 7 2 % 3 \\* 3 6 £ 1 5 ↑ 8 @ 2 2 # 7 3 © 3 = 6 1 &",
+              "Check each prime number: it needs a symbol just before it and a symbol just after it.",
+              "% **3** \\* ✓",
+              "© **3** = ✓",
+              "Such prime numbers: 2 → **Two**."
+            ],
+            "shortcut": "Scan only the prime numbers of the new arrangement and glance at the element on each side — no need to read every element.",
+            "trap": "€ **7** 2 does not count — it is followed by 2, not a symbol."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "series:digit-transform"
+          ]
+        },
+        {
+          "key": "sp-11-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the symbols are removed from the above arrangement and then the last 9 elements of the new arrangement are written in reverse order, which of the following will be the 6th element to the left of the 4th element from the right end?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "9",
+            "6"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Remove all the symbols. New arrangement (16 elements):\n2 7 4 9 3 6 1 5 8 4 2 7 9 3 6 1",
+              "Reverse the last 9 elements. New arrangement:\n2 7 4 9 3 6 1 1 6 3 9 7 2 4 8 5",
+              "4th from the right end = 16 − 4 + 1 = 13th from the left end (**2**).",
+              "6th to the left of it = 13 − 6 = 7th from the left end.",
+              "7th from the left end = **1**."
+            ],
+            "shortcut": "Convert to one count from the left: 13th − 6 = 7th.",
+            "trap": "Counting the same way on the original arrangement gives **2** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal",
+            "series:reverse-block"
+          ]
+        },
+        {
+          "key": "sp-11-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "What is the sum of all the odd numbers in the above arrangement, each of which is immediately preceded by a symbol but not immediately followed by a perfect square?",
+          "options": [
+            "23",
+            "16",
+            "22",
+            "15",
+            "28"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Check each odd number: it needs a symbol just before it and no perfect square just after it.",
+              "% **9** \\* ✓",
+              "\\* **3** 6 ✓",
+              "£ **1** 5 ✓",
+              "© **3** = ✓",
+              "Sum = 9 + 3 + 1 + 3 = **16**."
+            ],
+            "shortcut": "Mark the qualifying odd numbers while scanning once, then add only those.",
+            "trap": "€ **7** 4 does not count — it is followed by 4, which is a perfect square."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:digit-sum"
+          ]
+        },
+        {
+          "key": "sp-11-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the perfect squares which are immediately followed by a symbol are removed from the above arrangement, how many symbols in the new arrangement will be immediately preceded by a number and immediately followed by an odd number?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Remove all the perfect squares which are immediately followed by a symbol (judged on the arrangement before removal). New arrangement (22 elements):\n2 € 7 % \\* 3 6 £ 1 5 ↑ 8 @ 4 2 # 7 © 3 = 6 &",
+              "Check each symbol: it needs a number just before it and an odd number just after it.",
+              "2 **€** 7 ✓",
+              "6 **£** 1 ✓",
+              "2 **#** 7 ✓",
+              "7 **©** 3 ✓",
+              "Such symbols: 4 → **More than three**."
+            ],
+            "shortcut": "Scan only the symbols of the new arrangement and glance at the element on each side — no need to read every element.",
+            "trap": "7 **%** \\* does not count — it is followed by \\*, not an odd number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "series:removal"
+          ]
+        },
+        {
+          "key": "sp-11-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Based on their positions in the above arrangement, four of the following five are alike in a certain way and form a group. Which of the following does not belong to that group?",
+          "options": [
+            "24€",
+            "%39",
+            "↑48",
+            "297",
+            "©63"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Pattern (from 24€): take an element, then the element 3rd to the right of it, then the element 1st to the right of it.",
+              "24€ — first element at position 1, follows it ✓",
+              "%39 — first element at position 5, follows it ✓",
+              "↑48 — first element at position 13, follows it ✓",
+              "297 — does not follow this pattern ✗",
+              "©63 — first element at position 21, follows it ✓",
+              "Odd one: **297**."
+            ],
+            "shortcut": "Find the first element of one option in the arrangement, read off the offsets of the other two, and test the rest with the same offsets.",
+            "trap": "297 looks right at a glance — one of its elements is one place away from where the pattern needs it."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:odd-one-out"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-12",
+      "subtype": "alphanumeric-set",
+      "difficulty": "extreme",
+      "title": "Alphanumeric series",
+      "stimulus": "Study the following arrangement carefully and answer the questions given below.\n\n**7 2 9 4 1 8 3 6 5 2 4 9 1 7 3 8 6 2 5 9 4 1 3 6 8**",
+      "questions": [
+        {
+          "key": "sp-12-q1",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the perfect squares which are immediately preceded by a prime number are removed from the above arrangement, how many prime numbers in the new arrangement will have an even number immediately before them but no odd number immediately after them?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Prime numbers among the digits: 2, 3, 5 and 7 (1 is not prime).",
+              "Remove all the perfect squares which are immediately preceded by a prime number (judged on the arrangement before removal). New arrangement (22 elements):\n7 2 4 1 8 3 6 5 2 9 1 7 3 8 6 2 5 4 1 3 6 8",
+              "Check each prime number: it needs an even number just before it and no odd number just after it.",
+              "8 **3** 6 ✓",
+              "6 **5** 2 ✓",
+              "2 **5** 4 ✓",
+              "Such prime numbers: 3 → **Three**."
+            ],
+            "shortcut": "Scan only the prime numbers of the new arrangement and glance at the element on each side — no need to read every element.",
+            "trap": "Counting on the original arrangement gives 2 — the change creates new neighbours, so count only on the new arrangement."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "series:removal",
+            "trap:negative-condition"
+          ]
+        },
+        {
+          "key": "sp-12-q2",
+          "subtype": "alphanumeric-set",
+          "prompt": "If all the perfect squares are removed from the above arrangement and then the first 8 elements of the new arrangement are written in reverse order, which of the following will be the 7th element to the right of the 5th element from the left end?",
+          "options": [
+            "6",
+            "2",
+            "5",
+            "3",
+            "9"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Perfect squares among the digits: 1, 4 and 9 (1 = 1 × 1).",
+              "Remove all the perfect squares. New arrangement (16 elements):\n7 2 8 3 6 5 2 7 3 8 6 2 5 3 6 8",
+              "Reverse the first 8 elements. New arrangement:\n7 2 5 6 3 8 2 7 3 8 6 2 5 3 6 8",
+              "5th from the left end = **3**.",
+              "7th to the right of it = 5 + 7 = 12th from the left end.",
+              "12th from the left end = **2**."
+            ],
+            "shortcut": "Convert to one count from the left: 5th + 7 = 12th.",
+            "trap": "Counting the same way on the original arrangement gives **9** — rewrite the arrangement first."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:relative-position",
+            "series:removal",
+            "series:reverse-block"
+          ]
+        },
+        {
+          "key": "sp-12-q3",
+          "subtype": "alphanumeric-set",
+          "prompt": "What is the sum of all the odd numbers in the above arrangement, each of which is immediately preceded by an even number but not immediately followed by a prime number?",
+          "options": [
+            "32",
+            "29",
+            "35",
+            "26",
+            "27"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Prime numbers among the digits: 2, 3, 5 and 7 (1 is not prime).",
+              "Check each odd number: it needs an even number just before it and no prime number just after it.",
+              "2 **9** 4 ✓",
+              "4 **1** 8 ✓",
+              "8 **3** 6 ✓",
+              "4 **9** 1 ✓",
+              "2 **5** 9 ✓",
+              "Sum = 9 + 1 + 3 + 9 + 5 = **27**."
+            ],
+            "shortcut": "Mark the qualifying odd numbers while scanning once, then add only those.",
+            "trap": "6 **5** 2 does not count — it is followed by 2, which is a prime number."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:digit-sum"
+          ]
+        },
+        {
+          "key": "sp-12-q4",
+          "subtype": "alphanumeric-set",
+          "prompt": "If the first 15 elements (from the left end) of the above arrangement are written in reverse order, how many such prime numbers will be there in the new arrangement, each of which is immediately preceded by an odd number and immediately followed by an even number?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Four",
+            "More than four"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Prime numbers among the digits: 2, 3, 5 and 7 (1 is not prime).",
+              "Reverse the first 15 elements. New arrangement:\n3 7 1 9 4 2 5 6 3 8 1 4 9 2 7 8 6 2 5 9 4 1 3 6 8",
+              "Check each prime number: it needs an odd number just before it and an even number just after it.",
+              "1 **3** 6 ✓",
+              "Such prime numbers: 1 → **One**."
+            ],
+            "shortcut": "Scan only the prime numbers of the new arrangement and glance at the element on each side — no need to read every element.",
+            "trap": "Counting on the original arrangement gives 3 — the change creates new neighbours, so count only on the new arrangement."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:neighbour-count",
+            "series:reverse-block"
+          ]
+        },
+        {
+          "key": "sp-12-q5",
+          "subtype": "alphanumeric-set",
+          "prompt": "Which of the following is exactly in the middle of the 6th element from the left end and the 8th element from the right end in the above arrangement?",
+          "options": [
+            "7",
+            "2",
+            "9",
+            "4",
+            "1"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "6th from the left = position 6 (**8**).",
+              "8th from the right = 25 − 8 + 1 = position 18 (**2**).",
+              "Middle position = (6 + 18) ÷ 2 = 12.",
+              "12th from the left = **9**."
+            ],
+            "shortcut": "Convert both to positions from the same end, then average them: (6 + 18) ÷ 2.",
+            "trap": "Forgetting the \"+ 1\" when converting from the right end shifts the middle — always use n − m + 1."
+          },
+          "tags": [
+            "series:alphanumeric",
+            "series:middle-element"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-13",
+      "subtype": "number-set",
+      "difficulty": "medium",
+      "title": "Number-based series",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nFive three-digit numbers are given below:\n\n**473     819     265     938     547**",
+      "questions": [
+        {
+          "key": "sp-13-q1",
+          "subtype": "number-set",
+          "prompt": "If the positions of the first and the third digits of each number are interchanged, which of the following will be the second highest number thus formed?",
+          "options": [
+            "745",
+            "839",
+            "918",
+            "374",
+            "562"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Apply the change: 473 → 374, 819 → 918, 265 → 562, 938 → 839, 547 → 745",
+              "In descending order: 918 > 839 > 745 > 562 > 374",
+              "The second highest number = **839**."
+            ],
+            "shortcut": "Only the first digits decide most comparisons — transform the first digit of each number first and compare those.",
+            "trap": "918 comes from the second highest original number — rank the numbers after the change, not before."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation"
+          ]
+        },
+        {
+          "key": "sp-13-q2",
+          "subtype": "number-set",
+          "prompt": "If the digits of each number are written in reverse order, what will be the product of the second digit of the highest number and the first digit of the lowest number thus formed?",
+          "options": [
+            "9",
+            "4",
+            "6",
+            "3",
+            "5"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Apply the change: 473 → 374, 819 → 918, 265 → 562, 938 → 839, 547 → 745",
+              "In descending order: 918 > 839 > 745 > 562 > 374",
+              "Highest = 918; its second digit = 1.",
+              "Lowest = 374; its first digit = 3.",
+              "1 × 3 = **3**."
+            ],
+            "shortcut": "Rank only as far as you need (highest and lowest are found by the first digits alone).",
+            "trap": "Using the numbers before the change gives 6."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-arithmetic"
+          ]
+        },
+        {
+          "key": "sp-13-q3",
+          "subtype": "number-set",
+          "prompt": "If the positions of the second and the third digits of each number are interchanged, and then 1 is added to the third digit of each number, how many numbers thus formed will be even?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Apply the change: 473 → 437, 819 → 891, 265 → 256, 938 → 983, 547 → 574",
+              "Apply the change: 437 → 438, 891 → 892, 256 → 257, 983 → 984, 574 → 575",
+              "Even: 438, 892, 984 → 3 → **Three**."
+            ],
+            "shortcut": "Only the digits that decide the condition need to be tracked (the last digit for even/odd, the last two for 4, the digit sum for 3 and 9).",
+            "trap": "Checking the original numbers instead gives 1."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation",
+            "series:count"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-14",
+      "subtype": "number-set",
+      "difficulty": "hard",
+      "title": "Number-based series",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nFive three-digit numbers are given below:\n\n**628     374     951     486     793**",
+      "questions": [
+        {
+          "key": "sp-14-q1",
+          "subtype": "number-set",
+          "prompt": "If the digits within each number are arranged in ascending order (from left to right), and then 2 is added to the first digit of each odd number, which of the following will be the third lowest number thus formed?",
+          "options": [
+            "579",
+            "547",
+            "359",
+            "268",
+            "468"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Apply the change: 628 → 268, 374 → 347, 951 → 159, 486 → 468, 793 → 379",
+              "Apply to odd numbers only: 268, 347 → 547, 159 → 359, 468, 379 → 579",
+              "In descending order: 579 > 547 > 468 > 359 > 268",
+              "The third lowest number = **468**."
+            ],
+            "shortcut": "Only the first digits decide most comparisons — transform the first digit of each number first and compare those.",
+            "trap": "268 comes from the third lowest original number — rank the numbers after the change, not before."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation"
+          ]
+        },
+        {
+          "key": "sp-14-q2",
+          "subtype": "number-set",
+          "prompt": "If the positions of the first and the second digits of each number are interchanged, and then 1 is subtracted from the third digit of each even number, what will be the difference between the highest and the lowest numbers thus formed?",
+          "options": [
+            "706",
+            "382",
+            "578",
+            "577",
+            "716"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Apply the change: 628 → 268, 374 → 734, 951 → 591, 486 → 846, 793 → 973",
+              "Apply to even numbers only: 268 → 267, 734 → 733, 591, 846 → 845, 973",
+              "In descending order: 973 > 845 > 733 > 591 > 267",
+              "973 − 267 = **706**."
+            ],
+            "shortcut": "Find the two numbers first; subtract only once.",
+            "trap": "Using the numbers before the change gives 577."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation"
+          ]
+        },
+        {
+          "key": "sp-14-q3",
+          "subtype": "number-set",
+          "prompt": "If the digits of each number are written in reverse order, and then 1 is subtracted from the second digit of each odd number, how many numbers thus formed will be divisible by 3?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Apply the change: 628 → 826, 374 → 473, 951 → 159, 486 → 684, 793 → 397",
+              "Apply to odd numbers only: 826, 473 → 463, 159 → 149, 684, 397 → 387",
+              "Divisible by 3: 684, 387 → 2 → **Two**."
+            ],
+            "shortcut": "Only the digits that decide the condition need to be tracked (the last digit for even/odd, the last two for 4, the digit sum for 3 and 9).",
+            "trap": "397 → 387 changes the digit sum from 19 to 18, so it becomes divisible by 3 — recheck every number that changed."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation",
+            "series:count"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-15",
+      "subtype": "number-set",
+      "difficulty": "hard",
+      "title": "Number-based series",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nFive three-digit numbers are given below:\n\n**582     917     364     735     849**",
+      "questions": [
+        {
+          "key": "sp-15-q1",
+          "subtype": "number-set",
+          "prompt": "If the digits within each number are arranged in descending order (from left to right), and then 1 is added to the third digit of each number, what will be the sum of the third digit of the second highest number and the second digit of the second lowest number thus formed?",
+          "options": [
+            "14",
+            "17",
+            "7",
+            "10",
+            "6"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Apply the change: 582 → 852, 917 → 971, 364 → 643, 735 → 753, 849 → 984",
+              "Apply the change: 852 → 853, 971 → 972, 643 → 644, 753 → 754, 984 → 985",
+              "In descending order: 985 > 972 > 853 > 754 > 644",
+              "Second highest = 972; its third digit = 2.",
+              "Second lowest = 754; its second digit = 5.",
+              "2 + 5 = **7**."
+            ],
+            "shortcut": "Rank only as far as you need (highest and lowest are found by the first digits alone).",
+            "trap": "Using the numbers before the change gives 17."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-arithmetic"
+          ]
+        },
+        {
+          "key": "sp-15-q2",
+          "subtype": "number-set",
+          "prompt": "If the positions of the second and the third digits of each number are interchanged, and then 1 is added to the first digit of each even number, what will be the sum of the digits of the second lowest number thus formed?",
+          "options": [
+            "14",
+            "16",
+            "15",
+            "17",
+            "18"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Apply the change: 582 → 528, 917 → 971, 364 → 346, 735 → 753, 849 → 894",
+              "Apply to even numbers only: 528 → 628, 971, 346 → 446, 753, 894 → 994",
+              "In descending order: 994 > 971 > 753 > 628 > 446",
+              "Second lowest = 628; 6 + 2 + 8 = **16**."
+            ],
+            "shortcut": "Order by the first digits; only ties need the next digit.",
+            "trap": "Ranking the original numbers first and then changing them picks the wrong number."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation"
+          ]
+        },
+        {
+          "key": "sp-15-q3",
+          "subtype": "number-set",
+          "prompt": "If the digits of each number are written in reverse order, and then 2 is subtracted from the first digit of each even number, how many numbers thus formed will be greater than 500?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Apply the change: 582 → 285, 917 → 719, 364 → 463, 735 → 537, 849 → 948",
+              "Apply to even numbers only: 285, 719, 463, 537, 948 → 748",
+              "Greater than 500: 719, 537, 748 → 3 → **Three**."
+            ],
+            "shortcut": "Only the digits that decide the condition need to be tracked (the last digit for even/odd, the last two for 4, the digit sum for 3 and 9).",
+            "trap": "Checking the original numbers instead gives 4."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation",
+            "series:count"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sp-16",
+      "subtype": "number-set",
+      "difficulty": "extreme",
+      "title": "Number-based series",
+      "stimulus": "Study the following information carefully and answer the questions given below.\n\nFive three-digit numbers are given below:\n\n**736     482     915     257     643**",
+      "questions": [
+        {
+          "key": "sp-16-q1",
+          "subtype": "number-set",
+          "prompt": "If the digits of each number are written in reverse order, and then 2 is subtracted from the third digit of each odd number, which of the following will be the third highest number thus formed?",
+          "options": [
+            "517",
+            "752",
+            "346",
+            "284",
+            "635"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Apply the change: 736 → 637, 482 → 284, 915 → 519, 257 → 752, 643 → 346",
+              "Apply to odd numbers only: 637 → 635, 284, 519 → 517, 752, 346",
+              "In descending order: 752 > 635 > 517 > 346 > 284",
+              "The third highest number = **517**."
+            ],
+            "shortcut": "Only the first digits decide most comparisons — transform the first digit of each number first and compare those.",
+            "trap": "346 comes from the third highest original number — rank the numbers after the change, not before."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation"
+          ]
+        },
+        {
+          "key": "sp-16-q2",
+          "subtype": "number-set",
+          "prompt": "If the positions of the first and the second digits of each number are interchanged, and then 1 is subtracted from the second digit of each even number, what will be the product of the first digit of the second highest number and the third digit of the second lowest number thus formed?",
+          "options": [
+            "42",
+            "48",
+            "15",
+            "14",
+            "30"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Apply the change: 736 → 376, 482 → 842, 915 → 195, 257 → 527, 643 → 463",
+              "Apply to even numbers only: 376 → 366, 842 → 832, 195, 527, 463",
+              "In descending order: 832 > 527 > 463 > 366 > 195",
+              "Second highest = 527; its first digit = 5.",
+              "Second lowest = 366; its third digit = 6.",
+              "5 × 6 = **30**."
+            ],
+            "shortcut": "Rank only as far as you need (highest and lowest are found by the first digits alone).",
+            "trap": "Using the numbers before the change gives 14."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-arithmetic"
+          ]
+        },
+        {
+          "key": "sp-16-q3",
+          "subtype": "number-set",
+          "prompt": "If the digits within each number are arranged in ascending order (from left to right), and then 1 is added to the second digit of each odd number, how many numbers thus formed will be divisible by 4?",
+          "options": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "More than three"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Apply the change: 736 → 367, 482 → 248, 915 → 159, 257, 643 → 346",
+              "Apply to odd numbers only: 367 → 377, 248, 159 → 169, 257 → 267, 346",
+              "Divisible by 4: 248 → 1 → **One**."
+            ],
+            "shortcut": "Only the digits that decide the condition need to be tracked (the last digit for even/odd, the last two for 4, the digit sum for 3 and 9).",
+            "trap": "Divisibility by 4 depends on the last two digits: 377 (77) and 169 (69) fail; only 248 (48 = 4 × 12) qualifies."
+          },
+          "tags": [
+            "series:number-set",
+            "series:digit-operation",
+            "series:count"
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "key": "sp-101",
+      "subtype": "meaningful-word",
+      "difficulty": "easy",
+      "prompt": "If only one meaningful English word can be formed with the 2nd, 4th, 6th and 8th letters of the word 'GUARDIAN', using each letter only once, which of the following will be the first letter of that word from the left end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Y' as the answer.",
+      "options": [
+        "R",
+        "N",
+        "U",
+        "X",
+        "Y"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "GUARDIAN: 2nd = U, 4th = R, 6th = I, 8th = N.",
+          "Letters: U, R, I, N.",
+          "Only one meaningful word: **RUIN**.",
+          "First letter of that word from the left end = **R**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Counting from the right end of RUIN gives N."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-102",
+      "subtype": "meaningful-word",
+      "difficulty": "medium",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 4th, 5th, 7th and 13th letters of the word 'PARLIAMENTARY', using each letter only once, which of the following will be the 2nd letter of that word from the left end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "L",
+        "M",
+        "I",
+        "X",
+        "Z"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "PARLIAMENTARY: 1st = P, 4th = L, 5th = I, 7th = M, 13th = Y.",
+          "Letters: P, L, I, M, Y.",
+          "Only one meaningful word: **IMPLY**.",
+          "2nd letter of that word from the left end = **M**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Counting from the right end of IMPLY gives L."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-103",
+      "subtype": "meaningful-word",
+      "difficulty": "medium",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 2nd, 4th, 7th and 8th letters of the word 'BLACKSMITH', using each letter only once, which of the following will be the 3rd letter of that word from the right end? If no such word can be formed, give 'Y' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "C",
+        "L",
+        "I",
+        "Y",
+        "Z"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "BLACKSMITH: 1st = B, 2nd = L, 4th = C, 7th = M, 8th = I.",
+          "Letters: B, L, C, M, I.",
+          "Only one meaningful word: **CLIMB**.",
+          "3rd letter of that word from the right end = **I**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Check that no second word can be formed before answering — none exists here."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-104",
+      "subtype": "meaningful-word",
+      "difficulty": "medium",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 2nd, 4th and 6th letters of the word 'DOCUMENTARY', using each letter only once, which of the following will be the 2nd letter of that word from the left end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "O",
+        "D",
+        "U",
+        "X",
+        "Z"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "DOCUMENTARY: 1st = D, 2nd = O, 4th = U, 6th = E.",
+          "Letters: D, O, U, E.",
+          "No arrangement of these letters is an English word → **X**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Do not force a near-word; if no real word exists the answer is X."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-105",
+      "subtype": "meaningful-word",
+      "difficulty": "medium",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 3rd, 4th, 6th and 8th letters of the word 'SPECTACULAR', using each letter only once, which of the following will be the 3rd letter of that word from the left end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Y' as the answer.",
+      "options": [
+        "C",
+        "U",
+        "S",
+        "X",
+        "Y"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "SPECTACULAR: 1st = S, 3rd = E, 4th = C, 6th = A, 8th = U.",
+          "Letters: S, E, C, A, U.",
+          "Words: CAUSE, SAUCE — more than one → **Y**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "CAUSE is a word, but so is SAUCE — with more than one word the answer is Y, not a letter."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-106",
+      "subtype": "meaningful-word",
+      "difficulty": "hard",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 3rd, 4th, 5th and 8th letters of the word 'COMPLICATED', using each letter only once, which of the following will be the 4th letter of that word from the left end? If no such word can be formed, give 'Y' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "M",
+        "L",
+        "C",
+        "Y",
+        "Z"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "COMPLICATED: 1st = C, 3rd = M, 4th = P, 5th = L, 8th = A.",
+          "Letters: C, M, P, L, A.",
+          "Only one meaningful word: **CLAMP**.",
+          "4th letter of that word from the left end = **M**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Counting from the right end of CLAMP gives L."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-107",
+      "subtype": "meaningful-word",
+      "difficulty": "hard",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 4th, 5th, 9th and 11th letters of the word 'WAREHOUSING', using each letter only once, which of the following will be the 2nd letter of that word from the right end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "E",
+        "G",
+        "W",
+        "X",
+        "Z"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "WAREHOUSING: 1st = W, 4th = E, 5th = H, 9th = I, 11th = G.",
+          "Letters: W, E, H, I, G.",
+          "Only one meaningful word: **WEIGH**.",
+          "2nd letter of that word from the right end = **G**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Counting from the left end of WEIGH gives E."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-108",
+      "subtype": "meaningful-word",
+      "difficulty": "hard",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 2nd, 3rd, 8th and 9th letters of the word 'HEADQUARTERS', using each letter only once, which of the following will be the 2nd letter of that word from the left end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Y' as the answer.",
+      "options": [
+        "E",
+        "H",
+        "R",
+        "X",
+        "Y"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "HEADQUARTERS: 1st = H, 2nd = E, 3rd = A, 8th = R, 9th = T.",
+          "Letters: H, E, A, R, T.",
+          "Words: EARTH, HEART, HATER — more than one → **Y**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "EARTH is a word, but so is HEART — with more than one word the answer is Y, not a letter."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-109",
+      "subtype": "meaningful-word",
+      "difficulty": "hard",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 2nd, 4th, 10th and 12th letters of the word 'THUNDERSTORM', using each letter only once, which of the following will be the 2nd letter of that word from the right end? If no such word can be formed, give 'Y' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "O",
+        "M",
+        "T",
+        "Y",
+        "Z"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "THUNDERSTORM: 1st = T, 2nd = H, 4th = N, 10th = O, 12th = M.",
+          "Letters: T, H, N, O, M.",
+          "Only one meaningful word: **MONTH**.",
+          "2nd letter of that word from the right end = **T**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Counting from the left end of MONTH gives O."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-110",
+      "subtype": "meaningful-word",
+      "difficulty": "hard",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 2nd, 3rd, 4th and 11th letters of the word 'MOUNTAINEER', using each letter only once, which of the following will be the 3rd letter of that word from the left end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Y' as the answer.",
+      "options": [
+        "M",
+        "U",
+        "O",
+        "X",
+        "Y"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "MOUNTAINEER: 1st = M, 2nd = O, 3rd = U, 4th = N, 11th = R.",
+          "Letters: M, O, U, N, R.",
+          "Only one meaningful word: **MOURN**.",
+          "3rd letter of that word from the left end = **U**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Check that no second word can be formed before answering — none exists here."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-111",
+      "subtype": "meaningful-word",
+      "difficulty": "extreme",
+      "prompt": "If only one meaningful English word can be formed with the 2nd, 3rd, 4th, 6th, 7th and 11th letters of the word 'TRANSPORTED', using each letter only once, which of the following will be the 3rd letter of that word from the right end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "R",
+        "P",
+        "D",
+        "X",
+        "Z"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "TRANSPORTED: 2nd = R, 3rd = A, 4th = N, 6th = P, 7th = O, 11th = D.",
+          "Letters: R, A, N, P, O, D.",
+          "Only one meaningful word: **PARDON**.",
+          "3rd letter of that word from the right end = **D**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Counting from the left end of PARDON gives R."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-112",
+      "subtype": "meaningful-word",
+      "difficulty": "extreme",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 2nd, 4th, 6th, 7th and 10th letters of the word 'DISCIPLINARY', using each letter only once, which of the following will be the 4th letter of that word from the left end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "C",
+        "A",
+        "P",
+        "X",
+        "Z"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "DISCIPLINARY: 1st = D, 2nd = I, 4th = C, 6th = P, 7th = L, 10th = A.",
+          "Letters: D, I, C, P, L, A.",
+          "Only one meaningful word: **PLACID**.",
+          "4th letter of that word from the left end = **C**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Counting from the right end of PLACID gives A."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-113",
+      "subtype": "meaningful-word",
+      "difficulty": "extreme",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 2nd, 4th, 7th and 8th letters of the word 'INFORMATION', using each letter only once, which of the following will be the 2nd letter of that word from the right end? If no such word can be formed, give 'Y' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "O",
+        "T",
+        "A",
+        "Y",
+        "Z"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "INFORMATION: 1st = I, 2nd = N, 4th = O, 7th = A, 8th = T.",
+          "Letters: I, N, O, A, T.",
+          "No arrangement of these letters is an English word → **Y**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "Do not force a near-word; if no real word exists the answer is Y."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-114",
+      "subtype": "meaningful-word",
+      "difficulty": "extreme",
+      "prompt": "If only one meaningful English word can be formed with the 1st, 2nd, 3rd, 7th, 8th and 11th letters of the word 'PERSONALITY', using each letter only once, which of the following will be the 3rd letter of that word from the right end? If no such word can be formed, give 'X' as the answer, and if more than one such word can be formed, give 'Z' as the answer.",
+      "options": [
+        "L",
+        "A",
+        "E",
+        "X",
+        "Z"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "PERSONALITY: 1st = P, 2nd = E, 3rd = R, 7th = A, 8th = L, 11th = Y.",
+          "Letters: P, E, R, A, L, Y.",
+          "Words: PLAYER, REPLAY, PARLEY, PEARLY — more than one → **Z**."
+        ],
+        "shortcut": "Extract the letters, then test the likely word shapes (consonant–vowel–consonant patterns). Before answering, check for a second word.",
+        "trap": "PLAYER is a word, but so is REPLAY — with more than one word the answer is Z, not a letter."
+      },
+      "tags": [
+        "series:meaningful-word",
+        "vocab:anagram"
+      ]
+    },
+    {
+      "key": "sp-115",
+      "subtype": "letter-pairs",
+      "difficulty": "easy",
+      "prompt": "How many such pairs of letters are there in the word 'HOSPITABLE', each of which has as many letters between them in the word as they have between them in the English alphabetical series (both forward and backward directions)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Alphabet positions: H=8, O=15, S=19, P=16, I=9, T=20, A=1, B=2, L=12, E=5",
+          "AB: next to each other in the word and in the alphabet ✓",
+          "Pairs = 1 → **One**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "Count a pair in either order — e.g. both \"PR\" (forward) and \"RP\" (backward) qualify; letters standing side by side that are also neighbours in the alphabet count too."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-both"
+      ]
+    },
+    {
+      "key": "sp-116",
+      "subtype": "letter-pairs",
+      "difficulty": "medium",
+      "prompt": "In the word 'CHEMISTRY', how many pairs of letters have as many letters between them in the word as there are between them in the English alphabetical series (both forward and backward directions)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Alphabet positions: C=3, H=8, E=5, M=13, I=9, S=19, T=20, R=18, Y=25",
+          "C…E: 1 letter between in the word (H) and 1 in the alphabet ✓",
+          "ST: next to each other in the word and in the alphabet ✓",
+          "Pairs = 2 → **Two**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "Count a pair in either order — e.g. both \"PR\" (forward) and \"RP\" (backward) qualify; letters standing side by side that are also neighbours in the alphabet count too."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-both"
+      ]
+    },
+    {
+      "key": "sp-117",
+      "subtype": "letter-pairs",
+      "difficulty": "medium",
+      "prompt": "How many pairs of letters in the word 'JOURNALISM' have the same number of letters between them in the word as in the English alphabetical series (both forward and backward directions)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Alphabet positions: J=10, O=15, U=21, R=18, N=14, A=1, L=12, I=9, S=19, M=13",
+          "J…N: 3 letters between in the word (OUR) and 3 in the alphabet ✓",
+          "O…I: 5 letters between in the word (URNAL) and 5 in the alphabet ✓",
+          "N…L: 1 letter between in the word (A) and 1 in the alphabet ✓",
+          "Pairs = 3 → **Three**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "Count a pair in either order — e.g. both \"PR\" (forward) and \"RP\" (backward) qualify; letters standing side by side that are also neighbours in the alphabet count too."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-both"
+      ]
+    },
+    {
+      "key": "sp-118",
+      "subtype": "letter-pairs",
+      "difficulty": "medium",
+      "prompt": "Consider the word 'WONDERFUL'. How many such pairs of letters are there, each having as many letters between them in the word as in the English alphabetical series (both forward and backward directions)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Alphabet positions: W=23, O=15, N=14, D=4, E=5, R=18, F=6, U=21, L=12",
+          "W…R: 4 letters between in the word (ONDE) and 4 in the alphabet ✓",
+          "ON: next to each other in the word and in the alphabet ✓",
+          "O…U: 5 letters between in the word (NDERF) and 5 in the alphabet ✓",
+          "DE: next to each other in the word and in the alphabet ✓",
+          "Pairs = 4 → **More than three**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "Count a pair in either order — e.g. both \"PR\" (forward) and \"RP\" (backward) qualify; letters standing side by side that are also neighbours in the alphabet count too."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-both"
+      ]
+    },
+    {
+      "key": "sp-119",
+      "subtype": "letter-pairs",
+      "difficulty": "hard",
+      "prompt": "How many such pairs of letters are there in the word 'EXPLORING', each of which has as many letters between them in the word as they have between them in the English alphabetical series (forward direction only, i.e. the letter on the left comes earlier in the English alphabet)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Alphabet positions: E=5, X=24, P=16, L=12, O=15, R=18, I=9, N=14, G=7",
+          "Pairs = 0 → **None**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "LI, LG, IG are in the other direction — count only the forward direction as the question says."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-forward"
+      ]
+    },
+    {
+      "key": "sp-120",
+      "subtype": "letter-pairs",
+      "difficulty": "hard",
+      "prompt": "In the word 'DIPLOMATS', how many pairs of letters have as many letters between them in the word as there are between them in the English alphabetical series (forward direction only, i.e. the letter on the left comes earlier in the English alphabet)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Alphabet positions: D=4, I=9, P=16, L=12, O=15, M=13, A=1, T=20, S=19",
+          "I…M: 3 letters between in the word (PLO) and 3 in the alphabet ✓",
+          "O…S: 3 letters between in the word (MAT) and 3 in the alphabet ✓",
+          "Pairs = 2 → **Two**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "PM, TS are in the other direction — count only the forward direction as the question says."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-forward"
+      ]
+    },
+    {
+      "key": "sp-121",
+      "subtype": "letter-pairs",
+      "difficulty": "hard",
+      "prompt": "How many pairs of letters in the word 'CUSTOMARILY' have the same number of letters between them in the word as in the English alphabetical series (forward direction only, i.e. the letter on the left comes earlier in the English alphabet)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Alphabet positions: C=3, U=21, S=19, T=20, O=15, M=13, A=1, R=18, I=9, L=12, Y=25",
+          "C…L: 8 letters between in the word (USTOMARI) and 8 in the alphabet ✓",
+          "ST: next to each other in the word and in the alphabet ✓",
+          "O…R: 2 letters between in the word (MA) and 2 in the alphabet ✓",
+          "Pairs = 3 → **Three**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "SL is in the other direction — count only the forward direction as the question says."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-forward"
+      ]
+    },
+    {
+      "key": "sp-122",
+      "subtype": "letter-pairs",
+      "difficulty": "hard",
+      "prompt": "Consider the word 'COMPUTING'. How many such pairs of letters are there, each having as many letters between them in the word as in the English alphabetical series (backward direction only, i.e. the letter on the left comes later in the English alphabet)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Alphabet positions: C=3, O=15, M=13, P=16, U=21, T=20, I=9, N=14, G=7",
+          "M…I: 3 letters between in the word (PUT) and 3 in the alphabet ✓",
+          "M…G: 5 letters between in the word (PUTIN) and 5 in the alphabet ✓",
+          "UT: next to each other in the word and in the alphabet ✓",
+          "I…G: 1 letter between in the word (N) and 1 in the alphabet ✓",
+          "Pairs = 4 → **More than three**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "CI is in the other direction — count only the backward direction as the question says."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-backward"
+      ]
+    },
+    {
+      "key": "sp-123",
+      "subtype": "letter-pairs",
+      "difficulty": "hard",
+      "prompt": "How many such pairs of letters are there in the word 'FRAGMENTS', each of which has as many letters between them in the word as they have between them in the English alphabetical series (backward direction only, i.e. the letter on the left comes later in the English alphabet)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Alphabet positions: F=6, R=18, A=1, G=7, M=13, E=5, N=14, T=20, S=19",
+          "G…E: 1 letter between in the word (M) and 1 in the alphabet ✓",
+          "TS: next to each other in the word and in the alphabet ✓",
+          "Pairs = 2 → **Two**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "Check every letter against all the letters to its right, not only its neighbours — and count only the backward direction as the question says."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-backward"
+      ]
+    },
+    {
+      "key": "sp-124",
+      "subtype": "letter-pairs",
+      "difficulty": "extreme",
+      "prompt": "In the word 'QUESTIONABLY', how many pairs of letters have as many letters between them in the word as there are between them in the English alphabetical series (backward direction only, i.e. the letter on the left comes later in the English alphabet)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Alphabet positions: Q=17, U=21, E=5, S=19, T=20, I=9, O=15, N=14, A=1, B=2, L=12, Y=25",
+          "U…S: 1 letter between in the word (E) and 1 in the alphabet ✓",
+          "U…L: 8 letters between in the word (ESTIONAB) and 8 in the alphabet ✓",
+          "S…L: 6 letters between in the word (TIONAB) and 6 in the alphabet ✓",
+          "ON: next to each other in the word and in the alphabet ✓",
+          "Pairs = 4 → **More than three**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "ST, AB are in the other direction — count only the backward direction as the question says."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-backward"
+      ]
+    },
+    {
+      "key": "sp-125",
+      "subtype": "letter-pairs",
+      "difficulty": "extreme",
+      "prompt": "How many such pairs of digits are there in the number 863924175, each of which has as many digits between them in the number as they have between them in the numerical series (both forward and backward directions)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "6…1: 4 digits between in the number (3924) and 4 in the numerical series ✓",
+          "Pairs = 1 → **One**."
+        ],
+        "shortcut": "For each digit, compare it only with the digits to its right: a pair counts when the difference of the two digits equals the difference of their positions.",
+        "trap": "A pair counts in either direction — e.g. 3…6 and 6…3 both qualify if three places apart; do not stop at the forward pairs."
+      },
+      "tags": [
+        "series:digit-pairs",
+        "series:pairs-both"
+      ]
+    },
+    {
+      "key": "sp-126",
+      "subtype": "letter-pairs",
+      "difficulty": "extreme",
+      "prompt": "Consider the word 'HARMONISED'. How many such pairs of letters are there, each having as many letters between them in the word as in the English alphabetical series (forward direction only, i.e. the letter on the left comes earlier in the English alphabet)?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Alphabet positions: H=8, A=1, R=18, M=13, O=15, N=14, I=9, S=19, E=5, D=4",
+          "Pairs = 0 → **None**."
+        ],
+        "shortcut": "Write each letter's alphabet number under the word; a pair counts when the difference of the numbers equals the difference of the positions. Check each letter only against the letters to its right.",
+        "trap": "ON, ED are in the other direction — count only the forward direction as the question says."
+      },
+      "tags": [
+        "series:letter-pairs",
+        "series:pairs-forward"
+      ]
+    },
+    {
+      "key": "sp-127",
+      "subtype": "word-rearrange",
+      "difficulty": "medium",
+      "prompt": "If all the letters of the word 'VOLUNTARY' are arranged in alphabetical order from left to right, how many letters will remain at the same position as in the original word?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Original:  V O L U N T A R Y",
+          "New order: A L N O R T U V Y",
+          "Same position: T (6th), Y (9th).",
+          "Count = 2 → **Two**."
+        ],
+        "shortcut": "Write the new order directly under the word and compare column by column.",
+        "trap": "L moves only one place (3rd → 2nd) — it does not count."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:alphabetical-order"
+      ]
+    },
+    {
+      "key": "sp-128",
+      "subtype": "word-rearrange",
+      "difficulty": "medium",
+      "prompt": "How many letters of the word 'ALGORITHMS' will remain at the same position if all its letters are arranged in alphabetical order from left to right?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Original:  A L G O R I T H M S",
+          "New order: A G H I L M O R S T",
+          "Same position: A (1st).",
+          "Count = 1 → **One**."
+        ],
+        "shortcut": "Write the new order directly under the word and compare column by column.",
+        "trap": "G moves only one place (3rd → 2nd) — it does not count."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:alphabetical-order"
+      ]
+    },
+    {
+      "key": "sp-129",
+      "subtype": "word-rearrange",
+      "difficulty": "medium",
+      "prompt": "If all the letters of the word 'DRAUGHTSMEN' are arranged in alphabetical order from left to right, which of the following will be the 6th letter from the right end?",
+      "options": [
+        "M",
+        "G",
+        "N",
+        "H",
+        "R"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "New order (alphabetical order): A D E G H M N R S T U",
+          "6th from the right = 11 − 6 + 1 = 6th from the left (M).",
+          "Answer: **M**."
+        ],
+        "shortcut": "Write the letters in the new order once; then count on that line only.",
+        "trap": "H is at that position in the original word — rearrange first."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:position-from-end"
+      ]
+    },
+    {
+      "key": "sp-130",
+      "subtype": "word-rearrange",
+      "difficulty": "medium",
+      "prompt": "If the letters of the word 'GUNPOWDER' are rearranged in reverse alphabetical order from left to right, the positions of how many letters will remain unchanged?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Original:  G U N P O W D E R",
+          "New order: W U R P O N G E D",
+          "Same position: U (2nd), P (4th), O (5th), E (8th).",
+          "Count = 4 → **More than three**."
+        ],
+        "shortcut": "Write the new order directly under the word and compare column by column.",
+        "trap": "Writing the letters in plain alphabetical order instead (D E G N O P R U W) leaves only O in place and gives One — the question asks for reverse alphabetical order."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:reverse-alphabetical"
+      ]
+    },
+    {
+      "key": "sp-131",
+      "subtype": "word-rearrange",
+      "difficulty": "hard",
+      "prompt": "If the first 4 letters of the word 'TOWNSHIP' are arranged in alphabetical order and the last 4 letters in reverse alphabetical order (from left to right), how many letters will remain at the same position as in the original word?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Original:  T O W N S H I P",
+          "New order: N O T W S P I H",
+          "Same position: O (2nd), S (5th), I (7th).",
+          "Count = 3 → **Three**."
+        ],
+        "shortcut": "Write the new order directly under the word and compare column by column.",
+        "trap": "W moves only one place (3rd → 4th) — it does not count."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:halves-order"
+      ]
+    },
+    {
+      "key": "sp-132",
+      "subtype": "word-rearrange",
+      "difficulty": "hard",
+      "prompt": "If the letters of the word 'UPHOLSTERING' are rearranged in alphabetical order from left to right, the positions of how many letters will remain unchanged?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Original:  U P H O L S T E R I N G",
+          "New order: E G H I L N O P R S T U",
+          "Same position: H (3rd), L (5th), R (9th).",
+          "Count = 3 → **Three**."
+        ],
+        "shortcut": "Write the new order directly under the word and compare column by column.",
+        "trap": "E and G move from the right end to the front, so most letters shift — compare column by column rather than by eye."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:alphabetical-order"
+      ]
+    },
+    {
+      "key": "sp-133",
+      "subtype": "word-rearrange",
+      "difficulty": "hard",
+      "prompt": "If all the letters of the word 'HYDROPLANES' are arranged in reverse alphabetical order from left to right, which of the following will be the 3rd letter to the left of the 4th letter from the right end?",
+      "options": [
+        "O",
+        "Y",
+        "P",
+        "N",
+        "A"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "New order (reverse alphabetical order): Y S R P O N L H E D A",
+          "4th from the right = 11 − 4 + 1 = 8th from the left (H).",
+          "3rd to the left: 8 − 3 = 5th from the left.",
+          "Answer: **O**."
+        ],
+        "shortcut": "Write the letters in the new order once; then count on that line only.",
+        "trap": "Counting from the left end gives Y."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:position-from-end"
+      ]
+    },
+    {
+      "key": "sp-134",
+      "subtype": "word-rearrange",
+      "difficulty": "hard",
+      "prompt": "If each letter of the word 'BLACKOUTS' is replaced by the next letter in the English alphabetical series and the new letters are then arranged in alphabetical order from left to right, which of the following will be the 4th letter from the left end?",
+      "options": [
+        "D",
+        "K",
+        "L",
+        "P",
+        "M"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Next letters: B L A C K O U T S → C M B D L P V U T",
+          "New order (alphabetical order): B C D L M P T U V",
+          "4th from the left = L.",
+          "Answer: **L**."
+        ],
+        "shortcut": "Write the letters in the new order once; then count on that line only.",
+        "trap": "Sorting the original letters and forgetting to shift gives K — shift every letter first (the order of the letters does not change, so you may also sort first and then shift)."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:position-from-end",
+        "series:letter-shift"
+      ]
+    },
+    {
+      "key": "sp-135",
+      "subtype": "word-rearrange",
+      "difficulty": "hard",
+      "prompt": "If all the letters of the word 'FORGIVABLE' are arranged in reverse alphabetical order from left to right, how many letters will remain at the same position as in the original word?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Original:  F O R G I V A B L E",
+          "New order: V R O L I G F E B A",
+          "Same position: I (5th).",
+          "Count = 1 → **One**."
+        ],
+        "shortcut": "Write the new order directly under the word and compare column by column.",
+        "trap": "O moves only one place (2nd → 3rd) — it does not count."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:reverse-alphabetical"
+      ]
+    },
+    {
+      "key": "sp-136",
+      "subtype": "word-rearrange",
+      "difficulty": "extreme",
+      "prompt": "If the letters in the first half of the word 'BOUNDARIES' (its first 5 letters) are arranged in alphabetical order and those in the second half (its last 5 letters) in reverse alphabetical order, how many letters will not change their position?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Original:  B O U N D A R I E S",
+          "New order: B D N O U S R I E A",
+          "Same position: B (1st), R (7th), I (8th), E (9th).",
+          "Count = 4 → **More than three**."
+        ],
+        "shortcut": "Write the new order directly under the word and compare column by column.",
+        "trap": "N moves only one place (4th → 3rd) — it does not count."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:halves-order"
+      ]
+    },
+    {
+      "key": "sp-137",
+      "subtype": "word-rearrange",
+      "difficulty": "extreme",
+      "prompt": "In the word 'COPYRIGHTS', the first 5 letters are arranged in alphabetical order and the last 5 letters in reverse alphabetical order (from left to right). How many letters are now at the same position as in the original word?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three",
+        "More than three"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Original:  C O P Y R I G H T S",
+          "New order: C O P R Y T S I H G",
+          "Same position: C (1st), O (2nd), P (3rd).",
+          "Count = 3 → **Three**."
+        ],
+        "shortcut": "Write the new order directly under the word and compare column by column.",
+        "trap": "Y moves only one place (4th → 5th) — it does not count."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:halves-order"
+      ]
+    },
+    {
+      "key": "sp-138",
+      "subtype": "word-rearrange",
+      "difficulty": "extreme",
+      "prompt": "If each letter of the word 'SYMPATHISE' is replaced by the next letter in the English alphabetical series and the new letters are then arranged in reverse alphabetical order from left to right, which of the following will be the 4th letter to the left of the 7th letter from the left end?",
+      "options": [
+        "T",
+        "S",
+        "U",
+        "Q",
+        "N"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Next letters: S Y M P A T H I S E → T Z N Q B U I J T F",
+          "New order (reverse alphabetical order): Z U T T Q N J I F B",
+          "7th from the left = J.",
+          "4th to the left: 7 − 4 = 3rd from the left.",
+          "Answer: **T**."
+        ],
+        "shortcut": "Write the letters in the new order once; then count on that line only.",
+        "trap": "Sorting the original letters and forgetting to shift gives S — shift every letter first (the order of the letters does not change, so you may also sort first and then shift)."
+      },
+      "tags": [
+        "series:letter-rearrangement",
+        "series:position-from-end",
+        "series:letter-shift"
+      ]
+    }
+  ]
+}
