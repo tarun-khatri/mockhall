@@ -3468,6 +3468,793 @@
         "grammar:subject-verb-agreement",
         "pattern:each-every"
       ]
+    },
+    {
+      "key": "pr-126",
+      "subtype": "phrase-meaning",
+      "difficulty": "easy",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nBecause of the heavy rain, the school **called off** its annual sports day.",
+      "options": [
+        "postponed",
+        "cancelled",
+        "announced",
+        "began",
+        "shortened"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Call off' means to cancel something that was planned, so that it does not take place at all.",
+          "Here: *the school cancelled its annual sports day because of the heavy rain.*",
+          "A 'postponed' means moved to a later date, which is 'put off', not 'call off'; C, D and E have nothing to do with the phrase."
+        ],
+        "rule": "Phrasal verb: call off = cancel",
+        "trap": "A is the classic confusion: 'call off' = cancel, 'put off' = postpone.",
+        "shortcut": "call off → cancel; put off → postpone."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-127",
+      "subtype": "phrase-meaning",
+      "difficulty": "easy",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nWe had **run out of** sugar, so Amma sent me to the corner shop.",
+      "options": [
+        "used up all our supply of",
+        "bought too much",
+        "grown tired of",
+        "spilt some of",
+        "saved some"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Run out of' means to use up a supply completely, so that none is left.",
+          "Here: *we had used up all our sugar, so Amma sent me to buy more.*",
+          "B and E describe having sugar, which would give no reason to go to the shop; C and D do not mean 'have none left'."
+        ],
+        "rule": "Phrasal verb: run out of = use up completely, have no more left",
+        "trap": "C 'grown tired of' can follow 'run out of patience' in other sentences, but here the sugar is simply finished."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-128",
+      "subtype": "phrase-meaning",
+      "difficulty": "easy",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe bank has promised to **look into** the customer's complaint by Friday.",
+      "options": [
+        "ignore",
+        "reply to",
+        "forward",
+        "investigate",
+        "withdraw"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "'Look into' means to examine or investigate a matter.",
+          "Here: *the bank has promised to investigate the customer's complaint by Friday.*",
+          "B 'reply to' is something the bank may also do, but it is not the meaning of 'look into'; A, C and E do not fit."
+        ],
+        "rule": "Phrasal verb: look into = investigate, examine",
+        "trap": "B tempts because a complaint usually gets a reply, but 'look into' is about examining it."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-129",
+      "subtype": "phrase-meaning",
+      "difficulty": "easy",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nMy uncle visits us only **once in a blue moon** because he lives in Canada.",
+      "options": [
+        "on full-moon nights",
+        "once every month",
+        "very rarely",
+        "late in the evening",
+        "on special festivals"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "'Once in a blue moon' means very rarely.",
+          "Here: *my uncle visits us very rarely because he lives far away in Canada.*",
+          "A takes the words literally; B is far too frequent; D and E are about timing, not frequency."
+        ],
+        "rule": "Idiom: once in a blue moon = very rarely",
+        "trap": "A reads the idiom literally; it has nothing to do with the moon."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-130",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nWhile shopping at the mall, Divya **ran into** her old school teacher.",
+      "options": [
+        "met by chance",
+        "collided with",
+        "ran towards",
+        "deliberately avoided",
+        "was introduced to"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Run into' someone means to meet them unexpectedly.",
+          "Here: *Divya met her old teacher by chance while shopping.*",
+          "B and C take 'ran' literally; D is the opposite; E suggests a first meeting, but she already knew her teacher."
+        ],
+        "rule": "Phrasal verb: run into (someone) = meet by chance",
+        "trap": "B 'collided with' is the literal sense of 'run into' a wall or a pole, not of meeting a person."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-131",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe new irrigation canal has **brought about** a big change in the lives of the farmers.",
+      "options": [
+        "reported",
+        "brought back",
+        "prevented",
+        "hinted at",
+        "caused"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "'Bring about' means to cause something to happen.",
+          "Here: *the new canal has caused a big change in the farmers' lives.*",
+          "B 'brought back' means returned or restored; C is the opposite; A and D do not mean making something happen."
+        ],
+        "rule": "Phrasal verb: bring about = cause, make happen",
+        "trap": "B 'brought back' looks similar, but it means to return or restore something old, not to create a change."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-132",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nAfter the manager resigned suddenly, the whole office was **at sixes and sevens** for a week.",
+      "options": [
+        "working overtime",
+        "in a state of confusion",
+        "in a festive mood",
+        "short of staff",
+        "deeply worried"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'At sixes and sevens' means in a state of confusion or disorder.",
+          "Here: *after the sudden resignation, the office was in confusion for a week.*",
+          "D 'short of staff' and E 'deeply worried' could follow a resignation, but neither is what the idiom means; A and C do not fit."
+        ],
+        "rule": "Idiom: at sixes and sevens = in confusion, disorganised",
+        "trap": "D sounds logical after someone resigns, but the idiom describes disorder, not a shortage of people."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-133",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe landlord **turned a deaf ear** to the tenants' repeated requests to repair the leaking roof.",
+      "options": [
+        "listened patiently",
+        "responded angrily",
+        "agreed reluctantly",
+        "paid no attention",
+        "could not hear"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "'Turn a deaf ear to' something means to refuse to listen to it or pay attention to it.",
+          "Here: *the landlord ignored the tenants' repeated requests.*",
+          "E takes 'deaf' literally; A and C are the opposite; B suggests he reacted, while the idiom means he did not respond at all."
+        ],
+        "rule": "Idiom: turn a deaf ear to = deliberately ignore",
+        "trap": "E 'could not hear' reads the idiom literally; the landlord could hear but chose not to listen."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-134",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nA merger between the two cooperative banks is **in the offing**.",
+      "options": [
+        "being strongly opposed",
+        "already completed",
+        "likely to happen soon",
+        "under investigation",
+        "out of the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "'In the offing' means likely to happen soon.",
+          "Here: *a merger between the two banks is likely to happen soon.*",
+          "B says it has already happened; E says it will not happen; A and D describe other situations."
+        ],
+        "rule": "Idiom: in the offing = likely to happen soon",
+        "trap": "B tempts readers who link the phrase with an 'offer' already made, but the merger has not yet happened."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-135",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nRohan **takes after** his grandfather; both love gardening and old film songs.",
+      "options": [
+        "resembles",
+        "looks after",
+        "follows everywhere",
+        "takes care of",
+        "admires"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Take after' an older relative means to resemble them in character or appearance.",
+          "Here: *Rohan resembles his grandfather; they share the same interests.*",
+          "B and D mean caring for someone; C takes 'after' literally; E may be true but is not the meaning of the phrase."
+        ],
+        "rule": "Phrasal verb: take after = resemble (an older family member)",
+        "trap": "B 'looks after' sounds almost the same but means 'takes care of'."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-136",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nI cannot **put up with** the noise from the construction site any longer.",
+      "options": [
+        "complain about",
+        "tolerate",
+        "reduce",
+        "record",
+        "listen to"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Put up with' means to tolerate something unpleasant.",
+          "Here: *I cannot tolerate the noise any longer.*",
+          "A is what a person might do next, not the meaning; C, D and E do not match."
+        ],
+        "rule": "Phrasal verb: put up with = tolerate, bear",
+        "trap": "A 'complain about' fits the speaker's mood, but 'cannot put up with' means 'cannot bear'."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-137",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe company had to **lay off** two hundred workers when the factory closed.",
+      "options": [
+        "hire",
+        "transfer",
+        "dismiss from work",
+        "promote",
+        "train"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "'Lay off' workers means to dismiss them from their jobs, usually because there is no work for them.",
+          "Here: *the company had to dismiss two hundred workers when the factory closed.*",
+          "A, D and E do not fit a factory closing; B means moving them elsewhere, which keeps them employed."
+        ],
+        "rule": "Phrasal verb: lay off = dismiss from employment (for lack of work)",
+        "trap": "B 'transfer' sounds like a softer option, but 'lay off' means the workers lose their jobs."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-138",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nAfter an hour of argument, the shopkeeper finally **gave in** and agreed to refund the money.",
+      "options": [
+        "stopped resisting",
+        "stopped trying altogether",
+        "lost his temper",
+        "left the shop",
+        "handed over the goods"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Give in' means to stop resisting and accept what someone wants.",
+          "Here: *after an hour of argument, the shopkeeper stopped resisting and agreed to the refund.*",
+          "B is the meaning of 'give up'; C, D and E do not lead to agreeing to a refund."
+        ],
+        "rule": "Phrasal verb: give in = yield, stop resisting",
+        "trap": "B 'stopped trying altogether' is 'give up', which looks almost the same but has a different meaning.",
+        "shortcut": "give in → yield; give up → quit."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-139",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nSneha **turned down** the job offer because the office was too far from her home.",
+      "options": [
+        "accepted",
+        "lowered",
+        "delayed",
+        "rejected",
+        "reconsidered"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "'Turn down' an offer means to refuse or reject it.",
+          "Here: *Sneha rejected the job offer because the office was too far away.*",
+          "A is the opposite; B is the literal sense used for a volume or a flame; C and E do not match the reason given."
+        ],
+        "rule": "Phrasal verb: turn down = reject, refuse",
+        "trap": "B 'lowered' is correct for 'turn down the volume', not for an offer."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-140",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nMissing the bus turned out to be **a blessing in disguise**, as it broke down on the ghat road an hour later.",
+      "options": [
+        "a well-planned trick",
+        "a misfortune that looked lucky",
+        "a good thing that first seemed bad",
+        "a hidden danger",
+        "an ordinary event"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "'A blessing in disguise' is something that seems bad at first but turns out to be good.",
+          "Here: *missing the bus seemed unlucky but proved fortunate, because the bus broke down.*",
+          "B is the exact reverse; A, D and E do not match."
+        ],
+        "rule": "Idiom: a blessing in disguise = an apparent misfortune that turns out well",
+        "trap": "B uses the same two ideas (bad and good) in the wrong order."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-141",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nStop **beating about the bush** and tell me what happened to the car.",
+      "options": [
+        "wasting money",
+        "avoiding the main point",
+        "blaming others",
+        "telling lies",
+        "shouting angrily"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Beat about the bush' means to avoid talking about the main point.",
+          "Here: *stop avoiding the point and tell me directly what happened.*",
+          "C and D are other ways of not being straightforward, but they are not what the idiom means; A and E do not fit."
+        ],
+        "rule": "Idiom: beat about the bush = avoid the main topic, speak indirectly",
+        "trap": "D 'telling lies' is tempting, but the idiom means talking round a subject, not saying false things."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-142",
+      "subtype": "phrase-meaning",
+      "difficulty": "medium",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe two partners could not **see eye to eye** on how to expand the business.",
+      "options": [
+        "meet face to face",
+        "trust each other",
+        "talk openly",
+        "work together",
+        "agree"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "'See eye to eye' means to agree with someone.",
+          "Here: *the partners could not agree on how to expand the business.*",
+          "A takes the image literally; B, C and D describe other parts of a partnership but not agreement."
+        ],
+        "rule": "Idiom: see eye to eye = agree",
+        "trap": "A 'meet face to face' takes the image of eyes literally."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-143",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe High Court **set aside** the order of the lower court and directed a fresh hearing.",
+      "options": [
+        "kept for later use",
+        "upheld",
+        "put on record",
+        "annulled",
+        "postponed"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "In legal use, 'set aside' an order or a judgment means to cancel or annul it. The demand for a fresh hearing confirms that the old order no longer stands.",
+          "Here: *the High Court annulled the lower court's order and directed a fresh hearing.*",
+          "A is the everyday meaning ('set aside money'), which does not fit a court order; B is the opposite; C and E do not explain the fresh hearing."
+        ],
+        "rule": "Phrasal verb: set aside = (1) save or reserve; (2) of a court, cancel or annul a decision",
+        "trap": "A is a real meaning of 'set aside', but in a court context it means to overturn.",
+        "shortcut": "Court + order/verdict + set aside → annulled."
+      },
+      "tags": [
+        "vocab:phrasal-verb",
+        "vocab:context-meaning"
+      ]
+    },
+    {
+      "key": "pr-144",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nWhen she heard that she had topped the state, Pallavi **broke down** in front of the cameras.",
+      "options": [
+        "stopped working",
+        "fainted",
+        "was overcome with emotion and wept",
+        "spoke briefly",
+        "fell ill"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Used of a person, 'break down' means to lose control of one's feelings and start crying.",
+          "Here: *Pallavi was overcome with emotion and wept in front of the cameras.*",
+          "A is the meaning for machines and vehicles; B and E are physical collapses that the phrase does not mean; D does not fit."
+        ],
+        "rule": "Phrasal verb: break down = (of a machine) stop working; (of a person) lose control and cry",
+        "trap": "A is the most common meaning of 'break down', but it applies to machines, not to a person hearing news."
+      },
+      "tags": [
+        "vocab:phrasal-verb",
+        "vocab:context-meaning"
+      ]
+    },
+    {
+      "key": "pr-145",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe results of the survey **bore out** the bank's view that rural customers prefer UPI to cash.",
+      "options": [
+        "contradicted",
+        "confirmed",
+        "made public",
+        "exaggerated",
+        "ignored"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Bear out' means to support or confirm that something is true.",
+          "Here: *the survey results confirmed the bank's view.*",
+          "A is the opposite; C confuses it with 'bring out'; D and E do not match."
+        ],
+        "rule": "Phrasal verb: bear out = confirm, support",
+        "trap": "C 'made public' is the sense of 'bring out', which sounds similar."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-146",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nIf the new venture fails, we still have our savings to **fall back on**.",
+      "options": [
+        "rely on when other plans fail",
+        "repay",
+        "look back on with regret",
+        "invest in",
+        "lose"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Fall back on' something means to use it or depend on it when other things have failed.",
+          "Here: *if the venture fails, we can rely on our savings.*",
+          "C confuses it with 'look back on'; B, D and E do not fit the idea of support in difficulty."
+        ],
+        "rule": "Phrasal verb: fall back on = rely on in an emergency",
+        "trap": "E 'lose' links 'fall' with failure, but the savings are a safety net, not something lost."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
+    },
+    {
+      "key": "pr-147",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe contractor **cut corners** while building the school, and cracks appeared within a year.",
+      "options": [
+        "took the shortest route",
+        "worked faster than planned",
+        "reduced the size of the rooms",
+        "skipped proper methods to save time or money",
+        "made rounded edges"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "'Cut corners' means to do something cheaply or carelessly by skipping the proper steps.",
+          "Here: *the contractor skipped proper methods to save money, so cracks soon appeared.*",
+          "A and E take the words literally; B and C describe other changes that do not capture the idea of skipping proper standards."
+        ],
+        "rule": "Idiom: cut corners = do a job badly or cheaply by ignoring proper methods",
+        "trap": "A 'took the shortest route' is the literal sense of cutting a corner while walking or driving."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-148",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe captain warned that players who did not **pull their weight** would be dropped from the team.",
+      "options": [
+        "lose weight",
+        "do their fair share of the work",
+        "show off their strength",
+        "attend every practice",
+        "follow the rules"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "'Pull one's weight' means to do one's fair share of the work.",
+          "Here: *players who do not contribute their share will be dropped.*",
+          "A and C take 'weight' literally; D and E are narrower duties that the idiom does not mean."
+        ],
+        "rule": "Idiom: pull one's weight = do one's fair share",
+        "trap": "A connects 'weight' with fitness, but the idiom is about effort, not body weight."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-149",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nKnowing that the surgery could not be avoided, Mr Iyer decided to **bite the bullet** and fix a date with the hospital.",
+      "options": [
+        "postpone the matter",
+        "complain bitterly",
+        "face the unpleasant situation bravely",
+        "seek a second opinion",
+        "take a reckless gamble"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "'Bite the bullet' means to accept and face something unpleasant that cannot be avoided.",
+          "Here: *knowing the surgery was unavoidable, Mr Iyer faced it bravely and fixed a date.*",
+          "A and D delay the decision, which contradicts fixing a date; B and E do not match the idiom."
+        ],
+        "rule": "Idiom: bite the bullet = face an unpleasant but unavoidable situation with courage",
+        "trap": "E 'take a reckless gamble' links 'bullet' with danger, but the idiom is about accepting something, not taking a risk."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-150",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe new manager **hit the nail on the head** when she said that the branch's real problem was poor training.",
+      "options": [
+        "identified the problem exactly",
+        "made a harsh remark",
+        "took strict action",
+        "made a lucky guess",
+        "exaggerated the issue"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Hit the nail on the head' means to describe exactly what is causing a situation or problem.",
+          "Here: *the manager identified the real problem exactly.*",
+          "B and C link 'hit' with force; D suggests chance, while the idiom means being precisely right; E is the opposite of accuracy."
+        ],
+        "rule": "Idiom: hit the nail on the head = be exactly right",
+        "trap": "D 'made a lucky guess' still involves being right, but the idiom stresses accuracy, not luck."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-151",
+      "subtype": "phrase-meaning",
+      "difficulty": "hard",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nExperienced investors take market rumours **with a pinch of salt**.",
+      "options": [
+        "with great enthusiasm",
+        "in small amounts",
+        "with careful calculation",
+        "with a sense of humour",
+        "with some doubt"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "'Take something with a pinch of salt' means not to believe it completely.",
+          "Here: *experienced investors treat market rumours with some doubt.*",
+          "B takes 'pinch' literally; A is the opposite; C and D describe other attitudes."
+        ],
+        "rule": "Idiom: take with a pinch (grain) of salt = be sceptical about",
+        "trap": "B 'in small amounts' reads 'pinch' literally."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-152",
+      "subtype": "phrase-meaning",
+      "difficulty": "extreme",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nDespite the record crowd, the city marathon **passed off** without any incident.",
+      "options": [
+        "was cancelled",
+        "took place",
+        "was presented falsely",
+        "was overlooked",
+        "ended early"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Used of an event, 'pass off' means to take place or be carried out in a particular way, here 'without any incident'.",
+          "Here: *despite the huge crowd, the marathon took place without any incident.*",
+          "C is the meaning of 'pass (something) off as'; D is 'pass over'; A and E do not fit 'without any incident'."
+        ],
+        "rule": "Phrasal verb: pass off = (of an event) take place in a specified way; pass something off as = present it falsely",
+        "trap": "C is a genuine meaning of 'pass off', but only in the pattern 'pass X off as Y'.",
+        "shortcut": "Event + passed off + peacefully / smoothly → took place."
+      },
+      "tags": [
+        "vocab:phrasal-verb",
+        "vocab:context-meaning"
+      ]
+    },
+    {
+      "key": "pr-153",
+      "subtype": "phrase-meaning",
+      "difficulty": "extreme",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nHer latest novel is **a far cry from** the simple stories she wrote in college.",
+      "options": [
+        "a sad reminder of",
+        "an exact copy of",
+        "very different from",
+        "a strong protest against",
+        "a distant sequel to"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "'A far cry from' means very different from.",
+          "Here: *her latest novel is very different from her simple college stories.*",
+          "B is the opposite; A and D take 'cry' literally; E plays on 'far' but the idiom says nothing about a sequel."
+        ],
+        "rule": "Idiom: a far cry from = very different from",
+        "trap": "E 'a distant sequel to' sounds literary and uses the idea of distance, but the idiom is about difference, not continuation."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-154",
+      "subtype": "phrase-meaning",
+      "difficulty": "extreme",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe defence lawyer argued that the prosecution's theory did not **hold water**.",
+      "options": [
+        "stand up to close examination",
+        "attract public attention",
+        "contain any secrets",
+        "follow the court's procedure",
+        "remain popular"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "'Hold water' (usually in the negative) means to be valid or convincing when examined closely.",
+          "Here: *the lawyer argued that the prosecution's theory was not convincing under scrutiny.*",
+          "C plays on 'hold' (keep secrets in); B, D and E describe other weaknesses that the idiom does not mean."
+        ],
+        "rule": "Idiom: (not) hold water = (not) be valid or convincing",
+        "trap": "D 'follow the court's procedure' fits a courtroom, but the idiom judges whether an argument is sound, not whether rules were followed."
+      },
+      "tags": [
+        "vocab:idiom"
+      ]
+    },
+    {
+      "key": "pr-155",
+      "subtype": "phrase-meaning",
+      "difficulty": "extreme",
+      "prompt": "Choose the phrase that best conveys the meaning of the phrase in bold as used in the sentence.\n\nThe branch head **came down heavily on** the trainees for leaving the cash counter unattended.",
+      "options": [
+        "physically attacked",
+        "complained quietly about",
+        "slowly put pressure on",
+        "criticised severely",
+        "made allowances for"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "'Come down heavily on' someone means to criticise or punish them severely.",
+          "Here: *the branch head criticised the trainees severely for leaving the counter unattended.*",
+          "A takes 'heavily' literally; B and C are too mild; E is the opposite."
+        ],
+        "rule": "Phrasal verb: come down heavily (hard) on = criticise or punish severely",
+        "trap": "C 'slowly put pressure on' keeps the idea of weight but loses the severity and suddenness of the reprimand."
+      },
+      "tags": [
+        "vocab:phrasal-verb"
+      ]
     }
   ]
 }

@@ -7217,6 +7217,502 @@
           ]
         }
       ]
+    },
+    {
+      "key": "rc-30",
+      "subtype": "business",
+      "difficulty": "hard",
+      "title": "Business case: an old soap finds new buyers",
+      "stimulus": "For four decades, a green-wrapped bar called Neelam was among the best-selling soaps in northern Kerala. Made by a family firm in Kozhikode from coconut oil and a few herbal extracts, it was cheap, lasted long and smelt, as many customers put it, \"like a bath at home\". By the early 2010s, however, its sales had fallen by more than half. Supermarkets in the cities no longer **carried** it, and the young shoppers who filled them had grown up on the advertising of multinational brands.\n\nThe family considered selling the brand, but in 2016 it hired an outside manager, Ritika Menon, to attempt one last revival. Her first step was not to change anything but to listen. Surveys showed something the family had not expected. Older buyers in small towns remained intensely loyal and bought Neelam month after month. Younger urban buyers did not dislike the soap; most had simply never tried it, and those who knew it associated it with their grandparents' bathrooms.\n\nMany consultants would have recommended a complete makeover: a new name, a new fragrance, perhaps a liquid version. Menon judged that this would risk losing the loyal customers while offering young buyers nothing that dozens of other brands did not already offer. Instead, the formula and the name were left untouched. The wrapper was simplified, the list of natural ingredients was printed prominently on the front, and the soap was sold in smaller trial packs and online, where it was promoted largely through short videos showing how it was made.\n\nJust as importantly, the company ______ **(blank)** the temptation to cut prices to win shoppers back. It raised them slightly instead, arguing that a cheap price would only confirm the image of an old-fashioned product, and it introduced a gift box of three bars aimed at festival shoppers.\n\nThe early results were a **modest** success; the real change came when buyers who had tried a single bar came back for more. Within four years Neelam's sales had nearly doubled, with a growing share coming from cities outside Kerala. Menon is quick to point out that the revival worked because the soap itself had never been the problem. \"Nostalgia can persuade someone to buy once,\" she says. \"Only the product can persuade them to buy again.\"\n\nSuccess has brought new difficulties. Several imitators now sell green-wrapped coconut-oil soaps at lower prices, and sharp rises in the price of coconut oil have squeezed the company's margins, since it has chosen not to switch to a cheaper oil. Whether Neelam can protect both its identity and its profits is not yet clear. But its story suggests that an old brand need not reinvent itself to survive; sometimes it needs only to be introduced to people who never knew it.",
+      "questions": [
+        {
+          "key": "rc-30-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, what did the surveys reveal about younger buyers in cities?",
+          "options": [
+            "Most had never tried Neelam, and those who knew it linked it with their grandparents' bathrooms, rather than disliking it.",
+            "They disliked Neelam's fragrance and wanted a liquid version instead.",
+            "They were intensely loyal and bought Neelam month after month.",
+            "They preferred Neelam to multinational brands but could not find it in supermarkets.",
+            "They found Neelam too expensive compared with advertised brands."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 2: 'Younger urban buyers did not dislike the soap; most had simply never tried it, and those who knew it associated it with their grandparents' bathrooms.'"
+            ],
+            "trap": "Loyalty describes *older buyers in small towns*. The liquid version is what consultants might have recommended, not what young buyers asked for."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why did the company raise Neelam's price slightly?",
+          "options": [
+            "The price of coconut oil had risen sharply.",
+            "It believed a cheap price would only confirm the image of an old-fashioned product.",
+            "It needed money for advertising on television.",
+            "It wanted to match the prices of multinational brands exactly.",
+            "It hoped higher prices would discourage imitators."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 4: it raised prices, 'arguing that a cheap price would only confirm the image of an old-fashioned product'."
+            ],
+            "trap": "The coconut-oil price rise in para 6 came *after* the revival succeeded and is described as squeezing margins, not as the reason for the price rise."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "surrendered",
+            "insisted",
+            "persisted",
+            "permitted",
+            "resisted"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The company did not cut prices; it raised them. It therefore *resisted* the temptation.",
+              "'Surrendered' would need 'to' and means the opposite; 'insisted' and 'persisted' need 'on/in' and make no sense with 'temptation'; 'permitted the temptation' is meaningless here."
+            ],
+            "trap": "'Surrendered' looks close because one can surrender to temptation, but that would mean the company cut prices, which the next sentence denies."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following is/are true according to the passage?\n(A) The soap's formula was changed to attract younger buyers.\n(B) Neelam was promoted online largely through short videos showing how it was made.\n(C) A gift box of three bars was introduced for festival shoppers.",
+          "options": [
+            "Only (B)",
+            "Both (B) and (C)",
+            "Both (A) and (B)",
+            "Only (C)",
+            "All of these"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "(A) is false: para 3, 'the formula and the name were left untouched'.",
+              "(B) is true: para 3.",
+              "(C) is true: para 4."
+            ],
+            "trap": "Statement (A) describes the makeover that Menon *rejected*."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q05",
+          "subtype": "inference",
+          "prompt": "Why did Menon decide against a complete makeover of the brand?",
+          "options": [
+            "The family refused to spend any money on the brand.",
+            "The soap's formula could not legally be changed.",
+            "It might drive away loyal customers while giving young buyers nothing they could not already find elsewhere.",
+            "Young buyers had told the surveys that they wanted no change at all.",
+            "Consultants had advised her against changing anything."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 3: a makeover 'would risk losing the loyal customers while offering young buyers nothing that dozens of other brands did not already offer'."
+            ],
+            "trap": "The consultant option reverses para 3: consultants 'would have recommended a complete makeover'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "The company switched to a cheaper oil when the price of coconut oil rose.",
+            "Neelam's sales had fallen by more than half by the early 2010s.",
+            "A growing share of Neelam's sales now comes from cities outside Kerala.",
+            "Imitators sell similar soaps at lower prices.",
+            "The soap was sold in smaller trial packs."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 6: margins were squeezed 'since it has chosen not to switch to a cheaper oil'. The first statement reverses this.",
+              "The others are stated in paras 1, 3, 5 and 6."
+            ],
+            "trap": "Squeezed margins might suggest the company cut costs; the passage says it kept coconut oil, which is *why* margins were squeezed."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q07",
+          "subtype": "inference",
+          "prompt": "What does Menon mean by \"Nostalgia can persuade someone to buy once. Only the product can persuade them to buy again\"?",
+          "options": [
+            "Nostalgia is useless in marketing and should be avoided.",
+            "Most customers buy a soap only once.",
+            "Advertising matters more than the product itself.",
+            "Memories may win a first purchase, but repeat buying depends on the quality of the product.",
+            "Older customers never return to a brand once they leave it."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 5: the 'real change came when buyers who had tried a single bar came back', and the revival worked 'because the soap itself had never been the problem'."
+            ],
+            "trap": "The option calling nostalgia useless overgeneralises; she credits it with the first purchase."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Multinational advertising has made regional soap brands impossible to sell.",
+            "Cutting prices is the surest way to revive a declining brand.",
+            "An old brand revived its sales by introducing its unchanged product to new buyers rather than reinventing itself, though success has brought fresh pressures.",
+            "Rising coconut-oil prices brought Neelam's revival to an end.",
+            "Family firms should always hire outside managers to run their brands."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Paras 2–5: listening, keeping the formula, new packs and channels, no price cut, sales nearly doubled. Para 6: imitators and costs, and the closing lesson about introducing an old brand to new people."
+            ],
+            "trap": "The coconut-oil option overstates para 6: the outcome 'is not yet clear', not ended."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **carried** as used in the passage.",
+          "options": [
+            "transported",
+            "lifted",
+            "conveyed",
+            "endured",
+            "stocked"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "'Supermarkets in the cities no longer carried it' means they no longer kept it on their shelves for sale.",
+              "Carried here = stocked."
+            ],
+            "trap": "'Transported' and 'conveyed' are the everyday sense of carry; a supermarket does not transport soap to customers."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:business"
+          ]
+        },
+        {
+          "key": "rc-30-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **modest** as used in the passage.",
+          "options": [
+            "boastful",
+            "humble",
+            "moderate",
+            "spectacular",
+            "limited"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'The early results were a modest success' means a limited, moderate success, before the 'real change' came later.",
+              "The opposite is spectacular."
+            ],
+            "trap": "'Boastful' is the opposite of modest when it describes a person; a success cannot be boastful. Humble, moderate and limited are synonyms."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:business"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-31",
+      "subtype": "travel",
+      "difficulty": "medium",
+      "title": "The case for slow travel",
+      "stimulus": "A generation ago, a holiday for many middle-class Indian families meant a long train journey, a week or two in one hill station or at a relative's house, and days with very little planned. Today the pattern is often the reverse. Cheap flights and online bookings allow travellers to see five cities in seven days, and social media rewards those who collect the most destinations. Many of them come home with hundreds of photographs and the feeling that they are more **spent** than when they left.\n\nAgainst this, the idea of \"slow travel\" ______ **(blank)** a growing number of travellers. Its principles are simple: visit fewer places and stay longer in each, travel overland by train or bus where possible, eat where local people eat, and treat the journey as part of the holiday rather than as time lost. A traveller who spends ten days in one village gets more than a quick **taste** of local life; she begins to see its rhythms.\n\nFarah Siddiqui, a software tester from Pune, tried it last year. Instead of the usual week-long tour of the North-East, she took a train to Guwahati, a journey of more than two days, and spent three weeks in only two places: a village in the Khasi Hills of Meghalaya and the town of Shillong. Her hosts taught her to cook a local dish, and their son walked with her to a living root bridge that does not appear in most guidebooks. \"For the first time,\" she says, \"I did not need a holiday after my holiday.\"\n\nSupporters argue that slow travel is kinder to the places visited as well as to the traveller. Money spent on homestays, local guides and village eateries stays in the community, while much of what is spent on package tours goes to companies based elsewhere. Trains generally emit far less carbon per passenger for every kilometre than flights do, and visitors who spread out over many quieter places ease the pressure on a few famous spots.\n\nThe idea has its critics. Slow travel depends on time, which many workers simply do not have; a factory worker or a shop assistant may not get ten days of leave together, let alone three weeks. Some travel companies have also begun to sell expensive \"slow\" packages, turning a simple idea into another lifestyle label. And a stream of long-stay visitors can strain the water supply and the patience of a small village just as surely as a crowd of day trippers.\n\nPerhaps the heart of slow travel lies less in the number of days than in the quality of attention. Even a weekend can be slow, if the traveller chooses one place, leaves the itinerary half empty and stays curious about what she finds there.",
+      "questions": [
+        {
+          "key": "rc-31-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, what did a holiday mean for many middle-class Indian families a generation ago?",
+          "options": [
+            "A long train journey, a week or two in one place and days with very little planned",
+            "A tour of five cities in seven days by air",
+            "A package tour booked online with a travel company",
+            "A short weekend trip to a famous tourist spot",
+            "A stay in a different hotel every night of the trip"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 1: 'a long train journey, a week or two in one hill station or at a relative's house, and days with very little planned'."
+            ],
+            "trap": "The five-cities option is today's pattern, which the passage calls 'the reverse'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, which of the following did Farah do on her trip?",
+          "options": [
+            "She flew to Shillong and toured the whole North-East in a week.",
+            "She travelled to Guwahati by train and stayed with a family that taught her to cook a local dish.",
+            "She visited every living root bridge listed in the guidebooks.",
+            "She spent three weeks in a single village in the Khasi Hills.",
+            "She joined an expensive 'slow' package sold by a travel company."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 3: she 'took a train to Guwahati' and 'Her hosts taught her to cook a local dish'."
+            ],
+            "trap": "The single-village option ignores Shillong: she spent the three weeks in *two* places. The root bridge 'does not appear in most guidebooks'."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 2?",
+          "options": [
+            "applies for",
+            "points out",
+            "puts across",
+            "appeals to",
+            "calls for"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "The idea is attracting more and more travellers: it *appeals to* a growing number of them.",
+              "'Applies for' (asks formally for), 'points out' (draws attention to), 'puts across' (communicates) and 'calls for' (demands) do not fit an idea attracting people."
+            ],
+            "trap": "'Calls for' is grammatical, but an idea that 'calls for a growing number of travellers' would be demanding them, not attracting them."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Trains generally emit far less carbon per passenger for every kilometre than flights.\nII. Slow travel always costs less than a conventional holiday.\nIII. Long-stay visitors can strain a small village's water supply.",
+          "options": [
+            "Only I",
+            "Only III",
+            "Both I and III",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "I is true: para 4.",
+              "II is false: the passage never compares overall costs, and para 5 mentions 'expensive' slow packages.",
+              "III is true: para 5."
+            ],
+            "trap": "Statement II may feel right because money 'stays in the community', but where money goes is not the same as how much it is."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q05",
+          "subtype": "fact",
+          "prompt": "Which of the following is mentioned in the passage as a criticism of slow travel?",
+          "options": [
+            "It needs long stretches of time off that many workers cannot get.",
+            "It makes travellers spend more money on flights.",
+            "It sends most of the money spent to companies based elsewhere.",
+            "It is possible only for travellers who visit the North-East.",
+            "It leaves travellers more tired than conventional tours do."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 5: 'Slow travel depends on time, which many workers simply do not have.'"
+            ],
+            "trap": "The option about money going elsewhere is said of *package tours* in para 4, not of slow travel."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Some travel companies sell expensive 'slow' packages.",
+            "Money spent on homestays and local guides stays in the community.",
+            "Social media rewards travellers who collect the most destinations.",
+            "Farah's train journey to Guwahati took more than two days.",
+            "The author believes that a trip must last several weeks to count as slow travel."
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Para 6: 'Even a weekend can be slow'; the heart of it lies 'less in the number of days than in the quality of attention'. The first statement is false.",
+              "The others are stated in paras 1, 3, 4 and 5."
+            ],
+            "trap": "Farah's three-week trip is an example, not a rule; the last paragraph says so."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q07",
+          "subtype": "inference",
+          "prompt": "What did Farah mean when she said, \"I did not need a holiday after my holiday\"?",
+          "options": [
+            "She had to take extra leave from work after she returned.",
+            "She plans never to take another holiday.",
+            "Her holiday was so short that she needed a second one.",
+            "Her trip left her rested instead of exhausted, unlike rushed tours that leave travellers needing to recover.",
+            "She disliked the trip and wanted a better holiday afterwards."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 1 describes travellers who return 'more spent than when they left'. Farah's remark contrasts her slow trip with that experience: she came back rested."
+            ],
+            "trap": "Reading the remark literally (extra leave, a second holiday) misses the contrast with para 1."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Air travel should be banned for holidays within India.",
+            "Travelling slowly, with fewer places and more attention, offers richer and gentler experiences, though it has limits and can be misused.",
+            "Slow travel is possible only for those who can take three weeks of leave.",
+            "Package tours give travellers the best value for their money.",
+            "The North-East is the only region suited to slow travel."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Paras 2–4 set out the idea and its benefits through Farah's trip; para 5 gives the criticisms; para 6 redefines it as attention rather than length."
+            ],
+            "trap": "The three-weeks option takes Farah's example as a rule; para 6 says even a weekend can be slow."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **spent** as used in the passage.",
+          "options": [
+            "paid",
+            "used",
+            "passed",
+            "invested",
+            "exhausted"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Travellers who return 'more spent than when they left' are more tired than before.",
+              "Spent here = exhausted."
+            ],
+            "trap": "'Paid' and 'used' are the money meanings of spent; 'passed' fits time. Only 'exhausted' describes a person after a rushed trip."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:travel"
+          ]
+        },
+        {
+          "key": "rc-31-q10",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **taste** as used in the passage.",
+          "options": [
+            "flavour",
+            "preference",
+            "sample",
+            "appetite",
+            "style"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "'more than a quick taste of local life' means more than a brief experience of it.",
+              "Taste here = sample, brief experience."
+            ],
+            "trap": "'Flavour' is the food meaning; 'preference' and 'style' fit 'good taste'. Only 'sample' fits a short experience of village life."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:travel"
+          ]
+        }
+      ]
     }
   ]
 }
