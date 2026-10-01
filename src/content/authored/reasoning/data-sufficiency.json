@@ -1814,6 +1814,610 @@
         "ds:direction",
         "direction:relative-direction"
       ]
+    },
+    {
+      "key": "ds-061",
+      "subtype": "seating",
+      "difficulty": "easy",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive persons — P, Q, R, S and T — sit in a straight row facing north (not necessarily in the same order).\n**Who sits at the extreme right end of the row?**\n\n**I.** T sits to the immediate right of S. S sits third to the right of P.\n**II.** Q sits second to the left of T. R does not sit at any extreme end of the row.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: S is three places to the right of P and T is immediately right of S; in a row of five this is possible only with P 1st, S 4th and T 5th from the left — T is at the extreme right end.",
+          "II: Q is two places to the left of T and R is not at an end, but T need not be at the end.",
+          "Statement I alone: T sits at the extreme right end → **sufficient**.",
+          "Statement II alone: the extreme right end could be P, S or T (e.g. the row Q R T S P (left to right) gives P, while the row P Q R T S (left to right) gives S) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-062",
+      "subtype": "seating",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — U, V, W, X, Y and Z — sit around a circular table facing the centre (not necessarily in the same order).\n**Who sits opposite W?**\n\n**I.** V sits second to the right of W. Y sits to the immediate left of V.\n**II.** X sits third to the left of W.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: around a table of six, the person third to the left of W is directly opposite W — X.",
+          "I: V is second to the right of W and Y is immediately left of V (so Y is W’s immediate right); the seat opposite W is still open.",
+          "Statement I alone: the person opposite W could be U, X or Z (e.g. clockwise U, V, Y, W, X, Z gives U, while clockwise U, X, V, Y, W, Z gives X) → **not sufficient**.",
+          "Statement II alone: X sits opposite W → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-063",
+      "subtype": "seating",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — J, K, L, M, N and P — sit in a straight row facing north (not necessarily in the same order).\n**How many persons sit between K and N?**\n\n**I.** K sits at the extreme left end of the row. N sits fourth to the right of K.\n**II.** Only one person sits to the right of N. K sits at one of the extreme ends of the row. K sits somewhere to the left of N.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: K is at the left end and N is fourth to the right of K, so three persons sit between them.",
+          "II: only one person is to the right of N, so N is fifth from the left; K is at an end and to the left of N, so K is at the left end — again three persons between.",
+          "Statement I alone: exactly 3 persons sit between K and N → **sufficient**.",
+          "Statement II alone: exactly 3 persons sit between K and N → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-064",
+      "subtype": "seating",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — P, Q, R, S, T and U — sit around a circular table facing the centre (not necessarily in the same order).\n**Who sits to the immediate left of R?**\n\n**I.** Q sits opposite R. S sits second to the left of Q.\n**II.** T sits to the immediate right of S. U does not sit next to R.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: put Q in a seat; R is opposite Q, S is second to Q’s left and T sits between Q and S. Of the two empty seats, one is next to R; U cannot sit next to R, so P takes the seat to the immediate left of R.",
+          "Statement I alone: the person to the immediate left of R could be P, T or U (e.g. clockwise P, T, Q, U, S, R gives P, while clockwise P, Q, U, S, R, T gives T) → **not sufficient**.",
+          "Statement II alone: the person to the immediate left of R could be P, Q or T (e.g. clockwise P, Q, U, T, S, R gives P, while clockwise P, R, Q, T, S, U gives Q) → **not sufficient**.",
+          "I and II together: P sits to the immediate left of R → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-065",
+      "subtype": "seating",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — A, B, C, D, E and F — sit in a straight row facing north (not necessarily in the same order).\n**Who sits second to the right of D?**\n\n**I.** B sits at one of the extreme ends of the row. D sits third to the left of F.\n**II.** Only two persons sit between B and E. A does not sit next to D.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: B is at an end with two persons between B and E, and D is three places to the left of F. Four rows fit — e.g. B C D E A F and B D C E F A — and the person second to the right of D is A in some of them and E in others.",
+          "Statement I alone: the person second to the right of D could be A, C or E (e.g. the row B C D E A F (left to right) gives A, while the row A D E C F B (left to right) gives C) → **not sufficient**.",
+          "Statement II alone: the person second to the right of D could be A, B, C, E, F or nobody (e.g. the row B C D E A F (left to right) gives A, while the row A C E D F B (left to right) gives B) → **not sufficient**.",
+          "I and II together: the person second to the right of D could be A or E (e.g. the row B C D E A F (left to right) gives A, while the row B D C E F A (left to right) gives E) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-066",
+      "subtype": "seating",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — J, K, L, M, N and P — sit around a circular table facing the centre (not necessarily in the same order).\n**Who sits third to the right of L?**\n\n**I.** L sits second to the left of M. N sits to the immediate right of M.\n**II.** K sits opposite J. P sits next to L.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: L is second to the left of M, so M is second to the right of L; N is immediately right of M, i.e. third to the right of L — N.",
+          "II: K is opposite J and P is next to L; the seat third to the right of L is still open.",
+          "Statement I alone: N sits third to the right of L → **sufficient**.",
+          "Statement II alone: the person third to the right of L could be M or N (e.g. clockwise J, L, P, K, M, N gives M, while clockwise J, L, P, K, N, M gives N) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-067",
+      "subtype": "seating",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — P, Q, R, S, T, U and V — sit in a straight row facing north (not necessarily in the same order).\n**Who sits exactly in the middle of the row?**\n\n**I.** Q sits second to the right of P. P sits at one of the extreme ends of the row.\n**II.** U sits second to the left of R. R sits third to the left of T. T sits at one of the extreme ends of the row.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: T is at an end and R is third to the left of T, so T is at the right end (nobody is to the left of the left end), R is 4th from the left — the middle seat of seven.",
+          "I: P is at an end and Q second to P’s right, so P is at the left end and Q third; the middle is open.",
+          "Statement I alone: the middle seat could be taken by R, S, T, U or V (e.g. the row P S Q R T U V (left to right) gives R, while the row P R Q S T U V (left to right) gives S) → **not sufficient**.",
+          "Statement II alone: R sits in the middle → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-068",
+      "subtype": "seating",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — A, B, C, D, E, F and G — sit around a circular table facing the centre (not necessarily in the same order).\n**Who sits to the immediate right of D?**\n\n**I.** C sits second to the right of E. D sits to the immediate right of E.\n**II.** E, F and G sit to the immediate left, second to the left and third to the left of D respectively. A sits to the immediate left of G. B sits to the immediate left of A.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: D is immediately right of E and C is second to the right of E, so C is immediately right of D.",
+          "II: E, F, G sit in the three seats to D’s left, then A and B continue to the left; in seven seats the only seat left — to D’s immediate right — goes to C.",
+          "Statement I alone: C sits to the immediate right of D → **sufficient**.",
+          "Statement II alone: C sits to the immediate right of D → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-069",
+      "subtype": "seating",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — J, K, L, M, N, P and Q — sit in a straight row facing north (not necessarily in the same order).\n**Who sits second to the left of the person who sits to the immediate right of M?**\n\n**I.** Only two persons sit between M and N. N sits to the immediate left of L.\n**II.** K sits at the extreme left end of the row. P sits to the immediate right of K. J sits third to the right of K.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The person second to the left of M’s right-hand neighbour is M’s own left-hand neighbour (if M is not at the right end).",
+          "Together: K is 1st, P 2nd and J 4th from the left (II). From I, (M, N, L) can be (3rd, 6th, 7th), (6th, 3rd, 4th) or (7th, 4th, 5th); J in the 4th seat leaves only the first, so M is 3rd and the answer is P.",
+          "Statement I alone: the required person could be J, K, P, Q or nobody (e.g. the row J M K P N L Q (left to right) gives J, while the row J K M P Q N L (left to right) gives K) → **not sufficient**.",
+          "Statement II alone: the required person could be J, L, N, P, Q or nobody (e.g. the row K P L J M N Q (left to right) gives J, while the row K P N J L M Q (left to right) gives L) → **not sufficient**.",
+          "I and II together: the required person is P → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-070",
+      "subtype": "seating",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nEight persons — P, Q, R, S, T, U, V and W — sit around a circular table facing the centre (not necessarily in the same order).\n**Who sits opposite T?**\n\n**I.** Q sits second to the right of P. R sits opposite Q.\n**II.** T sits next to R. Only one person sits between S and T when counted from the left of S.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: Q is second to the right of P and R opposite Q. T sits next to R, on either side, with S second to the right of T. In both cases the seat opposite T goes to one of U, V and W, about whom nothing is said.",
+          "Statement I alone: the person opposite T could be P, S, U, V or W (e.g. clockwise P, S, R, U, T, V, Q, W gives P, while clockwise P, S, R, U, V, T, Q, W gives S) → **not sufficient**.",
+          "Statement II alone: the person opposite T could be P, Q, U, V or W (e.g. clockwise P, Q, S, R, T, U, V, W gives P, while clockwise P, Q, U, S, R, T, V, W gives Q) → **not sufficient**.",
+          "I and II together: the person opposite T could be U, V or W (e.g. clockwise P, S, R, T, V, W, Q, U gives U, while clockwise P, S, R, T, U, W, Q, V gives V) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-071",
+      "subtype": "seating",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — A, B, C, D, E and F — sit in a straight row facing south (not necessarily in the same order). Left and right are as seen by the persons sitting in the row.\n**Who sits at the extreme right end of the row?**\n\n**I.** C sits second to the left of A. A sits at one of the extreme ends of the row.\n**II.** B sits to the immediate left of E. D does not sit next to A.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Everyone faces south, so each person’s left is towards the east and the extreme right end is the west end.",
+          "I: C is second to A’s left; if A sat at the left (east) end there would be no room, so A is at the extreme right end.",
+          "II: B is immediately left of E and D is not next to A — the right end is not fixed.",
+          "Statement I alone: A sits at the extreme right end → **sufficient**.",
+          "Statement II alone: the extreme right end could be A, C, D, E or F (e.g. the row (west to east) A C D E B F gives A, while the row (west to east) C A E B D F gives C) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-072",
+      "subtype": "seating",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — J, K, L, M, N, P and Q — sit around a circular table facing the centre (not necessarily in the same order).\n**Who sits to the immediate left of Q?**\n\n**I.** Only two persons sit between J and N when counted from the left of J. K sits to the immediate left of N.\n**II.** N sits to the immediate right of K. Q sits second to the right of K.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: going to the right from K come N and then Q, so N sits to the immediate left of Q.",
+          "I: N is three places to J’s left and K next to N on its left, but Q’s seat is open.",
+          "Statement I alone: the person to the immediate left of Q could be J, L, M, N or P (e.g. clockwise J, L, M, N, K, P, Q gives J, while clockwise J, M, P, N, K, Q, L gives L) → **not sufficient**.",
+          "Statement II alone: N sits to the immediate left of Q → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-073",
+      "subtype": "seating",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — D, E, F, G, H, J and K — sit in a straight row facing north (not necessarily in the same order).\n**Who sits third to the left of J?**\n\n**I.** F sits to the immediate right of D. J sits second to the right of F.\n**II.** H sits at the extreme left end of the row. Only three persons sit between H and J. D sits next to H.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: F is immediately right of D and J second to the right of F, so J is third to the right of D — D is third to the left of J.",
+          "II: H is 1st; three persons between H and J put J 5th; D next to H is 2nd — the seat third to the left of J (2nd) is D’s.",
+          "Statement I alone: D sits third to the left of J → **sufficient**.",
+          "Statement II alone: D sits third to the left of J → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-074",
+      "subtype": "seating",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nEight persons — A, B, C, D, E, F, G and H — sit around a circular table facing the centre (not necessarily in the same order).\n**Who sits opposite F?**\n\n**I.** F sits second to the left of A. E sits to the immediate right of G.\n**II.** Only one person sits between B and E when counted from the left of B. H sits third to the right of E.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: with A in a seat, F is second to A’s left. E is immediately right of G, B is second to the right of E and H third to the right of E. Trying each seat for E, only the seat opposite F avoids every clash with A and F — E sits opposite F.",
+          "I alone and II alone leave the seat opposite F open.",
+          "Statement I alone: the person opposite F could be B, C, D, E, G or H (e.g. clockwise A, C, F, D, E, G, B, H gives B, while clockwise A, B, F, D, E, G, C, H gives C) → **not sufficient**.",
+          "Statement II alone: the person opposite F could be A, B, C, D, E, G or H (e.g. clockwise A, C, H, B, F, E, D, G gives A, while clockwise A, C, H, B, D, E, G, F gives B) → **not sufficient**.",
+          "I and II together: E sits opposite F → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-075",
+      "subtype": "seating",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — P, Q, R, S, T, U and V — sit in a straight row facing north (not necessarily in the same order).\n**Who sits to the immediate right of V?**\n\n**I.** Only two persons sit between R and V. R sits at one of the extreme ends of the row.\n**II.** Q does not sit at any extreme end of the row. U sits second to the right of Q. S sits next to U.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: V is 4th and R is at an end. Q is not at an end, U is second to Q’s right and S is next to U: Q 5th (U 7th, S 6th) and Q 3rd (U 5th, S 6th) both fit, so V’s immediate right is Q or U.",
+          "Statement I alone: the person to the immediate right of V could be P, Q, S, T or U (e.g. the row Q S T V P U R (left to right) gives P, while the row P S T V Q U R (left to right) gives Q) → **not sufficient**.",
+          "Statement II alone: the person to the immediate right of V could be P, Q, R, T, U or nobody (e.g. the row R Q S U T V P (left to right) gives P, while the row P R T V Q S U (left to right) gives Q) → **not sufficient**.",
+          "I and II together: the person to the immediate right of V could be Q or U (e.g. the row R P T V Q S U (left to right) gives Q, while the row P T Q V U S R (left to right) gives U) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-076",
+      "subtype": "seating",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — A, B, C, D, E and F — sit in a straight row that runs from west to east (not necessarily in the same order). Some of them face north and the others face south.\n**Who sits second to the right of D?**\n\n**I.** D sits to the immediate right of A. F sits to the immediate left of A. A and D face opposite directions.\n**II.** B sits at one of the extreme ends of the row and faces north. A sits second to the right of B. E faces south.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: D is immediately right of A and F immediately left of A, so D and F flank A, and A and D face opposite ways.",
+          "If A faces north, D is east of A and faces south, so D’s right points west — D’s second to the right is F. If A faces south, D is west of A and faces north, so D’s second to the right is again F.",
+          "II: B is at an end facing north, A is second to B’s right and E faces south — D’s seat and facing are open.",
+          "Statement I alone: F sits second to the right of D → **sufficient**.",
+          "Statement II alone: the person second to the right of D could be A, C, E, F or nobody (e.g. the row (west to east) B(N) C(N) A(N) E(S) D(S) F(N) gives A, while the row (west to east) B(N) C(N) A(N) D(S) E(S) F(N) gives C) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-077",
+      "subtype": "seating",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix persons — G, H, J, K, L and M — sit around a circular table (not necessarily in the same order). Some of them face the centre and the others face away from the centre.\n**Who sits second to the left of K?**\n\n**I.** K faces outside, and L sits to the immediate right of K. G faces the centre and sits opposite K.\n**II.** J sits to the immediate left of K, and K sits to the immediate left of J. H sits next to J.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: J is K’s immediate left and K is J’s immediate left — possible only when J and K are neighbours facing opposite ways. Then K’s second to the left is J’s other neighbour, and H sits next to J: the answer is H.",
+          "I: K faces outside with L to K’s right and G opposite K; K’s second to the left can be H, J or M.",
+          "Statement I alone: the person second to the left of K could be H, J or M (e.g. clockwise G(in), H(in), J(in), K(out), L(in), M(in) gives H, while clockwise G(in), J(in), H(in), K(out), L(in), M(in) gives J) → **not sufficient**.",
+          "Statement II alone: H sits second to the left of K → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-078",
+      "subtype": "seating",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — J, K, L, M, N, P and Q — sit in a straight row that runs from west to east (not necessarily in the same order). Some of them face north and the others face south.\n**Which direction does M face?**\n\n**I.** K sits at the eastern end of the row. K sits to the immediate right of M.\n**II.** M sits second from the eastern end of the row. Only one person sits to the right of M.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: K is at the eastern end and is M’s immediate right, so M sits just west of K with its right towards the east — M faces north.",
+          "II: M is second from the eastern end (one person east of M, five west); only one person to M’s right means M’s right is towards the east — M faces north.",
+          "Statement I alone: M faces north → **sufficient**.",
+          "Statement II alone: M faces north → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
+    },
+    {
+      "key": "ds-079",
+      "subtype": "seating",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nEight persons — M, N, P, Q, R, S, T and U — sit around a circular table facing the centre (not necessarily in the same order).\n**Who sits opposite R?**\n\n**I.** N sits to the immediate left of U, who sits third to the left of M. T is second to the left of N.\n**II.** R is seated third to the left of P, and Q is M’s neighbour on M’s right-hand side.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: fix M. Going to M’s left (clockwise), U is 3 places away, N 4, T 6 and Q 7 (Q is M’s immediate right). P, R and S fill the seats 1, 2 and 5 places away; R three places to P’s left fits only with P at 2 and R at 5, so S (seat 1) sits opposite R.",
+          "Statement I alone: the person opposite R could be P, Q, S, T or U (e.g. clockwise M, P, Q, U, N, R, T, S gives P, while clockwise M, Q, P, U, N, R, T, S gives Q) → **not sufficient**.",
+          "Statement II alone: the person opposite R could be M, N, S, T or U (e.g. clockwise M, P, N, S, R, T, U, Q gives M, while clockwise M, N, P, S, T, R, U, Q gives N) → **not sufficient**.",
+          "I and II together: S sits opposite R → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Facing the centre, right = anticlockwise. Fix one person, then try every seat the statement allows — one different answer is enough to reject.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:circular"
+      ]
+    },
+    {
+      "key": "ds-080",
+      "subtype": "seating",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSeven persons — P, Q, R, S, T, U and V — sit in a straight row that runs from west to east (not necessarily in the same order). Some of them face north and the others face south.\n**Who sits to the immediate right of T?**\n\n**I.** T sits second from the western end of the row. V sits next to T. V does not sit at any extreme end of the row.\n**II.** Q sits at the western end of the row. S and U face opposite directions.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: T is second from the west, V is next to T but not at an end (third from the west), and Q is at the western end. If T faces south, T’s right is towards the west — Q; if T faces north, it is V. T’s facing is never given.",
+          "Statement I alone: the person to the immediate right of T could be P, Q, R, S, U or V (e.g. the row (west to east) P(N) T(S) V(N) Q(N) R(N) S(N) U(N) gives P, while the row (west to east) Q(N) T(S) V(N) P(N) R(N) S(N) U(N) gives Q) → **not sufficient**.",
+          "Statement II alone: the person to the immediate right of T could be P, Q, R, S, U, V or nobody (e.g. the row (west to east) Q(N) P(N) T(S) R(N) S(N) U(S) V(N) gives P, while the row (west to east) Q(N) T(S) P(N) R(N) S(N) U(S) V(N) gives Q) → **not sufficient**.",
+          "I and II together: the person to the immediate right of T could be Q or V (e.g. the row (west to east) Q(N) T(S) V(N) P(N) R(N) S(N) U(S) gives Q, while the row (west to east) Q(N) T(N) V(N) P(N) R(N) S(N) U(S) gives V) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Draw the row and try each case a statement allows; stop as soon as two cases give different answers. For a person facing south, his right is your left.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:seating",
+        "seating:linear"
+      ]
     }
   ]
 }
