@@ -3833,7 +3833,7 @@
       "key": "sg-149",
       "subtype": "two-arguments",
       "difficulty": "extreme",
-      "prompt": "**Statement:** A bank's survey shows that most customers who stopped using its credit cards did so because of the high annual fee. Should the bank stop charging an annual fee on its credit cards?\n\n**Arguments:**\nI. Yes. A rival bank that dropped its annual fee last year now has more card customers than any other bank.\nII. No. The bank has charged an annual fee ever since it launched its cards.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
+      "prompt": "**Statement:** A bank's survey shows that most customers who stopped using its credit cards did so because of the high annual fee. Should the bank stop charging an annual fee on its credit cards?\n\n**Arguments:**\nI. Yes. Customers always choose whichever card is free.\nII. No. The bank has charged an annual fee ever since it launched its cards.\n\nDecide which of the arguments is strong. A strong argument is both important and directly related to the question.",
       "options": [
         "Only argument I is strong",
         "Only argument II is strong",
@@ -3844,7 +3844,7 @@
       "answerIndex": 3,
       "solution": {
         "steps": [
-          "I is weak: one rival's success is a single example, and it does not show that dropping the fee caused it.",
+          "I is weak: 'always choose whichever card is free' is a sweeping generalisation with no support, and customers weigh rewards, limits and service too.",
           "II is weak: long practice is an appeal to tradition, not a reason to keep the fee.",
           "Answer: Neither I nor II is strong."
         ],

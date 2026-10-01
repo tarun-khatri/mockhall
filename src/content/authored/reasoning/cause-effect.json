@@ -1180,6 +1180,2411 @@
       "tags": [
         "cr:common-cause"
       ]
+    },
+    {
+      "key": "ce-051",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The price of crude oil in the world market has risen sharply this month.\nII. The state government has raised its sales tax on petrol and diesel.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither explains the other: a state tax decision does not move world crude prices, and costlier crude is no reason for a state to make fuel dearer still.",
+          "Both push up the same thing, the pump prices of petrol and diesel in the state, so they are independent causes."
+        ],
+        "trap": "Neither statement reports a result; each is a driver of one, so \"effects of independent causes\" does not fit."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-052",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Many schools in the districts along the Brahmaputra have been turned into relief camps.\nII. Train services in the same districts have been suspended at several points.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Relief camps in schools do not stop trains, and suspended trains do not create relief camps.",
+          "Both are effects of one common cause, such as severe floods in the districts along the river."
+        ]
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-053",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A long stretch of the city's main road has been dug up this month to lay a new sewer line.\nII. A large trade fair is being held this week in the grounds beside the same road.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The sewer work did not bring the trade fair, and the fair did not cause the digging.",
+          "Both act on the same road at the same time and lead to the same result, heavy traffic jams there this week. They are independent causes."
+        ],
+        "trap": "A narrowed road and a crowd-pulling fair are separate drivers of one outcome, not effects of a shared trigger."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-054",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The panchayat fitted solar street lights along every lane of the village.\nII. Thefts at night in the village have become rare since the lights came up.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Well-lit lanes make it hard for thieves to work unseen, and \"since the lights came up\" places II after I. I is the cause and II its effect."
+        ]
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-055",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Children from the outlying hamlets now reach the village school on time every day.\nII. Last month, the panchayat started a free morning bus from the hamlets to the school.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "A free bus that leaves the hamlets every morning lets these children arrive on time. II, which came first (\"last month\"), is the cause and I is its effect."
+        ],
+        "trap": "The effect is stated first; read for the order of events, not the order of the statements."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-056",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Customers at a bank branch in Nagpur had to wait for hours at the cash counters on Monday.\nII. On Monday, half the staff of the branch were away at a training programme.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "With half the staff away, the counters could not serve customers quickly, so the waits grew long. II is the cause and I is its effect."
+        ]
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-057",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A sweet shop in Kolkata has opened a second branch because its rosogollas are in great demand.\nII. A village library in Bihar now stays open in the evenings after the panchayat agreed to pay a part-time librarian.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: demand for the sweets for I, the new librarian for II.",
+          "The two causes are unrelated, so both are effects of independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-058",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A software firm in Pune has hired 500 fresh graduates after winning a large overseas contract.\nII. A tea stall near the Shimla bus stand has added hot soup to its menu because tourists kept asking for it.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: the new contract for I, tourists' requests for II.",
+          "These causes have nothing to do with each other, so both are effects of independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-059",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The municipal corporation shut down the city's main water treatment plant for two days for urgent repairs.\nII. Households in most wards of the city got no tap water for those two days.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "With the main treatment plant shut, water could not be supplied to most wards. I is the cause and II its effect."
+        ],
+        "trap": "\"For those two days\" ties II to the shutdown in I; no hidden common cause is needed."
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-060",
+      "subtype": "two-statements",
+      "difficulty": "easy",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Students in Bhopal could not log in to their online classes on Wednesday afternoon.\nII. Many shops in Bhopal could not accept UPI payments on Wednesday afternoon.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Students failing to log in cannot stop shops from taking UPI payments, nor the reverse.",
+          "Both point to one common cause, such as a city-wide internet or mobile-network outage that afternoon."
+        ],
+        "trap": "Same city, same afternoon, two failures that both need the internet: look for the shared cause."
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-061",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Hotels in Manali are offering discounts of up to 60 per cent this month.\nII. Taxi operators in Manali say they have had hardly any bookings this month.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Hotel discounts would, if anything, bring more visitors, so they cannot explain the taxi slump; and idle taxis do not make hotels cut rates.",
+          "Both are effects of a common cause: very few tourists visiting Manali this month."
+        ],
+        "trap": "Do not read I as the cause of II: discounts attract tourists rather than drive them away."
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-062",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Applications to the state's nursing colleges have risen since hospitals abroad began recruiting Indian nurses in large numbers.\nII. Sales of motorcycles in rural Vidarbha fell this quarter because the cotton crop failed.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: recruitment abroad for I, the failed cotton crop for II.",
+          "These causes are unrelated, so both are effects of independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-063",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The number of readers visiting the town's public library has dropped sharply this year.\nII. At the start of the year, the library cut its opening hours and stopped buying newspapers to save money.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Shorter hours and no newspapers give readers less time and fewer reasons to visit. II (\"at the start of the year\") is the cause and I is its effect."
+        ],
+        "trap": "Saving money is II's own reason, but II still acts as the cause of I; it is not an effect shared with I."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-064",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A bypass road around the town was opened to traffic in January.\nII. Since January, heavy trucks have almost stopped passing through the town's narrow main market.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Trucks bound for other places now use the bypass instead of the market road. I is the cause and II its effect."
+        ]
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-065",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A dairy cooperative raised the price it pays farmers for milk by ₹3 a litre from 1 June.\nII. Since June, many farmers in nearby villages who used to sell milk to private vendors have started selling it to the cooperative.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "A better price draws farmers away from private vendors to the cooperative, and \"since June\" places II after I. I is the cause and II its effect."
+        ],
+        "trap": "II is not why the price was raised: the shift in suppliers begins only after the new price."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-066",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Vegetable prices in Shimla have shot up this week.\nII. Landslides have blocked the highway between Shimla and the plains for the past six days.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Shimla gets most of its vegetables by road from the plains; a blocked highway cuts supply and pushes up prices. II is the cause and I is its effect."
+        ],
+        "trap": "Do not call both effects of \"heavy rain\": the blockage stated in II is itself enough to explain I."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-067",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Dozens of residents of the colony fell ill with diarrhoea and vomiting this week.\nII. Last week, sewage leaked into the colony's drinking-water pipeline through a cracked joint.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Drinking water contaminated with sewage causes diarrhoea and vomiting. II (\"last week\") is the cause and I is its effect."
+        ]
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-068",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. For the past few months, effluent from a new chemical factory upstream has been leaking into the river.\nII. For many years, fishermen on the river have used very fine-mesh nets that trap even young fish.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The fine nets were in use for years before the leak began, so the leak did not cause them, and the nets did not cause the leak.",
+          "Both reduce the river's stock of fish, so they are independent causes of the same result, a shrinking catch."
+        ],
+        "trap": "\"Common cause\" fails: a factory leak and a long-standing fishing habit share no trigger."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-069",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The state education department made it compulsory for every middle school to have a separate, working toilet for girls.\nII. The dropout rate of girls in the state's middle schools fell over the next two years.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The lack of a usable toilet is a common reason why older girls leave school; providing one keeps them in class. I is the cause and II its effect."
+        ],
+        "trap": "\"Over the next two years\" places II after I, so II cannot be the reason for the rule."
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-070",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The government has raised the minimum support price for pulses sharply this year.\nII. The main pulse-growing districts received timely, well-spread monsoon rain this year.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither explains the other: rain does not set support prices, and a price decision does not bring rain.",
+          "Both push the same way, towards a larger area sown with pulses and a bigger crop, so they are independent causes."
+        ],
+        "trap": "Neither statement reports a result; each is a driver of one, so \"effects of independent causes\" is wrong."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-071",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A consumer forum has ordered a bank to refund ₹2 lakh, with interest, to one of its customers.\nII. Last year, the bank debited the customer's account for a loan he had never taken and refused to reverse the entry.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The wrong debit and the bank's refusal to correct it (II) took the customer to the forum, which ordered the refund (I). II is the cause and I is its effect."
+        ]
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-072",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A bank branch in Ranchi has stopped accepting coins at its cash counter until its broken coin-counting machine is replaced.\nII. Traffic on the old bridge in Ranchi has eased since a new flyover opened nearby.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: the broken machine for I, the new flyover for II.",
+          "The causes are unrelated, so both are effects of independent causes."
+        ],
+        "trap": "Being in the same city is not a common cause."
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-073",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A Kochi start-up's food-delivery app crashed on Saturday night because a software update had a bug.\nII. A village in Barmer got piped drinking water for the first time after a new pipeline from the canal was completed.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: a faulty update for I, the new pipeline for II.",
+          "The causes are unrelated, so both are effects of independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-074",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The government began giving farmers free soil-health cards that show how much of each fertiliser their field actually needs.\nII. In the seasons since, farmers in the scheme's pilot districts have cut down on the excess urea they used to apply.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Once farmers know their soil needs less urea, they stop applying the extra. \"In the seasons since\" places II after I. I is the cause and II its effect."
+        ]
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-075",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Residents of a Delhi colony queued with buckets at a municipal water tanker on Tuesday.\nII. Several restaurants in the same colony served meals on disposable plates on Tuesday.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Queues at a tanker do not make restaurants use disposable plates, nor the reverse.",
+          "Both suggest a common cause, a break in the colony's piped water supply on Tuesday: households needed tanker water, and restaurants could not wash dishes."
+        ],
+        "trap": "Same colony, same day: two different adjustments to one shortage, not independent events."
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-076",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A private bank's quarterly profit rose after it recovered a large loan that it had earlier written off.\nII. A Guwahati school has started folk-dance classes after parents asked for them.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: the recovered loan for I, the parents' request for II.",
+          "These causes have nothing to do with each other, so both are effects of independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-077",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Many companies in Bengaluru asked their staff to work from home on Thursday.\nII. Many flights at Bengaluru airport were delayed or diverted on Thursday.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Offices letting staff work from home do not delay flights, and delayed flights do not keep office staff at home.",
+          "Both point to a common cause, such as very heavy rain and thunderstorms over the city on Thursday."
+        ],
+        "trap": "The two statements involve unrelated groups (office staff and airlines), so look for the event that would affect both on the same day."
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-078",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Roadside stalls in Kolkata have raised the price of a cup of tea by ₹2.\nII. Sweet shops in Kolkata have raised the prices of their milk-based sweets.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Dearer tea does not make sweets dearer, nor the reverse.",
+          "Milk is a main ingredient of both, so a common cause, such as a rise in the price of milk in the city, explains both."
+        ],
+        "trap": "The two price rises are parallel; neither seller's decision drives the other's."
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-079",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The municipal corporation has launched a fogging drive and door-to-door checks for mosquito larvae across the city.\nII. Cases of dengue in the city have risen sharply over the past three weeks.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The rise in dengue cases (II) prompted the civic body to act against mosquitoes (I). II is the cause and I is its effect."
+        ],
+        "trap": "Do not read I as the cause: fogging and larva checks would reduce dengue, so they cannot explain a rise in cases."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-080",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A municipal school in Mumbai has started an afternoon shift because a new housing colony nearby doubled its enrolment.\nII. Sales of raincoats in Mumbai fell this June because the monsoon reached the city two weeks late.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: higher enrolment from the new colony for I, the late monsoon for II.",
+          "The causes are unrelated, so both are effects of independent causes."
+        ],
+        "trap": "Both happen in Mumbai, but a housing colony and a late monsoon share no link."
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-081",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The district administration has banned the sale and use of single-use plastic carry bags in all its markets.\nII. Traders in the district's markets report a sudden rise in demand for cloth and jute bags.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "With plastic bags banned, shoppers and shopkeepers need substitutes, so demand for cloth and jute bags rises. I is the cause and II its effect."
+        ],
+        "trap": "II does not lead to the ban; the ban comes first and creates the demand."
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-082",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Many banks kept their branches open late on 30 and 31 March.\nII. Chartered accountants' offices in the city worked late into the night in the last week of March.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Banks staying open late do not make accountants work late, nor the reverse.",
+          "Both are effects of a common cause: the close of the financial year on 31 March, with its deadlines for tax payments and accounts."
+        ]
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-083",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. An international cricket match will be played at the city stadium on Sunday.\nII. The city's metro will run no trains on Sunday because of maintenance work on its main line.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A cricket match does not shut the metro, and the metro's maintenance has nothing to do with the match.",
+          "Both lead to the same result: very heavy road traffic and packed buses around the stadium on Sunday. They are independent causes."
+        ],
+        "trap": "Neither event is a response to the other or to a shared trigger; if anything, a metro would avoid closing on a match day."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-084",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The number of road accidents on the city's ring road has fallen sharply this year.\nII. Early this year, the traffic police installed speed cameras at twenty points along the ring road.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Speed cameras deter speeding, which cuts accidents; \"early this year\" places II first. II is the cause and I is its effect."
+        ],
+        "trap": "The order of the statements is not the order of events: the fall in accidents came after the cameras."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-085",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Shops selling school bags and uniforms in Patna are packed with customers this week.\nII. Bookshops in Patna report their highest textbook sales of the year this week.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Buying bags does not make people buy textbooks, nor the reverse.",
+          "Both are effects of a common cause: the start of the new school session."
+        ]
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-086",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A long dry spell has lowered the water in the reservoirs that run the state's hydroelectric plants.\nII. Several large factories in the state have added extra shifts to meet export orders.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Low reservoirs do not make factories add shifts, nor the reverse.",
+          "Less hydro power on one side and more demand for power on the other lead to the same result, a power shortage in the state. They are independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-087",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The state board has brought in a new and much harder mathematics syllabus for Class 10 this year.\nII. Many experienced mathematics teachers in the state's schools retired last year, and their posts are still vacant.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The new syllabus did not make teachers retire, and the retirements did not make the board change the syllabus.",
+          "Both point to the same likely outcome, weaker Class 10 mathematics results, so they are independent causes."
+        ],
+        "trap": "These are conditions that will produce a result, not reported results, so \"effects of independent causes\" does not fit."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-088",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A government hospital in Lucknow began an online appointment system for its outpatient department.\nII. Within a month, the crowds at the hospital's registration counters thinned out.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Patients who book online no longer need to queue to register, so the crowds thin. \"Within a month\" places II after I. I is the cause and II its effect."
+        ]
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-089",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Weekend footfall at a Chennai shopping mall has risen since the mall began free film screenings for families.\nII. A banana grower in Theni has doubled his income after switching to drip irrigation.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: free screenings for I, drip irrigation for II.",
+          "The causes are unrelated, so both are effects of independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-090",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. All flights to and from Srinagar were cancelled on Friday.\nII. The Jammu–Srinagar highway was closed to traffic on Friday.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Cancelled flights do not close a highway, and a closed highway does not cancel flights.",
+          "Both are effects of a common cause, such as heavy snowfall in the Kashmir valley on Friday."
+        ]
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-091",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A restaurant chain has taken one of its best-selling dishes off the menu in all its outlets.\nII. Earlier this month, food-safety inspectors found that an ingredient used in the dish was adulterated at the chain's main supplier.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After the adulteration was found (\"earlier this month\"), the chain withdrew the dish. II is the cause and I is its effect."
+        ]
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-092",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. An online grocery company has announced that it will hire 2,000 more delivery staff in India.\nII. The company's orders in India have doubled over the past six months.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Twice the orders need more people to deliver them, so the company is hiring. II is the cause and I is its effect."
+        ],
+        "trap": "I is a future plan (\"will hire\"); it cannot explain orders that have already doubled."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-093",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A large coal-fired power plant has started working a few kilometres upwind of the city.\nII. The number of private vehicles on the city's roads has doubled in five years.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The plant has nothing to do with the number of vehicles, and more vehicles did not bring the plant.",
+          "Both add to the same result, worsening air quality in the city, so they are independent causes."
+        ],
+        "trap": "There is no shared trigger behind a power plant and car ownership, so \"common cause\" does not fit."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-094",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Over the weekend, a bank moved its ATM network to new software without testing it fully.\nII. On Monday, many of the bank's customers found that their ATM cash withdrawals had been debited twice.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Faulty, untested software is the direct reason for the wrong double debits that followed. I is the cause and II its effect."
+        ],
+        "trap": "\"Common cause\" would need a third event behind both; here the software switch in I itself explains II."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-095",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A silk weavers' cooperative in Mysuru has won a large export order after displaying its saris at a trade fair in Dubai.\nII. Fewer students of a Bhopal college take the city bus now that the college has opened a hostel on its campus.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: the trade fair for I, the new hostel for II.",
+          "These causes have nothing to do with each other, so both are effects of independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-096",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A cement plant in Rajasthan cut its output this month because a key kiln broke down.\nII. More students attended a literature festival in Jaipur this year after the organisers made entry free for them.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: the kiln breakdown for I, free entry for II.",
+          "The causes are unrelated, so both are effects of independent causes."
+        ],
+        "trap": "Both are in Rajasthan, but a kiln failure and free entry to a festival have nothing in common."
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-097",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The Odisha government has moved thousands of people from coastal villages to cyclone shelters.\nII. The railways have cancelled all trains running along the Odisha coast on Thursday.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Moving villagers to shelters does not cancel trains, nor the reverse.",
+          "Both are precautions taken because of a common cause: a severe cyclone expected to hit the coast."
+        ],
+        "trap": "Both statements are effects; the cyclone that explains them is not stated in either."
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-098",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The banking regulator has told banks to return the money of a failed UPI transaction to the customer's account within one working day, or pay the customer a penalty for each day of delay.\nII. Since the rule came into force, complaints about money stuck in failed UPI transactions have fallen sharply.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "A deadline backed by a daily penalty makes banks reverse failed transactions quickly, so fewer customers need to complain. \"Since the rule came into force\" places II after I. I is the cause and II its effect."
+        ],
+        "trap": "Such complaints may have led to the rule, but II reports the later fall in complaints, which is the rule's result, not its cause."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-099",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A severe frost hit the coffee plantations of Brazil, the world's largest coffee grower, this winter.\nII. Over the past five years, many growers in Karnataka have replaced their coffee bushes with areca nut palms.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A frost this winter cannot have caused a shift that has been going on for five years, and Karnataka's growers do not cause frost in Brazil.",
+          "Both cut the supply of coffee, so they are independent causes of the same result, higher coffee prices in India."
+        ],
+        "trap": "A weather event abroad and a long-running change in cropping at home share no trigger, so \"common cause\" fails; neither is reported as a result, so \"effects of independent causes\" fails too."
+      },
+      "tags": [
+        "cr:independent-causes",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-100",
+      "subtype": "two-statements",
+      "difficulty": "medium",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A pharmacy chain has cut the prices of generic medicines by 20 per cent after a bulk-buying deal with manufacturers.\nII. The number of tigers in a Madhya Pradesh reserve has risen since the villages in its core area were moved out.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: the bulk-buying deal for I, the relocation of villages for II.",
+          "The causes are unrelated, so both are effects of independent causes."
+        ]
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-101",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Most of the city's water pipelines are over 60 years old and leak at thousands of joints.\nII. The city's population has grown by 40 per cent in the past ten years.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Old, leaking pipes do not raise the population, and a larger population does not age the pipes.",
+          "Both widen the gap between the water the city needs and the water that reaches homes, so they are independent causes of the same result, a water shortage."
+        ],
+        "trap": "Both are standing conditions that drive an outcome; neither is reported as a result, so \"effects of independent causes\" does not fit."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-102",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The monsoon failed in Maharashtra's sugarcane belt this year.\nII. The government has allowed sugar mills to turn a larger share of cane juice into ethanol instead of sugar.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A drought would make the government cut, not raise, the cane diverted away from sugar, so I did not cause II; and II cannot cause a monsoon failure.",
+          "A smaller cane crop and more cane going to ethanol both reduce sugar output, so they are independent causes of lower sugar supply and higher sugar prices."
+        ],
+        "trap": "Treating I as the cause of II gets the policy response backwards."
+      },
+      "tags": [
+        "cr:independent-causes",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-103",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The banking regulator has barred lenders from charging any penalty when a borrower repays a floating-rate home loan early.\nII. Since then, many borrowers have moved their home loans to banks offering lower interest rates.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Without a prepayment penalty, closing a loan with one bank and taking a cheaper one elsewhere costs nothing extra, so borrowers switch. \"Since then\" places II after I. I is the cause and II its effect."
+        ],
+        "trap": "Lower rates elsewhere are what borrowers move towards, not a reason for the rule; there is no common cause behind both."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-104",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The state government has announced a cash reward this season for every farmer who does not burn paddy stubble.\nII. Last winter, smoke from burning paddy stubble choked the cities of the region for weeks.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Last winter's severe smoke (II) prompted the reward meant to discourage stubble burning this season (I). II is the cause and I is its effect."
+        ],
+        "trap": "A reward for not burning would reduce smoke, and it comes later, so I cannot explain II."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:time-sequence"
+      ]
+    },
+    {
+      "key": "ce-105",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Air quality in Nagpur improved this winter after the city moved all its buses to CNG.\nII. The groundwater table in villages around Nagpur rose this year after farmers dug thousands of farm ponds.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: cleaner buses for I, farm ponds for II.",
+          "The causes are unrelated, so both are effects of independent causes."
+        ],
+        "trap": "Both are environmental gains in the same area, but cleaner buses and farm ponds are separate causes with separate results."
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-106",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. At peak hours, the city's metro now runs a train every three minutes instead of every eight.\nII. Peak-hour ridership on the metro rose by 30 per cent in the month after the change.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "More frequent trains mean shorter waits and less crowding, which draws more riders. \"In the month after the change\" places II after I. I is the cause and II its effect."
+        ],
+        "trap": "Crowding often leads to more trains, which tempts \"II is the cause\"; but II reports a rise that came after the new timetable, so it cannot have prompted it."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:time-sequence"
+      ]
+    },
+    {
+      "key": "ce-107",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Tractor sales in Marathwada have fallen sharply this year.\nII. Farm labourers from Marathwada are leaving for cities in large numbers this year.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Weaker tractor sales do not push labourers out, and their leaving does not cut tractor sales (a shortage of labour, if anything, raises demand for machines).",
+          "Both are effects of a common cause, such as a drought that has ruined farm incomes in the region."
+        ],
+        "trap": "Do not link them directly; both are symptoms of one distress in the farm economy."
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-108",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The government has cut the import duty on crude edible oils.\nII. Soybean farmers in Madhya Pradesh have harvested a record crop this year.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither explains the other: a big domestic crop is a reason to protect farmers, not to cut import duty, and a duty cut does not raise soybean yields.",
+          "Both increase the supply of cheaper edible oil, so they are independent causes of the same result, lower edible-oil prices."
+        ],
+        "trap": "Reading II as the cause of I gets the policy logic backwards; and neither statement is a reported result, so \"effects of independent causes\" fails."
+      },
+      "tags": [
+        "cr:independent-causes",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-109",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A Mumbai eye hospital has cut the waiting time for cataract surgery to a week after buying two new operating microscopes.\nII. A Mumbai heart hospital has seen a sharp rise in patients since it was added to the state's health-insurance scheme.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: new microscopes for I, joining the insurance scheme for II.",
+          "The two hospitals treat different illnesses and the causes are unrelated, so the statements are effects of independent causes."
+        ],
+        "trap": "Same city and same sector, yet each change has its own stated cause, and neither hospital's change affects the other."
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-110",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A public sector bank's bad loans fell this year after it recovered dues from two large steel companies through the insolvency process.\nII. The same bank's deposits grew faster this year after it opened 200 new branches in rural areas.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: recoveries from the steel companies for I, new rural branches for II.",
+          "Those causes are unrelated, so the statements are effects of independent causes, even though both concern the same bank."
+        ],
+        "trap": "\"Better management\" as a common cause is an invention; the statements give two separate, specific causes."
+      },
+      "tags": [
+        "cr:independent-effects",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-111",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Wholesale prices of cardamom in Idukki have fallen to a four-year low.\nII. Guatemala, the world's largest exporter of cardamom, has harvested a record crop this year.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "A record crop from the biggest exporter floods the world market and pulls prices down everywhere, including in Idukki. II is the cause and I is its effect."
+        ],
+        "trap": "The statements are about different countries, which tempts \"independent effects\"; but the price of a traded crop responds directly to the largest supplier's output."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-112",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The state has banned sand mining from its rivers for the monsoon months.\nII. Steel prices have risen by 15 per cent over the past month.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The sand ban does not move steel prices, and costlier steel is no reason to ban sand mining.",
+          "Sand and steel are both key building materials, so the two are independent causes of the same result, higher construction costs in the state."
+        ],
+        "trap": "Do not call both effects of \"a construction boom\": a seasonal ban on river mining is an environmental rule, not a reaction to demand."
+      },
+      "tags": [
+        "cr:independent-causes",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-113",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Several insurers have raised motor-insurance premiums for cars registered in Chennai.\nII. Last year, claims paid by insurers on cars registered in Chennai far exceeded the premiums they had collected on those cars.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Losing money on Chennai cars (II) leads insurers to charge more for covering them (I). II is the cause and I is its effect."
+        ],
+        "trap": "I cannot be the cause: this year's higher premiums cannot have raised last year's claims. II, stated second, is the earlier event."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-114",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Dock workers at the country's busiest container port have been on strike for a week.\nII. There is a worldwide shortage of empty shipping containers.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "A local strike cannot cause a worldwide container shortage, and the global shortage did not cause the strike.",
+          "Both hold up the movement of goods by sea, so they are independent causes of the same result, delays and losses for Indian exporters."
+        ],
+        "trap": "Neither statement is an effect of the other or of a shared trigger; each is a separate obstacle to shipping."
+      },
+      "tags": [
+        "cr:independent-causes",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-115",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Admissions to the town's government primary school have jumped this year.\nII. Last year, two private schools in the town shut down after failing to meet new safety norms.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Children of the closed private schools had to be admitted elsewhere, and the government school took them in. II is the cause and I is its effect."
+        ],
+        "trap": "II has its own cause (the safety norms), but it is the closures, not the norms, that send children to the government school."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:time-sequence"
+      ]
+    },
+    {
+      "key": "ce-116",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Shares of cement companies rose sharply on the day the Union Budget was presented.\nII. Shares of steel companies rose sharply on the same day.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Cement shares rising do not lift steel shares, nor the reverse.",
+          "Both are effects of a common cause in the Budget, such as a large increase in spending on roads, railways and housing, which raises demand for both."
+        ],
+        "trap": "Two construction materials rising together on Budget day point to one shared trigger, not to independent causes."
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-117",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A bank cut the minimum balance required in its basic savings accounts from ₹10,000 to ₹1,000.\nII. The number of new savings accounts opened at the bank's rural branches more than doubled in the next quarter.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "A high minimum balance kept low-income rural customers away; lowering it lets them open accounts. \"In the next quarter\" places II after I. I is the cause and II its effect."
+        ],
+        "trap": "A bank does not cut the balance because accounts are already doubling; the events run from I to II."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-118",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Wheat procurement in Punjab rose this year because a mild winter helped the crop.\nII. Rice stocks in government warehouses fell this year because more rice was given out free under the food scheme.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: a mild winter for I, larger free distribution for II.",
+          "These causes are unrelated, so the statements are effects of independent causes."
+        ],
+        "trap": "Both concern government food-grain stocks and move in opposite directions, but neither change explains the other."
+      },
+      "tags": [
+        "cr:independent-effects",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-119",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Floods have damaged a large part of the basmati crop in Punjab and Haryana this season.\nII. A large West Asian importer has lifted its year-long ban on rice imports, reopening a major market for Indian basmati.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Floods in India do not make a foreign government lift its ban, and lifting the ban does not cause floods.",
+          "Lower supply (I) and higher export demand (II) push the same way, towards higher basmati prices in India, so they are independent causes."
+        ],
+        "trap": "There is no single trigger behind a flood and a trade decision abroad, so \"common cause\" fails."
+      },
+      "tags": [
+        "cr:independent-causes",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-120",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Apple growers in Kinnaur say their fruit is undersized this season.\nII. Hydroelectric plants in Kinnaur are generating far less power than usual this season.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Small apples do not reduce power output, and low power output does not shrink apples.",
+          "Both are effects of a common cause: poor snowfall and rain this season, which left the orchards short of moisture and the rivers low."
+        ],
+        "trap": "Orchards and power plants look unrelated, but both depend on the same water."
+      },
+      "tags": [
+        "cr:common-cause"
+      ]
+    },
+    {
+      "key": "ce-121",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Rents for flats near the Hinjewadi IT park in Pune have jumped this year.\nII. Restaurants and food courts near the Hinjewadi IT park have had their best year so far.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Higher rents do not bring restaurants more customers, and busy restaurants do not raise flat rents.",
+          "Both are effects of a common cause: many more people working at the IT park this year, for example because firms hired heavily or called staff back to the office."
+        ],
+        "trap": "Tempting to call one the cause of the other because they share a location; the location is a clue to the shared cause."
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-122",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Three years ago, the city made rainwater-harvesting pits compulsory for every new building on a plot larger than 300 square metres.\nII. The groundwater level under the city's newer neighbourhoods has stopped falling since then.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Harvesting pits send rooftop rainwater into the ground and recharge it, and the newer neighbourhoods are where new buildings, and so the pits, are concentrated. I is the cause and II its effect."
+        ],
+        "trap": "Calling both effects of good rainfall ignores that I is a rule, not a weather event, and that II is tied to I by \"since then\"."
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-123",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A district hospital began sending text-message reminders to mothers a day before each of their infants' scheduled vaccinations.\nII. Over the next year, the share of infants in the district who completed the full course of vaccines rose.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Doses are often missed simply because they are forgotten; timely reminders bring mothers back for each dose. I is the cause and II its effect."
+        ],
+        "trap": "\"Over the next year\" places II after I; a rise in completed courses cannot be why reminders began."
+      },
+      "tags": [
+        "cr:direct-cause"
+      ]
+    },
+    {
+      "key": "ce-124",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A leading tyre maker has raised the prices of its truck tyres by 4 per cent.\nII. The price of natural rubber has risen by a third over the past six months because tapping fell sharply in Kerala.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Natural rubber is the main raw material for truck tyres; its higher price (II) is passed on through dearer tyres (I). II is the cause and I is its effect."
+        ],
+        "trap": "II carries its own cause (less tapping), but that does not make I and II effects of a common cause: the tapping shortfall reaches tyre prices only through the rubber price in II."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-125",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A two-wheeler maker moved all its production from its old factory to a new plant in another state.\nII. Dozens of small auto-parts workshops near the old factory have since shut down.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The workshops depended on orders from the factory; when production left, their business went with it. I is the cause and II its effect."
+        ],
+        "trap": "The reason for the move is not stated and does not matter: the move itself explains the closures, so \"common cause\" fails."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:causal-chain",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-126",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Gold-loan companies report that the average loan per customer has jumped this month.\nII. Goldsmiths in Thrissur say families are selling old jewellery at a record pace this month.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Bigger gold loans do not make families sell jewellery, nor the reverse.",
+          "Both are effects of a common cause, a sharp rise in gold prices: the same jewellery now fetches a bigger loan, and selling old pieces pays more."
+        ],
+        "trap": "Neither is an independent effect: both turn on the value of gold, which neither statement mentions."
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-127",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Garment exporters in Tiruppur, who sell mainly to the US, say American buyers have stopped placing new orders.\nII. Brassware makers in Moradabad, who also sell mainly to the US, have cut production and laid off workers.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Tiruppur's lost orders do not cut Moradabad's output, nor the reverse; the two industries make unrelated goods.",
+          "What they share is their main market, so a common cause, such as a steep rise in US import duties on Indian goods, explains both."
+        ],
+        "trap": "Different products and towns suggest \"independent effects\", but the detail that both sell mainly to the US points to a shared cause."
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-128",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Exports of Indian shrimp fell this year after a major buying country tightened its limits on antibiotic residues.\nII. Exports of Indian-made smartphones rose this year after several global brands began assembling phones in India.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: stricter residue limits for I, local assembly for II.",
+          "The causes are unrelated, so the statements are effects of independent causes."
+        ],
+        "trap": "A common cause such as a change in the rupee would push both exports the same way; here they move in opposite directions, each for its own stated reason."
+      },
+      "tags": [
+        "cr:independent-effects",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-129",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The municipal corporation has started a 24-hour helpline and a mobile app for citizens to report potholes.\nII. During this monsoon, potholes on the city's roads caused several accidents and a flood of public complaints.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The accidents and complaints (II) pushed the corporation to set up a way to report potholes (I). II is the cause and I is its effect."
+        ],
+        "trap": "A helpline for reporting potholes cannot create potholes or accidents, so I cannot be the cause."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-130",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Enrolment in the state's government high schools rose this year after the state began giving free bicycles to students of Class 9.\nII. The state's Class 10 board results improved this year after students were allowed to choose between a standard and an advanced mathematics paper.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement carries its own cause: free bicycles for I, the choice of mathematics paper for II.",
+          "This year's Class 10 students were not the new Class 9 entrants, so I cannot explain II; the causes are unrelated, and both are effects of independent causes."
+        ],
+        "trap": "Both are good news for the same school system, which tempts \"common cause\", but no unstated factor is needed to explain either."
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-131",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A cooperative bank's gold-loan business doubled this year after it cut its gold-loan interest rate.\nII. The same bank's staff costs fell this year because many senior clerks retired and were not replaced.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: the rate cut for I, retirements without replacement for II.",
+          "The causes are unrelated, so the statements are effects of independent causes."
+        ],
+        "trap": "Same bank, same year; but a rate cut and staff retirements are separate causes, and no hidden factor is needed."
+      },
+      "tags": [
+        "cr:independent-effects",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-132",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A bank has made a second password, sent by SMS, compulsory for every online transfer above ₹10,000.\nII. Over the past quarter, the bank's customers lost large sums to fraudsters who stole their net-banking passwords through fake websites.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The losses from stolen passwords (II) led the bank to add a second layer of security (I). II is the cause and I is its effect."
+        ],
+        "trap": "I cannot cause II: an extra password protects against such fraud; it cannot create it."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-133",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Shares of airline companies rose sharply on Monday.\nII. Shares of paint companies rose sharply on Monday.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "A rise in airline shares does not lift paint shares, nor the reverse.",
+          "Crude oil drives a large part of the costs of both (jet fuel for airlines, crude-based raw materials for paints), so a common cause, such as a sharp fall in crude oil prices, explains both."
+        ],
+        "trap": "Unrelated sectors moving together on the same day point to a shared cost driver, not to independent causes."
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-134",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The state no longer requires farmers to show proof of land ownership to get crop loans from cooperative banks.\nII. In the next kharif season, the share of crop loans going to tenant farmers in the state rose sharply.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Tenant farmers do not own the land they cultivate, so the old rule shut them out; removing it lets them borrow. I is the cause and II its effect."
+        ],
+        "trap": "II is not an unrelated trend: the group that gains (tenants, who own no land) is exactly the group the change helps, and it gains in the season after."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-135",
+      "subtype": "two-statements",
+      "difficulty": "hard",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Complaints to the banking ombudsman rose this year after the complaint process was moved online and made free of cost.\nII. Cash withdrawals from ATMs fell this year as more customers paid for everyday purchases by UPI.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: an easier complaint process for I, the shift to UPI for II.",
+          "Neither explains the other and the causes are unrelated, so both are effects of independent causes."
+        ],
+        "trap": "Both concern bank customers, but that shared setting is not a common cause."
+      },
+      "tags": [
+        "cr:independent-effects",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-136",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Mobile data prices in India rose by about 15 per cent this year after telecom companies raised their tariffs.\nII. UPI payments in India rose by about 40 per cent this year as more small merchants displayed QR codes.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement states its own cause: tariff increases for I, merchants adopting QR codes for II.",
+          "Costlier data would, if anything, slow UPI growth, so I does not explain II, and UPI use does not set data tariffs. The statements are effects of independent causes."
+        ],
+        "trap": "Both are \"digital\" trends, which tempts a common cause or a direct link; but the only link that exists would work against II, and each has its own stated cause."
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
+    },
+    {
+      "key": "ce-137",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Most government schools in the state's tribal districts still have no electricity connection.\nII. From next year, the state board will hold the Class 10 science practical examination on computers.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The board's decision was not caused by the lack of power in tribal schools (if anything, that would argue against it), and the decision does not cause the lack of power.",
+          "Together they point to one result: students of tribal-district government schools, who cannot practise on computers, will be at a disadvantage in the examination. They are independent causes."
+        ],
+        "trap": "II is a decision, not an outcome of I, so neither \"I is the cause\" nor \"effects of independent causes\" fits."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-138",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Imports of solar panels into India fell sharply this year.\nII. Two years ago, the government began paying incentives to companies that make solar panels in India, and several large factories have since started production.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The incentives (two years ago) led to new domestic factories, whose output now replaces imported panels. II is the cause and I is its effect."
+        ],
+        "trap": "A fall in imports could follow a duty increase or weaker demand, but neither is stated; the new domestic factories in II are enough to explain I."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:causal-chain",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-139",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Over the past decade, large stretches of mangroves along the city's creeks have been cleared to make room for a port expansion.\nII. The city's storm-water drains, laid a century ago, can carry only a fraction of the run-off from today's heavy downpours.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Clearing the mangroves did not age the drains, and the old drains did not lead to the clearing.",
+          "Mangroves soak up tidal and rain water and drains carry it away; losing one and lacking the other both worsen the same result, flooding in the city during heavy rain. They are independent causes."
+        ],
+        "trap": "The port expansion is I's own purpose, not a cause shared with II, so \"common cause\" fails."
+      },
+      "tags": [
+        "cr:independent-causes"
+      ]
+    },
+    {
+      "key": "ce-140",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A new rule requires banks to check a borrower's income-tax returns for the last two years before giving any business loan above ₹10 lakh.\nII. Most small traders in the district run their businesses in cash and have never filed an income-tax return.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The rule applies to all banks and was not made because of these traders, and their cash habits are long-standing, not a result of the rule.",
+          "Each is a separate condition leading to the same result, small traders in the district finding it hard to get bank loans above ₹10 lakh (and turning to moneylenders), so they are independent causes."
+        ],
+        "trap": "II is not an effect of I: the traders did not stop filing returns because of the rule. Neither statement is a reported outcome, so \"effects of independent causes\" also fails."
+      },
+      "tags": [
+        "cr:independent-causes",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-141",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A state cut the electricity tariff for cold-storage units by 40 per cent.\nII. Over the next two seasons, potato farmers in the state sold less of their crop in distress at harvest time and more in the lean months, when prices are higher.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Cheaper power lowers storage charges, so farmers can afford to store potatoes and wait for better prices instead of selling at harvest. I is the cause and II its effect, through cheaper cold storage."
+        ],
+        "trap": "II is not an independent change in farmers' habits: the link through storage cost is direct, and \"over the next two seasons\" places it after I."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:causal-chain"
+      ]
+    },
+    {
+      "key": "ce-142",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A large private bank has stopped accepting applications for unsecured personal loans from people with no credit history.\nII. Over the past year, defaults on the bank's unsecured loans to first-time borrowers were three times the rate on its other loans.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The high default rate among first-time borrowers (II) led the bank to stop lending to such applicants (I). II is the cause and I is its effect."
+        ],
+        "trap": "I cannot cause II: refusing new applications cannot raise defaults on loans already given over the past year."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order",
+        "cr:business"
+      ]
+    },
+    {
+      "key": "ce-143",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Banks in Kerala have reported a sharp rise in deposits from non-resident Indians this quarter, although the interest rates they offer have not changed.\nII. Families in Kerala with members working in the Gulf are spending noticeably more on building and repairing houses this quarter.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Bank deposits do not make families build houses, and house-building does not raise NRI deposits.",
+          "With interest rates unchanged, both are best explained by a common cause: a surge in the money sent home by Keralites working in the Gulf (for example, because each dirham now buys more rupees)."
+        ],
+        "trap": "The \"although\" clause rules out better deposit rates as the reason for I, leaving larger remittances as the shared cause."
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-144",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A rule announced in January required every new two-wheeler sold from 1 April to be fitted with anti-lock brakes, adding several thousand rupees to its price.\nII. Two-wheeler sales jumped in March and then fell sharply in April.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Buyers who knew prices would rise from 1 April rushed to buy in March, pulling demand forward and leaving April weak. Both halves of II follow from I. I is the cause and II its effect."
+        ],
+        "trap": "The March jump came before the rule took effect, which tempts you to deny a link; but the rule was announced in January, and buying ahead of a known price rise is its effect."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:time-sequence"
+      ]
+    },
+    {
+      "key": "ce-145",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. India's rice exports reached a record this year after floods damaged the crop of a neighbouring rice-exporting country.\nII. India's imports of pulses fell this year after a good harvest of pulses at home.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: a crop failure abroad for I and a good domestic pulse harvest for II.",
+          "The causes are unrelated, so the statements are effects of independent causes."
+        ],
+        "trap": "A good monsoon at home might seem to explain both, but I's stated cause lies abroad; the two trade figures have separate drivers."
+      },
+      "tags": [
+        "cr:independent-effects",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-146",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. A small finance bank's deposits jumped this year after it began paying senior citizens one percentage point more than large banks on fixed deposits.\nII. Defaults on the same bank's gold loans fell this year because higher gold prices made it worthwhile for borrowers to repay and take back their jewellery.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: higher deposit rates for senior citizens (I) and higher gold prices (II).",
+          "A deposit-rate change does not raise gold prices, and dearer gold does not bring in deposits, so the causes are unrelated and the statements are effects of independent causes."
+        ],
+        "trap": "Both concern the same bank's balance sheet in the same year, which tempts \"common cause\"; but each effect has its own stated reason and no unstated factor is needed."
+      },
+      "tags": [
+        "cr:independent-effects",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-147",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Exporters of Indian basmati rice to Europe say their shipments are taking about three weeks longer to arrive and cost more to send.\nII. Factories in Chennai that rely on machine parts from Europe say their supplies are arriving late and at a higher freight cost.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Delays to exports do not delay imports, nor the reverse; one flow goes out of India and the other comes in.",
+          "Both are effects of a common cause on the India–Europe sea route, such as a disruption that forces ships to take a much longer route around Africa."
+        ],
+        "trap": "Different goods moving in opposite directions suggest \"independent effects\", but the same route, the same delay and the same higher cost point to one shared cause."
+      },
+      "tags": [
+        "cr:common-cause",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-148",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The banking regulator required every lender to show borrowers, before a small loan is signed, one all-inclusive annual cost figure covering interest, fees and insurance.\nII. In the months that followed, several microfinance lenders that had advertised low interest rates but charged heavy fees lost many borrowers to banks.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Once all costs appear in one figure, borrowers can see that the \"cheap\" loans are in fact costly, and they move to banks. \"In the months that followed\" places II after I. I is the cause and II its effect."
+        ],
+        "trap": "It is tempting to read II as the reason for the rule (regulators act on mis-selling), but II reports borrowers leaving after the rule; it is the rule's result."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:causal-chain",
+        "cr:economy"
+      ]
+    },
+    {
+      "key": "ce-149",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. The state has stopped issuing licences for new borewells in 40 of its blocks.\nII. For a decade, the groundwater table in those 40 blocks has fallen by more than a metre every year.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "A decade of falling water tables (II) led the state to stop new borewells in exactly those blocks (I). II is the cause and I is its effect."
+        ],
+        "trap": "\"Common cause: over-extraction\" is tempting, but II is the measured decline itself, and I is the response to it; nothing more is needed."
+      },
+      "tags": [
+        "cr:direct-cause",
+        "cr:reverse-order"
+      ]
+    },
+    {
+      "key": "ce-150",
+      "subtype": "two-statements",
+      "difficulty": "extreme",
+      "prompt": "Below are two statements, I and II. They may be independent causes, effects of independent causes, or effects of a common cause; one may also be the cause of the other. Read both statements and decide how they are related.\n\nI. Malaria cases in the district fell sharply this year after insecticide-treated bed nets were given to every household.\nII. The number of tuberculosis cases detected in the district rose this year after mobile X-ray vans began screening villagers.",
+      "options": [
+        "Statement I is the cause and statement II is its effect",
+        "Statement II is the cause and statement I is its effect",
+        "Both the statements I and II are independent causes",
+        "Both the statements I and II are effects of independent causes",
+        "Both the statements I and II are effects of some common cause"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Each statement gives its own cause: bed nets for I, screening vans for II.",
+          "II reports more cases detected, the result of better screening, not of worsening health; the two causes are unrelated, so the statements are effects of independent causes."
+        ],
+        "trap": "\"Malaria down, TB up\" looks like a contrast that needs one explanation, but each figure has its own stated cause and neither affects the other."
+      },
+      "tags": [
+        "cr:independent-effects"
+      ]
     }
   ]
 }
