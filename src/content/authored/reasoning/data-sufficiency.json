@@ -2418,6 +2418,612 @@
         "ds:seating",
         "seating:linear"
       ]
+    },
+    {
+      "key": "ds-081",
+      "subtype": "coding",
+      "difficulty": "easy",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'milk' in a certain code language?**\n\n**I.** In the code language, 'hot milk' is written as 'ta ni'.\n**II.** In the code language, 'cold milk' is written as 'ta ru' and 'cold water' is written as 'ru pe'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: 'cold' is the only word common to both sentences and 'ru' the only common code, so cold = ru and milk = ta.",
+          "I: 'hot milk' = 'ta ni' cannot tell which of the two codes is 'milk'.",
+          "Statement I alone: the code for 'milk' could be 'ni' or 'ta' → **not sufficient**.",
+          "Statement II alone: the code for 'milk' is 'ta' → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-082",
+      "subtype": "coding",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**In a certain code language, what does the code 'zo' stand for?**\n\n**I.** In the code language, 'rain falls daily' is written as 'zo pa ke', 'daily news' is written as 'mu ke' and 'falls late' is written as 'pa ji'.\n**II.** In the code language, 'heavy rain' is written as 'lu zo'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: 'daily' is common to the first two sentences (ke) and 'falls' to the first and third (pa), so 'zo' is 'rain'.",
+          "II: 'heavy rain' = 'lu zo' leaves 'zo' as 'heavy' or 'rain'.",
+          "Statement I alone: 'zo' means 'rain' → **sufficient**.",
+          "Statement II alone: 'zo' could mean 'heavy' or 'rain' → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-083",
+      "subtype": "coding",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'book' in a certain code language?**\n\n**I.** In the code language, 'read book daily' is written as 'mi so ta' and 'read news daily' is written as 'ta ve mi'.\n**II.** In the code language, 'book shop' is written as 'ga so' and 'shop opens' is written as 'ne ga'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: 'read' and 'daily' appear in both sentences (codes mi, ta), so 'book' = so.",
+          "II: 'shop' is common to both sentences (ga), so 'book' = so.",
+          "Statement I alone: the code for 'book' is 'so' → **sufficient**.",
+          "Statement II alone: the code for 'book' is 'so' → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-084",
+      "subtype": "coding",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'tea' in a certain code language?**\n\n**I.** In the code language, 'green tea' is written as 'la vo'.\n**II.** In the code language, 'green field' is written as 'vo hu'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: 'green' is the only common word and 'vo' the only common code, so green = vo and tea = la.",
+          "I alone: 'tea' could be la or vo; II does not mention 'tea'.",
+          "Statement I alone: the code for 'tea' could be 'la' or 'vo' → **not sufficient**.",
+          "Statement II alone: 'tea' does not appear at all, so it cannot be decoded → **not sufficient**.",
+          "I and II together: the code for 'tea' is 'la' → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-085",
+      "subtype": "coding",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'sky' in a certain code language?**\n\n**I.** In the code language, 'blue sky' is written as 're ko'.\n**II.** In the code language, 'sky is blue' is written as 'ko na re'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: 'is' = na, but 'sky' and 'blue' appear together in both sentences with 're ko' — 'sky' could be re or ko.",
+          "Statement I alone: the code for 'sky' could be 'ko' or 're' → **not sufficient**.",
+          "Statement II alone: the code for 'sky' could be 'ko', 'na' or 're' → **not sufficient**.",
+          "I and II together: the code for 'sky' could be 'ko' or 're' → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-086",
+      "subtype": "coding",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**In a certain code language, does the code 'pi' stand for 'river'?**\n\n**I.** In the code language, 'deep river' is written as 'do su' and 'deep well' is written as 'su ba'.\n**II.** In the code language, 'river flows fast' is written as 'nu pi do'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: 'deep' = su (common to both sentences), so 'river' = do; hence 'pi' cannot stand for 'river' — the answer is a definite “No”.",
+          "II: 'pi' is one of the three codes of 'river flows fast' — it may or may not be 'river'.",
+          "Statement I alone: the answer is definitely “no” → **sufficient**.",
+          "Statement II alone: 'pi' may or may not stand for 'river' → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "A definite “No” is an answer: once 'river' is fixed as 'do', 'pi' cannot stand for it. Do not reject I because it never mentions 'pi'."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-087",
+      "subtype": "coding",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**In a certain code language, what does the code '47' stand for?**\n\n**I.** In the code language, 'sun is hot' is written as '82 47 19'.\n**II.** In the code language, 'sun rises early' is written as '33 47 50', 'early bird sings' is written as '21 64 50' and 'rises late' is written as '90 33'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: 'early' = 50 (first and second sentences) and 'rises' = 33 (first and third), so 47 = 'sun'.",
+          "I: 47 could be 'sun', 'is' or 'hot'.",
+          "Statement I alone: '47' could mean 'hot', 'is' or 'sun' → **not sufficient**.",
+          "Statement II alone: '47' means 'sun' → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-088",
+      "subtype": "coding",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'loan' in a certain code language?**\n\n**I.** In the code language, 'bank gives loan' is written as 'ka mo te', 'bank opens early' is written as 'mo zi ru' and 'early gives' is written as 'zi ka'.\n**II.** In the code language, 'home loan rate' is written as 'te fa bi' and 'home rate low' is written as 'bi wu fa'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: 'bank' = mo (first two sentences) and 'gives' = ka (first and third), so 'loan' = te.",
+          "II: 'home' and 'rate' take 'bi fa' in both sentences, so 'loan' = te.",
+          "Statement I alone: the code for 'loan' is 'te' → **sufficient**.",
+          "Statement II alone: the code for 'loan' is 'te' → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-089",
+      "subtype": "coding",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'card' in a certain code language?**\n\n**I.** In the code language, 'credit card limit' is written as 'su ve pa' and 'card limit' is written as 'pa ve'.\n**II.** In the code language, 'limit raised' is written as 've lo' and 'raised again' is written as 'da lo'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I: 'credit' = su (the code missing from 'card limit'), but 'card' and 'limit' share 'pa ve'.",
+          "II: 'raised' = lo (common), so 'limit' = ve — but II does not mention 'card'.",
+          "Together: limit = ve, so card = pa.",
+          "Statement I alone: the code for 'card' could be 'pa' or 've' → **not sufficient**.",
+          "Statement II alone: 'card' does not appear at all, so it cannot be decoded → **not sufficient**.",
+          "I and II together: the code for 'card' is 'pa' → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-090",
+      "subtype": "coding",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'sour' in a certain code language?**\n\n**I.** In the code language, 'sweet and sour' is written as 'po ka mu' and 'very sweet' is written as 'lu po'.\n**II.** In the code language, 'sour and spicy' is written as 'mu ze ka' and 'spicy food' is written as 'fi ze'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: sweet = po (I) and spicy = ze (II), but 'and' and 'sour' always appear together with 'ka mu' — 'sour' is ka or mu.",
+          "Statement I alone: the code for 'sour' could be 'ka' or 'mu' → **not sufficient**.",
+          "Statement II alone: the code for 'sour' could be 'ka' or 'mu' → **not sufficient**.",
+          "I and II together: the code for 'sour' could be 'ka' or 'mu' → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-091",
+      "subtype": "coding",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'team' in a certain code language?**\n\n**I.** In the code language, 'our team wins' is written as 'lo ba ki' and 'team plays well' is written as 'ne ki du'.\n**II.** In the code language, 'team wins today' is written as 'xa ki lo' and 'our wins' is written as 'lo ba'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: 'team' is the only word in both sentences and 'ki' the only common code — team = ki.",
+          "II: 'wins' = lo and 'our' = ba, but 'team' and 'today' share 'xa ki'.",
+          "Statement I alone: the code for 'team' is 'ki' → **sufficient**.",
+          "Statement II alone: the code for 'team' could be 'ki' or 'xa' → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-092",
+      "subtype": "coding",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**In a certain code language, what does the code 'mok' stand for?**\n\n**I.** In the code language, 'river water is clean' is written as 'tep mok lun sar' and 'clean river' is written as 'sar tep'.\n**II.** In the code language, 'water is life' is written as 'lun mok dor' and 'life is precious' is written as 'dor vik lun'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: 'is' and 'life' are common to both sentences (lun, dor), so 'mok' = 'water'.",
+          "I: 'river' and 'clean' take 'sar tep', leaving 'water' and 'is' with 'mok lun' — 'mok' may be either.",
+          "Statement I alone: 'mok' could mean 'is' or 'water' → **not sufficient**.",
+          "Statement II alone: 'mok' means 'water' → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-093",
+      "subtype": "coding",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**In a certain code language, does the code 'ru' stand for 'east'?**\n\n**I.** In the code language, 'sun rises east' is written as 'ru ta lo' and 'east wind' is written as 'lo ve'.\n**II.** In the code language, 'sun rises' is written as 'ta ru' and 'sun sets' is written as 'mi ta'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: 'east' = lo (common to both sentences), so 'ru' is not 'east' — “No”.",
+          "II: 'sun' = ta (common), so 'rises' = ru; 'ru' stands for 'rises', not 'east' — again “No”.",
+          "Statement I alone: the answer is definitely “no” → **sufficient**.",
+          "Statement II alone: the answer is definitely “no” → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Both statements give a definite “No” by different routes — that is “either statement alone” (C), not “both together”."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-094",
+      "subtype": "coding",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'fresh fruit' in a certain code language?**\n\n**I.** In the code language, 'fresh fruit juice' is written as 'na go wi'.\n**II.** In the code language, 'juice bar' is written as 'wi da'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: 'juice' is the only common word and 'wi' the only common code, so juice = wi; the other two codes, 'na go', belong to 'fresh fruit' — even though we cannot say which is which.",
+          "I alone: any two of na, go and wi could be 'fresh fruit'. II mentions neither 'fresh' nor 'fruit'.",
+          "Statement I alone: the code for 'fresh fruit' could be 'go na', 'go wi' or 'na wi' → **not sufficient**.",
+          "Statement II alone: 'fresh fruit' does not appear at all, so it cannot be decoded → **not sufficient**.",
+          "I and II together: the code for 'fresh fruit' is 'go na' (in any order) → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "The question asks for the two-word code as a whole. Once 'juice' is removed, the remaining pair of codes is fixed even though the individual words are not."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-095",
+      "subtype": "coding",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**In a certain code language, what does the code 'vo' stand for?**\n\n**I.** In the code language, 'good morning all' is written as 'vo si te' and 'morning walk' is written as 'ba si'.\n**II.** In the code language, 'all good night' is written as 'te ka vo' and 'night shift' is written as 'zu ka'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: morning = si (I) and night = ka (II), but 'good' and 'all' always appear together with 'vo te' — 'vo' is 'good' or 'all'.",
+          "Statement I alone: 'vo' could mean 'all' or 'good' → **not sufficient**.",
+          "Statement II alone: 'vo' could mean 'all' or 'good' → **not sufficient**.",
+          "I and II together: 'vo' could mean 'all' or 'good' → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-096",
+      "subtype": "coding",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'profit' in a certain code language?**\n\n**I.** In the code language, 'stock market rises' is written as 'ga pe ri', 'market falls sharply' is written as 'si ga ke', 'profit rises today' is written as 'mu lo pe' and 'today stock falls' is written as 'si ri mu'.\n**II.** In the code language, 'profit rises sharply' is written as 'ke lo pe' and 'rises today' is written as 'mu pe'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: market = ga (1st & 2nd), rises = pe (1st & 3rd), so stock = ri; falls = si (2nd & 4th) and today = mu (3rd & 4th); 'profit rises today' = 'mu lo pe' then gives profit = lo.",
+          "II: 'rises' = pe, but 'profit' and 'sharply' share 'ke lo'.",
+          "Statement I alone: the code for 'profit' is 'lo' → **sufficient**.",
+          "Statement II alone: the code for 'profit' could be 'ke' or 'lo' → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-097",
+      "subtype": "coding",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**In a certain code language, what does the code '42' stand for?**\n\n**I.** In the code language, 'water is life' is written as '55 42 71' and 'life without water' is written as '42 55 64'.\n**II.** In the code language, 'water is precious' is written as '42 71 30', 'precious time' is written as '30 86' and 'time is short' is written as '23 86 71'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: 'precious' = 30 (1st & 2nd), so 'time' = 86, and 'is' = 71 (1st & 3rd); hence 42 = 'water'.",
+          "I: 'water' and 'life' appear together in both sentences with '42 55' — 42 could be either.",
+          "Statement I alone: '42' could mean 'life' or 'water' → **not sufficient**.",
+          "Statement II alone: '42' means 'water' → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-098",
+      "subtype": "coding",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'festival' in a certain code language?**\n\n**I.** In the code language, 'festival of lights' is written as 'ke nu da' and 'lights of diwali' is written as 'da ra ke'.\n**II.** In the code language, 'holi festival' is written as 'nu mi', 'of colours' is written as 'po ke' and 'colours of holi' is written as 'mi ke po'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: 'of' and 'lights' share 'ke da' in both sentences, so 'festival' = nu.",
+          "II: 'of colours' = 'po ke', so in 'colours of holi' the code left for 'holi' is mi; then 'holi festival' = 'nu mi' gives festival = nu.",
+          "Statement I alone: the code for 'festival' is 'nu' → **sufficient**.",
+          "Statement II alone: the code for 'festival' is 'nu' → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-099",
+      "subtype": "coding",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**What is the code for 'clean city' in a certain code language?**\n\n**I.** In the code language, 'keep our city clean' is written as 'bi jo lo fa' and 'keep our city green' is written as 'lo wu bi jo'.\n**II.** In the code language, 'city and green' is written as 'wu ta jo' and 'and our' is written as 'bi ta'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I: 'keep', 'our' and 'city' share 'bi jo lo', so clean = fa and green = wu; 'city' is still bi, jo or lo.",
+          "II: 'and' = ta and 'our' = bi; 'city' and 'green' take 'wu jo' — but II does not mention 'clean'.",
+          "Together: green = wu (I), so city = jo (II); 'clean city' = 'fa jo'.",
+          "Statement I alone: the code for 'clean city' could be 'bi fa', 'fa jo' or 'fa lo' → **not sufficient**.",
+          "Statement II alone: 'clean city' does not appear at all, so it cannot be decoded → **not sufficient**.",
+          "I and II together: the code for 'clean city' is 'fa jo' (in any order) → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Statement I fixes 'clean' but not 'city'; statement II separates 'city' from 'our' but never mentions 'clean'. Only together do both codes of the pair fall into place."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
+    },
+    {
+      "key": "ds-100",
+      "subtype": "coding",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\n**In a certain code language, what does the code 'pa' stand for?**\n\n**I.** In the code language, 'train runs late today' is written as 'ko pa si ve' and 'late again today' is written as 've mu si'.\n**II.** In the code language, 'train runs again' is written as 'mu pa ko'.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: in I, 'late' and 'today' share 'si ve', so 'again' = mu; II then leaves 'train' and 'runs' with 'pa ko' — 'pa' is 'train' or 'runs'.",
+          "Statement I alone: 'pa' could mean 'runs' or 'train' → **not sufficient**.",
+          "Statement II alone: 'pa' could mean 'again', 'runs' or 'train' → **not sufficient**.",
+          "I and II together: 'pa' could mean 'runs' or 'train' → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "A word’s code is the code common to every sentence containing that word — after removing codes already fixed for other words. If two codes are still possible, the data are not sufficient.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:coding",
+        "coding:sentence"
+      ]
     }
   ]
 }
