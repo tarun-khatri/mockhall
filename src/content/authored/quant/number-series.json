@@ -1,0 +1,3168 @@
+{
+  "chapter": "number-series",
+  "version": 1,
+  "items": [
+    {
+      "key": "ns-001",
+      "subtype": "missing-number",
+      "difficulty": "easy",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n15, 24, 35, ?, 63, 80",
+      "options": [
+        "48",
+        "49",
+        "50",
+        "51",
+        "52"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is one less than a perfect square: 4² − 1, 5² − 1, … , 9² − 1.",
+          "4² − 1 = 15",
+          "5² − 1 = 24",
+          "6² − 1 = 35",
+          "7² − 1 = 48",
+          "8² − 1 = 63",
+          "9² − 1 = 80",
+          "So, ? = 48."
+        ],
+        "shortcut": "Each term is one less than a perfect square: 4² − 1, 5² − 1, … , 9² − 1.",
+        "trap": "**49** is what you get if you write 7² and forget to subtract 1."
+      },
+      "tags": [
+        "series:squares-pm",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-002",
+      "subtype": "missing-number",
+      "difficulty": "easy",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n11, 13, 16, 21, 28, ?, 52",
+      "options": [
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are consecutive prime numbers: +2, +3, +5, +7, +11, +13.",
+          "11 + 2 = 13",
+          "13 + 3 = 16",
+          "16 + 5 = 21",
+          "21 + 7 = 28",
+          "28 + 11 = 39",
+          "39 + 13 = 52",
+          "So, ? = 39."
+        ],
+        "shortcut": "Differences are consecutive prime numbers: +2, +3, +5, +7, +11, +13.",
+        "trap": "**37** is what you get if you add 9 after 7, but 9 is not prime; the next prime is 11."
+      },
+      "tags": [
+        "series:diff-primes",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-003",
+      "subtype": "missing-number",
+      "difficulty": "easy",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n10080, 5040, 1680, 420, 84, ?",
+      "options": [
+        "7",
+        "12",
+        "14",
+        "21",
+        "28"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Successive division by 2, 3, 4, 5, 6.",
+          "10080 ÷ 2 = 5040",
+          "5040 ÷ 3 = 1680",
+          "1680 ÷ 4 = 420",
+          "420 ÷ 5 = 84",
+          "84 ÷ 6 = 14",
+          "So, ? = 14."
+        ],
+        "shortcut": "Successive division by 2, 3, 4, 5, 6.",
+        "trap": "**12** is what you get if you divide 84 by 7 instead of 6."
+      },
+      "tags": [
+        "series:div-inc",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-004",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n7, 8, 18, 57, ?, 1165",
+      "options": [
+        "175",
+        "228",
+        "229",
+        "231",
+        "232"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5 and add the same number each time.",
+          "7 × 1 + 1 = 8",
+          "8 × 2 + 2 = 18",
+          "18 × 3 + 3 = 57",
+          "57 × 4 + 4 = 232",
+          "232 × 5 + 5 = 1165",
+          "So, ? = 232."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5 and add the same number each time.",
+        "trap": "**228** is what you get if you multiply 57 by 4 and forget to add 4."
+      },
+      "tags": [
+        "series:mul-inc-same",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-005",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n?, 11, 20, 57, 224, 1115",
+      "options": [
+        "6",
+        "9",
+        "10",
+        "12",
+        "13"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5 and subtract the same number each time.",
+          "12 × 1 − 1 = 11",
+          "11 × 2 − 2 = 20",
+          "20 × 3 − 3 = 57",
+          "57 × 4 − 4 = 224",
+          "224 × 5 − 5 = 1115",
+          "So, ? = 12."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5 and subtract the same number each time.",
+        "trap": "**10** comes from undoing the first step the wrong way (11 − 1). The first step is × 1 − 1, so ? − 1 = 11 and ? = 12."
+      },
+      "tags": [
+        "series:mul-inc-same",
+        "series:missing-number",
+        "blank:first"
+      ]
+    },
+    {
+      "key": "ns-006",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n18, 25, 39, 60, 88, ?",
+      "options": [
+        "116",
+        "119",
+        "121",
+        "122",
+        "123"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are multiples of 7: +7, +14, +21, +28, +35.",
+          "18 + 7 = 25",
+          "25 + 14 = 39",
+          "39 + 21 = 60",
+          "60 + 28 = 88",
+          "88 + 35 = 123",
+          "So, ? = 123."
+        ],
+        "shortcut": "Differences are multiples of 7: +7, +14, +21, +28, +35.",
+        "trap": "**116** is what you get if you add 28 again."
+      },
+      "tags": [
+        "series:diff-ap",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-007",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n7, 26, 63, 124, ?, 342",
+      "options": [
+        "213",
+        "214",
+        "215",
+        "216",
+        "217"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is one less than a cube: 2³ − 1, 3³ − 1, … , 7³ − 1.",
+          "2³ − 1 = 7",
+          "3³ − 1 = 26",
+          "4³ − 1 = 63",
+          "5³ − 1 = 124",
+          "6³ − 1 = 215",
+          "7³ − 1 = 342",
+          "So, ? = 215."
+        ],
+        "shortcut": "Each term is one less than a cube: 2³ − 1, 3³ − 1, … , 7³ − 1.",
+        "trap": "**216** is what you get if you write 6³ and forget to subtract 1."
+      },
+      "tags": [
+        "series:cubes-pm",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-008",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n12, 50, 17, 45, 22, 40, ?, 35",
+      "options": [
+        "27",
+        "28",
+        "29",
+        "30",
+        "32"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Two alternating series: odd places go up by 5, even places go down by 5.",
+          "Odd places: 12, 17, 22, 27 (+5 each).",
+          "Even places: 50, 45, 40, 35 (−5 each).",
+          "So, ? = 27."
+        ],
+        "shortcut": "Two alternating series: odd places go up by 5, even places go down by 5.",
+        "trap": "**32** is what you get if you add 10 to 22, using the gap between 22 and 12."
+      },
+      "tags": [
+        "series:twin-ap",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-009",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n64, 96, 144, 216, ?, 486",
+      "options": [
+        "270",
+        "288",
+        "306",
+        "320",
+        "324"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is 1.5 times the previous one.",
+          "64 × 1.5 = 96",
+          "96 × 1.5 = 144",
+          "144 × 1.5 = 216",
+          "216 × 1.5 = 324",
+          "324 × 1.5 = 486",
+          "So, ? = 324."
+        ],
+        "shortcut": "Each term is 1.5 times the previous one.",
+        "trap": "**288** is what you get if you add the previous difference (72) again."
+      },
+      "tags": [
+        "series:mul-1-5",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-010",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n16, ?, 100, 250, 625, 1562.5",
+      "options": [
+        "20",
+        "25",
+        "32",
+        "36",
+        "40"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is 2.5 times the previous one.",
+          "16 × 2.5 = 40",
+          "40 × 2.5 = 100",
+          "100 × 2.5 = 250",
+          "250 × 2.5 = 625",
+          "625 × 2.5 = 1562.5",
+          "So, ? = 40."
+        ],
+        "shortcut": "Each term is 2.5 times the previous one.",
+        "trap": "**32** is what you get if you double 16 instead of multiplying by 2.5."
+      },
+      "tags": [
+        "series:mul-2-5",
+        "series:missing-number",
+        "blank:second"
+      ]
+    },
+    {
+      "key": "ns-011",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n3, 4, 8, 13, 22, ?, 59",
+      "options": [
+        "31",
+        "35",
+        "36",
+        "37",
+        "38"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is the sum of the previous two terms plus 1.",
+          "3 + 4 + 1 = 8",
+          "4 + 8 + 1 = 13",
+          "8 + 13 + 1 = 22",
+          "13 + 22 + 1 = 36",
+          "22 + 36 + 1 = 59",
+          "So, ? = 36."
+        ],
+        "shortcut": "Each term is the sum of the previous two terms plus 1.",
+        "trap": "**35** is what you get if you add the previous two terms and forget the + 1."
+      },
+      "tags": [
+        "series:fibonacci",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-012",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n5, 6, 8, 14, 38, ?, 878",
+      "options": [
+        "110",
+        "134",
+        "152",
+        "158",
+        "162"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are factorials: 1!, 2!, 3!, 4!, 5!, 6!.",
+          "5 + 1 = 6",
+          "6 + 2 = 8",
+          "8 + 6 = 14",
+          "14 + 24 = 38",
+          "38 + 120 = 158",
+          "158 + 720 = 878",
+          "So, ? = 158."
+        ],
+        "shortcut": "Differences are factorials: 1!, 2!, 3!, 4!, 5!, 6!.",
+        "trap": "**134** is what you get if you add 4 × 24 = 96 instead of 5! = 120."
+      },
+      "tags": [
+        "series:diff-factorial",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-013",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n40, 53, 36, 57, 32, ?, 28",
+      "options": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately add and subtract, the step growing by 4: +13, −17, +21, −25, +29, −33.",
+          "40 + 13 = 53",
+          "53 − 17 = 36",
+          "36 + 21 = 57",
+          "57 − 25 = 32",
+          "32 + 29 = 61",
+          "61 − 33 = 28",
+          "So, ? = 61."
+        ],
+        "shortcut": "Alternately add and subtract, the step growing by 4: +13, −17, +21, −25, +29, −33.",
+        "trap": "**65** is what you get if you add 33 at this step."
+      },
+      "tags": [
+        "series:alt-sign-ap",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-014",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n4, 6, 12, 30, 84, ?",
+      "options": [
+        "138",
+        "192",
+        "228",
+        "240",
+        "246"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are multiplied by 3 each time: +2, +6, +18, +54, +162.",
+          "4 + 2 = 6",
+          "6 + 6 = 12",
+          "12 + 18 = 30",
+          "30 + 54 = 84",
+          "84 + 162 = 246",
+          "So, ? = 246."
+        ],
+        "shortcut": "Differences are multiplied by 3 each time: +2, +6, +18, +54, +162.",
+        "trap": "**192** is what you get if you add 108, doubling the previous difference."
+      },
+      "tags": [
+        "series:diff-gp",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-015",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n48, 24, 24, 36, 72, ?",
+      "options": [
+        "108",
+        "144",
+        "170",
+        "180",
+        "216"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Multipliers increase by 0.5: × 0.5, × 1, × 1.5, × 2, × 2.5.",
+          "48 × 0.5 = 24",
+          "24 × 1 = 24",
+          "24 × 1.5 = 36",
+          "36 × 2 = 72",
+          "72 × 2.5 = 180",
+          "So, ? = 180."
+        ],
+        "shortcut": "Multipliers increase by 0.5: × 0.5, × 1, × 1.5, × 2, × 2.5.",
+        "trap": "**144** is what you get if you multiply by 2 again."
+      },
+      "tags": [
+        "series:mul-half-step",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-016",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n5, 7, 12, 22, 39, ?",
+      "options": [
+        "64",
+        "65",
+        "66",
+        "68",
+        "74"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are n² + 1: 2, 5, 10, 17, 26.",
+          "5 + 2 = 7",
+          "7 + 5 = 12",
+          "12 + 10 = 22",
+          "22 + 17 = 39",
+          "39 + 26 = 65",
+          "So, ? = 65."
+        ],
+        "shortcut": "Differences are n² + 1: 2, 5, 10, 17, 26.",
+        "trap": "**64** is what you get if you add 25 (a square) instead of 26."
+      },
+      "tags": [
+        "series:diff-squares-pm",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-017",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n3, 8, 24, 48, 120, ?",
+      "options": [
+        "143",
+        "167",
+        "168",
+        "169",
+        "195"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is (prime)² − 1 for the primes 2, 3, 5, 7, 11, 13.",
+          "2² − 1 = 3",
+          "3² − 1 = 8",
+          "5² − 1 = 24",
+          "7² − 1 = 48",
+          "11² − 1 = 120",
+          "13² − 1 = 168",
+          "So, ? = 168."
+        ],
+        "shortcut": "Each term is (prime)² − 1 for the primes 2, 3, 5, 7, 11, 13.",
+        "trap": "**143** is what you get if you use 12² − 1, taking 12 as the next number."
+      },
+      "tags": [
+        "series:prime-squares",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-018",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n5, 10, 17, 34, 41, ?, 89",
+      "options": [
+        "48",
+        "78",
+        "80",
+        "82",
+        "83"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately multiply by 2 and add 7.",
+          "5 × 2 = 10",
+          "10 + 7 = 17",
+          "17 × 2 = 34",
+          "34 + 7 = 41",
+          "41 × 2 = 82",
+          "82 + 7 = 89",
+          "So, ? = 82."
+        ],
+        "shortcut": "Alternately multiply by 2 and add 7.",
+        "trap": "**48** is what you get if you add 7 at this step instead of doubling."
+      },
+      "tags": [
+        "series:alt-ops",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-019",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n11, 12, 20, 47, 111, ?",
+      "options": [
+        "175",
+        "236",
+        "237",
+        "240",
+        "247"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are cubes: 1³, 2³, 3³, 4³, 5³.",
+          "11 + 1 = 12",
+          "12 + 8 = 20",
+          "20 + 27 = 47",
+          "47 + 64 = 111",
+          "111 + 125 = 236",
+          "So, ? = 236."
+        ],
+        "shortcut": "Differences are cubes: 1³, 2³, 3³, 4³, 5³.",
+        "trap": "**175** is what you get if you add 64 again."
+      },
+      "tags": [
+        "series:diff-cubes",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-020",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n1024, ?, 768, 192, 576, 144, 432",
+      "options": [
+        "128",
+        "256",
+        "288",
+        "384",
+        "512"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately divide by 4 and multiply by 3.",
+          "1024 ÷ 4 = 256",
+          "256 × 3 = 768",
+          "768 ÷ 4 = 192",
+          "192 × 3 = 576",
+          "576 ÷ 4 = 144",
+          "144 × 3 = 432",
+          "So, ? = 256."
+        ],
+        "shortcut": "Alternately divide by 4 and multiply by 3.",
+        "trap": "**512** is what you get if you halve 1024."
+      },
+      "tags": [
+        "series:alt-ops",
+        "series:missing-number",
+        "blank:second"
+      ]
+    },
+    {
+      "key": "ns-021",
+      "subtype": "missing-number",
+      "difficulty": "medium",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n?, 12, 17, 26, 43, 76",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Differences double and drop by 1: 3, 5, 9, 17, 33 (each = previous × 2 − 1).",
+          "9 + 3 = 12",
+          "12 + 5 = 17",
+          "17 + 9 = 26",
+          "26 + 17 = 43",
+          "43 + 33 = 76",
+          "So, ? = 9."
+        ],
+        "shortcut": "Differences double and drop by 1: 3, 5, 9, 17, 33 (each = previous × 2 − 1).",
+        "trap": "**6** is what you get if you subtract 6 from 12, taking the first difference as 6."
+      },
+      "tags": [
+        "series:diff-mul-add",
+        "series:missing-number",
+        "blank:first"
+      ]
+    },
+    {
+      "key": "ns-022",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n6, 11, 25, 54, 104, ?, 291",
+      "options": [
+        "174",
+        "177",
+        "181",
+        "183",
+        "185"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Third-level pattern: differences 5, 14, 29, 50, 77, 110 have differences 9, 15, 21, 27, 33 (step +6).",
+          "6 + 5 = 11",
+          "11 + 14 = 25",
+          "25 + 29 = 54",
+          "54 + 50 = 104",
+          "104 + 77 = 181",
+          "181 + 110 = 291",
+          "So, ? = 181."
+        ],
+        "shortcut": "Third-level pattern: differences 5, 14, 29, 50, 77, 110 have differences 9, 15, 21, 27, 33 (step +6).",
+        "trap": "**177** is what you get if you add 73, stopping at the second level."
+      },
+      "tags": [
+        "series:third-level",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-023",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n6, 8, 13, 27, 68, ?",
+      "options": [
+        "190",
+        "191",
+        "194",
+        "198",
+        "200"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Differences follow × 3 − 1: 2, 5, 14, 41, 122.",
+          "6 + 2 = 8",
+          "8 + 5 = 13",
+          "13 + 14 = 27",
+          "27 + 41 = 68",
+          "68 + 122 = 190",
+          "So, ? = 190."
+        ],
+        "shortcut": "Differences follow × 3 − 1: 2, 5, 14, 41, 122.",
+        "trap": "**191** is what you get if you take the next difference as 41 × 3 = 123."
+      },
+      "tags": [
+        "series:diff-mul-add",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-024",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n1000, 784, ?, 745, 754, 746, 747",
+      "options": [
+        "720",
+        "790",
+        "800",
+        "808",
+        "809"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately subtract a cube and add a square on descending bases: −6³, +5², −4³, +3², −2³, +1².",
+          "1000 − 6³ = 784",
+          "784 + 5² = 809",
+          "809 − 4³ = 745",
+          "745 + 3² = 754",
+          "754 − 2³ = 746",
+          "746 + 1² = 747",
+          "So, ? = 809."
+        ],
+        "shortcut": "Alternately subtract a cube and add a square on descending bases: −6³, +5², −4³, +3², −2³, +1².",
+        "trap": "**800** comes from using 4² at the second step. The bases fall by one at every step (6, 5, 4, 3, 2, 1), so the second step is + 5² = 25."
+      },
+      "tags": [
+        "series:cube-square-alt",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-025",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n?, 13, 30, 99, 412, 2085",
+      "options": [
+        "6",
+        "9",
+        "11",
+        "12",
+        "14"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5 and add 1², 2², 3², 4², 5².",
+          "12 × 1 + 1 = 13",
+          "13 × 2 + 4 = 30",
+          "30 × 3 + 9 = 99",
+          "99 × 4 + 16 = 412",
+          "412 × 5 + 25 = 2085",
+          "So, ? = 12."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5 and add 1², 2², 3², 4², 5².",
+        "trap": "**14** is what you get if you undo the first step by adding 1 instead of subtracting."
+      },
+      "tags": [
+        "series:mul-inc-add-sq",
+        "series:missing-number",
+        "blank:first"
+      ]
+    },
+    {
+      "key": "ns-026",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n5, 200, ?, 180, 45, 160, 135, 140",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Two alternating series: odd places × 3, even places − 20.",
+          "Odd places: 5, 15, 45, 135 (× 3).",
+          "Even places: 200, 180, 160, 140 (− 20).",
+          "So, ? = 15."
+        ],
+        "shortcut": "Two alternating series: odd places × 3, even places − 20.",
+        "trap": "**25** is the middle value of 5 and 45, as if the odd places formed an AP. 5 → ? → 45 → 135 multiplies by 3, so ? = 15."
+      },
+      "tags": [
+        "series:twin-ap-gp",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-027",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n16, 24, 60, 90, ?, 337.5",
+      "options": [
+        "135",
+        "180",
+        "215",
+        "225",
+        "250"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately multiply by 1.5 and 2.5.",
+          "16 × 1.5 = 24",
+          "24 × 2.5 = 60",
+          "60 × 1.5 = 90",
+          "90 × 2.5 = 225",
+          "225 × 1.5 = 337.5",
+          "So, ? = 225."
+        ],
+        "shortcut": "Alternately multiply by 1.5 and 2.5.",
+        "trap": "**180** is what you get if you multiply 90 by 2."
+      },
+      "tags": [
+        "series:alt-mul",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-028",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n10, 14, 23, 48, 97, ?",
+      "options": [
+        "146",
+        "161",
+        "178",
+        "197",
+        "218"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are squares of primes: 2², 3², 5², 7², 11².",
+          "10 + 4 = 14",
+          "14 + 9 = 23",
+          "23 + 25 = 48",
+          "48 + 49 = 97",
+          "97 + 121 = 218",
+          "So, ? = 218."
+        ],
+        "shortcut": "Differences are squares of primes: 2², 3², 5², 7², 11².",
+        "trap": "**178** is what you get if you add 9² = 81, taking consecutive odd squares."
+      },
+      "tags": [
+        "series:diff-prime-squares",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-029",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n3, 7, ?, 45, 106, 237",
+      "options": [
+        "16",
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = previous × 2 + 1², 2², 3², 4², 5².",
+          "3 × 2 + 1 = 7",
+          "7 × 2 + 4 = 18",
+          "18 × 2 + 9 = 45",
+          "45 × 2 + 16 = 106",
+          "106 × 2 + 25 = 237",
+          "So, ? = 18."
+        ],
+        "shortcut": "Each term = previous × 2 + 1², 2², 3², 4², 5².",
+        "trap": "**16** is what you get if you add 2 instead of 2² at the second step."
+      },
+      "tags": [
+        "series:mul-add-sq",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-030",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n2, 3, 4, 9, 16, 29, ?, 99",
+      "options": [
+        "45",
+        "50",
+        "54",
+        "55",
+        "58"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Each term (from the fourth) is the sum of the previous three terms.",
+          "2 + 3 + 4 = 9",
+          "3 + 4 + 9 = 16",
+          "4 + 9 + 16 = 29",
+          "9 + 16 + 29 = 54",
+          "16 + 29 + 54 = 99",
+          "So, ? = 54."
+        ],
+        "shortcut": "Each term (from the fourth) is the sum of the previous three terms.",
+        "trap": "**45** is what you get if you add only the previous two terms (16 + 29)."
+      },
+      "tags": [
+        "series:tribonacci",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-031",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n?, 2880, 480, 96, 24, 8",
+      "options": [
+        "14400",
+        "17280",
+        "20160",
+        "21600",
+        "23040"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Successive division by 7, 6, 5, 4, 3.",
+          "20160 ÷ 7 = 2880",
+          "2880 ÷ 6 = 480",
+          "480 ÷ 5 = 96",
+          "96 ÷ 4 = 24",
+          "24 ÷ 3 = 8",
+          "So, ? = 20160."
+        ],
+        "shortcut": "Successive division by 7, 6, 5, 4, 3.",
+        "trap": "**17280** is what you get if you multiply 2880 by 6 instead of 7."
+      },
+      "tags": [
+        "series:div-dec",
+        "series:missing-number",
+        "blank:first"
+      ]
+    },
+    {
+      "key": "ns-032",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n5, 9, ?, 97, 481, 2881",
+      "options": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 2, 3, 4, 5, 6 and subtract 1, 2, 3, 4, 5.",
+          "5 × 2 − 1 = 9",
+          "9 × 3 − 2 = 25",
+          "25 × 4 − 3 = 97",
+          "97 × 5 − 4 = 481",
+          "481 × 6 − 5 = 2881",
+          "So, ? = 25."
+        ],
+        "shortcut": "Multiply by 2, 3, 4, 5, 6 and subtract 1, 2, 3, 4, 5.",
+        "trap": "**27** is what you get if you multiply 9 by 3 and forget to subtract."
+      },
+      "tags": [
+        "series:mul-inc-sub-inc",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-033",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n7, 13, 37, 97, 217, ?",
+      "options": [
+        "337",
+        "397",
+        "417",
+        "427",
+        "433"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are n³ − n: 6, 24, 60, 120, 210.",
+          "7 + 6 = 13",
+          "13 + 24 = 37",
+          "37 + 60 = 97",
+          "97 + 120 = 217",
+          "217 + 210 = 427",
+          "So, ? = 427."
+        ],
+        "shortcut": "Differences are n³ − n: 6, 24, 60, 120, 210.",
+        "trap": "**397** is what you get if you add 180, assuming the differences 60, 120, 180 grow by 60."
+      },
+      "tags": [
+        "series:diff-cubic",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-034",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n4, 6, 10, 22, 70, ?",
+      "options": [
+        "166",
+        "214",
+        "262",
+        "300",
+        "310"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are multiplied by 2, 3, 4, 5: 2, 4, 12, 48, 240.",
+          "4 + 2 = 6",
+          "6 + 4 = 10",
+          "10 + 12 = 22",
+          "22 + 48 = 70",
+          "70 + 240 = 310",
+          "So, ? = 310."
+        ],
+        "shortcut": "Differences are multiplied by 2, 3, 4, 5: 2, 4, 12, 48, 240.",
+        "trap": "**262** is what you get if you add 192 (48 × 4 again)."
+      },
+      "tags": [
+        "series:diff-mul-inc",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-035",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n50, 51, 47, 56, 40, ?, 29",
+      "options": [
+        "63",
+        "65",
+        "69",
+        "70",
+        "76"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately add and subtract consecutive squares: +1², −2², +3², −4², +5², −6².",
+          "50 + 1 = 51",
+          "51 − 4 = 47",
+          "47 + 9 = 56",
+          "56 − 16 = 40",
+          "40 + 25 = 65",
+          "65 − 36 = 29",
+          "So, ? = 65."
+        ],
+        "shortcut": "Alternately add and subtract consecutive squares: +1², −2², +3², −4², +5², −6².",
+        "trap": "**76** is what you get if you add 36 at this step."
+      },
+      "tags": [
+        "series:alt-sign-squares",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-036",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n23, 28, 38, 49, 62, ?, 77",
+      "options": [
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Add the sum of the digits of the term: 23 + (2 + 3) = 28, 28 + (2 + 8) = 38, …",
+          "23 + 5 (digit sum) = 28",
+          "28 + 10 (digit sum) = 38",
+          "38 + 11 (digit sum) = 49",
+          "49 + 13 (digit sum) = 62",
+          "62 + 8 (digit sum) = 70",
+          "70 + 7 (digit sum) = 77",
+          "So, ? = 70."
+        ],
+        "shortcut": "Add the sum of the digits of the term: 23 + (2 + 3) = 28, 28 + (2 + 8) = 38, …",
+        "trap": "**69** is 77 − 8, guessed from the neighbours. Apply the rule forwards: 62 + (6 + 2) = 70, and 70 + (7 + 0) = 77 checks."
+      },
+      "tags": [
+        "series:digit-sum",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-037",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n?, 7, 20, 61, 182, 547",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 3 and alternately add and subtract 1.",
+          "2 × 3 + 1 = 7",
+          "7 × 3 − 1 = 20",
+          "20 × 3 + 1 = 61",
+          "61 × 3 − 1 = 182",
+          "182 × 3 + 1 = 547",
+          "So, ? = 2."
+        ],
+        "shortcut": "Multiply by 3 and alternately add and subtract 1.",
+        "trap": "**3** is what you get if you take (7 − 1) ÷ 2."
+      },
+      "tags": [
+        "series:mul-alt-pm",
+        "series:missing-number",
+        "blank:first"
+      ]
+    },
+    {
+      "key": "ns-038",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n1, 8, 9, 64, 25, 216, 49, ?",
+      "options": [
+        "343",
+        "400",
+        "432",
+        "500",
+        "512"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Squares of odd numbers alternate with cubes of even numbers: 1², 2³, 3², 4³, 5², 6³, 7², 8³.",
+          "Odd places: 1², 3², 5², 7² = 1, 9, 25, 49.",
+          "Even places: 2³, 4³, 6³, 8³ = 8, 64, 216, 512.",
+          "So, ? = 512."
+        ],
+        "shortcut": "Squares of odd numbers alternate with cubes of even numbers: 1², 2³, 3², 4³, 5², 6³, 7², 8³.",
+        "trap": "**343** is what you get if you take 7³ instead of 8³."
+      },
+      "tags": [
+        "series:twin-powers",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-039",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n7, 10, 17, 54, 213, ?",
+      "options": [
+        "1062",
+        "1065",
+        "1068",
+        "1071",
+        "1278"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5 and alternately add and subtract 3.",
+          "7 × 1 + 3 = 10",
+          "10 × 2 − 3 = 17",
+          "17 × 3 + 3 = 54",
+          "54 × 4 − 3 = 213",
+          "213 × 5 + 3 = 1068",
+          "So, ? = 1068."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5 and alternately add and subtract 3.",
+        "trap": "**1062** is what you get if you subtract 3 at the last step."
+      },
+      "tags": [
+        "series:mul-inc-alt",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-040",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n2, ?, 36, 80, 150, 252",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12",
+        "16"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is n² × (n + 1) = n³ + n² for n = 1, 2, … , 6.",
+          "1² × 2 = 2",
+          "2² × 3 = 12",
+          "3² × 4 = 36",
+          "4² × 5 = 80",
+          "5² × 6 = 150",
+          "6² × 7 = 252",
+          "So, ? = 12."
+        ],
+        "shortcut": "Each term is n² × (n + 1) = n³ + n² for n = 1, 2, … , 6.",
+        "trap": "**8** is what you get if you take 2³ and forget the + 2²."
+      },
+      "tags": [
+        "series:cubes-plus-squares",
+        "series:missing-number",
+        "blank:second"
+      ]
+    },
+    {
+      "key": "ns-041",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n101, 99, 102, 97, 104, ?, 106",
+      "options": [
+        "93",
+        "94",
+        "95",
+        "96",
+        "98"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately subtract and add consecutive primes: −2, +3, −5, +7, −11, +13.",
+          "101 − 2 = 99",
+          "99 + 3 = 102",
+          "102 − 5 = 97",
+          "97 + 7 = 104",
+          "104 − 11 = 93",
+          "93 + 13 = 106",
+          "So, ? = 93."
+        ],
+        "shortcut": "Alternately subtract and add consecutive primes: −2, +3, −5, +7, −11, +13.",
+        "trap": "**95** is what you get if you subtract 9, but 9 is not prime; the next prime is 11."
+      },
+      "tags": [
+        "series:alt-sign-primes",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-042",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n2, 4, 9, 28, ?, 726",
+      "options": [
+        "120",
+        "125",
+        "126",
+        "130",
+        "144"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is n! + n for n = 1, 2, … , 6.",
+          "1! + 1 = 2",
+          "2! + 2 = 4",
+          "3! + 3 = 9",
+          "4! + 4 = 28",
+          "5! + 5 = 125",
+          "6! + 6 = 726",
+          "So, ? = 125."
+        ],
+        "shortcut": "Each term is n! + n for n = 1, 2, … , 6.",
+        "trap": "**120** is what you get if you take 5! and forget + 5."
+      },
+      "tags": [
+        "series:factorial-plus",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-043",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n3, 8, 19, 43, 93, ?",
+      "options": [
+        "186",
+        "191",
+        "193",
+        "195",
+        "197"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = previous × 2 + consecutive primes 2, 3, 5, 7, 11.",
+          "3 × 2 + 2 = 8",
+          "8 × 2 + 3 = 19",
+          "19 × 2 + 5 = 43",
+          "43 × 2 + 7 = 93",
+          "93 × 2 + 11 = 197",
+          "So, ? = 197."
+        ],
+        "shortcut": "Each term = previous × 2 + consecutive primes 2, 3, 5, 7, 11.",
+        "trap": "**195** is what you get if you add 9 instead of the prime 11."
+      },
+      "tags": [
+        "series:mul-add-prime",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-044",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n?, 3, 22, 6, 30, 12, 38, 24",
+      "options": [
+        "11",
+        "13",
+        "14",
+        "16",
+        "19"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Two alternating series: odd places + 8, even places × 2.",
+          "Odd places: 14, 22, 30, 38 (+8).",
+          "Even places: 3, 6, 12, 24 (× 2).",
+          "So, ? = 14."
+        ],
+        "shortcut": "Two alternating series: odd places + 8, even places × 2.",
+        "trap": "**11** is what you get if you take 22 − 11."
+      },
+      "tags": [
+        "series:twin-ap-gp",
+        "series:missing-number",
+        "blank:first"
+      ]
+    },
+    {
+      "key": "ns-045",
+      "subtype": "missing-number",
+      "difficulty": "hard",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n2, 5, 13, 27, ?, 115, 233",
+      "options": [
+        "54",
+        "55",
+        "56",
+        "57",
+        "59"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = previous × 2, then alternately + 1 and + 3.",
+          "2 × 2 + 1 = 5",
+          "5 × 2 + 3 = 13",
+          "13 × 2 + 1 = 27",
+          "27 × 2 + 3 = 57",
+          "57 × 2 + 1 = 115",
+          "115 × 2 + 3 = 233",
+          "So, ? = 57."
+        ],
+        "shortcut": "Each term = previous × 2, then alternately + 1 and + 3.",
+        "trap": "**55** is what you get if you add 1 instead of 3 at this step."
+      },
+      "tags": [
+        "series:mul-alt-add",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-046",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n9, 8, 12, ?, 92, 435, 2574",
+      "options": [
+        "27",
+        "28",
+        "30",
+        "33",
+        "36"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5, 6 and subtract 1², 2², 3², 4², 5², 6².",
+          "9 × 1 − 1 = 8",
+          "8 × 2 − 4 = 12",
+          "12 × 3 − 9 = 27",
+          "27 × 4 − 16 = 92",
+          "92 × 5 − 25 = 435",
+          "435 × 6 − 36 = 2574",
+          "So, ? = 27."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5, 6 and subtract 1², 2², 3², 4², 5², 6².",
+        "trap": "**33** is what you get if you subtract 3 instead of 3²."
+      },
+      "tags": [
+        "series:mul-inc-sub-sq",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-047",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n10, 14, ?, 34, 59, 108, 205",
+      "options": [
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Differences 4, 7, 13, 25, 49, 97 follow × 2 − 1 (their own differences 3, 6, 12, 24, 48 double).",
+          "10 + 4 = 14",
+          "14 + 7 = 21",
+          "21 + 13 = 34",
+          "34 + 25 = 59",
+          "59 + 49 = 108",
+          "108 + 97 = 205",
+          "So, ? = 21."
+        ],
+        "shortcut": "Differences 4, 7, 13, 25, 49, 97 follow × 2 − 1 (their own differences 3, 6, 12, 24, 48 double).",
+        "trap": "**20** is what you get if you add 6, assuming the differences run 4, 6, 8."
+      },
+      "tags": [
+        "series:third-level-gp",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-048",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n4, ?, 26, 53, 158, 317, 950",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "13"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately × 2 + 1 and × 3 − 1.",
+          "4 × 2 + 1 = 9",
+          "9 × 3 − 1 = 26",
+          "26 × 2 + 1 = 53",
+          "53 × 3 − 1 = 158",
+          "158 × 2 + 1 = 317",
+          "317 × 3 − 1 = 950",
+          "So, ? = 9."
+        ],
+        "shortcut": "Alternately × 2 + 1 and × 3 − 1.",
+        "trap": "**8** is what you get if you take 4 × 2 and forget the + 1."
+      },
+      "tags": [
+        "series:alt-ops",
+        "series:missing-number",
+        "blank:second"
+      ]
+    },
+    {
+      "key": "ns-049",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n3, 9, 7, 28, ?, 65, 55, 126",
+      "options": [
+        "11",
+        "15",
+        "17",
+        "19",
+        "23"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Two alternating series: odd places × 3 − 2, even places are cubes plus 1.",
+          "Odd places: 3, 7, 19, 55 (× 3 − 2).",
+          "Even places: 2³ + 1, 3³ + 1, 4³ + 1, 5³ + 1 = 9, 28, 65, 126.",
+          "So, ? = 19."
+        ],
+        "shortcut": "Two alternating series: odd places × 3 − 2, even places are cubes plus 1.",
+        "trap": "**15** is what you get if you take 7 × 2 + 1."
+      },
+      "tags": [
+        "series:twin-mixed",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-050",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n20, 11, 13, ?, 49, 127.5",
+      "options": [
+        "19.5",
+        "22.5",
+        "24",
+        "26",
+        "28.5"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 0.5, 1, 1.5, 2, 2.5 and add 1, 2, 3, 4, 5.",
+          "20 × 0.5 + 1 = 11",
+          "11 × 1 + 2 = 13",
+          "13 × 1.5 + 3 = 22.5",
+          "22.5 × 2 + 4 = 49",
+          "49 × 2.5 + 5 = 127.5",
+          "So, ? = 22.5."
+        ],
+        "shortcut": "Multiply by 0.5, 1, 1.5, 2, 2.5 and add 1, 2, 3, 4, 5.",
+        "trap": "**19.5** is what you get if you multiply 13 by 1.5 and forget to add 3."
+      },
+      "tags": [
+        "series:mul-half-step-add",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-051",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n3, 4, 11, 26, 63, ?, 367",
+      "options": [
+        "89",
+        "126",
+        "148",
+        "150",
+        "152"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = 2 × (previous term) + (the term before that).",
+          "2 × 4 + 3 = 11",
+          "2 × 11 + 4 = 26",
+          "2 × 26 + 11 = 63",
+          "2 × 63 + 26 = 152",
+          "2 × 152 + 63 = 367",
+          "So, ? = 152."
+        ],
+        "shortcut": "Each term = 2 × (previous term) + (the term before that).",
+        "trap": "**126** is what you get if you only double 63."
+      },
+      "tags": [
+        "series:pell",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-052",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n?, 201, 193, 220, 156, 281, 65",
+      "options": [
+        "200",
+        "202",
+        "208",
+        "209",
+        "210"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately add and subtract consecutive cubes: +1³, −2³, +3³, −4³, +5³, −6³.",
+          "200 + 1 = 201",
+          "201 − 8 = 193",
+          "193 + 27 = 220",
+          "220 − 64 = 156",
+          "156 + 125 = 281",
+          "281 − 216 = 65",
+          "So, ? = 200."
+        ],
+        "shortcut": "Alternately add and subtract consecutive cubes: +1³, −2³, +3³, −4³, +5³, −6³.",
+        "trap": "**209** comes from treating −8 as the first step. The steps run +1³, −2³, +3³, −4³, … so the first step is +1 and ? = 201 − 1 = 200."
+      },
+      "tags": [
+        "series:alt-sign-cubes",
+        "series:missing-number",
+        "blank:first"
+      ]
+    },
+    {
+      "key": "ns-053",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n21, 23, 29, ?, 75, 110",
+      "options": [
+        "40",
+        "45",
+        "47",
+        "52",
+        "56"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Add the product of the digits of the term: 21 + 2 × 1 = 23, 23 + 2 × 3 = 29, …",
+          "21 + 2 (digit product) = 23",
+          "23 + 6 (digit product) = 29",
+          "29 + 18 (digit product) = 47",
+          "47 + 28 (digit product) = 75",
+          "75 + 35 (digit product) = 110",
+          "So, ? = 47."
+        ],
+        "shortcut": "Add the product of the digits of the term: 21 + 2 × 1 = 23, 23 + 2 × 3 = 29, …",
+        "trap": "**40** is what you get if you add 11, the digit sum of 29, instead of the product 18."
+      },
+      "tags": [
+        "series:digit-product",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-054",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n?, 5, 14, 50, 216, 1112",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5 and add 2, 4, 8, 16, 32.",
+          "3 × 1 + 2 = 5",
+          "5 × 2 + 4 = 14",
+          "14 × 3 + 8 = 50",
+          "50 × 4 + 16 = 216",
+          "216 × 5 + 32 = 1112",
+          "So, ? = 3."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5 and add 2, 4, 8, 16, 32.",
+        "trap": "**4** is what you get if you assume the first step adds 1."
+      },
+      "tags": [
+        "series:mul-inc-add-gp",
+        "series:missing-number",
+        "blank:first"
+      ]
+    },
+    {
+      "key": "ns-055",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n7, 23, 47, 83, ?, 218",
+      "options": [
+        "131",
+        "137",
+        "140",
+        "143",
+        "155"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are multiplied by 1.5: 16, 24, 36, 54, 81.",
+          "7 + 16 = 23",
+          "23 + 24 = 47",
+          "47 + 36 = 83",
+          "83 + 54 = 137",
+          "137 + 81 = 218",
+          "So, ? = 137."
+        ],
+        "shortcut": "Differences are multiplied by 1.5: 16, 24, 36, 54, 81.",
+        "trap": "**131** is what you get if you add 48 (36 + 12), repeating the last rise in the differences."
+      },
+      "tags": [
+        "series:diff-gp",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-056",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n12, 18, 80, ?, 252, 294, 576",
+      "options": [
+        "100",
+        "110",
+        "125",
+        "150",
+        "175"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: n³ + n² for even n and n³ − n² for odd n, n = 2, 3, … , 8.",
+          "2³ + 2² = 12",
+          "3³ − 3² = 18",
+          "4³ + 4² = 80",
+          "5³ − 5² = 100",
+          "6³ + 6² = 252",
+          "7³ − 7² = 294",
+          "8³ + 8² = 576",
+          "So, ? = 100."
+        ],
+        "shortcut": "n³ + n² for even n and n³ − n² for odd n, n = 2, 3, … , 8.",
+        "trap": "**150** is what you get if you take 5³ + 5²."
+      },
+      "tags": [
+        "series:cube-sq-alt",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-057",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n10, 13, 18, 26, ?, 59, 90",
+      "options": [
+        "34",
+        "36",
+        "38",
+        "39",
+        "41"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Differences 3, 5, 8, 13, 20, 31 grow by the primes 2, 3, 5, 7, 11.",
+          "10 + 3 = 13",
+          "13 + 5 = 18",
+          "18 + 8 = 26",
+          "26 + 13 = 39",
+          "39 + 20 = 59",
+          "59 + 31 = 90",
+          "The differences 3, 5, 8, 13, 20, 31 rise by 2, 3, 5, 7, 11 — consecutive primes.",
+          "So, ? = 39."
+        ],
+        "shortcut": "Differences 3, 5, 8, 13, 20, 31 grow by the primes 2, 3, 5, 7, 11.",
+        "trap": "**38** is what you get if you add 12, assuming the differences grow by 4."
+      },
+      "tags": [
+        "series:dd-primes",
+        "series:missing-number"
+      ]
+    },
+    {
+      "key": "ns-058",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n1, 2, 12, 63, 316, ?, 10446",
+      "options": [
+        "1605",
+        "1705",
+        "1715",
+        "1730",
+        "1795"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5, 6 and add 1³, 2³, 3³, 4³, 5³, 6³.",
+          "1 × 1 + 1 = 2",
+          "2 × 2 + 8 = 12",
+          "12 × 3 + 27 = 63",
+          "63 × 4 + 64 = 316",
+          "316 × 5 + 125 = 1705",
+          "1705 × 6 + 216 = 10446",
+          "So, ? = 1705."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5, 6 and add 1³, 2³, 3³, 4³, 5³, 6³.",
+        "trap": "**1605** is what you get if you add 5² instead of 5³."
+      },
+      "tags": [
+        "series:mul-inc-add-cube",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-059",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n4, ?, 10, 16, 25, 40, 64",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is the sum of the previous two terms minus 1.",
+          "4 + 7 − 1 = 10",
+          "7 + 10 − 1 = 16",
+          "10 + 16 − 1 = 25",
+          "16 + 25 − 1 = 40",
+          "25 + 40 − 1 = 64",
+          "So, ? = 7."
+        ],
+        "shortcut": "Each term is the sum of the previous two terms minus 1.",
+        "trap": "**6** is what you get if you use a plain sum (4 + 6 = 10)."
+      },
+      "tags": [
+        "series:fibonacci",
+        "series:missing-number",
+        "blank:second"
+      ]
+    },
+    {
+      "key": "ns-060",
+      "subtype": "missing-number",
+      "difficulty": "extreme",
+      "prompt": "What will come in place of the question mark (?) in the following number series?\n\n6, 11, 26, 43, 102, ?, 394",
+      "options": [
+        "179",
+        "190",
+        "194",
+        "204",
+        "229"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = previous × 2, alternately − 1², + 2², − 3², + 4², − 5², + 6².",
+          "6 × 2 − 1 = 11",
+          "11 × 2 + 4 = 26",
+          "26 × 2 − 9 = 43",
+          "43 × 2 + 16 = 102",
+          "102 × 2 − 25 = 179",
+          "179 × 2 + 36 = 394",
+          "So, ? = 179."
+        ],
+        "shortcut": "Each term = previous × 2, alternately − 1², + 2², − 3², + 4², − 5², + 6².",
+        "trap": "**229** is what you get if you add 5² instead of subtracting it."
+      },
+      "tags": [
+        "series:mul-alt-sq",
+        "series:missing-number",
+        "blank:second-last"
+      ]
+    },
+    {
+      "key": "ns-061",
+      "subtype": "wrong-number",
+      "difficulty": "easy",
+      "prompt": "Find the wrong number in the following number series.\n\n26, 37, 50, 65, 84, 101, 122",
+      "options": [
+        "37",
+        "50",
+        "65",
+        "84",
+        "101"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is a perfect square plus 1: 5² + 1, 6² + 1, … , 11² + 1.",
+          "5² + 1 = 26",
+          "6² + 1 = 37",
+          "7² + 1 = 50",
+          "8² + 1 = 65",
+          "9² + 1 = 82",
+          "10² + 1 = 101",
+          "11² + 1 = 122",
+          "The series should have 82 where 84 is printed, so 84 is the wrong number."
+        ],
+        "shortcut": "Each term is a perfect square plus 1: 5² + 1, 6² + 1, … , 11² + 1. The first step that breaks the rule points to the wrong term.",
+        "trap": "**84** sits between 9² = 81 and 10² = 100, so it looks reasonable. Test every term against n² + 1: only 84 fails (9² + 1 = 82)."
+      },
+      "tags": [
+        "series:squares-pm",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-062",
+      "subtype": "wrong-number",
+      "difficulty": "easy",
+      "prompt": "Find the wrong number in the following number series.\n\n5, 15, 48, 135, 405, 1215, 3645",
+      "options": [
+        "15",
+        "48",
+        "135",
+        "405",
+        "1215"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is 3 times the previous one.",
+          "5 × 3 = 15",
+          "15 × 3 = 45",
+          "45 × 3 = 135",
+          "135 × 3 = 405",
+          "405 × 3 = 1215",
+          "1215 × 3 = 3645",
+          "The series should have 45 where 48 is printed, so 48 is the wrong number."
+        ],
+        "shortcut": "Each term is 3 times the previous one. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 48 also looks broken, but 135 follows correctly from the true value 45, so only 48 is wrong."
+      },
+      "tags": [
+        "series:mul-const",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-063",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n12, 17, 27, 44, 62, 87, 117",
+      "options": [
+        "17",
+        "27",
+        "44",
+        "62",
+        "87"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are multiples of 5: +5, +10, +15, +20, +25, +30.",
+          "12 + 5 = 17",
+          "17 + 10 = 27",
+          "27 + 15 = 42",
+          "42 + 20 = 62",
+          "62 + 25 = 87",
+          "87 + 30 = 117",
+          "The series should have 42 where 44 is printed, so 44 is the wrong number."
+        ],
+        "shortcut": "Differences are multiples of 5: +5, +10, +15, +20, +25, +30. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 44 also looks broken, but 62 follows correctly from the true value 42, so only 44 is wrong."
+      },
+      "tags": [
+        "series:diff-ap",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-064",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n3, 4, 10, 33, 130, 685, 4116",
+      "options": [
+        "4",
+        "10",
+        "33",
+        "130",
+        "685"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5, 6 and add the same number.",
+          "3 × 1 + 1 = 4",
+          "4 × 2 + 2 = 10",
+          "10 × 3 + 3 = 33",
+          "33 × 4 + 4 = 136",
+          "136 × 5 + 5 = 685",
+          "685 × 6 + 6 = 4116",
+          "The series should have 136 where 130 is printed, so 130 is the wrong number."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5, 6 and add the same number. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 130 also looks broken, but 685 follows correctly from the true value 136, so only 130 is wrong."
+      },
+      "tags": [
+        "series:mul-inc-same",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-065",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n7, 60, 12, 54, 17, 45, 22, 42",
+      "options": [
+        "60",
+        "12",
+        "54",
+        "17",
+        "45"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Two alternating series: odd places + 5, even places − 6.",
+          "Odd places: 7, 12, 17, 22 (+5).",
+          "Even places: 60, 54, 48, 42 (−6).",
+          "The series should have 48 where 45 is printed, so 45 is the wrong number."
+        ],
+        "shortcut": "Two alternating series: odd places + 5, even places − 6. The first step that breaks the rule points to the wrong term.",
+        "trap": "Do not compare neighbours (17 → 45 → 22); they belong to different series. In the even places 60, 54, ?, 42 the steps of −6 need 48, so 45 is wrong."
+      },
+      "tags": [
+        "series:twin-ap",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-066",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n6, 11, 15, 24, 39, 63, 102",
+      "options": [
+        "11",
+        "15",
+        "24",
+        "39",
+        "63"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is the sum of the previous two terms.",
+          "6 + 9 = 15",
+          "9 + 15 = 24",
+          "15 + 24 = 39",
+          "24 + 39 = 63",
+          "39 + 63 = 102",
+          "The series should have 9 where 11 is printed, so 11 is the wrong number."
+        ],
+        "shortcut": "Each term is the sum of the previous two terms. The first step that breaks the rule points to the wrong term.",
+        "trap": "Two sums fail (6 + 11 ≠ 15 and 11 + 15 ≠ 24), which can make 15 or 24 look wrong. Both checks contain 11; with 9 they work: 6 + 9 = 15, 9 + 15 = 24."
+      },
+      "tags": [
+        "series:fibonacci",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-067",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n20, 22, 27, 30, 37, 48, 61",
+      "options": [
+        "22",
+        "27",
+        "30",
+        "37",
+        "48"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are consecutive primes: +2, +3, +5, +7, +11, +13.",
+          "20 + 2 = 22",
+          "22 + 3 = 25",
+          "25 + 5 = 30",
+          "30 + 7 = 37",
+          "37 + 11 = 48",
+          "48 + 13 = 61",
+          "The series should have 25 where 27 is printed, so 27 is the wrong number."
+        ],
+        "shortcut": "Differences are consecutive primes: +2, +3, +5, +7, +11, +13. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 27 also looks broken, but 30 follows correctly from the true value 25, so only 27 is wrong."
+      },
+      "tags": [
+        "series:diff-primes",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-068",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n32, 48, 72, 108, 156, 243, 364.5",
+      "options": [
+        "48",
+        "72",
+        "108",
+        "156",
+        "243"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is 1.5 times the previous one.",
+          "32 × 1.5 = 48",
+          "48 × 1.5 = 72",
+          "72 × 1.5 = 108",
+          "108 × 1.5 = 162",
+          "162 × 1.5 = 243",
+          "243 × 1.5 = 364.5",
+          "The series should have 162 where 156 is printed, so 156 is the wrong number."
+        ],
+        "shortcut": "Each term is 1.5 times the previous one. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 156 also looks broken, but 243 follows correctly from the true value 162, so only 156 is wrong."
+      },
+      "tags": [
+        "series:mul-1-5",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-069",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n9, 28, 65, 126, 217, 342, 513",
+      "options": [
+        "28",
+        "65",
+        "126",
+        "217",
+        "342"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is a cube plus 1: 2³ + 1, 3³ + 1, … , 8³ + 1.",
+          "2³ + 1 = 9",
+          "3³ + 1 = 28",
+          "4³ + 1 = 65",
+          "5³ + 1 = 126",
+          "6³ + 1 = 217",
+          "7³ + 1 = 344",
+          "8³ + 1 = 513",
+          "The series should have 344 where 342 is printed, so 342 is the wrong number."
+        ],
+        "shortcut": "Each term is a cube plus 1: 2³ + 1, 3³ + 1, … , 8³ + 1. The first step that breaks the rule points to the wrong term.",
+        "trap": "**342** is close to 7³ = 343 and looks like a cube-based term, but the rule is n³ + 1, so the term must be 344."
+      },
+      "tags": [
+        "series:cubes-pm",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-070",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n60, 71, 55, 73, 56, 75, 54",
+      "options": [
+        "71",
+        "55",
+        "73",
+        "56",
+        "75"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately add and subtract, the step growing by 2: +11, −13, +15, −17, +19, −21.",
+          "60 + 11 = 71",
+          "71 − 13 = 58",
+          "58 + 15 = 73",
+          "73 − 17 = 56",
+          "56 + 19 = 75",
+          "75 − 21 = 54",
+          "The series should have 58 where 55 is printed, so 55 is the wrong number."
+        ],
+        "shortcut": "Alternately add and subtract, the step growing by 2: +11, −13, +15, −17, +19, −21. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 55 also looks broken, but 73 follows correctly from the true value 58, so only 55 is wrong."
+      },
+      "tags": [
+        "series:alt-sign-ap",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-071",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n40320, 5040, 720, 126, 24, 6, 2",
+      "options": [
+        "5040",
+        "720",
+        "126",
+        "24",
+        "6"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Successive division by 8, 7, 6, 5, 4, 3.",
+          "40320 ÷ 8 = 5040",
+          "5040 ÷ 7 = 720",
+          "720 ÷ 6 = 120",
+          "120 ÷ 5 = 24",
+          "24 ÷ 4 = 6",
+          "6 ÷ 3 = 2",
+          "The series should have 120 where 126 is printed, so 126 is the wrong number."
+        ],
+        "shortcut": "Successive division by 8, 7, 6, 5, 4, 3. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 126 also looks broken, but 24 follows correctly from the true value 120, so only 126 is wrong."
+      },
+      "tags": [
+        "series:div-dec",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-072",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n4, 11, 25, 53, 105, 221, 445",
+      "options": [
+        "11",
+        "25",
+        "53",
+        "105",
+        "221"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = previous × 2 + 3.",
+          "4 × 2 + 3 = 11",
+          "11 × 2 + 3 = 25",
+          "25 × 2 + 3 = 53",
+          "53 × 2 + 3 = 109",
+          "109 × 2 + 3 = 221",
+          "221 × 2 + 3 = 445",
+          "The series should have 109 where 105 is printed, so 105 is the wrong number."
+        ],
+        "shortcut": "Each term = previous × 2 + 3. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 105 also looks broken, but 221 follows correctly from the true value 109, so only 105 is wrong."
+      },
+      "tags": [
+        "series:mul-add",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-073",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n7, 8, 13, 21, 37, 62, 98",
+      "options": [
+        "8",
+        "13",
+        "21",
+        "37",
+        "62"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are consecutive squares: 1², 2², 3², 4², 5², 6².",
+          "7 + 1 = 8",
+          "8 + 4 = 12",
+          "12 + 9 = 21",
+          "21 + 16 = 37",
+          "37 + 25 = 62",
+          "62 + 36 = 98",
+          "The series should have 12 where 13 is printed, so 13 is the wrong number."
+        ],
+        "shortcut": "Differences are consecutive squares: 1², 2², 3², 4², 5², 6². The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 13 also looks broken, but 21 follows correctly from the true value 12, so only 13 is wrong."
+      },
+      "tags": [
+        "series:diff-squares",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-074",
+      "subtype": "wrong-number",
+      "difficulty": "medium",
+      "prompt": "Find the wrong number in the following number series.\n\n10, 11, 13, 19, 43, 153, 883",
+      "options": [
+        "11",
+        "13",
+        "19",
+        "43",
+        "153"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are factorials: 1!, 2!, 3!, 4!, 5!, 6!.",
+          "10 + 1 = 11",
+          "11 + 2 = 13",
+          "13 + 6 = 19",
+          "19 + 24 = 43",
+          "43 + 120 = 163",
+          "163 + 720 = 883",
+          "The series should have 163 where 153 is printed, so 153 is the wrong number."
+        ],
+        "shortcut": "Differences are factorials: 1!, 2!, 3!, 4!, 5!, 6!. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 153 also looks broken, but 883 follows correctly from the true value 163, so only 153 is wrong."
+      },
+      "tags": [
+        "series:diff-factorial",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-075",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n5, 8, 16, 33, 60, 110, 178",
+      "options": [
+        "8",
+        "16",
+        "33",
+        "60",
+        "110"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Differences 3, 8, 17, 30, 47, 68 have differences 5, 9, 13, 17, 21 (step +4).",
+          "5 + 3 = 8",
+          "8 + 8 = 16",
+          "16 + 17 = 33",
+          "33 + 30 = 63",
+          "63 + 47 = 110",
+          "110 + 68 = 178",
+          "The series should have 63 where 60 is printed, so 60 is the wrong number."
+        ],
+        "shortcut": "Differences 3, 8, 17, 30, 47, 68 have differences 5, 9, 13, 17, 21 (step +4). The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 60 also looks broken, but 110 follows correctly from the true value 63, so only 60 is wrong."
+      },
+      "tags": [
+        "series:third-level",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-076",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n8, 7, 12, 36, 128, 635, 3804",
+      "options": [
+        "7",
+        "12",
+        "36",
+        "128",
+        "635"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5, 6 and subtract the same number.",
+          "8 × 1 − 1 = 7",
+          "7 × 2 − 2 = 12",
+          "12 × 3 − 3 = 33",
+          "33 × 4 − 4 = 128",
+          "128 × 5 − 5 = 635",
+          "635 × 6 − 6 = 3804",
+          "The series should have 33 where 36 is printed, so 36 is the wrong number."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5, 6 and subtract the same number. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 36 also looks broken, but 128 follows correctly from the true value 33, so only 36 is wrong."
+      },
+      "tags": [
+        "series:mul-inc-same",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-077",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n2, 5, 12, 37, 90, 205, 446",
+      "options": [
+        "5",
+        "12",
+        "37",
+        "90",
+        "205"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = previous × 2 + 1², 2², 3², 4², 5², 6².",
+          "2 × 2 + 1 = 5",
+          "5 × 2 + 4 = 14",
+          "14 × 2 + 9 = 37",
+          "37 × 2 + 16 = 90",
+          "90 × 2 + 25 = 205",
+          "205 × 2 + 36 = 446",
+          "The series should have 14 where 12 is printed, so 12 is the wrong number."
+        ],
+        "shortcut": "Each term = previous × 2 + 1², 2², 3², 4², 5², 6². The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 12 also looks broken, but 37 follows correctly from the true value 14, so only 12 is wrong."
+      },
+      "tags": [
+        "series:mul-add-sq",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-078",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n3, 80, 6, 75, 12, 66, 24, 59",
+      "options": [
+        "80",
+        "6",
+        "75",
+        "12",
+        "66"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Two alternating series: odd places × 2, even places − 7.",
+          "Odd places: 3, 6, 12, 24 (× 2).",
+          "Even places: 80, 73, 66, 59 (−7).",
+          "The series should have 73 where 75 is printed, so 75 is the wrong number."
+        ],
+        "shortcut": "Two alternating series: odd places × 2, even places − 7. The first step that breaks the rule points to the wrong term.",
+        "trap": "Do not compare neighbours (6 → 75 → 12); they belong to different series. The even places 80, ?, 66, 59 fall by 7, so the term must be 73."
+      },
+      "tags": [
+        "series:twin-ap-gp",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-079",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n2000, 1657, 1693, 1568, 1584, 1554, 1561",
+      "options": [
+        "1657",
+        "1693",
+        "1568",
+        "1584",
+        "1554"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately subtract a cube and add a square on descending bases: −7³, +6², −5³, +4², −3³, +2².",
+          "2000 − 7³ = 1657",
+          "1657 + 6² = 1693",
+          "1693 − 5³ = 1568",
+          "1568 + 4² = 1584",
+          "1584 − 3³ = 1557",
+          "1557 + 2² = 1561",
+          "The series should have 1557 where 1554 is printed, so 1554 is the wrong number."
+        ],
+        "shortcut": "Alternately subtract a cube and add a square on descending bases: −7³, +6², −5³, +4², −3³, +2². The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 1554 also looks broken, but 1561 follows correctly from the true value 1557, so only 1554 is wrong."
+      },
+      "tags": [
+        "series:cube-square-alt",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-080",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n47, 58, 71, 81, 95, 109, 119",
+      "options": [
+        "58",
+        "71",
+        "81",
+        "95",
+        "109"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Add the sum of the digits of the term each time.",
+          "47 + 11 (digit sum) = 58",
+          "58 + 13 (digit sum) = 71",
+          "71 + 8 (digit sum) = 79",
+          "79 + 16 (digit sum) = 95",
+          "95 + 14 (digit sum) = 109",
+          "109 + 10 (digit sum) = 119",
+          "The series should have 79 where 81 is printed, so 81 is the wrong number."
+        ],
+        "shortcut": "Add the sum of the digits of the term each time. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 81 also looks broken, but 95 follows correctly from the true value 79, so only 81 is wrong."
+      },
+      "tags": [
+        "series:digit-sum",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-081",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n6, 7, 12, 19, 46, 127, 370",
+      "options": [
+        "7",
+        "12",
+        "19",
+        "46",
+        "127"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are powers of 3: 1, 3, 9, 27, 81, 243.",
+          "6 + 1 = 7",
+          "7 + 3 = 10",
+          "10 + 9 = 19",
+          "19 + 27 = 46",
+          "46 + 81 = 127",
+          "127 + 243 = 370",
+          "The series should have 10 where 12 is printed, so 12 is the wrong number."
+        ],
+        "shortcut": "Differences are powers of 3: 1, 3, 9, 27, 81, 243. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 12 also looks broken, but 19 follows correctly from the true value 10, so only 12 is wrong."
+      },
+      "tags": [
+        "series:diff-gp",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-082",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n16, 24, 48, 120, 370, 1260, 5040",
+      "options": [
+        "24",
+        "48",
+        "120",
+        "370",
+        "1260"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Multipliers increase by 0.5: × 1.5, × 2, × 2.5, × 3, × 3.5, × 4.",
+          "16 × 1.5 = 24",
+          "24 × 2 = 48",
+          "48 × 2.5 = 120",
+          "120 × 3 = 360",
+          "360 × 3.5 = 1260",
+          "1260 × 4 = 5040",
+          "The series should have 360 where 370 is printed, so 370 is the wrong number."
+        ],
+        "shortcut": "Multipliers increase by 0.5: × 1.5, × 2, × 2.5, × 3, × 3.5, × 4. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 370 also looks broken, but 1260 follows correctly from the true value 360, so only 370 is wrong."
+      },
+      "tags": [
+        "series:mul-half-step",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-083",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n3, 7, 6, 13, 23, 42, 78",
+      "options": [
+        "7",
+        "6",
+        "13",
+        "23",
+        "42"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Each term (from the fourth) is the sum of the previous three terms.",
+          "3 + 4 + 6 = 13",
+          "4 + 6 + 13 = 23",
+          "6 + 13 + 23 = 42",
+          "13 + 23 + 42 = 78",
+          "The series should have 4 where 7 is printed, so 7 is the wrong number."
+        ],
+        "shortcut": "Each term (from the fourth) is the sum of the previous three terms. The first step that breaks the rule points to the wrong term.",
+        "trap": "Two sums fail (3 + 7 + 6 ≠ 13 and 7 + 6 + 13 ≠ 23), which can make 6 or 13 look wrong. Both contain 7; with 4 they work: 3 + 4 + 6 = 13 and 4 + 6 + 13 = 23."
+      },
+      "tags": [
+        "series:tribonacci",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-084",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n4, 12, 32, 94, 284, 850, 2552",
+      "options": [
+        "12",
+        "32",
+        "94",
+        "284",
+        "850"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 3 and alternately subtract and add 2.",
+          "4 × 3 − 2 = 10",
+          "10 × 3 + 2 = 32",
+          "32 × 3 − 2 = 94",
+          "94 × 3 + 2 = 284",
+          "284 × 3 − 2 = 850",
+          "850 × 3 + 2 = 2552",
+          "The series should have 10 where 12 is printed, so 12 is the wrong number."
+        ],
+        "shortcut": "Multiply by 3 and alternately subtract and add 2. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 12 also looks broken, but 32 follows correctly from the true value 10, so only 12 is wrong."
+      },
+      "tags": [
+        "series:mul-alt-pm",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-085",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n6, 27, 60, 120, 210, 336, 504",
+      "options": [
+        "27",
+        "60",
+        "120",
+        "210",
+        "336"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Each term is n³ − n for n = 2, 3, … , 8.",
+          "2³ − 2 = 6",
+          "3³ − 3 = 24",
+          "4³ − 4 = 60",
+          "5³ − 5 = 120",
+          "6³ − 6 = 210",
+          "7³ − 7 = 336",
+          "8³ − 8 = 504",
+          "The series should have 24 where 27 is printed, so 27 is the wrong number."
+        ],
+        "shortcut": "Each term is n³ − n for n = 2, 3, … , 8. The first step that breaks the rule points to the wrong term.",
+        "trap": "**27** is a perfect cube, so it looks right at first glance. The rule is n³ − n, and 3³ − 3 = 24."
+      },
+      "tags": [
+        "series:cubes-pm",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-086",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n70, 73, 69, 74, 67, 78, 65",
+      "options": [
+        "73",
+        "69",
+        "74",
+        "67",
+        "78"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately add and subtract consecutive primes: +2, −3, +5, −7, +11, −13.",
+          "70 + 2 = 72",
+          "72 − 3 = 69",
+          "69 + 5 = 74",
+          "74 − 7 = 67",
+          "67 + 11 = 78",
+          "78 − 13 = 65",
+          "The series should have 72 where 73 is printed, so 73 is the wrong number."
+        ],
+        "shortcut": "Alternately add and subtract consecutive primes: +2, −3, +5, −7, +11, −13. The first step that breaks the rule points to the wrong term.",
+        "trap": "The steps +3, −4, +5 look like a pattern of their own, but the next step is −7, not −6. The whole run +2, −3, +5, −7, +11, −13 uses consecutive primes, which needs 72."
+      },
+      "tags": [
+        "series:alt-sign-primes",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-087",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n5, 7, 17, 50, 225, 1131, 6793",
+      "options": [
+        "7",
+        "17",
+        "50",
+        "225",
+        "1131"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5, 6 and add 2, 3, 4, 5, 6, 7.",
+          "5 × 1 + 2 = 7",
+          "7 × 2 + 3 = 17",
+          "17 × 3 + 4 = 55",
+          "55 × 4 + 5 = 225",
+          "225 × 5 + 6 = 1131",
+          "1131 × 6 + 7 = 6793",
+          "The series should have 55 where 50 is printed, so 50 is the wrong number."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5, 6 and add 2, 3, 4, 5, 6, 7. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 50 also looks broken, but 225 follows correctly from the true value 55, so only 50 is wrong."
+      },
+      "tags": [
+        "series:mul-inc-add-inc",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-088",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n2, 13, 6, 26, 18, 37, 54, 48",
+      "options": [
+        "13",
+        "6",
+        "26",
+        "18",
+        "37"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Two alternating series: odd places × 3, even places + 11.",
+          "Odd places: 2, 6, 18, 54 (× 3).",
+          "Even places: 15, 26, 37, 48 (+11).",
+          "The series should have 15 where 13 is printed, so 13 is the wrong number."
+        ],
+        "shortcut": "Two alternating series: odd places × 3, even places + 11. The first step that breaks the rule points to the wrong term.",
+        "trap": "Do not compare neighbours (2 → 13 → 6); they belong to different series. The even places ?, 26, 37, 48 rise by 11, so the term must be 15."
+      },
+      "tags": [
+        "series:twin-ap-gp",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-089",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n3, 5, 10, 20, 37, 67, 100",
+      "options": [
+        "5",
+        "10",
+        "20",
+        "37",
+        "67"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Differences are n² + 1: 2, 5, 10, 17, 26, 37.",
+          "3 + 2 = 5",
+          "5 + 5 = 10",
+          "10 + 10 = 20",
+          "20 + 17 = 37",
+          "37 + 26 = 63",
+          "63 + 37 = 100",
+          "The series should have 63 where 67 is printed, so 67 is the wrong number."
+        ],
+        "shortcut": "Differences are n² + 1: 2, 5, 10, 17, 26, 37. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 67 also looks broken, but 100 follows correctly from the true value 63, so only 67 is wrong."
+      },
+      "tags": [
+        "series:diff-squares-pm",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-090",
+      "subtype": "wrong-number",
+      "difficulty": "hard",
+      "prompt": "Find the wrong number in the following number series.\n\n1000, 520, 276, 160, 100, 70, 55",
+      "options": [
+        "520",
+        "276",
+        "160",
+        "100",
+        "70"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = previous ÷ 2 + 20.",
+          "1000 ÷ 2 + 20 = 520",
+          "520 ÷ 2 + 20 = 280",
+          "280 ÷ 2 + 20 = 160",
+          "160 ÷ 2 + 20 = 100",
+          "100 ÷ 2 + 20 = 70",
+          "70 ÷ 2 + 20 = 55",
+          "The series should have 280 where 276 is printed, so 276 is the wrong number."
+        ],
+        "shortcut": "Each term = previous ÷ 2 + 20. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 276 also looks broken, but 160 follows correctly from the true value 280, so only 276 is wrong."
+      },
+      "tags": [
+        "series:half-plus",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-091",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n2, 3, 8, 19, 44, 111, 268",
+      "options": [
+        "3",
+        "8",
+        "19",
+        "44",
+        "111"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = 2 × (previous term) + (the term before that).",
+          "2 × 3 + 2 = 8",
+          "2 × 8 + 3 = 19",
+          "2 × 19 + 8 = 46",
+          "2 × 46 + 19 = 111",
+          "2 × 111 + 46 = 268",
+          "The series should have 46 where 44 is printed, so 44 is the wrong number."
+        ],
+        "shortcut": "Each term = 2 × (previous term) + (the term before that). The first step that breaks the rule points to the wrong term.",
+        "trap": "Two later checks fail with 44 (2 × 44 + 19 = 107 ≠ 111 and 2 × 111 + 44 = 266 ≠ 268), which can make 111 or 268 look wrong. With 46 every check works."
+      },
+      "tags": [
+        "series:pell",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-092",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n4, 5, 14, 51, 220, 1135, 6786",
+      "options": [
+        "5",
+        "14",
+        "51",
+        "220",
+        "1135"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Multiply by 1, 2, 3, 4, 5, 6 and add 1², 2², 3², 4², 5², 6².",
+          "4 × 1 + 1 = 5",
+          "5 × 2 + 4 = 14",
+          "14 × 3 + 9 = 51",
+          "51 × 4 + 16 = 220",
+          "220 × 5 + 25 = 1125",
+          "1125 × 6 + 36 = 6786",
+          "The series should have 1125 where 1135 is printed, so 1135 is the wrong number."
+        ],
+        "shortcut": "Multiply by 1, 2, 3, 4, 5, 6 and add 1², 2², 3², 4², 5², 6². The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 1135 also looks broken, but 6786 follows correctly from the true value 1125, so only 1135 is wrong."
+      },
+      "tags": [
+        "series:mul-inc-add-sq",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-093",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n5, 9, 15, 27, 43, 77, 143",
+      "options": [
+        "9",
+        "15",
+        "27",
+        "43",
+        "77"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Differences 4, 6, 10, 18, 34, 66 have differences 2, 4, 8, 16, 32 (doubling).",
+          "5 + 4 = 9",
+          "9 + 6 = 15",
+          "15 + 10 = 25",
+          "25 + 18 = 43",
+          "43 + 34 = 77",
+          "77 + 66 = 143",
+          "The series should have 25 where 27 is printed, so 27 is the wrong number."
+        ],
+        "shortcut": "Differences 4, 6, 10, 18, 34, 66 have differences 2, 4, 8, 16, 32 (doubling). The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 27 also looks broken, but 43 follows correctly from the true value 25, so only 27 is wrong."
+      },
+      "tags": [
+        "series:third-level-gp",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-094",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n3, 7, 22, 41, 122, 245, 734",
+      "options": [
+        "7",
+        "22",
+        "41",
+        "122",
+        "245"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately × 2 + 1 and × 3 − 1.",
+          "3 × 2 + 1 = 7",
+          "7 × 3 − 1 = 20",
+          "20 × 2 + 1 = 41",
+          "41 × 3 − 1 = 122",
+          "122 × 2 + 1 = 245",
+          "245 × 3 − 1 = 734",
+          "The series should have 20 where 22 is printed, so 22 is the wrong number."
+        ],
+        "shortcut": "Alternately × 2 + 1 and × 3 − 1. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 22 also looks broken, but 41 follows correctly from the true value 20, so only 22 is wrong."
+      },
+      "tags": [
+        "series:alt-ops",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-095",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n8, 10, 14, 21, 35, 52, 82",
+      "options": [
+        "10",
+        "14",
+        "21",
+        "35",
+        "52"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pattern: Differences 2, 4, 7, 12, 19, 30 grow by the primes 2, 3, 5, 7, 11.",
+          "8 + 2 = 10",
+          "10 + 4 = 14",
+          "14 + 7 = 21",
+          "21 + 12 = 33",
+          "33 + 19 = 52",
+          "52 + 30 = 82",
+          "The series should have 33 where 35 is printed, so 35 is the wrong number."
+        ],
+        "shortcut": "Differences 2, 4, 7, 12, 19, 30 grow by the primes 2, 3, 5, 7, 11. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 35 also looks broken, but 52 follows correctly from the true value 33, so only 35 is wrong."
+      },
+      "tags": [
+        "series:dd-primes",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-096",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n12, 16, 18, 26, 38, 62, 74",
+      "options": [
+        "16",
+        "18",
+        "26",
+        "38",
+        "62"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Add the product of the digits of the term each time.",
+          "12 + 2 (digit product) = 14",
+          "14 + 4 (digit product) = 18",
+          "18 + 8 (digit product) = 26",
+          "26 + 12 (digit product) = 38",
+          "38 + 24 (digit product) = 62",
+          "62 + 12 (digit product) = 74",
+          "The series should have 14 where 16 is printed, so 16 is the wrong number."
+        ],
+        "shortcut": "Add the product of the digits of the term each time. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 16 also looks broken, but 18 follows correctly from the true value 14, so only 16 is wrong."
+      },
+      "tags": [
+        "series:digit-product",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-097",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n45360, 6520, 1080, 216, 54, 18, 9",
+      "options": [
+        "6520",
+        "1080",
+        "216",
+        "54",
+        "18"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Pattern: Successive division by 7, 6, 5, 4, 3, 2.",
+          "45360 ÷ 7 = 6480",
+          "6480 ÷ 6 = 1080",
+          "1080 ÷ 5 = 216",
+          "216 ÷ 4 = 54",
+          "54 ÷ 3 = 18",
+          "18 ÷ 2 = 9",
+          "The series should have 6480 where 6520 is printed, so 6520 is the wrong number."
+        ],
+        "shortcut": "Successive division by 7, 6, 5, 4, 3, 2. The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 6520 also looks broken, but 1080 follows correctly from the true value 6480, so only 6520 is wrong."
+      },
+      "tags": [
+        "series:div-dec",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-098",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n3, 16, 7, 25, 15, 39, 31, 49",
+      "options": [
+        "16",
+        "7",
+        "25",
+        "15",
+        "39"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Two alternating series: odd places × 2 + 1, even places consecutive squares.",
+          "Odd places: 3, 7, 15, 31 (× 2 + 1).",
+          "Even places: 4², 5², 6², 7² = 16, 25, 36, 49.",
+          "The series should have 36 where 39 is printed, so 39 is the wrong number."
+        ],
+        "shortcut": "Two alternating series: odd places × 2 + 1, even places consecutive squares. The first step that breaks the rule points to the wrong term.",
+        "trap": "Do not compare neighbours (15 → 39 → 31); they belong to different series. The even places 16, 25, ?, 49 are consecutive squares, so the term must be 36."
+      },
+      "tags": [
+        "series:twin-mixed",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-099",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n30, 59, 114, 222, 422, 819, 1602",
+      "options": [
+        "59",
+        "114",
+        "222",
+        "422",
+        "819"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Pattern: Each term = previous × 2 − 1², 2², 3², 4², 5², 6².",
+          "30 × 2 − 1 = 59",
+          "59 × 2 − 4 = 114",
+          "114 × 2 − 9 = 219",
+          "219 × 2 − 16 = 422",
+          "422 × 2 − 25 = 819",
+          "819 × 2 − 36 = 1602",
+          "The series should have 219 where 222 is printed, so 222 is the wrong number."
+        ],
+        "shortcut": "Each term = previous × 2 − 1², 2², 3², 4², 5², 6². The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 222 also looks broken, but 422 follows correctly from the true value 219, so only 222 is wrong."
+      },
+      "tags": [
+        "series:mul-sub-sq",
+        "series:wrong-number"
+      ]
+    },
+    {
+      "key": "ns-100",
+      "subtype": "wrong-number",
+      "difficulty": "extreme",
+      "prompt": "Find the wrong number in the following number series.\n\n80, 81, 77, 86, 70, 92, 59",
+      "options": [
+        "81",
+        "77",
+        "86",
+        "70",
+        "92"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pattern: Alternately add and subtract consecutive squares: +1², −2², +3², −4², +5², −6².",
+          "80 + 1 = 81",
+          "81 − 4 = 77",
+          "77 + 9 = 86",
+          "86 − 16 = 70",
+          "70 + 25 = 95",
+          "95 − 36 = 59",
+          "The series should have 95 where 92 is printed, so 92 is the wrong number."
+        ],
+        "shortcut": "Alternately add and subtract consecutive squares: +1², −2², +3², −4², +5², −6². The first step that breaks the rule points to the wrong term.",
+        "trap": "The step after 92 also looks broken, but 59 follows correctly from the true value 95, so only 92 is wrong."
+      },
+      "tags": [
+        "series:alt-sign-squares",
+        "series:wrong-number"
+      ]
+    }
+  ]
+}

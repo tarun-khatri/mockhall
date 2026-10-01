@@ -1210,6 +1210,610 @@
         "ds:blood-relation",
         "blood-relation:closed-family"
       ]
+    },
+    {
+      "key": "ds-041",
+      "subtype": "direction",
+      "difficulty": "easy",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive points — P, Q, R, S and T — lie on a flat field.\n**In which direction is point R with respect to point P?**\n\n**I.** Q is 5 m to the north of P. R is 3 m to the east of Q.\n**II.** R is due east of S. S is 4 m to the north of T.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: Q is 5 m north of P and R is 3 m east of Q, so R is 5 m north and 3 m east of P — north-east.",
+          "Statement I alone: R is to the north-east of P → **sufficient**.",
+          "Statement II alone: R cannot be linked to P, so its position relative to P is unknown → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-042",
+      "subtype": "direction",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix points — E, F, G, H, J and K — lie on a flat field.\n**What is the shortest distance between points G and E?**\n\n**I.** F is 8 m to the north of E. G is due east of F.\n**II.** Starting from point E, a man walks 6 m towards the east, then turns left and walks 8 m to reach point G.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: from E the man goes 6 m east, then turns left (north) and goes 8 m, so G is 6 m east and 8 m north of E: EG = √(6² + 8²) = 10 m.",
+          "I: G is due east of F, but the length FG is not given, so EG is not fixed.",
+          "Statement I alone: the distance could be √65 m, √68 m or √73 m and more (e.g. taking E as (0, 0), G at (6, 8) gives 10 m, while taking E as (0, 0), G at (7, 8) gives √113 m) → **not sufficient**.",
+          "Statement II alone: G is 10 m from E → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-043",
+      "subtype": "direction",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive points — J, K, L, M and N — lie on a flat field.\n**In which direction is point N with respect to point J?**\n\n**I.** K is 4 m to the south of J. N is 7 m to the west of K.\n**II.** M is due west of J. N is due south of M.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: N is 7 m west of K, which is 4 m south of J — N is south-west of J.",
+          "II: M is somewhere due west of J and N somewhere due south of M; whatever the lengths, N is west and south of J — south-west.",
+          "Statement I alone: N is to the south-west of J → **sufficient**.",
+          "Statement II alone: N is to the south-west of J → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-044",
+      "subtype": "direction",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive points — A, B, C, D and E — lie on a flat field.\n**What is the shortest distance between points A and E?**\n\n**I.** B is 3 m to the east of A. C is 10 m to the north of B.\n**II.** E is 6 m to the south of C. D is 5 m to the west of E.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: C is 3 m east and 10 m north of A; E is 6 m south of C, i.e. 3 m east and 4 m north of A. AE = √(3² + 4²) = 5 m.",
+          "Statement I alone: A cannot be linked to E, so its position relative to E is unknown → **not sufficient**.",
+          "Statement II alone: A cannot be linked to E, so its position relative to E is unknown → **not sufficient**.",
+          "I and II together: A is 5 m from E → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-045",
+      "subtype": "direction",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix points — G, H, J, K, L and M — lie on a flat field.\n**In which direction is point L with respect to point G?**\n\n**I.** H is 5 m to the east of G. J is due north of H.\n**II.** L is due west of J. K is 2 m to the south of L.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: J is north of H (5 m east of G), and L is due west of J by an unknown distance. If JL < 5 m, L is north-east of G; if JL = 5 m, L is due north of G; if JL > 5 m, L is north-west of G.",
+          "Statement I alone: L cannot be linked to G, so its position relative to G is unknown → **not sufficient**.",
+          "Statement II alone: L cannot be linked to G, so its position relative to G is unknown → **not sufficient**.",
+          "I and II together: L could be to the north, north-east or north-west of G (e.g. taking G as (0, 0), L at (0, 1) gives north, while taking G as (0, 0), L at (4, 1) gives north-east) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-046",
+      "subtype": "direction",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive points — D, E, F, G and H — lie on a flat field.\n**In which direction is point H with respect to point E?**\n\n**I.** D is 6 m to the south of E. H is due west of D. F is due north of H.\n**II.** G is 4 m to the west of E. F is 2 m to the north of G. H is due south of F.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: D is 6 m south of E and H is due west of D, so H is south-west of E whatever the length DH.",
+          "II: F is 4 m west and 2 m north of E, and H is due south of F by an unknown distance: H can be north-west, west or south-west of E.",
+          "Statement I alone: H is to the south-west of E → **sufficient**.",
+          "Statement II alone: H could be to the north-west or south-west of E (e.g. taking E as (0, 0), H at (−4, 1) gives north-west, while taking E as (0, 0), H at (−4, −1) gives south-west) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-047",
+      "subtype": "direction",
+      "difficulty": "medium",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix points — K, L, M, N, P and Q — lie on a flat field.\n**In which direction is point M with respect to point K?**\n\n**I.** L is due north of K. N is 2 m to the west of L. M is due east of N.\n**II.** P is 3 m to the south of M. P is 4 m to the east of K.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: P is 4 m east of K and M is 3 m north of P, so M is north-east of K.",
+          "I: M is due east of N, which is 2 m west of L (due north of K); depending on NM, M is north-west, north or north-east of K.",
+          "Statement I alone: M could be to the north-east or north-west of K (e.g. taking K as (0, 0), M at (1, 1) gives north-east, while taking K as (0, 0), M at (−1, 1) gives north-west) → **not sufficient**.",
+          "Statement II alone: M is to the north-east of K → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-048",
+      "subtype": "direction",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFour points — P, Q, R and S — lie on a flat field.\n**What is the shortest distance between points P and S?**\n\n**I.** Starting from point P, Ravi walks 7 m towards the north, turns right and walks 4 m, and then turns right again and walks 4 m to reach point S.\n**II.** Q is 8 m to the east of P. R is 6 m to the north of Q. S is the midpoint of PR.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: Ravi goes 7 m north, 4 m east, then 4 m south: S is 4 m east and 3 m north of P, so PS = 5 m.",
+          "II: R is 8 m east and 6 m north of P; S, the midpoint of PR, is 4 m east and 3 m north of P — again PS = 5 m.",
+          "Statement I alone: P is 5 m from S → **sufficient**.",
+          "Statement II alone: P is 5 m from S → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-049",
+      "subtype": "direction",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFour points — P, R, S and U — lie on a flat field.\n**What is the shortest distance between points P and U?**\n\n**I.** R is due east of P. U is 6 m to the north of R.\n**II.** S is the midpoint of PR. S is 4 m away from P.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I: U is 6 m north of R, but PR (due east) is not given.",
+          "II: S is the midpoint of PR and PS = 4 m, so PR = 8 m — but II does not mention U.",
+          "Together: U is 8 m east and 6 m north of P, so PU = √(8² + 6²) = 10 m.",
+          "Statement I alone: the distance could be √37 m, √40 m or √45 m and more (e.g. taking U as (0, 0), P at (−8, −6) gives 10 m, while taking U as (0, 0), P at (−9, −6) gives √117 m) → **not sufficient**.",
+          "Statement II alone: P cannot be linked to U, so its position relative to U is unknown → **not sufficient**.",
+          "I and II together: P is 10 m from U → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-050",
+      "subtype": "direction",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix points — U, V, W, X, Y and Z — lie on a flat field.\n**In which direction is point Z with respect to point U?**\n\n**I.** Point V lies 5 m east of point U. W is somewhere due north of V, and X lies 3 m west of W.\n**II.** Y is located due south of X. Z is exactly 4 m east of Y.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: X is 2 m east of U’s north–south line and some distance north of U; Y is due south of X and Z is 4 m east of Y, so Z is 6 m east of U — but how far Y lies below X is unknown, so Z can be north-east, east or south-east of U.",
+          "Statement I alone: Z cannot be linked to U, so its position relative to U is unknown → **not sufficient**.",
+          "Statement II alone: Z cannot be linked to U, so its position relative to U is unknown → **not sufficient**.",
+          "I and II together: Z could be to the east, north-east or south-east of U (e.g. taking U as (0, 0), Z at (6, 0) gives east, while taking U as (0, 0), Z at (6, 1) gives north-east) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-051",
+      "subtype": "direction",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix points — A, B, C, D, E and F — lie on a flat field.\n**What is the shortest distance between points A and D?**\n\n**I.** B is 6 m to the north of A. C is 8 m to the east of B. D is the midpoint of AC.\n**II.** E is 4 m to the east of A. D is due north of E. D is due south of F.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: C is 8 m east and 6 m north of A, so AC = 10 m; D is the midpoint of AC, so AD = 5 m.",
+          "II: D is due north of E (4 m east of A), but the length ED is not given, so AD is not fixed.",
+          "Statement I alone: A is 5 m from D → **sufficient**.",
+          "Statement II alone: the distance could be √17 m, √20 m or 5 m and more (e.g. taking D as (0, 0), A at (−4, −10) gives √116 m, while taking D as (0, 0), A at (−4, −11) gives √137 m) → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-052",
+      "subtype": "direction",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nSix points — Q, R, S, T, U and V — lie on a flat field.\n**In which direction is point T with respect to point Q?**\n\n**I.** R is 5 m to the north of Q. S is 5 m to the east of R. T is due south of S.\n**II.** U is 4 m to the south of Q. V is due east of U. T is 6 m to the north of V.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: V is due east of U (4 m south of Q), and T is 6 m north of V — 2 m north of Q’s level and east of Q: north-east.",
+          "I: T is due south of S (5 m north, 5 m east of Q); if ST < 5 m, T is north-east of Q, if ST = 5 m it is due east, and if ST > 5 m it is south-east.",
+          "Statement I alone: T could be to the east, north-east or south-east of Q (e.g. taking Q as (0, 0), T at (5, 0) gives east, while taking Q as (0, 0), T at (5, 4) gives north-east) → **not sufficient**.",
+          "Statement II alone: T is to the north-east of Q → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Statement I looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only II works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-053",
+      "subtype": "direction",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFour points — Q, R, S and T — lie on a flat field.\n**What is the shortest distance between points Q and T?**\n\n**I.** Starting from point Q, a man walks 3 m towards the west, turns left and walks 5 m, and then turns left again and walks 15 m to reach point T.\n**II.** R is 12 m to the east of Q. T is 5 m to the south of R. S is 7 m to the west of T.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: 3 m west, then left (south) 5 m, then left (east) 15 m: T is 12 m east and 5 m south of Q, so QT = √(12² + 5²) = 13 m.",
+          "II: T is 5 m south of R, which is 12 m east of Q — again QT = 13 m.",
+          "Statement I alone: Q is 13 m from T → **sufficient**.",
+          "Statement II alone: Q is 13 m from T → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-054",
+      "subtype": "direction",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFour points — T, U, V and W — lie on a flat field.\n**What is the shortest distance between points W and U?**\n\n**I.** U is 4 m to the east of T. W is due north of U. V is due west of W.\n**II.** W is 5 m away from T. V is 3 m to the north of T.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I: W is due north of U, but the length UW is open.",
+          "II: W is 5 m from T, but its direction from T is unknown.",
+          "Together: T, U, W form a right angle at U with TU = 4 m and TW = 5 m, so UW = √(5² − 4²) = 3 m.",
+          "Statement I alone: the distance could be 1 m, 2 m or 3 m and more (e.g. taking U as (0, 0), W at (0, 1) gives 1 m, while taking U as (0, 0), W at (0, 10) gives 10 m) → **not sufficient**.",
+          "Statement II alone: W cannot be linked to U, so its position relative to U is unknown → **not sufficient**.",
+          "I and II together: W is 3 m from U → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-055",
+      "subtype": "direction",
+      "difficulty": "hard",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive points — V, W, X, Y and Z — lie on a flat field.\n**In which direction is point Z with respect to point V?**\n\n**I.** W is 6 m to the north of V. X is due east of W.\n**II.** Z is due south of X. Y is 6 m to the west of Z.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: X is due east of W (6 m north of V), and Z is due south of X by an unknown distance — Z is east of V, but it can be north-east, east or south-east of V.",
+          "Statement I alone: Z cannot be linked to V, so its position relative to V is unknown → **not sufficient**.",
+          "Statement II alone: Z cannot be linked to V, so its position relative to V is unknown → **not sufficient**.",
+          "I and II together: Z could be to the east, north-east or south-east of V (e.g. taking V as (0, 0), Z at (1, 0) gives east, while taking V as (0, 0), Z at (1, 5) gives north-east) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-056",
+      "subtype": "direction",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive points — P, Q, R, S and T — lie on a flat field.\n**What is the shortest distance between points R and Q?**\n\n**I.** Q is 12 m to the east of P. S is the midpoint of PQ. R is due north of S. R is 10 m away from P.\n**II.** T is 8 m to the north of P. R is due east of T.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I: R is due north of S, the midpoint of PQ, so R is equidistant from P and Q — RQ = RP = 10 m (also: SP = 6 m gives RS = 8 m, and RQ = √(6² + 8²) = 10 m).",
+          "II: R is due east of T (8 m north of P), but II says nothing about Q.",
+          "Statement I alone: R is 10 m from Q → **sufficient**.",
+          "Statement II alone: R cannot be linked to Q, so its position relative to Q is unknown → **not sufficient**.",
+          "Hence I alone is sufficient → option A."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Statement II looks useful but still leaves more than one answer — do not upgrade to “both together” (D) or “either” (C) when only I works alone."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-057",
+      "subtype": "direction",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive points — C, D, E, F and G — lie on a flat field.\n**In which direction is point G with respect to point C?**\n\n**I.** D is 6 m to the east of C. E is 6 m to the north of D. G and E lie on the same east–west line, 10 m apart.\n**II.** F is 6 m to the north of C. G is due west of F.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "II: F is 6 m north of C and G is due west of F, so G is north and west of C — north-west — whatever the length FG.",
+          "I: E is 6 m east and 6 m north of C; G is 10 m east or 10 m west of E, i.e. 16 m east (north-east of C) or 4 m west (north-west of C).",
+          "Statement I alone: G could be to the north-east or north-west of C (e.g. taking C as (0, 0), G at (16, 6) gives north-east, while taking C as (0, 0), G at (−4, 6) gives north-west) → **not sufficient**.",
+          "Statement II alone: G is to the north-west of C → **sufficient**.",
+          "Hence II alone is sufficient → option B."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Statement I gives every distance and still fails because “10 m apart on the same east–west line” allows two sides; statement II gives no distance for FG and still works."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-058",
+      "subtype": "direction",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFive points — P, R, S, T and U — lie on a flat field.\n**What is the shortest distance between points P and T?**\n\n**I.** Starting from point P, a man walks 20 m towards the north, turns right and walks 12 m, and then turns right again and walks 4 m to reach point R. T is the midpoint of PR.\n**II.** U is 9 m to the east of P. S is 8 m to the north of U. T is 3 m to the west of S.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I: 20 m north, 12 m east, 4 m south: R is 12 m east and 16 m north of P, so PR = 20 m and its midpoint T is 10 m from P.",
+          "II: T is 3 m west of S, which is 9 m east and 8 m north of P: T is 6 m east and 8 m north of P — PT = 10 m.",
+          "Statement I alone: P is 10 m from T → **sufficient**.",
+          "Statement II alone: P is 10 m from T → **sufficient**.",
+          "Hence either I or II alone is sufficient → option C."
+        ],
+        "shortcut": "Distance needs both offsets exactly: a \"due north\" clue without metres leaves the length open.",
+        "trap": "Each statement alone already fixes the answer. Marking D (“both together are necessary”) is the classic mistake — check each statement on its own first."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:shortest-distance"
+      ]
+    },
+    {
+      "key": "ds-059",
+      "subtype": "direction",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFour points — A, B, C and E — lie on a flat field.\n**In which direction is point C with respect to point E?**\n\n**I.** B is due north of A. C is 4 m to the east of B.\n**II.** E is 2 m to the north of A. C is 5 m away from E.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Together: C is 4 m east of the north–south line through A and E, at some height h above A. CE = 5 m gives (h − 2)² = 25 − 16 = 9, so h = 5 (h = −1 would put B south of A). C is 3 m north and 4 m east of E — north-east.",
+          "I alone does not mention E; II alone gives only CE = 5 m with no direction.",
+          "Statement I alone: C cannot be linked to E, so its position relative to E is unknown → **not sufficient**.",
+          "Statement II alone: C cannot be linked to E, so its position relative to E is unknown → **not sufficient**.",
+          "I and II together: C is to the north-east of E → **sufficient**.",
+          "Hence both I and II together are needed → option D."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Neither statement alone is enough, but do not stop at E — combine them and test again."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
+    },
+    {
+      "key": "ds-060",
+      "subtype": "direction",
+      "difficulty": "extreme",
+      "prompt": "*The question below is followed by two statements numbered I and II. Decide whether the data given in the statements are sufficient to answer the question.*\n\nFour points — P, Q, R and S — lie on a flat field.\n**In which direction is point S with respect to point P?**\n\n**I.** Q is 6 m to the east of P. R is 8 m to the north of Q.\n**II.** S is 17 m away from R, and S lies either due east or due west of P.",
+      "options": [
+        "The data in statement I alone are sufficient to answer the question, while the data in statement II alone are not sufficient",
+        "The data in statement II alone are sufficient to answer the question, while the data in statement I alone are not sufficient",
+        "The data either in statement I alone or in statement II alone are sufficient to answer the question",
+        "The data in both the statements I and II together are necessary to answer the question",
+        "The data in both the statements I and II together are not sufficient to answer the question"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Together: R is 6 m east and 8 m north of P. S is on the east–west line through P with SR = 17 m, so the horizontal gap between S and R is √(17² − 8²) = 15 m: S is 21 m east of P or 9 m west of P — both fit.",
+          "Statement I alone: S cannot be linked to P, so its position relative to P is unknown → **not sufficient**.",
+          "Statement II alone: S could be to the east or west of P (e.g. taking P as (0, 0), S at (1, 0) gives east, while taking P as (0, 0), S at (−44, 0) gives west) → **not sufficient**.",
+          "I and II together: S could be to the east or west of P (e.g. taking P as (0, 0), S at (21, 0) gives east, while taking P as (0, 0), S at (−9, 0) gives west) → **not sufficient**.",
+          "Hence even I and II together are not sufficient → option E."
+        ],
+        "shortcut": "Place the second point at the origin and add the moves. The direction is fixed only when both the north–south and the east–west offsets have a known sign.",
+        "trap": "Combining the statements narrows the possibilities, but more than one answer still survives — a guess from one convenient case is not sufficiency."
+      },
+      "tags": [
+        "ds:standard-five",
+        "ds:direction",
+        "direction:relative-direction"
+      ]
     }
   ]
 }

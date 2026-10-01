@@ -601,7 +601,7 @@ Sources for §1:
 
 **Options:** 5 fixed outcomes, in varying order.
 
-**Traps:** "only a few A are B" ⇒ some A are B **and** some A are not B; "All B are A" is impossible under "only a few"; possibility vs definite.
+**Traps:** "only a few A are B" ⇒ some A are B **and** some A are not B; "All A are B" is impossible under "only a few" (all B being A is still possible); possibility vs definite.
 
 ### R6. Input–Output — P2/P3
 
