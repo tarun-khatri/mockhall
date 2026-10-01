@@ -452,7 +452,7 @@
         {
           "key": "sp-04-q1",
           "subtype": "alphanumeric-set",
-          "prompt": "How many even numbers in the above arrangement have an odd number immediately before them and a perfect square immediately after them?",
+          "prompt": "How many even numbers in the above arrangement have an odd number immediately before them and a perfect square immediately after them? (1 is considered a perfect square.)",
           "options": [
             "None",
             "One",
@@ -535,7 +535,7 @@
         {
           "key": "sp-04-q4",
           "subtype": "alphanumeric-set",
-          "prompt": "If all the perfect squares are removed from the above arrangement, which of the following will be the 6th element to the right of the 5th element from the left end?",
+          "prompt": "If all the perfect squares are removed from the above arrangement, which of the following will be the 6th element to the right of the 5th element from the left end? (1 is considered a perfect square.)",
           "options": [
             "7",
             "5",
@@ -900,7 +900,7 @@
         {
           "key": "sp-07-q1",
           "subtype": "alphanumeric-set",
-          "prompt": "In the above arrangement, how many symbols are immediately followed by a perfect square but not immediately preceded by an even number?",
+          "prompt": "In the above arrangement, how many symbols are immediately followed by a perfect square but not immediately preceded by an even number? (1 is considered a perfect square.)",
           "options": [
             "None",
             "One",
@@ -1080,7 +1080,7 @@
         {
           "key": "sp-08-q2",
           "subtype": "alphanumeric-set",
-          "prompt": "If all the perfect squares are removed from the above arrangement, how many odd numbers in the new arrangement will have an even number immediately before them and an odd number immediately after them?",
+          "prompt": "If all the perfect squares are removed from the above arrangement, how many odd numbers in the new arrangement will have an even number immediately before them and an odd number immediately after them? (1 is considered a perfect square.)",
           "options": [
             "None",
             "One",
@@ -1707,7 +1707,7 @@
         {
           "key": "sp-12-q2",
           "subtype": "alphanumeric-set",
-          "prompt": "If all the perfect squares are removed from the above arrangement and then the first 8 elements of the new arrangement are written in reverse order, which of the following will be the 7th element to the right of the 5th element from the left end?",
+          "prompt": "If all the perfect squares are removed from the above arrangement and then the first 8 elements of the new arrangement are written in reverse order, which of the following will be the 7th element to the right of the 5th element from the left end? (1 is considered a perfect square.)",
           "options": [
             "6",
             "2",
@@ -1924,7 +1924,7 @@
         {
           "key": "sp-14-q1",
           "subtype": "number-set",
-          "prompt": "If the digits within each number are arranged in ascending order (from left to right), and then 2 is added to the first digit of each odd number, which of the following will be the third lowest number thus formed?",
+          "prompt": "If the digits within each number are arranged in ascending order (from left to right), and then 2 is added to the first digit of each number that is odd after this rearrangement, which of the following will be the third lowest number thus formed?",
           "options": [
             "579",
             "547",
@@ -2162,7 +2162,7 @@
         {
           "key": "sp-16-q3",
           "subtype": "number-set",
-          "prompt": "If the digits within each number are arranged in ascending order (from left to right), and then 1 is added to the second digit of each odd number, how many numbers thus formed will be divisible by 4?",
+          "prompt": "If the digits within each number are arranged in ascending order (from left to right), and then 1 is added to the second digit of each number that is odd after this rearrangement, how many numbers thus formed will be divisible by 4?",
           "options": [
             "None",
             "One",

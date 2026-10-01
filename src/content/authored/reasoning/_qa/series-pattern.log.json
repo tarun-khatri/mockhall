@@ -1,0 +1,29 @@
+[
+  {
+    "at": "2026-10-01T20:46:10.628Z",
+    "passed": 49,
+    "failed": [
+      {
+        "key": "sp-04",
+        "reason": "sp-04-q1: ambiguity 3 — 1 is not declared a perfect square in this item; with 1 as a square: 4(7,9) and 2(9,1) -> Two (C); if 1 is not a square only 4 -> One (B). Item should state that 1 counts. | sp-04-q4: ambiguity 3 — 1 is not declared a perfect square in this item; removing 1,4,9 gives 7 (A); removing only 4,9 gives 5 (B). Both are options. Item should state that 1 counts."
+      },
+      {
+        "key": "sp-07",
+        "reason": "sp-07-q1: ambiguity 3 — 1 is not declared a perfect square in this item; only candidate is $ (3 $ 1). With 1 as square -> One (B); without -> None (A). Item should state that 1 counts."
+      },
+      {
+        "key": "sp-08",
+        "reason": "sp-08-q2: ambiguity 3 — 1 is not declared a perfect square in this item; removing 1,4,9 gives 2 (637, 235) -> C; removing only 4,9 gives 4 -> E. Item should state that 1 counts."
+      },
+      {
+        "key": "sp-14",
+        "reason": "sp-14-q1: ambiguity 3 — Sorted: 268,347,159,468,379. If 'odd number' means the new numbers (347,159,379 -> 547,359,579) third lowest = 468 (E). If it means the original odd numbers (951,793 only) the set is 268,347,359,468,579 and third lowest = 359 (C). Both are options."
+      },
+      {
+        "key": "sp-16",
+        "reason": "sp-16-q3: ambiguity 3 — Sorted: 367,248,159,257,346. If 'odd number' means the new numbers (367,159,257) -> 377,248,169,267,346: only 248 divisible by 4 -> One (B). If it means the original odd numbers (915,257,643 -> 159,257,346) -> 367,248,169,267,356: 248 and 356 -> Two (C)."
+      }
+    ],
+    "unanswered": []
+  }
+]
