@@ -3244,6 +3244,656 @@
         "cr:direct-inference",
         "cr:numerical-inference"
       ]
+    },
+    {
+      "key": "sc-126",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The weather office has forecast a 70 per cent chance of heavy rain in Mumbai on Thursday.\n\n**Conclusions:**\nI. According to the weather office's forecast, heavy rain in Mumbai on Thursday is more likely than not.\nII. Mumbai will receive heavy rain on Thursday.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: a 70 per cent chance is more than 50 per cent, so the forecast makes heavy rain more likely than not.",
+          "II does not follow: a 70 per cent chance still leaves a 30 per cent chance of no heavy rain; a probability is not a certainty.",
+          "Answer: Only I follows."
+        ],
+        "trap": "\"Likely\" (a probability) and \"will\" (a certainty) are different claims."
+      },
+      "tags": [
+        "cr:risk-vs-certainty",
+        "cr:probable-vs-definite"
+      ]
+    },
+    {
+      "key": "sc-127",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The tea board said that the country's tea exports fell by 12 per cent this year, mainly because of lower demand in two of its biggest overseas markets.\n\n**Conclusions:**\nI. Lower demand in overseas markets was the only reason for the fall in tea exports.\nII. According to the tea board, the country's tea exports this year were 88 per cent of last year's.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: \"mainly\" names the chief reason, not the only one; \"only\" goes beyond the statement.",
+          "II follows: a 12 per cent fall leaves 100 − 12 = 88 per cent of last year's exports.",
+          "Answer: Only II follows."
+        ],
+        "trap": "\"Mainly because of\" can never support \"the only reason\"."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-128",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Isha, Jatin and Kunal were born in different years, and Isha is the eldest of the three.\n\n**Conclusions:**\nI. Kunal is older than Jatin.\nII. Jatin is older than Kunal.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither follows on its own: the statement places only Isha; the order of Jatin and Kunal is not given.",
+          "But they were born in different years, so they cannot be the same age: one of them must be older. Exactly one of I and II is true, so either I or II follows.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "\"Born in different years\" removes the \"same age\" case; without it the answer would be \"Neither\"."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:transitive-order"
+      ]
+    },
+    {
+      "key": "sc-129",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The municipal corporation has decided to plant 50,000 saplings along the city's main roads before the monsoon, at least 60 per cent of them of native species such as neem and jamun.\n\n**Conclusions:**\nI. The city's green cover will be greater after the monsoon than it is now.\nII. At least 30,000 neem saplings will be planted along the city's main roads.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: a decision to plant is not proof of the result; saplings may not survive, and trees may be lost elsewhere.",
+          "II does not follow: at least 30,000 saplings (60 per cent of 50,000) will be of native species, but neem is only one of them; jamun and others share that figure.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "The 30,000 is the minimum for all native species together, not for neem alone."
+      },
+      "tags": [
+        "cr:future-speculation",
+        "cr:quantifier"
+      ]
+    },
+    {
+      "key": "sc-130",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Of the 45 shops in a market, 30 accept UPI payments and 25 accept card payments.\n\n**Conclusions:**\nI. At least 10 shops in the market accept both UPI and card payments.\nII. At most 15 shops in the market accept neither UPI nor card payments.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: 30 + 25 = 55 acceptances among 45 shops, so at least 55 − 45 = 10 shops must accept both.",
+          "II follows: at least 30 shops accept UPI, so at most 45 − 30 = 15 shops can accept neither.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "Use minimum overlap = 30 + 25 − 45; do not assume the overlap is exactly 10."
+      },
+      "tags": [
+        "cr:set-overlap",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-131",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The district collector said that the fall in the school dropout rate in the district this year was partly due to the free bus-pass scheme for students.\n\n**Conclusions:**\nI. According to the collector, the free bus-pass scheme was not the only reason for the fall in the dropout rate.\nII. Without the free bus-pass scheme, the dropout rate in the district would have risen this year.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: \"partly due to\" means the scheme explains only part of the fall, so in the collector's view something else contributed too.",
+          "II does not follow: if other factors also helped, the rate might still have fallen without the scheme; what would have happened is not stated.",
+          "Answer: Only I follows."
+        ],
+        "trap": "\"Partly\" rules out \"the only reason\", but it says nothing about what would have happened otherwise."
+      },
+      "tags": [
+        "cr:word-meaning",
+        "cr:alternative-cause"
+      ]
+    },
+    {
+      "key": "sc-132",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** No vehicle will be allowed into the national park after sunset unless it carries a forest guard. A tourist jeep without a forest guard has reached the park gate at 7:30 p.m., after sunset.\n\n**Conclusions:**\nI. Every vehicle carrying a forest guard is allowed into the park after sunset.\nII. The tourist jeep will not be allowed into the park at 7:30 p.m.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: carrying a forest guard is a necessary condition for entry after sunset, not a guarantee; other rules may still keep a vehicle out.",
+          "II follows: the jeep has arrived after sunset without a forest guard, so it fails the necessary condition.",
+          "Answer: Only II follows."
+        ],
+        "trap": "\"Not … unless\" sets a minimum requirement; meeting it does not mean automatic entry."
+      },
+      "tags": [
+        "cr:only-if",
+        "cr:converse-error"
+      ]
+    },
+    {
+      "key": "sc-133",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The average price of 1BHK flats in Thane rose by 8 per cent last year, while the average price of 2BHK flats rose by 5 per cent.\n\n**Conclusions:**\nI. Every 1BHK flat in Thane became costlier last year.\nII. The average price of a 1BHK flat in Thane rose by more rupees last year than that of a 2BHK flat.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: a rise in the average allows some flats to stay the same or fall in price.",
+          "II does not follow: the percentages are on different bases. 2BHK flats are not stated to cost less, and if they cost more, 5 per cent of their price could be a bigger rupee rise than 8 per cent of the 1BHK price.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "A bigger percentage rise is not a bigger rupee rise unless the bases are known."
+      },
+      "tags": [
+        "cr:average-vs-all",
+        "cr:percentage-base"
+      ]
+    },
+    {
+      "key": "sc-134",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** Under a new rule, every new commercial building in the city must provide parking for at least one car per 100 square metres of floor area. Buildings in the heritage zone are exempt from this rule.\n\n**Conclusions:**\nI. A new commercial building with 2,500 square metres of floor area outside the heritage zone must provide parking for at least 25 cars.\nII. Under this rule, a new commercial building in the heritage zone is not required to provide any car parking.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: 2,500 ÷ 100 = 25 cars, and the building is not in the exempt zone.",
+          "II follows: heritage-zone buildings are exempt from this rule, so this rule imposes no parking requirement on them.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "II is limited to \"under this rule\"; that is what makes it safe despite other possible rules."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:exemption"
+      ]
+    },
+    {
+      "key": "sc-135",
+      "subtype": "two-conclusions",
+      "difficulty": "hard",
+      "prompt": "**Statement:** The deposits of Branch A are twice those of Branch B, and the deposits of Branch C are half those of Branch B.\n\n**Conclusions:**\nI. Branch A's deposits are four times Branch C's.\nII. Branches B and C together hold less in deposits than Branch A.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let B = 2x. Then A = 4x and C = x.",
+          "I follows: A = 4x = 4 × C. II follows: B + C = 3x, which is less than A = 4x.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "Pick a value for B that avoids fractions (B = 2) before comparing."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:transitive-order"
+      ]
+    },
+    {
+      "key": "sc-136",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: A public sector bank said its gross non-performing assets (NPAs) fell to 6 per cent of its total loans at the end of March, from 8 per cent a year earlier, while its total loans grew from ₹50,000 crore to ₹60,000 crore. The bank credited stronger recovery efforts for the improvement.\n\n**Conclusions:**\nI. The bank's gross NPAs fell by ₹400 crore over the year.\nII. The bank's gross NPAs fell by 25 per cent over the year.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Gross NPAs were 8% of ₹50,000 crore = ₹4,000 crore and are now 6% of ₹60,000 crore = ₹3,600 crore.",
+          "I follows: the fall is ₹400 crore. II does not follow: ₹400 crore on ₹4,000 crore is a 10 per cent fall; 25 per cent is the fall in the ratio, not in the amount.",
+          "Answer: Only I follows."
+        ],
+        "trap": "The NPA ratio fell by a quarter, but the loan book grew, so the amount fell by only a tenth."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:percentage-base"
+      ]
+    },
+    {
+      "key": "sc-137",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: Road deaths in a state fell from 9,000 in 2024 to 8,100 in 2025. The state transport department attributed most of the fall to its drive against drunk driving. Over the same period, the number of registered vehicles in the state rose by 6 per cent.\n\n**Conclusions:**\nI. According to the department, its drive against drunk driving was the only reason road deaths fell.\nII. Road deaths per registered vehicle in the state fell by more than 10 per cent between 2024 and 2025.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: the department credited the drive with \"most of\" the fall, which leaves room for other factors; \"only\" contradicts this.",
+          "II follows: deaths fell to 0.9 times and vehicles rose to 1.06 times, so deaths per vehicle became 0.9 ÷ 1.06 ≈ 0.85 times — a fall of about 15 per cent.",
+          "Answer: Only II follows."
+        ],
+        "trap": "With more vehicles on the road, the per-vehicle fall is bigger than the 10 per cent fall in total deaths."
+      },
+      "tags": [
+        "cr:extreme-word",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-138",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: The board of a private bank will meet on Thursday to choose its next managing director from the two candidates shortlisted by its nomination committee, Kaveri Menon and Arun Bhatt. The board has said it will make its choice at Thursday's meeting and will not look beyond the shortlist. The central bank must then approve the name within a month.\n\n**Conclusions:**\nI. Kaveri Menon will be the board's choice for managing director.\nII. Arun Bhatt will be the board's choice for managing director.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither follows on its own: the board has not yet chosen.",
+          "The board will choose on Thursday and only from these two, and there is one post, so exactly one of I and II will be true: either I or II follows. The central bank's later approval does not matter, because both conclusions are about the board's choice.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "The approval step tempts you to pick \"Neither\", but the conclusions stop at the board's choice."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:either-or"
+      ]
+    },
+    {
+      "key": "sc-139",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: Under a highway contract, the contractor will get a bonus of ₹10 crore if the road is finished before 31 March, and will pay a penalty of ₹1 crore a week if it is finished after 31 March. The contract does not allow the work to be abandoned. Officials said 85 per cent of the work is complete.\n\n**Conclusions:**\nI. The contractor will get the bonus of ₹10 crore.\nII. The contractor will pay a penalty under the contract.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Neither follows on its own: the finishing date is not known.",
+          "They are not complementary either: if the road is finished on 31 March itself, it is neither before nor after 31 March, so there is neither a bonus nor a penalty. So neither I nor II follows.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "\"Before\" and \"after\" a date leave out the date itself, so this is not an \"either\" pair."
+      },
+      "tags": [
+        "cr:non-exhaustive-pair",
+        "cr:rule-application"
+      ]
+    },
+    {
+      "key": "sc-140",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: Complaints about unauthorised debits received by a bank's grievance cell fell from 2,400 in 2024 to 2,160 in 2025, while the number of its savings accounts rose from 8 lakh to 9 lakh. The bank credited the fall partly to its new SMS-alert system.\n\n**Conclusions:**\nI. The number of such complaints per lakh savings accounts fell by 20 per cent from 2024 to 2025.\nII. According to the bank, the SMS-alert system was one of the factors behind the fall in complaints.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: 2,400 ÷ 8 = 300 complaints per lakh accounts in 2024 and 2,160 ÷ 9 = 240 in 2025; the fall of 60 on 300 is 20 per cent.",
+          "II follows: the bank credited the fall \"partly\" to the system, i.e. as one of the factors.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "The total fell by only 10 per cent, but the per-lakh rate fell by 20 per cent because accounts grew."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:direct-inference"
+      ]
+    },
+    {
+      "key": "sc-141",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: The state has cut the stamp duty on property registration from 7 per cent to 5 per cent of the property's value for women buyers, for registrations made between 1 April 2026 and 31 March 2027. Joint registrations get the concession only if a woman is the first-named buyer, and properties valued above ₹1 crore are not covered.\n\n**Conclusions:**\nI. A flat valued at ₹80 lakh registered in May 2026 with a woman as its only buyer will attract stamp duty of ₹4 lakh.\nII. A flat valued at ₹60 lakh registered jointly by a husband and wife in October 2026 will get the concession.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: the buyer is a woman, May 2026 is within the period, ₹80 lakh is below ₹1 crore, and 5 per cent of ₹80 lakh is ₹4 lakh.",
+          "II does not follow: a joint registration gets the concession only if the woman is the first-named buyer, and the order of names is not given.",
+          "Answer: Only I follows."
+        ],
+        "trap": "II meets the date and value tests but not the first-name condition, which is unknown."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:only-if"
+      ]
+    },
+    {
+      "key": "sc-142",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: The central bank has directed that from 1 January, banks must give every borrower a key fact statement before a retail or MSME loan is signed. The statement must show the all-in annual cost of the loan, including fees and charges. Loans signed before 1 January are not covered by the direction.\n\n**Conclusions:**\nI. A borrower who signed a personal loan with a bank last October is entitled under this direction to a key fact statement for that loan.\nII. A small business signing a new MSME loan with a bank in February must be given, before signing, a key fact statement showing the loan's all-in annual cost.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: loans signed before 1 January are expressly outside the direction.",
+          "II follows: a new MSME loan signed in February is covered, and the statement must be given before signing and must show the all-in annual cost.",
+          "Answer: Only II follows."
+        ],
+        "trap": "A borrower may still receive such a statement voluntarily, but I claims an entitlement under the direction, which is excluded."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:exemption"
+      ]
+    },
+    {
+      "key": "sc-143",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: A cooperative society will share its annual surplus of ₹12 lakh between its only two units, the dairy unit and the fertiliser unit, in proportion to their sales this year. The final sales figures are still being audited, but it is already clear that the dairy unit's sales were not lower than the fertiliser unit's.\n\n**Conclusions:**\nI. The dairy unit will receive more than ₹6 lakh from the surplus.\nII. Each of the two units will receive ₹6 lakh from the surplus.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Dairy sales ≥ fertiliser sales, so the dairy unit's share is at least half of ₹12 lakh, i.e. at least ₹6 lakh.",
+          "If dairy sales are higher, I is true; if they are equal, II is true. Neither is certain on its own, but exactly one must hold: either I or II follows.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "\"Not lower\" includes \"equal\", which is why I alone cannot be concluded."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-144",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: A study of 300 government schools in a state found that attendance in schools that started a mid-morning meal rose by 12 per cent on average over two years, against 4 per cent in schools without the meal. Most of the schools with the meal had also received new classrooms under a separate scheme during the same period.\n\n**Conclusions:**\nI. The mid-morning meal was the main reason for the bigger rise in attendance in the schools that started it.\nII. Attendance rose by at least 12 per cent in every school that started the meal.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: the same schools also got new classrooms, so the study cannot separate the effect of the meal from that of the classrooms.",
+          "II does not follow: 12 per cent is an average; some schools may have risen by less.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "A second change in the same schools blocks any firm causal conclusion, and an average never fixes a minimum."
+      },
+      "tags": [
+        "cr:alternative-cause",
+        "cr:average-vs-all"
+      ]
+    },
+    {
+      "key": "sc-145",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: Under a new state rule, every private school must reserve 25 per cent of its entry-level seats for children from economically weaker families. The state will reimburse the fee for each such child at ₹15,000 a year or the school's actual annual fee, whichever is lower. Unaided schools set up before 2010 are exempt from the rule.\n\n**Conclusions:**\nI. A school covered by the rule that has 80 entry-level seats must reserve 20 of them for such children.\nII. For a covered school whose annual fee is ₹12,000, the state will reimburse ₹12,000 a year for each such child.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I follows: 25 per cent of 80 is 20.",
+          "II follows: the lower of ₹15,000 and ₹12,000 is ₹12,000.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "\"Whichever is lower\" means the reimbursement is the school's own fee whenever that is below ₹15,000."
+      },
+      "tags": [
+        "cr:rule-application",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-146",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: A bank reported that digital transactions made up 80 per cent of all its transactions by number in 2025, up from 60 per cent in 2023. By value, however, cash-and-cheque transactions still made up more than half of the total in both years. The bank classes every transaction as either digital or cash-and-cheque.\n\n**Conclusions:**\nI. In 2025, the average value of a digital transaction at the bank was lower than the average value of a cash-and-cheque transaction.\nII. The bank handled fewer cash-and-cheque transactions in 2025 than in 2023.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I follows: in 2025 digital transactions were 80 per cent of the number but less than half the value, while cash-and-cheque were 20 per cent of the number but more than half the value; so a cash-and-cheque transaction was worth more on average.",
+          "II does not follow: their share of the number fell from 40 to 20 per cent, but the total number of transactions in each year is not given, so the actual count may have risen.",
+          "Answer: Only I follows."
+        ],
+        "trap": "A falling share is not a falling count unless the total is known."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:percentage-base"
+      ]
+    },
+    {
+      "key": "sc-147",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: A survey of 5,000 households across 12 states found that 58 per cent had at least one member with a health insurance policy, up from 41 per cent in a similar survey five years ago. Rural households were found to lag behind urban ones.\n\n**Conclusions:**\nI. Most people in India now have health insurance.\nII. More than 2,000 of the households in the latest survey had no member with a health insurance policy.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I does not follow: \"58 per cent of households had at least one insured member\" is not \"most people are insured\", and the survey covers 12 states only.",
+          "II follows: 100 − 58 = 42 per cent of 5,000 households = 2,100, which is more than 2,000.",
+          "Answer: Only II follows."
+        ],
+        "trap": "\"At least one member\" of a household is a far weaker claim than \"most people\"."
+      },
+      "tags": [
+        "cr:sample-generalisation",
+        "cr:numerical-inference"
+      ]
+    },
+    {
+      "key": "sc-148",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: Only two companies, Tarang Telecom and Vega Telecom, are bidding for the last block of spectrum in an auction that closes on Friday. The block will go to whichever of the two holds the highest bid at the close, and every new bid must be higher than the current highest bid, so the two can never be tied. At present, Tarang Telecom holds the highest bid.\n\n**Conclusions:**\nI. Tarang Telecom will win the block of spectrum.\nII. Vega Telecom will win the block of spectrum.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neither follows on its own: Tarang leads now, but Vega can still place a higher bid before the close.",
+          "The block must go to one of exactly these two, and a tie is impossible, so exactly one of I and II will be true: either I or II follows.",
+          "Answer: Either I or II follows."
+        ],
+        "trap": "The current lead tempts you to pick \"Only I\", but the auction has not closed."
+      },
+      "tags": [
+        "cr:complementary-pair",
+        "cr:probable-vs-definite"
+      ]
+    },
+    {
+      "key": "sc-149",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: Oil companies have cut the price of a 19-kg commercial LPG cylinder in Delhi by ₹50 to ₹1,750. Prices of domestic cylinders have been left unchanged. Hotel owners' associations welcomed the cut, saying they had been seeking relief for months.\n\n**Conclusions:**\nI. The price of a 19-kg commercial LPG cylinder in Delhi was ₹1,700 before the cut.\nII. The oil companies cut the price because hotel owners' associations had asked for relief.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I does not follow: a cut of ₹50 to ₹1,750 means the earlier price was ₹1,800, not ₹1,700.",
+          "II does not follow: the associations had sought relief and welcomed the cut, but the statement does not give the companies' reason for it.",
+          "Answer: Neither I nor II follows."
+        ],
+        "trap": "Add the cut back to get the old price; and a request followed by a cut is not proof that the request caused it."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:causal-leap"
+      ]
+    },
+    {
+      "key": "sc-150",
+      "subtype": "two-conclusions",
+      "difficulty": "extreme",
+      "prompt": "**Statement:** News item: A bank's Kolkata zone opened 40,000 new savings accounts in the first half of the year, 30 per cent of them zero-balance accounts. In the second half it opened 60,000 new savings accounts, 20 per cent of them zero-balance accounts.\n\n**Conclusions:**\nI. The zone opened the same number of zero-balance accounts in each half of the year.\nII. Zero-balance accounts made up 24 per cent of all the new savings accounts the zone opened during the year.\n\nTaking the statement to be true, decide which of the conclusions logically follows from it.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "First half: 30% of 40,000 = 12,000. Second half: 20% of 60,000 = 12,000. I follows.",
+          "II follows: 24,000 out of 1,00,000 new accounts is 24 per cent.",
+          "Answer: Both I and II follow."
+        ],
+        "trap": "Averaging 30 and 20 to get 25 per cent ignores the different number of accounts in each half."
+      },
+      "tags": [
+        "cr:numerical-inference",
+        "cr:percentage-base"
+      ]
     }
   ]
 }
