@@ -1033,78 +1033,6 @@
       "stimulus": "Study the following information carefully and answer the questions given below.\n\nPoint D is 12 m to the west of point A.\nPoint G is 5 m to the south of point D.\nPoint L is 16 m to the east of point G.\nPoint N is 9 m to the south of point L.\nPoint P is 3 m to the west of point N and 14 m to the north of point S.\nPoint U is 8 m to the east of point A.",
       "questions": [
         {
-          "key": "dr-07-q1",
-          "subtype": "point-set",
-          "prompt": "In which direction is point S with respect to point A?",
-          "options": [
-            "North-west",
-            "South",
-            "East",
-            "South-east",
-            "South-west"
-          ],
-          "answerIndex": 3,
-          "solution": {
-            "steps": [
-              "Take point A as (0, 0), east = +x, north = +y.",
-              "D = (-12, 0), G = (-12, -5), L = (4, -5), N = (4, -14), P = (1, -14), S = (1, -28)",
-              "S is 28 m south and 1 m east of A → **South-east**."
-            ],
-            "shortcut": "Only the signs matter for direction: net north/south and net east/west of the reference point.",
-            "trap": "The east–west offset is only 1 m, but it is not zero — so the direction is South-east, not South.",
-            "visual": {
-              "type": "path",
-              "points": [
-                {
-                  "x": 0,
-                  "y": 0,
-                  "label": "A"
-                },
-                {
-                  "x": -12,
-                  "y": 0,
-                  "label": "D"
-                },
-                {
-                  "x": -12,
-                  "y": -5,
-                  "label": "G"
-                },
-                {
-                  "x": 4,
-                  "y": -5,
-                  "label": "L"
-                },
-                {
-                  "x": 4,
-                  "y": -14,
-                  "label": "N"
-                },
-                {
-                  "x": 1,
-                  "y": -14,
-                  "label": "P"
-                },
-                {
-                  "x": 1,
-                  "y": -28,
-                  "label": "S"
-                }
-              ],
-              "unit": "m",
-              "shortest": {
-                "from": "A",
-                "to": "S",
-                "label": "√785 m"
-              }
-            }
-          },
-          "tags": [
-            "direction:point-set",
-            "direction:direction"
-          ]
-        },
-        {
           "key": "dr-07-q2",
           "subtype": "point-set",
           "prompt": "What is the shortest distance between point G and point P?",
@@ -2691,38 +2619,6 @@
           ]
         },
         {
-          "key": "dr-16-q2",
-          "subtype": "point-set",
-          "prompt": "If point Z is 8 m to the east of point U, four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
-          "options": [
-            "Z, M",
-            "Z, Q",
-            "Z, A",
-            "S, D",
-            "U, H"
-          ],
-          "answerIndex": 1,
-          "solution": {
-            "steps": [
-              "Coordinates (taking A as (0, 0)): D = (0, 15), H = (-7, -7), M = (12, 6), Q = (17, 6), S = (17, -18), U = (6, -18).",
-              "Z = U + 8 m east = (14, -18)",
-              "Z w.r.t. M: 24 m south and 2 m east → South-east",
-              "Z w.r.t. Q: 24 m south and 3 m west → South-west",
-              "Z w.r.t. A: 18 m south and 14 m east → South-east",
-              "S w.r.t. D: 33 m south and 17 m east → South-east",
-              "U w.r.t. H: 11 m south and 13 m east → South-east",
-              "Four pairs are South-east; **Z, Q** is South-west."
-            ],
-            "shortcut": "Place the new point first, then compare only the signs of Δx and Δy for each pair.",
-            "trap": "Z, Q is the near miss: Z is 24 m south and 3 m west of Q, so the pair is South-west, not South-east."
-          },
-          "tags": [
-            "direction:point-set",
-            "direction:odd-pair",
-            "direction:new-point"
-          ]
-        },
-        {
           "key": "dr-16-q3",
           "subtype": "point-set",
           "prompt": "Which of the following points is to the south-west of point M?",
@@ -3053,38 +2949,6 @@
           ]
         },
         {
-          "key": "dr-18-q2",
-          "subtype": "point-set",
-          "prompt": "If point Z is 9 m to the south of point V, four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
-          "options": [
-            "Z, H",
-            "Z, F",
-            "Z, X",
-            "Q, K",
-            "S, H"
-          ],
-          "answerIndex": 0,
-          "solution": {
-            "steps": [
-              "Coordinates (taking F as (0, 0)): H = (0, 7), K = (-12, 7), Q = (-32, 23), S = (-32, 12), V = (-27, 12), X = (-18, -9).",
-              "Z = V + 9 m south = (-27, 3)",
-              "Z w.r.t. H: 4 m south and 27 m west → South-west",
-              "Z w.r.t. F: 3 m north and 27 m west → North-west",
-              "Z w.r.t. X: 12 m north and 9 m west → North-west",
-              "Q w.r.t. K: 16 m north and 20 m west → North-west",
-              "S w.r.t. H: 5 m north and 32 m west → North-west",
-              "Four pairs are North-west; **Z, H** is South-west."
-            ],
-            "shortcut": "Place the new point first, then compare only the signs of Δx and Δy for each pair.",
-            "trap": "Z, H is the near miss: Z is 4 m south and 27 m west of H, so the pair is South-west, not North-west."
-          },
-          "tags": [
-            "direction:point-set",
-            "direction:odd-pair",
-            "direction:new-point"
-          ]
-        },
-        {
           "key": "dr-18-q3",
           "subtype": "point-set",
           "prompt": "If point Z is 16 m to the south of point S, in which direction is point Z with respect to point F?",
@@ -3381,38 +3245,6 @@
             "direction:point-set",
             "direction:distance",
             "trick:pythagoras"
-          ]
-        },
-        {
-          "key": "dr-20-q2",
-          "subtype": "point-set",
-          "prompt": "If point Z is 5 m to the north of point E, four of the following five pairs are alike in a certain way based on the direction of the first point with respect to the second point, and so form a group. Which pair does not belong to that group?",
-          "options": [
-            "Z, H",
-            "Z, P",
-            "Z, A",
-            "E, S",
-            "C, T"
-          ],
-          "answerIndex": 0,
-          "solution": {
-            "steps": [
-              "Coordinates (taking A as (0, 0)): C = (-9, 0), E = (-9, -14), H = (13, -14), P = (9, -8), S = (9, 9), T = (19, 9).",
-              "Z = E + 5 m north = (-9, -9)",
-              "Z w.r.t. H: 5 m north and 22 m west → North-west",
-              "Z w.r.t. P: 1 m south and 18 m west → South-west",
-              "Z w.r.t. A: 9 m south and 9 m west → South-west",
-              "E w.r.t. S: 23 m south and 18 m west → South-west",
-              "C w.r.t. T: 9 m south and 28 m west → South-west",
-              "Four pairs are South-west; **Z, H** is North-west."
-            ],
-            "shortcut": "Place the new point first, then compare only the signs of Δx and Δy for each pair.",
-            "trap": "Z, H is the near miss: Z is 5 m north and 22 m west of H, so the pair is North-west, not South-west."
-          },
-          "tags": [
-            "direction:point-set",
-            "direction:odd-pair",
-            "direction:new-point"
           ]
         },
         {
