@@ -1876,6 +1876,624 @@
         "template:purchase-two-items",
         "num:linear-equation"
       ]
+    },
+    {
+      "key": "np-073",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "At a museum, tickets cost ₹100 for an adult, ₹60 for a senior citizen and ₹40 for a child. A group of 120 visitors paid ₹8,800 in all, and the group had twice as many children as senior citizens. How many adults were in the group?",
+      "options": [
+        "20",
+        "40",
+        "48",
+        "60",
+        "72"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let there be s senior citizens: children = 2s and adults = 120 − 3s.",
+          "100(120 − 3s) + 60s + 40(2s) = 8,800 → 12,000 − 160s = 8,800 → s = 20.",
+          "Adults = 120 − 60 = **60** (40 children, 20 senior citizens)."
+        ],
+        "trap": "40 is the number of children and 20 the number of senior citizens; the question asks for adults."
+      },
+      "tags": [
+        "template:adults-children",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-074",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "2 pens, 3 pencils and 4 erasers cost ₹64; 3 pens, 4 pencils and 2 erasers cost ₹62; and 4 pens, 2 pencils and 3 erasers cost ₹72. What is the total cost of one pen, one pencil and one eraser?",
+      "options": [
+        "₹22",
+        "₹24",
+        "₹33",
+        "₹44",
+        "₹66"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Add the three bills: each item appears 2 + 3 + 4 = 9 times in total.",
+          "9 × (pen + pencil + eraser) = 64 + 62 + 72 = 198.",
+          "Pen + pencil + eraser = 198 ÷ 9 = **₹22** (₹10 + ₹4 + ₹8)."
+        ],
+        "trap": "₹66 is the average of the three bills (198 ÷ 3); each bill has 9 items, not 3, so divide the total by 9."
+      },
+      "tags": [
+        "template:purchase-two-items",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-075",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A cash box holds 60 notes of ₹5, ₹10 and ₹20, worth ₹850 in all. There are twice as many ₹10 notes as ₹5 notes. If the number of ₹5 notes and the number of ₹20 notes were interchanged, what would the box then be worth?",
+      "options": [
+        "₹550",
+        "₹600",
+        "₹650",
+        "₹750",
+        "₹850"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let there be x ₹5 notes, 2x ₹10 notes and (60 − 3x) ₹20 notes: 5x + 20x + 20(60 − 3x) = 850.",
+          "1,200 − 35x = 850 → x = 10: 10 notes of ₹5, 20 of ₹10, 30 of ₹20.",
+          "After the interchange: 30 × 5 + 20 × 10 + 10 × 20 = 150 + 200 + 200 = **₹550**."
+        ],
+        "trap": "₹750 interchanges the ₹10 and ₹20 counts instead of the ₹5 and ₹20 counts; ₹850 is the value before any change."
+      },
+      "tags": [
+        "template:notes-coins",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-076",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A test has 100 questions, with 3 marks for each correct answer and 1 mark deducted for each wrong answer. Ram attempted 80% of the questions and scored 156. Shyam attempted 10 more questions than Ram but had 6 fewer correct answers. What was Shyam's score?",
+      "options": [
+        "112",
+        "116",
+        "122",
+        "132",
+        "136"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Ram attempted 80: 3c − (80 − c) = 156 → 4c = 236 → c = 59.",
+          "Shyam attempted 90 with 59 − 6 = 53 correct and 37 wrong.",
+          "Shyam's score = 3 × 53 − 37 = 159 − 37 = **122**."
+        ],
+        "trap": "132 keeps Shyam's attempts at 80 (27 wrong answers) and forgets the extra 10 questions he attempted."
+      },
+      "tags": [
+        "template:negative-marking",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-077",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A parking area has only bicycles, auto-rickshaws (3 wheels) and cars (4 wheels): 50 vehicles with 160 wheels in all. If there are twice as many cars as auto-rickshaws, how many bicycles are there?",
+      "options": [
+        "14",
+        "18",
+        "20",
+        "22",
+        "24"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let there be a auto-rickshaws: cars = 2a, bicycles = 50 − 3a.",
+          "Wheels: 2(50 − 3a) + 3a + 4(2a) = 100 + 5a = 160 → a = 12.",
+          "Cars = 24, so bicycles = 50 − 36 = **14**."
+        ],
+        "trap": "24 is the number of cars; 12 is the number of auto-rickshaws."
+      },
+      "tags": [
+        "template:wheels-count",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-078",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A two-digit number exceeds the number formed by reversing its digits by 36, and the product of the number and its reverse is 2,701. What is the number?",
+      "options": [
+        "37",
+        "51",
+        "62",
+        "73",
+        "84"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "9(a − b) = 36 → a − b = 4: the candidates are 51, 62, 73, 84, 95.",
+          "Products with the reverse: 51 × 15 = 765, 62 × 26 = 1,612, 73 × 37 = 2,701.",
+          "So the number is **73**."
+        ],
+        "trap": "37 is the reverse: its product with 73 is also 2,701, but 37 is smaller than its reverse, so it fails the first condition."
+      },
+      "tags": [
+        "template:digit-reversal",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-079",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "What is the least number which leaves a remainder of 2 when divided by 6, 9, 12, 15 or 18, but is exactly divisible by 7?",
+      "options": [
+        "98",
+        "140",
+        "182",
+        "362",
+        "542"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "LCM(6, 9, 12, 15, 18) = 180, so the number is 180k + 2.",
+          "180k + 2 must be a multiple of 7: k = 1 gives 182 = 7 × 26.",
+          "The least such number is **182**."
+        ],
+        "trap": "98 and 140 are multiples of 7 that leave remainder 2 on division by 6, but not by 9 (98 ÷ 9 leaves 8, 140 ÷ 9 leaves 5)."
+      },
+      "tags": [
+        "template:divisibility-remainder",
+        "num:hcf-lcm",
+        "num:remainders"
+      ]
+    },
+    {
+      "key": "np-080",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The digits of a three-digit number are in increasing order with a constant difference between consecutive digits, and they add up to 15. When the digits are reversed, the number increases by 594. What is the number?",
+      "options": [
+        "159",
+        "258",
+        "357",
+        "456",
+        "852"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let the digits be a − d, a, a + d: 3a = 15 → a = 5.",
+          "Reversing adds 99 × (2d) = 594 → d = 3, so the digits are 2, 5, 8.",
+          "The number is **258** (852 − 258 = 594)."
+        ],
+        "trap": "357 and 456 also have digits in AP adding to 15, but reversing them adds 396 and 198; 852 is the reversed number."
+      },
+      "tags": [
+        "template:three-digit-number",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Three numbers are in the ratio 2 : 3 : 4 and the sum of their squares is 1,856. What is the sum of the three numbers?",
+      "options": [
+        "54",
+        "63",
+        "64",
+        "68",
+        "72"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the numbers be 2k, 3k, 4k: 4k² + 9k² + 16k² = 29k² = 1,856 → k² = 64 → k = 8.",
+          "The numbers are 16, 24, 32, so their sum is **72**."
+        ],
+        "trap": "64 is k², not the sum; stop only after k = 8 is multiplied by 2 + 3 + 4 = 9."
+      },
+      "tags": [
+        "template:sum-of-squares",
+        "num:squares",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "What is the greatest number that divides 1,657 and 2,037 leaving remainders 6 and 5 respectively?",
+      "options": [
+        "113",
+        "127",
+        "131",
+        "254",
+        "381"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The number divides 1,657 − 6 = 1,651 and 2,037 − 5 = 2,032 exactly.",
+          "HCF(1,651, 2,032): 2,032 − 1,651 = 381; 1,651 = 4 × 381 + 127; 381 = 3 × 127. So HCF = **127**."
+        ],
+        "trap": "254 and 381 are multiples of 127, but neither divides 1,651 (= 13 × 127)."
+      },
+      "tags": [
+        "template:hcf-lcm-numbers",
+        "num:hcf-lcm",
+        "num:remainders"
+      ]
+    },
+    {
+      "key": "np-083",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The product of the digits of a two-digit number is 18. When 63 is subtracted from the number, its digits are reversed. What is the number?",
+      "options": [
+        "29",
+        "36",
+        "63",
+        "92",
+        "96"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Subtracting 63 reverses the number: 9(a − b) = 63 → a − b = 7.",
+          "Digits with product 18 and difference 7: 9 and 2. The number is **92** (92 − 63 = 29)."
+        ],
+        "trap": "29 is the reversed number; 36 and 63 also have digit product 18, but their digits differ by 3, not 7."
+      },
+      "tags": [
+        "template:digit-reversal",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-084",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "₹2,400 was to be divided equally among some workers. Since 5 workers left before the payment, each of the others got ₹16 more. How much did each of the remaining workers get?",
+      "options": [
+        "₹72",
+        "₹80",
+        "₹84",
+        "₹90",
+        "₹96"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let there be n workers: 2,400/(n − 5) − 2,400/n = 16 → n(n − 5) = 750 → n = 30.",
+          "Each of the remaining 25 workers got 2,400 ÷ 25 = **₹96**."
+        ],
+        "trap": "₹80 is the planned share (2,400 ÷ 30), before the 5 workers left."
+      },
+      "tags": [
+        "template:sharing-absentees",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-085",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A bus carried 52 passengers. Each adult paid the full fare of ₹90 and each child paid half fare, and the conductor collected ₹3,960. How many children were on the bus?",
+      "options": [
+        "12",
+        "16",
+        "20",
+        "32",
+        "36"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Half fare = ₹45. Let there be a adults: 90a + 45(52 − a) = 3,960.",
+          "45a = 3,960 − 2,340 = 1,620 → a = 36, so children = 52 − 36 = **16**."
+        ],
+        "trap": "36 is the number of adults; it comes from charging the full fare to the children."
+      },
+      "tags": [
+        "template:tickets-two-prices",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-086",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "84 is divided into two parts such that three-fourths of the first part exceeds two-thirds of the second part by 12. What is the first part?",
+      "options": [
+        "36",
+        "42",
+        "48",
+        "54",
+        "60"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the parts be x and 84 − x: (3/4)x − (2/3)(84 − x) = 12.",
+          "Multiply by 12: 9x − 8(84 − x) = 144 → 17x = 816 → x = **48**.",
+          "Check: 36 − 24 = 12."
+        ],
+        "trap": "36 is the second part."
+      },
+      "tags": [
+        "template:split-into-parts",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-087",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The sum of a number and its reciprocal is $4\\frac{1}{4}$. What is the sum of the square of the number and the square of its reciprocal?",
+      "options": [
+        "$14\\frac{1}{16}$",
+        "$16\\frac{1}{16}$",
+        "$16\\frac{1}{4}$",
+        "17",
+        "$18\\frac{1}{16}$"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "x² + 1/x² = (x + 1/x)² − 2.",
+          "(17/4)² − 2 = 289/16 − 32/16 = 257/16 = $16\\frac{1}{16}$.",
+          "(The number is 4 or $\\frac{1}{4}$: 16 + $\\frac{1}{16}$ either way.)"
+        ],
+        "trap": "$18\\frac{1}{16}$ squares $4\\frac{1}{4}$ but forgets to subtract 2 (= 2 × x × 1/x)."
+      },
+      "tags": [
+        "template:number-reciprocal",
+        "num:squares",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-088",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "30% of a number is 63 less than three-fourths of the number. What is the number?",
+      "options": [
+        "105",
+        "120",
+        "126",
+        "140",
+        "210"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "3/4 of x − 30% of x = 75% − 30% = 45% of x = 63.",
+          "x = 63 ÷ 0.45 = **140**."
+        ],
+        "trap": "210 sets 30% of the number equal to 63 and ignores the three-fourths."
+      },
+      "tags": [
+        "template:number-percent",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-089",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two numbers are in the ratio 4 : 7. When 12 is added to each, the ratio becomes 7 : 10. What is the larger number?",
+      "options": [
+        "16",
+        "21",
+        "24",
+        "26",
+        "28"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the numbers be 4k and 7k: 10(4k + 12) = 7(7k + 12) → 9k = 36 → k = 4.",
+          "The numbers are 16 and 28; the larger is **28** (check: 28 : 40 = 7 : 10)."
+        ],
+        "trap": "16 is the smaller number."
+      },
+      "tags": [
+        "template:ratio-shift",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-090",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The sum of four consecutive multiples of 6 is 300. What is the largest of them?",
+      "options": [
+        "72",
+        "78",
+        "84",
+        "90",
+        "96"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the multiples be 6n, 6(n + 1), 6(n + 2), 6(n + 3): 6(4n + 6) = 300 → n = 11.",
+          "They are 66, 72, 78, 84; the largest is **84**."
+        ],
+        "trap": "78 is the third multiple; the average is 75, so the four are 66, 72, 78 and 84.",
+        "shortcut": "Average = 75, which lies midway between the 2nd and 3rd multiples (72 and 78); the largest is 78 + 6 = 84."
+      },
+      "tags": [
+        "template:consecutive-integers",
+        "num:consecutive"
+      ]
+    },
+    {
+      "key": "np-091",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A piggy bank contains ₹1, ₹2 and ₹5 coins in the ratio 6 : 4 : 3, worth ₹290 in all. How many ₹2 coins are there?",
+      "options": [
+        "40",
+        "45",
+        "60",
+        "80",
+        "120"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the counts be 6k, 4k and 3k: value = 6k + 8k + 15k = 29k.",
+          "29k = 290 → k = 10, so there are 4 × 10 = **40** coins of ₹2."
+        ],
+        "trap": "80 is the value (in ₹) of the ₹2 coins, not their number; 60 is the number of ₹1 coins."
+      },
+      "tags": [
+        "template:notes-coins",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-092",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The difference between two numbers is one-fifth of their sum, and their product is 600. What is the sum of the two numbers?",
+      "options": [
+        "20",
+        "30",
+        "45",
+        "50",
+        "60"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "a − b = (a + b)/5 → 5a − 5b = a + b → 4a = 6b → a : b = 3 : 2.",
+          "Let a = 3k, b = 2k: 6k² = 600 → k = 10, so the numbers are 30 and 20.",
+          "Sum = **50**."
+        ],
+        "trap": "30 and 20 are the two numbers themselves; the question asks for their sum."
+      },
+      "tags": [
+        "template:sum-difference",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-093",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Five times a number is 56 more than one-third of the number. What is the number?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "14",
+        "15"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "5x − x/3 = 56 → 14x/3 = 56 → x = **12**.",
+          "Check: 60 − 4 = 56."
+        ],
+        "trap": "14 drops the 'one-third' and solves 5x − x = 56."
+      },
+      "tags": [
+        "template:number-equation",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-094",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The tens digit of a two-digit number is twice its units digit, and the sum of its digits is 12. What is the number?",
+      "options": [
+        "48",
+        "84",
+        "86",
+        "93",
+        "96"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let the units digit be b: tens = 2b and 3b = 12 → b = 4.",
+          "The number is **84**."
+        ],
+        "trap": "48 is the reversed number: there the units digit is twice the tens digit."
+      },
+      "tags": [
+        "template:digit-reversal",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-095",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "If 7 notebooks are given to each student in a class, 5 notebooks are left over. If 9 notebooks are given to each student, the last 3 students get none. How many notebooks are there?",
+      "options": [
+        "117",
+        "121",
+        "135",
+        "144",
+        "153"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let there be n students: 7n + 5 = 9(n − 3) → 2n = 32 → n = 16.",
+          "Notebooks = 7 × 16 + 5 = **117** (= 9 × 13)."
+        ],
+        "trap": "144 is 9 × 16: it gives 9 notebooks to every student and ignores the 3 who get none."
+      },
+      "tags": [
+        "template:distribution-shortfall",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-096",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Three traffic lights change every 48 seconds, 72 seconds and 108 seconds respectively. They change together at exactly 7:00 a.m. How many times will they change together from 7:00 a.m. to 8:00 a.m., counting the change at 7:00 a.m.?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "They change together every LCM(48, 72, 108) = 432 seconds.",
+          "In 3,600 seconds: 3,600 ÷ 432 = 8.33, so 8 more times after 7:00 a.m.",
+          "Counting 7:00 a.m. itself: 8 + 1 = **9**."
+        ],
+        "trap": "8 counts only the changes after 7:00 a.m. and leaves out the one at 7:00 a.m."
+      },
+      "tags": [
+        "template:hcf-lcm-bells",
+        "num:hcf-lcm"
+      ]
     }
   ]
 }
