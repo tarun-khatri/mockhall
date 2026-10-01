@@ -1,0 +1,729 @@
+{
+  "chapter": "speed-distance",
+  "version": 1,
+  "items": [
+    {
+      "key": "sd-001",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A car goes from Nashik to Shirdi at 60 km/h and comes back along the same road at 90 km/h. What is its average speed for the whole round trip?",
+      "options": [
+        "72 km/h",
+        "75 km/h",
+        "78 km/h",
+        "80 km/h",
+        "84 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Equal distances each way, so average speed = 2 × 60 × 90 ÷ (60 + 90).",
+          "= 10800 ÷ 150 = 72 km/h."
+        ],
+        "trap": "75 km/h is the simple mean of 60 and 90. The car spends longer at the slower speed, so the true average is lower.",
+        "shortcut": "For equal distances at a and b km/h: average = 2ab ÷ (a + b)."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:two-leg-average"
+      ]
+    },
+    {
+      "key": "sd-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Meera rides her scooter 150 km at 50 km/h and then a further 160 km at 80 km/h. What is her average speed for the whole ride?",
+      "options": [
+        "62 km/h",
+        "64 km/h",
+        "65 km/h",
+        "66 km/h",
+        "68 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Time = 150 ÷ 50 + 160 ÷ 80 = 3 + 2 = 5 hours.",
+          "Average speed = (150 + 160) ÷ 5 = 310 ÷ 5 = 62 km/h."
+        ],
+        "trap": "65 km/h averages the two speeds. Average speed is always total distance ÷ total time."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:two-leg-average"
+      ]
+    },
+    {
+      "key": "sd-003",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A truck goes from Raipur to Bilaspur at 45 km/h. At what speed must it return along the same route so that its average speed for the round trip is 60 km/h?",
+      "options": [
+        "72 km/h",
+        "75 km/h",
+        "80 km/h",
+        "84 km/h",
+        "90 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take the one-way distance as 180 km. The round trip of 360 km at 60 km/h must take 6 hours.",
+          "The outward leg takes 180 ÷ 45 = 4 hours, so the return must take 2 hours.",
+          "Return speed = 180 ÷ 2 = 90 km/h."
+        ],
+        "trap": "75 km/h comes from 2 × 60 − 45, treating the average speed as the arithmetic mean of the two speeds.",
+        "shortcut": "2 × 45 × v ÷ (45 + v) = 60 → 90v = 2700 + 60v → v = 90."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:two-leg-average"
+      ]
+    },
+    {
+      "key": "sd-004",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Harish completes a journey in 7 hours. He travels the first half of the distance at 60 km/h and the second half at 80 km/h. What is the total distance of the journey?",
+      "options": [
+        "240 km",
+        "420 km",
+        "450 km",
+        "480 km",
+        "490 km"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let each half be x km: x/60 + x/80 = 7.",
+          "x(4 + 3)/240 = 7 → x = 240 km.",
+          "Total distance = 2 × 240 = 480 km."
+        ],
+        "trap": "490 km uses 7 × 70, the simple mean of the speeds; 240 km is only one half of the journey."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:two-leg-average"
+      ]
+    },
+    {
+      "key": "sd-005",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "On a round trip between two towns, Kunal drives back 1.5 times as fast as he drove out. If his average speed for the whole round trip is 48 km/h, what was his speed on the outward journey?",
+      "options": [
+        "36 km/h",
+        "38.4 km/h",
+        "40 km/h",
+        "45 km/h",
+        "60 km/h"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the outward speed be 2x and the return speed 3x (1 : 1.5 = 2 : 3).",
+          "Average = 2 × 2x × 3x ÷ (2x + 3x) = 12x/5 = 48 → x = 20.",
+          "Outward speed = 2x = 40 km/h."
+        ],
+        "trap": "38.4 km/h treats 48 as the arithmetic mean of v and 1.5v; 60 km/h is the return speed, not the outward one."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:two-leg-average"
+      ]
+    },
+    {
+      "key": "sd-006",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Sunita cycles to her aunt's village at 12 km/h and returns by the same road at 18 km/h, spending 5 hours in all on the road. Had she ridden at 15 km/h both ways, how much riding time would she have saved?",
+      "options": [
+        "6 minutes",
+        "10 minutes",
+        "12 minutes",
+        "15 minutes",
+        "18 minutes"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "One-way distance d: d/12 + d/18 = 5 → 5d/36 = 5 → d = 36 km.",
+          "At 15 km/h both ways: 72 ÷ 15 = 4.8 hours = 4 hours 48 minutes.",
+          "Time saved = 5 hours − 4 hours 48 minutes = 12 minutes."
+        ],
+        "trap": "Assuming 15 km/h (the mean of 12 and 18) was already her average suggests almost no saving; her real average was 2 × 12 × 18 ÷ 30 = 14.4 km/h, below 15."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:two-leg-average"
+      ]
+    },
+    {
+      "key": "sd-007",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A car covers the first $\\frac{2}{5}$ of a journey at 48 km/h. At what speed must it cover the rest of the journey so that its average speed for the whole journey is 60 km/h?",
+      "options": [
+        "62 km/h",
+        "64 km/h",
+        "66 km/h",
+        "68 km/h",
+        "72 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take the journey as 240 km. At an average of 60 km/h it must take 4 hours.",
+          "The first 96 km at 48 km/h take 2 hours, so the remaining 144 km must take 2 hours.",
+          "Required speed = 144 ÷ 2 = 72 km/h."
+        ],
+        "trap": "68 km/h solves 0.4 × 48 + 0.6 × v = 60, weighting the speeds by distance. Speeds average by time, not by distance."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:two-leg-average"
+      ]
+    },
+    {
+      "key": "sd-008",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A car covers 270 km in 4.5 hours. The speed of a motorcycle is $\\frac{2}{3}$ of the speed of the car. How far will the motorcycle travel in 5 hours?",
+      "options": [
+        "180 km",
+        "200 km",
+        "210 km",
+        "225 km",
+        "300 km"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Car's speed = 270 ÷ 4.5 = 60 km/h.",
+          "Motorcycle's speed = $\\frac{2}{3}$ × 60 = 40 km/h.",
+          "Distance in 5 hours = 40 × 5 = 200 km."
+        ],
+        "trap": "300 km is the car's distance in 5 hours; the fraction applies to the motorcycle's speed."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:fraction-speed"
+      ]
+    },
+    {
+      "key": "sd-009",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A train covers 336 km in 6 hours. A bus runs at $\\frac{5}{8}$ of the train's speed. What distance will the bus cover in 4 hours 24 minutes?",
+      "options": [
+        "140 km",
+        "147 km",
+        "154 km",
+        "161 km",
+        "168 km"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Train's speed = 336 ÷ 6 = 56 km/h; bus's speed = $\\frac{5}{8}$ × 56 = 35 km/h.",
+          "4 hours 24 minutes = 4.4 hours.",
+          "Distance = 35 × 4.4 = 154 km."
+        ],
+        "trap": "147 km reads 4 hours 24 minutes as 4.2 hours (35 × 4.2). 24 minutes is 0.4 hour."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:fraction-speed"
+      ]
+    },
+    {
+      "key": "sd-010",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A car covers 280 km in 5 hours. A van moves at $\\frac{3}{4}$ of the car's speed. If the car runs for 5 hours and the van for 6 hours, what is the ratio of the distance covered by the car to that covered by the van?",
+      "options": [
+        "9 : 10",
+        "10 : 9",
+        "6 : 5",
+        "5 : 4",
+        "4 : 3"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Car's speed = 280 ÷ 5 = 56 km/h; van's speed = $\\frac{3}{4}$ × 56 = 42 km/h.",
+          "Van's distance in 6 hours = 42 × 6 = 252 km.",
+          "Ratio = 280 : 252 = 10 : 9."
+        ],
+        "trap": "4 : 3 is the ratio of the speeds. The van runs an hour longer, so the distances are 10 : 9; 9 : 10 is the reverse."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:fraction-speed"
+      ]
+    },
+    {
+      "key": "sd-011",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A car covers 520 km in 6.5 hours. The speed of a truck is $\\frac{3}{8}$ of the speed of the car. How long will the truck take to cover 225 km?",
+      "options": [
+        "4.5 hours",
+        "6.5 hours",
+        "7 hours",
+        "7.5 hours",
+        "8 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Car's speed = 520 ÷ 6.5 = 80 km/h; truck's speed = $\\frac{3}{8}$ × 80 = 30 km/h.",
+          "Time = 225 ÷ 30 = 7.5 hours."
+        ],
+        "trap": "4.5 hours treats the truck as $\\frac{3}{8}$ slower than the car (80 − 30 = 50 km/h). Its speed is $\\frac{3}{8}$ of 80, i.e. 30 km/h."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:fraction-speed"
+      ]
+    },
+    {
+      "key": "sd-012",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A car covers 300 km in 5 hours. A motorcycle's speed is $\\frac{4}{5}$ of the car's speed, and a bus runs 25% slower than the motorcycle. How long will the bus take to cover 216 km?",
+      "options": [
+        "4.5 hours",
+        "4.8 hours",
+        "5 hours",
+        "5.4 hours",
+        "6 hours"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Car = 300 ÷ 5 = 60 km/h; motorcycle = $\\frac{4}{5}$ × 60 = 48 km/h.",
+          "Bus = 75% of 48 = 36 km/h.",
+          "Time = 216 ÷ 36 = 6 hours."
+        ],
+        "trap": "4.8 hours applies the 25% cut to the car (45 km/h), and 4.5 hours uses the motorcycle's own speed."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:fraction-speed"
+      ]
+    },
+    {
+      "key": "sd-013",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A car covers 360 km in 6 hours. A motorcycle runs at $\\frac{5}{6}$ of the car's speed. The motorcycle leaves a town 1 hour before the car, and both travel along the same highway in the same direction. How far from the town will the car overtake the motorcycle?",
+      "options": [
+        "250 km",
+        "280 km",
+        "300 km",
+        "320 km",
+        "360 km"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Car = 60 km/h; motorcycle = $\\frac{5}{6}$ × 60 = 50 km/h.",
+          "The motorcycle's lead after 1 hour is 50 km; the gap closes at 60 − 50 = 10 km/h, so the car needs 5 hours.",
+          "Distance from the town = 60 × 5 = 300 km."
+        ],
+        "trap": "250 km is what the motorcycle covers in those 5 hours alone; it had already gone 50 km before the car started."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:fraction-speed"
+      ]
+    },
+    {
+      "key": "sd-014",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A car covers 375 km in $6\\frac{1}{4}$ hours. A motorcycle, whose speed is $\\frac{3}{5}$ of the car's speed, leaves town P for town Q at 8:00 a.m. At 9:30 a.m. the car leaves Q for P along the same road. If P and Q are 294 km apart, how far from Q will they meet?",
+      "options": [
+        "144 km",
+        "150 km",
+        "160 km",
+        "180 km",
+        "240 km"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Car = 375 ÷ 6.25 = 60 km/h; motorcycle = $\\frac{3}{5}$ × 60 = 36 km/h.",
+          "By 9:30 a.m. the motorcycle has covered 36 × 1.5 = 54 km, leaving 240 km between them.",
+          "They close at 96 km/h → 240 ÷ 96 = 2.5 hours; the car covers 60 × 2.5 = 150 km from Q."
+        ],
+        "trap": "144 km is the meeting point measured from P (54 + 36 × 2.5), not from Q."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:fraction-speed"
+      ]
+    },
+    {
+      "key": "sd-015",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A train running at 54 km/h crosses a signal pole in 16 seconds. What is the length of the train?",
+      "options": [
+        "240 m",
+        "256 m",
+        "270 m",
+        "288 m",
+        "864 m"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "54 km/h = 54 × $\\frac{5}{18}$ = 15 m/s.",
+          "Length = 15 × 16 = 240 m."
+        ],
+        "trap": "864 m multiplies 54 × 16 without converting km/h to m/s."
+      },
+      "tags": [
+        "arith:trains",
+        "template:pole-speed-change"
+      ]
+    },
+    {
+      "key": "sd-016",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A train running at 72 km/h crosses an electric pole in 15 seconds. If its speed is increased by 5 m/s, how long will it take to cross a platform 325 m long?",
+      "options": [
+        "21 seconds",
+        "25 seconds",
+        "26 seconds",
+        "28 seconds",
+        "31.25 seconds"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "72 km/h = 20 m/s, so length = 20 × 15 = 300 m.",
+          "New speed = 25 m/s; distance to clear the platform = 300 + 325 = 625 m.",
+          "Time = 625 ÷ 25 = 25 seconds."
+        ],
+        "trap": "31.25 seconds forgets the 5 m/s increase (625 ÷ 20)."
+      },
+      "tags": [
+        "arith:trains",
+        "template:pole-speed-change"
+      ]
+    },
+    {
+      "key": "sd-017",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 280 m long goods train passes a lamp post in 14 seconds. If the train increases its speed by 18 km/h, in how much time will it cross a bridge 470 m long?",
+      "options": [
+        "28 seconds",
+        "30 seconds",
+        "32 seconds",
+        "35 seconds",
+        "37.5 seconds"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Present speed = 280 ÷ 14 = 20 m/s; 18 km/h = 5 m/s, so the new speed is 25 m/s.",
+          "Distance = 280 + 470 = 750 m.",
+          "Time = 750 ÷ 25 = 30 seconds."
+        ],
+        "trap": "37.5 seconds keeps the old speed of 20 m/s; the 18 km/h increase (5 m/s) must be added first."
+      },
+      "tags": [
+        "arith:trains",
+        "template:pole-speed-change"
+      ]
+    },
+    {
+      "key": "sd-018",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A train crosses a pole in 18 seconds. If its speed were 3 m/s more, it would cross the same pole in 15 seconds. What is the length of the train?",
+      "options": [
+        "225 m",
+        "255 m",
+        "270 m",
+        "285 m",
+        "300 m"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The length is the same both times: 18v = 15(v + 3) → 3v = 45 → v = 15 m/s.",
+          "Length = 15 × 18 = 270 m."
+        ],
+        "trap": "225 m multiplies the old speed (15 m/s) by the new time (15 s); the old speed goes with the old time.",
+        "shortcut": "Extra speed × new time = old speed × time saved: 3 × 15 = v × 3 → v = 15 m/s."
+      },
+      "tags": [
+        "arith:trains",
+        "template:pole-speed-change"
+      ]
+    },
+    {
+      "key": "sd-019",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A 360 m long train passes a pole in 24 seconds. By how much must its speed be increased so that it crosses a 440 m long platform in 32 seconds?",
+      "options": [
+        "36 km/h",
+        "45 km/h",
+        "54 km/h",
+        "72 km/h",
+        "90 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Present speed = 360 ÷ 24 = 15 m/s.",
+          "Required speed = (360 + 440) ÷ 32 = 25 m/s.",
+          "Increase = 10 m/s = 10 × $\\frac{18}{5}$ = 36 km/h."
+        ],
+        "trap": "90 km/h is the speed the train needs (25 m/s), not the increase; subtract the present 15 m/s first and then convert."
+      },
+      "tags": [
+        "arith:trains",
+        "template:pole-speed-change"
+      ]
+    },
+    {
+      "key": "sd-020",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A train crosses a pole in 15 seconds and a platform 240 m long in 27 seconds. If its speed is raised by 4 m/s, how long will it take to cross a tunnel 420 m long?",
+      "options": [
+        "30 seconds",
+        "32 seconds",
+        "33 seconds",
+        "35 seconds",
+        "36 seconds"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The extra 12 seconds are spent on the 240 m platform: speed = 240 ÷ 12 = 20 m/s; length = 20 × 15 = 300 m.",
+          "New speed = 24 m/s; distance = 300 + 420 = 720 m.",
+          "Time = 720 ÷ 24 = 30 seconds."
+        ],
+        "trap": "36 seconds divides 720 m by the old speed of 20 m/s instead of 24 m/s."
+      },
+      "tags": [
+        "arith:trains",
+        "template:pole-speed-change"
+      ]
+    },
+    {
+      "key": "sd-021",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A train running at 90 km/h crosses a pole in 12 seconds. Owing to track repairs, its speed is cut by 7 m/s. How long will it now take to cross a platform 240 m long?",
+      "options": [
+        "21.6 seconds",
+        "24 seconds",
+        "27 seconds",
+        "30 seconds",
+        "33 seconds"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "90 km/h = 25 m/s, so length = 25 × 12 = 300 m.",
+          "New speed = 25 − 7 = 18 m/s; distance = 300 + 240 = 540 m.",
+          "Time = 540 ÷ 18 = 30 seconds."
+        ],
+        "trap": "21.6 seconds divides 540 m by the old speed of 25 m/s, ignoring the cut."
+      },
+      "tags": [
+        "arith:trains",
+        "template:pole-speed-change"
+      ]
+    },
+    {
+      "key": "sd-022",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A train crosses a man standing on a platform in 12 seconds and the 180 m long platform itself in 21 seconds. What is the length of the train?",
+      "options": [
+        "210 m",
+        "225 m",
+        "240 m",
+        "270 m",
+        "420 m"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The extra 9 seconds are spent covering the 180 m platform: speed = 180 ÷ 9 = 20 m/s.",
+          "Length = 20 × 12 = 240 m."
+        ],
+        "trap": "420 m is the train plus the platform (20 × 21), not the train alone."
+      },
+      "tags": [
+        "arith:trains",
+        "template:man-platform"
+      ]
+    },
+    {
+      "key": "sd-023",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A train crosses a standing man in 15 seconds and a 300 m long platform in 27 seconds. How long will it take to overtake a 225 m long goods train running on a parallel track in the same direction at 54 km/h?",
+      "options": [
+        "15 seconds",
+        "24 seconds",
+        "40 seconds",
+        "60 seconds",
+        "75 seconds"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Speed = 300 ÷ (27 − 15) = 25 m/s; length = 25 × 15 = 375 m.",
+          "Goods train: 54 km/h = 15 m/s; relative speed in the same direction = 25 − 15 = 10 m/s.",
+          "Time = (375 + 225) ÷ 10 = 60 seconds."
+        ],
+        "trap": "15 seconds adds the speeds as if the trains were approaching each other; 24 seconds treats the goods train as standing still."
+      },
+      "tags": [
+        "arith:trains",
+        "template:man-platform-overtake"
+      ]
+    },
+    {
+      "key": "sd-024",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Train P crosses a man standing on a platform in 9 seconds and the 216 m long platform in 21 seconds. Train Q, 198 m long, is running ahead of P on a parallel track in the same direction at 36 km/h. How long will P take to pass Q completely?",
+      "options": [
+        "20 seconds",
+        "36 seconds",
+        "40 seconds",
+        "45 seconds",
+        "50 seconds"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Speed of P = 216 ÷ (21 − 9) = 18 m/s; length of P = 18 × 9 = 162 m.",
+          "Q runs at 36 km/h = 10 m/s, so the relative speed is 18 − 10 = 8 m/s.",
+          "Time = (162 + 198) ÷ 8 = 360 ÷ 8 = 45 seconds."
+        ],
+        "trap": "20 seconds divides 360 m by P's own speed, as if Q were standing still."
+      },
+      "tags": [
+        "arith:trains",
+        "template:man-platform-overtake"
+      ]
+    },
+    {
+      "key": "sd-025",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A train passes a pole in 10 seconds and a 150 m long platform in 16 seconds. What is the speed of the train?",
+      "options": [
+        "54 km/h",
+        "72 km/h",
+        "75 km/h",
+        "81 km/h",
+        "90 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The platform's 150 m takes 16 − 10 = 6 extra seconds: speed = 150 ÷ 6 = 25 m/s.",
+          "25 m/s = 25 × $\\frac{18}{5}$ = 90 km/h."
+        ],
+        "trap": "54 km/h divides 150 m by the 10 seconds for the pole (15 m/s); the platform accounts only for the extra 6 seconds."
+      },
+      "tags": [
+        "arith:trains",
+        "template:man-platform"
+      ]
+    },
+    {
+      "key": "sd-026",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Train A crosses a signal post in 12 seconds and a 360 m long platform in 30 seconds. How long will it take to cross Train B, 260 m long, coming from the opposite direction at 108 km/h?",
+      "options": [
+        "10 seconds",
+        "12.5 seconds",
+        "14 seconds",
+        "25 seconds",
+        "50 seconds"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Speed of A = 360 ÷ (30 − 12) = 20 m/s; length of A = 20 × 12 = 240 m.",
+          "B: 108 km/h = 30 m/s; opposite directions → relative speed = 20 + 30 = 50 m/s.",
+          "Time = (240 + 260) ÷ 50 = 10 seconds."
+        ],
+        "trap": "50 seconds subtracts the speeds (30 − 20) as if the trains were moving the same way; 25 seconds ignores B's speed."
+      },
+      "tags": [
+        "arith:trains",
+        "template:man-platform-overtake"
+      ]
+    },
+    {
+      "key": "sd-027",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A train crosses a man standing beside the track in 18 seconds and a 260 m long bridge in 31 seconds. How long will it take to cross a 440 m long platform?",
+      "options": [
+        "22 seconds",
+        "36 seconds",
+        "38 seconds",
+        "40 seconds",
+        "44 seconds"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Speed = 260 ÷ (31 − 18) = 20 m/s; length = 20 × 18 = 360 m.",
+          "Time for the platform = (360 + 440) ÷ 20 = 800 ÷ 20 = 40 seconds."
+        ],
+        "trap": "22 seconds forgets the train's own length of 360 m (440 ÷ 20)."
+      },
+      "tags": [
+        "arith:trains",
+        "template:man-platform"
+      ]
+    },
+    {
+      "key": "sd-028",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Train X crosses a man standing on a platform in 16 seconds and the 240 m long platform in 28 seconds. Running on a parallel track, it overtakes Train Y, 280 m long and moving in the same direction, in 2 minutes. What is the speed of Train Y?",
+      "options": [
+        "18 km/h",
+        "36 km/h",
+        "40 km/h",
+        "45 km/h",
+        "54 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Speed of X = 240 ÷ (28 − 16) = 20 m/s; length of X = 20 × 16 = 320 m.",
+          "Relative speed = (320 + 280) ÷ 120 = 5 m/s, so Y runs at 20 − 5 = 15 m/s.",
+          "15 m/s = 15 × $\\frac{18}{5}$ = 54 km/h."
+        ],
+        "trap": "18 km/h is only the relative speed (5 m/s); Y's speed is X's speed (20 m/s) minus the relative speed."
+      },
+      "tags": [
+        "arith:trains",
+        "template:man-platform-overtake"
+      ]
+    }
+  ]
+}

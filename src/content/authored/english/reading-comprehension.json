@@ -4983,6 +4983,751 @@
           ]
         }
       ]
+    },
+    {
+      "key": "rc-21",
+      "subtype": "narrative",
+      "difficulty": "medium",
+      "title": "The seed keeper of Koraput",
+      "stimulus": "When Sabitri Nayak married into a farming family in a village near Koraput in southern Odisha, her mother-in-law kept nineteen kinds of rice seed in clay pots sealed with cow dung and ash. Each variety had a name and a purpose: one for fields that flooded every August, one that grew tall enough to rise above the weeds, one that was cooked only for new mothers because it was believed to be easy to digest. By the time Sabitri's own children were in school, only three of those pots were still in use.\n\nThe change had come quietly. Agricultural officers and seed dealers promoted a handful of high-yielding varieties, and for a while the results were impressive: more grain from the same land, and a crop that sold easily at the market. But the new seeds needed fertiliser and assured water, and they had to be bought afresh every few seasons. In years when the rains failed, the families who had given up their old varieties had nothing to fall back on.\n\nSabitri's turning point came in a drought year when she was in her late thirties. Her own hybrid crop withered, but a neighbour's patch of an old, short-duration variety called *dhusuri* survived on a few showers and gave a modest harvest. \"It was not much,\" she recalls, \"but it was rice, and it was ours.\" That season she began walking from village to village, asking older women which seeds they still kept and offering to grow them out so that they would not be lost.\n\nOver the next ten years her collection grew to more than a hundred varieties. She ______ **(blank)** a small community seed bank in a corner of the village school, where farmers could borrow a kilogram of seed at sowing time and return two kilograms after the harvest. The rule kept the bank stocked without any money changing hands, and it gave every borrower a share in its survival. Women from the self-help group she had joined kept records of where each variety had been sown and how it had **performed**.\n\nNot everyone was convinced. Some farmers pointed out that most traditional varieties yield less than modern ones in a good year, and that traders paid no premium for grain the market did not recognise. Sabitri does not dispute this. She argues instead that a farm growing several varieties is less likely to lose everything in a bad year, and that the old seeds are worth keeping for the qualities they **carry**, such as tolerance to drought, flood or pests, which plant breeders may one day need.\n\nRecently, a few urban buyers have begun to ask for her aromatic and red rices, and they pay more than the market price. She welcomes the income but is wary of it. \"If everyone grows only the variety that sells in the city,\" she says, \"we will have made the same mistake again with different seeds.\"",
+      "questions": [
+        {
+          "key": "rc-21-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, which of the following was true of the rice seeds kept by Sabitri's mother-in-law?",
+          "options": [
+            "All nineteen varieties were sown together in the same field every season to protect against pests.",
+            "They had been bought from seed dealers who promoted them as high-yielding varieties.",
+            "Different varieties suited different conditions or uses, such as fields that flooded in August or meals for new mothers.",
+            "They were stored in metal bins because clay pots could not keep out moisture.",
+            "Most of them were grown mainly for sale to traders in the town market."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 1: 'Each variety had a name and a purpose: one for fields that flooded every August, … one that was cooked only for new mothers'."
+            ],
+            "trap": "The option about seed dealers describes the high-yielding varieties of para 2, which replaced these seeds."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, what problem did families face after giving up their old rice varieties?",
+          "options": [
+            "The new seeds gave less grain than the old ones even in years of good rainfall.",
+            "Traders refused to buy the grain of the new high-yielding varieties.",
+            "They were no longer allowed to buy fertiliser for their fields.",
+            "In years when the rains failed, they had no hardy seed of their own to fall back on.",
+            "Agricultural officers stopped advising them about which seeds to sow."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2: 'In years when the rains failed, the families who had given up their old varieties had nothing to fall back on.'"
+            ],
+            "trap": "The option about less grain reverses para 2: the new seeds gave 'more grain from the same land' and sold easily."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "set off",
+            "took after",
+            "set up",
+            "gave in",
+            "put off"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "The sentence needs a verb meaning 'established': she *set up* a seed bank where farmers could borrow seed.",
+              "'Set off' means to start a journey or trigger something; 'took after' means resembled; 'gave in' means surrendered; 'put off' means postponed. None takes 'a seed bank' as its object with a sensible meaning."
+            ],
+            "trap": "'Set off' looks close to 'set up', but you set off on a journey or set off an alarm; you do not set off a bank."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Farmers can borrow seed from the seed bank without paying any money.\nII. A farmer who borrows a kilogram of seed returns one kilogram after the harvest.\nIII. Women from a self-help group record where each variety was sown and how it did.",
+          "options": [
+            "Only I",
+            "Only II",
+            "Both I and II",
+            "Both I and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "I is true: para 4 says the rule works 'without any money changing hands'.",
+              "II is false: the borrower returns *two* kilograms for every one borrowed.",
+              "III is true: para 4."
+            ],
+            "trap": "Statement II looks like a fair loan, but the passage's rule is borrow one, return two; that is how the bank stays stocked."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, why does Sabitri think the old varieties are worth keeping even though most of them yield less?",
+          "options": [
+            "The old varieties yield more than modern ones once the rains are good.",
+            "A farm with several varieties is less likely to lose everything in a bad year, and the seeds have traits that breeders may need.",
+            "Traders pay a higher price for traditional grain than for modern varieties.",
+            "The old varieties need no water at all and can grow in any season.",
+            "The government pays farmers a fixed sum for every traditional variety they keep."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 5: a farm growing several varieties 'is less likely to lose everything in a bad year', and the seeds carry qualities 'which plant breeders may one day need'."
+            ],
+            "trap": "The option about traders reverses para 5, where traders 'paid no premium' for such grain; the premium from urban buyers in para 6 is recent and not her argument."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Sabitri began collecting seeds after a drought year in which her hybrid crop withered.",
+            "Sabitri advises farmers to grow mainly the varieties that urban buyers pay most for.",
+            "The community seed bank is kept in a corner of the village school.",
+            "Some urban buyers now pay more than the market price for her aromatic and red rices.",
+            "Her collection grew to more than a hundred varieties over about ten years."
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 6: she is 'wary' of urban demand and warns against everyone growing 'only the variety that sells in the city'. So the first statement is false.",
+              "The other four are stated in paras 3, 4 and 6."
+            ],
+            "trap": "She welcomes the income from urban buyers, which makes the false statement tempting; but welcoming income is not the same as advising farmers to chase it."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q07",
+          "subtype": "inference",
+          "prompt": "Why is Sabitri wary of the new demand from urban buyers?",
+          "options": [
+            "She fears farmers may again narrow down to a few varieties, repeating the loss of diversity she has tried to reverse.",
+            "She believes urban buyers will soon stop paying more than the market price.",
+            "She does not want to earn any money from the rice she grows.",
+            "She thinks aromatic and red rices are less nutritious than hybrid rice.",
+            "She suspects that urban buyers actually want hybrid rice rather than traditional varieties."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Her words, 'we will have made the same mistake again with different seeds', point back to para 2, where farmers dropped many varieties for a few.",
+              "The danger is a new narrowing of varieties, this time towards the ones that sell in cities."
+            ],
+            "trap": "The option about not wanting money contradicts para 6: she 'welcomes the income'."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "A farmer's effort to save traditional rice varieties rests on her belief that keeping many kinds of seed protects farmers better than relying on a few.",
+            "High-yielding rice varieties have failed in every village where they were introduced.",
+            "Traditional rice varieties give better harvests than modern varieties in every kind of year.",
+            "Demand from city buyers has already secured the future of traditional rice farming in Odisha.",
+            "Seed dealers deliberately destroyed old rice varieties to sell their own seeds."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "The passage follows Sabitri from the loss of old varieties, through her collecting and seed bank, to her warning against narrowing down again. The thread is diversity as protection."
+            ],
+            "trap": "The option about better harvests in every year contradicts para 5: traditional varieties usually yield less in a good year, which Sabitri accepts."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **performed** as used in the passage.",
+          "options": [
+            "acted",
+            "staged",
+            "rehearsed",
+            "completed",
+            "fared"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Records of 'how it had performed' note how well each variety grew and yielded.",
+              "Performed here = fared, did (well or badly)."
+            ],
+            "trap": "'Acted' and 'staged' are the stage meanings of perform; a rice variety in a field does not act or stage anything."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-21-q10",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **carry** as used in the passage.",
+          "options": [
+            "transport",
+            "lift",
+            "deliver",
+            "support",
+            "possess"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "'the qualities they carry, such as tolerance to drought, flood or pests' are qualities the seeds have in them.",
+              "Carry here = possess, contain."
+            ],
+            "trap": "'Transport' and 'deliver' are the everyday meanings of carry; seeds do not move their qualities from one place to another."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-22",
+      "subtype": "narrative",
+      "difficulty": "easy",
+      "title": "The postman's library",
+      "stimulus": "For thirty-four years, Govind Rao delivered letters in a cluster of villages near Dharwad in Karnataka. In the villages he was a familiar **figure**, pushing his old bicycle up the dusty lanes with a canvas bag on his shoulder. He knew which houses had a son in the army, which grandmother waited every month for a money order, and which children ran to the gate hoping for a letter that was never for them.\n\nWhen he retired at sixty, his colleagues gave him a wall clock and a farewell lunch. His wife expected him to rest. Instead, he found the days long and the house too quiet. What he missed most, he realised, was not the walking but the conversations at doorsteps.\n\nThe idea for a library came from his grandson, who complained that his school had only one cupboard of books, and that it was kept locked so that the books would not get spoilt. Govind Rao had about forty books of his own. He placed them on a plank shelf in the verandah of his house, painted a board that said \"Free Library: Take One, Bring It Back\", and waited.\n\nFor the first few weeks, hardly anyone came. Then a group of schoolchildren began to stop by on their way home, first only to look and then to borrow. A few brought younger brothers and sisters and read to them on the verandah steps. Soon retired teachers and neighbours began to ______ **(blank)** books they no longer needed. Govind Rao kept a notebook in which he wrote down who had borrowed which book and when, an old habit of a postman who had never lost a registered letter. Within two years the collection had grown to more than eight hundred books in Kannada, English and Marathi, and the verandah could no longer hold them.\n\nThe village panchayat offered him an unused room next to the old post office. Volunteers built shelves, and a local shopkeeper donated a tube light and two benches. Older students now come in the evenings to prepare for their examinations, because the room is quieter than their homes. On Sunday mornings, Govind Rao reads stories aloud to the youngest children, many of whose parents never had the chance to finish school. He is **strict** about only one thing: a book must come back, so that someone else can read it.\n\nAsked why he does it, he laughs. \"All my life I carried other people's words to them,\" he says. \"I still do. The only difference is that these words do not need a stamp.\"",
+      "questions": [
+        {
+          "key": "rc-22-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, what did Govind Rao miss most after he retired?",
+          "options": [
+            "The long walks he took every day on his delivery round",
+            "The salary he had earned as a postman",
+            "The company of his colleagues at the post office",
+            "The conversations he used to have at people's doorsteps",
+            "Riding his old bicycle up the village lanes"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 2: 'What he missed most, he realised, was not the walking but the conversations at doorsteps.'"
+            ],
+            "trap": "The walking is named in the same sentence, but only to be ruled out."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, why were the books in the grandson's school of little use to the children?",
+          "options": [
+            "They were kept locked in a cupboard so that they would not get spoilt.",
+            "They were written only in English, which the children could not read.",
+            "They were too old and torn to be read.",
+            "The school had sold them to buy new benches.",
+            "The teachers took them home and did not bring them back."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 3: the school had 'only one cupboard of books', kept locked 'so that the books would not get spoilt'."
+            ],
+            "trap": "The three languages in para 4 describe Govind Rao's later collection, not the school's books."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 4?",
+          "options": [
+            "pass out",
+            "run into",
+            "call off",
+            "look up to",
+            "pass on"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Teachers and neighbours were giving away books they no longer needed: they began to *pass on* those books.",
+              "'Pass out' (faint), 'run into' (meet by chance), 'call off' (cancel) and 'look up to' (admire) do not fit 'books they no longer needed'."
+            ],
+            "trap": "'Pass out' sounds close to 'pass on', but it means to faint (or to graduate), not to hand something over."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. The library began with about forty books that belonged to Govind Rao.\nII. The village panchayat built a new building for the library.\nIII. Govind Rao notes in a notebook who has borrowed which book.",
+          "options": [
+            "Only I",
+            "Both I and III",
+            "Only III",
+            "Both II and III",
+            "All I, II and III"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "I is true: para 3.",
+              "II is false: para 5 says the panchayat offered 'an unused room next to the old post office', not a new building.",
+              "III is true: para 4."
+            ],
+            "trap": "Statement II stretches the panchayat's offer of a spare room into a new building."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q05",
+          "subtype": "fact",
+          "prompt": "According to the passage, who donated a tube light and two benches to the library?",
+          "options": [
+            "The village panchayat",
+            "A local shopkeeper",
+            "Govind Rao's grandson",
+            "The retired teachers",
+            "His former colleagues at the post office"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Para 5: 'a local shopkeeper donated a tube light and two benches'."
+            ],
+            "trap": "The panchayat appears in the same paragraph, but it gave the room, not the light and benches."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT mentioned in the passage?",
+          "options": [
+            "Volunteers built shelves for the library's new room.",
+            "The collection grew to more than eight hundred books.",
+            "The library began charging a small fee for each book after it moved.",
+            "Govind Rao reads stories aloud to young children on Sunday mornings.",
+            "The library holds books in Kannada, English and Marathi."
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Paras 4 and 5 mention the shelves, the eight hundred books, the Sunday stories and the three languages.",
+              "No fee is mentioned anywhere; the board in para 3 calls it a *free* library."
+            ],
+            "trap": "Look for the statement the passage never makes; the move to a new room does not bring any fee with it."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-mentioned",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q07",
+          "subtype": "inference",
+          "prompt": "What does Govind Rao mean when he says that \"these words do not need a stamp\"?",
+          "options": [
+            "He sees lending books as a continuation of his old work of bringing words to people, only without the post.",
+            "He thinks the post office should deliver library books free of charge.",
+            "He regrets that people no longer write letters to one another.",
+            "He plans to send books to readers in other villages by post.",
+            "He believes books are less important than letters."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "'All my life I carried other people's words to them… I still do.' Books, like letters, carry words to people; the only difference is that they need no postage."
+            ],
+            "trap": "The option about letters no longer being written reads a complaint into a cheerful remark; he is describing a link between his two roles."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q08",
+          "subtype": "title",
+          "prompt": "Which of the following is the most suitable title for the passage?",
+          "options": [
+            "The Decline of the Village Post Office",
+            "Why Children Have Stopped Reading",
+            "A Postman's Farewell Lunch",
+            "How to Build Cheap Bookshelves",
+            "From Letters to Library Books"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "The passage tells how a retired postman started and grew a free village library, linking his old job of carrying words with his new one."
+            ],
+            "trap": "The farewell lunch is only a detail of para 2; a title must cover the whole story."
+          },
+          "tags": [
+            "rc:title",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **figure** as used in the passage.",
+          "options": [
+            "number",
+            "shape",
+            "diagram",
+            "person",
+            "amount"
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "'a familiar figure, pushing his old bicycle' refers to Govind Rao himself as people saw him.",
+              "Figure here = person, personality."
+            ],
+            "trap": "'Number' and 'amount' are the maths meanings of figure; 'shape' and 'diagram' are other dictionary senses that do not fit a man on a bicycle."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-22-q10",
+          "subtype": "antonym",
+          "prompt": "Choose the word most opposite in meaning to **strict** as used in the passage.",
+          "options": [
+            "firm",
+            "stern",
+            "lenient",
+            "rigid",
+            "exact"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "He is strict about one rule: a book must come back. Strict = firm, insisting the rule is obeyed.",
+              "The opposite is lenient (easy-going, allowing exceptions)."
+            ],
+            "trap": "Firm, stern and rigid are near-synonyms of strict; 'exact' is close to another sense of strict (a strict translation)."
+          },
+          "tags": [
+            "vocab:antonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rc-23",
+      "subtype": "narrative",
+      "difficulty": "hard",
+      "title": "The press that kept its type",
+      "stimulus": "The building on a narrow lane in Sivakasi still has its name painted above the door in faded blue letters: Annamalai Press, Estd. 1952. For most of its life the press did what small printers across Tamil Nadu did: wedding invitations, school notebooks, almanacs, handbills for cinema halls and receipt books for shops. Every word was assembled by hand from trays of metal type, locked into a frame and pressed onto paper by machines that clattered from early morning until late at night.\n\nBy the 1990s, offset printing had made such work faster and cheaper, and a decade later anyone with a computer could design a card and have it printed digitally in an afternoon. Orders began to ______ **(blank)**. Shopkeepers who had for decades **settled** their accounts with the press only once a year, after the festival season, took their receipt books to cheaper printers. Senthil, the founder's son, kept the press running by taking in whatever jobs the larger printers did not want, and by the time his daughter Meenal finished college he had quietly accepted that the old machines would one day be sold as scrap.\n\nMeenal had no plans to rescue it. She had trained as a graphic designer and was working for an agency in Bengaluru when, on a visit home, she watched one of the two remaining compositors, a man who had worked at the press for forty years, set a line of type without looking at the tray. What struck her was not nostalgia but the quality of the result: the letters bit slightly into thick cotton paper, leaving an impression that could be felt with a fingertip. No digital printer she knew could reproduce it.\n\nShe returned a year later with a plan that her father thought unrealistic. The press would keep its digital work, which paid the bills, but would also offer letterpress wedding cards, stationery and notebooks to customers willing to pay for them, mostly through orders placed online from cities. The very qualities that had made letterpress obsolete, its slowness, its need for skilled hands and the slight unevenness that gives each card **character**, became the reasons people chose it.\n\nThe plan has worked, up to a point. Letterpress orders now bring in about a third of the press's income, and Senthil no longer talks about selling the machines. But the business remains fragile. The two compositors are in their sixties, and young people in the town prefer jobs in the large printing units, which pay more regularly. Meenal has begun training two apprentices, though she admits that a skill learnt over decades cannot be passed on in months.\n\nShe is also careful not to romanticise the past. \"My grandfather did not use letterpress because it was beautiful,\" she says. \"He used it because it was the only way to print. If we survive, it will be because we have found a new reason for an old method, not because we refused to change.\"",
+      "questions": [
+        {
+          "key": "rc-23-q01",
+          "subtype": "fact",
+          "prompt": "According to the passage, what first convinced Meenal that letterpress was worth keeping?",
+          "options": [
+            "The feel of the impression the type left on thick paper, which she believed no digital printer could reproduce",
+            "A feeling of nostalgia for the press in which she had grown up",
+            "The compositor's speed, which she thought could compete with offset printing",
+            "Her father's request that she give up her job and take over the press",
+            "The discovery that letterpress cards cost less to produce than digital ones"
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 3: 'What struck her was not nostalgia but the quality of the result': letters that bit into the paper, leaving an impression 'that could be felt with a fingertip'."
+            ],
+            "trap": "The compositor setting type without looking is the scene she watched, but the passage says the *quality* struck her, not speed; nostalgia is ruled out in so many words."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q02",
+          "subtype": "fact",
+          "prompt": "According to the passage, how did Senthil keep the press running before Meenal returned?",
+          "options": [
+            "By selling the old machines as scrap metal",
+            "By switching all the press's work to offset printing",
+            "By taking in jobs that the larger printers did not want",
+            "By selling letterpress wedding cards online to city customers",
+            "By training young apprentices to replace the compositors"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "Para 2: Senthil 'kept the press running by taking in whatever jobs the larger printers did not want'."
+            ],
+            "trap": "He had *accepted* that the machines would one day be sold as scrap; he had not sold them. The online cards and apprentices are Meenal's later moves."
+          },
+          "tags": [
+            "rc:fact",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q03",
+          "subtype": "blank",
+          "prompt": "Which of the following words/phrases best fills the blank marked **(blank)** in paragraph 2?",
+          "options": [
+            "pick up",
+            "dry up",
+            "dry out",
+            "show off",
+            "make up"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Offset and digital printing had made the work cheaper elsewhere, and shopkeepers took their receipt books away: orders began to *dry up* (decline until almost none were left).",
+              "'Pick up' would mean orders increased, the reverse of what follows; 'dry out' is used of wet things, not of orders."
+            ],
+            "trap": "'Pick up' is grammatical, but the next sentences describe customers leaving, so the context demands a fall, not a rise."
+          },
+          "tags": [
+            "rc:in-passage-blank",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q04",
+          "subtype": "true-statements",
+          "prompt": "Which of the following statements is/are true according to the passage?\nI. Letterpress work now provides most of the press's income.\nII. The press has continued to do digital printing work.\nIII. Young people in Sivakasi prefer jobs at large printing units partly because those jobs pay more regularly.",
+          "options": [
+            "Only II",
+            "Both I and II",
+            "Both II and III",
+            "Only III",
+            "All I, II and III"
+          ],
+          "answerIndex": 2,
+          "solution": {
+            "steps": [
+              "I is false: letterpress brings in 'about a third' of the income (para 5), not most of it.",
+              "II is true: the plan was to 'keep its digital work, which paid the bills' (para 4).",
+              "III is true: para 5 says young people prefer the large units, 'which pay more regularly'."
+            ],
+            "trap": "Statement I turns 'about a third' into a majority; Senthil no longer wanting to sell the machines does not mean letterpress dominates."
+          },
+          "tags": [
+            "rc:true-statements",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q05",
+          "subtype": "inference",
+          "prompt": "Which of the following can be inferred about the customers for the press's letterpress products?",
+          "options": [
+            "They are mainly the shopkeepers who used to order receipt books from the press.",
+            "They choose letterpress chiefly because it costs less than digital printing.",
+            "They insist that every card be printed perfectly evenly.",
+            "Many of them are in cities and are prepared to pay for qualities that once counted as drawbacks of the method.",
+            "Most of them place their orders by visiting the press in person."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Para 4: orders come 'mostly through orders placed online from cities' from customers 'willing to pay', and slowness, hand skill and unevenness 'became the reasons people chose it'."
+            ],
+            "trap": "The option about even printing reverses para 4: the slight unevenness is part of the appeal."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q06",
+          "subtype": "fact",
+          "prompt": "Which of the following is NOT true according to the passage?",
+          "options": [
+            "Senthil welcomed Meenal's plan for the press as soon as she proposed it.",
+            "One of the compositors had worked at the press for forty years.",
+            "Offset printing had made printing faster and cheaper by the 1990s.",
+            "Meenal has begun training two apprentices.",
+            "The press was set up in 1952."
+          ],
+          "answerIndex": 0,
+          "solution": {
+            "steps": [
+              "Para 4: she returned 'with a plan that her father thought unrealistic', so he did not welcome it at once. Only later (para 5) did he stop talking about selling the machines.",
+              "The other four statements are given in paras 1, 2, 3 and 5."
+            ],
+            "trap": "Para 5, where Senthil gives up the idea of selling, can make the first statement look true; it describes his view after the plan had worked, not when she proposed it."
+          },
+          "tags": [
+            "rc:fact",
+            "rc:not-true",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q07",
+          "subtype": "inference",
+          "prompt": "Why does Meenal point out that her grandfather did not use letterpress because it was beautiful?",
+          "options": [
+            "To criticise her grandfather for ignoring the beauty of letterpress printing",
+            "To stress that the press can survive only by finding a present-day reason for the old method, not by clinging to tradition",
+            "To argue that letterpress cards are not really beautiful",
+            "To explain why the press has given up digital printing",
+            "To suggest that the press should return to the jobs it did in 1952"
+          ],
+          "answerIndex": 1,
+          "solution": {
+            "steps": [
+              "Her next sentence explains the point: survival will come from 'a new reason for an old method, not because we refused to change'. Her grandfather used letterpress out of necessity; today it must earn its place for different reasons."
+            ],
+            "trap": "The option about criticising her grandfather misreads a factual remark as blame; she is warning against romanticising the past."
+          },
+          "tags": [
+            "rc:inference",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q08",
+          "subtype": "main-idea",
+          "prompt": "Which of the following best expresses the main idea of the passage?",
+          "options": [
+            "Digital printing has driven every small press in Tamil Nadu out of business.",
+            "Letterpress is better than digital printing in every respect.",
+            "Sivakasi's printers depend almost entirely on orders for wedding invitations.",
+            "A family press survived by turning an outdated method into a premium craft, although its future still depends on passing on scarce skills.",
+            "Young designers should leave city jobs to take over their family businesses."
+          ],
+          "answerIndex": 3,
+          "solution": {
+            "steps": [
+              "Paras 2–4 describe decline and the new plan; para 5 says it 'has worked, up to a point' but 'remains fragile' because of ageing compositors; para 6 frames it as a new reason for an old method."
+            ],
+            "trap": "The option about letterpress being better in every respect overstates para 4; the press still relies on digital work to pay the bills."
+          },
+          "tags": [
+            "rc:main-idea",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q09",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **settled** as used in the passage.",
+          "options": [
+            "calmed",
+            "resolved",
+            "located",
+            "colonised",
+            "paid"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "Shopkeepers 'settled their accounts with the press only once a year' means they paid what they owed once a year.",
+              "Settled here = paid."
+            ],
+            "trap": "'Resolved' fits 'settled a dispute', and 'located' or 'colonised' fit 'settled in a place'; accounts with a printer are settled by paying them."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        },
+        {
+          "key": "rc-23-q10",
+          "subtype": "synonym",
+          "prompt": "Choose the word most similar in meaning to **character** as used in the passage.",
+          "options": [
+            "letter",
+            "role",
+            "reputation",
+            "symbol",
+            "individuality"
+          ],
+          "answerIndex": 4,
+          "solution": {
+            "steps": [
+              "'the slight unevenness that gives each card character' makes each card distinctive, unlike any other.",
+              "Character here = individuality, distinctive quality."
+            ],
+            "trap": "In a passage about type, 'letter' and 'symbol' are tempting because a printed character is a letter; but unevenness gives a card distinctiveness, not letters."
+          },
+          "tags": [
+            "vocab:synonym",
+            "vocab:in-context",
+            "theme:narrative"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -2671,6 +2671,679 @@
         "grammar:inversion",
         "pattern:hardly-when"
       ]
+    },
+    {
+      "key": "es-101",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The scissors",
+        "on the tailor's table",
+        "are blunt,",
+        "so use the blade instead.",
+        "No error"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "There is no error. 'Scissors' is a plural-only noun (like trousers and spectacles), so 'The scissors … are blunt' is correct.",
+          "Correct: *The scissors on the tailor's table are blunt, so use the blade instead.*"
+        ],
+        "rule": "No error: plural-only nouns (scissors, trousers, spectacles) take a plural verb",
+        "trap": "A pair of scissors is one object, which tempts you to want 'is'; only 'a pair of scissors' takes 'is'.",
+        "shortcut": "Scissors are … / A pair of scissors is …."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-102",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The police have",
+        "arrested the two men",
+        "who broke into",
+        "the jewellery shop.",
+        "No error"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "There is no error. 'Police' is a plural noun and always takes a plural verb: 'The police have arrested'.",
+          "Correct: *The police have arrested the two men who broke into the jewellery shop.*"
+        ],
+        "rule": "No error: 'police' (like 'cattle' and 'people') is always plural",
+        "trap": "'police' has no -s and looks like a singular collective noun, so 'has arrested' seems right; it is never used with a singular verb.",
+        "shortcut": "Police, cattle, people, poultry → plural verb."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:no-error"
+      ]
+    },
+    {
+      "key": "es-103",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "I am knowing",
+        "Mr Kulkarni",
+        "since our",
+        "college days.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Know' is a stative verb and is not used in the continuous; with 'since' the present perfect is needed: 'I have known Mr Kulkarni since our college days.'",
+          "Correct: *I have known Mr Kulkarni since our college days.*"
+        ],
+        "rule": "Tense: stative verbs (know, believe, own, belong) are not used in continuous forms; 'since' → present perfect",
+        "trap": "'since our college days' is correct; the only change needed is in the verb phrase of Part A.",
+        "shortcut": "Know / understand / believe → never '-ing' in this sense."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:stative-verb",
+        "pattern:since-for"
+      ]
+    },
+    {
+      "key": "es-104",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The new manager",
+        "is very strict",
+        "about punctuality,",
+        "isn't it?",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. A question tag repeats the subject as a pronoun. The subject is 'the new manager', a person, so the tag must be 'isn't he?' (or 'isn't she?'), not 'isn't it?'.",
+          "Correct: *The new manager is very strict about punctuality, isn't he?*"
+        ],
+        "rule": "Question tags: the tag pronoun refers back to the subject of the main clause",
+        "trap": "'isn't it?' is used as an all-purpose tag in Indian English; in standard English the pronoun must match the subject.",
+        "shortcut": "Positive statement → negative tag + matching pronoun (manager → he/she)."
+      },
+      "tags": [
+        "grammar:question-tag"
+      ]
+    },
+    {
+      "key": "es-105",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The auditor found mistakes",
+        "in the ledger and",
+        "the supervisor made",
+        "the clerk to redo it.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. In the active voice 'make' (= force) is followed by an object and a bare infinitive: 'made the clerk redo it'.",
+          "Correct: *The auditor found mistakes in the ledger, and the supervisor made the clerk redo it.*"
+        ],
+        "rule": "Verb form: make / let / have / see / hear + object + bare infinitive (active voice)",
+        "trap": "In the passive 'to' does appear ('the clerk was made to redo it'), which makes 'made the clerk to redo' sound possible.",
+        "shortcut": "Active 'make someone do'; passive 'be made to do'."
+      },
+      "tags": [
+        "grammar:verb-form",
+        "pattern:bare-infinitive"
+      ]
+    },
+    {
+      "key": "es-106",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The factory",
+        "has imported",
+        "new machineries",
+        "from Germany.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Machinery' is uncountable and has no plural. Use 'new machinery' or 'new machines'.",
+          "Correct: *The factory has imported new machinery from Germany.*"
+        ],
+        "rule": "Countability: 'machinery' is uncountable (but 'machine' is countable)",
+        "trap": "'machines' is a correct plural, so 'machineries' looks like a normal plural of 'machinery'.",
+        "shortcut": "machinery, scenery, stationery, jewellery → no -s."
+      },
+      "tags": [
+        "grammar:uncountable-noun"
+      ]
+    },
+    {
+      "key": "es-107",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "We could not finish",
+        "the survey because",
+        "we did not have",
+        "much volunteers.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. 'Volunteers' is a countable plural, so it takes 'many', not 'much': 'we did not have many volunteers'.",
+          "Correct: *We could not finish the survey because we did not have many volunteers.*"
+        ],
+        "rule": "Countability: many + countable plural; much + uncountable",
+        "trap": "'did not have much' is very common ('much time', 'much money'), so the phrase sounds fluent until you check the noun.",
+        "shortcut": "Plural noun after it → many."
+      },
+      "tags": [
+        "grammar:countability",
+        "pattern:much-many"
+      ]
+    },
+    {
+      "key": "es-108",
+      "subtype": "classic-parts",
+      "difficulty": "medium",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The rich",
+        "is not always",
+        "happier than",
+        "the poor.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. 'The rich' (the + adjective) means 'rich people' and is plural, so the verb must be 'are': 'The rich are not always happier than the poor.'",
+          "Correct: *The rich are not always happier than the poor.*"
+        ],
+        "rule": "Subject–verb agreement: 'the + adjective' for a group of people (the rich, the poor, the old) is plural",
+        "trap": "'The rich' has no plural -s, so it looks singular.",
+        "shortcut": "The rich / the poor / the young / the injured → are."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:the-adjective"
+      ]
+    },
+    {
+      "key": "es-109",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Either the drivers or the conductor",
+        "have to stay",
+        "with the bus",
+        "at all times.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. With 'either … or', the verb agrees with the nearer subject. The nearer subject is 'the conductor' (singular), so it must be 'has to stay'.",
+          "Correct: *Either the drivers or the conductor has to stay with the bus at all times.*"
+        ],
+        "rule": "Subject–verb agreement: either … or / neither … nor → verb agrees with the nearer subject",
+        "trap": "'the drivers' comes first and is plural, and the sentence names more than one person, so 'have' feels right. Only the subject next to the verb counts.",
+        "shortcut": "Read only 'or the conductor … has'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:either-or"
+      ]
+    },
+    {
+      "key": "es-110",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The number of senior citizens",
+        "who visit the branch every month",
+        "to update their KYC details",
+        "have doubled since April.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. The subject is 'the number', which is singular; everything up to 'details' describes it. The verb must be 'has doubled'.",
+          "Correct: *The number of senior citizens who visit the branch every month to update their KYC details has doubled since April.*"
+        ],
+        "rule": "Subject–verb agreement: 'the number of' → singular verb; 'a number of' → plural verb",
+        "trap": "Part B's 'who visit' is correct (it agrees with 'senior citizens'). Seeing that plural verb just before Part D makes 'have doubled' feel consistent.",
+        "shortcut": "the number … has; a number of … have."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:number-of"
+      ]
+    },
+    {
+      "key": "es-111",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Every clerk and every officer",
+        "in the zone",
+        "are required to attend",
+        "the training on cyber security.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. When two singular nouns joined by 'and' are each preceded by 'every' (or 'each'), the verb is singular: 'is required to attend'.",
+          "Correct: *Every clerk and every officer in the zone is required to attend the training on cyber security.*"
+        ],
+        "rule": "Subject–verb agreement: every / each X and every / each Y → singular verb",
+        "trap": "'X and Y' normally makes a plural subject; 'every' before each noun makes them count one at a time.",
+        "shortcut": "every … and every … → is / has."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:each-every"
+      ]
+    },
+    {
+      "key": "es-112",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Has the results of",
+        "the clerical examination",
+        "been declared",
+        "on the official website yet?",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. In the question the subject is 'the results' (plural), so the auxiliary must be 'Have': 'Have the results of the clerical examination been declared …?'",
+          "Correct: *Have the results of the clerical examination been declared on the official website yet?*"
+        ],
+        "rule": "Subject–verb agreement in questions: the auxiliary before the subject still agrees with it",
+        "trap": "In a question the verb comes before the subject, and the singular 'examination' near the end makes 'Has' sound right.",
+        "shortcut": "Turn it into a statement: 'The results … have been declared'."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:question"
+      ]
+    },
+    {
+      "key": "es-113",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Two-thirds of the land",
+        "in the village",
+        "are under",
+        "wheat cultivation.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. With a fraction + 'of', the verb agrees with the noun after 'of'. 'Land' is uncountable (singular), so it must be 'is under'.",
+          "Correct: *Two-thirds of the land in the village is under wheat cultivation.*"
+        ],
+        "rule": "Subject–verb agreement: fraction / percentage + of + noun → verb agrees with that noun",
+        "trap": "'Two-thirds' is plural in form, so 'are' looks right. Compare 'Two-thirds of the farmers are …', where the noun is plural.",
+        "shortcut": "Look past the fraction to the noun: land → is; farmers → are."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:fraction"
+      ]
+    },
+    {
+      "key": "es-114",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Neither of the two applicants",
+        "who appeared yesterday",
+        "were found eligible",
+        "for the education loan.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Neither of' means 'not one of the two', and as a subject it takes a singular verb: 'was found eligible'.",
+          "Correct: *Neither of the two applicants who appeared yesterday was found eligible for the education loan.*"
+        ],
+        "rule": "Subject–verb agreement: neither of / either of / each of + plural noun → singular verb",
+        "trap": "Part B 'who appeared' is fine either way, and the plural 'applicants' sits between the subject and the verb. Do not confuse 'neither of' with 'neither … nor'.",
+        "shortcut": "neither of = neither one → was."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:neither-of"
+      ]
+    },
+    {
+      "key": "es-115",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Ten kilometres",
+        "are a long distance",
+        "to walk",
+        "in this heat.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. A plural amount of distance, money, time or weight thought of as one total takes a singular verb, especially with a singular complement ('a long distance'): 'Ten kilometres is a long distance'.",
+          "Correct: *Ten kilometres is a long distance to walk in this heat.*"
+        ],
+        "rule": "Subject–verb agreement: an amount treated as a single quantity → singular verb",
+        "trap": "'kilometres' has a plural -s, so 'are' looks natural; the sentence talks about one distance, as 'a long distance' shows.",
+        "shortcut": "Amount = one sum: ten kilometres is, five hours is, ₹500 is."
+      },
+      "tags": [
+        "grammar:subject-verb-agreement",
+        "pattern:amount"
+      ]
+    },
+    {
+      "key": "es-116",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "We are waiting",
+        "for the bus",
+        "for over an hour,",
+        "but it has not come yet.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. An action that started in the past and is still going on, with a 'for' period up to now, needs the present perfect continuous: 'We have been waiting'.",
+          "Correct: *We have been waiting for the bus for over an hour, but it has not come yet.*"
+        ],
+        "rule": "Tense: present perfect continuous for an action continuing up to now, with 'for' + period / 'since' + point",
+        "trap": "Part C 'for over an hour' is the clue, not the error; Part D 'has not come yet' is correct present perfect.",
+        "shortcut": "for / since + still going on → have / has been + -ing."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:since-for"
+      ]
+    },
+    {
+      "key": "es-117",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "After the auditors",
+        "left the branch,",
+        "the manager",
+        "had called a staff meeting.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. The past perfect marks the earlier of two past actions. Here the meeting came after the auditors left, so it takes the simple past: 'the manager called a staff meeting'.",
+          "Correct: *After the auditors left the branch, the manager called a staff meeting.*"
+        ],
+        "rule": "Tense sequence: past perfect only for the earlier of two past actions",
+        "trap": "Part B 'left' could also be 'had left', but it is correct as it stands because 'after' already shows the order. Only Part D is wrong.",
+        "shortcut": "Which happened first? Only that one may take 'had'."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:past-perfect"
+      ]
+    },
+    {
+      "key": "es-118",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The old man asked me",
+        "where was the post office",
+        "and how far",
+        "it was from the bus stand.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. In a reported (indirect) question the word order is that of a statement, subject before verb: 'where the post office was'.",
+          "Correct: *The old man asked me where the post office was and how far it was from the bus stand.*"
+        ],
+        "rule": "Reported speech: indirect questions use statement order (wh-word + subject + verb)",
+        "trap": "Part D 'how far it was' already uses the right order; the inverted order in Part B is copied from the direct question 'Where is the post office?'.",
+        "shortcut": "No question order after 'asked … where / what / how'."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:reported-speech"
+      ]
+    },
+    {
+      "key": "es-119",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "When she was in school,",
+        "Meena did not used to",
+        "enjoy mathematics,",
+        "but now she teaches it.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. After the auxiliary 'did' the base form is used, so the negative is 'did not use to', not 'did not used to'.",
+          "Correct: *When she was in school, Meena did not use to enjoy mathematics, but now she teaches it.*"
+        ],
+        "rule": "Verb form: did / didn't + base verb → 'didn't use to'",
+        "trap": "Because the affirmative is 'used to', learners keep the -d in the negative and question forms.",
+        "shortcut": "did + V1 always: didn't use to, did you use to …?"
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:used-to"
+      ]
+    },
+    {
+      "key": "es-120",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The bank will not",
+        "release the loan",
+        "until the builder",
+        "will submit the completion certificate.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. In a time clause with 'until' about the future, the simple present is used: 'until the builder submits the completion certificate'.",
+          "Correct: *The bank will not release the loan until the builder submits the completion certificate.*"
+        ],
+        "rule": "Tense: until / when / before / as soon as + simple present for future time",
+        "trap": "'will not … until' in the main clause tempts you to repeat 'will' in the time clause.",
+        "shortcut": "'will' goes in the main clause only."
+      },
+      "tags": [
+        "grammar:tense",
+        "pattern:future-time-clause"
+      ]
+    },
+    {
+      "key": "es-121",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "If he would have",
+        "listened to his father,",
+        "he would not",
+        "be in debt today.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. The 'if' clause about an unreal past takes the past perfect, not 'would have': 'If he had listened to his father, he would not be in debt today.' This is a mixed conditional (past condition, present result).",
+          "Correct: *If he had listened to his father, he would not be in debt today.*"
+        ],
+        "rule": "Conditionals: no 'would' in the if-clause; unreal past → if + had + V3",
+        "trap": "Parts C–D 'would not be … today' may look wrong after a past condition, but a present result of a past condition is a correct mixed conditional.",
+        "shortcut": "If-clause: had + V3; result: would (have) …"
+      },
+      "tags": [
+        "grammar:conditional",
+        "pattern:mixed-conditional"
+      ]
+    },
+    {
+      "key": "es-122",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "The manager wishes",
+        "he has accepted",
+        "the transfer offer",
+        "when it was made.",
+        "No error"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Part B is wrong. A wish about the past (the offer was made earlier) takes the past perfect: 'wishes he had accepted'.",
+          "Correct: *The manager wishes he had accepted the transfer offer when it was made.*"
+        ],
+        "rule": "Wish: wish + past simple (present regret), wish + past perfect (past regret)",
+        "trap": "'wishes' is present tense, which tempts you to keep the next verb in the present perfect; a wish always moves the verb one step back.",
+        "shortcut": "Regret about the past → wish + had + V3."
+      },
+      "tags": [
+        "grammar:subjunctive",
+        "pattern:wish"
+      ]
+    },
+    {
+      "key": "es-123",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "If the pain continues,",
+        "you had better",
+        "to consult a doctor",
+        "before it gets worse.",
+        "No error"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Part C is wrong. 'Had better' works like a modal and is followed by the bare infinitive: 'you had better consult a doctor'.",
+          "Correct: *If the pain continues, you had better consult a doctor before it gets worse.*"
+        ],
+        "rule": "Verb form: had better / would rather + base verb (no 'to')",
+        "trap": "'had better' looks like a past tense, so Part B may seem wrong; the phrase refers to the present or future and is correct.",
+        "shortcut": "had better + V1; had better not + V1."
+      },
+      "tags": [
+        "grammar:verb-form",
+        "pattern:modal-base-verb"
+      ]
+    },
+    {
+      "key": "es-124",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "Rakesh opened",
+        "a recurring deposit",
+        "with a view to",
+        "buy a scooter next year.",
+        "No error"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Part D is wrong. In 'with a view to', 'to' is a preposition and is followed by a gerund: 'with a view to buying a scooter'.",
+          "Correct: *Rakesh opened a recurring deposit with a view to buying a scooter next year.*"
+        ],
+        "rule": "Verb form: with a view to / look forward to / be used to + -ing",
+        "trap": "'to buy' looks like a normal infinitive of purpose; but 'with a view to' is a fixed phrase whose 'to' takes -ing.",
+        "shortcut": "Can a noun follow it? 'with a view to a purchase' → yes, so use -ing."
+      },
+      "tags": [
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "es-125",
+      "subtype": "classic-parts",
+      "difficulty": "hard",
+      "prompt": "Read the sentence to find out whether there is any grammatical or idiomatic error in it. The error, if any, will be in one part of the sentence. If there is no error, choose 'No error'.",
+      "options": [
+        "A large amount of customers",
+        "complained about",
+        "the new",
+        "service charges.",
+        "No error"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Part A is wrong. 'Amount' is used with uncountable nouns (an amount of money, time). 'Customers' is countable, so it must be 'A large number of customers'.",
+          "Correct: *A large number of customers complained about the new service charges.*"
+        ],
+        "rule": "Countability: amount of + uncountable; number of + countable plural",
+        "trap": "The sentence reads smoothly and the verb 'complained' shows no agreement problem, so the wrong quantity word slips by.",
+        "shortcut": "Countable → number / many / few; uncountable → amount / much / little."
+      },
+      "tags": [
+        "grammar:countability",
+        "pattern:amount-number"
+      ]
     }
   ]
 }
