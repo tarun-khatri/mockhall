@@ -1441,6 +1441,672 @@
         "arith:late-early",
         "template:late-early"
       ]
+    },
+    {
+      "key": "sd-057",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Excluding stoppages, the speed of a bus is 60 km/h; including stoppages, it is 50 km/h. For how many minutes does the bus stop per hour?",
+      "options": [
+        "10 minutes",
+        "12 minutes",
+        "15 minutes",
+        "18 minutes",
+        "20 minutes"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "In an hour the bus loses 60 − 50 = 10 km of running.",
+          "At 60 km/h, 10 km takes 10 ÷ 60 hour = 10 minutes."
+        ],
+        "trap": "12 minutes divides the 10 km loss by 50 instead of the moving speed of 60 km/h.",
+        "shortcut": "Stoppage per hour = (difference ÷ speed without stoppages) × 60 minutes."
+      },
+      "tags": [
+        "arith:stoppages",
+        "template:stoppages"
+      ]
+    },
+    {
+      "key": "sd-058",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A bus runs at 72 km/h when it is moving, but it stops for 15 minutes in every hour. How far does it travel in 3 hours 20 minutes?",
+      "options": [
+        "180 km",
+        "200 km",
+        "216 km",
+        "240 km",
+        "270 km"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "It moves for 45 minutes of each hour, so its effective speed = 72 × $\\frac{3}{4}$ = 54 km/h.",
+          "3 hours 20 minutes = $\\frac{10}{3}$ hours.",
+          "Distance = 54 × $\\frac{10}{3}$ = 180 km."
+        ],
+        "trap": "240 km ignores the stops (72 × 10/3)."
+      },
+      "tags": [
+        "arith:stoppages",
+        "template:stoppages"
+      ]
+    },
+    {
+      "key": "sd-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A bus covers 270 km in 6 hours, stoppages included. Without stoppages its speed is 54 km/h. For how many minutes per hour does the bus stop?",
+      "options": [
+        "9 minutes",
+        "10 minutes",
+        "11 minutes",
+        "12 minutes",
+        "15 minutes"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Speed with stoppages = 270 ÷ 6 = 45 km/h, so 54 − 45 = 9 km of running is lost each hour.",
+          "9 km at 54 km/h takes 9 ÷ 54 hour = 10 minutes."
+        ],
+        "trap": "9 minutes reads the 9 km/h loss as minutes; 12 minutes divides it by 45 instead of 54."
+      },
+      "tags": [
+        "arith:stoppages",
+        "template:stoppages"
+      ]
+    },
+    {
+      "key": "sd-060",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A train runs at 75 km/h without stoppages and averages 60 km/h with them. On a 300 km route, how many minutes in all does it spend at stops?",
+      "options": [
+        "12 minutes",
+        "45 minutes",
+        "48 minutes",
+        "50 minutes",
+        "60 minutes"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "With stoppages: 300 ÷ 60 = 5 hours; running time alone: 300 ÷ 75 = 4 hours.",
+          "Time at stops = 1 hour = 60 minutes."
+        ],
+        "trap": "12 minutes is the stoppage per hour; over the 5-hour run it adds up to 60 minutes.",
+        "shortcut": "12 minutes per hour × 5 hours = 60 minutes."
+      },
+      "tags": [
+        "arith:stoppages",
+        "template:stoppages"
+      ]
+    },
+    {
+      "key": "sd-061",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A bus runs at 60 km/h and halts for 2 minutes at the end of every 10 km stretch, except at its final stop. How long does it take to cover a 120 km route?",
+      "options": [
+        "2 hours 10 minutes",
+        "2 hours 20 minutes",
+        "2 hours 22 minutes",
+        "2 hours 24 minutes",
+        "2 hours 32 minutes"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Running time = 120 ÷ 60 = 2 hours.",
+          "There are 12 stretches of 10 km but no halt after the last one, so 11 halts × 2 = 22 minutes.",
+          "Total = 2 hours 22 minutes."
+        ],
+        "trap": "2 hours 24 minutes counts 12 halts, including one at the final stop."
+      },
+      "tags": [
+        "arith:stoppages",
+        "template:stoppages"
+      ]
+    },
+    {
+      "key": "sd-062",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Including stoppages, a goods train averages 36 km/h. It stops for 12 minutes every hour. What is its speed when it is moving?",
+      "options": [
+        "36 km/h",
+        "40 km/h",
+        "42 km/h",
+        "43.2 km/h",
+        "45 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The train moves for 60 − 12 = 48 minutes each hour and covers 36 km in that time.",
+          "Moving speed = 36 × 60 ÷ 48 = 45 km/h."
+        ],
+        "trap": "43.2 km/h adds 20% to 36; the 36 km is run in 48 minutes, so the speed is 36 × 60/48, i.e. 25% more."
+      },
+      "tags": [
+        "arith:stoppages",
+        "template:stoppages"
+      ]
+    },
+    {
+      "key": "sd-063",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "By increasing his speed by 25%, Arjun reaches his destination 20 minutes earlier than usual. What is his usual time for the journey?",
+      "options": [
+        "75 minutes",
+        "80 minutes",
+        "100 minutes",
+        "120 minutes",
+        "125 minutes"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "New speed = $\\frac{5}{4}$ of usual, so new time = $\\frac{4}{5}$ of usual time.",
+          "Time saved = $\\frac{1}{5}$ of usual time = 20 minutes → usual time = 100 minutes."
+        ],
+        "trap": "80 minutes assumes the time falls by 25% too; a 25% faster speed cuts the time by only 20%."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:speed-change-time"
+      ]
+    },
+    {
+      "key": "sd-064",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A car covers 180 km at a uniform speed. If its speed were 15 km/h more, it would take 1 hour less. What is its usual speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "54 km/h",
+        "60 km/h",
+        "75 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "180/v − 180/(v + 15) = 1 → v(v + 15) = 2700.",
+          "v² + 15v − 2700 = 0 → (v + 60)(v − 45) = 0 → v = 45 km/h.",
+          "Check: 180 ÷ 45 = 4 hours, 180 ÷ 60 = 3 hours."
+        ],
+        "trap": "60 km/h is the increased speed, not the usual one."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:speed-change-time"
+      ]
+    },
+    {
+      "key": "sd-065",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Priya drives 60 km to her office. If she increases her speed by 20%, she reaches 10 minutes earlier than usual. What is her usual speed?",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "64 km/h",
+        "72 km/h",
+        "75 km/h"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "At $\\frac{6}{5}$ of the usual speed the time becomes $\\frac{5}{6}$ of usual, saving $\\frac{1}{6}$ of it.",
+          "$\\frac{1}{6}$ of usual time = 10 minutes → usual time = 60 minutes.",
+          "Usual speed = 60 km ÷ 1 hour = 60 km/h."
+        ],
+        "trap": "72 km/h assumes the time falls by 20% (usual time 50 minutes); a 20% rise in speed saves only 1/6 of the time."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:speed-change-time"
+      ]
+    },
+    {
+      "key": "sd-066",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "If a bus runs 20% slower than its usual speed, it takes 45 minutes more to cover 240 km. What is its usual speed?",
+      "options": [
+        "64 km/h",
+        "72 km/h",
+        "75 km/h",
+        "80 km/h",
+        "96 km/h"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "At $\\frac{4}{5}$ of the usual speed, time becomes $\\frac{5}{4}$ of usual, i.e. $\\frac{1}{4}$ more.",
+          "$\\frac{1}{4}$ of usual time = 45 minutes → usual time = 3 hours.",
+          "Usual speed = 240 ÷ 3 = 80 km/h."
+        ],
+        "trap": "64 km/h treats the extra 45 minutes as 20% of the usual time (3.75 hours); it is 25% of it."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:speed-change-time"
+      ]
+    },
+    {
+      "key": "sd-067",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A train covers 360 km at a uniform speed. Had its speed been 8 km/h more, the journey would have taken 1 hour 30 minutes less. What is its speed?",
+      "options": [
+        "40 km/h",
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "60 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "360/v − 360/(v + 8) = 1.5 → 360 × 8 = 1.5 × v(v + 8) → v(v + 8) = 1920.",
+          "v² + 8v − 1920 = 0 → (v + 48)(v − 40) = 0 → v = 40 km/h.",
+          "Check: 360 ÷ 40 = 9 hours, 360 ÷ 48 = 7.5 hours."
+        ],
+        "trap": "48 km/h is the increased speed that gives the shorter time."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:speed-change-time"
+      ]
+    },
+    {
+      "key": "sd-068",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A truck covers a certain distance at a uniform speed. Had it been 6 km/h faster, it would have taken 4 hours less; had it been 6 km/h slower, it would have taken 6 hours more. What is the distance?",
+      "options": [
+        "600 km",
+        "720 km",
+        "750 km",
+        "810 km",
+        "864 km"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Faster case: d/v − d/(v + 6) = 4 → 6d = 4v(v + 6). Slower case: d/(v − 6) − d/v = 6 → 6d = 6v(v − 6).",
+          "So 4(v + 6) = 6(v − 6) → 4v + 24 = 6v − 36 → v = 30 km/h, and d = v(v − 6) = 30 × 24 = 720 km.",
+          "Check: 720 ÷ 30 = 24 hours, 720 ÷ 36 = 20 hours (4 less), 720 ÷ 24 = 30 hours (6 more)."
+        ],
+        "trap": "864 km multiplies the two altered speeds (36 × 24); the distance is 30 km/h × 24 hours = 720 km."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:speed-change-time"
+      ]
+    },
+    {
+      "key": "sd-069",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "By increasing her speed by 12.5%, a cyclist completes a fixed route 8 minutes faster than usual. How long does she usually take?",
+      "options": [
+        "72 minutes",
+        "80 minutes",
+        "88 minutes",
+        "96 minutes",
+        "100 minutes"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "New speed = $\\frac{9}{8}$ of usual, so new time = $\\frac{8}{9}$ of usual time.",
+          "Time saved = $\\frac{1}{9}$ of usual time = 8 minutes → usual time = 72 minutes."
+        ],
+        "trap": "80 minutes treats the 8 minutes as 1/9 of the new time; the saving is 1/9 of the usual time."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:speed-change-time"
+      ]
+    },
+    {
+      "key": "sd-070",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The speeds of a car and a bus are in the ratio 5 : 3. To cover 150 km, the bus takes 2 hours more than the car. What is the speed of the car?",
+      "options": [
+        "30 km/h",
+        "45 km/h",
+        "50 km/h",
+        "60 km/h",
+        "75 km/h"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the speeds be 5k and 3k: 150/(3k) − 150/(5k) = 2 → 50/k − 30/k = 2 → k = 10.",
+          "Car = 5 × 10 = 50 km/h (bus = 30 km/h)."
+        ],
+        "trap": "30 km/h is the bus's speed; the car gets the larger share of the 5 : 3 ratio."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:car-bus-ratio"
+      ]
+    },
+    {
+      "key": "sd-071",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The speeds of a car and a bus are in the ratio 4 : 3. The car covers 240 km in 4 hours. How long will the bus take to cover 180 km?",
+      "options": [
+        "2.25 hours",
+        "3 hours",
+        "3.5 hours",
+        "4 hours",
+        "5 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Car = 240 ÷ 4 = 60 km/h, so bus = 60 × $\\frac{3}{4}$ = 45 km/h.",
+          "Time = 180 ÷ 45 = 4 hours."
+        ],
+        "trap": "2.25 hours reverses the ratio (bus = 80 km/h); 3 hours uses the car's own speed."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:car-bus-ratio"
+      ]
+    },
+    {
+      "key": "sd-072",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A car and a bus take times in the ratio 3 : 4 to cover the same distance. The car is 18 km/h faster than the bus. How far will the bus travel in 5 hours?",
+      "options": [
+        "216 km",
+        "240 km",
+        "250 km",
+        "270 km",
+        "360 km"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "For the same distance, speeds are in the inverse ratio of times: car : bus = 4 : 3.",
+          "The 1-part difference is 18 km/h, so the bus runs at 3 × 18 = 54 km/h.",
+          "Distance in 5 hours = 54 × 5 = 270 km."
+        ],
+        "trap": "360 km uses 72 km/h, which is the car's speed (or the bus's speed with the ratio left un-inverted)."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:car-bus-ratio"
+      ]
+    },
+    {
+      "key": "sd-073",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A car travels 25% faster than a bus. To cover 240 km, the bus needs 48 minutes more than the car. What is the speed of the bus?",
+      "options": [
+        "60 km/h",
+        "64 km/h",
+        "72 km/h",
+        "75 km/h",
+        "80 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Car's speed = $\\frac{5}{4}$ of the bus's, so the car's time = $\\frac{4}{5}$ of the bus's; the gap is $\\frac{1}{5}$ of the bus's time.",
+          "$\\frac{1}{5}$ of the bus's time = 48 minutes → the bus takes 240 minutes = 4 hours.",
+          "Bus speed = 240 ÷ 4 = 60 km/h."
+        ],
+        "trap": "75 km/h is the car's speed (25% more than the bus)."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:car-bus-ratio"
+      ]
+    },
+    {
+      "key": "sd-074",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The speeds of a car and a bus are in the ratio 7 : 5. To cover 252 km, the bus takes 2 hours 24 minutes more than the car. How long will the car take to cover 378 km?",
+      "options": [
+        "7.5 hours",
+        "8 hours",
+        "8.4 hours",
+        "9 hours",
+        "12.6 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Speeds 7k and 5k: 252/(5k) − 252/(7k) = 2.4 → (50.4 − 36)/k = 2.4 → k = 6.",
+          "Car = 42 km/h (bus = 30 km/h).",
+          "Time for 378 km = 378 ÷ 42 = 9 hours."
+        ],
+        "trap": "12.6 hours divides 378 km by the bus's 30 km/h instead of the car's 42 km/h."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:car-bus-ratio"
+      ]
+    },
+    {
+      "key": "sd-075",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In the time a car covers 156 km, a bus covers 117 km. If the car runs at 52 km/h, what is the speed of the bus?",
+      "options": [
+        "36 km/h",
+        "39 km/h",
+        "42 km/h",
+        "48 km/h",
+        "$69\\frac{1}{3}$ km/h"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "In equal time, speeds are in the ratio of distances: 156 : 117 = 4 : 3.",
+          "Bus = 52 × $\\frac{3}{4}$ = 39 km/h."
+        ],
+        "trap": "$69\\frac{1}{3}$ km/h multiplies 52 by $\\frac{4}{3}$, putting the ratio the wrong way round."
+      },
+      "tags": [
+        "arith:speed-ratio",
+        "template:car-bus-ratio"
+      ]
+    },
+    {
+      "key": "sd-076",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A thief is 200 m ahead of a policeman. The thief runs at 8 km/h and the policeman at 10 km/h, both starting at the same moment. In how many minutes will the policeman catch the thief?",
+      "options": [
+        "5 minutes",
+        "6 minutes",
+        "8 minutes",
+        "10 minutes",
+        "12 minutes"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The policeman gains 10 − 8 = 2 km/h on the thief.",
+          "Time = 0.2 km ÷ 2 km/h = 0.1 hour = 6 minutes."
+        ],
+        "trap": "Adding the speeds (18 km/h) is the approaching case; in a chase only the 2 km/h gain closes the gap."
+      },
+      "tags": [
+        "arith:relative-speed",
+        "template:chase"
+      ]
+    },
+    {
+      "key": "sd-077",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A thief drives off in a stolen car at 2:30 p.m. at 60 km/h. The theft is discovered at 3:00 p.m., and the owner chases him in another car at 75 km/h along the same road. At what time will the owner catch the thief?",
+      "options": [
+        "4:00 p.m.",
+        "4:15 p.m.",
+        "4:30 p.m.",
+        "4:45 p.m.",
+        "5:00 p.m."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "By 3:00 p.m. the thief is 60 × 0.5 = 30 km ahead.",
+          "The owner gains 75 − 60 = 15 km/h → 30 ÷ 15 = 2 hours.",
+          "Caught at 3:00 + 2 hours = 5:00 p.m."
+        ],
+        "trap": "4:30 p.m. counts the 2 hours from 2:30 p.m., when the thief left, instead of from 3:00 p.m., when the chase began."
+      },
+      "tags": [
+        "arith:relative-speed",
+        "template:chase"
+      ]
+    },
+    {
+      "key": "sd-078",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A thief starts running at 9 km/h when he is 300 m ahead of a policeman. The policeman starts chasing him 1 minute later at 12 km/h. How far will the policeman run before catching the thief?",
+      "options": [
+        "1.2 km",
+        "1.35 km",
+        "1.5 km",
+        "1.65 km",
+        "1.8 km"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The thief runs 150 m a minute, so when the chase starts he is 300 + 150 = 450 m ahead.",
+          "The gap closes at 3 km/h = 50 m a minute → 450 ÷ 50 = 9 minutes.",
+          "Policeman's distance = 200 m a minute × 9 = 1800 m = 1.8 km."
+        ],
+        "trap": "1.2 km ignores the 1-minute delay (300 m at 50 m a minute = 6 minutes); 1.5 km is the thief's own distance."
+      },
+      "tags": [
+        "arith:relative-speed",
+        "template:chase"
+      ]
+    },
+    {
+      "key": "sd-079",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A police jeep sets off 15 minutes after a thief's motorcycle from the same spot and follows it along the same road. The motorcycle runs at 54 km/h and the jeep at 72 km/h. How far from the spot will the jeep catch the motorcycle?",
+      "options": [
+        "40.5 km",
+        "45 km",
+        "48 km",
+        "50 km",
+        "54 km"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Lead in 15 minutes = 54 × $\\frac{1}{4}$ = 13.5 km.",
+          "The jeep gains 18 km/h → 13.5 ÷ 18 = 0.75 hour.",
+          "Distance = 72 × 0.75 = 54 km."
+        ],
+        "trap": "40.5 km is the motorcycle's distance during the chase only (54 × 0.75), leaving out its 13.5 km lead."
+      },
+      "tags": [
+        "arith:relative-speed",
+        "template:chase"
+      ]
+    },
+    {
+      "key": "sd-080",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A bus leaves a depot at 6:00 a.m. at 45 km/h. A car leaves the same depot at 8:00 a.m. at 60 km/h, and a motorcycle at 9:00 a.m. at 66 km/h, all along the same highway. At the moment the car catches up with the bus, how far behind them is the motorcycle?",
+      "options": [
+        "15 km",
+        "24 km",
+        "27 km",
+        "30 km",
+        "36 km"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "At 8:00 a.m. the bus is 90 km ahead; the car gains 15 km/h → 6 hours, so they meet at 2:00 p.m., 360 km out.",
+          "By 2:00 p.m. the motorcycle has run 5 hours × 66 = 330 km.",
+          "It is 360 − 330 = 30 km behind."
+        ],
+        "trap": "36 km gives the motorcycle 6 hours of riding as well; it started an hour after the car, so it rode only 5 hours, and it is behind, not ahead."
+      },
+      "tags": [
+        "arith:relative-speed",
+        "template:chase"
+      ]
+    },
+    {
+      "key": "sd-081",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A policeman is 250 m behind a thief. The thief runs at 6 km/h and the policeman at 8 km/h. How far apart will they be after 3 minutes?",
+      "options": [
+        "100 m",
+        "125 m",
+        "150 m",
+        "175 m",
+        "200 m"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The policeman gains 2 km/h = 2000 m an hour = $\\frac{100}{3}$ m a minute.",
+          "In 3 minutes he gains 100 m, so the gap is 250 − 100 = 150 m."
+        ],
+        "trap": "100 m is the distance gained, not the gap that remains."
+      },
+      "tags": [
+        "arith:relative-speed",
+        "template:chase"
+      ]
+    },
+    {
+      "key": "sd-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A thief on a bicycle is 450 m ahead of a policeman on a motorcycle when the chase begins. The thief rides at 18 km/h and the policeman at 27 km/h. What distance does the policeman cover before catching the thief?",
+      "options": [
+        "900 m",
+        "1125 m",
+        "1350 m",
+        "1500 m",
+        "1800 m"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Relative speed = 27 − 18 = 9 km/h = 2.5 m/s, so the chase lasts 450 ÷ 2.5 = 180 seconds.",
+          "Policeman's speed = 27 km/h = 7.5 m/s → distance = 7.5 × 180 = 1350 m."
+        ],
+        "trap": "900 m is the thief's distance during the chase (5 m/s × 180 s); the policeman also covers the 450 m gap."
+      },
+      "tags": [
+        "arith:relative-speed",
+        "template:chase"
+      ]
     }
   ]
 }
