@@ -2828,6 +2828,1309 @@
         "mc:single-match",
         "grammar:question-tags"
       ]
+    },
+    {
+      "key": "mc-111",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) If only the cheque had cleared on time,\n(B) Only after the cheque had cleared\n(C) Only if the cheque clears by noon\n\n**Column II**\n(D) did the bank release the funds to the seller.\n(E) will the funds be available for withdrawal today.\n(F) we would not have paid a penalty to the landlord.",
+      "options": [
+        "A–F, B–D, C–E",
+        "A–F, B–E, C–D",
+        "A–F only",
+        "A–E, B–D, C–F",
+        "A–F, B–D"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–F: *If only the cheque had cleared on time, we would not have paid a penalty to the landlord.*\nB–D: *Only after the cheque had cleared did the bank release the funds to the seller.*\nC–E: *Only if the cheque clears by noon will the funds be available for withdrawal today.*",
+          "'Only after/Only if' at the start forces inversion: the past 'did the bank release' after a past-perfect clause, the future 'will the funds be' after a present condition. 'If only … had cleared' is a regret about the past, completed by 'would not have paid'.",
+          "B–E fails: 'had cleared' (past) cannot be followed by 'will … today'. A–E fails: 'If only' is not followed by an inverted clause; it needs a 'would have' result."
+        ],
+        "trap": "'Only if' and 'If only' look alike: the first is a condition (inversion follows), the second a wish or regret."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "mc-112",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The new law prohibits shopkeepers\n(B) The principal forbade the students\n(C) The heavy rain prevented\n\n**Column II**\n(D) the farmers from sowing on time.\n(E) from selling tobacco near schools.\n(F) to use their phones in the library.",
+      "options": [
+        "A–F, B–D, C–E",
+        "C–D only",
+        "A–E, B–F",
+        "A–E, B–F, C–D",
+        "A–D, B–F, C–E"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–E: *The new law prohibits shopkeepers from selling tobacco near schools.*\nB–F: *The principal forbade the students to use their phones in the library.*\nC–D: *The heavy rain prevented the farmers from sowing on time.*",
+          "The patterns are 'prohibit someone from doing', 'prevent someone from doing' and 'forbid someone to do'.",
+          "C–E fails: 'prevented' needs an object before 'from' (prevented the farmers from …). A–F fails: 'prohibit' is not followed by a to-infinitive."
+        ],
+        "trap": "'forbid' takes 'to', while its near-synonym 'prohibit' takes 'from'."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:prepositions"
+      ]
+    },
+    {
+      "key": "mc-113",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The higher you climb,\n(B) The fare this year is twice\n(C) This year's crop is not so good\n\n**Column II**\n(D) the thinner the air becomes.\n(E) as much as it was last year.\n(F) as it was last year.",
+      "options": [
+        "A–D, B–F, C–E",
+        "A–D only",
+        "A–D, B–E",
+        "A–D, B–F",
+        "A–D, B–E, C–F"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *The higher you climb, the thinner the air becomes.*\nB–E: *The fare this year is twice as much as it was last year.*\nC–F: *This year's crop is not so good as it was last year.*",
+          "A multiple takes 'twice as much as'; a negative comparison uses 'not so/as … as'; 'The higher …, the thinner …' is a double comparative.",
+          "B–F fails: 'twice as it was' drops the 'as much' needed after a multiple. C–E fails: 'not so good as much as' doubles the comparison."
+        ],
+        "trap": "Count the 'as' words: 'twice as much as', 'not so good as'."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "mc-114",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The manager was annoyed that the report\n(B) The board has directed that the report\n(C) It is essential that every account holder\n\n**Column II**\n(D) be submitted before the next meeting.\n(E) update his or her KYC details by March.\n(F) had not been submitted before the meeting.",
+      "options": [
+        "A–D, B–F, C–E",
+        "C–E only",
+        "B–D, C–E",
+        "A–F, B–D, C–E",
+        "A–F, B–E, C–D"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–F: *The manager was annoyed that the report had not been submitted before the meeting.*\nB–D: *The board has directed that the report be submitted before the next meeting.*\nC–E: *It is essential that every account holder update his or her KYC details by March.*",
+          "Verbs and phrases of command or necessity (direct that, it is essential that) take the base form in the that-clause (be submitted, update); 'annoyed that' reports a fact, so it takes the normal past perfect.",
+          "B–F fails: after 'has directed that' an order follows (be submitted), not a statement of fact. A–D fails: 'annoyed that the report be submitted' uses the command form where a fact is being reported."
+        ],
+        "trap": "'update' without -s after 'every account holder' looks like an agreement error, but it is the subjunctive base form."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:subjunctive"
+      ]
+    },
+    {
+      "key": "mc-115",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) If he has already taken the medicine,\n(B) If he had taken the medicine last night,\n(C) If he took the medicine regularly,\n\n**Column II**\n(D) he would not fall ill so often.\n(E) he would not have woken up with a fever.\n(F) do not give him another dose.",
+      "options": [
+        "A–F, B–D, C–E",
+        "A–F, B–E, C–D",
+        "A–F, B–E",
+        "A–F only",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–F: *If he has already taken the medicine, do not give him another dose.*\nB–E: *If he had taken the medicine last night, he would not have woken up with a fever.*\nC–D: *If he took the medicine regularly, he would not fall ill so often.*",
+          "A past unreal condition takes 'would have woken' (third conditional); an unreal present habit takes 'would not fall ill' (second conditional); a real present-perfect condition can take an imperative (do not give).",
+          "B–D fails: one missed dose last night cannot explain how often he falls ill in general. C–E fails: a second-conditional if-clause (took) does not take 'would have woken'."
+        ],
+        "trap": "Match the time of each if-clause: last night (past), regularly (general present), already (real present)."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:conditionals"
+      ]
+    },
+    {
+      "key": "mc-116",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The rules, as such,\n(B) Fruits such as mangoes and guavas\n(C) He woke up early so as\n\n**Column II**\n(D) are not difficult; it is their wording that confuses people.\n(E) not to miss the first bus to Shimla.\n(F) are rich in vitamin C.",
+      "options": [
+        "A–F, B–D, C–E",
+        "C–E only",
+        "A–D, B–F",
+        "A–D, B–F, C–E",
+        "A–D, B–E, C–F"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *The rules, as such, are not difficult; it is their wording that confuses people.*\nB–F: *Fruits such as mangoes and guavas are rich in vitamin C.*\nC–E: *He woke up early so as not to miss the first bus to Shimla.*",
+          "'as such' means 'in themselves' (the rules in themselves are not difficult); 'so as not to' + verb gives a purpose; 'such as' introduces examples.",
+          "A–F fails: rules cannot be rich in vitamin C. B–D fails: 'their wording' cannot refer to fruits."
+        ],
+        "trap": "'as such' does not introduce examples; that is the job of 'such as'."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:conjunctions"
+      ]
+    },
+    {
+      "key": "mc-117",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) I clearly remember locking\n(B) Please remember to lock\n(C) I forgot to lock\n\n**Column II**\n(D) the cupboard before I left, so the files must be safe.\n(E) the cupboard before you leave tonight.\n(F) the cupboard, which is why the files went missing.",
+      "options": [
+        "A–F, B–E, C–D",
+        "A–D, B–E, C–F",
+        "B–E only",
+        "A–D, B–E",
+        "A–E, B–D, C–F"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *I clearly remember locking the cupboard before I left, so the files must be safe.*\nB–E: *Please remember to lock the cupboard before you leave tonight.*\nC–F: *I forgot to lock the cupboard, which is why the files went missing.*",
+          "'remember + -ing' looks back at something already done (so the files are safe); 'remember to' looks ahead to a duty (before you leave tonight); 'forgot to lock' means it was not done (so the files went missing).",
+          "A–F fails: if I locked the cupboard, that cannot be why the files went missing. C–D fails: forgetting to lock it gives no reason to think the files are safe."
+        ],
+        "trap": "With 'remember' and 'forget', -ing points to the past and 'to' points to a task."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "mc-118",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The manager had the cabin\n(B) The manager let the peon\n(C) The peon was made\n\n**Column II**\n(D) to repaint the cabin before the audit.\n(E) go home early on Friday.\n(F) repainted before the audit.",
+      "options": [
+        "A–F, B–D, C–E",
+        "A–F, C–D",
+        "A–F, B–E, C–D",
+        "A–D, B–E, C–F",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–F: *The manager had the cabin repainted before the audit.*\nB–E: *The manager let the peon go home early on Friday.*\nC–D: *The peon was made to repaint the cabin before the audit.*",
+          "'let' + object + bare infinitive (let the peon go); 'have' + object + past participle (had the cabin repainted); in the passive, 'make' takes 'to' (was made to repaint).",
+          "B–D fails: 'let' never takes 'to' before the verb. C–E fails: the passive of 'make' needs 'to' (was made to go)."
+        ],
+        "trap": "Active 'made him repaint' has no 'to', but passive 'was made to repaint' does."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "mc-119",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) This time next year, Kavya\n(B) Since last May, Kavya\n(C) At this time yesterday, Kavya\n\n**Column II**\n(D) will be training new recruits at the head office.\n(E) was training new recruits at the head office.\n(F) has been training new recruits at the head office.",
+      "options": [
+        "A–D, B–F, C–E",
+        "A–D, B–E, C–F",
+        "B–F only",
+        "A–D, C–E",
+        "A–F, B–D, C–E"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *This time next year, Kavya will be training new recruits at the head office.*\nB–F: *Since last May, Kavya has been training new recruits at the head office.*\nC–E: *At this time yesterday, Kavya was training new recruits at the head office.*",
+          "An action in progress at a future moment takes the future continuous, at a past moment the past continuous, and 'since' + a past point the present perfect continuous.",
+          "A–F fails: 'This time next year' cannot take a present perfect. B–E fails: 'since' needs a perfect tense, not the past continuous."
+        ],
+        "trap": "The three endings differ only in the verb; let the time phrase in each starter choose it."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:tenses"
+      ]
+    },
+    {
+      "key": "mc-120",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) No sooner the bank had announced the new rate\n(B) Hardly had the bank announced the new rate\n(C) No sooner had the bank announced the new rate\n\n**Column II**\n(D) when depositors queued up to renew their deposits.\n(E) than depositors had queued up to renew their deposits.\n(F) than depositors queued up to renew their deposits.",
+      "options": [
+        "A–E, B–D, C–F",
+        "B–D, C–F",
+        "A–E, C–F",
+        "B–D, C–E",
+        "B–D only"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nB–D: *Hardly had the bank announced the new rate when depositors queued up to renew their deposits.*\nC–F: *No sooner had the bank announced the new rate than depositors queued up to renew their deposits.*",
+          "'No sooner had … than' and 'Hardly had … when' are correct, each followed by the simple past for the later event.",
+          "A has no match: after 'No sooner' the auxiliary must come before the subject (No sooner had the bank …), so A–F is wrong. C–E fails because the later event (queuing) cannot be in the past perfect."
+        ],
+        "trap": "A–F uses the right partner word 'than', but the word order after 'No sooner' is wrong."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "mc-121",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Both of the cheques\n(B) One of the most important lesson\n(C) None of the luggage\n\n**Column II**\n(D) I learnt at the branch was patience.\n(E) have to be signed by two officials.\n(F) was damaged in transit.",
+      "options": [
+        "A–E, B–D, C–F",
+        "A–E only",
+        "B–D, C–F",
+        "A–F, C–E",
+        "A–E, C–F"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–E: *Both of the cheques have to be signed by two officials.*\nC–F: *None of the luggage was damaged in transit.*",
+          "'Both' is plural (have to be signed); 'luggage' is uncountable, so 'None of the luggage' takes a singular verb (was damaged).",
+          "B has no match: 'One of the' needs a plural noun (lessons), so B–D is wrong."
+        ],
+        "trap": "B–D reads smoothly and its verb 'was' is right; the error is the singular 'lesson'."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "mc-122",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Looking out of the window of the bus,\n(B) Looking out of the window of the bus, I\n(C) Seen from the top of the hill,\n\n**Column II**\n(D) the town looks like a cluster of toy houses.\n(E) saw a peacock dancing in the field.\n(F) a peacock was seen dancing in the field.",
+      "options": [
+        "B–E, C–D",
+        "A–F, B–E, C–D",
+        "A–F, C–D",
+        "B–E only",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nB–E: *Looking out of the window of the bus, I saw a peacock dancing in the field.*\nC–D: *Seen from the top of the hill, the town looks like a cluster of toy houses.*",
+          "In B–E the subject 'I' is the one looking out; in C–D the town is what is seen from the hill.",
+          "A has no match: A–F makes the peacock look out of the bus window (a dangling modifier), A–E has no subject, and A–D makes the town look out of the window."
+        ],
+        "trap": "A–F avoids naming the viewer by using the passive, which is exactly what leaves 'Looking …' dangling."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:modifiers"
+      ]
+    },
+    {
+      "key": "mc-123",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) I prefer walking\n(B) I would prefer to walk\n(C) I would rather walk\n\n**Column II**\n(D) than take a crowded bus.\n(E) than taking a crowded bus.\n(F) rather than take a crowded bus.",
+      "options": [
+        "A–E, B–F, C–D",
+        "B–D, C–F",
+        "C–D only",
+        "B–F, C–D",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nB–F: *I would prefer to walk rather than take a crowded bus.*\nC–D: *I would rather walk than take a crowded bus.*",
+          "'would rather X than Y' (bare infinitives on both sides); 'would prefer to X rather than Y'.",
+          "A has no match: 'prefer + -ing' takes 'to' (I prefer walking to taking …), so A–E is wrong, and A–F ('walking rather than take') breaks the parallel."
+        ],
+        "trap": "A–E keeps both verbs in the -ing form, but 'prefer' never takes 'than'."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "mc-124",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Every employee must update\n(B) The committee have submitted\n(C) The company has announced\n\n**Column II**\n(D) its quarterly results a week early.\n(E) its report after much argument among themselves.\n(F) his or her contact details on the portal.",
+      "options": [
+        "A–F, B–E, C–D",
+        "C–D only",
+        "A–F, B–E",
+        "A–F, C–E",
+        "None of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–F: *Every employee must update his or her contact details on the portal.*\nC–D: *The company has announced its quarterly results a week early.*",
+          "'The company has … its' is consistently singular; 'Every employee' is singular, so 'his or her'.",
+          "B has no match: 'have' and 'among themselves' treat the committee as plural, but 'its' treats it as singular; the sentence must be consistent (their report). The correct combination A–F, C–D is not among the given combinations, so the answer is 'None of these'."
+        ],
+        "trap": "A collective noun may be singular or plural, but not both in the same sentence."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:pronouns",
+        "mc:none-listed"
+      ]
+    },
+    {
+      "key": "mc-125",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The course trains students both in accounting\n(B) She is both a skilled potter\n(C) The scheme is meant both\n\n**Column II**\n(D) and an excellent teacher of the craft.\n(E) for farmers and for traders.\n(F) and how to use spreadsheets.",
+      "options": [
+        "B–D, C–E",
+        "A–F, B–D, C–E",
+        "B–D only",
+        "A–F, C–E",
+        "B–E, C–D"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nB–D: *She is both a skilled potter and an excellent teacher of the craft.*\nC–E: *The scheme is meant both for farmers and for traders.*",
+          "The words after 'both' and 'and' must match: 'for farmers' / 'for traders', 'a skilled potter' / 'an excellent teacher'.",
+          "A has no match: 'in accounting' (a phrase) cannot pair with 'how to use spreadsheets' (a clause); it should be 'both in accounting and in the use of spreadsheets'."
+        ],
+        "trap": "A–F makes sense, but 'both … and' needs two items of the same form."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:parallelism"
+      ]
+    },
+    {
+      "key": "mc-126",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Could you tell me where\n(B) She asked me where\n(C) I wonder whether\n\n**Column II**\n(D) the nearest ATM is?\n(E) the branch will remain open on Saturday or not.\n(F) was I going in such a hurry.",
+      "options": [
+        "A–D, C–E",
+        "A–D, B–F, C–E",
+        "B–F, C–E",
+        "A–D only",
+        "A–F, C–E"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *Could you tell me where the nearest ATM is?*\nC–E: *I wonder whether the branch will remain open on Saturday or not.*",
+          "In an indirect question the subject comes before the verb (where the nearest ATM is); 'whether … or not' is correct.",
+          "B has no match: a reported question keeps statement word order (where I was going), so B–F is wrong."
+        ],
+        "trap": "B–F copies the word order of a direct question ('Where are you going?') into reported speech."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:word-order"
+      ]
+    },
+    {
+      "key": "mc-127",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Even if you leave now,\n(B) However he tried hard,\n(C) Despite the fact that the road was blocked,\n\n**Column II**\n(D) you will not reach the airport before the gate closes.\n(E) he could not open the rusted lock.\n(F) the ambulance reached the hospital in time.",
+      "options": [
+        "A–D, B–E, C–F",
+        "C–F only",
+        "A–D, B–E",
+        "A–D, C–F",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *Even if you leave now, you will not reach the airport before the gate closes.*\nC–F: *Despite the fact that the road was blocked, the ambulance reached the hospital in time.*",
+          "'Despite the fact that' introduces a contrast with the result (a blocked road, yet on time); 'Even if' + present takes 'will' in the result.",
+          "B has no match: 'However' meaning 'no matter how' must be followed directly by its adverb (However hard he tried), so B–E is wrong."
+        ],
+        "trap": "B–E has the right meaning, but 'However he tried hard' is ungrammatical."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:conjunctions"
+      ]
+    },
+    {
+      "key": "mc-128",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) She gave me an\n(B) He gave me a\n(C) They gave me many\n\n**Column II**\n(D) honest answer when I asked about the loan.\n(E) advices that changed my career.\n(F) useful piece of advice about saving money.",
+      "options": [
+        "A–D, B–F, C–E",
+        "A–F, B–D",
+        "B–F only",
+        "A–D, B–F",
+        "A–E, B–F"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *She gave me an honest answer when I asked about the loan.*\nB–F: *He gave me a useful piece of advice about saving money.*",
+          "'an honest answer' (silent h); 'a useful piece of advice' ('useful' begins with a 'yu' sound).",
+          "C has no match: 'advice' is uncountable and has no plural, so C–E ('many advices') is wrong; C–F and C–D need a singular article, not 'many'."
+        ],
+        "trap": "'advice', 'information' and 'luggage' never take -s; count them with 'a piece of'."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:articles"
+      ]
+    },
+    {
+      "key": "mc-129",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The officer to whom\n(B) The officer whom\n(C) The officer who\n\n**Column II**\n(D) I thought was honest turned out to be corrupt.\n(E) I spoke on the phone promised to look into the matter.\n(F) I met him yesterday is from Agartala.",
+      "options": [
+        "A–E, B–D",
+        "A–E, C–D",
+        "A–E, B–F, C–D",
+        "C–D only",
+        "A–F, C–E"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–E: *The officer to whom I spoke on the phone promised to look into the matter.*\nC–D: *The officer who I thought was honest turned out to be corrupt.*",
+          "'to whom I spoke' keeps the preposition; in C–D 'who' is the subject of 'was honest' ('I thought' is only inserted), so 'who' is right.",
+          "B has no match: B–F repeats the object ('whom … him'), B–D wrongly uses 'whom' as the subject of 'was', and B–E drops the 'to' that 'spoke' needs."
+        ],
+        "trap": "Remove 'I thought' from C–D: 'The officer who was honest' shows that 'who' is correct."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:pronouns"
+      ]
+    },
+    {
+      "key": "mc-130",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The tea was hot enough\n(B) The tea was so hot\n(C) The tea was too hot\n\n**Column II**\n(D) to scald my tongue.\n(E) that I could not drink it at once.\n(F) to drink it at once.",
+      "options": [
+        "A–D, B–E, C–F",
+        "B–E only",
+        "A–D, C–F",
+        "B–E, C–D",
+        "A–D, B–E"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *The tea was hot enough to scald my tongue.*\nB–E: *The tea was so hot that I could not drink it at once.*",
+          "'so hot that I could not drink it' and 'hot enough to scald my tongue' are both correct.",
+          "C has no match: after 'too … to' the subject is not repeated as an object (too hot to drink), so C–F with 'it' is wrong; C–D says the tea was too hot to scald my tongue, which is illogical."
+        ],
+        "trap": "'The tea' is already the thing to be drunk; adding 'it' after 'too hot to drink' repeats it."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:word-order"
+      ]
+    },
+    {
+      "key": "mc-131",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Her handwriting is neater than\n(B) The salaries in this bank are higher than\n(C) The room in this hostel is larger than\n\n**Column II**\n(D) those in most private banks.\n(E) her brother.\n(F) that in the old hostel near the station.",
+      "options": [
+        "A–E, B–D, C–F",
+        "B–F, C–D",
+        "C–F only",
+        "B–D, C–F",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nB–D: *The salaries in this bank are higher than those in most private banks.*\nC–F: *The room in this hostel is larger than that in the old hostel near the station.*",
+          "Compare like with like: 'those' stands for 'the salaries', 'that' for 'the room'.",
+          "A has no match: A–E compares handwriting with a person; it should be 'than her brother's' or 'than that of her brother'."
+        ],
+        "trap": "A–E sounds fine in speech, but it compares two different kinds of thing."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "mc-132",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) They will not come to the party, nor\n(B) She did not attend the meeting, and neither\n(C) He has finished his project, and so\n\n**Column II**\n(D) did her manager.\n(E) will not their parents.\n(F) have I.",
+      "options": [
+        "A–E, B–D, C–F",
+        "C–F only",
+        "B–D, C–F",
+        "B–F, C–D",
+        "A–E, B–D"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nB–D: *She did not attend the meeting, and neither did her manager.*\nC–F: *He has finished his project, and so have I.*",
+          "The short addition repeats the auxiliary of the first clause: did not attend → neither did; has finished → so have.",
+          "A has no match: 'nor' already carries the negative, so it should be 'nor will their parents', not 'nor will not their parents'."
+        ],
+        "trap": "Match the auxiliary (did/has/will) as well as the negative."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "mc-133",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The new policy will benefit\n(B) The officer was well aware of\n(C) The firm has been accused for\n\n**Column II**\n(D) evading taxes on its imports.\n(E) to small traders in rural areas.\n(F) the risks involved in the plan.",
+      "options": [
+        "B–F, C–D",
+        "A–E only",
+        "B–F only",
+        "A–E, B–F, C–D",
+        "A–E, B–F"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–F: *The officer was well aware of the risks involved in the plan.*",
+          "'aware of' + noun is correct.",
+          "C–D is wrong: 'accuse' takes 'of' (accused of evading). A–E is wrong: the verb 'benefit' takes a direct object (benefit small traders)."
+        ],
+        "trap": "'a benefit to traders' is fine for the noun, but the verb takes no 'to'."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:prepositions"
+      ]
+    },
+    {
+      "key": "mc-134",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Only when he apologised\n(B) Unless you don't\n(C) Until he doesn't\n\n**Column II**\n(D) apologise, she will not forgive you.\n(E) return the book, I will not lend him another.\n(F) did she agree to speak to him again.",
+      "options": [
+        "A–F only",
+        "A–F, B–D",
+        "B–D, C–E",
+        "C–E only",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences: A–F: *Only when he apologised did she agree to speak to him again.*",
+          "'Only when …' at the start of a sentence is followed by inversion (did she agree).",
+          "B–D is wrong: 'unless' already means 'if not' (Unless you apologise). C–E is wrong: 'until' should not take a negative here (Until he returns the book)."
+        ],
+        "trap": "Both B–D and C–E carry a double negative; only A–F is clean."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "mc-135",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) They succeeded\n(B) He denied\n(C) She suggested\n\n**Column II**\n(D) to have taken the money from the drawer.\n(E) him to consult a lawyer before signing.\n(F) in getting the loan sanctioned in a week.",
+      "options": [
+        "A–F, B–D",
+        "A–F only",
+        "A–F, C–E",
+        "B–D, C–E",
+        "A–F, B–D, C–E"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences: A–F: *They succeeded in getting the loan sanctioned in a week.*",
+          "'succeed in' + -ing is correct.",
+          "B–D is wrong: 'deny' takes a gerund (denied having taken). C–E is wrong: 'suggest' does not take an object + to-infinitive (suggested that he consult)."
+        ],
+        "trap": "'deny' and 'suggest' look like 'advise' or 'refuse', but neither takes a to-infinitive."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:gerund-infinitive"
+      ]
+    },
+    {
+      "key": "mc-136",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) No matter how hard you will try,\n(B) No matter how hard you try,\n(C) However you try hard,\n\n**Column II**\n(D) you were not able to finish this book in a day.\n(E) you cannot finish this book in a day.\n(F) but you cannot finish this book in a day.",
+      "options": [
+        "B–D only",
+        "A–E only",
+        "B–E only",
+        "C–E only",
+        "B–E, C–F"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–E: *No matter how hard you try, you cannot finish this book in a day.*",
+          "'No matter how' + adverb + present tense is followed by a present main clause.",
+          "B–D is wrong: the present 'try' does not fit the past 'were not able'. A–E is wrong: no 'will' in the 'no matter how' clause. B–F adds a 'but' that the concession already supplies, and C is wrong in every pair (However hard you try)."
+        ],
+        "trap": "Concession openers ('No matter how', 'However', 'Although') are never followed by 'but'."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:conjunctions"
+      ]
+    },
+    {
+      "key": "mc-137",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Neither of the boys have\n(B) Each of the boys and girls\n(C) Each of the girls has brought\n\n**Column II**\n(D) finished their homework.\n(E) her own tiffin box.\n(F) were given a certificate.",
+      "options": [
+        "C–E only",
+        "A–D, C–E",
+        "B–F only",
+        "B–F, C–E",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences: C–E: *Each of the girls has brought her own tiffin box.*",
+          "'Each of the girls' is singular, so 'has brought her own tiffin box' is correct.",
+          "A–D is wrong: 'Neither of' takes a singular verb and pronoun (has finished his homework). B–F is wrong: 'Each' is singular (was given)."
+        ],
+        "trap": "'boys and girls' looks plural, but the subject is 'Each'."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "mc-138",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Sixty per cent of the voters\n(B) A large number of the members\n(C) Fifty per cent of the land\n\n**Column II**\n(D) was flooded after the dam burst.\n(E) was in favour of postponing the meeting.\n(F) has voted in favour of the proposal.",
+      "options": [
+        "A–F, C–D",
+        "B–E only",
+        "C–D only",
+        "A–E only",
+        "B–E, C–D"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences: C–D: *Fifty per cent of the land was flooded after the dam burst.*",
+          "With 'per cent of', the verb agrees with the noun after 'of': 'land' is uncountable, so 'was flooded'.",
+          "A–F is wrong: 'voters' is plural (have voted). B–E is wrong: 'A large number of' takes a plural verb (were in favour)."
+        ],
+        "trap": "The percentage itself does not decide the verb; the noun after 'of' does."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "mc-139",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) I am right about this,\n(B) Everybody enjoyed the play,\n(C) Let's not argue about it,\n\n**Column II**\n(D) didn't they?\n(E) will we?\n(F) am not I?",
+      "options": [
+        "A–F, B–D",
+        "B–D only",
+        "C–E only",
+        "B–D, C–E",
+        "A–F only"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–D: *Everybody enjoyed the play, didn't they?*",
+          "'Everybody' is picked up by 'they' in a tag: 'didn't they?'.",
+          "A–F is wrong: the tag for 'I am' is 'aren't I?'. C–E is wrong: 'Let's (not) …' takes 'shall we?'."
+        ],
+        "trap": "'am not I?' looks logical, but the accepted tag is 'aren't I?'."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:question-tags"
+      ]
+    },
+    {
+      "key": "mc-140",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) There were less\n(B) There were fewer\n(C) There was fewer\n\n**Column II**\n(D) rice in the store than we had expected.\n(E) mistakes in this year's audit than in last year's.\n(F) water in the tank than we had expected.",
+      "options": [
+        "B–E, C–F",
+        "A–E only",
+        "C–D only",
+        "A–D, B–E",
+        "None of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–E: *There were fewer mistakes in this year's audit than in last year's.*",
+          "'fewer' goes with plural countable nouns and a plural verb: 'There were fewer mistakes …'.",
+          "A and C have no match: 'water' and 'rice' are uncountable and need 'There was less …', and 'mistakes' (countable) needs 'fewer', so A–E is wrong. The correct combination B–E is not among the given combinations, so the answer is 'None of these'."
+        ],
+        "trap": "Every listed option either adds a wrong pair to B–E or leaves it out."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:degrees-of-comparison",
+        "mc:none-listed"
+      ]
+    },
+    {
+      "key": "mc-141",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The choice is between staying at home\n(B) She would sooner resign\n(C) Whether you agree\n\n**Column II**\n(D) or travelling to Goa for the holidays.\n(E) or not, the meeting will go ahead.\n(F) than to accept the transfer.",
+      "options": [
+        "A–D, C–E",
+        "C–E only",
+        "B–F only",
+        "B–F, C–E",
+        "A–D, B–F, C–E"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences: C–E: *Whether you agree or not, the meeting will go ahead.*",
+          "'Whether … or not' is correct, followed by a main clause.",
+          "A–D is wrong: 'between' pairs with 'and' (between staying … and travelling). B–F is wrong: 'would sooner' takes a bare infinitive on both sides (resign than accept)."
+        ],
+        "trap": "'between … or' is a common slip; 'between' always takes 'and'."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:conjunctions"
+      ]
+    },
+    {
+      "key": "mc-142",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Prices have raised\n(B) The workers laid\n(C) The patient was lying\n\n**Column II**\n(D) on the bed since morning.\n(E) the foundation of the new school building in May.\n(F) sharply after the fuel price hike.",
+      "options": [
+        "B–E, C–D",
+        "A–F, B–E",
+        "B–E only",
+        "A–F, C–D",
+        "None of these"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–E: *The workers laid the foundation of the new school building in May.*",
+          "'lay' (past 'laid') takes an object: 'laid the foundation'.",
+          "C–D is wrong: 'since morning' needs a perfect tense (has been lying). A–F is wrong: 'raise' needs an object; prices 'have risen'."
+        ],
+        "trap": "'rise' (rose, risen) has no object; 'raise' (raised) always has one."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:tenses"
+      ]
+    },
+    {
+      "key": "mc-143",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Hardly the clerk had opened the counter\n(B) No sooner the clerk opened the counter\n(C) The clerk had hardly opened the counter\n\n**Column II**\n(D) than a long queue formed outside.\n(E) when a long queue formed outside.\n(F) that a long queue formed outside.",
+      "options": [
+        "A–E only",
+        "B–D only",
+        "C–E only",
+        "B–D, C–E",
+        "C–D only"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences: C–E: *The clerk had hardly opened the counter when a long queue formed outside.*",
+          "When 'hardly' stays inside the clause (The clerk had hardly opened …), no inversion is needed, and it pairs with 'when'.",
+          "A–E is wrong: if 'Hardly' starts the sentence, the auxiliary must come first (Hardly had the clerk opened). B–D is wrong: 'No sooner' at the start also needs inversion (No sooner had the clerk opened)."
+        ],
+        "trap": "A–E and B–D have the right partner words; only the word order is wrong."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "mc-144",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The police charged him of\n(B) The teacher extended\n(C) She congratulated her friend for\n\n**Column II**\n(D) stealing copper wire from the railway yard.\n(E) the deadline for submitting the project by a week.\n(F) winning the state-level chess title.",
+      "options": [
+        "B–E, C–F",
+        "A–D only",
+        "A–D, B–E, C–F",
+        "A–D, B–E",
+        "B–E only"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–E: *The teacher extended the deadline for submitting the project by a week.*",
+          "'extended the deadline … by a week' is correct.",
+          "C–F is wrong: 'congratulate' takes 'on' (congratulated her friend on winning). A–D is wrong: one is charged 'with' an offence (charged him with stealing)."
+        ],
+        "trap": "'accused of', but 'charged with'; 'congratulate on', not 'for'."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:prepositions"
+      ]
+    },
+    {
+      "key": "mc-145",
+      "subtype": "three-by-three",
+      "difficulty": "hard",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Neither the bank nor the customer\n(B) Either the bank nor the customer\n(C) Neither the bank or the customer\n\n**Column II**\n(D) was willing to bear the loss.\n(E) were willing to bear the loss.\n(F) are to blame for the error, the court ruled.",
+      "options": [
+        "A–D only",
+        "A–E only",
+        "C–D only",
+        "A–D, C–E",
+        "B–D only"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences: A–D: *Neither the bank nor the customer was willing to bear the loss.*",
+          "'Neither … nor' joining two singular subjects takes a singular verb (was willing).",
+          "A–E and A–F are wrong: both subjects are singular, so the verb must be singular. B and C are wrong in every pair: 'neither' pairs only with 'nor', and 'either' only with 'or'."
+        ],
+        "trap": "Two singular subjects joined by 'neither … nor' stay singular."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "mc-146",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Not one of the forty branches inspected by the auditors\n(B) The proceeds from the sale of the bank's office in Kochi\n(C) The fact that the deposits were fully insured\n\n**Column II**\n(D) has been used to clear the arrears of the pension fund.\n(E) was what persuaded most customers not to withdraw their money.\n(F) were found to be fully compliant with the KYC norms.",
+      "options": [
+        "A–F, C–E",
+        "B–D only",
+        "C–E only",
+        "B–D, C–E",
+        "A–F, B–D, C–E"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences: C–E: *The fact that the deposits were fully insured was what persuaded most customers not to withdraw their money.*",
+          "A 'the fact that …' clause is singular, so 'was what persuaded …' is correct.",
+          "A–F is wrong: 'Not one' is singular (was found). B–D is wrong: 'proceeds' (money from a sale) is always plural (have been used)."
+        ],
+        "trap": "'Not one of the forty branches' and 'the proceeds' fool the ear: the first is singular, the second plural."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "mc-147",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) At no point did the clerk\n(B) Rarely has the bank\n(C) Only later the depositors realised\n\n**Column II**\n(D) that their savings had been at risk.\n(E) faced such a severe shortage of currency notes as it faces this month.\n(F) ask the customer for his PIN, says the inquiry report.",
+      "options": [
+        "A–F, B–E",
+        "A–F, B–E, C–D",
+        "A–F, C–D",
+        "B–E only",
+        "None of these"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–F: *At no point did the clerk ask the customer for his PIN, says the inquiry report.*\nB–E: *Rarely has the bank faced such a severe shortage of currency notes as it faces this month.*",
+          "A negative or limiting adverbial at the start takes inversion: 'Rarely has the bank faced …', 'At no point did the clerk ask …'.",
+          "C has no match: 'Only later' also needs inversion (Only later did the depositors realise), so C–D is wrong."
+        ],
+        "trap": "C–D makes perfect sense; the error is the missing 'did' before the subject."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "mc-148",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) It was not until the merger was approved\n(B) Not until the merger was approved\n(C) Until the merger was not approved,\n\n**Column II**\n(D) did the employees learnt about the new pay scales.\n(E) the employees learnt about the new pay scales.\n(F) that the employees learnt about the new pay scales.",
+      "options": [
+        "A–F only",
+        "B–E only",
+        "B–D only",
+        "A–E only",
+        "A–F, B–D"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences: A–F: *It was not until the merger was approved that the employees learnt about the new pay scales.*",
+          "The cleft pattern 'It was not until X that Y …' needs 'that' and normal word order.",
+          "B–E is wrong: a sentence opening with 'Not until …' needs inversion (did the employees learn). B–D is wrong too: after 'did' the verb is in the base form (learn, not learnt). C is wrong in every pair: 'until … not' makes no sense here."
+        ],
+        "trap": "B–D has the inversion but keeps the past form 'learnt' after 'did'."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:inversion"
+      ]
+    },
+    {
+      "key": "mc-149",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) A large number of the applicants\n(B) Last year, more than one applicant\n(C) More than one applicant\n\n**Column II**\n(D) has complained about the delay in refunds since April.\n(E) have complained about the delay in refunds since April.\n(F) were complaining about the delay in refunds since April.",
+      "options": [
+        "A–D, C–E",
+        "B–E, C–D",
+        "A–E only",
+        "A–E, B–F, C–D",
+        "A–E, C–D"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–E: *A large number of the applicants have complained about the delay in refunds since April.*\nC–D: *More than one applicant has complained about the delay in refunds since April.*",
+          "'More than one' + singular noun takes a singular verb (has complained); 'A large number of' takes a plural verb (have complained); both use the present perfect with 'since'.",
+          "B has no match: 'Last year' is a finished time and cannot go with a present perfect or with 'since April', and B–F ('were complaining … since') is wrong as well."
+        ],
+        "trap": "'More than one' sounds plural, but the verb follows 'one applicant'."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "mc-150",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Sanctioned within a week,\n(B) Having sanctioned the loan within a week,\n(C) Having been sanctioned within a week, the borrower\n\n**Column II**\n(D) began building his shop at once.\n(E) the manager was praised by the regional head.\n(F) the loan helped the trader restock before the festival.",
+      "options": [
+        "A–F, B–E, C–D",
+        "A–E, B–F",
+        "A–F, B–E",
+        "A–F only",
+        "B–E, C–D"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–F: *Sanctioned within a week, the loan helped the trader restock before the festival.*\nB–E: *Having sanctioned the loan within a week, the manager was praised by the regional head.*",
+          "The opening phrase must describe the subject: the manager sanctioned the loan; the loan was sanctioned.",
+          "C has no match: 'Having been sanctioned' describes 'the borrower', but it was the loan, not the borrower, that was sanctioned; so C–D is wrong."
+        ],
+        "trap": "C–D is the only ending that fits C's grammar, but the participle describes the wrong person."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:modifiers"
+      ]
+    },
+    {
+      "key": "mc-151",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The new branch is as profitable if not more\n(B) The new branch is as profitable, if not more profitable,\n(C) The new branch is as profitable as, if not more profitable than,\n\n**Column II**\n(D) the old one.\n(E) than the old one.\n(F) as the old one.",
+      "options": [
+        "B–E only",
+        "C–D only",
+        "B–F only",
+        "A–E only",
+        "A–F, C–D"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences: C–D: *The new branch is as profitable as, if not more profitable than, the old one.*",
+          "Both comparisons must be complete: 'as profitable as' and 'more profitable than', with 'the old one' completing both.",
+          "B–E is wrong: it drops the second 'as' (as profitable … than). B–F is wrong: it drops 'than' (more profitable … as). A–E is wrong: 'as profitable if not more than' leaves 'as profitable' incomplete."
+        ],
+        "trap": "Read each half on its own: 'as profitable … than the old one' does not work."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:degrees-of-comparison"
+      ]
+    },
+    {
+      "key": "mc-152",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The cashier counted the notes twice lest he should not\n(B) The cashier counted the notes twice lest he\n(C) The cashier counted the notes twice so that he\n\n**Column II**\n(D) should make a mistake in the totals.\n(E) makes a mistake in the totals.\n(F) would not make a mistake in the totals.",
+      "options": [
+        "A–F, B–D",
+        "A–E, B–D, C–F",
+        "C–F only",
+        "B–D, C–F",
+        "None of these"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nB–D: *The cashier counted the notes twice lest he should make a mistake in the totals.*\nC–F: *The cashier counted the notes twice so that he would not make a mistake in the totals.*",
+          "'lest' already carries 'not', so it is followed by 'should' + base verb; 'so that … would not' gives a negative purpose.",
+          "A has no match: 'lest … should not' is a double negative. B–E fails because 'lest' needs 'should' + base verb, not 'makes'."
+        ],
+        "trap": "'lest' means 'so that … not'; never add another 'not'."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:conjunctions"
+      ]
+    },
+    {
+      "key": "mc-153",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Both the cashier as well as the manager\n(B) The cashier as well as the manager\n(C) Both the cashier and the manager\n\n**Column II**\n(D) has been suspended pending an inquiry.\n(E) have been suspended pending an inquiry.\n(F) is suspended since last Friday.",
+      "options": [
+        "A–E, B–D",
+        "B–D, C–E",
+        "B–D only",
+        "A–E, B–D, C–F",
+        "B–E, C–D"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nB–D: *The cashier as well as the manager has been suspended pending an inquiry.*\nC–E: *Both the cashier and the manager have been suspended pending an inquiry.*",
+          "With 'as well as' the verb agrees with the first subject 'The cashier' (has been); 'Both … and' takes a plural verb (have been).",
+          "A has no match: 'both' pairs only with 'and', never with 'as well as'. F fits no starter: 'since' needs a perfect tense."
+        ],
+        "trap": "A–E uses the plural verb that 'both' needs, but 'both … as well as' is wrong."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "mc-154",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) He talks to the staff as if he\n(B) It is time the bank\n(C) She looked as though she\n\n**Column II**\n(D) owned the bank, though he joined only last week.\n(E) had seen a ghost; her face was white.\n(F) upgrades its ageing software.",
+      "options": [
+        "A–D, B–F, C–E",
+        "A–E, C–D",
+        "A–D only",
+        "B–F, C–E",
+        "A–D, C–E"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *He talks to the staff as if he owned the bank, though he joined only last week.*\nC–E: *She looked as though she had seen a ghost; her face was white.*",
+          "'as if/as though' + past (owned) or past perfect (had seen) shows something unreal or imagined.",
+          "B has no match: 'It is time' + subject takes the past tense (It is time the bank upgraded …), so B–F is wrong."
+        ],
+        "trap": "B–F has the right meaning, but after 'It is time' + subject the verb must be in the past."
+      },
+      "tags": [
+        "mc:partial-match",
+        "grammar:subjunctive"
+      ]
+    },
+    {
+      "key": "mc-155",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) It was such severe a cyclone\n(B) It was so severe a cyclone\n(C) It was so a severe cyclone\n\n**Column II**\n(D) that the port remained shut since a week.\n(E) than the port remained shut for a week.\n(F) that the port remained shut for a week.",
+      "options": [
+        "B–F only",
+        "B–D only",
+        "A–F only",
+        "C–F only",
+        "A–D, B–F"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–F: *It was so severe a cyclone that the port remained shut for a week.*",
+          "'so + adjective + a + noun' (so severe a cyclone) is correct, followed by 'that' and 'for a week'.",
+          "B–D is wrong: a period takes 'for', not 'since'. A and C are wrong in every pair: it is either 'such a severe cyclone' or 'so severe a cyclone'."
+        ],
+        "trap": "'so' comes before the adjective and 'a' after it; 'such' comes before 'a'."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:word-order"
+      ]
+    },
+    {
+      "key": "mc-156",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) I would rather you\n(B) I would rather you had\n(C) I would rather you have\n\n**Column II**\n(D) to have consulted me before signing the lease.\n(E) will consult me before signing the lease next month.\n(F) consulted me before signing the lease last month.",
+      "options": [
+        "B–E only",
+        "C–F only",
+        "A–D only",
+        "A–D, B–F",
+        "B–F only"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–F: *I would rather you had consulted me before signing the lease last month.*",
+          "When the speaker wishes a past action had been different, 'would rather' + subject takes the past perfect (had consulted).",
+          "C–F is wrong: 'would rather you have consulted' is not a correct form. A–E is wrong: 'will' cannot follow 'would rather you'. A–D is wrong: no 'to' after 'would rather you'."
+        ],
+        "trap": "'would rather you' + past refers to now or later; for the past it needs 'had' + past participle."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:subjunctive"
+      ]
+    },
+    {
+      "key": "mc-157",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The applicant must submit either the original deed\n(B) The applicant must neither alter the original deed\n(C) The applicant must either submit the original deed\n\n**Column II**\n(D) or pay a penalty of ₹2,000.\n(E) or a copy attested by a gazetted officer.\n(F) nor submit a photocopy in its place.",
+      "options": [
+        "A–D, B–F, C–E",
+        "B–F, C–D",
+        "A–D, C–E",
+        "A–F, B–E, C–D",
+        "None of these"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–E: *The applicant must submit either the original deed or a copy attested by a gazetted officer.*\nB–F: *The applicant must neither alter the original deed nor submit a photocopy in its place.*\nC–D: *The applicant must either submit the original deed or pay a penalty of ₹2,000.*",
+          "The words after each correlative must match: 'either submit … or pay' (verbs), 'either the original deed or a copy' (nouns), 'neither alter … nor submit' (verbs).",
+          "C–E fails the parallel test: 'either' stands before a verb, 'or' before a noun. B–E and A–F fail because 'neither' pairs only with 'nor' and 'either' only with 'or'. The correct combination A–E, B–F, C–D is not among the given combinations, so the answer is 'None of these'."
+        ],
+        "trap": "Once C–D is placed, the other starters fit only one way; that complete set is not listed."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:parallelism",
+        "mc:none-listed"
+      ]
+    },
+    {
+      "key": "mc-158",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) What the branch requires for opening a joint account\n(B) The documents that the branch requires for opening a joint account\n(C) The list of documents that the branch requires for opening joint accounts\n\n**Column II**\n(D) is a self-attested copy of each holder's PAN card.\n(E) are listed on the back of the form.\n(F) runs to three pages and has been laminated for display.",
+      "options": [
+        "A–D, B–F, C–E",
+        "A–D, B–E",
+        "A–E, B–D, C–F",
+        "A–D, B–E, C–F",
+        "A–D, C–E"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Correct sentences:\nA–D: *What the branch requires for opening a joint account is a self-attested copy of each holder's PAN card.*\nB–E: *The documents that the branch requires for opening a joint account are listed on the back of the form.*\nC–F: *The list of documents that the branch requires for opening joint accounts runs to three pages and has been laminated for display.*",
+          "The verb agrees with the head noun, not with the nearest noun: 'The list … runs', 'The documents … are listed'; a 'What …' clause naming one thing is singular (is a copy).",
+          "C–E fails: the subject is 'list' (singular), not 'documents'. B–F fails: 'documents' is plural, so 'runs … has been' cannot follow."
+        ],
+        "trap": "Long subjects push the head noun far from the verb; find 'list' and 'documents' before choosing."
+      },
+      "tags": [
+        "mc:full-match",
+        "grammar:subject-verb-agreement"
+      ]
+    },
+    {
+      "key": "mc-159",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) The firm's figures are at variance from\n(B) The new rules are applicable on\n(C) The merger is contingent upon\n\n**Column II**\n(D) the ones it reported to the tax department.\n(E) the regulator's approval, expected by June.\n(F) all branches from the first of April.",
+      "options": [
+        "B–F, C–E",
+        "A–D only",
+        "C–E only",
+        "A–D, C–E",
+        "A–D, B–F, C–E"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Correct sentences: C–E: *The merger is contingent upon the regulator's approval, expected by June.*",
+          "'contingent upon/on' (depending on) is correct.",
+          "B–F is wrong: 'applicable' takes 'to' (applicable to all branches). A–D is wrong: 'at variance' takes 'with' (at variance with the ones …)."
+        ],
+        "trap": "'applicable to', 'at variance with' and 'contingent on/upon' are fixed pairs."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:prepositions"
+      ]
+    },
+    {
+      "key": "mc-160",
+      "subtype": "three-by-three",
+      "difficulty": "extreme",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) So vital the role of rural branches is that\n(B) So vital is the role of rural branches that\n(C) So vital is rural branches\n\n**Column II**\n(D) as to make the bank open new ones.\n(E) that the bank has decided not to close any of them.\n(F) the bank has decided not to close any of them.",
+      "options": [
+        "A–F only",
+        "B–F only",
+        "C–E only",
+        "B–F, C–E",
+        "None of these"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct sentences: B–F: *So vital is the role of rural branches that the bank has decided not to close any of them.*",
+          "After 'So + adjective' at the start, the verb comes before the subject (So vital is the role …), and 'that' introduces the result.",
+          "A–F is wrong: there is no inversion after 'So vital'. C–E is wrong: the subject 'rural branches' is plural, so it needs 'are'. B–E repeats 'that'."
+        ],
+        "trap": "A fronted 'So + adjective' always brings the verb before the subject."
+      },
+      "tags": [
+        "mc:single-match",
+        "grammar:inversion"
+      ]
     }
   ]
 }
