@@ -1,0 +1,2548 @@
+{
+  "chapter": "ages",
+  "version": 1,
+  "items": [
+    {
+      "key": "ag-001",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The present ages of Rohan and Kabir are in the ratio 4 : 5. The ratio of Rohan's age 6 years hence to Kabir's age 4 years ago is 15 : 13. What will be the sum of their ages after 5 years?",
+      "options": [
+        "54 years",
+        "59 years",
+        "60 years",
+        "62 years",
+        "64 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the ages be 4x and 5x. Then (4x + 6) : (5x − 4) = 15 : 13, so 52x + 78 = 75x − 60 and x = 6.",
+          "Rohan is 24 and Kabir is 30, a present total of 54 years.",
+          "After 5 years each is 5 years older: 54 + 10 = 64 years."
+        ],
+        "trap": "54 years is the present total. Both people age by 5 years, so the sum grows by 10 years."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:mixed-offset-ratio"
+      ]
+    },
+    {
+      "key": "ag-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The ratio of the present ages of Meena and Sakshi is 7 : 9. Meena's age 8 years from now and Sakshi's age 6 years ago are in the ratio 6 : 5. How old will Sakshi be 7 years from now?",
+      "options": [
+        "36 years",
+        "42 years",
+        "43 years",
+        "45 years",
+        "46 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the ages be 7x and 9x. Then (7x + 8) : (9x − 6) = 6 : 5, so 35x + 40 = 54x − 36 and x = 4.",
+          "Sakshi is 9 × 4 = 36 years old now, so 7 years from now she will be 43."
+        ],
+        "trap": "36 years is Sakshi's present age; the question asks for her age 7 years from now."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:mixed-offset-ratio"
+      ]
+    },
+    {
+      "key": "ag-003",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The present ages of Kamini and Lekha are in the ratio 5 : 3. The ratio of Kamini's age 4 years ago to Lekha's age 6 years hence is 6 : 5. What was the ratio of Kamini's age to Lekha's age 8 years ago?",
+      "options": [
+        "1 : 2",
+        "5 : 3",
+        "7 : 4",
+        "2 : 1",
+        "9 : 5"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the ages be 5x and 3x. Then (5x − 4) : (3x + 6) = 6 : 5, so 25x − 20 = 18x + 36 and x = 8.",
+          "Kamini is 40 and Lekha is 24. Eight years ago they were 32 and 16, i.e. 2 : 1."
+        ],
+        "trap": "5 : 3 is the present ratio. A ratio of ages changes with time because the same number of years is added to both ages."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:mixed-offset-ratio"
+      ]
+    },
+    {
+      "key": "ag-004",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The ratio of the present ages of Farhan and Gita is 6 : 5. Farhan's age 9 years hence will be to Gita's age 3 years ago as 3 : 2. What was the sum of their ages 6 years ago?",
+      "options": [
+        "87 years",
+        "90 years",
+        "93 years",
+        "96 years",
+        "99 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the ages be 6x and 5x. Then (6x + 9) : (5x − 3) = 3 : 2, so 12x + 18 = 15x − 9 and x = 9.",
+          "Farhan is 54 and Gita is 45, a present total of 99 years.",
+          "Six years ago the total was 99 − 2 × 6 = 87 years."
+        ],
+        "trap": "93 years subtracts 6 only once. Each of the two people was 6 years younger, so 12 comes off the present total of 99."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:mixed-offset-ratio"
+      ]
+    },
+    {
+      "key": "ag-005",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The present ages of Anil and Bhanu are in the ratio 3 : 2. Charu is 4 years younger than Anil. The ratio of Charu's age 6 years hence to Bhanu's age 2 years ago is 7 : 4. What will be the sum of the ages of all three after 5 years?",
+      "options": [
+        "84 years",
+        "94 years",
+        "99 years",
+        "100 years",
+        "102 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let Anil = 3x and Bhanu = 2x, so Charu = 3x − 4.",
+          "(3x − 4 + 6) : (2x − 2) = 7 : 4 → 12x + 8 = 14x − 14 → x = 11.",
+          "Ages: Anil 33, Bhanu 22, Charu 29; total 84. After 5 years: 84 + 3 × 5 = 99 years."
+        ],
+        "trap": "94 years adds 5 years to only two people. All three age, so 15 years are added to the present total of 84."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:mixed-offset-ratio"
+      ]
+    },
+    {
+      "key": "ag-006",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The present ages of Neel and Omkar are in the ratio 8 : 7. Neel's age 4 years ago and Omkar's age 4 years hence are in the ratio 7 : 8. What was Omkar's age 10 years ago?",
+      "options": [
+        "18 years",
+        "20 years",
+        "22 years",
+        "24 years",
+        "28 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the ages be 8x and 7x. Then (8x − 4) : (7x + 4) = 7 : 8, so 64x − 32 = 49x + 28 and x = 4.",
+          "Omkar is 28 now, so 10 years ago he was 18."
+        ],
+        "trap": "22 years is Neel's age 10 years ago (32 − 10); the question asks about Omkar."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:mixed-offset-ratio"
+      ]
+    },
+    {
+      "key": "ag-007",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The present ages of Tara and Usha are in the ratio 2 : 3. The ratio of Tara's age 5 years hence to Usha's present age is 3 : 4. What is Tara's present age?",
+      "options": [
+        "40 years",
+        "45 years",
+        "50 years",
+        "55 years",
+        "60 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the ages be 2x and 3x. Then (2x + 5) : 3x = 3 : 4, so 8x + 20 = 9x and x = 20.",
+          "Tara is 2 × 20 = 40 years old (Usha is 60)."
+        ],
+        "trap": "45 years is Tara's age 5 years hence, and 60 years is Usha's present age."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:mixed-offset-ratio"
+      ]
+    },
+    {
+      "key": "ag-008",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Deepak is 6 years older than Esha and 9 years younger than Firoz. Five years ago, the ratio of Esha's age to Firoz's age was 2 : 5. What is Deepak's present age?",
+      "options": [
+        "12 years",
+        "15 years",
+        "16 years",
+        "18 years",
+        "21 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let Esha = e. Then Deepak = e + 6 and Firoz = e + 15.",
+          "(e − 5) : (e + 10) = 2 : 5 → 5e − 25 = 2e + 20 → e = 15.",
+          "Deepak = 15 + 6 = 21 years."
+        ],
+        "trap": "16 years is Deepak's age five years ago and 15 years is Esha's present age; the question asks for Deepak now."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:three-person-offset"
+      ]
+    },
+    {
+      "key": "ag-009",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Gauri is 4 years younger than Hemant but 7 years older than Ishita. The ratio of Hemant's age 3 years hence to Ishita's age 3 years ago is 2 : 1. What will be the sum of the ages of all three after 4 years?",
+      "options": [
+        "78 years",
+        "82 years",
+        "84 years",
+        "86 years",
+        "90 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let Hemant = h. Then Gauri = h − 4 and Ishita = h − 11.",
+          "(h + 3) : (h − 14) = 2 : 1 → h + 3 = 2h − 28 → h = 31. Ages: 31, 27, 20; total 78.",
+          "After 4 years: 78 + 3 × 4 = 90 years."
+        ],
+        "trap": "78 years is the present total; 82 years adds the 4 years only once instead of once for each person."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:three-person-offset"
+      ]
+    },
+    {
+      "key": "ag-010",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Kiran is 5 years older than Lalit, and Mohan is 3 years older than Kiran. The ratio of the sum of the present ages of Kiran and Lalit to Mohan's present age is 7 : 4. What was Lalit's age 6 years ago?",
+      "options": [
+        "30 years",
+        "35 years",
+        "36 years",
+        "38 years",
+        "41 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let Lalit = l. Then Kiran = l + 5 and Mohan = l + 8.",
+          "(2l + 5) : (l + 8) = 7 : 4 → 8l + 20 = 7l + 56 → l = 36.",
+          "Lalit 6 years ago = 36 − 6 = 30 years."
+        ],
+        "trap": "36 years is Lalit's present age and 35 years is Kiran's age 6 years ago; the question asks for Lalit 6 years ago."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:three-person-offset"
+      ]
+    },
+    {
+      "key": "ag-011",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Nisha is 8 years older than Pooja and 4 years younger than Ravi. Three years ago, the ratio of Nisha's age to Ravi's age was 13 : 15. What will be Pooja's age 6 years from now?",
+      "options": [
+        "21 years",
+        "23 years",
+        "25 years",
+        "27 years",
+        "35 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let Pooja = p. Then Nisha = p + 8 and Ravi = p + 12.",
+          "Three years ago: (p + 5) : (p + 9) = 13 : 15 → 15p + 75 = 13p + 117 → p = 21.",
+          "Pooja 6 years from now = 21 + 6 = 27 years."
+        ],
+        "trap": "21 years is Pooja's present age, and 35 years is Nisha's age 6 years from now."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:three-person-offset"
+      ]
+    },
+    {
+      "key": "ag-012",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Sameer is 9 years older than Uday, and Uday is 6 years older than Tanu. Seven years hence, Sameer's age will be twice Tanu's age at that time. What is the average of the present ages of the three?",
+      "options": [
+        "12 years",
+        "13 years",
+        "14 years",
+        "15 years",
+        "22 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let Tanu = t. Then Uday = t + 6 and Sameer = t + 15.",
+          "t + 15 + 7 = 2(t + 7) → t = 8. Ages: 8, 14, 23; total 45.",
+          "Average = 45 ÷ 3 = 15 years."
+        ],
+        "trap": "22 years is the average 7 years hence; 14 years is only Uday's age, the middle value, which equals the average only when the gaps are equal."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:three-person-offset"
+      ]
+    },
+    {
+      "key": "ag-013",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Varun is 3 years older than Wasim, and Wasim is twice as old as Yash. Five years ago, Varun was four times as old as Yash was then. How old will Wasim be 6 years from now?",
+      "options": [
+        "18 years",
+        "21 years",
+        "23 years",
+        "24 years",
+        "27 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let Yash = y. Then Wasim = 2y and Varun = 2y + 3.",
+          "Five years ago: 2y + 3 − 5 = 4(y − 5) → 2y − 2 = 4y − 20 → y = 9.",
+          "Wasim = 18 now, so 6 years from now he will be 24."
+        ],
+        "trap": "18 years is Wasim's present age; 27 years is Varun's age 6 years from now."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:three-person-offset"
+      ]
+    },
+    {
+      "key": "ag-014",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Abhay is 2 years older than Bharat, and Chetan is 6 years younger than Bharat. The total of their present ages is 74 years. What was the ratio of Abhay's age to Chetan's age 8 years ago?",
+      "options": [
+        "3 : 5",
+        "4 : 3",
+        "7 : 5",
+        "13 : 9",
+        "5 : 3"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let Bharat = b. Then b + 2 + b + b − 6 = 74 → 3b = 78 → b = 26.",
+          "Abhay is 28 and Chetan is 20. Eight years ago they were 20 and 12, i.e. 5 : 3."
+        ],
+        "trap": "7 : 5 is the present ratio (28 : 20); the question asks for the ratio 8 years ago."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:three-person-offset"
+      ]
+    },
+    {
+      "key": "ag-015",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "$\\frac{2}{5}$ of Harsh's present age is equal to $\\frac{4}{7}$ of Ishaan's present age. Five years ago, the sum of their ages was 58 years. What is Ishaan's present age?",
+      "options": [
+        "20 years",
+        "23 years",
+        "24 years",
+        "28 years",
+        "40 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "(2/5)H = (4/7)I → H : I = (4/7) : (2/5) = 20 : 14 = 10 : 7.",
+          "Present sum = 58 + 2 × 5 = 68, so one part = 68 ÷ 17 = 4.",
+          "Ishaan = 7 × 4 = 28 years (Harsh is 40)."
+        ],
+        "trap": "40 years is Harsh's present age, and 23 years is Ishaan's age five years ago."
+      },
+      "tags": [
+        "arith:fraction-ages",
+        "template:fraction-equality"
+      ]
+    },
+    {
+      "key": "ag-016",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "$\\frac{3}{4}$ of Jaya's age 4 years ago is equal to $\\frac{2}{3}$ of Kavya's age 6 years hence. Jaya is 6 years older than Kavya. What will be the sum of their ages after 3 years?",
+      "options": [
+        "60 years",
+        "63 years",
+        "66 years",
+        "69 years",
+        "72 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let Kavya = k, so Jaya = k + 6 and her age 4 years ago is k + 2.",
+          "(3/4)(k + 2) = (2/3)(k + 6) → 9k + 18 = 8k + 48 → k = 30. Jaya = 36.",
+          "Sum after 3 years = 66 + 2 × 3 = 72 years."
+        ],
+        "trap": "66 years is the present sum, and 69 years adds the 3 years only once."
+      },
+      "tags": [
+        "arith:fraction-ages",
+        "template:fraction-equality"
+      ]
+    },
+    {
+      "key": "ag-017",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Half of Leela's present age is equal to three-fifths of Mohit's present age, and Leela is 7 years older than Mohit. What will be Leela's age after 9 years?",
+      "options": [
+        "42 years",
+        "44 years",
+        "47 years",
+        "49 years",
+        "51 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "L/2 = 3M/5 → L : M = 6 : 5. The difference of 1 part = 7 years.",
+          "Leela = 6 × 7 = 42 now, so after 9 years she will be 51."
+        ],
+        "trap": "44 years is Mohit's age after 9 years (35 + 9), and 42 years is Leela's present age."
+      },
+      "tags": [
+        "arith:fraction-ages",
+        "template:fraction-equality"
+      ]
+    },
+    {
+      "key": "ag-018",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "60% of Naveen's age 5 years hence is equal to 75% of Om's age 5 years ago. The sum of their present ages is 72 years. How old will Om be after 8 years?",
+      "options": [
+        "37 years",
+        "40 years",
+        "43 years",
+        "45 years",
+        "48 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "0.6(N + 5) = 0.75(O − 5) → 4(N + 5) = 5(O − 5) → 5O − 4N = 45.",
+          "With N = 72 − O: 5O − 288 + 4O = 45 → 9O = 333 → O = 37, N = 35.",
+          "Om after 8 years = 37 + 8 = 45 years."
+        ],
+        "trap": "43 years is Naveen's age after 8 years, and 37 years is Om's present age."
+      },
+      "tags": [
+        "arith:percent-ages",
+        "template:fraction-equality"
+      ]
+    },
+    {
+      "key": "ag-019",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "One-third of Pallavi's present age is 1 year more than one-fourth of Rekha's present age. Rekha is 4 years older than Pallavi. What is the sum of their present ages?",
+      "options": [
+        "44 years",
+        "48 years",
+        "50 years",
+        "52 years",
+        "56 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "P/3 = (P + 4)/4 + 1. Multiply by 12: 4P = 3P + 12 + 12 → P = 24.",
+          "Rekha = 28, so the sum = 24 + 28 = 52 years. Check: 8 = 7 + 1."
+        ],
+        "trap": "48 years doubles Pallavi's age, and 56 years doubles Rekha's; the two ages differ by 4."
+      },
+      "tags": [
+        "arith:fraction-ages",
+        "template:fraction-equality"
+      ]
+    },
+    {
+      "key": "ag-020",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "$\\frac{5}{6}$ of Suresh's present age is equal to $\\frac{2}{3}$ of the present age of his elder brother Tarun. Four years hence, the sum of their ages will be 62 years. How old was Tarun 4 years ago?",
+      "options": [
+        "20 years",
+        "22 years",
+        "24 years",
+        "26 years",
+        "30 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "(5/6)S = (2/3)T → S : T = (2/3) : (5/6) = 4 : 5.",
+          "Present sum = 62 − 8 = 54, so one part = 6: Suresh 24, Tarun 30.",
+          "Tarun 4 years ago = 30 − 4 = 26 years."
+        ],
+        "trap": "30 years is Tarun's present age; 20 years is Suresh's age 4 years ago."
+      },
+      "tags": [
+        "arith:fraction-ages",
+        "template:fraction-equality"
+      ]
+    },
+    {
+      "key": "ag-021",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two-fifths of a mother's present age is 6 years more than her daughter's present age. Five years ago, the mother was 7 times as old as her daughter. How old will the mother be when the daughter turns 25?",
+      "options": [
+        "45 years",
+        "48 years",
+        "50 years",
+        "52 years",
+        "55 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Five years ago: M − 5 = 7(D − 5) → M = 7D − 30.",
+          "(2/5)(7D − 30) = D + 6 → 14D − 60 = 5D + 30 → D = 10, M = 40.",
+          "The daughter turns 25 in 15 years, when the mother will be 40 + 15 = 55."
+        ],
+        "trap": "50 years is 2 × 25, as if the mother were always twice the daughter's age; 45 years is the mother's age 5 years from now."
+      },
+      "tags": [
+        "arith:fraction-ages",
+        "template:fraction-equality"
+      ]
+    },
+    {
+      "key": "ag-022",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Four years hence, the ratio of the ages of Uma and Vinod will be 5 : 7. Ten years hence, the ratio will be 3 : 4. What is Vinod's present age?",
+      "options": [
+        "38 years",
+        "40 years",
+        "42 years",
+        "44 years",
+        "48 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the ages 4 years hence be 5x and 7x. Six years later: (5x + 6) : (7x + 6) = 3 : 4.",
+          "20x + 24 = 21x + 18 → x = 6, so Vinod will be 42 four years hence.",
+          "Vinod's present age = 42 − 4 = 38 years."
+        ],
+        "trap": "42 years is Vinod's age 4 years hence (7x); subtract the 4 years to get his present age."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:two-horizon-ratio"
+      ]
+    },
+    {
+      "key": "ag-023",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "After 3 years, the ratio of Wahida's age to Yamini's age will be 4 : 5, and after 9 years it will be 5 : 6. What is the sum of their present ages?",
+      "options": [
+        "48 years",
+        "50 years",
+        "51 years",
+        "54 years",
+        "60 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Ages after 3 years: 4x and 5x. After 6 more years: (4x + 6) : (5x + 6) = 5 : 6 → 24x + 36 = 25x + 30 → x = 6.",
+          "After 3 years they are 24 and 30, so now they are 21 and 27.",
+          "Sum = 48 years."
+        ],
+        "trap": "54 years is the sum 3 years from now (24 + 30); subtract 3 years for each person."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:two-horizon-ratio"
+      ]
+    },
+    {
+      "key": "ag-024",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Eight years ago, the ratio of the ages of Zubin and Arpita was 3 : 5. Four years hence, the ratio will be 5 : 7. What is the ratio of their present ages?",
+      "options": [
+        "13 : 19",
+        "19 : 13",
+        "9 : 14",
+        "11 : 17",
+        "17 : 25"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Eight years ago: 3x and 5x. Twelve years later: (3x + 12) : (5x + 12) = 5 : 7.",
+          "21x + 84 = 25x + 60 → x = 6. Eight years ago they were 18 and 30, so now 26 and 38.",
+          "Present ratio = 26 : 38 = 13 : 19."
+        ],
+        "trap": "19 : 13 reverses the order; the question asks for Zubin's age to Arpita's age, and Zubin is younger."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:two-horizon-ratio"
+      ]
+    },
+    {
+      "key": "ag-025",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Three years hence, a father will be 4 times as old as his son. Thirteen years hence, he will be $2\\frac{1}{2}$ times as old as his son. The son's mother is 4 years younger than the father. How old was the mother when the son was born?",
+      "options": [
+        "24 years",
+        "25 years",
+        "26 years",
+        "30 years",
+        "33 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Three years hence: son x, father 4x. Ten years after that: 4x + 10 = 2.5(x + 10) → 1.5x = 15 → x = 10.",
+          "Now the son is 7 and the father 37, so the mother is 33.",
+          "Mother's age at the son's birth = 33 − 7 = 26 years."
+        ],
+        "trap": "30 years is the father's age at the son's birth; 33 years is the mother's present age."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:two-horizon-ratio"
+      ]
+    },
+    {
+      "key": "ag-026",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Nine years ago, the ratio of the ages of Chirag and Dev was 2 : 3. Three years ago, it was 3 : 4. What is Dev's present age?",
+      "options": [
+        "15 years",
+        "18 years",
+        "21 years",
+        "24 years",
+        "27 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Nine years ago: 2x and 3x. Six years later: (2x + 6) : (3x + 6) = 3 : 4 → 8x + 24 = 9x + 18 → x = 6.",
+          "Dev was 18 nine years ago, so he is 27 now."
+        ],
+        "trap": "18 years is Dev's age nine years ago (3x), and 24 years is his age three years ago."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:two-horizon-ratio"
+      ]
+    },
+    {
+      "key": "ag-027",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Seven years hence, the ratio of the ages of Esha and Farida will be 6 : 7. Three years ago, the ratio of their ages was 4 : 5. What is the difference between their present ages?",
+      "options": [
+        "3 years",
+        "4 years",
+        "5 years",
+        "6 years",
+        "10 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Seven years hence: 6x and 7x. Ten years before that: (6x − 10) : (7x − 10) = 4 : 5 → 30x − 50 = 28x − 40 → x = 5.",
+          "Ages 7 years hence: 30 and 35, so the difference is 5 years (now 23 and 28)."
+        ],
+        "trap": "10 years is the time between the two observations, not the age gap; the gap equals one ratio part, x = 5."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:two-horizon-ratio"
+      ]
+    },
+    {
+      "key": "ag-028",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ten years ago, Gopal was half as old as Hari. Ten years hence, the ratio of their ages will be 3 : 4. What will be the ratio of Gopal's age to Hari's age 20 years hence?",
+      "options": [
+        "5 : 4",
+        "4 : 5",
+        "2 : 3",
+        "5 : 6",
+        "3 : 4"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Ten years ago: x and 2x. Twenty years later: (x + 20) : (2x + 20) = 3 : 4 → 4x + 80 = 6x + 60 → x = 10.",
+          "Now Gopal is 20 and Hari 30. Twenty years hence: 40 : 50 = 4 : 5."
+        ],
+        "trap": "3 : 4 is the ratio 10 years hence, not 20; 2 : 3 is the present ratio."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:two-horizon-ratio"
+      ]
+    },
+    {
+      "key": "ag-029",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Six years ago, the average age of a family of four was 23 years. A child has since been born into the family and is now 4 years old. What is the present average age of the family of five?",
+      "options": [
+        "23 years",
+        "24 years",
+        "25 years",
+        "26 years",
+        "29 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total six years ago = 4 × 23 = 92. The four have each aged 6 years: 92 + 24 = 116.",
+          "Add the child: 116 + 4 = 120. Average = 120 ÷ 5 = 24 years."
+        ],
+        "trap": "29 years is the present average of the original four only (23 + 6); the child must be included and the total divided by 5."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:family-average"
+      ]
+    },
+    {
+      "key": "ag-030",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The present average age of a husband, his wife and their two children is 25 years. When the couple married 18 years ago, their average age was 22 years. The elder child is 4 years older than the younger. How old is the elder child?",
+      "options": [
+        "8 years",
+        "10 years",
+        "11 years",
+        "12 years",
+        "13 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Family total = 4 × 25 = 100. The couple's total now = 2 × 22 + 2 × 18 = 80.",
+          "Children's total = 20, so x + (x + 4) = 20 → x = 8.",
+          "The elder child is 8 + 4 = 12 years old."
+        ],
+        "trap": "8 years is the younger child; 10 years splits the children's total of 20 equally, ignoring the 4-year gap."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:family-average"
+      ]
+    },
+    {
+      "key": "ag-031",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Three years ago, the average age of a family of six was 28 years. Since then, the grandfather, who was 65 years old at that time, has moved to his village, and a baby has been born. The present average age of the six members is 20 years. How old is the baby?",
+      "options": [
+        "1 year",
+        "2 years",
+        "3 years",
+        "4 years",
+        "5 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total three years ago = 6 × 28 = 168. Remove the grandfather (65): the other five total 103.",
+          "Each of those five is 3 years older now: 103 + 15 = 118.",
+          "Present total = 6 × 20 = 120, so the baby is 120 − 118 = 2 years old."
+        ],
+        "trap": "5 years removes the grandfather's present age (68) while adding only 15 years; mixing time points gives 120 − 115 = 5."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:family-average"
+      ]
+    },
+    {
+      "key": "ag-032",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The average age of a couple and their three children is 23 years. The average age of the couple alone is 41 years. What is the average age of the three children?",
+      "options": [
+        "11 years",
+        "12 years",
+        "13 years",
+        "15 years",
+        "18 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Total of five = 5 × 23 = 115. Couple's total = 2 × 41 = 82.",
+          "Children's total = 115 − 82 = 33, so their average = 33 ÷ 3 = 11 years."
+        ],
+        "trap": "18 years subtracts the two averages (41 − 23). Averages of groups of different sizes cannot be subtracted; work with totals."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:family-average"
+      ]
+    },
+    {
+      "key": "ag-033",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The present average age of a father, a mother and their two sons is 28 years. The father is 6 years older than the mother, and the sons are 12 and 8 years old. How old was the mother when the elder son was born?",
+      "options": [
+        "29 years",
+        "30 years",
+        "31 years",
+        "35 years",
+        "37 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 4 × 28 = 112, so father + mother = 112 − 20 = 92.",
+          "Mother = (92 − 6) ÷ 2 = 43, father = 49.",
+          "Mother's age at the elder son's birth = 43 − 12 = 31 years."
+        ],
+        "trap": "37 years is the father's age at the elder son's birth, and 35 years is the mother's age at the younger son's birth."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:family-average"
+      ]
+    },
+    {
+      "key": "ag-034",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ten years ago, the average age of a family of three was 22 years. Two children have been born since then, the elder 4 years before the younger. The present average age of the family of five is 22 years. How old is the younger child?",
+      "options": [
+        "4 years",
+        "5 years",
+        "6 years",
+        "7 years",
+        "9 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The original three now total 3 × 22 + 3 × 10 = 96.",
+          "Family total now = 5 × 22 = 110, so the children total 14.",
+          "x + (x + 4) = 14 → x = 5 (the elder is 9)."
+        ],
+        "trap": "9 years is the elder child; 7 years splits 14 equally and ignores the 4-year gap."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:family-average"
+      ]
+    },
+    {
+      "key": "ag-035",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The average age of the six members of a family is 30 years. If the two grandparents are left out, the average age of the remaining four members is 12 years less. The grandfather is 4 years older than the grandmother, and the youngest member of the family is 6 years old. How old was the grandmother when the youngest member was born?",
+      "options": [
+        "42 years",
+        "44 years",
+        "46 years",
+        "50 years",
+        "52 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Total = 6 × 30 = 180. The other four average 30 − 12 = 18, total 72.",
+          "Grandparents' total = 108 → grandmother = (108 − 4) ÷ 2 = 52.",
+          "At the youngest member's birth she was 52 − 6 = 46 years old."
+        ],
+        "trap": "52 years is the grandmother's present age, and 50 years is the grandfather's age at the youngest's birth."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:family-average"
+      ]
+    },
+    {
+      "key": "ag-036",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A father told his son, \"I was as old as you are now at the time of your birth.\" If the father is 44 years old now, what was the son's age 6 years ago?",
+      "options": [
+        "16 years",
+        "18 years",
+        "20 years",
+        "22 years",
+        "28 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The father's age at the son's birth equals the son's present age, so the father is twice the son's age.",
+          "Son = 44 ÷ 2 = 22 now, so 6 years ago he was 16."
+        ],
+        "trap": "22 years is the son's present age; the question asks for his age 6 years ago."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:as-old-as"
+      ]
+    },
+    {
+      "key": "ag-037",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ravi's father says to him, \"When I was as old as you are now, you were only 6 years old.\" The father is 50 years old now. How old is Ravi?",
+      "options": [
+        "22 years",
+        "24 years",
+        "25 years",
+        "26 years",
+        "28 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let the age gap be d. When the father was Ravi's present age (d years ago), Ravi was R − d = 6.",
+          "Father = R + d = 50 and R − d = 6 → R = 28 (gap 22)."
+        ],
+        "trap": "22 years is the age gap, not Ravi's age; 25 years halves the father's age as in the \"as old as at your birth\" version."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:as-old-as"
+      ]
+    },
+    {
+      "key": "ag-038",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A mother is now three times as old as her son. When the son reaches the age that his mother is now, the sum of their ages will be 112 years. What is the mother's present age?",
+      "options": [
+        "42 years",
+        "44 years",
+        "45 years",
+        "48 years",
+        "56 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the son be x and the mother 3x. The son reaches 3x after 2x years, when the mother will be 5x.",
+          "3x + 5x = 112 → x = 14, so the mother is 42."
+        ],
+        "trap": "56 years halves 112, ignoring the 2x-year gap that the mother always keeps over her son."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:as-old-as"
+      ]
+    },
+    {
+      "key": "ag-039",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Kavita said to her nephew, \"When I was as old as you are now, you were 5 years old. When you become as old as I am now, I shall be 59.\" What is Kavita's present age?",
+      "options": [
+        "32 years",
+        "41 years",
+        "43 years",
+        "46 years",
+        "47 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let the age gap be d. Then nephew − d = 5 and Kavita + d = 59, with Kavita = nephew + d.",
+          "So nephew + 2d = 59 and nephew − d = 5 → 3d = 54, d = 18.",
+          "Nephew = 23 and Kavita = 23 + 18 = 41 years."
+        ],
+        "trap": "32 years simply averages 5 and 59. Kavita's age sits one gap above the nephew's, so the gap must be found first."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:as-old-as"
+      ]
+    },
+    {
+      "key": "ag-040",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Neha's mother is 26 years older than Neha. When Neha was as old as her brother Ishan is now, their mother was 41 years old. Ishan is 6 years younger than Neha. How old is Neha now?",
+      "options": [
+        "15 years",
+        "20 years",
+        "21 years",
+        "23 years",
+        "27 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Neha was Ishan's present age 6 years ago, when the mother was 41. So the mother is 47 now.",
+          "Neha = 47 − 26 = 21 years."
+        ],
+        "trap": "15 years is Neha's age at that earlier time (41 − 26), which is Ishan's present age; add the 6 years that have passed since."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:as-old-as"
+      ]
+    },
+    {
+      "key": "ag-041",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Om is as old as Pari was 6 years ago, and Pari is as old as Qasim will be 4 years from now. The sum of the present ages of the three is 50 years. What is Om's present age?",
+      "options": [
+        "13 years",
+        "14 years",
+        "16 years",
+        "18 years",
+        "20 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let Qasim = q. Then Pari = q + 4 and Om = Pari − 6 = q − 2.",
+          "q − 2 + q + 4 + q = 50 → 3q = 48 → q = 16.",
+          "Om = 16 − 2 = 14 years (Pari is 20)."
+        ],
+        "trap": "16 years is Qasim's age and 20 years is Pari's; Om is the youngest of the three."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:as-old-as"
+      ]
+    },
+    {
+      "key": "ag-042",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "When a father was as old as his son is now, the father was 3 times as old as the son was then. The sum of their present ages is 96 years. How old was the son at that time?",
+      "options": [
+        "12 years",
+        "14 years",
+        "16 years",
+        "18 years",
+        "24 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the gap be d. At that time father = S (son's present age) and son = S − d, with S = 3(S − d) → S = 1.5d.",
+          "F + S = 2S + d = 4d = 96 → d = 24, S = 36, F = 60.",
+          "Son's age then = 36 − 24 = 12 years."
+        ],
+        "trap": "24 years is the age gap (and how long ago that was), not the son's age at that time."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:as-old-as"
+      ]
+    },
+    {
+      "key": "ag-043",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Rina's mother was 27 years old when Rina was born. Rina's brother is 3 years younger than Rina. If their mother is 49 years old now, how old is Rina's brother?",
+      "options": [
+        "16 years",
+        "17 years",
+        "19 years",
+        "22 years",
+        "25 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Rina = 49 − 27 = 22 years.",
+          "Her brother = 22 − 3 = 19 years."
+        ],
+        "trap": "22 years is Rina's own age; 25 years adds the 3 years instead of subtracting."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:age-at-birth"
+      ]
+    },
+    {
+      "key": "ag-044",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Sanya's father was 32 years old when she was born. Her mother was 28 years old when Sanya's brother, who is 5 years younger than Sanya, was born. If Sanya is 14 years old now, what is the sum of her parents' present ages?",
+      "options": [
+        "74 years",
+        "79 years",
+        "80 years",
+        "83 years",
+        "88 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Father = 32 + 14 = 46. The brother is 14 − 5 = 9, so the mother = 28 + 9 = 37.",
+          "Sum = 46 + 37 = 83 years."
+        ],
+        "trap": "88 years adds Sanya's age (14) to the mother's 28, but 28 was her age at the brother's birth; 79 years uses 28 + 5."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:age-at-birth"
+      ]
+    },
+    {
+      "key": "ag-045",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Tanvi's father is 6 years older than her mother. Tanvi's brother Varun is 4 years younger than her, and their mother was 30 years old when Varun was born. At present, the father is three times as old as Tanvi. How old is Varun now?",
+      "options": [
+        "12 years",
+        "14 years",
+        "16 years",
+        "18 years",
+        "20 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The mother was 30 − 4 = 26 at Tanvi's birth, so the father was 32 then.",
+          "Father now = 32 + T = 3T → T = 16.",
+          "Varun = 16 − 4 = 12 years."
+        ],
+        "trap": "16 years is Tanvi's age; Varun is 4 years younger."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:age-at-birth"
+      ]
+    },
+    {
+      "key": "ag-046",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Meera had her first child at the age of 24 and her second child 5 years later. At present, the sum of her two children's ages is 9 years less than Meera's age. How old will Meera be when the sum of her children's ages becomes equal to her age?",
+      "options": [
+        "44 years",
+        "53 years",
+        "55 years",
+        "58 years",
+        "62 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let the first child be c. Meera = c + 24, second child = c − 5.",
+          "2c − 5 = c + 24 − 9 → c = 20. Meera is 44; the children total 35.",
+          "The children's total grows 2 years per year, Meera 1 year per year, so the 9-year gap closes in 9 years: Meera will be 53."
+        ],
+        "trap": "44 years is Meera's present age; the gap closes at only 1 year per year (2 − 1), so 9 more years are needed."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:age-at-birth"
+      ]
+    },
+    {
+      "key": "ag-047",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Anita was 25 years old when her son was born. Her husband is 4 years older than her. If the son is 13 years old now, how old will the husband be after 5 years?",
+      "options": [
+        "42 years",
+        "43 years",
+        "44 years",
+        "46 years",
+        "47 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Anita = 25 + 13 = 38, so her husband = 42.",
+          "After 5 years he will be 47."
+        ],
+        "trap": "42 years is the husband's present age; 43 years is Anita's age after 5 years."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:age-at-birth"
+      ]
+    },
+    {
+      "key": "ag-048",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "At the time of her daughter's birth, Babita's age was $\\frac{3}{4}$ of her present age. Her daughter is 9 years old now. What will be Babita's age when her daughter turns 20?",
+      "options": [
+        "36 years",
+        "45 years",
+        "47 years",
+        "48 years",
+        "56 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Babita − 9 = (3/4) × Babita → Babita/4 = 9 → Babita = 36.",
+          "The daughter turns 20 in 11 years, so Babita will be 36 + 11 = 47."
+        ],
+        "trap": "36 years is Babita's present age; 56 years adds 20 instead of the 11 years remaining."
+      },
+      "tags": [
+        "arith:fraction-ages",
+        "template:age-at-birth"
+      ]
+    },
+    {
+      "key": "ag-049",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Chanda was 30 years old when her second child was born, 4 years after her first child. Her first child's present age is one-third of Chanda's present age. How old is the second child now?",
+      "options": [
+        "9 years",
+        "10 years",
+        "11 years",
+        "13 years",
+        "15 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Chanda was 26 when the first child was born, so Chanda = c + 26 where c is the first child's age.",
+          "c + 26 = 3c → c = 13. The second child = 13 − 4 = 9 years."
+        ],
+        "trap": "13 years is the first child's age; 15 years takes Chanda as 30 + c and gives c = 15."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:age-at-birth"
+      ]
+    },
+    {
+      "key": "ag-050",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The sum of the ages of three children born at intervals of 4 years each is 42 years. What is the age of the youngest child?",
+      "options": [
+        "8 years",
+        "10 years",
+        "12 years",
+        "14 years",
+        "18 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Ages: x, x + 4, x + 8. Then 3x + 12 = 42 → x = 10."
+        ],
+        "trap": "14 years is the middle child (42 ÷ 3), and 18 years is the eldest."
+      },
+      "tags": [
+        "arith:sum-of-ages",
+        "template:children-intervals"
+      ]
+    },
+    {
+      "key": "ag-051",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The sum of the ages of four siblings born at intervals of 3 years each is 54 years. What is the age of the eldest sibling?",
+      "options": [
+        "9 years",
+        "13.5 years",
+        "15 years",
+        "16.5 years",
+        "18 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Ages: x, x + 3, x + 6, x + 9. Then 4x + 18 = 54 → x = 9.",
+          "Eldest = 9 + 9 = 18 years."
+        ],
+        "trap": "13.5 years is only the average age, and 9 years is the youngest sibling."
+      },
+      "tags": [
+        "arith:sum-of-ages",
+        "template:children-intervals"
+      ]
+    },
+    {
+      "key": "ag-052",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Five children were born at intervals of 2 years each. Their mother was 25 years old when the eldest child was born. If the sum of the present ages of the five children is 50 years, what is the mother's present age?",
+      "options": [
+        "31 years",
+        "35 years",
+        "37 years",
+        "39 years",
+        "41 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Ages: x, x + 2, …, x + 8. Then 5x + 20 = 50 → x = 6, so the eldest is 14.",
+          "Mother = 25 + 14 = 39 years."
+        ],
+        "trap": "35 years adds 25 to the average age of 10 (the middle child); the mother was 25 at the eldest child's birth."
+      },
+      "tags": [
+        "arith:sum-of-ages",
+        "template:children-intervals"
+      ]
+    },
+    {
+      "key": "ag-053",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Three sisters were born at intervals of 5 years each. Five years ago, the sum of their ages was 27 years. What will be the age of the eldest sister after 3 years?",
+      "options": [
+        "17 years",
+        "19 years",
+        "20 years",
+        "21 years",
+        "22 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Present sum = 27 + 3 × 5 = 42. Ages x, x + 5, x + 10 → 3x + 15 = 42 → x = 9.",
+          "Eldest = 19 now, so after 3 years she will be 22."
+        ],
+        "trap": "19 years is the eldest's present age; 17 years uses 27 as the present sum (3x + 15 = 27 → x = 4, eldest 14) and then adds 3."
+      },
+      "tags": [
+        "arith:sum-of-ages",
+        "template:children-intervals"
+      ]
+    },
+    {
+      "key": "ag-054",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Four children were born at equal intervals. The sum of their present ages is 48 years, and the eldest is three times as old as the youngest. What is the present age of the second-eldest child?",
+      "options": [
+        "10 years",
+        "14 years",
+        "16 years",
+        "18 years",
+        "20 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Ages: x, x + d, x + 2d, x + 3d. Sum: 4x + 6d = 48; eldest: x + 3d = 3x → d = 2x/3.",
+          "4x + 4x = 48 → x = 6, d = 4. Ages: 6, 10, 14, 18.",
+          "Second-eldest = 14 years."
+        ],
+        "trap": "18 years is the eldest, and 10 years is the second-youngest; read \"second-eldest\" carefully."
+      },
+      "tags": [
+        "arith:sum-of-ages",
+        "template:children-intervals"
+      ]
+    },
+    {
+      "key": "ag-055",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average age of three children born at intervals of 4 years each is 11 years. Their father is three times as old as the eldest child. What is the father's present age?",
+      "options": [
+        "33 years",
+        "42 years",
+        "45 years",
+        "48 years",
+        "51 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The average of three equally spaced ages is the middle age, so the children are 7, 11 and 15.",
+          "Father = 3 × 15 = 45 years."
+        ],
+        "trap": "33 years is three times the average (11); the father's age is tied to the eldest child, who is 15."
+      },
+      "tags": [
+        "arith:sum-of-ages",
+        "template:children-intervals"
+      ]
+    },
+    {
+      "key": "ag-056",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Five siblings were born at intervals of 3 years each. The total of the present ages of the three youngest is 13 years more than the present age of the eldest. What is the total of the present ages of all five siblings?",
+      "options": [
+        "53 years",
+        "60 years",
+        "65 years",
+        "70 years",
+        "75 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Ages: x, x + 3, x + 6, x + 9, x + 12.",
+          "x + (x + 3) + (x + 6) = (x + 12) + 13 → 3x + 9 = x + 25 → x = 8.",
+          "Total = 5x + 30 = 70 years."
+        ],
+        "trap": "53 years adds only the three youngest (33) and the eldest (20), leaving out the fourth sibling, who is 17."
+      },
+      "tags": [
+        "arith:sum-of-ages",
+        "template:children-intervals"
+      ]
+    },
+    {
+      "key": "ag-057",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The product of the present ages of Yusuf and Zara is 240. Four years hence, the sum of their ages will be 40 years. If Yusuf is the elder, what is his present age?",
+      "options": [
+        "12 years",
+        "20 years",
+        "22 years",
+        "24 years",
+        "30 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Present sum = 40 − 8 = 32, product = 240.",
+          "Two numbers with sum 32 and product 240 are 20 and 12. Yusuf, the elder, is 20."
+        ],
+        "trap": "12 years is Zara's age, and 24 years is Yusuf's age four years hence."
+      },
+      "tags": [
+        "arith:quadratic-ages",
+        "template:product-of-ages"
+      ]
+    },
+    {
+      "key": "ag-058",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The product of the present ages of Ankit and his sister Bina is 336, and Ankit is 5 years older than Bina. What will be the product of their ages after 3 years?",
+      "options": [
+        "345",
+        "384",
+        "399",
+        "420",
+        "456"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "b(b + 5) = 336 → b = 16 (16 × 21 = 336). Ankit is 21.",
+          "After 3 years: 19 × 24 = 456."
+        ],
+        "trap": "345 adds 9 to the product (3 × 3); 399 adds 3 years to only one person (19 × 21)."
+      },
+      "tags": [
+        "arith:quadratic-ages",
+        "template:product-of-ages"
+      ]
+    },
+    {
+      "key": "ag-059",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The present ages of Charu and Daksh are in the ratio 5 : 7. The product of their ages 3 years ago was 216. What is the sum of their present ages?",
+      "options": [
+        "30 years",
+        "33 years",
+        "36 years",
+        "39 years",
+        "42 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Ages 3 years ago: 5x − 3 and 7x − 3. Try x = 3: 12 × 18 = 216. ✓",
+          "Present ages 15 and 21, sum 36 years."
+        ],
+        "shortcut": "216 = 12 × 18; check that 12 + 3 = 15 and 18 + 3 = 21 are in the ratio 5 : 7.",
+        "trap": "30 years is the sum 3 years ago (12 + 18); 42 years is the sum 3 years hence."
+      },
+      "tags": [
+        "arith:quadratic-ages",
+        "template:product-of-ages"
+      ]
+    },
+    {
+      "key": "ag-060",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Farah is 3 years older than her sister Esha, and the difference between the squares of their present ages is 105. What will be the ratio of Esha's age to Farah's age after 5 years?",
+      "options": [
+        "8 : 7",
+        "16 : 19",
+        "7 : 8",
+        "19 : 16",
+        "6 : 7"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "F² − E² = (F − E)(F + E) = 3(F + E) = 105 → F + E = 35.",
+          "With F − E = 3: Farah 19, Esha 16. After 5 years: 21 : 24 = 7 : 8."
+        ],
+        "trap": "16 : 19 is the present ratio; after 5 years both ages grow and the ratio becomes 7 : 8."
+      },
+      "tags": [
+        "arith:quadratic-ages",
+        "template:product-of-ages"
+      ]
+    },
+    {
+      "key": "ag-061",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Four years ago, a mother was seven times as old as her daughter. The product of their present ages is 460. How old will the mother be after 6 years?",
+      "options": [
+        "46 years",
+        "48 years",
+        "50 years",
+        "52 years",
+        "54 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Mother = 7(d − 4) + 4 = 7d − 24, so d(7d − 24) = 460.",
+          "Try d = 10: 10 × 46 = 460. ✓ The mother is 46.",
+          "After 6 years she will be 52."
+        ],
+        "shortcut": "460 = 10 × 46; check 46 − 4 = 42 = 7 × (10 − 4).",
+        "trap": "46 years is the mother's present age; the question asks for her age after 6 years."
+      },
+      "tags": [
+        "arith:quadratic-ages",
+        "template:product-of-ages"
+      ]
+    },
+    {
+      "key": "ag-062",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The ages of two cousins differ by 4 years, and the product of their ages is 192. What is the age of the elder cousin?",
+      "options": [
+        "12 years",
+        "14 years",
+        "16 years",
+        "18 years",
+        "20 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "x(x + 4) = 192 → x = 12 (12 × 16 = 192).",
+          "The elder cousin is 16 years old."
+        ],
+        "trap": "12 years is the younger cousin's age."
+      },
+      "tags": [
+        "arith:quadratic-ages",
+        "template:product-of-ages"
+      ]
+    },
+    {
+      "key": "ag-063",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Gaurav's age is 25% more than Hina's age. If the sum of their ages is 54 years, how old is Gaurav?",
+      "options": [
+        "24 years",
+        "25 years",
+        "27 years",
+        "28 years",
+        "30 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "G = 1.25H = (5/4)H, so G : H = 5 : 4.",
+          "Gaurav = 54 × 5 ÷ 9 = 30 years."
+        ],
+        "trap": "24 years is Hina's age; 27 years splits 54 equally."
+      },
+      "tags": [
+        "arith:percent-ages",
+        "template:percent-ages"
+      ]
+    },
+    {
+      "key": "ag-064",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Irfan's age is 20% less than Jatin's age. Six years hence, Irfan's age will be $\\frac{5}{6}$ of Jatin's age at that time. Irfan's age 6 years ago was what percentage of Jatin's age 6 years ago?",
+      "options": [
+        "70%",
+        "75%",
+        "80%",
+        "$83\\frac{1}{3}$%",
+        "85%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I = 0.8J and I + 6 = (5/6)(J + 6) → 0.8J + 6 = (5/6)J + 5 → J/30 = 1 → J = 30, I = 24.",
+          "Six years ago: 18 and 24, and 18 ÷ 24 = 75%."
+        ],
+        "trap": "80% is the present percentage; $83\\frac{1}{3}$% is the percentage 6 years hence. The percentage changes with time."
+      },
+      "tags": [
+        "arith:percent-ages",
+        "template:percent-ages"
+      ]
+    },
+    {
+      "key": "ag-065",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Kunal is 50% older than Lata, and Lata is 20% younger than Mohan. If Mohan is 30 years old, how old was Kunal 5 years ago?",
+      "options": [
+        "31 years",
+        "33 years",
+        "34 years",
+        "36 years",
+        "40 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Lata = 30 × 0.8 = 24. Kunal = 24 × 1.5 = 36.",
+          "Five years ago, Kunal was 31."
+        ],
+        "trap": "34 years nets the two changes into +30% of Mohan's age (39 − 5); the 50% is taken on Lata's age, not Mohan's, so the percentages cannot be added. 36 years is Kunal's present age."
+      },
+      "tags": [
+        "arith:percent-ages",
+        "template:percent-ages"
+      ]
+    },
+    {
+      "key": "ag-066",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Nalini's present age is 60% of her mother's present age. Twelve years ago, Nalini's age was 50% of her mother's age at that time. How old was the mother when Nalini was born?",
+      "options": [
+        "24 years",
+        "26 years",
+        "28 years",
+        "30 years",
+        "36 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "N = 0.6M and N − 12 = 0.5(M − 12) → 0.6M − 12 = 0.5M − 6 → M = 60, N = 36.",
+          "Mother's age at Nalini's birth = 60 − 36 = 24 years."
+        ],
+        "trap": "36 years is Nalini's present age, not her mother's age at her birth (the age gap)."
+      },
+      "tags": [
+        "arith:percent-ages",
+        "template:percent-ages"
+      ]
+    },
+    {
+      "key": "ag-067",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Parth's age 4 years ago was 80% of his present age. What will his age be 10 years hence?",
+      "options": [
+        "26 years",
+        "30 years",
+        "32 years",
+        "34 years",
+        "36 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "P − 4 = 0.8P → 0.2P = 4 → P = 20.",
+          "Ten years hence he will be 30."
+        ],
+        "trap": "26 years is 16 + 10, i.e. his age 4 years ago plus 10; count from his present age of 20."
+      },
+      "tags": [
+        "arith:percent-ages",
+        "template:percent-ages"
+      ]
+    },
+    {
+      "key": "ag-068",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Priya's present age is 40% more than Ruchi's. Five years ago, Priya's age was 50% more than Ruchi's age at that time. What will be the sum of their ages after 7 years?",
+      "options": [
+        "60 years",
+        "64 years",
+        "67 years",
+        "70 years",
+        "74 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "P = 1.4R and P − 5 = 1.5(R − 5) → 1.4R − 5 = 1.5R − 7.5 → R = 25, P = 35.",
+          "Sum after 7 years = 60 + 14 = 74 years."
+        ],
+        "trap": "60 years is the present sum, and 67 years adds 7 only once."
+      },
+      "tags": [
+        "arith:percent-ages",
+        "template:percent-ages"
+      ]
+    },
+    {
+      "key": "ag-069",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Sohan's age is 25% more than Tara's age, and Tara's age is $33\\frac{1}{3}$% more than Uma's age. Sohan is 12 years older than Uma. What will be the ratio of Sohan's age to Uma's age 6 years hence?",
+      "options": [
+        "5 : 3",
+        "2 : 3",
+        "4 : 3",
+        "3 : 2",
+        "7 : 5"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "T = (4/3)U and S = (5/4)T = (5/3)U, so S − U = (2/3)U = 12 → U = 18.",
+          "S = 30, T = 24. Six years hence: 36 : 24 = 3 : 2."
+        ],
+        "trap": "5 : 3 is the present ratio of Sohan to Uma; 6 years are added to both ages."
+      },
+      "tags": [
+        "arith:percent-ages",
+        "template:percent-ages"
+      ]
+    },
+    {
+      "key": "ag-070",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The present ages of a father and his two sons, Vikas and Yash, are in the ratio 9 : 4 : 3. Five years hence, the ratio of the father's age to the sum of his sons' ages will be 10 : 9. What is Vikas's present age?",
+      "options": [
+        "15 years",
+        "18 years",
+        "20 years",
+        "24 years",
+        "25 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Ages 9x, 4x, 3x. Five years hence: (9x + 5) : (7x + 10) = 10 : 9.",
+          "81x + 45 = 70x + 100 → x = 5. Vikas = 4 × 5 = 20 years."
+        ],
+        "trap": "15 years is Yash's age, and 25 years is Vikas's age five years hence."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:family-two-times"
+      ]
+    },
+    {
+      "key": "ag-071",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In a family of four, the father is 4 years older than the mother, and the daughter is twice as old as the son. The present ages of the mother and the daughter are in the ratio 3 : 1, and 10 years hence they will be in the ratio 2 : 1. What will be the total age of the four members after 3 years?",
+      "options": [
+        "79 years",
+        "82 years",
+        "88 years",
+        "91 years",
+        "94 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Mother = 3d. Ten years hence: 3d + 10 = 2(d + 10) → d = 10, so the daughter is 10 and the mother 30.",
+          "Father = 34, son = 5. Present total = 79.",
+          "After 3 years: 79 + 4 × 3 = 91 years."
+        ],
+        "trap": "79 years is the present total; 82 years adds the 3 years only once."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:family-two-times"
+      ]
+    },
+    {
+      "key": "ag-072",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The present ages of a mother and her two daughters, Riya and Siya, are in the ratio 8 : 3 : 2. Four years ago, the sum of the two daughters' ages was half of their mother's age at that time. What is the mother's present age?",
+      "options": [
+        "44 years",
+        "48 years",
+        "52 years",
+        "54 years",
+        "56 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Ages 8x, 3x, 2x. Four years ago: (3x − 4) + (2x − 4) = (8x − 4)/2.",
+          "10x − 16 = 8x − 4 → x = 6. Mother = 48 years."
+        ],
+        "trap": "44 years is the mother's age four years ago, the value that appears in the condition."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:family-two-times"
+      ]
+    },
+    {
+      "key": "ag-073",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Six years ago, the ages of Arun and his wife Bela were in the ratio 6 : 5. Their son is 9 years old and their daughter is 5. The present average age of the family of four is 23 years. How old was Bela when their daughter was born?",
+      "options": [
+        "27 years",
+        "30 years",
+        "31 years",
+        "33 years",
+        "37 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Family total = 92, so Arun + Bela = 92 − 14 = 78.",
+          "Six years ago they totalled 66 in the ratio 6 : 5, i.e. 36 and 30. Now Arun is 42 and Bela 36.",
+          "Bela at the daughter's birth = 36 − 5 = 31 years."
+        ],
+        "trap": "27 years is Bela's age when the son was born, and 37 years is Arun's age when the daughter was born."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:family-two-times"
+      ]
+    },
+    {
+      "key": "ag-074",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The present ages of a father and his son are in the ratio 7 : 2. After 10 years, the ratio will be 9 : 4. How old was the father when the son was born?",
+      "options": [
+        "25 years",
+        "30 years",
+        "35 years",
+        "40 years",
+        "45 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "(7x + 10) : (2x + 10) = 9 : 4 → 28x + 40 = 18x + 90 → x = 5.",
+          "Father 35, son 10, so the father was 35 − 10 = 25 at the son's birth."
+        ],
+        "trap": "35 years is the father's present age, and 45 years is his age after 10 years."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:two-horizon-ratio"
+      ]
+    },
+    {
+      "key": "ag-075",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Manav is 3 years older than his sister Indu. Their father is twice as old as Manav, and their mother is 4 years younger than their father. The total of the present ages of the four is 113 years. How old is Indu?",
+      "options": [
+        "17 years",
+        "19 years",
+        "20 years",
+        "22 years",
+        "23 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let Manav = m. Indu = m − 3, father = 2m, mother = 2m − 4.",
+          "6m − 7 = 113 → m = 20. Indu = 17 years."
+        ],
+        "trap": "20 years is Manav's age; 22 years makes Indu 3 years older than Manav instead of younger (6m − 1 = 113 → m = 19)."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:family-two-times"
+      ]
+    },
+    {
+      "key": "ag-076",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average age of the 11 players of a cricket team is 26 years. When the coach's age is also included, the average rises by 1 year. How old is the coach?",
+      "options": [
+        "27 years",
+        "36 years",
+        "37 years",
+        "38 years",
+        "39 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Team total = 11 × 26 = 286. New total = 12 × 27 = 324.",
+          "Coach = 324 − 286 = 38 years."
+        ],
+        "shortcut": "Coach = new average + 11 × rise = 27 + 11 = 38.",
+        "trap": "27 years is just the new average; 37 years adds 11 to 26 but forgets the coach must also lift his own share by 1."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:group-average"
+      ]
+    },
+    {
+      "key": "ag-077",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The present average age of three friends is 24 years. A fourth friend joins them, and the average age of the four becomes 3 years more than the average age of the original three four years ago. How old is the fourth friend?",
+      "options": [
+        "19 years",
+        "20 years",
+        "22 years",
+        "24 years",
+        "27 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Four years ago the three averaged 24 − 4 = 20, so the new average is 23.",
+          "Total of four = 92, so the fourth friend = 92 − 72 = 20 years."
+        ],
+        "trap": "27 years takes the new average as 24 + 3; the 3 years are added to the average of four years ago (20)."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:group-average"
+      ]
+    },
+    {
+      "key": "ag-078",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Five years ago, the average age of the 5 members of a committee was 40 years. One member has since been replaced by a younger person, and the present average age of the committee is still 40 years. How much younger is the new member than the member who was replaced?",
+      "options": [
+        "5 years",
+        "10 years",
+        "20 years",
+        "25 years",
+        "30 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Without the change, the present total would be 200 + 5 × 5 = 225.",
+          "The actual total is 5 × 40 = 200, so the new member is 225 − 200 = 25 years younger."
+        ],
+        "trap": "5 years counts only one member's ageing; all five members have aged 5 years each."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:group-average"
+      ]
+    },
+    {
+      "key": "ag-079",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The average age of a group of 8 friends rises by 2 years when two of them, aged 20 and 24 years, are replaced by two newcomers. What is the average age of the two newcomers?",
+      "options": [
+        "24 years",
+        "30 years",
+        "32 years",
+        "34 years",
+        "38 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The total rises by 8 × 2 = 16 years.",
+          "Newcomers' total = 20 + 24 + 16 = 60, so their average = 30 years."
+        ],
+        "trap": "24 years adds the 2-year rise to the average of the two who left (22 + 2); 38 years adds the whole 16-year rise to that average instead of sharing it between the two newcomers."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:group-average"
+      ]
+    },
+    {
+      "key": "ag-080",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The sum of the present ages of Kamal and Lalita is 60 years, and Kamal is 12 years older than Lalita. What will be the ratio of Kamal's age to Lalita's age after 6 years?",
+      "options": [
+        "3 : 2",
+        "5 : 7",
+        "6 : 5",
+        "4 : 3",
+        "7 : 5"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Kamal = (60 + 12) ÷ 2 = 36, Lalita = 24.",
+          "After 6 years: 42 : 30 = 7 : 5."
+        ],
+        "trap": "3 : 2 is the present ratio (36 : 24)."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:future-ratio"
+      ]
+    },
+    {
+      "key": "ag-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Eight years ago, Mahesh was 4 times as old as his son. The sum of their present ages is 66 years. What will be the ratio of Mahesh's age to his son's age 6 years hence?",
+      "options": [
+        "9 : 4",
+        "4 : 9",
+        "8 : 3",
+        "5 : 2",
+        "7 : 3"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "M − 8 = 4(S − 8) → M = 4S − 24. With M + S = 66: 5S = 90 → S = 18, M = 48.",
+          "Six years hence: 54 : 24 = 9 : 4."
+        ],
+        "trap": "8 : 3 is the present ratio (48 : 18); 4 : 9 reverses the order asked."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:future-ratio"
+      ]
+    },
+    {
+      "key": "ag-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Ten years hence, Nita's age will be twice what Pooja's age was 6 years ago. Nita is 4 years older than Pooja. What is the ratio of Nita's present age to Pooja's present age?",
+      "options": [
+        "13 : 15",
+        "15 : 13",
+        "5 : 4",
+        "7 : 6",
+        "8 : 7"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let Pooja = p, Nita = p + 4. Then p + 14 = 2(p − 6) → p = 26.",
+          "Nita = 30, so the ratio is 30 : 26 = 15 : 13."
+        ],
+        "trap": "13 : 15 reverses the order; Nita is the elder, so her term must be larger."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:times-mixed-offset"
+      ]
+    },
+    {
+      "key": "ag-083",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Raj's age 3 years hence will be three times Sita's age 5 years ago. Raj is 20 years older than Sita. What was the sum of their ages 4 years ago?",
+      "options": [
+        "46 years",
+        "48 years",
+        "50 years",
+        "54 years",
+        "58 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let Sita = s, Raj = s + 20. Then s + 23 = 3(s − 5) → s = 19, Raj = 39.",
+          "Present sum = 58, so 4 years ago it was 58 − 8 = 50 years."
+        ],
+        "trap": "58 years is the present sum; 54 years subtracts 4 only once."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:times-mixed-offset"
+      ]
+    },
+    {
+      "key": "ag-084",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A man's present age is equal to the total of the present ages of his three children. Ten years hence, the ratio of his age to the total of his children's ages will be 5 : 7. What is the man's present age?",
+      "options": [
+        "40 years",
+        "45 years",
+        "48 years",
+        "50 years",
+        "55 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let both equal x now. In 10 years the man is x + 10 and the children total x + 30.",
+          "(x + 10) : (x + 30) = 5 : 7 → 7x + 70 = 5x + 150 → x = 40."
+        ],
+        "trap": "50 years is the man's age ten years hence; the question asks for his present age."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:parent-children-total"
+      ]
+    },
+    {
+      "key": "ag-085",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Four years ago, a mother's age was twice the sum of the ages of her two sons at that time. At present, her age is 1.6 times the sum of her sons' present ages. After how many years will her age be equal to the sum of her sons' ages?",
+      "options": [
+        "9 years",
+        "15 years",
+        "18 years",
+        "20 years",
+        "22 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Four years ago: M − 4 = 2(S − 8), where S is the sons' present total. So M = 2S − 12.",
+          "2S − 12 = 1.6S → S = 30, M = 48.",
+          "The sons' total gains 2 years a year, the mother 1, so the 18-year gap closes in 18 years."
+        ],
+        "trap": "9 years assumes the 18-year gap closes by 2 years a year; the mother also ages, so it closes by only 1 year a year."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:parent-children-total"
+      ]
+    },
+    {
+      "key": "ag-086",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A father's age is a two-digit number, and writing its digits in reverse order gives his son's age. Three years ago, the father was four times as old as the son. What will be the sum of their ages after 5 years?",
+      "options": [
+        "66 years",
+        "71 years",
+        "72 years",
+        "74 years",
+        "76 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Try reversed pairs with F − 3 = 4(S − 3): F = 51, S = 15 → 48 = 4 × 12. ✓",
+          "(Algebra: 10a + b − 3 = 4(10b + a − 3) → 2a = 13b − 3 → a = 5, b = 1.)",
+          "Sum after 5 years = 66 + 10 = 76 years."
+        ],
+        "trap": "66 years is the present sum; 71 years adds the 5 years only once."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:digit-reversal"
+      ]
+    },
+    {
+      "key": "ag-087",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Hema's age and her niece's age are two-digit numbers made of the same digits in reverse order. The sum of their ages is 66 years, and Hema is 18 years older than her niece. How old will the niece be 6 years from now?",
+      "options": [
+        "24 years",
+        "26 years",
+        "28 years",
+        "30 years",
+        "48 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Sum 11(a + b) = 66 → a + b = 6. Difference 9(a − b) = 18 → a − b = 2.",
+          "Digits 4 and 2: Hema is 42 and her niece 24. In 6 years the niece will be 30."
+        ],
+        "trap": "24 years is the niece's present age, and 48 years is Hema's age 6 years from now."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:digit-reversal"
+      ]
+    },
+    {
+      "key": "ag-088",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Kirti's age is a two-digit number. Reversing its digits gives her father's age. The father is 27 years older than Kirti, and the sum of their ages is 77 years. How old is Kirti?",
+      "options": [
+        "16 years",
+        "25 years",
+        "34 years",
+        "43 years",
+        "52 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Sum 11(a + b) = 77 → a + b = 7. Difference 9(b − a) = 27 → b − a = 3.",
+          "So a = 2, b = 5: Kirti is 25 and her father 52."
+        ],
+        "trap": "16 and 34 also have reversals that sum to 77 (16 + 61, 34 + 43), but their age gaps are 45 and 9, not 27."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:digit-reversal"
+      ]
+    },
+    {
+      "key": "ag-089",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The average age of 30 students in a class is 14 years. When the teacher's age is included, the average increases by 1 year. What is the teacher's age?",
+      "options": [
+        "15 years",
+        "30 years",
+        "40 years",
+        "44 years",
+        "45 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Students' total = 30 × 14 = 420. New total = 31 × 15 = 465.",
+          "Teacher = 465 − 420 = 45 years."
+        ],
+        "shortcut": "Teacher = new average + 30 × 1 = 15 + 30 = 45.",
+        "trap": "15 years is just the new average; 44 years adds 30 to 14 and forgets the teacher's own 1-year share."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:group-average"
+      ]
+    },
+    {
+      "key": "ag-090",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Three years ago, the average age of Asha, Bilal and Chitra was 27 years. Five years ago, the average age of Bilal and Chitra was 20 years. What is Asha's present age?",
+      "options": [
+        "35 years",
+        "40 years",
+        "41 years",
+        "45 years",
+        "50 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Present total of the three = 3 × 27 + 3 × 3 = 90.",
+          "Present total of Bilal and Chitra = 2 × 20 + 2 × 5 = 50.",
+          "Asha = 90 − 50 = 40 years."
+        ],
+        "trap": "41 years subtracts the two past totals (81 − 40) without bringing them to the present; 50 years updates only the three-person total (90 − 40)."
+      },
+      "tags": [
+        "arith:average-age",
+        "template:group-average"
+      ]
+    },
+    {
+      "key": "ag-091",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The present ages of Usha and Vani are in the ratio 4 : 5, and Vani is 5 years older than Usha. What will be the ratio of their ages 5 years hence?",
+      "options": [
+        "4 : 5",
+        "6 : 5",
+        "5 : 6",
+        "9 : 10",
+        "3 : 4"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "One ratio part = 5 years, so Usha = 20 and Vani = 25.",
+          "Five years hence: 25 : 30 = 5 : 6."
+        ],
+        "trap": "4 : 5 is the present ratio; adding 5 years to both changes it."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:future-ratio"
+      ]
+    },
+    {
+      "key": "ag-092",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rehan's age 6 years ago was $\\frac{5}{8}$ of his age 6 years hence. Sahil is 4 years younger than Rehan. What was the ratio of Rehan's age to Sahil's age 10 years ago?",
+      "options": [
+        "3 : 4",
+        "13 : 11",
+        "5 : 4",
+        "4 : 3",
+        "8 : 5"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "R − 6 = (5/8)(R + 6) → 8R − 48 = 5R + 30 → R = 26, so Sahil = 22.",
+          "Ten years ago: 16 : 12 = 4 : 3."
+        ],
+        "trap": "13 : 11 is the present ratio (26 : 22); 3 : 4 reverses the order."
+      },
+      "tags": [
+        "arith:fraction-ages",
+        "template:future-ratio"
+      ]
+    },
+    {
+      "key": "ag-093",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The present ages of Yamuna, Zeba and Aditi are in the ratio 2 : 3 : 4. Eight years ago, the sum of their ages was 48 years. What will be the ratio of Yamuna's age to Aditi's age 6 years hence?",
+      "options": [
+        "1 : 2",
+        "19 : 11",
+        "4 : 5",
+        "9 : 16",
+        "11 : 19"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Present sum = 48 + 3 × 8 = 72, so one part = 72 ÷ 9 = 8: ages 16, 24, 32.",
+          "Six years hence: Yamuna 22, Aditi 38 → 22 : 38 = 11 : 19."
+        ],
+        "trap": "1 : 2 is the present ratio; 4 : 5 adds 6 to the ratio terms 2 and 4 instead of to the ages."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:future-ratio"
+      ]
+    },
+    {
+      "key": "ag-094",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Five years hence, Bhavna will be twice as old as Chetna was 3 years ago. If Bhavna is 25 years old now, what is Chetna's present age?",
+      "options": [
+        "12 years",
+        "14 years",
+        "15 years",
+        "16 years",
+        "18 years"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Bhavna in 5 years = 30, so Chetna 3 years ago = 15.",
+          "Chetna now = 15 + 3 = 18 years."
+        ],
+        "trap": "15 years is Chetna's age 3 years ago; 12 years subtracts the 3 years instead of adding them."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:times-mixed-offset"
+      ]
+    },
+    {
+      "key": "ag-095",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Dinesh's age 4 years ago was three times his daughter Ekta's age 4 years hence. The sum of their present ages is 64 years. How old was Dinesh when Ekta was born?",
+      "options": [
+        "32 years",
+        "36 years",
+        "40 years",
+        "48 years",
+        "52 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "D − 4 = 3(E + 4) → D = 3E + 16. With D + E = 64: 4E + 16 = 64 → E = 12, D = 52.",
+          "Dinesh's age at Ekta's birth = 52 − 12 = 40 years."
+        ],
+        "trap": "52 years is Dinesh's present age, and 48 years is his age 4 years ago."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:times-mixed-offset"
+      ]
+    },
+    {
+      "key": "ag-096",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Six years ago, Harpreet's age was half of what Gul's age will be 4 years from now. Two years hence, the ratio of Harpreet's age to Gul's age will be 2 : 3. What is the sum of their present ages?",
+      "options": [
+        "82 years",
+        "86 years",
+        "90 years",
+        "94 years",
+        "98 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "2(H − 6) = G + 4 → G = 2H − 16. Also 3(H + 2) = 2(G + 2) → 3H + 2 = 2G.",
+          "3H + 2 = 4H − 32 → H = 34, G = 52.",
+          "Sum = 86 years."
+        ],
+        "trap": "90 years is the sum two years hence; 82 years is the sum two years ago."
+      },
+      "tags": [
+        "arith:ratio-shift",
+        "template:times-mixed-offset"
+      ]
+    },
+    {
+      "key": "ag-097",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A father's present age is equal to the total of the present ages of his three children, and the mother is 5 years younger than the father. Five years hence, the ratio of the total of the children's ages to the mother's age will be 4 : 3. What is the mother's present age?",
+      "options": [
+        "40 years",
+        "42 years",
+        "45 years",
+        "48 years",
+        "50 years"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the father be f, so the children total f and the mother is f − 5.",
+          "Five years hence: (f + 15) : f = 4 : 3 → 3f + 45 = 4f → f = 45.",
+          "Mother = 45 − 5 = 40 years."
+        ],
+        "trap": "45 years is the father's present age (and the mother's age five years hence); the mother is 5 years younger."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:parent-children-total"
+      ]
+    },
+    {
+      "key": "ag-098",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The total of the present ages of a mother and her two children is 60 years. Six years hence, the mother's age will be equal to the total of her children's ages at that time. What is the mother's present age?",
+      "options": [
+        "27 years",
+        "30 years",
+        "33 years",
+        "36 years",
+        "39 years"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the children total c. Then M + c = 60 and M + 6 = c + 12 → M = c + 6.",
+          "2c + 6 = 60 → c = 27, so M = 33 years."
+        ],
+        "trap": "27 years is the children's total; 30 years adds only 6 years to the children's total (not 6 for each child), which wrongly makes the mother equal to that total now."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:parent-children-total"
+      ]
+    },
+    {
+      "key": "ag-099",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "The present ages of Lakshmi and Mira are in the ratio 3 : 4. Four years hence, the product of their ages will be 128 more than the product of their present ages. What is Mira's present age?",
+      "options": [
+        "12 years",
+        "13 years",
+        "14 years",
+        "16 years",
+        "20 years"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Ages 3x and 4x. (3x + 4)(4x + 4) − 12x² = 128 → 28x + 16 = 128 → x = 4.",
+          "Mira = 4 × 4 = 16 years."
+        ],
+        "trap": "12 years is Lakshmi's age; 20 years is Mira's age four years hence."
+      },
+      "tags": [
+        "arith:quadratic-ages",
+        "template:product-of-ages"
+      ]
+    },
+    {
+      "key": "ag-100",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A father is 4 years older than the mother. Six years ago, the father was four times as old as their son, and six years hence, the mother will be twice as old as the son. What is the sum of the present ages of the father, the mother and the son?",
+      "options": [
+        "74 years",
+        "86 years",
+        "89 years",
+        "92 years",
+        "98 years"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let the son be s. Father = 4(s − 6) + 6 = 4s − 18; mother = 2(s + 6) − 6 = 2s + 6.",
+          "4s − 18 = 2s + 6 + 4 → s = 14. Father 38, mother 34.",
+          "Sum = 38 + 34 + 14 = 86 years."
+        ],
+        "trap": "74 years is the sum six years ago, and 98 years is the sum six years hence."
+      },
+      "tags": [
+        "arith:family-ages",
+        "template:family-two-times"
+      ]
+    }
+  ]
+}

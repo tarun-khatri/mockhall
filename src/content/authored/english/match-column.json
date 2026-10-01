@@ -3171,7 +3171,7 @@
       "key": "mc-124",
       "subtype": "three-by-three",
       "difficulty": "hard",
-      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Every employee must update\n(B) The committee have submitted\n(C) The company has announced\n\n**Column II**\n(D) its quarterly results a week early.\n(E) its report after much argument among themselves.\n(F) his or her contact details on the portal.",
+      "prompt": "Match the sentence starters in Column I with the endings in Column II to form grammatically and contextually correct sentences.\n\n**Column I**\n(A) Every employee must update\n(B) The committee have submitted\n(C) The company has announced\n\n**Column II**\n(D) its quarterly results a week early.\n(E) their report after much argument among themselves.\n(F) his or her contact details on the portal.",
       "options": [
         "A–F, B–E, C–D",
         "C–D only",
@@ -3179,14 +3179,14 @@
         "A–F, C–E",
         "None of these"
       ],
-      "answerIndex": 4,
+      "answerIndex": 0,
       "solution": {
         "steps": [
-          "Correct sentences:\nA–F: *Every employee must update his or her contact details on the portal.*\nC–D: *The company has announced its quarterly results a week early.*",
-          "'The company has … its' is consistently singular; 'Every employee' is singular, so 'his or her'.",
-          "B has no match: 'have' and 'among themselves' treat the committee as plural, but 'its' treats it as singular; the sentence must be consistent (their report). The correct combination A–F, C–D is not among the given combinations, so the answer is 'None of these'."
+          "Correct sentences:\nA–F: *Every employee must update his or her contact details on the portal.*\nB–E: *The committee have submitted their report after much argument among themselves.*\nC–D: *The company has announced its quarterly results a week early.*",
+          "Each sentence keeps its number consistent: 'Every employee' is singular ('his or her'); 'The committee have … their … themselves' treats the committee as individual members throughout; 'The company has … its' is singular.",
+          "Cross-pairs fail: 'The committee have submitted its quarterly results' mixes plural and singular, and 'The company has announced their report … among themselves' does the same."
         ],
-        "trap": "A collective noun may be singular or plural, but not both in the same sentence."
+        "trap": "A collective noun may be singular or plural, but not both in one sentence: once 'have' is used, the pronouns must be 'their' and 'themselves'."
       },
       "tags": [
         "mc:partial-match",
