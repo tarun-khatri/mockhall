@@ -631,6 +631,631 @@
         "template:hcf-lcm-containers",
         "num:hcf-lcm"
       ]
+    },
+    {
+      "key": "np-025",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A farmyard has only hens and goats. Together they have 48 heads and 136 legs. How many goats are there?",
+      "options": [
+        "18",
+        "20",
+        "24",
+        "28",
+        "30"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let there be g goats and (48 − g) hens: 4g + 2(48 − g) = 136.",
+          "2g + 96 = 136 → g = **20** (and 28 hens)."
+        ],
+        "trap": "28 is the number of hens; it comes from giving 4 legs to the hens instead of the goats.",
+        "shortcut": "If all 48 were hens there would be 96 legs; each goat adds 2 more: 40 ÷ 2 = 20 goats."
+      },
+      "tags": [
+        "template:wheels-count",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-026",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The sum of two numbers is 75 and their difference is 15. What is the product of the two numbers?",
+      "options": [
+        "1,125",
+        "1,250",
+        "1,296",
+        "1,350",
+        "1,400"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Larger = (75 + 15) ÷ 2 = 45 and smaller = (75 − 15) ÷ 2 = 30.",
+          "Product = 45 × 30 = **1,350**."
+        ],
+        "trap": "1,125 is 75 × 15 = 45² − 30², the difference of the squares, not the product.",
+        "shortcut": "Product = [(sum)² − (difference)²] ÷ 4 = (5,625 − 225) ÷ 4 = 1,350."
+      },
+      "tags": [
+        "template:sum-difference",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-027",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The digits of a two-digit number add up to 11. When 45 is added to the number, its digits are reversed. What is the number?",
+      "options": [
+        "38",
+        "47",
+        "56",
+        "74",
+        "83"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the number be 10a + b with a + b = 11.",
+          "Adding 45 reverses it: 9(b − a) = 45 → b − a = 5.",
+          "So a = 3, b = 8 and the number is **38** (38 + 45 = 83)."
+        ],
+        "trap": "83 is the number after reversal. 47 and 56 also have digit sum 11, but adding 45 does not reverse them (their digits differ by 3 and 1)."
+      },
+      "tags": [
+        "template:digit-reversal",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-028",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "60% of a number A is equal to 75% of a number B, and 40% of A is 24 more than 25% of B. What is the sum of A and B?",
+      "options": [
+        "96",
+        "120",
+        "216",
+        "240",
+        "264"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "0.6A = 0.75B → A : B = 75 : 60 = 5 : 4; let A = 5k, B = 4k.",
+          "40% of 5k − 25% of 4k = 2k − k = k = 24.",
+          "A = 120, B = 96, so A + B = **216**."
+        ],
+        "trap": "120 and 96 are A and B separately; stopping at one of them is the usual slip."
+      },
+      "tags": [
+        "template:percent-equal",
+        "num:percent-relation",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-029",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The difference between the squares of two consecutive even numbers is 92. What is the sum of their squares?",
+      "options": [
+        "925",
+        "968",
+        "1,012",
+        "1,058",
+        "1,060"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "(n + 2)² − n² = 4n + 4 = 92 → n = 22; the numbers are 22 and 24.",
+          "Sum of squares = 484 + 576 = **1,060**."
+        ],
+        "trap": "1,058 is 2 × 23², which squares the average 23 twice instead of squaring 22 and 24.",
+        "shortcut": "The difference of squares = 2 × (sum of the numbers), so 22 + 24 = 46."
+      },
+      "tags": [
+        "template:consecutive-integers",
+        "num:consecutive",
+        "num:squares"
+      ]
+    },
+    {
+      "key": "np-030",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "360 chairs are arranged in a hall in rows, each row having the same number of chairs. If each row had 4 more chairs, 3 fewer rows would be needed. How many rows are there now?",
+      "options": [
+        "12",
+        "14",
+        "15",
+        "16",
+        "18"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let there be r rows of c chairs: rc = 360 and (r − 3)(c + 4) = 360 → 4r − 3c = 12.",
+          "c = 360/r: 4r − 1,080/r = 12 → r² − 3r − 270 = 0 → r = **18** (20 chairs a row).",
+          "Check: 15 rows of 24 = 360."
+        ],
+        "trap": "15 is the number of rows after the rearrangement, not the present number."
+      },
+      "tags": [
+        "template:rows-arrangement",
+        "num:linear-equation",
+        "num:factor-pairs"
+      ]
+    },
+    {
+      "key": "np-031",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "At a fair, an adult ticket costs ₹60 and a child ticket ₹35. On Saturday 180 tickets were sold for ₹8,800. On Sunday 20% more adult tickets and 10 fewer child tickets were sold than on Saturday. How much was collected on Sunday?",
+      "options": [
+        "₹8,910",
+        "₹9,400",
+        "₹9,650",
+        "₹9,800",
+        "₹10,050"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Saturday: 60a + 35(180 − a) = 8,800 → 25a = 2,500 → a = 100 adults, 80 children.",
+          "Sunday: 120 adults and 70 children → 120 × 60 + 70 × 35 = 7,200 + 2,450 = **₹9,650**."
+        ],
+        "trap": "₹8,910 takes 100 as the number of children (categories swapped): Sunday would then be 96 adults and 90 children."
+      },
+      "tags": [
+        "template:adults-children",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-032",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A two-digit number is 4 more than 6 times the sum of its digits. If 18 is subtracted from the number, its digits are reversed. What is the number?",
+      "options": [
+        "28",
+        "37",
+        "46",
+        "55",
+        "64"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "10a + b = 6(a + b) + 4 → 4a − 5b = 4.",
+          "Subtracting 18 reverses it: 9(a − b) = 18 → a = b + 2.",
+          "4(b + 2) − 5b = 4 → b = 4, a = 6: the number is **64** (6 × 10 + 4 = 64; 64 − 18 = 46)."
+        ],
+        "trap": "46 is the reversed number; it is 18 less than the answer."
+      },
+      "tags": [
+        "template:digit-reversal",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-033",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A number N is divided by 7, giving quotient q and remainder 4. When q is divided by 9, the quotient is 3 and the remainder is 6. What is the remainder when N is divided by 63?",
+      "options": [
+        "10",
+        "42",
+        "46",
+        "49",
+        "58"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "q = 9 × 3 + 6 = 33, so N = 7 × 33 + 4 = 235.",
+          "235 = 63 × 3 + 46, so the remainder is **46**."
+        ],
+        "trap": "58 builds the remainder the wrong way round (9 × 6 + 4); the second remainder must be multiplied by the first divisor: 7 × 6 + 4 = 46.",
+        "shortcut": "Remainder on dividing by 7 × 9 = (first divisor × second remainder) + first remainder = 7 × 6 + 4 = 46."
+      },
+      "tags": [
+        "template:divisibility-remainder",
+        "num:remainders"
+      ]
+    },
+    {
+      "key": "np-034",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A bag contains ₹10, ₹20 and ₹50 notes in the ratio 5 : 3 : 2. If the total value of the notes is ₹2,100, how many ₹20 notes are there?",
+      "options": [
+        "20",
+        "30",
+        "36",
+        "45",
+        "50"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let the counts be 5k, 3k and 2k: value = 50k + 60k + 100k = 210k.",
+          "210k = 2,100 → k = 10, so there are 3 × 10 = **30** notes of ₹20."
+        ],
+        "trap": "50 is the number of ₹10 notes; 20 is the number of ₹50 notes."
+      },
+      "tags": [
+        "template:notes-coins",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-035",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "6 pens and 4 notebooks cost ₹368, while 4 pens and 6 notebooks cost ₹412. What is the cost of one notebook?",
+      "options": [
+        "₹22",
+        "₹28",
+        "₹39",
+        "₹44",
+        "₹50"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Adding: 10 pens + 10 notebooks = ₹780, so 1 pen + 1 notebook = ₹78.",
+          "Subtracting: 2 notebooks − 2 pens = ₹44, so notebook − pen = ₹22.",
+          "Notebook = (78 + 22) ÷ 2 = **₹50** (pen ₹28)."
+        ],
+        "trap": "₹28 is the price of a pen; ₹22 is only the difference between the two prices."
+      },
+      "tags": [
+        "template:purchase-two-items",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-036",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The denominator of a fraction is 4 more than twice its numerator. If 3 is added to the numerator and 2 is subtracted from the denominator, the fraction becomes $\\frac{3}{4}$. What is the fraction?",
+      "options": [
+        "$\\frac{1}{4}$",
+        "$\\frac{2}{7}$",
+        "$\\frac{3}{10}$",
+        "$\\frac{5}{14}$",
+        "$\\frac{3}{8}$"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let the numerator be x; the denominator is 2x + 4.",
+          "(x + 3)/(2x + 2) = 3/4 → 4x + 12 = 6x + 6 → x = 3.",
+          "The fraction is $\\frac{3}{10}$ (check: $\\frac{6}{8}$ = $\\frac{3}{4}$)."
+        ],
+        "trap": "$\\frac{3}{8}$ forgets the '+4' in the denominator (2 × 3 + 2 = 8); it no longer satisfies the first condition."
+      },
+      "tags": [
+        "template:fraction-change",
+        "num:fractions"
+      ]
+    },
+    {
+      "key": "np-037",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a three-digit number, the units digit is 3 times the hundreds digit and the tens digit is the sum of the other two digits. When the digits are reversed, the number increases by 396. What is the number?",
+      "options": [
+        "143",
+        "176",
+        "264",
+        "286",
+        "682"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the hundreds digit be h: units = 3h, tens = 4h, so h can only be 1 or 2 (143 or 286).",
+          "Reversing adds 99(3h − h) = 198h = 396 → h = 2.",
+          "The number is **286** (682 − 286 = 396)."
+        ],
+        "trap": "143 fits the digit conditions but reversing it adds only 198; 682 is the reversed number."
+      },
+      "tags": [
+        "template:three-digit-number",
+        "num:digits"
+      ]
+    },
+    {
+      "key": "np-038",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A test has 50 questions with 2 marks for a correct answer and 0.5 mark deducted for a wrong answer. Arjun and Kabir both attempted every question. Arjun had 10 more correct answers than Kabir, and Arjun's score was exactly double Kabir's. How many correct answers did Kabir have?",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20",
+        "30"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Score with c correct = 2c − 0.5(50 − c) = 2.5c − 25.",
+          "Arjun: 2.5(c + 10) − 25 = 2(2.5c − 25) → 2.5c = 50 → c = **20**.",
+          "Check: Kabir 20 right → 25 marks; Arjun 30 right → 50 marks."
+        ],
+        "trap": "30 is Arjun's number of correct answers. Doubling the correct answers instead of the scores (c + 10 = 2c → c = 10) is the other slip."
+      },
+      "tags": [
+        "template:negative-marking",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-039",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "What is the least number which, when divided by 8, 12 and 15, leaves remainders 5, 9 and 12 respectively?",
+      "options": [
+        "117",
+        "120",
+        "123",
+        "237",
+        "243"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "In each case the divisor exceeds the remainder by 3 (8 − 5 = 12 − 9 = 15 − 12 = 3).",
+          "So the number is 3 short of a common multiple: LCM(8, 12, 15) − 3 = 120 − 3 = **117**."
+        ],
+        "trap": "123 adds the 3 instead of subtracting it; 123 ÷ 8 leaves remainder 3, not 5."
+      },
+      "tags": [
+        "template:divisibility-remainder",
+        "num:hcf-lcm",
+        "num:remainders"
+      ]
+    },
+    {
+      "key": "np-040",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two numbers are in the ratio 3 : 5. If 10 is added to the smaller number and 10 is subtracted from the larger, the ratio becomes 5 : 3. What is the difference between the squares of the two numbers?",
+      "options": [
+        "160",
+        "250",
+        "375",
+        "400",
+        "450"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the numbers be 3k and 5k: 3(3k + 10) = 5(5k − 10) → 16k = 80 → k = 5.",
+          "The numbers are 15 and 25; 25² − 15² = 625 − 225 = **400**."
+        ],
+        "trap": "375 is the product (15 × 25), not the difference of the squares.",
+        "shortcut": "Difference of squares = (25 + 15)(25 − 15) = 40 × 10 = 400."
+      },
+      "tags": [
+        "template:ratio-shift",
+        "num:ratio"
+      ]
+    },
+    {
+      "key": "np-041",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Some students are to be seated on benches in a hall. If 4 students sit on each bench, 6 students are left standing. If 5 students sit on each bench, 3 benches remain completely empty. How many students are there?",
+      "options": [
+        "84",
+        "90",
+        "96",
+        "102",
+        "105"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let there be b benches: 4b + 6 = 5(b − 3) → b = 21.",
+          "Students = 4 × 21 + 6 = **90** (5 on each of 18 benches = 90)."
+        ],
+        "trap": "105 is 5 × 21, which seats 5 on every bench and ignores the 3 empty benches."
+      },
+      "tags": [
+        "template:distribution-shortfall",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-042",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The sum of the squares of three consecutive natural numbers is 434. What is the sum of the three numbers?",
+      "options": [
+        "36",
+        "39",
+        "42",
+        "45",
+        "48"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let the numbers be m − 1, m, m + 1: 3m² + 2 = 434 → m² = 144 → m = 12.",
+          "The numbers are 11, 12, 13, with sum **36** (121 + 144 + 169 = 434)."
+        ],
+        "trap": "39 belongs to 12, 13, 14, whose squares add up to 509, not 434."
+      },
+      "tags": [
+        "template:sum-of-squares",
+        "num:squares",
+        "num:consecutive"
+      ]
+    },
+    {
+      "key": "np-043",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A group of friends agreed to share a dinner bill of ₹4,320 equally. Three of them could not pay, so each of the others paid ₹120 more than his share. Had 3 more friends joined the original group instead, and extra items worth ₹780 been ordered, how much would each person have paid?",
+      "options": [
+        "₹288",
+        "₹300",
+        "₹320",
+        "₹330",
+        "₹340"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let there be n friends: 4,320/(n − 3) − 4,320/n = 120 → n(n − 3) = 108 → n = 12 (share ₹360).",
+          "New situation: 15 people share 4,320 + 780 = ₹5,100.",
+          "Each pays 5,100 ÷ 15 = **₹340**."
+        ],
+        "trap": "₹288 is 4,320 ÷ 15: it adds the 3 friends but forgets the extra ₹780 of food."
+      },
+      "tags": [
+        "template:sharing-absentees",
+        "num:linear-equation"
+      ]
+    },
+    {
+      "key": "np-044",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A number leaves a remainder of 24 when divided by a certain divisor. When twice the number is divided by the same divisor, the remainder is 11. What is the divisor?",
+      "options": [
+        "13",
+        "24",
+        "35",
+        "37",
+        "59"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "If N = dq + 24, then 2N = 2dq + 48, so 48 leaves remainder 11 on division by d.",
+          "So d divides 48 − 11 = 37, and d must exceed 24: d = **37**."
+        ],
+        "trap": "35 adds the two remainders and 13 subtracts them; the divisor is 2 × 24 − 11 = 37."
+      },
+      "tags": [
+        "template:divisibility-remainder",
+        "num:remainders"
+      ]
+    },
+    {
+      "key": "np-045",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A garage has only bicycles and auto-rickshaws (3 wheels each): 40 vehicles with 95 wheels in all. How many auto-rickshaws are there?",
+      "options": [
+        "15",
+        "18",
+        "20",
+        "25",
+        "30"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Let a be the auto-rickshaws: 3a + 2(40 − a) = 95.",
+          "a + 80 = 95 → a = **15** (and 25 bicycles)."
+        ],
+        "trap": "25 is the number of bicycles; it comes from giving 3 wheels to the bicycles."
+      },
+      "tags": [
+        "template:wheels-count",
+        "num:linear-equation",
+        "trap:swapped-categories"
+      ]
+    },
+    {
+      "key": "np-046",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The product of two two-digit numbers is 1,620 and their HCF is 9. What is the sum of the two numbers?",
+      "options": [
+        "72",
+        "81",
+        "90",
+        "99",
+        "189"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Write the numbers as 9x and 9y with x, y co-prime: 81xy = 1,620 → xy = 20.",
+          "Co-prime pairs: (1, 20) and (4, 5) → 9 & 180 or 36 & 45.",
+          "Only 36 and 45 are both two-digit, so the sum is **81**."
+        ],
+        "trap": "189 comes from the pair 9 and 180, but 180 is not a two-digit number (and 9 is single-digit)."
+      },
+      "tags": [
+        "template:hcf-lcm-numbers",
+        "num:hcf-lcm"
+      ]
+    },
+    {
+      "key": "np-047",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rohan bought some apples at ₹120 per kg and some oranges at ₹80 per kg, spending ₹2,000. Had the price of apples been 25% higher and that of oranges 10% lower, the same quantities would have cost him ₹2,304. How many kilograms of oranges did he buy?",
+      "options": [
+        "7 kg",
+        "8 kg",
+        "9 kg",
+        "10 kg",
+        "12 kg"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "New prices: apples ₹150/kg, oranges ₹72/kg. 120a + 80o = 2,000 → 3a + 2o = 50.",
+          "150a + 72o = 2,304 → 25a + 12o = 384.",
+          "6 × (3a + 2o) = 300 → 25a − 18a = 84 → a = 12 kg, so o = (50 − 36) ÷ 2 = **7 kg**."
+        ],
+        "trap": "12 kg is the quantity of apples, not oranges."
+      },
+      "tags": [
+        "template:purchase-two-items",
+        "num:linear-equation",
+        "num:percent-relation"
+      ]
+    },
+    {
+      "key": "np-048",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Of four consecutive natural numbers, the product of the last two exceeds the product of the first two by 126. What is the largest of the four numbers?",
+      "options": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let the numbers be n, n + 1, n + 2, n + 3: (n + 2)(n + 3) − n(n + 1) = 4n + 6.",
+          "4n + 6 = 126 → n = 30, so the numbers are 30, 31, 32, 33 and the largest is **33**."
+        ],
+        "trap": "30 is the smallest of the four numbers; the question asks for the largest, n + 3 = 33."
+      },
+      "tags": [
+        "template:consecutive-integers",
+        "num:consecutive"
+      ]
     }
   ]
 }
