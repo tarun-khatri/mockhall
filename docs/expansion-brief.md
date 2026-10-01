@@ -72,3 +72,31 @@ Quant chapters are generator chapters; the new hand-written items live in `src/c
 - `solution.steps`: 2–4 lines of working; `shortcut` where a faster method exists; `trap` naming the tempting wrong
   option and the mistake behind it. Tags like `arith:successive-percent`, `template:two-scheme-si`.
 - Run `npx tsx scripts/authoring/sample.ts <chapter> 40` to see what the generator already produces, and write different templates and twists rather than copies of it.
+
+## Round 2 — hand-written banks for generator topics (puzzles, seating, reasoning, simplification, DI…)
+
+These chapters already have generators (or pre-built puzzle/seating banks). Your hand-written bank is mixed in with
+them (`mixedProvider`, ~40% of draws). Goals: **harder** than the generator, closer to the newest 2024–26 shifts,
+more varied clue/stem styles.
+
+- **Difficulty for round 2: ~5% easy / 30% medium / 40% hard / 25% extreme.** Hard = tough clerk/PO prelims shift;
+  extreme = PO/mains. Never obscure or ambiguous — difficulty must come from more steps and closer distractors.
+- File: `src/content/authored/<subject>/<chapter>.json` (created by the first append). Use the **generator's own subtype
+  ids** (run `npx tsx scripts/authoring/sample.ts <chapter> 8 [subtype]` to list them and to see the exact prompt and
+  option style) so your items also feed mock slots that ask for those subtypes. Copy the generator's prompt wording,
+  option wording and set-intro wording exactly.
+- Sets (puzzles, seating, family/direction point sets, sentence coding, alphanumeric series, caselets, input–output):
+  append `{ "sets": [ { "key", "subtype", "difficulty", "title", "stimulus", "questions": [ …3–5 questions with keys
+  like pz-07-q1… ] } ] }`. Questions inside a set must be answerable from the stimulus alone.
+- Rich text: `**bold**`, `*italic*`, `\n` line breaks; KaTeX `$…$` is allowed for maths (simplification, √ distances);
+  escape a literal `$` or `*` as `\$` / `\*` (e.g. symbols in alphanumeric series or coded inequalities). No raw HTML.
+- **Verify every key with a script you write**, independently of how you built the item:
+  - puzzles/seating/blood relation/direction/ranking: brute-force every arrangement consistent with the clues; there
+    must be **exactly one** arrangement (or, for questions that tolerate a case split, every surviving case must give
+    the same answer); compute each answer from the solution.
+  - syllogism: check each conclusion over all set diagrams (or a small-universe model search); possibility and
+    "only a few" by the standard bank-exam rules.
+  - inequality, coding, series, input–output, simplification, number series, quadratics, caselets: compute.
+  Exactly one option must equal the computed answer. Keep the checker in your scratch folder.
+- "None of these" / "Cannot be determined" only where the generator or the real exam uses them for that format, and as
+  the key ≤ 8% of the time.

@@ -36,9 +36,13 @@ async function attemptedIds(): Promise<Set<string> | undefined> {
   }
 }
 
+/** New papers built on this device (not fixed mocks or shared links) skip questions already attempted here. */
+export function wantsUnseen(config: TestConfig): boolean {
+  return config.kind === 'practice' || config.kind === 'chapter-test' || /^(fresh|sec)-/.test(config.seed);
+}
+
 export async function launch(config: TestConfig, sections?: SectionInput[]): Promise<string> {
-  const fresh = config.kind === 'practice' || config.kind === 'chapter-test';
-  const ready = sections ? { config: finaliseConfig(config, sections), sections } : await prepare(config, fresh);
+  const ready = sections ? { config: finaliseConfig(config, sections), sections } : await prepare(config, wantsUnseen(config));
   return useExam.getState().begin(ready.config, ready.sections);
 }
 

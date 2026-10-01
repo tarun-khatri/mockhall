@@ -21,6 +21,8 @@ export interface ChapterProvider {
   /** Difficulties that have content. */
   difficulties: Difficulty[];
   item(seed: string, difficulty: Difficulty, subtype?: string): Promise<Item>;
+  /** Authored banks: whether there is content at exactly this difficulty (and subtype). */
+  has?(difficulty: Difficulty, subtype?: string): boolean;
 }
 
 /* ------------------------------------------------------------------ */
@@ -82,16 +84,16 @@ export function getProvider(chapter: ChapterId): Promise<ChapterProvider> {
 }
 
 async function load(chapter: ChapterId): Promise<ChapterProvider> {
-  if (BANK_CHAPTERS.has(chapter)) return bankProvider(chapter);
   const gen = genPaths.get(chapter);
   const authored = authoredPaths.get(chapter);
+  const withAuthored = async (base: ChapterProvider) =>
+    authored && (qaPaths.has(chapter) || import.meta.env.DEV) ? mixedProvider(base, await authoredProvider(chapter, authored)) : base;
+  if (BANK_CHAPTERS.has(chapter)) return withAuthored(await bankProvider(chapter));
   if (gen) {
     const mod = await generatorModules[gen]();
     if (!mod.generator) throw new Error(`No generator exported for ${chapter}`);
-    const generated = generatorProvider(mod.generator);
-    // Generator chapters may also carry a hand-written, blind-verified exam-style bank (authored/quant/*.json).
-    if (authored && (qaPaths.has(chapter) || import.meta.env.DEV)) return mixedProvider(generated, await authoredProvider(chapter, authored));
-    return generated;
+    // Generator chapters may also carry a hand-written, blind-verified bank (authored/{quant,reasoning,english}/*.json).
+    return withAuthored(generatorProvider(mod.generator));
   }
   if (authored) return authoredProvider(chapter, authored);
   throw new Error(`${chapterMeta(chapter).title} is coming soon.`);
@@ -149,6 +151,9 @@ async function authoredProvider(chapter: ChapterId, path: string): Promise<Chapt
     async item(seed, difficulty, subtype) {
       return pickFrom(pool, seed, difficulty, subtype);
     },
+    has(difficulty, subtype) {
+      return pool.some((p) => p.difficulty === difficulty && (!subtype || p.subtype === subtype));
+    },
   };
 }
 
@@ -156,12 +161,15 @@ async function authoredProvider(chapter: ChapterId, path: string): Promise<Chapt
 export const AUTHORED_SHARE = 0.4;
 
 /**
- * Generator + authored bank. An explicit subtype goes to whichever side owns it; otherwise a seeded coin decides,
- * and the authored side is used only when it has questions at exactly the requested difficulty.
+ * Generator (or pre-built bank) + authored bank. A subtype only one side has goes to that side; otherwise a seeded
+ * coin decides, and the authored side is used only when it has questions at exactly the requested difficulty
+ * (and subtype). Authored banks may reuse generator subtype ids so they also feed mock slots that name subtypes.
  */
 export function mixedProvider(generated: ChapterProvider, authored: ChapterProvider): ChapterProvider {
   if (!authored.difficulties.length) return generated;
   const own = new Set(authored.subtypes.map((s) => s.id));
+  const genOwn = new Set(generated.subtypes.map((s) => s.id));
+  const authoredHas = (d: Difficulty, st?: string) => (authored.has ? authored.has(d, st) : authored.difficulties.includes(d) && (!st || own.has(st)));
   const subtypes: SubtypeDef[] = [
     ...generated.subtypes,
     ...authored.subtypes.filter((s) => !generated.subtypes.some((g) => g.id === s.id)).map((s) => ({ ...s, difficulties: authored.difficulties })),
@@ -171,9 +179,10 @@ export function mixedProvider(generated: ChapterProvider, authored: ChapterProvi
     subtypes,
     difficulties: ORDER.filter((d) => generated.difficulties.includes(d) || authored.difficulties.includes(d)),
     async item(seed, difficulty, subtype) {
-      if (subtype) return own.has(subtype) ? authored.item(seed, difficulty, subtype) : generated.item(seed, difficulty, subtype);
-      const useAuthored = authored.difficulties.includes(difficulty) && makeRng(`mix:${seed}`).next() < AUTHORED_SHARE;
-      return useAuthored ? authored.item(seed, difficulty) : generated.item(seed, difficulty);
+      if (subtype && own.has(subtype) && !genOwn.has(subtype)) return authored.item(seed, difficulty, subtype);
+      if (subtype && !own.has(subtype)) return generated.item(seed, difficulty, subtype);
+      const useAuthored = authoredHas(difficulty, subtype) && makeRng(`mix:${seed}`).next() < AUTHORED_SHARE;
+      return useAuthored ? authored.item(seed, difficulty, subtype) : generated.item(seed, difficulty, subtype);
     },
   };
 }

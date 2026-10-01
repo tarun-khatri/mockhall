@@ -39,7 +39,7 @@ export const DEFAULT_SETTINGS: Settings = {
   strictMocks: true,
   vibration: false,
   stopwatch: true,
-  mockPreset: 'exam',
+  mockPreset: 'tough',
   pruneMistakes: true,
   chapterPrefs: {},
 };

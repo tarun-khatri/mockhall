@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
 import { ChevronLeft } from 'lucide-react';
 import { decodeConfig } from '../exam/configs';
-import { prepare } from '../exam/launch';
+import { prepare, wantsUnseen } from '../exam/launch';
 import { useExam } from '../exam/store';
 import type { SectionInput } from '../exam/engine';
 import type { TestConfig } from '../content/types';
@@ -25,14 +25,15 @@ export default function Instructions() {
     void loadKatex();
     setReady(null);
     setError(null);
-    prepare(config).then(
+    // A shared link must give the sender's exact paper, so it never skips "seen" questions.
+    prepare(config, !params.get('shared') && wantsUnseen(config)).then(
       (r) => alive && setReady(r),
       (e: Error) => alive && setError(e.message),
     );
     return () => {
       alive = false;
     };
-  }, [config]);
+  }, [config, params]);
 
   if (!config)
     return (

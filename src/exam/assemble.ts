@@ -22,6 +22,8 @@ export function takeFromItem(item: Item, n: number): Item {
 }
 
 class Collector {
+  /** Questions attempted before (fresh papers only): skipped while retries remain. */
+  avoid?: ReadonlySet<string>;
   questions: Question[] = [];
   sets: QuestionSet[] = [];
   ids = new Set<string>();
@@ -30,6 +32,11 @@ class Collector {
   has(item: Item): boolean {
     if (item.set && this.ids.has(item.set.id)) return true;
     return item.questions.some((q) => this.ids.has(q.id));
+  }
+
+  /** Seen before; only enforced on early tries so a slot is never left empty. */
+  stale(item: Item, t: number): boolean {
+    return !!this.avoid && t < MAX_TRIES - 3 && item.questions.some((q) => this.avoid!.has(q.id));
   }
 
   add(item: Item): void {
@@ -83,7 +90,7 @@ async function drawSetSlot(
       } catch {
         continue;
       }
-      if (!item.set || out.has(item)) continue;
+      if (!item.set || out.has(item) || out.stale(item, t)) continue;
       out.add(takeFromItem(item, slot.count));
       used.add(`${source.chapter}:${item.set.subtype}`);
       if (slot.group) out.groupUsed.set(slot.group, used);
@@ -123,7 +130,7 @@ async function drawSingles(
       } catch {
         continue;
       }
-      if (item.set || item.questions.length !== 1 || out.has(item)) continue;
+      if (item.set || item.questions.length !== 1 || out.has(item) || out.stale(item, t)) continue;
       out.add(item);
       added++;
       done = true;
@@ -132,8 +139,9 @@ async function drawSingles(
   return added;
 }
 
-export async function assembleBlueprint(bp: SectionBlueprint, seed: string, mix: Record<Difficulty, number>): Promise<SectionInput> {
+export async function assembleBlueprint(bp: SectionBlueprint, seed: string, mix: Record<Difficulty, number>, avoid?: ReadonlySet<string>): Promise<SectionInput> {
   const out = new Collector();
+  out.avoid = avoid;
   for (let i = 0; i < bp.slots.length; i++) {
     const slot = bp.slots[i];
     const slotSeed = `${seed}:${bp.id}:${i}`;
@@ -204,7 +212,7 @@ export async function assemble(config: TestConfig, avoid?: ReadonlySet<string>):
     const sec = config.sections[i];
     if (config.kind === 'full-mock' || config.kind === 'sectional') {
       const bp = blueprint(sec.subject, config.variants?.[sec.subject] ?? 'A');
-      sections.push(await assembleBlueprint(bp, `${config.seed}:${sec.subject}`, config.difficultyMix));
+      sections.push(await assembleBlueprint(bp, `${config.seed}:${sec.subject}`, config.difficultyMix, avoid));
     } else {
       if (!config.chapter) throw new Error('Chapter test without a chapter');
       sections.push(await assembleChapter(config.chapter, sec.count, config.difficulty ?? 'mixed', config.subtypes, config.seed, avoid));

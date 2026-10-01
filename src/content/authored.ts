@@ -43,6 +43,53 @@ export function authoredHash(entry: AuthoredQuestion | AuthoredSet | ParaJumbleS
 }
 
 const SINGLE_TARGET = { english: 'english-single', reasoning: 'critical-reasoning', quant: 'arithmetic' } as const;
+/** Single authored items in generator chapters use that chapter's own timing, not the critical-reasoning/arithmetic default. */
+const CHAPTER_TARGET: Partial<Record<ChapterId, Parameters<typeof targetSeconds>[0]>> = {
+  simplification: 'simplification',
+  'number-series': 'number-series',
+  quadratic: 'quadratic',
+  inequality: 'short-reasoning',
+  syllogism: 'short-reasoning',
+  'blood-relation': 'short-reasoning',
+  direction: 'short-reasoning',
+  'coding-decoding': 'short-reasoning',
+  'order-ranking': 'short-reasoning',
+  classification: 'short-reasoning',
+  'series-pattern': 'short-reasoning',
+  spelling: 'english-single',
+};
+
+/** Set kind for authored stimulus sets outside RC (puzzles, caselets, coding and series sets…). */
+const SET_KIND: Partial<Record<ChapterId, QuestionSet['kind']>> = {
+  cloze: 'cloze',
+  puzzles: 'puzzle',
+  seating: 'seating',
+  'blood-relation': 'puzzle',
+  direction: 'puzzle',
+  'order-ranking': 'puzzle',
+  'data-interpretation': 'caselet',
+  'coding-decoding': 'coding',
+  'series-pattern': 'series',
+  'input-output': 'input-output',
+};
+
+function setTotal(chapter: ChapterId, d: Difficulty, n: number): number {
+  switch (SET_KIND[chapter]) {
+    case 'cloze':
+      return setTargetSeconds('cloze-set', d, n);
+    case 'puzzle':
+    case 'seating':
+      return chapter === 'puzzles' || chapter === 'seating' ? setTargetSeconds('puzzle-set', d, n) : n * TARGETS['short-reasoning'][d] * 1.5;
+    case 'caselet':
+      return setTargetSeconds('caselet-set', d, n);
+    case 'coding':
+    case 'series':
+    case 'input-output':
+      return n * TARGETS['short-reasoning'][d] * 1.5;
+    default:
+      return TARGETS['rc-set'][d];
+  }
+}
 
 const ORD = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'];
 
@@ -76,7 +123,7 @@ export function singleItems(chapter: ChapterId, file: AuthoredFile, passed: (key
   for (const q of file.items ?? []) {
     const at = passed(q.key);
     if (!at) continue;
-    out.push({ questions: [authoredQuestion(chapter, q, q.difficulty, at, { targetSeconds: targetSeconds(SINGLE_TARGET[subj(chapter)], q.difficulty) })] });
+    out.push({ questions: [authoredQuestion(chapter, q, q.difficulty, at, { targetSeconds: targetSeconds(CHAPTER_TARGET[chapter] ?? SINGLE_TARGET[subj(chapter)], q.difficulty) })] });
   }
   return out;
 }
@@ -87,7 +134,7 @@ export function rcItems(chapter: ChapterId, file: AuthoredFile, passed: (key: st
     const at = passed(s.key);
     if (!at) continue;
     const setId = `${subj(chapter)}.${chapter}.set.${s.subtype}.${DIFFICULTY_LETTER[s.difficulty]}.${s.key}`;
-    const total = chapter === 'cloze' ? setTargetSeconds('cloze-set', s.difficulty, s.questions.length) : TARGETS['rc-set'][s.difficulty];
+    const total = setTotal(chapter, s.difficulty, s.questions.length);
     const questions = s.questions.map((q) =>
       authoredQuestion(chapter, { ...q, subtype: s.subtype }, q.difficulty ?? s.difficulty, at, { setId, targetSeconds: total / s.questions.length }),
     );
@@ -95,7 +142,7 @@ export function rcItems(chapter: ChapterId, file: AuthoredFile, passed: (key: st
       id: setId,
       subject: subj(chapter),
       chapter,
-      kind: chapter === 'cloze' ? 'cloze' : 'rc',
+      kind: SET_KIND[chapter] ?? 'rc',
       subtype: s.subtype,
       difficulty: s.difficulty,
       title: s.title,

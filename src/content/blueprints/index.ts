@@ -74,11 +74,19 @@ export const BLUEPRINTS: SectionBlueprint[] = [
       { label: 'Inequality', count: 3, sources: [{ chapter: 'inequality' }] },
       { label: 'Syllogism', count: 3, sources: [{ chapter: 'syllogism' }] },
       { label: 'Alphanumeric series', count: 5, set: true, sources: [{ chapter: 'series-pattern', subtypes: ['alphanumeric-set'] }] },
-      { label: 'Direction', count: 2, sources: [{ chapter: 'direction', subtypes: ['walk', 'final-facing', 'shadow', 'coded-direction'] }] },
-      { label: 'Blood relation', count: 2, sources: [{ chapter: 'blood-relation', subtypes: ['direct', 'coded', 'pointing'] }] },
+      // 2024–26 papers ask one 3-question direction or family set per shift (research/archetypes.md R10–R11).
+      {
+        label: 'Direction / blood relation',
+        count: 3,
+        set: true,
+        sources: [
+          { chapter: 'direction', subtypes: ['point-set'] },
+          { chapter: 'blood-relation', subtypes: ['family-puzzle'] },
+        ],
+      },
       {
         label: 'Miscellaneous',
-        count: 2,
+        count: 3,
         rotate: true,
         sources: [
           { chapter: 'series-pattern', subtypes: ['word-rearrange', 'letter-pairs', 'meaningful-word'] },
@@ -101,7 +109,7 @@ export const BLUEPRINTS: SectionBlueprint[] = [
       { label: 'Puzzle / seating', count: 5, set: true, sources: [BIG_PUZZLES, BIG_SEATING], group: 'big' },
       { label: 'Coding–decoding', count: 5, set: true, sources: [{ chapter: 'coding-decoding', subtypes: ['sentence-coding'] }] },
       { label: 'Syllogism', count: 3, sources: [{ chapter: 'syllogism' }] },
-      { label: 'Direction', count: 3, sources: [{ chapter: 'direction', subtypes: ['walk', 'final-facing', 'shadow', 'coded-direction'] }] },
+      { label: 'Direction', count: 3, set: true, sources: [{ chapter: 'direction', subtypes: ['point-set'] }] },
       { label: 'Blood relation', count: 2, sources: [{ chapter: 'blood-relation', subtypes: ['direct', 'coded', 'pointing'] }] },
       { label: 'Inequality', count: 3, sources: [{ chapter: 'inequality' }] },
       { label: 'Series', count: 4, set: true, sources: [{ chapter: 'series-pattern', subtypes: ['alphanumeric-set'] }] },
@@ -348,13 +356,13 @@ export const EXAM_ORDER: Record<ExamId, Subject[]> = {
 export const EXAM_LABEL: Record<ExamId, string> = { 'sbi-clerk': 'SBI Clerk', 'ibps-clerk': 'IBPS Clerk' };
 
 export const MOCK_PRESETS: Record<'exam' | 'tough' | 'extreme', { label: string; mix: Record<Difficulty, number> }> = {
-  exam: { label: 'Exam level', mix: { easy: 0.15, medium: 0.5, hard: 0.3, extreme: 0.05 } },
-  tough: { label: 'Tough', mix: { easy: 0, medium: 0.35, hard: 0.45, extreme: 0.2 } },
-  extreme: { label: 'Extreme', mix: { easy: 0, medium: 0.1, hard: 0.5, extreme: 0.4 } },
+  exam: { label: 'Exam level', mix: { easy: 0.05, medium: 0.45, hard: 0.38, extreme: 0.12 } },
+  tough: { label: 'Tough', mix: { easy: 0, medium: 0.2, hard: 0.5, extreme: 0.3 } },
+  extreme: { label: 'Extreme', mix: { easy: 0, medium: 0.05, hard: 0.45, extreme: 0.5 } },
 };
 
 /** Mixed chapter practice (SPEC 7.3). */
-export const MIXED_SHARES: Record<Difficulty, number> = { easy: 0.2, medium: 0.35, hard: 0.3, extreme: 0.15 };
+export const MIXED_SHARES: Record<Difficulty, number> = { easy: 0.05, medium: 0.3, hard: 0.4, extreme: 0.25 };
 
 /** Fixed mocks 01–30: fixed seeds and a documented variant per subject. */
 export function fixedMockVariants(n: number): Record<Subject, string> {
