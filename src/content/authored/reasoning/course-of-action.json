@@ -1470,7 +1470,7 @@
       "key": "ca-060",
       "subtype": "two-actions",
       "difficulty": "easy",
-      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A scientist based abroad, who is to deliver the keynote address at a seminar in Bengaluru next week, cannot travel because her visa has been delayed.\n\n**Courses of action:**\nI. She should deliver the keynote address through a live video link on the scheduled date.\nII. The seminar should be postponed until she can attend in person.",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** A scientist based abroad, who is to deliver the keynote address at a seminar in Bengaluru next week, cannot travel because her visa has been delayed.\n\n**Courses of action:**\nI. She should deliver the keynote address through a live video link on the scheduled date.\nII. The seminar should be cancelled.",
       "options": [
         "Only I follows",
         "Only II follows",
@@ -1478,11 +1478,12 @@
         "Neither I nor II follows",
         "Both I and II follow"
       ],
-      "answerIndex": 2,
+      "answerIndex": 0,
       "solution": {
         "steps": [
-          "Each course ensures that the keynote address is delivered: I by a video link on the scheduled date, II by waiting until she can travel.",
-          "The seminar cannot be held on the scheduled date and also be postponed, so the courses are alternatives: either I or II follows."
+          "I follows: a live video link lets the keynote address be delivered on the scheduled date.",
+          "II does not follow: cancelling the whole seminar because one speaker cannot travel is extreme when a practical alternative exists.",
+          "Answer: Only I follows."
         ],
         "trap": "Do not choose \"Both\": holding the seminar as scheduled and postponing it exclude each other."
       },
@@ -2762,7 +2763,7 @@
       "key": "ca-112",
       "subtype": "two-actions",
       "difficulty": "hard",
-      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The only supplier of a key component used by an electronics company has shut down, and the company's production has stopped. The company has the machines and skills needed to make the component itself.\n\n**Courses of action:**\nI. The company should buy its entire requirement of the component from another supplier.\nII. The company should make its entire requirement of the component in-house.",
+      "prompt": "In the question below, a statement is followed by two courses of action. A course of action is a step that improves, remedies or follows up the problem in the statement; it must be practical and must not be extreme. Decide which of the courses of action logically follow.\n\n**Statement:** The only supplier of a key component used by an electronics company has shut down, and the company's production has stopped. The company has the machines and skills needed to make the component itself, and another supplier has offered to deliver it at a similar price.\n\n**Courses of action:**\nI. The company should buy its entire requirement of the component from another supplier.\nII. The company should make its entire requirement of the component in-house.",
       "options": [
         "Only I follows",
         "Only II follows",
@@ -2773,7 +2774,7 @@
       "answerIndex": 2,
       "solution": {
         "steps": [
-          "Each course restores the supply of the component, so each by itself gets production going again; the statement confirms that II is feasible.",
+          "Each course restores the supply of the component, so each by itself gets production going again; the statement confirms that both are feasible.",
           "If the entire requirement is bought from outside, none is left to make in-house, and vice versa, so the courses are alternatives: either I or II follows."
         ],
         "trap": "Without the word \"entire\", a split between the two might be possible; with it, they exclude each other."

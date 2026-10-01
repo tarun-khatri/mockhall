@@ -3019,7 +3019,7 @@
       "key": "sa-117",
       "subtype": "two-assumptions",
       "difficulty": "hard",
-      "prompt": "**Statement:** A travel agent told a customer: 'You can reach Guwahati by Saturday by the overnight train, by the morning flight or by the state bus, and I am sure you will reach by Saturday.'\n\n**Assumptions:**\nI. The overnight train will get the customer to Guwahati by Saturday.\nII. The morning flight will get the customer to Guwahati by Saturday.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "prompt": "**Statement:** A travel agent told a customer: 'You will reach Guwahati by Saturday only if the overnight train runs on time, the morning flight is not cancelled or a seat is free on the state bus — and I am sure you will reach by Saturday.'\n\n**Assumptions:**\nI. The overnight train will run on time.\nII. The morning flight will not be cancelled.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
       "options": [
         "Only assumption I is implicit",
         "Only assumption II is implicit",
@@ -3030,8 +3030,8 @@
       "answerIndex": 3,
       "solution": {
         "steps": [
-          "Neither I nor II on its own is needed: the agent could be counting on any one of the three routes.",
-          "Even \"either I or II\" is not needed, because the bus is a third route that could get the customer there by Saturday.",
+          "The agent is sure of reaching by Saturday, which needs at least one of three conditions: the train on time, the flight not cancelled, or a seat on the bus.",
+          "Neither I nor II on its own is needed, and even 'either I or II' is not needed, because the bus seat is a third way the agent could be counting on.",
           "Answer: Neither I nor II is implicit."
         ],
         "trap": "\"Either\" needs the two options to be the only routes; with a third route available, the answer is \"Neither\"."
@@ -3512,7 +3512,7 @@
       "key": "sa-136",
       "subtype": "two-assumptions",
       "difficulty": "extreme",
-      "prompt": "**Statement:** News item: The city traffic police have begun posting, on their social-media pages, the number plates of vehicles caught jumping red lights, along with the fine imposed on each. A senior officer said that the fear of being named in public would make drivers more careful at signals.\n\n**Assumptions:**\nI. Some drivers would not want their vehicles to be named in public as traffic offenders.\nII. Fines alone have not been enough to stop drivers from jumping red lights.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "prompt": "**Statement:** News item: The city traffic police have begun posting, on their social-media pages, the number plates of vehicles caught jumping red lights, along with the fine imposed on each. A senior officer said that the fear of being named in public would make drivers more careful at signals.\n\n**Assumptions:**\nI. Some drivers would not want their vehicles to be named in public as traffic offenders.\nII. The police will stop fining offenders once their number plates are posted online.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
       "options": [
         "Only assumption I is implicit",
         "Only assumption II is implicit",
@@ -3520,12 +3520,12 @@
         "Neither I nor II is implicit",
         "Both I and II are implicit"
       ],
-      "answerIndex": 4,
+      "answerIndex": 0,
       "solution": {
         "steps": [
           "I is implicit: public naming can make drivers careful only if some of them mind being named.",
-          "II is implicit: the police add naming on top of the fines, which assumes the fines by themselves were not doing the job well enough.",
-          "Answer: Both I and II are implicit."
+          "II is not implicit: the posts show the fine imposed on each vehicle, so naming is added to the fines, not a replacement for them.",
+          "Answer: Only assumption I is implicit."
         ],
         "trap": "II is not an extreme claim: \"not enough\" is the minimum that justifies an extra measure (compare \"no effect at all\", which would not be implicit)."
       },
@@ -3720,7 +3720,7 @@
       "key": "sa-144",
       "subtype": "two-assumptions",
       "difficulty": "extreme",
-      "prompt": "**Statement:** News item: A bank has announced that from April it will send monthly account statements only by email, unless a customer asks in writing for a paper copy, saying the move will save paper and postage.\n\n**Assumptions:**\nI. Some customers will still want paper statements.\nII. Sending statements by email will cost the bank less than printing and posting them.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
+      "prompt": "**Statement:** News item: A bank has announced that from April it will send monthly account statements only by email, unless a customer asks in writing for a paper copy, saying the move will save paper and postage.\n\n**Assumptions:**\nI. Most customers would rather receive paper statements than emails.\nII. Sending statements by email will cost the bank less than printing and posting them.\n\nAn assumption is something supposed or taken for granted. Decide which of the assumptions is implicit in the statement.",
       "options": [
         "Only assumption I is implicit",
         "Only assumption II is implicit",
@@ -3728,12 +3728,12 @@
         "Neither I nor II is implicit",
         "Both I and II are implicit"
       ],
-      "answerIndex": 4,
+      "answerIndex": 1,
       "solution": {
         "steps": [
-          "I is implicit: the bank keeps an option for paper on written request, which it would not bother to do unless it expected some customers to want paper.",
+          "I is not implicit: the bank only keeps a paper option on written request; it need not believe that most customers prefer paper ('most' is an extreme claim the move does not depend on).",
           "II is implicit: the stated aim is saving paper and postage, which assumes email is cheaper than printing and posting.",
-          "Answer: Both I and II are implicit."
+          "Answer: Only assumption II is implicit."
         ],
         "trap": "An exception clause in a rule assumes that someone will use it."
       },

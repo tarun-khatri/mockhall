@@ -1,0 +1,2583 @@
+{
+  "chapter": "mixtures",
+  "version": 1,
+  "items": [
+    {
+      "key": "mx-001",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A can contains 120 litres of a mixture of milk and water in the ratio 7 : 5. How much water must be added to the can so that the ratio of milk to water becomes 5 : 4?",
+      "options": [
+        "6 litres",
+        "8 litres",
+        "10 litres",
+        "12 litres",
+        "16 litres"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Milk = 7/12 × 120 = 70 litres and water = 50 litres. Only water is added, so milk stays at 70 litres.",
+          "For 5 : 4, water must be 70 × 4/5 = 56 litres, so 56 − 50 = **6 litres** must be added."
+        ],
+        "trap": "10 litres adds one 'part' of the old 7 : 5 split (120 ÷ 12). Fix the milk (70 L) first and scale the water to the new ratio."
+      },
+      "tags": [
+        "mix:add-water",
+        "template:add-water-target"
+      ]
+    },
+    {
+      "key": "mx-002",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A vessel contains 140 litres of milk and water in the ratio 5 : 2. 28 litres of the mixture is drawn off, and then enough water is poured in to make milk 62.5% of the mixture. How many litres of mixture are there in the vessel now?",
+      "options": [
+        "128 litres",
+        "132 litres",
+        "136 litres",
+        "144 litres",
+        "160 litres"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "After drawing off 28 L, 112 L remain with milk = 5/7 × 112 = 80 litres.",
+          "Milk must be 62.5% = 5/8 of the mixture, so the mixture = 80 × 8/5 = **128 litres**."
+        ],
+        "trap": "160 litres forgets that the 28 L drawn off took milk with it (100 L of milk ÷ 0.625)."
+      },
+      "tags": [
+        "mix:remove-add",
+        "trap:forgot-removal",
+        "template:remove-then-add"
+      ]
+    },
+    {
+      "key": "mx-003",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A can contains milk and water in the ratio 8 : 7. When 30 litres of the mixture is taken out and 12 litres of water is poured in, the ratio of milk to water becomes 4 : 5. How much milk did the can contain at first?",
+      "options": [
+        "32 litres",
+        "42 litres",
+        "48 litres",
+        "54 litres",
+        "60 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "After removal the ratio is still 8 : 7: milk 8x, water 7x. Then 8x ÷ (7x + 12) = 4/5 → 40x = 28x + 48 → x = 4.",
+          "So 60 L remained after removal and the can held 90 L at first; milk then = 8/15 × 90 = **48 litres**."
+        ],
+        "trap": "32 litres is the milk left after the 30 L was removed (8x); the question asks for the milk at the start."
+      },
+      "tags": [
+        "mix:remove-add",
+        "mix:find-initial",
+        "template:remove-add-initial"
+      ]
+    },
+    {
+      "key": "mx-004",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "In 150 litres of a mixture of milk and water, the quantity of water is 25% of the quantity of milk. How much milk is there in the mixture?",
+      "options": [
+        "100 litres",
+        "112.5 litres",
+        "120 litres",
+        "125 litres",
+        "135 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Water = 25% of milk → milk : water = 4 : 1.",
+          "Milk = 4/5 × 150 = **120 litres**."
+        ],
+        "trap": "112.5 litres takes water as 25% of the *mixture* (milk 75%). The 25% is of the milk."
+      },
+      "tags": [
+        "mix:percent-of-milk",
+        "trap:wrong-base",
+        "template:water-percent-of-milk"
+      ]
+    },
+    {
+      "key": "mx-005",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vessel A contains milk and water in the ratio 5 : 3 and vessel B contains milk and water in the ratio 3 : 1. If the contents of A and B are mixed in the ratio 2 : 3 by volume, what is the ratio of milk to water in the mixture?",
+      "options": [
+        "2 : 1",
+        "3 : 7",
+        "19 : 9",
+        "9 : 4",
+        "7 : 3"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Take 2 L of A (milk 5/4, water 3/4) and 3 L of B (milk 9/4, water 3/4).",
+          "Milk = 14/4, water = 6/4 → **7 : 3**."
+        ],
+        "trap": "19 : 9 multiplies the ratio terms directly (2 × 5 + 3 × 3 : 2 × 3 + 3 × 1); A's terms add to 8 and B's to 4, so they must be converted to fractions first. 2 : 1 just adds the terms.",
+        "shortcut": "Milk fractions 5/8 and 6/8; weighted: (2 × 5 + 3 × 6)/(5 × 8) = 28/40 = 70% → 7 : 3."
+      },
+      "tags": [
+        "mix:two-vessels",
+        "template:two-vessel-mix"
+      ]
+    },
+    {
+      "key": "mx-006",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vessel P has milk and water in the ratio 5 : 3 and vessel Q has milk and water in the ratio 2 : 3. 72 litres of a mixture with equal quantities of milk and water is to be made using only P and Q. How many litres should be taken from Q?",
+      "options": [
+        "32 litres",
+        "40 litres",
+        "45 litres",
+        "48 litres",
+        "54 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Milk fractions: P = 5/8 = 0.625, Q = 2/5 = 0.4, target 0.5.",
+          "P : Q = (0.5 − 0.4) : (0.625 − 0.5) = 0.1 : 0.125 = 4 : 5, so Q = 5/9 × 72 = **40 litres**."
+        ],
+        "trap": "32 litres is the share of P; the alligation differences sit opposite the vessel they belong to.",
+        "shortcut": "Alligation on milk fractions: 0.625 and 0.4 around 0.5 → 4 : 5."
+      },
+      "tags": [
+        "mix:alligation",
+        "template:vessel-alligation"
+      ]
+    },
+    {
+      "key": "mx-007",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A shopkeeper mixes 35 kg of tea costing ₹180 per kg with some tea costing ₹240 per kg so that the mixture is worth ₹205 per kg. How many kilograms of the costlier tea did he use?",
+      "options": [
+        "21 kg",
+        "25 kg",
+        "30 kg",
+        "35 kg",
+        "49 kg"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Cheaper : costlier = (240 − 205) : (205 − 180) = 35 : 25 = 7 : 5.",
+          "35 kg of cheaper tea is 7 parts, so costlier = 5 × 5 = **25 kg**."
+        ],
+        "trap": "49 kg reverses the ratio (35 × 7/5)."
+      },
+      "tags": [
+        "mix:price-alligation",
+        "trap:reversed-ratio",
+        "template:price-alligation-profit"
+      ]
+    },
+    {
+      "key": "mx-008",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A container has 120 litres of milk and water in the ratio 3 : 1. 24 litres of the mixture is taken out and replaced with water, and the process is repeated once more. What is the ratio of milk to water now?",
+      "options": [
+        "12 : 13",
+        "13 : 12",
+        "9 : 11",
+        "24 : 25",
+        "3 : 2"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Each replacement keeps 1 − 24/120 = 4/5 of the milk. Milk = 90 × (4/5)² = 57.6 L.",
+          "Water = 120 − 57.6 = 62.4 L → 57.6 : 62.4 = **12 : 13**."
+        ],
+        "trap": "9 : 11 subtracts 18 L of milk both times (90 − 36 = 54). The second draw has less milk in it, so it removes only 14.4 L.",
+        "shortcut": "Milk fraction = 3/4 × (4/5)² = 12/25 → 12 : 13."
+      },
+      "tags": [
+        "mix:replacement",
+        "trap:linear-replacement",
+        "template:repeated-replacement"
+      ]
+    },
+    {
+      "key": "mx-009",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Three vessels contain 40 litres, 60 litres and 50 litres of milk-and-water mixtures in the ratios 3 : 1, 2 : 1 and 4 : 1 respectively. If all three are emptied into a tank, what is the ratio of milk to water in the tank?",
+      "options": [
+        "11 : 4",
+        "3 : 1",
+        "4 : 11",
+        "13 : 5",
+        "5 : 2"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Milk = 30 + 40 + 40 = 110 L; water = 10 + 20 + 10 = 40 L.",
+          "Ratio = 110 : 40 = **11 : 4**."
+        ],
+        "trap": "3 : 1 adds the ratio terms (3 + 2 + 4 : 1 + 1 + 1) and ignores the quantities."
+      },
+      "tags": [
+        "mix:three-vessels",
+        "template:three-vessel"
+      ]
+    },
+    {
+      "key": "mx-010",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A milkman mixes 15 litres of water with 60 litres of pure milk and sells the whole mixture at the cost price of milk. Water costs him nothing. What is his profit percentage?",
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "30%",
+        "$33\\frac{1}{3}$%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "He pays for 60 L but is paid for 75 L at the same rate.",
+          "Profit % = 15/60 × 100 = **25%**."
+        ],
+        "trap": "20% divides the water by the whole mixture (15/75). Profit is measured on what he paid for — the 60 L of milk."
+      },
+      "tags": [
+        "mix:water-profit",
+        "trap:wrong-base",
+        "template:water-free-profit"
+      ]
+    },
+    {
+      "key": "mx-011",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A chemist has 60 litres of an acid solution that is 30% acid. How much pure acid must be added to make it a 40% acid solution?",
+      "options": [
+        "4 litres",
+        "5 litres",
+        "6 litres",
+        "8 litres",
+        "10 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Acid = 18 L. With x L of pure acid: (18 + x) = 0.4(60 + x) → 0.6x = 6.",
+          "x = **10 litres**."
+        ],
+        "trap": "6 litres adds 10% of 60 L; the total volume also grows as acid is added.",
+        "shortcut": "Water (42 L) is fixed and must be 60%: total = 70 L, so add 10 L."
+      },
+      "tags": [
+        "mix:solution-strength",
+        "trap:wrong-base",
+        "template:solution-strength"
+      ]
+    },
+    {
+      "key": "mx-012",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A can holds 90 litres of milk and water in the ratio 7 : 2. How much of the mixture must be taken out and replaced with pure milk so that the ratio of milk to water becomes 8 : 1?",
+      "options": [
+        "10 litres",
+        "30 litres",
+        "36 litres",
+        "45 litres",
+        "54 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The volume stays 90 L, so for 8 : 1 the water must fall from 20 L to 10 L.",
+          "Water leaves only with the mixture taken out (2/9 of it): 2x/9 = 10 → x = **45 litres**."
+        ],
+        "trap": "10 litres is how much the water must fall, not how much mixture to take out — each litre removed carries only 2/9 L of water."
+      },
+      "tags": [
+        "mix:replacement",
+        "template:replace-with-other"
+      ]
+    },
+    {
+      "key": "mx-013",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A jug contains 60 litres of milk and water in the ratio 3 : 2. How much milk must be added to make the ratio of milk to water 2 : 1?",
+      "options": [
+        "4 litres",
+        "8 litres",
+        "12 litres",
+        "16 litres",
+        "20 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Milk 36 L, water 24 L. Water stays 24 L, so for 2 : 1 milk must be 48 L.",
+          "Milk to add = 48 − 36 = **12 litres**."
+        ],
+        "trap": "4 litres keeps the total at 60 L (milk 40 L); adding milk raises the total, so fix the water instead."
+      },
+      "tags": [
+        "mix:add-milk",
+        "template:add-milk-target"
+      ]
+    },
+    {
+      "key": "mx-014",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A container has 150 litres of milk and water in the ratio 7 : 3. Some of the mixture is taken out and 20 litres of water is added, after which the ratio of milk to water is 7 : 5. How much mixture was taken out?",
+      "options": [
+        "14 litres",
+        "35 litres",
+        "40 litres",
+        "50 litres",
+        "56 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "After taking out r L: milk 105 − 0.7r, water 45 − 0.3r + 20.",
+          "5(105 − 0.7r) = 7(65 − 0.3r) → 525 − 3.5r = 455 − 2.1r → r = **50 litres** (milk 70, water 50)."
+        ],
+        "trap": "14 litres assumes the mixture taken out was pure milk (105 − r = 7/5 × 65); it carries 30% water too."
+      },
+      "tags": [
+        "mix:remove-add",
+        "trap:forgot-removal",
+        "template:find-removed"
+      ]
+    },
+    {
+      "key": "mx-015",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Vessel A holds 60 litres of milk and water in the ratio 2 : 1 and vessel B holds 50 litres of milk and water in the ratio 3 : 2. 15 litres from A is poured into B. What is the ratio of milk to water in B now?",
+      "options": [
+        "5 : 8",
+        "7 : 4",
+        "3 : 2",
+        "13 : 9",
+        "8 : 5"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "B has milk 30, water 20. The 15 L from A brings milk 10, water 5.",
+          "B: milk 40, water 25 → **8 : 5**."
+        ],
+        "trap": "5 : 8 is reversed; 3 : 2 is B before the transfer."
+      },
+      "tags": [
+        "mix:transfer",
+        "template:transfer"
+      ]
+    },
+    {
+      "key": "mx-016",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Rakesh mixes 20 litres of milk costing ₹60 per litre with 5 litres of water. What is the cost price of 1 litre of the mixture?",
+      "options": [
+        "₹45",
+        "₹48",
+        "₹50",
+        "₹52",
+        "₹54"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total cost = 20 × 60 = ₹1,200 for 25 L of mixture.",
+          "Cost per litre = 1,200 ÷ 25 = **₹48**."
+        ],
+        "trap": "₹45 cuts ₹60 by 25% (water as a share of the milk); the water is 20% of the mixture, so the cost falls by 20%."
+      },
+      "tags": [
+        "mix:mixture-cost",
+        "template:mixture-cost"
+      ]
+    },
+    {
+      "key": "mx-017",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A vessel holds 96 litres of milk and water in the ratio 5 : 3. How many litres of water should be added to make the ratio of milk to water 4 : 3?",
+      "options": [
+        "6 litres",
+        "9 litres",
+        "12 litres",
+        "15 litres",
+        "18 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Milk = 5/8 × 96 = 60 litres, water = 36 litres.",
+          "For 4 : 3 with milk fixed at 60, water = 60 × 3/4 = 45 litres, so add 45 − 36 = **9 litres**."
+        ],
+        "trap": "12 litres keeps the water at 36 L and raises the milk to 48 L — that is the milk you would add, not the water."
+      },
+      "tags": [
+        "mix:add-water",
+        "template:add-water-target"
+      ]
+    },
+    {
+      "key": "mx-018",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A drum holds 180 litres of milk and water in the ratio 13 : 5. After 36 litres of the mixture is taken out, some water is added so that milk forms 65% of the mixture. How much water was added?",
+      "options": [
+        "16 litres",
+        "18 litres",
+        "20 litres",
+        "22 litres",
+        "24 litres"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Remaining 144 L: milk = 13/18 × 144 = 104 litres, water = 40 litres.",
+          "Milk 65% → total = 104 ÷ 0.65 = 160 litres, so water added = 160 − 144 = **16 litres**."
+        ],
+        "trap": "20 litres ignores the removal (130 ÷ 0.65 = 200, minus 180). The 36 L taken out carried 26 L of milk."
+      },
+      "tags": [
+        "mix:remove-add",
+        "trap:forgot-removal",
+        "template:remove-then-add"
+      ]
+    },
+    {
+      "key": "mx-019",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A jar contains milk and water in the ratio 11 : 6. 34 litres of the mixture is drawn off and 16 litres of water is added, after which the ratio of milk to water is 11 : 8. How much water did the jar contain initially?",
+      "options": [
+        "48 litres",
+        "54 litres",
+        "60 litres",
+        "66 litres",
+        "72 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "After drawing off: milk 11x, water 6x. 11x ÷ (6x + 16) = 11/8 → 8x = 6x + 16 → x = 8.",
+          "136 L remained, so the jar held 170 L; water at first = 6/17 × 170 = **60 litres**."
+        ],
+        "trap": "48 litres is the water left after the 34 L was drawn off (6x), before the 16 L was added."
+      },
+      "tags": [
+        "mix:remove-add",
+        "mix:find-initial",
+        "template:remove-add-initial"
+      ]
+    },
+    {
+      "key": "mx-020",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A container has 160 litres of milk and water in which the quantity of water is 25% of the quantity of milk. If 48 litres of water is added, what will be the ratio of milk to water?",
+      "options": [
+        "15 : 11",
+        "5 : 8",
+        "3 : 2",
+        "7 : 4",
+        "8 : 5"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Milk : water = 4 : 1 → milk 128 L, water 32 L.",
+          "After adding 48 L, water = 80 L. Ratio = 128 : 80 = **8 : 5**."
+        ],
+        "trap": "15 : 11 reads 25% as a share of the whole mixture (milk 120, water 40 + 48 = 88). 5 : 8 is the ratio reversed."
+      },
+      "tags": [
+        "mix:percent-of-milk",
+        "trap:wrong-base",
+        "template:water-percent-of-milk"
+      ]
+    },
+    {
+      "key": "mx-021",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Jar P holds 48 litres of milk and water in the ratio 5 : 3 and jar Q holds 60 litres of milk and water in the ratio 7 : 5. If the contents of both jars are emptied into a large can, what is the ratio of milk to water in the can?",
+      "options": [
+        "65 : 43",
+        "3 : 2",
+        "43 : 65",
+        "7 : 5",
+        "13 : 9"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "P: milk 30 L, water 18 L. Q: milk 35 L, water 25 L.",
+          "Total milk 65 L, water 43 L → **65 : 43**."
+        ],
+        "trap": "3 : 2 adds the ratio terms (5 + 7 : 3 + 5) without using the actual quantities. 43 : 65 is the reverse."
+      },
+      "tags": [
+        "mix:two-vessels",
+        "template:two-vessel-mix"
+      ]
+    },
+    {
+      "key": "mx-022",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Container A has milk and water in the ratio 4 : 1 and container B has milk and water in the ratio 3 : 5. In what ratio should the contents of A and B be mixed to get a mixture with milk and water in the ratio 3 : 2?",
+      "options": [
+        "8 : 9",
+        "9 : 5",
+        "3 : 4",
+        "4 : 3",
+        "9 : 8"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Milk fractions: A = 4/5 = 0.8, B = 3/8 = 0.375, target 3/5 = 0.6.",
+          "A : B = (0.6 − 0.375) : (0.8 − 0.6) = 0.225 : 0.2 = **9 : 8**."
+        ],
+        "trap": "8 : 9 places each difference next to the wrong container — the gap from B's value belongs to A."
+      },
+      "tags": [
+        "mix:alligation",
+        "trap:reversed-ratio",
+        "template:vessel-alligation"
+      ]
+    },
+    {
+      "key": "mx-023",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In what ratio must a grocer mix rice costing ₹48 per kg with rice costing ₹63 per kg so that by selling the mixture at ₹66 per kg he makes a profit of 20%?",
+      "options": [
+        "8 : 7",
+        "7 : 8",
+        "17 : 8",
+        "4 : 3",
+        "3 : 2"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Cost price of the mixture = 66 ÷ 1.2 = ₹55 per kg.",
+          "Cheaper : dearer = (63 − 55) : (55 − 48) = **8 : 7**."
+        ],
+        "trap": "17 : 8 takes the cost as 80% of ₹66 (₹52.80) — profit is on cost, so divide by 1.2. 7 : 8 is reversed."
+      },
+      "tags": [
+        "mix:price-alligation",
+        "trap:profit-on-sp",
+        "template:price-alligation-profit"
+      ]
+    },
+    {
+      "key": "mx-024",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A vessel is filled with 80 litres of pure milk. 16 litres of milk is taken out and replaced with water. Then 16 litres of the mixture is taken out and replaced with water. What percentage of the final mixture is milk?",
+      "options": [
+        "56%",
+        "58%",
+        "60%",
+        "62.5%",
+        "64%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Each step keeps 1 − 16/80 = 4/5 of the milk. Milk = 80 × (4/5)² = 51.2 L.",
+          "Milk share = 51.2/80 = **64%**."
+        ],
+        "trap": "60% subtracts 16 L of milk twice (48 L left); the second draw contains only 12.8 L of milk."
+      },
+      "tags": [
+        "mix:replacement",
+        "trap:linear-replacement",
+        "template:repeated-replacement"
+      ]
+    },
+    {
+      "key": "mx-025",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Three containers hold equal quantities of milk-and-water mixtures in which the ratios of milk to water are 2 : 1, 1 : 1 and 4 : 1. The three are mixed together. What is the ratio of milk to water in the new mixture?",
+      "options": [
+        "59 : 31",
+        "7 : 3",
+        "2 : 1",
+        "31 : 59",
+        "13 : 7"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Take 30 L of each. Milk = 20 + 15 + 24 = 59 L; water = 10 + 15 + 6 = 31 L.",
+          "Ratio = **59 : 31**."
+        ],
+        "trap": "7 : 3 adds the ratio terms (2 + 1 + 4 : 1 + 1 + 1), which is valid only when every ratio has the same total of parts.",
+        "shortcut": "Use a volume equal to the LCM of 3, 2 and 5 (30 L) so every share is a whole number."
+      },
+      "tags": [
+        "mix:three-vessels",
+        "template:three-vessel"
+      ]
+    },
+    {
+      "key": "mx-026",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A dairy owner claims to sell milk at cost price, but he adds water to the milk and thereby gains 20%. Water is free. In what ratio has he mixed water with milk?",
+      "options": [
+        "1 : 5",
+        "1 : 4",
+        "5 : 1",
+        "1 : 6",
+        "4 : 1"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Gain 20% at cost price means every 1 L of milk bought is sold as 1.2 L of mixture.",
+          "So 0.2 L of water is added per litre of milk → water : milk = **1 : 5**."
+        ],
+        "trap": "1 : 4 makes water 20% of the mixture; the 20% gain is on the milk paid for."
+      },
+      "tags": [
+        "mix:water-profit",
+        "trap:wrong-base",
+        "template:water-free-profit"
+      ]
+    },
+    {
+      "key": "mx-027",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "40 litres of a solution contains 25% alcohol. How much water must be added to it so that alcohol makes up 20% of the solution?",
+      "options": [
+        "2 litres",
+        "5 litres",
+        "8 litres",
+        "10 litres",
+        "12 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Alcohol = 10 L, which must be 20% of the new total → total = 50 L.",
+          "Water added = 50 − 40 = **10 litres**."
+        ],
+        "trap": "2 litres adds 5% of 40 L; the alcohol stays 10 L, so the total must reach 50 L."
+      },
+      "tags": [
+        "mix:solution-strength",
+        "trap:wrong-base",
+        "template:solution-strength"
+      ]
+    },
+    {
+      "key": "mx-028",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A vessel contains 96 litres of milk and water in the ratio 3 : 1. How much of the mixture must be drawn off and replaced with water so that the vessel contains equal quantities of milk and water?",
+      "options": [
+        "20 litres",
+        "24 litres",
+        "28 litres",
+        "32 litres",
+        "36 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Milk must fall from 72 L to 48 L, i.e. 1/3 of the milk must go.",
+          "Drawing off x L removes x/96 of the milk, so x = 96/3 = **32 litres**."
+        ],
+        "trap": "24 litres assumes the mixture drawn off is pure milk (72 − 24 = 48); only 3/4 of it is milk."
+      },
+      "tags": [
+        "mix:replacement",
+        "template:replace-with-other"
+      ]
+    },
+    {
+      "key": "mx-029",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A container has 84 litres of milk and water in the ratio 5 : 2. How much milk must be added so that water makes up 20% of the mixture?",
+      "options": [
+        "36 litres",
+        "42 litres",
+        "48 litres",
+        "54 litres",
+        "60 litres"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Water = 2/7 × 84 = 24 L, which stays fixed and must be 20% of the new total.",
+          "New total = 24 ÷ 0.2 = 120 L, so milk added = 120 − 84 = **36 litres**."
+        ],
+        "trap": "60 litres makes the water 20% of the milk (milk 120 L), not 20% of the mixture."
+      },
+      "tags": [
+        "mix:add-milk",
+        "trap:wrong-base",
+        "template:add-milk-target"
+      ]
+    },
+    {
+      "key": "mx-030",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A tank has 120 litres of milk and water in the ratio 3 : 1. Some mixture is drawn off and then 15 litres of water is added, making the ratio of milk to water 3 : 2. How much mixture was drawn off?",
+      "options": [
+        "40 litres",
+        "45 litres",
+        "48 litres",
+        "54 litres",
+        "60 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let y litres remain: milk 3y/4, water y/4 + 15. (3y/4) : (y/4 + 15) = 3 : 2 → 3y/2 = 3y/4 + 45 → y = 60.",
+          "Mixture drawn off = 120 − 60 = **60 litres**."
+        ],
+        "trap": "45 litres is the milk left at the end, not the quantity drawn off."
+      },
+      "tags": [
+        "mix:remove-add",
+        "template:find-removed"
+      ]
+    },
+    {
+      "key": "mx-031",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Jug A has 30 litres of pure milk and jug B has 30 litres of water. 10 litres from A is poured into B and stirred, and then 10 litres from B is poured back into A. What is the ratio of milk to water in A now?",
+      "options": [
+        "2 : 1",
+        "3 : 1",
+        "1 : 3",
+        "5 : 2",
+        "4 : 1"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After the first pour, B has milk 10, water 30. 10 L from B carries milk 2.5, water 7.5.",
+          "A: milk 20 + 2.5 = 22.5, water 7.5 → **3 : 1**."
+        ],
+        "trap": "2 : 1 treats the 10 L poured back as pure water; a quarter of it is milk."
+      },
+      "tags": [
+        "mix:transfer",
+        "template:transfer"
+      ]
+    },
+    {
+      "key": "mx-032",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two kinds of oil costing ₹120 and ₹150 per litre are mixed in the ratio 3 : 2. At what price per litre should the mixture be sold to make a profit of 25%?",
+      "options": [
+        "₹165 per litre",
+        "₹166.50 per litre",
+        "₹168.75 per litre",
+        "₹170 per litre",
+        "₹172.50 per litre"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Cost of 5 L = 3 × 120 + 2 × 150 = ₹660, i.e. ₹132 per litre.",
+          "Selling price = 132 × 1.25 = **₹165 per litre**."
+        ],
+        "trap": "₹168.75 uses the simple average ₹135; the oils are not in equal amounts."
+      },
+      "tags": [
+        "mix:mixture-cost",
+        "mix:price-alligation",
+        "template:mixture-cost"
+      ]
+    },
+    {
+      "key": "mx-033",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In 150 litres of a mixture of milk and water, water makes up 20% of the mixture. How much water must be added so that water makes up 25% of the new mixture?",
+      "options": [
+        "5 litres",
+        "6 litres",
+        "7.5 litres",
+        "8 litres",
+        "10 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Milk = 80% of 150 = 120 litres and it does not change.",
+          "In the new mixture milk is 75%, so the total = 120 ÷ 0.75 = 160 litres. Water added = 160 − 150 = **10 litres**."
+        ],
+        "trap": "7.5 litres adds 5% of the old 150 L. The base grows as water is poured in, so work through the fixed milk.",
+        "shortcut": "Milk share falls from 80% to 75%: new total = 150 × 80/75 = 160."
+      },
+      "tags": [
+        "mix:add-water",
+        "trap:wrong-base",
+        "template:add-water-target"
+      ]
+    },
+    {
+      "key": "mx-034",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A container has 120 litres of milk and water in the ratio 5 : 3. Raghav takes out 24 litres of the mixture and pours in 4 litres of water. What percentage of the resulting mixture is water?",
+      "options": [
+        "30%",
+        "35%",
+        "37.5%",
+        "40%",
+        "42.5%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Remaining 96 L: milk = 60 L, water = 36 L. Adding 4 L of water gives water = 40 L in 100 L.",
+          "Water share = 40/100 = **40%**."
+        ],
+        "trap": "37.5% is the water share before anything changed (3/8). Taking out mixture keeps the share; only the 4 L of water raises it."
+      },
+      "tags": [
+        "mix:remove-add",
+        "template:remove-then-add"
+      ]
+    },
+    {
+      "key": "mx-035",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Some quantity of milk and water is mixed in the ratio 5 : 2. When 21 litres of the mixture is taken out and replaced with 21 litres of water, the ratio becomes 5 : 3. What was the initial quantity of the mixture?",
+      "options": [
+        "147 litres",
+        "168 litres",
+        "175 litres",
+        "182 litres",
+        "189 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After removal: milk 5x, water 2x. 5x ÷ (2x + 21) = 5/3 → 15x = 10x + 105 → x = 21.",
+          "Remaining 7x = 147 L, so the initial mixture = 147 + 21 = **168 litres**."
+        ],
+        "trap": "147 litres is what was left after the 21 L was taken out; add the removed 21 L back.",
+        "shortcut": "Milk 5x stays; water goes from 2x to 3x, so 21 L = x."
+      },
+      "tags": [
+        "mix:remove-add",
+        "mix:find-initial",
+        "template:remove-add-initial"
+      ]
+    },
+    {
+      "key": "mx-036",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In 90 litres of a mixture, the quantity of water is 50% of the quantity of milk. How much water must be added so that the quantity of water becomes 80% of the quantity of milk?",
+      "options": [
+        "12 litres",
+        "18 litres",
+        "24 litres",
+        "27 litres",
+        "30 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Milk : water = 2 : 1 → milk 60 L, water 30 L.",
+          "Water must be 80% of 60 = 48 L, so add 48 − 30 = **18 litres**."
+        ],
+        "trap": "27 litres adds 30% of the 90 L mixture (80% − 50%). The percentages are of the milk (60 L), not of the mixture."
+      },
+      "tags": [
+        "mix:percent-of-milk",
+        "trap:wrong-base",
+        "template:water-percent-of-milk"
+      ]
+    },
+    {
+      "key": "mx-037",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "40 litres of a mixture having milk and water in the ratio 3 : 1 is mixed with 60 litres of a mixture having milk and water in equal quantities. What percentage of the new mixture is milk?",
+      "options": [
+        "55%",
+        "60%",
+        "62.5%",
+        "65%",
+        "70%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Milk = 3/4 × 40 + 1/2 × 60 = 30 + 30 = 60 L out of 100 L.",
+          "Milk share = **60%**."
+        ],
+        "trap": "62.5% is the simple average of 75% and 50%; the quantities are unequal (40 L and 60 L), so a weighted average is needed."
+      },
+      "tags": [
+        "mix:two-vessels",
+        "template:two-vessel-mix"
+      ]
+    },
+    {
+      "key": "mx-038",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "How many litres of a mixture containing milk and water in the ratio 1 : 2 must be added to 30 litres of a mixture containing milk and water in the ratio 5 : 1, so that the resulting mixture has equal quantities of milk and water?",
+      "options": [
+        "15 litres",
+        "30 litres",
+        "45 litres",
+        "60 litres",
+        "75 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "30 L of the 5 : 1 mixture has 25 L milk and 5 L water. Adding x L of the 1 : 2 mixture: 25 + x/3 = 5 + 2x/3.",
+          "x/3 = 20 → x = **60 litres**."
+        ],
+        "trap": "15 litres uses the alligation ratio the wrong way round (30 × 1/2). The quantities are in the ratio (5 : 1 mixture) : (1 : 2 mixture) = 1 : 2.",
+        "shortcut": "Milk fractions 5/6 and 1/3 around 1/2: (1/2 − 1/3) : (5/6 − 1/2) = 1 : 2 → 30 L : 60 L."
+      },
+      "tags": [
+        "mix:alligation",
+        "trap:reversed-ratio",
+        "template:vessel-alligation"
+      ]
+    },
+    {
+      "key": "mx-039",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A trader mixes 30 kg of dal bought at ₹90 per kg with 20 kg of dal bought at ₹115 per kg and sells the mixture at ₹125 per kg. What is his profit percentage?",
+      "options": [
+        "15%",
+        "20%",
+        "22.5%",
+        "25%",
+        "30%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Cost = 30 × 90 + 20 × 115 = 2,700 + 2,300 = ₹5,000 for 50 kg, i.e. ₹100 per kg.",
+          "Profit = (125 − 100)/100 = **25%**."
+        ],
+        "trap": "20% is the profit as a share of the selling price (25/125). Profit % is always on cost."
+      },
+      "tags": [
+        "mix:price-alligation",
+        "trap:profit-on-sp",
+        "template:price-alligation-profit"
+      ]
+    },
+    {
+      "key": "mx-040",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A jar contains 100 litres of pure milk. 20 litres is drawn out and replaced with water. Again, 20 litres of the mixture is drawn out and replaced with water. By how many litres does the quantity of milk now exceed the quantity of water?",
+      "options": [
+        "20 litres",
+        "24 litres",
+        "28 litres",
+        "32 litres",
+        "36 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Milk = 100 × (4/5)² = 64 L, so water = 36 L.",
+          "Difference = 64 − 36 = **28 litres**."
+        ],
+        "trap": "20 litres treats both draws as pure milk (milk 60, water 40)."
+      },
+      "tags": [
+        "mix:replacement",
+        "trap:linear-replacement",
+        "template:repeated-replacement"
+      ]
+    },
+    {
+      "key": "mx-041",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Vessels A, B and C contain 40 litres, 60 litres and 80 litres of mixtures with milk and water in the ratios 3 : 1, 2 : 1 and 3 : 5 respectively. All three are poured into a drum. What is the ratio of milk to water in the drum?",
+      "options": [
+        "4 : 5",
+        "8 : 7",
+        "7 : 5",
+        "9 : 7",
+        "5 : 4"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Milk = 30 + 40 + 30 = 100 L; water = 10 + 20 + 50 = 80 L.",
+          "Ratio = 100 : 80 = **5 : 4**."
+        ],
+        "trap": "8 : 7 adds the ratio terms (3 + 2 + 3 : 1 + 1 + 5). 4 : 5 is reversed."
+      },
+      "tags": [
+        "mix:three-vessels",
+        "template:three-vessel"
+      ]
+    },
+    {
+      "key": "mx-042",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A milkman buys milk at ₹48 per litre, mixes water with it in the ratio 1 : 5 (water : milk) and sells the mixture at ₹54 per litre. What is his profit percentage?",
+      "options": [
+        "12.5%",
+        "20%",
+        "30%",
+        "35%",
+        "40%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Take 5 L of milk (cost ₹240) + 1 L of water = 6 L of mixture, sold for 6 × 54 = ₹324.",
+          "Profit = 84/240 × 100 = **35%**."
+        ],
+        "trap": "12.5% compares only the prices (54 vs 48) and forgets the free water; 20% counts only the water.",
+        "shortcut": "Two successive gains: 1.2 (water) × 1.125 (price) = 1.35."
+      },
+      "tags": [
+        "mix:water-profit",
+        "template:water-free-profit"
+      ]
+    },
+    {
+      "key": "mx-043",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A lab assistant mixes a 20% alcohol solution with a 45% alcohol solution to get 50 litres of a 30% alcohol solution. How many litres of the 45% solution did she use?",
+      "options": [
+        "15 litres",
+        "20 litres",
+        "25 litres",
+        "30 litres",
+        "35 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "20% : 45% solutions = (45 − 30) : (30 − 20) = 15 : 10 = 3 : 2.",
+          "45% solution = 2/5 × 50 = **20 litres**."
+        ],
+        "trap": "30 litres is the quantity of the 20% solution (reversed alligation)."
+      },
+      "tags": [
+        "mix:solution-strength",
+        "mix:alligation",
+        "trap:reversed-ratio",
+        "template:solution-strength"
+      ]
+    },
+    {
+      "key": "mx-044",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A container holds 120 litres of milk and water in the ratio 5 : 3. How many litres of this mixture must be replaced with a mixture of milk and water in the ratio 1 : 3 so that the container has equal quantities of milk and water?",
+      "options": [
+        "24 litres",
+        "30 litres",
+        "36 litres",
+        "40 litres",
+        "45 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Milk now 75 L, needed 60 L. Each litre swapped removes 5/8 L of milk and adds 1/4 L: net loss 3/8 L.",
+          "3x/8 = 15 → x = **40 litres**."
+        ],
+        "trap": "24 litres treats the incoming 1 : 3 mixture as plain water (5x/8 = 15); it brings milk back in."
+      },
+      "tags": [
+        "mix:replacement",
+        "mix:two-vessels",
+        "template:replace-with-other"
+      ]
+    },
+    {
+      "key": "mx-045",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A can has 75 litres of milk and water in the ratio 2 : 1. Equal quantities of milk and water are added so that the ratio becomes 3 : 2. What is the total quantity of liquid added?",
+      "options": [
+        "25 litres",
+        "30 litres",
+        "40 litres",
+        "50 litres",
+        "60 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Milk 50 L, water 25 L. Adding x L of each: (50 + x) : (25 + x) = 3 : 2 → 100 + 2x = 75 + 3x → x = 25.",
+          "Total added = 25 + 25 = **50 litres**."
+        ],
+        "trap": "25 litres is the milk (or water) added; the question asks for both together."
+      },
+      "tags": [
+        "mix:add-milk",
+        "template:add-milk-target"
+      ]
+    },
+    {
+      "key": "mx-046",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A can contains 140 litres of milk and water in the ratio 5 : 2. A certain quantity of the mixture is sold and then 20 litres of water is added, after which water makes up 40% of the mixture. How much mixture was sold?",
+      "options": [
+        "28 litres",
+        "35 litres",
+        "42 litres",
+        "49 litres",
+        "105 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let y litres remain: milk 5y/7, water 2y/7 + 20. Water 40% → milk : water = 3 : 2.",
+          "2 × 5y/7 = 3(2y/7 + 20) → 4y/7 = 60 → y = 105, so **35 litres** was sold (milk 75, water 50)."
+        ],
+        "trap": "105 litres is what is left in the can after the sale, before the water is added; the question asks how much was sold."
+      },
+      "tags": [
+        "mix:remove-add",
+        "template:find-removed"
+      ]
+    },
+    {
+      "key": "mx-047",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Vessel A holds 60 litres of milk and water in the ratio 2 : 1 and vessel B holds 50 litres in the ratio 3 : 2. 15 litres is poured from A into B, and then 26 litres is poured from B back into A. What is the ratio of milk to water in A now?",
+      "options": [
+        "46 : 25",
+        "25 : 46",
+        "2 : 1",
+        "8 : 5",
+        "9 : 5"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "After the first pour, A has 45 L (milk 30, water 15) and B has 65 L (milk 40, water 25).",
+          "26 L of B = 2/5 of it: milk 16, water 10. A: milk 46, water 25 → **46 : 25**."
+        ],
+        "trap": "2 : 1 assumes A's ratio cannot change; 8 : 5 is B's ratio after the first pour."
+      },
+      "tags": [
+        "mix:transfer",
+        "template:transfer"
+      ]
+    },
+    {
+      "key": "mx-048",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In what ratio must water be mixed with milk costing ₹40 per litre so that the mixture is worth ₹32 per litre? (Water is free.)",
+      "options": [
+        "1 : 3",
+        "1 : 4",
+        "4 : 1",
+        "1 : 5",
+        "2 : 5"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Water (₹0) and milk (₹40) around ₹32: water : milk = (40 − 32) : (32 − 0) = 8 : 32.",
+          "Water : milk = **1 : 4**."
+        ],
+        "trap": "1 : 5 takes the ₹8 drop as 1/5 of ₹40 and reads it as water : milk; the drop is 1/5 of the mixture, i.e. 1 part water to 4 parts milk."
+      },
+      "tags": [
+        "mix:mixture-cost",
+        "mix:alligation",
+        "template:mixture-cost"
+      ]
+    },
+    {
+      "key": "mx-049",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A jar contains a mixture of milk and water in the ratio 9 : 4. When 18 litres of water is added to it, the ratio of milk to water becomes 3 : 2. What was the quantity of the mixture in the jar at first?",
+      "options": [
+        "108 litres",
+        "117 litres",
+        "126 litres",
+        "135 litres",
+        "144 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let milk = 9k and water = 4k. Then 9k ÷ (4k + 18) = 3/2 → 18k = 12k + 54 → k = 9.",
+          "Initial mixture = 13k = **117 litres**."
+        ],
+        "trap": "135 litres is the quantity after the 18 L of water is added; the question asks for the mixture at first.",
+        "shortcut": "Milk 9k is unchanged: 3 parts → 9k means 1 new part = 3k, so water 4k + 18 = 6k → k = 9."
+      },
+      "tags": [
+        "mix:add-water",
+        "template:add-water-target"
+      ]
+    },
+    {
+      "key": "mx-050",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A can has 150 litres of a milk–water mixture in which milk is 80%. 30 litres of the mixture is sold, and water is then added to the can so that water becomes 40% of the mixture. How much water was added?",
+      "options": [
+        "30 litres",
+        "36 litres",
+        "40 litres",
+        "45 litres",
+        "50 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "After 30 L is sold, 120 L remain: milk = 96 L, water = 24 L.",
+          "Water 40% means milk 60%: total = 96 ÷ 0.6 = 160 L. Water added = 160 − 120 = **40 litres**."
+        ],
+        "trap": "50 litres skips the sale (120 L of milk ÷ 0.6 = 200, minus 150)."
+      },
+      "tags": [
+        "mix:remove-add",
+        "trap:forgot-removal",
+        "template:remove-then-add"
+      ]
+    },
+    {
+      "key": "mx-051",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A can contains milk and water in the ratio 7 : 5. 24 litres of the mixture is drawn off, and then 6 litres of milk and 18 litres of water are added. The can now has equal quantities of milk and water. How many litres of mixture did the can hold at first?",
+      "options": [
+        "72 litres",
+        "84 litres",
+        "90 litres",
+        "96 litres",
+        "108 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "After drawing off: milk 7x, water 5x. Then 7x + 6 = 5x + 18 → x = 6.",
+          "12x = 72 L remained, so the can held 72 + 24 = **96 litres** at first."
+        ],
+        "trap": "72 litres is the quantity after the 24 L was drawn off."
+      },
+      "tags": [
+        "mix:remove-add",
+        "mix:find-initial",
+        "template:remove-add-initial"
+      ]
+    },
+    {
+      "key": "mx-052",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A drum has 180 litres of a mixture in which water is 20% of the milk. 36 litres of the mixture is taken out and 6 litres of water is added. The water in the drum is now what percentage of the milk?",
+      "options": [
+        "15%",
+        "16%",
+        "20%",
+        "22.5%",
+        "25%"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Milk : water = 5 : 1 → milk 150 L, water 30 L. Taking out 36 L (1/5) leaves milk 120 L, water 24 L.",
+          "Adding 6 L of water → water 30 L. 30 ÷ 120 = **25%** of the milk."
+        ],
+        "trap": "20% is water as a share of the whole mixture (30 ÷ 150). The question compares water with milk."
+      },
+      "tags": [
+        "mix:percent-of-milk",
+        "trap:wrong-base",
+        "template:water-percent-of-milk"
+      ]
+    },
+    {
+      "key": "mx-053",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Vessels A and B contain milk and water in the ratios 7 : 3 and 3 : 2 respectively. Two parts of A are mixed with three parts of B. To 50 litres of this mixture, 10 litres of water is added. What is the ratio of milk to water in the final mixture?",
+      "options": [
+        "7 : 8",
+        "16 : 9",
+        "4 : 3",
+        "9 : 7",
+        "8 : 7"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Milk fraction = (2 × 0.7 + 3 × 0.6) ÷ 5 = 0.64, so 50 L has 32 L milk and 18 L water.",
+          "With 10 L more water: 32 : 28 = **8 : 7**."
+        ],
+        "trap": "16 : 9 stops before the 10 L of water is added. 7 : 8 is the answer reversed."
+      },
+      "tags": [
+        "mix:two-vessels",
+        "template:two-vessel-mix"
+      ]
+    },
+    {
+      "key": "mx-054",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Vessel P contains milk and water in the ratio 5 : 2 and vessel Q contains them in the ratio 3 : 4. Some quantities from P and Q are mixed to get 84 litres of a mixture having equal quantities of milk and water. How many more litres were taken from Q than from P?",
+      "options": [
+        "21 litres",
+        "28 litres",
+        "42 litres",
+        "56 litres",
+        "63 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Milk fractions: P = 5/7, Q = 3/7, target 1/2. P : Q = (1/2 − 3/7) : (5/7 − 1/2) = 1/14 : 3/14 = 1 : 3.",
+          "P = 21 L, Q = 63 L, so Q exceeds P by **42 litres**."
+        ],
+        "trap": "63 litres is the quantity from Q and 21 litres the quantity from P; the question asks for the difference."
+      },
+      "tags": [
+        "mix:alligation",
+        "template:vessel-alligation"
+      ]
+    },
+    {
+      "key": "mx-055",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In what ratio should sugar costing ₹42 per kg be mixed with sugar costing ₹54 per kg so that by selling the mixture at ₹56 per kg a gain of 12% is made?",
+      "options": [
+        "1 : 2",
+        "2 : 1",
+        "1 : 3",
+        "3 : 1",
+        "2 : 3"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Cost price of the mixture = 56 ÷ 1.12 = ₹50 per kg.",
+          "Cheaper : dearer = (54 − 50) : (50 − 42) = 4 : 8 = **1 : 2**."
+        ],
+        "trap": "2 : 1 reverses the alligation: the gap of the dearer sugar from ₹50 gives the cheaper sugar's share."
+      },
+      "tags": [
+        "mix:price-alligation",
+        "trap:reversed-ratio",
+        "template:price-alligation-profit"
+      ]
+    },
+    {
+      "key": "mx-056",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A drum holds 120 litres of milk and water in the ratio 7 : 5. 24 litres of the mixture is taken out and replaced with water. Then 30 litres of the new mixture is taken out and replaced with pure milk. What is the ratio of milk to water in the drum now?",
+      "options": [
+        "2 : 3",
+        "3 : 2",
+        "7 : 8",
+        "8 : 7",
+        "7 : 5"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "First step keeps 4/5: milk 56 L, water 40 + 24 = 64 L.",
+          "Taking out 30 L (1/4) leaves milk 42 L, water 48 L; adding 30 L milk → 72 : 48 = **3 : 2**."
+        ],
+        "trap": "7 : 8 stops after the first replacement (56 : 64). 2 : 3 is the answer reversed."
+      },
+      "tags": [
+        "mix:replacement",
+        "template:repeated-replacement"
+      ]
+    },
+    {
+      "key": "mx-057",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Three alcohol solutions of strengths 20%, 35% and 50% are mixed: 30 litres of the first, 40 litres of the second and some quantity of the third. The resulting solution is 38% alcohol. How many litres of the 50% solution were used?",
+      "options": [
+        "35 litres",
+        "40 litres",
+        "45 litres",
+        "50 litres",
+        "55 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Let x litres of the 50% solution be used. Alcohol = 6 + 14 + 0.5x; total = 70 + x. So 20 + 0.5x = 0.38(70 + x) = 26.6 + 0.38x.",
+          "0.12x = 6.6 → x = **55 litres**."
+        ],
+        "trap": "Averaging the three strengths ((20 + 35 + 50)/3 = 35%) ignores that the quantities differ; set up the alcohol balance instead."
+      },
+      "tags": [
+        "mix:three-vessels",
+        "mix:solution-strength",
+        "template:three-vessel"
+      ]
+    },
+    {
+      "key": "mx-058",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A vendor buys milk at ₹56 per litre, adds water to it and sells the mixture at ₹60 per litre, making a profit of 25%. What is the ratio of milk to water in the mixture?",
+      "options": [
+        "1 : 6",
+        "5 : 1",
+        "6 : 1",
+        "7 : 1",
+        "8 : 1"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Cost of 1 L of mixture = 60 ÷ 1.25 = ₹48. Water is free, so each litre of mixture holds 48/56 = 6/7 L of milk.",
+          "Milk : water = 6/7 : 1/7 = **6 : 1**."
+        ],
+        "trap": "1 : 6 is the ratio reversed; there is far more milk than water."
+      },
+      "tags": [
+        "mix:water-profit",
+        "trap:reversed-ratio",
+        "template:water-free-profit"
+      ]
+    },
+    {
+      "key": "mx-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A flask contains 80 litres of a 40% acid solution. 20 litres of it is removed and replaced with 20 litres of a 60% acid solution. What is the strength of the acid solution now?",
+      "options": [
+        "42.5%",
+        "45%",
+        "47.5%",
+        "50%",
+        "52.5%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After removing 20 L: 60 L containing 24 L acid. Adding 20 L of 60% brings 12 L acid.",
+          "Acid = 36 L in 80 L → **45%**."
+        ],
+        "trap": "50% averages 40% and 60% as if equal amounts were mixed; only a quarter of the flask is the 60% solution."
+      },
+      "tags": [
+        "mix:solution-strength",
+        "mix:replacement",
+        "template:solution-strength"
+      ]
+    },
+    {
+      "key": "mx-060",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A tank contains 140 litres of milk and water in the ratio 5 : 2. 28 litres of the mixture is replaced with water, and then 28 litres of the new mixture is replaced with pure milk. What is the final ratio of milk to water?",
+      "options": [
+        "23 : 12",
+        "5 : 2",
+        "12 : 23",
+        "25 : 11",
+        "7 : 4"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Step 1 (keeps 4/5): milk 80 L, water 32 + 28 = 60 L.",
+          "Step 2 (keeps 4/5): milk 64 + 28 = 92 L, water 48 L → 92 : 48 = **23 : 12**."
+        ],
+        "trap": "5 : 2 assumes the two equal swaps cancel. They do not: the second draw removes less milk (16 L) than the first (20 L) and adds 28 L back."
+      },
+      "tags": [
+        "mix:replacement",
+        "template:replace-with-other"
+      ]
+    },
+    {
+      "key": "mx-061",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A vessel contains milk and water in the ratio 5 : 3. When 30 litres of milk and 10 litres of water are added, the ratio becomes 2 : 1. How much mixture was in the vessel originally?",
+      "options": [
+        "80 litres",
+        "88 litres",
+        "96 litres",
+        "104 litres",
+        "120 litres"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Milk 5k, water 3k: 5k + 30 = 2(3k + 10) → k = 10.",
+          "Original mixture = 8k = **80 litres**."
+        ],
+        "trap": "120 litres is the quantity after the 40 L was added."
+      },
+      "tags": [
+        "mix:add-milk",
+        "mix:find-initial",
+        "template:add-milk-target"
+      ]
+    },
+    {
+      "key": "mx-062",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A vessel contains 160 litres of milk and water in the ratio 5 : 3. Some mixture is taken out and twice that quantity of water is added, after which the ratio of milk to water becomes 5 : 7. How much mixture was taken out?",
+      "options": [
+        "32 litres",
+        "36 litres",
+        "40 litres",
+        "48 litres",
+        "64 litres"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "After taking out r L and adding 2r L of water: milk 100 − 5r/8, water 60 + 13r/8.",
+          "7(100 − 5r/8) = 5(60 + 13r/8) → 400 = 100r/8 → r = **32 litres** (milk 80, water 112)."
+        ],
+        "trap": "64 litres is the water added (twice the quantity taken out)."
+      },
+      "tags": [
+        "mix:remove-add",
+        "template:find-removed"
+      ]
+    },
+    {
+      "key": "mx-063",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Vessel P holds 80 litres of milk and water in the ratio 3 : 1 and vessel Q holds 60 litres in the ratio 1 : 2. Just enough of P is poured into Q to make the milk and water in Q equal. Then 30 litres of Q is poured into P. What is the ratio of milk to water in P now?",
+      "options": [
+        "3 : 1",
+        "9 : 5",
+        "5 : 9",
+        "7 : 4",
+        "2 : 1"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Q: milk 20, water 40. Adding x L of P: 20 + 0.75x = 40 + 0.25x → x = 40, so Q = 100 L (50 : 50).",
+          "P keeps 40 L (milk 30, water 10); 30 L of Q adds milk 15, water 15 → 45 : 25 = **9 : 5**."
+        ],
+        "trap": "3 : 1 is P's original ratio, which changes once Q's 1 : 1 mixture is poured in."
+      },
+      "tags": [
+        "mix:transfer",
+        "template:transfer"
+      ]
+    },
+    {
+      "key": "mx-064",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A milkman buys 75 litres of milk at ₹48 per litre. On the way, 5 litres of milk is spilt. He adds some water to the rest and sells the entire mixture at ₹50 per litre, making an overall profit of 25%. How much water did he add?",
+      "options": [
+        "12 litres",
+        "14 litres",
+        "15 litres",
+        "18 litres",
+        "20 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Cost = 75 × 48 = ₹3,600; revenue needed = 1.25 × 3,600 = ₹4,500, i.e. 4,500 ÷ 50 = 90 L sold.",
+          "Milk left = 70 L, so water added = 90 − 70 = **20 litres**."
+        ],
+        "trap": "15 litres forgets the spilt milk (75 + w = 90)."
+      },
+      "tags": [
+        "mix:water-profit",
+        "mix:mixture-cost",
+        "template:mixture-cost"
+      ]
+    },
+    {
+      "key": "mx-065",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A tank holds 170 litres of milk and water in the ratio 11 : 6. How much water must be added so that the quantity of milk is only 10% more than the quantity of water?",
+      "options": [
+        "33 litres",
+        "39 litres",
+        "40 litres",
+        "44 litres",
+        "50 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Milk = 11/17 × 170 = 110 litres, water = 60 litres.",
+          "Milk is 10% more than water → water = 110 ÷ 1.1 = 100 litres. Water to add = 100 − 60 = **40 litres**."
+        ],
+        "trap": "39 litres makes the water 10% *less* than the milk (99 L). 'Milk 10% more than water' puts the water at the base: 1.1 × water = 110."
+      },
+      "tags": [
+        "mix:add-water",
+        "trap:wrong-base",
+        "template:add-water-target"
+      ]
+    },
+    {
+      "key": "mx-066",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A vessel contains 175 litres of milk and water in the ratio 4 : 3. 35 litres of the mixture is removed. Then 10 litres of milk and some water are added, after which the ratio of milk to water is 5 : 6. How much water was added?",
+      "options": [
+        "36 litres",
+        "40 litres",
+        "44 litres",
+        "48 litres",
+        "54 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Remaining 140 L: milk = 80 L, water = 60 L. After adding 10 L of milk, milk = 90 L.",
+          "For 5 : 6, water = 90 × 6/5 = 108 L, so water added = 108 − 60 = **48 litres**."
+        ],
+        "trap": "36 litres forgets the 10 L of milk added (80 × 6/5 = 96, minus 60)."
+      },
+      "tags": [
+        "mix:remove-add",
+        "template:remove-then-add"
+      ]
+    },
+    {
+      "key": "mx-067",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a mixture of milk and water, milk makes up 60%. When 40 litres of the mixture is removed and 20 litres of water is added, milk makes up 50% of the mixture. What was the original quantity of the mixture?",
+      "options": [
+        "100 litres",
+        "120 litres",
+        "125 litres",
+        "140 litres",
+        "160 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Let y litres remain after removal: milk = 0.6y. After adding water, 0.6y = 0.5(y + 20) → y = 100.",
+          "Original mixture = 100 + 40 = **140 litres**."
+        ],
+        "trap": "100 litres is the quantity left after the removal; the 40 L taken out must be added back."
+      },
+      "tags": [
+        "mix:remove-add",
+        "mix:find-initial",
+        "template:remove-add-initial"
+      ]
+    },
+    {
+      "key": "mx-068",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a mixture, the quantity of water is 40% of the quantity of milk. When 21 litres of the mixture is removed and 12 litres of water is added, the water becomes 60% of the milk. What was the original quantity of the mixture?",
+      "options": [
+        "84 litres",
+        "91 litres",
+        "96 litres",
+        "98 litres",
+        "105 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Milk : water = 5 : 2. After removal: milk 5y, water 2y. Then 2y + 12 = 0.6 × 5y = 3y → y = 12.",
+          "7y = 84 L remained, so the original mixture = 84 + 21 = **105 litres**."
+        ],
+        "trap": "84 litres is what remained after the 21 L was removed."
+      },
+      "tags": [
+        "mix:percent-of-milk",
+        "mix:find-initial",
+        "template:water-percent-of-milk"
+      ]
+    },
+    {
+      "key": "mx-069",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Can A has milk and water in the ratio 5 : 3 and can B has milk and water in the ratio 4 : 1. 24 litres from A and 30 litres from B are poured into an empty drum, and 6 litres of water is then added to the drum. What is the ratio of milk to water in the drum?",
+      "options": [
+        "13 : 5",
+        "3 : 2",
+        "7 : 13",
+        "11 : 9",
+        "13 : 7"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "From A: milk 15, water 9. From B: milk 24, water 6. Total milk 39 L, water 15 L.",
+          "Adding 6 L of water → 39 : 21 = **13 : 7**."
+        ],
+        "trap": "13 : 5 forgets the 6 L of water added to the drum. 7 : 13 is reversed."
+      },
+      "tags": [
+        "mix:two-vessels",
+        "template:two-vessel-mix"
+      ]
+    },
+    {
+      "key": "mx-070",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Some quantity of mixture A (milk and water in the ratio 3 : 1) is mixed with some quantity of mixture B (milk and water in the ratio 2 : 3), and then 10 litres of water is added. The result is 100 litres of a mixture containing equal quantities of milk and water. How many litres of mixture B were used?",
+      "options": [
+        "30 litres",
+        "36 litres",
+        "40 litres",
+        "45 litres",
+        "50 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "A + B = 90 L, and their milk must be 50 L (half of 100). With A = 90 − b: 0.75(90 − b) + 0.4b = 50.",
+          "67.5 − 0.35b = 50 → b = **50 litres** (A = 40 L)."
+        ],
+        "trap": "40 litres is the quantity of A. Also, the 10 L of water brings no milk, so only A and B supply the 50 L of milk."
+      },
+      "tags": [
+        "mix:alligation",
+        "mix:remove-add",
+        "template:vessel-alligation"
+      ]
+    },
+    {
+      "key": "mx-071",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rajan mixes 25 kg of rice costing ₹56 per kg with 20 kg of another variety. He sells the mixture at ₹72 per kg and earns a profit of 20%. What is the cost price of the second variety?",
+      "options": [
+        "₹60 per kg",
+        "₹62 per kg",
+        "₹64 per kg",
+        "₹65 per kg",
+        "₹68 per kg"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Cost price of the mixture = 72 ÷ 1.2 = ₹60 per kg, so 45 kg cost ₹2,700.",
+          "The first variety cost 25 × 56 = ₹1,400, so 20 kg of the second cost ₹1,300 → **₹65 per kg**."
+        ],
+        "trap": "₹60 per kg is the cost of the mixture, not of the second variety."
+      },
+      "tags": [
+        "mix:price-alligation",
+        "template:price-alligation-profit"
+      ]
+    },
+    {
+      "key": "mx-072",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A can contains 80 litres of milk and water in the ratio 5 : 3. 16 litres of the mixture is taken out and replaced with water, and the process is repeated once more. How many litres more water than milk does the can now contain?",
+      "options": [
+        "12 litres",
+        "14 litres",
+        "16 litres",
+        "18 litres",
+        "20 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Milk = 50 × (4/5)² = 32 L, so water = 80 − 32 = 48 L.",
+          "Water exceeds milk by 48 − 32 = **16 litres**."
+        ],
+        "trap": "20 litres removes 10 L of milk in each draw (milk 30, water 50); the second draw holds only 8 L of milk.",
+        "shortcut": "Milk fraction = 5/8 × 16/25 = 2/5, so water − milk = 1/5 of 80 = 16."
+      },
+      "tags": [
+        "mix:replacement",
+        "trap:linear-replacement",
+        "template:repeated-replacement"
+      ]
+    },
+    {
+      "key": "mx-073",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Three containers have milk and water in the ratios 2 : 1, 3 : 2 and 5 : 3. Their contents are mixed in the ratio 3 : 10 : 8 by volume. What is the ratio of milk to water in the mixture?",
+      "options": [
+        "13 : 8",
+        "5 : 3",
+        "8 : 13",
+        "76 : 47",
+        "3 : 2"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "From 3 L: milk 2, water 1. From 10 L: milk 6, water 4. From 8 L: milk 5, water 3.",
+          "Milk 13, water 8 → **13 : 8**."
+        ],
+        "trap": "76 : 47 multiplies the ratio terms by the volumes without converting to fractions first; 5 : 3 just adds the ratio terms."
+      },
+      "tags": [
+        "mix:three-vessels",
+        "template:three-vessel"
+      ]
+    },
+    {
+      "key": "mx-074",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A milkman sells a milk–water mixture at 10% less than the cost price of pure milk and still makes a profit of 20%. Water costs him nothing. What percentage of the mixture is water?",
+      "options": [
+        "10%",
+        "20%",
+        "25%",
+        "30%",
+        "$33\\frac{1}{3}$%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let milk cost ₹1 per litre. Selling price of 1 L of mixture = ₹0.90, and this is 120% of its cost, so the cost = ₹0.75.",
+          "Only milk costs money, so the mixture is 75% milk and **25%** water."
+        ],
+        "trap": "$33\\frac{1}{3}$% is water as a percentage of the milk (25/75), not of the mixture. 30% simply adds 10% and 20%."
+      },
+      "tags": [
+        "mix:water-profit",
+        "trap:wrong-base",
+        "template:water-free-profit"
+      ]
+    },
+    {
+      "key": "mx-075",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "How much water must be evaporated from 90 litres of a 12% salt solution so that the remaining solution has 18% salt?",
+      "options": [
+        "20 litres",
+        "25 litres",
+        "30 litres",
+        "45 litres",
+        "60 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Salt content = 12% of 90 = 10.8 and it does not change. For 18%, the solution must be 10.8 ÷ 0.18 = 60 litres.",
+          "Water evaporated = 90 − 60 = **30 litres**."
+        ],
+        "trap": "60 litres is the quantity of solution left, not the water evaporated."
+      },
+      "tags": [
+        "mix:solution-strength",
+        "template:solution-strength"
+      ]
+    },
+    {
+      "key": "mx-076",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A vessel is full of milk and water in the ratio 5 : 3. 24 litres of the mixture is taken out and replaced with 24 litres of a mixture having milk and water in the ratio 7 : 1, after which milk makes up 75% of the vessel. What is the capacity of the vessel?",
+      "options": [
+        "36 litres",
+        "48 litres",
+        "56 litres",
+        "64 litres",
+        "72 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Each litre swapped raises milk by 7/8 − 5/8 = 1/4 L. Milk must rise from 5/8 to 3/4 of C, i.e. by C/8.",
+          "24 × 1/4 = C/8 → C = **48 litres**."
+        ],
+        "trap": "72 litres treats the incoming liquid as pure milk (24 × 3/8 = C/8)."
+      },
+      "tags": [
+        "mix:replacement",
+        "mix:two-vessels",
+        "template:replace-with-other"
+      ]
+    },
+    {
+      "key": "mx-077",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A drum holds 112 litres of milk and water in the ratio 9 : 5. Some milk and twice as much water are added to it, after which the drum has equal quantities of milk and water. What is the total quantity of liquid added?",
+      "options": [
+        "32 litres",
+        "64 litres",
+        "80 litres",
+        "96 litres",
+        "112 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Milk 72 L, water 40 L. Adding x L of milk and 2x L of water: 72 + x = 40 + 2x → x = 32.",
+          "Total added = 32 + 64 = **96 litres**."
+        ],
+        "trap": "64 litres is only the water added and 32 litres only the milk."
+      },
+      "tags": [
+        "mix:add-milk",
+        "template:add-milk-target"
+      ]
+    },
+    {
+      "key": "mx-078",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A drum contains 180 litres of milk and water in the ratio 7 : 2. Some of the mixture is taken out, and then 8 litres of milk and 32 litres of water are added. The ratio of milk to water becomes 15 : 8. How much mixture was taken out?",
+      "options": [
+        "27 litres",
+        "30 litres",
+        "36 litres",
+        "40 litres",
+        "45 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "After taking out r L: milk 148 − 7r/9, water 72 − 2r/9.",
+          "8(148 − 7r/9) = 15(72 − 2r/9) → 1,184 − 56r/9 = 1,080 − 30r/9 → 26r/9 = 104 → r = **36 litres**.",
+          "Check: milk 112 + 8 = 120, water 32 + 32 = 64 → 15 : 8."
+        ],
+        "trap": "40 litres is the total liquid added (8 + 32), not the quantity taken out."
+      },
+      "tags": [
+        "mix:remove-add",
+        "template:find-removed"
+      ]
+    },
+    {
+      "key": "mx-079",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Vessel A contains 40 litres of milk and water in the ratio 3 : 1 and vessel B contains 36 litres in the ratio 5 : 4. 20 litres is poured from A into B, and then 16 litres is poured from B back into A. What is the ratio of milk to water in A now?",
+      "options": [
+        "3 : 1",
+        "11 : 25",
+        "5 : 3",
+        "9 : 4",
+        "25 : 11"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "20 L from A carries milk 15, water 5; B becomes 56 L with milk 35, water 21. A keeps 20 L (milk 15, water 5).",
+          "16 L of B = 2/7 of it: milk 10, water 6. A: milk 25, water 11 → **25 : 11**."
+        ],
+        "trap": "3 : 1 assumes the pour-back has A's own ratio; it is B's mixture (5 : 3 after the first pour)."
+      },
+      "tags": [
+        "mix:transfer",
+        "template:transfer"
+      ]
+    },
+    {
+      "key": "mx-080",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A tank contains 126 litres of milk and water in the ratio 11 : 7. After 18 litres of the mixture is drawn out, 12 litres of milk is poured in. How much water must now be added so that water makes up 40% of the mixture?",
+      "options": [
+        "2 litres",
+        "4 litres",
+        "6 litres",
+        "8 litres",
+        "10 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Remaining 108 L: milk = 66 L, water = 42 L. With 12 L more milk, milk = 78 L.",
+          "Water 40% → milk 60% → total = 78 ÷ 0.6 = 130 L, so water = 52 L. Add 52 − 42 = **10 litres**."
+        ],
+        "trap": "2 litres leaves out the 12 L of milk (66 ÷ 0.6 = 110 → water 44 L)."
+      },
+      "tags": [
+        "mix:remove-add",
+        "template:remove-then-add"
+      ]
+    },
+    {
+      "key": "mx-081",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A vessel contains milk and water in the ratio 9 : 4. 26 litres of the mixture is taken out and 14 litres of water is added, after which the quantity of water is 60% of the quantity of milk. How much milk was there in the vessel initially?",
+      "options": [
+        "81 litres",
+        "90 litres",
+        "99 litres",
+        "108 litres",
+        "117 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "After removal: milk 9x, water 4x. 4x + 14 = 0.6 × 9x = 5.4x → x = 10.",
+          "130 L remained, so 156 L at first; milk = 9/13 × 156 = **108 litres**."
+        ],
+        "trap": "90 litres is the milk after the removal (9x). Also note that 60% is of the milk, not of the mixture."
+      },
+      "tags": [
+        "mix:remove-add",
+        "mix:find-initial",
+        "trap:wrong-base",
+        "template:remove-add-initial"
+      ]
+    },
+    {
+      "key": "mx-082",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A tank has 176 litres of a mixture in which the quantity of water is 37.5% of the quantity of milk. After 44 litres of the mixture is drawn off, how much water must be added to make the water 62.5% of the milk?",
+      "options": [
+        "18 litres",
+        "24 litres",
+        "28 litres",
+        "30 litres",
+        "32 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "37.5% = 3/8, so milk : water = 8 : 3 → milk 128 L, water 48 L. Drawing off 44 L (1/4) leaves milk 96 L, water 36 L.",
+          "Water needed = 62.5% of 96 = 60 L, so add 60 − 36 = **24 litres**."
+        ],
+        "trap": "32 litres skips the drawing-off (62.5% of 128 = 80, minus 48)."
+      },
+      "tags": [
+        "mix:percent-of-milk",
+        "trap:forgot-removal",
+        "template:water-percent-of-milk"
+      ]
+    },
+    {
+      "key": "mx-083",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In vessel P the quantity of water is 25% of the quantity of milk, and in vessel Q the quantity of water is 50% of the quantity of milk. 75 litres from P and 90 litres from Q are mixed. What is the ratio of milk to water in the mixture?",
+      "options": [
+        "27 : 17",
+        "3 : 8",
+        "5 : 2",
+        "13 : 5",
+        "8 : 3"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "P: milk : water = 4 : 1 → milk 60, water 15. Q: milk : water = 2 : 1 → milk 60, water 30.",
+          "Milk 120 L, water 45 L → **8 : 3**."
+        ],
+        "trap": "27 : 17 treats 25% and 50% as shares of each mixture (P: 56.25 + 18.75, Q: 45 + 45). The percentages are of the milk."
+      },
+      "tags": [
+        "mix:two-vessels",
+        "mix:percent-of-milk",
+        "trap:wrong-base",
+        "template:two-vessel-mix"
+      ]
+    },
+    {
+      "key": "mx-084",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Mixture X has milk and water in the ratio 7 : 5 and mixture Y has milk and water in the ratio 9 : 5. In what ratio should X and Y be mixed so that milk makes up 62.5% of the resulting mixture?",
+      "options": [
+        "7 : 3",
+        "3 : 7",
+        "3 : 4",
+        "4 : 7",
+        "5 : 9"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Milk fractions: X = 7/12, Y = 9/14, target 5/8.",
+          "X : Y = (9/14 − 5/8) : (5/8 − 7/12) = 1/56 : 1/24 = 24 : 56 = **3 : 7**."
+        ],
+        "trap": "7 : 3 sets the differences against the wrong mixture: the gap between Y and the target is X's share."
+      },
+      "tags": [
+        "mix:alligation",
+        "trap:reversed-ratio",
+        "template:vessel-alligation"
+      ]
+    },
+    {
+      "key": "mx-085",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Three varieties of tea costing ₹120, ₹150 and ₹x per kg are mixed in the ratio 1 : 1 : 2. The mixture is sold at ₹176 per kg at a profit of 10%. What is the value of x?",
+      "options": [
+        "₹175",
+        "₹180",
+        "₹185",
+        "₹195",
+        "₹210"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Cost price of the mixture = 176 ÷ 1.1 = ₹160 per kg.",
+          "120 + 150 + 2x = 4 × 160 = 640 → 2x = 370 → x = **₹185**."
+        ],
+        "trap": "₹210 treats the three varieties as mixed in equal amounts ((270 + x) ÷ 3 = 160); the third is 2 parts of 4."
+      },
+      "tags": [
+        "mix:price-alligation",
+        "mix:three-vessels",
+        "template:price-alligation-profit"
+      ]
+    },
+    {
+      "key": "mx-086",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Vessel A has 50 litres of milk and water in the ratio 3 : 2 and vessel B has 40 litres of milk and water in equal quantities. A and B are mixed and 18 litres of the mixture is thrown away. Then the 30 litres in vessel C, which holds milk and water in the ratio 2 : 1, is added. What is the ratio of milk to water in the final mixture?",
+      "options": [
+        "10 : 7",
+        "7 : 5",
+        "5 : 4",
+        "7 : 10",
+        "13 : 10"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "A + B: milk 30 + 20 = 50 L, water 20 + 20 = 40 L (90 L). Throwing away 18 L (1/5) leaves milk 40, water 32.",
+          "Adding C (milk 20, water 10): milk 60, water 42 → **10 : 7**."
+        ],
+        "trap": "7 : 5 skips the 18 L thrown away (70 : 50). 5 : 4 is the A + B mixture before C is added."
+      },
+      "tags": [
+        "mix:three-vessels",
+        "mix:remove-add",
+        "template:three-vessel"
+      ]
+    },
+    {
+      "key": "mx-087",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Prakash buys 80 litres of milk at ₹50 per litre and adds 20 litres of water to it (water costs nothing). While being carried, 10 litres of the mixture is spilt. He sells the rest at ₹56 per litre. What is his profit percentage?",
+      "options": [
+        "26%",
+        "28%",
+        "30%",
+        "32%",
+        "40%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Cost = 80 × 50 = ₹4,000. Mixture = 100 L, of which 90 L is sold for 90 × 56 = ₹5,040.",
+          "Profit = 1,040/4,000 × 100 = **26%**."
+        ],
+        "trap": "40% sells all 100 L and forgets the 10 L spilt."
+      },
+      "tags": [
+        "mix:water-profit",
+        "template:water-free-profit"
+      ]
+    },
+    {
+      "key": "mx-088",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "30 litres of a 40% alcohol solution is mixed with 50 litres of a 24% alcohol solution, and 20 litres of water is then added. What is the concentration of alcohol in the final solution?",
+      "options": [
+        "20%",
+        "22%",
+        "24%",
+        "26%",
+        "30%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Alcohol = 0.4 × 30 + 0.24 × 50 = 12 + 12 = 24 L.",
+          "Total = 30 + 50 + 20 = 100 L → **24%**."
+        ],
+        "trap": "30% is the strength before the 20 L of water is added (24/80)."
+      },
+      "tags": [
+        "mix:solution-strength",
+        "template:solution-strength"
+      ]
+    },
+    {
+      "key": "mx-089",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A container holds 140 litres of milk and water in the ratio 7 : 3. Meena removes 40 litres of the mixture and adds 20 litres of water. She then removes 24 litres of the new mixture. How much water must she now add so that the ratio of milk to water becomes 7 : 8?",
+      "options": [
+        "24 litres",
+        "26 litres",
+        "28 litres",
+        "30 litres",
+        "32 litres"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "After the first removal (100 L left): milk 70, water 30; adding 20 L water → 70 : 50 in 120 L.",
+          "Removing 24 L (1/5): milk 56, water 40. For 7 : 8, water = 64 L, so add **24 litres**."
+        ],
+        "trap": "30 litres ignores the second removal (70 : 50 → water 80, add 30)."
+      },
+      "tags": [
+        "mix:remove-add",
+        "trap:forgot-removal",
+        "template:remove-then-add"
+      ]
+    },
+    {
+      "key": "mx-090",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A container has milk and water in the ratio 5 : 3. After 24 litres of the mixture is removed, 6 litres of pure milk is added, and the ratio of milk to water becomes 2 : 1. How much water was in the container at the beginning?",
+      "options": [
+        "18 litres",
+        "27 litres",
+        "30 litres",
+        "33 litres",
+        "36 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After removal: milk 5x, water 3x. (5x + 6) = 2 × 3x → x = 6, so 48 L remained and 72 L was there at first.",
+          "Initial water = 3/8 × 72 = **27 litres**."
+        ],
+        "trap": "18 litres is the water left after the removal (3x); the removed 24 L also contained 9 L of water."
+      },
+      "tags": [
+        "mix:remove-add",
+        "mix:find-initial",
+        "template:remove-add-initial"
+      ]
+    },
+    {
+      "key": "mx-091",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A vessel contains 210 litres of a mixture in which water is 40% of the milk. A certain quantity of the mixture is taken out and replaced with the same quantity of water, after which water is 75% of the milk. How much mixture was taken out?",
+      "options": [
+        "35 litres",
+        "40 litres",
+        "42 litres",
+        "45 litres",
+        "52.5 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Milk : water = 5 : 2 → milk 150 L, water 60 L. Taking out x L leaves milk 150 − 5x/7 and water 60 − 2x/7, then x L of water goes in.",
+          "60 − 2x/7 + x = 0.75(150 − 5x/7) → 60 + 5x/7 = 112.5 − 15x/28 → 35x/28 = 52.5 → x = **42 litres**.",
+          "Check: milk 120 L, water 48 + 42 = 90 L = 75% of 120."
+        ],
+        "trap": "52.5 litres just adds water (112.5 − 60) and forgets that the mixture taken out removed milk too, lowering the target."
+      },
+      "tags": [
+        "mix:percent-of-milk",
+        "mix:replacement",
+        "template:water-percent-of-milk"
+      ]
+    },
+    {
+      "key": "mx-092",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Vessel A contains milk and water in the ratio 7 : 2 and vessel B in the ratio 4 : 5. 54 litres of a mixture is made by taking A and B in the ratio 2 : 1. Then 6 litres of milk and some water are added to it so that the ratio of milk to water becomes 3 : 2. How much water was added?",
+      "options": [
+        "4 litres",
+        "6 litres",
+        "7 litres",
+        "8 litres",
+        "10 litres"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "36 L of A (milk 28, water 8) + 18 L of B (milk 8, water 10) → milk 36, water 18.",
+          "Milk becomes 42 L; for 3 : 2, water = 28 L, so add 28 − 18 = **10 litres**."
+        ],
+        "trap": "6 litres leaves out the 6 L of milk added (36 : 24 would need only 6 L of water)."
+      },
+      "tags": [
+        "mix:two-vessels",
+        "mix:remove-add",
+        "template:two-vessel-mix"
+      ]
+    },
+    {
+      "key": "mx-093",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Vessel P contains milk and water in the ratio 3 : 2 and vessel Q in the ratio 5 : 1. Contents of P and Q are mixed in the ratio 5 : 3, and some water is then added. The final mixture measures 132 litres and has equal quantities of milk and water. How much water was added?",
+      "options": [
+        "30 litres",
+        "33 litres",
+        "36 litres",
+        "40 litres",
+        "49.5 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take P = 5k, Q = 3k. Milk = 3k + 2.5k = 5.5k, water = 2k + 0.5k = 2.5k.",
+          "Milk is half of 132 L → 5.5k = 66 → k = 12. P + Q = 96 L, so water added = 132 − 96 = **36 litres**."
+        ],
+        "trap": "49.5 litres treats 132 L as the P + Q mixture before the water was added (8k = 132)."
+      },
+      "tags": [
+        "mix:alligation",
+        "mix:two-vessels",
+        "template:vessel-alligation"
+      ]
+    },
+    {
+      "key": "mx-094",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A shopkeeper mixes rice costing ₹40 per kg with rice costing ₹55 per kg and sells the mixture at ₹55 per kg, making a profit of 25%. How many kilograms of the cheaper rice are there in 75 kg of the mixture?",
+      "options": [
+        "20 kg",
+        "44 kg",
+        "50 kg",
+        "55 kg",
+        "60 kg"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Cost price of the mixture = 55 ÷ 1.25 = ₹44 per kg.",
+          "Cheaper : dearer = (55 − 44) : (44 − 40) = 11 : 4, so cheaper = 11/15 × 75 = **55 kg**."
+        ],
+        "trap": "20 kg is the dearer rice. Selling at the dearer rice's price still needs the cheap rice to dominate, since the cost must be only ₹44."
+      },
+      "tags": [
+        "mix:price-alligation",
+        "template:price-alligation-profit"
+      ]
+    },
+    {
+      "key": "mx-095",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A milkman has 40 litres of milk and water in the ratio 7 : 1 in one can and 60 litres of pure milk in another. He paid the same price per litre for all the milk; water costs nothing. He empties both cans into a drum, adds some more water and sells the entire mixture at 10% above the cost price of pure milk, making an overall profit of 32%. How much water did he add?",
+      "options": [
+        "9 litres",
+        "12 litres",
+        "14 litres",
+        "16 litres",
+        "19 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Milk paid for = 35 + 60 = 95 L. The drum holds 100 L before he adds x L of water.",
+          "Revenue/cost = 1.1(100 + x)/95 = 1.32 → 100 + x = 114 → x = **14 litres**."
+        ],
+        "trap": "19 litres ignores the 5 L of water already in the first can (1.1(95 + x) = 125.4)."
+      },
+      "tags": [
+        "mix:water-profit",
+        "mix:two-vessels",
+        "template:water-free-profit"
+      ]
+    },
+    {
+      "key": "mx-096",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "To 75 litres of a 32% acid solution, 15 litres of water is added. How many litres of an 80% acid solution must now be added to obtain a 50% acid solution?",
+      "options": [
+        "45 litres",
+        "54 litres",
+        "60 litres",
+        "70 litres",
+        "75 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Acid = 0.32 × 75 = 24 L in 90 L. Adding x L of 80%: 24 + 0.8x = 0.5(90 + x).",
+          "0.3x = 21 → x = **70 litres**."
+        ],
+        "trap": "45 litres forgets the 15 L of water (24 + 0.8x = 0.5(75 + x))."
+      },
+      "tags": [
+        "mix:solution-strength",
+        "template:solution-strength"
+      ]
+    },
+    {
+      "key": "mx-097",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A vessel contains 200 litres of milk and water in the ratio 3 : 2. 40 litres of the mixture is taken out and replaced with water. Then 50 litres of the new mixture is taken out. How much milk must now be added so that the ratio of milk to water becomes 3 : 2 again?",
+      "options": [
+        "39 litres",
+        "45 litres",
+        "52 litres",
+        "56 litres",
+        "60 litres"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Replacing 40 L (1/5) with water: milk = 120 × 4/5 = 96 L, water = 80 × 4/5 + 40 = 104 L.",
+          "Taking out 50 L (1/4 of 200): milk = 72 L, water = 78 L.",
+          "For 3 : 2, milk = 78 × 3/2 = 117 L, so add 117 − 72 = **45 litres**."
+        ],
+        "trap": "60 litres skips the second removal (96 : 104 → milk 156, add 60). That 50 L takes out a quarter of both liquids."
+      },
+      "tags": [
+        "mix:remove-add",
+        "trap:forgot-removal",
+        "template:remove-then-add"
+      ]
+    },
+    {
+      "key": "mx-098",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A vessel contains milk and water in the ratio 4 : 1. 25 litres of the mixture is taken out and replaced with 25 litres of another mixture that has milk and water in the ratio 2 : 3. The ratio of milk to water in the vessel becomes 3 : 1. How many litres of mixture does the vessel hold?",
+      "options": [
+        "150 litres",
+        "175 litres",
+        "180 litres",
+        "200 litres",
+        "225 litres"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The added 25 L brings 10 L of milk and 15 L of water. After removal: milk 4x, water x.",
+          "(4x + 10) = 3(x + 15) → x = 35, so 175 L remained; the vessel holds 175 + 25 = **200 litres** (the volume is unchanged by the swap)."
+        ],
+        "trap": "175 litres is the quantity just after the 25 L was taken out; the replacement brings it back to 200 L."
+      },
+      "tags": [
+        "mix:replacement",
+        "mix:find-initial",
+        "template:remove-add-initial"
+      ]
+    },
+    {
+      "key": "mx-099",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A grocer has two varieties of pulses. If he mixes the cheaper and the costlier varieties in the ratio 3 : 2 and sells the mixture at ₹66 per kg, he gains 20%. If he mixes them in the ratio 2 : 3 and sells at the same price, he gains 10%. What is the cost price of the costlier variety?",
+      "options": [
+        "₹45 per kg",
+        "₹55 per kg",
+        "₹65 per kg",
+        "₹70 per kg",
+        "₹75 per kg"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Costs per kg of the two mixtures: 66 ÷ 1.2 = ₹55 and 66 ÷ 1.1 = ₹60.",
+          "So 3c + 2d = 275 and 2c + 3d = 300. Adding: c + d = 115; subtracting: d − c = 25.",
+          "Costlier d = (115 + 25)/2 = **₹70 per kg** (cheaper ₹45)."
+        ],
+        "trap": "₹45 per kg is the cheaper variety, and ₹55 per kg is the cost of the 3 : 2 mixture, not of either variety."
+      },
+      "tags": [
+        "mix:price-alligation",
+        "trap:profit-on-sp",
+        "template:price-alligation-profit"
+      ]
+    },
+    {
+      "key": "mx-100",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Some quantity of a 20% acid solution is mixed with some quantity of a 60% acid solution to make 100 litres. Then 25 litres of this mixture is replaced with water, and the final solution is 30% acid. How many litres of the 20% solution were used?",
+      "options": [
+        "25 litres",
+        "37.5 litres",
+        "50 litres",
+        "62.5 litres",
+        "75 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Replacing 25 L of 100 L with water keeps 3/4 of the acid: strength before = 30% ÷ 0.75 = 40%.",
+          "20% : 60% = (60 − 40) : (40 − 20) = 1 : 1, so **50 litres** of the 20% solution."
+        ],
+        "trap": "75 litres treats 30% as the strength straight after mixing (ratio 3 : 1) and ignores the replacement with water."
+      },
+      "tags": [
+        "mix:solution-strength",
+        "mix:replacement",
+        "template:solution-strength"
+      ]
+    }
+  ]
+}
