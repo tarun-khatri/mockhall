@@ -2372,6 +2372,822 @@
         "simplification:nested-brackets",
         "simplification:fraction-answer"
       ]
+    },
+    {
+      "key": "sm-091",
+      "subtype": "powers-roots",
+      "difficulty": "easy",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt{1764} + 15^{2} - 9^{3} \\div 27 = ?$",
+      "options": [
+        "230",
+        "240",
+        "250",
+        "260",
+        "270"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$\\sqrt{1764} = 42$, $15^{2} = 225$, $9^{3} = 729$ and $729 \\div 27 = 27$",
+          "$42 + 225 - 27 = 240$",
+          "So, ? = **240**"
+        ],
+        "trap": "**250** takes $\\sqrt{1764}$ as 52 or $729 \\div 27$ as 17; $42^{2} = 1764$ and $27 \\times 27 = 729$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-092",
+      "subtype": "powers-roots",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$?^{2} + 17^{2} = 26^{2} + 13$",
+      "options": [
+        "20",
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$26^{2} + 13 = 676 + 13 = 689$",
+          "$?^{2} = 689 - 289 = 400$",
+          "$? = \\sqrt{400} = 20$ (positive root), so ? = **20**"
+        ],
+        "trap": "Taking $26^{2}$ as 576 gives $?^{2} = 300$, not a perfect square; $26^{2} = 676$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:square-unknown",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-093",
+      "subtype": "powers-roots",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$3^{?} \\times 27 = 81 \\times 243 \\div 9$",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Write everything as powers of 3: $3^{?} \\times 3^{3} = 3^{4} \\times 3^{5} \\div 3^{2} = 3^{7}$",
+          "$? + 3 = 7$",
+          "So, ? = **4**"
+        ],
+        "trap": "**7** forgets the $\\times 27$ on the left ($3^{3}$ must be moved across as $-3$ in the exponent)."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:power-unknown",
+        "trick:same-base"
+      ]
+    },
+    {
+      "key": "sm-094",
+      "subtype": "powers-roots",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt[3]{2744} \\times \\sqrt{256} - 13^{2} = ?$",
+      "options": [
+        "35",
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$\\sqrt[3]{2744} = 14$ and $\\sqrt{256} = 16$",
+          "$14 \\times 16 = 224$ and $13^{2} = 169$",
+          "$224 - 169 = 55$, so ? = **55**"
+        ],
+        "trap": "**45** takes $13^{2}$ as 179; $13^{2} = 169$. Also check $14^{3} = 2744$ exactly, so the cube root is 14."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-095",
+      "subtype": "powers-roots",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt{?} + \\sqrt{1089} = 12^{2} \\div 3 + 7$",
+      "options": [
+        "324",
+        "361",
+        "400",
+        "441",
+        "484"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$12^{2} \\div 3 + 7 = 48 + 7 = 55$ and $\\sqrt{1089} = 33$",
+          "$\\sqrt{?} = 55 - 33 = 22$",
+          "$? = 22^{2} = 484$, so ? = **484**"
+        ],
+        "trap": "Stopping at $\\sqrt{?} = 22$ and not squaring is the classic slip. **441** ($21^{2}$) comes from taking $\\sqrt{1089}$ as 34; $33^{2} = 1089$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-096",
+      "subtype": "powers-roots",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$(14^{2} + 9^{3}) \\div 25 + \\sqrt[3]{3375} = ?$",
+      "options": [
+        "47",
+        "52",
+        "57",
+        "62",
+        "67"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$14^{2} = 196$, $9^{3} = 729$, so $(196 + 729) \\div 25 = 925 \\div 25 = 37$",
+          "$\\sqrt[3]{3375} = 15$",
+          "$37 + 15 = 52$, so ? = **52**"
+        ],
+        "trap": "**67** takes $\\sqrt[3]{3375}$ as 30, confusing it with $\\sqrt{900}$; $15^{3} = 3375$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-097",
+      "subtype": "powers-roots",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$?^{2} - 23^{2} = 18 \\times 25 + 4^{4} + 61$",
+      "options": [
+        "36",
+        "38",
+        "42",
+        "44",
+        "48"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$18 \\times 25 = 450$ and $4^{4} = 256$, so the right side is $450 + 256 + 61 = 767$",
+          "$?^{2} = 767 + 529 = 1296$",
+          "$? = 36$ (positive root), so ? = **36**"
+        ],
+        "trap": "Taking $4^{4}$ as $4 \\times 4 = 16$ or as 64 leaves a non-square; $4^{4} = 256$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:square-unknown",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-098",
+      "subtype": "powers-roots",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$5^{? + 2} \\div 25^{2} = 125^{3} \\div 5^{4}$",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$25^{2} = 5^{4}$ and $125^{3} = 5^{9}$",
+          "$5^{? + 2 - 4} = 5^{9 - 4} \\Rightarrow ? - 2 = 5$",
+          "So, ? = **7**"
+        ],
+        "trap": "**5** takes $25^{2}$ as $5^{2}$; since $25 = 5^{2}$, $25^{2} = 5^{4}$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:power-unknown",
+        "trick:same-base"
+      ]
+    },
+    {
+      "key": "sm-099",
+      "subtype": "powers-roots",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt{5929} - \\sqrt[3]{6859} + 21^{2} \\div 7 = ?$",
+      "options": [
+        "49",
+        "64",
+        "81",
+        "100",
+        "121"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$\\sqrt{5929} = 77$ and $\\sqrt[3]{6859} = 19$",
+          "$21^{2} \\div 7 = 441 \\div 7 = 63$",
+          "$77 - 19 + 63 = 121$, so ? = **121**"
+        ],
+        "trap": "**64** takes $21^{2}$ as $21 \\times 2 = 42$, so $42 \\div 7 = 6$ and $77 - 19 + 6 = 64$; $21^{2} = 441$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-100",
+      "subtype": "powers-roots",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$?^{3} - 12^{3} = 27^{2} \\times 2 + 189$",
+      "options": [
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$27^{2} \\times 2 = 729 \\times 2 = 1458$, so the right side is $1458 + 189 = 1647$",
+          "$?^{3} = 1647 + 1728 = 3375$",
+          "$? = \\sqrt[3]{3375} = 15$, so ? = **15**"
+        ],
+        "trap": "Add $12^{3} = 1728$, not $12^{2} = 144$: $1647 + 144 = 1791$ is not a cube, and picking the nearest option from it is a guess. $1647 + 1728 = 3375 = 15^{3}$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:cube-unknown",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-101",
+      "subtype": "powers-roots",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt{18^{2} + 24^{2}} \\times \\sqrt{?} = 47^{2} - 1609$",
+      "options": [
+        "256",
+        "289",
+        "324",
+        "361",
+        "400"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$\\sqrt{324 + 576} = \\sqrt{900} = 30$",
+          "$47^{2} - 1609 = 2209 - 1609 = 600$, so $\\sqrt{?} = 600 \\div 30 = 20$",
+          "$? = 400$, so ? = **400**"
+        ],
+        "trap": "$\\sqrt{18^{2} + 24^{2}}$ is not $18 + 24 = 42$; add the squares first (900), then take the root."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-102",
+      "subtype": "powers-roots",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt{?} \\div 4 + 12^{2} = 13^{2} - \\sqrt{361}$",
+      "options": [
+        "441",
+        "484",
+        "529",
+        "576",
+        "784"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$13^{2} - \\sqrt{361} = 169 - 19 = 150$",
+          "$\\sqrt{?} \\div 4 = 150 - 144 = 6 \\Rightarrow \\sqrt{?} = 24$",
+          "$? = 576$, so ? = **576**"
+        ],
+        "trap": "**784** takes $\\sqrt{361}$ as 18, giving $\\sqrt{?} = 28$; $19^{2} = 361$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-103",
+      "subtype": "powers-roots",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$16^{3} \\div 8^{?} = 2^{?}$",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$16^{3} = 2^{12}$ and $8^{?} = 2^{3 \\times ?}$",
+          "$12 - 3 \\times ? = ? \\Rightarrow 4 \\times ? = 12$",
+          "So, ? = **3**"
+        ],
+        "trap": "**4** solves $12 = 3 \\times ?$ and ignores the ? on the right side; both ?s stand for the same number."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:power-unknown",
+        "trick:same-base",
+        "simplification:unknown-both-sides"
+      ]
+    },
+    {
+      "key": "sm-104",
+      "subtype": "powers-roots",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt{?} \\times \\sqrt[3]{3375} - 15^{2} = 37^{2} - 41 \\times 29$",
+      "options": [
+        "625",
+        "676",
+        "729",
+        "784",
+        "841"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$37^{2} = 1369$ and $41 \\times 29 = 35^{2} - 6^{2} = 1189$, so the right side is $180$",
+          "$\\sqrt{?} \\times 15 = 180 + 225 = 405 \\Rightarrow \\sqrt{?} = 27$",
+          "$? = 729$, so ? = **729**"
+        ],
+        "trap": "**784** ($28^{2}$) comes from taking $41 \\times 29$ as 1174 ($\\sqrt{?} = 28$); use $41 \\times 29 = (35 + 6)(35 - 6) = 1225 - 36$.",
+        "shortcut": "$41 \\times 29 = 35^{2} - 6^{2} = 1189$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "trick:algebraic-identity"
+      ]
+    },
+    {
+      "key": "sm-105",
+      "subtype": "powers-roots",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$?^{2} = 47^{2} - 2 \\times 47 \\times 23 + 23^{2} + 5^{3} - 25$",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "$47^{2} - 2 \\times 47 \\times 23 + 23^{2} = (47 - 23)^{2} = 24^{2} = 576$",
+          "$5^{3} - 25 = 100$, so $?^{2} = 676$",
+          "$? = 26$ (positive root), so ? = **26**"
+        ],
+        "trap": "**24** stops at $(47 - 23)$ and forgets the $5^{3} - 25$ that follows.",
+        "shortcut": "$a^{2} - 2ab + b^{2} = (a - b)^{2}$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:square-unknown",
+        "trick:algebraic-identity"
+      ]
+    },
+    {
+      "key": "sm-106",
+      "subtype": "powers-roots",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$4^{? - 1} \\times 8^{2} = 2^{3} \\times 16^{3} \\times \\sqrt{256}$",
+      "options": [
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "14"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Left: $2^{2(? - 1)} \\times 2^{6} = 2^{2 \\times ? + 4}$",
+          "Right: $2^{3} \\times 2^{12} \\times 2^{4} = 2^{19}$",
+          "$2 \\times ? + 4 = 19 \\Rightarrow ? = 7.5$, so ? = **7.5**"
+        ],
+        "trap": "**14** treats $4^{? - 1}$ as $2^{? - 1}$; since $4 = 2^{2}$, the exponent doubles to $2(? - 1)$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:power-unknown",
+        "trick:same-base",
+        "simplification:decimal-answer"
+      ]
+    },
+    {
+      "key": "sm-107",
+      "subtype": "powers-roots",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{\\sqrt{?} \\times 12^{2}}{\\sqrt[3]{1331}} = 46^{2} - 4 \\times 7^{3} - 312$",
+      "options": [
+        "900",
+        "961",
+        "1024",
+        "1089",
+        "1156"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Right side: $2116 - 4 \\times 343 - 312 = 2116 - 1372 - 312 = 432$",
+          "$\\sqrt[3]{1331} = 11$, so $\\sqrt{?} \\times 144 = 432 \\times 11 = 4752 \\Rightarrow \\sqrt{?} = 33$",
+          "$? = 33^{2} = 1089$, so ? = **1089**"
+        ],
+        "trap": "Moving the 11 the wrong way ($\\sqrt{?} \\times 144 = 432 \\div 11$) gives no perfect square; the 11 divides on the left, so it multiplies 432 on the right. $7^{3} = 343$, so $4 \\times 7^{3} = 1372$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-108",
+      "subtype": "powers-roots",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\sqrt{?} \\times \\sqrt{?} + \\sqrt{?} = 19 \\times 20$",
+      "options": [
+        "324",
+        "361",
+        "400",
+        "441",
+        "484"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Let $\\sqrt{?} = t$; then $t \\times t + t = t(t + 1) = 19 \\times 20$",
+          "So $t = 19$ (t is a positive root)",
+          "$? = 19^{2} = 361$, so ? = **361**"
+        ],
+        "trap": "**400** reads $19 \\times 20$ as $t^{2}$ with $t = 20$; check: $400 + 20 = 420 \\neq 380$, while $361 + 19 = 380$."
+      },
+      "tags": [
+        "simplification:powers-roots",
+        "simplification:roots",
+        "simplification:unknown-both-sides"
+      ]
+    },
+    {
+      "key": "sm-109",
+      "subtype": "fractions",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{7}{12} \\text{ of } 1296 - \\frac{5}{9} \\text{ of } 1053 + 4\\frac{1}{2} \\times 18 = ?$",
+      "options": [
+        "252",
+        "262",
+        "272",
+        "282",
+        "292"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$\\frac{7}{12} \\times 1296 = 756$ and $\\frac{5}{9} \\times 1053 = 585$",
+          "$4\\frac{1}{2} \\times 18 = 81$",
+          "$756 - 585 + 81 = 252$, so ? = **252**"
+        ],
+        "trap": "**272** takes $\\frac{5}{9} \\times 1053$ as 565; $1053 \\div 9 = 117$ and $117 \\times 5 = 585$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:fraction-chain"
+      ]
+    },
+    {
+      "key": "sm-110",
+      "subtype": "fractions",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$3\\frac{1}{5} \\times 4\\frac{3}{8} - 2\\frac{1}{4} \\div \\frac{9}{20} = ?$",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "$\\frac{16}{5} \\times \\frac{35}{8} = 14$",
+          "$\\frac{9}{4} \\div \\frac{9}{20} = \\frac{9}{4} \\times \\frac{20}{9} = 5$",
+          "$14 - 5 = 9$, so ? = **9**"
+        ],
+        "trap": "Multiplying the whole parts and the fraction parts separately ($3 \\times 4 + \\frac{1}{5} \\times \\frac{3}{8}$) misses the cross terms; convert to improper fractions."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:mixed-fractions"
+      ]
+    },
+    {
+      "key": "sm-111",
+      "subtype": "fractions",
+      "difficulty": "medium",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{2}{5} \\text{ of } ? = \\frac{3}{4} \\text{ of } 248 + \\frac{2}{7} \\text{ of } 434$",
+      "options": [
+        "124",
+        "725",
+        "750",
+        "775",
+        "800"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$\\frac{3}{4} \\times 248 = 186$ and $\\frac{2}{7} \\times 434 = 124$",
+          "$\\frac{2}{5} \\times ? = 310$",
+          "$? = 310 \\times \\frac{5}{2} = 775$, so ? = **775**"
+        ],
+        "trap": "**124** multiplies 310 by $\\frac{2}{5}$ instead of dividing by it."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-112",
+      "subtype": "fractions",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$1\\frac{2}{3} \\div 2\\frac{1}{2} \\times 1\\frac{1}{8} - \\frac{1}{4} = ?$",
+      "options": [
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{3}{4}$"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Left to right: $\\frac{5}{3} \\div \\frac{5}{2} = \\frac{2}{3}$, then $\\frac{2}{3} \\times \\frac{9}{8} = \\frac{3}{4}$",
+          "$\\frac{3}{4} - \\frac{1}{4} = \\frac{1}{2}$",
+          "So, ? = $\\frac{1}{2}$"
+        ],
+        "trap": "$\\frac{3}{4}$ forgets to subtract $\\frac{1}{4}$ at the end; multiplying $2\\frac{1}{2} \\times 1\\frac{1}{8}$ first breaks the left-to-right rule and gives no option."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:mixed-fractions",
+        "trap:left-to-right",
+        "simplification:fraction-answer"
+      ]
+    },
+    {
+      "key": "sm-113",
+      "subtype": "fractions",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{3\\frac{1}{3} + 2\\frac{1}{2}}{4\\frac{2}{3} - 1\\frac{1}{6}} \\times ? = 15$",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "25"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Numerator: $\\frac{10}{3} + \\frac{5}{2} = \\frac{35}{6}$; denominator: $\\frac{14}{3} - \\frac{7}{6} = \\frac{21}{6}$",
+          "$\\frac{35}{6} \\div \\frac{21}{6} = \\frac{5}{3}$, so $\\frac{5}{3} \\times ? = 15$",
+          "$? = 9$, so ? = **9**"
+        ],
+        "trap": "**25** turns the complex fraction upside down ($\\frac{3}{5} \\times ? = 15$). Numerator over denominator is $\\frac{35}{6} \\div \\frac{21}{6} = \\frac{5}{3}$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:complex-fraction",
+        "simplification:mixed-fractions"
+      ]
+    },
+    {
+      "key": "sm-114",
+      "subtype": "fractions",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{5}{6} \\text{ of } \\frac{9}{10} \\text{ of } \\frac{4}{15} \\text{ of } ? = 22\\frac{1}{2} \\times 4 - 54$",
+      "options": [
+        "180",
+        "190",
+        "200",
+        "210",
+        "220"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Right side: $90 - 54 = 36$",
+          "$\\frac{5}{6} \\times \\frac{9}{10} \\times \\frac{4}{15} = \\frac{180}{900} = \\frac{1}{5}$",
+          "$\\frac{?}{5} = 36 \\Rightarrow ? = 180$, so ? = **180**"
+        ],
+        "trap": "**200** uses $22\\frac{1}{2} \\times 4 = 94$; it is $90$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:fraction-chain",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-115",
+      "subtype": "fractions",
+      "difficulty": "hard",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{?}{7} + \\frac{?}{8} = \\frac{1}{2} + \\frac{3}{14}$",
+      "options": [
+        "$\\frac{3}{8}$",
+        "$\\frac{14}{15}$",
+        "$2\\frac{1}{3}$",
+        "$2\\frac{1}{2}$",
+        "$2\\frac{2}{3}$"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Left: $? \\times \\left(\\frac{1}{7} + \\frac{1}{8}\\right) = ? \\times \\frac{15}{56}$",
+          "Right: $\\frac{7}{14} + \\frac{3}{14} = \\frac{5}{7}$, so $? = \\frac{5}{7} \\times \\frac{56}{15} = \\frac{8}{3}$",
+          "So, ? = $2\\frac{2}{3}$"
+        ],
+        "trap": "$\\frac{3}{8}$ divides the wrong way ($\\frac{15}{56} \\div \\frac{5}{7}$); $\\frac{14}{15}$ adds the right side as $\\frac{1 + 3}{2 + 14} = \\frac{1}{4}$. Use common denominators, then divide $\\frac{5}{7}$ by $\\frac{15}{56}$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:unknown-both-sides",
+        "simplification:fraction-answer"
+      ]
+    },
+    {
+      "key": "sm-116",
+      "subtype": "fractions",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\left(2\\frac{1}{4}\\right)^{2} \\div \\left(1\\frac{1}{2}\\right)^{3} \\times \\frac{?}{3} = 1\\frac{1}{4} + \\frac{5}{12}$",
+      "options": [
+        "3",
+        "$3\\frac{1}{3}$",
+        "$3\\frac{1}{2}$",
+        "$3\\frac{2}{3}$",
+        "$4\\frac{1}{6}$"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "$\\left(\\frac{9}{4}\\right)^{2} = \\frac{81}{16}$ and $\\left(\\frac{3}{2}\\right)^{3} = \\frac{27}{8}$; $\\frac{81}{16} \\div \\frac{27}{8} = \\frac{3}{2}$",
+          "$\\frac{3}{2} \\times \\frac{?}{3} = \\frac{?}{2}$; right side $= \\frac{15}{12} + \\frac{5}{12} = \\frac{5}{3}$",
+          "$? = \\frac{10}{3}$, so ? = $3\\frac{1}{3}$"
+        ],
+        "trap": "Squaring $2\\frac{1}{4}$ as $4\\frac{1}{16}$ (squaring the parts separately) gives no option; it is $\\left(\\frac{9}{4}\\right)^{2} = 5\\frac{1}{16}$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:mixed-fractions",
+        "simplification:fraction-answer",
+        "trick:squares-cubes"
+      ]
+    },
+    {
+      "key": "sm-117",
+      "subtype": "fractions",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$5\\frac{1}{4} - \\left[2\\frac{1}{3} \\div \\left\\{3\\frac{1}{2} - \\left(1\\frac{5}{6} - \\frac{2}{3}\\right)\\right\\}\\right] = ?$",
+      "options": [
+        "$2\\frac{11}{12}$",
+        "$3\\frac{1}{4}$",
+        "$3\\frac{3}{4}$",
+        "4",
+        "$4\\frac{1}{4}$"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "$1\\frac{5}{6} - \\frac{2}{3} = \\frac{7}{6}$; $3\\frac{1}{2} - \\frac{7}{6} = \\frac{14}{6} = \\frac{7}{3}$",
+          "$2\\frac{1}{3} \\div \\frac{7}{3} = 1$",
+          "$5\\frac{1}{4} - 1 = 4\\frac{1}{4}$, so ? = $4\\frac{1}{4}$"
+        ],
+        "trap": "$2\\frac{11}{12}$ opens the round bracket without flipping the sign of $\\frac{2}{3}$: $3\\frac{1}{2} - 1\\frac{5}{6} - \\frac{2}{3} = 1$, so the square bracket becomes $\\frac{7}{3}$. A minus before ( ) turns $-\\frac{2}{3}$ into $+\\frac{2}{3}$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:mixed-fractions",
+        "simplification:nested-brackets",
+        "simplification:fraction-answer"
+      ]
+    },
+    {
+      "key": "sm-118",
+      "subtype": "fractions",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{4}{7} \\text{ of } \\frac{21}{32} \\text{ of } ? \\div \\frac{3}{4} = 3\\frac{3}{4} \\times 2\\frac{2}{5} \\times 4$",
+      "options": [
+        "72",
+        "76",
+        "80",
+        "84",
+        "128"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Right side: $\\frac{15}{4} \\times \\frac{12}{5} \\times 4 = 9 \\times 4 = 36$",
+          "\"of\" first: $\\frac{4}{7} \\times \\frac{21}{32} = \\frac{3}{8}$, so $\\frac{3}{8} \\times ? \\div \\frac{3}{4} = \\frac{?}{2}$",
+          "$\\frac{?}{2} = 36 \\Rightarrow ? = 72$, so ? = **72**"
+        ],
+        "trap": "**128** multiplies by $\\frac{3}{4}$ instead of dividing ($\\frac{9}{32} \\times ? = 36$)."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:fraction-chain",
+        "trap:of-precedence",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-119",
+      "subtype": "fractions",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\frac{5}{8} - \\frac{3}{8} \\times \\frac{2}{3} \\div \\frac{4}{5} + ? = 1\\frac{1}{16}$",
+      "options": [
+        "$\\frac{5}{8}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{3}{4}$",
+        "$\\frac{5}{6}$",
+        "$\\frac{41}{48}$"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "× and ÷ first, left to right: $\\frac{3}{8} \\times \\frac{2}{3} = \\frac{1}{4}$, $\\frac{1}{4} \\div \\frac{4}{5} = \\frac{5}{16}$",
+          "$\\frac{5}{8} - \\frac{5}{16} = \\frac{5}{16}$, so $? = \\frac{17}{16} - \\frac{5}{16} = \\frac{12}{16}$",
+          "So, ? = $\\frac{3}{4}$"
+        ],
+        "trap": "$\\frac{41}{48}$ subtracts first ($\\frac{5}{8} - \\frac{3}{8} = \\frac{1}{4}$, then $\\times \\frac{2}{3} \\div \\frac{4}{5} = \\frac{5}{24}$); × and ÷ come before −."
+      },
+      "tags": [
+        "simplification:fractions",
+        "trap:bodmas-order",
+        "simplification:fraction-answer",
+        "simplification:missing-inside"
+      ]
+    },
+    {
+      "key": "sm-120",
+      "subtype": "fractions",
+      "difficulty": "extreme",
+      "prompt": "What value should come in place of the question mark (?) in the following question?\n\n$\\left(\\frac{3}{5}\\right)^{?} \\times \\left(\\frac{25}{9}\\right)^{2} = \\frac{27}{125} \\div \\frac{9}{25}$",
+      "options": [
+        "-3",
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "$\\left(\\frac{25}{9}\\right)^{2} = \\left(\\frac{5}{3}\\right)^{4} = \\left(\\frac{3}{5}\\right)^{-4}$",
+          "Right: $\\left(\\frac{3}{5}\\right)^{3} \\div \\left(\\frac{3}{5}\\right)^{2} = \\left(\\frac{3}{5}\\right)^{1}$",
+          "$? - 4 = 1$, so ? = **5**"
+        ],
+        "trap": "**-3** treats $\\left(\\frac{25}{9}\\right)^{2}$ as $\\left(\\frac{3}{5}\\right)^{4}$; it is the reciprocal, so its exponent is $-4$."
+      },
+      "tags": [
+        "simplification:fractions",
+        "simplification:power-unknown",
+        "trick:same-base"
+      ]
     }
   ]
 }
