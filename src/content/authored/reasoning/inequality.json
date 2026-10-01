@@ -1386,6 +1386,1500 @@
         "inequality:combined",
         "trick:chain-direction"
       ]
+    },
+    {
+      "key": "iq-051",
+      "subtype": "combined",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** E = L > H ≥ K; F ≤ H < Z; P > Z\n\n**Conclusions:**\nI. E > Z\nII. P > F",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: E = L > H ≥ K; F ≤ H < Z; P > Z.",
+          "I. E > Z: E = L > H < Z → the signs change direction ('>' then '<'), so no relation between E and Z can be fixed → **not definitely true**.",
+          "II. P > F: P > Z > H ≥ F → every sign points the same way and at least one is strict, so P > F → **true**.",
+          "Hence only II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "E > Z is tempting if you read only part of the chain; the signs between E and Z point in opposite directions, so no relation can be fixed."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-052",
+      "subtype": "combined",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** H ≥ U > T, A = T ≥ F, Q < F ≤ G\n\n**Conclusions:**\nI. H > Q\nII. U > F",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: H ≥ U > T, A = T ≥ F, Q < F ≤ G.",
+          "I. H > Q: H ≥ U > T ≥ F > Q → every sign points the same way and at least one is strict, so H > Q → **true**.",
+          "II. U > F: U > T ≥ F → every sign points the same way and at least one is strict, so U > F → **true**.",
+          "Hence both I and II are true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "H and Q sit in different statements, so H > Q is often rejected as \"no relation\"; joined at T and F the path H ≥ U > T ≥ F > Q runs one way throughout."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-053",
+      "subtype": "combined",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** F ≥ P = U < Z, T > U ≥ Q, A ≤ Q = L, G ≥ Z\n\n**Conclusions:**\nI. G > T\nII. T ≥ G",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: F ≥ P = U < Z, T > U ≥ Q, A ≤ Q = L, G ≥ Z.",
+          "I. G > T: G ≥ Z > U < T → the signs change direction ('≥' then '<'), so no relation between G and T can be fixed → **not definitely true**.",
+          "II. T ≥ G: T > U < Z ≤ G → the signs change direction ('>' then '<'), so no relation between T and G can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between G and T is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about G and T and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-054",
+      "subtype": "combined",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** S ≤ G < E = B, Y ≥ E ≥ J, H > J = M, K ≤ M\n\n**Conclusions:**\nI. S < Y\nII. K < B",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: S ≤ G < E = B, Y ≥ E ≥ J, H > J = M, K ≤ M.",
+          "I. S < Y: S ≤ G < E ≤ Y → every sign points the same way and at least one is strict, so S < Y → **true**.",
+          "II. K < B: K ≤ M = J ≤ E = B → there is no strict sign on the way, so only K ≤ B is certain → **not definitely true**.",
+          "Hence only I is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "K < B looks right because the signs point the same way, but there is no strict sign between them — only K ≤ B is certain."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-055",
+      "subtype": "combined",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** W > D ≥ Y; N = Y ≤ B < G; K ≥ G; U < N\n\n**Conclusions:**\nI. W > B\nII. K > U",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: W > D ≥ Y; N = Y ≤ B < G; K ≥ G; U < N.",
+          "I. W > B: W > D ≥ Y ≤ B → the signs change direction ('>' then '≤'), so no relation between W and B can be fixed → **not definitely true**.",
+          "II. K > U: K ≥ G > B ≥ Y = N > U → every sign points the same way and at least one is strict, so K > U → **true**.",
+          "Hence only II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "W > B is tempting if you read only part of the chain; the signs between W and B point in opposite directions, so no relation can be fixed."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-056",
+      "subtype": "combined",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** N ≤ J = G > C, R ≥ G ≥ E, M = E > K, B ≤ K\n\n**Conclusions:**\nI. C = B\nII. C > B",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: N ≤ J = G > C, R ≥ G ≥ E, M = E > K, B ≤ K.",
+          "I. C = B: C < G ≥ E > K ≥ B → the signs change direction ('<' then '≥'), so no relation between C and B can be fixed → **not definitely true**.",
+          "II. C > B: C < G ≥ E > K ≥ B → the signs change direction ('<' then '≥'), so no relation between C and B can be fixed → **not definitely true**.",
+          "I and II are about the same pair but do not cover every possible case, so this is not an either–or.",
+          "Hence neither I nor II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like an either–or pair, but they do not cover every case: C < B is also possible, so neither is definitely true."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "trick:fake-either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-057",
+      "subtype": "combined",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** W = K ≥ N > E, P < N ≤ F, R ≥ F = U\n\n**Conclusions:**\nI. W > P\nII. U ≥ N",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: W = K ≥ N > E, P < N ≤ F, R ≥ F = U.",
+          "I. W > P: W = K ≥ N > P → every sign points the same way and at least one is strict, so W > P → **true**.",
+          "II. U ≥ N: U = F ≥ N → every sign is '≥' or '=' with no strict sign, so exactly U ≥ N is known → **true**.",
+          "Hence both I and II are true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "U ≥ N is easy to reject for want of a strict sign, but a '≥' conclusion needs none: every link between U and N is '≥' or '='."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-058",
+      "subtype": "combined",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** E < Y ≤ U, R = U > B, L ≥ B ≥ G, F > L\n\n**Conclusions:**\nI. E < R\nII. L < R",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: E < Y ≤ U, R = U > B, L ≥ B ≥ G, F > L.",
+          "I. E < R: E < Y ≤ U = R → every sign points the same way and at least one is strict, so E < R → **true**.",
+          "II. L < R: L ≥ B < U = R → the signs change direction ('≥' then '<'), so no relation between L and R can be fixed → **not definitely true**.",
+          "Hence only I is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "L < R is tempting if you read only part of the chain; the signs between L and R point in opposite directions, so no relation can be fixed."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-059",
+      "subtype": "combined",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** Y ≥ D = S ≤ M, L < S > B, T ≥ M, J = B\n\n**Conclusions:**\nI. Y ≥ T\nII. T > L",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: Y ≥ D = S ≤ M, L < S > B, T ≥ M, J = B.",
+          "I. Y ≥ T: Y ≥ D = S ≤ M ≤ T → the signs change direction ('≥' then '≤'), so no relation between Y and T can be fixed → **not definitely true**.",
+          "II. T > L: T ≥ M ≥ S > L → every sign points the same way and at least one is strict, so T > L → **true**.",
+          "Hence only II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Y ≥ T is tempting if you read only part of the chain; the signs between Y and T point in opposite directions, so no relation can be fixed."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-060",
+      "subtype": "combined",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** Q > P ≥ A; J = A < W; G ≤ W ≥ B; N > B\n\n**Conclusions:**\nI. G < P\nII. J < P",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: Q > P ≥ A; J = A < W; G ≤ W ≥ B; N > B.",
+          "I. G < P: G ≤ W > A ≤ P → the signs change direction ('≤' then '>'), so no relation between G and P can be fixed → **not definitely true**.",
+          "II. J < P: J = A ≤ P → there is no strict sign on the way, so only J ≤ P is certain → **not definitely true**.",
+          "Hence neither I nor II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "G < P is tempting if you read only part of the chain; the signs between G and P point in opposite directions, so no relation can be fixed."
+      },
+      "tags": [
+        "inequality:combined",
+        "trick:chain-direction",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-061",
+      "subtype": "coded",
+      "difficulty": "extreme",
+      "prompt": "In the following question, the symbols %, @, #, ★ and & are used with the following meanings:\n'P % Q' means 'P is neither greater than nor equal to Q'.\n'P @ Q' means 'P is equal to Q'.\n'P # Q' means 'P is not smaller than Q'.\n'P ★ Q' means 'P is greater than Q'.\n'P & Q' means 'P is not greater than Q'.\n\nAssuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** M @ N, S ★ M, K # L, R & M, L ★ M\n\n**Conclusions:**\nI. K ★ R\nII. N % S",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Decode the symbols: % means '<', @ means '=', # means '≥', ★ means '>', & means '≤'.",
+          "Statements decoded: M = N, S > M, K ≥ L, R ≤ M, L > M.",
+          "Conclusions decoded: I. K > R, II. N < S.",
+          "I. K > R: K ≥ L > M ≥ R → every sign points the same way and at least one is strict, so K > R → **true**.",
+          "II. N < S: N = M < S → every sign points the same way and at least one is strict, so N < S → **true**.",
+          "Hence both I and II are true."
+        ],
+        "shortcut": "Decode every statement first and rebuild the links as one picture (a pair written backwards, such as \"G < D\", is the same link as \"D > G\"); then read each conclusion along the path between its letters.",
+        "trap": "K and R sit in different statements, so K > R is often rejected as \"no relation\"; joined at L and M the path K ≥ L > M ≥ R runs one way throughout."
+      },
+      "tags": [
+        "inequality:coded",
+        "inequality:coded-symbols",
+        "trick:chain-direction"
+      ]
+    },
+    {
+      "key": "iq-062",
+      "subtype": "coded",
+      "difficulty": "extreme",
+      "prompt": "In the following question, the symbols \\$, ©, \\*, @ and # are used with the following meanings:\n'P \\$ Q' means 'P is either greater than or equal to Q'.\n'P © Q' means 'P is neither greater than nor smaller than Q'.\n'P \\* Q' means 'P is smaller than Q'.\n'P @ Q' means 'P is neither smaller than nor equal to Q'.\n'P # Q' means 'P is either smaller than or equal to Q'.\n\nAssuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** J © B, T \\* B, Y \\* D, B # H, D # B, Z © T\n\n**Conclusions:**\nI. Y \\* H\nII. D @ Z",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Decode the symbols: \\$ means '≥', © means '=', \\* means '<', @ means '>', # means '≤'.",
+          "Statements decoded: J = B, T < B, Y < D, B ≤ H, D ≤ B, Z = T.",
+          "Conclusions decoded: I. Y < H, II. D > Z.",
+          "I. Y < H: Y < D ≤ B ≤ H → every sign points the same way and at least one is strict, so Y < H → **true**.",
+          "II. D > Z: D ≤ B > T = Z → the signs change direction ('≤' then '>'), so no relation between D and Z can be fixed → **not definitely true**.",
+          "Hence only I is true."
+        ],
+        "shortcut": "Decode every statement first and rebuild the links as one picture (a pair written backwards, such as \"G < D\", is the same link as \"D > G\"); then read each conclusion along the path between its letters.",
+        "trap": "D > Z is tempting if you read only part of the chain; the signs between D and Z point in opposite directions, so no relation can be fixed."
+      },
+      "tags": [
+        "inequality:coded",
+        "inequality:coded-symbols",
+        "trick:chain-direction"
+      ]
+    },
+    {
+      "key": "iq-063",
+      "subtype": "coded",
+      "difficulty": "extreme",
+      "prompt": "In the following question, the symbols &, ★, %, © and @ are used with the following meanings:\n'P & Q' means 'P is neither smaller than nor equal to Q'.\n'P ★ Q' means 'P is either greater than or equal to Q'.\n'P % Q' means 'P is neither greater than nor smaller than Q'.\n'P © Q' means 'P is not greater than Q'.\n'P @ Q' means 'P is smaller than Q'.\n\nAssuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** D & U, G % A, W © D, G ★ D, C & G\n\n**Conclusions:**\nI. A & W\nII. U @ C",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Decode the symbols: & means '>', ★ means '≥', % means '=', © means '≤', @ means '<'.",
+          "Statements decoded: D > U, G = A, W ≤ D, G ≥ D, C > G.",
+          "Conclusions decoded: I. A > W, II. U < C.",
+          "I. A > W: A = G ≥ D ≥ W → there is no strict sign on the way, so only A ≥ W is certain → **not definitely true**.",
+          "II. U < C: U < D ≤ G < C → every sign points the same way and at least one is strict, so U < C → **true**.",
+          "Hence only II is true."
+        ],
+        "shortcut": "Decode every statement first and rebuild the links as one picture (a pair written backwards, such as \"G < D\", is the same link as \"D > G\"); then read each conclusion along the path between its letters.",
+        "trap": "A > W looks right because the signs point the same way, but there is no strict sign between them — only A ≥ W is certain."
+      },
+      "tags": [
+        "inequality:coded",
+        "inequality:coded-symbols",
+        "trick:chain-direction"
+      ]
+    },
+    {
+      "key": "iq-064",
+      "subtype": "coded",
+      "difficulty": "extreme",
+      "prompt": "In the following question, the symbols #, \\$, @, \\* and & are used with the following meanings:\n'P # Q' means 'P is neither greater than nor equal to Q'.\n'P \\$ Q' means 'P is greater than Q'.\n'P @ Q' means 'P is either smaller than or equal to Q'.\n'P \\* Q' means 'P is equal to Q'.\n'P & Q' means 'P is not smaller than Q'.\n\nAssuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** U @ T, H \\$ U, E \\$ T, F @ H, Z \\* U\n\n**Conclusions:**\nI. T \\$ Z\nII. F # U",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Decode the symbols: # means '<', \\$ means '>', @ means '≤', \\* means '=', & means '≥'.",
+          "Statements decoded: U ≤ T, H > U, E > T, F ≤ H, Z = U.",
+          "Conclusions decoded: I. T > Z, II. F < U.",
+          "I. T > Z: T ≥ U = Z → there is no strict sign on the way, so only T ≥ Z is certain → **not definitely true**.",
+          "II. F < U: F ≤ H > U → the signs change direction ('≤' then '>'), so no relation between F and U can be fixed → **not definitely true**.",
+          "Hence neither I nor II is true."
+        ],
+        "shortcut": "Decode every statement first and rebuild the links as one picture (a pair written backwards, such as \"G < D\", is the same link as \"D > G\"); then read each conclusion along the path between its letters.",
+        "trap": "T > Z looks right because the signs point the same way, but there is no strict sign between them — only T ≥ Z is certain."
+      },
+      "tags": [
+        "inequality:coded",
+        "inequality:coded-symbols",
+        "trick:chain-direction"
+      ]
+    },
+    {
+      "key": "iq-065",
+      "subtype": "coded",
+      "difficulty": "extreme",
+      "prompt": "In the following question, the symbols @, %, ©, \\$ and ★ are used with the following meanings:\n'P @ Q' means 'P is not greater than Q'.\n'P % Q' means 'P is neither smaller than nor equal to Q'.\n'P © Q' means 'P is equal to Q'.\n'P \\$ Q' means 'P is neither greater than nor equal to Q'.\n'P ★ Q' means 'P is either greater than or equal to Q'.\n\nAssuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** Y © F, L \\$ Y, J @ Y, B @ J, A @ L, E % J\n\n**Conclusions:**\nI. F % A\nII. B @ F",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Decode the symbols: @ means '≤', % means '>', © means '=', \\$ means '<', ★ means '≥'.",
+          "Statements decoded: Y = F, L < Y, J ≤ Y, B ≤ J, A ≤ L, E > J.",
+          "Conclusions decoded: I. F > A, II. B ≤ F.",
+          "I. F > A: F = Y > L ≥ A → every sign points the same way and at least one is strict, so F > A → **true**.",
+          "II. B ≤ F: B ≤ J ≤ Y = F → every sign is '≤' or '=' with no strict sign, so exactly B ≤ F is known → **true**.",
+          "Hence both I and II are true."
+        ],
+        "shortcut": "Decode every statement first and rebuild the links as one picture (a pair written backwards, such as \"G < D\", is the same link as \"D > G\"); then read each conclusion along the path between its letters.",
+        "trap": "B ≤ F is easy to reject for want of a strict sign, but a '≤' conclusion needs none: every link between B and F is '≤' or '='."
+      },
+      "tags": [
+        "inequality:coded",
+        "inequality:coded-symbols",
+        "trick:chain-direction"
+      ]
+    },
+    {
+      "key": "iq-066",
+      "subtype": "either-or",
+      "difficulty": "easy",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statement:** D ≥ M > U ≤ P = G\n\n**Conclusions:**\nI. G > M\nII. M ≥ G",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. G > M: G = P ≥ U < M → the signs change direction ('≥' then '<'), so no relation between G and M can be fixed → **not definitely true**.",
+          "II. M ≥ G: M > U ≤ P = G → the signs change direction ('>' then '≤'), so no relation between M and G can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between G and M is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about G and M and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or"
+      ]
+    },
+    {
+      "key": "iq-067",
+      "subtype": "either-or",
+      "difficulty": "easy",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statement:** H ≤ Y = S ≥ Z < T\n\n**Conclusions:**\nI. H > Z\nII. H = Z",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. H > Z: H ≤ Y = S ≥ Z → the signs change direction ('≤' then '≥'), so no relation between H and Z can be fixed → **not definitely true**.",
+          "II. H = Z: H ≤ Y = S ≥ Z → the signs change direction ('≤' then '≥'), so no relation between H and Z can be fixed → **not definitely true**.",
+          "I and II are about the same pair but do not cover every possible case, so this is not an either–or.",
+          "Hence neither I nor II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like an either–or pair, but they do not cover every case: H < Z is also possible, so neither is definitely true."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or"
+      ]
+    },
+    {
+      "key": "iq-068",
+      "subtype": "either-or",
+      "difficulty": "medium",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statement:** N < K ≤ W = E ≥ H > C\n\n**Conclusions:**\nI. E > K\nII. K = E",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. E > K: E = W ≥ K → there is no strict sign on the way, so only E ≥ K is certain → **not definitely true**.",
+          "II. K = E: K ≤ W = E → only K ≤ E is certain; K may also be smaller → **not definitely true**.",
+          "Both are about the same pair and E ≥ K is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about E and K and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or"
+      ]
+    },
+    {
+      "key": "iq-069",
+      "subtype": "either-or",
+      "difficulty": "medium",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statement:** R ≥ J > P = D ≤ B ≤ S\n\n**Conclusions:**\nI. J ≤ S\nII. S < J",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. J ≤ S: J > P = D ≤ B ≤ S → the signs change direction ('>' then '≤'), so no relation between J and S can be fixed → **not definitely true**.",
+          "II. S < J: S ≥ B ≥ D = P < J → the signs change direction ('≥' then '<'), so no relation between S and J can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between J and S is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about J and S and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or"
+      ]
+    },
+    {
+      "key": "iq-070",
+      "subtype": "either-or",
+      "difficulty": "medium",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** P > B ≥ N = L, R ≤ N < Z\n\n**Conclusions:**\nI. B = R\nII. R > B",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: P > B ≥ N = L, R ≤ N < Z.",
+          "I. B = R: B ≥ N ≥ R → only B ≥ R is certain; B may also be greater → **not definitely true**.",
+          "II. R > B: R ≤ N ≤ B → we only know R ≤ B → **not definitely true**.",
+          "I and II are about the same pair but do not cover every possible case, so this is not an either–or.",
+          "Hence neither I nor II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like an either–or pair, but they do not cover every case: B > R is also possible, so neither is definitely true."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or"
+      ]
+    },
+    {
+      "key": "iq-071",
+      "subtype": "either-or",
+      "difficulty": "medium",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** N = Q ≥ J > F, T ≤ F\n\n**Conclusions:**\nI. Q > T\nII. Q = T",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: N = Q ≥ J > F, T ≤ F.",
+          "I. Q > T: Q ≥ J > F ≥ T → every sign points the same way and at least one is strict, so Q > T → **true**.",
+          "II. Q = T: Q ≥ J > F ≥ T → in fact Q > T → **not definitely true**.",
+          "I and II are about the same pair, but one of them is definitely true, so \"either\" does not apply.",
+          "Hence only I is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like a complementary either–or pair, but Q > T is definitely true from the statements, so the answer is \"only I\", not \"either\"."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or"
+      ]
+    },
+    {
+      "key": "iq-072",
+      "subtype": "either-or",
+      "difficulty": "medium",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** G ≥ Y = L < A, B > L ≥ J\n\n**Conclusions:**\nI. B > G\nII. G ≥ B",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: G ≥ Y = L < A, B > L ≥ J.",
+          "I. B > G: B > L = Y ≤ G → the signs change direction ('>' then '≤'), so no relation between B and G can be fixed → **not definitely true**.",
+          "II. G ≥ B: G ≥ Y = L < B → the signs change direction ('≥' then '<'), so no relation between G and B can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between B and G is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about B and G and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or"
+      ]
+    },
+    {
+      "key": "iq-073",
+      "subtype": "either-or",
+      "difficulty": "medium",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statement:** L < C ≤ U ≥ N = M\n\n**Conclusions:**\nI. L = U\nII. U > L",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. L = U: L < C ≤ U → in fact L < U → **not definitely true**.",
+          "II. U > L: U ≥ C > L → every sign points the same way and at least one is strict, so U > L → **true**.",
+          "I and II are about the same pair, but one of them is definitely true, so \"either\" does not apply.",
+          "Hence only II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like a complementary either–or pair, but U > L is definitely true from the statements, so the answer is \"only II\", not \"either\"."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or"
+      ]
+    },
+    {
+      "key": "iq-074",
+      "subtype": "either-or",
+      "difficulty": "medium",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** F ≤ M = D ≥ K, R ≥ D > L\n\n**Conclusions:**\nI. R > F\nII. F = R",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: F ≤ M = D ≥ K, R ≥ D > L.",
+          "I. R > F: R ≥ D = M ≥ F → there is no strict sign on the way, so only R ≥ F is certain → **not definitely true**.",
+          "II. F = R: F ≤ M = D ≤ R → only F ≤ R is certain; F may also be smaller → **not definitely true**.",
+          "Both are about the same pair and R ≥ F is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about R and F and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or"
+      ]
+    },
+    {
+      "key": "iq-075",
+      "subtype": "either-or",
+      "difficulty": "medium",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** K > A ≥ Z = P ≤ W, M = Z\n\n**Conclusions:**\nI. K > M\nII. M = P",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: K > A ≥ Z = P ≤ W, M = Z.",
+          "I. K > M: K > A ≥ Z = M → every sign points the same way and at least one is strict, so K > M → **true**.",
+          "II. M = P: M = Z = P → every sign is '=', so M = P → **true**.",
+          "Hence both I and II are true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like the familiar '>' / '=' either–or pair, but they are about different pairs (K, M and M, P). Each must be judged on its own: K > A ≥ Z = M gives K > M, and M = Z = P gives M = P, so both hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction"
+      ]
+    },
+    {
+      "key": "iq-076",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statement:** B ≤ P < W = J ≥ Y > R ≤ L\n\n**Conclusions:**\nI. L > P\nII. P ≥ L",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. L > P: L ≥ R < Y ≤ J = W > P → the signs change direction ('≥' then '<'), so no relation between L and P can be fixed → **not definitely true**.",
+          "II. P ≥ L: P < W = J ≥ Y > R ≤ L → the signs change direction ('<' then '≥'), so no relation between P and L can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between L and P is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about L and P and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or"
+      ]
+    },
+    {
+      "key": "iq-077",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** S = P ≥ L ≥ H, U < H ≤ J, W ≥ J\n\n**Conclusions:**\nI. S = W\nII. W > S",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: S = P ≥ L ≥ H, U < H ≤ J, W ≥ J.",
+          "I. S = W: S = P ≥ L ≥ H ≤ J ≤ W → the signs change direction ('≥' then '≤'), so no relation between S and W can be fixed → **not definitely true**.",
+          "II. W > S: W ≥ J ≥ H ≤ L ≤ P = S → the signs change direction ('≥' then '≤'), so no relation between W and S can be fixed → **not definitely true**.",
+          "I and II are about the same pair but do not cover every possible case, so this is not an either–or.",
+          "Hence neither I nor II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like an either–or pair, but they do not cover every case: S > W is also possible, so neither is definitely true."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-078",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** D > W ≥ Q = H, G ≤ H ≤ M, Z = G\n\n**Conclusions:**\nI. Z = W\nII. W > Z",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: D > W ≥ Q = H, G ≤ H ≤ M, Z = G.",
+          "I. Z = W: Z = G ≤ H = Q ≤ W → only Z ≤ W is certain; Z may also be smaller → **not definitely true**.",
+          "II. W > Z: W ≥ Q = H ≥ G = Z → there is no strict sign on the way, so only W ≥ Z is certain → **not definitely true**.",
+          "Both are about the same pair and Z ≤ W is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about Z and W and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-079",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** Y ≥ J = W ≥ S, F > S = G, P ≤ G\n\n**Conclusions:**\nI. Y ≥ P\nII. P > Y",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: Y ≥ J = W ≥ S, F > S = G, P ≤ G.",
+          "I. Y ≥ P: Y ≥ J = W ≥ S = G ≥ P → every sign is '≥' or '=' with no strict sign, so exactly Y ≥ P is known → **true**.",
+          "II. P > Y: P ≤ G = S ≤ W = J ≤ Y → we only know P ≤ Y → **not definitely true**.",
+          "I and II are about the same pair, but one of them is definitely true, so \"either\" does not apply.",
+          "Hence only I is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like a complementary either–or pair, but Y ≥ P is definitely true from the statements, so the answer is \"only I\", not \"either\"."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-080",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** Q < Y ≤ W, D ≥ W = A, Z > A\n\n**Conclusions:**\nI. D > Y\nII. Y = D",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: Q < Y ≤ W, D ≥ W = A, Z > A.",
+          "I. D > Y: D ≥ W ≥ Y → there is no strict sign on the way, so only D ≥ Y is certain → **not definitely true**.",
+          "II. Y = D: Y ≤ W ≤ D → only Y ≤ D is certain; Y may also be smaller → **not definitely true**.",
+          "Both are about the same pair and D ≥ Y is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about D and Y and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-081",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** K = Y > J ≥ Q, G ≤ J < Z\n\n**Conclusions:**\nI. G = K\nII. K > G",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: K = Y > J ≥ Q, G ≤ J < Z.",
+          "I. G = K: G ≤ J < Y = K → in fact G < K → **not definitely true**.",
+          "II. K > G: K = Y > J ≥ G → every sign points the same way and at least one is strict, so K > G → **true**.",
+          "I and II are about the same pair, but one of them is definitely true, so \"either\" does not apply.",
+          "Hence only II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like a complementary either–or pair, but K > G is definitely true from the statements, so the answer is \"only II\", not \"either\"."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or"
+      ]
+    },
+    {
+      "key": "iq-082",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** Z ≥ K > W, C ≤ W ≥ D, Q = D\n\n**Conclusions:**\nI. C > Q\nII. Q ≥ C",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: Z ≥ K > W, C ≤ W ≥ D, Q = D.",
+          "I. C > Q: C ≤ W ≥ D = Q → the signs change direction ('≤' then '≥'), so no relation between C and Q can be fixed → **not definitely true**.",
+          "II. Q ≥ C: Q = D ≤ W ≥ C → the signs change direction ('≤' then '≥'), so no relation between Q and C can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between C and Q is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about C and Q and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-083",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** D ≤ S = G < A, T ≥ G ≥ C\n\n**Conclusions:**\nI. D > C\nII. D = C",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: D ≤ S = G < A, T ≥ G ≥ C.",
+          "I. D > C: D ≤ S = G ≥ C → the signs change direction ('≤' then '≥'), so no relation between D and C can be fixed → **not definitely true**.",
+          "II. D = C: D ≤ S = G ≥ C → the signs change direction ('≤' then '≥'), so no relation between D and C can be fixed → **not definitely true**.",
+          "I and II are about the same pair but do not cover every possible case, so this is not an either–or.",
+          "Hence neither I nor II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like an either–or pair, but they do not cover every case: D < C is also possible, so neither is definitely true."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or"
+      ]
+    },
+    {
+      "key": "iq-084",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** K > B ≥ D; R = D ≤ F; H ≥ F\n\n**Conclusions:**\nI. K ≥ H\nII. H > K",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: K > B ≥ D; R = D ≤ F; H ≥ F.",
+          "I. K ≥ H: K > B ≥ D ≤ F ≤ H → the signs change direction ('>' then '≤'), so no relation between K and H can be fixed → **not definitely true**.",
+          "II. H > K: H ≥ F ≥ D ≤ B < K → the signs change direction ('≥' then '≤'), so no relation between H and K can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between K and H is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about K and H and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-085",
+      "subtype": "either-or",
+      "difficulty": "hard",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** L ≥ E > Q = C, H < Q ≤ S\n\n**Conclusions:**\nI. L > H\nII. C ≤ S",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: L ≥ E > Q = C, H < Q ≤ S.",
+          "I. L > H: L ≥ E > Q > H → every sign points the same way and at least one is strict, so L > H → **true**.",
+          "II. C ≤ S: C = Q ≤ S → every sign is '≤' or '=' with no strict sign, so exactly C ≤ S is known → **true**.",
+          "Hence both I and II are true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "II is often rejected for want of a strict sign or mistaken for half of an either–or pair, but it stands alone: C = Q ≤ S gives exactly C ≤ S, which is what II says."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction"
+      ]
+    },
+    {
+      "key": "iq-086",
+      "subtype": "either-or",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** Q ≥ N = J > H ≤ P, S < H ≥ Y, D ≥ P = M\n\n**Conclusions:**\nI. J ≥ M\nII. M > J",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: Q ≥ N = J > H ≤ P, S < H ≥ Y, D ≥ P = M.",
+          "I. J ≥ M: J > H ≤ P = M → the signs change direction ('>' then '≤'), so no relation between J and M can be fixed → **not definitely true**.",
+          "II. M > J: M = P ≥ H < J → the signs change direction ('≥' then '<'), so no relation between M and J can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between J and M is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about J and M and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-087",
+      "subtype": "either-or",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** C = M ≥ F > G, L ≥ G ≤ S = K, T ≤ K\n\n**Conclusions:**\nI. M > L\nII. M = L",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: C = M ≥ F > G, L ≥ G ≤ S = K, T ≤ K.",
+          "I. M > L: M ≥ F > G ≤ L → the signs change direction ('≥' then '≤'), so no relation between M and L can be fixed → **not definitely true**.",
+          "II. M = L: M ≥ F > G ≤ L → the signs change direction ('≥' then '≤'), so no relation between M and L can be fixed → **not definitely true**.",
+          "I and II are about the same pair but do not cover every possible case, so this is not an either–or.",
+          "Hence neither I nor II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like an either–or pair, but they do not cover every case: M < L is also possible, so neither is definitely true."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-088",
+      "subtype": "either-or",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** B ≤ Z < F = H, G ≥ F > J, K = J ≥ P\n\n**Conclusions:**\nI. P < G\nII. P = G",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: B ≤ Z < F = H, G ≥ F > J, K = J ≥ P.",
+          "I. P < G: P ≤ J < F ≤ G → every sign points the same way and at least one is strict, so P < G → **true**.",
+          "II. P = G: P ≤ J < F ≤ G → in fact P < G → **not definitely true**.",
+          "I and II are about the same pair, but one of them is definitely true, so \"either\" does not apply.",
+          "Hence only I is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like a complementary either–or pair, but P < G is definitely true from the statements, so the answer is \"only I\", not \"either\"."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-089",
+      "subtype": "either-or",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** M > C ≥ Z = J, K ≤ J < R, T ≥ R\n\n**Conclusions:**\nI. K > C\nII. C ≥ K",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: M > C ≥ Z = J, K ≤ J < R, T ≥ R.",
+          "I. K > C: K ≤ J = Z ≤ C → we only know K ≤ C → **not definitely true**.",
+          "II. C ≥ K: C ≥ Z = J ≥ K → every sign is '≥' or '=' with no strict sign, so exactly C ≥ K is known → **true**.",
+          "I and II are about the same pair, but one of them is definitely true, so \"either\" does not apply.",
+          "Hence only II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "I and II look like a complementary either–or pair, but C ≥ K is definitely true from the statements, so the answer is \"only II\", not \"either\"."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:chain-direction",
+        "trick:fake-either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-090",
+      "subtype": "either-or",
+      "difficulty": "extreme",
+      "prompt": "Assuming the given statements to be true, decide which of the conclusions I and II is/are definitely true.\n\n**Statements:** E ≤ Q = Z; Y > Z ≥ P; W ≥ P < N; N = A\n\n**Conclusions:**\nI. Q > W\nII. W ≥ Q",
+      "options": [
+        "If only conclusion I is true",
+        "If only conclusion II is true",
+        "If either conclusion I or II is true",
+        "If neither conclusion I nor II is true",
+        "If both conclusions I and II are true"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Join the statements at their common letters: E ≤ Q = Z; Y > Z ≥ P; W ≥ P < N; N = A.",
+          "I. Q > W: Q = Z ≥ P ≤ W → the signs change direction ('≥' then '≤'), so no relation between Q and W can be fixed → **not definitely true**.",
+          "II. W ≥ Q: W ≥ P ≤ Z = Q → the signs change direction ('≥' then '≤'), so no relation between W and Q can be fixed → **not definitely true**.",
+          "Both are about the same pair and no relation between Q and W is known, so the two conclusions together cover every case and cannot both hold — exactly one must be true.",
+          "Hence either I or II is true."
+        ],
+        "shortcut": "Walk from the first letter of the conclusion to the second: if every sign points the same way the relation holds (strict if any sign is > or <, otherwise ≥ / ≤); one sign in the opposite direction means no relation.",
+        "trap": "Marking \"neither\" is the usual slip: each conclusion alone is uncertain, but both speak about Q and W and together they cover every possible case, so exactly one of them must hold."
+      },
+      "tags": [
+        "inequality:either-or",
+        "trick:either-or",
+        "inequality:three-statements"
+      ]
+    },
+    {
+      "key": "iq-091",
+      "subtype": "missing-symbol",
+      "difficulty": "medium",
+      "prompt": "Which of the following symbols should replace the question mark (?) in the given expression so that the expressions 'K > N' as well as 'M < S' are definitely true?\n\n**Expression:** K > M ? N ≤ R < S ≥ T",
+      "options": [
+        "=",
+        "≥",
+        "≤",
+        ">",
+        "<"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Put each symbol in place of '?' and test the required expressions:",
+          "'=': K > M = N ≤ R < S ≥ T → K > N ✓; M < S ✓.",
+          "'≥': K > M ≥ N ≤ R < S ≥ T → K > N ✓; M < S ✗ (no relation).",
+          "'≤': K > M ≤ N ≤ R < S ≥ T → K > N ✗ (no relation); M < S ✓.",
+          "'>': K > M > N ≤ R < S ≥ T → K > N ✓; M < S ✗ (no relation).",
+          "'<': K > M < N ≤ R < S ≥ T → K > N ✗ (no relation); M < S ✓.",
+          "Only '=' makes both definitely true."
+        ],
+        "shortcut": "For a strict conclusion, the path needs at least one strict sign and no sign against the direction; for two conclusions running in opposite directions through the blank, only \"=\" can serve both.",
+        "trap": "'≥' or '≤' satisfies only one of the two required expressions; the blank must work in both directions at once, which only '=' does."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "trick:fill-the-blank"
+      ]
+    },
+    {
+      "key": "iq-092",
+      "subtype": "missing-symbol",
+      "difficulty": "medium",
+      "prompt": "Which of the following symbols should replace the question mark (?) in the given expression so that the expression 'H > E' is definitely true?\n\n**Expression:** D ≥ E = F ? G ≤ H > J",
+      "options": [
+        "≤",
+        "<",
+        "=",
+        ">",
+        "≥"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Put each symbol in place of '?' and test the required expression:",
+          "'≤': D ≥ E = F ≤ G ≤ H > J → H > E ✗ (only H ≥ E).",
+          "'<': D ≥ E = F < G ≤ H > J → H > E ✓.",
+          "'=': D ≥ E = F = G ≤ H > J → H > E ✗ (only H ≥ E).",
+          "'>': D ≥ E = F > G ≤ H > J → H > E ✗ (no relation).",
+          "'≥': D ≥ E = F ≥ G ≤ H > J → H > E ✗ (no relation).",
+          "Only '<' makes it definitely true."
+        ],
+        "shortcut": "For a strict conclusion, the path needs at least one strict sign and no sign against the direction; for two conclusions running in opposite directions through the blank, only \"=\" can serve both.",
+        "trap": "'≤' keeps the direction but leaves no strict sign on the way, so only a '≤' relation follows — not the strict one asked."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "trick:fill-the-blank"
+      ]
+    },
+    {
+      "key": "iq-093",
+      "subtype": "missing-symbol",
+      "difficulty": "medium",
+      "prompt": "In which of the following expressions will the expressions 'K > H' as well as 'M < R' be definitely true?",
+      "options": [
+        "H ≤ J ≤ K = L ≥ M < N ≤ R",
+        "H < J ≤ K = L ≥ M ≤ N ≤ R",
+        "H < J ≤ K = L ≥ M < N ≤ R",
+        "H < J ≥ K = L ≥ M < N ≤ R",
+        "H < J ≤ K = L ≥ M < N ≥ R"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "(A) H ≤ J ≤ K = L ≥ M < N ≤ R → K > H ✗ (only K ≥ H); M < R ✓.",
+          "(B) H < J ≤ K = L ≥ M ≤ N ≤ R → K > H ✓; M < R ✗ (only M ≤ R).",
+          "(C) H < J ≤ K = L ≥ M < N ≤ R → K > H ✓; M < R ✓.",
+          "(D) H < J ≥ K = L ≥ M < N ≤ R → K > H ✗ (no relation); M < R ✓.",
+          "(E) H < J ≤ K = L ≥ M < N ≥ R → K > H ✓; M < R ✗ (no relation).",
+          "Only option (C) makes both definitely true."
+        ],
+        "shortcut": "Locate the two letters in each option and read only the signs between them: same direction throughout, and at least one strict sign for > / <.",
+        "trap": "Options that differ by a single sign look identical at a glance — a lone ≥ where a > is needed, or one reversed sign, is enough to break the relation."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "inequality:which-expression"
+      ]
+    },
+    {
+      "key": "iq-094",
+      "subtype": "missing-symbol",
+      "difficulty": "medium",
+      "prompt": "Which of the following symbols should replace the question mark (?) in the given expression so that the expressions 'R < G' as well as 'F < G' are definitely true?\n\n**Expression:** Z < G ? D ≥ R = L > F",
+      "options": [
+        "≥",
+        "=",
+        "<",
+        ">",
+        "≤"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Put each symbol in place of '?' and test the required expressions:",
+          "'≥': Z < G ≥ D ≥ R = L > F → R < G ✗ (only R ≤ G); F < G ✓.",
+          "'=': Z < G = D ≥ R = L > F → R < G ✗ (only R ≤ G); F < G ✓.",
+          "'<': Z < G < D ≥ R = L > F → R < G ✗ (no relation); F < G ✗ (no relation).",
+          "'>': Z < G > D ≥ R = L > F → R < G ✓; F < G ✓.",
+          "'≤': Z < G ≤ D ≥ R = L > F → R < G ✗ (no relation); F < G ✗ (no relation).",
+          "Only '>' makes both definitely true."
+        ],
+        "shortcut": "For a strict conclusion, the path needs at least one strict sign and no sign against the direction; for two conclusions running in opposite directions through the blank, only \"=\" can serve both.",
+        "trap": "'≥' keeps the direction but leaves no strict sign on the way, so only a '≥' relation follows — not the strict one asked."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "trick:fill-the-blank"
+      ]
+    },
+    {
+      "key": "iq-095",
+      "subtype": "missing-symbol",
+      "difficulty": "hard",
+      "prompt": "Which of the following should be placed in the blanks (in the same order from left to right) so that the expressions 'G > K' as well as 'J < M' are definitely true?\n\n**Expression:** G ___ H ≥ J ___ K ≤ L ___ M",
+      "options": [
+        "≥, =, <",
+        ">, ≥, <",
+        ">, =, ≤",
+        "=, =, <",
+        ">, =, <"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct filling: G > H ≥ J = K ≤ L < M.",
+          "Check: G > K ✓; J < M ✓.",
+          "(A) ≥, =, < → G > K ✗ (only G ≥ K); J < M ✓.",
+          "(B) >, ≥, < → G > K ✓; J < M ✗ (no relation).",
+          "(C) >, =, ≤ → G > K ✓; J < M ✗ (only J ≤ M).",
+          "(D) =, =, < → G > K ✗ (only G ≥ K); J < M ✓.",
+          "Only (E) makes both definitely true."
+        ],
+        "shortcut": "Work blank by blank from the required relations: a strict requirement needs a strict sign somewhere on its path, an \"=\" requirement needs \"=\" on every link, and no link may point the other way.",
+        "trap": "A blank shared by two requirements that run in opposite directions can only be \"=\"; an option that gets that blank right but drops the strict sign elsewhere satisfies just one requirement."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "inequality:blanks"
+      ]
+    },
+    {
+      "key": "iq-096",
+      "subtype": "missing-symbol",
+      "difficulty": "hard",
+      "prompt": "In which of the following expressions will the expressions 'R > U' as well as 'T < Y' be definitely true?",
+      "options": [
+        "R ≥ S > T = U ≤ W < Y ≥ Z",
+        "R ≥ S ≥ T = U ≤ W < Y ≥ Z",
+        "R ≥ S > T = U ≥ W < Y ≥ Z",
+        "R ≥ S > T < U ≤ W < Y ≥ Z",
+        "R ≤ S > T = U ≤ W < Y ≥ Z"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "(A) R ≥ S > T = U ≤ W < Y ≥ Z → R > U ✓; T < Y ✓.",
+          "(B) R ≥ S ≥ T = U ≤ W < Y ≥ Z → R > U ✗ (only R ≥ U); T < Y ✓.",
+          "(C) R ≥ S > T = U ≥ W < Y ≥ Z → R > U ✓; T < Y ✗ (no relation).",
+          "(D) R ≥ S > T < U ≤ W < Y ≥ Z → R > U ✗ (no relation); T < Y ✓.",
+          "(E) R ≤ S > T = U ≤ W < Y ≥ Z → R > U ✗ (no relation); T < Y ✓.",
+          "Only option (A) makes both definitely true."
+        ],
+        "shortcut": "Locate the two letters in each option and read only the signs between them: same direction throughout, and at least one strict sign for > / <.",
+        "trap": "Options that differ by a single sign look identical at a glance — a lone ≥ where a > is needed, or one reversed sign, is enough to break the relation."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "inequality:which-expression"
+      ]
+    },
+    {
+      "key": "iq-097",
+      "subtype": "missing-symbol",
+      "difficulty": "hard",
+      "prompt": "Which of the following should be placed in the blanks (in the same order from left to right) so that the expressions 'S < U' as well as 'T > Y' are definitely true?\n\n**Expression:** S ___ T ___ U ≥ W ___ Y < Z",
+      "options": [
+        "≤, =, >",
+        "<, =, >",
+        "<, ≤, >",
+        "<, =, ≥",
+        "=, =, >"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Correct filling: S < T = U ≥ W > Y < Z.",
+          "Check: S < U ✓; T > Y ✓.",
+          "(A) ≤, =, > → S < U ✗ (only S ≤ U); T > Y ✓.",
+          "(C) <, ≤, > → S < U ✓; T > Y ✗ (no relation).",
+          "(D) <, =, ≥ → S < U ✓; T > Y ✗ (only T ≥ Y).",
+          "(E) =, =, > → S < U ✗ (S = U); T > Y ✓.",
+          "Only (B) makes both definitely true."
+        ],
+        "shortcut": "Work blank by blank from the required relations: a strict requirement needs a strict sign somewhere on its path, an \"=\" requirement needs \"=\" on every link, and no link may point the other way.",
+        "trap": "A blank shared by two requirements that run in opposite directions can only be \"=\"; an option that gets that blank right but drops the strict sign elsewhere satisfies just one requirement."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "inequality:blanks"
+      ]
+    },
+    {
+      "key": "iq-098",
+      "subtype": "missing-symbol",
+      "difficulty": "hard",
+      "prompt": "In which of the following expressions will the expressions 'N = L' as well as 'Y > D' be definitely true?",
+      "options": [
+        "B > N = Y ≥ L ≥ E > D ≤ G",
+        "B > N = Y = L ≥ E ≥ D ≤ G",
+        "B > N = Y = L ≥ E > D ≤ G",
+        "B > N ≤ Y = L ≥ E > D ≤ G",
+        "B > N = Y = L ≤ E > D ≤ G"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "(A) B > N = Y ≥ L ≥ E > D ≤ G → N = L ✗ (only N ≥ L); Y > D ✓.",
+          "(B) B > N = Y = L ≥ E ≥ D ≤ G → N = L ✓; Y > D ✗ (only Y ≥ D).",
+          "(C) B > N = Y = L ≥ E > D ≤ G → N = L ✓; Y > D ✓.",
+          "(D) B > N ≤ Y = L ≥ E > D ≤ G → N = L ✗ (only N ≤ L); Y > D ✓.",
+          "(E) B > N = Y = L ≤ E > D ≤ G → N = L ✓; Y > D ✗ (no relation).",
+          "Only option (C) makes both definitely true."
+        ],
+        "shortcut": "Locate the two letters in each option and read only the signs between them: same direction throughout, and at least one strict sign for > / <.",
+        "trap": "Options that differ by a single sign look identical at a glance — a lone ≥ where a > is needed, or one reversed sign, is enough to break the relation."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "inequality:which-expression"
+      ]
+    },
+    {
+      "key": "iq-099",
+      "subtype": "missing-symbol",
+      "difficulty": "hard",
+      "prompt": "Which of the following symbols should replace the question mark (?) in the given expression so that the expressions 'W > P' as well as 'A < R' are definitely true?\n\n**Expression:** Q ≥ P = A ? Y ≤ W < R",
+      "options": [
+        "≤",
+        "=",
+        ">",
+        "<",
+        "≥"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Put each symbol in place of '?' and test the required expressions:",
+          "'≤': Q ≥ P = A ≤ Y ≤ W < R → W > P ✗ (only W ≥ P); A < R ✓.",
+          "'=': Q ≥ P = A = Y ≤ W < R → W > P ✗ (only W ≥ P); A < R ✓.",
+          "'>': Q ≥ P = A > Y ≤ W < R → W > P ✗ (no relation); A < R ✗ (no relation).",
+          "'<': Q ≥ P = A < Y ≤ W < R → W > P ✓; A < R ✓.",
+          "'≥': Q ≥ P = A ≥ Y ≤ W < R → W > P ✗ (no relation); A < R ✗ (no relation).",
+          "Only '<' makes both definitely true."
+        ],
+        "shortcut": "For a strict conclusion, the path needs at least one strict sign and no sign against the direction; for two conclusions running in opposite directions through the blank, only \"=\" can serve both.",
+        "trap": "'≤' keeps the direction but leaves no strict sign on the way, so only a '≤' relation follows — not the strict one asked."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "trick:fill-the-blank"
+      ]
+    },
+    {
+      "key": "iq-100",
+      "subtype": "missing-symbol",
+      "difficulty": "extreme",
+      "prompt": "Which of the following should be placed in the blanks (in the same order from left to right) so that the expressions 'Q > D' as well as 'C < J' are definitely true?\n\n**Expression:** Q ___ M ≥ C ___ D ___ B ≤ E ___ J",
+      "options": [
+        ">, =, ≤, ≤",
+        "≥, =, <, ≤",
+        ">, ≥, <, ≤",
+        ">, =, <, >",
+        ">, =, <, ≤"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Correct filling: Q > M ≥ C = D < B ≤ E ≤ J.",
+          "Check: Q > D ✓; C < J ✓.",
+          "(A) >, =, ≤, ≤ → Q > D ✓; C < J ✗ (only C ≤ J).",
+          "(B) ≥, =, <, ≤ → Q > D ✗ (only Q ≥ D); C < J ✓.",
+          "(C) >, ≥, <, ≤ → Q > D ✓; C < J ✗ (no relation).",
+          "(D) >, =, <, > → Q > D ✓; C < J ✗ (no relation).",
+          "Only (E) makes both definitely true."
+        ],
+        "shortcut": "Work blank by blank from the required relations: a strict requirement needs a strict sign somewhere on its path, an \"=\" requirement needs \"=\" on every link, and no link may point the other way.",
+        "trap": "A blank shared by two requirements that run in opposite directions can only be \"=\"; an option that gets that blank right but drops the strict sign elsewhere satisfies just one requirement."
+      },
+      "tags": [
+        "inequality:missing-symbol",
+        "inequality:blanks"
+      ]
     }
   ]
 }
