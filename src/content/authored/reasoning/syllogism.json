@@ -1,0 +1,2589 @@
+{
+  "chapter": "syllogism",
+  "version": 1,
+  "items": [
+    {
+      "key": "sy-001",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few pens are rings.\nAll rings are coins.\nNo coin is a lamp.\n\n**Conclusions:**\nI. Some pens are not lamps.\nII. All pens being rings is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. Some pens are not lamps — **follows**: the pens that are rings are coins, and no coin is a lamp, so those pens are certainly not lamps.",
+          "II. All pens being rings is a possibility — **does not follow**: \"Only a few pens are rings\" already says some pens are not rings, so all pens can never be rings.",
+          "Hence only I follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Reading \"only a few\" as plain \"some\" makes II look possible — but \"only a few\" also fixes that some pens lie outside rings.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Coins",
+            "Lamps",
+            "Pens",
+            "Rings"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Coins"
+                ],
+                [
+                  "Lamps"
+                ],
+                [
+                  "Pens"
+                ],
+                [
+                  "Coins",
+                  "Pens",
+                  "Rings"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-002",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nSome kites are boxes.\nOnly a few boxes are chairs.\nAll chairs are bottles.\n\n**Conclusions:**\nI. Some kites are chairs.\nII. Some boxes are bottles.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. Some kites are chairs — **does not follow**: the kites that are boxes may all sit in the part of boxes that is not chairs, so the link is not certain.",
+          "II. Some boxes are bottles — **follows**: some boxes are chairs (part of \"only a few\") and all chairs are bottles ⇒ Some + All = Some.",
+          "Hence only II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "I looks like a chain, but Some + Some gives nothing definite.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Bottles",
+            "Boxes",
+            "Chairs",
+            "Kites"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Bottles"
+                ],
+                [
+                  "Boxes"
+                ],
+                [
+                  "Kites"
+                ],
+                [
+                  "Boxes",
+                  "Kites"
+                ],
+                [
+                  "Bottles",
+                  "Boxes",
+                  "Chairs"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few"
+      ]
+    },
+    {
+      "key": "sy-003",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few cups are plates.\nNo plate is a spoon.\nSome spoons are forks.\n\n**Conclusions:**\nI. Some cups are forks.\nII. No cup is a fork.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. Some cups are forks — **does not follow**: no statement links cups with forks, so it is not certain.",
+          "II. No cup is a fork — **does not follow**: equally, nothing stops cups from touching forks, so this is not certain either.",
+          "Neither is certain on its own, but I and II are a complementary pair on the same two terms, so exactly one of them must be true.",
+          "Hence either I or II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "The \"No\" in the statements tempts you to pick II alone; the negative link (plates–spoons) never reaches cups and forks.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Cups",
+            "Forks",
+            "Plates",
+            "Spoons"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Cups"
+                ],
+                [
+                  "Forks"
+                ],
+                [
+                  "Plates"
+                ],
+                [
+                  "Spoons"
+                ],
+                [
+                  "Cups",
+                  "Plates"
+                ],
+                [
+                  "Forks",
+                  "Spoons"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II fails",
+              "regions": [
+                [
+                  "Cups"
+                ],
+                [
+                  "Forks"
+                ],
+                [
+                  "Plates"
+                ],
+                [
+                  "Spoons"
+                ],
+                [
+                  "Cups",
+                  "Forks"
+                ],
+                [
+                  "Cups",
+                  "Plates"
+                ],
+                [
+                  "Forks",
+                  "Spoons"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "trick:complementary-pair"
+      ]
+    },
+    {
+      "key": "sy-004",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nAll books are tables.\nOnly a few tables are trees.\nSome trees are leaves.\n\n**Conclusions:**\nI. Some books are trees.\nII. Some tables are leaves.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. Some books are trees — **does not follow**: books may lie wholly in the part of tables that is not trees.",
+          "II. Some tables are leaves — **does not follow**: the trees that are leaves need not be the trees that are tables, so it is not certain.",
+          "Hence neither I nor II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "All + Some and Some + Some are both \"no definite conclusion\" chains.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Books",
+            "Leaves",
+            "Tables",
+            "Trees"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails; conclusion II fails",
+              "regions": [
+                [
+                  "Leaves"
+                ],
+                [
+                  "Tables"
+                ],
+                [
+                  "Trees"
+                ],
+                [
+                  "Books",
+                  "Tables"
+                ],
+                [
+                  "Leaves",
+                  "Trees"
+                ],
+                [
+                  "Tables",
+                  "Trees"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few"
+      ]
+    },
+    {
+      "key": "sy-005",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few roses are tulips.\nAll tulips are lilies.\nSome lilies are daisies.\n\n**Conclusions:**\nI. Some roses are lilies.\nII. Some roses are not tulips.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. Some roses are lilies — **follows**: some roses are tulips and all tulips are lilies ⇒ Some + All = Some.",
+          "II. Some roses are not tulips — **follows**: it is the second half of \"only a few roses are tulips\" (some roses are tulips AND some are not).",
+          "Hence both I and II follow."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Do not discard II as \"not stated\" — it is built into the meaning of \"only a few\".",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Daisies",
+            "Lilies",
+            "Roses",
+            "Tulips"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Daisies"
+                ],
+                [
+                  "Lilies"
+                ],
+                [
+                  "Roses"
+                ],
+                [
+                  "Daisies",
+                  "Lilies"
+                ],
+                [
+                  "Lilies",
+                  "Roses",
+                  "Tulips"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few"
+      ]
+    },
+    {
+      "key": "sy-006",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nAll stones are bricks.\nOnly a few bricks are walls.\nNo wall is a door.\n\n**Conclusions:**\nI. Some bricks are not doors.\nII. Some stones are not doors.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. Some bricks are not doors — **follows**: the bricks that are walls cannot be doors (no wall is a door).",
+          "II. Some stones are not doors — **does not follow**: the stones may all lie in the part of bricks outside walls, and that part may be completely inside doors.",
+          "Hence only I follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "II copies the logic of I one level down, but stones need not include any of the bricks that are walls.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Bricks",
+            "Doors",
+            "Stones",
+            "Walls"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Bricks"
+                ],
+                [
+                  "Doors"
+                ],
+                [
+                  "Walls"
+                ],
+                [
+                  "Bricks",
+                  "Stones"
+                ],
+                [
+                  "Bricks",
+                  "Walls"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II fails",
+              "regions": [
+                [
+                  "Bricks"
+                ],
+                [
+                  "Doors"
+                ],
+                [
+                  "Walls"
+                ],
+                [
+                  "Bricks",
+                  "Walls"
+                ],
+                [
+                  "Bricks",
+                  "Doors",
+                  "Stones"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few"
+      ]
+    },
+    {
+      "key": "sy-007",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nSome clocks are radios.\nOnly a few radios are drums.\nNo drum is a flute.\n\n**Conclusions:**\nI. Some clocks are not flutes.\nII. All radios being flutes is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. Some clocks are not flutes — **does not follow**: the clocks that are radios may be radios that are not drums, so all clocks could still be flutes.",
+          "II. All radios being flutes is a possibility — **does not follow**: some radios are drums and no drum is a flute, so some radios are definitely not flutes — all radios can never be flutes.",
+          "Hence neither I nor II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Some + No = Some-not works only when the \"Some\" lands in the set that carries the \"No\"; here clocks meet radios, not drums.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Clocks",
+            "Drums",
+            "Flutes",
+            "Radios"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Clocks"
+                ],
+                [
+                  "Drums"
+                ],
+                [
+                  "Flutes"
+                ],
+                [
+                  "Radios"
+                ],
+                [
+                  "Clocks",
+                  "Radios"
+                ],
+                [
+                  "Drums",
+                  "Radios"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion I fails",
+              "regions": [
+                [
+                  "Drums"
+                ],
+                [
+                  "Flutes"
+                ],
+                [
+                  "Radios"
+                ],
+                [
+                  "Drums",
+                  "Radios"
+                ],
+                [
+                  "Clocks",
+                  "Flutes",
+                  "Radios"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-008",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few candles are mirrors.\nAll mirrors are baskets.\nNo basket is a bucket.\n\n**Conclusions:**\nI. All candles being buckets is a possibility.\nII. Some candles are not buckets.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. All candles being buckets is a possibility — **does not follow**: the candles that are mirrors are baskets, and baskets can never be buckets, so this is impossible.",
+          "II. Some candles are not buckets — **follows**: candles that are mirrors ⇒ baskets ⇒ not buckets: Some + All + No = Some-not.",
+          "Hence only II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "A possibility fails as soon as the statements force the opposite; here some candles are forced outside buckets.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Baskets",
+            "Buckets",
+            "Candles",
+            "Mirrors"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Baskets"
+                ],
+                [
+                  "Buckets"
+                ],
+                [
+                  "Candles"
+                ],
+                [
+                  "Baskets",
+                  "Candles",
+                  "Mirrors"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-009",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nSome jackets are scarves.\nOnly a few scarves are shirts.\nAll shirts are caps.\n\n**Conclusions:**\nI. All scarves can never be shirts.\nII. Some jackets are caps.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. All scarves can never be shirts — **follows**: \"only a few scarves are shirts\" means some scarves are not shirts, so \"all scarves are shirts\" is impossible.",
+          "II. Some jackets are caps — **does not follow**: the jackets that are scarves may lie outside shirts and outside caps.",
+          "Hence only I follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"Can never be\" conclusions on an \"only a few\" pair follow automatically; the chain jackets–scarves–shirts uses two \"some\" links and gives nothing.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Caps",
+            "Jackets",
+            "Scarves",
+            "Shirts"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion II fails",
+              "regions": [
+                [
+                  "Caps"
+                ],
+                [
+                  "Jackets"
+                ],
+                [
+                  "Scarves"
+                ],
+                [
+                  "Jackets",
+                  "Scarves"
+                ],
+                [
+                  "Caps",
+                  "Scarves",
+                  "Shirts"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:can-never"
+      ]
+    },
+    {
+      "key": "sy-010",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nAll shoes are bags.\nOnly a few bags are wallets.\nSome wallets are keys.\n\n**Conclusions:**\nI. Some bags are not shoes is a possibility.\nII. All shoes being wallets is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. Some bags are not shoes is a possibility — **follows**: shoes and bags may be equal or bags may be larger — nothing fixes it, so the case is possible.",
+          "II. All shoes being wallets is a possibility — **follows**: shoes can sit wholly inside the part of bags that is wallets; the rest of bags stays outside wallets.",
+          "Hence both I and II follow."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"Only a few bags are wallets\" restricts bags, not shoes: a part of bags can still hold all the shoes.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Bags",
+            "Keys",
+            "Shoes",
+            "Wallets"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I is possible",
+              "regions": [
+                [
+                  "Bags"
+                ],
+                [
+                  "Keys"
+                ],
+                [
+                  "Wallets"
+                ],
+                [
+                  "Bags",
+                  "Shoes"
+                ],
+                [
+                  "Bags",
+                  "Wallets"
+                ],
+                [
+                  "Keys",
+                  "Wallets"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II is possible",
+              "regions": [
+                [
+                  "Bags"
+                ],
+                [
+                  "Keys"
+                ],
+                [
+                  "Wallets"
+                ],
+                [
+                  "Keys",
+                  "Wallets"
+                ],
+                [
+                  "Bags",
+                  "Shoes",
+                  "Wallets"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-011",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few locks are files.\nSome files are papers.\nNo paper is a page.\n\n**Conclusions:**\nI. Some locks are pages.\nII. No lock is a page.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. Some locks are pages — **does not follow**: no statement links locks with pages, so it is not certain.",
+          "II. No lock is a page — **does not follow**: equally, locks may well touch pages outside files, so this is not certain either.",
+          "Neither is certain on its own, but I and II are a complementary pair on the same two terms, so exactly one of them must be true.",
+          "Hence either I or II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Picking \"Neither\" misses that I and II are a Some/No pair on the same terms.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Files",
+            "Locks",
+            "Pages",
+            "Papers"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Files"
+                ],
+                [
+                  "Locks"
+                ],
+                [
+                  "Pages"
+                ],
+                [
+                  "Papers"
+                ],
+                [
+                  "Files",
+                  "Locks"
+                ],
+                [
+                  "Files",
+                  "Papers"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II fails",
+              "regions": [
+                [
+                  "Files"
+                ],
+                [
+                  "Locks"
+                ],
+                [
+                  "Pages"
+                ],
+                [
+                  "Papers"
+                ],
+                [
+                  "Files",
+                  "Locks"
+                ],
+                [
+                  "Files",
+                  "Papers"
+                ],
+                [
+                  "Locks",
+                  "Pages"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "trick:complementary-pair"
+      ]
+    },
+    {
+      "key": "sy-012",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few cards are stamps.\nOnly a few stamps are tickets.\nAll tickets are medals.\n\n**Conclusions:**\nI. Some cards are tickets.\nII. All stamps being medals is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. Some cards are tickets — **does not follow**: the cards that are stamps may all be stamps that are not tickets.",
+          "II. All stamps being medals is a possibility — **follows**: the stamps that are tickets are medals; the other stamps may also be medals, so the case is possible (but not certain).",
+          "Hence only II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"Only a few stamps are tickets\" does not block stamps from being medals — medals are a bigger circle than tickets.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Cards",
+            "Medals",
+            "Stamps",
+            "Tickets"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Cards"
+                ],
+                [
+                  "Medals"
+                ],
+                [
+                  "Stamps"
+                ],
+                [
+                  "Cards",
+                  "Stamps"
+                ],
+                [
+                  "Medals",
+                  "Stamps",
+                  "Tickets"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II is possible",
+              "regions": [
+                [
+                  "Cards"
+                ],
+                [
+                  "Medals"
+                ],
+                [
+                  "Cards",
+                  "Medals",
+                  "Stamps"
+                ],
+                [
+                  "Medals",
+                  "Stamps",
+                  "Tickets"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-013",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nNo pearl is a shell.\nOnly a few shells are stars.\nSome stars are clouds.\n\n**Conclusions:**\nI. Some stars are not pearls.\nII. Some pearls being clouds is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. Some stars are not pearls — **follows**: some stars are shells, and no shell is a pearl ⇒ those stars are not pearls.",
+          "II. Some pearls being clouds is a possibility — **follows**: pearls and clouds are never linked negatively, so they may overlap.",
+          "Hence both I and II follow."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "The reverse direction matters: Some stars are shells + No shell is a pearl gives \"Some stars are not pearls\", not \"Some pearls are not stars\".",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Clouds",
+            "Pearls",
+            "Shells",
+            "Stars"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Clouds"
+                ],
+                [
+                  "Pearls"
+                ],
+                [
+                  "Shells"
+                ],
+                [
+                  "Stars"
+                ],
+                [
+                  "Clouds",
+                  "Stars"
+                ],
+                [
+                  "Shells",
+                  "Stars"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II is possible",
+              "regions": [
+                [
+                  "Clouds"
+                ],
+                [
+                  "Pearls"
+                ],
+                [
+                  "Shells"
+                ],
+                [
+                  "Stars"
+                ],
+                [
+                  "Clouds",
+                  "Pearls"
+                ],
+                [
+                  "Clouds",
+                  "Stars"
+                ],
+                [
+                  "Shells",
+                  "Stars"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-014",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few circles are squares.\nAll triangles are squares.\nNo triangle is a cone.\n\n**Conclusions:**\nI. Some circles are triangles.\nII. All squares being cones is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. Some circles are triangles — **does not follow**: the circles that are squares may lie in the part of squares that is not triangles.",
+          "II. All squares being cones is a possibility — **does not follow**: all triangles are squares and no triangle is a cone, so some squares are definitely not cones.",
+          "Hence neither I nor II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "II tests the hidden \"Some squares are not cones\" (All triangles are squares + No triangle is a cone).",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Circles",
+            "Cones",
+            "Squares",
+            "Triangles"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Circles"
+                ],
+                [
+                  "Cones"
+                ],
+                [
+                  "Squares"
+                ],
+                [
+                  "Circles",
+                  "Squares"
+                ],
+                [
+                  "Squares",
+                  "Triangles"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-015",
+      "subtype": "only-a-few",
+      "difficulty": "extreme",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few pots are jars.\nNo jar is a fan.\nAll fans are pots.\n\n**Conclusions:**\nI. Only a few pots are fans.\nII. Some fans being jars is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. Only a few pots are fans — **follows**: all fans are pots, so some pots are fans; the pots that are jars cannot be fans, so some pots are not fans — both halves of \"only a few\" are certain.",
+          "II. Some fans being jars is a possibility — **does not follow**: no jar is a fan, so no fan can ever be a jar.",
+          "Hence only I follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "An \"only a few\" conclusion needs two certain parts: some pots are fans (from All fans are pots) and some pots are not fans (from the jar part).",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Fans",
+            "Jars",
+            "Pots"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Jars"
+                ],
+                [
+                  "Pots"
+                ],
+                [
+                  "Fans",
+                  "Pots"
+                ],
+                [
+                  "Jars",
+                  "Pots"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-016",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few benches are desks.\nAll desks are sofas.\nSome sofas are rugs.\n\n**Conclusions:**\nI. All benches are sofas.\nII. Some benches are not sofas.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. All benches are sofas — **does not follow**: the benches outside desks may lie outside sofas, so it is not certain.",
+          "II. Some benches are not sofas — **does not follow**: those same benches may also lie inside sofas, so this is not certain either.",
+          "Neither is certain on its own, but I and II are a complementary pair on the same two terms, so exactly one of them must be true.",
+          "Hence either I or II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"Only a few benches are desks\" does NOT give \"some benches are not sofas\" — sofas is a bigger circle than desks.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Benches",
+            "Desks",
+            "Rugs",
+            "Sofas"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Benches"
+                ],
+                [
+                  "Rugs"
+                ],
+                [
+                  "Sofas"
+                ],
+                [
+                  "Rugs",
+                  "Sofas"
+                ],
+                [
+                  "Benches",
+                  "Desks",
+                  "Sofas"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II fails",
+              "regions": [
+                [
+                  "Rugs"
+                ],
+                [
+                  "Sofas"
+                ],
+                [
+                  "Benches",
+                  "Sofas"
+                ],
+                [
+                  "Rugs",
+                  "Sofas"
+                ],
+                [
+                  "Benches",
+                  "Desks",
+                  "Sofas"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "trick:complementary-pair"
+      ]
+    },
+    {
+      "key": "sy-017",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nSome tents are boats.\nAll boats are trucks.\nOnly a few trucks are ladders.\n\n**Conclusions:**\nI. All trucks being ladders is a possibility.\nII. Some trucks are tents.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. All trucks being ladders is a possibility — **does not follow**: \"only a few trucks are ladders\" says some trucks are not ladders, so this can never happen.",
+          "II. Some trucks are tents — **follows**: some tents are boats and all boats are trucks ⇒ some tents are trucks, i.e. some trucks are tents.",
+          "Hence only II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Some + All = Some can be read in either direction: \"some trucks are tents\" is the same fact as \"some tents are trucks\".",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Boats",
+            "Ladders",
+            "Tents",
+            "Trucks"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Ladders"
+                ],
+                [
+                  "Tents"
+                ],
+                [
+                  "Trucks"
+                ],
+                [
+                  "Ladders",
+                  "Trucks"
+                ],
+                [
+                  "Boats",
+                  "Tents",
+                  "Trucks"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-018",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nNo kettle is a ladder.\nOnly a few ladders are ropes.\nAll ropes are nets.\n\n**Conclusions:**\nI. Some kettles are nets.\nII. No kettle is a net.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. Some kettles are nets — **does not follow**: kettles are kept away from ladders only; they may or may not reach the part of nets outside ladders.",
+          "II. No kettle is a net — **does not follow**: for the same reason, kettles may touch nets, so this is not certain either.",
+          "Neither is certain on its own, but I and II are a complementary pair on the same two terms, so exactly one of them must be true.",
+          "Hence either I or II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "No + Some/All in that order (No kettle–ladder, then ladders–nets) gives no definite conclusion between kettles and nets.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Kettles",
+            "Ladders",
+            "Nets",
+            "Ropes"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Kettles"
+                ],
+                [
+                  "Ladders"
+                ],
+                [
+                  "Nets"
+                ],
+                [
+                  "Ladders",
+                  "Nets",
+                  "Ropes"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II fails",
+              "regions": [
+                [
+                  "Kettles"
+                ],
+                [
+                  "Ladders"
+                ],
+                [
+                  "Nets"
+                ],
+                [
+                  "Kettles",
+                  "Nets"
+                ],
+                [
+                  "Ladders",
+                  "Nets",
+                  "Ropes"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "trick:complementary-pair"
+      ]
+    },
+    {
+      "key": "sy-019",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few globes are maps.\nSome maps are charts.\nAll charts are posters.\n\n**Conclusions:**\nI. Some globes are posters.\nII. All globes being maps is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. Some globes are posters — **does not follow**: globes reach charts only through two \"some\" links, so the overlap is not certain.",
+          "II. All globes being maps is a possibility — **does not follow**: some globes are definitely not maps (\"only a few\"), so this is impossible.",
+          "Hence neither I nor II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "II is the classic \"only a few\" trap: all globes being maps contradicts the statement itself.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Charts",
+            "Globes",
+            "Maps",
+            "Posters"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Globes"
+                ],
+                [
+                  "Maps"
+                ],
+                [
+                  "Posters"
+                ],
+                [
+                  "Globes",
+                  "Maps"
+                ],
+                [
+                  "Charts",
+                  "Maps",
+                  "Posters"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-020",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few pencils are erasers.\nAll crayons are erasers.\nNo crayon is a brush.\n\n**Conclusions:**\nI. Some erasers are not brushes.\nII. Some pencils being brushes is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. Some erasers are not brushes — **follows**: all crayons are erasers and no crayon is a brush, so the erasers that are crayons are not brushes.",
+          "II. Some pencils being brushes is a possibility — **follows**: the pencils outside erasers are free, so they may be brushes.",
+          "Hence both I and II follow."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Do not let \"No crayon is a brush\" spill over to pencils: pencils and crayons are never linked.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Brushes",
+            "Crayons",
+            "Erasers",
+            "Pencils"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Brushes"
+                ],
+                [
+                  "Erasers"
+                ],
+                [
+                  "Pencils"
+                ],
+                [
+                  "Crayons",
+                  "Erasers"
+                ],
+                [
+                  "Erasers",
+                  "Pencils"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II is possible",
+              "regions": [
+                [
+                  "Brushes"
+                ],
+                [
+                  "Erasers"
+                ],
+                [
+                  "Pencils"
+                ],
+                [
+                  "Brushes",
+                  "Pencils"
+                ],
+                [
+                  "Crayons",
+                  "Erasers"
+                ],
+                [
+                  "Erasers",
+                  "Pencils"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    },
+    {
+      "key": "sy-021",
+      "subtype": "only-a-few",
+      "difficulty": "extreme",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few violins are guitars.\nAll guitars are drums.\nAll flutes are violins.\nNo flute is a drum.\n\n**Conclusions:**\nI. Only a few violins are drums.\nII. All drums being violins is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. Only a few violins are drums — **follows**: violins that are guitars are drums (some violins are drums); flutes are violins that are never drums (some violins are not drums) — both halves are certain.",
+          "II. All drums being violins is a possibility — **follows**: drums may lie wholly inside violins: guitars inside drums inside violins, with flutes forming the rest of violins.",
+          "Hence both I and II follow."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "The flutes are what keep part of violins outside drums; without the fourth statement I would fail.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Drums",
+            "Flutes",
+            "Guitars",
+            "Violins"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Drums"
+                ],
+                [
+                  "Violins"
+                ],
+                [
+                  "Flutes",
+                  "Violins"
+                ],
+                [
+                  "Drums",
+                  "Guitars",
+                  "Violins"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II is possible",
+              "regions": [
+                [
+                  "Violins"
+                ],
+                [
+                  "Flutes",
+                  "Violins"
+                ],
+                [
+                  "Drums",
+                  "Guitars",
+                  "Violins"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility",
+        "syllogism:four-statements"
+      ]
+    },
+    {
+      "key": "sy-022",
+      "subtype": "only-a-few",
+      "difficulty": "extreme",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nSome owls are eagles.\nOnly a few eagles are parrots.\nNo parrot is a hen.\nAll hens are owls.\n\n**Conclusions:**\nI. Some owls are not parrots.\nII. All owls being parrots is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. Some owls are not parrots — **follows**: all hens are owls and no hen is a parrot, so the owls that are hens are not parrots.",
+          "II. All owls being parrots is a possibility — **does not follow**: those same hens make some owls definitely non-parrots, so all owls can never be parrots.",
+          "Hence only I follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "The eagle–parrot chain is a decoy; the certain link runs through hens.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Eagles",
+            "Hens",
+            "Owls",
+            "Parrots"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Eagles"
+                ],
+                [
+                  "Owls"
+                ],
+                [
+                  "Parrots"
+                ],
+                [
+                  "Eagles",
+                  "Owls"
+                ],
+                [
+                  "Eagles",
+                  "Parrots"
+                ],
+                [
+                  "Hens",
+                  "Owls"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility",
+        "syllogism:four-statements"
+      ]
+    },
+    {
+      "key": "sy-023",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nAll tulips are roses.\nOnly a few roses are lilies.\nNo lily is an orchid.\nSome orchids are roses.\n\n**Conclusions:**\nI. All tulips are lilies.\nII. Some tulips are not lilies.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. All tulips are lilies — **does not follow**: tulips may lie in the part of roses outside lilies, so this is not certain.",
+          "II. Some tulips are not lilies — **does not follow**: tulips may also lie entirely in the part of roses that is lilies, so this is not certain either.",
+          "Neither is certain on its own, but I and II are a complementary pair on the same two terms, so exactly one of them must be true.",
+          "Hence either I or II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"Only a few roses are lilies\" is about roses as a whole; it does not tell you which part of roses the tulips occupy.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Lilies",
+            "Orchids",
+            "Roses",
+            "Tulips"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Lilies"
+                ],
+                [
+                  "Orchids"
+                ],
+                [
+                  "Roses"
+                ],
+                [
+                  "Lilies",
+                  "Roses"
+                ],
+                [
+                  "Orchids",
+                  "Roses"
+                ],
+                [
+                  "Roses",
+                  "Tulips"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II fails",
+              "regions": [
+                [
+                  "Lilies"
+                ],
+                [
+                  "Orchids"
+                ],
+                [
+                  "Roses"
+                ],
+                [
+                  "Orchids",
+                  "Roses"
+                ],
+                [
+                  "Lilies",
+                  "Roses",
+                  "Tulips"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "trick:complementary-pair",
+        "syllogism:four-statements"
+      ]
+    },
+    {
+      "key": "sy-024",
+      "subtype": "only-a-few",
+      "difficulty": "extreme",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few apples are lemons.\nOnly a few lemons are bananas.\nNo banana is an orange.\n\n**Conclusions:**\nI. All apples can never be bananas.\nII. Some lemons are not oranges.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. All apples can never be bananas — **does not follow**: apples may lie wholly inside bananas (the apple–lemon part inside the lemon–banana part), so all apples being bananas is possible — \"can never\" is wrong.",
+          "II. Some lemons are not oranges — **follows**: some lemons are bananas and no banana is an orange ⇒ those lemons are not oranges.",
+          "Hence only II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Two \"only a few\" links look like they block everything, but they only fix that some apples are not lemons and some lemons are not bananas.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Apples",
+            "Bananas",
+            "Lemons",
+            "Oranges"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Apples"
+                ],
+                [
+                  "Bananas"
+                ],
+                [
+                  "Lemons"
+                ],
+                [
+                  "Oranges"
+                ],
+                [
+                  "Apples",
+                  "Lemons"
+                ],
+                [
+                  "Bananas",
+                  "Lemons"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:can-never"
+      ]
+    },
+    {
+      "key": "sy-025",
+      "subtype": "only-a-few",
+      "difficulty": "extreme",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nAll mugs are jugs.\nOnly a few jugs are trays.\nNo tray is a bowl.\nSome bowls are mugs.\n\n**Conclusions:**\nI. Only a few jugs are bowls.\nII. All mugs being trays is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. Only a few jugs are bowls — **follows**: the mugs that are bowls are jugs (some jugs are bowls); the jugs that are trays are never bowls (some jugs are not bowls) — both halves are certain.",
+          "II. All mugs being trays is a possibility — **does not follow**: the mugs that are bowls can never be trays, so all mugs can never be trays.",
+          "Hence only I follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "II tempts because mugs sit inside jugs and jugs touch trays, but the bowl part of mugs is locked out of trays.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Bowls",
+            "Jugs",
+            "Mugs",
+            "Trays"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Bowls"
+                ],
+                [
+                  "Jugs"
+                ],
+                [
+                  "Trays"
+                ],
+                [
+                  "Jugs",
+                  "Trays"
+                ],
+                [
+                  "Bowls",
+                  "Jugs",
+                  "Mugs"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility",
+        "syllogism:four-statements"
+      ]
+    },
+    {
+      "key": "sy-026",
+      "subtype": "only-a-few",
+      "difficulty": "extreme",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few hills are rivers.\nAll rivers are lakes.\nNo lake is a road.\n\n**Conclusions:**\nI. Only a few hills are lakes.\nII. All roads can never be hills.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. Only a few hills are lakes — **does not follow**: some hills are lakes is certain, but the hills outside rivers may also be lakes, so \"some hills are not lakes\" is not certain.",
+          "II. All roads can never be hills — **does not follow**: roads may lie wholly inside the part of hills that is neither rivers nor lakes, so all roads being hills is possible.",
+          "Hence neither I nor II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"Only a few\" in a conclusion needs both halves; here only the \"some\" half is certain.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Hills",
+            "Lakes",
+            "Rivers",
+            "Roads"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Hills"
+                ],
+                [
+                  "Lakes"
+                ],
+                [
+                  "Roads"
+                ],
+                [
+                  "Hills",
+                  "Lakes",
+                  "Rivers"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion I fails",
+              "regions": [
+                [
+                  "Lakes"
+                ],
+                [
+                  "Roads"
+                ],
+                [
+                  "Hills",
+                  "Lakes"
+                ],
+                [
+                  "Hills",
+                  "Lakes",
+                  "Rivers"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:can-never"
+      ]
+    },
+    {
+      "key": "sy-027",
+      "subtype": "only-a-few",
+      "difficulty": "extreme",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nSome bridges are towers.\nOnly a few towers are gates.\nNo gate is a fence.\nAll fences are bridges.\n\n**Conclusions:**\nI. Some bridges are not fences.\nII. Some towers are not fences.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. Some bridges are not fences — **does not follow**: fences lie inside bridges, but the two may be exactly the same set: the bridges that are towers can be towers outside gates, and then nothing pushes any bridge outside fences.",
+          "II. Some towers are not fences — **follows**: some towers are gates and no gate is a fence ⇒ those towers are not fences.",
+          "Hence only II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"All fences are bridges\" does not give \"Some bridges are not fences\" — the two circles may coincide. I would need the bridges to reach gates, and they only reach towers.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Bridges",
+            "Fences",
+            "Gates",
+            "Towers"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Bridges"
+                ],
+                [
+                  "Gates"
+                ],
+                [
+                  "Towers"
+                ],
+                [
+                  "Bridges",
+                  "Fences"
+                ],
+                [
+                  "Bridges",
+                  "Towers"
+                ],
+                [
+                  "Gates",
+                  "Towers"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion I fails",
+              "regions": [
+                [
+                  "Gates"
+                ],
+                [
+                  "Towers"
+                ],
+                [
+                  "Gates",
+                  "Towers"
+                ],
+                [
+                  "Bridges",
+                  "Fences",
+                  "Towers"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:four-statements"
+      ]
+    },
+    {
+      "key": "sy-028",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few vans are cars.\nNo car is a jeep.\nAll jeeps are trucks.\n\n**Conclusions:**\nI. All vans are trucks.\nII. Some vans are not trucks.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. All vans are trucks — **does not follow**: cars are kept away from jeeps, not from trucks, so vans may or may not lie outside trucks.",
+          "II. Some vans are not trucks — **does not follow**: equally, every van may be a truck, so this is not certain.",
+          "Neither is certain on its own, but I and II are a complementary pair on the same two terms, so exactly one of them must be true.",
+          "Hence either I or II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "No car is a jeep + All jeeps are trucks gives nothing about cars and trucks (No + All is not a valid chain in this order).",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Cars",
+            "Jeeps",
+            "Trucks",
+            "Vans"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Cars"
+                ],
+                [
+                  "Trucks"
+                ],
+                [
+                  "Vans"
+                ],
+                [
+                  "Cars",
+                  "Vans"
+                ],
+                [
+                  "Jeeps",
+                  "Trucks"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II fails",
+              "regions": [
+                [
+                  "Cars"
+                ],
+                [
+                  "Trucks"
+                ],
+                [
+                  "Jeeps",
+                  "Trucks"
+                ],
+                [
+                  "Trucks",
+                  "Vans"
+                ],
+                [
+                  "Cars",
+                  "Trucks",
+                  "Vans"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "trick:complementary-pair"
+      ]
+    },
+    {
+      "key": "sy-029",
+      "subtype": "only-a-few",
+      "difficulty": "extreme",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nAll drums are flutes.\nOnly a few flutes are harps.\nNo harp is a bell.\nOnly a few bells are drums.\n\n**Conclusions:**\nI. Some bells are flutes.\nII. Some drums are not harps.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. Some bells are flutes — **follows**: some bells are drums and all drums are flutes ⇒ some bells are flutes.",
+          "II. Some drums are not harps — **follows**: the drums that are bells cannot be harps (no harp is a bell).",
+          "Hence both I and II follow."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "II does not come from \"Only a few flutes are harps\" — the certain link is drums–bells–harps.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Bells",
+            "Drums",
+            "Flutes",
+            "Harps"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Bells"
+                ],
+                [
+                  "Flutes"
+                ],
+                [
+                  "Harps"
+                ],
+                [
+                  "Flutes",
+                  "Harps"
+                ],
+                [
+                  "Bells",
+                  "Drums",
+                  "Flutes"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:four-statements"
+      ]
+    },
+    {
+      "key": "sy-030",
+      "subtype": "only-a-few",
+      "difficulty": "medium",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few buttons are needles.\nSome needles are threads.\nNo thread is a ribbon.\n\n**Conclusions:**\nI. Some buttons are threads.\nII. Some needles are ribbons.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. Some buttons are threads — **does not follow**: buttons reach threads only through two \"some\" links.",
+          "II. Some needles are ribbons — **does not follow**: the needles outside threads may or may not be ribbons, so it is not certain.",
+          "Hence neither I nor II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Some + No gives \"Some needles are not ribbons\", never \"Some needles are ribbons\".",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Buttons",
+            "Needles",
+            "Ribbons",
+            "Threads"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails; conclusion II fails",
+              "regions": [
+                [
+                  "Buttons"
+                ],
+                [
+                  "Needles"
+                ],
+                [
+                  "Ribbons"
+                ],
+                [
+                  "Threads"
+                ],
+                [
+                  "Buttons",
+                  "Needles"
+                ],
+                [
+                  "Needles",
+                  "Threads"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few"
+      ]
+    },
+    {
+      "key": "sy-031",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nSome balloons are flags.\nOnly a few flags are poles.\nAll poles are sticks.\n\n**Conclusions:**\nI. Some balloons are not sticks.\nII. All flags can never be sticks.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "I. Some balloons are not sticks — **does not follow**: the balloons may all be sticks; nothing pushes any balloon outside sticks.",
+          "II. All flags can never be sticks — **does not follow**: flags that are poles are sticks, and the remaining flags may also be sticks, so all flags being sticks is possible.",
+          "Hence neither I nor II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"Only a few flags are poles\" blocks \"all flags are poles\", not \"all flags are sticks\" — sticks is the bigger circle.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Balloons",
+            "Flags",
+            "Poles",
+            "Sticks"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Balloons"
+                ],
+                [
+                  "Flags"
+                ],
+                [
+                  "Sticks"
+                ],
+                [
+                  "Balloons",
+                  "Flags"
+                ],
+                [
+                  "Flags",
+                  "Poles",
+                  "Sticks"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion I fails",
+              "regions": [
+                [
+                  "Flags"
+                ],
+                [
+                  "Sticks"
+                ],
+                [
+                  "Balloons",
+                  "Flags",
+                  "Sticks"
+                ],
+                [
+                  "Flags",
+                  "Poles",
+                  "Sticks"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:can-never"
+      ]
+    },
+    {
+      "key": "sy-032",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nNo cabin is a hut.\nOnly a few huts are sheds.\nAll sheds are barns.\n\n**Conclusions:**\nI. Some barns are not cabins.\nII. Some cabins are barns.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "I. Some barns are not cabins — **follows**: some huts are sheds ⇒ those huts are barns, and being huts they are not cabins ⇒ some barns are not cabins.",
+          "II. Some cabins are barns — **does not follow**: cabins may or may not touch barns outside huts.",
+          "Hence only I follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "No + Some + All usually gives nothing, but read it backwards: Some barns are huts + No hut is a cabin = Some barns are not cabins.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Barns",
+            "Cabins",
+            "Huts",
+            "Sheds"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion II fails",
+              "regions": [
+                [
+                  "Barns"
+                ],
+                [
+                  "Cabins"
+                ],
+                [
+                  "Huts"
+                ],
+                [
+                  "Barns",
+                  "Huts",
+                  "Sheds"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few"
+      ]
+    },
+    {
+      "key": "sy-033",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nAll whistles are horns.\nOnly a few gongs are horns.\nNo horn is a siren.\n\n**Conclusions:**\nI. Some whistles are gongs.\nII. Some gongs are not sirens.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "I. Some whistles are gongs — **does not follow**: whistles and gongs both sit in horns, but they need not overlap.",
+          "II. Some gongs are not sirens — **follows**: some gongs are horns and no horn is a siren ⇒ those gongs are not sirens.",
+          "Hence only II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Two sets inside the same circle (All + Some on the same middle term) need not touch each other.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Gongs",
+            "Horns",
+            "Sirens",
+            "Whistles"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Gongs"
+                ],
+                [
+                  "Horns"
+                ],
+                [
+                  "Sirens"
+                ],
+                [
+                  "Gongs",
+                  "Horns"
+                ],
+                [
+                  "Horns",
+                  "Whistles"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few"
+      ]
+    },
+    {
+      "key": "sy-034",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few lamps are bulbs.\nAll bulbs are wires.\nSome wires are plugs.\n\n**Conclusions:**\nI. Some lamps are plugs.\nII. No lamp is a plug.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "I. Some lamps are plugs — **does not follow**: lamps reach plugs only through wires, and the wire–plug link is just \"some\".",
+          "II. No lamp is a plug — **does not follow**: nothing keeps lamps away from plugs either.",
+          "Neither is certain on its own, but I and II are a complementary pair on the same two terms, so exactly one of them must be true.",
+          "Hence either I or II follows."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "Some + All + Some: the last \"some\" breaks the chain, so neither is certain — but the pair is complementary.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Bulbs",
+            "Lamps",
+            "Plugs",
+            "Wires"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap; conclusion I fails",
+              "regions": [
+                [
+                  "Lamps"
+                ],
+                [
+                  "Plugs"
+                ],
+                [
+                  "Wires"
+                ],
+                [
+                  "Plugs",
+                  "Wires"
+                ],
+                [
+                  "Bulbs",
+                  "Lamps",
+                  "Wires"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II fails",
+              "regions": [
+                [
+                  "Lamps"
+                ],
+                [
+                  "Plugs"
+                ],
+                [
+                  "Wires"
+                ],
+                [
+                  "Lamps",
+                  "Plugs"
+                ],
+                [
+                  "Plugs",
+                  "Wires"
+                ],
+                [
+                  "Bulbs",
+                  "Lamps",
+                  "Wires"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "trick:complementary-pair"
+      ]
+    },
+    {
+      "key": "sy-035",
+      "subtype": "only-a-few",
+      "difficulty": "hard",
+      "prompt": "In the question below, some statements are given followed by two conclusions. Take the statements to be true even if they seem to be at variance with commonly known facts, and decide which of the conclusions logically follows.\n\n**Statements:**\nOnly a few saucers are bowls.\nAll bowls are trays.\nAll trays are mats.\n\n**Conclusions:**\nI. Some saucers are mats.\nII. All saucers being trays is a possibility.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "I. Some saucers are mats — **follows**: some saucers are bowls ⇒ trays ⇒ mats.",
+          "II. All saucers being trays is a possibility — **follows**: the saucers outside bowls may still be trays, so all saucers could be trays (only \"all saucers are bowls\" is ruled out).",
+          "Hence both I and II follow."
+        ],
+        "shortcut": "\"Only a few A are B\" = Some A are B + Some A are not B. So \"All A are B\" (or \"All A being B is a possibility\") is always false, while \"All A can never be B\" and \"Some A are not B\" always follow.",
+        "trap": "\"Only a few saucers are bowls\" rules out all saucers being bowls, not all saucers being trays.",
+        "visual": {
+          "type": "venn",
+          "sets": [
+            "Bowls",
+            "Mats",
+            "Saucers",
+            "Trays"
+          ],
+          "worlds": [
+            {
+              "label": "Diagram 1 — least overlap",
+              "regions": [
+                [
+                  "Mats"
+                ],
+                [
+                  "Saucers"
+                ],
+                [
+                  "Bowls",
+                  "Mats",
+                  "Saucers",
+                  "Trays"
+                ]
+              ]
+            },
+            {
+              "label": "Diagram 2 — conclusion II is possible",
+              "regions": [
+                [
+                  "Mats"
+                ],
+                [
+                  "Mats",
+                  "Saucers",
+                  "Trays"
+                ],
+                [
+                  "Bowls",
+                  "Mats",
+                  "Saucers",
+                  "Trays"
+                ]
+              ]
+            }
+          ],
+          "caption": "Every diagram satisfies all the statements. A definite conclusion must hold in all of them; a possibility needs only one."
+        }
+      },
+      "tags": [
+        "syllogism:only-a-few",
+        "syllogism:possibility"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2813 @@
+{
+  "chapter": "order-ranking",
+  "version": 1,
+  "items": [
+    {
+      "key": "or-001",
+      "subtype": "position-both-ends",
+      "difficulty": "easy",
+      "prompt": "In a row of 47 students facing north, Harish is 19th from the left end. What is his position from the right end?",
+      "options": [
+        "28",
+        "29",
+        "30",
+        "46",
+        "66"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Position from the right = total − position from the left + 1.",
+          "= 47 − 19 + 1 = **29**."
+        ],
+        "shortcut": "Left + right − 1 = total, so right = 47 + 1 − 19.",
+        "trap": "28 forgets the \"+ 1\": Harish is counted from both ends.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "18 persons",
+            "Harish (19th from left, 29th from right)",
+            "28 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 47"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-002",
+      "subtype": "position-both-ends",
+      "difficulty": "medium",
+      "prompt": "In a queue at a ticket counter, there are 52 persons. Lata is 17th from the front and Mohan is 22nd from the end. How many persons are standing between Lata and Mohan?",
+      "options": [
+        "13",
+        "14",
+        "15",
+        "16",
+        "31"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Mohan from the front = 52 − 22 + 1 = 31.",
+          "Persons between = 31 − 17 − 1 = **13**."
+        ],
+        "shortcut": "Between = total − (front position + end position) = 52 − 39 = 13.",
+        "trap": "14 counts one of the two persons themselves.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "16 persons",
+            "Lata (17th from front, 36th from end)",
+            "13 persons",
+            "Mohan (31st from front, 22nd from end)",
+            "21 persons"
+          ],
+          "label": "Front → end",
+          "caption": "Total 52"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:between"
+      ]
+    },
+    {
+      "key": "or-003",
+      "subtype": "position-both-ends",
+      "difficulty": "medium",
+      "prompt": "In a class of 58 students, Ritika's rank is 21st from the top. Arnav is 9 ranks below Ritika. What is Arnav's rank from the bottom?",
+      "options": [
+        "27",
+        "28",
+        "29",
+        "30",
+        "38"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Arnav from the top = 21 + 9 = 30th.",
+          "From the bottom = 58 − 30 + 1 = **29th**."
+        ],
+        "trap": "38 is Ritika's rank from the bottom; Arnav is 9 ranks lower, so his rank from the bottom is smaller.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "20 persons",
+            "Ritika (21st from top, 38th from bottom)",
+            "8 persons",
+            "Arnav (30th from top, 29th from bottom)",
+            "28 persons"
+          ],
+          "label": "Top → bottom",
+          "caption": "58 ranked"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-004",
+      "subtype": "position-both-ends",
+      "difficulty": "medium",
+      "prompt": "In a row of 44 persons facing north, Gopal is 15th from the left end. Tanvi is 6th to the right of Gopal. What is Tanvi's position from the right end?",
+      "options": [
+        "20",
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Tanvi from the left = 15 + 6 = 21.",
+          "From the right = 44 − 21 + 1 = **24**."
+        ],
+        "trap": "21 is Tanvi's position from the left; 23 forgets to add 1.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "14 persons",
+            "Gopal (15th from left, 30th from right)",
+            "5 persons",
+            "Tanvi (21st from left, 24th from right)",
+            "23 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 44"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-005",
+      "subtype": "position-both-ends",
+      "difficulty": "medium",
+      "prompt": "In a class of 55 students, Sana ranks 16th from the top and 29th from the bottom among the students who passed an examination. 6 students failed, and every other student who did not pass was absent. How many students were absent?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "11"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Students who passed = 16 + 29 − 1 = 44.",
+          "Absent = 55 − 44 − 6 = **5**."
+        ],
+        "trap": "4 uses 16 + 29 = 45 passed students, counting Sana twice.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "15 persons",
+            "Sana (16th from top, 29th from bottom)",
+            "28 persons"
+          ],
+          "label": "Top → bottom",
+          "caption": "44 ranked"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:rank-list"
+      ]
+    },
+    {
+      "key": "or-006",
+      "subtype": "position-both-ends",
+      "difficulty": "medium",
+      "prompt": "In a row of 50 children facing north, Kiran is 12th from the left end and Bhavna is 9th from the right end. Deepa stands exactly midway between Kiran and Bhavna. What is Deepa's position from the left end?",
+      "options": [
+        "24",
+        "26",
+        "27",
+        "28",
+        "30"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Bhavna from the left = 50 − 9 + 1 = 42.",
+          "Deepa = (12 + 42) ÷ 2 = **27th** from the left."
+        ],
+        "shortcut": "Convert both people to positions from the same end; the midpoint is their average.",
+        "trap": "24 is Deepa's position from the right end, not the left.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "11 persons",
+            "Kiran (12th from left, 39th from right)",
+            "14 persons",
+            "Deepa (27th from left, 24th from right)",
+            "14 persons",
+            "Bhavna (42nd from left, 9th from right)",
+            "8 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 50"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-007",
+      "subtype": "position-both-ends",
+      "difficulty": "hard",
+      "prompt": "In a row of persons facing north, Pallavi is 10th from the left end and Suraj is 8th to her right. Suraj is 19th from the right end. Nitin is 4th to the left of Suraj. What is Nitin's position from the right end?",
+      "options": [
+        "15",
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Suraj from the left = 10 + 8 = 18, so the row has 18 + 19 − 1 = 36 persons.",
+          "Nitin from the left = 18 − 4 = 14.",
+          "From the right = 36 − 14 + 1 = **23**."
+        ],
+        "shortcut": "Nitin is 4 places farther from the right end than Suraj: 19 + 4 = 23.",
+        "trap": "15 puts Nitin 4th to the right of Suraj; 22 forgets the \"+ 1\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "9 persons",
+            "Pallavi (10th from left, 27th from right)",
+            "3 persons",
+            "Nitin (14th from left, 23rd from right)",
+            "3 persons",
+            "Suraj (18th from left, 19th from right)",
+            "18 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 36"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-008",
+      "subtype": "position-both-ends",
+      "difficulty": "hard",
+      "prompt": "In a row of 40 persons facing north, Ajay is 26th from the left end and Rekha is 21st from the right end. How many persons are between Ajay and Rekha?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "13"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Rekha from the left = 40 − 21 + 1 = 20, so Rekha is to the left of Ajay.",
+          "Persons between = 26 − 20 − 1 = **5**."
+        ],
+        "shortcut": "When left + right positions exceed the total: between = left + right − total − 2.",
+        "trap": "7 (= 26 + 21 − 40) forgets that both of them are inside the overlap: subtract 2 more.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "19 persons",
+            "Rekha (20th from left, 21st from right)",
+            "5 persons",
+            "Ajay (26th from left, 15th from right)",
+            "14 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 40"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:overlap"
+      ]
+    },
+    {
+      "key": "or-009",
+      "subtype": "position-both-ends",
+      "difficulty": "hard",
+      "prompt": "Seema is 11th from the left end of a row of 38 girls facing north. Rohini is 7 places to the right of Seema. Isha stands exactly midway between Rohini and the girl at the right end of the row. What is Isha's position from the left end?",
+      "options": [
+        "11",
+        "25",
+        "27",
+        "28",
+        "29"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Rohini = 11 + 7 = 18th from the left; the girl at the right end is 38th from the left.",
+          "Isha = (18 + 38) ÷ 2 = **28th** from the left."
+        ],
+        "trap": "11 is Isha's position from the right end. The midpoint is taken between Rohini (18th) and the last girl (38th), not from Seema.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "10 persons",
+            "Seema (11th from left, 28th from right)",
+            "6 persons",
+            "Rohini (18th from left, 21st from right)",
+            "9 persons",
+            "Isha (28th from left, 11th from right)",
+            "10 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 38"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-010",
+      "subtype": "position-both-ends",
+      "difficulty": "hard",
+      "prompt": "In a class, Mohit ranks 9th from the top. Varun is 6 ranks below Mohit and 31st from the bottom. Kavita's rank is exactly midway between Mohit's rank and that of the last-ranked student. What is Kavita's rank from the top?",
+      "options": [
+        "19",
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Varun = 9 + 6 = 15th from the top and 31st from the bottom, so the class has 15 + 31 − 1 = 45 students.",
+          "The last-ranked student is 45th. Kavita = (9 + 45) ÷ 2 = **27th** from the top."
+        ],
+        "trap": "24 finds the class size from Mohit's rank (9 + 31 − 1 = 39); 31st from the bottom is Varun's rank, so the class has 45 students. 19 is Kavita's rank from the bottom.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "8 persons",
+            "Mohit (9th from top, 37th from bottom)",
+            "5 persons",
+            "Varun (15th from top, 31st from bottom)",
+            "11 persons",
+            "Kavita (27th from top, 19th from bottom)",
+            "18 persons"
+          ],
+          "label": "Top → bottom",
+          "caption": "45 ranked"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-011",
+      "subtype": "position-both-ends",
+      "difficulty": "hard",
+      "prompt": "In a row of 60 persons facing north, Arun is 17th from the left end and Bela is 24th from the right end. Chandu is 5th to the right of Arun, and Dolly is 3rd to the left of Bela. How many persons are between Chandu and Dolly?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Bela from the left = 60 − 24 + 1 = 37, so Dolly = 37 − 3 = 34.",
+          "Chandu = 17 + 5 = 22.",
+          "Persons between = 34 − 22 − 1 = **11**."
+        ],
+        "trap": "12 counts Chandu or Dolly; 13 forgets to subtract 1 from 37 − 24.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "16 persons",
+            "Arun (17th from left, 44th from right)",
+            "4 persons",
+            "Chandu (22nd from left, 39th from right)",
+            "11 persons",
+            "Dolly (34th from left, 27th from right)",
+            "2 persons",
+            "Bela (37th from left, 24th from right)",
+            "23 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 60"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:between"
+      ]
+    },
+    {
+      "key": "or-012",
+      "subtype": "position-both-ends",
+      "difficulty": "hard",
+      "prompt": "In a queue of 35 persons at a bank counter, Rahul is 9th from the front. There are 14 persons between Rahul and Asha, and Asha is behind Rahul. Mahesh is 3 places ahead of Asha. What is Mahesh's position from the end?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "21"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Asha = 9 + 14 + 1 = 24th from the front, so Mahesh = 24 − 3 = 21st from the front.",
+          "From the end = 35 − 21 + 1 = **15th**."
+        ],
+        "trap": "21 is Mahesh's position from the front; 12 moves Mahesh behind Asha instead of ahead.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "8 persons",
+            "Rahul (9th from front, 27th from end)",
+            "11 persons",
+            "Mahesh (21st from front, 15th from end)",
+            "2 persons",
+            "Asha (24th from front, 12th from end)",
+            "11 persons"
+          ],
+          "label": "Front → end",
+          "caption": "Total 35"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-013",
+      "subtype": "position-both-ends",
+      "difficulty": "hard",
+      "prompt": "In a row of 45 persons facing north, Xavier is 18th from the left end. There are 6 persons between Xavier and Yusuf, and Yusuf is nearer to the right end than Xavier. Zeenat is 2nd to the left of Yusuf. What is Zeenat's position from the right end?",
+      "options": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Yusuf = 18 + 6 + 1 = 25th from the left, so Zeenat = 25 − 2 = 23rd from the left.",
+          "From the right = 45 − 23 + 1 = **23**."
+        ],
+        "trap": "21 is Yusuf's position from the right; Zeenat is 2 places farther from the right end. 22 forgets the \"+ 1\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "17 persons",
+            "Xavier (18th from left, 28th from right)",
+            "4 persons",
+            "Zeenat (23rd from left, 23rd from right)",
+            "1 person",
+            "Yusuf (25th from left, 21st from right)",
+            "20 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 45"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-014",
+      "subtype": "position-both-ends",
+      "difficulty": "hard",
+      "prompt": "In a row of 32 students facing north, Vikas is 12th from the right end. Leena is 5th to the left of Vikas. How many students are to the left of Leena?",
+      "options": [
+        "15",
+        "16",
+        "17",
+        "20",
+        "21"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Vikas from the left = 32 − 12 + 1 = 21, so Leena is 21 − 5 = 16th from the left.",
+          "Students to her left = 16 − 1 = **15**."
+        ],
+        "trap": "16 is Leena's position; the question asks how many students stand to her left.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "15 persons",
+            "Leena (16th from left, 17th from right)",
+            "4 persons",
+            "Vikas (21st from left, 12th from right)",
+            "11 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 32"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-015",
+      "subtype": "position-both-ends",
+      "difficulty": "medium",
+      "prompt": "In a row of 36 boys facing north, Farid is 14th from the right end. Joel is 8th to the left of Farid. What is Joel's position from the left end?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "22",
+        "29"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Farid from the left = 36 − 14 + 1 = 23.",
+          "Joel = 23 − 8 = **15th** from the left."
+        ],
+        "trap": "22 moves Joel 8 places towards the right end instead of the left (14 + 8).",
+        "visual": {
+          "type": "order",
+          "items": [
+            "14 persons",
+            "Joel (15th from left, 22nd from right)",
+            "7 persons",
+            "Farid (23rd from left, 14th from right)",
+            "13 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 36"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-016",
+      "subtype": "position-both-ends",
+      "difficulty": "extreme",
+      "prompt": "Tara is 14th from the left end and Jatin is 11th from the right end of a row of persons facing north. If Tara moves 5 places to her right, she will be 3rd to the left of Jatin. What is Tara's original position from the right end?",
+      "options": [
+        "13",
+        "14",
+        "17",
+        "18",
+        "19"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "After moving, Tara is 14 + 5 = 19th from the left, and Jatin is 3 places further: 22nd from the left.",
+          "Row = 22 + 11 − 1 = 32 persons.",
+          "Tara's original position from the right = 32 − 14 + 1 = **19**."
+        ],
+        "trap": "14 is her position from the right after the move (32 − 19 + 1); the question asks for her original position.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "13 persons",
+            "Tara (14th from left, 19th from right)",
+            "7 persons",
+            "Jatin (22nd from left, 11th from right)",
+            "10 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 32"
+        }
+      },
+      "tags": [
+        "ranking:both-ends"
+      ]
+    },
+    {
+      "key": "or-017",
+      "subtype": "position-both-ends",
+      "difficulty": "extreme",
+      "prompt": "In a row of 61 persons facing north, Arif is 20th from the left end and Kirti is 24th from the right end. Sunil stands exactly midway between Arif and Kirti, and Meena is 4th to the right of Sunil. How many persons are between Meena and Kirti?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Kirti from the left = 61 − 24 + 1 = 38.",
+          "Sunil = (20 + 38) ÷ 2 = 29; Meena = 29 + 4 = 33.",
+          "Persons between Meena and Kirti = 38 − 33 − 1 = **4**."
+        ],
+        "trap": "5 subtracts the positions without removing one end (38 − 33).",
+        "visual": {
+          "type": "order",
+          "items": [
+            "19 persons",
+            "Arif (20th from left, 42nd from right)",
+            "8 persons",
+            "Sunil (29th from left, 33rd from right)",
+            "3 persons",
+            "Meena (33rd from left, 29th from right)",
+            "4 persons",
+            "Kirti (38th from left, 24th from right)",
+            "23 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 61"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-018",
+      "subtype": "position-both-ends",
+      "difficulty": "extreme",
+      "prompt": "In a class, 7 students failed and 5 were absent from an examination. Among the students who passed, Rohan ranks 18th from the top. Among all the students who took the examination (those who failed are ranked below everyone who passed), he ranks 30th from the bottom. How many students are in the class?",
+      "options": [
+        "47",
+        "52",
+        "54",
+        "59",
+        "60"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Students who took the examination = 18 + 30 − 1 = 47 (this count already includes the 7 who failed, since they are in his bottom count).",
+          "Class = 47 + 5 absent = **52**."
+        ],
+        "trap": "59 adds the 7 failed students again, but they are already inside Rohan's 30 from the bottom.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "17 persons",
+            "Rohan (18th from top, 30th from bottom)",
+            "29 persons"
+          ],
+          "label": "Top → bottom",
+          "caption": "47 ranked"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:rank-list"
+      ]
+    },
+    {
+      "key": "or-019",
+      "subtype": "position-both-ends",
+      "difficulty": "extreme",
+      "prompt": "In a row of 50 persons facing north, Pinky is 13th from the left end and Qasim is 14th from the right end. Raghu stands exactly midway between Pinky and Qasim, and Sudha stands exactly midway between Raghu and Qasim. What is Sudha's position from the right end?",
+      "options": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "31"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Qasim from the left = 50 − 14 + 1 = 37. Raghu = (13 + 37) ÷ 2 = 25.",
+          "Sudha = (25 + 37) ÷ 2 = 31st from the left.",
+          "From the right = 50 − 31 + 1 = **20**."
+        ],
+        "trap": "31 is Sudha's position from the left end.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "12 persons",
+            "Pinky (13th from left, 38th from right)",
+            "11 persons",
+            "Raghu (25th from left, 26th from right)",
+            "5 persons",
+            "Sudha (31st from left, 20th from right)",
+            "5 persons",
+            "Qasim (37th from left, 14th from right)",
+            "13 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 50"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-020",
+      "subtype": "position-both-ends",
+      "difficulty": "extreme",
+      "prompt": "In a row of persons facing north, Shalini is 7th from the left end and Vinod is 9th from the right end. Shalini is to the left of Vinod, and there are 25 persons between them. Ankit stands exactly in the middle of the row. How many persons are between Ankit and Vinod?",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "21",
+        "33"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Row = 7 + 25 + 9 = 41 persons, so the middle place is (41 + 1) ÷ 2 = 21st.",
+          "Vinod from the left = 41 − 9 + 1 = 33.",
+          "Persons between Ankit and Vinod = 33 − 21 − 1 = **11**."
+        ],
+        "trap": "12 subtracts the positions without removing one end (33 − 21).",
+        "visual": {
+          "type": "order",
+          "items": [
+            "6 persons",
+            "Shalini (7th from left, 35th from right)",
+            "13 persons",
+            "Ankit (21st from left, 21st from right)",
+            "11 persons",
+            "Vinod (33rd from left, 9th from right)",
+            "8 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 41"
+        }
+      },
+      "tags": [
+        "ranking:both-ends",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-021",
+      "subtype": "total-persons",
+      "difficulty": "easy",
+      "prompt": "In a queue at a post office, Lalit is 15th from the front and also 15th from the end. How many persons are in the queue?",
+      "options": [
+        "28",
+        "29",
+        "30",
+        "31",
+        "32"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Total = 15 + 15 − 1 = **29**."
+        ],
+        "shortcut": "Both positions count the same person once each — subtract 1.",
+        "trap": "30 counts Lalit twice.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "14 persons",
+            "Lalit (15th from front, 15th from end)",
+            "14 persons"
+          ],
+          "label": "Front → end",
+          "caption": "Total 29"
+        }
+      },
+      "tags": [
+        "ranking:total"
+      ]
+    },
+    {
+      "key": "or-022",
+      "subtype": "total-persons",
+      "difficulty": "medium",
+      "prompt": "In a row of students facing north, Chetan is 21st from the left end and Disha is 18th from the right end. Disha is to the left of Chetan, and there are 6 students between them. How many students are in the row?",
+      "options": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "45"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Disha is to the left of Chetan, so their counts overlap: Disha = 21 − 7 = 14th from the left.",
+          "Total = 14 + 18 − 1 = **31**."
+        ],
+        "shortcut": "Overlap: left + right − between − 2 = 21 + 18 − 6 − 2.",
+        "trap": "45 (= 21 + 6 + 18) treats Disha as standing to the right of Chetan.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "13 persons",
+            "Disha (14th from left, 18th from right)",
+            "6 persons",
+            "Chetan (21st from left, 11th from right)",
+            "10 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 31"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:overlap"
+      ]
+    },
+    {
+      "key": "or-023",
+      "subtype": "total-persons",
+      "difficulty": "medium",
+      "prompt": "In a queue at a railway ticket window, Esha is 11th from the front. Firoz is 9 places behind Esha and is 16th from the end. How many persons are in the queue?",
+      "options": [
+        "26",
+        "27",
+        "30",
+        "34",
+        "35"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Firoz from the front = 11 + 9 = 20.",
+          "Total = 20 + 16 − 1 = **35**."
+        ],
+        "trap": "26 uses Esha's position (11 + 16 − 1) instead of Firoz's.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "10 persons",
+            "Esha (11th from front, 25th from end)",
+            "8 persons",
+            "Firoz (20th from front, 16th from end)",
+            "15 persons"
+          ],
+          "label": "Front → end",
+          "caption": "Total 35"
+        }
+      },
+      "tags": [
+        "ranking:total"
+      ]
+    },
+    {
+      "key": "or-024",
+      "subtype": "total-persons",
+      "difficulty": "medium",
+      "prompt": "In a class, Gita ranks 12th from the top and Hari ranks 19th from the bottom. Gita is ranked above Hari, and 8 students are ranked between them. If 4 students of the class did not take the test and are not ranked, how many students are there in the class?",
+      "options": [
+        "39",
+        "40",
+        "42",
+        "43",
+        "44"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Ranked students = 12 + 8 + 19 = 39.",
+          "Class = 39 + 4 = **43**."
+        ],
+        "trap": "39 counts only the ranked students.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "11 persons",
+            "Gita (12th from top, 28th from bottom)",
+            "8 persons",
+            "Hari (21st from top, 19th from bottom)",
+            "18 persons"
+          ],
+          "label": "Top → bottom",
+          "caption": "39 ranked"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:rank-list"
+      ]
+    },
+    {
+      "key": "or-025",
+      "subtype": "total-persons",
+      "difficulty": "medium",
+      "prompt": "In a row of persons facing north, Jaya is 16th from the left end and Kunal is 10th from the right end. Leela stands exactly midway between Jaya and Kunal, and there are 5 persons between Jaya and Leela. How many persons are in the row?",
+      "options": [
+        "31",
+        "33",
+        "35",
+        "36",
+        "37"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Leela = 16 + 6 = 22nd from the left, and Kunal is as far beyond Leela: 22 + 6 = 28th from the left.",
+          "Total = 28 + 10 − 1 = **37**."
+        ],
+        "trap": "31 (= 16 + 5 + 10) leaves out Leela, the 5 persons between Leela and Kunal and Kunal himself.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "15 persons",
+            "Jaya (16th from left, 22nd from right)",
+            "5 persons",
+            "Leela (22nd from left, 16th from right)",
+            "5 persons",
+            "Kunal (28th from left, 10th from right)",
+            "9 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 37"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-026",
+      "subtype": "total-persons",
+      "difficulty": "medium",
+      "prompt": "In a row of children facing north, Mamta is 10th from the left end. Naresh is 4th to the right of Mamta, and Om is 7th to the right of Naresh. Om is 12th from the right end. How many children are in the row?",
+      "options": [
+        "29",
+        "30",
+        "31",
+        "32",
+        "33"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Om from the left = 10 + 4 + 7 = 21.",
+          "Total = 21 + 12 − 1 = **32**."
+        ],
+        "trap": "33 forgets to subtract 1 for Om.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "9 persons",
+            "Mamta (10th from left, 23rd from right)",
+            "3 persons",
+            "Naresh (14th from left, 19th from right)",
+            "6 persons",
+            "Om (21st from left, 12th from right)",
+            "11 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 32"
+        }
+      },
+      "tags": [
+        "ranking:total"
+      ]
+    },
+    {
+      "key": "or-027",
+      "subtype": "total-persons",
+      "difficulty": "medium",
+      "prompt": "In a row of people facing north, Ashok is 13th from the left end and Bindu is 17th from the right end. Ashok is to the left of Bindu, and there are 9 persons between them. Charu is the 5th person to the right of Bindu. What is the total number of persons in the row?",
+      "options": [
+        "39",
+        "40",
+        "41",
+        "44",
+        "45"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "No overlap: total = 13 + 9 + 17 = 39.",
+          "Charu (5th to the right of Bindu) is already inside the 17 counted from the right, so she adds nothing: **39**."
+        ],
+        "trap": "44 adds Charu and the persons up to her again, though they are already in Bindu's count from the right.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "12 persons",
+            "Ashok (13th from left, 27th from right)",
+            "9 persons",
+            "Bindu (23rd from left, 17th from right)",
+            "4 persons",
+            "Charu (28th from left, 12th from right)",
+            "11 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 39"
+        }
+      },
+      "tags": [
+        "ranking:total"
+      ]
+    },
+    {
+      "key": "or-028",
+      "subtype": "total-persons",
+      "difficulty": "hard",
+      "prompt": "In a row of girls facing north, Pooja is 14th from the left end and Ritu is 11th from the right end. There are 4 girls between Pooja and Ritu. How many girls are in the row?",
+      "options": [
+        "19",
+        "28",
+        "29",
+        "30",
+        "Cannot be determined"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "If Ritu is to the right of Pooja: total = 14 + 4 + 11 = 29.",
+          "If Ritu is to the left of Pooja (positions overlap): Ritu is 9th from the left and the total = 9 + 11 − 1 = 19.",
+          "The order of Pooja and Ritu is not given, so the total is **Cannot be determined**."
+        ],
+        "trap": "Both 29 and 19 fit — without the order of the two girls the total is not fixed."
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:cannot-determine"
+      ]
+    },
+    {
+      "key": "or-029",
+      "subtype": "total-persons",
+      "difficulty": "hard",
+      "prompt": "In a row of persons facing north, Sameer is 14th from the left end and Tina is 9th from the right end. There are 5 persons between Sameer and Tina. What is the minimum possible number of persons in the row?",
+      "options": [
+        "16",
+        "17",
+        "23",
+        "28",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Tina to the right of Sameer: total = 14 + 5 + 9 = 28.",
+          "Tina to the left of Sameer: Tina = 14 − 6 = 8th from the left, total = 8 + 9 − 1 = 16 (valid: Tina is then 9th from the right).",
+          "Minimum = **16**."
+        ],
+        "trap": "28 is the maximum; the question asks for the smaller of the two possible totals, so it is not \"Cannot be determined\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "7 persons",
+            "Tina (8th from left, 9th from right)",
+            "5 persons",
+            "Sameer (14th from left, 3rd from right)",
+            "2 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 16"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:overlap"
+      ]
+    },
+    {
+      "key": "or-030",
+      "subtype": "total-persons",
+      "difficulty": "hard",
+      "prompt": "Usha is 9th from the left end of a row of persons facing north. The number of persons to her right is three times the number of persons to her left. How many persons are in the row?",
+      "options": [
+        "32",
+        "33",
+        "35",
+        "36",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Persons to her left = 9 − 1 = 8, so persons to her right = 3 × 8 = 24.",
+          "Total = 8 + 1 + 24 = **33**."
+        ],
+        "trap": "36 uses 3 × 9 = 27 on the right, treating her position as the number of persons to her left.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "8 persons",
+            "Usha (9th from left, 25th from right)",
+            "24 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 33"
+        }
+      },
+      "tags": [
+        "ranking:total"
+      ]
+    },
+    {
+      "key": "or-031",
+      "subtype": "total-persons",
+      "difficulty": "hard",
+      "prompt": "In a queue at a bank counter, Vinay is 17th from the front and Wasim is 12th from the end. Yash stands exactly midway between Vinay and Wasim and is 8 places behind Vinay. How many persons are in the queue?",
+      "options": [
+        "36",
+        "37",
+        "43",
+        "44",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Yash = 17 + 8 = 25th from the front; Wasim is another 8 places behind: 33rd from the front.",
+          "Total = 33 + 12 − 1 = **44**."
+        ],
+        "trap": "37 (= 25 + 12) puts Wasim immediately behind Yash, ignoring that Yash is midway.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "16 persons",
+            "Vinay (17th from front, 28th from end)",
+            "7 persons",
+            "Yash (25th from front, 20th from end)",
+            "7 persons",
+            "Wasim (33rd from front, 12th from end)",
+            "11 persons"
+          ],
+          "label": "Front → end",
+          "caption": "Total 44"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-032",
+      "subtype": "total-persons",
+      "difficulty": "hard",
+      "prompt": "Zoya is 13th from the left end of a row of persons facing north. If she moves 6 places to her right, she becomes 18th from the right end. How many persons are in the row?",
+      "options": [
+        "30",
+        "35",
+        "36",
+        "37",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "After the move Zoya is 13 + 6 = 19th from the left and 18th from the right.",
+          "Total = 19 + 18 − 1 = **36**."
+        ],
+        "trap": "30 uses her old place (13 + 18 − 1); she is 18th from the right only after the move.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "12 persons",
+            "Zoya (13th from left, 24th from right)",
+            "23 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 36"
+        }
+      },
+      "tags": [
+        "ranking:total"
+      ]
+    },
+    {
+      "key": "or-033",
+      "subtype": "total-persons",
+      "difficulty": "hard",
+      "prompt": "Among the students of a class who passed an examination, Anil ranks 15th from the top. Bela is 6 ranks below Anil and is 20th from the bottom among those who passed. If 9 students failed and 2 were absent, how many students are in the class?",
+      "options": [
+        "40",
+        "51",
+        "52",
+        "60",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Bela = 15 + 6 = 21st from the top among those who passed, so passed = 21 + 20 − 1 = 40.",
+          "Class = 40 + 9 + 2 = **51**."
+        ],
+        "trap": "40 counts only the students who passed; 52 forgets the \"− 1\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "14 persons",
+            "Anil (15th from top, 26th from bottom)",
+            "5 persons",
+            "Bela (21st from top, 20th from bottom)",
+            "19 persons"
+          ],
+          "label": "Top → bottom",
+          "caption": "40 ranked"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:rank-list"
+      ]
+    },
+    {
+      "key": "or-034",
+      "subtype": "total-persons",
+      "difficulty": "hard",
+      "prompt": "In a row of persons facing north, Chirag is 19th from the left end and Daksh is 15th from the right end. Daksh is 3rd to the left of Chirag. How many persons are in the row?",
+      "options": [
+        "30",
+        "31",
+        "32",
+        "36",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Daksh = 19 − 3 = 16th from the left.",
+          "Total = 16 + 15 − 1 = **30**."
+        ],
+        "trap": "36 (= 19 + 2 + 15) places Daksh to the right of Chirag.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "15 persons",
+            "Daksh (16th from left, 15th from right)",
+            "2 persons",
+            "Chirag (19th from left, 12th from right)",
+            "11 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 30"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:overlap"
+      ]
+    },
+    {
+      "key": "or-035",
+      "subtype": "total-persons",
+      "difficulty": "hard",
+      "prompt": "In a row of persons facing north, Ekta is 7th from the left end and Gauri is 7th from the right end. Hema stands exactly midway between Ekta and Gauri, and there are 9 persons between Ekta and Hema. How many persons are in the row?",
+      "options": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Gauri cannot be to the left of Ekta: Hema would then have to stand 10 places to the left of Ekta, who is only 7th from the left. So Hema = 7 + 10 = 17th and Gauri = 17 + 10 = 27th from the left.",
+          "Total = 27 + 7 − 1 = **33**."
+        ],
+        "trap": "The order of Ekta and Gauri is not stated, but only one order works, so \"Cannot be determined\" is wrong.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "6 persons",
+            "Ekta (7th from left, 27th from right)",
+            "9 persons",
+            "Hema (17th from left, 17th from right)",
+            "9 persons",
+            "Gauri (27th from left, 7th from right)",
+            "6 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 33"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-036",
+      "subtype": "total-persons",
+      "difficulty": "extreme",
+      "prompt": "In a row of persons facing north, Ishaan is 18th from the left end and Jyoti is 13th from the right end. Kapil is 3rd to the right of Jyoti, and there are 7 persons between Ishaan and Kapil. How many persons are in the row?",
+      "options": [
+        "19",
+        "27",
+        "35",
+        "36",
+        "Cannot be determined"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Kapil is 13 − 3 = 10th from the right. If Kapil is to the right of Ishaan, Kapil = 18 + 8 = 26th from the left and the total = 26 + 10 − 1 = 35.",
+          "If Kapil is to the left of Ishaan, Kapil = 18 − 8 = 10th from the left and the total = 10 + 10 − 1 = 19 (then Jyoti is 7th from the left and 13th from the right — valid).",
+          "Two totals fit → **Cannot be determined**."
+        ],
+        "trap": "35 is only the case with Kapil to the right of Ishaan; the overlapping case (19) also satisfies every clue."
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:cannot-determine"
+      ]
+    },
+    {
+      "key": "or-037",
+      "subtype": "total-persons",
+      "difficulty": "extreme",
+      "prompt": "In a row of persons facing north, Lalita is 10th from the left end and Manish is 16th from the right end, with 3 persons between them. Nisha is 4th to the right of Manish. What is the minimum possible number of persons in the row?",
+      "options": [
+        "21",
+        "25",
+        "29",
+        "30",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Manish to the left of Lalita: Manish = 6th from the left and Nisha = 10th — Lalita's place. Impossible.",
+          "So Manish is to the right of Lalita: Manish = 14th from the left, total = 14 + 16 − 1 = 29.",
+          "Only one total survives, so the minimum is **29**."
+        ],
+        "trap": "21 is the overlapping case, but it puts Nisha on Lalita's place.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "9 persons",
+            "Lalita (10th from left, 20th from right)",
+            "3 persons",
+            "Manish (14th from left, 16th from right)",
+            "3 persons",
+            "Nisha (18th from left, 12th from right)",
+            "11 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 29"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:overlap"
+      ]
+    },
+    {
+      "key": "or-038",
+      "subtype": "total-persons",
+      "difficulty": "extreme",
+      "prompt": "In a row of persons facing north, Om is 13th from the left end and Pari is 8th to the right of Om. The number of persons to the right of Pari is half the number of persons to the left of Om. How many persons are in the row?",
+      "options": [
+        "26",
+        "27",
+        "28",
+        "33",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Persons to the left of Om = 12, so persons to the right of Pari = 6.",
+          "Pari = 13 + 8 = 21st from the left; total = 21 + 6 = **27**."
+        ],
+        "trap": "28 counts Pari again after adding the 6 persons to her right.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "12 persons",
+            "Om (13th from left, 15th from right)",
+            "7 persons",
+            "Pari (21st from left, 7th from right)",
+            "6 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 27"
+        }
+      },
+      "tags": [
+        "ranking:total"
+      ]
+    },
+    {
+      "key": "or-039",
+      "subtype": "total-persons",
+      "difficulty": "extreme",
+      "prompt": "Among the students of a class who passed an examination, Raj ranks 11th from the top and Sia ranks 13th from the bottom. Sia is ranked above Raj, and 4 students are ranked between them. If 5 students failed, how many students are in the class?",
+      "options": [
+        "23",
+        "24",
+        "32",
+        "33",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Sia is above Raj: Sia = 11 − 5 = 6th from the top among those who passed.",
+          "Passed = 6 + 13 − 1 = 18; class = 18 + 5 = **23**."
+        ],
+        "trap": "33 (= 11 + 4 + 13 + 5) places Sia below Raj.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "5 persons",
+            "Sia (6th from top, 13th from bottom)",
+            "4 persons",
+            "Raj (11th from top, 8th from bottom)",
+            "7 persons"
+          ],
+          "label": "Top → bottom",
+          "caption": "18 ranked"
+        }
+      },
+      "tags": [
+        "ranking:total",
+        "ranking:rank-list",
+        "ranking:overlap"
+      ]
+    },
+    {
+      "key": "or-040",
+      "subtype": "total-persons",
+      "difficulty": "extreme",
+      "prompt": "In a row of persons facing north, Wahid is 5th from the left end and Yamini is 6th from the right end. Xavier is to the right of Wahid with 7 persons between them, and there are 4 persons between Xavier and Yamini. What is the maximum possible number of persons in the row?",
+      "options": [
+        "13",
+        "22",
+        "23",
+        "24",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Xavier = 5 + 8 = 13th from the left. Yamini is 5 places from Xavier: 18th or 8th from the left.",
+          "Totals: 18 + 6 − 1 = 23, or 8 + 6 − 1 = 13 (then Xavier is last — still valid).",
+          "Maximum = **23**."
+        ],
+        "trap": "24 forgets the \"− 1\"; 13 is the minimum, not the maximum.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "4 persons",
+            "Wahid (5th from left, 19th from right)",
+            "7 persons",
+            "Xavier (13th from left, 11th from right)",
+            "4 persons",
+            "Yamini (18th from left, 6th from right)",
+            "5 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 23"
+        }
+      },
+      "tags": [
+        "ranking:total"
+      ]
+    },
+    {
+      "key": "or-041",
+      "subtype": "interchange",
+      "difficulty": "easy",
+      "prompt": "In a row of persons facing north, Ravi is 12th from the left end and Sunita is 18th from the right end. When Ravi and Sunita interchange their positions, Ravi becomes 23rd from the left end. How many persons are in the row?",
+      "options": [
+        "29",
+        "30",
+        "38",
+        "39",
+        "40"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "After the interchange Ravi stands at Sunita's old place: 23rd from the left and 18th from the right.",
+          "Total = 23 + 18 − 1 = **40**."
+        ],
+        "trap": "29 uses Ravi's old position (12 + 18 − 1).",
+        "visual": {
+          "type": "order",
+          "items": [
+            "11 persons",
+            "Ravi (12th from left, 29th from right)",
+            "10 persons",
+            "Sunita (23rd from left, 18th from right)",
+            "17 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 40"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-042",
+      "subtype": "interchange",
+      "difficulty": "medium",
+      "prompt": "In a queue of 44 persons, Abhay is 9th from the front and Bhumi is 27th from the front. If Abhay and Bhumi interchange their positions, what will be Abhay's new position from the end?",
+      "options": [
+        "17",
+        "18",
+        "19",
+        "27",
+        "36"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Abhay moves to Bhumi's old place: 27th from the front.",
+          "From the end = 44 − 27 + 1 = **18**."
+        ],
+        "trap": "36 is Abhay's old position from the end.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "8 persons",
+            "Abhay (9th from front, 36th from end)",
+            "17 persons",
+            "Bhumi (27th from front, 18th from end)",
+            "17 persons"
+          ],
+          "label": "Front → end",
+          "caption": "Total 44"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-043",
+      "subtype": "interchange",
+      "difficulty": "medium",
+      "prompt": "In a row of persons facing north, Charu is 14th from the left end and Dev is 20th from the right end. After they interchange their positions, Charu is 25th from the left end. How many persons are between Charu and Dev?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "34"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Charu's new place is Dev's old place, so Dev was 25th from the left.",
+          "Persons between = 25 − 14 − 1 = **10**."
+        ],
+        "trap": "11 forgets to subtract 1.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "13 persons",
+            "Charu (14th from left, 31st from right)",
+            "10 persons",
+            "Dev (25th from left, 20th from right)",
+            "19 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 44"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-044",
+      "subtype": "interchange",
+      "difficulty": "medium",
+      "prompt": "In a row of persons facing north, Esha is 10th from the left end and Farhan is 13th from the right end. When they interchange their positions, Esha becomes 19th from the left end. What is Farhan's new position from the right end?",
+      "options": [
+        "13",
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Esha's new place is Farhan's old place: 19th from the left and 13th from the right, so the row has 19 + 13 − 1 = 31 persons.",
+          "Farhan moves to Esha's old place, 10th from the left: from the right = 31 − 10 + 1 = **22**."
+        ],
+        "trap": "13 is Farhan's old position from the right.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "9 persons",
+            "Esha (10th from left, 22nd from right)",
+            "8 persons",
+            "Farhan (19th from left, 13th from right)",
+            "12 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 31"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-045",
+      "subtype": "interchange",
+      "difficulty": "medium",
+      "prompt": "In a row of 50 persons facing north, Gaurav is 13th from the left end and Hina is 16th from the right end. If Gaurav and Hina interchange their positions, how many persons will be to the right of Gaurav?",
+      "options": [
+        "15",
+        "16",
+        "34",
+        "35",
+        "37"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Gaurav moves to Hina's old place: 16th from the right.",
+          "Persons to his right = 16 − 1 = **15**."
+        ],
+        "trap": "16 is Gaurav's new position from the right, not the number of persons to his right.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "12 persons",
+            "Gaurav (13th from left, 38th from right)",
+            "21 persons",
+            "Hina (35th from left, 16th from right)",
+            "15 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 50"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-046",
+      "subtype": "interchange",
+      "difficulty": "medium",
+      "prompt": "Indu and Jai interchange their positions in a row of persons facing north. Before the interchange Indu was 8th from the left end; after it she is 17th from the left end. Jai was originally 30th from the right end. How many persons are in the row?",
+      "options": [
+        "37",
+        "45",
+        "46",
+        "47",
+        "54"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Indu's new place (17th from the left) is Jai's old place, which is 30th from the right.",
+          "Total = 17 + 30 − 1 = **46**."
+        ],
+        "trap": "37 uses Indu's old position (8 + 30 − 1).",
+        "visual": {
+          "type": "order",
+          "items": [
+            "7 persons",
+            "Indu (8th from left, 39th from right)",
+            "8 persons",
+            "Jai (17th from left, 30th from right)",
+            "29 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 46"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-047",
+      "subtype": "interchange",
+      "difficulty": "medium",
+      "prompt": "In a row of 30 persons facing north, Kamal is 7th from the left end and Lina is 9th from the right end. If Kamal and Lina interchange their positions, how many persons will be between them?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "21",
+        "22"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Lina from the left = 30 − 9 + 1 = 22.",
+          "An interchange only swaps the two people; the two places stay the same, so between = 22 − 7 − 1 = **14**."
+        ],
+        "trap": "15 forgets to subtract 1; the interchange does not change the count.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "6 persons",
+            "Kamal (7th from left, 24th from right)",
+            "14 persons",
+            "Lina (22nd from left, 9th from right)",
+            "8 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 30"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-048",
+      "subtype": "interchange",
+      "difficulty": "hard",
+      "prompt": "In a row of 40 persons facing north, Manoj is 11th from the left end, Nupur is 18th from the right end and Om is 28th from the left end. First Manoj and Nupur interchange their positions; then Nupur and Om interchange their positions. What is Nupur's final position from the right end?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "18",
+        "30"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Nupur starts 40 − 18 + 1 = 23rd from the left. After the first interchange she is at Manoj's place, 11th.",
+          "After the second she is at Om's place, 28th from the left.",
+          "From the right = 40 − 28 + 1 = **13**."
+        ],
+        "trap": "30 is Manoj's original position from the right — the first swap does not decide Nupur's final place.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "10 persons",
+            "Manoj (11th from left, 30th from right)",
+            "11 persons",
+            "Nupur (23rd from left, 18th from right)",
+            "4 persons",
+            "Om (28th from left, 13th from right)",
+            "12 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 40"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-049",
+      "subtype": "interchange",
+      "difficulty": "hard",
+      "prompt": "In a row of 40 persons facing north, Pranav and Qadir interchange their positions. As a result Pranav moves 9 places towards the right end and becomes 16th from the right end. What was Pranav's original position from the right end?",
+      "options": [
+        "15",
+        "16",
+        "23",
+        "24",
+        "25"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Pranav's new place = Qadir's old place = 16th from the right = 25th from the left.",
+          "Pranav was 9 places to the left of it: 16th from the left.",
+          "From the right = 40 − 16 + 1 = **25**."
+        ],
+        "shortcut": "Moving 9 places right means 9 places nearer the right end: 16 + 9 = 25.",
+        "trap": "16 is his new position from the right; 24 forgets the \"+ 1\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "15 persons",
+            "Pranav (16th from left, 25th from right)",
+            "8 persons",
+            "Qadir (25th from left, 16th from right)",
+            "15 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 40"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-050",
+      "subtype": "interchange",
+      "difficulty": "hard",
+      "prompt": "In a queue at a bank counter, Reena is 10th from the front and Sahil is 25th from the end. When they interchange their positions, Reena becomes 22nd from the front. Tanu stands exactly midway between Reena and Sahil. What is Tanu's position from the end?",
+      "options": [
+        "30",
+        "31",
+        "32",
+        "35",
+        "36"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Reena's new place is Sahil's old place: 22nd from the front and 25th from the end, so the queue has 22 + 25 − 1 = 46 persons.",
+          "Tanu = (10 + 22) ÷ 2 = 16th from the front.",
+          "From the end = 46 − 16 + 1 = **31**."
+        ],
+        "trap": "16 is Tanu's place from the front; 30 forgets the \"+ 1\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "9 persons",
+            "Reena (10th from front, 37th from end)",
+            "5 persons",
+            "Tanu (16th from front, 31st from end)",
+            "5 persons",
+            "Sahil (22nd from front, 25th from end)",
+            "24 persons"
+          ],
+          "label": "Front → end",
+          "caption": "Total 46"
+        }
+      },
+      "tags": [
+        "ranking:interchange",
+        "ranking:middle"
+      ]
+    },
+    {
+      "key": "or-051",
+      "subtype": "interchange",
+      "difficulty": "hard",
+      "prompt": "In a row of persons facing north, Uday is 18th from the left end and Vidya is 12th from the right end. When they interchange their positions, Uday becomes 22nd from the left end. Wamiq was 5th to the left of Uday before the interchange. How many persons are between Wamiq and Vidya after the interchange?",
+      "options": [
+        "4",
+        "5",
+        "8",
+        "9",
+        "13"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Vidya moves to Uday's old place, 18th from the left. Wamiq stays at 18 − 5 = 13th from the left.",
+          "Persons between = 18 − 13 − 1 = **4**."
+        ],
+        "trap": "8 uses Vidya's old place (22 − 13 − 1).",
+        "visual": {
+          "type": "order",
+          "items": [
+            "12 persons",
+            "Wamiq (13th from left, 21st from right)",
+            "4 persons",
+            "Uday (18th from left, 16th from right)",
+            "3 persons",
+            "Vidya (22nd from left, 12th from right)",
+            "11 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 33"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-052",
+      "subtype": "interchange",
+      "difficulty": "hard",
+      "prompt": "Xenia and Yuvraj interchange their positions in a row of persons facing north. After the interchange, Xenia is 14th from the left end and Yuvraj is 19th from the right end. Before the interchange there were 6 persons between them, and Xenia was to the left of Yuvraj. How many persons are in the row?",
+      "options": [
+        "21",
+        "24",
+        "25",
+        "32",
+        "39"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Xenia's new place (14th from the left) was Yuvraj's. Xenia was to his left with 6 between, so she was 14 − 7 = 7th from the left.",
+          "Yuvraj now stands at Xenia's old place: 7th from the left and 19th from the right.",
+          "Total = 7 + 19 − 1 = **25**."
+        ],
+        "trap": "39 takes Xenia as 21st from the left, i.e. to the right of Yuvraj.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "6 persons",
+            "Xenia (7th from left, 19th from right)",
+            "6 persons",
+            "Yuvraj (14th from left, 12th from right)",
+            "11 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 25"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-053",
+      "subtype": "interchange",
+      "difficulty": "hard",
+      "prompt": "In a row of persons facing north, Yogesh is 23rd from the left end and Zubin is 15th from the right end. When they interchange their positions, Yogesh's position from the left end increases by 7. How many persons are in the row?",
+      "options": [
+        "37",
+        "38",
+        "42",
+        "43",
+        "44"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Yogesh's new place = 23 + 7 = 30th from the left; this was Zubin's place, 15th from the right.",
+          "Total = 30 + 15 − 1 = **44**."
+        ],
+        "trap": "37 uses Yogesh's old position (23 + 15 − 1).",
+        "visual": {
+          "type": "order",
+          "items": [
+            "22 persons",
+            "Yogesh (23rd from left, 22nd from right)",
+            "6 persons",
+            "Zubin (30th from left, 15th from right)",
+            "14 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 44"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-054",
+      "subtype": "interchange",
+      "difficulty": "hard",
+      "prompt": "Amit and Bina interchange their positions in a row of persons facing north. As a result, the number of persons to the left of Amit increases from 8 to 19. Bina was originally 21st from the right end. How many persons are in the row?",
+      "options": [
+        "27",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Amit was 9th from the left and is now 20th; his new place is Bina's old place, 21st from the right.",
+          "Total = 20 + 21 − 1 = **40**."
+        ],
+        "trap": "39 uses 19 (persons to his left) as his position.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "8 persons",
+            "Amit (9th from left, 32nd from right)",
+            "10 persons",
+            "Bina (20th from left, 21st from right)",
+            "20 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 40"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-055",
+      "subtype": "interchange",
+      "difficulty": "hard",
+      "prompt": "In a row of 35 persons facing north, Chitra is 8th from the left end. Dinesh is 6th to the right of Chitra, and Ella is 12th from the right end. If Chitra and Ella interchange their positions, how many persons will be between Dinesh and Chitra?",
+      "options": [
+        "5",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Ella is 35 − 12 + 1 = 24th from the left; after the interchange Chitra stands there. Dinesh stays 8 + 6 = 14th.",
+          "Persons between = 24 − 14 − 1 = **9**."
+        ],
+        "trap": "5 is the count before the interchange (14 − 8 − 1).",
+        "visual": {
+          "type": "order",
+          "items": [
+            "7 persons",
+            "Chitra (8th from left, 28th from right)",
+            "5 persons",
+            "Dinesh (14th from left, 22nd from right)",
+            "9 persons",
+            "Ella (24th from left, 12th from right)",
+            "11 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 35"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-056",
+      "subtype": "interchange",
+      "difficulty": "extreme",
+      "prompt": "Fatima is 9th from the left end of a row of persons facing north. When she interchanges her position with Gopi, her new position from the left end is 2 more than double her original position, and Gopi becomes 30th from the right end. What was Gopi's original position from the right end?",
+      "options": [
+        "18",
+        "19",
+        "20",
+        "21",
+        "30"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Fatima's new place = 2 × 9 + 2 = 20th from the left; this was Gopi's old place.",
+          "Gopi now stands at Fatima's old place: 9th from the left and 30th from the right, so the row has 9 + 30 − 1 = 38 persons.",
+          "Gopi's original position from the right = 38 − 20 + 1 = **19**."
+        ],
+        "trap": "20 is his original position from the left.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "8 persons",
+            "Fatima (9th from left, 30th from right)",
+            "10 persons",
+            "Gopi (20th from left, 19th from right)",
+            "18 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 38"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-057",
+      "subtype": "interchange",
+      "difficulty": "extreme",
+      "prompt": "In a row of 48 persons facing north, Hari is 6th from the left end, Isha is 20th from the left end and Jatin is 15th from the right end. First Hari and Jatin interchange their positions; then Isha and Hari interchange their positions. How many persons are between Isha and Jatin now?",
+      "options": [
+        "12",
+        "13",
+        "26",
+        "27",
+        "28"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Jatin is 48 − 15 + 1 = 34th from the left. After the first interchange Hari is 34th and Jatin 6th.",
+          "After the second, Isha is 34th and Hari 20th.",
+          "Persons between Isha (34th) and Jatin (6th) = 34 − 6 − 1 = **27**."
+        ],
+        "trap": "13 (= 20 − 6 − 1) ignores the second interchange; 28 forgets to subtract 1.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "5 persons",
+            "Hari (6th from left, 43rd from right)",
+            "13 persons",
+            "Isha (20th from left, 29th from right)",
+            "13 persons",
+            "Jatin (34th from left, 15th from right)",
+            "14 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 48"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-058",
+      "subtype": "interchange",
+      "difficulty": "extreme",
+      "prompt": "In a row of persons facing north, Kavita is 15th from the left end and Lokesh is 17th from the right end, and Kavita is to the left of Lokesh. After they interchange their positions, the number of persons to the left of Kavita is twice the number of persons to the left of Lokesh. How many persons are in the row?",
+      "options": [
+        "28",
+        "29",
+        "43",
+        "44",
+        "45"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "After the interchange Lokesh is at Kavita's old place, 15th from the left, with 14 persons to his left.",
+          "So 28 persons are to the left of Kavita: she is 29th from the left, which is Lokesh's old place, 17th from the right.",
+          "Total = 29 + 17 − 1 = **45**."
+        ],
+        "trap": "44 uses 28 (persons to her left) as her position; 29 is her new position from the left, not the total.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "14 persons",
+            "Kavita (15th from left, 31st from right)",
+            "13 persons",
+            "Lokesh (29th from left, 17th from right)",
+            "16 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 45"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-059",
+      "subtype": "interchange",
+      "difficulty": "extreme",
+      "prompt": "In a row of persons facing north, Nalini is 13th from the right end and Pritam is 8 places to the left of Nalini. Rakesh is 3rd to the right of Pritam. After Nalini and Pritam interchange their positions, Pritam is 22nd from the left end. What is Rakesh's position from the right end?",
+      "options": [
+        "10",
+        "15",
+        "17",
+        "18",
+        "21"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Pritam's new place is Nalini's old place: 22nd from the left and 13th from the right, so the row has 22 + 13 − 1 = 34 persons.",
+          "Pritam was 22 − 8 = 14th from the left, so Rakesh = 14 + 3 = 17th from the left.",
+          "From the right = 34 − 17 + 1 = **18**."
+        ],
+        "trap": "17 is Rakesh's position from the left.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "13 persons",
+            "Pritam (14th from left, 21st from right)",
+            "2 persons",
+            "Rakesh (17th from left, 18th from right)",
+            "4 persons",
+            "Nalini (22nd from left, 13th from right)",
+            "12 persons"
+          ],
+          "label": "Left → right",
+          "caption": "Total 34"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-060",
+      "subtype": "interchange",
+      "difficulty": "extreme",
+      "prompt": "In a class, Sneha ranks 7th from the top and Tarun ranks 32nd from the bottom. When their ranks are interchanged, Sneha is placed 12 ranks lower than before. How many students are ranked below Tarun after the interchange?",
+      "options": [
+        "36",
+        "42",
+        "43",
+        "44",
+        "49"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Sneha's new rank = 7 + 12 = 19th from the top; this was Tarun's rank, 32nd from the bottom, so the class has 19 + 32 − 1 = 50 students.",
+          "Tarun now holds rank 7 from the top: students below him = 50 − 7 = **43**."
+        ],
+        "trap": "44 is Tarun's new rank from the bottom; the question asks how many students are below him.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "6 persons",
+            "Sneha (7th from top, 44th from bottom)",
+            "11 persons",
+            "Tarun (19th from top, 32nd from bottom)",
+            "31 persons"
+          ],
+          "label": "Top → bottom",
+          "caption": "50 ranked"
+        }
+      },
+      "tags": [
+        "ranking:interchange"
+      ]
+    },
+    {
+      "key": "or-061",
+      "subtype": "comparison-single",
+      "difficulty": "easy",
+      "prompt": "Five persons — B, G, K, N, S — have different heights.\nG is taller than K.\nS is the tallest.\nN is shorter than K.\nB is taller than G but shorter than S.\n\nWho is the second shortest?",
+      "options": [
+        "K",
+        "N",
+        "G",
+        "B",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "S is the tallest, and B is taller than G but shorter than S: S > B > G.",
+          "G is taller than K and N is shorter than K: S > B > G > K > N.",
+          "The second shortest is **K**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "N is the shortest; the question asks for the second shortest.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "S",
+            "B",
+            "G",
+            "K",
+            "N"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison"
+      ]
+    },
+    {
+      "key": "or-062",
+      "subtype": "comparison-single",
+      "difficulty": "easy",
+      "prompt": "Five persons — D, H, M, P, T — have different weights.\nP is heavier than only T.\nH is the heaviest.\nM is lighter than D.\n\nWho is the third heaviest?",
+      "options": [
+        "D",
+        "M",
+        "P",
+        "H",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "P is heavier than only T, so P is 4th and T is 5th.",
+          "H is the heaviest, so D and M take 2nd and 3rd; M is lighter than D: H > D > M > P > T.",
+          "The third heaviest is **M**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "D is the second heaviest, not the third.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "H",
+            "D",
+            "M",
+            "P",
+            "T"
+          ],
+          "label": "Heaviest → lightest"
+        }
+      },
+      "tags": [
+        "ranking:comparison"
+      ]
+    },
+    {
+      "key": "or-063",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Six persons — A, E, J, L, R, W — scored different marks in a test.\nOnly two persons scored more marks than J.\nW scored more marks than J.\nA scored fewer marks than L.\nR is the 2nd lowest scorer.\nE scored more marks than W.\n\nHow many persons scored fewer marks than L?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Only two persons scored more than J, so J is 3rd. E > W > J fills the top three.",
+          "R is the 2nd lowest (5th). L and A take 4th and 6th; A scored fewer than L, so L is 4th and A is 6th.",
+          "Persons below L: R and A = **2**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "3 counts L as well, or places L 3rd above J.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "E",
+            "W",
+            "J",
+            "L",
+            "R",
+            "A"
+          ],
+          "label": "Highest → lowest"
+        }
+      },
+      "tags": [
+        "ranking:comparison"
+      ]
+    },
+    {
+      "key": "or-064",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Six persons — C, F, H, M, Q, V — have different heights.\nM is taller than only Q.\nF is taller than V but shorter than H.\nC is not the tallest.\nC is taller than F.\n\nWho is the third tallest?",
+      "options": [
+        "C",
+        "V",
+        "F",
+        "H",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "M is taller than only Q: M is 5th and Q is 6th.",
+          "H > F > V and C > F. F and V cannot be tallest, and C is not the tallest, so H is the tallest.",
+          "C, F, V take 2nd–4th with C > F > V: H > C > F > V > M > Q. The third tallest is **F**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "C is 2nd; putting C 3rd ignores \"C is taller than F\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "H",
+            "C",
+            "F",
+            "V",
+            "M",
+            "Q"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:not-clue"
+      ]
+    },
+    {
+      "key": "or-065",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Five persons — B, K, P, U, Z — have different weights.\nOnly one person is heavier than K.\nZ is lighter than P.\nU is heavier than K.\nB is not the lightest.\n\nWho is the third heaviest?",
+      "options": [
+        "B",
+        "P",
+        "Z",
+        "K",
+        "Cannot be determined"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Only one person is heavier than K: K is 2nd. U is heavier than K, so U is 1st.",
+          "B, P, Z take 3rd–5th. Z is lighter than P and B is not the lightest, so Z is 5th.",
+          "B and P can be 3rd and 4th in either order (U > K > B > P > Z or U > K > P > B > Z) → **Cannot be determined**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "Choosing B (or P) as 3rd assumes an order that no clue gives.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "U",
+            "K",
+            "B",
+            "P",
+            "Z"
+          ],
+          "label": "Heaviest → lightest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:cannot-determine",
+        "ranking:not-clue"
+      ]
+    },
+    {
+      "key": "or-066",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Six persons — D, G, L, N, S, Y — have different heights.\nG is the 3rd shortest.\nExactly two persons are between G and S in height.\nY is shorter than L but taller than G.\nD is taller than N.\n\nHow many persons are shorter than Y?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "G is the 3rd shortest = 4th tallest. Exactly two persons between G and S puts S 1st (the other side would be 7th, which does not exist).",
+          "Y is shorter than L but taller than G: L is 2nd and Y is 3rd. D is taller than N: D 5th, N 6th.",
+          "Order: S > L > Y > G > D > N. Shorter than Y: G, D, N = **3**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "2 leaves out G, who is just below Y.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "S",
+            "L",
+            "Y",
+            "G",
+            "D",
+            "N"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-067",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Five persons — F, H, Q, T, X — scored different marks in a test.\nT is placed below Q but above H.\nX is the highest scorer.\nOnly one person scored fewer marks than H.\n\nWho is the second lowest scorer?",
+      "options": [
+        "F",
+        "T",
+        "Q",
+        "H",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "X is the highest scorer. Only one person scored fewer than H, so H is 4th.",
+          "T is below Q but above H: Q is 2nd and T is 3rd, leaving F 5th.",
+          "Order: X > Q > T > H > F. The second lowest scorer is **H**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "F is the lowest scorer, not the second lowest.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "X",
+            "Q",
+            "T",
+            "H",
+            "F"
+          ],
+          "label": "Highest → lowest"
+        }
+      },
+      "tags": [
+        "ranking:comparison"
+      ]
+    },
+    {
+      "key": "or-068",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Six persons — A, C, J, P, R, V — have different weights.\nV is heavier than A.\nC is heavier than both J and R.\nOnly three persons are heavier than P.\nA is the 2nd heaviest.\nJ is lighter than R.\n\nWho is immediately lighter than P?",
+      "options": [
+        "R",
+        "J",
+        "C",
+        "A",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "A is 2nd and V is heavier than A, so V is 1st. Only three persons are heavier than P: P is 4th.",
+          "C is heavier than both J and R, so C takes 3rd; R is heavier than J: R 5th, J 6th.",
+          "Order: V > A > C > P > R > J. Immediately lighter than P is **R**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "C is immediately heavier than P, not lighter.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "V",
+            "A",
+            "C",
+            "P",
+            "R",
+            "J"
+          ],
+          "label": "Heaviest → lightest"
+        }
+      },
+      "tags": [
+        "ranking:comparison"
+      ]
+    },
+    {
+      "key": "or-069",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Five persons — E, K, M, T, W — have different heights.\nW is shorter than only M.\nT is not the shortest.\nK is taller than T.\n\nHow many persons are shorter than T?",
+      "options": [
+        "None",
+        "1",
+        "2",
+        "3",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "W is shorter than only M: M is 1st and W is 2nd.",
+          "K, T, E take 3rd–5th. K is taller than T and T is not the shortest, so K 3rd, T 4th, E 5th.",
+          "Only E is shorter than T: **1**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "2 places T 3rd, which breaks \"K is taller than T\".",
+        "visual": {
+          "type": "order",
+          "items": [
+            "M",
+            "W",
+            "K",
+            "T",
+            "E"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:not-clue"
+      ]
+    },
+    {
+      "key": "or-070",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Six persons — B, D, G, N, S, Z — scored different marks in a test.\nOnly one person scored fewer marks than N.\nZ scored more marks than G but fewer marks than D.\nS scored fewer marks than N.\nB scored fewer marks than G.\n\nWho is the second highest scorer?",
+      "options": [
+        "D",
+        "Z",
+        "G",
+        "B",
+        "Cannot be determined"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Only one person scored fewer than N: N is 5th. S scored fewer than N: S is 6th.",
+          "D > Z > G (Z between them) and B < G, so D, Z, G, B fill 1st–4th in that order.",
+          "Order: D > Z > G > B > N > S. The second highest scorer is **Z**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "D is the highest scorer; G is third.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "D",
+            "Z",
+            "G",
+            "B",
+            "N",
+            "S"
+          ],
+          "label": "Highest → lowest"
+        }
+      },
+      "tags": [
+        "ranking:comparison"
+      ]
+    },
+    {
+      "key": "or-071",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Six persons — H, J, L, P, T, X — have different heights.\nP is the tallest.\nX is the 4th tallest.\nJ is taller than X but shorter than H.\nT is shorter than L.\n\nHow many persons are between H and L in height?",
+      "options": [
+        "None",
+        "1",
+        "2",
+        "3",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "P is 1st and X is 4th. J is taller than X but shorter than H, so H is 2nd and J is 3rd.",
+          "L and T take 5th and 6th; T is shorter than L: L 5th, T 6th.",
+          "Order: P > H > J > X > L > T. Between H (2nd) and L (5th): J and X = **2**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "3 counts L or H as well.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "P",
+            "H",
+            "J",
+            "X",
+            "L",
+            "T"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:between-count"
+      ]
+    },
+    {
+      "key": "or-072",
+      "subtype": "comparison-single",
+      "difficulty": "medium",
+      "prompt": "Six persons — A, F, K, Q, U, W — have different heights.\nU is shorter than W but taller than K.\nOnly four persons are taller than A.\nF is the tallest.\nQ is taller than W.\n\nWho is the second shortest?",
+      "options": [
+        "K",
+        "U",
+        "A",
+        "W",
+        "Cannot be determined"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "F is the tallest. Only four persons are taller than A, so A is 5th.",
+          "Q > W > U > K must fill 2nd, 3rd, 4th and 6th in that order: Q 2nd, W 3rd, U 4th, K 6th.",
+          "Order: F > Q > W > U > A > K. The second shortest is **A**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "K is the shortest, and U is just above A.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "F",
+            "Q",
+            "W",
+            "U",
+            "A",
+            "K"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison"
+      ]
+    },
+    {
+      "key": "or-073",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Seven persons — B, E, G, L, P, S, Y — have different heights.\nL is the 3rd tallest.\nExactly two persons are between L and Y in height.\nThe number of persons between G and L is the same as the number of persons between L and P.\nP is shorter than G.\nS is taller than E.\nB is not the shortest.\n\nWho is the shortest?",
+      "options": [
+        "Y",
+        "P",
+        "B",
+        "E",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "L is 3rd. Exactly two persons between L and Y puts Y 6th (3 − 3 = 0 is impossible).",
+          "L is midway between G and P with P shorter: (G, P) = (1st, 5th) or (2nd, 4th). Neither G nor P can be 7th.",
+          "So the 7th place goes to B, E or S. S is taller than E and B is not the shortest, so in every case the shortest is **E**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "Y is 6th, the second shortest. Four orders fit the clues, but E is 7th in all of them.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "B",
+            "G",
+            "L",
+            "P",
+            "S",
+            "Y",
+            "E"
+          ],
+          "label": "Tallest → shortest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:equal-gap"
+      ]
+    },
+    {
+      "key": "or-074",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Seven persons — C, D, H, M, R, T, V — have different weights.\nR is the heaviest.\nOnly two persons are lighter than M.\nExactly one person is between M and H in weight.\nH is heavier than T.\nT is lighter than V but heavier than D.\nC is not the 2nd heaviest.\nC is lighter than T.\n\nHow many persons are heavier than T?",
+      "options": [
+        "None",
+        "1",
+        "2",
+        "3",
+        "Cannot be determined"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "R is 1st. Only two persons are lighter than M: M is 5th. One person between M and H puts H 3rd or 7th; H is heavier than T, so H is 3rd.",
+          "Slots 2, 4, 6, 7 are left for C, T, V, D with V > T > D and C lighter than T. C is not 2nd, and T and D both need someone above them, so V is 2nd.",
+          "T must be above both C and D, so T is 4th (C and D take 6th and 7th). Heavier than T: R, V, H = **3**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "C and D can swap, but that does not move T.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "R",
+            "V",
+            "H",
+            "T",
+            "M",
+            "C",
+            "D"
+          ],
+          "label": "Heaviest → lightest",
+          "caption": "One order consistent with all clues; some positions can change"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:between-count",
+        "ranking:not-clue"
+      ]
+    },
+    {
+      "key": "or-075",
+      "subtype": "comparison-single",
+      "difficulty": "hard",
+      "prompt": "Six persons — E, G, K, N, U, Y — have different heights.\nMore than three persons are taller than Y.\nN is taller than Y but shorter than K.\nExactly three persons are between U and Y in height.\nG is the 2nd tallest.\nE is shorter than N.\n\nWho is the third tallest?",
+      "options": [
+        "K",
+        "N",
+        "U",
+        "G",
+        "Cannot be determined"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "More than three persons are taller than Y: Y is 5th or 6th. Three persons between U and Y: (Y 5th, U 1st) or (Y 6th, U 2nd).",
+          "G is 2nd, so U cannot be 2nd: Y is 5th and U is 1st.",
+          "N is taller than Y but shorter than K: K 3rd, N 4th, and E is 6th. The third tallest is **K**."
+        ],
+        "shortcut": "Fix the exact-rank clues first (\"only k persons…\", \"k-th tallest\", \"… than only …\"), then use the \"between\" and \"as many\" clues to choose between cases.",
+        "trap": "N is 4th; placing N 3rd ignores that K is taller than N.",
+        "visual": {
+          "type": "order",
+          "items": [
+            "U",
+            "G",
+            "K",
+            "N",
+            "Y",
+            "E"
+          ],
+          "label": "Tallest → shortest"
+        }
+      },
+      "tags": [
+        "ranking:comparison",
+        "ranking:between-count"
+      ]
+    }
+  ]
+}
