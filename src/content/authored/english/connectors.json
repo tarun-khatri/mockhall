@@ -1734,7 +1734,7 @@
       "key": "cn-065",
       "subtype": "starters",
       "difficulty": "easy",
-      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Gopal joined a coaching centre.\n**2.** He wanted to improve his spoken English.\n\n(i) In order to\n(ii) Unless\n(iii) So as to",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Gopal joined a coaching centre.\n**2.** He wanted to improve his spoken English.\n\n(i) In order to\n(ii) Unless\n(iii) With a view to",
       "options": [
         "Only (i)",
         "Only (iii)",
@@ -1748,10 +1748,10 @@
           "The link between the sentences is purpose.",
           "(i) In order to: works – *In order to improve his spoken English, Gopal joined a coaching centre.*",
           "(ii) Unless: does not work – 'Unless' introduces a condition; the second sentence gives the purpose of joining the centre.",
-          "(iii) So as to: works – *So as to improve his spoken English, Gopal joined a coaching centre.*",
+          "(iii) With a view to: works – *With a view to improving his spoken English, Gopal joined a coaching centre.*",
           "So the answer is 'Both (i) and (iii)'."
         ],
-        "trap": "'In order to' and 'So as to' both express purpose and take the base form of the verb."
+        "trap": "'In order to' takes the base verb; 'With a view to' takes the -ing form ('with a view to improving'). Both express purpose."
       },
       "tags": [
         "connector:purpose"
@@ -1869,7 +1869,7 @@
       "key": "cn-070",
       "subtype": "starters",
       "difficulty": "medium",
-      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The pass marks must be lowered.\n**2.** Otherwise very few candidates will qualify.\n\n(i) Unless\n(ii) Provided that\n(iii) If",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** The pass marks must be lowered.\n**2.** Otherwise very few candidates will qualify.\n\n(i) Unless\n(ii) Provided that\n(iii) Since",
       "options": [
         "Only (i)",
         "Only (iii)",
@@ -1877,16 +1877,16 @@
         "Both (i) and (iii)",
         "All of these"
       ],
-      "answerIndex": 3,
+      "answerIndex": 0,
       "solution": {
         "steps": [
           "The link between the sentences is a condition.",
           "(i) Unless: works – *Unless the pass marks are lowered, very few candidates will qualify.*",
           "(ii) Provided that: does not work – 'Provided that the pass marks are lowered, very few candidates will qualify' says lowering the marks will cause few to qualify, which reverses the meaning.",
-          "(iii) If: works – *If the pass marks are not lowered, very few candidates will qualify.*",
-          "So the answer is 'Both (i) and (iii)'."
+          "(iii) Since: does not work – 'Since the pass marks must be lowered, very few candidates will qualify' turns the condition into a reason and reverses the meaning.",
+          "So the answer is 'Only (i)'."
         ],
-        "trap": "'Otherwise' means 'if not', so you need 'Unless' or 'If … not'. 'Provided that' states a positive condition."
+        "trap": "'Otherwise' means 'if not', so the starter must carry a negative condition: 'Unless'. 'Provided that' states a positive condition and 'Since' gives a reason."
       },
       "tags": [
         "connector:condition"
@@ -2274,7 +2274,7 @@
       "key": "cn-085",
       "subtype": "starters",
       "difficulty": "medium",
-      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** There was a fault in the signalling system.\n**2.** Several trains were delayed.\n\n(i) Due to\n(ii) Because\n(iii) On account of",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** There was a fault in the signalling system.\n**2.** Several trains were delayed.\n\n(i) Owing to\n(ii) Because\n(iii) On account of",
       "options": [
         "Only (i)",
         "Both (i) and (ii)",
@@ -2286,12 +2286,12 @@
       "solution": {
         "steps": [
           "The link between the sentences is cause and effect.",
-          "(i) Due to: works – *Due to a fault in the signalling system, several trains were delayed.*",
+          "(i) Owing to: works – *Owing to a fault in the signalling system, several trains were delayed.*",
           "(ii) Because: works – *Because there was a fault in the signalling system, several trains were delayed.*",
           "(iii) On account of: works – *On account of a fault in the signalling system, several trains were delayed.*",
           "So the answer is 'All of these'."
         ],
-        "trap": "'Due to' and 'On account of' take a noun phrase; 'Because' takes a full clause. All three express cause."
+        "trap": "'Owing to' and 'On account of' take a noun phrase; 'Because' takes a full clause. All three express cause."
       },
       "tags": [
         "connector:cause"
@@ -2436,7 +2436,7 @@
       "key": "cn-091",
       "subtype": "starters",
       "difficulty": "hard",
-      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Mehul bought a new phone.\n**2.** A few months later, a cheaper model was launched.\n\n(i) After\n(ii) No sooner\n(iii) A few months after",
+      "prompt": "Two sentences are given below, followed by three possible starters. Which of the starters can combine the two sentences into one meaningful sentence without changing the meaning?\n\n**1.** Mehul bought a new phone.\n**2.** A few months later, a cheaper model was launched.\n\n(i) Before\n(ii) No sooner\n(iii) A few months after",
       "options": [
         "Only (iii)",
         "Both (i) and (iii)",
@@ -2444,16 +2444,16 @@
         "All of these",
         "None of these"
       ],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "solution": {
         "steps": [
           "The link between the sentences is time/sequence.",
-          "(i) After: works – *After Mehul had bought a new phone, a cheaper model was launched a few months later.*",
+          "(i) Before: does not work – 'Before Mehul bought a new phone, a cheaper model was launched' reverses the order of events.",
           "(ii) No sooner: does not work – 'No sooner had Mehul bought a new phone than a cheaper model was launched' means it happened immediately, but the gap was a few months.",
           "(iii) A few months after: works – *A few months after Mehul bought a new phone, a cheaper model was launched.*",
-          "So the answer is 'Both (i) and (iii)'."
+          "So the answer is 'Only (iii)'."
         ],
-        "trap": "'No sooner … than' and 'Hardly … when' mean 'immediately after'; they fail when the second event comes much later."
+        "trap": "'No sooner … than' means 'immediately after', which fails when the gap is a few months; 'Before' reverses the sequence."
       },
       "tags": [
         "connector:time"

@@ -1292,6 +1292,654 @@
         "template:election-invalid",
         "level:multi-step"
       ]
+    },
+    {
+      "key": "pc-051",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In an election between two candidates, 6% of the votes cast were declared invalid. The winning candidate got 54% of the valid votes, and the losing candidate got 4,324 votes. By how many votes did the winner win?",
+      "options": [
+        "752",
+        "776",
+        "800",
+        "846",
+        "864"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Loser = 46% of the valid votes = 4,324 → valid votes = 9,400 (votes cast = 10,000).",
+          "Margin = 54% − 46% = 8% of 9,400 = **752**."
+        ],
+        "trap": "800 is 8% of the 10,000 votes cast. The margin is a share of the valid votes only."
+      },
+      "tags": [
+        "percent:election",
+        "template:election-invalid",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-052",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In an election among three candidates, 4% of the votes cast were invalid. Anil got 46% of the valid votes, and Bharat got 25% more votes than Charu. If Anil got 2,640 more votes than Charu, how many votes were cast in all?",
+      "options": [
+        "11,500",
+        "11,750",
+        "12,000",
+        "12,250",
+        "12,500"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Bharat + Charu = 54% of valid votes and Bharat = 1.25 × Charu, so Charu = 54% ÷ 2.25 = 24% and Bharat = 30%.",
+          "Anil − Charu = 46% − 24% = 22% of valid votes = 2,640 → valid = 12,000.",
+          "Valid votes are 96% of votes cast, so votes cast = 12,000 ÷ 0.96 = **12,500**."
+        ],
+        "trap": "12,000 is the number of valid votes. The question asks for all votes cast, including the 4% invalid ones."
+      },
+      "tags": [
+        "percent:election",
+        "template:election-invalid",
+        "percent:feeds-ratio",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-053",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The value of a machine depreciates by 10% every year. If its value after 3 years is ₹72,900, what was its original value?",
+      "options": [
+        "₹90,000",
+        "₹94,770",
+        "₹96,000",
+        "₹97,200",
+        "₹1,00,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Value after 3 years = original × 0.9 × 0.9 × 0.9 = 0.729 × original.",
+          "Original = ₹72,900 ÷ 0.729 = **₹1,00,000**."
+        ],
+        "trap": "₹94,770 adds back 30% (₹72,900 × 1.3). Each year's 10% is taken on the reduced value, so divide by 0.9 three times."
+      },
+      "tags": [
+        "percent:population-depreciation",
+        "template:depreciation",
+        "percent:reverse"
+      ]
+    },
+    {
+      "key": "pc-054",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The population of a town is 50,000. Every year the birth rate is 6% and the death rate is 2% of the population at the start of that year, and there is no migration. What will the population be after 2 years?",
+      "options": [
+        "54,000",
+        "54,080",
+        "54,160",
+        "56,180",
+        "58,320"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Net growth = 6% − 2% = 4% a year, compounded.",
+          "50,000 × 1.04 × 1.04 = **54,080**."
+        ],
+        "trap": "54,000 applies 4% to 50,000 twice (8% simple growth). The second year's 4% is on 52,000."
+      },
+      "tags": [
+        "percent:population-depreciation",
+        "template:population-growth"
+      ]
+    },
+    {
+      "key": "pc-055",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A car loses 20% of its value in the first year and 10% of its value in each later year. If it is worth ₹5,18,400 after 3 years, what was its purchase price?",
+      "options": [
+        "₹7,20,000",
+        "₹7,50,000",
+        "₹7,80,000",
+        "₹8,00,000",
+        "₹8,64,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Value after 3 years = P × 0.8 × 0.9 × 0.9 = 0.648P.",
+          "P = ₹5,18,400 ÷ 0.648 = **₹8,00,000**."
+        ],
+        "trap": "₹8,64,000 adds the three losses (20 + 10 + 10 = 40%) and divides by 0.6. Depreciation compounds: 0.8 × 0.9 × 0.9 = 0.648."
+      },
+      "tags": [
+        "percent:population-depreciation",
+        "template:depreciation",
+        "percent:reverse"
+      ]
+    },
+    {
+      "key": "pc-056",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The population of a village grows by 5% every year. At the end of the first year, after that year's growth, 400 people moved out of the village. At the end of the second year the population was 21,630. What was the population at the start?",
+      "options": [
+        "20,000",
+        "20,200",
+        "20,400",
+        "20,600",
+        "21,000"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Population at the start of year 2 (after the move) = 21,630 ÷ 1.05 = 20,600.",
+          "Before the move it was 20,600 + 400 = 21,000 = 1.05 × start → start = **20,000**."
+        ],
+        "trap": "20,600 is the population after the 400 left, one year short of the start. Add the 400 back and undo the first year's 5%.",
+        "shortcut": "Work backwards: ÷ 1.05, + 400, ÷ 1.05."
+      },
+      "tags": [
+        "percent:population-depreciation",
+        "template:population-growth",
+        "percent:reverse"
+      ]
+    },
+    {
+      "key": "pc-057",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The value of a printing machine depreciates by 20% every year. The difference between its value at the end of the 2nd year and at the end of the 3rd year is ₹25,600. What was its original value?",
+      "options": [
+        "₹1,28,000",
+        "₹1,60,000",
+        "₹1,80,000",
+        "₹2,00,000",
+        "₹2,56,000"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Value after 2 years = 0.64V; after 3 years = 0.512V. Difference = 0.128V.",
+          "0.128V = ₹25,600 → V = **₹2,00,000**."
+        ],
+        "trap": "₹1,28,000 is the value at the end of the 2nd year (₹25,600 is 20% of it). The question asks for the original value."
+      },
+      "tags": [
+        "percent:population-depreciation",
+        "template:depreciation"
+      ]
+    },
+    {
+      "key": "pc-058",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Town P has 25% more people than Town Q. The population of P falls by 20% every year, while that of Q grows by 20% every year. After 2 years, the population of Q is 9,600 more than that of P. What is the present combined population of the two towns?",
+      "options": [
+        "30,000",
+        "33,600",
+        "33,750",
+        "34,500",
+        "37,500"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Let Q = q, so P = 1.25q. After 2 years: Q = 1.44q and P = 1.25q × 0.64 = 0.8q.",
+          "1.44q − 0.8q = 0.64q = 9,600 → q = 15,000 and P = 18,750.",
+          "Present total = 15,000 + 18,750 = **33,750**."
+        ],
+        "trap": "33,600 is the combined population after 2 years (21,600 + 12,000). The question asks for the present total."
+      },
+      "tags": [
+        "percent:population-depreciation",
+        "template:population-growth",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two years ago the population of a town was 25,000. It is now 30,250. If it keeps growing at the same rate every year, what will the population be one year from now?",
+      "options": [
+        "32,500",
+        "32,875",
+        "33,000",
+        "33,125",
+        "33,275"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "30,250 ÷ 25,000 = 1.21 = 1.1², so the population grows by 10% a year.",
+          "Next year: 30,250 × 1.1 = **33,275**."
+        ],
+        "trap": "32,875 assumes equal yearly additions (5,250 ÷ 2 = 2,625 a year). The growth is a fixed percentage, so it is compounded."
+      },
+      "tags": [
+        "percent:population-depreciation",
+        "template:population-growth"
+      ]
+    },
+    {
+      "key": "pc-060",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "The price of sugar rises by 25%. A family uses 30 kg of sugar a month. By how many kilograms must it cut its monthly use so that its spending on sugar does not change?",
+      "options": [
+        "5 kg",
+        "6 kg",
+        "7.5 kg",
+        "8 kg",
+        "24 kg"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Same spending at 1.25 times the price means the family can buy 30 ÷ 1.25 = 24 kg.",
+          "Cut = 30 − 24 = **6 kg**."
+        ],
+        "trap": "7.5 kg cuts consumption by 25%. A 25% rise is undone by a $\\frac{25}{125}$ = 20% cut, i.e. 6 kg.",
+        "shortcut": "Rise of $\\frac{1}{4}$ → cut of $\\frac{1}{5}$: 30 × $\\frac{1}{5}$ = 6 kg."
+      },
+      "tags": [
+        "percent:consumption-expenditure",
+        "template:price-consumption"
+      ]
+    },
+    {
+      "key": "pc-061",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The price of petrol rises by 20%, and a taxi driver cuts his petrol consumption by 10%. What is the change in his expenditure on petrol?",
+      "options": [
+        "8% increase",
+        "10% increase",
+        "12% increase",
+        "16% increase",
+        "20% increase"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Expenditure = price × consumption: 1.2 × 0.9 = 1.08.",
+          "So the expenditure rises by **8%**."
+        ],
+        "trap": "10% increase subtracts the percentages (20 − 10). The changes multiply: 20 − 10 − (20 × 10)/100 = 8.",
+        "shortcut": "a + b + ab/100 = 20 − 10 − 2 = 8."
+      },
+      "tags": [
+        "percent:consumption-expenditure",
+        "template:price-consumption",
+        "percent:successive-change"
+      ]
+    },
+    {
+      "key": "pc-062",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A 20% fall in the price of rice allows a shopper to buy 6 kg more rice for ₹1,200. What was the original price of rice per kilogram?",
+      "options": [
+        "₹40",
+        "₹45",
+        "₹48",
+        "₹50",
+        "₹60"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The 20% saving on ₹1,200 is ₹240, which buys the extra 6 kg, so the reduced price = ₹240 ÷ 6 = ₹40 per kg.",
+          "Reduced price = 80% of the original → original = ₹40 ÷ 0.8 = **₹50** per kg."
+        ],
+        "trap": "₹40 is the reduced price. The question asks for the price before the 20% fall."
+      },
+      "tags": [
+        "percent:consumption-expenditure",
+        "template:price-fall-more-quantity"
+      ]
+    },
+    {
+      "key": "pc-063",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The price of milk rises by 20%, and a family increases its monthly spending on milk by 8%. If the family now buys 45 litres of milk a month, how many litres did it buy before the price rise?",
+      "options": [
+        "48 litres",
+        "49.5 litres",
+        "50 litres",
+        "52.5 litres",
+        "54 litres"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Consumption factor = spending factor ÷ price factor = 1.08 ÷ 1.2 = 0.9, so consumption fell by 10%.",
+          "Earlier consumption = 45 ÷ 0.9 = **50 litres**."
+        ],
+        "trap": "54 litres raises 45 by the full 20% price rise, ignoring the 8% extra spending."
+      },
+      "tags": [
+        "percent:consumption-expenditure",
+        "template:price-consumption"
+      ]
+    },
+    {
+      "key": "pc-064",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The price of edible oil rises by 30%, and a household reduces its consumption of oil by 20%. As a result, its monthly expenditure on oil rises by ₹160. What was its monthly expenditure on oil before the change?",
+      "options": [
+        "₹1,600",
+        "₹2,000",
+        "₹3,200",
+        "₹3,600",
+        "₹4,000"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "New expenditure = 1.3 × 0.8 = 1.04 times the old, a rise of 4%.",
+          "4% = ₹160 → old expenditure = **₹4,000**."
+        ],
+        "trap": "₹1,600 takes the rise as 30% − 20% = 10%. The factors multiply, giving only 4%."
+      },
+      "tags": [
+        "percent:consumption-expenditure",
+        "template:price-consumption",
+        "trap:adding-percentages"
+      ]
+    },
+    {
+      "key": "pc-065",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A family spends equal amounts on rice and wheat each month. The price of rice rises by 25% and the price of wheat falls by 10%. The family keeps its wheat consumption the same and wants its total spending on the two grains to stay the same. By what percent must it cut its rice consumption?",
+      "options": [
+        "8%",
+        "10%",
+        "12%",
+        "15%",
+        "20%"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Take the budget as 100: rice 50, wheat 50. Wheat now costs 50 × 0.9 = 45, leaving 55 for rice.",
+          "The old quantity of rice would now cost 50 × 1.25 = 62.5. Consumption factor = 55 ÷ 62.5 = 0.88, a cut of **12%**."
+        ],
+        "trap": "20% is the cut needed if only the rice budget had to stay at 50. The ₹5 saved on wheat can be spent on rice, so the cut is smaller."
+      },
+      "tags": [
+        "percent:consumption-expenditure",
+        "template:price-consumption",
+        "level:multi-step"
+      ]
+    },
+    {
+      "key": "pc-066",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A water tank holds 2,000 litres. 20% of the water is used in the morning and 25% of the remaining water is used in the afternoon. How many litres are left?",
+      "options": [
+        "1,000",
+        "1,050",
+        "1,100",
+        "1,150",
+        "1,200"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "After the morning: 80% of 2,000 = 1,600 litres.",
+          "After the afternoon: 75% of 1,600 = **1,200** litres."
+        ],
+        "trap": "1,100 removes 20% + 25% = 45% of 2,000. The afternoon's 25% is of the 1,600 litres left, not of 2,000."
+      },
+      "tags": [
+        "percent:successive-change",
+        "template:successive-on-quantity",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-067",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A fruit seller sold 40% of his mangoes in the morning. 25% of the remaining mangoes got spoiled, and he sold 50% of the good mangoes left after that in the evening. If 90 mangoes were left unsold, how many mangoes did he have at the start?",
+      "options": [
+        "200",
+        "360",
+        "400",
+        "450",
+        "480"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Left after each step: 60% → 75% of 60% = 45% → 50% of 45% = 22.5% of the start.",
+          "22.5% = 90 → start = **400**."
+        ],
+        "trap": "200 forgets the evening sale (90 = 45% of the start). There are three steps; 90 is what is left after all of them."
+      },
+      "tags": [
+        "percent:successive-change",
+        "template:successive-on-quantity",
+        "percent:reverse"
+      ]
+    },
+    {
+      "key": "pc-068",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The length of a rectangle is increased by 25%. By what percent must its breadth be decreased so that its area increases by only 5%?",
+      "options": [
+        "16%",
+        "18%",
+        "20%",
+        "24%",
+        "25%"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Area factor = length factor × breadth factor: 1.25 × b = 1.05.",
+          "b = 1.05 ÷ 1.25 = 0.84, so the breadth falls by **16%**."
+        ],
+        "trap": "20% subtracts 5 from 25. Areas multiply: 1.25 × 0.8 = 1.00, which is no increase at all."
+      },
+      "tags": [
+        "percent:successive-change",
+        "template:area-change",
+        "trap:adding-percentages"
+      ]
+    },
+    {
+      "key": "pc-069",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A number is increased by 20%, the result is decreased by 25%, and that result is increased by 12.5%. The final number is 18 more than the original number. What is the original number?",
+      "options": [
+        "240",
+        "1,200",
+        "1,440",
+        "1,600",
+        "1,800"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Overall factor = 1.2 × 0.75 × 1.125 = 0.9 × 1.125 = 1.0125, a net rise of 1.25%.",
+          "1.25% of the number = 18 → number = **1,440**."
+        ],
+        "trap": "240 adds the changes (20 − 25 + 12.5 = 7.5%) and divides 18 by 7.5%. The changes multiply to a net +1.25%."
+      },
+      "tags": [
+        "percent:successive-change",
+        "template:successive-on-quantity",
+        "trap:adding-percentages"
+      ]
+    },
+    {
+      "key": "pc-070",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a forest reserve, 20% of the trees were cut down in the first year and 10% of the remaining trees were cut down in the second year. Then 300 new saplings were planted, and the reserve now has 2,820 trees. How many trees were there at the start?",
+      "options": [
+        "3,200",
+        "3,300",
+        "3,400",
+        "3,500",
+        "3,600"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Before planting: 2,820 − 300 = 2,520 trees = 0.8 × 0.9 = 72% of the start.",
+          "Start = 2,520 ÷ 0.72 = **3,500**."
+        ],
+        "trap": "3,600 treats the cuts as 20% + 10% = 30% of the original (2,520 ÷ 0.7). The second cut is 10% of the trees left after the first."
+      },
+      "tags": [
+        "percent:successive-change",
+        "template:successive-on-quantity",
+        "percent:reverse"
+      ]
+    },
+    {
+      "key": "pc-071",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Fresh mushrooms contain 90% water by weight. After a batch is dried in the sun, its weight falls by 15 kg and the water content becomes 60% of the new weight. What was the weight of the fresh batch?",
+      "options": [
+        "18 kg",
+        "20 kg",
+        "22.5 kg",
+        "25 kg",
+        "50 kg"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The dry matter does not change: 10% of W = 40% of (W − 15).",
+          "0.1W = 0.4W − 6 → 0.3W = 6 → W = **20 kg** (check: 2 kg dry matter is 40% of the 5 kg left)."
+        ],
+        "trap": "50 kg reads the fall in water content (90% → 60%, i.e. 30 points) as 30% of the weight, so 15 kg = 30%. The percentages are of different totals; only the dry matter is constant."
+      },
+      "tags": [
+        "percent:water-content",
+        "template:dry-matter",
+        "trap:wrong-base"
+      ]
+    },
+    {
+      "key": "pc-072",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In an office, 40% of the employees speak only Hindi, 35% speak only English and the rest speak both languages. If 1,080 employees speak English, how many speak only Hindi?",
+      "options": [
+        "720",
+        "756",
+        "810",
+        "900",
+        "1,170"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Both = 100% − 40% − 35% = 25%. English speakers = only English + both = 35% + 25% = 60% = 1,080 → 1,800 employees.",
+          "Only Hindi = 40% of 1,800 = **720**."
+        ],
+        "trap": "1,170 is 65% of 1,800, everyone who speaks Hindi (including those who speak both). The question asks for only Hindi."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:both-neither"
+      ]
+    },
+    {
+      "key": "pc-073",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "In a survey, 60% of the people liked tea, 45% liked coffee and 20% liked both. If 270 people liked neither, how many people liked only tea?",
+      "options": [
+        "630",
+        "720",
+        "810",
+        "1,080",
+        "1,800"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "At least one = 60% + 45% − 20% = 85%, so neither = 15% = 270 → 1,800 people.",
+          "Only tea = 60% − 20% = 40% of 1,800 = **720**."
+        ],
+        "trap": "1,080 is 60% of 1,800, all tea drinkers including the 20% who also like coffee."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:both-neither"
+      ]
+    },
+    {
+      "key": "pc-074",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a school, 52% of the students play cricket, 38% play football and 18% play neither game. If 168 students play both games, how many students play only cricket?",
+      "options": [
+        "840",
+        "882",
+        "903",
+        "924",
+        "1,092"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "At least one game = 100% − 18% = 82% = 52% + 38% − both → both = 8% = 168 → 2,100 students.",
+          "Only cricket = 52% − 8% = 44% of 2,100 = **924**."
+        ],
+        "trap": "1,092 is 52% of 2,100, all cricket players including the 8% who also play football."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:both-neither"
+      ]
+    },
+    {
+      "key": "pc-075",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "In a residential colony, 60% of the households read newspaper A, 50% read B and 40% read C. 30% read both A and B, 20% read both B and C, 25% read both A and C, and 10% read all three. If 1,050 households read none of the three newspapers, how many households read exactly one newspaper?",
+      "options": [
+        "1,750",
+        "2,100",
+        "2,450",
+        "3,150",
+        "5,950"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "At least one = 60 + 50 + 40 − 30 − 20 − 25 + 10 = 85%, so none = 15% = 1,050 → 7,000 households.",
+          "Only A = 60 − 30 − 25 + 10 = 15%; only B = 50 − 30 − 20 + 10 = 10%; only C = 40 − 20 − 25 + 10 = 5%.",
+          "Exactly one = 30% of 7,000 = **2,100**."
+        ],
+        "trap": "3,150 is the number who read exactly two papers (30 + 20 + 25 − 3 × 10 = 45%). 'Exactly one' needs the 'only' regions."
+      },
+      "tags": [
+        "percent:overlap",
+        "template:three-set",
+        "level:multi-step"
+      ]
     }
   ]
 }

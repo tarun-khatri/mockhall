@@ -2107,6 +2107,466 @@
         "arith:relative-speed",
         "template:chase"
       ]
+    },
+    {
+      "key": "sd-083",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A car runs for 2 hours at 45 km/h, then for 3 hours at 60 km/h and finally for 1 hour at 90 km/h. What is its average speed for the whole journey?",
+      "options": [
+        "54 km/h",
+        "56 km/h",
+        "60 km/h",
+        "64 km/h",
+        "65 km/h"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Distance = 2 × 45 + 3 × 60 + 1 × 90 = 90 + 180 + 90 = 360 km.",
+          "Time = 6 hours → average speed = 360 ÷ 6 = 60 km/h."
+        ],
+        "trap": "65 km/h is the plain mean of 45, 60 and 90; the car spends different times at each speed."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:three-leg-average"
+      ]
+    },
+    {
+      "key": "sd-084",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A delivery van covers three equal stretches of a route at 30 km/h, 45 km/h and 90 km/h respectively. What is its average speed for the whole route?",
+      "options": [
+        "40 km/h",
+        "45 km/h",
+        "50 km/h",
+        "55 km/h",
+        "60 km/h"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Take each stretch as 90 km: times = 3 + 2 + 1 = 6 hours.",
+          "Average speed = 270 ÷ 6 = 45 km/h."
+        ],
+        "trap": "55 km/h is the arithmetic mean of 30, 45 and 90; with equal distances the slow stretch takes the most time.",
+        "shortcut": "Choose each stretch as the LCM of the speeds (90 km) to keep the times whole."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:three-leg-average"
+      ]
+    },
+    {
+      "key": "sd-085",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "On a 360 km trip, a bus covers the first 120 km at 40 km/h, then runs for 2 hours at 75 km/h, and covers the remaining distance at 30 km/h. What is its average speed for the whole trip?",
+      "options": [
+        "42 km/h",
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "54 km/h"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Leg 1: 120 ÷ 40 = 3 hours. Leg 2: 75 × 2 = 150 km in 2 hours.",
+          "Leg 3: 360 − 120 − 150 = 90 km at 30 km/h = 3 hours.",
+          "Average = 360 ÷ (3 + 2 + 3) = 360 ÷ 8 = 45 km/h."
+        ],
+        "trap": "About 48 km/h comes from averaging 40, 75 and 30; average speed must be total distance ÷ total time."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:three-leg-average"
+      ]
+    },
+    {
+      "key": "sd-086",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A car covers the first 60 km of a 240 km journey at 40 km/h and the next 90 km at 60 km/h. At what speed must it cover the rest of the journey so that its average speed for the whole journey is 60 km/h?",
+      "options": [
+        "72 km/h",
+        "75 km/h",
+        "80 km/h",
+        "84 km/h",
+        "90 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total time allowed = 240 ÷ 60 = 4 hours.",
+          "Time used = 60 ÷ 40 + 90 ÷ 60 = 1.5 + 1.5 = 3 hours, leaving 1 hour.",
+          "Remaining 90 km in 1 hour → 90 km/h."
+        ],
+        "trap": "80 km/h solves (40 + 60 + v) ÷ 3 = 60, averaging the speeds instead of using total time."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:three-leg-average"
+      ]
+    },
+    {
+      "key": "sd-087",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A car covers three equal parts of a journey at speeds in the ratio 1 : 2 : 3. If its average speed for the whole journey is 54 km/h, what is its highest speed?",
+      "options": [
+        "66 km/h",
+        "81 km/h",
+        "90 km/h",
+        "99 km/h",
+        "108 km/h"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Speeds v, 2v and 3v over equal distances d: total time = d/v + d/2v + d/3v = 11d/6v.",
+          "Average = 3d ÷ (11d/6v) = 18v/11 = 54 → v = 33 km/h.",
+          "Highest speed = 3v = 99 km/h."
+        ],
+        "trap": "81 km/h uses the arithmetic mean: (v + 2v + 3v)/3 = 2v = 54 gives v = 27 and 3v = 81."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:three-leg-average"
+      ]
+    },
+    {
+      "key": "sd-088",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A truck covers 120 km at 40 km/h, the next 150 km at 50 km/h and the last 90 km at 60 km/h. What is its average speed for the whole journey?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h",
+        "54 km/h"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Times: 120 ÷ 40 = 3 hours, 150 ÷ 50 = 3 hours, 90 ÷ 60 = 1.5 hours.",
+          "Average = 360 ÷ 7.5 = 48 km/h."
+        ],
+        "trap": "50 km/h is the plain mean of 40, 50 and 60."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:three-leg-average"
+      ]
+    },
+    {
+      "key": "sd-089",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A car goes 180 km to a town at 60 km/h, halts there for 1 hour and returns along the same road at 45 km/h. What is its average speed for the whole round trip, including the halt?",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "51 km/h",
+        "52.5 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Time = 180 ÷ 60 + 1 + 180 ÷ 45 = 3 + 1 + 4 = 8 hours.",
+          "Average speed = 360 ÷ 8 = 45 km/h."
+        ],
+        "trap": "52.5 km/h is the mean of 60 and 45 and ignores the halt."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:round-trip-halt"
+      ]
+    },
+    {
+      "key": "sd-090",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Rekha leaves home at 7:00 a.m. and drives 150 km to her village at 50 km/h. She spends 1 hour 30 minutes there and drives back at 60 km/h. At what time does she reach home?",
+      "options": [
+        "12:30 p.m.",
+        "1:00 p.m.",
+        "1:30 p.m.",
+        "2:00 p.m.",
+        "2:30 p.m."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Onward: 150 ÷ 50 = 3 hours; return: 150 ÷ 60 = 2.5 hours.",
+          "Total = 3 + 1.5 + 2.5 = 7 hours after 7:00 a.m., i.e. 2:00 p.m."
+        ],
+        "trap": "12:30 p.m. leaves out the 1 hour 30 minutes spent in the village."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:round-trip-halt"
+      ]
+    },
+    {
+      "key": "sd-091",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Rohit leaves home at 8:00 a.m., cycles to a village at 10 km/h, stays there for 1 hour and cycles back at 15 km/h, reaching home at 1:00 p.m. How far is the village from his home?",
+      "options": [
+        "20 km",
+        "22.5 km",
+        "24 km",
+        "27 km",
+        "30 km"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Riding time = 5 hours − 1 hour = 4 hours.",
+          "d/10 + d/15 = 4 → d/6 = 4 → d = 24 km."
+        ],
+        "trap": "30 km uses all 5 hours as riding time, forgetting the 1-hour stay."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:round-trip-halt"
+      ]
+    },
+    {
+      "key": "sd-092",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Anil walks to a hill town at 5 km/h and rides back on a bus at 15 km/h. Including a 40-minute halt at the town, the round trip takes 4 hours. Had he walked both ways, with the same halt, how long would the round trip have taken?",
+      "options": [
+        "4 hours 40 minutes",
+        "5 hours",
+        "5 hours 20 minutes",
+        "5 hours 30 minutes",
+        "5 hours 40 minutes"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Travel time = 4 hours − 40 minutes = $3\\frac{1}{3}$ hours: d/5 + d/15 = 4d/15 = 10/3 → d = 12.5 km.",
+          "Walking 25 km at 5 km/h takes 5 hours.",
+          "With the 40-minute halt: 5 hours 40 minutes."
+        ],
+        "trap": "5 hours leaves out the 40-minute halt, which is still part of the round trip."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:round-trip-halt"
+      ]
+    },
+    {
+      "key": "sd-093",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Vikram drives 120 km to a client's office at 60 km/h, waits there for 1 hour and drives back by the same road. His average speed for the whole round trip, counting the wait, is 40 km/h. What was his speed on the way back?",
+      "options": [
+        "24 km/h",
+        "30 km/h",
+        "32 km/h",
+        "36 km/h",
+        "40 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Total time = 240 ÷ 40 = 6 hours.",
+          "Onward 120 ÷ 60 = 2 hours and the wait 1 hour leave 3 hours for the return.",
+          "Return speed = 120 ÷ 3 = 40 km/h."
+        ],
+        "trap": "30 km/h forgets the 1-hour wait and gives the return all of the remaining 4 hours."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:round-trip-halt"
+      ]
+    },
+    {
+      "key": "sd-094",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A bus left a depot at 7:00 a.m., went 135 km to a town at 54 km/h, waited there and came back at 45 km/h, reaching the depot at 2:00 p.m. For how many minutes did it wait at the town?",
+      "options": [
+        "45 minutes",
+        "60 minutes",
+        "75 minutes",
+        "90 minutes",
+        "120 minutes"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Onward: 135 ÷ 54 = 2.5 hours; return: 135 ÷ 45 = 3 hours.",
+          "Out of 7 hours, the wait = 7 − 5.5 = 1.5 hours = 90 minutes."
+        ],
+        "trap": "120 minutes uses 2 hours for the onward trip; 135 ÷ 54 is 2.5 hours."
+      },
+      "tags": [
+        "arith:average-speed",
+        "template:round-trip-halt"
+      ]
+    },
+    {
+      "key": "sd-095",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A car was to cover 300 km at 60 km/h. After covering 120 km, it developed a fault and covered the rest at 45 km/h. How many minutes late did it arrive?",
+      "options": [
+        "36 minutes",
+        "45 minutes",
+        "50 minutes",
+        "60 minutes",
+        "100 minutes"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Planned time = 300 ÷ 60 = 5 hours.",
+          "Actual time = 120 ÷ 60 + 180 ÷ 45 = 2 + 4 = 6 hours.",
+          "Delay = 1 hour = 60 minutes."
+        ],
+        "trap": "100 minutes runs the whole 300 km at 45 km/h; only the last 180 km were covered at the slower speed."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:breakdown"
+      ]
+    },
+    {
+      "key": "sd-096",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A train meets with an accident 60 km from station A and continues at $\\frac{3}{4}$ of its former speed, reaching station B 40 minutes late. Had the accident happened 20 km farther on, it would have been only 30 minutes late. What is the distance from A to B?",
+      "options": [
+        "120 km",
+        "130 km",
+        "140 km",
+        "150 km",
+        "160 km"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "At $\\frac{3}{4}$ speed a stretch takes $\\frac{4}{3}$ of its usual time, so the delay is $\\frac{1}{3}$ of that stretch's usual time.",
+          "Moving the accident 20 km on cuts the delay by 10 minutes: $\\frac{1}{3}$ × (20/v) = $\\frac{1}{6}$ hour → v = 40 km/h.",
+          "First case: $\\frac{1}{3}$ × (r/40) = $\\frac{2}{3}$ hour → r = 80 km after the accident; A to B = 60 + 80 = 140 km."
+        ],
+        "trap": "80 km is only the stretch after the accident spot; add the 60 km before it."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:breakdown"
+      ]
+    },
+    {
+      "key": "sd-097",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A car was scheduled to cover 240 km at 60 km/h. After running for 1 hour 30 minutes, it broke down; the repair took 20 minutes, after which it ran the rest of the way at 75 km/h. How long did the whole journey take?",
+      "options": [
+        "3 hours 30 minutes",
+        "3 hours 50 minutes",
+        "4 hours",
+        "4 hours 10 minutes",
+        "4 hours 20 minutes"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "In 1.5 hours the car covers 90 km, leaving 150 km.",
+          "150 ÷ 75 = 2 hours.",
+          "Total = 1 hour 30 minutes + 20 minutes + 2 hours = 3 hours 50 minutes."
+        ],
+        "trap": "4 hours 20 minutes runs the remaining 150 km at the old 60 km/h, and 3 hours 30 minutes leaves out the 20-minute repair."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:breakdown"
+      ]
+    },
+    {
+      "key": "sd-098",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A bus covers $\\frac{1}{3}$ of a journey at 60 km/h. A fault then forces it to cover the rest at 40 km/h. If the whole journey takes 7 hours, what is the total distance?",
+      "options": [
+        "280 km",
+        "300 km",
+        "315 km",
+        "336 km",
+        "350 km"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "For distance d: time = (d/3)/60 + (2d/3)/40 = d/180 + d/60 = 4d/180 = d/45.",
+          "d/45 = 7 → d = 315 km."
+        ],
+        "trap": "350 km uses 50 km/h, the plain mean of 60 and 40; speeds must be combined through time, not averaged."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:breakdown"
+      ]
+    },
+    {
+      "key": "sd-099",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A car on a 300 km trip develops engine trouble after 2 hours and covers the rest of the way at $\\frac{4}{5}$ of its original speed, arriving 45 minutes late. What was its original speed?",
+      "options": [
+        "48 km/h",
+        "50 km/h",
+        "54 km/h",
+        "56 km/h",
+        "60 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "At $\\frac{4}{5}$ speed the remaining stretch takes $\\frac{1}{4}$ more than its usual time, so its usual time = 4 × 45 minutes = 3 hours.",
+          "The trip normally takes 2 + 3 = 5 hours, so the original speed = 300 ÷ 5 = 60 km/h."
+        ],
+        "trap": "48 km/h is the reduced speed after the trouble, not the original speed."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:breakdown"
+      ]
+    },
+    {
+      "key": "sd-100",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Halfway through a 240 km journey, a car loses 30 minutes to a breakdown. By running the second half 20 km/h faster than the first, it still arrives on time. What was its speed in the first half?",
+      "options": [
+        "60 km/h",
+        "64 km/h",
+        "72 km/h",
+        "75 km/h",
+        "80 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The second half must take 30 minutes less: 120/v − 120/(v + 20) = $\\frac{1}{2}$.",
+          "120 × 20 × 2 = v(v + 20) → v² + 20v − 4800 = 0 → (v + 80)(v − 60) = 0 → v = 60 km/h.",
+          "Check: 120 ÷ 60 = 2 hours, 120 ÷ 80 = 1.5 hours."
+        ],
+        "trap": "80 km/h is the faster speed used in the second half."
+      },
+      "tags": [
+        "arith:speed-change",
+        "template:breakdown"
+      ]
     }
   ]
 }

@@ -1487,6 +1487,2506 @@
         "para:problem-solution",
         "para:cause-effect"
       ]
+    },
+    {
+      "key": "pf-061",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Fraudsters often call customers pretending to be bank officials and ask for the one-time password sent to their phone. With that password, they can move money out of the account within seconds. Banks therefore remind customers that no genuine employee will ever ask for it.",
+      "options": [
+        "One of the commonest forms of banking fraud today begins with a simple phone call.",
+        "However, the caller usually gives up after the first refusal.",
+        "Banks have stopped sending one-time passwords to customers' phones.",
+        "Customers should share the password only with bank staff they trust.",
+        "This password is valid for a few minutes only."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph describes a fraud that starts with a call, so the opener should name that fraud; the \"phone call\" sentence does, and the rest explains it.",
+          "\"Share the password only with bank staff\" contradicts the last line (no genuine employee will ask for it), and \"stopped sending\" contradicts \"the one-time password sent to their phone\"."
+        ],
+        "trap": "\"This password…\" cannot open the paragraph: no password has been mentioned yet. \"However…\" has nothing to contrast with."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-062",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nDiarrhoea remains a leading cause of illness among young children in many parts of India. Much of it spreads through germs carried on unwashed hands. ______ Schools that have set up handwashing stations near their kitchens report that far fewer children fall ill.",
+      "options": [
+        "Diarrhoea is rarely seen among children below the age of five.",
+        "Simply washing hands with soap before eating can block this route of infection.",
+        "Germs cannot survive on the skin for more than a few seconds.",
+        "Doctors therefore advise parents to keep their children away from school.",
+        "Washing hands, however, has little effect on the spread of such germs."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After the cause (germs on unwashed hands) comes the remedy (washing hands with soap), which the schools' handwashing stations then put into practice.",
+          "\"Little effect\" contradicts the result in the last sentence, and the other two options contradict the first two sentences."
+        ],
+        "trap": "\"Keep their children away from school\" uses \"therefore\", but nothing leads to that advice, and the last sentence shows schools as part of the solution."
+      },
+      "tags": [
+        "para:problem-solution",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-063",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nMeena, a tailor in Jaipur, lost three months of income when she fell ill last year. Since she had no savings, she had to borrow from a moneylender at a high rate of interest. It took her almost a year to repay the loan. ______",
+      "options": [
+        "Before falling ill, she had saved enough to cover a year's expenses.",
+        "Moneylenders in Jaipur charge lower interest than banks.",
+        "Since then, she has been setting aside a small amount every week as an emergency fund.",
+        "She then fell ill and lost three months of income.",
+        "Tailoring is a popular trade among women in Rajasthan."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The story shows what happened because Meena had no savings, so the natural close is the lesson she drew: building an emergency fund.",
+          "\"Saved enough to cover a year's expenses\" contradicts \"she had no savings\"."
+        ],
+        "trap": "\"She then fell ill…\" repeats the first sentence and sends the story backwards."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-064",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Crops such as ragi, jowar and bajra need far less water than rice and can grow in poor, dry soils. They are also rich in fibre, iron and calcium. Many cities now have restaurants and shops that sell millet-based snacks and breakfast foods.",
+      "options": [
+        "They are also easy to cook and store.",
+        "Rice is the only cereal that grows well in dry regions.",
+        "Millets are rarely eaten in Indian cities today.",
+        "Millets, once dismissed as poor man's food, are finding their way back onto Indian plates.",
+        "Wheat production in India has risen sharply since the 1960s."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph lists the virtues of millets and ends with their new popularity in cities; the opener that introduces millets and their comeback fits.",
+          "\"Rarely eaten in Indian cities\" contradicts the last sentence, and \"rice is the only cereal\" contradicts the second."
+        ],
+        "trap": "\"They are also…\" has no noun to refer to and an \"also\" with nothing before it, so it cannot open the paragraph."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:support"
+      ]
+    },
+    {
+      "key": "pf-065",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nDengue cases in many Indian cities rise sharply after the monsoon. The mosquito that spreads the disease lays its eggs in small pools of clean, still water. ______ Municipal workers therefore go from house to house asking residents to empty such containers at least once a week.",
+      "options": [
+        "These mosquitoes breed only in large rivers and lakes.",
+        "Dengue is caused by drinking water that has not been boiled.",
+        "Most people recover from dengue within two weeks.",
+        "Residents are asked to fill their containers with fresh water every day.",
+        "Water collected in flower pots, old tyres and coolers provides ideal breeding spots."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The last sentence speaks of \"such containers\", so the blank must name containers that hold still water; only the flower pots, tyres and coolers sentence does.",
+          "\"Only in large rivers and lakes\" contradicts \"small pools\"."
+        ],
+        "trap": "The recovery sentence is true and on topic, but it gives \"such containers\" nothing to refer to."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-066",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nFarmers in parts of Maharashtra once flooded their sugarcane fields with water from canals and wells. Much of this water evaporated or seeped away before the roots could use it. ______ Farmers who have switched say that they now use almost half as much water and still get a better crop.",
+      "options": [
+        "Flooding the fields is therefore the most efficient way to water sugarcane.",
+        "The canals in the region were built more than a century ago.",
+        "Sugarcane is the main cash crop of western Maharashtra.",
+        "Drip irrigation, which delivers water drop by drop to the base of each plant, cuts this waste.",
+        "Many farmers have therefore begun to flood their fields twice a day."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"Farmers who have switched\" needs a new method to switch to; drip irrigation is that method, and it answers the waste described before the blank.",
+          "\"Most efficient way\" and \"flood twice a day\" contradict the waste just described."
+        ],
+        "trap": "The canals and cash-crop sentences are on the setting, but neither gives \"switched\" anything to refer to."
+      },
+      "tags": [
+        "para:problem-solution",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-067",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn a village in Odisha's Koraput district, the nearest specialist doctor is five hours away by bus. Until recently, patients had to lose two days' wages for a single consultation. Now the local health centre connects them to doctors in the city through a video call. ______",
+      "options": [
+        "As a result, patients now travel to the city more often than before.",
+        "The nearest specialist doctor is five hours away by bus.",
+        "Video calls, however, are not allowed at the health centre.",
+        "Koraput is known for its hills, forests and waterfalls.",
+        "Patients can thus get expert advice without leaving the village or losing a day's work."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph moves from the old problem (travel, lost wages) to the new solution (video calls); the close states the benefit.",
+          "\"Travel to the city more often\" contradicts the point of the video consultation."
+        ],
+        "trap": "The \"five hours away\" option only repeats the first sentence."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-068",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Every day, about five thousand of them collect lunch boxes from homes and deliver them to offices across the city. Each box carries a simple code of colours and numbers that tells handlers where it must go. Despite the huge scale, very few boxes ever reach the wrong person.",
+      "options": [
+        "Each box is marked with a simple code of colours and numbers.",
+        "Mumbai's dabbawalas run one of the most reliable delivery systems in the world.",
+        "Most office workers in Mumbai eat lunch at restaurants.",
+        "Unfortunately, most of the boxes reach the wrong offices.",
+        "They also return the empty boxes to homes in the afternoon."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"About five thousand of them\" needs a group of people named just before; the dabbawalas sentence supplies it and the reliability theme the last line confirms.",
+          "\"Most of the boxes reach the wrong offices\" contradicts the last sentence."
+        ],
+        "trap": "\"They also return…\" begins with a pronoun and an \"also\" that have nothing to point back to."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-069",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nGeneric medicines contain the same active ingredient as branded ones but are sold under its chemical name. ______ Many patients, however, still prefer branded drugs, believing that a cheaper medicine must be weaker. Government-run pharmacies that stock only generics are trying to change this view, and they have made treatment affordable for many families with long-term illnesses.",
+      "options": [
+        "Since their makers spend little on advertising, they usually cost far less.",
+        "Branded medicines, therefore, are always cheaper than generics.",
+        "Generic medicines contain a different active ingredient from branded ones.",
+        "This view has now disappeared completely among patients.",
+        "Diabetes is a long-term illness that needs regular medicine."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The next sentence calls generics \"a cheaper medicine\" and opens with \"however\", so the blank must state an advantage: generics cost less.",
+          "\"Branded medicines are always cheaper\" contradicts \"a cheaper medicine\", and \"a different active ingredient\" contradicts the first sentence."
+        ],
+        "trap": "\"This view…\" has no view to refer to yet, and it contradicts the pharmacies' effort to change that view."
+      },
+      "tags": [
+        "para:contrast",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-070",
+      "subtype": "missing-sentence",
+      "difficulty": "easy",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nShopkeepers in a busy market in Shillong used to hand out a plastic bag with almost every purchase. Last year, the market committee banned plastic bags and began selling sturdy cloth bags at a low price. At first, many shoppers grumbled about having to carry their own bags. ______",
+      "options": [
+        "The committee had banned cloth bags because they were too expensive.",
+        "Shopkeepers therefore handed out even more plastic bags than before.",
+        "Within a few months, however, most of them had made it a habit, and the drains around the market no longer clog with plastic.",
+        "At first, many shoppers grumbled about carrying bags.",
+        "Shillong is the capital of Meghalaya."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "\"At first\" sets up a later change; the closing sentence with \"Within a few months, however\" completes it and shows the result of the ban.",
+          "\"Even more plastic bags\" contradicts the ban."
+        ],
+        "trap": "The \"grumbled\" option merely repeats the previous sentence."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:chronology"
+      ]
+    },
+    {
+      "key": "pf-071",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Suppose Anil invests ₹5,000 a month from the age of 25, while his friend Rohit invests the same amount but starts at 35. At a steady return, Anil may retire with more than twice Rohit's savings, though he has invested for only ten years longer. The early money simply has more time to earn returns on its returns.",
+      "options": [
+        "However, Rohit later raises his monthly investment to ₹20,000.",
+        "The returns on long-term investments are fixed by law.",
+        "When it comes to saving for retirement, an early start counts for a great deal.",
+        "Both friends therefore retire with roughly equal savings.",
+        "Investing a large amount late in life, when income is highest, is the surest way to retire rich."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The example (same amount, different starting ages, very different results) illustrates the value of starting early, so that is the idea the opener must state.",
+          "\"Roughly equal savings\" contradicts \"more than twice\", and \"late in life\" contradicts the lesson of the example."
+        ],
+        "trap": "\"However, Rohit…\" cannot open: \"However\" needs something before it, and Rohit has not been introduced."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:example-link"
+      ]
+    },
+    {
+      "key": "pf-072",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nGold loans have become one of the fastest-growing forms of credit in India. A borrower pledges jewellery, and the lender pays out a share of its value, often within an hour. ______ If gold prices fall sharply, however, the jewellery may no longer cover the loan, so the regulator limits how much can be lent against it.",
+      "options": [
+        "The lender, however, takes several weeks to check the borrower's papers.",
+        "If gold prices fall sharply, the jewellery may not cover the loan.",
+        "Lenders may lend as much as they like against the jewellery.",
+        "Because the loan is backed by gold that can easily be sold, lenders take little risk and need few documents.",
+        "Indian households own a large share of the world's gold, much of it in jewellery handed down over generations."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The last sentence begins \"If gold prices fall sharply, however\", so it must qualify a claim of safety; the key provides that claim (gold-backed, little risk) and explains the speed (\"within an hour\").",
+          "\"Several weeks\" contradicts \"within an hour\", and \"as much as they like\" contradicts the regulator's limit."
+        ],
+        "trap": "The household-gold fact is on topic, but it gives the following \"however\" no safety claim to qualify."
+      },
+      "tags": [
+        "para:contrast",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-073",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nAn actively managed mutual fund employs analysts to pick shares, and it charges investors a fee for this every year. An index fund simply buys all the shares in a market index, so it costs much less to run. Over long periods, many active funds fail to beat the index once their fees are deducted. ______",
+      "options": [
+        "Active funds, therefore, always earn more than index funds.",
+        "An index fund employs analysts to choose the best shares.",
+        "An index fund simply buys all the shares in a market index.",
+        "Mutual funds were first introduced in India in the 1960s.",
+        "For many ordinary investors, a low-cost index fund may therefore be the more sensible choice."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph compares cost and results and finds index funds cheaper and often no worse; the conclusion drawn with \"therefore\" recommends them.",
+          "\"Active funds always earn more\" contradicts the third sentence."
+        ],
+        "trap": "\"An index fund simply buys…\" repeats the second sentence instead of concluding."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-074",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nAnaemia caused by a lack of iron is common among Indian women and adolescent girls. Many of them do eat iron-rich foods such as green leafy vegetables and pulses. ______ Doctors suggest leaving a gap of an hour between meals and tea, and adding a source of vitamin C, such as lemon or amla, which helps the body absorb iron.",
+      "options": [
+        "Green leafy vegetables, however, contain no iron at all.",
+        "Yet much of this iron goes unused, partly because tea taken with meals blocks its absorption.",
+        "Tea is the most popular drink in India, enjoyed by rich and poor alike in every part of the country.",
+        "As a result, anaemia has almost disappeared among them.",
+        "Vitamin C also prevents the body from absorbing iron."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"Do eat iron-rich foods\" sets up a puzzle (why anaemia then?), and the doctors' advice about tea and absorption answers a problem the blank must state: tea blocks absorption.",
+          "\"Anaemia has almost disappeared\" contradicts the first sentence."
+        ],
+        "trap": "\"Tea is the most popular drink\" mentions tea but never says it harms absorption, so the advice to keep a gap has no reason."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-075",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ A woman who cooks, cleans and cares for her elderly parents at home adds nothing to it, yet if she did the same work for a wage in someone else's house, it would be counted. Economists estimate that such unpaid work, valued at market wages, would equal a sizeable share of India's output. Some countries now publish separate *satellite accounts* to measure it.",
+      "options": [
+        "Gross domestic product, the most widely used measure of a country's output, leaves out a great deal of valuable work.",
+        "It is calculated every quarter by government statisticians.",
+        "Gross domestic product counts every hour of work done in a country, paid or unpaid.",
+        "Women in India spend more time on unpaid work than men do.",
+        "Most countries now publish satellite accounts of unpaid work."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"Adds nothing to it\" needs a measure named in the opener; the key names GDP and states the gap the example illustrates.",
+          "\"Counts every hour… paid or unpaid\" contradicts \"adds nothing to it\"."
+        ],
+        "trap": "The sentence on women's unpaid work is on topic, but \"it\" in the next sentence would then have nothing to refer to. \"Most countries\" clashes with \"Some countries\"."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-076",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nSmall farmers often need money at sowing time, months before they sell their harvest. Without access to banks, many turn to local moneylenders, who may charge interest of five per cent a month or more. ______ Farmers who hold such a card can draw on it as needed and repay after the harvest at a much lower rate.",
+      "options": [
+        "Moneylenders, however, charge lower interest than banks.",
+        "The Kisan Credit Card was introduced to give them a cheaper and more flexible source of short-term credit.",
+        "These cards are now issued only to large landowners.",
+        "Farmers therefore prefer to sell their harvest before sowing.",
+        "Many moneylenders also buy the farmers' harvest at low prices, which keeps the farmers in debt year after year."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"Such a card\" in the last sentence needs a card introduced in the blank; the Kisan Credit Card sentence introduces it and answers the problem of costly credit.",
+          "\"Only to large landowners\" contradicts the focus on small farmers, and \"these cards\" has no prior mention."
+        ],
+        "trap": "The sentence about moneylenders buying the harvest extends the problem but leaves \"such a card\" without a referent."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-077",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nThe East Kolkata Wetlands receive much of the city's sewage every day. Instead of sending it to costly treatment plants, the wetlands let it flow slowly through shallow fish ponds. Sunlight and algae break down the waste, and the fish feed on the algae. ______",
+      "options": [
+        "The wetlands, however, are too polluted for any fish to survive.",
+        "Kolkata therefore plans to replace the ponds with large treatment plants.",
+        "The city thus gets much of its sewage treated almost free, and its markets get a steady supply of fish.",
+        "Sunlight and algae break down the waste in the ponds.",
+        "Kolkata is one of the oldest cities in eastern India."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph explains a natural process (sewage → algae → fish), so the close sums up its two benefits; the \"thus\" sentence does.",
+          "\"Too polluted for any fish\" contradicts \"the fish feed on the algae\"."
+        ],
+        "trap": "\"Plans to replace the ponds\" uses \"therefore\", but nothing in the paragraph gives a reason to abandon a system that works."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-078",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nEvery search, video and online payment is processed in a data centre somewhere. These buildings are packed with servers that give off enormous heat. ______ In water-scarce cities such as Chennai and Bengaluru, that demand can compete with the needs of residents. Some operators are therefore experimenting with treated sewage water and air-based cooling.",
+      "options": [
+        "The servers, however, work best at very high temperatures.",
+        "Online payments have grown rapidly in India over the past decade.",
+        "Residents of Chennai and Bengaluru use more water than people in any other city.",
+        "Keeping them cool can require millions of litres of water a year.",
+        "Most data centres are therefore built in cold mountain areas."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"That demand\" in the next sentence must refer to a demand for water; the key links heat to cooling to water use.",
+          "\"Built in cold mountain areas\" clashes with the next sentence, which places them in Chennai and Bengaluru."
+        ],
+        "trap": "The online-payments sentence is on topic but leaves \"that demand\" without a referent."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-079",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ After hatching, the young turtles find their way to the sea by moving towards the brightest horizon, which on a natural beach is the moonlit water. Bright lights from hotels and roads behind the beach now confuse them, and many crawl inland instead, where they die. Some coastal towns in Odisha switch off beachfront lights during the hatching season.",
+      "options": [
+        "Olive Ridley turtles spend their whole lives far out at sea and never come ashore.",
+        "They are guided towards the sea by the smell of the sand.",
+        "Hotels and roads along the coast have multiplied in recent years, bringing many more tourists every winter.",
+        "Switching off the lights, however, has made no difference to the hatchlings.",
+        "Every winter, thousands of Olive Ridley turtles come ashore on the beaches of Odisha to lay their eggs."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "\"The young turtles\" needs turtles and eggs to have been introduced; the key does so and sets the scene on Odisha's beaches.",
+          "\"Never come ashore\" contradicts hatching on beaches, and \"the smell of the sand\" contradicts the light cue."
+        ],
+        "trap": "The hotels sentence jumps ahead to the cause of the problem before any turtles have been mentioned."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-080",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nAirlines routinely sell more tickets than there are seats on a flight. ______ By selling a few extra tickets, the airline avoids flying with empty seats that bring in no money. Occasionally, however, everyone turns up, and the airline must compensate passengers who agree to take a later flight.",
+      "options": [
+        "They do this because, on most flights, a few passengers who have booked do not turn up.",
+        "As a result, some passengers are left behind on every flight.",
+        "Occasionally, every passenger who has booked turns up.",
+        "Passengers who are left behind are never compensated.",
+        "Airlines, however, are not allowed by the regulator to sell more tickets than there are seats on a plane."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The practice needs a reason before the next sentence explains the gain; no-shows are that reason, and they also explain why a full turn-out happens only \"occasionally\".",
+          "\"Left behind on every flight\" contradicts \"Occasionally\"."
+        ],
+        "trap": "\"Occasionally, every passenger… turns up\" jumps ahead to the last sentence and leaves the extra tickets unexplained."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-081",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen schools reopened after long closures, teachers in many states found that their pupils had slipped behind. Children promoted to Class 4 could not read texts meant for Class 2. Teaching from the Class 4 textbook would only have left them further behind. ______",
+      "options": [
+        "Teachers therefore carried on with the Class 4 textbook as usual.",
+        "Children promoted to Class 4 could not read Class 2 texts.",
+        "Some schools therefore grouped children by their actual reading level for an hour a day, instead of by class.",
+        "The closures had helped children improve their reading.",
+        "Schools had been closed for long periods."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph sets out a problem and rules out the usual approach, so the close gives the alternative: teaching at the children's level.",
+          "\"Carried on with the Class 4 textbook\" is exactly what the previous sentence says would have left them further behind."
+        ],
+        "trap": "The \"could not read\" option repeats the second sentence rather than completing the argument."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-082",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nChildren who begin school in a language they do not speak at home face a double task. ______ Studies from several Indian states show that children taught in their mother tongue in the early grades read with better understanding. Many of them also learn English or Hindi more easily later, because they can transfer skills they have already mastered.",
+      "options": [
+        "They must learn a new language at the same time as they learn to read and count.",
+        "Learning in the mother tongue, however, makes it harder to learn a second language.",
+        "Most children in India speak only one language at home.",
+        "They read with better understanding than other children.",
+        "English is taught as a subject in most Indian schools."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"A double task\" needs explaining, and the key names its two parts (a new language plus reading and counting).",
+          "\"Harder to learn a second language\" contradicts the last sentence."
+        ],
+        "trap": "\"They read with better understanding\" reverses the logic: it is the mother-tongue learners, not these children, who read better."
+      },
+      "tags": [
+        "para:support",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-083",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ A student who reads a chapter five times in one night may feel confident the next morning, but much of it fades within a week. Spreading the same five readings over two weeks takes no extra time, yet the material is remembered far longer. Psychologists call this the *spacing effect*.",
+      "options": [
+        "This is what psychologists call the spacing effect.",
+        "How we divide our study time can matter as much as how much of it we spend.",
+        "Reading a chapter many times in one night is the best way to remember it.",
+        "However, such a student forgets nothing even after a month.",
+        "Most students prepare for examinations in groups."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The example keeps total time fixed and changes only how it is spread, so the opener should state that the division of time matters.",
+          "\"The best way to remember it\" contradicts \"much of it fades within a week\"."
+        ],
+        "trap": "\"This is what psychologists call…\" repeats the last sentence, and \"This\" has nothing before it to refer to."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:example-link"
+      ]
+    },
+    {
+      "key": "pf-084",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn 1928, Alexander Fleming returned from a holiday to find mould growing on one of his dishes of bacteria. ______ Fleming concluded that the mould was releasing a substance that killed the bacteria, a substance he named penicillin. It took more than a decade, however, before other scientists found a way to produce it in large quantities.",
+      "options": [
+        "He threw the dish away without examining it.",
+        "The bacteria near the mould were growing faster than anywhere else.",
+        "Penicillin was soon being made in large quantities in his laboratory.",
+        "Fleming had spent the summer holiday with his family at their country house in Suffolk.",
+        "Around the mould, he noticed, there was a clear ring where no bacteria grew."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Fleming's conclusion that the mould killed bacteria needs an observation to rest on; the clear ring around the mould is that evidence.",
+          "\"Growing faster\" near the mould contradicts the conclusion, and \"soon… in large quantities\" contradicts the last sentence."
+        ],
+        "trap": "The holiday sentence is background that moves the story backwards, and it gives Fleming's conclusion nothing to be drawn from."
+      },
+      "tags": [
+        "para:chronology",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-085",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn 1945, an engineer named Percy Spencer was working on radar equipment when he noticed that a chocolate bar in his pocket had melted. Curious, he placed some maize kernels near the equipment, and they began to pop. He realised that the microwaves produced by the radar were heating the food. ______",
+      "options": [
+        "He therefore concluded that microwaves could not heat food.",
+        "The chocolate bar in his pocket had melted.",
+        "Radar equipment was widely used during the Second World War.",
+        "Within two years, his company had built the first microwave oven, though it was almost as tall as a man.",
+        "Maize kernels, however, cannot be popped with heat."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph traces a discovery step by step; the natural close is what came of it, the first microwave oven.",
+          "\"Microwaves could not heat food\" contradicts what he realised."
+        ],
+        "trap": "The wartime radar sentence is background that moves the story backwards rather than completing it."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:chronology"
+      ]
+    },
+    {
+      "key": "pf-086",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nStreet vendors are part of everyday life in Indian cities, selling everything from vegetables to phone covers. Yet many of them face frequent eviction drives, as civic bodies try to clear pavements for pedestrians. ______ Where such zones have been set up with proper drainage, lighting and space, both vendors and pedestrians have gained.",
+      "options": [
+        "One solution that some cities have tried is to mark out vending zones where vendors can trade legally.",
+        "Pedestrians, therefore, prefer to walk on the road.",
+        "Vendors in these zones pay no rent to the city.",
+        "Eviction drives have helped vendors to expand their business.",
+        "Most vendors sell only vegetables and fruit."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"Such zones\" in the last sentence needs zones introduced in the blank; the key introduces vending zones as a solution to the conflict just described.",
+          "\"Sell only vegetables and fruit\" contradicts \"everything from vegetables to phone covers\"."
+        ],
+        "trap": "\"Vendors in these zones…\" mentions zones, but \"these zones\" has not been introduced, so it presupposes the very sentence that is missing."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-087",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ In the weeks after harvest, markets are flooded and prices crash so low that some farmers leave the crop to rot in the fields. A few months later, supply dries up and the same vegetable sells at many times the price. Better cold storage and processing could even out these swings for farmers and consumers alike.",
+      "options": [
+        "Tomato prices in India stay steady through the year.",
+        "Few things in an Indian kitchen swing in price as wildly as the tomato.",
+        "Onions, potatoes and tomatoes are grown in almost every Indian state and eaten in almost every household.",
+        "Cold storage has already removed these swings completely.",
+        "Farmers therefore earn the most just after the harvest."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"The crop\" and \"the same vegetable\" need one vegetable named, and the paragraph is about price swings; the tomato sentence gives both.",
+          "\"Stay steady\" contradicts the swings, and \"already removed\" contradicts \"could even out\"."
+        ],
+        "trap": "The sentence naming three vegetables leaves \"the same vegetable\" unclear and says nothing about prices."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-088",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nLakshmi had ₹5 lakh to put into fixed deposits but could not decide on a term. A five-year deposit paid more interest but would lock up all her money. A one-year deposit kept her money free but paid less. ______",
+      "options": [
+        "A five-year deposit paid more interest but locked up her money.",
+        "She therefore kept the whole sum in cash at home.",
+        "She finally split the sum into five deposits maturing a year apart, so that some money always fell due soon while the rest earned higher rates.",
+        "Fixed deposits are insured up to a limit by a government-backed agency.",
+        "Both deposits, she found, paid exactly the same interest."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph sets out a dilemma between return and access; the close resolves it with a plan that gets some of each.",
+          "\"Exactly the same interest\" contradicts the two sentences before it."
+        ],
+        "trap": "\"Kept the whole sum in cash\" uses \"therefore\", but nothing in the dilemma points to giving up interest altogether."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-089",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nMany people use the same password for their email, bank and shopping accounts. ______ Criminals then try that email and password on hundreds of other sites, knowing that some will work. A password manager, which creates and remembers a different password for each site, removes this risk.",
+      "options": [
+        "Criminals rarely try stolen passwords on other sites.",
+        "Banks, however, ask customers to change their passwords every few weeks and to choose long, complex ones.",
+        "A password manager remembers a different password for each site.",
+        "This makes their accounts much harder to break into.",
+        "When any one of these sites is hacked, the stolen password can unlock all the others."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "\"Criminals then try that email and password\" needs a password that has been stolen; the key supplies the leak and the danger of reuse.",
+          "\"Rarely try stolen passwords\" contradicts the next sentence, and \"harder to break into\" contradicts the risk."
+        ],
+        "trap": "\"A password manager…\" jumps ahead to the solution and repeats the last sentence."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-090",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nUrea is cheap, and many farmers apply it far more heavily than their soil needs. ______ Over the years, this imbalance has lowered yields and polluted groundwater with nitrates. Soil testing helps farmers apply only the nutrients that are actually missing.",
+      "options": [
+        "Urea is therefore the most expensive fertiliser on the market.",
+        "Applying more urea has steadily raised yields everywhere.",
+        "Soil testing is carried out at government laboratories.",
+        "Too much nitrogen, with too little potassium and phosphorus, upsets the balance of nutrients in the soil.",
+        "Many farmers apply too little urea to save money."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"This imbalance\" needs an imbalance named in the blank; the key describes it (too much nitrogen, too little of other nutrients).",
+          "\"Raised yields everywhere\" contradicts \"lowered yields\", and \"too little urea\" contradicts the first sentence."
+        ],
+        "trap": "The soil-testing sentence is on topic but gives \"this imbalance\" nothing to refer to."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-091",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Brought to India as a garden shrub in the nineteenth century, it has spread across millions of hectares of forest. Its dense thickets crowd out the grasses that deer and other grazing animals feed on. Clearing it is costly, because it grows back quickly unless the roots are dug out.",
+      "options": [
+        "Its dense thickets also block the paths of elephants.",
+        "Many garden plants were brought to India by colonial botanists.",
+        "Lantana, a shrub with pretty orange and pink flowers, has become one of the worst invaders of Indian forests.",
+        "Deer and other grazing animals prefer it to native grasses.",
+        "Lantana is easy to clear because its roots are shallow and weak."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Every later sentence refers to a single plant as \"it\"; the opener must name that plant and the harm it does, which the Lantana sentence does.",
+          "\"Easy to clear\" contradicts the last sentence."
+        ],
+        "trap": "\"Many garden plants…\" is plural, so the singular \"it\" in the next sentence has no proper referent."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-092",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nHonking is so common on Indian roads that many drivers do it out of habit rather than need. In one experiment, a city wired traffic signals to stay red for longer whenever the noise at a junction crossed a set level. Drivers who honked impatiently found that they only lengthened their own wait. ______",
+      "options": [
+        "Drivers, therefore, honked even more to make the signal turn green.",
+        "Within weeks, honking at the junction had dropped noticeably.",
+        "Honking is so common that most drivers do it out of habit.",
+        "Honking is banned near hospitals and schools.",
+        "The experiment was therefore abandoned on the first day."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Once drivers learn that honking lengthens their wait, the expected result is less honking; the close reports it.",
+          "\"Honked even more\" contradicts what the drivers had just found."
+        ],
+        "trap": "\"Abandoned on the first day\" uses \"therefore\" with no reason in the paragraph to give up."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-093",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nSuppose you buy a bond that pays 7 per cent interest a year. A few months later, interest rates rise, and new bonds pay 8 per cent. ______ To sell it, you would have to accept a lower price. This is why bond prices fall when interest rates rise.",
+      "options": [
+        "Your bond now pays 8 per cent as well.",
+        "Buyers will therefore pay more for your bond than you did.",
+        "This is why bond prices rise when interest rates rise.",
+        "Bonds are issued by both companies and governments, and they are bought and sold every day.",
+        "Nobody will now pay the full price for your bond, which earns less than the new ones."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The step from \"new bonds pay more\" to \"you would have to accept a lower price\" is that buyers will not pay full price for a bond that earns less.",
+          "\"Pay more for your bond\" contradicts \"accept a lower price\"."
+        ],
+        "trap": "\"Your bond now pays 8 per cent\" ignores the fixed rate; if it were true, there would be no reason to accept a lower price."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:support"
+      ]
+    },
+    {
+      "key": "pf-094",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nElephants in eastern and northern India often travel long distances between forests in search of food and water. ______ Many have been killed by trains at night. In some areas, railways now slow trains near known crossings and use sensors that warn drivers when elephants are close to the track.",
+      "options": [
+        "Many of their traditional routes are now cut across by railway lines.",
+        "They rarely leave the forest in which they were born.",
+        "Trains in these areas run only during the day.",
+        "Railways have therefore closed all lines that pass through forests.",
+        "An adult elephant needs up to 150 kilograms of food a day, more than a single patch of forest can supply."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The deaths by train need a link between the elephants' journeys and the railways; the key provides it.",
+          "\"Run only during the day\" contradicts \"killed by trains at night\", and \"rarely leave the forest\" contradicts the first sentence."
+        ],
+        "trap": "The food sentence explains why elephants travel, but it never brings in the railway, so the deaths by train come from nowhere."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-095",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ At the checkout, a shopper can split the price of a phone into four interest-free instalments with a single tap. The ease of it, however, tempts many young buyers to take on several such plans at once. When they miss a payment, late fees pile up, and their credit scores can suffer.",
+      "options": [
+        "The ease of such plans, however, worries many lenders.",
+        "Late fees on such plans are not allowed in India.",
+        "Young buyers rarely shop for phones online.",
+        "Buy-now-pay-later schemes have become a popular way to shop online.",
+        "Credit cards remain the only way to pay for a phone in instalments."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph describes instalment plans at checkout and their risks; the opener must name these schemes, which the key does.",
+          "\"Late fees… not allowed\" contradicts the last sentence, and \"only way… credit cards\" contradicts the second."
+        ],
+        "trap": "\"The ease of such plans, however…\" cannot open: \"such plans\" and \"however\" both need something before them."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-096",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nBanana farmers in Jalgaon traditionally planted suckers taken from older plants. These suckers often carried disease, and plants grown from them ripened at different times. Tissue-culture plantlets, raised in laboratories from a single healthy plant, are free of disease and grow evenly. ______",
+      "options": [
+        "Suckers, therefore, remain the most reliable planting material.",
+        "Plants grown from suckers ripened at different times.",
+        "Farmers who have switched to them can harvest a whole field at once and plan their sales better.",
+        "Jalgaon is one of the largest banana-growing districts in India.",
+        "Tissue-culture plantlets, however, spread disease through the whole field."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "After the old method's problems and the new method's advantages, the close gives the practical benefit to farmers.",
+          "\"Spread disease\" contradicts \"free of disease\"; \"most reliable\" contradicts the problems with suckers."
+        ],
+        "trap": "The \"ripened at different times\" option repeats the second sentence."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-097",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIndians eat, on average, far more salt than doctors recommend. Most people assume the extra comes from the salt shaker. ______ Packaged snacks, pickles, sauces and instant noodles all carry large amounts, often without tasting especially salty. Reading food labels is a simple way to keep track of it.",
+      "options": [
+        "They are right, since processed foods contain very little salt.",
+        "In fact, a growing share of it is hidden in processed foods.",
+        "Doctors recommend eating more salt in hot weather.",
+        "Reading labels, however, tells you nothing about salt.",
+        "Packaged snacks are especially popular with children."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"Most people assume\" sets up a correction, and the list of packaged foods then supports it; the \"In fact… processed foods\" sentence is that correction.",
+          "\"Processed foods contain very little salt\" contradicts the next sentence."
+        ],
+        "trap": "The snacks sentence is on topic but skips the correction, so the list that follows seems to come from nowhere."
+      },
+      "tags": [
+        "para:contrast",
+        "para:support"
+      ]
+    },
+    {
+      "key": "pf-098",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nToll plazas on Indian highways were once notorious for long queues. Each vehicle had to stop, pay in cash and wait for change and a receipt. ______ As a result, the average waiting time at many plazas has fallen from several minutes to under a minute.",
+      "options": [
+        "With electronic tags, the toll is now deducted automatically from a linked account as the vehicle passes through.",
+        "Queues at toll plazas, however, have grown longer every year.",
+        "Each vehicle had to stop and pay in cash.",
+        "Toll charges are used to repay the cost of building and maintaining highways, and they rise a little every year.",
+        "Toll plazas were built every sixty kilometres along major highways."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"As a result, the waiting time has fallen\" needs a change that speeds things up; automatic deduction is that change.",
+          "\"Grown longer\" contradicts the fall in waiting time."
+        ],
+        "trap": "The other two toll sentences are on topic but neither could cause waiting time to fall."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:contrast"
+      ]
+    },
+    {
+      "key": "pf-099",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Astronomers had noticed that Uranus did not move exactly as Newton's laws predicted. Two mathematicians, working separately, concluded that the pull of an unseen planet must be responsible and calculated where it should be. In 1846, telescopes pointed at that spot found Neptune.",
+      "options": [
+        "Neptune was first spotted by chance by an amateur astronomer.",
+        "Uranus, however, moved exactly as the laws predicted.",
+        "They calculated where the unseen planet should be.",
+        "Newton's laws were later shown to fail for all the planets.",
+        "Neptune was the first planet to be found by calculation before anyone had seen it."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph shows a planet predicted by calculation and then found; the opener states that claim.",
+          "\"Spotted by chance\" contradicts the calculated search, and \"moved exactly as predicted\" contradicts the second sentence."
+        ],
+        "trap": "\"They calculated…\" has no one for \"They\" to refer to and repeats the third sentence."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:chronology"
+      ]
+    },
+    {
+      "key": "pf-100",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn several states, girls who finished Class 8 were given free bicycles to ride to secondary school. For many, the nearest high school was several kilometres away, and parents were reluctant to let them walk alone. With a bicycle, the journey became quicker and felt safer. ______",
+      "options": [
+        "The nearest high school was several kilometres away.",
+        "Parents, therefore, became more reluctant to send their daughters to school.",
+        "Bicycles were first made in Europe in the nineteenth century.",
+        "Enrolment of girls in secondary school rose noticeably in the years that followed.",
+        "Boys, however, had to walk to school in most villages."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph moves from a barrier (distance, safety) to a solution (bicycles); the close reports the result, higher enrolment.",
+          "\"More reluctant\" contradicts the quicker, safer journey."
+        ],
+        "trap": "The \"several kilometres away\" option only repeats the second sentence."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-101",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen schools in a drought-hit district of Karnataka began serving a hot lunch every day, attendance rose sharply. ______ Teachers also noticed that children were more alert in afternoon classes. For many families, the promise of one full meal a day became a strong reason to keep their children in school.",
+      "options": [
+        "Attendance, however, fell sharply in the months that followed.",
+        "Many children who had stayed at home to help in the fields now came to school regularly.",
+        "Teachers noticed that children were more alert in the afternoons.",
+        "Many children, however, stopped coming once the novelty of a free lunch had worn off.",
+        "Most families preferred to send their children to work instead."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The blank explains the rise in attendance, and \"Teachers also noticed\" needs an earlier observation of the same kind; the key supplies it.",
+          "\"Attendance fell\" contradicts the first sentence, and \"preferred to send their children to work\" contradicts the last."
+        ],
+        "trap": "\"Teachers noticed that children were more alert\" only repeats the next sentence. \"Stopped coming once the novelty… had worn off\" contradicts the rise in attendance and the last sentence."
+      },
+      "tags": [
+        "para:cohesion",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-102",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen the rupee weakens against the dollar, Indian exporters earn more rupees for every dollar of goods they sell abroad. ______ Companies that import oil, electronics or machinery, on the other hand, must pay more rupees for the same goods. A weaker rupee therefore helps some businesses and hurts others.",
+      "options": [
+        "Importers, too, gain from the weaker rupee.",
+        "As a result, exporters earn fewer rupees than before.",
+        "A weaker rupee therefore helps some businesses and hurts others.",
+        "Textile and software firms, which earn much of their income in dollars, often gain.",
+        "Oil is India's largest import by value."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph contrasts winners and losers; the blank completes the winners' side before \"on the other hand\" turns to importers.",
+          "\"Importers, too, gain\" contradicts the importers' sentence, and \"fewer rupees\" contradicts the first sentence."
+        ],
+        "trap": "The oil sentence jumps ahead to the importers' side, so \"on the other hand\" would contrast importers with importers."
+      },
+      "tags": [
+        "para:contrast",
+        "para:example-link"
+      ]
+    },
+    {
+      "key": "pf-103",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Coal-fired power plants produce millions of tonnes of fly ash every year, much of which is dumped in ponds that can leak into rivers. Bricks made from this ash need no firing in a kiln and do not use fertile topsoil, as clay bricks do. Builders who switch to them help solve two problems at once.",
+      "options": [
+        "These bricks are also lighter than clay bricks.",
+        "Fly ash is harmless and can be dumped anywhere.",
+        "Builders, therefore, prefer clay bricks to every other kind.",
+        "Coal-fired power plants produce very little waste.",
+        "One industry's waste can become another's raw material."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph turns a power plant's waste into a builder's material and ends with \"two problems at once\"; the opener states that idea.",
+          "\"Very little waste\" and \"harmless\" contradict the second sentence."
+        ],
+        "trap": "\"These bricks are also…\" refers to bricks not yet mentioned, so it cannot open the paragraph."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-104",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nA popular chain of dosa restaurants in Hyderabad decided to open forty new outlets in a single year. To move quickly, it hired managers with little training and bought ingredients from new, untested suppliers. Customers soon complained that the food tasted different from one outlet to another. ______",
+      "options": [
+        "Within two years, the chain had shut half of its new outlets and returned to a slower pace of growth.",
+        "Customers praised the chain for the same taste in every outlet.",
+        "To move quickly, it hired managers with little training.",
+        "The chain had been founded by two brothers in 1995.",
+        "As a result, sales at the new outlets rose faster than ever."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Hasty expansion led to uneven food and complaints, so the close should show the consequence; the closures do.",
+          "\"Praised… same taste\" contradicts the complaints, and \"sales rose faster than ever\" does not follow from them."
+        ],
+        "trap": "The founding-date sentence moves backwards in time and does not complete the story."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-105",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nDelivery workers who ride for food and grocery apps are usually treated as independent partners rather than employees. ______ If a rider is injured in an accident, he may lose weeks of income with no support. Some states and companies have begun offering accident insurance to fill this gap.",
+      "options": [
+        "As employees, they receive a fixed salary and paid leave.",
+        "Some companies have begun offering them accident insurance.",
+        "As a result, they get no fixed salary, paid leave or health cover from the companies they work for.",
+        "Food delivery apps are especially busy on weekends and holidays, when riders can earn extra money.",
+        "Riders, therefore, are fully protected if they are injured."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "\"This gap\" needs a lack of protection described earlier; the key spells out what partners do not get, and the injured rider's case illustrates it.",
+          "\"As employees\" contradicts the first sentence, and \"fully protected\" contradicts the next."
+        ],
+        "trap": "\"Some companies have begun offering… insurance\" jumps ahead to the last sentence and repeats it."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-106",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn the 1840s, Ignaz Semmelweis, a doctor in Vienna, noticed something strange about the two maternity wards in his hospital. ______ He realised that doctors were coming straight from dissecting dead bodies to deliver babies, while midwives were not. When he made doctors wash their hands in a chlorine solution, deaths fell dramatically.",
+      "options": [
+        "Far more mothers died of fever in the ward run by doctors than in the one run by midwives.",
+        "Both wards had almost exactly the same death rate.",
+        "Deaths fell when doctors washed their hands.",
+        "Midwives in the hospital were often careless about cleanliness.",
+        "Vienna was then one of the largest cities in Europe."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"Something strange\" must be stated, and the following explanation contrasts doctors with midwives; the key gives the difference in deaths between their wards.",
+          "\"Same death rate\" leaves nothing strange to explain."
+        ],
+        "trap": "\"Deaths fell when doctors washed their hands\" jumps ahead to the result before the problem is stated."
+      },
+      "tags": [
+        "para:chronology",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-107",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ In peak season, traffic jams stretch for kilometres, hotels draw so much groundwater that local wells run dry, and rubbish piles up along mountain trails. Residents who once welcomed visitors now complain that the town no longer feels like their own. Some hill towns have begun to cap the number of vehicles allowed in each day.",
+      "options": [
+        "Tourism has brought nothing but benefits to the hill towns.",
+        "These caps have already cut traffic by half.",
+        "Residents have always opposed any visitors to their town.",
+        "For many hill towns, the tourists who bring income have also begun to bring problems.",
+        "Hotels in hill towns rely entirely on water piped up from the plains, so the local wells are left untouched."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph lists the strains of tourism and a response to them; the opener must set up that double-edged theme.",
+          "\"Nothing but benefits\" contradicts the problems, and \"always opposed\" contradicts \"once welcomed\"."
+        ],
+        "trap": "\"These caps…\" refers to caps not yet mentioned and jumps ahead to the last sentence."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:contrast"
+      ]
+    },
+    {
+      "key": "pf-108",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nConstruction workers and street vendors spend long hours in the sun during Indian summers. When temperatures cross 45°C, the body struggles to cool itself, and heatstroke can set in. Ahmedabad's heat action plan sends out early warnings, opens cool shelters and shifts outdoor work away from the hottest hours. ______",
+      "options": [
+        "When temperatures cross 45°C, heatstroke can set in.",
+        "Since the plan was introduced, the city has recorded far fewer heat-related deaths during heatwaves.",
+        "As a result, workers must now work through the afternoon.",
+        "Summers in Gujarat are cooler than in most other states.",
+        "The plan, however, does not include any warnings."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "After the danger and the plan, the close reports what the plan achieved.",
+          "\"Work through the afternoon\" contradicts \"shifts outdoor work away from the hottest hours\", and \"no warnings\" contradicts \"early warnings\"."
+        ],
+        "trap": "The 45°C option only repeats the second sentence."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-109",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn 1912, Alfred Wegener argued that the continents had once been joined together and had slowly drifted apart. He pointed to the way the coasts of Africa and South America fit together, and to identical fossils found on both. Most geologists rejected the idea, because he could not explain what force could move whole continents. ______",
+      "options": [
+        "Most geologists therefore accepted his idea at once.",
+        "He pointed to the way the coasts of the two continents fit together.",
+        "Only in the 1960s, when studies of the ocean floor showed how the plates move, was his theory widely accepted.",
+        "The coasts of Africa and South America, however, do not match at all.",
+        "Wegener was also an expert on weather and polar travel, and he led several expeditions to Greenland."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The objection was a missing mechanism, so the close tells how that gap was later filled and the theory accepted.",
+          "\"Accepted his idea at once\" contradicts \"Most geologists rejected the idea\"."
+        ],
+        "trap": "The weather-expert sentence is a side fact that leaves the story of the theory unfinished."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:chronology"
+      ]
+    },
+    {
+      "key": "pf-110",
+      "subtype": "missing-sentence",
+      "difficulty": "medium",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn many Indian cities, households pay a flat monthly charge for water, however much they use. Those who waste water pay no more than those who save it. When one town installed meters and began charging by volume, average use fell by about a fifth. ______",
+      "options": [
+        "Households that waste water pay no more than those that save it.",
+        "As a result, water use in the town rose sharply.",
+        "Flat charges, therefore, are the best way to save water.",
+        "Most towns get their water from rivers and reservoirs.",
+        "Pricing water by use, it seems, encourages people to value it."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph contrasts flat charges with metering and reports a fall in use; the close draws the lesson.",
+          "\"Water use rose\" contradicts \"fell by about a fifth\", and \"flat charges are best\" draws the opposite lesson."
+        ],
+        "trap": "The \"pay no more\" option repeats the second sentence instead of concluding."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-111",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ When a borrower cannot repay, the bank lends him fresh money, which he uses to pay the interest on the old loan. On paper, the account looks healthy, and the bank need not set aside money to cover a likely loss. The problem does not go away, however; it only grows larger and comes to light later.",
+      "options": [
+        "Banks sometimes hide bad loans through a practice known as evergreening.",
+        "When a bank lends fresh money to a struggling borrower, his business usually recovers within a year.",
+        "Indian banks write off a bad loan as soon as a borrower misses a single payment.",
+        "This allows the borrower to keep paying the interest on the old loan.",
+        "Bad loans, however, can never be hidden from a bank's books."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph describes a device that makes a failing loan look healthy on paper while the problem grows; the opener names that device and its purpose (hiding bad loans).",
+          "\"His business usually recovers\" contradicts the last sentence: the problem \"only grows larger\"."
+        ],
+        "trap": "\"Write off… as soon as a borrower misses a payment\" sounds prudent, but the next sentence says the bank lends more instead. \"This allows…\" has no antecedent and repeats the second sentence."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-112",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nBanks lend out most of the money deposited with them, keeping only a fraction in reserve. If some of their loans go bad, the losses must first be absorbed by the bank's own capital, the money put in by its shareholders. ______ Regulators therefore require banks to hold capital equal to a minimum share of their risky assets, and to build extra buffers in good years.",
+      "options": [
+        "Depositors, therefore, bear the first losses when loans go bad.",
+        "A bank with too thin a cushion of capital can be wiped out by losses that a better-funded bank would survive.",
+        "Banks with more capital, however, are more likely to fail.",
+        "Regulators also require banks to build extra buffers in good years.",
+        "Shareholders, who put their own money into the bank, usually receive a share of its profits as dividends in good years."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The regulators' rule (\"therefore require… capital\") needs a reason; the key gives it: too little capital means losses can sink the bank.",
+          "\"Depositors bear the first losses\" contradicts \"first be absorbed by the bank's own capital\"."
+        ],
+        "trap": "The dividends sentence is about shareholders and is true, but it gives no reason why regulators should demand a minimum of capital."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:support"
+      ]
+    },
+    {
+      "key": "pf-113",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nSmall finance banks were licensed to serve customers whom large banks found too costly to reach: small traders, farmers and workers in the informal sector. Many of them began as microfinance lenders and already knew these customers well. As banks, they can now accept deposits, which give them a cheaper and steadier source of funds than the loans they once relied on. ______",
+      "options": [
+        "As microfinance lenders, they had always been free to accept deposits.",
+        "That cheaper funding, however, has forced them to raise the rates they charge on loans to small traders and farmers.",
+        "That cheaper funding, in turn, allows them to lend to their customers at lower rates than before.",
+        "Many of them began as microfinance lenders.",
+        "Large banks, therefore, have begun to find these customers too costly to reach."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The last sentence ends on cheaper funds, and the close carries the chain one step further, to cheaper loans for the customers the banks were meant to serve.",
+          "\"Forced them to raise the rates they charge\" reverses the cause and effect: cheaper funding cannot force rates up."
+        ],
+        "trap": "\"Always been free to accept deposits\" contradicts \"As banks, they can now accept deposits\". The \"therefore\" option repeats the first sentence as if it were a result."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-114",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen a government spends more than it earns in taxes, it must borrow the difference. ______ Private companies, competing for the same pool of savings, may then find loans harder or costlier to get. Economists call this *crowding out*, and it is one reason why large deficits worry them even when the spending itself is useful.",
+      "options": [
+        "Private companies, as a result, find it easier and cheaper to borrow.",
+        "Such borrowing has no effect on the savings available to others.",
+        "Spending on roads, schools and hospitals can raise the economy's growth in the long run, which is why deficits are not always bad.",
+        "Economists call this effect crowding out.",
+        "If it borrows heavily, it can soak up a large share of the savings that banks and investors have to lend."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "\"Competing for the same pool of savings\" needs the government to be drawing on that pool; the key says so and makes \"then\" follow.",
+          "The roads-and-schools sentence is true and echoes \"useful\" spending, but it never brings in savings, so \"the same pool\" has nothing to refer to."
+        ],
+        "trap": "The roads-and-schools option looks like a fair point about deficits, but the next sentence depends on a pool of savings that it never mentions."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-115",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ In the past, rumours about a bank spread slowly, by word of mouth, and the bank had days to reassure its customers. Today, a message forwarded on social media can reach millions within hours, and depositors can withdraw their money with a few taps on a phone. A run that once took weeks can now happen in an afternoon.",
+      "options": [
+        "Technology has made it much harder for rumours about banks to spread.",
+        "Social media has made depositors far less likely to panic than before.",
+        "A run that once took weeks can now happen in an afternoon.",
+        "Technology has made bank runs far quicker than they used to be.",
+        "Banks today, however, still have several days to reassure their customers."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph contrasts the slow runs of the past with the fast runs of today; the opener should state that change in speed.",
+          "\"Harder for rumours to spread\" and \"less likely to panic\" both reverse the point made by \"millions within hours\"."
+        ],
+        "trap": "The \"afternoon\" option states the right idea, but it is word for word the last sentence; the paragraph would end by repeating its opening."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:contrast"
+      ]
+    },
+    {
+      "key": "pf-116",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nSpraying pesticide by hand is slow, and it exposes farm workers to harmful chemicals. ______ A drone can cover an acre in a few minutes, using less chemical because it sprays a fine, even mist. Its high cost, however, means that most small farmers will use one only if they can hire it by the hour.",
+      "options": [
+        "Small farmers, therefore, prefer to buy drones of their own.",
+        "Drones, however, need far more chemical than spraying by hand.",
+        "In some districts, drones are now being used to take over this task.",
+        "Its high cost is the main reason why drones are rarely used.",
+        "Workers face no risk, however, as long as they spray only in the evening."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The paragraph moves from the problem of hand spraying to drones as a remedy; the blank introduces drones and links them to \"this task\" (spraying).",
+          "\"Buy drones of their own\" contradicts the last sentence (they will only hire), and \"far more chemical\" contradicts \"using less chemical\"."
+        ],
+        "trap": "\"Its high cost…\" jumps ahead to the last sentence, and \"Its\" would point back to hand spraying, not to a drone."
+      },
+      "tags": [
+        "para:problem-solution",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-117",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nMost students treat tests as a way to measure what they have learnt. Research suggests that tests also help them learn. Students who read a passage and then tried to recall it without looking remembered far more a week later than those who simply read it again. ______",
+      "options": [
+        "Reading a passage again, therefore, is the most effective way to remember it.",
+        "Tests, in other words, are useful only for measuring learning.",
+        "Students who reread the passage remembered far more a week later.",
+        "The effort of pulling information out of memory, it seems, strengthens the memory itself.",
+        "This is why schools usually hold their examinations at the end of a course, after all the teaching is over."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The study supports the claim that tests help learning; the close explains why: recalling strengthens memory.",
+          "\"Useful only for measuring\" contradicts the second sentence, and the rereading options reverse the finding."
+        ],
+        "trap": "\"This is why examinations are held at the end\" sounds like a conclusion, but the finding argues for testing during learning, not only at the end."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-118",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen the price of a good rises, people usually buy less of it, but how much less depends on the good. ______ A rise in the price of foreign holidays, by contrast, leads many families to postpone their trip or to holiday closer to home. Governments use this difference when deciding what to tax: a tax on a necessity raises steady revenue, while a tax on a luxury may simply shrink sales.",
+      "options": [
+        "If the price of foreign holidays doubles, most families still travel abroad.",
+        "If the price of salt doubles, most households still buy almost the same amount, because they cannot do without it.",
+        "A rise in the price of salt, likewise, leads people to buy much less of it.",
+        "Governments, therefore, prefer to tax luxuries such as foreign holidays, since the people who buy them can most afford to pay.",
+        "People generally buy less of a good when its price goes up."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"By contrast\" needs an example of a good whose demand hardly changes; salt, a necessity, is that example, and the last sentence then contrasts necessities with luxuries.",
+          "\"Salt… likewise… much less\" removes the contrast the next sentence relies on, and the holidays option contradicts it."
+        ],
+        "trap": "\"Governments prefer to tax luxuries\" jumps ahead to the tax question before the difference has been shown, and \"by contrast\" would then set foreign holidays against foreign holidays."
+      },
+      "tags": [
+        "para:contrast",
+        "para:example-link"
+      ]
+    },
+    {
+      "key": "pf-119",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ The QWERTY layout on today's keyboards was designed in the 1870s for mechanical typewriters, partly to stop neighbouring keys from jamming. Typewriters with that problem disappeared long ago, and layouts that allow faster typing have since been invented. Yet QWERTY survives, because millions of people have learnt it and every keyboard maker supplies it. Economists call this *path dependence*.",
+      "options": [
+        "In the long run, the most efficient technology always wins, because users quickly abandon whatever is slower or clumsier.",
+        "Typists today, however, still struggle with keys that jam.",
+        "Faster layouts have since replaced QWERTY on most keyboards.",
+        "This layout was designed by a newspaper editor in America.",
+        "Sometimes a technology stays in use not because it is the best but because it came first."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The QWERTY story shows an inferior design surviving because it was already in place; the opener states that general idea, and the last sentence names it.",
+          "\"The most efficient technology always wins\" and \"replaced QWERTY on most keyboards\" both contradict \"Yet QWERTY survives\"."
+        ],
+        "trap": "\"This layout…\" cannot open: no layout has been mentioned. \"Typists… still struggle with keys that jam\" opens with \"however\" and contradicts \"Typewriters with that problem disappeared long ago\"."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:example-link"
+      ]
+    },
+    {
+      "key": "pf-120",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nOpening a bank account once meant visiting a branch with photocopies of documents and a passport-size photograph. ______ The customer shows his identity card to the camera, answers a few questions and is photographed live, all from home. Banks say the process has cut the cost of opening an account and brought in customers from places where they have no branch.",
+      "options": [
+        "Now, many banks let customers complete these checks over a video call with an official.",
+        "Many customers, however, still prefer to visit a branch in person.",
+        "Banks have since made a branch visit compulsory for every new customer.",
+        "The process has cut the cost of opening an account.",
+        "The photocopies were then checked by hand at a central office, which often took several days or even weeks."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"Once meant\" calls for a \"now\", and \"the camera\" in the next sentence needs a video call to have been introduced; the key does both.",
+          "\"A branch visit compulsory\" contradicts \"all from home\"."
+        ],
+        "trap": "The photocopies sentence continues the old method naturally, but then \"the camera\" appears from nowhere. \"The process has cut…\" jumps ahead and has no process to refer to."
+      },
+      "tags": [
+        "para:contrast",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-121",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn 1975, an engineer at a leading maker of camera film built one of the first digital cameras. The company's managers saw little reason to promote it, since nearly all their profits came from selling film and printing photographs. For years, they treated digital photography as a distant threat. ______",
+      "options": [
+        "Their quick embrace of digital cameras, once the market began to shift, kept the company comfortably ahead of its rivals for years to come.",
+        "By the time they changed course, rivals had taken the market, and the firm that invented the technology was among its biggest victims.",
+        "The managers saw little reason to promote the new camera.",
+        "Film and printing, therefore, became more profitable than ever.",
+        "Digital cameras, however, never became popular with ordinary buyers."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"For years, they treated digital photography as a distant threat\" sets up a delayed reaction; the close gives its cost, with the irony that the inventor was overtaken.",
+          "\"Quick embrace\" contradicts \"for years… a distant threat\"."
+        ],
+        "trap": "\"Film and printing became more profitable\" uses \"therefore\", but ignoring a new technology does not make the old business grow."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-122",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nMany farmers in Karnataka grow a single crop, such as maize, across their whole field. If the rains fail or pests strike, the entire season's income is lost. ______ Pigeon pea, for instance, grown in rows between the maize, not only adds a second harvest but also enriches the soil with nitrogen, which benefits the maize.",
+      "options": [
+        "Growing two or more crops together on the same field spreads this risk.",
+        "Growing a single crop, therefore, is the safest way to protect income.",
+        "Maize needs a great deal of nitrogen to grow well, and farmers spend heavily on fertiliser to supply it.",
+        "Pigeon pea is grown mainly in the dry regions of central India.",
+        "Pests, however, rarely attack maize grown in Karnataka."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"Pigeon pea, for instance\" needs a general practice to be an instance of; the key states that practice (mixed cropping) and answers the risk just described.",
+          "\"The safest way\" contradicts the risk of losing \"the entire season's income\"."
+        ],
+        "trap": "The nitrogen sentence prepares for the last line's mention of nitrogen, but \"for instance\" then has no general claim to illustrate."
+      },
+      "tags": [
+        "para:example-link",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-123",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ For decades, money sent home by workers in the Gulf has paid for houses, education and medical care across the state. It has also changed local economies, as shops, banks and builders have grown up to serve families with a steady income from abroad. Any slowdown in the Gulf therefore travels quickly to Kerala's towns and villages.",
+      "options": [
+        "Kerala's economy depends mainly on income earned within the state.",
+        "It has also helped many families repay their loans.",
+        "Most workers from Kerala have now returned home from the Gulf for good, and few young people still plan to go abroad.",
+        "Few regions of India are as closely tied to another part of the world as Kerala is to the Gulf.",
+        "A slowdown in the Gulf, however, has little effect on Kerala."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"Across the state\" needs a state named before it, and the paragraph's point is the close link between Kerala and the Gulf; the key supplies both.",
+          "\"Little effect\" contradicts the last sentence, and \"depends mainly on income earned within the state\" contradicts the second."
+        ],
+        "trap": "\"It has also helped…\" begins with a pronoun and \"also\", neither of which has anything to refer back to."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-124",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nFraudsters have found a new use for artificial intelligence. With a few seconds of a person's voice taken from a social media video, software can now produce a convincing copy of it. ______ Police advise families to agree on a secret word that a genuine caller can be asked to repeat.",
+      "options": [
+        "Such software, however, cannot copy a voice without hours of recordings.",
+        "Police advise families to stop posting videos on social media, since even a short clip can give fraudsters what they need.",
+        "Victims have received calls in which a son's or daughter's voice begs for money to be sent at once after an accident.",
+        "As a result, fraudsters have stopped making phone calls to their victims.",
+        "Artificial intelligence is also used by banks to detect fraud."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The last sentence's \"genuine caller\" assumes fake calls have been described; the key describes them, showing how the copied voice is used.",
+          "\"Hours of recordings\" contradicts \"a few seconds\", and \"stopped making phone calls\" contradicts the advice about callers."
+        ],
+        "trap": "\"Never post videos\" is sensible advice, but it skips the fraud itself, so the secret word and the \"genuine caller\" come without context."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-125",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nDesert locusts usually live alone and cause little harm. After heavy rains, however, when plants flourish and their numbers grow, crowding sets off a striking change. The insects change colour, begin to move together and form swarms that can travel over a hundred kilometres a day, stripping crops as they go. ______",
+      "options": [
+        "A single swarm, however, rarely damages crops.",
+        "After heavy rains, the locusts go back to living alone.",
+        "Swarms can travel over a hundred kilometres a day.",
+        "Locusts are a kind of short-horned grasshopper found in the dry regions of Africa, the Middle East and South Asia.",
+        "Controlling them is therefore easiest early, before scattered locusts have gathered into swarms."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph shows that harmless, scattered locusts become destructive only once they swarm; the practical conclusion is to act before that happens.",
+          "\"Rarely damages crops\" contradicts \"stripping crops\", and \"go back to living alone\" reverses the change described."
+        ],
+        "trap": "The grasshopper sentence is accurate but only defines the insect; it adds nothing to what the paragraph has shown."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-126",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nMany engineering graduates in India struggle to find jobs, while employers complain that they cannot find workers with practical skills. ______ Under an apprenticeship, a trainee works in a factory or office for a year or two, earning a stipend while learning on the job. Countries such as Germany, where such training is common, have far lower youth unemployment.",
+      "options": [
+        "Employers, therefore, prefer graduates with no work experience.",
+        "Under an apprenticeship, a trainee is paid nothing while learning.",
+        "Apprenticeships are one way to close the gap between what colleges teach and what workplaces need.",
+        "Germany has some of the oldest universities in Europe.",
+        "Such training, however, is rarely available outside large cities, and most small firms cannot afford to offer it."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The first sentence describes a mismatch; the blank must offer apprenticeships as a remedy before the next sentence explains how they work.",
+          "\"Paid nothing\" contradicts \"earning a stipend\"."
+        ],
+        "trap": "\"Such training, however…\" refers to training not yet mentioned and turns to a drawback before the idea has been introduced."
+      },
+      "tags": [
+        "para:problem-solution",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-127",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Much of the software that runs banks, phones and government websites depends on small pieces of free code written and maintained by volunteers. Companies use this code without paying for it, and few of them contribute to its upkeep. When a serious flaw is found in such a piece, a handful of unpaid maintainers may be left to fix it for the whole world.",
+      "options": [
+        "The digital economy rests on foundations that almost nobody pays to maintain.",
+        "Most software today is written by large companies, which maintain it with great care.",
+        "These volunteers are usually well paid by the companies that use their code.",
+        "Most companies pay generously for the free code their products depend on.",
+        "When a flaw is found, companies quickly pay experts to fix it."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Each sentence develops one idea: vital code, used freely, maintained by unpaid volunteers. The opener should state that imbalance.",
+          "\"Well paid\" contradicts \"unpaid maintainers\", and \"pay generously\" contradicts \"without paying for it\"."
+        ],
+        "trap": "\"Written by large companies\" sounds like a fair general statement, but it contradicts the claim that the key pieces are written by volunteers."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:support"
+      ]
+    },
+    {
+      "key": "pf-128",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nAs Himalayan glaciers retreat, their meltwater collects in lakes held back by loose walls of rock and ice. ______ If such a wall gives way, perhaps after an earthquake or a landslide, the lake can empty in hours, sending a wall of water down the valley. Scientists are now mapping these lakes and installing early warning systems in villages downstream.",
+      "options": [
+        "The glaciers, however, are growing in most parts of the Himalayas.",
+        "Many of these lakes are growing larger every year, and the pressure on their natural dams is rising.",
+        "These walls are made of solid rock and are very stable.",
+        "Scientists are therefore mapping the lakes and installing warning systems in the villages that lie downstream.",
+        "Fortunately, such lakes drain away slowly and safely each summer."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The paragraph builds a danger: lakes behind weak walls, growing pressure, sudden floods. The key adds the growth and the strain that make a breach likely.",
+          "\"Solid rock… very stable\" contradicts \"loose walls\", and \"drain away slowly and safely\" contradicts the flood that follows."
+        ],
+        "trap": "The \"Scientists are mapping…\" option jumps ahead to the response before the danger has been described."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-129",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen a young startup in Bengaluru grew from five people to fifty, renting and furnishing an office would have taken months and a large deposit. It moved instead into a co-working space, paying a monthly fee for desks, meeting rooms and internet. When the team later had to shrink, it simply gave up some desks. ______",
+      "options": [
+        "It therefore had to pay a large deposit to its landlord.",
+        "It moved instead into a co-working space.",
+        "Co-working spaces, however, usually insist that tenants sign ten-year leases and pay a year's rent in advance.",
+        "Furnishing an office in Bengaluru is cheaper than in any other city.",
+        "Paying only for the space it needed, month by month, suited a firm whose size could change so quickly."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The story shows the firm growing and shrinking and its space following; the close draws the lesson about flexibility.",
+          "\"A large deposit\" is what the firm avoided, and \"ten-year leases\" contradicts \"simply gave up some desks\"."
+        ],
+        "trap": "\"It moved instead into a co-working space\" repeats the second sentence."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-130",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn some towns of Rajasthan, almost every street seems to have a coaching centre preparing students for entrance examinations. Thousands of teenagers move there each year, living alone in rented rooms far from their families. ______ Counsellors and helplines have recently been introduced in several centres, and some now hold fewer tests so that students are not ranked every week.",
+      "options": [
+        "Most students, however, go home to their families every weekend.",
+        "These counsellors are trained to help students with their studies.",
+        "The towns have prospered as a result, with hostels, mess halls, bookshops and stationery shops growing up around the centres.",
+        "The pressure of constant tests and rankings, combined with loneliness, has taken a heavy toll on the mental health of many.",
+        "Students, therefore, are ranked less often than before."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The last sentence describes remedies (counsellors, fewer tests), so the blank must state the problem they answer: stress from tests and loneliness.",
+          "\"Go home every weekend\" contradicts \"far from their families\"."
+        ],
+        "trap": "The prosperity sentence fits the setting, but the counsellors and helplines that follow would then answer a problem never stated."
+      },
+      "tags": [
+        "para:problem-solution",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-131",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ When Dmitri Mendeleev arranged the known elements by atomic weight in 1869, he found that their properties repeated at regular intervals. Where an element seemed to be missing, he left a gap rather than force the pattern. He even predicted the properties of the missing elements, and when gallium and germanium were discovered years later, they matched his forecasts closely.",
+      "options": [
+        "A good scientific theory does not merely organise what is known; it predicts what is not yet known.",
+        "Mendeleev's table, however, left no room for elements not yet discovered.",
+        "The gaps in his table, however, later turned out to be mistakes.",
+        "He left gaps wherever an element seemed to be missing.",
+        "Scientists before Mendeleev had already predicted the properties of gallium and germanium in great detail."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph moves from arranging known elements to predicting unknown ones that were later found; the opener states that general lesson.",
+          "\"Gaps… turned out to be mistakes\" contradicts the matched forecasts, and \"left no room for elements not yet discovered\" contradicts the gaps he left."
+        ],
+        "trap": "\"He left gaps…\" begins with a pronoun that has no antecedent and repeats the third sentence."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:example-link"
+      ]
+    },
+    {
+      "key": "pf-132",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nElectric scooters and phones have made lithium-ion batteries one of the most common products in Indian homes. ______ Recycling plants can recover lithium, cobalt and nickel from them and sell these metals back to battery makers. At present, however, most old batteries in India are collected by informal scrap dealers, who extract a few valuable parts and dump the rest.",
+      "options": [
+        "Most old batteries in India, therefore, go to modern recycling plants.",
+        "When such batteries wear out, the metals inside them are too valuable, and too toxic, to throw away.",
+        "Lithium, cobalt and nickel are mined in only a few countries, and India imports almost all of what it uses.",
+        "Scrap dealers extract a few valuable parts and dump the rest.",
+        "These batteries, however, contain no metals worth recovering."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The key moves from batteries in use to worn-out batteries and their valuable metals, which the next sentence says recycling can recover.",
+          "\"Go to modern recycling plants\" contradicts the last sentence, and \"no metals worth recovering\" contradicts the next."
+        ],
+        "trap": "The mining sentence names the same metals, but then \"recover… from them\" would point to the countries, not to the batteries."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:cohesion"
+      ]
+    },
+    {
+      "key": "pf-133",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIndia has one of the youngest populations among large economies, and its working-age population will keep growing for the next two decades. Economists call this a *demographic dividend*, since a larger share of workers can lift growth. The dividend, however, is not automatic. ______",
+      "options": [
+        "It will be paid out however many jobs are created.",
+        "India's working-age population, therefore, will soon start shrinking as the country ages and fewer children are born.",
+        "Economists call this a demographic dividend.",
+        "It pays out only if the young are healthy, skilled and able to find productive work.",
+        "A larger share of workers can lift growth."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"Not automatic\" calls for the conditions on which the dividend depends; the key gives them.",
+          "\"However many jobs are created\" contradicts \"not automatic\"."
+        ],
+        "trap": "\"A larger share of workers can lift growth\" sounds like a conclusion but repeats the second sentence and ignores the \"however\" just before the blank."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:contrast"
+      ]
+    },
+    {
+      "key": "pf-134",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn 1854, a cholera outbreak killed hundreds of people in a London neighbourhood within days. Most doctors then believed that the disease spread through foul air. John Snow, a physician, marked each death on a street map and found that they clustered around a single water pump. ______ Cases in the area soon fell, and Snow's map became a founding example of the study of how diseases spread.",
+      "options": [
+        "He concluded, as most doctors did, that foul air was to blame.",
+        "Cases in the area, however, went on rising sharply.",
+        "The deaths, he found, were spread evenly across the city.",
+        "Cholera had broken out in several other European cities that decade, and doctors everywhere were searching for its cause.",
+        "He persuaded the local authorities to remove the pump's handle so that no one could draw water from it."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Snow's finding needs to lead to an action before \"cases soon fell\"; removing the pump's handle is that action.",
+          "\"Spread evenly\" contradicts \"clustered around a single water pump\", and \"as most doctors did\" contradicts his water-based finding."
+        ],
+        "trap": "The \"other European cities\" sentence is background; with it, nothing explains why cases in the area fell."
+      },
+      "tags": [
+        "para:chronology",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-135",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ A coffee chain found that customers given a card needing ten stamps for a free drink, with two stamps already filled in, completed it faster than those given a card needing eight stamps with none filled. Both groups had to buy exactly eight drinks. The only difference was that the first group felt they had already made progress.",
+      "options": [
+        "Customers prefer loyalty cards that need fewer stamps, since a shorter card seems quicker and easier to complete.",
+        "Both groups, however, completed their cards at the same speed.",
+        "The feeling of being close to a goal can make people work harder to reach it.",
+        "The first group had to buy two drinks fewer than the second.",
+        "Loyalty cards rarely change how often customers return."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The study holds the effort constant (eight drinks each) and varies only the feeling of progress, which sped people up; the opener states that principle.",
+          "\"Two drinks fewer\" contradicts \"exactly eight drinks\", and \"same speed\" contradicts \"completed it faster\"."
+        ],
+        "trap": "\"Prefer cards that need fewer stamps\" sounds sensible, but the card with fewer stamps (eight) was the slower one."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:support"
+      ]
+    },
+    {
+      "key": "pf-136",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn many Indian cities, parking on the street is free or nearly free. ______ Drivers circle the block looking for a space, adding to traffic and pollution, while the few spaces available are taken by cars that stay all day. When one busy market introduced charges that rose with the length of stay, spaces became easier to find, and nearby shops reported more customers.",
+      "options": [
+        "As a result, there are always plenty of empty spaces in busy markets.",
+        "Higher charges, however, have made spaces even harder to find.",
+        "Most drivers prefer to park in paid multi-storey car parks, which are safer and easier to find than a space on the street.",
+        "As a result, demand for kerbside space far outstrips supply in busy markets.",
+        "Shops near such markets, therefore, report more customers every year."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Free parking leads to too many cars chasing too few spaces, which the next sentence describes; the key states that shortage.",
+          "\"Plenty of empty spaces\" contradicts \"drivers circle the block\", and \"harder to find\" contradicts the last sentence."
+        ],
+        "trap": "\"Most drivers prefer paid car parks\" clashes with drivers circling for a free kerbside space."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-137",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nTree-planting drives often announce the number of saplings planted, sometimes running into crores in a single day. Far fewer announce how many of those saplings are alive a few years later. Where a single fast-growing species is planted on natural grasslands, it may even harm local wildlife and dry up streams. ______",
+      "options": [
+        "Planting a single fast-growing species is therefore the best way to help wildlife.",
+        "Far fewer drives announce how many saplings survive.",
+        "Grasslands, however, are of little value to wildlife.",
+        "Drives should therefore plant still more saplings each year, especially fast-growing kinds on open grasslands.",
+        "A drive's success is better judged by the forest it leaves behind than by the saplings planted on the day."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph questions counting saplings (survival is not reported, and some planting does harm), so the close concludes that outcomes, not counts, should be measured.",
+          "\"Best way to help wildlife\" and \"plant still more saplings… on open grasslands\" contradict the harm just described."
+        ],
+        "trap": "\"Far fewer drives announce…\" repeats the second sentence and leaves the argument without a conclusion."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-138",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nMany Indian families buy insurance policies that combine life cover with savings, returning a lump sum at the end of the term. ______ For the same premium, a pure term policy, which pays out only if the policyholder dies, can offer many times the cover. Financial planners therefore suggest buying a term policy and investing the rest of the money separately.",
+      "options": [
+        "Such policies feel safe, but they usually offer modest returns and a small amount of cover.",
+        "A term policy, however, returns a large lump sum at the end of the term.",
+        "Such policies, therefore, give families the most cover for each rupee they pay.",
+        "Financial planners suggest investing the rest of the money separately.",
+        "Life insurance became popular in India in the second half of the last century, as more families began to save."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The next sentence compares cover \"for the same premium\" and finds the combined policies weak; the key states their drawback first.",
+          "\"The most cover for each rupee\" contradicts \"many times the cover\" offered by term policies."
+        ],
+        "trap": "\"A term policy… returns a large lump sum\" contradicts the definition that follows: it \"pays out only if the policyholder dies\"."
+      },
+      "tags": [
+        "para:contrast",
+        "para:support"
+      ]
+    },
+    {
+      "key": "pf-139",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ They have no dining room, no waiters and no shopfront on a busy street; they simply cook food for delivery apps from a rented space in a back lane. This cuts rent and staff costs sharply. The catch is that, with no walk-in customers, such a kitchen depends entirely on the apps, which charge a large commission on every order.",
+      "options": [
+        "They also charge customers less than ordinary restaurants.",
+        "Delivery apps have made it easy for diners to order food from home.",
+        "Cloud kitchens are restaurants stripped down to their kitchens.",
+        "Cloud kitchens depend mainly on walk-in customers from the street.",
+        "Running a restaurant in an Indian city has never been so cheap."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "\"They have no dining room\" needs a plural subject that cooks food; the key names cloud kitchens and defines them, which the rest of the paragraph explains.",
+          "\"Walk-in customers\" contradicts \"with no walk-in customers\"."
+        ],
+        "trap": "The delivery-apps sentence is a natural lead-in, but \"They\" would then refer to the apps or the diners, neither of which cooks food."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-140",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn 1895, Jagadish Chandra Bose showed in Calcutta that invisible waves could pass through walls and ring a bell at a distance. ______ He refused to patent most of his inventions, believing that knowledge should be freely shared. As a result, his pioneering role in wireless communication was long overlooked, and others received much of the credit.",
+      "options": [
+        "Bose had already patented every one of his inventions.",
+        "His work on these waves matched, and in places ran ahead of, that of better-known European inventors.",
+        "The waves he used could not pass through solid objects.",
+        "His role, therefore, was at once recognised around the world.",
+        "Calcutta was then the capital of British India and an important centre of science, education and publishing."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"Others received much of the credit\" needs those others to have been brought in; the key places Bose's work alongside, and partly ahead of, theirs.",
+          "\"Patented every one\" contradicts the next sentence, and \"could not pass through solid objects\" contradicts the first."
+        ],
+        "trap": "The Calcutta sentence is accurate background, but it gives the last sentence's \"others\" no one to refer to."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-141",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nFor centuries, sailors could find their latitude from the sun and stars, but not their longitude. To do so, they needed to know the exact time at their home port while far out at sea, and no clock of the day could keep time on a rolling ship. In 1714, the British government offered a large prize for a solution. ______",
+      "options": [
+        "Sailors, therefore, had no difficulty in finding their longitude.",
+        "Clocks of that time, however, kept perfect time on rolling ships.",
+        "Latitude could be found from the sun and stars.",
+        "The problem was finally solved by improving ships' compasses so that they pointed accurately even in rough seas.",
+        "The problem was finally solved by John Harrison, a self-taught carpenter whose clock kept accurate time at sea."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph shows that longitude needs accurate time at sea, which no clock could give; the close reports the solution, a clock that could.",
+          "\"Kept perfect time on rolling ships\" contradicts the second sentence."
+        ],
+        "trap": "The compass option names a solution, but a compass gives direction, not time; the paragraph says the missing piece was the exact time."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-142",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nA software company that sold its accounting program for a one-time price of ₹20,000 found that its income rose and fell sharply from year to year. ______ Customers now pay ₹600 a month and receive every update as soon as it is released. The company's income has become far steadier, though some long-time users grumble that they never stop paying.",
+      "options": [
+        "Customers, however, much preferred to pay once and keep the program for ever, and they resisted every change.",
+        "Its income, as a result, became much steadier.",
+        "The company therefore raised the one-time price to ₹40,000.",
+        "Three years ago, it stopped selling the program outright and began charging a monthly subscription instead.",
+        "Most of its customers were small shops and traders."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"Customers now pay ₹600 a month\" needs a change from the one-time price; the key records the switch to a subscription.",
+          "\"Raised the one-time price\" contradicts the monthly payment that follows."
+        ],
+        "trap": "\"Its income became much steadier\" jumps ahead to the result before the change that produced it."
+      },
+      "tags": [
+        "para:chronology",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-143",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ For twenty years, the Danish astronomer Tycho Brahe recorded the positions of the planets with greater accuracy than anyone before him. Yet he never found the laws that governed their motion. That was left to his assistant, Johannes Kepler, who used Tycho's records to show that the planets move in ellipses, not circles.",
+      "options": [
+        "In science, the person who gathers the data is not always the one who makes sense of it.",
+        "Kepler spent twenty years recording the positions of the planets himself, night after night, without any help.",
+        "Tycho Brahe was the first to show that the planets move in ellipses.",
+        "That discovery made Kepler famous across Europe.",
+        "Accurate observations, however, are of little use without a telescope."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The paragraph contrasts Tycho, who collected the data, with Kepler, who found the laws in it; the opener states that contrast as a general point.",
+          "\"Tycho… the first to show… ellipses\" contradicts \"he never found the laws\"."
+        ],
+        "trap": "\"That discovery…\" refers to a discovery not yet mentioned, and \"however\" cannot open a paragraph."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:contrast"
+      ]
+    },
+    {
+      "key": "pf-144",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nRight after the harvest, when every farmer sells at once, crop prices are at their lowest. Farmers who could wait a few months would often get a better price, but most need cash at once to repay loans and buy seed. Under a warehouse receipt system, a farmer stores his crop in an approved warehouse and receives a receipt that banks accept as security for a loan. ______",
+      "options": [
+        "He must, therefore, sell his crop as soon as it is harvested.",
+        "Banks, however, refuse to accept such receipts as security.",
+        "He can thus meet his immediate needs without selling his crop at the lowest price of the year.",
+        "Crop prices are at their lowest right after the harvest.",
+        "Farmers, as a result, need even more cash at harvest time, and many have to borrow from moneylenders again."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "The system lets the farmer borrow against stored crop, so the close states the benefit: cash now, sale later at a better price.",
+          "\"Sell as soon as it is harvested\" is what the system lets him avoid, and \"refuse to accept\" contradicts the third sentence."
+        ],
+        "trap": "\"Crop prices are at their lowest…\" repeats the first sentence."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-145",
+      "subtype": "missing-sentence",
+      "difficulty": "hard",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nA credit card bill shows two amounts: the total due and a much smaller minimum due. Paying the minimum keeps the account in good standing and avoids a late fee. Interest, however, is charged on the entire unpaid balance, often at more than 3 per cent a month, and new purchases may attract interest from the day they are made. ______",
+      "options": [
+        "Paying only the minimum, therefore, is the cheapest way to clear a card.",
+        "A cardholder who pays only the minimum each month can find a modest bill growing into a large debt.",
+        "Paying the minimum, in other words, keeps the account in good standing and adds no further charges to the bill.",
+        "Interest is charged only on the minimum amount due.",
+        "Credit cards, however, charge no fee for late payment."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The \"however\" sentence turns from the comfort of paying the minimum to the interest on the rest; the close draws the consequence: the debt grows.",
+          "\"Charged only on the minimum\" contradicts \"on the entire unpaid balance\"."
+        ],
+        "trap": "The \"in other words\" option restates the second sentence and adds a false claim: \"no further charges\" contradicts the interest charged on the unpaid balance."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-146",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ When a hospital is judged by how quickly it discharges patients, some are sent home too soon and return within weeks. When a school is ranked by its pass percentage, weaker students may be discouraged from sitting the examination. In each case, the number improves while the thing it was meant to measure gets worse.",
+      "options": [
+        "Once a measure becomes a target, people find ways to meet the target that defeat the purpose of the measure.",
+        "Numbers remain the most reliable way to judge how well an institution is run.",
+        "In each case, the figure improves while the real outcome gets worse.",
+        "Hospitals and schools are therefore best left unmeasured.",
+        "Hospitals and schools face very different challenges in serving the public, and they should be judged in very different ways."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The two examples share one pattern (a measure turned into a target is gamed), and the last line generalises it; the opener must state that pattern.",
+          "\"Very different challenges\" stresses difference, while the paragraph draws a parallel (\"In each case\")."
+        ],
+        "trap": "\"Best left unmeasured\" uses \"therefore\" with nothing before it and overstates: the paragraph criticises measures used as targets, not measurement itself."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:argument-structure"
+      ]
+    },
+    {
+      "key": "pf-147",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen the central bank cuts its policy rate, borrowers do not feel the effect at once. ______ The first link is the banks, which must lower the rates they charge on loans; they are often slow to do so, especially when they have locked in deposits at higher rates. Linking loan rates directly to an external benchmark was meant to strengthen this weak link.",
+      "options": [
+        "Borrowers' instalments fall on the very day the cut is announced.",
+        "Banks, keen to attract new borrowers in a crowded market, usually pass on such cuts in full within a few days of the announcement.",
+        "The policy rate is the rate at which the central bank lends money to banks overnight.",
+        "The cut must pass along a chain to reach their instalments, and a chain moves only as fast as its slowest link.",
+        "Lower rates are meant to encourage businesses to borrow and invest, and households to spend rather than save."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "\"The first link\" presupposes a chain, and \"this weak link\" picks up the idea of a slowest link; only the key introduces both.",
+          "\"On the very day\" contradicts \"do not feel the effect at once\", and \"within a few days\" contradicts \"often slow to do so\"."
+        ],
+        "trap": "The definition of the policy rate and the purpose of lower rates are both accurate, but neither sets up the chain that \"The first link\" refers to."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-148",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nRestaurants often place one very expensive dish at the top of the menu, even though few diners order it. Next to it, dishes priced a little lower suddenly seem reasonable. Diners who would have balked at those prices on their own now order them without a second thought. ______",
+      "options": [
+        "The costly dish, in other words, is the restaurant's best-selling item.",
+        "Diners, therefore, usually choose the cheapest dish on the menu.",
+        "Next to it, the other dishes seem reasonably priced.",
+        "Restaurants should therefore remove the expensive dishes that few diners order, since they only take up space on the menu.",
+        "The costly dish, in other words, earns its place on the menu not by being sold but by making other dishes sell."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "The paragraph shows that an expensive dish few people order makes the next-priced dishes sell; the close states that hidden purpose.",
+          "\"Best-selling item\" contradicts \"few diners order it\"."
+        ],
+        "trap": "\"Remove expensive dishes that few diners order\" seems sensible on its own, but the paragraph has just shown that such a dish raises sales of other dishes."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-149",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nA city troubled by rats once offered residents a reward for every rat tail they handed in. ______ Officials were puzzled, then, to find tailless rats running through the streets: people were cutting off the tails and releasing the rats to breed. The scheme meant to shrink the rat population had given people a reason to keep it large.",
+      "options": [
+        "Within weeks, however, hardly any tails had been handed in.",
+        "Within weeks, officials realised that people were breeding rats in their homes simply to claim the reward.",
+        "Within weeks, tails were arriving by the thousand, and the scheme looked like a great success.",
+        "The reward was later raised, because too few people were taking part.",
+        "Most residents, however, refused to handle rats at all."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "\"Puzzled, then\" needs an expectation that the tailless rats upset; the apparent success (thousands of tails) is that expectation.",
+          "\"Hardly any tails\", \"too few people\" and \"refused to handle rats\" all contradict the large number of tails that people were cutting off."
+        ],
+        "trap": "\"Officials realised that people were breeding rats\" gives away the explanation too early; officials who already knew could not then be puzzled by tailless rats."
+      },
+      "tags": [
+        "para:contrast",
+        "para:chronology"
+      ]
+    },
+    {
+      "key": "pf-150",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ When steam engines in nineteenth-century Britain became more efficient, coal use rose rather than fell, because cheaper power made it worthwhile to use engines in many more industries. A similar pattern has been seen with fuel-efficient cars, which are cheaper to run and are therefore driven more. Efficiency on its own may not reduce total consumption as much as planners hope.",
+      "options": [
+        "More efficient machines always reduce the total amount of fuel used.",
+        "Using a resource more efficiently does not always mean using less of it.",
+        "Fuel-efficient cars, for instance, are driven more because they cost less to run.",
+        "Planners should therefore stop trying to make machines more efficient.",
+        "Cheaper power, by contrast, led factories to run their engines less."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Both examples show efficiency leading to more use, and the last line draws the caution; the opener must state the general paradox.",
+          "\"Always reduce\" contradicts the coal example, and \"run their engines less\" contradicts \"use engines in many more industries\"."
+        ],
+        "trap": "The fuel-efficient cars option makes the right point, but \"for instance\" has no general claim before it, and it duplicates the third sentence."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:example-link"
+      ]
+    },
+    {
+      "key": "pf-151",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nIn a market for second-hand cars, the seller knows far more about a car's condition than the buyer does. Unable to tell good cars from bad, buyers offer only an average price. ______ As they withdraw, the average quality of cars on sale falls, buyers lower their offers further, and the market can shrink until mostly poor cars remain. Certified inspections and warranties help by giving buyers the information they would otherwise lack.",
+      "options": [
+        "Owners of poorly kept cars, who know exactly what is wrong with their vehicles, find that price too low and stop selling.",
+        "Owners of well-kept cars, knowing their vehicles are worth more, find that price too low and stop selling.",
+        "Buyers, as a result, are willing to pay more for every car on sale.",
+        "As a result, the market quickly fills with well-kept cars.",
+        "Sellers, however, are required by law to reveal every defect."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "\"As they withdraw, the average quality… falls\" requires the sellers who withdraw to be those of good cars; only the key says so.",
+          "If owners of poor cars withdrew, average quality would rise, which contradicts the next sentence."
+        ],
+        "trap": "The \"owners of poorly kept cars\" option has the right structure (a group finds the price too low and withdraws) but the wrong group, which reverses the effect on quality."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-152",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen a company asked new employees to fill in a form if they wanted to join its pension plan, fewer than half did so. When it changed the rule so that employees joined automatically unless they filled in a form to leave, almost nine in ten stayed in. The plan, the contributions and the choice itself were exactly the same in both cases. ______",
+      "options": [
+        "Employees, it seems, valued the plan more once its benefits were improved.",
+        "Most employees, therefore, chose to leave the plan as soon as they could.",
+        "Filling in a form, it seems, is a small burden that most employees are happy to bear when their future is at stake.",
+        "The plan and the choice itself were exactly the same in both cases.",
+        "What changed was only the default, and that alone was enough to transform people's decisions."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "With everything else held equal, the only difference was which option applied if an employee did nothing; the close names that and its effect.",
+          "\"Once its benefits were improved\" contradicts \"exactly the same in both cases\", and \"chose to leave\" contradicts \"nine in ten stayed in\"."
+        ],
+        "trap": "\"Happy to bear\" the burden of a form reverses the evidence: in both setups, most people did not fill in the form."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-153",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nEarly medical trials often gave a new medicine to one group of patients and nothing to another. ______ To guard against this, researchers began giving the second group a dummy pill that looked identical to the real one. Later they went further: neither the patients nor the doctors assessing them were told who had received which pill, so that the doctors' expectations could not colour their judgement either.",
+      "options": [
+        "The doctors who assessed the patients could be trusted to judge without bias.",
+        "Patients who received nothing at all usually recovered faster than those who had been given the new medicine.",
+        "Patients who knew they were being treated often reported feeling better, whether or not the medicine itself worked.",
+        "Such trials were cheap to run and quick to finish.",
+        "To guard against this, researchers gave the second group a dummy pill."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "\"To guard against this\" needs a problem that a dummy pill would solve; the effect of merely believing one is treated is exactly that problem.",
+          "\"Doctors could be trusted to judge without bias\" contradicts the last sentence, where the doctors' expectations also had to be hidden."
+        ],
+        "trap": "\"Patients who received nothing recovered faster\" describes a result, but a dummy pill is no guard against it; and being cheap and quick is nothing to guard against."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:problem-solution"
+      ]
+    },
+    {
+      "key": "pf-154",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\n______ Business magazines profile entrepreneurs who dropped out of college and built hugely successful companies, and readers conclude that leaving college is a bold path to success. What the profiles leave out are the far larger number of dropouts whose ventures failed and who are never written about. Looking only at the winners, we mistake luck and rare talent for a reliable recipe.",
+      "options": [
+        "Leaving college early is, on average, the surest route to building a successful company.",
+        "Entrepreneurs who fail are written about as often as those who succeed.",
+        "What the profiles leave out are the many who failed.",
+        "Our picture of what leads to success is distorted by the fact that we hear mostly from those who succeeded.",
+        "College degrees have lost much of their value as more and more people earn them, so dropping out costs less than it once did."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph argues that seeing only the winners misleads us; the opener should state that bias, which the last sentence restates.",
+          "\"Surest route\" is the very conclusion the paragraph rejects, and \"written about as often\" contradicts \"never written about\"."
+        ],
+        "trap": "The degrees sentence offers a different reason to doubt college, but the paragraph's argument is about selective evidence, not the value of degrees."
+      },
+      "tags": [
+        "para:opening-sentence",
+        "para:argument-structure"
+      ]
+    },
+    {
+      "key": "pf-155",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nAlmost all the bananas sold in the world's supermarkets belong to a single variety, the Cavendish. Because the plants are grown from cuttings rather than seeds, every one of them is genetically identical. ______ A fungal disease that has spread across Asia, Africa and Latin America in recent decades now threatens the variety in exactly this way. Growers are racing to find resistant varieties before the damage becomes irreversible.",
+      "options": [
+        "This uniformity makes them easy to grow and ship, but it also means that a disease able to kill one plant can kill them all.",
+        "This uniformity protects them from diseases that would destroy a mixed crop.",
+        "Bananas grown from seed, however, taste much the same as the Cavendish.",
+        "Supermarkets prefer the Cavendish because it ripens slowly and survives long voyages from the plantations without bruising.",
+        "A fungal disease has spread across three continents in recent decades."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "\"In exactly this way\" needs a weakness described just before; the key draws it from the genetic sameness: one disease can kill every plant.",
+          "\"Protects them from diseases\" reverses the risk that the next sentence describes."
+        ],
+        "trap": "The supermarket sentence is true and on topic, but it describes no weakness, so \"in exactly this way\" has nothing to point to."
+      },
+      "tags": [
+        "para:reference-link",
+        "para:cause-effect"
+      ]
+    },
+    {
+      "key": "pf-156",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nA district's two hospitals were compared on the share of their surgical patients who died. The larger city hospital had the higher death rate, and many people concluded that it was the worse of the two. A closer study showed, however, that the city hospital received most of the district's serious cases, many referred to it by the smaller hospital. When patients of similar severity were compared, the city hospital's results were better. ______",
+      "options": [
+        "The smaller hospital, it seems, was indeed the safer place for serious cases.",
+        "The city hospital, therefore, should stop accepting serious cases.",
+        "Death rates, it seems, tell us nothing at all about the quality of a hospital and should not be published or compared.",
+        "A raw comparison, it seems, can point in exactly the wrong direction when the groups being compared are not alike.",
+        "Many people concluded that the city hospital was the worse of the two."
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "The paragraph shows a raw death rate reversing once like is compared with like; the close states that lesson about unequal groups.",
+          "\"The smaller hospital was the safer place\" contradicts the comparison of similar patients."
+        ],
+        "trap": "\"Death rates tell us nothing at all\" overreaches: the adjusted death rates in the paragraph were informative; only the unadjusted comparison misled."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:conclusion"
+      ]
+    },
+    {
+      "key": "pf-157",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen the cost of ingredients rises, a biscuit maker can raise the price of a packet. Customers notice price rises at once, however, and some switch to rival brands. ______ The price on the shelf stays the same, and many shoppers fail to notice the change for months. Statisticians who compile price indices compare the cost per gram rather than the price per packet, though, so such hidden increases still show up in inflation figures.",
+      "options": [
+        "Many makers therefore raise the price and put more biscuits in each packet.",
+        "Shoppers, as a result, check the weight printed on every packet carefully.",
+        "Rival brands, in turn, raise their own prices to match, so that unhappy customers have nowhere cheaper left to go.",
+        "The price of each packet stays the same.",
+        "Many makers therefore choose a quieter route: they keep the price unchanged and put fewer biscuits in each packet."
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "\"The change\" that shoppers fail to notice, while the price stays the same, must be a cut in quantity; the key introduces it as a response to customers noticing price rises.",
+          "Raising the price clashes with \"The price on the shelf stays the same\", and \"check the weight carefully\" contradicts \"fail to notice\"."
+        ],
+        "trap": "\"Rival brands raise their own prices\" follows the second sentence smoothly, but then the shelf price cannot \"stay the same\", and there is no \"change\" left for shoppers to miss."
+      },
+      "tags": [
+        "para:problem-solution",
+        "para:reference-link"
+      ]
+    },
+    {
+      "key": "pf-158",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nAt a country fair in 1906, about eight hundred visitors guessed the weight of an ox. Many individual guesses were wildly off, yet their median was within one per cent of the true weight. ______ When people can see or hear one another's guesses before making their own, their errors begin to point the same way, and the crowd loses much of its wisdom.",
+      "options": [
+        "The crowd was accurate because most of the visitors were experienced cattle farmers and butchers who judged animals for a living.",
+        "The crowd was accurate because the individual errors, made independently, pointed in different directions and cancelled out.",
+        "When people discuss their guesses first, the crowd becomes even more accurate.",
+        "Most of the guesses, in fact, were within one per cent of the true weight.",
+        "Such contests were a popular attraction at country fairs of the time."
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "The last sentence says shared information makes errors \"begin to point the same way\", which only makes sense if the key has explained that independent errors point different ways and cancel.",
+          "\"Even more accurate\" contradicts the last sentence, and \"most of the guesses… within one per cent\" contradicts \"wildly off\"."
+        ],
+        "trap": "\"Experienced cattle farmers\" offers a different explanation (expertise), which clashes with \"wildly off\" and leaves the last sentence's point about independence unexplained."
+      },
+      "tags": [
+        "para:cause-effect",
+        "para:argument-structure"
+      ]
+    },
+    {
+      "key": "pf-159",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nSome companies claim to cancel out their emissions by paying for forests to be protected or planted elsewhere. Critics point to two weaknesses in such deals. Many of the forests were never at real risk of being cut down, so paying to protect them changes little. Others may burn or be felled a few decades later, releasing the stored carbon again. ______",
+      "options": [
+        "An offset, they argue, is only as good as the extra and lasting carbon savings it can prove.",
+        "Forests, they argue, store carbon permanently once they are protected.",
+        "Paying for forests, therefore, is the surest way for a company to cancel its emissions.",
+        "Critics point to two weaknesses in such deals.",
+        "Planting trees, they argue, also gives homes to wildlife and steady incomes to the villagers who look after them."
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "The two weaknesses are that savings may not be extra and may not last; the close sums them up as the test an offset must pass.",
+          "\"Store carbon permanently\" contradicts the second weakness, and \"surest way\" contradicts the critics."
+        ],
+        "trap": "The wildlife sentence has \"they\" (the critics) praising tree planting, which neither follows from nor sums up the two weaknesses."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:argument-structure"
+      ]
+    },
+    {
+      "key": "pf-160",
+      "subtype": "missing-sentence",
+      "difficulty": "extreme",
+      "prompt": "In the paragraph below, one sentence has been removed and replaced by a blank (______). Choose the sentence that best completes the paragraph, both logically and in its flow.\n\nWhen a state caps the interest that lenders may charge small borrowers, the aim is to protect the poor from exploitation. Lenders, however, face high costs in serving tiny, scattered loans, and some borrowers are riskier than others. If the cap is set below what it costs to serve the riskiest borrowers, lenders simply stop lending to them. ______",
+      "options": [
+        "Those borrowers, therefore, can now borrow from lenders at far lower rates.",
+        "Lenders, as a result, compete harder than ever to win the riskiest borrowers, offering them larger loans at lower rates.",
+        "Those borrowers must then turn to moneylenders, who face no cap, so the rule can harm the very people it was meant to protect.",
+        "The aim of such caps is to protect the poor from exploitation.",
+        "Caps, it follows, should be set as low as possible to protect the poor."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Once lenders stop serving the riskiest borrowers, those borrowers must look elsewhere; the close follows them to costlier informal lenders and ties back to the aim in the first sentence.",
+          "\"Borrow at far lower rates\" and \"compete harder\" contradict \"lenders simply stop lending to them\"."
+        ],
+        "trap": "\"Set as low as possible\" seems to serve the stated aim, but the paragraph has just shown that a low cap shuts the riskiest borrowers out."
+      },
+      "tags": [
+        "para:closing-sentence",
+        "para:cause-effect"
+      ]
     }
   ]
 }

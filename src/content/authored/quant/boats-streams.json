@@ -828,6 +828,853 @@
         "template:ratio-total-time",
         "boats:downstream-upstream"
       ]
+    },
+    {
+      "key": "bs-033",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The ratio of the speed of a boat in still water to the speed of the stream is 4 : 1. The boat takes 16 hours to go 75 km downstream and come back. How long will it take to go 54 km upstream?",
+      "options": [
+        "5 hours 24 minutes",
+        "6 hours",
+        "7 hours",
+        "7 hours 12 minutes",
+        "8 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Boat = 4x, stream = x → downstream 5x, upstream 3x",
+          "75/(5x) + 75/(3x) = 15/x + 25/x = 40/x = 16 → x = 2.5 → upstream = 7.5 km/h",
+          "Time = 54 ÷ 7.5 = 7.2 hours = 7 hours 12 minutes"
+        ],
+        "trap": "5 hours 24 minutes uses the still-water speed 10 km/h; 7.2 hours is 7 hours 12 minutes (0.2 × 60), not 7 hours."
+      },
+      "tags": [
+        "template:ratio-total-time",
+        "boats:downstream-upstream"
+      ]
+    },
+    {
+      "key": "bs-034",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A boat's speed in still water and the speed of the current are in the ratio 7 : 2. The boat goes 45 km downstream on the Hooghly and returns in 7 hours. How long will it take to go 72 km downstream and then 60 km upstream?",
+      "options": [
+        "$9\\frac{3}{7}$ hours",
+        "10 hours",
+        "$10\\frac{8}{15}$ hours",
+        "11 hours",
+        "12 hours"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Boat = 7x, current = 2x → downstream 9x, upstream 5x",
+          "45/(9x) + 45/(5x) = 5/x + 9/x = 14/x = 7 → x = 2 → downstream 18 km/h, upstream 10 km/h",
+          "Time = 72 ÷ 18 + 60 ÷ 10 = 4 + 6 = 10 hours"
+        ],
+        "trap": "$9\\frac{3}{7}$ hours runs all 132 km at the still-water speed 14 km/h; $10\\frac{8}{15}$ hours swaps the downstream and upstream speeds."
+      },
+      "tags": [
+        "template:ratio-total-time",
+        "boats:downstream-upstream"
+      ]
+    },
+    {
+      "key": "bs-035",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The speeds of a boat in still water and of the stream are in the ratio 9 : 2. The boat goes 88 km downstream and 56 km upstream in 8 hours altogether. How long will it take to cover 99 km in still water?",
+      "options": [
+        "$4\\frac{1}{2}$ hours",
+        "$4\\frac{3}{4}$ hours",
+        "5 hours",
+        "$5\\frac{1}{4}$ hours",
+        "$5\\frac{1}{2}$ hours"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Boat = 9x, stream = 2x → downstream 11x, upstream 7x",
+          "88/(11x) + 56/(7x) = 8/x + 8/x = 16/x = 8 → x = 2 → boat = 18 km/h",
+          "Time = 99 ÷ 18 = 5.5 hours"
+        ],
+        "trap": "$4\\frac{1}{2}$ hours divides by the downstream speed 22 km/h; in still water only the boat's own 18 km/h counts."
+      },
+      "tags": [
+        "template:ratio-total-time",
+        "boats:still-water"
+      ]
+    },
+    {
+      "key": "bs-036",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A boat's speed in still water is four times the speed of the stream. It goes 40 km downstream and immediately starts back, but after sudden rain the stream flows at double its earlier speed for the whole return journey. The round trip takes 7 hours. What is the boat's speed in still water?",
+      "options": [
+        "8 km/h",
+        "12 km/h",
+        "16 km/h",
+        "20 km/h",
+        "24 km/h"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Boat = 4x, stream = x → downstream 5x; on return the stream is 2x → upstream 4x − 2x = 2x",
+          "40/(5x) + 40/(2x) = 8/x + 20/x = 28/x = 7 → x = 4",
+          "Boat = 4 × 4 = 16 km/h (downstream 20, return 8 km/h)"
+        ],
+        "trap": "20 km/h is the downstream speed and 8 km/h the return speed; on the way back the stream is 2x, so the upstream speed is 4x − 2x = 2x, not 3x."
+      },
+      "tags": [
+        "template:ratio-total-time",
+        "boats:still-water"
+      ]
+    },
+    {
+      "key": "bs-037",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two jetties P and Q are 120 km apart on a river, with P upstream. Boat X leaves P for Q and boat Y leaves Q for P at the same time. Their speeds in still water are 14 km/h and 16 km/h, and the river flows at 3 km/h. After how long do they meet?",
+      "options": [
+        "3 hours",
+        "$3\\frac{1}{5}$ hours",
+        "$3\\frac{1}{3}$ hours",
+        "$3\\frac{3}{4}$ hours",
+        "4 hours"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "X moves downstream at 14 + 3 = 17 km/h, Y upstream at 16 − 3 = 13 km/h",
+          "They close the gap at 17 + 13 = 30 km/h (the stream cancels out)",
+          "Time = 120 ÷ 30 = 4 hours"
+        ],
+        "shortcut": "Boats moving towards each other close at the sum of their still-water speeds.",
+        "trap": "$3\\frac{1}{3}$ hours adds the stream to both boats (closing speed 36 km/h); one boat gains what the other loses."
+      },
+      "tags": [
+        "template:boats-meeting",
+        "boats:relative-speed"
+      ]
+    },
+    {
+      "key": "bs-038",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Two villages P and Q are 132 km apart on the Ganga, P being upstream. A motorboat leaves P for Q and a ferry leaves Q for P at the same moment. Their speeds in still water are 15 km/h and 18 km/h respectively, and the stream flows at 4 km/h. How far from Q do they meet?",
+      "options": [
+        "56 km",
+        "60 km",
+        "66 km",
+        "72 km",
+        "76 km"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Closing speed = (15 + 4) + (18 − 4) = 19 + 14 = 33 km/h → they meet after 132 ÷ 33 = 4 hours",
+          "The ferry moves upstream from Q at 14 km/h → 14 × 4 = 56 km from Q"
+        ],
+        "trap": "76 km is the motorboat's distance from P; 72 km ignores the stream and uses 18 × 4 for the ferry."
+      },
+      "tags": [
+        "template:boats-meeting",
+        "boats:relative-speed"
+      ]
+    },
+    {
+      "key": "bs-039",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two towns P and Q are 105 km apart on a river, P being upstream. Boat A leaves P for Q and boat B leaves Q for P at the same time. They meet after 3 hours at a point 60 km from P. If the stream flows at 4 km/h, what is B's speed in still water?",
+      "options": [
+        "11 km/h",
+        "15 km/h",
+        "16 km/h",
+        "19 km/h",
+        "23 km/h"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "B covers 105 − 60 = 45 km upstream in 3 hours → upstream speed 15 km/h",
+          "B's speed in still water = 15 + 4 = 19 km/h"
+        ],
+        "trap": "15 km/h is B's upstream speed; 16 km/h is A's still-water speed (60 ÷ 3 − 4)."
+      },
+      "tags": [
+        "template:boats-meeting",
+        "boats:relative-speed"
+      ]
+    },
+    {
+      "key": "bs-040",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two jetties P and Q are 90 km apart on the Godavari, P being upstream. Boat X starts from P towards Q and boat Y from Q towards P at the same time, with still-water speeds of 12 km/h and 18 km/h. The river flows at 6 km/h. After they meet, how long does Y take to reach P?",
+      "options": [
+        "$2\\frac{1}{4}$ hours",
+        "3 hours",
+        "$3\\frac{3}{5}$ hours",
+        "$4\\frac{1}{2}$ hours",
+        "6 hours"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Closing speed = (12 + 6) + (18 − 6) = 30 km/h → they meet after 3 hours, X having gone 18 × 3 = 54 km from P",
+          "Y must now cover those 54 km upstream at 12 km/h",
+          "Time = 54 ÷ 12 = 4.5 hours"
+        ],
+        "trap": "3 hours divides 54 km by Y's still-water speed 18 km/h; Y is going upstream, so it moves at 18 − 6 = 12 km/h."
+      },
+      "tags": [
+        "template:boats-meeting",
+        "boats:relative-speed"
+      ]
+    },
+    {
+      "key": "bs-041",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Two jetties P and Q are 96 km apart on a river, P being upstream. Boat X leaves P for Q and boat Y leaves Q for P at the same time. X's speed in still water is 12 km/h and Y's is 20 km/h. They meet exactly midway between P and Q. What is the speed of the stream?",
+      "options": [
+        "4 km/h",
+        "5 km/h",
+        "6 km/h",
+        "7 km/h",
+        "8 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Equal distances in equal time → equal speeds: 12 + s = 20 − s",
+          "2s = 8 → s = 4 km/h (both move at 16 km/h and meet after 3 hours)"
+        ],
+        "trap": "8 km/h is the full gap between the two still-water speeds; the stream adds to one boat and subtracts from the other, so it is half the gap."
+      },
+      "tags": [
+        "template:boats-meeting",
+        "boats:stream"
+      ]
+    },
+    {
+      "key": "bs-042",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Two jetties P and Q are 60 km apart on a river, P being upstream. Boat X starts from P and boat Y from Q at the same time, heading towards each other. Their speeds in still water are 10 km/h and 14 km/h, and the river flows at 2 km/h. Each boat turns back as soon as it reaches the far jetty. How far from P do they meet for the second time?",
+      "options": [
+        "20 km",
+        "30 km",
+        "36 km",
+        "40 km",
+        "45 km"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "X goes downstream at 12 km/h and Y upstream at 12 km/h: they first meet after 60 ÷ 24 = 2.5 hours, 30 km from P",
+          "Each reaches the far jetty after 60 ÷ 12 = 5 hours; then X goes upstream from Q at 8 km/h and Y downstream from P at 16 km/h",
+          "They close the 60 km at 24 km/h → 2.5 hours more; Y has gone 16 × 2.5 = 40 km from P"
+        ],
+        "trap": "30 km is the first meeting point; after turning, Y runs with the stream and X against it, so the second meeting is not a mirror of the first."
+      },
+      "tags": [
+        "template:boats-meeting",
+        "boats:relative-speed"
+      ]
+    },
+    {
+      "key": "bs-043",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "Boat X, whose speed in still water is 15 km/h, leaves a jetty at 8:00 a.m. and heads upstream on a river flowing at 3 km/h. Boat Y, whose speed in still water is 21 km/h, leaves the same jetty at 9:30 a.m., also heading upstream. As soon as Y overtakes X, it turns round and returns to the jetty. At what time does Y get back?",
+      "options": [
+        "1:30 p.m.",
+        "2:15 p.m.",
+        "2:45 p.m.",
+        "3:00 p.m.",
+        "3:30 p.m."
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Upstream speeds: X 12 km/h, Y 18 km/h; X's lead at 9:30 = 12 × 1.5 = 18 km",
+          "Y gains 6 km/h → catches X after 3 hours, at 12:30 p.m., 18 × 3 = 54 km from the jetty",
+          "Return downstream at 21 + 3 = 24 km/h → 54 ÷ 24 = 2 h 15 min → 2:45 p.m."
+        ],
+        "trap": "3:30 p.m. brings Y back at its upstream speed 18 km/h; going back it runs with the current at 24 km/h."
+      },
+      "tags": [
+        "template:boats-meeting",
+        "boats:relative-speed"
+      ]
+    },
+    {
+      "key": "bs-044",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A boat's speed in still water is 15 km/h and the stream flows at 3 km/h. After heavy rain the stream's speed rises to 5 km/h. How much longer will the boat now take to go 60 km upstream?",
+      "options": [
+        "1 hour",
+        "1 hour 15 minutes",
+        "1 hour 30 minutes",
+        "1 hour 45 minutes",
+        "2 hours"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Before: 60 ÷ (15 − 3) = 5 hours",
+          "After: 60 ÷ (15 − 5) = 6 hours → 1 hour longer"
+        ],
+        "trap": "2 hours assumes each extra km/h of current costs an hour; work out both times: 60 ÷ 12 = 5 hours before and 60 ÷ 10 = 6 hours after."
+      },
+      "tags": [
+        "template:speed-change",
+        "boats:downstream-upstream"
+      ]
+    },
+    {
+      "key": "bs-045",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A motorboat takes 6 hours to go 72 km upstream on a river flowing at 2 km/h. A new engine raises its speed in still water by 4 km/h. How long will it now take to go 72 km upstream?",
+      "options": [
+        "3 hours",
+        "$3\\frac{3}{5}$ hours",
+        "4 hours",
+        "$4\\frac{1}{4}$ hours",
+        "$4\\frac{1}{2}$ hours"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Upstream speed = 72 ÷ 6 = 12 km/h → still-water speed = 12 + 2 = 14 km/h",
+          "New still-water speed = 18 km/h → upstream = 18 − 2 = 16 km/h",
+          "Time = 72 ÷ 16 = 4.5 hours"
+        ],
+        "trap": "4 hours divides by 18 km/h, the new still-water speed, and forgets that the current still slows the boat."
+      },
+      "tags": [
+        "template:speed-change",
+        "boats:downstream-upstream"
+      ]
+    },
+    {
+      "key": "bs-046",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A boat's speed in still water is 20 km/h and the stream flows at 4 km/h. During the monsoon the stream's speed goes up by 50%. How long will the boat then take to go 104 km downstream?",
+      "options": [
+        "$3\\frac{5}{7}$ hours",
+        "4 hours",
+        "$4\\frac{1}{3}$ hours",
+        "$5\\frac{1}{5}$ hours",
+        "$7\\frac{3}{7}$ hours"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "New stream speed = 4 × 1.5 = 6 km/h",
+          "Downstream speed = 20 + 6 = 26 km/h → time = 104 ÷ 26 = 4 hours"
+        ],
+        "trap": "$4\\frac{1}{3}$ hours uses the old stream speed (104 ÷ 24); $3\\frac{5}{7}$ hours doubles the stream (to 8 km/h) instead of raising it by 50%."
+      },
+      "tags": [
+        "template:speed-change",
+        "boats:downstream-upstream"
+      ]
+    },
+    {
+      "key": "bs-047",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A boat goes 60 km downstream on the Krishna in 3 hours and comes back in 5 hours. After rain the stream flows twice as fast as before. How long will the same round trip take now?",
+      "options": [
+        "8 hours",
+        "9 hours",
+        "10 hours",
+        "12 hours",
+        "15 hours"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Downstream 20 km/h, upstream 12 km/h → boat 16 km/h, stream 4 km/h",
+          "Stream doubles to 8 km/h → downstream 24 km/h, upstream 8 km/h",
+          "Round trip = 60 ÷ 24 + 60 ÷ 8 = 2.5 + 7.5 = 10 hours"
+        ],
+        "trap": "8 hours assumes the faster downstream leg makes up for the slower upstream leg; the upstream leg grows by far more."
+      },
+      "tags": [
+        "template:speed-change",
+        "boats:round-trip"
+      ]
+    },
+    {
+      "key": "bs-048",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A boat goes 42 km upstream in 3 hours and 66 km downstream in 3 hours. After rain the stream flows 3 km/h faster. By how much must the boat's speed in still water be raised so that it can cover 42 km upstream in 2 hours?",
+      "options": [
+        "3 km/h",
+        "6 km/h",
+        "7 km/h",
+        "10 km/h",
+        "13 km/h"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Upstream 14 km/h, downstream 22 km/h → boat 18 km/h, stream 4 km/h; after rain the stream is 7 km/h",
+          "Needed upstream speed = 42 ÷ 2 = 21 km/h → still-water speed = 21 + 7 = 28 km/h",
+          "Increase = 28 − 18 = 10 km/h"
+        ],
+        "trap": "7 km/h only lifts the upstream speed from 14 to 21 and forgets that the faster stream takes another 3 km/h away."
+      },
+      "tags": [
+        "template:speed-change",
+        "boats:still-water"
+      ]
+    },
+    {
+      "key": "bs-049",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A boat with a speed of 15 km/h in still water makes a 90 km trip downstream and returns. The stream usually flows at 3 km/h, but after rain it flows at 5 km/h. By what percentage does the time for the round trip go up?",
+      "options": [
+        "4%",
+        "8%",
+        "10%",
+        "$12\\frac{1}{2}$%",
+        "20%"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Before: 90 ÷ 18 + 90 ÷ 12 = 5 + 7.5 = 12.5 hours",
+          "After: 90 ÷ 20 + 90 ÷ 10 = 4.5 + 9 = 13.5 hours",
+          "Increase = 1 ÷ 12.5 × 100 = 8%"
+        ],
+        "trap": "20% is the rise in the upstream time alone (7.5 → 9 hours); the downstream leg gets shorter, so the round trip rises much less."
+      },
+      "tags": [
+        "template:speed-change",
+        "boats:round-trip"
+      ]
+    },
+    {
+      "key": "bs-050",
+      "subtype": "exam-style",
+      "difficulty": "extreme",
+      "prompt": "A boat goes 48 km downstream from P to Q in 4 hours and returns in 6 hours. After rain the stream flows faster, and the same boat now goes from P to Q in 3 hours. How long will the return journey take now?",
+      "options": [
+        "7 hours",
+        "8 hours",
+        "9 hours",
+        "10 hours",
+        "12 hours"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Downstream 12 km/h, upstream 8 km/h → boat 10 km/h, stream 2 km/h",
+          "New downstream speed = 48 ÷ 3 = 16 km/h → new stream = 16 − 10 = 6 km/h",
+          "Return speed = 10 − 6 = 4 km/h → 48 ÷ 4 = 12 hours"
+        ],
+        "trap": "7 hours assumes the hour saved downstream is simply added upstream; the stream tripled, so the upstream speed halved."
+      },
+      "tags": [
+        "template:speed-change",
+        "boats:stream"
+      ]
+    },
+    {
+      "key": "bs-051",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "Kavya swims at 5 km/h in still water. The river she swims in flows at 2 km/h. How long will she take to swim 7 km downstream?",
+      "options": [
+        "45 minutes",
+        "1 hour",
+        "1 hour 24 minutes",
+        "2 hours 20 minutes",
+        "3 hours 30 minutes"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Downstream speed = 5 + 2 = 7 km/h",
+          "Time = 7 ÷ 7 = 1 hour"
+        ],
+        "trap": "2 hours 20 minutes swims against the current (7 ÷ 3); 1 hour 24 minutes ignores the current (7 ÷ 5)."
+      },
+      "tags": [
+        "template:swimmer",
+        "boats:downstream-upstream"
+      ]
+    },
+    {
+      "key": "bs-052",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A swimmer covers 1.2 km downstream in 10 minutes and the same 1.2 km upstream in 30 minutes. What is the speed of the current?",
+      "options": [
+        "1.2 km/h",
+        "1.8 km/h",
+        "2.4 km/h",
+        "3.6 km/h",
+        "4.8 km/h"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Downstream = 1.2 km in 1/6 h = 7.2 km/h; upstream = 1.2 km in 1/2 h = 2.4 km/h",
+          "Current = (7.2 − 2.4) ÷ 2 = 2.4 km/h"
+        ],
+        "trap": "4.8 km/h is the swimmer's speed in still water (half the sum); the current is half the difference."
+      },
+      "tags": [
+        "template:swimmer",
+        "boats:stream"
+      ]
+    },
+    {
+      "key": "bs-053",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "Riya swims 600 m downstream in 4 minutes and the same 600 m back upstream in 12 minutes. What is her swimming speed in still water?",
+      "options": [
+        "3 km/h",
+        "4 km/h",
+        "4.5 km/h",
+        "5 km/h",
+        "6 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Downstream = 600 ÷ 4 = 150 m/min = 9 km/h; upstream = 600 ÷ 12 = 50 m/min = 3 km/h",
+          "Speed in still water = (9 + 3) ÷ 2 = 6 km/h"
+        ],
+        "trap": "3 km/h is both her upstream speed and the current's speed; still-water speed is half the sum, 6 km/h."
+      },
+      "tags": [
+        "template:swimmer",
+        "boats:still-water"
+      ]
+    },
+    {
+      "key": "bs-054",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "In a river flowing at 1.5 km/h, a swimmer swims 2 km upstream and then swims back to the start. The whole swim takes 2 hours 30 minutes. What is her speed in still water?",
+      "options": [
+        "2 km/h",
+        "2.5 km/h",
+        "3 km/h",
+        "3.5 km/h",
+        "4 km/h"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Try 2.5 km/h: upstream 1 km/h → 2 hours; downstream 4 km/h → 30 minutes; total 2 h 30 min ✓",
+          "3 km/h gives 2/1.5 + 2/4.5 = 1 h 20 min + 27 min = 1 h 47 min, too short"
+        ],
+        "shortcut": "Plug the options into 2/(b − 1.5) + 2/(b + 1.5) = 2.5.",
+        "trap": "3 km/h looks like the natural answer but gives only about 1 hour 47 minutes; the slow upstream leg dominates, so the speed must be lower."
+      },
+      "tags": [
+        "template:swimmer",
+        "boats:still-water"
+      ]
+    },
+    {
+      "key": "bs-055",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "Arjun swims upstream for 30 minutes in a river flowing at 1 km/h, then turns and swims back downstream, reaching his starting point 18 minutes later. What is his speed in still water?",
+      "options": [
+        "4 km/h",
+        "4.5 km/h",
+        "5 km/h",
+        "5.5 km/h",
+        "6 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Same distance both ways: (b − 1) × 0.5 = (b + 1) × 0.3",
+          "0.5b − 0.5 = 0.3b + 0.3 → 0.2b = 0.8 → b = 4 km/h (distance 1.5 km)"
+        ],
+        "trap": "5 km/h is his downstream speed; the times 30 and 18 minutes are in the ratio 5 : 3, which is the ratio of downstream to upstream speed, not of his speed to the current."
+      },
+      "tags": [
+        "template:swimmer",
+        "boats:still-water"
+      ]
+    },
+    {
+      "key": "bs-056",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A boat takes 3 hours to go a certain distance upstream and 2 hours to come back downstream. What is the ratio of the boat's speed in still water to the speed of the stream?",
+      "options": [
+        "3 : 2",
+        "1 : 5",
+        "2 : 3",
+        "5 : 1",
+        "5 : 2"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Same distance → speeds are in the inverse ratio of times: downstream : upstream = 3 : 2",
+          "Boat : stream = (3 + 2)/2 : (3 − 2)/2 = 5 : 1"
+        ],
+        "shortcut": "If the time ratio is a : b, boat : stream = (a + b) : (a − b).",
+        "trap": "3 : 2 is the ratio of downstream to upstream speed; 1 : 5 is the stream-to-boat ratio, the reverse of what is asked."
+      },
+      "tags": [
+        "template:time-ratio-speed-ratio",
+        "boats:ratio"
+      ]
+    },
+    {
+      "key": "bs-057",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The time a boat takes to row a certain distance upstream and the time it takes to row the same distance downstream are in the ratio 5 : 3. Find the ratio of the boat's speed in still water to the speed of the current.",
+      "options": [
+        "5 : 3",
+        "8 : 3",
+        "1 : 4",
+        "4 : 1",
+        "3 : 1"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Downstream : upstream speed = 5 : 3 (inverse of times)",
+          "Boat : current = (5 + 3) : (5 − 3) = 8 : 2 = 4 : 1"
+        ],
+        "shortcut": "Time ratio a : b → boat : stream = (a + b) : (a − b).",
+        "trap": "1 : 4 gives current : boat, the reverse; 5 : 3 is only the ratio of the two travelling speeds."
+      },
+      "tags": [
+        "template:time-ratio-speed-ratio",
+        "boats:ratio"
+      ]
+    },
+    {
+      "key": "bs-058",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A boat takes three times as long to go a certain distance upstream as to cover the same distance downstream. The speed of the stream is what percentage of the boat's speed in still water?",
+      "options": [
+        "25%",
+        "$33\\frac{1}{3}$%",
+        "40%",
+        "50%",
+        "100%"
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "steps": [
+          "Downstream : upstream speed = 3 : 1 → boat : stream = (3 + 1) : (3 − 1) = 4 : 2",
+          "Stream ÷ boat = 2/4 = 50%"
+        ],
+        "trap": "$33\\frac{1}{3}$% compares the upstream speed with the downstream speed (1 : 3); the question compares the stream with the boat."
+      },
+      "tags": [
+        "template:time-ratio-speed-ratio",
+        "boats:ratio"
+      ]
+    },
+    {
+      "key": "bs-059",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The ratio of the time a boat takes to go upstream to the time it takes to cover the same distance downstream is 7 : 4. If the boat's speed in still water is 22 km/h, how long will it take to go 84 km downstream?",
+      "options": [
+        "$2\\frac{5}{8}$ hours",
+        "$2\\frac{4}{5}$ hours",
+        "3 hours",
+        "$3\\frac{9}{11}$ hours",
+        "$5\\frac{1}{4}$ hours"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "Downstream : upstream speed = 7 : 4 → boat : stream = 11 : 3",
+          "Stream = 22 × 3/11 = 6 km/h → downstream = 28 km/h",
+          "Time = 84 ÷ 28 = 3 hours"
+        ],
+        "trap": "$5\\frac{1}{4}$ hours uses the upstream speed 16 km/h; $3\\frac{9}{11}$ hours uses the still-water speed 22 km/h."
+      },
+      "tags": [
+        "template:time-ratio-speed-ratio",
+        "boats:downstream-upstream"
+      ]
+    },
+    {
+      "key": "bs-060",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A boat's upstream time and downstream time over equal distances are in the ratio 9 : 5. It goes 90 km downstream and comes back in 14 hours. What is the speed of the stream?",
+      "options": [
+        "2 km/h",
+        "2.5 km/h",
+        "3 km/h",
+        "3.5 km/h",
+        "4 km/h"
+      ],
+      "answerIndex": 4,
+      "solution": {
+        "steps": [
+          "Downstream : upstream speed = 9 : 5 → let them be 9k and 5k",
+          "90/(9k) + 90/(5k) = 10/k + 18/k = 28/k = 14 → k = 2 → downstream 18, upstream 10 km/h",
+          "Stream = (18 − 10) ÷ 2 = 4 km/h"
+        ],
+        "trap": "2 km/h is (9 − 5) ÷ 2 taken from the bare ratio numbers; the speeds are 9k and 5k with k = 2, so the stream is 2k = 4 km/h."
+      },
+      "tags": [
+        "template:time-ratio-speed-ratio",
+        "boats:stream"
+      ]
+    },
+    {
+      "key": "bs-061",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "A boat takes 40% more time to go a certain distance upstream than to cover the same distance downstream. What is the ratio of its speed in still water to the speed of the stream?",
+      "options": [
+        "6 : 1",
+        "7 : 5",
+        "1 : 6",
+        "12 : 5",
+        "5 : 1"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "Upstream time : downstream time = 140 : 100 = 7 : 5 → downstream : upstream speed = 7 : 5",
+          "Boat : stream = (7 + 5) : (7 − 5) = 12 : 2 = 6 : 1"
+        ],
+        "trap": "1 : 6 is stream : boat, the reverse; 7 : 5 stops at the speed ratio without converting to boat and stream."
+      },
+      "tags": [
+        "template:time-ratio-speed-ratio",
+        "boats:ratio"
+      ]
+    },
+    {
+      "key": "bs-062",
+      "subtype": "exam-style",
+      "difficulty": "easy",
+      "prompt": "A boat covers as much distance downstream in 3 hours as it covers upstream in 5 hours. If the stream flows at 2 km/h, what is the boat's speed in still water?",
+      "options": [
+        "8 km/h",
+        "9 km/h",
+        "10 km/h",
+        "12 km/h",
+        "16 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "3(b + 2) = 5(b − 2) → 3b + 6 = 5b − 10",
+          "2b = 16 → b = 8 km/h"
+        ],
+        "trap": "10 km/h is the downstream speed (8 + 2); the question asks for the speed in still water."
+      },
+      "tags": [
+        "template:equal-distance-times",
+        "boats:still-water"
+      ]
+    },
+    {
+      "key": "bs-063",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "The distance a boat covers downstream in 4 hours equals the distance it covers upstream in 6 hours. If its speed in still water is 15 km/h, what is the speed of the stream?",
+      "options": [
+        "3 km/h",
+        "3.5 km/h",
+        "4 km/h",
+        "4.5 km/h",
+        "5 km/h"
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "steps": [
+          "4(15 + s) = 6(15 − s) → 60 + 4s = 90 − 6s",
+          "10s = 30 → s = 3 km/h"
+        ],
+        "shortcut": "Times t1 (down) and t2 (up) for equal distances → boat : stream = (t2 + t1) : (t2 − t1).",
+        "trap": "5 km/h is 15 × (6 − 4)/6, a share of the boat's speed; equal distances give boat : stream = (6 + 4) : (6 − 4) = 5 : 1, so the stream is 15 ÷ 5 = 3 km/h."
+      },
+      "tags": [
+        "template:equal-distance-times",
+        "boats:stream"
+      ]
+    },
+    {
+      "key": "bs-064",
+      "subtype": "exam-style",
+      "difficulty": "medium",
+      "prompt": "A boat's downstream speed is 24 km/h. The distance it covers downstream in $2\\frac{1}{2}$ hours equals the distance it covers upstream in 4 hours. How long will it take to cover 78 km in still water?",
+      "options": [
+        "$3\\frac{1}{4}$ hours",
+        "4 hours",
+        "$4\\frac{1}{3}$ hours",
+        "$5\\frac{1}{5}$ hours",
+        "$6\\frac{1}{2}$ hours"
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "steps": [
+          "Distance = 24 × 2.5 = 60 km → upstream speed = 60 ÷ 4 = 15 km/h",
+          "Still-water speed = (24 + 15) ÷ 2 = 19.5 km/h",
+          "Time = 78 ÷ 19.5 = 4 hours"
+        ],
+        "trap": "$5\\frac{1}{5}$ hours uses the upstream speed 15 km/h; $3\\frac{1}{4}$ hours uses the downstream speed 24 km/h."
+      },
+      "tags": [
+        "template:equal-distance-times",
+        "boats:still-water"
+      ]
+    },
+    {
+      "key": "bs-065",
+      "subtype": "exam-style",
+      "difficulty": "hard",
+      "prompt": "The distance a boat covers downstream in 1 hour 20 minutes equals the distance it covers upstream in 2 hours. The boat goes 48 km downstream and returns in 5 hours. What is its speed in still water?",
+      "options": [
+        "16 km/h",
+        "18 km/h",
+        "20 km/h",
+        "22 km/h",
+        "24 km/h"
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "steps": [
+          "4/3 × downstream = 2 × upstream → downstream : upstream = 3 : 2",
+          "48/(3k) + 48/(2k) = 16/k + 24/k = 40/k = 5 → k = 8 → downstream 24, upstream 16 km/h",
+          "Speed in still water = (24 + 16) ÷ 2 = 20 km/h"
+        ],
+        "trap": "24 km/h is the downstream speed and 16 km/h the upstream speed; reading 1 hour 20 minutes as 1.2 hours breaks the 3 : 2 ratio."
+      },
+      "tags": [
+        "template:equal-distance-times",
+        "boats:still-water"
+      ]
     }
   ]
 }
