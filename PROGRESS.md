@@ -41,6 +41,20 @@ Live: https://tarun-khatri.github.io/mockhall/ (GitHub Pages via CI) · Vercel: 
 - Chapter practice and tests serve questions not yet attempted on the device first.
 - Tooling: scripts/authoring/{append,sample}.ts; docs/expansion-brief.md, docs/blind-solve-brief.md.
 
+## Bank expansion round 2 — every topic (Oct 2026)
+- Authored questions served: 4,643 → **6,397**, all blind-verified; 53% hard/extreme overall (round-2 items ~70%).
+- New hand-written banks mixed into every generator topic (reusing generator subtype ids, so they also feed mock
+  slots): puzzles 22 sets, seating 22 sets, simplification 120, number series 98, DI caselets 22 sets, quadratic 100,
+  inequality 100, syllogism 100, blood relation 20 sets + 30, direction 20 sets + 30, coding-decoding 16 sets + 30,
+  alphanumeric/number series 16 sets + 38, order & ranking 100, odd one out 100, data sufficiency 99,
+  input–output 15 sets, misspelt words 100. Every key script-checked by its author (brute-force uniqueness for
+  puzzles/seating/families) and then blind-solved; ambiguous items rewritten or dropped.
+- Harder by default: "Mixed" practice 5/30/40/25 (E/M/H/X); presets harder; new users start on "Tough".
+- Fresh full/sectional mocks skip questions attempted on the device (fixed mocks and shared links stay identical).
+- Reasoning mocks ask direction/blood relation as one 3-question set (2024–26 pattern).
+- Known generator issues found while authoring (not yet fixed): some easy square-seating sets have a mirror-image
+  second arrangement (asked answers agree); a hard circular-mixed odd-one-out (seed t-24) reads two ways.
+
 ## Known limitations
 - General/Financial Awareness and Computer Aptitude (mains) are not covered — they need current-affairs content.
 - The quant "data sufficiency" and "quantity comparison" mains topics are filled with arithmetic/quadratic.
